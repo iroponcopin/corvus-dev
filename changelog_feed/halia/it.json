@@ -1,0 +1,47 @@
+{
+ "lang": "it",
+ "brand": "halia",
+ "updated": "2026-10-11",
+ "title": "Changelog",
+ "updated_label": "Aggiornato il 2026-10-11",
+ "note": "",
+ "groups": [
+  {
+   "label": "V1.0",
+   "summary": "Halia V1.0 — lo Stellar Remote e tre attacchi dall'orbita",
+   "releases": [
+    {
+     "version": "V1.0.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "Halia V1.0 — lo Stellar Remote e tre attacchi dall'orbita",
+     "summary": "La prima versione di Halia (The Max Model), per Minecraft 26.3: lo Stellar Remote, un solo pulsante rosso che scatena tre attacchi — SS-01 Railgun, SS-03 Gungnir e SS-04 Seven Stars. Distruggono in modo permanente aree molto grandi del mondo; leggi gli avvisi prima di premerlo.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Stellar Remote: un pulsante rosso sotto un coperchio ribaltabile, con un proprio modello 3D. Si trova nella scheda della modalità Creativa \"Halia\". In questa versione non ha una ricetta di fabbricazione.",
+        "Comandi: tieni in mano il telecomando e premi K, I o U per scegliere SS-01, SS-03 o SS-04; con il clic destro lanci l'attacco scelto sul terreno indicato dal mirino; accovacciarsi + clic destro sceglie il successivo. I tasti si possono riassegnare. Una scheda accanto alla barra rapida mostra l'attacco scelto, il suo tasto e il suo tempo di ricarica.",
+        "SS-01 Railgun: un laser rosso segna il terreno e, circa 18 secondi dopo la pressione del pulsante, scende un fascio di 200 blocchi di raggio che rimuove l'intera colonna del mondo, dal limite di costruzione fino al vuoto.",
+        "SS-03 Gungnir: circa 16 secondi dopo la pressione del pulsante, un ago nero colpisce in verticale. Un anello d'urto si allarga fino a 400 blocchi, spiana il terreno fino all'altezza dell'impatto e lascia un cratere fuso. L'ago resta, in piedi dal fondo del mondo fino al limite di costruzione.",
+        "SS-04 Seven Stars: il Grande Carro viene proiettato sul terreno, 7 nodi su circa 1440 blocchi di larghezza. 7 stelle cadono una dopo l'altra; ognuna scava un cratere e vi lascia un cristallo di Star Core. Poi le 7 linee della figura vengono incise come trincee, con Star Trace sul fondo.",
+        "Filmati: ogni attacco riproduce, per il giocatore che lo ha lanciato, un filmato nel gioco — telecamera, HUD e scene nello spazio. Premi J per saltare un filmato in corso; se non ce n'è nessuno in corso, J disattiva o riattiva i filmati. L'attacco avviene in ogni caso.",
+        "Tempo di ricarica: ogni attacco ha il proprio tempo di ricarica di 60 secondi (1 secondo in modalità Creativa). Finché il tuo ultimo attacco dello stesso tipo è in corso, non puoi lanciarlo di nuovo.",
+        "Restano quattro blocchi che si possono scavare e portare via: Block of Tungsten e Thermal Conduit dell'ago di Gungnir, Star Core e Star Trace di Seven Stars. Tre richiedono un piccone di diamante o migliore; il Block of Tungsten richiede un piccone di netherite. Tutti e quattro sono anche nella scheda della modalità Creativa."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. In multigiocatore, Halia deve essere installato anche sul server.",
+        "Gli attacchi distruggono il terreno in modo permanente e su scala molto grande; non si può annullare. SS-01 rimuove tutto entro 200 blocchi dal bersaglio, dal limite di costruzione fino al vuoto. Gungnir spiana, entro 400 blocchi dall'impatto, tutto ciò che sta sopra l'altezza dell'impatto, e scava un cratere al centro. Seven Stars scava 7 crateri e 7 trincee su circa 1440 blocchi. Fai prima un backup del tuo mondo, e non usare lo Stellar Remote in un mondo o su un server di cui non sei disposto a perdere delle parti.",
+        "Un attacco uccide ogni essere vivente nella sua zona, compreso il giocatore che lo ha lanciato; si salvano solo i giocatori in modalità Creativa o Spettatore. Costruzioni, bauli e oggetti a terra nell'area distrutta vanno persi. Fuori dalla zona, l'urto di Gungnir scaglia e ferisce ancora le creature fino a 1000 blocchi dall'impatto.",
+        "Un solo attacco carica e riscrive da centinaia a migliaia di chunk; nel frattempo il gioco può andare a scatti."
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

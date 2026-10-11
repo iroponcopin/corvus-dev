@@ -4,6 +4,7 @@
  * language root. Every model has a page of its own.
  */
 export const MODELS: readonly (readonly [id: string, name: string, href: string])[] = [
+  ["halia", "Halia", "halia/"],
   ["astraea", "ASTRAEA", "astraea/"],
   ["ouka", "OUKA", "ouka/"],
   ["cherry", "Cherry", "cherry/"],

@@ -14,7 +14,7 @@ import { LauncherFiles } from "./DownloadPage";
 const BLUE: readonly [number, number, number] = [0.25, 0.55, 1];
 
 /** The Store's order of its products, and the hub ring's order of the six marks. */
-const PRODUCTS = ["ouka", "cherry", "aureum", "astraea", "tsubomi", "noctua", "alpha"] as const;
+const PRODUCTS = ["halia", "ouka", "cherry", "aureum", "astraea", "tsubomi", "noctua", "alpha"] as const;
 const RING = ["astraea", "ouka", "cherry", "tsubomi", "noctua", "alpha"] as const;
 
 /**

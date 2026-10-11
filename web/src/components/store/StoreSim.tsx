@@ -40,7 +40,7 @@ export interface StoreSimLabels {
 
 export const DOWNLOAD_SECONDS = 3.6;
 /** The real files' sizes (MB), so the simulated speed reads like the real thing. */
-const SIZE_MB: Record<string, number> = { ouka: 4.7, cherry: 3.7, aureum: 0.03, astraea: 2.4, tsubomi: 1.9 };
+const SIZE_MB: Record<string, number> = { ouka: 4.7, cherry: 3.7, aureum: 0.03, astraea: 2.4, tsubomi: 1.9, halia: 10.2 };
 
 export function fill(t: string, ...v: (string | number)[]): string {
   return t.replace(/\{(\d+)\}/g, (_, i: string) => String(v[Number(i)] ?? ""));

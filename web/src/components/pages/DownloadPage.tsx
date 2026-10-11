@@ -103,6 +103,23 @@ export function DownloadPage({ lang }: { lang: Lang }) {
         </section>
       ) : null}
 
+      {dl.halia ? (
+        <section className="ac-wrap ac-dl-section" aria-labelledby="dl-halia">
+          <h2 id="dl-halia" className="ac-h3">
+            Halia {d.products.halia?.jp ?? ""}
+          </h2>
+          <p className="ac-small ac-dl-note">{d.products.halia?.tagline}</p>
+          <div className="ac-grid-2">
+            <FileCard tag={`${d.chrome.version} ${dl.halia.version}`} file={dl.halia.file} cta={d.chrome.primaryCta} labels={labels} />
+            <div className="ac-card ac-file-aside">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={asset("icons/halia.png")} alt="" width={64} height={64} />
+              <p className="ac-small ac-ltr">Minecraft {mc} · Fabric</p>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       {dl.tsubomi ? (
         <section className="ac-wrap ac-dl-section" aria-labelledby="dl-tsubomi">
           <h2 id="dl-tsubomi" className="ac-h3">

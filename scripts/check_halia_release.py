@@ -1,0 +1,244 @@
+#!/usr/bin/env python3
+"""Gate: the Halia release the site publishes is the jar really in downloads/, the manifest describes that jar, and
+the jar says what Halia is.
+
+Halia V1.0.0 (2026-10-11) ships as a BARE JAR, like Aureum, not as a package ZIP like Cherry, OUKA and ASTRAEA, so
+its manifest block has Aureum's shape (no "jars", no notes). The page half of a release (the Download section, the
+changelog tab, the Store card) is the portal's own gates' job. What no other checker here reads for Halia is checked
+here:
+
+  1. exactly one downloads/halia-<ver>.jar, and it is TRACKED by git: an untracked jar builds a manifest and a
+     Discord post whose download 404s on the live site;
+  2. its fabric.mod.json says id "halia" and the file name's version;
+  3. it depends on nothing but fabricloader, minecraft, java and fabric-api, and recommends / suggests nothing;
+  4. it declares no breaks and no conflicts: Halia 1.0.0 refuses no other mod, and Corvus Store (3.0.2 and later)
+     turns an unconditional "breaks" in a brand's jar into a refused install;
+  5. glimpse_manifest.json carries a "halia" block for that jar and nothing else: mod_id "halia", latest <ver>, the
+     jar's file name, address, size and SHA-256 — and no "jars" key (Halia 1.0.0 has no crafting recipes, so it is not a recipe-sheet source). The Discord release bot announces from this block;
+  6. changelog_feed/brands.json lists Halia with its feed, and each of the 13 languages' changelog_feed/halia feed
+     leads with V<ver>: the site does not publish a release its changelog has not reached.
+
+Independent by construction: it imports nothing from the builders (not site_common, not build_glimpse_manifest, not
+build_changelog_feed). The language list, the site address and the file-name rule are written out again here, so a
+mistake in a builder cannot make this gate agree with it.
+
+  python3 scripts/check_halia_release.py              # the gate
+  python3 scripts/check_halia_release.py --self-test  # the pristine tree green, every planted defect red
+
+Exit code: 0 green, 1 red, 2 cannot judge (never green).
+"""
+import hashlib
+import io
+import json
+import re
+import shutil
+import subprocess
+import sys
+import tempfile
+import zipfile
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+LANGS = ["ja", "en", "es", "fr", "zh", "ko", "pt-br", "it", "ar", "ru", "id", "de", "tr"]
+JAR_RE = re.compile(r"^halia-(\d+(?:\.\d+)*)\.jar$")
+SITE = "https://iroponcopin.github.io/aurora-corvus"
+ALLOWED_DEPENDS = {"fabricloader", "minecraft", "java", "fabric-api"}
+ALLOWED_SOFT = set()               # Halia recommends and suggests nothing
+
+
+def git_tracked(root: Path, rel: str) -> bool:
+    result = subprocess.run(["git", "ls-files", "--error-unmatch", rel], cwd=root, capture_output=True, text=True)
+    return result.returncode == 0
+
+
+def check(root: Path, tracked=git_tracked):
+    """(problems, facts). A problem is a string; an empty list is green."""
+    problems = []
+    downloads = root / "downloads"
+    jars = sorted(p for p in downloads.glob("halia-*.jar") if p.is_file())
+    if not jars:
+        return ["no downloads/halia-<ver>.jar: nothing to check (the gate cannot pass on absence)"], {}
+    if len(jars) > 1:
+        return [f"more than one Halia jar in downloads/ ({', '.join(j.name for j in jars)}); the manifest describes one"], {}
+    jpath = jars[0]
+    m = JAR_RE.match(jpath.name)
+    if not m:
+        return [f"downloads/{jpath.name} does not parse as halia-<numeric.version>.jar"], {}
+    version = m.group(1)
+    rel = f"downloads/{jpath.name}"
+    if not tracked(root, rel):
+        problems.append(f"{rel} is not tracked by git: the live site would serve a 404 for it")
+    data = jpath.read_bytes()
+    try:
+        with zipfile.ZipFile(io.BytesIO(data)) as jar:
+            meta = json.loads(jar.read("fabric.mod.json").decode("utf-8"))
+    except (zipfile.BadZipFile, KeyError, ValueError) as exc:
+        return problems + [f"{jpath.name} cannot be read as a Fabric jar ({exc})"], {}
+    if meta.get("id") != "halia":
+        problems.append(f"{jpath.name} declares the mod id {meta.get('id')!r}, not 'halia'")
+    if meta.get("version") != version:
+        problems.append(f"{jpath.name} is named for {version}, but its fabric.mod.json declares {meta.get('version')!r}")
+    extra = sorted(set(meta.get("depends") or {}) - ALLOWED_DEPENDS)
+    if extra:
+        problems.append(f"the halia jar depends on {extra}: it may depend only on {sorted(ALLOWED_DEPENDS)}")
+    for field in ("recommends", "suggests"):
+        soft = sorted(set(meta.get(field) or {}) - ALLOWED_SOFT)
+        if soft:
+            problems.append(f"the halia jar names {soft} under {field}: only {sorted(ALLOWED_SOFT)} may appear there")
+    for field in ("breaks", "conflicts"):
+        wrong = sorted(meta.get(field) or {})
+        if wrong:
+            problems.append(f"the halia jar declares {field} against {wrong}: Halia 1.0.0 refuses nothing, and the Store "
+                            f"would turn an unconditional 'breaks' into a refused install")
+    try:
+        block = json.loads((root / "glimpse_manifest.json").read_text(encoding="utf-8")).get("halia")
+    except (OSError, ValueError) as exc:
+        return problems + [f"glimpse_manifest.json cannot be read ({exc})"], {}
+    expected = {
+        "mod_id": "halia",
+        "latest": version,
+        "download_url": f"{SITE}/downloads/{jpath.name}",
+        "file_name": jpath.name,
+        "file_size": len(data),
+        "sha256": hashlib.sha256(data).hexdigest(),
+    }
+    if block is None:
+        problems.append("glimpse_manifest.json has no 'halia' block: the bot would announce nothing")
+    elif block != expected:
+        for key in expected:
+            if block.get(key) != expected[key]:
+                problems.append(f"glimpse_manifest.json halia.{key} is {block.get(key)!r}, the jar says {expected[key]!r}")
+        for key in sorted(set(block) - set(expected)):
+            problems.append(f"glimpse_manifest.json halia carries an unexpected key {key!r} (a bare jar's block is Aureum's shape)")
+    try:
+        brands = json.loads((root / "changelog_feed" / "brands.json").read_text(encoding="utf-8"))["brands"]
+        entry = [b for b in brands if b.get("id") == "halia"]
+        if not entry or entry[0].get("feed") != "changelog_feed/halia/{lang}.json":
+            problems.append("changelog_feed/brands.json does not list Halia with changelog_feed/halia/{lang}.json")
+    except (OSError, ValueError, KeyError) as exc:
+        problems.append(f"changelog_feed/brands.json cannot be read ({exc})")
+    for lang in LANGS:
+        path = root / "changelog_feed" / "halia" / f"{lang}.json"
+        try:
+            feed = json.loads(path.read_text(encoding="utf-8"))
+            newest = feed["groups"][0]["releases"][0]["version"]
+        except (OSError, ValueError, KeyError, IndexError) as exc:
+            problems.append(f"changelog_feed/halia/{lang}.json cannot be read for its newest release ({exc})")
+            continue
+        if newest != f"V{version}":
+            problems.append(f"changelog_feed/halia/{lang}.json leads with {newest}, but the site publishes V{version}")
+    return problems, {"jar": jpath.name, "version": version, "size": len(data), "sha256": expected["sha256"]}
+
+
+# --- self-test ----------------------------------------------------------------------------------
+
+def self_test() -> int:
+    """The pristine tree must be green; then each plant, in its own copy, must turn it red (and each allowed variant
+    must stay green, so the rules are not simply refusing everything)."""
+    base, _ = check(ROOT)
+    if base:
+        print("SELF-TEST CANNOT JUDGE: the pristine tree is not green, so a red plant would prove nothing:")
+        for p in base:
+            print("  " + p)
+        return 2
+    jname = sorted((ROOT / "downloads").glob("halia-*.jar"))[0].name
+
+    def copy_tree(dst: Path):
+        (dst / "downloads").mkdir(parents=True)
+        shutil.copy2(ROOT / "downloads" / jname, dst / "downloads" / jname)
+        shutil.copy2(ROOT / "glimpse_manifest.json", dst / "glimpse_manifest.json")
+        shutil.copytree(ROOT / "changelog_feed", dst / "changelog_feed")
+
+    def rewrite_jar(dst: Path, meta_change=None, extra_inner=None, sync_manifest=True):
+        """Rebuild the jar with the change applied. With sync_manifest the manifest block is rewritten to the new
+        jar's size and hash, so only the planted fault can be what turns the gate red."""
+        path = dst / "downloads" / jname
+        with zipfile.ZipFile(path) as jar:
+            inner = {n: jar.read(n) for n in jar.namelist()}
+        if meta_change:
+            meta = json.loads(inner["fabric.mod.json"])
+            meta_change(meta)
+            inner["fabric.mod.json"] = json.dumps(meta).encode()
+        if extra_inner:
+            inner.update(extra_inner)
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as jar:
+            for n, b in inner.items():
+                jar.writestr(n, b)
+        path.write_bytes(buf.getvalue())
+        if sync_manifest:
+            edit_manifest(dst, lambda m: m["halia"].update(file_size=len(buf.getvalue()),
+                                                            sha256=hashlib.sha256(buf.getvalue()).hexdigest()))
+
+    def edit_manifest(dst: Path, change):
+        p = dst / "glimpse_manifest.json"
+        m = json.loads(p.read_text(encoding="utf-8"))
+        change(m)
+        p.write_text(json.dumps(m, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    def edit_feed(dst: Path, lang: str, version: str):
+        p = dst / "changelog_feed" / "halia" / f"{lang}.json"
+        f = json.loads(p.read_text(encoding="utf-8"))
+        f["groups"][0]["releases"][0]["version"] = version
+        p.write_text(json.dumps(f, ensure_ascii=False), encoding="utf-8")
+
+    def brand(meta, **kv):
+        meta.setdefault("custom", {}).setdefault("halia", {}).setdefault("brand", {}).update(kv)
+
+    def second_jar(dst: Path):
+        shutil.copy2(dst / "downloads" / jname, dst / "downloads" / "halia-0.9.0.jar")
+
+    plants = [
+        # label, plant, tracked, should_fail
+        ("clean copy", lambda d: None, True, False),
+        ("Cherry as a suggestion", lambda d: rewrite_jar(d, lambda m: m.update(suggests={"cherry": "*"})), True, True),
+        ("the jar is untracked (the live 404)", lambda d: None, False, True),
+        ("a second Halia jar in downloads/", second_jar, True, True),
+        ("the manifest has no halia block", lambda d: edit_manifest(d, lambda m: m.pop("halia")), True, True),
+        ("the manifest's sha256 is stale", lambda d: edit_manifest(d, lambda m: m["halia"].update(sha256="0" * 64)), True, True),
+        ("the manifest's block carries 'jars' (a package's shape)",
+         lambda d: edit_manifest(d, lambda m: m["halia"].update(jars={"halia": {"version": "1.0.0"}})), True, True),
+        ("the jar is replaced after the manifest was built",
+         lambda d: rewrite_jar(d, extra_inner={"extra.txt": b"x"}, sync_manifest=False), True, True),
+        ("the jar declares another mod id", lambda d: rewrite_jar(d, lambda m: m.update(id="halia_x")), True, True),
+        ("the jar's version differs from its name", lambda d: rewrite_jar(d, lambda m: m.update(version="0.9.9")), True, True),
+        ("Cherry as a hard dependency", lambda d: rewrite_jar(d, lambda m: m["depends"].update(cherry="*")), True, True),
+        ("an Alpha module as a dependency", lambda d: rewrite_jar(d, lambda m: m["depends"].update(sorakaze_guns="*")), True, True),
+        ("another mod suggested", lambda d: rewrite_jar(d, lambda m: m.update(suggests={"ouka": "*"})), True, True),
+        ("breaks names Cherry (a false incompatibility)",
+         lambda d: rewrite_jar(d, lambda m: m.setdefault("breaks", {}).update(cherry="*")), True, True),
+        ("one language's feed lags the release", lambda d: edit_feed(d, "ar", "V0.9.0"), True, True),
+    ]
+    ok = True
+    for label, plant, is_tracked, should_fail in plants:
+        with tempfile.TemporaryDirectory() as temp:
+            dst = Path(temp)
+            copy_tree(dst)
+            plant(dst)
+            found = check(dst, tracked=lambda _r, _p, t=is_tracked: t)[0]
+        failed = bool(found)
+        right = failed == should_fail
+        ok &= right
+        detail = f" ({found[0]})" if found and right else (f" UNEXPECTED: {found}" if found else "")
+        print(f"  self-test [{'ok' if right else 'WRONG'}] {label}: {'red' if failed else 'green'}{detail[:170]}")
+    print("SELF-TEST VERDICT:", "PASS" if ok else "FAIL")
+    return 0 if ok else 1
+
+
+def main() -> int:
+    if "--self-test" in sys.argv[1:]:
+        return self_test()
+    problems, facts = check(ROOT)
+    for p in problems:
+        print("  RED: " + p)
+    if problems:
+        print(f"halia release: RED ({len(problems)} problem(s))")
+        return 1
+    print(f"halia release: {facts['jar']} ({facts['size']:,} bytes, sha256 {facts['sha256'][:16]}…) is tracked, the one "
+          f"Halia jar, depends on Fabric only, refuses no other mod, is described exactly by the "
+          f"manifest's halia block, and led by V{facts['version']} in all 13 feeds: GREEN")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

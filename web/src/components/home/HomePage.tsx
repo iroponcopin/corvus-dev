@@ -29,6 +29,7 @@ const BRAND_ICON: Record<string, string> = {
   aureum: "icons/aureum.png",
   astraea: "icons/astraea.png",
   tsubomi: "icons/tsubomi.png",
+  halia: "icons/halia.png",
   alpha: "icons/alpha.png",
   corvus: "icons/store.png",
 };
@@ -50,6 +51,7 @@ export function HomePage({ lang }: { lang: Lang }) {
 
   // The six marks the old hero carried, in its order.
   const cards = [
+    { id: "halia", name: "Halia", jp: null, line: p.halia?.tagline ?? "", href: pathOf(lang, "halia/"), icon: "icons/halia.png", status: status("halia") },
     { id: "ouka", name: "OUKA", jp: null, line: p.ouka?.lede ?? "", href: pathOf(lang, "ouka/"), icon: "icons/ouka.png", status: status("ouka") },
     { id: "cherry", name: "Cherry", jp: null, line: p.cherry?.lede ?? "", href: pathOf(lang, "cherry/"), icon: "icons/cherry.png", status: status("cherry") },
     { id: "tsubomi", name: "Tsubomi", jp: p.tsubomi?.jp ?? null, line: p.tsubomi?.tagline ?? "", href: pathOf(lang, "tsubomi/"), icon: "icons/tsubomi.png", status: status("tsubomi") },

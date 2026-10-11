@@ -91,6 +91,12 @@ CHECKS = [
      "downloads/tsubomi-*.jar (tracked, Fabric-only, declares Alpha incompatible) vs the manifest's tsubomi block and the 13 feeds"),
     ("tsubomi-controls", "check_tsubomi_release.py", ["--self-test"],
      "the Tsubomi release gate turns every planted defect red"),
+    # Halia V1.0.0 (2026-10-11), a bare jar like Tsubomi: tracked and the only one, id "halia" at its file name's
+    # version, Fabric-only, refuses no other mod, described exactly by the manifest's halia block, 13 feeds lead with it.
+    ("halia", "check_halia_release.py", [],
+     "downloads/halia-*.jar (tracked, Fabric-only, no breaks) vs the manifest's halia block and the 13 feeds"),
+    ("halia-controls", "check_halia_release.py", ["--self-test"],
+     "the Halia release gate turns every planted defect red"),
 ]
 
 

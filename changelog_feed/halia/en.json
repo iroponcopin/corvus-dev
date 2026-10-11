@@ -1,0 +1,47 @@
+{
+ "lang": "en",
+ "brand": "halia",
+ "updated": "2026-10-11",
+ "title": "Changelog",
+ "updated_label": "Updated 2026-10-11",
+ "note": "",
+ "groups": [
+  {
+   "label": "V1.0",
+   "summary": "Halia V1.0 — the Stellar Remote and three strikes from orbit",
+   "releases": [
+    {
+     "version": "V1.0.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "Halia V1.0 — the Stellar Remote and three strikes from orbit",
+     "summary": "The first release of Halia (The Max Model), for Minecraft 26.3: the Stellar Remote, one red button that calls down three strikes — SS-01 Railgun, SS-03 Gungnir and SS-04 Seven Stars. They permanently destroy very large areas of the world; read the warnings before you press it.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "Stellar Remote: one red button under a flip cover, with its own 3D model. It is in the creative tab \"Halia\". This version has no crafting recipe for it.",
+        "Controls: hold the remote and press K, I or U to select SS-01, SS-03 or SS-04; right click casts the selected strike at the ground in your crosshair; sneak + right click selects the next one. The keys can be rebound. A card beside the hotbar shows the selected strike, its key and its cooldown.",
+        "SS-01 Railgun: a red laser marks the ground, and about 18 seconds after the button is pressed a beam 200 blocks in radius comes down and removes the whole column of the world, from the build limit to the void.",
+        "SS-03 Gungnir: about 16 seconds after the button is pressed, a black needle strikes from straight above. A shock ring spreads to 400 blocks, shaves the land down to the height of the impact and leaves a molten crater. The needle stays, standing from the bottom of the world to the build limit.",
+        "SS-04 Seven Stars: the Big Dipper is projected onto the land, 7 nodes about 1,440 blocks across. 7 stars fall one after another; each digs a crater and leaves a Star Core crystal in it. Then the 7 lines of the figure are burned in as trenches, with Star Trace along their floors.",
+        "Films: each strike plays an in-game film for the player who cast it — camera, HUD and scenes in space. Press J to skip a film while it plays; when no film is playing, J turns the films off or on. The strike happens either way.",
+        "Cooldown: each strike has its own cooldown of 60 seconds (1 second in creative mode). While your last strike of the same kind is still running, you cannot cast it again.",
+        "Four blocks are left behind and can be mined and taken: Block of Tungsten and Thermal Conduit from Gungnir's needle, Star Core and Star Trace from Seven Stars. Three need a diamond pickaxe or better; the Block of Tungsten needs a netherite pickaxe. All four are also in the creative tab."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. For multiplayer, Halia must also be installed on the server.",
+        "The strikes permanently destroy terrain on a very large scale, and there is no undo. SS-01 removes everything within 200 blocks of the target, from the build limit down to the void. Gungnir shaves away everything above the height of the impact within 400 blocks of it, and digs a crater at the centre. Seven Stars digs 7 craters and 7 trenches across about 1,440 blocks. Back up your world first, and do not use the Stellar Remote on a world or server you are not prepared to lose parts of.",
+        "A strike kills every living thing in its zone — the player who cast it too, if they are standing in it. Only players in creative or spectator mode are spared. Buildings, chests and dropped items in the destroyed area are lost. Outside its zone, Gungnir's shock still throws and hurts creatures up to 1,000 blocks from the impact.",
+        "A single strike loads and rewrites hundreds to thousands of chunks, so the game can stutter while it runs."
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -15,6 +15,8 @@ const ASH: readonly [number, number, number] = [0.7, 0.55, 0.45];
 const VIOLET: readonly [number, number, number] = [0.65, 0.55, 1];
 const SPRING: readonly [number, number, number] = [0.7, 1, 0.72];
 const NIGHT: readonly [number, number, number] = [0.45, 0.55, 1];
+/** Halia: the gold of its eagle (owner, 2026-10-11: the accent colour is the bald eagle). */
+const EAGLE_GOLD: readonly [number, number, number] = [1, 0.84, 0.5];
 
 function ReleaseCard({
   lang,
@@ -213,11 +215,12 @@ export function AureumPage({ lang }: { lang: Lang }) {
 }
 
 /** The models whose page is built from the store catalogue and the manifest alone. */
-export type CatalogueModel = "astraea" | "tsubomi" | "noctua";
+export type CatalogueModel = "astraea" | "tsubomi" | "noctua" | "halia";
 
 const CATALOGUE_STAGE: Record<CatalogueModel, { formation: number; tint: readonly [number, number, number] }> = {
   astraea: { formation: Formation.Horizon, tint: VIOLET },
   tsubomi: { formation: Formation.Bloom, tint: SPRING },
+  halia: { formation: Formation.Horizon, tint: EAGLE_GOLD },
   noctua: { formation: Formation.Nexus, tint: NIGHT },
 };
 

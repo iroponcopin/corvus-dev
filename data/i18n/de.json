@@ -117,7 +117,7 @@
    "aureum": "Aureum"
   },
   "page_descriptions": {
-   "changelog": "Der Änderungsverlauf von OUKA, Cherry, Aureum, ASTRAEA und Tsubomi sowie die Mitteilung zum Ende von Alpha. Wähle eine Marke, um zu sehen, was sich in jeder Version geändert hat – die neueste zuerst.",
+   "changelog": "Der Änderungsverlauf von OUKA, Cherry, Aureum, ASTRAEA, Tsubomi und Halia sowie die Mitteilung zum Ende von Alpha. Wähle eine Marke, um zu sehen, was sich in jeder Version geändert hat – die neueste zuerst.",
    "recipes": "Eine Kurzübersicht der Crafting-Rezepte für jeden Gegenstand aus Cherry, OUKA und ASTRAEA. Mit Suche und Kategoriefilter.",
    "download": "Alpha wird nicht mehr verteilt. Die letzte Version, V{pack_version}, schaltet Alpha ab; sie steht hier mit Dateigröße und SHA-256, neben den Downloads für Corvus und Aureum.",
    "aureum": "Aureum: eine eigenständige, ehrlich gemessene, leichte Optimierungs-Mod. Kein Ersatz für Sodium – sie optimiert die Seite, die Sodium nicht anfasst."
@@ -723,6 +723,29 @@
     "warnings": [
      "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
      "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
+    ]
+   }
+  ],
+  "halia": [
+   {
+    "id": "halia-v1.0.0",
+    "title": "Halia V1.0 — die Stellar Remote und drei Schläge aus dem Orbit",
+    "summary": "Die erste Version von Halia (The Max Model) für Minecraft 26.3: die Stellar Remote, ein einziger roter Knopf, der drei Schläge herabruft — SS-01 Railgun, SS-03 Gungnir und SS-04 Seven Stars. Sie zerstören dauerhaft sehr große Teile der Welt; lies die Warnungen, bevor du den Knopf drückst.",
+    "highlights": [
+     "Stellar Remote: ein roter Knopf unter einer Klappabdeckung, mit eigenem 3D-Modell. Sie liegt im Kreativ-Tab „Halia“. In dieser Version gibt es kein Handwerksrezept für sie.",
+     "Steuerung: Halte die Fernbedienung und drücke K, I oder U, um SS-01, SS-03 oder SS-04 auszuwählen. Ein Rechtsklick löst den gewählten Schlag auf den Boden im Fadenkreuz aus; Schleichen + Rechtsklick wählt den nächsten. Die Tasten lassen sich neu belegen. Eine Karte neben der Schnellleiste zeigt den gewählten Schlag, seine Taste und seine Abklingzeit.",
+     "SS-01 Railgun: Ein roter Laser markiert den Boden, und etwa 18 Sekunden nach dem Knopfdruck kommt ein Strahl mit 200 Blöcken Radius herab und entfernt die ganze Säule der Welt, von der Bauhöhengrenze bis zur Leere.",
+     "SS-03 Gungnir: Etwa 16 Sekunden nach dem Knopfdruck schlägt eine schwarze Nadel senkrecht von oben ein. Ein Stoßring breitet sich bis 400 Blöcke aus, trägt das Land bis auf die Höhe des Einschlags ab und hinterlässt einen geschmolzenen Krater. Die Nadel bleibt stehen, vom Boden der Welt bis zur Bauhöhengrenze.",
+     "SS-04 Seven Stars: Der Große Wagen wird auf das Land projiziert, 7 Knoten, etwa 1440 Blöcke breit. 7 Sterne fallen nacheinander; jeder gräbt einen Krater und hinterlässt darin einen Kristall aus Star Core. Danach werden die 7 Linien der Figur als Gräben eingebrannt, mit Star Trace auf ihrem Grund.",
+     "Filme: Jeder Schlag spielt für den Spieler, der ihn ausgelöst hat, einen Film im Spiel ab — Kamera, HUD und Szenen im Weltraum. Drücke J, um einen laufenden Film zu überspringen; läuft keiner, schaltet J die Filme aus oder ein. Der Schlag findet in jedem Fall statt.",
+     "Abklingzeit: Jeder Schlag hat seine eigene Abklingzeit von 60 Sekunden (1 Sekunde im Kreativmodus). Solange dein letzter Schlag derselben Art noch läuft, kannst du ihn nicht erneut auslösen.",
+     "Vier Blöcke bleiben zurück und lassen sich abbauen und mitnehmen: Block of Tungsten und Thermal Conduit von Gungnirs Nadel, Star Core und Star Trace von Seven Stars. Drei brauchen eine Diamantspitzhacke oder besser; der Block of Tungsten braucht eine Netheritspitzhacke. Alle vier liegen auch im Kreativ-Tab."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Im Mehrspielermodus muss Halia auch auf dem Server installiert sein.",
+     "Die Schläge zerstören Gelände dauerhaft und in sehr großem Umfang; rückgängig machen lässt sich das nicht. SS-01 entfernt alles im Umkreis von 200 Blöcken um das Ziel, von der Bauhöhengrenze bis zur Leere. Gungnir trägt im Umkreis von 400 Blöcken um den Einschlag alles ab, was über der Höhe des Einschlags liegt, und gräbt in der Mitte einen Krater. Seven Stars gräbt 7 Krater und 7 Gräben über etwa 1440 Blöcke. Sichere zuerst deine Welt, und benutze die Stellar Remote nicht in einer Welt oder auf einem Server, von denen du keine Teile verlieren willst.",
+     "Ein Schlag tötet jedes Lebewesen in seiner Zone, auch den Spieler, der ihn ausgelöst hat; nur Spieler im Kreativ- oder Zuschauermodus bleiben verschont. Gebäude, Truhen und fallen gelassene Gegenstände im zerstörten Gebiet gehen verloren. Außerhalb der Zone schleudert und verletzt Gungnirs Stoßwelle Lebewesen noch bis 1000 Blöcke vom Einschlag entfernt.",
+     "Ein einziger Schlag lädt und überschreibt Hunderte bis Tausende Chunks; währenddessen kann das Spiel ruckeln."
     ]
    }
   ]

@@ -5,6 +5,7 @@ import type { Fresh } from "@/i18n/fresh";
  * spelt as the copy spells them in every language.
  */
 export const LINEUP: readonly (readonly [id: string, name: string])[] = [
+  ["halia", "Halia"],
   ["ouka", "OUKA"],
   ["cherry", "Cherry"],
   ["aureum", "Aureum"],

@@ -120,6 +120,9 @@ ASTRAEA_ZIP_SUFFIX = f"+mc{MC_VERSION}.zip"
 TSUBOMI_JAR_PREFIX = "tsubomi-"
 TSUBOMI_JAR_SUFFIX = ".jar"
 TSUBOMI_MOD_ID = "tsubomi"
+HALIA_JAR_PREFIX = "halia-"
+HALIA_JAR_SUFFIX = ".jar"
+HALIA_MOD_ID = "halia"
 NOCTUA_ZIP_PREFIX = "Noctua_v"
 NOCTUA_ZIP_SUFFIX = ".zip"
 
@@ -601,6 +604,51 @@ def _tsubomi_block():
     }
 
 
+def _halia_block():
+    """The `halia` block, or None when no Halia jar has been published.
+
+    Aureum's shape (a bare jar: no `jars`, no notes), in a function of its own so that
+    adding Halia (2026-10-11) can never change a byte of another block. Tsubomi's function, copied on purpose.
+    The mod id and the version are read out of the jar, never typed: the id must be
+    "halia" and the version must equal the file name's, or an installed Halia would
+    be matched or compared against the wrong thing. The same never-drop rule applies in
+    build().
+    """
+    jars = sorted(p for p in DOWNLOAD_DIR.glob(f"{HALIA_JAR_PREFIX}*{HALIA_JAR_SUFFIX}") if p.is_file())
+    if not jars:
+        return None
+    if len(jars) > 1:
+        raise SystemExit(
+            f"ERROR: more than one Halia jar in {DOWNLOAD_DIR} ({', '.join(j.name for j in jars)}). "
+            f"The manifest describes the current build only - publish exactly one.")
+    jpath = jars[0]
+    name_version = jpath.name[len(HALIA_JAR_PREFIX):-len(HALIA_JAR_SUFFIX)]
+    try:
+        with zipfile.ZipFile(jpath) as zf:
+            meta = json.loads(zf.read("fabric.mod.json").decode("utf-8"))
+    except (OSError, KeyError, ValueError, zipfile.BadZipFile) as exc:
+        raise SystemExit(
+            f"ERROR: could not read fabric.mod.json out of {jpath} ({exc}). The manifest's "
+            f"halia.mod_id and halia.latest must come from the jar itself - do not type them.")
+    mod_id, version = meta.get("id"), meta.get("version")
+    if mod_id != HALIA_MOD_ID:
+        raise SystemExit(
+            f"ERROR: {jpath.name} declares the mod id {mod_id!r}, not {HALIA_MOD_ID!r}. The Store and the "
+            f"Discord bot know the brand by that id, so an installed copy would never be matched.")
+    if version != name_version:
+        raise SystemExit(
+            f"ERROR: {jpath.name} is named for version {name_version}, but its fabric.mod.json declares "
+            f"{version!r}. An installed Halia would compare itself against the wrong number.")
+    return {
+        "mod_id": mod_id,
+        "latest": version,
+        "download_url": f"{SITE_BASE_URL}/downloads/{jpath.name}",
+        "file_name": jpath.name,
+        "file_size": jpath.stat().st_size,
+        "sha256": _sha256(jpath),
+    }
+
+
 def _noctua_block():
     """The `noctua` block, or None when no Noctua package has been published.
 
@@ -798,6 +846,18 @@ def build():
     else:
         print("glimpse_manifest.py: no Tsubomi jar found yet - writing manifest with no 'tsubomi' "
               "block (expected until the first Tsubomi build ships)")
+
+    halia = _halia_block()
+    if halia is not None:
+        manifest["halia"] = halia
+        print(f"glimpse_manifest.py: Halia {halia['latest']} ({halia['file_name']}, mod id {halia['mod_id']!r}) "
+              f"selected, including 'halia' block")
+    elif "halia" in _previously_published_manifest():
+        raise SystemExit(
+            f"ERROR: no Halia jar found in {DOWNLOAD_DIR}, but the published glimpse_manifest.json already carries a "
+            f"'halia' block. Dropping it would silently withdraw the release. Publish the jar, or fix the naming.")
+    else:
+        print("glimpse_manifest.py: no Halia jar found yet - writing manifest with no 'halia' block")
 
     noctua = _noctua_block()
     if noctua is not None:

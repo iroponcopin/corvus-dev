@@ -13,6 +13,7 @@ export const BRAND_COLOR: Record<string, string> = {
   aureum: "#ffc35a",
   astraea: "#a68bff",
   tsubomi: "#8fe3b0",
+  halia: "#d9b56a",
   corvus: "#2997ff",
   noctua: "#ffb340",
 };

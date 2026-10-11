@@ -117,7 +117,7 @@
    "aureum": "Aureum"
   },
   "page_descriptions": {
-   "changelog": "Riwayat pembaruan OUKA, Cherry, Aureum, ASTRAEA, dan Tsubomi, serta pengumuman berakhirnya Alpha. Pilih merek untuk melihat apa yang berubah di setiap rilis, dari yang terbaru.",
+   "changelog": "Riwayat pembaruan OUKA, Cherry, Aureum, ASTRAEA, Tsubomi, dan Halia, serta pengumuman berakhirnya Alpha. Pilih merek untuk melihat apa yang berubah di setiap rilis, dari yang terbaru.",
    "recipes": "Tabel rujukan cepat resep pembuatan untuk setiap item di Cherry, OUKA, dan ASTRAEA. Mendukung pencarian dan penyaringan kategori.",
    "download": "Alpha tidak lagi didistribusikan. Rilis terakhirnya, V{pack_version}, mematikan Alpha; ada di sini beserta ukuran berkas dan SHA-256, di samping unduhan Corvus dan Aureum.",
    "aureum": "Aureum: mod optimasi ringan yang terpisah dan diukur dengan jujur. Bukan pengganti Sodium — ia mengoptimalkan sisi yang tidak disentuh Sodium."
@@ -723,6 +723,29 @@
     "warnings": [
      "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
      "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+    ]
+   }
+  ],
+  "halia": [
+   {
+    "id": "halia-v1.0.0",
+    "title": "Halia V1.0 — Stellar Remote dan tiga serangan dari orbit",
+    "summary": "Rilis pertama Halia (The Max Model) untuk Minecraft 26.3: Stellar Remote, satu tombol merah yang memanggil tiga serangan — SS-01 Railgun, SS-03 Gungnir, dan SS-04 Seven Stars. Ketiganya menghancurkan wilayah dunia yang sangat luas secara permanen; baca peringatannya sebelum menekan tombol.",
+    "highlights": [
+     "Stellar Remote: satu tombol merah di bawah penutup lipat, dengan model 3D sendiri. Letaknya di tab mode Kreatif \"Halia\". Di versi ini tidak ada resep pembuatannya.",
+     "Kontrol: pegang remote dan tekan K, I, atau U untuk memilih SS-01, SS-03, atau SS-04; klik kanan meluncurkan serangan terpilih ke tanah yang dibidik; menyelinap + klik kanan memilih serangan berikutnya. Tombol bisa diatur ulang. Kartu di samping hotbar menampilkan serangan terpilih, tombolnya, dan waktu jedanya.",
+     "SS-01 Railgun: laser merah menandai tanah, dan sekitar 18 detik setelah tombol ditekan, sinar beradius 200 blok turun dan menghapus seluruh kolom dunia, dari batas ketinggian bangunan sampai void.",
+     "SS-03 Gungnir: sekitar 16 detik setelah tombol ditekan, sebuah jarum hitam menghantam tegak lurus dari atas. Cincin kejut melebar sampai 400 blok, mengikis daratan hingga setinggi titik hantaman, dan meninggalkan kawah cair. Jarumnya tetap berdiri, dari dasar dunia sampai batas ketinggian bangunan.",
+     "SS-04 Seven Stars: rasi Bintang Biduk diproyeksikan ke daratan, 7 simpul selebar sekitar 1440 blok. 7 bintang jatuh satu per satu; masing-masing menggali kawah dan meninggalkan kristal Star Core di dalamnya. Lalu 7 garis rasi itu dibakar menjadi parit, dengan Star Trace di dasarnya.",
+     "Film: setiap serangan memutar film di dalam game untuk pemain yang meluncurkannya — kamera, HUD, dan adegan di luar angkasa. Tekan J untuk melewati film yang sedang diputar; jika tidak ada film yang diputar, J mematikan atau menyalakan film. Serangannya tetap terjadi.",
+     "Waktu jeda: setiap serangan punya waktu jeda sendiri selama 60 detik (1 detik di mode Kreatif). Selama serangan terakhirmu dari jenis yang sama masih berlangsung, kamu tidak bisa meluncurkannya lagi.",
+     "Ada empat blok yang tertinggal dan bisa ditambang lalu dibawa: Block of Tungsten dan Thermal Conduit dari jarum Gungnir, Star Core dan Star Trace dari Seven Stars. Tiga di antaranya butuh beliung berlian atau lebih baik; Block of Tungsten butuh beliung netherite. Keempatnya juga ada di tab mode Kreatif."
+    ],
+    "warnings": [
+     "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Untuk multipemain, Halia juga harus terpasang di server.",
+     "Serangan ini menghancurkan medan secara permanen dalam skala yang sangat besar, dan tidak bisa dibatalkan. SS-01 menghapus semua yang ada dalam jarak 200 blok dari sasaran, dari batas ketinggian bangunan sampai void. Gungnir mengikis semua yang lebih tinggi dari titik hantaman dalam jarak 400 blok darinya, dan menggali kawah di tengah. Seven Stars menggali 7 kawah dan 7 parit sepanjang sekitar 1440 blok. Cadangkan duniamu lebih dulu, dan jangan gunakan Stellar Remote di dunia atau server yang sebagiannya tidak siap kamu relakan.",
+     "Serangan membunuh semua makhluk hidup di dalam zonanya, termasuk pemain yang meluncurkannya; hanya pemain dalam mode Kreatif atau Penonton yang selamat. Bangunan, peti, dan item yang tergeletak di area yang hancur akan hilang. Di luar zonanya, gelombang kejut Gungnir masih melempar dan melukai makhluk sampai jarak 1000 blok dari titik hantaman.",
+     "Satu serangan memuat dan menulis ulang ratusan sampai ribuan chunk; selama itu game bisa tersendat."
     ]
    }
   ]

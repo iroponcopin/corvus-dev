@@ -322,6 +322,7 @@ export interface LangData {
     aureum: { heading: string; body: string; note: string; cta: string; version: string; file: FileFacts };
     astraea: ModelDownload | null;
     tsubomi: ModelDownload | null;
+    halia: ModelDownload | null;
     noctua: ModelDownload | null;
     discord: { heading: string; body: string; cta: string };
     alphaNote: string;

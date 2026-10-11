@@ -115,6 +115,14 @@
     "file_size": 506800,
     "sha256": "f90eada3073694c903bf4330b4742828aa33248f6b56a8fc22ef6d9d28bc78f9"
   },
+  "halia": {
+    "mod_id": "halia",
+    "latest": "1.0.0",
+    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/halia-1.0.0.jar",
+    "file_name": "halia-1.0.0.jar",
+    "file_size": 10669711,
+    "sha256": "ee43330b618f054507b32a2c73d7e1c316072313bbd6a3d1394c64b3b2fe0ebc"
+  },
   "noctua": {
     "latest": "1.0.0",
     "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/Noctua_v1.0.0+pal1.0.zip",

@@ -52,6 +52,7 @@ export const SECTIONS = [
   "alpha/",
   "astraea/",
   "tsubomi/",
+  "halia/",
   "noctua/",
 ] as const;
 export type Section = (typeof SECTIONS)[number];

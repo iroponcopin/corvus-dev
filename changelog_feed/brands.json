@@ -31,6 +31,11 @@
    "id": "tsubomi",
    "name": "Tsubomi",
    "feed": "changelog_feed/tsubomi/{lang}.json"
+  },
+  {
+   "id": "halia",
+   "name": "Halia",
+   "feed": "changelog_feed/halia/{lang}.json"
   }
  ]
 }

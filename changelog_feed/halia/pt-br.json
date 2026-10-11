@@ -1,0 +1,47 @@
+{
+ "lang": "pt-br",
+ "brand": "halia",
+ "updated": "2026-10-11",
+ "title": "Histórico de atualizações",
+ "updated_label": "Atualizado em 2026-10-11",
+ "note": "",
+ "groups": [
+  {
+   "label": "V1.0",
+   "summary": "Halia V1.0 — o Stellar Remote e três ataques vindos da órbita",
+   "releases": [
+    {
+     "version": "V1.0.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "Halia V1.0 — o Stellar Remote e três ataques vindos da órbita",
+     "summary": "A primeira versão do Halia (The Max Model), para Minecraft 26.3: o Stellar Remote, um único botão vermelho que dispara três ataques — SS-01 Railgun, SS-03 Gungnir e SS-04 Seven Stars. Eles destroem de forma permanente áreas muito grandes do mundo; leia os avisos antes de apertar.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "Stellar Remote: um botão vermelho sob uma tampa articulada, com modelo 3D próprio. Fica na aba do modo Criativo \"Halia\". Nesta versão não há receita de fabricação para ele.",
+        "Controles: segure o controle e aperte K, I ou U para escolher SS-01, SS-03 ou SS-04; o clique direito lança o ataque escolhido no chão para onde a mira aponta; agachar + clique direito escolhe o próximo. As teclas podem ser reatribuídas. Um cartão ao lado da barra rápida mostra o ataque escolhido, a tecla dele e o tempo de recarga.",
+        "SS-01 Railgun: um laser vermelho sinaliza o chão e, cerca de 18 segundos depois de apertar o botão, desce um feixe com 200 blocos de raio que remove toda a coluna do mundo, do limite de construção até o vazio.",
+        "SS-03 Gungnir: cerca de 16 segundos depois de apertar o botão, uma agulha preta cai na vertical. Um anel de choque se espalha até 400 blocos, raspa o terreno até a altura do impacto e deixa uma cratera derretida. A agulha fica, de pé do fundo do mundo até o limite de construção.",
+        "SS-04 Seven Stars: as sete estrelas principais da Ursa Maior são projetadas no terreno, 7 nós ao longo de cerca de 1440 blocos. 7 estrelas caem uma após a outra; cada uma cava uma cratera e deixa nela um cristal de Star Core. Depois, as 7 linhas da figura ficam gravadas como valas, com Star Trace no fundo.",
+        "Filmes: cada ataque exibe, para o jogador que o lançou, um filme dentro do jogo — câmera, HUD e cenas no espaço. Aperte J para pular um filme em exibição; se nenhum estiver em exibição, J desliga ou liga os filmes. O ataque acontece de qualquer forma.",
+        "Tempo de recarga: cada ataque tem seu próprio tempo de recarga de 60 segundos (1 segundo no modo Criativo). Enquanto o seu último ataque do mesmo tipo estiver em andamento, você não pode lançá-lo de novo.",
+        "Ficam quatro blocos que podem ser minerados e levados: Block of Tungsten e Thermal Conduit da agulha de Gungnir, Star Core e Star Trace de Seven Stars. Três precisam de uma picareta de diamante ou melhor; o Block of Tungsten precisa de uma picareta de netherita. Os quatro também estão na aba do modo Criativo."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais novo, Fabric API 0.161.0+26.3 ou mais nova e Java 25. No multijogador, o Halia também precisa estar instalado no servidor.",
+        "Os ataques destroem o terreno de forma permanente e em escala muito grande; não há como desfazer. SS-01 remove tudo a até 200 blocos do alvo, do limite de construção até o vazio. Gungnir raspa, a até 400 blocos do impacto, tudo o que está acima da altura do impacto, e cava uma cratera no centro. Seven Stars cava 7 crateras e 7 valas ao longo de cerca de 1440 blocos. Faça antes um backup do seu mundo, e não use o Stellar Remote em um mundo ou servidor do qual você não esteja disposto a perder partes.",
+        "Um ataque mata todo ser vivo dentro da sua zona, inclusive o jogador que o lançou; só os jogadores no modo Criativo ou Espectador são poupados. Construções, baús e itens caídos na área destruída são perdidos. Fora da zona, o choque de Gungnir ainda arremessa e fere criaturas a até 1000 blocos do impacto.",
+        "Um único ataque carrega e reescreve de centenas a milhares de chunks; o jogo pode travar por instantes enquanto isso."
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

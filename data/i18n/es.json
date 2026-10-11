@@ -117,7 +117,7 @@
    "aureum": "Aureum"
   },
   "page_descriptions": {
-   "changelog": "El historial de actualizaciones de OUKA, Cherry, Aureum, ASTRAEA y Tsubomi, y el aviso del fin de Alpha. Elige una marca para ver qué cambió en cada versión, de la más reciente a la más antigua.",
+   "changelog": "El historial de actualizaciones de OUKA, Cherry, Aureum, ASTRAEA, Tsubomi y Halia, y el aviso del fin de Alpha. Elige una marca para ver qué cambió en cada versión, de la más reciente a la más antigua.",
    "recipes": "Una tabla de consulta rápida con las recetas de creación de todos los objetos de Cherry, OUKA y ASTRAEA. Admite búsqueda y filtro por categoría.",
    "download": "Alpha ha dejado de distribuirse. Su última versión, V{pack_version}, desactiva Alpha; está aquí con tamaño de archivo y SHA-256, junto a las descargas de Corvus y Aureum.",
    "aureum": "Aureum: un mod de optimización ligero, independiente y medido con honestidad. No sustituye a Sodium: optimiza el lado que Sodium no toca."
@@ -723,6 +723,29 @@
     "warnings": [
      "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
      "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
+    ]
+   }
+  ],
+  "halia": [
+   {
+    "id": "halia-v1.0.0",
+    "title": "Halia V1.0 — el Stellar Remote y tres ataques desde la órbita",
+    "summary": "La primera versión de Halia (The Max Model), para Minecraft 26.3: el Stellar Remote, un único botón rojo que desata tres ataques — SS-01 Railgun, SS-03 Gungnir y SS-04 Seven Stars. Destruyen de forma permanente zonas muy grandes del mundo; lee las advertencias antes de pulsarlo.",
+    "highlights": [
+     "Stellar Remote: un botón rojo bajo una tapa abatible, con su propio modelo 3D. Está en la pestaña del modo Creativo «Halia». En esta versión no tiene receta de fabricación.",
+     "Controles: sujeta el mando y pulsa K, I o U para elegir SS-01, SS-03 o SS-04; con clic derecho lanzas el ataque elegido sobre el suelo al que apunta la mira; agacharse + clic derecho elige el siguiente. Las teclas se pueden reasignar. Una tarjeta junto a la barra rápida muestra el ataque elegido, su tecla y su tiempo de recarga.",
+     "SS-01 Railgun: un láser rojo señala el suelo y, unos 18 segundos después de pulsar el botón, baja un rayo de 200 bloques de radio que elimina toda la columna del mundo, desde el límite de construcción hasta el vacío.",
+     "SS-03 Gungnir: unos 16 segundos después de pulsar el botón, una aguja negra cae en vertical. Un anillo de choque se extiende hasta 400 bloques, arrasa el terreno hasta la altura del impacto y deja un cráter fundido. La aguja se queda, en pie desde el fondo del mundo hasta el límite de construcción.",
+     "SS-04 Seven Stars: el Carro de la Osa Mayor se proyecta sobre el terreno, 7 nodos a lo largo de unos 1440 bloques. Caen 7 estrellas, una tras otra; cada una excava un cráter y deja dentro un cristal de Star Core. Después, las 7 líneas de la figura quedan grabadas como zanjas, con Star Trace en el fondo.",
+     "Películas: cada ataque reproduce, para el jugador que lo lanzó, una película dentro del juego — cámara, HUD y escenas en el espacio. Pulsa J para saltar una película en curso; si no hay ninguna en curso, J desactiva o activa las películas. El ataque ocurre en cualquier caso.",
+     "Tiempo de recarga: cada ataque tiene su propio tiempo de recarga de 60 segundos (1 segundo en modo Creativo). Mientras tu último ataque del mismo tipo siga en curso, no puedes volver a lanzarlo.",
+     "Quedan cuatro bloques que se pueden picar y llevar: Block of Tungsten y Thermal Conduit de la aguja de Gungnir, Star Core y Star Trace de Seven Stars. Tres necesitan un pico de diamante o mejor; el Block of Tungsten necesita un pico de netherita. Los cuatro están también en la pestaña del modo Creativo."
+    ],
+    "warnings": [
+     "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. En multijugador, Halia también debe estar instalado en el servidor.",
+     "Los ataques destruyen el terreno de forma permanente y a muy gran escala; no se puede deshacer. SS-01 elimina todo lo que hay a menos de 200 bloques del objetivo, desde el límite de construcción hasta el vacío. Gungnir arrasa, a menos de 400 bloques del impacto, todo lo que queda por encima de la altura del impacto, y excava un cráter en el centro. Seven Stars excava 7 cráteres y 7 zanjas a lo largo de unos 1440 bloques. Haz antes una copia de seguridad de tu mundo, y no uses el Stellar Remote en un mundo o servidor del que no estés dispuesto a perder partes.",
+     "Un ataque mata a todo ser vivo dentro de su zona, incluido el jugador que lo lanzó; solo se salvan los jugadores en modo Creativo o Espectador. Las construcciones, los cofres y los objetos sueltos de la zona destruida se pierden. Fuera de su zona, el choque de Gungnir todavía lanza y hiere a las criaturas hasta a 1000 bloques del impacto.",
+     "Un solo ataque carga y reescribe de cientos a miles de chunks; el juego puede ir a tirones mientras dura."
     ]
    }
   ]

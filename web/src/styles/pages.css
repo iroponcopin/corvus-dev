@@ -35,6 +35,9 @@
 [data-brand="tsubomi"] {
   --brand: #8fe3b0;
 }
+[data-brand="halia"] {
+  --brand: #d9b56a;
+}
 [data-brand="corvus"] {
   --brand: #2997ff;
 }

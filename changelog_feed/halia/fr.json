@@ -1,0 +1,47 @@
+{
+ "lang": "fr",
+ "brand": "halia",
+ "updated": "2026-10-11",
+ "title": "Historique des mises à jour",
+ "updated_label": "Mis à jour le 2026-10-11",
+ "note": "",
+ "groups": [
+  {
+   "label": "V1.0",
+   "summary": "Halia V1.0 — la Stellar Remote et trois frappes depuis l'orbite",
+   "releases": [
+    {
+     "version": "V1.0.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "Halia V1.0 — la Stellar Remote et trois frappes depuis l'orbite",
+     "summary": "La première version de Halia (The Max Model), pour Minecraft 26.3 : la Stellar Remote, un seul bouton rouge qui déclenche trois frappes — SS-01 Railgun, SS-03 Gungnir et SS-04 Seven Stars. Elles détruisent définitivement de très grandes parties du monde ; lisez les avertissements avant d'appuyer.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Stellar Remote : un bouton rouge sous un capot rabattable, avec son propre modèle 3D. Elle se trouve dans l'onglet créatif « Halia ». Cette version ne contient aucune recette de fabrication pour elle.",
+        "Commandes : tenez la télécommande et appuyez sur K, I ou U pour choisir SS-01, SS-03 ou SS-04 ; un clic droit lance la frappe choisie sur le sol visé par le réticule ; s'accroupir + clic droit choisit la suivante. Les touches peuvent être réassignées. Une carte à côté de la barre d'accès rapide affiche la frappe choisie, sa touche et son temps de recharge.",
+        "SS-01 Railgun : un laser rouge désigne le sol et, environ 18 secondes après l'appui sur le bouton, un faisceau de 200 blocs de rayon descend et supprime toute la colonne du monde, de la limite de construction jusqu'au vide.",
+        "SS-03 Gungnir : environ 16 secondes après l'appui sur le bouton, une aiguille noire frappe à la verticale. Un anneau de choc s'étend jusqu'à 400 blocs, rase le terrain jusqu'à la hauteur de l'impact et laisse un cratère en fusion. L'aiguille reste en place, dressée du fond du monde jusqu'à la limite de construction.",
+        "SS-04 Seven Stars : la Grande Casserole est projetée sur le terrain, 7 nœuds sur environ 1440 blocs de large. 7 étoiles tombent l'une après l'autre ; chacune creuse un cratère et y laisse un cristal de Star Core. Puis les 7 lignes de la figure sont gravées en tranchées, avec du Star Trace au fond.",
+        "Films : chaque frappe lance, pour le joueur qui l'a déclenchée, un film dans le jeu — caméra, HUD et scènes dans l'espace. Appuyez sur J pour passer un film en cours ; si aucun film n'est en cours, J désactive ou réactive les films. La frappe a lieu dans tous les cas.",
+        "Temps de recharge : chaque frappe a son propre temps de recharge de 60 secondes (1 seconde en mode Créatif). Tant que votre dernière frappe du même type est en cours, vous ne pouvez pas la relancer.",
+        "Quatre blocs restent sur place et peuvent être minés et emportés : Block of Tungsten et Thermal Conduit pour l'aiguille de Gungnir, Star Core et Star Trace pour Seven Stars. Trois demandent une pioche en diamant ou mieux ; le Block of Tungsten demande une pioche en netherite. Les quatre sont aussi dans l'onglet créatif."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. En multijoueur, Halia doit aussi être installé sur le serveur.",
+        "Les frappes détruisent le terrain de façon définitive et à très grande échelle ; il n'y a pas d'annulation. SS-01 supprime tout dans un rayon de 200 blocs autour de la cible, de la limite de construction jusqu'au vide. Gungnir rase, dans un rayon de 400 blocs autour de l'impact, tout ce qui dépasse la hauteur de l'impact, et creuse un cratère au centre. Seven Stars creuse 7 cratères et 7 tranchées sur environ 1440 blocs. Sauvegardez d'abord votre monde, et n'utilisez pas la Stellar Remote dans un monde ou sur un serveur dont vous n'êtes pas prêt à perdre des parties.",
+        "Une frappe tue tout être vivant dans sa zone, y compris le joueur qui l'a déclenchée ; seuls les joueurs en mode Créatif ou Spectateur sont épargnés. Les constructions, les coffres et les objets au sol dans la zone détruite sont perdus. Hors de sa zone, le choc de Gungnir projette et blesse encore les créatures jusqu'à 1000 blocs de l'impact.",
+        "Une seule frappe charge et réécrit des centaines à des milliers de chunks ; le jeu peut saccader pendant ce temps."
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

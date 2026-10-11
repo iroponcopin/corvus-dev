@@ -117,7 +117,7 @@
    "aureum": "Aureum"
   },
   "page_descriptions": {
-   "changelog": "OUKA, Cherry, Aureum, ASTRAEA ve Tsubomi'nin güncelleme geçmişi ve Alpha'nın sonunu bildiren duyuru. Her sürümde neyin değiştiğini görmek için bir marka seçin; en yeni en üstte.",
+   "changelog": "OUKA, Cherry, Aureum, ASTRAEA, Tsubomi ve Halia'nın güncelleme geçmişi ve Alpha'nın sonunu bildiren duyuru. Her sürümde neyin değiştiğini görmek için bir marka seçin; en yeni en üstte.",
    "recipes": "Cherry, OUKA ve ASTRAEA'daki her eşyanın üretim tariflerini gösteren hızlı başvuru tablosu. Arama ve kategori filtresi destekler.",
    "download": "Alpha artık dağıtılmıyor. Son sürümü V{pack_version}, Alpha'yı kapatır; burada dosya boyutu ve SHA-256 ile, Corvus ve Aureum indirmelerinin yanında duruyor.",
    "aureum": "Aureum: ayrı, dürüstçe ölçülmüş, hafif bir optimizasyon modu. Sodium'un yerine geçmez — Sodium'un dokunmadığı tarafı optimize eder."
@@ -723,6 +723,29 @@
     "warnings": [
      "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
      "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
+    ]
+   }
+  ],
+  "halia": [
+   {
+    "id": "halia-v1.0.0",
+    "title": "Halia V1.0 — Stellar Remote ve yörüngeden üç saldırı",
+    "summary": "Halia'nın (The Max Model) Minecraft 26.3 için ilk sürümü: Stellar Remote, üç saldırı çağıran tek bir kırmızı düğme — SS-01 Railgun, SS-03 Gungnir ve SS-04 Seven Stars. Bunlar dünyanın çok büyük bölümlerini kalıcı olarak yok eder; düğmeye basmadan önce uyarıları oku.",
+    "highlights": [
+     "Stellar Remote: açılır bir kapağın altında tek bir kırmızı düğme; kendi 3D modeli var. Yaratıcı mod sekmesi \"Halia\" içinde bulunur. Bu sürümde üretim tarifi yoktur.",
+     "Kontroller: kumandayı elinde tut ve SS-01, SS-03 veya SS-04 seçmek için K, I veya U tuşuna bas; sağ tık, seçili saldırıyı nişangâhın gösterdiği zemine başlatır; eğilme + sağ tık bir sonrakini seçer. Tuşlar yeniden atanabilir. Hızlı erişim çubuğunun yanındaki kart seçili saldırıyı, tuşunu ve bekleme süresini gösterir.",
+     "SS-01 Railgun: kırmızı bir lazer zemini işaretler ve düğmeye basıldıktan yaklaşık 18 saniye sonra 200 blok yarıçaplı bir ışın iner; inşa sınırından boşluğa kadar dünyanın bütün sütununu kaldırır.",
+     "SS-03 Gungnir: düğmeye basıldıktan yaklaşık 16 saniye sonra siyah bir iğne dimdik yukarıdan çarpar. Şok halkası 400 bloğa kadar yayılır, araziyi çarpma yüksekliğine kadar kazır ve erimiş bir krater bırakır. İğne yerinde kalır; dünyanın dibinden inşa sınırına kadar dikilir.",
+     "SS-04 Seven Stars: Büyük Kepçe araziye yansıtılır; 7 düğüm, yaklaşık 1440 blok genişlik. 7 yıldız art arda düşer; her biri bir krater kazar ve içine bir Star Core kristali bırakır. Sonra şeklin 7 çizgisi hendek olarak yakılır ve tabanlarında Star Trace kalır.",
+     "Filmler: her saldırı, onu başlatan oyuncuya oyun içi bir film oynatır — kamera, HUD ve uzay sahneleri. Oynayan bir filmi atlamak için J tuşuna bas; film oynamıyorsa J filmleri kapatır veya açar. Saldırı her durumda gerçekleşir.",
+     "Bekleme süresi: her saldırının kendi 60 saniyelik bekleme süresi vardır (Yaratıcı modda 1 saniye). Aynı türden son saldırın sürerken onu yeniden başlatamazsın.",
+     "Geride kazılıp alınabilen dört blok kalır: Gungnir'in iğnesinden Block of Tungsten ve Thermal Conduit, Seven Stars'tan Star Core ve Star Trace. Üçü için elmas kazma veya daha iyisi gerekir; Block of Tungsten için netherit kazma gerekir. Dördü de Yaratıcı mod sekmesinde bulunur."
+    ],
+    "warnings": [
+     "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Çok oyunculu oyunda Halia sunucuya da kurulmalıdır.",
+     "Saldırılar araziyi kalıcı olarak ve çok büyük ölçekte yok eder; geri alınamaz. SS-01, hedefin 200 blok çevresindeki her şeyi inşa sınırından boşluğa kadar kaldırır. Gungnir, çarpma noktasının 400 blok çevresinde çarpma yüksekliğinin üstündeki her şeyi kazır ve ortada bir krater açar. Seven Stars, yaklaşık 1440 blok boyunca 7 krater ve 7 hendek kazar. Önce dünyanı yedekle; bir kısmını kaybetmeye hazır olmadığın bir dünyada veya sunucuda Stellar Remote kullanma.",
+     "Bir saldırı, bölgesindeki her canlıyı öldürür; onu başlatan oyuncu da buna dahildir. Yalnızca Yaratıcı veya Seyirci modundaki oyuncular kurtulur. Yok edilen alandaki yapılar, sandıklar ve yerdeki eşyalar kaybolur. Bölgenin dışında Gungnir'in şoku, çarpma noktasından 1000 blok uzağa kadar canlıları hâlâ fırlatır ve yaralar.",
+     "Tek bir saldırı yüzlerce ila binlerce chunk yükler ve yeniden yazar; bu sırada oyun takılabilir."
     ]
    }
   ]

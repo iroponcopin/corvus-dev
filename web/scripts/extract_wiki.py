@@ -57,9 +57,9 @@ BASE_URL = SC.SITE_BASE_URL
 BASE_PATH = "/aurora-corvus"
 LANGS = SC.available_langs()
 # The models with a page of their own (src/app/[lang]/<id>/).
-MODEL_PAGES = ("ouka", "cherry", "aureum", "alpha", "astraea", "tsubomi", "noctua")
+MODEL_PAGES = ("ouka", "cherry", "aureum", "alpha", "astraea", "tsubomi", "noctua", "halia")
 SECTIONS = ["", "launcher/", "download/", "recipes/", "changelog/", "announcement/", "teasers/", "skin/", "discord/",
-            "ouka/", "cherry/", "cherry-controls/", "aureum/", "alpha/", "astraea/", "tsubomi/", "noctua/"]
+            "ouka/", "cherry/", "cherry-controls/", "aureum/", "alpha/", "astraea/", "tsubomi/", "noctua/", "halia/"]
 
 
 def die(msg: str) -> None:
@@ -172,7 +172,8 @@ def git_facts() -> dict:
 
 def product_ids() -> list[str]:
     """The Store order (the portal's STORE_ORDER): the brand line, then the coming and the archived."""
-    return ["ouka", "cherry", "aureum", "astraea", "tsubomi", "noctua", "alpha"]
+    # Halia first (2026-10-11): the owner's order is HALIA, ASTRAEA, OUKA, CHERRY, TSUBOMI, and the Store lists it first.
+    return ["halia", "ouka", "cherry", "aureum", "astraea", "tsubomi", "noctua", "alpha"]
 
 
 def availability(pid: str, manifest: dict, retirement: dict) -> str:
@@ -519,19 +520,19 @@ MODEL_USED: set[tuple[str, str]] = set()
 # they now state the tier. Pinnacle is a name, like Xhigh and High, in every language (owner, 2026-10-04:
 # 「日英どちらもPinnacleを使用します。」); Medium is ミディアム in Japanese, 미디엄 in Korean.
 TIERS: dict[str, dict[str, str]] = {
-    "ja": {"astraea": "Pinnacleモデル", "ouka": "Xhighモデル", "cherry": "Highモデル", "tsubomi": "ミディアムモデル"},
-    "en": {"astraea": "Pinnacle Model", "ouka": "Xhigh Model", "cherry": "High Model", "tsubomi": "Medium Model"},
-    "es": {"astraea": "Modelo Pinnacle", "ouka": "Modelo Xhigh", "cherry": "Modelo High", "tsubomi": "Modelo Medium"},
-    "fr": {"astraea": "Modèle Pinnacle", "ouka": "Modèle Xhigh", "cherry": "Modèle High", "tsubomi": "Modèle Medium"},
-    "zh": {"astraea": "Pinnacle 型号", "ouka": "Xhigh 型号", "cherry": "High 型号", "tsubomi": "Medium 型号"},
-    "ko": {"astraea": "Pinnacle 모델", "ouka": "Xhigh 모델", "cherry": "High 모델", "tsubomi": "미디엄 모델"},
-    "pt-br": {"astraea": "Modelo Pinnacle", "ouka": "Modelo Xhigh", "cherry": "Modelo High", "tsubomi": "Modelo Medium"},
-    "it": {"astraea": "Modello Pinnacle", "ouka": "Modello Xhigh", "cherry": "Modello High", "tsubomi": "Modello Medium"},
-    "ar": {"astraea": "طراز Pinnacle", "ouka": "طراز Xhigh", "cherry": "طراز High", "tsubomi": "طراز Medium"},
-    "ru": {"astraea": "Модель Pinnacle", "ouka": "Модель Xhigh", "cherry": "Модель High", "tsubomi": "Модель Medium"},
-    "id": {"astraea": "Model Pinnacle", "ouka": "Model Xhigh", "cherry": "Model High", "tsubomi": "Model Medium"},
-    "de": {"astraea": "Pinnacle-Modell", "ouka": "Xhigh-Modell", "cherry": "High-Modell", "tsubomi": "Medium-Modell"},
-    "tr": {"astraea": "Pinnacle Modeli", "ouka": "Xhigh Modeli", "cherry": "High Modeli", "tsubomi": "Medium Modeli"},
+    "ja": {"halia": "Maxモデル", "astraea": "Pinnacleモデル", "ouka": "Xhighモデル", "cherry": "Highモデル", "tsubomi": "ミディアムモデル"},
+    "en": {"halia": "Max Model", "astraea": "Pinnacle Model", "ouka": "Xhigh Model", "cherry": "High Model", "tsubomi": "Medium Model"},
+    "es": {"halia": "Modelo Max", "astraea": "Modelo Pinnacle", "ouka": "Modelo Xhigh", "cherry": "Modelo High", "tsubomi": "Modelo Medium"},
+    "fr": {"halia": "Modèle Max", "astraea": "Modèle Pinnacle", "ouka": "Modèle Xhigh", "cherry": "Modèle High", "tsubomi": "Modèle Medium"},
+    "zh": {"halia": "Max 型号", "astraea": "Pinnacle 型号", "ouka": "Xhigh 型号", "cherry": "High 型号", "tsubomi": "Medium 型号"},
+    "ko": {"halia": "Max 모델", "astraea": "Pinnacle 모델", "ouka": "Xhigh 모델", "cherry": "High 모델", "tsubomi": "미디엄 모델"},
+    "pt-br": {"halia": "Modelo Max", "astraea": "Modelo Pinnacle", "ouka": "Modelo Xhigh", "cherry": "Modelo High", "tsubomi": "Modelo Medium"},
+    "it": {"halia": "Modello Max", "astraea": "Modello Pinnacle", "ouka": "Modello Xhigh", "cherry": "Modello High", "tsubomi": "Modello Medium"},
+    "ar": {"halia": "طراز Max", "astraea": "طراز Pinnacle", "ouka": "طراز Xhigh", "cherry": "طراز High", "tsubomi": "طراز Medium"},
+    "ru": {"halia": "Модель Max", "astraea": "Модель Pinnacle", "ouka": "Модель Xhigh", "cherry": "Модель High", "tsubomi": "Модель Medium"},
+    "id": {"halia": "Model Max", "astraea": "Model Pinnacle", "ouka": "Model Xhigh", "cherry": "Model High", "tsubomi": "Model Medium"},
+    "de": {"halia": "Max-Modell", "astraea": "Pinnacle-Modell", "ouka": "Xhigh-Modell", "cherry": "High-Modell", "tsubomi": "Medium-Modell"},
+    "tr": {"halia": "Max Modeli", "astraea": "Pinnacle Modeli", "ouka": "Xhigh Modeli", "cherry": "High Modeli", "tsubomi": "Medium Modeli"},
 }
 TIER_LINES: dict[str, list[tuple[str, str]]] = {
     "ja": [("Cherry の上に立つ、最上位のモデル。", "Xhighモデル。"), ("OUKA のすぐ下に位置するモデル。", "Highモデル。")],
@@ -653,17 +654,19 @@ def build_lang(lang: str, ctx: dict) -> dict:
     # Products: the Store's own catalogue, with the site's facts.
     products = {}
     for pid in product_ids():
+        # A product added after the legacy capture (Halia, 2026-10-11) has no legacy entry: the Store's own strings say it all.
+        legp = leg["store"]["products"].get(pid) or {"name": "", "jp": None, "category": "", "tagline": "", "headline": ""}
         avail = availability(pid, man, retired)
         cat_key = "store.category.archive" if pid == "alpha" else f"store.{pid}.category"
         p = {
             "id": pid,
-            "name": leg["store"]["products"][pid]["name"] or SC.NAV_LABEL_FALLBACK.get(pid, pid),
-            "jp": leg["store"]["products"][pid].get("jp"),
+            "name": legp["name"] or SC.NAV_LABEL_FALLBACK.get(pid, pid),
+            "jp": legp.get("jp"),
             "availability": avail,
-            "category": store.get(cat_key) or leg["store"]["products"][pid]["category"],
+            "category": store.get(cat_key) or legp["category"],
             "badge": store.get(f"store.{pid}.badge"),
-            "tagline": store.get(f"store.{pid}.tagline") or leg["store"]["products"][pid]["tagline"],
-            "headline": store.get(f"store.{pid}.headline") or leg["store"]["products"][pid]["headline"],
+            "tagline": store.get(f"store.{pid}.tagline") or legp["tagline"],
+            "headline": store.get(f"store.{pid}.headline") or legp["headline"],
             "story": store.get(f"store.{pid}.story"),
             "icon": f"icons/{pid}.png",
             "art": {"ouka": "art/ouka.png", "cherry": "art/cherry.png", "aureum": "art/aureum.jpg"}.get(pid),
@@ -750,6 +753,7 @@ def build_lang(lang: str, ctx: dict) -> dict:
     aureum_file = man["aureum"]
     astraea_file = man.get("astraea")
     tsubomi_file = man.get("tsubomi")
+    halia_file = man.get("halia")
     noctua_file = man.get("noctua")
     mc_reqs = [{"label": "Minecraft", "value": f"{ctx['mc']} · Fabric"}]
     download_page = {
@@ -770,6 +774,9 @@ def build_lang(lang: str, ctx: dict) -> dict:
         "tsubomi": tsubomi_file and {"version": tsubomi_file["latest"], "requirements": mc_reqs,
                                      "file": file_facts(tsubomi_file["file_name"], tsubomi_file["download_url"],
                                                         tsubomi_file["file_size"], tsubomi_file["sha256"])},
+        "halia": halia_file and {"version": halia_file["latest"], "requirements": mc_reqs,
+                                 "file": file_facts(halia_file["file_name"], halia_file["download_url"],
+                                                    halia_file["file_size"], halia_file["sha256"])},
         "noctua": noctua_file and {"version": noctua_file["latest"],
                                    "requirements": [{"label": "Palworld", "value": "Dedicated Server"}],
                                    "file": file_facts(noctua_file["file_name"], noctua_file["download_url"],
@@ -970,7 +977,7 @@ def main() -> None:
             "notFoundTitle": legacy["notFoundTitle"],
         },
         "versions": {"mc": versions.get("mc_version", ""), "launcher": manifest["launcher"]["latest"],
-                     **{k: manifest[k]["latest"] for k in ("ouka", "cherry", "aureum", "astraea", "tsubomi")
+                     **{k: manifest[k]["latest"] for k in ("ouka", "cherry", "aureum", "astraea", "tsubomi", "halia")
                         if k in manifest}},
         "store": {"jar": ctx["store"]["jar"], "version": ctx["store"]["version"]},
         "discord": {
