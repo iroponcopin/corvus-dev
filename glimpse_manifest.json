@@ -12,30 +12,30 @@
     "changelog_url": "https://iroponcopin.github.io/aurora-corvus/en/changelog/"
   },
   "launcher": {
-    "latest": "3.0.2",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-3.0.2.jar",
-    "file_name": "corvus-3.0.2.jar",
-    "file_size": 14692902,
-    "sha256": "dc6cd9856c1a33bd2b296a178444546631536d5ca30c7f8fe6064437989a8da6",
-    "notes": "Corvus Store 3.0.2 is a small release with two changes.\n\nTsubomi can now be installed from the Store. Tsubomi is published as one jar rather than a package of several, and Corvus Store 3.0.0 and 3.0.1 did not know that shape, so its card said \"Coming soon\". The card now has a GET button like OUKA, Cherry, ASTRAEA and Aureum have. Pressing it downloads the jar, checks its size and SHA-256 against the site, and puts it in your mods folder; once it is installed, Tsubomi updates itself in place, and an installed copy is found by what the jar is, not by what the file is called. Tsubomi cannot run beside Alpha: its own jar says so, and Minecraft would refuse to start. So if your mods folder holds any Alpha module, the Store says so in one plain sentence that names the jars, and changes nothing. That applies to updates too.\n\nThe icons are the new ones. OUKA, Cherry, Aureum and Corvus Store itself now show the same icons as the website; they are the website's own files, not redrawn copies, and the big pictures on the Today cards of OUKA, Cherry and Aureum are the website's new banners. In a language that reads right to left the banner is arranged for it, with the emblem on the left and drawn as it is, not mirrored. The old marks are gone from the application, from the macOS, Windows and Linux installers' icons, and from the Today cards. One thing to know: the largest size inside the macOS icon is the 512 pixel logo enlarged, because 512 pixels is all the studio supplied.\n\nEverything else is 3.0.1.\n\nVerified: 933 unit tests pass, with the compiler set to refuse any warning, and two clean builds made byte-identical programs. The Store was drawn without a window in all 13 languages (138 checks each, English, Japanese and Arabic included), and no icon, banner or preview in the program has the bytes of an old one (a test keeps the old marks out and holds the new ones to the website's files). It was run against the real update check with a manifest served from this machine (50 checks, 12 of them new for Tsubomi): with no Tsubomi block the card says Coming soon; with one it offers GET at 1.0.0 and does not install by itself; beside an Alpha module it refuses and leaves the folder unchanged; once installed it shows OPEN and updates itself to 1.0.1. The real Tsubomi 1.0.0 jar from this site went through the installer too: its thirteen Alpha module ids are found, it installs into a clean folder and is refused beside an Alpha module. The built application was driven in a real window twice: all 94 of the window instrument's claims held in each run, none failed, none were undecided. Perch's own instrument, on this build: 47 claims held in one run and 49 in the other, none failed, and three and one could not be decided because the machine was busy (Perch is unchanged since 3.0.0). The macOS installer, built by CI, was opened here and the app inside it run: it reports 3.0.2, its icon file is the one in the repository, and it draws all five screens with the new icons and a GET button on Tsubomi; it is built for Apple Silicon Macs only.\nNot verified, and worth saying: Tsubomi in a real Minecraft client (nobody has run it there yet); a Tsubomi download from this site through a real Store window (the real jar went through the installer directly, and the check against the update code used a copy served from this machine); how the refusal dialog's long sentence is laid out; that sentence is in English in every language, like the other install failures; the Windows and Linux installers, which nobody has installed or run; and the Tsubomi words in the twelve languages other than English, which are the ASTRAEA wording with the name swapped and which nobody who speaks them has read.",
+    "latest": "3.0.3",
+    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-3.0.3.jar",
+    "file_name": "corvus-3.0.3.jar",
+    "file_size": 14810934,
+    "sha256": "53bafe1829a156f882875d5b8c0d7069de4945b6821cdc7e1c9cd5e4702acf11",
+    "notes": "Corvus Store 3.0.3 adds Halia.\n\nHalia, The Max Model, is now in the Store, first on the shelf, with a GET button. It is published as one jar, like Tsubomi, and is installed the same way: pressing GET downloads the jar, checks its size and SHA-256 against the site, and puts it in your mods folder; once it is installed, Halia updates itself in place. Read its page before you press the button in the game: Halia's orbital strikes destroy very large areas of a world for good, so back up your world first. Halia needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25; for multiplayer it must be on the server too.\n\nThe installed app can now check itself. Running \"Corvus --live-install-check <report file>\" makes it install every mod the site publishes into scratch folders, with its own bundled Java, and write what happened to that file. It was written because a Windows 11 player could not get Tsubomi and nobody had the text of the error. Run on a Windows machine with the Windows installer installed, it installed Cherry, OUKA, ASTRAEA and Tsubomi from this site without a failure, so that report is not reproduced and nothing in the installer was changed for it. One known cause that is not a fault: Tsubomi is refused, on purpose, while any Alpha module is in the mods folder.\n\nEverything else is 3.0.2.\n\nVerified: 934 unit tests pass, and two clean builds made byte-identical programs. The Store was drawn without a window in all 13 languages (145 checks each, none failed). It was run against the real update check with a manifest served from this machine (50 checks). The built application was driven in a real window twice: all 94 of the window instrument's claims held in each run. The real Halia 1.0.0 jar went through the installer with a manifest carrying its entry: it installs beside other mods and refuses nothing. The macOS installer, built by CI, was opened here and the app inside it run: it reports 3.0.3 and draws all five screens with Halia on the shelf; it is built for Apple Silicon Macs only.\nNot verified, and worth saying: Perch's own instrument failed one claim once (the volume bar's swell under the pointer) while this machine was very busy and passed when repeated, and Perch is unchanged since 3.0.0; Halia has not been pressed in a real Store window against this site before this release; Halia on Windows, in multiplayer or beside the other mods in a real game; the Windows and Linux installers of this build, which nobody has installed by hand; eleven unit tests fail on Windows (helper scripts and wording written for macOS and Linux, none in the mod installer) and have not been sorted; and Halia's one-line description in the eleven languages other than English and Japanese, which nobody who speaks them has read.",
     "native": {
       "macos": {
-        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-3.0.2-macos.dmg",
-        "file_name": "corvus-3.0.2-macos.dmg",
-        "file_size": 64441072,
-        "sha256": "bb55261f67209990adef50ed0edbbdb67a0514b29dce8a2412103d72e11fe807"
+        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-3.0.3-macos.dmg",
+        "file_name": "corvus-3.0.3-macos.dmg",
+        "file_size": 64557177,
+        "sha256": "6339f4db0ff51bd70d46cb735f62332b630950a17e4d431830176ad1276ecd9c"
       },
       "windows": {
-        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-3.0.2-windows.msi",
-        "file_name": "corvus-3.0.2-windows.msi",
-        "file_size": 62137180,
-        "sha256": "704659e54036759268493b8a04ee0ca3408d09584d5b5d5951661d154b4a7db2"
+        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-3.0.3-windows.msi",
+        "file_name": "corvus-3.0.3-windows.msi",
+        "file_size": 62255964,
+        "sha256": "97d015dd81dcf4224353155a608e94e1e0a0fd571115ea27fffcc9dd3b4644c1"
       },
       "linux": {
-        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-3.0.2-linux.deb",
-        "file_name": "corvus-3.0.2-linux.deb",
-        "file_size": 51532032,
-        "sha256": "67097c33dfe21418fa1e8753919b9de919c12d270f4d6b00ef26f3d0710dc1cd"
+        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-3.0.3-linux.deb",
+        "file_name": "corvus-3.0.3-linux.deb",
+        "file_size": 51704908,
+        "sha256": "9f2d88a178c6929b86376b144b4010c8d11141227dec3997d666133306b2a06d"
       }
     }
   },
