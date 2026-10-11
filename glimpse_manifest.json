@@ -93,17 +93,17 @@
   },
   "astraea": {
     "mod_id": "astraea",
-    "latest": "1.1.0",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/ASTRAEA_MODs_v1.1.0+mc26.3.zip",
-    "file_name": "ASTRAEA_MODs_v1.1.0+mc26.3.zip",
-    "file_size": 1869633,
-    "sha256": "86d4ea5c8e6ce853cb2363d3c1aadac4a74cfcef224396438c8b347bc7c455cc",
+    "latest": "1.5.0",
+    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/ASTRAEA_MODs_v1.5.0+mc26.3.zip",
+    "file_name": "ASTRAEA_MODs_v1.5.0+mc26.3.zip",
+    "file_size": 3296633,
+    "sha256": "737706b52d8c4fee7dbe58369998f36b506603a8c27b8f9362a9710608f5c495",
     "jars": {
       "astraea": {
-        "path": "mods/astraea-1.1.0+mc26.3.jar",
-        "version": "1.1.0",
-        "file_size": 1975133,
-        "sha256": "c97e696f85495e117b2478792edb99fa8b912359f7a6a2a04f7677339e3c7b3b"
+        "path": "mods/astraea-1.5.0+mc26.3.jar",
+        "version": "1.5.0",
+        "file_size": 3711603,
+        "sha256": "5d103ad3525078cb3776706c206121a5bf8bed5c2eebde93b53fe1c82a46e639"
       }
     }
   },

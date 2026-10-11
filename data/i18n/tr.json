@@ -634,6 +634,22 @@
      "Minecraft 26.3, Fabric Loader 0.19.5 veya üzeri, Fabric API 0.161.0+26.3 veya üzeri ve Java 25 gerekir. OUKA 1.3.1 veya üzeri isteğe bağlıdır: onunla cihazlar bir Tesla Pylon'un 64 blok yakınında güç alır; onsuz her zaman güçlüdür.",
      "Cherry 1.2.0 ve OUKA 1.3.1 ile birlikte test edildi. Alpha ile birlikte kurulum desteklenmez. Bir kamera yalnızca yüklü alanınızın içindeyken görüntü verir."
     ]
+   },
+   {
+    "id": "astraea-v1.5.0",
+    "title": "The 49 Sovereign Implementations",
+    "summary": "V1.0 ve V1.1'in üzerine kırk dokuz sistem: 9 × 9 bir üretim tezgâhı ve zırhı, Ay'a ve Mars'a roketler, savaş makineleri ve ayarlanabilir arabalar, bir fisyon santrali, bir rafineri, pnömatik tüpler ve dronlar, efsanevi patronlar, yüz döşeme eşyası ve neyden yapıldığını söyleyen bir Codex.",
+    "highlights": [
+     "Oracle Crucible ve Zenith ekipmanı: 9 × 9 tezgâh ve Core Press, Zenith zırhını ve Zenith Cutter'ı yapar. Yedi aksesuar yuvası (H) yüzükleri, bir kolyeyi, bir kemeri, bir muskayı, bir pelerini ve Sovereign Crown'ı alır.",
+     "Kozmik Sınır: Apex Rocket, Orbital Station'a, Ay'a ve Mars'a uçar; havası olmayan ve yerçekimi düşük dünyalar. Orada bir Life-Support Unit kapalı bir odayı havayla doldurur ve kayada demir, bakır ve altın cevheri bulunur.",
+     "Makineler: zırhlı bir araba ve bir çift kanatlı uçak; motor, lastik ve koçbaşı tampon takılabilen ve vagonet çeken bir şasi; bir fisyon santrali; dört aşamalı bir rafineri (bir cevher, beş külçe); hava tüpleri ve pedler arasında yük taşıyan bir basınç dronu.",
+     "Codex of Creation: oyundaki her eşya tek bir aranabilir ekranda; birini seçin ve en temel hammaddelere kadar neyden yapıldığının ağacını görün. Üç efsanevi patron (Steel Guardian, Sunlit Chieftain ve Frostfield Behemoth) her biri kendi mührüyle çağrılır; her hamle, vurmadan önce zeminde ve gövdede gösterilir ve her patron üç evrede daha da sertleşir.",
+     "Celestial Blade Engine V2, \"Kamui\": SSS stil rütbesinde kınına sokun; 12 blok içindeki her düşman tutulur, sonra dokuz kez kesilir. Plasma Saber artık okları ve mermileri ayna gibi geri yansıtır; elde tutulan bir meşale ya da yanan bir saber çevrenizdeki zemini aydınlatır."
+    ],
+    "warnings": [
+     "Minecraft 26.3, Fabric Loader 0.19.5 veya üzeri, Fabric API 0.161.0+26.3 veya üzeri ve Java 25 gerekir. OUKA isteğe bağlıdır. Cherry 1.2.0 ve OUKA 1.3.1 ile birlikte test edildi; Alpha ile birlikte kurulum desteklenmez. Her sistem ve on dokuz kolaylığın her biri config/astraea-sovereign.json içinde kapatılabilir.",
+     "Bu sürümde olmayanlar: gövdeler eklemlerden bükülmez (yalnızca eğilir, zıplar ve düşer); elde tutulan ışık yaratıkları aydınlatmaz, su yansımaları ve normal haritalar yoktur; pistonlar sandıkları hareket ettirmez. Ayrıca düzeltildi: birinci kişi görünümde Celestial Blade ve Muramasa artık ikinci bir kılıç göstermiyor ve bloklar patlamalarda düşme kurallarına uyuyor."
+    ]
    }
   ],
   "tsubomi": [

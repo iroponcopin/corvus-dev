@@ -634,6 +634,22 @@
      "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. OUKA 1.3.1 oder neuer ist optional: damit beziehen die Geräte Strom im Umkreis von 64 Blöcken um einen Tesla Pylon; ohne es sind sie immer versorgt.",
      "Zusammen mit Cherry 1.2.0 und OUKA 1.3.1 getestet. Die gleichzeitige Installation mit Alpha wird nicht unterstützt. Eine Kamera zeigt nur ein Bild, solange sie in deinem geladenen Bereich liegt."
     ]
+   },
+   {
+    "id": "astraea-v1.5.0",
+    "title": "The 49 Sovereign Implementations",
+    "summary": "Neunundvierzig Systeme auf V1.0 und V1.1: eine 9 × 9 Werkbank und ihre Rüstung, Raketen zum Mond und Mars, Kriegsmaschinen und einstellbare Autos, ein Kernspaltungskraftwerk, eine Raffinerie, Pneumatikrohre und Drohnen, mythische Bosse, hundert Einrichtungsgegenstände und ein Codex, der dir sagt, woraus jeder Gegenstand besteht.",
+    "highlights": [
+     "Oracle Crucible und Zenith-Ausrüstung: Eine 9 × 9 Werkbank und die Core Press stellen die Zenith-Rüstung und den Zenith Cutter her. Sieben Zubehörplätze (H) nehmen Ringe, eine Halskette, einen Gürtel, einen Talisman, einen Umhang und die Sovereign Crown auf.",
+     "Kosmische Grenze: Die Apex Rocket fliegt zur Orbital Station, zum Mond und zum Mars – Welten ohne Luft und mit geringer Schwerkraft, wo eine Life-Support Unit einen abgedichteten Raum mit Luft füllt und das Gestein Eisen-, Kupfer- und Golderz enthält.",
+     "Maschinen: ein gepanzertes Auto und ein Doppeldecker, ein Chassis, an das du Motor, Reifen und einen Rammstoßfänger anbaust und das Loren zieht, ein Kernspaltungskraftwerk, eine vierstufige Raffinerie (ein Erz, fünf Barren), Aero-Rohre und eine Druckdrohne, die Fracht zwischen Landeplätzen transportiert.",
+     "Codex of Creation: jeder Gegenstand im Spiel auf einem durchsuchbaren Bildschirm; wähle einen aus und sieh den Baum dessen, woraus er besteht, bis hinunter zu den Rohstoffen. Drei mythische Bosse – der Steel Guardian, der Sunlit Chieftain und der Frostfield Behemoth – werden jeweils mit ihrem Siegel gerufen; jeder Angriff wird am Boden und am Körper gezeigt, bevor er trifft, und jeder Boss wird in drei Phasen gefährlicher.",
+     "Celestial Blade Engine V2, \"Kamui\": Stecke sie bei Stilrang SSS ein, und jeder Gegner innerhalb von 12 Blöcken wird festgehalten und dann neunmal geschnitten. Der Plasma Saber wirft Schüsse nun wie ein Spiegel zurück; eine gehaltene Fackel oder ein leuchtender Saber beleuchtet den Boden um dich herum."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. OUKA ist optional. Getestet zusammen mit Cherry 1.2.0 und OUKA 1.3.1; die gleichzeitige Installation mit Alpha wird nicht unterstützt. Jedes System und jede der neunzehn Komfortfunktionen lässt sich in config/astraea-sovereign.json abschalten.",
+     "Nicht in dieser Version: Körper beugen sich nicht an Gelenken (sie lehnen sich, springen und fallen nur); gehaltenes Licht beleuchtet keine Kreaturen, und es gibt keine Wasserspiegelungen oder Normal Maps; Kolben bewegen keine Truhen. Außerdem behoben: In der Ich-Perspektive zeigen Celestial Blade und Muramasa kein zweites Schwert mehr, und Blöcke folgen bei Explosionen nun ihren Abbauregeln."
+    ]
    }
   ],
   "tsubomi": [

@@ -47,7 +47,7 @@
   "cherry:c_pistol": [
    "C-Pistol タクティカルハンドガン",
    "C-Pistol Tactical Handgun",
-   "mc0008ae6715a",
+   "m1e26b84e53e4",
    "flat"
   ],
   "cherry:c_pistol_magazine": [
@@ -59,7 +59,7 @@
   "cherry:cp9": [
    "CP-9 短機関銃",
    "CP-9 Submachine Gun",
-   "med4d69982f40",
+   "md45be45cb46a",
    "flat"
   ],
   "cherry:cp9_magazine": [
@@ -95,7 +95,7 @@
   "cherry:cx12": [
    "CX-12 マグパルス散弾銃",
    "CX-12 Magpulse Shotgun",
-   "mea9ef2311301",
+   "me555896c4453",
    "flat"
   ],
   "cherry:cx12_magazine": [
@@ -152,59 +152,17 @@
    "m1e01a0d74a1f",
    "cube"
   ],
-  "minecraft:emerald": [
-   "エメラルド",
-   "Emerald",
-   "me59ac2c54148",
-   "flat"
-  ],
-  "minecraft:furnace": [
-   "かまど",
-   "Furnace",
-   "md8a21d5607f6",
-   "cube"
-  ],
-  "minecraft:glow_berries": [
-   "グロウベリー",
-   "Glow Berries",
-   "m680a4ffcd864",
-   "flat"
-  ],
-  "minecraft:glowstone_dust": [
-   "グロウストーンダスト",
-   "Glowstone Dust",
-   "m7bf8add85b9d",
-   "flat"
-  ],
   "minecraft:gold_ore": [
    "金鉱石",
    "Gold Ore",
    "meec7412eadff",
    "cube"
   ],
-  "minecraft:gravel": [
-   "砂利",
-   "Gravel",
-   "mdf75150ffdf5",
-   "cube"
-  ],
-  "minecraft:honey_bottle": [
-   "ハチミツ入りの瓶",
-   "Honey Bottle",
-   "m9fd59d0938c2",
-   "flat"
-  ],
   "minecraft:iron_ore": [
    "鉄鉱石",
    "Iron Ore",
    "mda412ba20f17",
    "cube"
-  ],
-  "minecraft:lapis_lazuli": [
-   "ラピスラズリ",
-   "Lapis Lazuli",
-   "mc3937d84a6f0",
-   "flat"
   ],
   "minecraft:raw_copper": [
    "銅の原石",
@@ -234,12 +192,6 @@
    "望遠鏡",
    "Spyglass",
    "mf5fa0ef1e0b2",
-   "flat"
-  ],
-  "minecraft:sugar": [
-   "砂糖",
-   "Sugar",
-   "m6043a280fdc9",
    "flat"
   ],
   "minecraft:wheat_seeds": [

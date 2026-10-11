@@ -634,6 +634,22 @@
      "Memerlukan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. OUKA 1.3.1 atau lebih baru bersifat opsional: dengannya perangkat mendapat daya dalam jarak 64 blok dari Tesla Pylon; tanpanya perangkat selalu menyala.",
      "Diuji bersama Cherry 1.2.0 dan OUKA 1.3.1. Pemasangan bersama Alpha tidak didukung. Kamera hanya menampilkan gambar selama berada di dalam area yang Anda muat."
     ]
+   },
+   {
+    "id": "astraea-v1.5.0",
+    "title": "The 49 Sovereign Implementations",
+    "summary": "Empat puluh sembilan sistem di atas V1.0 dan V1.1: meja kerajinan 9 × 9 beserta zirahnya, roket ke Bulan dan Mars, mesin perang dan mobil yang bisa diatur, pembangkit fisi, kilang, tabung pneumatik dan drone, bos mitos, seratus perabot, serta Codex yang memberi tahu bahan pembuat setiap benda.",
+    "highlights": [
+     "Oracle Crucible dan perlengkapan Zenith: meja 9 × 9 dan Core Press membuat zirah Zenith dan Zenith Cutter. Tujuh slot aksesori (H) menampung cincin, kalung, sabuk, jimat, jubah, dan Sovereign Crown.",
+     "Batas Kosmik: Apex Rocket terbang ke Orbital Station, Bulan, dan Mars, dunia tanpa udara dan bergravitasi rendah, tempat Life-Support Unit mengisi ruangan tertutup dengan udara dan batuannya mengandung bijih besi, tembaga, dan emas.",
+     "Mesin: mobil lapis baja dan pesawat biplan; sasis yang dipasangi mesin, ban, dan bumper penabrak, dan dapat menarik kereta tambang; pembangkit fisi; kilang empat tahap (satu bijih, lima ingot); tabung udara; dan drone tekanan yang mengangkut muatan antar-pad.",
+     "Codex of Creation: setiap item dalam game dalam satu layar yang dapat dicari; pilih satu dan lihat pohon bahan pembuatnya, sampai ke bahan mentah. Tiga bos mitos (Steel Guardian, Sunlit Chieftain, dan Frostfield Behemoth) masing-masing dipanggil dengan segelnya; setiap gerakan ditampilkan di tanah dan di tubuh sebelum mengenai, dan setiap bos menjadi lebih ganas dalam tiga fase.",
+     "Celestial Blade Engine V2, \"Kamui\": sarungkan pedang pada peringkat gaya SSS dan setiap musuh dalam radius 12 blok akan tertahan, lalu ditebas sembilan kali. Plasma Saber kini memantulkan tembakan seperti cermin; obor di tangan atau saber yang menyala menerangi tanah di sekitar Anda."
+    ],
+    "warnings": [
+     "Memerlukan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. OUKA bersifat opsional. Diuji bersama Cherry 1.2.0 dan OUKA 1.3.1; pemasangan bersama Alpha tidak didukung. Setiap sistem dan masing-masing dari sembilan belas kemudahan dapat dimatikan di config/astraea-sovereign.json.",
+     "Tidak ada di versi ini: tubuh tidak menekuk di sendi (hanya condong, melompat, dan jatuh); cahaya di tangan tidak menerangi makhluk, dan tidak ada pantulan air maupun normal map; piston tidak menggerakkan peti. Juga diperbaiki: di sudut pandang orang pertama, Celestial Blade dan Muramasa tidak lagi menampilkan pedang kedua, dan blok kini mengikuti aturan jatuhnya saat ledakan."
+    ]
    }
   ],
   "tsubomi": [

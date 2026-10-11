@@ -1,11 +1,43 @@
 {
  "lang": "pt-br",
  "brand": "astraea",
- "updated": "2026-10-04",
+ "updated": "2026-10-11",
  "title": "Histórico de atualizações",
- "updated_label": "Atualizado em 2026-10-04",
+ "updated_label": "Atualizado em 2026-10-11",
  "note": "",
  "groups": [
+  {
+   "label": "V1.5",
+   "summary": "The 49 Sovereign Implementations",
+   "releases": [
+    {
+     "version": "V1.5.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "The 49 Sovereign Implementations",
+     "summary": "Quarenta e nove sistemas sobre a V1.0 e a V1.1: uma bancada de criação 9 × 9 e sua armadura, foguetes para a Lua e Marte, máquinas de guerra e carros ajustáveis, uma usina de fissão, uma refinaria, tubos pneumáticos e drones, chefes míticos, cem móveis e um Codex que mostra do que é feito qualquer item.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "Oracle Crucible e equipamento Zenith: uma bancada 9 × 9 e a Core Press fabricam a armadura Zenith e o Zenith Cutter. Sete slots de acessório (H) aceitam anéis, um colar, um cinto, um amuleto, uma capa e a Sovereign Crown.",
+        "Fronteira cósmica: o Apex Rocket voa até a Orbital Station, a Lua e Marte — mundos sem ar e de baixa gravidade, onde uma Life-Support Unit enche de ar um cômodo selado e a rocha contém minério de ferro, cobre e ouro.",
+        "Máquinas: um carro blindado e um biplano; um chassi ao qual se acoplam motor, pneus e um para-choque de aríete, que puxa vagonetes; uma usina de fissão; uma refinaria de quatro etapas (um minério, cinco lingotes); tubos aéreos e um drone de pressão que transporta carga entre as plataformas.",
+        "Codex of Creation: todos os itens do jogo em uma tela pesquisável; escolha um e veja a árvore do que ele é feito, até as matérias-primas. Três chefes míticos (o Steel Guardian, o Sunlit Chieftain e o Frostfield Behemoth) são invocados cada um com seu selo; cada golpe aparece no chão e no corpo antes de atingir, e cada chefe fica mais feroz em três fases.",
+        "Celestial Blade Engine V2, \"Kamui\": embainhe com classificação de estilo SSS e todo inimigo a até 12 blocos fica preso, depois recebe nove cortes. O Plasma Saber agora devolve os disparos como um espelho; uma tocha na mão ou um sabre aceso ilumina o chão ao seu redor."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente, Fabric API 0.161.0+26.3 ou mais recente e Java 25. OUKA é opcional. Testado junto com Cherry 1.2.0 e OUKA 1.3.1; instalar junto com o Alpha não é suportado. Cada sistema e cada uma das dezenove conveniências podem ser desativados em config/astraea-sovereign.json.",
+        "Não estão nesta versão: os corpos não dobram nas articulações (apenas se inclinam, pulam e caem); a luz na mão não ilumina criaturas, e não há reflexos na água nem normal maps; pistões não movem baús. Também corrigido: em primeira pessoa, a Celestial Blade e a Muramasa não mostram mais uma segunda espada, e os blocos agora obedecem às suas regras de drop em explosões."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.1",
    "summary": "The Cyber-Relics & Mythic Pedestals",

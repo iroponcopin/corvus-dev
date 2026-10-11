@@ -638,6 +638,22 @@
      "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. OUKA 1.3.1 or newer is optional: with it the security devices draw power within 64 blocks of a Tesla Pylon; without it they are always powered.",
      "Tested together with Cherry 1.2.0 and OUKA 1.3.1. Installing it together with Alpha is not supported. A camera shows a picture only while it is inside your loaded area."
     ]
+   },
+   {
+    "id": "astraea-v1.5.0",
+    "title": "The 49 Sovereign Implementations",
+    "summary": "Forty-nine systems on top of V1.0 and V1.1: a 9 × 9 crafting bench and its armour, rockets to the Moon and Mars, war machines and tunable cars, a fission plant, a refinery, pneumatic tubes and drones, mythic bosses, a hundred furnishings, and a Codex that tells you what anything is made of.",
+    "highlights": [
+     "Oracle Crucible and Zenith gear: a 9 × 9 bench and the Core Press make the Zenith armour and the Zenith Cutter. Seven accessory slots (H) take rings, a necklace, a belt, a charm, a cloak and the Sovereign Crown.",
+     "Cosmic Frontier: the Apex Rocket flies to the Orbital Station, the Moon and Mars — worlds with no air and low gravity, where a Life-Support Unit fills a sealed room and the rock holds iron, copper and gold ore.",
+     "Machines: an armoured car and a biplane, a chassis you fit with an engine, tyres and a ram bumper and that tows minecarts, a fission plant, a four-stage refinery (one ore, five ingots), aero-tubes and a pressure drone that carries cargo between pads.",
+     "Codex of Creation: every item in the game in one searchable screen; choose one and see the tree of what it is made of, all the way down to raw materials. Three mythic bosses — the Steel Guardian, the Sunlit Chieftain and the Frostfield Behemoth — each called with its sigil; every move is shown on the ground and in the body before it lands, and each boss grows fiercer through three phases.",
+     "Celestial Blade Engine V2, \"Kamui\": sheathe at style rank SSS and every foe within 12 blocks is held, then cut nine times. The Plasma Saber now turns shots back like a mirror; a held torch or lit saber lights the ground round you."
+    ],
+    "warnings": [
+     "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. OUKA is optional. Tested together with Cherry 1.2.0 and OUKA 1.3.1; installing it together with Alpha is not supported. Every system and each of the nineteen conveniences can be switched off in config/astraea-sovereign.json.",
+     "Not in this version: bodies do not bend at joints (they lean, leap and fall); held light does not light creatures, and there are no water reflections or normal maps; pistons do not move chests. Also fixed: in first person the Celestial Blade and Muramasa no longer show a second sword, and blocks now obey their drop rules in explosions."
+    ]
    }
   ],
   "tsubomi": [
