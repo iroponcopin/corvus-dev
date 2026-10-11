@@ -1,13 +1,13 @@
 {
  "what": "Aurora Corvus portal 4.3.0, static export. Made by web/ (npm run build); nothing here is a contract file.",
- "wiki_commit": "96534c85044384bda29604f03ea97065a20610ff",
- "wiki_branch": "aureum-2.0.0-release",
- "wiki_dirty": true,
+ "wiki_commit": "695238e18f778100149f0ec531b86474fbaa0153",
+ "wiki_branch": "tsubomi-1.1.0-site",
+ "wiki_dirty": false,
  "corvus_store": "3.0.2",
  "ouka": "1.4.0",
  "cherry": "1.2.0",
  "aureum": "2.0.0",
  "astraea": "1.1.0",
- "tsubomi": "1.0.1",
+ "tsubomi": "1.1.0",
  "pages": 221
 }
