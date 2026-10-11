@@ -2,6 +2,18 @@
  "_note": "Every film the studio has posted publicly (the Discord update/upcoming channels), newest first: the same files, byte for byte (sizes match the attachments), kept in assets/video/announcement/ and played on the portal's Announcement page (2026-10-05, owner: the Coming-next tab is gone and the published trailers are gathered there). 'date' is the UK date it was posted; 'kind' is trailer | launch | teaser | film | indev; 'brand' keys the release notes link (corvus = Corvus Store). Add a film by adding its file, its poster and a line here, newest first.",
  "films": [
   {
+   "id": "ouka-v1-4-film",
+   "brand": "ouka",
+   "kind": "film",
+   "date": "2026-10-05",
+   "posted_utc": "2026-10-05T15:15Z",
+   "title": "OUKA V1.4.0 — The Kinetic Overdrive",
+   "seconds": 225,
+   "file": "ouka-v1-4-film.mp4",
+   "poster": "ouka-v1-4-film.jpg",
+   "bytes": 9489593
+  },
+  {
    "id": "noctua-film",
    "brand": "noctua",
    "kind": "film",
