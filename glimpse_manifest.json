@@ -41,11 +41,11 @@
   },
   "aureum": {
     "mod_id": "aureum",
-    "latest": "1.0.1",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/aureum-1.0.1.jar",
-    "file_name": "aureum-1.0.1.jar",
-    "file_size": 36212,
-    "sha256": "0feebd3f0aadf3ef4d5c1a3bb00dc3fba1a892fe412755b7a3140fa85dc5c546"
+    "latest": "2.0.0",
+    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/aureum-2.0.0.jar",
+    "file_name": "aureum-2.0.0.jar",
+    "file_size": 39160,
+    "sha256": "4132332e29b8b9b968277663ac44a1f86e1a729e46492a75e311a729a34ebff4"
   },
   "cherry": {
     "mod_id": "cherry",
