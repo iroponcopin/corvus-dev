@@ -1,11 +1,44 @@
 {
  "lang": "en",
  "brand": "tsubomi",
- "updated": "2026-10-04",
+ "updated": "2026-10-11",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-04",
+ "updated_label": "Updated 2026-10-11",
  "note": "",
  "groups": [
+  {
+   "label": "V1.1",
+   "summary": "Tsubomi V1.1 — 100 new blocks",
+   "releases": [
+    {
+     "version": "V1.1.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "Tsubomi V1.1 — 100 new blocks",
+     "summary": "Tsubomi V1.1 adds 100 new building blocks in 5 families of 20: sakura crystal, spiritwood, porcelain, clockwork and shrine.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "100 new blocks in 5 families of 20: crystal and amber, spiritwood and crimson bamboo, porcelain and jadeite, clockwork and brass, shrine and ritual. Every block can be crafted.",
+        "Sakura crystal: a budding crystal grows buds that ripen from small to medium to large to a cluster; the crystal lamp lights with redstone; the resonating core rings once each time it is powered.",
+        "Spiritwood is a set that does not burn, with stairs, slab, fence, gate, door, trapdoor, pressure plate and button, and an axe strips it. Crimson bamboo burns like bamboo.",
+        "Clockwork: copper casings weather like copper, pipes join each other, the pressure gauge reports the strongest redstone signal to a comparator, and the clockwork door and trapdoor open by hand.",
+        "Shrine: lanterns, a bell that rings far away, hallowed soil that speeds up the plant above it, an almost silent carpet, a loom that opens a crafting grid, a respawn anchor, and a chronometer whose signal follows the day and the moon.",
+        "Light on the server: no block has a block entity or a ticker. Only the budding crystal, the leaves, the copper casings and the hallowed soil take random ticks, and only while they grow, decay or weather."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+        "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.0",
    "summary": "Tsubomi V1.0.1 — the Teleport Elevator returns",

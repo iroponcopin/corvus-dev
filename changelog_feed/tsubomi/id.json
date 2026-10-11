@@ -1,11 +1,44 @@
 {
  "lang": "id",
  "brand": "tsubomi",
- "updated": "2026-10-04",
+ "updated": "2026-10-11",
  "title": "Riwayat Pembaruan",
- "updated_label": "Diperbarui 2026-10-04",
+ "updated_label": "Diperbarui 2026-10-11",
  "note": "",
  "groups": [
+  {
+   "label": "V1.1",
+   "summary": "Tsubomi V1.1 — 100 blok baru",
+   "releases": [
+    {
+     "version": "V1.1.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "Tsubomi V1.1 — 100 blok baru",
+     "summary": "Tsubomi V1.1 menambahkan 100 blok bangunan baru dalam 5 keluarga masing-masing 20: kristal sakura, kayu roh, porselen, mekanisme jam, dan kuil.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "100 blok baru dalam 5 keluarga masing-masing 20: kristal dan ambar, kayu roh dan bambu merah tua, porselen dan jadeit, mekanisme dan kuningan, kuil dan ritual. Setiap blok bisa dibuat.",
+        "Kristal sakura: kristal bertunas menumbuhkan tunas yang matang dari kecil ke sedang ke besar lalu menjadi gugusan; lampu kristal menyala dengan redstone; inti resonansi berdering sekali setiap kali dialiri daya.",
+        "Kayu roh adalah set yang tidak terbakar, dengan tangga, setengah balok, pagar, gerbang pagar, pintu, pintu kolong, pelat tekan, dan tombol; bisa dikupas dengan kapak. Bambu merah tua terbakar seperti bambu.",
+        "Mekanisme: selubung tembaga berkarat seperti tembaga, pipa saling tersambung, pengukur tekanan meneruskan sinyal redstone terkuat ke komparator, dan pintu serta pintu kolong mekanisme bisa dibuka dengan tangan.",
+        "Kuil: lentera, lonceng yang terdengar jauh, tanah suci yang mempercepat tanaman di atasnya, karpet yang nyaris senyap, alat tenun yang membuka kisi kerajinan, jangkar kebangkitan, dan kronometer yang sinyalnya mengikuti siang dan bulan.",
+        "Ringan bagi server: tidak ada blok yang punya entitas blok atau ticker. Hanya kristal bertunas, daun, selubung tembaga, dan tanah suci yang menerima tick acak, dan hanya saat tumbuh, layu, atau berkarat."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+        "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.0",
    "summary": "Tsubomi V1.0.1 — lift teleportasi kembali",

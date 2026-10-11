@@ -1,11 +1,44 @@
 {
  "lang": "it",
  "brand": "tsubomi",
- "updated": "2026-10-04",
+ "updated": "2026-10-11",
  "title": "Changelog",
- "updated_label": "Aggiornato il 2026-10-04",
+ "updated_label": "Aggiornato il 2026-10-11",
  "note": "",
  "groups": [
+  {
+   "label": "V1.1",
+   "summary": "Tsubomi V1.1 — 100 nuovi blocchi",
+   "releases": [
+    {
+     "version": "V1.1.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "Tsubomi V1.1 — 100 nuovi blocchi",
+     "summary": "Tsubomi V1.1 aggiunge 100 nuovi blocchi da costruzione in 5 famiglie da 20: cristallo di sakura, legno spirituale, porcellana, meccanismo d'orologeria e santuario.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "100 nuovi blocchi in 5 famiglie da 20: cristallo e ambra, legno spirituale e bambù cremisi, porcellana e giadeite, meccanismo e ottone, santuario e rituale. Ogni blocco si può creare.",
+        "Cristallo di sakura: un cristallo in germoglio fa crescere germogli che passano da piccoli a medi, grandi e infine a grappolo; la lampada di cristallo si accende con la redstone; il nucleo risonante suona una volta a ogni alimentazione.",
+        "Il legno spirituale è un set che non brucia, con scala, lastra, recinto, cancelletto, porta, botola, piastra a pressione e pulsante; si scortecchia con un'ascia. Il bambù cremisi brucia come il bambù.",
+        "Meccanismo: gli involucri di rame si ossidano come il rame, i tubi si collegano tra loro, il manometro trasmette al comparatore il segnale di redstone più forte, e la porta e la botola meccaniche si aprono a mano.",
+        "Santuario: lanterne, una campana che risuona lontano, terra sacra che accelera la pianta sopra di sé, un tappeto quasi silenzioso, un telaio che apre una griglia di creazione, un'ancora di rinascita e un cronometro il cui segnale segue il giorno e la luna.",
+        "Leggero per il server: nessun blocco ha un'entità blocco o un ticker. Solo il cristallo in germoglio, le foglie, gli involucri di rame e la terra sacra ricevono tick casuali, e solo mentre crescono, appassiscono o si ossidano."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+        "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.0",
    "summary": "Tsubomi V1.0.1 — torna l'ascensore a teletrasporto",

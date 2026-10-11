@@ -109,11 +109,11 @@
   },
   "tsubomi": {
     "mod_id": "tsubomi",
-    "latest": "1.0.1",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/tsubomi-1.0.1.jar",
-    "file_name": "tsubomi-1.0.1.jar",
-    "file_size": 131740,
-    "sha256": "6f0d394957c572db1a45bfb76a580e1ef28872f6c60d49899a077712fbb8c444"
+    "latest": "1.1.0",
+    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/tsubomi-1.1.0.jar",
+    "file_name": "tsubomi-1.1.0.jar",
+    "file_size": 506800,
+    "sha256": "f90eada3073694c903bf4330b4742828aa33248f6b56a8fc22ef6d9d28bc78f9"
   },
   "noctua": {
     "latest": "1.0.0",

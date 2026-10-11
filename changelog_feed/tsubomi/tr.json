@@ -1,11 +1,44 @@
 {
  "lang": "tr",
  "brand": "tsubomi",
- "updated": "2026-10-04",
+ "updated": "2026-10-11",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-04 tarihinde güncellendi",
+ "updated_label": "2026-10-11 tarihinde güncellendi",
  "note": "",
  "groups": [
+  {
+   "label": "V1.1",
+   "summary": "Tsubomi V1.1 — 100 yeni blok",
+   "releases": [
+    {
+     "version": "V1.1.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "Tsubomi V1.1 — 100 yeni blok",
+     "summary": "Tsubomi V1.1, 20'şerli 5 ailede 100 yeni yapı bloğu ekliyor: sakura kristali, ruh ağacı, porselen, saat mekanizması ve tapınak.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "20'şerli 5 ailede 100 yeni blok: kristal ve kehribar, ruh ağacı ve kızıl bambu, porselen ve yeşim, mekanizma ve pirinç, tapınak ve ritüel. Her blok üretilebilir.",
+        "Sakura kristali: tomurcuklanan kristal, küçükten ortaya, büyüğe ve sonra kümeye olgunlaşan tomurcuklar büyütür; kristal lamba kızıltaşla yanar; rezonans çekirdeği her enerji aldığında bir kez çalar.",
+        "Ruh ağacı yanmayan bir settir; merdiven, döşeme, çit, çit kapısı, kapı, kapak, basınç plakası ve düğme içerir ve baltayla kabuğu soyulur. Kızıl bambu bambu gibi yanar.",
+        "Mekanizma: bakır kasalar bakır gibi paslanır, borular birbirine bağlanır, basınç göstergesi en güçlü kızıltaş sinyalini karşılaştırıcıya iletir, mekanizma kapısı ve kapağı elle açılır.",
+        "Tapınak: fenerler, uzaktan duyulan bir çan, üstündeki bitkiyi hızlandıran kutsal toprak, neredeyse sessiz bir halı, üretim ızgarası açan bir tezgâh, bir yeniden doğuş çapası ve sinyali günü ve ayı izleyen bir kronometre.",
+        "Sunucuya hafif: hiçbir bloğun blok varlığı ya da ticker'ı yoktur. Yalnızca tomurcuklanan kristal, yapraklar, bakır kasalar ve kutsal toprak rastgele tick alır, o da sadece büyürken, solarken ya da paslanırken."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+        "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.0",
    "summary": "Tsubomi V1.0.1 — ışınlanma asansörü geri döndü",

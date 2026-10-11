@@ -671,6 +671,23 @@
      "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
      "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v1.1.0",
+    "title": "Tsubomi V1.1 — 100 bloques nuevos",
+    "summary": "Tsubomi V1.1 añade 100 bloques de construcción nuevos en 5 familias de 20: cristal de sakura, madera espiritual, porcelana, mecanismo de relojería y santuario.",
+    "highlights": [
+     "100 bloques nuevos en 5 familias de 20: cristal y ámbar, madera espiritual y bambú carmesí, porcelana y jadeíta, mecanismo y latón, santuario y ritual. Todos los bloques se pueden fabricar.",
+     "Cristal de sakura: un cristal en brote hace crecer brotes que pasan de pequeños a medianos, grandes y a racimo; la lámpara de cristal se enciende con redstone; el núcleo resonante suena una vez cada vez que recibe energía.",
+     "La madera espiritual es un conjunto que no arde, con escalera, losa, valla, puerta de valla, puerta, trampilla, placa de presión y botón; se descorteza con un hacha. El bambú carmesí arde como el bambú.",
+     "Mecanismo: las carcasas de cobre se oxidan como el cobre, las tuberías se conectan entre sí, el manómetro envía al comparador la señal de redstone más fuerte, y la puerta y la trampilla mecánicas se abren a mano.",
+     "Santuario: farolillos, una campana que suena a lo lejos, tierra sagrada que acelera la planta de encima, una alfombra casi silenciosa, un telar que abre una cuadrícula de fabricación, un ancla de reaparición y un cronómetro cuya señal sigue al día y a la luna.",
+     "Ligero para el servidor: ningún bloque tiene entidad de bloque ni ticker. Solo el cristal en brote, las hojas, las carcasas de cobre y la tierra sagrada reciben ticks aleatorios, y solo mientras crecen, se marchitan o se oxidan."
+    ],
+    "warnings": [
+     "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+     "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
+    ]
    }
   ]
  }

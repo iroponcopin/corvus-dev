@@ -671,6 +671,23 @@
      "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
      "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
     ]
+   },
+   {
+    "id": "tsubomi-v1.1.0",
+    "title": "Tsubomi V1.1 — 100 neue Blöcke",
+    "summary": "Tsubomi V1.1 fügt 100 neue Baublöcke in 5 Familien zu je 20 hinzu: Kirschkristall, Geisterholz, Porzellan, Uhrwerk und Schrein.",
+    "highlights": [
+     "100 neue Blöcke in 5 Familien zu je 20: Kristall und Bernstein, Geisterholz und Purpurbambus, Porzellan und Jadeit, Uhrwerk und Messing, Schrein und Ritual. Jeder Block lässt sich herstellen.",
+     "Kirschkristall: Ein knospender Kristall lässt Knospen wachsen, von klein über mittel zu groß bis zum Cluster; die Kristalllampe leuchtet mit Redstone; der Resonanzkern klingt bei jeder Stromzufuhr einmal.",
+     "Geisterholz ist ein unbrennbares Set mit Treppe, Stufe, Zaun, Zauntor, Tür, Falltür, Druckplatte und Knopf; mit einer Axt lässt es sich entrinden. Purpurbambus brennt wie Bambus.",
+     "Uhrwerk: Kupfergehäuse oxidieren wie Kupfer, Rohre verbinden sich miteinander, das Manometer gibt das stärkste Redstone-Signal an einen Komparator weiter, und Uhrwerktür und -falltür öffnen sich von Hand.",
+     "Schrein: Laternen, eine weithin hörbare Glocke, geweihte Erde, die die Pflanze darüber beschleunigt, ein fast lautloser Teppich, ein Webstuhl, der ein Handwerksraster öffnet, ein Respawn-Anker und ein Chronometer, dessen Signal Tag und Mond folgt.",
+     "Schonend für den Server: Kein Block hat eine Blockentität oder einen Ticker. Nur der knospende Kristall, das Laub, die Kupfergehäuse und die geweihte Erde erhalten zufällige Ticks, und nur beim Wachsen, Verfallen oder Oxidieren."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+     "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
+    ]
    }
   ]
  }
