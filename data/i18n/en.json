@@ -310,6 +310,26 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.5.0",
+    "title": "The Wrought Iron Sovereign — a 3.8-block guardian for the treasury",
+    "summary": "The Wrought Iron Sovereign arrives: a 3.8-block armoured guardian that stands asleep like a statue until a player in survival or adventure mode comes within 8 blocks or strikes it. It comes with the Treasury Door and Treasury Master Key, the Sovereign Battleaxe, Wrought Plate armour, the Wrought Iron Statue block and 15 new synthesised sounds. The assembly line now builds exactly the product you choose.",
+    "highlights": [
+     "The Wrought Iron Sovereign arrives: a 3.8-block armoured guardian with 300 health. It stands asleep like a statue until a player comes within 8 blocks or strikes it.",
+     "Awake, it turns aside gun rounds, arrows, blades, blasts and shock waves. While its axe is free it does so from every direction; while the axe is stuck, the front and sides still turn everything aside, and a piercing round stops at the boss instead of carrying on into whoever stands behind it.",
+     "Its overhead blow buries the axe in the ground for 3.5 seconds, and only then can its back be hurt: hits from behind count 5 times over, up to 100 damage per opening, so every fight takes at least 3 openings. The Susanoo anti-materiel round and the circle shock wave do a flat 60 from behind instead.",
+     "Defeating it always drops a Treasury Master Key, the Sovereign Battleaxe and 8 Wrought Plate Ingots.",
+     "The Treasury Door cannot be broken in survival and shrugs off explosions. Only the Treasury Master Key opens it, and the key is never used up. Operators place the doors.",
+     "The Sovereign Battleaxe hits for 13. Charged for 1.2 seconds, it releases a fan-shaped shock wave 6 blocks long that stuns for 2 seconds and breaks no block. 4 pieces of Wrought Plate armour together cancel knockback completely.",
+     "The Wrought Iron Statue is a 3 × 3 × 4 figure of the sleeping guardian, made on the assembly line. 15 new synthesised sounds carry the boss, the door, the key and the axe.",
+     "The Automated Precision Assembly Line now builds exactly the product you choose on a new selection screen. This fixes 16 products that used to come out as a different item, and its aiming outline now follows the machine's drawn shape."
+    ],
+    "warnings": [
+     "Assembly lines placed before 1.5.0 start with nothing selected and wait: open each one with an empty hand, choose a product and press “Build this”. No parts, finished items, running jobs or power are lost, but a waiting line takes in no parts, so automated factories stand still until you choose.",
+     "Remove older OUKA jars from the mods folder before adding 1.5.0, and keep only one copy of GeckoLib 5.5.6: two OUKA jars, or two GeckoLibs, will stop the game from starting. Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer and Fabric API 0.161.0+26.3 or newer (Fabric API is not in the zip). Install on both the client and the server.",
+     "The Wrought Iron Sovereign does not spawn naturally: place it with its spawn egg or /summon. It does not vanish on Peaceful, and once woken it never goes back to sleep. The Treasury Master Key, the battleaxe and the ingots come only from the boss; a full armour set takes 18 ingots, which is 3 defeats. Only operators can place Treasury Doors. With the F3+B hitbox view, a sleeping boss can still be told from a statue."
+    ]
+   },
+   {
     "id": "ouka-v1.4.0",
     "title": "The Kinetic Overdrive — 15 guns and a 35-block wind turbine",
     "summary": "OUKA GUN MAX arrives: 15 guns on 6 types of ammunition, each with its own recoil, reload and sound, and sights and parts that you fit at a mounting screen. Also a 35-block Type-W1 \"Fujin\" wind turbine, Operating Shelter glass in 7 colours, and OKE, a new animation runtime that drives the guns and the turbine and now also renders the Matter Transceiver. Every new sound is synthesised from scratch.",

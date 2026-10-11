@@ -1,6 +1,6 @@
 {
  "sources": {
-  "ouka": "1.4.0",
+  "ouka": "1.5.0",
   "cherry": "1.2.0"
  },
  "stations": [
@@ -510,6 +510,42 @@
    "OUKA Type-W1「風神」風力発電機",
    "OUKA Type-W1 \"Fujin\" Wind Turbine",
    "mebe1ace7b500",
+   "flat"
+  ],
+  "ouka:wrought_iron_statue": [
+   "鋼鉄の守護騎士の彫像",
+   "Wrought Iron Statue",
+   "m19ff6879efba",
+   "flat"
+  ],
+  "ouka:wrought_plate_boots": [
+   "重鉄の防壁の靴",
+   "Wrought Plate Boots",
+   "m43d37b6db1f5",
+   "flat"
+  ],
+  "ouka:wrought_plate_chestplate": [
+   "重鉄の防壁の胸当て",
+   "Wrought Plate Chestplate",
+   "m6de55dcd38cc",
+   "flat"
+  ],
+  "ouka:wrought_plate_helmet": [
+   "重鉄の防壁の兜",
+   "Wrought Plate Helmet",
+   "mff67d65babff",
+   "flat"
+  ],
+  "ouka:wrought_plate_ingot": [
+   "重鉄の防壁インゴット",
+   "Wrought Plate Ingot",
+   "m7734831c04ff",
+   "flat"
+  ],
+  "ouka:wrought_plate_leggings": [
+   "重鉄の防壁の脚甲",
+   "Wrought Plate Leggings",
+   "mdaf62f3b7d24",
    "flat"
   ]
  },
@@ -1667,6 +1703,143 @@
    "outputs": [
     {
      "id": "ouka:wind_turbine",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wrought_iron_statue",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 2
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 12
+    },
+    {
+     "id": "ouka:iron_plate",
+     "n": 24
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wrought_iron_statue",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wrought_plate_boots",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:wrought_plate_ingot",
+     "n": 3
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:industrial_plastic",
+     "n": 1
+    },
+    {
+     "id": "ouka:iron_plate",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wrought_plate_boots",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wrought_plate_chestplate",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:wrought_plate_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:machine_frame",
+     "n": 1
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wrought_plate_chestplate",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wrought_plate_helmet",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:wrought_plate_ingot",
+     "n": 4
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wrought_plate_helmet",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wrought_plate_leggings",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:wrought_plate_ingot",
+     "n": 5
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 3
+    },
+    {
+     "id": "ouka:industrial_plastic",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wrought_plate_leggings",
      "n": 1
     }
    ],
@@ -3263,6 +3436,11 @@
   "ouka:assembly/thorium_fuel_rod": "ouka トリウム燃料棒 とりうむ燃料棒 ouka:thorium_fuel_rod thorium_fuel_rod thorium fuel rod チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot トリウムの粉 とりうむの粉 ouka:thorium_dust thorium_dust thorium dust 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate",
   "ouka:assembly/uranium_fuel_rod": "ouka ウラン燃料棒 うらん燃料棒 ouka:uranium_fuel_rod uranium_fuel_rod uranium fuel rod チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 濃縮ウラン 濃縮うらん ouka:enriched_uranium enriched_uranium enriched uranium 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate",
   "ouka:assembly/wind_turbine": "ouka OUKA Type-W1「風神」風力発電機 ouka type-w1「風神」風力発電機 ouka:wind_turbine wind_turbine ouka type-w1 \"fujin\" wind turbine 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 銅板 銅板 ouka:copper_plate copper_plate copper plate",
+  "ouka:assembly/wrought_iron_statue": "ouka 鋼鉄の守護騎士の彫像 鋼鉄の守護騎士の彫像 ouka:wrought_iron_statue wrought_iron_statue wrought iron statue 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
+  "ouka:assembly/wrought_plate_boots": "ouka 重鉄の防壁の靴 重鉄の防壁の靴 ouka:wrought_plate_boots wrought_plate_boots wrought plate boots 重鉄の防壁インゴット 重鉄の防壁いんごっと ouka:wrought_plate_ingot wrought_plate_ingot wrought plate ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic 鉄板 鉄板 ouka:iron_plate iron_plate iron plate",
+  "ouka:assembly/wrought_plate_chestplate": "ouka 重鉄の防壁の胸当て 重鉄の防壁の胸当て ouka:wrought_plate_chestplate wrought_plate_chestplate wrought plate chestplate 重鉄の防壁インゴット 重鉄の防壁いんごっと ouka:wrought_plate_ingot wrought_plate_ingot wrought plate ingot 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wrought_plate_helmet": "ouka 重鉄の防壁の兜 重鉄の防壁の兜 ouka:wrought_plate_helmet wrought_plate_helmet wrought plate helmet 重鉄の防壁インゴット 重鉄の防壁いんごっと ouka:wrought_plate_ingot wrought_plate_ingot wrought plate ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wrought_plate_leggings": "ouka 重鉄の防壁の脚甲 重鉄の防壁の脚甲 ouka:wrought_plate_leggings wrought_plate_leggings wrought plate leggings 重鉄の防壁インゴット 重鉄の防壁いんごっと ouka:wrought_plate_ingot wrought_plate_ingot wrought plate ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic",
   "ouka:centrifuging/dirt": "ouka リチウムの粉 りちうむの粉 ouka:lithium_dust lithium_dust lithium dust チタンの粉 ちたんの粉 ouka:titanium_dust titanium_dust titanium dust ネザークォーツ ねざーくぉーつ minecraft:quartz quartz nether quartz 土 土 minecraft:dirt dirt dirt",
   "ouka:centrifuging/gravel": "ouka チタンの粉 ちたんの粉 ouka:titanium_dust titanium_dust titanium dust リチウムの粉 りちうむの粉 ouka:lithium_dust lithium_dust lithium dust ネザークォーツ ねざーくぉーつ minecraft:quartz quartz nether quartz 砂利 砂利 minecraft:gravel gravel gravel",
   "ouka:centrifuging/lunar_regolith": "ouka ヘリウム3の缶 へりうむ3の缶 ouka:helium_3_canister helium_3_canister helium-3 canister チタンの粉 ちたんの粉 ouka:titanium_dust titanium_dust titanium dust ネザークォーツ ねざーくぉーつ minecraft:quartz quartz nether quartz リチウムの粉 りちうむの粉 ouka:lithium_dust lithium_dust lithium dust ルナ・レゴリス るな・れごりす cherry:lunar_regolith lunar_regolith lunar regolith",

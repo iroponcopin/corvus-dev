@@ -44,6 +44,12 @@
         "release": "V1.4.0",
         "date": "2026-10-05",
         "type": "release"
+      },
+      {
+        "id": "ouka-v1.5.0",
+        "release": "V1.5.0",
+        "date": "2026-10-11",
+        "type": "release"
       }
     ],
     "cherry": [

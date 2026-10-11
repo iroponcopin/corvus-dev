@@ -1,11 +1,47 @@
 {
  "lang": "pt-br",
  "brand": "ouka",
- "updated": "2026-10-05",
+ "updated": "2026-10-11",
  "title": "Histórico de atualizações",
- "updated_label": "Atualizado em 2026-10-05",
+ "updated_label": "Atualizado em 2026-10-11",
  "note": "",
  "groups": [
+  {
+   "label": "V1.5",
+   "summary": "The Wrought Iron Sovereign — um guardião de 3,8 blocos para o tesouro",
+   "releases": [
+    {
+     "version": "V1.5.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "The Wrought Iron Sovereign — um guardião de 3,8 blocos para o tesouro",
+     "summary": "Chega o Wrought Iron Sovereign: um guardião blindado de 3,8 blocos que dorme como uma estátua até que um jogador no modo sobrevivência ou aventura chegue a 8 blocos dele ou o ataque. Vêm com ele a Porta do Tesouro e a Chave Mestra do Tesouro, o Machado de Batalha Soberano, a armadura de Placa Forjada, o bloco Estátua de Ferro Forjado e 15 sons novos sintetizados. A linha de montagem agora constrói exatamente o produto que você escolher.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "Chega o Wrought Iron Sovereign: um guardião blindado de 3,8 blocos com 300 de vida. Ele dorme como uma estátua até que um jogador chegue a 8 blocos ou o ataque.",
+        "Acordado, ele desvia projéteis de armas de fogo, flechas, lâminas, explosões e ondas de choque. Enquanto o machado está livre, faz isso de qualquer direção; com o machado cravado, a frente e os lados continuam desviando tudo, e um projétil perfurante para no chefe em vez de seguir para quem estiver atrás.",
+        "O golpe de cima crava o machado no chão por 3,5 segundos, e só então as costas podem ser atingidas: golpes por trás contam 5 vezes, até 100 de dano por abertura, então cada luta leva pelo menos 3 aberturas. Já o projétil antimaterial Susanoo e a onda de choque circular causam 60 de dano fixo por trás.",
+        "Derrotá-lo sempre deixa cair uma Chave Mestra do Tesouro, o Machado de Batalha Soberano e 8 lingotes de Placa Forjada.",
+        "A Porta do Tesouro não pode ser quebrada na sobrevivência e resiste a explosões. Só a Chave Mestra do Tesouro a abre, e a chave nunca se gasta. Os operadores colocam as portas.",
+        "O Machado de Batalha Soberano causa 13 de dano. Carregado por 1,2 segundo, libera uma onda de choque em leque com 6 blocos de comprimento que atordoa por 2 segundos e não quebra nenhum bloco. 4 peças da armadura de Placa Forjada juntas anulam totalmente o recuo.",
+        "A Estátua de Ferro Forjado é uma figura de 3 × 3 × 4 do guardião adormecido, fabricada na linha de montagem. 15 sons novos, todos sintetizados, acompanham o chefe, a porta, a chave e o machado.",
+        "A Linha de Montagem de Precisão Automatizada agora constrói exatamente o produto que você escolhe numa nova tela de seleção. Isso corrige 16 produtos que antes saíam como outro item, e o contorno de mira agora segue a forma desenhada da máquina."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Linhas de montagem colocadas antes de 1.5.0 começam sem nada selecionado e esperam: abra cada uma com a mão vazia, escolha um produto e aperte \"Build this\". Nenhuma peça, item pronto, tarefa em andamento ou energia se perde, mas uma linha em espera não aceita peças, então as fábricas automáticas param até você escolher.",
+        "Remova os jars antigos do OUKA da pasta mods antes de adicionar 1.5.0 e mantenha só uma cópia do GeckoLib 5.5.6: dois jars do OUKA, ou dois GeckoLib, impedem o jogo de iniciar. Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais novo e Fabric API 0.161.0+26.3 ou mais nova (a Fabric API não vem no zip). Instale no cliente e no servidor.",
+        "O Wrought Iron Sovereign não nasce naturalmente: coloque-o com o ovo de spawn ou com /summon. Ele não some no modo Pacífico e, depois de acordado, nunca mais volta a dormir. A Chave Mestra do Tesouro, o machado e os lingotes vêm só do chefe; um conjunto completo de armadura exige 18 lingotes, ou seja, 3 derrotas. Só operadores podem colocar Portas do Tesouro. Com a visão de hitbox F3+B, um chefe adormecido ainda pode ser diferenciado de uma estátua."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.4",
    "summary": "The Kinetic Overdrive — 15 armas e uma turbina eólica de 35 blocos",

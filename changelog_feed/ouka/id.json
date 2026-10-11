@@ -1,11 +1,47 @@
 {
  "lang": "id",
  "brand": "ouka",
- "updated": "2026-10-05",
+ "updated": "2026-10-11",
  "title": "Riwayat Pembaruan",
- "updated_label": "Diperbarui 2026-10-05",
+ "updated_label": "Diperbarui 2026-10-11",
  "note": "",
  "groups": [
+  {
+   "label": "V1.5",
+   "summary": "The Wrought Iron Sovereign — penjaga brankas setinggi 3,8 blok",
+   "releases": [
+    {
+     "version": "V1.5.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "The Wrought Iron Sovereign — penjaga brankas setinggi 3,8 blok",
+     "summary": "Wrought Iron Sovereign hadir: penjaga berzirah setinggi 3,8 blok yang tidur seperti patung sampai pemain dalam mode survival atau petualangan mendekat dalam jarak 8 blok atau menyerangnya. Hadir pula Pintu Brankas dan Kunci Induk Brankas, Kapak Perang Berdaulat, armor Wrought Plate, blok Patung Besi Tempa, dan 15 suara baru hasil sintesis. Lini perakitan kini membuat tepat produk yang Anda pilih.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Wrought Iron Sovereign hadir: penjaga berzirah setinggi 3,8 blok dengan 300 nyawa. Ia tidur seperti patung sampai pemain mendekat dalam jarak 8 blok atau menyerangnya.",
+        "Saat terjaga, ia membelokkan peluru senjata, panah, bilah, ledakan, dan gelombang kejut. Selama kapaknya bebas, ia melakukannya dari semua arah; saat kapak tertancap, bagian depan dan samping tetap membelokkan semuanya, dan peluru tembus berhenti di bos alih-alih terus ke orang di belakangnya.",
+        "Pukulan dari atasnya menancapkan kapak ke tanah selama 3,5 detik, dan baru saat itulah punggungnya bisa terkena: serangan dari belakang dihitung 5 kali lipat, hingga 100 damage per celah, jadi setiap pertarungan memerlukan minimal 3 celah. Peluru anti-materiel Susanoo dan gelombang kejut melingkar justru memberi 60 damage tetap dari belakang.",
+        "Mengalahkannya selalu menjatuhkan Kunci Induk Brankas, Kapak Perang Berdaulat, dan 8 Wrought Plate Ingot.",
+        "Pintu Brankas tidak bisa dihancurkan dalam survival dan tahan ledakan. Hanya Kunci Induk Brankas yang membukanya, dan kunci itu tidak pernah habis. Operator yang memasang pintu.",
+        "Kapak Perang Berdaulat memberi 13 damage. Jika diisi selama 1,2 detik, ia melepaskan gelombang kejut berbentuk kipas sepanjang 6 blok yang melumpuhkan selama 2 detik dan tidak merusak satu blok pun. 4 bagian armor Wrought Plate bersama-sama membatalkan knockback sepenuhnya.",
+        "Patung Besi Tempa adalah figur 3 × 3 × 4 dari penjaga yang tidur, dibuat di lini perakitan. 15 suara baru, semuanya hasil sintesis, menyertai bos, pintu, kunci, dan kapak.",
+        "Lini Perakitan Presisi Otomatis kini membuat tepat produk yang Anda pilih di layar pemilihan baru. Ini memperbaiki 16 produk yang dulu keluar sebagai barang lain, dan garis bidik kini mengikuti bentuk mesin yang tergambar."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Lini perakitan yang dipasang sebelum 1.5.0 mulai tanpa pilihan apa pun dan menunggu: buka tiap lini dengan tangan kosong, pilih produk, lalu tekan \"Build this\". Tidak ada bahan, barang jadi, pekerjaan yang berjalan, atau daya yang hilang, tetapi lini yang menunggu tidak menerima bahan, sehingga pabrik otomatis berhenti sampai Anda memilih.",
+        "Hapus jar OUKA lama dari folder mods sebelum menambahkan 1.5.0, dan simpan hanya satu salinan GeckoLib 5.5.6: dua jar OUKA atau dua GeckoLib akan membuat game tidak bisa dijalankan. Memerlukan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru (Fabric API tidak ada di zip). Pasang di klien dan server.",
+        "Wrought Iron Sovereign tidak muncul secara alami: pasang dengan spawn egg atau /summon. Ia tidak hilang di mode Peaceful, dan setelah terjaga ia tidak pernah kembali tidur. Kunci Induk Brankas, kapak, dan ingot hanya berasal dari bos; satu set armor lengkap butuh 18 ingot, yaitu 3 kali mengalahkan bos. Hanya operator yang bisa memasang Pintu Brankas. Dengan tampilan hitbox F3+B, bos yang sedang tidur tetap bisa dibedakan dari patung."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.4",
    "summary": "The Kinetic Overdrive — 15 senjata dan turbin angin setinggi 35 blok",

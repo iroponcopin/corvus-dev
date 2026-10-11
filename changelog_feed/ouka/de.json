@@ -1,11 +1,47 @@
 {
  "lang": "de",
  "brand": "ouka",
- "updated": "2026-10-05",
+ "updated": "2026-10-11",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-05",
+ "updated_label": "Aktualisiert am 2026-10-11",
  "note": "",
  "groups": [
+  {
+   "label": "V1.5",
+   "summary": "The Wrought Iron Sovereign — ein 3,8 Blöcke hoher Wächter für die Schatzkammer",
+   "releases": [
+    {
+     "version": "V1.5.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "The Wrought Iron Sovereign — ein 3,8 Blöcke hoher Wächter für die Schatzkammer",
+     "summary": "Der Wrought Iron Sovereign erscheint: ein 3,8 Blöcke hoher, gepanzerter Wächter, der wie eine Statue schläft, bis ein Spieler im Überlebens- oder Abenteuermodus auf 8 Blöcke herankommt oder ihn angreift. Dazu kommen die Schatzkammertür und der Schatzkammer-Generalschlüssel, die Sovereign-Kampfaxt, Wrought-Plate-Rüstung, der Wrought-Iron-Statue-Block und 15 neue, synthetisch erzeugte Klänge. Die Montagelinie baut jetzt genau das Produkt, das du wählst.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Der Wrought Iron Sovereign erscheint: ein 3,8 Blöcke hoher, gepanzerter Wächter mit 300 Lebenspunkten. Er schläft wie eine Statue, bis ein Spieler auf 8 Blöcke herankommt oder ihn angreift.",
+        "Im Wachzustand lenkt er Gewehrkugeln, Pfeile, Klingen, Explosionen und Schockwellen ab. Solange seine Axt frei ist, geschieht das aus jeder Richtung; steckt die Axt im Boden, lenken Front und Seiten weiterhin alles ab, und ein durchschlagendes Geschoss bleibt am Boss hängen, statt zu dem Spieler hinter ihm weiterzufliegen.",
+        "Sein Hieb von oben vergräbt die Axt 3,5 Sekunden lang im Boden, und erst dann ist der Rücken verwundbar: Treffer von hinten zählen 5-fach, bis zu 100 Schaden pro Öffnung, sodass jeder Kampf mindestens 3 Öffnungen braucht. Das Susanoo-Antimaterialgeschoss und die Kreisschockwelle machen von hinten stattdessen einheitlich 60.",
+        "Die Besiegung bringt immer einen Schatzkammer-Generalschlüssel, die Sovereign-Kampfaxt und 8 Wrought-Plate-Barren.",
+        "Die Schatzkammertür lässt sich im Überleben nicht zerstören und hält Explosionen stand. Nur der Schatzkammer-Generalschlüssel öffnet sie; er wird nie verbraucht. Die Türen setzen Operatoren.",
+        "Die Sovereign-Kampfaxt trifft für 13. Nach 1,2 Sekunden Aufladung löst sie eine fächerförmige Schockwelle von 6 Blöcken Länge aus, die 2 Sekunden betäubt und keinen Block zerstört. 4 Teile der Wrought-Plate-Rüstung zusammen heben den Rückstoß vollständig auf.",
+        "Die Wrought-Iron-Statue ist eine 3 × 3 × 4 große Figur des schlafenden Wächters und wird an der Montagelinie hergestellt. 15 neue Klänge, alle synthetisch erzeugt, begleiten Boss, Tür, Schlüssel und Axt.",
+        "Die Automatisierte Präzisions-Montagelinie baut jetzt genau das Produkt, das du auf einem neuen Auswahlbildschirm wählst. Damit werden 16 Produkte korrigiert, die früher als ein anderes Teil herauskamen, und der Zielumriss folgt nun der gezeichneten Form der Maschine."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Montagelinien, die vor 1.5.0 platziert wurden, starten ohne Auswahl und warten: öffne jede mit leerer Hand, wähle ein Produkt und drücke „Build this“. Teile, fertige Gegenstände, laufende Aufträge und Strom gehen nicht verloren, doch eine wartende Linie nimmt keine Teile an, sodass automatisierte Fabriken stillstehen, bis du wählst.",
+        "Entferne ältere OUKA-Jars aus dem mods-Ordner, bevor du 1.5.0 hinzufügst, und behalte nur eine Kopie von GeckoLib 5.5.6: zwei OUKA-Jars oder zwei GeckoLibs verhindern den Start. Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer (Fabric API liegt nicht im Zip). Auf Client und Server installieren.",
+        "Der Wrought Iron Sovereign entsteht nicht natürlich: setze ihn mit seinem Spawn-Ei oder /summon. Er verschwindet auch bei Friedlich nicht, und einmal geweckt schläft er nie wieder ein. Schatzkammer-Generalschlüssel, Axt und Barren kommen nur vom Boss; ein volles Rüstungsset braucht 18 Barren, also 3 Besiegungen. Nur Operatoren können Schatzkammertüren setzen. Mit der F3+B-Hitbox-Anzeige lässt sich ein schlafender Boss weiterhin von einer Statue unterscheiden."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.4",
    "summary": "The Kinetic Overdrive — 15 Waffen und ein 35 Blöcke hohes Windrad",

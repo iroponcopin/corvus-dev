@@ -1,11 +1,47 @@
 {
  "lang": "tr",
  "brand": "ouka",
- "updated": "2026-10-05",
+ "updated": "2026-10-11",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-05 tarihinde güncellendi",
+ "updated_label": "2026-10-11 tarihinde güncellendi",
  "note": "",
  "groups": [
+  {
+   "label": "V1.5",
+   "summary": "The Wrought Iron Sovereign — hazine için 3,8 blok boyunda bir muhafız",
+   "releases": [
+    {
+     "version": "V1.5.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "The Wrought Iron Sovereign — hazine için 3,8 blok boyunda bir muhafız",
+     "summary": "Wrought Iron Sovereign geliyor: sağlam zırhlı, 3,8 blok boyunda bir muhafız; hayatta kalma ya da macera modundaki bir oyuncu 8 blok yakınına gelene ya da ona saldırana kadar heykel gibi uyur. Yanında Hazine Kapısı ve Hazine Ana Anahtarı, Egemen Savaş Baltası, Wrought Plate zırhı, Dövme Demir Heykel bloğu ve 15 yeni sentezlenmiş ses gelir. Otomatik Hassas Montaj Hattı artık yalnızca seçtiğiniz ürünü üretir.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Wrought Iron Sovereign geliyor: 3,8 blok boyunda, 300 canlı, sağlam zırhlı bir muhafız. Bir oyuncu 8 blok yakınına gelene ya da ona saldırana kadar heykel gibi uyur.",
+        "Uyanınca mermileri, okları, bıçakları, patlamaları ve şok dalgalarını saptırır. Baltası serbestken bunu her yönden yapar; balta yere saplıyken ise ön ve yanlar yine her şeyi saptırır, delici bir mermi de arkasındaki oyuncuya gitmek yerine boss'ta durur.",
+        "Yukarıdan vurduğu darbe baltayı 3,5 saniye boyunca yere gömer ve sırt ancak o zaman vurulabilir: arkadan gelen vuruşlar 5 kat sayılır, açılma başına en çok 100 hasar verir; bu yüzden her savaş en az 3 açılma gerektirir. Susanoo anti-materyal mermisi ve dairesel şok dalgası ise arkadan sabit 60 hasar verir.",
+        "Onu yenmek her zaman bir Hazine Ana Anahtarı, Egemen Savaş Baltası ve 8 Wrought Plate külçesi düşürür.",
+        "Hazine Kapısı hayatta kalma modunda kırılamaz ve patlamalara dayanır. Yalnızca Hazine Ana Anahtarı açar; anahtar hiç tükenmez. Kapıları operatörler yerleştirir.",
+        "Egemen Savaş Baltası 13 hasar verir. 1,2 saniye şarj edildiğinde 6 blok uzunluğunda, yelpaze biçimli bir şok dalgası çıkarır; bu dalga 2 saniye sersemletir ve tek bir bloğu bile kırmaz. 4 parça Wrought Plate zırh birlikte geri tepmeyi tamamen iptal eder.",
+        "Dövme Demir Heykel, uyuyan muhafızın 3 × 3 × 4 boyutunda bir figürüdür ve montaj hattında üretilir. Hepsi sentezlenmiş 15 yeni ses boss'a, kapıya, anahtara ve baltaya eşlik eder.",
+        "Otomatik Hassas Montaj Hattı artık yeni seçim ekranında seçtiğiniz ürünün tam kendisini üretir. Böylece daha önce başka bir eşya olarak çıkan 16 ürün düzeltildi ve nişan dış hattı artık makinenin çizilmiş şeklini izliyor."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "1.5.0'dan önce yerleştirilmiş montaj hatları hiçbir şey seçili olmadan başlar ve bekler: her birini boş elle açın, bir ürün seçin ve \"Build this\" düğmesine basın. Parça, bitmiş eşya, süren iş ya da enerji kaybolmaz; ama bekleyen hat parça kabul etmez, bu yüzden otomatik fabrikalar siz seçene kadar durur.",
+        "1.5.0'ı eklemeden önce mods klasöründeki eski OUKA jar dosyalarını kaldırın ve yalnızca bir GeckoLib 5.5.6 bırakın: iki OUKA jar'ı ya da iki GeckoLib oyunun açılmasını engeller. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi ve Fabric API 0.161.0+26.3 veya daha yenisi gerekir (Fabric API zip içinde değildir). İstemciye ve sunucuya kurun.",
+        "Wrought Iron Sovereign kendiliğinden ortaya çıkmaz: yumurtasıyla ya da /summon ile yerleştirin. Huzurlu zorlukta da yok olmaz ve uyandıktan sonra bir daha asla uyumaz. Hazine Ana Anahtarı, balta ve külçeler yalnızca boss'tan çıkar; tam bir zırh takımı 18 külçe ister; bunun için boss'u 3 kez yenmek gerekir. Hazine Kapılarını yalnızca operatörler yerleştirebilir. F3+B hitbox görünümüyle uyuyan boss hâlâ bir heykelden ayırt edilebilir."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.4",
    "summary": "The Kinetic Overdrive — 15 silah ve 35 blok yüksekliğinde bir rüzgar türbini",

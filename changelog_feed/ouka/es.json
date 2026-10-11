@@ -1,11 +1,47 @@
 {
  "lang": "es",
  "brand": "ouka",
- "updated": "2026-10-05",
+ "updated": "2026-10-11",
  "title": "Historial de actualizaciones",
- "updated_label": "Actualizado el 2026-10-05",
+ "updated_label": "Actualizado el 2026-10-11",
  "note": "",
  "groups": [
+  {
+   "label": "V1.5",
+   "summary": "The Wrought Iron Sovereign — un guardián de 3,8 bloques para el tesoro",
+   "releases": [
+    {
+     "version": "V1.5.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "The Wrought Iron Sovereign — un guardián de 3,8 bloques para el tesoro",
+     "summary": "Llega el Wrought Iron Sovereign: un guardián blindado de 3,8 bloques que duerme como una estatua hasta que un jugador en modo supervivencia o aventura se acerca a 8 bloques o lo golpea. Lo acompañan la Puerta del Tesoro y la Llave Maestra del Tesoro, el Hacha de Batalla Soberana, la armadura de Placa Forjada, el bloque Estatua de Hierro Forjado y 15 sonidos nuevos sintetizados. La línea de montaje ahora construye exactamente el producto que elijas.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "Llega el Wrought Iron Sovereign: un guardián blindado de 3,8 bloques con 300 de vida. Duerme como una estatua hasta que un jugador se acerca a 8 bloques o lo ataca.",
+        "Despierto, desvía proyectiles de armas de fuego, flechas, hojas, explosiones y ondas de choque. Mientras su hacha esté libre lo hace desde cualquier dirección; con el hacha clavada, el frente y los lados siguen desviándolo todo, y un proyectil perforante se detiene en el jefe en lugar de seguir hacia quien esté detrás.",
+        "Su golpe desde arriba entierra el hacha en el suelo durante 3,5 segundos, y solo entonces se puede dañar su espalda: los golpes por detrás cuentan 5 veces, hasta 100 de daño por apertura, así que cada combate necesita al menos 3 aperturas. El proyectil antimaterial Susanoo y la onda de choque circular hacen en cambio 60 de daño fijo por detrás.",
+        "Al derrotarlo siempre suelta una Llave Maestra del Tesoro, el Hacha de Batalla Soberana y 8 lingotes de Placa Forjada.",
+        "La Puerta del Tesoro no puede romperse en supervivencia y resiste las explosiones. Solo la Llave Maestra del Tesoro la abre, y la llave nunca se gasta. Los operadores colocan las puertas.",
+        "El Hacha de Batalla Soberana inflige 13 de daño. Cargada durante 1,2 segundos, libera una onda de choque en abanico de 6 bloques de largo que aturde durante 2 segundos y no rompe ningún bloque. 4 piezas de armadura de Placa Forjada juntas anulan por completo el retroceso.",
+        "La Estatua de Hierro Forjado es una figura de 3 × 3 × 4 del guardián dormido, fabricada en la línea de montaje. 15 sonidos nuevos, todos sintetizados, acompañan al jefe, la puerta, la llave y el hacha.",
+        "La Línea de Montaje de Precisión Automatizada ahora construye exactamente el producto que eliges en una nueva pantalla de selección. Esto corrige 16 productos que antes salían como otro objeto, y su contorno de mira ahora sigue la forma dibujada de la máquina."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Las líneas de montaje colocadas antes de 1.5.0 empiezan sin nada seleccionado y esperan: ábrelas una a una con la mano vacía, elige un producto y pulsa «Build this». No se pierden piezas, objetos terminados, trabajos en curso ni energía, pero una línea en espera no admite piezas, así que las fábricas automáticas se detienen hasta que elijas.",
+        "Quita los jars antiguos de OUKA de la carpeta mods antes de añadir 1.5.0 y deja solo una copia de GeckoLib 5.5.6: dos jars de OUKA, o dos GeckoLib, impedirán que el juego arranque. Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior y Fabric API 0.161.0+26.3 o superior (Fabric API no viene en el zip). Instálalo en el cliente y en el servidor.",
+        "El Wrought Iron Sovereign no aparece de forma natural: colócalo con su huevo de aparición o con /summon. No desaparece en el modo Pacífico y, una vez despierto, nunca vuelve a dormirse. La Llave Maestra del Tesoro, el hacha y los lingotes solo salen del jefe; un juego completo de armadura necesita 18 lingotes, es decir, 3 derrotas. Solo los operadores pueden colocar Puertas del Tesoro. Con la vista de hitbox F3+B, un jefe dormido se sigue distinguiendo de una estatua."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.4",
    "summary": "The Kinetic Overdrive — 15 armas y un aerogenerador de 35 bloques",

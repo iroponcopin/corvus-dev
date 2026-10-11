@@ -1,11 +1,47 @@
 {
  "lang": "it",
  "brand": "ouka",
- "updated": "2026-10-05",
+ "updated": "2026-10-11",
  "title": "Changelog",
- "updated_label": "Aggiornato il 2026-10-05",
+ "updated_label": "Aggiornato il 2026-10-11",
  "note": "",
  "groups": [
+  {
+   "label": "V1.5",
+   "summary": "The Wrought Iron Sovereign — un guardiano di 3,8 blocchi per il tesoro",
+   "releases": [
+    {
+     "version": "V1.5.0",
+     "date": "2026-10-11",
+     "type": "release",
+     "title": "The Wrought Iron Sovereign — un guardiano di 3,8 blocchi per il tesoro",
+     "summary": "Arriva il Wrought Iron Sovereign: un guardiano corazzato alto 3,8 blocchi che dorme come una statua finché un giocatore in modalità sopravvivenza o avventura non si avvicina entro 8 blocchi o non lo colpisce. Arrivano con lui la Porta del Tesoro e la Chiave Maestra del Tesoro, l'Ascia da Battaglia Sovrana, l'armatura in Wrought Plate, il blocco Statua di Ferro Battuto e 15 nuovi suoni sintetizzati. La linea di assemblaggio ora costruisce esattamente il prodotto che scegli.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Arriva il Wrought Iron Sovereign: un guardiano corazzato alto 3,8 blocchi con 300 punti vita. Dorme come una statua finché un giocatore non si avvicina entro 8 blocchi o non lo attacca.",
+        "Quando è sveglio devia proiettili, frecce, lame, esplosioni e onde d'urto. Finché la sua ascia è libera lo fa da ogni direzione; con l'ascia conficcata, davanti e lati continuano a deviare tutto, e un colpo perforante si ferma sul boss invece di proseguire verso chi sta dietro.",
+        "Il suo colpo dall'alto conficca l'ascia nel terreno per 3,5 secondi, e solo allora la schiena può essere colpita: i colpi da dietro contano 5 volte, fino a 100 danni per apertura, quindi ogni combattimento richiede almeno 3 aperture. Il proiettile anti-materiale Susanoo e l'onda d'urto circolare fanno invece 60 danni fissi da dietro.",
+        "Sconfiggerlo fa sempre cadere una Chiave Maestra del Tesoro, l'Ascia da Battaglia Sovrana e 8 lingotti di Wrought Plate.",
+        "La Porta del Tesoro non si può rompere in sopravvivenza e resiste alle esplosioni. La apre solo la Chiave Maestra del Tesoro, che non si consuma mai. Sono gli operatori a piazzare le porte.",
+        "L'Ascia da Battaglia Sovrana infligge 13 danni. Caricata per 1,2 secondi, libera un'onda d'urto a ventaglio lunga 6 blocchi che stordisce per 2 secondi e non rompe alcun blocco. 4 pezzi di armatura Wrought Plate insieme annullano del tutto il contraccolpo.",
+        "La Statua di Ferro Battuto è una figura di 3 × 3 × 4 del guardiano addormentato, realizzata sulla linea di assemblaggio. 15 nuovi suoni, tutti sintetizzati, accompagnano il boss, la porta, la chiave e l'ascia.",
+        "La Linea di Assemblaggio di Precisione Automatizzata ora costruisce esattamente il prodotto scelto su una nuova schermata di selezione. Così si correggono 16 prodotti che prima uscivano come un altro oggetto, e il contorno di mira ora segue la forma disegnata della macchina."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Le linee di assemblaggio piazzate prima di 1.5.0 partono senza nulla di selezionato e aspettano: apri ciascuna a mani vuote, scegli un prodotto e premi «Build this». Non si perdono parti, oggetti finiti, lavori in corso né energia, ma una linea in attesa non accetta parti, quindi le fabbriche automatiche restano ferme finché non scegli.",
+        "Prima di aggiungere 1.5.0, rimuovi i vecchi jar di OUKA dalla cartella mods e tieni una sola copia di GeckoLib 5.5.6: due jar di OUKA, o due GeckoLib, impediranno l'avvio del gioco. Richiede Minecraft 26.3, Fabric Loader 0.19.5 o più recente e Fabric API 0.161.0+26.3 o più recente (Fabric API non è nello zip). Installalo sul client e sul server.",
+        "Il Wrought Iron Sovereign non compare in modo naturale: piazzalo con il suo uovo di generazione o con /summon. Non scompare in modalità Pacifico e, una volta sveglio, non torna mai a dormire. La Chiave Maestra del Tesoro, l'ascia e i lingotti arrivano solo dal boss; un set completo di armatura richiede 18 lingotti, cioè 3 sconfitte. Solo gli operatori possono piazzare le Porte del Tesoro. Con la vista hitbox F3+B, un boss addormentato si distingue ancora da una statua."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.4",
    "summary": "The Kinetic Overdrive — 15 armi e una turbina eolica da 35 blocchi",
