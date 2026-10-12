@@ -694,6 +694,49 @@ def _noctua_block():
     }
 
 
+AGENT_ZIP_PREFIX = "corvus-agent-"
+AGENT_ZIP_SUFFIX = ".zip"
+
+
+def _agent_block():
+    """The `agent` block (Corvus Agent, 2026-10-12), or None when no package has been published.
+
+    Corvus Agent is the program beside a self-hosted server that keeps its mods in step with this manifest; nothing in
+    the game loads it, so the block is a file: name, size, SHA-256. Its name starts with "corvus-agent-", which the
+    launcher's own rule (corvus-<digits>.jar) cannot match. The version is the file name's and must be the
+    Implementation-Version of the jar inside, so a renamed package cannot pass for another. Exactly one package; a
+    function of its own, so it cannot change a byte of another block; never dropped once published.
+    """
+    zips = sorted(p for p in DOWNLOAD_DIR.glob(f"{AGENT_ZIP_PREFIX}*{AGENT_ZIP_SUFFIX}") if p.is_file())
+    if not zips:
+        return None
+    if len(zips) > 1:
+        raise SystemExit(f"ERROR: more than one Corvus Agent package in {DOWNLOAD_DIR} "
+                         f"({', '.join(z.name for z in zips)}). Publish exactly one.")
+    zpath = zips[0]
+    version = zpath.name[len(AGENT_ZIP_PREFIX):-len(AGENT_ZIP_SUFFIX)]
+    if not re.fullmatch(r"\d+\.\d+\.\d+", version):
+        raise SystemExit(f"ERROR: {zpath.name} is not named corvus-agent-<major.minor.patch>.zip.")
+    inner = f"corvus-agent-{version}/corvus-agent-{version}.jar"
+    try:
+        with zipfile.ZipFile(zpath) as zf:
+            with zipfile.ZipFile(io.BytesIO(zf.read(inner))) as jar:
+                meta = jar.read("META-INF/MANIFEST.MF").decode("utf-8")
+    except (OSError, KeyError, ValueError, zipfile.BadZipFile) as exc:
+        raise SystemExit(f"ERROR: could not read {inner} out of {zpath} ({exc}).")
+    declared = re.search(r"^Implementation-Version: (.+)$", meta, re.MULTILINE)
+    if not declared or declared.group(1).strip() != version:
+        raise SystemExit(f"ERROR: {zpath.name} is named for {version}, but the jar inside declares "
+                         f"{declared.group(1).strip() if declared else 'no version'}.")
+    return {
+        "latest": version,
+        "download_url": f"{SITE_BASE_URL}/downloads/{zpath.name}",
+        "file_name": zpath.name,
+        "file_size": zpath.stat().st_size,
+        "sha256": _sha256(zpath),
+    }
+
+
 def _previously_published_manifest():
     """The manifest currently committed at the repo root, or {} if there is none."""
     path = ROOT / "glimpse_manifest.json"
@@ -858,6 +901,14 @@ def build():
             f"'halia' block. Dropping it would silently withdraw the release. Publish the jar, or fix the naming.")
     else:
         print("glimpse_manifest.py: no Halia jar found yet - writing manifest with no 'halia' block")
+
+    agent = _agent_block()
+    if agent is not None:
+        manifest["agent"] = agent
+        print(f"glimpse_manifest.py: Corvus Agent {agent['latest']} ({agent['file_name']}) selected, including 'agent' block")
+    elif "agent" in _previously_published_manifest():
+        raise SystemExit(f"ERROR: no Corvus Agent package found in {DOWNLOAD_DIR}, but the published manifest carries an "
+                         f"'agent' block. Dropping it would silently withdraw the release.")
 
     noctua = _noctua_block()
     if noctua is not None:

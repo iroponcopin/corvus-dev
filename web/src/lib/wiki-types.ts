@@ -323,6 +323,7 @@ export interface LangData {
     astraea: ModelDownload | null;
     tsubomi: ModelDownload | null;
     halia: ModelDownload | null;
+    agent: ModelDownload | null;
     noctua: ModelDownload | null;
     discord: { heading: string; body: string; cta: string };
     alphaNote: string;

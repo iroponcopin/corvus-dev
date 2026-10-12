@@ -754,6 +754,7 @@ def build_lang(lang: str, ctx: dict) -> dict:
     astraea_file = man.get("astraea")
     tsubomi_file = man.get("tsubomi")
     halia_file = man.get("halia")
+    agent_file = man.get("agent")
     noctua_file = man.get("noctua")
     mc_reqs = [{"label": "Minecraft", "value": f"{ctx['mc']} · Fabric"}]
     download_page = {
@@ -777,6 +778,10 @@ def build_lang(lang: str, ctx: dict) -> dict:
         "halia": halia_file and {"version": halia_file["latest"], "requirements": mc_reqs,
                                  "file": file_facts(halia_file["file_name"], halia_file["download_url"],
                                                     halia_file["file_size"], halia_file["sha256"])},
+        "agent": agent_file and {"version": agent_file["latest"],
+                                 "requirements": [{"label": "Java", "value": "25"}],
+                                 "file": file_facts(agent_file["file_name"], agent_file["download_url"],
+                                                    agent_file["file_size"], agent_file["sha256"])},
         "noctua": noctua_file and {"version": noctua_file["latest"],
                                    "requirements": [{"label": "Palworld", "value": "Dedicated Server"}],
                                    "file": file_facts(noctua_file["file_name"], noctua_file["download_url"],

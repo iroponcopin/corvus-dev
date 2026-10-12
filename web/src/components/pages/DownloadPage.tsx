@@ -1,3 +1,4 @@
+import { FRESH } from "@/i18n/fresh";
 import Link from "next/link";
 import { Formation } from "@/engine/store";
 import { asset, pathOf } from "@/lib/site";
@@ -132,6 +133,23 @@ export function DownloadPage({ lang }: { lang: Lang }) {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={asset("icons/tsubomi.png")} alt="" width={64} height={64} />
               <p className="ac-small ac-ltr">Minecraft {mc} · Fabric</p>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {dl.agent ? (
+        <section className="ac-wrap ac-dl-section" aria-labelledby="dl-agent">
+          <h2 id="dl-agent" className="ac-h3">
+            {FRESH[lang].agent.title}
+          </h2>
+          <p className="ac-small ac-dl-note">{FRESH[lang].agent.body}</p>
+          <div className="ac-grid-2">
+            <FileCard tag={`${d.chrome.version} ${dl.agent.version}`} file={dl.agent.file} cta={d.chrome.primaryCta} labels={labels} />
+            <div className="ac-card ac-file-aside">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={asset("icons/store.png")} alt="" width={64} height={64} />
+              <p className="ac-small">{FRESH[lang].agent.note}</p>
             </div>
           </div>
         </section>

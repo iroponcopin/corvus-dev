@@ -152,7 +152,7 @@ def declared_mc_versions(path):
 
 #: Minecraft ではない配布物。性質 5 の「Minecraft の版を宣言しているか」は意味を持たない。
 #: 2026-10-04: Noctua（Palworld のサーバー側 MOD）。
-NOT_MINECRAFT = frozenset({"noctua"})
+NOT_MINECRAFT = frozenset({"noctua", "agent"})   # 2026-10-12: Corvus Agent runs beside a server, not in the game
 
 
 def check(root, old, new, baseline):

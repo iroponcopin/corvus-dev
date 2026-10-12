@@ -126,6 +126,8 @@ export interface Fresh {
   skinPreview: { title: string; front: string; side: string };
   /** The skin page once the skin is public (data/skin_public.json). */
   skinPublic: { lede: string };
+  /** The Download page's Corvus Agent section (4.0.0): the program for a self-hosted server. */
+  agent: { title: string; body: string; note: string };
 }
 
 export const FRESH: Record<Lang, Fresh> = {
@@ -265,6 +267,7 @@ export const FRESH: Record<Lang, Fresh> = {
     },
     skinPreview: { title: "ゲームの中の Sparxie", front: "正面", side: "斜め" },
     skinPublic: { lede: "Sparxie は Minecraft のスキンとして、誰でも無料で使えます。ここで回して、ポーズを試して、そのままダウンロードできます。" },
+    agent: { title: "Corvus Agent", body: "自分で運用している Minecraft サーバーの Mod を、Corvus Store と同じ状態に保つプログラムです。ダウンロードを検証してから、サーバーを停止・入れ替え・起動し、起動しなければ元に戻します。", note: "Java 25 · 導入ガイドと設定例を同梱" },
   },
   en: {
     heroLine1: "Corvus.",
@@ -402,6 +405,7 @@ export const FRESH: Record<Lang, Fresh> = {
     },
     skinPreview: { title: "Sparxie, as she looks in game", front: "Front", side: "Three-quarter" },
     skinPublic: { lede: "Sparxie is available as a Minecraft skin, free for everyone: turn her around and try her poses here, then download the skin." },
+    agent: { title: "Corvus Agent", body: "A program for the Minecraft server you host yourself: it keeps the server's mods in step with Corvus Store. It checks each download, stops the server, swaps the files, starts it again, and puts the old files back if it does not come up.", note: "Java 25 · setup guide and example config inside" },
   },
   es: {
     heroLine1: "Corvus.",
@@ -539,6 +543,7 @@ export const FRESH: Record<Lang, Fresh> = {
     },
     skinPreview: { title: "Sparxie tal como se ve en el juego", front: "Frente", side: "Tres cuartos" },
     skinPublic: { lede: "Sparxie está disponible como skin de Minecraft, gratis para todos: gírala y prueba sus poses aquí, y luego descarga la skin." },
+    agent: { title: "Corvus Agent", body: "Un programa para el servidor de Minecraft que alojas tú: mantiene los mods del servidor al día con Corvus Store. Comprueba cada descarga, detiene el servidor, cambia los archivos, lo arranca de nuevo y restaura los anteriores si no arranca.", note: "Java 25 · incluye guía de instalación y configuración de ejemplo" },
   },
   fr: {
     heroLine1: "Corvus.",
@@ -676,6 +681,7 @@ export const FRESH: Record<Lang, Fresh> = {
     },
     skinPreview: { title: "Sparxie telle qu’elle apparaît en jeu", front: "Face", side: "Trois-quarts" },
     skinPublic: { lede: "Sparxie est disponible comme skin Minecraft, gratuit pour tous : faites-la tourner, essayez ses poses ici, puis téléchargez le skin." },
+    agent: { title: "Corvus Agent", body: "Un programme pour le serveur Minecraft que vous hébergez vous-même : il garde les mods du serveur au même niveau que Corvus Store. Il vérifie chaque téléchargement, arrête le serveur, remplace les fichiers, le relance, et remet les anciens s'il ne redémarre pas.", note: "Java 25 · guide d'installation et exemple de configuration inclus" },
   },
   zh: {
     heroLine1: "Corvus.",
@@ -813,6 +819,7 @@ export const FRESH: Record<Lang, Fresh> = {
     },
     skinPreview: { title: "游戏中的 Sparxie", front: "正面", side: "斜侧" },
     skinPublic: { lede: "Sparxie 作为 Minecraft 皮肤向所有人免费开放：在这里转动她、试试各种姿势，然后下载皮肤。" },
+    agent: { title: "Corvus Agent", body: "面向自建 Minecraft 服务器的程序:让服务器的模组与 Corvus Store 保持一致。它会校验每个下载,停止服务器,替换文件,重新启动;如果服务器没有启动,就恢复原来的文件。", note: "Java 25 · 内含安装指南和示例配置" },
   },
   ko: {
     heroLine1: "Corvus.",
@@ -950,6 +957,7 @@ export const FRESH: Record<Lang, Fresh> = {
     },
     skinPreview: { title: "게임 속 Sparxie", front: "정면", side: "비스듬히" },
     skinPublic: { lede: "Sparxie는 누구나 무료로 쓸 수 있는 Minecraft 스킨입니다. 여기서 돌려 보고 포즈를 바꿔 본 뒤 스킨을 내려받으세요." },
+    agent: { title: "Corvus Agent", body: "직접 운영하는 Minecraft 서버를 위한 프로그램입니다. 서버의 모드를 Corvus Store와 같은 상태로 유지합니다. 다운로드를 검증하고, 서버를 멈춘 뒤 파일을 교체하고 다시 시작하며, 서버가 올라오지 않으면 이전 파일로 되돌립니다.", note: "Java 25 · 설치 안내와 예시 설정 포함" },
   },
   "pt-br": {
     heroLine1: "Corvus.",
@@ -1087,6 +1095,7 @@ export const FRESH: Record<Lang, Fresh> = {
     },
     skinPreview: { title: "Sparxie como aparece no jogo", front: "Frente", side: "Três quartos" },
     skinPublic: { lede: "Sparxie está disponível como skin de Minecraft, grátis para todos: gire-a e experimente as poses aqui, depois baixe a skin." },
+    agent: { title: "Corvus Agent", body: "Um programa para o servidor de Minecraft que você mesmo hospeda: mantém os mods do servidor em dia com o Corvus Store. Ele confere cada download, para o servidor, troca os arquivos, inicia de novo e devolve os arquivos antigos se o servidor não subir.", note: "Java 25 · inclui guia de instalação e configuração de exemplo" },
   },
   it: {
     heroLine1: "Corvus.",
@@ -1224,6 +1233,7 @@ export const FRESH: Record<Lang, Fresh> = {
     },
     skinPreview: { title: "Sparxie come appare nel gioco", front: "Fronte", side: "Tre quarti" },
     skinPublic: { lede: "Sparxie è disponibile come skin di Minecraft, gratis per tutti: falla girare e prova le sue pose qui, poi scarica la skin." },
+    agent: { title: "Corvus Agent", body: "Un programma per il server Minecraft che ospiti tu: tiene i mod del server allineati a Corvus Store. Controlla ogni download, ferma il server, sostituisce i file, lo riavvia e rimette i file precedenti se non riparte.", note: "Java 25 · guida all'installazione e configurazione di esempio incluse" },
   },
   ar: {
     heroLine1: "Corvus.",
@@ -1361,6 +1371,7 @@ export const FRESH: Record<Lang, Fresh> = {
     },
     skinPreview: { title: "Sparxie كما تظهر في اللعبة", front: "من الأمام", side: "منظر جانبي" },
     skinPublic: { lede: "Sparxie متاحة كمظهر لـ Minecraft مجانًا للجميع: أدِرها وجرّب وضعياتها هنا، ثم نزّل المظهر." },
+    agent: { title: "Corvus Agent", body: "برنامج لخادم Minecraft الذي تستضيفه بنفسك: يُبقي مودات الخادم مطابقة لما في Corvus Store. يتحقق من كل تنزيل، ثم يوقف الخادم ويستبدل الملفات ويشغّله من جديد، ويعيد الملفات السابقة إن لم يعمل.", note: "Java 25 · يتضمن دليل الإعداد ومثالًا للإعدادات" },
   },
   ru: {
     heroLine1: "Corvus.",
@@ -1498,6 +1509,7 @@ export const FRESH: Record<Lang, Fresh> = {
     },
     skinPreview: { title: "Sparxie в игре", front: "Спереди", side: "Вполоборота" },
     skinPublic: { lede: "Sparxie доступна как скин для Minecraft — бесплатно для всех: покрутите её и примерьте позы здесь, а затем скачайте скин." },
+    agent: { title: "Corvus Agent", body: "Программа для сервера Minecraft, который вы держите сами: она поддерживает моды сервера в том же состоянии, что и Corvus Store. Проверяет каждую загрузку, останавливает сервер, заменяет файлы, запускает его снова и возвращает прежние файлы, если сервер не поднялся.", note: "Java 25 · руководство по установке и пример настроек внутри" },
   },
   id: {
     heroLine1: "Corvus.",
@@ -1635,6 +1647,7 @@ export const FRESH: Record<Lang, Fresh> = {
     },
     skinPreview: { title: "Sparxie di dalam game", front: "Depan", side: "Tiga perempat" },
     skinPublic: { lede: "Sparxie tersedia sebagai skin Minecraft, gratis untuk semua: putar dia dan coba pose-posenya di sini, lalu unduh skin-nya." },
+    agent: { title: "Corvus Agent", body: "Program untuk server Minecraft yang Anda kelola sendiri: menjaga mod server tetap sama dengan Corvus Store. Program ini memeriksa setiap unduhan, menghentikan server, mengganti berkas, menyalakannya lagi, dan mengembalikan berkas lama jika server tidak menyala.", note: "Java 25 · panduan pemasangan dan contoh konfigurasi disertakan" },
   },
   de: {
     heroLine1: "Corvus.",
@@ -1772,6 +1785,7 @@ export const FRESH: Record<Lang, Fresh> = {
     },
     skinPreview: { title: "Sparxie, wie sie im Spiel aussieht", front: "Vorne", side: "Dreiviertel" },
     skinPublic: { lede: "Sparxie gibt es als Minecraft-Skin, kostenlos für alle: Dreh sie hier herum, probier ihre Posen aus und lade dann den Skin herunter." },
+    agent: { title: "Corvus Agent", body: "Ein Programm für den Minecraft-Server, den du selbst betreibst: Es hält die Mods des Servers auf dem Stand von Corvus Store. Es prüft jeden Download, stoppt den Server, tauscht die Dateien, startet ihn wieder und stellt die alten Dateien zurück, wenn er nicht hochkommt.", note: "Java 25 · Einrichtungsanleitung und Beispielkonfiguration liegen bei" },
   },
   tr: {
     heroLine1: "Corvus.",
@@ -1909,6 +1923,7 @@ export const FRESH: Record<Lang, Fresh> = {
     },
     skinPreview: { title: "Sparxie oyunda böyle görünür", front: "Önden", side: "Dörtte üç" },
     skinPublic: { lede: "Sparxie, herkes için ücretsiz bir Minecraft skin’i olarak hazır: burada döndürün, pozlarını deneyin, sonra skin’i indirin." },
+    agent: { title: "Corvus Agent", body: "Kendi barındırdığınız Minecraft sunucusu için bir program: sunucunun modlarını Corvus Store ile aynı durumda tutar. Her indirmeyi doğrular, sunucuyu durdurur, dosyaları değiştirir, yeniden başlatır ve sunucu açılmazsa eski dosyaları geri koyar.", note: "Java 25 · kurulum kılavuzu ve örnek yapılandırma içinde" },
   },
 };
 
