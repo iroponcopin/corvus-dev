@@ -124,11 +124,11 @@
     "sha256": "ee43330b618f054507b32a2c73d7e1c316072313bbd6a3d1394c64b3b2fe0ebc"
   },
   "agent": {
-    "latest": "4.0.0",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-agent-4.0.0.zip",
-    "file_name": "corvus-agent-4.0.0.zip",
-    "file_size": 223975,
-    "sha256": "b53aacac280f357c5b0aef6a1a1199e62aec10f580ebd50481e1acc96348a590"
+    "latest": "4.1.0",
+    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-agent-4.1.0.zip",
+    "file_name": "corvus-agent-4.1.0.zip",
+    "file_size": 250428,
+    "sha256": "8074ff7b50dea94bb4c69bbf9b40aade682c225e7953c732aea452a038306484"
   },
   "noctua": {
     "latest": "1.0.0",
