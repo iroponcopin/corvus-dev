@@ -1,11 +1,47 @@
 {
  "lang": "de",
  "brand": "ouka",
- "updated": "2026-10-11",
+ "updated": "2026-10-12",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-11",
+ "updated_label": "Aktualisiert am 2026-10-12",
  "note": "",
  "groups": [
+  {
+   "label": "V1.6",
+   "summary": "The Grand Synthesis — dichte Schiebetüren, 50 Einrichtungsstücke und 30 Schwermaschinen",
+   "releases": [
+    {
+     "version": "V1.6.0",
+     "date": "2026-10-12",
+     "type": "release",
+     "title": "The Grand Synthesis — dichte Schiebetüren, 50 Einrichtungsstücke und 30 Schwermaschinen",
+     "summary": "Washitsu und Fabrik wachsen beide. Eine geschlossene Reihe aus Shoji oder Fusuma zeigt keinen Lichtspalt mehr zwischen den Türen: Eine Schlagleiste deckt jetzt jede Fuge, und die neue Shikii Grooved Hinoki Sill nimmt den Fuß der Türen auf. 50 neue Einrichtungsstücke füllen Raum und Garten, und 30 Maschinen der Schwerindustrie führen vom Erz zu ultrafeinem Pulver, Siliziumwafern und Quantenchips, bis hinauf zum Artificial Sun Core mit 1,00 GW Nennleistung. Jeder neue Gegenstand erklärt seine Verwendung im Tooltip.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Der Spalt zwischen geschlossenen Schiebetüren ist zu. Jede Tür auf der hinteren Schiene trägt jetzt an beiden Enden eine Schlagleiste, die die Fuge zur Nachbartür deckt. Berechnet an den ausgelieferten Modellen: Bei keinem Blickwinkel von 0 bis 89 Grad zur Frontalansicht geht eine Sichtlinie zwischen den Türen einer geschlossenen Reihe hindurch.",
+        "Die neue Shikii Grooved Hinoki Sill liegt unter den Schiebetüren: Ihre 2 Nuten nehmen den Fuß eines Shoji oder Fusuma auf, sodass darunter kein Licht durchfällt. Sie gehört zum Kamoi darüber und wird an der Werkbank hergestellt.",
+        "Mehr Türen und Fenster: Diamond-Lattice Shoji, Yukimi Shoji mit einer Glasscheibe, die auf und ab gleitet, Drum-Faced Fusuma, Thousand-Slat Lattice Door, Hemp-Leaf Kumiko Shoji und Amado Storm Shutter laufen auf denselben Schienen wie die Türen, die du schon hast. Dazu kommen der Misu-Vorhang, das Gitterfenster und der runde Fensterrahmen.",
+        "Für den Raum: der Tsuitate-Stellschirm und der zweiteilige Kopfkissenschirm; der Schreibtisch mit Raden-Einlage, die versetzten Tokonoma-Borde und der Ständer aus einer Karin-Bohle, die deine Gegenstände zeigen; die Irori-Feuerstelle und das Hibachi-Kohlebecken, die du anzünden kannst; der Teekessel aus reinem Gold und der Eisentopf am Jizai-Haken, die daneben dampfen; das Ozen-Tablett und das Tokkuri mit Sakeschalen.",
+        "Für den Garten: geharkter weißer Kies mit 8 Harkmustern, stehende Steine, Trittsteine, ein Mooshügel, 2 Arten Bambuszaun, ein Reisigtor, das Tsukubai-Becken zum Füllen, das Kakei-Bambusrohr und das Suikinkutsu, das von fallenden Tropfen klingt. Für Feste und Jahreszeiten: Chochin-Papierlaterne, gläsernes Windspiel, Kadomatsu, Daruma-Puppe und Karpfenfahnen-Mast. Und 2 Instrumente, die du wirklich spielen kannst: die Taiko-Trommel und die Koto.",
+        "Die Schwerindustrie erhält 30 Maschinen und 32 neue Materialien. Die Supersonic Jet Mill macht aus 1 Eisen-, Kupfer- oder Golderz 6 ultrafeines Pulver, und der Vacuum Sintering Furnace backt das Pulver mit Argon zu ebenso vielen Barren. Andere Maschinen erzeugen Flüssigsauerstoff, Argon, Deuterium, Graphen, Wolframkarbid, Siliziumwafer, Mikroplatinen und Quantenchips.",
+        "Der Artificial Sun Core ist ein Kraftwerk von 7 × 7 × 7 Blöcken, das bis zu 1,00 GW ins Netz speist und Deuterium Cells oder Helium-3 Canisters verbrennt; diese Kanister stellt jetzt der Gas-Centrifuge Tower her. Der Molten Salt Exchanger Tower speichert bis zu 2 GJ, die Industrial Flywheel Storage bis zu 8 GJ. Der Forced-Draft Cooling Tower liefert Kühlwasser, und die Plant Control Console listet die Maschinen in Reichweite auf und kann alle auf einmal anhalten.",
+        "Alle 113 neuen Gegenstände sagen im Tooltip, wozu sie da sind. Die 30 Maschinen entstehen auf der Automated Precision Assembly Line; die Einrichtungsstücke und die Schwelle baust du an der Werkbank. 73 neue Klänge kommen dazu."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Die Korrektur betrifft das, was du durch eine geschlossene Reihe siehst. Die Schlagleiste wird nur gezeichnet, deshalb gehen Fadenkreuz und Kugeln weiterhin durch den 3 Pixel breiten Spalt zwischen den Schienen (Geschosse gehen ohnehin durch Shoji und Fusuma). Leicht durchscheinendes Washi-Papier und der Blick durch Gitter und Glas sind so gewollt. Wo eine Tür an einen Block stößt, kann ein haarfeiner Riss bleiben, und auch ein geschlossener Amado Storm Shutter lässt Licht durch. Wie offene Türen aussehen, war nicht Teil der Berechnung.",
+        "Entferne ältere OUKA-jars aus dem mods-Ordner, bevor du 1.6.0 hinzufügst, und behalte nur eine Kopie von GeckoLib 5.5.6: Zwei OUKA-jars oder zwei GeckoLibs verhindern den Spielstart. Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer (Fabric API ist nicht im zip). Installiere die Mod auf Client und Server.",
+        "Die 30 Maschinen entstehen auf der Automated Precision Assembly Line, nicht an der Werkbank. Raw Tungsten kommt nur aus dem Sub-Crustal Thermal Bore; einen Wolframerz-Block gibt es nicht. Prozessgase und -flüssigkeiten sind Kanister-Gegenstände, keine Flüssigkeitsblöcke. Manche Maschinen warten, bis von Vacuum Pump, Gas Compressor, Coolant Circulation Pump und Cleanroom Fan-Filter Unit diejenige sie berührt, die sie brauchen; die Statuszeile nennt, was fehlt. Der Artificial Sun Core braucht Vakuum, Kühlmittel und Brennstoff und lädt vor dem Zünden seinen Kondensator aus dem Netz. 1,00 GW ist seine Nennobergrenze: Er erzeugt nur, was das Netz verlangt. Auf der Irori-Feuerstelle lässt sich nichts kochen."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.5",
    "summary": "The Wrought Iron Sovereign — ein 3,8 Blöcke hoher Wächter für die Schatzkammer",

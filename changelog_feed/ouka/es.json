@@ -1,11 +1,47 @@
 {
  "lang": "es",
  "brand": "ouka",
- "updated": "2026-10-11",
+ "updated": "2026-10-12",
  "title": "Historial de actualizaciones",
- "updated_label": "Actualizado el 2026-10-11",
+ "updated_label": "Actualizado el 2026-10-12",
  "note": "",
  "groups": [
+  {
+   "label": "V1.6",
+   "summary": "The Grand Synthesis — puertas correderas sin rendijas, 50 piezas de mobiliario y 30 máquinas pesadas",
+   "releases": [
+    {
+     "version": "V1.6.0",
+     "date": "2026-10-12",
+     "type": "release",
+     "title": "The Grand Synthesis — puertas correderas sin rendijas, 50 piezas de mobiliario y 30 máquinas pesadas",
+     "summary": "El washitsu y la fábrica crecen a la vez. Una fila cerrada de shoji o fusuma ya no deja ver una rendija de luz entre sus puertas: un montante de encuentro cubre ahora cada junta, y la nueva Shikii Grooved Hinoki Sill recibe el pie de las puertas. 50 nuevas piezas de mobiliario llenan la sala y el jardín, y 30 máquinas de industria pesada llevan del mineral al polvo ultrafino, las obleas de silicio y los chips cuánticos, hasta el Artificial Sun Core, con una potencia nominal de 1,00 GW. Cada objeto nuevo explica su uso en su descripción emergente.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "La rendija entre puertas correderas cerradas queda cerrada. Cada puerta del carril trasero lleva ahora en ambos extremos un montante de encuentro que cubre la junta con su vecina. Según el cálculo hecho sobre los modelos publicados, ninguna línea de visión pasa entre las puertas de una fila cerrada con ningún ángulo de visión de 0 a 89 grados respecto a la vista frontal.",
+        "La nueva Shikii Grooved Hinoki Sill se coloca bajo las puertas correderas: sus 2 ranuras reciben el pie de un shoji o un fusuma, de modo que no pasa luz por debajo. Hace pareja con el kamoi de arriba y se fabrica en una mesa de trabajo.",
+        "Más puertas y ventanas: el Diamond-Lattice Shoji, el Yukimi Shoji con un cristal que sube y baja, el Drum-Faced Fusuma, la Thousand-Slat Lattice Door, el Hemp-Leaf Kumiko Shoji y el Amado Storm Shutter se deslizan por los mismos carriles que las puertas que ya tienes. Se suman la persiana misu, la ventana de celosía y el marco de ventana redonda.",
+        "Para la sala: el biombo fijo tsuitate y el biombo de cabecera de dos hojas; el escritorio con incrustación raden, las baldas escalonadas del tokonoma y el expositor de tablón de karin, que muestran tus objetos; el hogar irori y el brasero hibachi, que puedes encender; la tetera de oro puro y la olla de hierro del gancho jizai, que humean junto a ellos; la bandeja ozen y el tokkuri con sus copas de sake.",
+        "Para el jardín: grava blanca rastrillada con 8 patrones de rastrillado, piedras erguidas, pasaderas, un montículo de musgo, 2 tipos de valla de bambú, una cancela de ramas, la pila tsukubai que puedes llenar, el caño de bambú kakei y el suikinkutsu, que suena con las gotas que caen. Para fiestas y estaciones: el farol de papel chochin, la campanilla de viento de cristal, el kadomatsu, el muñeco daruma y el mástil de carpas. Y 2 instrumentos que puedes tocar de verdad: el tambor taiko y el koto.",
+        "La industria pesada gana 30 máquinas y 32 materiales nuevos. El Supersonic Jet Mill convierte 1 mineral de hierro, cobre u oro en 6 de polvo ultrafino, y el Vacuum Sintering Furnace cuece el polvo en el mismo número de lingotes, usando argón. Otras máquinas producen oxígeno líquido, argón, deuterio, grafeno, carburo de tungsteno, obleas de silicio, microplacas de circuito y chips cuánticos.",
+        "El Artificial Sun Core es una central de 7 × 7 × 7 bloques que envía hasta 1,00 GW a la red quemando Deuterium Cells o Helium-3 Canisters; la Gas-Centrifuge Tower ya puede fabricar esos bidones. La Molten Salt Exchanger Tower almacena hasta 2 GJ y la Industrial Flywheel Storage hasta 8 GJ. La Forced-Draft Cooling Tower suministra agua de refrigeración, y la Plant Control Console enumera las máquinas a su alcance y puede pausarlas todas a la vez.",
+        "Los 113 objetos nuevos dicen para qué sirven en su descripción emergente. Las 30 máquinas se construyen en la Automated Precision Assembly Line; el mobiliario y el umbral se fabrican en una mesa de trabajo. Los acompañan 73 sonidos nuevos."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "La corrección trata de lo que ves a través de una fila cerrada. El montante de encuentro solo se dibuja, así que la mira y las balas siguen pasando por el hueco de 3 píxeles entre los carriles (los proyectiles ya atravesaban shoji y fusuma). El papel washi ligeramente translúcido y la vista a través de celosías y cristal son intencionados. Puede quedar una grieta fina como un pelo donde una puerta toca un bloque, y un Amado Storm Shutter cerrado sigue dejando pasar la luz. El aspecto de las puertas abiertas no formó parte del cálculo.",
+        "Quita los jars antiguos de OUKA de la carpeta mods antes de añadir la 1.6.0 y conserva una sola copia de GeckoLib 5.5.6: dos jars de OUKA, o dos GeckoLib, impiden que el juego arranque. Requiere Minecraft 26.3, Fabric Loader 0.19.5 o posterior y Fabric API 0.161.0+26.3 o posterior (Fabric API no está en el zip). Instálalo tanto en el cliente como en el servidor.",
+        "Las 30 máquinas se construyen en la Automated Precision Assembly Line, no en una mesa de trabajo. El Raw Tungsten solo sale del Sub-Crustal Thermal Bore; no existe un bloque de mineral de tungsteno. Los gases y líquidos de proceso son objetos en bidón, no bloques de fluido. Algunas máquinas esperan hasta que las toque la que necesitan entre la Vacuum Pump, el Gas Compressor, la Coolant Circulation Pump y la Cleanroom Fan-Filter Unit, y la línea de estado indica qué falta. El Artificial Sun Core necesita vacío, refrigerante y combustible, y carga su condensador desde la red antes de encenderse. 1,00 GW es su máximo nominal: solo genera lo que la red pide. En el hogar irori no se cocina nada."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.5",
    "summary": "The Wrought Iron Sovereign — un guardián de 3,8 bloques para el tesoro",

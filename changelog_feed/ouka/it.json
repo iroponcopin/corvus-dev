@@ -1,11 +1,47 @@
 {
  "lang": "it",
  "brand": "ouka",
- "updated": "2026-10-11",
+ "updated": "2026-10-12",
  "title": "Changelog",
- "updated_label": "Aggiornato il 2026-10-11",
+ "updated_label": "Aggiornato il 2026-10-12",
  "note": "",
  "groups": [
+  {
+   "label": "V1.6",
+   "summary": "The Grand Synthesis — porte scorrevoli senza fessure, 50 arredi e 30 macchine pesanti",
+   "releases": [
+    {
+     "version": "V1.6.0",
+     "date": "2026-10-12",
+     "type": "release",
+     "title": "The Grand Synthesis — porte scorrevoli senza fessure, 50 arredi e 30 macchine pesanti",
+     "summary": "Il washitsu e la fabbrica crescono insieme. Una fila chiusa di shoji o fusuma non mostra più una fessura di luce tra le porte: un montante di battuta copre ora ogni giunto, e la nuova Shikii Grooved Hinoki Sill accoglie il piede delle porte. 50 nuovi arredi riempiono la stanza e il giardino, e 30 macchine dell'industria pesante portano dal minerale alla polvere ultrafine, ai wafer di silicio e ai chip quantistici, fino all'Artificial Sun Core, con una potenza nominale di 1,00 GW. Ogni nuovo oggetto spiega il proprio uso nella descrizione a comparsa.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "La fessura tra le porte scorrevoli chiuse è stata chiusa. Ogni porta sul binario posteriore porta ora a entrambe le estremità un montante di battuta che copre il giunto con la vicina. Secondo il calcolo eseguito sui modelli distribuiti, nessuna linea di vista passa tra le porte di una fila chiusa, a qualunque angolo di visuale da 0 a 89 gradi rispetto alla vista frontale.",
+        "La nuova Shikii Grooved Hinoki Sill si posa sotto le porte scorrevoli: le sue 2 scanalature accolgono il piede di uno shoji o di un fusuma, così che sotto non passi luce. Fa coppia con il kamoi in alto e si costruisce al banco da lavoro.",
+        "Più porte e finestre: il Diamond-Lattice Shoji, lo Yukimi Shoji con un vetro che sale e scende, il Drum-Faced Fusuma, la Thousand-Slat Lattice Door, lo Hemp-Leaf Kumiko Shoji e l'Amado Storm Shutter scorrono tutti sugli stessi binari delle porte che hai già. Si aggiungono la tenda misu, la finestra a grata e la cornice per finestra rotonda.",
+        "Per la stanza: il divisorio tsuitate e il paravento da capezzale a due ante; lo scrittoio con intarsio raden, le mensole sfalsate del tokonoma e l'espositore in tavola di karin, che mostrano i tuoi oggetti; il focolare irori e il braciere hibachi, che puoi accendere; il bollitore d'oro puro e la pentola di ferro al gancio jizai, che fumano accanto a loro; il vassoio ozen e il tokkuri con le coppette da sake.",
+        "Per il giardino: ghiaia bianca rastrellata con 8 motivi di rastrellatura, pietre erette, pietre da passo, un cumulo di muschio, 2 tipi di recinto di bambù, un cancelletto di frasche, la vasca tsukubai che puoi riempire, la cannella di bambù kakei e il suikinkutsu, che risuona alle gocce che cadono. Per le feste e le stagioni: la lanterna di carta chochin, la campanella a vento di vetro, il kadomatsu, la bambola daruma e il palo delle carpe. E 2 strumenti che puoi suonare davvero: il tamburo taiko e il koto.",
+        "L'industria pesante guadagna 30 macchine e 32 nuovi materiali. Il Supersonic Jet Mill trasforma 1 minerale di ferro, rame o oro in 6 polveri ultrafini, e il Vacuum Sintering Furnace cuoce la polvere in altrettanti lingotti, usando argon. Altre macchine producono ossigeno liquido, argon, deuterio, grafene, carburo di tungsteno, wafer di silicio, microschede a circuito e chip quantistici.",
+        "L'Artificial Sun Core è una centrale di 7 × 7 × 7 blocchi che invia fino a 1,00 GW alla rete bruciando Deuterium Cells o Helium-3 Canisters; la Gas-Centrifuge Tower ora sa produrre queste taniche. La Molten Salt Exchanger Tower accumula fino a 2 GJ e l'Industrial Flywheel Storage fino a 8 GJ. La Forced-Draft Cooling Tower fornisce acqua di raffreddamento, e la Plant Control Console elenca le macchine nel raggio e può metterle tutte in pausa in una volta.",
+        "Tutti i 113 nuovi oggetti dicono a cosa servono nella descrizione a comparsa. Le 30 macchine si costruiscono sull'Automated Precision Assembly Line; gli arredi e la soglia si fanno al banco da lavoro. Li accompagnano 73 nuovi suoni."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "La correzione riguarda ciò che vedi attraverso una fila chiusa. Il montante di battuta è solo disegnato, quindi il mirino e i proiettili passano ancora per lo spazio di 3 pixel tra i binari (i colpi attraversano già shoji e fusuma). La carta washi leggermente traslucida e la vista attraverso grate e vetro sono volute. Può restare una crepa sottile come un capello dove una porta tocca un blocco, e un Amado Storm Shutter chiuso lascia comunque passare la luce. L'aspetto delle porte aperte non faceva parte del calcolo.",
+        "Rimuovi i vecchi jar di OUKA dalla cartella mods prima di aggiungere la 1.6.0 e tieni una sola copia di GeckoLib 5.5.6: due jar di OUKA, o due GeckoLib, impediscono l'avvio del gioco. Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo e Fabric API 0.161.0+26.3 o successivo (Fabric API non è nello zip). Installalo sia sul client sia sul server.",
+        "Le 30 macchine si costruiscono sull'Automated Precision Assembly Line, non al banco da lavoro. Il Raw Tungsten arriva solo dal Sub-Crustal Thermal Bore; non esiste un blocco di minerale di tungsteno. I gas e i liquidi di processo sono oggetti in tanica, non blocchi di fluido. Alcune macchine attendono finché non le tocca quella che serve loro tra Vacuum Pump, Gas Compressor, Coolant Circulation Pump e Cleanroom Fan-Filter Unit, e la riga di stato indica che cosa manca. L'Artificial Sun Core richiede vuoto, refrigerante e combustibile, e carica il suo condensatore dalla rete prima di accendersi. 1,00 GW è il suo massimo nominale: genera solo ciò che la rete chiede. Sul focolare irori non si cucina nulla."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.5",
    "summary": "The Wrought Iron Sovereign — un guardiano di 3,8 blocchi per il tesoro",

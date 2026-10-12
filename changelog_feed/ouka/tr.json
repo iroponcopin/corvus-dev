@@ -1,11 +1,47 @@
 {
  "lang": "tr",
  "brand": "ouka",
- "updated": "2026-10-11",
+ "updated": "2026-10-12",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-11 tarihinde güncellendi",
+ "updated_label": "2026-10-12 tarihinde güncellendi",
  "note": "",
  "groups": [
+  {
+   "label": "V1.6",
+   "summary": "The Grand Synthesis — aralıksız sürgülü kapılar, 50 mobilya ve 30 ağır makine",
+   "releases": [
+    {
+     "version": "V1.6.0",
+     "date": "2026-10-12",
+     "type": "release",
+     "title": "The Grand Synthesis — aralıksız sürgülü kapılar, 50 mobilya ve 30 ağır makine",
+     "summary": "Washitsu da fabrika da büyüyor. Kapalı bir shoji ya da fusuma sırasında kapıların arasından artık ışık sızmıyor: her birleşim yerini bir bini çıtası örtüyor ve yeni Shikii Grooved Hinoki Sill kapıların ayağını içine alıyor. 50 yeni mobilya odayı ve bahçeyi dolduruyor; 30 ağır sanayi makinesi cevherden ultra ince toza, silikon levhalara ve kuantum çiplerine, oradan da anma gücü 1,00 GW olan Artificial Sun Core'a kadar uzanıyor. Her yeni eşya, ne işe yaradığını ipucu kutusunda açıklıyor.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Kapalı sürgülü kapıların arasındaki aralık kapandı. Arka raydaki her kapının iki ucunda artık komşusuyla arasındaki birleşim yerini örten bir bini çıtası var. Yayımlanan modeller üzerinde yapılan hesaba göre, tam karşıdan bakışa göre 0 ile 89 derece arasındaki hiçbir bakış açısında, kapalı bir sıranın kapıları arasından görüş çizgisi geçmiyor.",
+        "Yeni Shikii Grooved Hinoki Sill sürgülü kapıların altına serilir: 2 oluğu bir shoji ya da fusumanın ayağını içine alır, böylece alttan ışık geçmez. Üstteki kamoi ile eşleşir ve çalışma masasında yapılır.",
+        "Daha fazla kapı ve pencere: Diamond-Lattice Shoji, camı yukarı aşağı kayan Yukimi Shoji, Drum-Faced Fusuma, Thousand-Slat Lattice Door, Hemp-Leaf Kumiko Shoji ve Amado Storm Shutter, elinizdeki kapılarla aynı raylarda kayar. Bunlara misu perdesi, kafesli pencere ve yuvarlak pencere çerçevesi eklendi.",
+        "Oda için: tsuitate paravanı ve iki kanatlı başucu paravanı; eşyalarınızı sergileyen raden kakmalı yazı masası, kademeli tokonoma rafları ve tek parça karin tahtasından sehpa; yakabileceğiniz irori ocağı ve hibachi mangalı; onların yanında buhar çıkaran saf altın çaydanlık ile jizai kancasındaki demir tencere; ozen tepsisi ve sake kadehleriyle tokkuri.",
+        "Bahçe için: 8 tırmık deseni olan taranmış beyaz çakıl, dikili taşlar, basamak taşları, bir yosun tümseği, 2 çeşit bambu çit, çalı çırpıdan bir bahçe kapısı, doldurabileceğiniz tsukubai teknesi, kakei bambu oluğu ve düşen damlalarla çınlayan suikinkutsu. Şenlikler ve mevsimler için: chochin kâğıt feneri, cam rüzgâr çanı, kadomatsu, daruma bebeği ve sazan flamaları direği. Ayrıca gerçekten çalabileceğiniz 2 çalgı: taiko davulu ve koto.",
+        "Ağır sanayiye 30 makine ve 32 yeni malzeme eklendi. Supersonic Jet Mill, 1 demir, bakır ya da altın cevherini 6 ultra ince toza çevirir; Vacuum Sintering Furnace da tozu argon kullanarak aynı sayıda külçeye pişirir. Öteki makineler sıvı oksijen, argon, döteryum, grafen, tungsten karbür, silikon levha, mikro devre kartı ve kuantum çipi üretir.",
+        "Artificial Sun Core, 7 × 7 × 7 blokluk bir santraldir; Deuterium Cells ya da Helium-3 Canisters yakarak şebekeye en çok 1,00 GW verir. Bu bidonları artık Gas-Centrifuge Tower üretebiliyor. Molten Salt Exchanger Tower en çok 2 GJ, Industrial Flywheel Storage en çok 8 GJ depolar. Forced-Draft Cooling Tower soğutma suyu sağlar; Plant Control Console ise menzilindeki makineleri listeler ve hepsini birden duraklatabilir.",
+        "113 yeni eşyanın hepsi, ne işe yaradığını ipucu kutusunda söyler. 30 makine Automated Precision Assembly Line üzerinde kurulur; mobilyalar ve eşik çalışma masasında yapılır. Onlarla birlikte 73 yeni ses geliyor."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Düzeltme, kapalı bir sıranın arkasında ne gördüğünüzle ilgilidir. Bini çıtası yalnızca çizilir; bu yüzden nişangâh ve mermiler raylar arasındaki 3 piksellik boşluktan eskisi gibi geçer (mermiler shoji ve fusumadan zaten geçiyordu). Hafifçe ışık geçiren washi kâğıdı ile kafeslerin ve camın ardının görünmesi tasarım gereğidir. Bir kapının bir bloğa değdiği yerde kıl inceliğinde bir çatlak kalabilir ve kapalı bir Amado Storm Shutter yine de ışık geçirir. Açık kapıların görünüşü hesabın parçası değildi.",
+        "1.6.0'ı eklemeden önce eski OUKA jar dosyalarını mods klasöründen silin ve GeckoLib 5.5.6'nın yalnızca tek kopyasını bırakın: iki OUKA jar dosyası ya da iki GeckoLib oyunun açılmasını engeller. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi ve Fabric API 0.161.0+26.3 veya daha yenisi gerekir (Fabric API zip içinde yoktur). Hem istemciye hem sunucuya kurun.",
+        "30 makine çalışma masasında değil, Automated Precision Assembly Line üzerinde kurulur. Raw Tungsten yalnızca Sub-Crustal Thermal Bore'dan çıkar; tungsten cevheri bloğu yoktur. Süreç gazları ve sıvıları bidon eşyalarıdır, sıvı blokları değildir. Bazı makineler, Vacuum Pump, Gas Compressor, Coolant Circulation Pump ve Cleanroom Fan-Filter Unit arasından gereksindikleri kendilerine değene kadar bekler; durum satırı neyin eksik olduğunu yazar. Artificial Sun Core vakum, soğutucu ve yakıt ister ve ateşlenmeden önce kondansatörünü şebekeden doldurur. 1,00 GW onun anma üst sınırıdır: yalnızca şebekenin istediği kadar üretir. Irori ocağında hiçbir şey pişmez."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.5",
    "summary": "The Wrought Iron Sovereign — hazine için 3,8 blok boyunda bir muhafız",

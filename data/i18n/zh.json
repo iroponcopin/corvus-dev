@@ -306,6 +306,26 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.0",
+    "title": "The Grand Synthesis —— 没有缝隙的推拉门、50 种陈设与 30 种重工业机器",
+    "summary": "和室与工厂一同扩充。关闭的一排障子或袄，门与门之间不再露出光缝：碰头边梃现在盖住每一道接缝，新方块 Shikii Grooved Hinoki Sill 承接门的底部。50 种新陈设充实房间与庭院，30 种重工业机器从矿石一路做到超细粉、硅晶圆和量子芯片，直至额定 1.00 GW 的 Artificial Sun Core。每件新物品都在提示框里说明用途。",
+    "highlights": [
+     "关闭的推拉门之间的缝隙已经封上。后轨上的每扇门现在两端都带有碰头边梃，盖住与相邻门的接缝。按对发布模型所做的计算，以正面为准，从 0 度到 89 度的任何观看角度，都没有视线能从关闭的一排门之间穿过。",
+     "新方块 Shikii Grooved Hinoki Sill 铺在推拉门下方：它的 2 道沟槽承接障子或袄的底部，光不会从下面漏过。它与上方的鸭居成对，可在工作台制作。",
+     "门窗更多了：Diamond-Lattice Shoji、玻璃窗可上下滑动的 Yukimi Shoji、Drum-Faced Fusuma、Thousand-Slat Lattice Door、Hemp-Leaf Kumiko Shoji 和 Amado Storm Shutter，都在与你已有的门相同的轨道上滑动。此外还加入了御帘、格子窗和圆窗框。",
+     "房间里新增：冲立屏风与两折枕屏风；可以陈列你的物品的螺钿文机、错落的床之间搁板和花梨独板饰台；可以点燃的地炉与火钵；在它们旁边冒出蒸汽的纯金茶釜和自在钩铁锅；以及膳台、德利酒壶与酒杯。",
+     "庭院里新增：可选 8 种耙纹的白砂砾、立石、飞石、苔丘、2 种竹篱、柴扉、可以注水的蹲踞、竹筧，以及随水滴落下而鸣响的水琴窟。节庆与时令的物件有：提灯、玻璃风铃、门松、达摩和鲤鱼旗杆。还有 2 种真的可以演奏的乐器：太鼓与琴。",
+     "重工业新增 30 种机器和 32 种新材料。Supersonic Jet Mill 把 1 个铁、铜或金矿石变成 6 个超细粉，Vacuum Sintering Furnace 再用氩气把粉末烧结成同样数量的锭。其他机器生产液氧、氩气、氘、石墨烯、碳化钨、硅晶圆、微电路板和量子芯片。",
+     "Artificial Sun Core 是一座 7 × 7 × 7 方块的发电设施，燃烧 Deuterium Cells 或 Helium-3 Canisters，向电网输送最高 1.00 GW 的电力；这种罐现在可以由 Gas-Centrifuge Tower 制造。Molten Salt Exchanger Tower 最多储存 2 GJ，Industrial Flywheel Storage 最多储存 8 GJ。Forced-Draft Cooling Tower 供应冷却水，Plant Control Console 列出范围内的机器，并能一次全部暂停。",
+     "全部 113 种新物品都在提示框里说明自己的用途。30 种机器在 Automated Precision Assembly Line 上制造；陈设和门槛在工作台制作。同时加入了 73 种新声音。"
+    ],
+    "warnings": [
+     "这项修正针对的是透过关闭的一排门所看到的画面。碰头边梃只是绘制出来的，所以准星和子弹仍像以前一样穿过轨道之间 3 像素的空隙（子弹本来就能穿过障子和袄）。和纸略微透光、格子和玻璃后面看得见，都是设计如此。门与方块相接处可能留下发丝般的细缝，关闭的 Amado Storm Shutter 也仍会透光。打开的门看起来如何，不在计算范围之内。",
+     "添加 1.6.0 前，请从 mods 文件夹删除旧版 OUKA jar，且只保留一份 GeckoLib 5.5.6：两个 OUKA jar 或两个 GeckoLib 都会导致游戏无法启动。需要 Minecraft 26.3、Fabric Loader 0.19.5 或更高版本，以及 Fabric API 0.161.0+26.3 或更高版本（Fabric API 不包含在 zip 中）。客户端和服务器都需安装。",
+     "30 种机器在 Automated Precision Assembly Line 上制造，而不是在工作台。Raw Tungsten 只能从 Sub-Crustal Thermal Bore 获得；没有钨矿石方块。工艺气体和液体是罐装物品，不是流体方块。部分机器会一直等待，直到 Vacuum Pump、Gas Compressor、Coolant Circulation Pump、Cleanroom Fan-Filter Unit 中它所需要的那一种与它相接，状态行会写明缺少什么。Artificial Sun Core 需要真空、冷却剂和燃料，并在点火前从电网给电容器充电。1.00 GW 是它的额定上限：它只按电网的需求发电。地炉上不能烹饪。"
+    ]
+   },
+   {
     "id": "ouka-v1.5.0",
     "title": "The Wrought Iron Sovereign —— 高 3.8 格的宝库守护者",
     "summary": "Wrought Iron Sovereign 登场：一位高 3.8 格、身披重甲的守护者，在生存或冒险模式的玩家靠近到 8 格内或攻击它之前，它像雕像一样沉睡。随之而来的还有宝库之门与宝库总钥匙、守护者大断头斧、重铁防壁护甲、重铁守护者雕像方块，以及 15 种全新的合成音效。自动化精密装配线现在只生产你选定的产品。",

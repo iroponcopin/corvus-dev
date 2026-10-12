@@ -1,6 +1,6 @@
 {
  "sources": {
-  "ouka": "1.5.0",
+  "ouka": "1.6.0",
   "cherry": "1.2.0"
  },
  "stations": [
@@ -23,6 +23,82 @@
   {
    "id": "bore",
    "item": "ouka:sub_crustal_thermal_bore"
+  },
+  {
+   "id": "supersonic_jet_mill",
+   "item": "ouka:supersonic_jet_mill"
+  },
+  {
+   "id": "cryo_oxygen_extractor",
+   "item": "ouka:cryo_oxygen_extractor"
+  },
+  {
+   "id": "gas_centrifuge_tower",
+   "item": "ouka:gas_centrifuge_tower"
+  },
+  {
+   "id": "heavy_water_electrolyser",
+   "item": "ouka:heavy_water_electrolyser"
+  },
+  {
+   "id": "pyrolytic_carbon_press",
+   "item": "ouka:pyrolytic_carbon_press"
+  },
+  {
+   "id": "electrolytic_refining_cell",
+   "item": "ouka:electrolytic_refining_cell"
+  },
+  {
+   "id": "catalyst_pelletiser",
+   "item": "ouka:catalyst_pelletiser"
+  },
+  {
+   "id": "catalytic_smelting_furnace",
+   "item": "ouka:catalytic_smelting_furnace"
+  },
+  {
+   "id": "vacuum_sintering_furnace",
+   "item": "ouka:vacuum_sintering_furnace"
+  },
+  {
+   "id": "hot_isostatic_press",
+   "item": "ouka:hot_isostatic_press"
+  },
+  {
+   "id": "rotary_calciner",
+   "item": "ouka:rotary_calciner"
+  },
+  {
+   "id": "superconducting_coil_winder",
+   "item": "ouka:superconducting_coil_winder"
+  },
+  {
+   "id": "superconducting_fractionating_tower",
+   "item": "ouka:superconducting_fractionating_tower"
+  },
+  {
+   "id": "plasma_arc_gasifier",
+   "item": "ouka:plasma_arc_gasifier"
+  },
+  {
+   "id": "syngas_synthesis_reactor",
+   "item": "ouka:syngas_synthesis_reactor"
+  },
+  {
+   "id": "crystal_pulling_furnace",
+   "item": "ouka:crystal_pulling_furnace"
+  },
+  {
+   "id": "laser_ablation_bed",
+   "item": "ouka:laser_ablation_bed"
+  },
+  {
+   "id": "high_pressure_ion_implanter",
+   "item": "ouka:high_pressure_ion_implanter"
+  },
+  {
+   "id": "auto_calibration_manipulator",
+   "item": "ouka:auto_calibration_manipulator"
   },
   {
    "id": "fabricator",
@@ -200,6 +276,18 @@
    "m2a825109133f",
    "flat"
   ],
+  "ouka:argon_canister": [
+   "アルゴンの缶",
+   "Argon Canister",
+   "med77be9482bd",
+   "flat"
+  ],
+  "ouka:artificial_sun_core": [
+   "人工太陽磁気核融合炉",
+   "Artificial Sun Core",
+   "m47d5bf5b1bf9",
+   "flat"
+  ],
   "ouka:attachment_mc1_compensator": [
    "OUKA MC-1「楔」コンペンセイター",
    "OUKA MC-1 \"Kusabi\" Compensator",
@@ -284,10 +372,58 @@
    "mf22b4dfcbfb4",
    "flat"
   ],
+  "ouka:auto_calibration_manipulator": [
+   "自動キャリブレーションマニピュレータ",
+   "Auto-Calibration Manipulator",
+   "m0d9f2862d704",
+   "flat"
+  ],
+  "ouka:carbon_plate": [
+   "カーボンプレート",
+   "Carbon Plate",
+   "ma8fcdbe26e90",
+   "flat"
+  ],
+  "ouka:catalyst_pellet": [
+   "触媒ペレット",
+   "Catalyst Pellet",
+   "md54fe34e3b53",
+   "flat"
+  ],
+  "ouka:catalyst_pelletiser": [
+   "触媒造粒機",
+   "Catalyst Pelletiser",
+   "mc5dbf5a8a4ae",
+   "flat"
+  ],
+  "ouka:catalytic_smelting_furnace": [
+   "触媒熱化学溶鉱炉",
+   "Catalytic Smelting Furnace",
+   "m7cbcbdf97c25",
+   "flat"
+  ],
   "ouka:circuit_blueprint": [
    "回路投影ブループリント",
    "Holographic Circuit Blueprint",
    "m4b65a1e36b6c",
+   "flat"
+  ],
+  "ouka:cleanroom_filter_unit": [
+   "クリーンルーム・ファンフィルターユニット",
+   "Cleanroom Fan-Filter Unit",
+   "me9e2b1523467",
+   "flat"
+  ],
+  "ouka:coolant_circulation_pump": [
+   "冷却材循環ポンプ",
+   "Coolant Circulation Pump",
+   "m2534464c7d42",
+   "flat"
+  ],
+  "ouka:cooling_tower": [
+   "強制通風冷却塔",
+   "Forced-Draft Cooling Tower",
+   "m46f5e5833c17",
    "flat"
   ],
   "ouka:copper_dust": [
@@ -302,10 +438,64 @@
    "mdbeda53c1a61",
    "flat"
   ],
+  "ouka:cryo_oxygen_extractor": [
+   "極低温電解酸素精製機",
+   "Cryo-Oxygen Extractor",
+   "mcb957409cc24",
+   "flat"
+  ],
+  "ouka:crystal_pulling_furnace": [
+   "単結晶引き上げ炉",
+   "Crystal Pulling Furnace",
+   "mfab7a4fcebe4",
+   "flat"
+  ],
+  "ouka:deuterium_cell": [
+   "重水素セル",
+   "Deuterium Cell",
+   "m3c4de1753649",
+   "flat"
+  ],
+  "ouka:electrolytic_copper_plate": [
+   "電解銅板",
+   "Electrolytic Copper Plate",
+   "m0cba4ec74223",
+   "flat"
+  ],
+  "ouka:electrolytic_refining_cell": [
+   "電解精錬槽",
+   "Electrolytic Refining Cell",
+   "m3e351c072a47",
+   "flat"
+  ],
   "ouka:enriched_uranium": [
    "濃縮ウラン",
    "Enriched Uranium",
    "ma097d43695c6",
+   "flat"
+  ],
+  "ouka:gas_centrifuge_tower": [
+   "重力遠心気相分離塔",
+   "Gas-Centrifuge Tower",
+   "m6ff17beb8449",
+   "flat"
+  ],
+  "ouka:gas_compressor": [
+   "ガス圧縮機",
+   "Gas Compressor",
+   "md097e7cf5fef",
+   "flat"
+  ],
+  "ouka:gas_turbine_generator": [
+   "ガスタービン発電機",
+   "Gas Turbine Generator",
+   "m68543e4bf8ce",
+   "flat"
+  ],
+  "ouka:gasoline_canister": [
+   "ガソリンの缶",
+   "Gasoline Canister",
+   "m12006c92daf3",
    "flat"
   ],
   "ouka:gold_dust": [
@@ -318,6 +508,12 @@
    "金板",
    "Gold Plate",
    "m1945d9911759",
+   "flat"
+  ],
+  "ouka:graphene_sheet": [
+   "グラフェンシート",
+   "Graphene Sheet",
+   "m7aba93ba567a",
    "flat"
   ],
   "ouka:gun_fudo": [
@@ -434,10 +630,52 @@
    "m04b386c55bd8",
    "flat"
   ],
+  "ouka:heavy_water_electrolyser": [
+   "重水電解濃縮槽",
+   "Heavy-Water Electrolyser",
+   "m8d1285ebfc86",
+   "flat"
+  ],
+  "ouka:high_pressure_ion_implanter": [
+   "高圧イオン注入機",
+   "High-Pressure Ion Implanter",
+   "mac0ba0aaabf2",
+   "flat"
+  ],
+  "ouka:hot_isostatic_press": [
+   "熱間等方圧加圧機",
+   "Hot Isostatic Press",
+   "m408789d62640",
+   "flat"
+  ],
+  "ouka:industrial_flywheel_storage": [
+   "工業用蓄電フライホイール",
+   "Industrial Flywheel Storage",
+   "mdde710455cca",
+   "flat"
+  ],
   "ouka:iron_dust": [
    "鉄の粉",
    "Iron Dust",
    "m5c676beeab9b",
+   "flat"
+  ],
+  "ouka:kerosene_canister": [
+   "灯油の缶",
+   "Kerosene Canister",
+   "mf68c2be79079",
+   "flat"
+  ],
+  "ouka:laser_ablation_bed": [
+   "連続レーザーアブレーション加工機",
+   "Laser Ablation Bed",
+   "me78d4080c920",
+   "flat"
+  ],
+  "ouka:liquid_oxygen_canister": [
+   "液体酸素の缶",
+   "Liquid Oxygen Canister",
+   "m47bd4ab1da9e",
    "flat"
   ],
   "ouka:lubricant_canister": [
@@ -446,10 +684,76 @@
    "ma63fee0671e7",
    "flat"
   ],
+  "ouka:micro_circuit_board": [
+   "微細回路基板",
+   "Micro Circuit Board",
+   "m6f720d7e94f4",
+   "flat"
+  ],
+  "ouka:molten_salt_exchanger": [
+   "高温溶融塩熱交換タワー",
+   "Molten Salt Exchanger Tower",
+   "mad496b3fddf4",
+   "flat"
+  ],
+  "ouka:nitrate_salt": [
+   "硝酸塩",
+   "Nitrate Salt",
+   "me80d7a21b6e7",
+   "flat"
+  ],
   "ouka:omni_wrench": [
    "万能工業ラチェット",
    "Industrial Omni-Wrench",
    "m2586f97d8fd8",
+   "flat"
+  ],
+  "ouka:pipe_inspection_drone_station": [
+   "配管点検ドローンステーション",
+   "Pipe-Inspection Drone Station",
+   "m068eda7864e8",
+   "flat"
+  ],
+  "ouka:plant_control_console": [
+   "プラント統括制御盤",
+   "Plant Control Console",
+   "mbb7261125e85",
+   "flat"
+  ],
+  "ouka:plasma_arc_gasifier": [
+   "プラズマアーク廃棄物分解炉",
+   "Plasma Arc Gasifier",
+   "m1f6c043f552d",
+   "flat"
+  ],
+  "ouka:precision_module": [
+   "精密モジュール",
+   "Precision Module",
+   "m282af5ff1f12",
+   "flat"
+  ],
+  "ouka:pure_titanium_ingot": [
+   "超高純度チタンのインゴット",
+   "Pure Titanium Ingot",
+   "mb4488bee0fa8",
+   "flat"
+  ],
+  "ouka:pyrolytic_carbon_press": [
+   "高圧熱分解炭素重合機",
+   "Pyrolytic Carbon Press",
+   "m75a07c613f05",
+   "flat"
+  ],
+  "ouka:quantum_chip": [
+   "量子チップ",
+   "Quantum Chip",
+   "m3a6e206a23e9",
+   "flat"
+  ],
+  "ouka:rare_gas_canister": [
+   "希ガスの缶",
+   "Rare Gas Canister",
+   "ma5c56ef2facf",
    "flat"
   ],
   "ouka:raw_thorium": [
@@ -458,16 +762,82 @@
    "m22ea052ce45b",
    "flat"
   ],
+  "ouka:raw_tungsten": [
+   "タングステン原石",
+   "Raw Tungsten",
+   "m5edd71599aa8",
+   "flat"
+  ],
   "ouka:raw_uranium": [
    "ウランの原石",
    "Raw Uranium",
    "mc6e25a1dc11b",
    "flat"
   ],
+  "ouka:refractory_brick": [
+   "耐火レンガ",
+   "Refractory Brick",
+   "ma632de0d4819",
+   "flat"
+  ],
+  "ouka:rotary_calciner": [
+   "回転式焼成炉",
+   "Rotary Calciner",
+   "m729e9816e580",
+   "flat"
+  ],
+  "ouka:silicon_wafer": [
+   "シリコンウェハー",
+   "Silicon Wafer",
+   "mb48f615bac01",
+   "flat"
+  ],
+  "ouka:slag": [
+   "スラグ",
+   "Slag",
+   "m8ced79b3292b",
+   "flat"
+  ],
   "ouka:stamina_serum": [
    "スタミナ増強剤",
    "Stamina Serum",
    "m1036372e3d37",
+   "flat"
+  ],
+  "ouka:superconducting_coil": [
+   "超伝導コイル",
+   "Superconducting Coil",
+   "mb9021783ee7e",
+   "flat"
+  ],
+  "ouka:superconducting_coil_winder": [
+   "超伝導コイル巻線機",
+   "Superconducting Coil Winder",
+   "mc00f66eed003",
+   "flat"
+  ],
+  "ouka:superconducting_fractionating_tower": [
+   "超伝導精留塔",
+   "Superconducting Fractionating Tower",
+   "m893619285fa2",
+   "flat"
+  ],
+  "ouka:supersonic_jet_mill": [
+   "超音速ジェットミル粉砕機",
+   "Supersonic Jet Mill",
+   "m13d71c12c365",
+   "flat"
+  ],
+  "ouka:syngas_synthesis_reactor": [
+   "合成ガス触媒反応器",
+   "Syngas Synthesis Reactor",
+   "m75f4be0f9bb1",
+   "flat"
+  ],
+  "ouka:synthesis_gas_canister": [
+   "合成ガスの缶",
+   "Synthesis Gas Canister",
+   "ma6d5ebb37aae",
    "flat"
   ],
   "ouka:thermal_demolition_laser": [
@@ -494,6 +864,72 @@
    "m3ee85cca2f12",
    "flat"
   ],
+  "ouka:titanium_plate": [
+   "チタンの板",
+   "Titanium Plate",
+   "mfff01529ba05",
+   "flat"
+  ],
+  "ouka:tungsten_carbide_billet": [
+   "炭化タングステンの鋳片",
+   "Tungsten Carbide Billet",
+   "m067fca097a10",
+   "flat"
+  ],
+  "ouka:tungsten_carbide_plate": [
+   "炭化タングステンの板",
+   "Tungsten Carbide Plate",
+   "m7a67a988b4c5",
+   "flat"
+  ],
+  "ouka:tungsten_dust": [
+   "タングステンの粉",
+   "Tungsten Dust",
+   "mb6c3fae1f499",
+   "flat"
+  ],
+  "ouka:tungsten_ingot": [
+   "タングステンのインゴット",
+   "Tungsten Ingot",
+   "m40c10149db8f",
+   "flat"
+  ],
+  "ouka:tungsten_plate": [
+   "タングステンの板",
+   "Tungsten Plate",
+   "m8c1aeddd4a36",
+   "flat"
+  ],
+  "ouka:ultrafine_copper_powder": [
+   "銅の超微粉",
+   "Ultrafine Copper Powder",
+   "meed708644d4b",
+   "flat"
+  ],
+  "ouka:ultrafine_gold_powder": [
+   "金の超微粉",
+   "Ultrafine Gold Powder",
+   "me8a2fc9224d7",
+   "flat"
+  ],
+  "ouka:ultrafine_iron_powder": [
+   "鉄の超微粉",
+   "Ultrafine Iron Powder",
+   "m539d7ab2fbb2",
+   "flat"
+  ],
+  "ouka:ultrafine_titanium_powder": [
+   "チタンの超微粉",
+   "Ultrafine Titanium Powder",
+   "m5b166a4df85c",
+   "flat"
+  ],
+  "ouka:ultrafine_tungsten_powder": [
+   "タングステンの超微粉",
+   "Ultrafine Tungsten Powder",
+   "m0be6e2b5d1ff",
+   "flat"
+  ],
   "ouka:uranium_dust": [
    "ウランの粉",
    "Uranium Dust",
@@ -504,6 +940,18 @@
    "ウラン燃料棒",
    "Uranium Fuel Rod",
    "m8d21f653e19f",
+   "flat"
+  ],
+  "ouka:vacuum_pump": [
+   "真空ポンプ",
+   "Vacuum Pump",
+   "m03aca9c4736d",
+   "flat"
+  ],
+  "ouka:vacuum_sintering_furnace": [
+   "真空焼結炉",
+   "Vacuum Sintering Furnace",
+   "mfae4eec996d1",
    "flat"
   ],
   "ouka:wind_turbine": [
@@ -550,6 +998,35 @@
   ]
  },
  "recipes": [
+  {
+   "id": "ouka:assembly/artificial_sun_core",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 32
+    },
+    {
+     "id": "ouka:superconducting_coil",
+     "n": 24
+    },
+    {
+     "id": "ouka:tungsten_carbide_plate",
+     "n": 48
+    },
+    {
+     "id": "ouka:quantum_chip",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:artificial_sun_core",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
   {
    "id": "ouka:assembly/attachment_mc1_compensator",
    "station": "assembly",
@@ -913,6 +1390,93 @@
    "brand": "ouka"
   },
   {
+   "id": "ouka:assembly/auto_calibration_manipulator",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 4
+    },
+    {
+     "id": "ouka:carbon_plate",
+     "n": 12
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 8
+    },
+    {
+     "id": "ouka:titanium_plate",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:auto_calibration_manipulator",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/catalyst_pelletiser",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 1
+    },
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 3
+    },
+    {
+     "id": "ouka:ultrafine_titanium_powder",
+     "n": 4
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:catalyst_pelletiser",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/catalytic_smelting_furnace",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 8
+    },
+    {
+     "id": "ouka:titanium_plate",
+     "n": 24
+    },
+    {
+     "id": "ouka:carbon_plate",
+     "n": 8
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 6
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:catalytic_smelting_furnace",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
    "id": "ouka:assembly/circuit_blueprint",
    "station": "assembly",
    "inputs": [
@@ -936,6 +1500,35 @@
    "outputs": [
     {
      "id": "ouka:circuit_blueprint",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/cleanroom_filter_unit",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 1
+    },
+    {
+     "id": "ouka:carbon_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    },
+    {
+     "id": "ouka:industrial_plastic",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:cleanroom_filter_unit",
      "n": 1
     }
    ],
@@ -967,6 +1560,151 @@
    "brand": "ouka"
   },
   {
+   "id": "ouka:assembly/coolant_circulation_pump",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 1
+    },
+    {
+     "id": "ouka:copper_plate",
+     "n": 6
+    },
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 2
+    },
+    {
+     "id": "ouka:industrial_plastic",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:coolant_circulation_pump",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/cooling_tower",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 8
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 48
+    },
+    {
+     "id": "ouka:carbon_plate",
+     "n": 16
+    },
+    {
+     "id": "ouka:titanium_plate",
+     "n": 16
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:cooling_tower",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/cryo_oxygen_extractor",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 3
+    },
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 8
+    },
+    {
+     "id": "ouka:copper_plate",
+     "n": 12
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:cryo_oxygen_extractor",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/crystal_pulling_furnace",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 4
+    },
+    {
+     "id": "ouka:refractory_brick",
+     "n": 16
+    },
+    {
+     "id": "ouka:tungsten_plate",
+     "n": 8
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:crystal_pulling_furnace",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/electrolytic_refining_cell",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 2
+    },
+    {
+     "id": "ouka:copper_plate",
+     "n": 16
+    },
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:electrolytic_refining_cell",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
    "id": "ouka:assembly/electronic_circuit",
    "station": "assembly",
    "inputs": [
@@ -991,6 +1729,93 @@
     {
      "id": "ouka:electronic_circuit",
      "n": 2
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/gas_centrifuge_tower",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 6
+    },
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 16
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 24
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 6
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:gas_centrifuge_tower",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/gas_compressor",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 2
+    },
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 4
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 6
+    },
+    {
+     "id": "ouka:lubricant_canister",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:gas_compressor",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/gas_turbine_generator",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 8
+    },
+    {
+     "id": "ouka:tungsten_plate",
+     "n": 16
+    },
+    {
+     "id": "ouka:titanium_plate",
+     "n": 24
+    },
+    {
+     "id": "ouka:superconducting_coil",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:gas_turbine_generator",
+     "n": 1
     }
    ],
    "brand": "ouka"
@@ -1547,6 +2372,151 @@
    "brand": "ouka"
   },
   {
+   "id": "ouka:assembly/heavy_water_electrolyser",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 3
+    },
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 8
+    },
+    {
+     "id": "ouka:copper_plate",
+     "n": 10
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:heavy_water_electrolyser",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/high_pressure_ion_implanter",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 6
+    },
+    {
+     "id": "ouka:superconducting_coil",
+     "n": 6
+    },
+    {
+     "id": "ouka:tungsten_plate",
+     "n": 6
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:high_pressure_ion_implanter",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/hot_isostatic_press",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 6
+    },
+    {
+     "id": "ouka:titanium_plate",
+     "n": 32
+    },
+    {
+     "id": "ouka:carbon_plate",
+     "n": 10
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:hot_isostatic_press",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/industrial_flywheel_storage",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 8
+    },
+    {
+     "id": "ouka:tungsten_carbide_plate",
+     "n": 16
+    },
+    {
+     "id": "ouka:carbon_plate",
+     "n": 32
+    },
+    {
+     "id": "ouka:superconducting_coil",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:industrial_flywheel_storage",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/laser_ablation_bed",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 4
+    },
+    {
+     "id": "ouka:carbon_plate",
+     "n": 8
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 8
+    },
+    {
+     "id": "ouka:superconducting_coil",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:laser_ablation_bed",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
    "id": "ouka:assembly/machine_frame",
    "station": "assembly",
    "inputs": [
@@ -1566,6 +2536,35 @@
    "outputs": [
     {
      "id": "ouka:machine_frame",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/molten_salt_exchanger",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 8
+    },
+    {
+     "id": "ouka:refractory_brick",
+     "n": 48
+    },
+    {
+     "id": "ouka:titanium_plate",
+     "n": 32
+    },
+    {
+     "id": "ouka:pure_titanium_ingot",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:molten_salt_exchanger",
      "n": 1
     }
    ],
@@ -1595,6 +2594,267 @@
    "outputs": [
     {
      "id": "ouka:omni_wrench",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/pipe_inspection_drone_station",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 4
+    },
+    {
+     "id": "ouka:carbon_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:pipe_inspection_drone_station",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/plant_control_console",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 1
+    },
+    {
+     "id": "ouka:quantum_chip",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 6
+    },
+    {
+     "id": "ouka:carbon_plate",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:plant_control_console",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/plasma_arc_gasifier",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 6
+    },
+    {
+     "id": "ouka:refractory_brick",
+     "n": 32
+    },
+    {
+     "id": "ouka:tungsten_plate",
+     "n": 12
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 6
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:plasma_arc_gasifier",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/pyrolytic_carbon_press",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 4
+    },
+    {
+     "id": "ouka:iron_plate",
+     "n": 24
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 3
+    },
+    {
+     "id": "ouka:lubricant_canister",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:pyrolytic_carbon_press",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/rotary_calciner",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 3
+    },
+    {
+     "id": "ouka:iron_plate",
+     "n": 32
+    },
+    {
+     "id": "ouka:titanium_plate",
+     "n": 8
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:rotary_calciner",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/superconducting_coil_winder",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 2
+    },
+    {
+     "id": "ouka:electrolytic_copper_plate",
+     "n": 12
+    },
+    {
+     "id": "ouka:titanium_plate",
+     "n": 6
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 3
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:superconducting_coil_winder",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/superconducting_fractionating_tower",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 6
+    },
+    {
+     "id": "ouka:titanium_plate",
+     "n": 24
+    },
+    {
+     "id": "ouka:tungsten_plate",
+     "n": 8
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 6
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:superconducting_fractionating_tower",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/supersonic_jet_mill",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 2
+    },
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 8
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:supersonic_jet_mill",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/syngas_synthesis_reactor",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 4
+    },
+    {
+     "id": "ouka:titanium_plate",
+     "n": 16
+    },
+    {
+     "id": "ouka:refractory_brick",
+     "n": 12
+    },
+    {
+     "id": "ouka:catalyst_pellet",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:syngas_synthesis_reactor",
      "n": 1
     }
    ],
@@ -1674,6 +2934,64 @@
    "outputs": [
     {
      "id": "ouka:uranium_fuel_rod",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/vacuum_pump",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 1
+    },
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 2
+    },
+    {
+     "id": "ouka:copper_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:vacuum_pump",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/vacuum_sintering_furnace",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 4
+    },
+    {
+     "id": "ouka:titanium_plate",
+     "n": 16
+    },
+    {
+     "id": "ouka:carbon_plate",
+     "n": 6
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:vacuum_sintering_furnace",
      "n": 1
     }
    ],
@@ -2221,6 +3539,60 @@
    "brand": "ouka"
   },
   {
+   "id": "ouka:crushing/titanium_plate",
+   "station": "crusher",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:titanium_plate",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:crushing/tungsten_dust_from_raw_tungsten",
+   "station": "crusher",
+   "inputs": [
+    {
+     "id": "ouka:raw_tungsten",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:tungsten_dust",
+     "n": 2
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:crushing/tungsten_plate",
+   "station": "crusher",
+   "inputs": [
+    {
+     "id": "ouka:tungsten_ingot",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:tungsten_plate",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
    "id": "ouka:crushing/uranium_dust_from_raw_uranium",
    "station": "crusher",
    "inputs": [
@@ -2428,6 +3800,851 @@
    "brand": "ouka"
   },
   {
+   "id": "ouka:process/ablate_circuit_board",
+   "station": "laser_ablation_bed",
+   "inputs": [
+    {
+     "id": "ouka:silicon_wafer",
+     "n": 1
+    },
+    {
+     "id": "ouka:graphene_sheet",
+     "n": 1
+    },
+    {
+     "id": "ouka:ultrafine_gold_powder",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:micro_circuit_board",
+     "n": 2
+    }
+   ],
+   "time": 100,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/calcine_nitrate_salt",
+   "station": "rotary_calciner",
+   "inputs": [
+    {
+     "id": "minecraft:bone_meal",
+     "n": 8
+    },
+    {
+     "id": "minecraft:coal",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:nitrate_salt",
+     "n": 4
+    }
+   ],
+   "time": 200,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/calcine_refractory_brick",
+   "station": "rotary_calciner",
+   "inputs": [
+    {
+     "id": "minecraft:clay_ball",
+     "n": 4
+    },
+    {
+     "id": "minecraft:coal",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:refractory_brick",
+     "n": 4
+    }
+   ],
+   "time": 200,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/calibrate_precision_module",
+   "station": "auto_calibration_manipulator",
+   "inputs": [
+    {
+     "id": "ouka:micro_circuit_board",
+     "n": 2
+    },
+    {
+     "id": "ouka:carbon_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:superconducting_coil",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:precision_module",
+     "n": 1
+    }
+   ],
+   "time": 120,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/centrifuge_rare_gas",
+   "station": "gas_centrifuge_tower",
+   "inputs": [
+    {
+     "id": "ouka:rare_gas_canister",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:argon_canister",
+     "n": 3
+    },
+    {
+     "id": "ouka:helium_3_canister",
+     "n": 1,
+     "every": 8
+    }
+   ],
+   "time": 200,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/centrifuge_uranium",
+   "station": "gas_centrifuge_tower",
+   "inputs": [
+    {
+     "id": "ouka:uranium_dust",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:enriched_uranium",
+     "n": 1
+    }
+   ],
+   "time": 240,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/cryo_liquid_oxygen",
+   "station": "cryo_oxygen_extractor",
+   "inputs": [],
+   "outputs": [
+    {
+     "id": "ouka:liquid_oxygen_canister",
+     "n": 1
+    },
+    {
+     "id": "ouka:rare_gas_canister",
+     "n": 1,
+     "every": 8
+    }
+   ],
+   "time": 100,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/crystal_pull_silicon",
+   "station": "crystal_pulling_furnace",
+   "inputs": [
+    {
+     "id": "minecraft:quartz",
+     "n": 8
+    },
+    {
+     "id": "ouka:argon_canister",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:silicon_wafer",
+     "n": 4
+    }
+   ],
+   "time": 400,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/electrolyse_heavy_water",
+   "station": "heavy_water_electrolyser",
+   "inputs": [],
+   "outputs": [
+    {
+     "id": "ouka:deuterium_cell",
+     "n": 1
+    }
+   ],
+   "time": 1200,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/hip_carbide_plate",
+   "station": "hot_isostatic_press",
+   "inputs": [
+    {
+     "id": "ouka:tungsten_carbide_billet",
+     "n": 1
+    },
+    {
+     "id": "ouka:argon_canister",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:tungsten_carbide_plate",
+     "n": 1
+    }
+   ],
+   "time": 400,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/implant_quantum_chip",
+   "station": "high_pressure_ion_implanter",
+   "inputs": [
+    {
+     "id": "ouka:micro_circuit_board",
+     "n": 1
+    },
+    {
+     "id": "ouka:lithium_dust",
+     "n": 1
+    },
+    {
+     "id": "ouka:argon_canister",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:quantum_chip",
+     "n": 1
+    }
+   ],
+   "time": 240,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/jet_mill_copper_dust",
+   "station": "supersonic_jet_mill",
+   "inputs": [
+    {
+     "id": "ouka:copper_dust",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:ultrafine_copper_powder",
+     "n": 3
+    }
+   ],
+   "time": 20,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/jet_mill_copper_ore",
+   "station": "supersonic_jet_mill",
+   "inputs": [
+    {
+     "id": "minecraft:copper_ore",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:ultrafine_copper_powder",
+     "n": 6
+    }
+   ],
+   "time": 40,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/jet_mill_copper_raw",
+   "station": "supersonic_jet_mill",
+   "inputs": [
+    {
+     "id": "minecraft:raw_copper",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:ultrafine_copper_powder",
+     "n": 6
+    }
+   ],
+   "time": 40,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/jet_mill_gold_dust",
+   "station": "supersonic_jet_mill",
+   "inputs": [
+    {
+     "id": "ouka:gold_dust",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:ultrafine_gold_powder",
+     "n": 3
+    }
+   ],
+   "time": 20,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/jet_mill_gold_ore",
+   "station": "supersonic_jet_mill",
+   "inputs": [
+    {
+     "id": "minecraft:gold_ore",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:ultrafine_gold_powder",
+     "n": 6
+    }
+   ],
+   "time": 40,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/jet_mill_gold_raw",
+   "station": "supersonic_jet_mill",
+   "inputs": [
+    {
+     "id": "minecraft:raw_gold",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:ultrafine_gold_powder",
+     "n": 6
+    }
+   ],
+   "time": 40,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/jet_mill_iron_dust",
+   "station": "supersonic_jet_mill",
+   "inputs": [
+    {
+     "id": "ouka:iron_dust",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:ultrafine_iron_powder",
+     "n": 3
+    }
+   ],
+   "time": 20,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/jet_mill_iron_ore",
+   "station": "supersonic_jet_mill",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ore",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:ultrafine_iron_powder",
+     "n": 6
+    }
+   ],
+   "time": 40,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/jet_mill_iron_raw",
+   "station": "supersonic_jet_mill",
+   "inputs": [
+    {
+     "id": "minecraft:raw_iron",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:ultrafine_iron_powder",
+     "n": 6
+    }
+   ],
+   "time": 40,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/jet_mill_titanium_dust",
+   "station": "supersonic_jet_mill",
+   "inputs": [
+    {
+     "id": "ouka:titanium_dust",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:ultrafine_titanium_powder",
+     "n": 3
+    }
+   ],
+   "time": 20,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/jet_mill_tungsten_dust",
+   "station": "supersonic_jet_mill",
+   "inputs": [
+    {
+     "id": "ouka:tungsten_dust",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:ultrafine_tungsten_powder",
+     "n": 3
+    }
+   ],
+   "time": 20,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/jet_mill_tungsten_raw",
+   "station": "supersonic_jet_mill",
+   "inputs": [
+    {
+     "id": "ouka:raw_tungsten",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:ultrafine_tungsten_powder",
+     "n": 6
+    }
+   ],
+   "time": 40,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/pelletise_catalyst",
+   "station": "catalyst_pelletiser",
+   "inputs": [
+    {
+     "id": "ouka:ultrafine_titanium_powder",
+     "n": 2
+    },
+    {
+     "id": "ouka:ultrafine_iron_powder",
+     "n": 2
+    },
+    {
+     "id": "ouka:argon_canister",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:catalyst_pellet",
+     "n": 4
+    }
+   ],
+   "time": 100,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/press_carbon_plate",
+   "station": "pyrolytic_carbon_press",
+   "inputs": [
+    {
+     "id": "ouka:graphene_sheet",
+     "n": 4
+    },
+    {
+     "id": "ouka:industrial_plastic",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:carbon_plate",
+     "n": 1
+    }
+   ],
+   "time": 200,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/press_graphene",
+   "station": "pyrolytic_carbon_press",
+   "inputs": [
+    {
+     "id": "minecraft:coal",
+     "n": 8,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:graphene_sheet",
+     "n": 1
+    }
+   ],
+   "time": 160,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/refine_copper",
+   "station": "electrolytic_refining_cell",
+   "inputs": [
+    {
+     "id": "ouka:copper_plate",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:electrolytic_copper_plate",
+     "n": 8
+    },
+    {
+     "id": "ouka:gold_dust",
+     "n": 1,
+     "every": 5
+    }
+   ],
+   "time": 240,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/sinter_carbide_billet",
+   "station": "vacuum_sintering_furnace",
+   "inputs": [
+    {
+     "id": "ouka:ultrafine_tungsten_powder",
+     "n": 4
+    },
+    {
+     "id": "ouka:graphene_sheet",
+     "n": 1
+    },
+    {
+     "id": "ouka:argon_canister",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:tungsten_carbide_billet",
+     "n": 1
+    }
+   ],
+   "time": 240,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/sinter_copper_ingot",
+   "station": "vacuum_sintering_furnace",
+   "inputs": [
+    {
+     "id": "ouka:ultrafine_copper_powder",
+     "n": 8
+    },
+    {
+     "id": "ouka:argon_canister",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "minecraft:copper_ingot",
+     "n": 8
+    }
+   ],
+   "time": 320,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/sinter_gold_ingot",
+   "station": "vacuum_sintering_furnace",
+   "inputs": [
+    {
+     "id": "ouka:ultrafine_gold_powder",
+     "n": 8
+    },
+    {
+     "id": "ouka:argon_canister",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 8
+    }
+   ],
+   "time": 320,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/sinter_iron_ingot",
+   "station": "vacuum_sintering_furnace",
+   "inputs": [
+    {
+     "id": "ouka:ultrafine_iron_powder",
+     "n": 8
+    },
+    {
+     "id": "ouka:argon_canister",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 8
+    }
+   ],
+   "time": 320,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/sinter_titanium_ingot",
+   "station": "vacuum_sintering_furnace",
+   "inputs": [
+    {
+     "id": "ouka:ultrafine_titanium_powder",
+     "n": 8
+    },
+    {
+     "id": "ouka:argon_canister",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 8
+    }
+   ],
+   "time": 320,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/sinter_tungsten_ingot",
+   "station": "vacuum_sintering_furnace",
+   "inputs": [
+    {
+     "id": "ouka:ultrafine_tungsten_powder",
+     "n": 8
+    },
+    {
+     "id": "ouka:argon_canister",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:tungsten_ingot",
+     "n": 8
+    }
+   ],
+   "time": 320,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/smelt_pure_titanium",
+   "station": "catalytic_smelting_furnace",
+   "inputs": [
+    {
+     "id": "ouka:titanium_dust",
+     "n": 1,
+     "any": true
+    },
+    {
+     "id": "ouka:liquid_oxygen_canister",
+     "n": 1
+    },
+    {
+     "id": "ouka:catalyst_pellet",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:pure_titanium_ingot",
+     "n": 2
+    }
+   ],
+   "time": 160,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/smelt_tungsten",
+   "station": "catalytic_smelting_furnace",
+   "inputs": [
+    {
+     "id": "ouka:tungsten_dust",
+     "n": 1,
+     "any": true
+    },
+    {
+     "id": "ouka:liquid_oxygen_canister",
+     "n": 1
+    },
+    {
+     "id": "ouka:catalyst_pellet",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:tungsten_ingot",
+     "n": 2
+    }
+   ],
+   "time": 160,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/wind_superconducting_coil",
+   "station": "superconducting_coil_winder",
+   "inputs": [
+    {
+     "id": "ouka:electrolytic_copper_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:pure_titanium_ingot",
+     "n": 1
+    },
+    {
+     "id": "ouka:ultrafine_titanium_powder",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:superconducting_coil",
+     "n": 1
+    }
+   ],
+   "time": 120,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process_b4/fractionate_crude",
+   "station": "superconducting_fractionating_tower",
+   "inputs": [
+    {
+     "id": "ouka:crude_oil_canister",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:gasoline_canister",
+     "n": 1
+    },
+    {
+     "id": "ouka:kerosene_canister",
+     "n": 1
+    },
+    {
+     "id": "ouka:lubricant_canister",
+     "n": 1
+    }
+   ],
+   "time": 160,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process_b4/gasify_waste",
+   "station": "plasma_arc_gasifier",
+   "inputs": [
+    {
+     "id": "minecraft:rotten_flesh",
+     "n": 16,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:synthesis_gas_canister",
+     "n": 1
+    },
+    {
+     "id": "ouka:slag",
+     "n": 2
+    }
+   ],
+   "time": 120,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process_b4/synthesise_kerosene",
+   "station": "syngas_synthesis_reactor",
+   "inputs": [
+    {
+     "id": "ouka:synthesis_gas_canister",
+     "n": 4
+    },
+    {
+     "id": "ouka:catalyst_pellet",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:kerosene_canister",
+     "n": 2
+    }
+   ],
+   "time": 200,
+   "brand": "ouka"
+  },
+  {
    "id": "ouka:quarry_vein/overworld_coal",
    "station": "bore",
    "inputs": [],
@@ -2439,7 +4656,7 @@
     }
    ],
    "dimension": "overworld",
-   "share": 18.9,
+   "share": 18.2,
    "brand": "ouka"
   },
   {
@@ -2454,7 +4671,7 @@
     }
    ],
    "dimension": "overworld",
-   "share": 9.8,
+   "share": 9.5,
    "brand": "ouka"
   },
   {
@@ -2484,7 +4701,7 @@
     }
    ],
    "dimension": "overworld",
-   "share": 0.8,
+   "share": 0.7,
    "brand": "ouka"
   },
   {
@@ -2499,7 +4716,7 @@
     }
    ],
    "dimension": "overworld",
-   "share": 3.8,
+   "share": 3.6,
    "brand": "ouka"
   },
   {
@@ -2514,7 +4731,7 @@
     }
    ],
    "dimension": "overworld",
-   "share": 22.7,
+   "share": 21.9,
    "brand": "ouka"
   },
   {
@@ -2529,7 +4746,7 @@
     }
    ],
    "dimension": "overworld",
-   "share": 6.1,
+   "share": 5.8,
    "brand": "ouka"
   },
   {
@@ -2544,7 +4761,7 @@
     }
    ],
    "dimension": "overworld",
-   "share": 22.7,
+   "share": 21.9,
    "brand": "ouka"
   },
   {
@@ -2559,7 +4776,22 @@
     }
    ],
    "dimension": "overworld",
-   "share": 3.0,
+   "share": 2.9,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:quarry_vein/overworld_raw_tungsten",
+   "station": "bore",
+   "inputs": [],
+   "outputs": [
+    {
+     "id": "ouka:raw_tungsten",
+     "n": 1,
+     "nMax": 1
+    }
+   ],
+   "dimension": "overworld",
+   "share": 3.6,
    "brand": "ouka"
   },
   {
@@ -2574,7 +4806,7 @@
     }
    ],
    "dimension": "overworld",
-   "share": 4.5,
+   "share": 4.4,
    "brand": "ouka"
   },
   {
@@ -2589,7 +4821,7 @@
     }
    ],
    "dimension": "overworld",
-   "share": 6.1,
+   "share": 5.8,
    "brand": "ouka"
   },
   {
@@ -2604,7 +4836,7 @@
     }
    ],
    "dimension": "nether",
-   "share": 1.1,
+   "share": 1.0,
    "brand": "ouka"
   },
   {
@@ -2619,7 +4851,7 @@
     }
    ],
    "dimension": "nether",
-   "share": 22.0,
+   "share": 20.8,
    "brand": "ouka"
   },
   {
@@ -2634,7 +4866,7 @@
     }
    ],
    "dimension": "nether",
-   "share": 33.0,
+   "share": 31.2,
    "brand": "ouka"
   },
   {
@@ -2649,7 +4881,22 @@
     }
    ],
    "dimension": "nether",
-   "share": 44.0,
+   "share": 41.7,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:quarry_vein/the_nether_raw_tungsten",
+   "station": "bore",
+   "inputs": [],
+   "outputs": [
+    {
+     "id": "ouka:raw_tungsten",
+     "n": 1,
+     "nMax": 2
+    }
+   ],
+   "dimension": "nether",
+   "share": 5.2,
    "brand": "ouka"
   },
   {
@@ -3394,6 +5641,7 @@
   }
  ],
  "search": {
+  "ouka:assembly/artificial_sun_core": "ouka 人工太陽磁気核融合炉 人工太陽磁気核融合炉 ouka:artificial_sun_core artificial_sun_core artificial sun core 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 超伝導コイル 超伝導こいる ouka:superconducting_coil superconducting_coil superconducting coil 炭化タングステンの板 炭化たんぐすてんの板 ouka:tungsten_carbide_plate tungsten_carbide_plate tungsten carbide plate 量子チップ 量子ちっぷ ouka:quantum_chip quantum_chip quantum chip",
   "ouka:assembly/attachment_mc1_compensator": "ouka OUKA MC-1「楔」コンペンセイター ouka mc-1「楔」こんぺんせいたー ouka:attachment_mc1_compensator attachment_mc1_compensator ouka mc-1 \"kusabi\" compensator チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
   "ouka:assembly/attachment_md3_drum": "ouka OUKA MD-3「太鼓」ドラムマガジン ouka md-3「太鼓」どらむまがじん ouka:attachment_md3_drum attachment_md3_drum ouka md-3 \"taiko\" drum magazine チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/attachment_me2_extended": "ouka OUKA ME-2「重」拡張マガジン ouka me-2「重」拡張まがじん ouka:attachment_me2_extended attachment_me2_extended ouka me-2 \"kasane\" extended magazine チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic",
@@ -3408,9 +5656,21 @@
   "ouka:assembly/attachment_ss1_stability_stock": "ouka OUKA SS-1「巌」安定ストック ouka ss-1「巌」安定すとっく ouka:attachment_ss1_stability_stock attachment_ss1_stability_stock ouka ss-1 \"iwao\" stability stock チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic",
   "ouka:assembly/attachment_ua1_angled_grip": "ouka OUKA UA-1「燕」アングルドグリップ ouka ua-1「燕」あんぐるどぐりっぷ ouka:attachment_ua1_angled_grip attachment_ua1_angled_grip ouka ua-1 \"tsubame\" angled grip 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic 鉄板 鉄板 ouka:iron_plate iron_plate iron plate",
   "ouka:assembly/attachment_uv2_vertical_grip": "ouka OUKA UV-2「柱」バーティカルグリップ ouka uv-2「柱」ばーてぃかるぐりっぷ ouka:attachment_uv2_vertical_grip attachment_uv2_vertical_grip ouka uv-2 \"hashira\" vertical grip 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 鉄板 鉄板 ouka:iron_plate iron_plate iron plate",
+  "ouka:assembly/auto_calibration_manipulator": "ouka 自動キャリブレーションマニピュレータ 自動きゃりぶれーしょんまにぴゅれーた ouka:auto_calibration_manipulator auto_calibration_manipulator auto-calibration manipulator 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate",
+  "ouka:assembly/catalyst_pelletiser": "ouka 触媒造粒機 触媒造粒機 ouka:catalyst_pelletiser catalyst_pelletiser catalyst pelletiser 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot チタンの超微粉 ちたんの超微粉 ouka:ultrafine_titanium_powder ultrafine_titanium_powder ultrafine titanium powder 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/catalytic_smelting_furnace": "ouka 触媒熱化学溶鉱炉 触媒熱化学溶鉱炉 ouka:catalytic_smelting_furnace catalytic_smelting_furnace catalytic smelting furnace 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/circuit_blueprint": "ouka 回路投影ブループリント 回路投影ぶるーぷりんと ouka:circuit_blueprint circuit_blueprint holographic circuit blueprint 紙 紙 minecraft:paper paper paper 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard ラピスラズリ らぴすらずり minecraft:lapis_lazuli lapis_lazuli lapis lazuli",
+  "ouka:assembly/cleanroom_filter_unit": "ouka クリーンルーム・ファンフィルターユニット くりーんるーむ・ふぁんふぃるたーゆにっと ouka:cleanroom_filter_unit cleanroom_filter_unit cleanroom fan-filter unit 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic",
   "ouka:assembly/composite_plate": "ouka 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 鉄板 鉄板 ouka:iron_plate iron_plate iron plate チタンの粉 ちたんの粉 ouka:titanium_dust titanium_dust titanium dust 粘土玉 粘土玉 minecraft:clay_ball clay_ball clay ball",
+  "ouka:assembly/coolant_circulation_pump": "ouka 冷却材循環ポンプ 冷却材循環ぽんぷ ouka:coolant_circulation_pump coolant_circulation_pump coolant circulation pump 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 銅板 銅板 ouka:copper_plate copper_plate copper plate チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic",
+  "ouka:assembly/cooling_tower": "ouka 強制通風冷却塔 強制通風冷却塔 ouka:cooling_tower cooling_tower forced-draft cooling tower 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate",
+  "ouka:assembly/cryo_oxygen_extractor": "ouka 極低温電解酸素精製機 極低温電解酸素精製機 ouka:cryo_oxygen_extractor cryo_oxygen_extractor cryo-oxygen extractor 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 銅板 銅板 ouka:copper_plate copper_plate copper plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/crystal_pulling_furnace": "ouka 単結晶引き上げ炉 単結晶引き上げ炉 ouka:crystal_pulling_furnace crystal_pulling_furnace crystal pulling furnace 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 耐火レンガ 耐火れんが ouka:refractory_brick refractory_brick refractory brick タングステンの板 たんぐすてんの板 ouka:tungsten_plate tungsten_plate tungsten plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/electrolytic_refining_cell": "ouka 電解精錬槽 電解精錬槽 ouka:electrolytic_refining_cell electrolytic_refining_cell electrolytic refining cell 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 銅板 銅板 ouka:copper_plate copper_plate copper plate チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/electronic_circuit": "ouka 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 銅板 銅板 ouka:copper_plate copper_plate copper plate レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust ネザークォーツ ねざーくぉーつ minecraft:quartz quartz nether quartz 金の粉 金の粉 ouka:gold_dust gold_dust gold dust",
+  "ouka:assembly/gas_centrifuge_tower": "ouka 重力遠心気相分離塔 重力遠心気相分離塔 ouka:gas_centrifuge_tower gas_centrifuge_tower gas-centrifuge tower 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/gas_compressor": "ouka ガス圧縮機 がす圧縮機 ouka:gas_compressor gas_compressor gas compressor 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 潤滑油の缶 潤滑油の缶 ouka:lubricant_canister lubricant_canister lubricant canister",
+  "ouka:assembly/gas_turbine_generator": "ouka ガスタービン発電機 がすたーびん発電機 ouka:gas_turbine_generator gas_turbine_generator gas turbine generator 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame タングステンの板 たんぐすてんの板 ouka:tungsten_plate tungsten_plate tungsten plate チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate 超伝導コイル 超伝導こいる ouka:superconducting_coil superconducting_coil superconducting coil",
   "ouka:assembly/gun_fudo": "ouka OUKA Type-55「不動」重装軽機関銃 ouka type-55「不動」重装軽機関銃 ouka:gun_fudo gun_fudo ouka type-55 \"fudo\" heavy lmg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame",
   "ouka:assembly/gun_gekkou": "ouka OUKA Type-77「月光」増幅式ボルトアクション狙撃銃 ouka type-77「月光」増幅式ぼるとあくしょん狙撃銃 ouka:gun_gekkou gun_gekkou ouka type-77 \"gekkou\" amped bolt sniper チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate ヘリウム3の缶 へりうむ3の缶 ouka:helium_3_canister helium_3_canister helium-3 canister",
   "ouka:assembly/gun_hayabusa": "ouka OUKA Type-99「隼」高速連射短機関銃 ouka type-99「隼」高速連射短機関銃 ouka:gun_hayabusa gun_hayabusa ouka type-99 \"hayabusa\" high-rpm smg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
@@ -3430,11 +5690,28 @@
   "ouka:assembly/hazard_exoskeleton_chestplate": "ouka 全天候型重工業防護外骨格(胴) 全天候型重工業防護外骨格(胴) ouka:hazard_exoskeleton_chestplate hazard_exoskeleton_chestplate industrial hazard exoskeleton chestplate 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate ネザライトインゴット ねざらいといんごっと minecraft:netherite_ingot netherite_ingot netherite ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/hazard_exoskeleton_helmet": "ouka 全天候型重工業防護外骨格(ヘルメット) 全天候型重工業防護外骨格(へるめっと) ouka:hazard_exoskeleton_helmet hazard_exoskeleton_helmet industrial hazard exoskeleton helmet 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 遮光ガラス 遮光がらす minecraft:tinted_glass tinted_glass tinted glass 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/hazard_exoskeleton_leggings": "ouka 全天候型重工業防護外骨格(脚) 全天候型重工業防護外骨格(脚) ouka:hazard_exoskeleton_leggings hazard_exoskeleton_leggings industrial hazard exoskeleton leggings 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic ピストン ぴすとん minecraft:piston piston piston",
+  "ouka:assembly/heavy_water_electrolyser": "ouka 重水電解濃縮槽 重水電解濃縮槽 ouka:heavy_water_electrolyser heavy_water_electrolyser heavy-water electrolyser 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 銅板 銅板 ouka:copper_plate copper_plate copper plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/high_pressure_ion_implanter": "ouka 高圧イオン注入機 高圧いおん注入機 ouka:high_pressure_ion_implanter high_pressure_ion_implanter high-pressure ion implanter 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 超伝導コイル 超伝導こいる ouka:superconducting_coil superconducting_coil superconducting coil タングステンの板 たんぐすてんの板 ouka:tungsten_plate tungsten_plate tungsten plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/hot_isostatic_press": "ouka 熱間等方圧加圧機 熱間等方圧加圧機 ouka:hot_isostatic_press hot_isostatic_press hot isostatic press 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/industrial_flywheel_storage": "ouka 工業用蓄電フライホイール 工業用蓄電ふらいほいーる ouka:industrial_flywheel_storage industrial_flywheel_storage industrial flywheel storage 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 炭化タングステンの板 炭化たんぐすてんの板 ouka:tungsten_carbide_plate tungsten_carbide_plate tungsten carbide plate カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate 超伝導コイル 超伝導こいる ouka:superconducting_coil superconducting_coil superconducting coil",
+  "ouka:assembly/laser_ablation_bed": "ouka 連続レーザーアブレーション加工機 連続れーざーあぶれーしょん加工機 ouka:laser_ablation_bed laser_ablation_bed laser ablation bed 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 超伝導コイル 超伝導こいる ouka:superconducting_coil superconducting_coil superconducting coil",
   "ouka:assembly/machine_frame": "ouka 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/molten_salt_exchanger": "ouka 高温溶融塩熱交換タワー 高温溶融塩熱交換たわー ouka:molten_salt_exchanger molten_salt_exchanger molten salt exchanger tower 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 耐火レンガ 耐火れんが ouka:refractory_brick refractory_brick refractory brick チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate 超高純度チタンのインゴット 超高純度ちたんのいんごっと ouka:pure_titanium_ingot pure_titanium_ingot pure titanium ingot",
   "ouka:assembly/omni_wrench": "ouka 万能工業ラチェット 万能工業らちぇっと ouka:omni_wrench omni_wrench industrial omni-wrench チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic",
+  "ouka:assembly/pipe_inspection_drone_station": "ouka 配管点検ドローンステーション 配管点検どろーんすてーしょん ouka:pipe_inspection_drone_station pipe_inspection_drone_station pipe-inspection drone station 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot",
+  "ouka:assembly/plant_control_console": "ouka プラント統括制御盤 ぷらんと統括制御盤 ouka:plant_control_console plant_control_console plant control console 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 量子チップ 量子ちっぷ ouka:quantum_chip quantum_chip quantum chip 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate",
+  "ouka:assembly/plasma_arc_gasifier": "ouka プラズマアーク廃棄物分解炉 ぷらずまあーく廃棄物分解炉 ouka:plasma_arc_gasifier plasma_arc_gasifier plasma arc gasifier 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 耐火レンガ 耐火れんが ouka:refractory_brick refractory_brick refractory brick タングステンの板 たんぐすてんの板 ouka:tungsten_plate tungsten_plate tungsten plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/pyrolytic_carbon_press": "ouka 高圧熱分解炭素重合機 高圧熱分解炭素重合機 ouka:pyrolytic_carbon_press pyrolytic_carbon_press pyrolytic carbon press 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 潤滑油の缶 潤滑油の缶 ouka:lubricant_canister lubricant_canister lubricant canister",
+  "ouka:assembly/rotary_calciner": "ouka 回転式焼成炉 回転式焼成炉 ouka:rotary_calciner rotary_calciner rotary calciner 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 鉄板 鉄板 ouka:iron_plate iron_plate iron plate チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/superconducting_coil_winder": "ouka 超伝導コイル巻線機 超伝導こいる巻線機 ouka:superconducting_coil_winder superconducting_coil_winder superconducting coil winder 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 電解銅板 電解銅板 ouka:electrolytic_copper_plate electrolytic_copper_plate electrolytic copper plate チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/superconducting_fractionating_tower": "ouka 超伝導精留塔 超伝導精留塔 ouka:superconducting_fractionating_tower superconducting_fractionating_tower superconducting fractionating tower 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate タングステンの板 たんぐすてんの板 ouka:tungsten_plate tungsten_plate tungsten plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/supersonic_jet_mill": "ouka 超音速ジェットミル粉砕機 超音速じぇっとみる粉砕機 ouka:supersonic_jet_mill supersonic_jet_mill supersonic jet mill 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/syngas_synthesis_reactor": "ouka 合成ガス触媒反応器 合成がす触媒反応器 ouka:syngas_synthesis_reactor syngas_synthesis_reactor syngas synthesis reactor 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate 耐火レンガ 耐火れんが ouka:refractory_brick refractory_brick refractory brick 触媒ペレット 触媒ぺれっと ouka:catalyst_pellet catalyst_pellet catalyst pellet",
   "ouka:assembly/thermal_demolition_laser": "ouka 携帯型熱分解カッター 携帯型熱分解かったー ouka:thermal_demolition_laser thermal_demolition_laser thermal demolition laser チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit ブレイズロッド ぶれいずろっど minecraft:blaze_rod blaze_rod blaze rod アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard",
   "ouka:assembly/thorium_fuel_rod": "ouka トリウム燃料棒 とりうむ燃料棒 ouka:thorium_fuel_rod thorium_fuel_rod thorium fuel rod チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot トリウムの粉 とりうむの粉 ouka:thorium_dust thorium_dust thorium dust 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate",
   "ouka:assembly/uranium_fuel_rod": "ouka ウラン燃料棒 うらん燃料棒 ouka:uranium_fuel_rod uranium_fuel_rod uranium fuel rod チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 濃縮ウラン 濃縮うらん ouka:enriched_uranium enriched_uranium enriched uranium 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate",
+  "ouka:assembly/vacuum_pump": "ouka 真空ポンプ 真空ぽんぷ ouka:vacuum_pump vacuum_pump vacuum pump 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 銅板 銅板 ouka:copper_plate copper_plate copper plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/vacuum_sintering_furnace": "ouka 真空焼結炉 真空焼結炉 ouka:vacuum_sintering_furnace vacuum_sintering_furnace vacuum sintering furnace 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/wind_turbine": "ouka OUKA Type-W1「風神」風力発電機 ouka type-w1「風神」風力発電機 ouka:wind_turbine wind_turbine ouka type-w1 \"fujin\" wind turbine 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 銅板 銅板 ouka:copper_plate copper_plate copper plate",
   "ouka:assembly/wrought_iron_statue": "ouka 鋼鉄の守護騎士の彫像 鋼鉄の守護騎士の彫像 ouka:wrought_iron_statue wrought_iron_statue wrought iron statue 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
   "ouka:assembly/wrought_plate_boots": "ouka 重鉄の防壁の靴 重鉄の防壁の靴 ouka:wrought_plate_boots wrought_plate_boots wrought plate boots 重鉄の防壁インゴット 重鉄の防壁いんごっと ouka:wrought_plate_ingot wrought_plate_ingot wrought plate ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic 鉄板 鉄板 ouka:iron_plate iron_plate iron plate",
@@ -3459,6 +5736,9 @@
   "ouka:crushing/iron_plate": "ouka 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot",
   "ouka:crushing/ouka_alloy_plate": "ouka 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 桜花合金インゴット 桜花合金いんごっと ouka:ouka_alloy_ingot ouka_alloy_ingot ouka alloy ingot",
   "ouka:crushing/thorium_dust_from_raw_thorium": "ouka トリウムの粉 とりうむの粉 ouka:thorium_dust thorium_dust thorium dust トリウムの原石 とりうむの原石 ouka:raw_thorium raw_thorium raw thorium",
+  "ouka:crushing/titanium_plate": "ouka チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot",
+  "ouka:crushing/tungsten_dust_from_raw_tungsten": "ouka タングステンの粉 たんぐすてんの粉 ouka:tungsten_dust tungsten_dust tungsten dust タングステン原石 たんぐすてん原石 ouka:raw_tungsten raw_tungsten raw tungsten",
+  "ouka:crushing/tungsten_plate": "ouka タングステンの板 たんぐすてんの板 ouka:tungsten_plate tungsten_plate tungsten plate タングステンのインゴット たんぐすてんのいんごっと ouka:tungsten_ingot tungsten_ingot tungsten ingot",
   "ouka:crushing/uranium_dust_from_raw_uranium": "ouka ウランの粉 うらんの粉 ouka:uranium_dust uranium_dust uranium dust ウランの原石 うらんの原石 ouka:raw_uranium raw_uranium raw uranium",
   "ouka:culturing/industrial_plastic_from_biomass": "ouka 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic 腐った肉 腐った肉 minecraft:rotten_flesh rotten_flesh rotten flesh",
   "ouka:culturing/industrial_plastic_from_oil": "ouka 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic 原油の缶 原油の缶 ouka:crude_oil_canister crude_oil_canister crude oil canister リチウムの粉 りちうむの粉 ouka:lithium_dust lithium_dust lithium dust",
@@ -3469,6 +5749,45 @@
   "ouka:gold_ingot_from_smelting_gold_dust": "ouka 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot 金の粉 金の粉 ouka:gold_dust gold_dust gold dust",
   "ouka:iron_ingot_from_blasting_iron_dust": "ouka 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 鉄の粉 鉄の粉 ouka:iron_dust iron_dust iron dust",
   "ouka:iron_ingot_from_smelting_iron_dust": "ouka 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 鉄の粉 鉄の粉 ouka:iron_dust iron_dust iron dust",
+  "ouka:process/ablate_circuit_board": "ouka 微細回路基板 微細回路基板 ouka:micro_circuit_board micro_circuit_board micro circuit board シリコンウェハー しりこんうぇはー ouka:silicon_wafer silicon_wafer silicon wafer グラフェンシート ぐらふぇんしーと ouka:graphene_sheet graphene_sheet graphene sheet 金の超微粉 金の超微粉 ouka:ultrafine_gold_powder ultrafine_gold_powder ultrafine gold powder",
+  "ouka:process/calcine_nitrate_salt": "ouka 硝酸塩 硝酸塩 ouka:nitrate_salt nitrate_salt nitrate salt 骨粉 骨粉 minecraft:bone_meal bone_meal bone meal 石炭 石炭 minecraft:coal coal coal",
+  "ouka:process/calcine_refractory_brick": "ouka 耐火レンガ 耐火れんが ouka:refractory_brick refractory_brick refractory brick 粘土玉 粘土玉 minecraft:clay_ball clay_ball clay ball 石炭 石炭 minecraft:coal coal coal",
+  "ouka:process/calibrate_precision_module": "ouka 精密モジュール 精密もじゅーる ouka:precision_module precision_module precision module 微細回路基板 微細回路基板 ouka:micro_circuit_board micro_circuit_board micro circuit board カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate 超伝導コイル 超伝導こいる ouka:superconducting_coil superconducting_coil superconducting coil",
+  "ouka:process/centrifuge_rare_gas": "ouka アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister ヘリウム3の缶 へりうむ3の缶 ouka:helium_3_canister helium_3_canister helium-3 canister 希ガスの缶 希がすの缶 ouka:rare_gas_canister rare_gas_canister rare gas canister",
+  "ouka:process/centrifuge_uranium": "ouka 濃縮ウラン 濃縮うらん ouka:enriched_uranium enriched_uranium enriched uranium ウランの粉 うらんの粉 ouka:uranium_dust uranium_dust uranium dust",
+  "ouka:process/cryo_liquid_oxygen": "ouka 液体酸素の缶 液体酸素の缶 ouka:liquid_oxygen_canister liquid_oxygen_canister liquid oxygen canister 希ガスの缶 希がすの缶 ouka:rare_gas_canister rare_gas_canister rare gas canister",
+  "ouka:process/crystal_pull_silicon": "ouka シリコンウェハー しりこんうぇはー ouka:silicon_wafer silicon_wafer silicon wafer ネザークォーツ ねざーくぉーつ minecraft:quartz quartz nether quartz アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
+  "ouka:process/electrolyse_heavy_water": "ouka 重水素セル 重水素せる ouka:deuterium_cell deuterium_cell deuterium cell",
+  "ouka:process/hip_carbide_plate": "ouka 炭化タングステンの板 炭化たんぐすてんの板 ouka:tungsten_carbide_plate tungsten_carbide_plate tungsten carbide plate 炭化タングステンの鋳片 炭化たんぐすてんの鋳片 ouka:tungsten_carbide_billet tungsten_carbide_billet tungsten carbide billet アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
+  "ouka:process/implant_quantum_chip": "ouka 量子チップ 量子ちっぷ ouka:quantum_chip quantum_chip quantum chip 微細回路基板 微細回路基板 ouka:micro_circuit_board micro_circuit_board micro circuit board リチウムの粉 りちうむの粉 ouka:lithium_dust lithium_dust lithium dust アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
+  "ouka:process/jet_mill_copper_dust": "ouka 銅の超微粉 銅の超微粉 ouka:ultrafine_copper_powder ultrafine_copper_powder ultrafine copper powder 銅の粉 銅の粉 ouka:copper_dust copper_dust copper dust",
+  "ouka:process/jet_mill_copper_ore": "ouka 銅の超微粉 銅の超微粉 ouka:ultrafine_copper_powder ultrafine_copper_powder ultrafine copper powder 銅鉱石 銅鉱石 minecraft:copper_ore copper_ore copper ore",
+  "ouka:process/jet_mill_copper_raw": "ouka 銅の超微粉 銅の超微粉 ouka:ultrafine_copper_powder ultrafine_copper_powder ultrafine copper powder 銅の原石 銅の原石 minecraft:raw_copper raw_copper raw copper",
+  "ouka:process/jet_mill_gold_dust": "ouka 金の超微粉 金の超微粉 ouka:ultrafine_gold_powder ultrafine_gold_powder ultrafine gold powder 金の粉 金の粉 ouka:gold_dust gold_dust gold dust",
+  "ouka:process/jet_mill_gold_ore": "ouka 金の超微粉 金の超微粉 ouka:ultrafine_gold_powder ultrafine_gold_powder ultrafine gold powder 金鉱石 金鉱石 minecraft:gold_ore gold_ore gold ore",
+  "ouka:process/jet_mill_gold_raw": "ouka 金の超微粉 金の超微粉 ouka:ultrafine_gold_powder ultrafine_gold_powder ultrafine gold powder 金の原石 金の原石 minecraft:raw_gold raw_gold raw gold",
+  "ouka:process/jet_mill_iron_dust": "ouka 鉄の超微粉 鉄の超微粉 ouka:ultrafine_iron_powder ultrafine_iron_powder ultrafine iron powder 鉄の粉 鉄の粉 ouka:iron_dust iron_dust iron dust",
+  "ouka:process/jet_mill_iron_ore": "ouka 鉄の超微粉 鉄の超微粉 ouka:ultrafine_iron_powder ultrafine_iron_powder ultrafine iron powder 鉄鉱石 鉄鉱石 minecraft:iron_ore iron_ore iron ore",
+  "ouka:process/jet_mill_iron_raw": "ouka 鉄の超微粉 鉄の超微粉 ouka:ultrafine_iron_powder ultrafine_iron_powder ultrafine iron powder 鉄の原石 鉄の原石 minecraft:raw_iron raw_iron raw iron",
+  "ouka:process/jet_mill_titanium_dust": "ouka チタンの超微粉 ちたんの超微粉 ouka:ultrafine_titanium_powder ultrafine_titanium_powder ultrafine titanium powder チタンの粉 ちたんの粉 ouka:titanium_dust titanium_dust titanium dust",
+  "ouka:process/jet_mill_tungsten_dust": "ouka タングステンの超微粉 たんぐすてんの超微粉 ouka:ultrafine_tungsten_powder ultrafine_tungsten_powder ultrafine tungsten powder タングステンの粉 たんぐすてんの粉 ouka:tungsten_dust tungsten_dust tungsten dust",
+  "ouka:process/jet_mill_tungsten_raw": "ouka タングステンの超微粉 たんぐすてんの超微粉 ouka:ultrafine_tungsten_powder ultrafine_tungsten_powder ultrafine tungsten powder タングステン原石 たんぐすてん原石 ouka:raw_tungsten raw_tungsten raw tungsten",
+  "ouka:process/pelletise_catalyst": "ouka 触媒ペレット 触媒ぺれっと ouka:catalyst_pellet catalyst_pellet catalyst pellet チタンの超微粉 ちたんの超微粉 ouka:ultrafine_titanium_powder ultrafine_titanium_powder ultrafine titanium powder 鉄の超微粉 鉄の超微粉 ouka:ultrafine_iron_powder ultrafine_iron_powder ultrafine iron powder アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
+  "ouka:process/press_carbon_plate": "ouka カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate グラフェンシート ぐらふぇんしーと ouka:graphene_sheet graphene_sheet graphene sheet 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic",
+  "ouka:process/press_graphene": "ouka グラフェンシート ぐらふぇんしーと ouka:graphene_sheet graphene_sheet graphene sheet 石炭 石炭 minecraft:coal coal coal",
+  "ouka:process/refine_copper": "ouka 電解銅板 電解銅板 ouka:electrolytic_copper_plate electrolytic_copper_plate electrolytic copper plate 金の粉 金の粉 ouka:gold_dust gold_dust gold dust 銅板 銅板 ouka:copper_plate copper_plate copper plate",
+  "ouka:process/sinter_carbide_billet": "ouka 炭化タングステンの鋳片 炭化たんぐすてんの鋳片 ouka:tungsten_carbide_billet tungsten_carbide_billet tungsten carbide billet タングステンの超微粉 たんぐすてんの超微粉 ouka:ultrafine_tungsten_powder ultrafine_tungsten_powder ultrafine tungsten powder グラフェンシート ぐらふぇんしーと ouka:graphene_sheet graphene_sheet graphene sheet アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
+  "ouka:process/sinter_copper_ingot": "ouka 銅インゴット 銅いんごっと minecraft:copper_ingot copper_ingot copper ingot 銅の超微粉 銅の超微粉 ouka:ultrafine_copper_powder ultrafine_copper_powder ultrafine copper powder アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
+  "ouka:process/sinter_gold_ingot": "ouka 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot 金の超微粉 金の超微粉 ouka:ultrafine_gold_powder ultrafine_gold_powder ultrafine gold powder アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
+  "ouka:process/sinter_iron_ingot": "ouka 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 鉄の超微粉 鉄の超微粉 ouka:ultrafine_iron_powder ultrafine_iron_powder ultrafine iron powder アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
+  "ouka:process/sinter_titanium_ingot": "ouka チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot チタンの超微粉 ちたんの超微粉 ouka:ultrafine_titanium_powder ultrafine_titanium_powder ultrafine titanium powder アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
+  "ouka:process/sinter_tungsten_ingot": "ouka タングステンのインゴット たんぐすてんのいんごっと ouka:tungsten_ingot tungsten_ingot tungsten ingot タングステンの超微粉 たんぐすてんの超微粉 ouka:ultrafine_tungsten_powder ultrafine_tungsten_powder ultrafine tungsten powder アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
+  "ouka:process/smelt_pure_titanium": "ouka 超高純度チタンのインゴット 超高純度ちたんのいんごっと ouka:pure_titanium_ingot pure_titanium_ingot pure titanium ingot チタンの粉 ちたんの粉 ouka:titanium_dust titanium_dust titanium dust 液体酸素の缶 液体酸素の缶 ouka:liquid_oxygen_canister liquid_oxygen_canister liquid oxygen canister 触媒ペレット 触媒ぺれっと ouka:catalyst_pellet catalyst_pellet catalyst pellet",
+  "ouka:process/smelt_tungsten": "ouka タングステンのインゴット たんぐすてんのいんごっと ouka:tungsten_ingot tungsten_ingot tungsten ingot タングステンの粉 たんぐすてんの粉 ouka:tungsten_dust tungsten_dust tungsten dust 液体酸素の缶 液体酸素の缶 ouka:liquid_oxygen_canister liquid_oxygen_canister liquid oxygen canister 触媒ペレット 触媒ぺれっと ouka:catalyst_pellet catalyst_pellet catalyst pellet",
+  "ouka:process/wind_superconducting_coil": "ouka 超伝導コイル 超伝導こいる ouka:superconducting_coil superconducting_coil superconducting coil 電解銅板 電解銅板 ouka:electrolytic_copper_plate electrolytic_copper_plate electrolytic copper plate 超高純度チタンのインゴット 超高純度ちたんのいんごっと ouka:pure_titanium_ingot pure_titanium_ingot pure titanium ingot チタンの超微粉 ちたんの超微粉 ouka:ultrafine_titanium_powder ultrafine_titanium_powder ultrafine titanium powder",
+  "ouka:process_b4/fractionate_crude": "ouka ガソリンの缶 がそりんの缶 ouka:gasoline_canister gasoline_canister gasoline canister 灯油の缶 灯油の缶 ouka:kerosene_canister kerosene_canister kerosene canister 潤滑油の缶 潤滑油の缶 ouka:lubricant_canister lubricant_canister lubricant canister 原油の缶 原油の缶 ouka:crude_oil_canister crude_oil_canister crude oil canister",
+  "ouka:process_b4/gasify_waste": "ouka 合成ガスの缶 合成がすの缶 ouka:synthesis_gas_canister synthesis_gas_canister synthesis gas canister スラグ すらぐ ouka:slag slag slag 腐った肉 腐った肉 minecraft:rotten_flesh rotten_flesh rotten flesh",
+  "ouka:process_b4/synthesise_kerosene": "ouka 灯油の缶 灯油の缶 ouka:kerosene_canister kerosene_canister kerosene canister 合成ガスの缶 合成がすの缶 ouka:synthesis_gas_canister synthesis_gas_canister synthesis gas canister 触媒ペレット 触媒ぺれっと ouka:catalyst_pellet catalyst_pellet catalyst pellet",
   "ouka:quarry_vein/overworld_coal": "ouka 石炭 石炭 minecraft:coal coal coal",
   "ouka:quarry_vein/overworld_crude_oil_canister": "ouka 原油の缶 原油の缶 ouka:crude_oil_canister crude_oil_canister crude oil canister",
   "ouka:quarry_vein/overworld_diamond": "ouka ダイヤモンド だいやもんど minecraft:diamond diamond diamond",
@@ -3478,12 +5797,14 @@
   "ouka:quarry_vein/overworld_raw_gold": "ouka 金の原石 金の原石 minecraft:raw_gold raw_gold raw gold",
   "ouka:quarry_vein/overworld_raw_iron": "ouka 鉄の原石 鉄の原石 minecraft:raw_iron raw_iron raw iron",
   "ouka:quarry_vein/overworld_raw_thorium": "ouka トリウムの原石 とりうむの原石 ouka:raw_thorium raw_thorium raw thorium",
+  "ouka:quarry_vein/overworld_raw_tungsten": "ouka タングステン原石 たんぐすてん原石 ouka:raw_tungsten raw_tungsten raw tungsten",
   "ouka:quarry_vein/overworld_raw_uranium": "ouka ウランの原石 うらんの原石 ouka:raw_uranium raw_uranium raw uranium",
   "ouka:quarry_vein/overworld_redstone": "ouka レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
   "ouka:quarry_vein/the_nether_ancient_debris": "ouka 古代の残骸 古代の残骸 minecraft:ancient_debris ancient_debris ancient debris",
   "ouka:quarry_vein/the_nether_glowstone_dust": "ouka グロウストーンダスト ぐろうすとーんだすと minecraft:glowstone_dust glowstone_dust glowstone dust",
   "ouka:quarry_vein/the_nether_gold_nugget": "ouka 金塊 金塊 minecraft:gold_nugget gold_nugget gold nugget",
   "ouka:quarry_vein/the_nether_quartz": "ouka ネザークォーツ ねざーくぉーつ minecraft:quartz quartz nether quartz",
+  "ouka:quarry_vein/the_nether_raw_tungsten": "ouka タングステン原石 たんぐすてん原石 ouka:raw_tungsten raw_tungsten raw tungsten",
   "ouka:titanium_ingot_from_blasting_titanium_dust": "ouka チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot チタンの粉 ちたんの粉 ouka:titanium_dust titanium_dust titanium dust",
   "ouka:titanium_ingot_from_smelting_titanium_dust": "ouka チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot チタンの粉 ちたんの粉 ouka:titanium_dust titanium_dust titanium dust",
   "cherry:aegis_x": "cherry Cherry Aegis-X cherry aegis-x cherry:aegis_x aegis_x cherry aegis-x チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate チェリー・コア ちぇりー・こあ cherry:cherry_core cherry_core cherry core 精密銃身部品 精密銃身部品 cherry:precision_barrel_component precision_barrel_component precision barrel component 推進剤キャニスター 推進剤きゃにすたー cherry:propellant_canister propellant_canister propellant canister",

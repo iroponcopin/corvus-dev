@@ -50,6 +50,18 @@ STATIONS = [
     ("furnace", "minecraft:furnace"),
     ("blast", "minecraft:blast_furnace"),
 ]
+# OUKA V1.6.0: the heavy-industry machines that have recipes of type ouka:process. One station each (the recipe's own
+# "machine" field names it), in the order a player builds them. A process recipe naming a machine that is not here
+# stops the build: a machine added later must be given its chip, not dropped without a word.
+PROCESS_MACHINES = [
+    "supersonic_jet_mill", "cryo_oxygen_extractor",
+    "gas_centrifuge_tower", "heavy_water_electrolyser", "pyrolytic_carbon_press", "electrolytic_refining_cell", "catalyst_pelletiser",
+    "catalytic_smelting_furnace", "vacuum_sintering_furnace", "hot_isostatic_press", "rotary_calciner", "superconducting_coil_winder",
+    "superconducting_fractionating_tower", "plasma_arc_gasifier", "syngas_synthesis_reactor",
+    "crystal_pulling_furnace", "laser_ablation_bed", "high_pressure_ion_implanter", "auto_calibration_manipulator",
+]
+_AT = [i for i, s in enumerate(STATIONS) if s[0] == "fabricator"][0]
+STATIONS[_AT:_AT] = [(m, "ouka:" + m) for m in PROCESS_MACHINES]
 TYPE_STATION = {
     "ouka:assembly": "assembly",
     "ouka:crushing": "crusher",
@@ -282,6 +294,10 @@ def read_recipes(jar: Jar) -> list[dict]:
         if t in SHEET_TYPES:
             continue
         station = TYPE_STATION.get(t)
+        if t == "ouka:process":
+            station = x["machine"].split(":", 1)[1]
+            if x["machine"] != "ouka:" + station or station not in PROCESS_MACHINES:
+                die(f"{rid}: the process machine {x['machine']!r} has no station here (add it to PROCESS_MACHINES)")
         if station is None:
             die(f"{rid}: recipe type {t!r} has no station here (add it to TYPE_STATION)")
         res = x.get("result") or {}
@@ -298,6 +314,11 @@ def read_recipes(jar: Jar) -> list[dict]:
                 rec["time"] = x["time"]
             if "water" in x:
                 rec["water"] = x["water"]
+        elif t == "ouka:process":
+            rec["inputs"] = [ingredient(jar, i["ingredient"], i.get("count", 1)) for i in x["inputs"]]
+            rec["outputs"] = [{"id": o["result"]["id"], "n": o["result"].get("count", 1), **({"every": o["every"]} if "every" in o else {})}
+                              for o in x["outputs"]]
+            rec["time"] = x["ticks"]
         elif t == "ouka:crushing":
             rec["inputs"] = [ingredient(jar, x["ingredient"], x.get("count", 1))]
             rec["outputs"] = [{"id": res["id"], "n": res.get("count", 1)}]

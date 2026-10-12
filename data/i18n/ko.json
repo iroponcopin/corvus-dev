@@ -306,6 +306,26 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.0",
+    "title": "The Grand Synthesis — 틈 없는 미닫이문, 가구 50종, 중공업 기계 30종",
+    "summary": "와시쓰와 공장이 함께 커졌습니다. 닫힌 쇼지나 후스마 줄에서 문과 문 사이로 더는 빛이 새지 않습니다. 이음매마다 맞댐 문울거미가 덮고, 새 블록 Shikii Grooved Hinoki Sill이 문의 아랫부분을 받칩니다. 새 가구 50종이 방과 정원을 채우고, 중공업 기계 30종이 광석에서 초미세 분말, 실리콘 웨이퍼, 양자 칩까지 이어지며, 그 정점에 정격 1.00 GW의 Artificial Sun Core가 있습니다. 새 아이템은 모두 툴팁에서 쓰임새를 설명합니다.",
+    "highlights": [
+     "닫힌 미닫이문 사이의 틈이 막혔습니다. 뒤쪽 레일의 문마다 이제 양 끝에 맞댐 문울거미가 달려 옆 문과의 이음매를 덮습니다. 배포되는 모델로 계산한 결과, 정면 기준 0도에서 89도까지 어느 시야각에서도 닫힌 줄의 문과 문 사이로 시선이 지나가지 않습니다.",
+     "새 블록 Shikii Grooved Hinoki Sill은 미닫이문 아래에 깝니다. 홈 2줄이 쇼지나 후스마의 아랫부분을 받아 아래로 빛이 새지 않습니다. 위쪽의 가모이와 짝을 이루며 제작대에서 만듭니다.",
+     "문과 창이 늘었습니다. Diamond-Lattice Shoji, 유리창이 위아래로 움직이는 Yukimi Shoji, Drum-Faced Fusuma, Thousand-Slat Lattice Door, Hemp-Leaf Kumiko Shoji, Amado Storm Shutter는 모두 기존 문과 같은 레일을 따라 움직입니다. 미스 발, 격자창, 둥근 창틀도 더해졌습니다.",
+     "방에는 쓰이타테 칸막이와 두 폭 머리맡 병풍, 아이템을 올려 전시할 수 있는 나전 서안과 엇갈림 도코노마 선반과 화류 통판 장식대, 불을 붙일 수 있는 이로리 화로와 히바치 화로, 그 곁에서 김을 내는 순금 차솥과 지자이 갈고리의 무쇠 냄비, 오젠 소반, 도쿠리와 술잔이 더해졌습니다.",
+     "정원에는 갈퀴 무늬 8가지를 고를 수 있는 흰 자갈, 선돌, 디딤돌, 이끼 둔덕, 대나무 울타리 2가지, 사립문, 물을 채울 수 있는 쓰쿠바이 물확, 가케이 대나무 홈통, 떨어지는 물방울 소리가 울리는 스이킨쿠쓰가 더해졌습니다. 축제와 계절을 위한 물건은 초친 종이등, 유리 풍경, 가도마쓰, 다루마 인형, 잉어 깃발 장대입니다. 그리고 실제로 연주할 수 있는 악기가 2가지 있습니다. 다이코 북과 고토입니다.",
+     "중공업에 기계 30종과 새 재료 32종이 더해졌습니다. Supersonic Jet Mill은 철, 구리, 금 광석 1개를 초미세 분말 6개로 만들고, Vacuum Sintering Furnace는 아르곤을 써서 그 분말을 같은 수의 주괴로 구워 냅니다. 다른 기계들은 액체 산소, 아르곤, 중수소, 그래핀, 탄화 텅스텐, 실리콘 웨이퍼, 미세 회로 기판, 양자 칩을 만듭니다.",
+     "Artificial Sun Core는 7 × 7 × 7 블록 크기의 발전 설비로, Deuterium Cells나 Helium-3 Canisters를 태워 전력망에 최대 1.00 GW를 보냅니다. 이 캐니스터는 이제 Gas-Centrifuge Tower에서 만들 수 있습니다. Molten Salt Exchanger Tower는 최대 2 GJ, Industrial Flywheel Storage는 최대 8 GJ를 저장합니다. Forced-Draft Cooling Tower는 냉각수를 공급하고, Plant Control Console은 범위 안의 기계를 목록으로 보여 주며 한꺼번에 일시 정지할 수 있습니다.",
+     "새 아이템 113종 모두가 툴팁에서 어디에 쓰는지 알려 줍니다. 기계 30종은 Automated Precision Assembly Line에서 만들고, 가구와 문지방은 제작대에서 만듭니다. 새 소리 73종이 함께 들어갑니다."
+    ],
+    "warnings": [
+     "이번 수정은 닫힌 줄을 통해 보이는 모습에 관한 것입니다. 맞댐 문울거미는 그려지기만 하므로 조준선과 총알은 예전처럼 레일 사이의 3픽셀 틈을 지나갑니다(총알은 원래 쇼지와 후스마를 통과합니다). 살짝 비치는 와시 종이와 격자나 유리 너머가 보이는 것은 의도된 설계입니다. 문이 블록과 맞닿는 곳에 머리카락만 한 틈이 남을 수 있고, 닫힌 Amado Storm Shutter도 빛은 통과시킵니다. 열린 문의 모습은 계산에 포함되지 않았습니다.",
+     "1.6.0을 추가하기 전에 mods 폴더의 예전 OUKA jar를 지우고 GeckoLib 5.5.6은 하나만 남기세요. OUKA jar 두 개나 GeckoLib 두 개가 있으면 게임이 시작되지 않습니다. Minecraft 26.3, Fabric Loader 0.19.5 이상, Fabric API 0.161.0+26.3 이상이 필요합니다(Fabric API는 zip에 없습니다). 클라이언트와 서버 모두에 설치하세요.",
+     "기계 30종은 제작대가 아니라 Automated Precision Assembly Line에서 만듭니다. Raw Tungsten은 Sub-Crustal Thermal Bore에서만 나오며, 텅스텐 광석 블록은 없습니다. 공정용 기체와 액체는 캐니스터 아이템이지 액체 블록이 아닙니다. 일부 기계는 Vacuum Pump, Gas Compressor, Coolant Circulation Pump, Cleanroom Fan-Filter Unit 가운데 필요한 것이 맞닿을 때까지 대기하며, 무엇이 부족한지는 상태 줄에 표시됩니다. Artificial Sun Core는 진공, 냉각재, 연료가 필요하고, 점화하기 전에 전력망에서 축전기를 충전합니다. 1.00 GW는 정격 최대치이며, 전력망이 요구하는 만큼만 발전합니다. 이로리 화로에서는 요리할 수 없습니다."
+    ]
+   },
+   {
     "id": "ouka-v1.5.0",
     "title": "The Wrought Iron Sovereign — 높이 3.8블록의 보물고 수호자",
     "summary": "Wrought Iron Sovereign이 나왔습니다: 높이 3.8블록의 장갑 수호자로, 생존 또는 모험 모드의 플레이어가 8블록 안으로 다가오거나 공격할 때까지 석상처럼 잠들어 있습니다. 보물고 문과 보물고 마스터 키, 주권자의 전투 도끼, Wrought Plate 방어구, Wrought Iron 석상 블록과 새로 합성한 소리 15가지가 함께 들어왔습니다. 조립 라인은 이제 고른 제품만 정확히 만듭니다.",
