@@ -174,7 +174,7 @@ export function Codex({
   // The tree: each ingredient's first recipe, three levels deep.
   // A part's own recipe in the tree is the first one that reliably makes it: not a centrifuge's chance nor a bore's vein.
   const sureRecipe = (id: string): CodexData["recipes"][number] | undefined =>
-    (byResult.get(id) ?? []).find((r) => !(r.outputs ?? []).some((o) => o.chance !== undefined || o.nMax !== undefined));
+    (byResult.get(id) ?? []).find((r) => !(r.outputs ?? []).some((o) => o.chance !== undefined || o.nMax !== undefined || (o.id === id && o.every !== undefined)));
   const tree = (id: string, depth: number, seen: Set<string>, root?: CodexData["recipes"][number]): React.ReactNode => {
     const r = root ?? sureRecipe(id);
     if (!r || depth >= 3 || seen.has(id)) return null;
@@ -449,7 +449,7 @@ export function Codex({
                       <ItemLine key={f.id} data={data} id={f.id} n={`×${f.n}`} note={"any" in f && f.any ? labels.machine.any : undefined} />
                     ))}
                   </ul>
-                  {recipe.outputs && (recipe.outputs.length > 1 || recipe.outputs.some((o) => o.chance !== undefined || o.nMax !== undefined)) ? (
+                  {recipe.outputs && (recipe.outputs.length > 1 || recipe.outputs.some((o) => o.chance !== undefined || o.nMax !== undefined || o.every !== undefined)) ? (
                     <>
                       <p className="ac-small">{labels.machine.outputs}</p>
                       <ul>
@@ -459,7 +459,7 @@ export function Codex({
                             data={data}
                             id={o.id}
                             n={o.nMax !== undefined && o.nMax !== o.n ? `×${o.n}–${o.nMax}` : `×${o.n}`}
-                            note={o.chance !== undefined ? fill(labels.machine.chance, pct(o.chance * 100)) : undefined}
+                            note={o.chance !== undefined ? fill(labels.machine.chance, pct(o.chance * 100)) : o.every !== undefined ? fill(labels.machine.every, String(o.every)) : undefined}
                           />
                         ))}
                       </ul>

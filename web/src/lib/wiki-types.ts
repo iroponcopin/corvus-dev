@@ -113,7 +113,7 @@ export interface RecipeShared {
     fusion?: { id: string; n: number }[];
     /** A machine recipe (data/recipes_machines.json): its inputs ("any": a tag or alternatives), every output. */
     inputs?: { id: string; n: number; any?: boolean }[];
-    outputs?: { id: string; n: number; nMax?: number; chance?: number }[];
+    outputs?: { id: string; n: number; nMax?: number; chance?: number; every?: number }[];
     facts?: { time?: number; water?: number; xp?: number; dimension?: "overworld" | "nether" | "end"; share?: number };
   }[];
   stations: { id: string; item: string | null; count: number }[];
@@ -140,6 +140,8 @@ export interface RecipeLabels {
     any: string;
     outputs: string;
     chance: string;
+    /** A by-product that comes out only on every Nth completed run (OUKA 1.6.0); counted, not a chance. */
+    every: string;
     time: string;
     water: string;
     xp: string;
