@@ -168,6 +168,12 @@
         "release": "V1.0.0",
         "date": "2026-10-11",
         "type": "release"
+      },
+      {
+        "id": "halia-v1.1.0",
+        "release": "V1.1.0",
+        "date": "2026-10-12",
+        "type": "release"
       }
     ]
   }

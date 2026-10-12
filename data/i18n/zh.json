@@ -167,7 +167,8 @@
    "OUKA",
    "Cherry",
    "ASTRAEA",
-   "Tsubomi"
+   "Tsubomi",
+   "Halia"
   ],
   "items": {
    "minecraft:amethyst_shard": "紫水晶碎片",
@@ -762,6 +763,27 @@
    }
   ],
   "halia": [
+   {
+    "id": "halia-v1.1.0",
+    "title": "Halia V1.1 —— Halia Blade：武士刀、90 种连击招式与召唤剑",
+    "summary": "Halia V1.1 新增 Halia Blade：一把挂在腰间、靠出招时机来战斗的武士刀，包括地面与空中连击、蓄力技、召唤剑、锁定、格挡和特技动作。另有 8 种合成材料、6 个刀架和 11 把有名字的刀。V1.0 的 Stellar Remote 保持不变。",
+    "highlights": [
+     "Halia Blade：用 Soulsteel Ingots、Corvus Soul、铁剑和下界砖制作。使用（右键）进行攻击；在时机合适时再次按下即可接续连击。地面与空中的连击招式共 90 种。",
+     "蓄力技：按住使用键，在出现粒子时松开即可发动 Judgement Cut；在粒子出现前一刻松开则是强化版。潜行 + 前进 + 使用为 Rapid Slash，潜行 + 后退 + 使用为 Upper Slash。",
+     "召唤剑：按下选择方块键（鼠标中键），向目标射出一把剑，消耗 1 点经验值；4 个更大的招式 Spiral、Storm、Blistering 和 Heavy Rain Swords 各消耗 5 点。",
+     "锁定、格挡与移动：按住潜行可锁定敌人；站立不动时潜行可格挡远程攻击；冲刺键的特技可以让你冲向敌人、跃过敌人或远离敌人；在空中可以从敌人或墙壁上跳开。",
+     "集中等级：击中敌人会提升右上角显示的等级，从 D 到 SSS；停止战斗后会下降。等级越高伤害越大。",
+     "磨损、强化与重铸：刀被击中 101 次后会断裂，并掉落一个保留其记录的灵魂。在铁砧上，可用 Corvus Soul 强化刀（每个灵魂提升 1 级），断掉的刀也可以重铸。",
+     "材料与刀架：从 Tiny Corvus Soul 到 Abyssal Geode 共 8 种材料，每种都有配方；另有 6 种 Halia Stands（落地式和挂墙式）用于展示刀。",
+     "游戏内指南：共 57 个进度。“Blade MoveSets”分支列出每个招式及你电脑上绑定的按键；点击材料或刀的进度可以查看其配方。"
+    ],
+    "warnings": [
+     "需要 Minecraft 26.3、Fabric Loader 0.19.5 或更高版本、Fabric API 0.161.0+26.3 或更高版本以及 Java 25。多人游戏时，服务器上也必须安装 Halia。",
+     "Stellar Remote 仍会永久摧毁世界中非常大的范围——按下按钮前请备份你的世界。此版本未对它做任何改动。",
+     "V1.0.0 的世界可以原样打开；此版本只新增内容。不要用含有刀、材料或刀架的世界退回到 1.0.0，这些内容会被删除。",
+     "工作室尚未确认以下项目：在专用多人服务器上游玩、Windows 系统、与其他 Corvus Store 模组同时使用。第一人称视角下，收在鞘中的刀大多在你攻击前都看不到。"
+    ]
+   },
    {
     "id": "halia-v1.0.0",
     "title": "Halia V1.0 —— Stellar Remote 与三种轨道打击",

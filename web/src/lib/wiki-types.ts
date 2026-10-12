@@ -110,6 +110,10 @@ export interface RecipeShared {
     station: string;
     search: string;
     how?: string;
+    /** The how-to sentence where the sheet states it in both languages (Halia: the anvil, the blast furnace). */
+    howText?: { ja: string; en: string };
+    /** howText resolved for the page being drawn (the recipes page does this): Japanese on the Japanese page, English elsewhere. */
+    howLine?: { text: string; lang: "ja" | "en" };
     fusion?: { id: string; n: number }[];
     /** A machine recipe (data/recipes_machines.json): its inputs ("any": a tag or alternatives), every output. */
     inputs?: { id: string; n: number; any?: boolean }[];

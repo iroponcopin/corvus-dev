@@ -81,11 +81,35 @@ def main():
             with zipfile.ZipFile(jar) as jf:
                 names = [n for n in jf.namelist()
                          if n.startswith(f"data/{info['mod_id']}/recipe/") and n.endswith(".json")]
-                results = sorted({json.loads(jf.read(n).decode("utf-8"))["result"]["id"] for n in names})
+                bodies = {n: json.loads(jf.read(n).decode("utf-8")) for n in names}
+                # 2026-10-12 (Halia 1.1.0): a recipe whose every ingredient is a tag holding nothing but air can
+                # never be crafted (Halia keeps 11 such files as its creative-tab listing). Decided by opening
+                # the tag in the jar, never by a list typed here. Such a file owes the sheet no card.
+                def only_air(ing, _jf=jf):
+                    if isinstance(ing, list):
+                        ing = ing[0] if len(ing) == 1 else None
+                    if not (isinstance(ing, str) and ing.startswith("#")):
+                        return False
+                    ns, tag = ing[1:].split(":", 1)
+                    try:
+                        values = json.loads(_jf.read(f"data/{ns}/tags/item/{tag}.json").decode("utf-8"))["values"]
+                    except KeyError:
+                        return False
+                    return bool(values) and all(v == "minecraft:air" for v in values)
+                names = [n for n in names
+                         if not (bodies[n].get("type") == "minecraft:crafting_shapeless"
+                                 and bodies[n].get("ingredients")
+                                 and all(only_air(i) for i in bodies[n]["ingredients"]))]
+                results = sorted({bodies[n]["result"]["id"] for n in names})
+                # A result that carries a second obtainable item (Halia's material box names the blade it becomes
+                # on an anvil) owes the sheet one more card.
+                second = sum(1 for n in names
+                             if any(k.endswith(":required_blade")
+                                    for k in (bodies[n]["result"].get("components") or {})))
             if names:
                 if info.get("latest"):
                     live[block] = info["latest"]
-                bare_checked[block] = (results, len(names))
+                bare_checked[block] = (results, len(names) + second)
             else:
                 recipe_less.append(block)
 
@@ -116,7 +140,8 @@ def main():
         cards = [c for c in recipes.get("cards", []) if c[0] == tab[0]]
         if len(cards) != n_json:
             bad.append(f"{block}: its jar carries {n_json} recipe json but its tab has {len(cards)} card(s)")
-        have = {c[1] for c in cards}
+        # A card may be keyed by an id qualified with what its components select (`ns:item[...]`).
+        have = {c[1].split("[", 1)[0] for c in cards}
         gone = [r for r in results if r not in have]
         if gone:
             bad.append(f"{block}: the jar's recipes make {', '.join(gone)}, which has no card in the "

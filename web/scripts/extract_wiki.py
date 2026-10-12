@@ -255,11 +255,23 @@ def recipes_shared(legacy: dict) -> dict:
     stations_ja = {"crucible": items.get("cherry:resonance_crucible", [""])[0],
                    "fabricator": items.get("cherry:advanced_cherry_fabricator", [""])[0]}
     names_by_len = sorted(((v[0], k) for k, v in items.items() if v[0]), key=lambda t: -len(t[0]))
+    # How-to cards whose station, inputs and sentence the sheet states outright (Halia 1.1.0: the anvil, the blast
+    # furnace). For these nothing is guessed from the Japanese text.
+    stated = read_json("data/recipes_how.json")["cards"]
     recipes = []
     for i, card in enumerate(r["cards"]):
         cat, result, grid, count, how, search = card
         rec = {"key": f"{result}#{i}", "cat": cat, "result": result, "count": count, "grid": grid,
                "station": "workbench", "search": search}
+        if how and result in stated:
+            st = stated[result]
+            rec["how"] = how
+            rec["howText"] = {"ja": st["ja"], "en": st["en"]}
+            rec["count"] = count or 1
+            rec["station"] = st["station"]
+            rec["fusion"] = [{"id": i, "n": 1} for i in st["inputs"]]
+            recipes.append(rec)
+            continue
         if how:
             rec["how"] = how
             # A machine recipe yields one item unless the text says otherwise (the card stores 0).
@@ -298,7 +310,7 @@ def recipes_shared(legacy: dict) -> dict:
                 "fusion": [{"id": i["id"], "n": i["n"]} for i in mr["inputs"]],
                 "inputs": mr["inputs"], "outputs": mr["outputs"], "facts": facts,
             })
-    counts = {"workbench": 0, "crucible": 0}
+    counts = {"workbench": 0, "crucible": 0, "anvil": 0}
     for st in m["stations"]:
         counts[st["id"]] = 0
     for rec in recipes:
@@ -307,6 +319,7 @@ def recipes_shared(legacy: dict) -> dict:
     for mr in m["recipes"]:
         counts[mr["station"]] += 1
     station_item = {"workbench": "minecraft:crafting_table", "crucible": "cherry:resonance_crucible",
+                    "anvil": "minecraft:anvil",
                     **{st["id"]: st["item"] for st in m["stations"]}}
     # 2026-10-05: the "tsubomi" placeholder chip (a brewing station that never had a recipe, with the
     # message "Tsubomi has not been released") is gone: Tsubomi is released and has its own tab.
@@ -320,7 +333,11 @@ def recipes_shared(legacy: dict) -> dict:
                  for i, c in enumerate(r["cats"])],
         "allTabIcon": items.get(r["all_tab_icon"], [None, None, None])[2],
         "items": {k: {"ja": v[0], "en": v[1], "icon": v[2],
-                      "kind": kinds.get(k) or machine_kind.get(k) or ("none" if v[2] is None else "flat")}
+                      # Halia's items are 3D models in the game and their pictures are renders of those, not flat
+                      # item textures: "icon" says so, "flat" would claim the game draws them extruded.
+                      "kind": kinds.get(k) or machine_kind.get(k)
+                              or ("icon" if (k.startswith("halia:") or "[item.halia." in k) and v[2] is not None
+                                  else "none" if v[2] is None else "flat")}
                   for k, v in items.items()},
         "recipes": recipes,
         "stations": stations,

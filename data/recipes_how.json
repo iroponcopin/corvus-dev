@@ -1,0 +1,94 @@
+{
+ "_comment": "station, inputs and the sentence (ja, en) of how-to cards; written by scripts/extract_recipes.py, read by web/scripts/extract_wiki.py",
+ "cards": {
+  "halia:halia_blade[item.halia.ex.fox.black]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.ex.ruby]",
+    "minecraft:chest[item.halia.ex.fox.black.material]"
+   ],
+   "ja": "金床の左に利刀「無名」紅玉、右にこの材料箱を置くと、狐月刀「黒狐」になります。経験値レベルを 20 使います。撃破数と強化回数は引き継がれます。",
+   "en": "On an anvil, put Sharpness -nameless- Ruby in the left slot and this box in the right slot to get -Haze- SakuraFox. Costs 20 experience levels. The blade keeps its kill count and refine."
+  },
+  "halia:halia_blade[item.halia.ex.fox.white]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.ex.ruby]",
+    "minecraft:chest[item.halia.ex.fox.white.material]"
+   ],
+   "ja": "金床の左に利刀「無名」紅玉、右にこの材料箱を置くと、狐月刀「白狐」になります。経験値レベルを 20 使います。撃破数と強化回数は引き継がれます。",
+   "en": "On an anvil, put Sharpness -nameless- Ruby in the left slot and this box in the right slot to get -Weiss- SakuraFox. Costs 20 experience levels. The blade keeps its kill count and refine."
+  },
+  "halia:halia_blade[item.halia.ex.muramasa]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.simple.iron]",
+    "minecraft:chest[item.halia.ex.muramasa.material]"
+   ],
+   "ja": "金床の左に抜刀剣「」、右にこの材料箱を置くと、「千鶴」村正になります。経験値レベルを 20 使います。撃破数と強化回数は引き継がれます。",
+   "en": "On an anvil, put Halia Blade -- in the left slot and this box in the right slot to get -Chizuru- Muramasa. Costs 20 experience levels. The blade keeps its kill count and refine."
+  },
+  "halia:halia_blade[item.halia.ex.ruby]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.simple.silverbamboo]",
+    "minecraft:chest[item.halia.ex.ruby.material]"
+   ],
+   "ja": "金床の左に名刀「銀紙竹光」、右にこの材料箱を置くと、利刀「無名」紅玉になります。経験値レベルを 15 使います。条件: 刀は折れていること。撃破数と強化回数は引き継がれます。",
+   "en": "On an anvil, put Noted -Silver Bamboo Light- in the left slot and this box in the right slot to get Sharpness -nameless- Ruby. Costs 15 experience levels; the blade must be broken. The blade keeps its kill count and refine."
+  },
+  "halia:halia_blade[item.halia.ex.tukumo]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.simple.iron]",
+    "minecraft:chest[item.halia.ex.tukumo.material]"
+   ],
+   "ja": "金床の左に抜刀剣「」、右にこの材料箱を置くと、宝刀「付喪」結月になります。経験値レベルを 20 使います。撃破数と強化回数は引き継がれます。",
+   "en": "On an anvil, put Halia Blade -- in the left slot and this box in the right slot to get Noble -Tukumo- Violet. Costs 20 experience levels. The blade keeps its kill count and refine."
+  },
+  "halia:halia_blade[item.halia.simple.bamboo]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.simple.wood]",
+    "minecraft:chest[item.halia.simple.bamboo.material]"
+   ],
+   "ja": "金床の左に無銘刀「木偶」、右にこの材料箱を置くと、無銘刀「竹光」になります。経験値レベルを 1 使います。撃破数と強化回数は引き継がれます。",
+   "en": "On an anvil, put Anonymity -Wood- in the left slot and this box in the right slot to get Anonymity -Bamboo Light-. Costs 1 experience level. The blade keeps its kill count and refine."
+  },
+  "halia:halia_blade[item.halia.simple.iron]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.simple.white]",
+    "minecraft:chest[item.halia.simple.iron.material]"
+   ],
+   "ja": "金床の左に利刀「白鞘」、右にこの材料箱を置くと、抜刀剣「」になります。経験値レベルを 10 使います。条件: 刀は折れていること。撃破数と強化回数は引き継がれます。",
+   "en": "On an anvil, put Sharpness -White- in the left slot and this box in the right slot to get Halia Blade --. Costs 10 experience levels; the blade must be broken. The blade keeps its kill count and refine."
+  },
+  "halia:halia_blade[item.halia.simple.silverbamboo]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.simple.bamboo]",
+    "minecraft:chest[item.halia.simple.silverbamboo.material]"
+   ],
+   "ja": "金床の左に無銘刀「竹光」、右にこの材料箱を置くと、名刀「銀紙竹光」になります。経験値レベルを 2 使います。撃破数と強化回数は引き継がれます。",
+   "en": "On an anvil, put Anonymity -Bamboo Light- in the left slot and this box in the right slot to get Noted -Silver Bamboo Light-. Costs 2 experience levels. The blade keeps its kill count and refine."
+  },
+  "halia:halia_blade[item.halia.simple.white]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.simple.wood]",
+    "minecraft:chest[item.halia.simple.white.material]"
+   ],
+   "ja": "金床の左に無銘刀「木偶」、右にこの材料箱を置くと、利刀「白鞘」になります。経験値レベルを 5 使います。撃破数と強化回数は引き継がれます。",
+   "en": "On an anvil, put Anonymity -Wood- in the left slot and this box in the right slot to get Sharpness -White-. Costs 5 experience levels. The blade keeps its kill count and refine."
+  },
+  "halia:soulsteel_ingot": {
+   "station": "blast",
+   "inputs": [
+    "halia:corvus_soul"
+   ],
+   "ja": "溶鉱炉で、コルヴスの魂を精錬する(10 秒。作業台では作れない)",
+   "en": "Smelt Corvus Soul in a blast furnace (10 s; it cannot be made at a workbench)"
+  }
+ }
+}

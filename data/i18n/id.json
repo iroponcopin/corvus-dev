@@ -167,7 +167,8 @@
    "OUKA",
    "Cherry",
    "ASTRAEA",
-   "Tsubomi"
+   "Tsubomi",
+   "Halia"
   ],
   "items": {
    "minecraft:iron_ingot": "Ingot Besi",
@@ -762,6 +763,27 @@
    }
   ],
   "halia": [
+   {
+    "id": "halia-v1.1.0",
+    "title": "Halia V1.1 — Halia Blade: katana, 90 gerakan kombo, dan pedang panggilan",
+    "summary": "Halia V1.1 menambahkan Halia Blade, katana yang disandang di pinggul dan dipakai bertarung dengan pengaturan waktu: kombo di darat dan di udara, seni terisi, pedang panggilan, kunci sasaran, penjagaan, dan gerakan trik. Tersedia 8 bahan kerajinan, 6 dudukan bilah, dan 11 bilah bernama. Stellar Remote dari V1.0 tidak berubah.",
+    "highlights": [
+     "Halia Blade: dibuat dari Soulsteel Ingots, Corvus Soul, pedang besi, dan bata nether. Gunakan (klik kanan) untuk menyerang; menekan lagi tepat waktu melanjutkan kombo — total 90 gerakan kombo, di darat dan di udara.",
+     "Seni terisi: tahan gunakan dan lepaskan saat partikel muncul untuk Judgement Cut; lepaskan tepat sebelum partikel muncul untuk versi yang lebih kuat. Menyelinap + maju + gunakan adalah Rapid Slash, menyelinap + mundur + gunakan adalah Upper Slash.",
+     "Pedang panggilan: tombol pilih blok (klik tengah) meluncurkan pedang ke sasaranmu dengan biaya 1 poin pengalaman; 4 pola yang lebih besar — Spiral, Storm, Blistering, dan Heavy Rain Swords — masing-masing menghabiskan 5.",
+     "Kunci sasaran, penjagaan, dan gerak: tahan menyelinap untuk mengunci musuh; menyelinap saat diam menjaga dari serangan jarak jauh; trik tombol lari membuatmu melesat ke musuh, di atasnya, atau menjauh darinya; di udara, lompat dari musuh atau dinding.",
+     "Peringkat konsentrasi: serangan yang mengenai menaikkan peringkat yang tampil di kanan atas, dari D sampai SSS; peringkat turun lagi saat kamu berhenti bertarung. Peringkat tinggi menambah damage.",
+     "Aus, penyempurnaan, dan pandai ulang: bilah patah setelah 101 pukulan dan menjatuhkan jiwa yang menyimpan catatannya. Di landasan, Corvus Soul menyempurnakan bilah (1 level per jiwa), dan bilah yang patah bisa ditempa ulang.",
+     "Bahan dan dudukan: 8 bahan, dari Tiny Corvus Soul sampai Abyssal Geode, masing-masing punya resep, dan 6 Halia Stands (tipe lantai dan dinding) untuk memajang bilah.",
+     "Panduan dalam game: 57 kemajuan. Cabang “Blade MoveSets” mencantumkan setiap gerakan dengan tombol yang diatur di komputermu, dan mengklik kemajuan bahan atau bilah menampilkan resepnya."
+    ],
+    "warnings": [
+     "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Untuk multipemain, Halia juga harus terpasang di server.",
+     "Stellar Remote masih menghancurkan wilayah dunia yang sangat luas secara permanen — cadangkan duniamu sebelum menekan tombolnya. Tidak ada yang berubah padanya di versi ini.",
+     "Dunia dari V1.0.0 terbuka apa adanya; versi ini hanya menambah konten. Jangan kembali ke 1.0.0 dengan dunia yang berisi bilah, bahan, atau dudukan: semuanya akan terhapus.",
+     "Belum dikonfirmasi oleh studio: bermain di server multipemain khusus, di Windows, dan digunakan bersama mod Corvus Store lain. Di sudut pandang orang pertama, bilah yang disarungkan sebagian besar tidak terlihat sampai kamu menyerang."
+    ]
+   },
    {
     "id": "halia-v1.0.0",
     "title": "Halia V1.0 — Stellar Remote dan tiga serangan dari orbit",

@@ -1,11 +1,48 @@
 {
  "lang": "es",
  "brand": "halia",
- "updated": "2026-10-11",
+ "updated": "2026-10-12",
  "title": "Historial de actualizaciones",
- "updated_label": "Actualizado el 2026-10-11",
+ "updated_label": "Actualizado el 2026-10-12",
  "note": "",
  "groups": [
+  {
+   "label": "V1.1",
+   "summary": "Halia V1.1 — la Halia Blade: un katana, 90 combos y espadas invocadas",
+   "releases": [
+    {
+     "version": "V1.1.0",
+     "date": "2026-10-12",
+     "type": "release",
+     "title": "Halia V1.1 — la Halia Blade: un katana, 90 combos y espadas invocadas",
+     "summary": "Halia V1.1 añade la Halia Blade, un katana que se lleva en la cadera y se maneja con el ritmo justo: combos en el suelo y en el aire, artes cargadas, espadas invocadas, fijación de objetivo, guardia y movimientos de truco. Incluye 8 materiales de fabricación, 6 soportes para hojas y 11 hojas con nombre. El Stellar Remote de V1.0 no cambia.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "Halia Blade: fabrícala con Soulsteel Ingots, una Corvus Soul, una espada de hierro y un ladrillo del Nether. Usa (clic derecho) para atacar; pulsar de nuevo a tiempo continúa el combo. En total hay 90 movimientos de combo, en el suelo y en el aire.",
+        "Artes cargadas: mantén usar y suelta cuando aparezcan partículas para Judgement Cut; suelta justo antes de que aparezcan para la versión más fuerte. Agacharse + avanzar + usar es Rapid Slash, agacharse + retroceder + usar es Upper Slash.",
+        "Espadas invocadas: el botón de seleccionar bloque (clic central) lanza una espada a tu objetivo por 1 punto de experiencia; 4 patrones más grandes — Spiral, Storm, Blistering y Heavy Rain Swords — cuestan 5 cada uno.",
+        "Fijación, guardia y movimiento: mantén agachado para fijar un enemigo; agacharte quieto protege de los ataques a distancia; los trucos con el botón de correr te lanzan hacia un enemigo, por encima de él o lejos de él; en el aire puedes saltar desde un enemigo o desde una pared.",
+        "Rango de concentración: al acertar golpes sube un rango que se muestra arriba a la derecha, de D hasta SSS; baja de nuevo cuando dejas de luchar. Los rangos altos aumentan el daño.",
+        "Desgaste, refinado y reforja: una hoja se rompe tras 101 golpes y suelta un alma que conserva su registro. En un yunque, una Corvus Soul refina una hoja (1 nivel por alma), y una hoja rota puede reforjarse.",
+        "Materiales y soportes: 8 materiales, desde Tiny Corvus Soul hasta Abyssal Geode, cada uno con su receta, y 6 Halia Stands (de suelo y de pared) para exponer una hoja.",
+        "Guía en el juego: 57 logros. La rama «Blade MoveSets» enumera cada movimiento con las teclas asignadas en tu ordenador, y al pulsar un logro de material o de hoja se muestra su receta."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. En multijugador, Halia también debe estar instalado en el servidor.",
+        "El Stellar Remote sigue destruyendo de forma permanente zonas muy grandes del mundo. Haz una copia de seguridad de tu mundo antes de pulsar su botón. Nada de esto cambió en esta versión.",
+        "Los mundos de V1.0.0 se abren tal como están; esta versión solo añade contenido. No vuelvas a 1.0.0 con un mundo que tenga hojas, materiales o soportes: se borrarían.",
+        "Aún no confirmado por el estudio: jugar en un servidor multijugador dedicado, en Windows y usarlo junto con otros mods de Corvus Store. En primera persona, la hoja envainada se mantiene casi siempre fuera de la vista hasta que atacas."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.0",
    "summary": "Halia V1.0 — el Stellar Remote y tres ataques desde la órbita",

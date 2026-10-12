@@ -167,7 +167,8 @@
    "OUKA",
    "Cherry",
    "ASTRAEA",
-   "Tsubomi"
+   "Tsubomi",
+   "Halia"
   ],
   "items": {
    "minecraft:amethyst_shard": "Amethystscherbe",
@@ -762,6 +763,27 @@
    }
   ],
   "halia": [
+   {
+    "id": "halia-v1.1.0",
+    "title": "Halia V1.1 — die Halia Blade: ein Katana, 90 Kombo-Züge und beschworene Schwerter",
+    "summary": "Halia V1.1 fügt die Halia Blade hinzu, ein Katana, das man an der Hüfte trägt und mit gutem Timing führt: Kombos am Boden und in der Luft, aufgeladene Techniken, beschworene Schwerter, Anvisieren, eine Deckung und Trickbewegungen. Dazu kommen 8 Herstellungsmaterialien, 6 Klingenhalter und 11 benannte Klingen. Die Stellar Remote aus V1.0 bleibt unverändert.",
+    "highlights": [
+     "Halia Blade: Sie wird aus Soulsteel Ingots, einer Corvus Soul, einem Eisenschwert und einem Netherziegel hergestellt. Mit Benutzen (Rechtsklick) greifst du an; drückst du rechtzeitig erneut, geht der Kombo weiter. Insgesamt gibt es 90 Kombo-Züge, am Boden und in der Luft.",
+     "Aufgeladene Techniken: Halte Benutzen gedrückt und lass los, wenn Partikel für Judgement Cut erscheinen; kurz bevor sie erscheinen, lässt du los für die stärkere Version. Schleichen + Vorwärts + Benutzen ist Rapid Slash, Schleichen + Rückwärts + Benutzen ist Upper Slash.",
+     "Beschworene Schwerter: Die Taste für Block auswählen (Mittelklick) schickt ein Schwert auf dein Ziel und kostet 1 Erfahrungspunkt; vier größere Muster — Spiral, Storm, Blistering und Heavy Rain Swords — kosten je 5.",
+     "Anvisieren, Deckung und Bewegung: Halte Schleichen, um einen Gegner anzuvisieren; im Stehen zu schleichen schützt vor Fernangriffen. Tricks mit der Sprinttaste katapultieren dich zu einem Gegner, über ihn oder von ihm weg; in der Luft springst du von einem Gegner oder einer Wand ab.",
+     "Konzentrationsrang: Treffer erhöhen einen Rang, der oben rechts angezeigt wird, von D bis SSS; hörst du auf zu kämpfen, sinkt er wieder. Hohe Ränge machen mehr Schaden.",
+     "Abnutzung, Verbesserung und Neuschmieden: Eine Klinge bricht nach 101 Treffern und lässt eine Seele fallen, die ihre Aufzeichnung behält. Am Amboss verbessert eine Corvus Soul eine Klinge (1 Stufe pro Seele), und eine gebrochene Klinge lässt sich neu schmieden.",
+     "Materialien und Halter: 8 Materialien von Tiny Corvus Soul bis Abyssal Geode, jedes mit einem Rezept, und 6 Halia Stands (Boden- und Wandtyp), um eine Klinge auszustellen.",
+     "Spielinterner Leitfaden: 57 Fortschritte. Der Zweig „Blade MoveSets“ listet jede Technik mit den auf deinem Computer belegten Tasten auf, und ein Klick auf einen Material- oder Klingen-Fortschritt zeigt dessen Rezept."
+    ],
+    "warnings": [
+     "Voraussetzungen: Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer, Java 25. Für Mehrspieler muss Halia auch auf dem Server installiert sein.",
+     "Die Stellar Remote zerstört nach wie vor sehr große Bereiche der Welt dauerhaft — sichere deine Welt, bevor du ihren Knopf drückst. In dieser Version hat sich daran nichts geändert.",
+     "Welten aus V1.0.0 öffnen sich unverändert; diese Version fügt nur Inhalte hinzu. Geh nicht mit einer Welt, die Klingen, Materialien oder Halter enthält, zurück zu 1.0.0: Sie würden gelöscht.",
+     "Vom Studio noch nicht bestätigt: Spielen auf einem dedizierten Mehrspielerserver, unter Windows und zusammen mit anderen Corvus Store-Mods. In der Ich-Perspektive bleibt die Klinge in der Scheide meist außer Sicht, bis du angreifst."
+    ]
+   },
    {
     "id": "halia-v1.0.0",
     "title": "Halia V1.0 — die Stellar Remote und drei Schläge aus dem Orbit",

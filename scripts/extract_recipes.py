@@ -123,21 +123,22 @@ BRAND_CATEGORY = {
     # Tsubomi V1.0.1 (2026-10-05): its own product, its own tab. Unlike the three above it is published as ONE
     # bare jar (downloads/tsubomi-<v>.jar), not a zip of jars - see stage_published_brands().
     "tsubomi": "Tsubomi",
+    # Halia V1.1.0 (2026-10-12): the Halia Blade brought its first recipes. One bare jar, like Tsubomi. Its items
+    # are drawn by code, so their pictures and readings come from data/halia_icons/ (see the Halia section).
+    "halia": "Halia",
 }
 BRAND_TAB_ICON = {
     "Cherry": "cherry:apex1_rocket",
     "OUKA": "ouka:ouka_caster",
     "ASTRAEA": "astraea:celestial_blade",
     "Tsubomi": "tsubomi:teleport_elevator",
+    "Halia": "halia:halia_blade",
 }
 # Manifest blocks that are published as a bare jar AND have no recipe at all, so they are deliberately not a
 # recipe source. This is a CLAIM, not an exemption: stage_published_brands() opens each such jar and counts its
 # recipe json, so the day one of them gains a recipe the generation stops (the NO_RECIPE_MODULES rule).
 BARE_JAR_WITHOUT_RECIPES = {
     "aureum": "an optimisation mod; its jar carries no data/ at all",
-    # Halia V1.0.0 (published 2026-10-11): one item and four blocks, none craftable; its jar holds 0 recipe json
-    # (counted 2026-10-12 while regenerating the sheet for OUKA V1.6.0, which this missing entry had stopped).
-    "halia": "V1.0.0 has no recipe (the Stellar Remote and its blocks are not crafted)",
 }
 
 
@@ -1975,6 +1976,11 @@ def _gui_model_of_item_definition(node, depth=0):
 
 
 def mod_texture_b64(mod_dir, modid, name):
+    if modid == "halia":
+        # Drawn by code in the game; the picture is the GUI render kept beside the index (see the Halia section).
+        if name == "halia_blade":
+            return halia_icon_b64("blades", "")
+        return halia_icon_b64("items", f"halia:{name}")
     assets = mod_resources(mod_dir) / "assets" / modid
     textures = assets / "textures"
     override = MOD_TEXTURE_OVERRIDE.get(f"{modid}:{name}")
@@ -2435,6 +2441,195 @@ def mod_item_tag(ns, name, _seen=None):
     return out
 
 
+# ===========================================================================
+# Halia (V1.1.0, 2026-10-12)
+# ===========================================================================
+# Three things about Halia's jar that no other brand's has:
+#   1. its items are drawn by code (halia:obj / halia:halia_blade special models), so the jar holds no flat item
+#      texture to read. The pictures are GUI renders made by the Halia session from the real client and kept in
+#      data/halia_icons/ with an index. A Halia item with no picture there STOPS the generation: a card without
+#      a picture is a placeholder.
+#   2. one item id is many things: every named blade is halia:halia_blade with a different halia:blade_profile,
+#      and every material box is minecraft:chest with a custom name. They are keyed here the way the Water Bottle
+#      is (minecraft:potion[water]): `halia:halia_blade[item.halia.yamato]`, `minecraft:chest[item.halia....]`.
+#      Their names are the jar's own translations of those keys.
+#   3. its recipe folder has sub-folders, and 11 of the files (creative_tab/**) can never be crafted: their one
+#      ingredient is a tag whose only member is minecraft:air. That is decided by opening the tag, not by a list.
+HALIA_ICON_DIR = SITE_ROOT / "data" / "halia_icons"
+HALIA_BLADE = "halia:halia_blade"
+HALIA_ICON_PX = 64   # the renders are larger; the sheet draws a slot at 32 px, so 64 is sharp on a 2x screen
+_HALIA_INDEX = None
+# What the portal needs for a Halia card that is not a 3x3 grid (the anvil half of a material box, the blast
+# furnace): where it is made, what goes in, and the sentence in Japanese and English. Written beside recipes.json.
+HALIA_HOW = {}
+
+
+def _halia_png_b64(png):
+    from PIL import Image
+    with Image.open(png) as im:
+        im = im.convert("RGBA")
+        if im.width != im.height:
+            raise SystemExit(f"ERROR: {png} is {im.width}x{im.height}; a Halia icon must be square.")
+        if im.getextrema()[3][0] == 255:
+            raise SystemExit(f"ERROR: {png} has no transparent pixel at all: it is a screenshot, not an icon.")
+        if im.width != HALIA_ICON_PX:
+            im = im.resize((HALIA_ICON_PX, HALIA_ICON_PX), Image.LANCZOS)
+        out = io.BytesIO()
+        im.save(out, "PNG")
+    return base64.b64encode(out.getvalue()).decode()
+
+
+def halia_index():
+    global _HALIA_INDEX
+    if _HALIA_INDEX is None:
+        path = HALIA_ICON_DIR / "index.json"
+        if not path.exists():
+            raise SystemExit(f"ERROR: {path} is missing. Halia's items are drawn by code; without the rendered "
+                             f"icons and their index every Halia card would be a blank.")
+        _HALIA_INDEX = json.loads(path.read_text(encoding="utf-8"))
+    return _HALIA_INDEX
+
+
+def halia_icon_b64(section, key):
+    entry = (halia_index().get(section) or {}).get(key)
+    if not entry or not entry.get("file"):
+        raise SystemExit(f"ERROR: data/halia_icons/index.json has no picture for {section} {key!r}.")
+    png = HALIA_ICON_DIR / entry["file"]
+    if not png.exists():
+        raise SystemExit(f"ERROR: {png} is named by the Halia icon index but is not there.")
+    return _halia_png_b64(png)
+
+
+def halia_result_id(result):
+    """A recipe result -> the id its card is keyed by (see point 2 above)."""
+    rid = result["id"]
+    comp = result.get("components") or {}
+    if rid == HALIA_BLADE:
+        key = (comp.get("halia:blade_profile") or {}).get("translation_key")
+        return f"{rid}[{key}]" if key else rid
+    if rid == "minecraft:chest":
+        key = (comp.get("minecraft:custom_name") or {}).get("translate")
+        if not key:
+            raise SystemExit("ERROR: a Halia recipe makes a chest with no custom name: %s" % json.dumps(result)[:200])
+        return f"{rid}[{key}]"
+    if comp:
+        raise SystemExit("ERROR: a Halia recipe result carries components this script cannot name: %s"
+                         % json.dumps(result)[:200])
+    return rid
+
+
+def halia_uncraftable(data):
+    """True when no ingredient of this recipe can ever be supplied: each is a tag that holds only air."""
+    ings = data.get("ingredients")
+    if data.get("type") != "minecraft:crafting_shapeless" or not ings:
+        return False
+    for ing in ings:
+        ing = first(ing)
+        if not (isinstance(ing, str) and ing.startswith("#")):
+            return False
+        ns, name = ing[1:].split(":", 1)
+        if set(mod_item_tag(ns, name)) != {"minecraft:air"}:
+            return False
+    return True
+
+
+def halia_register_readings(lang_ja):
+    """The readings of Halia's names come with the icons. Each is tied to the jar's own Japanese name: an index
+    that names an item differently from the jar is stale, and stops the generation."""
+    idx = halia_index()
+    for section, keyer in (("items", lambda k: "item." + k.replace(":", ".")), ("blades", lambda k: k),
+                           ("boxes", lambda k: k)):
+        for key, entry in (idx.get(section) or {}).items():
+            if section == "blades" and key == "":
+                key_in_lang = "item.halia.halia_blade"
+            else:
+                key_in_lang = keyer(key)
+            ja = lang_ja.get(key_in_lang) or lang_ja.get(key_in_lang.replace("item.", "block.", 1))
+            if ja is None:
+                raise SystemExit(f"ERROR: the Halia icon index names {section} {key!r}, which the jar's ja_jp.json "
+                                 f"does not translate.")
+            if entry.get("ja") != ja:
+                raise SystemExit(f"ERROR: the Halia icon index calls {key!r} {entry.get('ja')!r}, the jar calls it "
+                                 f"{ja!r}. Regenerate the index from the published jar.")
+            yomi = entry.get("yomi")
+            if not yomi:
+                raise SystemExit(f"ERROR: the Halia icon index gives no reading for {ja!r}.")
+            if ja not in YOMI:
+                YOMI[ja] = yomi
+                bucket = _YOMI_INDEX.setdefault(ja[0], [])
+                bucket.append(ja)
+                bucket.sort(key=len, reverse=True)
+
+
+def halia_cards(recipe_dir, mod_cat, reg, cards, no_yomi, seen_published, published):
+    """Every recipe of the published Halia jar -> its card(s). Returns (cards made, json files that are not crafts,
+    cards that come on top of one-per-json: the blade a material box turns into on the anvil)."""
+    halia_register_readings(reg.lang_by_modid["halia"])
+    files = sorted(recipe_dir.rglob("*.json"))
+    published["halia"] = {q.relative_to(recipe_dir).as_posix() for q in files}
+    made = uncraftable = extra = 0
+
+    def add(card_id, cells, count, how, extra_ids=()):
+        ja, en, _tex = reg.register(card_id)
+        cat = category_of(mod_cat, card_id.split(":", 1)[1])
+        _, unknown = reading_of(ja)
+        if unknown:
+            no_yomi.append((cat, ja, "".join(sorted(set(unknown)))))
+        tokens = cat_tokens(cat) + item_tokens(card_id, ja) + [en] + ([how] if how else [])
+        for cid in list(cells or ()) + list(extra_ids):
+            if cid:
+                cja, cen, _ = reg.register(cid)
+                tokens += item_tokens(cid, cja)
+                tokens.append(cen)
+        cards.append({"cat": cat, "id": card_id, "cells": cells, "count": count, "how": how,
+                      "s": search_blob(tokens)})
+
+    for path in files:
+        rel = path.relative_to(recipe_dir).as_posix()
+        seen_published.add(f"halia/{rel}")
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if halia_uncraftable(data):
+            uncraftable += 1
+            continue
+        rtype = data.get("type")
+        if rtype == "minecraft:blasting":
+            ing = ingredient_id(data["ingredient"])
+            ing_ja, _en, _t = reg.register(ing)
+            secs = data["cookingtime"] / 20.0
+            secs_txt = ("%d" % secs) if secs == int(secs) else ("%g" % secs)
+            blast_id = halia_result_id(data["result"])
+            how = "溶鉱炉で、%sを精錬する(%s 秒。作業台では作れない)" % (ing_ja, secs_txt)
+            add(blast_id, None, None, how, [ing, "minecraft:blast_furnace"])
+            HALIA_HOW[blast_id] = {"station": "blast", "inputs": [ing], "ja": how,
+                                   "en": "Smelt %s in a blast furnace (%s s; it cannot be made at a workbench)"
+                                         % (_en, secs_txt)}
+            made += 1
+            continue
+        parsed = parse_recipe(path)
+        if parsed is None:
+            raise SystemExit(f"ERROR: halia/{rel} (type {rtype}) is a kind of recipe this script cannot show.")
+        result = data["result"]
+        card_id = halia_result_id(result)
+        add(card_id, parsed["cells"], parsed["count"], None)
+        made += 1
+        required = (result.get("components") or {}).get("halia:required_blade")
+        if required is not None:
+            # The box is half of the recipe: on an anvil, with the blade it names, it becomes the named blade.
+            box_key = card_id[len("minecraft:chest["):-1]
+            how = ((halia_index().get("anvil") or {}).get(box_key) or {}).get("ja")
+            if not how:
+                raise SystemExit(f"ERROR: data/halia_icons/index.json has no anvil step for {box_key!r}.")
+            need_key = required.get("translation_key")
+            need = f"{HALIA_BLADE}[{need_key}]" if need_key else HALIA_BLADE
+            blade_id = halia_result_id(required["result"])
+            add(blade_id, None, None, how, [card_id, need, "minecraft:anvil"])
+            HALIA_HOW[blade_id] = {"station": "anvil", "inputs": [need, card_id], "ja": how,
+                                   "en": halia_index()["anvil"][box_key]["en"]}
+            made += 1
+            extra += 1
+    return made, uncraftable, extra
+
+
 class ItemRegistry:
     """item id -> (日本語名, 英語名, テクスチャ key) を 1 回だけ解決して覚える。
 
@@ -2481,6 +2676,23 @@ class ItemRegistry:
         if entry is not None:
             return entry
         ns, name = item_id.split(":", 1)
+        if item_id.startswith((HALIA_BLADE + "[", "minecraft:chest[item.halia.")):
+            key = item_id[item_id.index("[") + 1:-1]
+            ja = self.lang_by_modid["halia"].get(key)
+            en = self.lang_en_by_modid["halia"].get(key)
+            if not ja or not en:
+                raise SystemExit("ERROR: the Halia jar's lang files do not translate %s" % key)
+            if item_id.startswith(HALIA_BLADE):
+                b64 = halia_icon_b64("blades", key)
+            else:
+                # Every material box is a vanilla chest with a custom name: one render serves all nine.
+                png = HALIA_ICON_DIR / ((halia_index().get("box_icon") or {}).get("file") or "")
+                if not png.is_file():
+                    raise SystemExit("ERROR: the Halia icon index names no box picture (box_icon.file).")
+                b64 = _halia_png_b64(png)
+            entry = [ja, en, self._tex_key(b64)]
+            self.items[item_id] = entry
+            return entry
         if "[" in name:
             # An ingredient that is a data-component stack (2026-10-05): `minecraft:potion[water]`, from
             # {"fabric:type":"fabric:components","base":"minecraft:potion","components":{potion_contents:...}}.
@@ -2670,7 +2882,7 @@ def parse_recipe(path):
 # 3x3 grid cannot show (smelting, smithing, machine recipes) - a long-standing, unchanged choice. Tsubomi has
 # fifteen recipes and the owner asked for the revived Teleport Elevator to be listed, so for it a skipped recipe
 # is a fault: the generation stops and names the file.
-EVERY_RECIPE_SHOWN = {"tsubomi"}
+EVERY_RECIPE_SHOWN = {"tsubomi", "halia"}
 
 
 def parse_campfire_recipe(path, reg):
@@ -6437,8 +6649,17 @@ def _main_body():
     withheld = []    # 作業木にしか無いレシピ(配られていないので載せない)
     seen_published = set()   # 実際に読んだ配布済みレシピ(取りこぼしを後で数える)
     cards_per_mod = {}       # mod_dir -> このループで作ったカード数(EVERY_RECIPE_SHOWN の照合用)
+    halia_counts = (0, 0)    # (recipe json that are not crafts, cards on top of one per json)
     for mod_dir, modid, mod_cat in MODS:
         recipe_dir = mod_resources(mod_dir) / "data" / modid / "recipe"
+        if mod_dir == "halia":
+            made, not_crafts, on_top = halia_cards(recipe_dir, mod_cat, reg, cards, no_yomi, seen_published,
+                                                   published)
+            cards_per_mod[mod_dir] = made
+            halia_counts = (not_crafts, on_top)
+            print(f"halia: {made} card(s); {not_crafts} recipe json are not crafts (their only ingredient is a tag "
+                  f"holding nothing but air); {on_top} card(s) are the anvil half of a material box")
+            continue
         if mod_dir in MOD_RESOURCE_ROOT:
             # 別ブランドは配布済み jar そのものを展開したものなので、ここに在る = 配られている。
             # (jar の sha256 はマニフェストと突き合わせ済み。stage_published_brands を見よ)
@@ -6546,10 +6767,16 @@ def _main_body():
         n_json = sum(1 for _d, modid, _c in MODS if _d == mod_dir
                      for name in published.get(modid, ()))
         n_cards = cards_per_mod.get(mod_dir, 0)
+        if mod_dir == "halia":
+            n_json = n_json - halia_counts[0] + halia_counts[1]
         if n_json != n_cards or n_json == 0:
             raise SystemExit(f"ERROR: {mod_dir}: {n_json} recipe json in the published jar but {n_cards} card(s) "
                              f"made from them - EVERY_RECIPE_SHOWN says there must be one each (and at least one).")
-        print(f"{mod_dir}: all {n_json} recipe json in the published jar became a card")
+        if mod_dir == "halia":
+            print(f"halia: {n_cards} card(s) for the published jar's craftable recipes, none missing "
+                  f"({halia_counts[0]} uncraftable json set aside, {halia_counts[1]} anvil card(s) on top)")
+        else:
+            print(f"{mod_dir}: all {n_json} recipe json in the published jar became a card")
 
     cat_order = ["銃", "電車", "建材", "ドア", "乗り物", "ボス", "天空", "サバイバル", "電力",
                  "二相楽園", "灰街圏",
@@ -6557,7 +6784,7 @@ def _main_body():
                  # Tsubomi(2026-10-05)は ASTRAEA の後ろ(同じ理由: 既存のタブ番号 #0〜#2 を動かさない)。
                  # ASTRAEA(2026-09-30)は Cherry の後ろ: 既存のタブの番号(OUKA 0・Cherry 1)と札の並びを
                  # 一つも動かさない(ポータルのレシピ頁は #0/#1 の深いリンクと t<N> を使う)。
-                 *[BRAND_CATEGORY[b] for b in ("ouka", "cherry", "astraea", "tsubomi")]]
+                 *[BRAND_CATEGORY[b] for b in ("ouka", "cherry", "astraea", "tsubomi", "halia")]]
     missing = {c["cat"] for c in cards} - set(cat_order)
     if missing:
         raise SystemExit(
@@ -6811,6 +7038,12 @@ def _main_body():
         "cards": cards_json,     # [cat_index, id, grid_or_null, count, how_or_0, search_blob]
         "guides": guides_json,
     }
+    # The portal's half of the how-to cards that are not grids (Halia): written only when there is one, sorted.
+    (OUT_DATA_DIR / "recipes_how.json").write_text(
+        json.dumps({"_comment": "station, inputs and the sentence (ja, en) of how-to cards; written by "
+                                "scripts/extract_recipes.py, read by web/scripts/extract_wiki.py",
+                    "cards": dict(sorted(HALIA_HOW.items()))}, ensure_ascii=False, indent=1) + "\n",
+        encoding="utf-8")
     out_json = OUT_DATA_DIR / "recipes.json"
     out_json.write_text(
         json.dumps(recipes_data, ensure_ascii=False, separators=(",", ":")),

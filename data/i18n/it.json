@@ -167,7 +167,8 @@
    "OUKA",
    "Cherry",
    "ASTRAEA",
-   "Tsubomi"
+   "Tsubomi",
+   "Halia"
   ],
   "items": {
    "minecraft:iron_ingot": "Lingotto di ferro",
@@ -762,6 +763,27 @@
    }
   ],
   "halia": [
+   {
+    "id": "halia-v1.1.0",
+    "title": "Halia V1.1 — la Halia Blade: una katana, 90 combo e spade evocate",
+    "summary": "Halia V1.1 aggiunge la Halia Blade, una katana portata al fianco e usata con il tempismo giusto: combo a terra e in aria, arti caricate, spade evocate, aggancio del bersaglio, parata e mosse acrobatiche. Include 8 materiali di crafting, 6 supporti per lame e 11 lame con nome. Lo Stellar Remote della V1.0 resta invariato.",
+    "highlights": [
+     "Halia Blade: si crafta con Soulsteel Ingots, una Corvus Soul, una spada di ferro e un mattone del Nether. Usa (clic destro) per attaccare; premere di nuovo al momento giusto continua il combo. In tutto ci sono 90 mosse di combo, a terra e in aria.",
+     "Arti caricate: tieni premuto usa e rilascia quando compaiono le particelle per Judgement Cut; rilascia subito prima che compaiano per la versione più potente. Accovacciarsi + avanti + usa è Rapid Slash, accovacciarsi + indietro + usa è Upper Slash.",
+     "Spade evocate: il tasto di selezione blocco (clic centrale) lancia una spada verso il bersaglio al costo di 1 punto esperienza; 4 schemi più grandi — Spiral, Storm, Blistering e Heavy Rain Swords — costano 5 ciascuno.",
+     "Aggancio, parata e movimento: tieni premuto accovacciarsi per agganciare un nemico; accovacciarsi da fermi para gli attacchi a distanza; i trucchi con il tasto corsa ti scagliano verso un nemico, sopra di lui o lontano da lui; in aria puoi saltare via da un nemico o da un muro.",
+     "Grado di concentrazione: colpendo sale un grado mostrato in alto a destra, da D fino a SSS; scende di nuovo quando smetti di combattere. I gradi alti aumentano il danno.",
+     "Usura, affinamento e rimodellatura: una lama si spezza dopo 101 colpi e lascia cadere un'anima che conserva il suo registro. Sull'incudine, una Corvus Soul affina una lama (1 livello per anima), e una lama spezzata può essere rimodellata.",
+     "Materiali e supporti: 8 materiali, da Tiny Corvus Soul ad Abyssal Geode, ciascuno con una ricetta, e 6 Halia Stands (a terra e a parete) per esporre una lama.",
+     "Guida in gioco: 57 progressi. Il ramo “Blade MoveSets” elenca ogni mossa con i tasti assegnati sul tuo computer, e cliccare su un progresso di materiale o di lama ne mostra la ricetta."
+    ],
+    "warnings": [
+     "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. In multigiocatore, Halia deve essere installato anche sul server.",
+     "Lo Stellar Remote distrugge ancora in modo permanente aree molto grandi del mondo: fai un backup del tuo mondo prima di premere il suo pulsante. In questa versione non è cambiato nulla.",
+     "I mondi della V1.0.0 si aprono così come sono; questa versione aggiunge soltanto contenuti. Non tornare alla 1.0.0 con un mondo che contiene lame, materiali o supporti: verrebbero cancellati.",
+     "Non ancora confermato dallo studio: giocare su un server multigiocatore dedicato, su Windows e usarlo insieme ad altri mod di Corvus Store. In prima persona la lama nel fodero resta in gran parte fuori vista finché non attacchi."
+    ]
+   },
    {
     "id": "halia-v1.0.0",
     "title": "Halia V1.0 — lo Stellar Remote e tre attacchi dall'orbita",

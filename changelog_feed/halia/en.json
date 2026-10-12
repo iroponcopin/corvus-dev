@@ -1,11 +1,48 @@
 {
  "lang": "en",
  "brand": "halia",
- "updated": "2026-10-11",
+ "updated": "2026-10-12",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-11",
+ "updated_label": "Updated 2026-10-12",
  "note": "",
  "groups": [
+  {
+   "label": "V1.1",
+   "summary": "Halia V1.1 — the Halia Blade: a katana, 90 combo moves and summoned swords",
+   "releases": [
+    {
+     "version": "V1.1.0",
+     "date": "2026-10-12",
+     "type": "release",
+     "title": "Halia V1.1 — the Halia Blade: a katana, 90 combo moves and summoned swords",
+     "summary": "Halia V1.1 adds the Halia Blade, a katana worn at the hip and fought with by timing: combos on the ground and in the air, charged arts, summoned swords, a lock-on, a guard and trick moves. It comes with 8 crafting materials, 6 blade stands and 11 named blades. The Stellar Remote of V1.0 is unchanged.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "The Halia Blade: craft it from Soulsteel Ingots, a Corvus Soul, an iron sword and a nether brick. Use (right click) attacks; pressing again in time continues the combo — 90 combo moves in all, on the ground and in mid-air.",
+        "Charged arts: hold use and release when particles appear for Judgement Cut; release just before they appear for the stronger version. Sneak + forward + use is Rapid Slash, sneak + back + use is Upper Slash.",
+        "Summoned swords: the pick-block button (middle click) launches a sword at your target for 1 experience point; four larger patterns — Spiral, Storm, Blistering and Heavy Rain Swords — cost 5 each.",
+        "Lock-on, guard and movement: hold sneak to lock on to an enemy; sneaking while standing still guards against ranged attacks; sprint-button tricks dash you to, above or away from an enemy; jump off an enemy or a wall in mid-air.",
+        "Concentration rank: landing hits raises a rank shown at the top right, from D up to SSS; it falls again when you stop fighting. High ranks add damage.",
+        "Wear, refine and reforge: a blade breaks after 101 hits and drops a soul that keeps its record. On an anvil, a Corvus Soul refines a blade (1 level per soul) and a broken blade can be reforged.",
+        "Materials and stands: 8 materials from Tiny Corvus Soul to Abyssal Geode, each with a recipe, and 6 Halia Stands (floor and wall types) to display a blade.",
+        "In-game guide: 57 advancements. The \"Blade MoveSets\" branch lists every move with the keys bound on your computer, and clicking a material or blade advancement shows its recipe."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Requirements: Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer, Java 25. For multiplayer, Halia must also be installed on the server.",
+        "The Stellar Remote still destroys very large areas of the world permanently — back up your world before pressing its button. Nothing about it changed in this version.",
+        "Worlds from V1.0.0 open as they are; this version only adds content. Do not go back to 1.0.0 with a world that holds blades, materials or stands: they would be deleted.",
+        "Not yet confirmed by the studio: play on a dedicated multiplayer server, Windows, and use together with other Corvus Store mods. In first person the sheathed blade stays mostly out of view until you attack."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.0",
    "summary": "Halia V1.0 — the Stellar Remote and three strikes from orbit",

@@ -1,11 +1,48 @@
 {
  "lang": "tr",
  "brand": "halia",
- "updated": "2026-10-11",
+ "updated": "2026-10-12",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-11 tarihinde güncellendi",
+ "updated_label": "2026-10-12 tarihinde güncellendi",
  "note": "",
  "groups": [
+  {
+   "label": "V1.1",
+   "summary": "Halia V1.1 — Halia Blade: bir katana, 90 kombo hareketi ve çağrılan kılıçlar",
+   "releases": [
+    {
+     "version": "V1.1.0",
+     "date": "2026-10-12",
+     "type": "release",
+     "title": "Halia V1.1 — Halia Blade: bir katana, 90 kombo hareketi ve çağrılan kılıçlar",
+     "summary": "Halia V1.1, kalçada taşınan ve zamanlamayla kullanılan katana Halia Blade'i ekler: yerde ve havada kombolar, şarj edilen teknikler, çağrılan kılıçlar, hedef kilitleme, savunma ve numara hareketleri. 8 üretim malzemesi, 6 kılıç standı ve 11 adlandırılmış kılıç ile gelir. V1.0'daki Stellar Remote değişmedi.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Halia Blade: Soulsteel Ingots, bir Corvus Soul, bir demir kılıç ve bir Nether tuğlasıyla üretilir. Kullan (sağ tık) ile saldır; zamanında tekrar basmak kombonun devam etmesini sağlar. Yerde ve havada toplam 90 kombo hareketi vardır.",
+        "Şarj edilen teknikler: Judgement Cut için parçacıklar belirdiğinde kullan tuşunu basılı tutup bırak; daha güçlü sürüm için hemen belirmeden bırak. Eğilme + ileri + kullan Rapid Slash'tir; eğilme + geri + kullan Upper Slash'tir.",
+        "Çağrılan kılıçlar: blok seçme tuşu (orta tık) hedefine 1 deneyim puanı karşılığında bir kılıç fırlatır; Spiral, Storm, Blistering ve Heavy Rain Swords olmak üzere 4 büyük desen her biri 5 puana mal olur.",
+        "Kilitleme, savunma ve hareket: düşmana kilitlenmek için eğilmeyi basılı tut; yerinde dururken eğilmek menzilli saldırılara karşı korur; koşma tuşuyla yapılan numaralar seni bir düşmana, onun üstüne ya da ondan uzağa fırlatır; havadayken bir düşmandan ya da duvardan sıçrayabilirsin.",
+        "Konsantrasyon derecesi: isabet ettirdikçe sağ üstte görünen derece D'den SSS'ye yükselir; savaşmayı bıraktığında yeniden düşer. Yüksek dereceler hasarı artırır.",
+        "Aşınma, geliştirme ve yeniden dövme: bir kılıç 101 vuruştan sonra kırılır ve kaydını koruyan bir ruh düşürür. Örsün üzerinde bir Corvus Soul kılıcı geliştirir (ruh başına 1 seviye) ve kırık bir kılıç yeniden dövülebilir.",
+        "Malzemeler ve standlar: Tiny Corvus Soul'dan Abyssal Geode'a kadar her biri tarifli 8 malzeme ve kılıcı sergilemek için zemin ve duvar tipinde 6 Halia Stands.",
+        "Oyun içi rehber: 57 gelişme. “Blade MoveSets” dalı her hareketi bilgisayarındaki tuşlarla listeler; bir malzeme ya da kılıç gelişmesine tıklamak tarifini gösterir."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni, Fabric API 0.161.0+26.3 veya daha yeni ve Java 25 gerekir. Çok oyunculu oyun için Halia sunucuya da kurulmalıdır.",
+        "Stellar Remote hâlâ dünyanın çok geniş bölümlerini kalıcı olarak yok eder; düğmesine basmadan önce dünyanı yedekle. Bu sürümde buna dair bir değişiklik yok.",
+        "V1.0.0 dünyaları olduğu gibi açılır; bu sürüm yalnızca içerik ekler. Kılıç, malzeme veya stand içeren bir dünyayla 1.0.0'a dönme: bunlar silinir.",
+        "Stüdyo tarafından henüz doğrulanmadı: özel bir çok oyunculu sunucuda oynamak, Windows ve diğer Corvus Store modlarıyla birlikte kullanmak. Birinci kişi görünümde kınına konmuş kılıç, sen saldırana kadar çoğunlukla görünmez."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.0",
    "summary": "Halia V1.0 — Stellar Remote ve yörüngeden üç saldırı",

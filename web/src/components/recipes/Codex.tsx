@@ -465,6 +465,11 @@ export function Codex({
                       </ul>
                     </>
                   ) : null}
+                  {recipe.howLine ? (
+                    <p className="ac-small ac-how-line" lang={recipe.howLine.lang}>
+                      {recipe.howLine.text}
+                    </p>
+                  ) : null}
                   {recipe.facts ? <MachineFacts facts={recipe.facts} labels={labels.machine} /> : null}
                 </div>
               )}

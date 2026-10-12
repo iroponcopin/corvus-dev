@@ -22,7 +22,9 @@ export function RecipesPage({ lang }: { lang: Lang }) {
         { name: r.names[id] ?? it.en, ...(r.subs[id] ? { sub: r.subs[id] } : {}), icon: it.icon, kind: it.kind },
       ]),
     ),
-    recipes: shared.recipes,
+    recipes: shared.recipes.map((rec) =>
+      rec.howText ? { ...rec, howLine: lang === "ja" ? { text: rec.howText.ja, lang: "ja" as const } : { text: rec.howText.en, lang: "en" as const } } : rec,
+    ),
     search: r.search,
     stations: shared.stations,
   };
