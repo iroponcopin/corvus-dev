@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis — des portes coulissantes jointives, 50 pièces de mobilier et 30 machines lourdes",
+   "summary": "The Grand Synthesis 1.6.0.1 — argile, consommation électrique ×2 et une Balise OUKA plus douce",
    "releases": [
+    {
+     "version": "V1.6.0.1",
+     "date": "2026-10-12",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.0.1 — argile, consommation électrique ×2 et une Balise OUKA plus douce",
+     "summary": "Une petite mise à jour d'équilibrage. Le synthétiseur de pierre fabrique de l'argile, chaque machine électrique consomme davantage, et la Balise OUKA est plus douce mais moins chère à construire. Aucun nouveau bloc ni objet.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Le Synthétiseur de pierre volcano-hydraulique ajoute l'argile à sa liste de produits : un bloc d'argile toutes les 1.6 secondes. Comme pour la pierre et le sable, la lave et l'eau ne sont pas consommées.",
+        "Chaque machine électrique consomme désormais ×2. Les valeurs nominales de production et de stockage ne changent pas.",
+        "Les effets de la Balise OUKA s'arrêtent désormais à 5.00 au lieu de 20.00. Son rayon de 1,000 blocs et son socle de 328 blocs ne changent pas.",
+        "La Balise OUKA coûte moins cher à fabriquer : 2 balises, 2 blocs d'alliage Ouka et 1 étoile du Nether (il fallait 4 balises et 4 blocs d'alliage)."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Une usine construite avant cette mise à jour fait tourner deux fois moins de machines avec la même alimentation. Une machine qui manque d'électricité s'arrête et attend ; rien ne casse et rien n'est perdu à l'intérieur. Une balise réglée au-dessus de la nouvelle limite affiche la limite au chargement.",
+        "Retirez les anciens JAR d'OUKA du dossier mods avant d'ajouter 1.6.0.1, et ne gardez qu'une seule copie de GeckoLib 5.5.6. Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent et Fabric API 0.161.0+26.3 ou plus récent. À installer sur le client et sur le serveur."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.0",
      "date": "2026-10-12",

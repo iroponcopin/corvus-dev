@@ -306,6 +306,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.0.1",
+    "title": "The Grand Synthesis 1.6.0.1 — argila, consumo de energia ×2 e um Sinalizador OUKA mais brando",
+    "summary": "Uma pequena atualização de equilíbrio. O sintetizador de pedra fabrica argila, toda máquina elétrica consome mais, e o Sinalizador OUKA ficou mais brando, porém mais barato de construir. Não há blocos nem itens novos.",
+    "highlights": [
+     "O Sintetizador de pedregulho vulcânico-hidráulico ganha argila na lista de produtos: um bloco de argila a cada 1.6 segundos. Como com o pedregulho e a areia, a lava e a água não são gastas.",
+     "Toda máquina elétrica agora consome ×2. Os valores nominais de geração e armazenamento não mudam.",
+     "Os efeitos do Sinalizador OUKA agora vão até 5.00 em vez de 20.00. O raio de 1,000 blocos e o pedestal de 328 blocos não mudam.",
+     "O Sinalizador OUKA custa menos para fabricar: 2 sinalizadores, 2 blocos de liga Ouka e 1 estrela do Nether (antes eram 4 sinalizadores e 4 blocos de liga)."
+    ],
+    "warnings": [
+     "Uma fábrica construída antes desta atualização mantém metade das máquinas com o mesmo fornecimento. Uma máquina sem energia suficiente apenas para e espera; nada quebra e nada do que está dentro se perde. Um sinalizador ajustado acima do novo limite mostra o limite ao carregar.",
+     "Remova os JARs antigos do OUKA da pasta mods antes de adicionar 1.6.0.1 e mantenha apenas uma cópia do GeckoLib 5.5.6. Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente e Fabric API 0.161.0+26.3 ou mais recente. Instale no cliente e no servidor."
+    ]
+   },
+   {
     "id": "ouka-v1.6.0",
     "title": "The Grand Synthesis — portas de correr sem frestas, 50 peças de mobília e 30 máquinas pesadas",
     "summary": "O washitsu e a fábrica crescem juntos. Uma fileira fechada de shoji ou fusuma não mostra mais uma fresta de luz entre as portas: um montante de encontro agora cobre cada junta, e a nova Shikii Grooved Hinoki Sill recebe o pé das portas. 50 novas peças de mobília enchem a sala e o jardim, e 30 máquinas de indústria pesada levam do minério ao pó ultrafino, aos wafers de silício e aos chips quânticos, até o Artificial Sun Core, com potência nominal de 1,00 GW. Cada item novo explica seu uso na dica de ferramenta.",

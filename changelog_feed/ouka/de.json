@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis — dichte Schiebetüren, 50 Einrichtungsstücke und 30 Schwermaschinen",
+   "summary": "The Grand Synthesis 1.6.0.1 — Ton, Stromverbrauch ×2 und ein sanfteres OUKA-Leuchtfeuer",
    "releases": [
+    {
+     "version": "V1.6.0.1",
+     "date": "2026-10-12",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.0.1 — Ton, Stromverbrauch ×2 und ein sanfteres OUKA-Leuchtfeuer",
+     "summary": "Ein kleines Balance-Update. Der Steinsynthesizer stellt jetzt Ton her, jede strombetriebene Maschine verbraucht mehr, und das OUKA-Leuchtfeuer wirkt milder, ist aber günstiger zu bauen. Es gibt keine neuen Blöcke oder Gegenstände.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Der Vulkanisch-hydraulische Bruchstein-Synthesizer hat Ton in seiner Produktliste: ein Tonblock alle 1.6 Sekunden. Wie bei Bruchstein und Sand werden Lava und Wasser nicht verbraucht.",
+        "Jede strombetriebene Maschine verbraucht jetzt ×2. Die Nennwerte von Erzeugung und Speicherung bleiben gleich.",
+        "Die Effekte des OUKA-Leuchtfeuers enden jetzt bei 5.00 statt bei 20.00. Der Radius von 1,000 Blöcken und der Sockel aus 328 Blöcken bleiben gleich.",
+        "Das OUKA-Leuchtfeuer ist günstiger herzustellen: 2 Leuchtfeuer, 2 Ouka-Legierungsblöcke und 1 Netherstern (bisher 4 Leuchtfeuer und 4 Legierungsblöcke)."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Eine Fabrik aus der Zeit vor diesem Update betreibt mit derselben Versorgung nur halb so viele Maschinen. Eine Maschine ohne genug Strom hält nur an und wartet; nichts geht kaputt und kein Inhalt geht verloren. Ein Leuchtfeuer, das über der neuen Grenze eingestellt war, zeigt nach dem Laden die Grenze.",
+        "Entferne ältere OUKA-JARs aus dem mods-Ordner, bevor du 1.6.0.1 hinzufügst, und behalte nur eine Kopie von GeckoLib 5.5.6. Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Auf Client und Server installieren."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.0",
      "date": "2026-10-12",

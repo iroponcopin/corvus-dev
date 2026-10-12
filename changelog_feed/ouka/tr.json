@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis — aralıksız sürgülü kapılar, 50 mobilya ve 30 ağır makine",
+   "summary": "The Grand Synthesis 1.6.0.1 — kil, ×2 güç tüketimi ve daha yumuşak bir OUKA Feneri",
    "releases": [
+    {
+     "version": "V1.6.0.1",
+     "date": "2026-10-12",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.0.1 — kil, ×2 güç tüketimi ve daha yumuşak bir OUKA Feneri",
+     "summary": "Küçük bir denge güncellemesi. Taş sentezleyici kil üretebiliyor, elektrikle çalışan her makine daha fazla tüketiyor ve OUKA Feneri daha yumuşak ama yapımı daha ucuz. Yeni blok veya eşya yok.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Volkanik-hidrolik Kırıktaş Sentezleyici ürün listesine kili ekledi: her 1.6 saniyede bir kil bloğu. Kırıktaş ve kumda olduğu gibi lav ve su tükenmez.",
+        "Elektrikle çalışan her makine artık ×2 tüketiyor. Üretim ve depolama değerleri değişmedi.",
+        "OUKA Feneri'nin etkileri artık 20.00 yerine 5.00 değerinde duruyor. 1,000 blokluk yarıçapı ve 328 blokluk kaidesi değişmedi.",
+        "OUKA Feneri'ni üretmek daha ucuz: 2 fener, 2 Ouka alaşım bloğu ve 1 Nether yıldızı (önceden 4 fener ve 4 alaşım bloğu gerekiyordu)."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Bu güncellemeden önce kurulan bir fabrika, aynı kaynakla makinelerin yarısını çalıştırır. Gücü yetmeyen makine yalnızca durur ve bekler; hiçbir şey bozulmaz ve içindekiler kaybolmaz. Yeni sınırın üzerinde ayarlanmış bir fener, yüklendiğinde sınırı gösterir.",
+        "1.6.0.1 sürümünü eklemeden önce eski OUKA JAR dosyalarını mods klasöründen kaldırın ve GeckoLib 5.5.6 için yalnızca bir kopya bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya üzeri ve Fabric API 0.161.0+26.3 veya üzeri gerekir. Hem istemciye hem sunucuya kurun."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.0",
      "date": "2026-10-12",

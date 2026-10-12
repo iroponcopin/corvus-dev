@@ -310,6 +310,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.0.1",
+    "title": "The Grand Synthesis 1.6.0.1 — clay, power draw ×2, and a gentler OUKA Beacon",
+    "summary": "A small balance update. The stone synthesizer can make clay, every machine that runs on power draws more, and the OUKA Beacon is milder but cheaper to build. There are no new blocks or items.",
+    "highlights": [
+     "The Volcanic-Hydraulic Cobblestone Synthesizer gains clay in its list of products: one clay block every 1.6 seconds. As with cobblestone and sand, the lava and water are not used up.",
+     "Every machine that runs on power now draws ×2. Generation and storage ratings are unchanged.",
+     "The OUKA Beacon's effects now stop at 5.00 instead of 20.00. Its radius of 1,000 blocks and its pedestal of 328 blocks are unchanged.",
+     "The OUKA Beacon is cheaper to craft: 2 beacons, 2 Ouka alloy blocks and 1 nether star (it used to take 4 beacons and 4 alloy blocks)."
+    ],
+    "warnings": [
+     "A factory built before this update runs half as many machines on the same supply. A machine short of power only stops and waits; nothing breaks and nothing inside is lost. A beacon that was set above the new limit reads as the limit when it loads.",
+     "Remove older OUKA jars from the mods folder before adding 1.6.0.1, and keep only one copy of GeckoLib 5.5.6. Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer and Fabric API 0.161.0+26.3 or newer. Install on both the client and the server."
+    ]
+   },
+   {
     "id": "ouka-v1.6.0",
     "title": "The Grand Synthesis — closed sliding doors, 50 furnishings and 30 heavy machines",
     "summary": "The washitsu and the factory both grow. A closed row of shoji or fusuma no longer shows a gap of light between its doors: a meeting stile now covers each seam, and the new Shikii Grooved Hinoki Sill takes the foot of the doors. 50 new furnishings fill the room and the garden, and 30 heavy-industry machines lead from ore to ultrafine powder, silicon wafers and quantum chips, up to the Artificial Sun Core rated at 1.00 GW. Every new item explains its use in its tooltip.",

@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis — puertas correderas sin rendijas, 50 piezas de mobiliario y 30 máquinas pesadas",
+   "summary": "The Grand Synthesis 1.6.0.1 — arcilla, consumo eléctrico ×2 y un Faro OUKA más suave",
    "releases": [
+    {
+     "version": "V1.6.0.1",
+     "date": "2026-10-12",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.0.1 — arcilla, consumo eléctrico ×2 y un Faro OUKA más suave",
+     "summary": "Una pequeña actualización de equilibrio. El sintetizador de piedra fabrica arcilla, cada máquina eléctrica consume más, y el Faro OUKA es más suave pero más barato de construir. No hay bloques ni objetos nuevos.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "El Sintetizador de roca volcánico-hidráulico añade la arcilla a su lista de productos: un bloque de arcilla cada 1.6 segundos. Como con la roca y la arena, la lava y el agua no se gastan.",
+        "Cada máquina eléctrica consume ahora ×2. Los valores nominales de generación y almacenamiento no cambian.",
+        "Los efectos del Faro OUKA llegan ahora hasta 5.00 en lugar de 20.00. Su radio de 1,000 bloques y su pedestal de 328 bloques no cambian.",
+        "El Faro OUKA cuesta menos de fabricar: 2 faros, 2 bloques de aleación Ouka y 1 estrella del Nether (antes hacían falta 4 faros y 4 bloques de aleación)."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Una fábrica construida antes de esta actualización mueve la mitad de máquinas con el mismo suministro. Una máquina sin suficiente electricidad solo se detiene y espera; nada se rompe y no se pierde nada de su interior. Un faro ajustado por encima del nuevo límite muestra el límite al cargarse.",
+        "Quita los JAR antiguos de OUKA de la carpeta mods antes de añadir 1.6.0.1 y conserva una sola copia de GeckoLib 5.5.6. Requiere Minecraft 26.3, Fabric Loader 0.19.5 o posterior y Fabric API 0.161.0+26.3 o posterior. Instálalo en el cliente y en el servidor."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.0",
      "date": "2026-10-12",

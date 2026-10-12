@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis — portas de correr sem frestas, 50 peças de mobília e 30 máquinas pesadas",
+   "summary": "The Grand Synthesis 1.6.0.1 — argila, consumo de energia ×2 e um Sinalizador OUKA mais brando",
    "releases": [
+    {
+     "version": "V1.6.0.1",
+     "date": "2026-10-12",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.0.1 — argila, consumo de energia ×2 e um Sinalizador OUKA mais brando",
+     "summary": "Uma pequena atualização de equilíbrio. O sintetizador de pedra fabrica argila, toda máquina elétrica consome mais, e o Sinalizador OUKA ficou mais brando, porém mais barato de construir. Não há blocos nem itens novos.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "O Sintetizador de pedregulho vulcânico-hidráulico ganha argila na lista de produtos: um bloco de argila a cada 1.6 segundos. Como com o pedregulho e a areia, a lava e a água não são gastas.",
+        "Toda máquina elétrica agora consome ×2. Os valores nominais de geração e armazenamento não mudam.",
+        "Os efeitos do Sinalizador OUKA agora vão até 5.00 em vez de 20.00. O raio de 1,000 blocos e o pedestal de 328 blocos não mudam.",
+        "O Sinalizador OUKA custa menos para fabricar: 2 sinalizadores, 2 blocos de liga Ouka e 1 estrela do Nether (antes eram 4 sinalizadores e 4 blocos de liga)."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Uma fábrica construída antes desta atualização mantém metade das máquinas com o mesmo fornecimento. Uma máquina sem energia suficiente apenas para e espera; nada quebra e nada do que está dentro se perde. Um sinalizador ajustado acima do novo limite mostra o limite ao carregar.",
+        "Remova os JARs antigos do OUKA da pasta mods antes de adicionar 1.6.0.1 e mantenha apenas uma cópia do GeckoLib 5.5.6. Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente e Fabric API 0.161.0+26.3 ou mais recente. Instale no cliente e no servidor."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.0",
      "date": "2026-10-12",

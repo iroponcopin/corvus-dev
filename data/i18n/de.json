@@ -306,6 +306,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.0.1",
+    "title": "The Grand Synthesis 1.6.0.1 — Ton, Stromverbrauch ×2 und ein sanfteres OUKA-Leuchtfeuer",
+    "summary": "Ein kleines Balance-Update. Der Steinsynthesizer stellt jetzt Ton her, jede strombetriebene Maschine verbraucht mehr, und das OUKA-Leuchtfeuer wirkt milder, ist aber günstiger zu bauen. Es gibt keine neuen Blöcke oder Gegenstände.",
+    "highlights": [
+     "Der Vulkanisch-hydraulische Bruchstein-Synthesizer hat Ton in seiner Produktliste: ein Tonblock alle 1.6 Sekunden. Wie bei Bruchstein und Sand werden Lava und Wasser nicht verbraucht.",
+     "Jede strombetriebene Maschine verbraucht jetzt ×2. Die Nennwerte von Erzeugung und Speicherung bleiben gleich.",
+     "Die Effekte des OUKA-Leuchtfeuers enden jetzt bei 5.00 statt bei 20.00. Der Radius von 1,000 Blöcken und der Sockel aus 328 Blöcken bleiben gleich.",
+     "Das OUKA-Leuchtfeuer ist günstiger herzustellen: 2 Leuchtfeuer, 2 Ouka-Legierungsblöcke und 1 Netherstern (bisher 4 Leuchtfeuer und 4 Legierungsblöcke)."
+    ],
+    "warnings": [
+     "Eine Fabrik aus der Zeit vor diesem Update betreibt mit derselben Versorgung nur halb so viele Maschinen. Eine Maschine ohne genug Strom hält nur an und wartet; nichts geht kaputt und kein Inhalt geht verloren. Ein Leuchtfeuer, das über der neuen Grenze eingestellt war, zeigt nach dem Laden die Grenze.",
+     "Entferne ältere OUKA-JARs aus dem mods-Ordner, bevor du 1.6.0.1 hinzufügst, und behalte nur eine Kopie von GeckoLib 5.5.6. Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Auf Client und Server installieren."
+    ]
+   },
+   {
     "id": "ouka-v1.6.0",
     "title": "The Grand Synthesis — dichte Schiebetüren, 50 Einrichtungsstücke und 30 Schwermaschinen",
     "summary": "Washitsu und Fabrik wachsen beide. Eine geschlossene Reihe aus Shoji oder Fusuma zeigt keinen Lichtspalt mehr zwischen den Türen: Eine Schlagleiste deckt jetzt jede Fuge, und die neue Shikii Grooved Hinoki Sill nimmt den Fuß der Türen auf. 50 neue Einrichtungsstücke füllen Raum und Garten, und 30 Maschinen der Schwerindustrie führen vom Erz zu ultrafeinem Pulver, Siliziumwafern und Quantenchips, bis hinauf zum Artificial Sun Core mit 1,00 GW Nennleistung. Jeder neue Gegenstand erklärt seine Verwendung im Tooltip.",

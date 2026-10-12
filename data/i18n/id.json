@@ -306,6 +306,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.0.1",
+    "title": "The Grand Synthesis 1.6.0.1 — tanah liat, konsumsi daya ×2, dan Suar OUKA yang lebih lembut",
+    "summary": "Pembaruan keseimbangan kecil. Penyintesis batu kini membuat tanah liat, setiap mesin bertenaga listrik memakai lebih banyak daya, dan Suar OUKA lebih lembut tetapi lebih murah dibuat. Tidak ada blok atau item baru.",
+    "highlights": [
+     "Penyintesis Batu Bulat Vulkanik-Hidraulik menambahkan tanah liat ke daftar produknya: satu blok tanah liat setiap 1.6 detik. Seperti batu bulat dan pasir, lava dan air tidak habis.",
+     "Setiap mesin bertenaga listrik kini memakai ×2. Nilai pembangkitan dan penyimpanan tidak berubah.",
+     "Efek Suar OUKA kini berhenti di 5.00, bukan 20.00. Radius 1,000 blok dan alas 328 bloknya tidak berubah.",
+     "Suar OUKA lebih murah dibuat: 2 suar, 2 blok paduan Ouka, dan 1 bintang Nether (sebelumnya perlu 4 suar dan 4 blok paduan)."
+    ],
+    "warnings": [
+     "Pabrik yang dibangun sebelum pembaruan ini menjalankan separuh jumlah mesin dengan pasokan yang sama. Mesin yang kekurangan daya hanya berhenti dan menunggu; tidak ada yang rusak dan isinya tidak hilang. Suar yang diatur di atas batas baru menampilkan batas itu saat dimuat.",
+     "Hapus JAR OUKA lama dari folder mods sebelum menambahkan 1.6.0.1, dan sisakan hanya satu salinan GeckoLib 5.5.6. Memerlukan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di klien dan server."
+    ]
+   },
+   {
     "id": "ouka-v1.6.0",
     "title": "The Grand Synthesis — pintu geser tanpa celah, 50 perabot, dan 30 mesin berat",
     "summary": "Washitsu dan pabrik sama-sama bertambah besar. Deretan shoji atau fusuma yang tertutup tidak lagi memperlihatkan celah cahaya di antara pintunya: bilah pertemuan kini menutup setiap sambungan, dan Shikii Grooved Hinoki Sill yang baru menampung kaki pintu. 50 perabot baru mengisi ruangan dan taman, dan 30 mesin industri berat membawa bijih menjadi serbuk ultrahalus, wafer silikon, dan cip kuantum, sampai ke Artificial Sun Core dengan daya nominal 1,00 GW. Setiap item baru menjelaskan kegunaannya di tooltip-nya.",
