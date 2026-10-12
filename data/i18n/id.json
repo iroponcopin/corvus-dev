@@ -764,6 +764,20 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.1.1",
+    "title": "Halia V1.1.1 — perbaikan crash dengan «Improved Transparency»",
+    "summary": "Halia V1.1.1 memperbaiki satu kesalahan di V1.1.0: saat pengaturan video «Improved Transparency» dinyalakan, game tertutup begitu item Halia yang berkilau terlihat — misalnya bahan jiwa yang jatuh saat kotak bahan bilah dihancurkan — dan dunia tidak bisa dimasuki lagi selama item itu masih ada di sana. Tidak ada perubahan lain.",
+    "highlights": [
+     "Diperbaiki: game tidak lagi tertutup saat item Halia yang berkilau digambar dengan «Improved Transparency» menyala. Dunia yang tidak bisa dimasuki karena ini bisa dibuka lagi.",
+     "Selebihnya sama seperti V1.1.0: Halia Blade, 90 gerakan kombonya, bahan, dudukan, dan Stellar Remote tidak berubah."
+    ],
+    "warnings": [
+     "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Untuk multipemain, Halia juga harus terpasang di server.",
+     "Selama «Improved Transparency» menyala, dua hal terlihat berbeda: item Halia tidak menampilkan kilau enchantment, dan bola Judgement Cut terlihat gelap. Dengan pengaturan mati, keduanya terlihat seperti sebelumnya.",
+     "Dunia dari V1.1.0 terbuka apa adanya. Stellar Remote masih menghancurkan wilayah dunia yang sangat luas secara permanen — cadangkan duniamu sebelum menekan tombolnya."
+    ]
+   },
+   {
     "id": "halia-v1.1.0",
     "title": "Halia V1.1 — Halia Blade: katana, 90 gerakan kombo, dan pedang panggilan",
     "summary": "Halia V1.1 menambahkan Halia Blade, katana yang disandang di pinggul dan dipakai bertarung dengan pengaturan waktu: kombo di darat dan di udara, seni terisi, pedang panggilan, kunci sasaran, penjagaan, dan gerakan trik. Tersedia 8 bahan kerajinan, 6 dudukan bilah, dan 11 bilah bernama. Stellar Remote dari V1.0 tidak berubah.",

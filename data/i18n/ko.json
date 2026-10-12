@@ -764,6 +764,20 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.1.1",
+    "title": "Halia V1.1.1 — “Improved Transparency” 사용 시 충돌 수정",
+    "summary": "Halia V1.1.1은 V1.1.0의 결함 하나를 고칩니다. 비디오 설정 “Improved Transparency”를 켜면, 빛나는 Halia 아이템(예: 블레이드 재료 상자를 부수면 떨어지는 영혼 재료)이 시야에 들어오는 순간 게임이 종료되었고, 그 아이템이 남아 있는 동안 월드에 다시 들어갈 수 없었습니다. 다른 변경은 없습니다.",
+    "highlights": [
+     "수정: “Improved Transparency”가 켜져 있을 때 빛나는 Halia 아이템이 그려져도 게임이 종료되지 않습니다. 이 때문에 들어갈 수 없던 월드도 다시 열립니다.",
+     "그 밖의 내용은 V1.1.0과 같습니다. Halia Blade, 90개의 콤보 기술, 재료, 거치대, Stellar Remote는 바뀌지 않았습니다."
+    ],
+    "warnings": [
+     "필요 환경: Minecraft 26.3, Fabric Loader 0.19.5 이상, Fabric API 0.161.0+26.3 이상, Java 25. 멀티플레이에서는 서버에도 Halia를 설치해야 합니다.",
+     "“Improved Transparency”가 켜져 있는 동안 두 가지가 다르게 보입니다. Halia 아이템에 인챈트 광택이 나타나지 않고, Judgement Cut의 구체가 어둡게 보입니다. 설정을 끄면 둘 다 이전과 같습니다.",
+     "V1.1.0의 월드는 그대로 열립니다. Stellar Remote는 여전히 월드의 아주 넓은 범위를 영구적으로 파괴합니다. 버튼을 누르기 전에 월드를 백업하세요."
+    ]
+   },
+   {
     "id": "halia-v1.1.0",
     "title": "Halia V1.1 — Halia Blade: 카타나, 90개의 콤보 기술, 그리고 소환검",
     "summary": "Halia V1.1은 허리에 차고 타이밍에 맞춰 싸우는 카타나 Halia Blade를 추가합니다. 지상과 공중의 콤보, 차지 기술, 소환검, 록온, 가드, 트릭 동작이 들어 있습니다. 제작 재료 8종, 블레이드 거치대 6종, 이름이 붙은 블레이드 11자루가 함께 나옵니다. V1.0의 Stellar Remote는 그대로입니다.",

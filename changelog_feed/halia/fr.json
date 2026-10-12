@@ -8,8 +8,32 @@
  "groups": [
   {
    "label": "V1.1",
-   "summary": "Halia V1.1 — la Halia Blade : un katana, 90 enchaînements et des épées invoquées",
+   "summary": "Halia V1.1.1 — correction d'un plantage avec « Improved Transparency »",
    "releases": [
+    {
+     "version": "V1.1.1",
+     "date": "2026-10-12",
+     "type": "hotfix",
+     "title": "Halia V1.1.1 — correction d'un plantage avec « Improved Transparency »",
+     "summary": "Halia V1.1.1 corrige un défaut de V1.1.0 : avec le réglage vidéo « Improved Transparency » activé, le jeu se fermait dès qu'un objet Halia scintillant apparaissait à l'écran — par exemple les matériaux d'âme qui tombent quand on casse une caisse de matériaux de lame — et le monde ne pouvait pas être rouvert tant que ces objets y restaient. Rien d'autre n'a changé.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Corrigé : le jeu ne se ferme plus lorsqu'un objet Halia scintillant est affiché avec « Improved Transparency » activé. Les mondes restés inaccessibles à cause de ce défaut s'ouvrent à nouveau.",
+        "Le reste est comme dans V1.1.0 : la Halia Blade, ses 90 enchaînements, les matériaux, les présentoirs et la Stellar Remote ne changent pas."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Configuration requise : Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent, Java 25. En multijoueur, Halia doit aussi être installé sur le serveur.",
+        "Tant que « Improved Transparency » est activé, deux choses changent : les objets Halia n'affichent pas la brillance d'enchantement, et la sphère de Judgement Cut apparaît sombre. Réglage désactivé, les deux sont comme avant.",
+        "Les mondes de V1.1.0 s'ouvrent tels quels. La Stellar Remote détruit toujours de façon définitive de très grandes zones du monde : sauvegardez votre monde avant d'appuyer sur son bouton."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.1.0",
      "date": "2026-10-12",

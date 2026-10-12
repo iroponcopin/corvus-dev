@@ -768,6 +768,20 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.1.1",
+    "title": "Halia V1.1.1 — fix for a crash with Improved Transparency",
+    "summary": "Halia V1.1.1 fixes one fault in V1.1.0: with the video setting Improved Transparency turned on, the game closed as soon as a glinting Halia item came into view — for example the soul materials that drop when a blade material box is broken — and the world could not be entered again while those items lay there. Nothing else changed.",
+    "highlights": [
+     "Fixed: the game no longer closes when a glinting Halia item is drawn while Improved Transparency is on. Worlds that could not be entered because of this open again.",
+     "Everything else is as in V1.1.0: the Halia Blade, its 90 combo moves, the materials, the stands and the Stellar Remote are unchanged."
+    ],
+    "warnings": [
+     "Requirements: Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer, Java 25. For multiplayer, Halia must also be installed on the server.",
+     "While Improved Transparency is on, two things look different: Halia items do not show the enchantment glint, and the sphere of Judgement Cut appears dark. With the setting off, both look as before.",
+     "Worlds from V1.1.0 open as they are. The Stellar Remote still destroys very large areas of the world permanently — back up your world before pressing its button."
+    ]
+   },
+   {
     "id": "halia-v1.1.0",
     "title": "Halia V1.1 — the Halia Blade: a katana, 90 combo moves and summoned swords",
     "summary": "Halia V1.1 adds the Halia Blade, a katana worn at the hip and fought with by timing: combos on the ground and in the air, charged arts, summoned swords, a lock-on, a guard and trick moves. It comes with 8 crafting materials, 6 blade stands and 11 named blades. The Stellar Remote of V1.0 is unchanged.",

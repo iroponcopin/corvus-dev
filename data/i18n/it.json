@@ -764,6 +764,20 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.1.1",
+    "title": "Halia V1.1.1 — correzione di un crash con «Improved Transparency»",
+    "summary": "Halia V1.1.1 corregge un difetto della V1.1.0: con l'impostazione video «Improved Transparency» attiva, il gioco si chiudeva appena compariva a schermo un oggetto Halia luccicante — per esempio i materiali-anima che cadono quando si rompe una scatola di materiali per lame — e il mondo non poteva essere riaperto finché quegli oggetti restavano lì. Nient'altro è cambiato.",
+    "highlights": [
+     "Corretto: il gioco non si chiude più quando viene disegnato un oggetto Halia luccicante con «Improved Transparency» attiva. I mondi rimasti inaccessibili per questo tornano ad aprirsi.",
+     "Il resto è come nella V1.1.0: la Halia Blade, le sue 90 mosse di combo, i materiali, gli espositori e lo Stellar Remote non cambiano."
+    ],
+    "warnings": [
+     "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. In multigiocatore, Halia deve essere installato anche sul server.",
+     "Con «Improved Transparency» attiva, due cose appaiono diverse: gli oggetti Halia non mostrano il luccichio dell'incantesimo, e la sfera di Judgement Cut appare scura. Con l'impostazione disattivata, entrambe appaiono come prima.",
+     "I mondi della V1.1.0 si aprono così come sono. Lo Stellar Remote continua a distruggere in modo permanente aree molto grandi del mondo: fai un backup prima di premere il suo pulsante."
+    ]
+   },
+   {
     "id": "halia-v1.1.0",
     "title": "Halia V1.1 — la Halia Blade: una katana, 90 combo e spade evocate",
     "summary": "Halia V1.1 aggiunge la Halia Blade, una katana portata al fianco e usata con il tempismo giusto: combo a terra e in aria, arti caricate, spade evocate, aggancio del bersaglio, parata e mosse acrobatiche. Include 8 materiali di crafting, 6 supporti per lame e 11 lame con nome. Lo Stellar Remote della V1.0 resta invariato.",

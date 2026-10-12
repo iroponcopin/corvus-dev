@@ -8,8 +8,32 @@
  "groups": [
   {
    "label": "V1.1",
-   "summary": "Halia V1.1 — Halia Blade: bir katana, 90 kombo hareketi ve çağrılan kılıçlar",
+   "summary": "Halia V1.1.1 — «Improved Transparency» ile çöküş düzeltmesi",
    "releases": [
+    {
+     "version": "V1.1.1",
+     "date": "2026-10-12",
+     "type": "hotfix",
+     "title": "Halia V1.1.1 — «Improved Transparency» ile çöküş düzeltmesi",
+     "summary": "Halia V1.1.1, V1.1.0'daki tek bir hatayı düzeltir: «Improved Transparency» video ayarı açıkken, parlayan bir Halia eşyası görüş alanına girdiğinde oyun kapanıyordu — örneğin bir kılıç malzeme kutusu kırıldığında düşen ruh malzemeleri — ve bu eşyalar oradayken dünyaya yeniden girilemiyordu. Başka bir şey değişmedi.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Düzeltildi: «Improved Transparency» açıkken parlayan bir Halia eşyası çizildiğinde oyun artık kapanmıyor. Bu yüzden girilemeyen dünyalar yeniden açılıyor.",
+        "Geri kalan her şey V1.1.0'daki gibi: Halia Blade, 90 kombo hareketi, malzemeler, standlar ve Stellar Remote değişmedi."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni, Fabric API 0.161.0+26.3 veya daha yeni ve Java 25 gerekir. Çok oyunculu oyun için Halia sunucuya da kurulmalıdır.",
+        "«Improved Transparency» açıkken iki şey farklı görünür: Halia eşyaları büyü parıltısını göstermez ve Judgement Cut küresi karanlık görünür. Ayar kapalıyken ikisi de eskisi gibi görünür.",
+        "V1.1.0 dünyaları olduğu gibi açılır. Stellar Remote hâlâ dünyanın çok geniş bölümlerini kalıcı olarak yok eder; düğmesine basmadan önce dünyanı yedekle."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.1.0",
      "date": "2026-10-12",

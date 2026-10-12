@@ -764,6 +764,20 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.1.1",
+    "title": "Halia V1.1.1 —— 修复开启 “Improved Transparency” 时的崩溃",
+    "summary": "Halia V1.1.1 修复了 V1.1.0 中的一个错误：当视频设置 “Improved Transparency” 开启时，只要画面中出现会发光的 Halia 物品（例如破坏刀的材料箱时掉落的灵魂材料），游戏就会关闭；这些物品留在世界中时，也无法重新进入该世界。其他内容没有改变。",
+    "highlights": [
+     "修复：开启 “Improved Transparency” 时，绘制发光的 Halia 物品不再导致游戏关闭。因此无法进入的世界可以重新打开。",
+     "其余内容与 V1.1.0 相同：Halia Blade、90 个连击招式、材料、刀架和 Stellar Remote 均未改变。"
+    ],
+    "warnings": [
+     "需要 Minecraft 26.3、Fabric Loader 0.19.5 或更高版本、Fabric API 0.161.0+26.3 或更高版本以及 Java 25。多人游戏时，服务器上也必须安装 Halia。",
+     "开启 “Improved Transparency” 期间，外观有两处不同：Halia 物品不再显示附魔光泽；次元斩的球体显得较暗。关闭该设置后，两者都与以前相同。",
+     "V1.1.0 的世界可以原样打开。Stellar Remote 仍会永久摧毁世界中非常大的范围——按下按钮前请备份世界。"
+    ]
+   },
+   {
     "id": "halia-v1.1.0",
     "title": "Halia V1.1 —— Halia Blade：武士刀、90 种连击招式与召唤剑",
     "summary": "Halia V1.1 新增 Halia Blade：一把挂在腰间、靠出招时机来战斗的武士刀，包括地面与空中连击、蓄力技、召唤剑、锁定、格挡和特技动作。另有 8 种合成材料、6 个刀架和 11 把有名字的刀。V1.0 的 Stellar Remote 保持不变。",

@@ -764,6 +764,20 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.1.1",
+    "title": "Halia V1.1.1 — Absturz mit „Improved Transparency“ behoben",
+    "summary": "Halia V1.1.1 behebt einen Fehler aus V1.1.0: Wenn die Videoeinstellung „Improved Transparency“ aktiviert war, schloss sich das Spiel, sobald ein leuchtender Halia-Gegenstand in Sicht kam — zum Beispiel die Seelenmaterialien, die beim Zerbrechen einer Klingen-Materialkiste fallen. Solange diese Gegenstände dort lagen, ließ sich die Welt nicht erneut betreten. Sonst hat sich nichts geändert.",
+    "highlights": [
+     "Behoben: Das Spiel schließt sich nicht mehr, wenn ein leuchtender Halia-Gegenstand gezeichnet wird, während „Improved Transparency“ an ist. Welten, die deshalb nicht betreten werden konnten, öffnen sich wieder.",
+     "Alles andere ist wie in V1.1.0: die Halia Blade, ihre 90 Kombo-Züge, die Materialien, die Halter und die Stellar Remote bleiben unverändert."
+    ],
+    "warnings": [
+     "Voraussetzungen: Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer, Java 25. Für Mehrspieler muss Halia auch auf dem Server installiert sein.",
+     "Solange „Improved Transparency“ an ist, sehen zwei Dinge anders aus: Halia-Gegenstände zeigen keinen Verzauberungsglanz, und die Sphäre von Judgement Cut wirkt dunkel. Bei ausgeschalteter Einstellung sieht beides wie zuvor aus.",
+     "Welten aus V1.1.0 öffnen sich unverändert. Die Stellar Remote zerstört weiterhin sehr große Bereiche der Welt dauerhaft — sichere deine Welt, bevor du ihren Knopf drückst."
+    ]
+   },
+   {
     "id": "halia-v1.1.0",
     "title": "Halia V1.1 — die Halia Blade: ein Katana, 90 Kombo-Züge und beschworene Schwerter",
     "summary": "Halia V1.1 fügt die Halia Blade hinzu, ein Katana, das man an der Hüfte trägt und mit gutem Timing führt: Kombos am Boden und in der Luft, aufgeladene Techniken, beschworene Schwerter, Anvisieren, eine Deckung und Trickbewegungen. Dazu kommen 8 Herstellungsmaterialien, 6 Klingenhalter und 11 benannte Klingen. Die Stellar Remote aus V1.0 bleibt unverändert.",
