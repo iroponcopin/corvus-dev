@@ -636,6 +636,28 @@
     "warnings": [
      "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0 or newer, GeckoLib 5.5.6 or newer and Java 25."
     ]
+   },
+   {
+    "id": "cherry-v1.2.1",
+    "release": "V1.2.1",
+    "date": "2026-10-13",
+    "title": "Guards, robots, turrets and transit",
+    "summary": "Cherry's base-defence and transit update: villages keep guard villagers, a security terminal and robot protect your own base, an automatic turret fires whichever Cherry gun you mount in it, and a glass elevator, a heavy cargo lift and an escalator carry you, your cargo and your vehicles. The robot, the terminal, the turret and both lifts run on power: a redstone signal, or, with OUKA V1.2 or later installed, OUKA's grid.",
+    "highlights": [
+     "Guard villagers: the first time a player comes near a village that has a bell, a bed and a villager, it is given 2 guards (3 with ten or more beds, 4 with twenty or more). They carry a halberd, a crossbow and a shield, fight hostile mobs within 16 blocks, back away from creepers and shoot them from a distance, and one replacement arrives every 5 minutes while the village is below its quota.",
+     "Guards turn on a player only after that player has hurt a villager or a guard, and let go 2 minutes after the last offence. They never fight each other, villagers or golems, and they never turn on a player in Peaceful.",
+     "The Security Terminal and the Security Robot: whoever places a terminal is its administrator, and right-clicking it enrols the nearest player within 2.5 blocks. A robot linked to a terminal patrols within 12 blocks of its post and, at any unregistered player it sees within 16 blocks, sounds a siren, warns for 2 seconds and then fires its stun rifle every 1.5 seconds: 2 damage and a 3-second stun. Registered players, guards, and players in Creative or Spectator are never stunned.",
+     "The robot's stun rifle runs on a 400 kJ battery that holds 20 shots. The robot recharges within 16 blocks of its terminal while the terminal holds energy, and the terminal fills from a redstone signal beside it. An empty robot still sounds the siren and aims, but holds fire until it is charged. With OUKA V1.2 or later installed, a robot or terminal within an OUKA pylon's reach also charges from OUKA's grid.",
+     "The Automatic Turret mounts on a ceiling, a wall or a floor and turns through 360 degrees. Put one Cherry gun in it and feed it that gun's magazines (a hopper works): it then tracks hostile mobs, and angered neutral mobs, within 32 blocks or the gun's range, whichever is shorter, and fires at that gun's own rate with its own sound. It never shoots players, villagers, guards, robots, golems or pets. Only its owner and operators can open or break it, and a broken turret keeps its gun, its reserve and its aim.",
+     "Power for the turret, the glass elevator, the cargo lift, the terminal and the robot comes from a redstone signal beside the device (beside the controller, for a lift), and that is all a game without OUKA needs. With OUKA V1.2 or later installed, a device within an OUKA pylon's reach (64 blocks) otherwise draws from OUKA's grid, including its SMES batteries. A device without power says what it is waiting for.",
+     "The Aero-Glass High-Speed Elevator: a 3x3 glass cabin on a controller and a maglev rail column, in a shaft you build up to 128 blocks tall. It cruises at up to 16 blocks a second with a smooth start and stop, rings a chime on arrival and opens its doors a moment later. Pick a floor on the holographic panel in the cabin or at the call button on a landing; the doors reopen if someone stands in them, and a landing door never opens onto an empty shaft. Closed, the cabin keeps the air in on the Moon and the cold out on Mars.",
+     "The Titan-Hydraulic Heavy Cargo Lift: a square platform from 3x3 to 7x7 blocks on scissor legs over a pit you frame, rising up to 24 blocks at 2 blocks a second. Yellow-black gates close around it and an amber beacon spins while it moves. It carries you, chest minecarts and boats, and Cherry vehicles that fit on the platform, parked while it moves, and it stops and returns if something is in the way. A pedestal on the platform and a call button at each landing run it; so does redstone.",
+     "The Kinetic Modular Escalator: two landings, a truss module for each column and a control panel make a 30 degree, 45 degree or flat run of up to 32 blocks (longer ones chain through landings). You stand on the moving steps, which travel at 4 blocks a second, and a redstone signal reverses it. It needs no power. On ships and aircraft, which share the same moving-deck physics, a rider who steps or jumps off now leaves at once, and sneaking on a moving deck walks instead of freezing."
+    ],
+    "warnings": [
+     "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0 or newer, GeckoLib 5.5.6 or newer and Java 25.",
+     "The turret, the glass elevator, the cargo lift, the security terminal and the robot's rifle do nothing without power: a redstone signal beside the device or, with OUKA V1.2 or later installed, an OUKA pylon's reach. Cherry works without OUKA, and redstone remains its only source then."
+    ]
    }
   ],
   "aureum": [

@@ -1,15 +1,45 @@
 {
  "lang": "pt-br",
  "brand": "cherry",
- "updated": "2026-09-28",
+ "updated": "2026-10-13",
  "title": "Histórico de atualizações",
- "updated_label": "Atualizado em 2026-09-28",
+ "updated_label": "Atualizado em 2026-10-13",
  "note": "Os valores de dano, velocidade etc. mostrados aqui são os padrões de quando o item foi lançado. Como a administração do servidor pode ajustar a configuração, os números que você sente no jogo podem ser diferentes.",
  "groups": [
   {
    "label": "V1.2",
-   "summary": "Armas, vida na Lua, Lunaris Prime e Marte",
+   "summary": "Guardas, robôs, torres e transporte",
    "releases": [
+    {
+     "version": "V1.2.1",
+     "date": "2026-10-13",
+     "type": "release",
+     "title": "Guardas, robôs, torres e transporte",
+     "summary": "A atualização de defesa de base e transporte do Cherry: as vilas têm aldeões guardas, um terminal de segurança e um robô protegem a sua base, uma torre automática dispara a arma do Cherry que você montar nela, e um elevador de vidro, um elevador de carga pesada e uma escada rolante levam você, sua carga e seus veículos. O robô, o terminal, a torre e os dois elevadores funcionam com energia: um sinal de redstone ou, com o OUKA V1.2 ou posterior instalado, a rede do OUKA.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "Aldeões guardas: na primeira vez que um jogador se aproxima de uma vila com sino, cama e aldeão, ela recebe 2 guardas (3 com dez ou mais camas, 4 com vinte ou mais). Eles carregam alabarda, besta e escudo, combatem mobs hostis a até 16 blocos, recuam diante de creepers e atiram neles de longe, e chega um substituto a cada 5 minutos enquanto a vila estiver abaixo da cota.",
+        "Os guardas só se voltam contra um jogador que tenha ferido um aldeão ou um guarda, e desistem 2 minutos depois da última ofensa. Eles nunca lutam entre si, nem contra aldeões ou golens, e nunca se voltam contra um jogador no modo Pacífico.",
+        "O Security Terminal e o Security Robot: quem coloca um terminal é o administrador, e clicar com o botão direito nele registra o jogador mais próximo a até 2,5 blocos. Um robô ligado a um terminal patrulha a até 12 blocos do seu posto e, ao ver um jogador não registrado a menos de 16 blocos, toca uma sirene, avisa por 2 segundos e então dispara o rifle atordoante a cada 1,5 segundo: 2 de dano e 3 segundos de atordoamento. Jogadores registrados, guardas e jogadores em Criativo ou Espectador nunca são atordoados.",
+        "O rifle atordoante do robô funciona com uma bateria de 400 kJ que guarda 20 disparos. O robô recarrega a até 16 blocos do seu terminal enquanto o terminal tiver energia, e o terminal se enche com um sinal de redstone ao lado. Um robô sem bateria ainda toca a sirene e mira, mas não atira até ser recarregado. Com o OUKA V1.2 ou posterior instalado, um robô ou terminal dentro do alcance de um pilar do OUKA também recarrega pela rede do OUKA.",
+        "A Automatic Turret é montada em um teto, parede ou chão e gira 360 graus. Coloque nela uma arma do Cherry e abasteça com os carregadores dessa arma (um funil serve): ela passa a seguir mobs hostis, e neutros irritados, a até 32 blocos ou o alcance da arma, o que for menor, e atira na cadência e com o som próprios dessa arma. Nunca atira em jogadores, aldeões, guardas, robôs, golens ou pets. Só o dono e os operadores podem abri-la ou quebrá-la, e uma torre quebrada mantém sua arma, sua reserva e sua mira.",
+        "A energia da torre, do elevador de vidro, do elevador de carga, do terminal e do robô vem de um sinal de redstone ao lado do dispositivo (ao lado do controlador, no caso de um elevador), e é só isso que uma partida sem OUKA precisa. Com o OUKA V1.2 ou posterior instalado, um dispositivo dentro do alcance de um pilar do OUKA (64 blocos) recorre, na falta disso, à rede do OUKA, incluindo as baterias SMES. Um dispositivo sem energia diz o que está esperando.",
+        "O Aero-Glass High-Speed Elevator: uma cabine de vidro 3x3 sobre um controlador e uma coluna de trilhos maglev, em um poço que você constrói com até 128 blocos de altura. Ele viaja a até 16 blocos por segundo com partida e parada suaves, toca um sinal na chegada e abre as portas um instante depois. Escolha o andar no painel holográfico da cabine ou no botão de chamada do patamar; as portas reabrem se alguém estiver nelas, e uma porta de patamar nunca abre para um poço vazio. Fechada, a cabine mantém o ar dentro na Lua e o frio fora em Marte.",
+        "O Titan-Hydraulic Heavy Cargo Lift: uma plataforma quadrada de 3x3 a 7x7 blocos sobre pernas em tesoura, sobre um fosso que você emoldura, que sobe até 24 blocos a 2 blocos por segundo. Portões amarelos e pretos se fecham ao redor e um farol âmbar gira enquanto ela se move. Ela leva você, carrinhos com baú, barcos e veículos do Cherry que caibam na plataforma, imobilizados enquanto ela se move, e para e volta se algo estiver no caminho. Um pedestal na plataforma e um botão de chamada em cada patamar a operam; a redstone também.",
+        "A Kinetic Modular Escalator: dois patamares, um módulo de treliça por coluna e um painel de controle formam um trecho de 30 graus, 45 graus ou plano de até 32 blocos (os mais longos se encadeiam por patamares). Você fica de pé nos degraus em movimento, que andam a 4 blocos por segundo, e um sinal de redstone inverte o sentido. Ela não precisa de energia. Em navios e aeronaves, que compartilham a mesma física de convés móvel, quem desce ou pula do convés o deixa na hora, e agachar em um convés móvel faz andar em vez de travar."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Requer Minecraft 26.3, Fabric Loader 0.19.5 ou posterior, Fabric API 0.161.0 ou posterior, GeckoLib 5.5.6 ou posterior e Java 25.",
+        "A torre, o elevador de vidro, o elevador de carga, o terminal de segurança e o rifle do robô não fazem nada sem energia: um sinal de redstone ao lado do dispositivo ou, com o OUKA V1.2 ou posterior instalado, o alcance de um pilar do OUKA. O Cherry funciona sem o OUKA, e então a redstone é a sua única fonte."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.2.0",
      "date": "2026-09-28",

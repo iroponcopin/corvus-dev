@@ -1,15 +1,45 @@
 {
  "lang": "de",
  "brand": "cherry",
- "updated": "2026-09-28",
+ "updated": "2026-10-13",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-09-28",
+ "updated_label": "Aktualisiert am 2026-10-13",
  "note": "Die angezeigten Werte für Schaden, Geschwindigkeit usw. sind die Standardwerte zum Zeitpunkt der Einführung. Durch Config-Anpassungen auf dem Server können die tatsächlich spürbaren Werte davon abweichen.",
  "groups": [
   {
    "label": "V1.2",
-   "summary": "Waffen, Leben auf dem Mond, Lunaris Prime und der Mars",
+   "summary": "Wachen, Roboter, Geschütztürme und Transport",
    "releases": [
+    {
+     "version": "V1.2.1",
+     "date": "2026-10-13",
+     "type": "release",
+     "title": "Wachen, Roboter, Geschütztürme und Transport",
+     "summary": "Cherrys Update für Basisverteidigung und Transport: Dörfer haben Wachdorfbewohner, ein Sicherheitsterminal und ein Roboter schützen deine eigene Basis, ein automatischer Geschützturm feuert die Cherry-Waffe ab, die du in ihn einsetzt, und ein Glasaufzug, ein Schwerlastaufzug und eine Rolltreppe befördern dich, deine Fracht und deine Fahrzeuge. Roboter, Terminal, Geschützturm und beide Aufzüge laufen mit Energie: einem Redstone-Signal oder, mit installiertem OUKA V1.2 oder neuer, dem Netz von OUKA.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Wachdorfbewohner: Sobald sich ein Spieler zum ersten Mal einem Dorf mit Glocke, Bett und Dorfbewohner nähert, bekommt es 2 Wachen (3 ab zehn Betten, 4 ab zwanzig). Sie tragen Hellebarde, Armbrust und Schild, bekämpfen feindliche Mobs im Umkreis von 16 Blöcken, weichen Creepern aus und schießen aus der Distanz auf sie; solange das Dorf unter seiner Sollstärke liegt, kommt alle 5 Minuten ein Ersatz.",
+        "Wachen gehen nur auf einen Spieler los, der einen Dorfbewohner oder eine Wache verletzt hat, und lassen 2 Minuten nach dem letzten Vergehen von ihm ab. Sie kämpfen nie gegeneinander, gegen Dorfbewohner oder Golems und gehen im Modus Friedlich nie auf einen Spieler los.",
+        "Das Security Terminal und der Security Robot: Wer ein Terminal aufstellt, ist sein Administrator, und ein Rechtsklick registriert den nächsten Spieler innerhalb von 2,5 Blöcken. Ein mit einem Terminal verbundener Roboter patrouilliert im Umkreis von 12 Blöcken um seinen Posten und löst bei jedem nicht registrierten Spieler, den er innerhalb von 16 Blöcken sieht, eine Sirene aus, warnt 2 Sekunden lang und feuert dann alle 1,5 Sekunden sein Betäubungsgewehr ab: 2 Schaden und 3 Sekunden Betäubung. Registrierte Spieler, Wachen und Spieler im Kreativ- oder Zuschauermodus werden nie betäubt.",
+        "Das Betäubungsgewehr des Roboters läuft mit einem 400-kJ-Akku für 20 Schuss. Der Roboter lädt sich innerhalb von 16 Blöcken um sein Terminal auf, solange das Terminal Energie hat, und das Terminal füllt sich über ein Redstone-Signal neben ihm. Ein leerer Roboter löst trotzdem die Sirene aus und zielt, hält aber das Feuer zurück, bis er geladen ist. Mit installiertem OUKA V1.2 oder neuer lädt sich ein Roboter oder Terminal in der Reichweite eines OUKA-Pylons auch aus dem Netz von OUKA.",
+        "Der Automatic Turret wird an Decke, Wand oder Boden montiert und dreht sich um 360 Grad. Setze eine Cherry-Waffe ein und versorge ihn mit den Magazinen dieser Waffe (ein Trichter genügt): Dann verfolgt er feindliche Mobs und gereizte neutrale Mobs innerhalb von 32 Blöcken oder der Reichweite der Waffe, je nachdem, was kürzer ist, und feuert mit der Feuerrate und dem Klang dieser Waffe. Er schießt nie auf Spieler, Dorfbewohner, Wachen, Roboter, Golems oder Haustiere. Nur sein Besitzer und Operatoren können ihn öffnen oder abbauen, und ein abgebauter Turm behält Waffe, Reserve und Zielrichtung.",
+        "Energie für Geschützturm, Glasaufzug, Schwerlastaufzug, Terminal und Roboter kommt aus einem Redstone-Signal neben dem Gerät (beim Aufzug neben dem Controller), und mehr braucht ein Spiel ohne OUKA nicht. Mit installiertem OUKA V1.2 oder neuer bezieht ein Gerät in der Reichweite eines OUKA-Pylons (64 Blöcke) sonst Energie aus dem Netz von OUKA, einschließlich seiner SMES-Batterien. Ein Gerät ohne Energie zeigt an, worauf es wartet.",
+        "Der Aero-Glass High-Speed Elevator: eine 3x3 große Glaskabine auf einem Controller und einer Maglev-Schienensäule, in einem Schacht, den du bis zu 128 Blöcke hoch baust. Er fährt mit bis zu 16 Blöcken pro Sekunde, sanft anfahrend und bremsend, läutet bei der Ankunft und öffnet kurz darauf die Türen. Wähle das Stockwerk am holografischen Panel in der Kabine oder am Rufknopf auf dem Absatz; die Türen öffnen sich erneut, wenn jemand darin steht, und eine Stockwerkstür öffnet sich nie auf einen leeren Schacht. Geschlossen hält die Kabine auf dem Mond die Luft drinnen und auf dem Mars die Kälte draußen.",
+        "Der Titan-Hydraulic Heavy Cargo Lift: eine quadratische Plattform von 3x3 bis 7x7 Blöcken auf Scherenbeinen über einer Grube, die du einfasst, die bis zu 24 Blöcke mit 2 Blöcken pro Sekunde hebt. Während der Fahrt schließen sich gelb-schwarze Tore um sie, und ein Bernstein-Rundumlicht dreht sich. Sie trägt dich, Kistenloren und Boote sowie Cherry-Fahrzeuge, die auf die Plattform passen und während der Fahrt festgesetzt sind, und hält an und kehrt um, wenn etwas im Weg ist. Ein Pult auf der Plattform und ein Rufknopf an jedem Halt bedienen sie, ebenso Redstone.",
+        "Die Kinetic Modular Escalator: zwei Absätze, ein Fachwerkmodul pro Spalte und ein Bedienfeld bilden eine Strecke mit 30 Grad, 45 Grad oder eben, bis zu 32 Blöcke lang (längere werden über Absätze verkettet). Du stehst auf den fahrenden Stufen, die mit 4 Blöcken pro Sekunde laufen, und ein Redstone-Signal kehrt die Richtung um. Sie braucht keine Energie. Auf Schiffen und Luftfahrzeugen, die dieselbe Physik bewegter Decks nutzen, verlässt ein Passagier, der vom Deck tritt oder springt, es sofort, und Schleichen auf einem bewegten Deck lässt ihn gehen, statt zu erstarren."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Erfordert Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0 oder neuer, GeckoLib 5.5.6 oder neuer und Java 25.",
+        "Geschützturm, Glasaufzug, Schwerlastaufzug, Sicherheitsterminal und das Gewehr des Roboters tun ohne Energie nichts: ein Redstone-Signal neben dem Gerät oder, mit installiertem OUKA V1.2 oder neuer, die Reichweite eines OUKA-Pylons. Cherry läuft ohne OUKA, und Redstone ist dann die einzige Quelle."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.2.0",
      "date": "2026-09-28",

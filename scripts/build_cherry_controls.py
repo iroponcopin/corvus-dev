@@ -77,7 +77,9 @@ BRAND_SECTION = "cherry/"
 # 1.1.4 changed no key (only the sound managers, their tests, the version and the README; 525d6f5..1.1.4): the copy stays true
 # 1.2.0 changed no aircraft or ship key: FlightInput's one change is the rocket's launch key on the pad, which now unfolds the
 # navigation console, and this page covers aircraft and ships only (1.1.4..1.2.0 on the Cherry branch)
-CONTROLS_FOR = "1.2.0"
+# 1.2.1 changed no aircraft or ship key (AircraftInput, VesselHelmInput, VesselStationInput, VesselGunneryInput and VesselChartScreen are byte-identical
+# between the V1.2.0 final fixes 4d0b3fc and 1.2.1; its new items are not aircraft or ships): the copy stays true
+CONTROLS_FOR = "1.2.1"
 RELEASE_RE = re.compile(r"^Cherry_MODs_v(?P<ver>\d+(?:\.\d+)*)\+mc(?P<mc>\d+(?:\.\d+)*)\.zip$")
 
 # The game's own names for the keys whose names are translated (vanilla 26.3 lang files).

@@ -1,7 +1,7 @@
 {
  "sources": {
   "ouka": "1.6.0.1",
-  "cherry": "1.2.0"
+  "cherry": "1.2.1"
  },
  "stations": [
   {
@@ -120,6 +120,12 @@
    "ma534dd0782aa",
    "flat"
   ],
+  "cherry:auto_turret": [
+   "自動タレット",
+   "Automatic Turret",
+   "m8e78be87eb8a",
+   "flat"
+  ],
   "cherry:c_pistol": [
    "C-Pistol タクティカルハンドガン",
    "C-Pistol Tactical Handgun",
@@ -130,6 +136,30 @@
    "C-ピストルの弾倉",
    "C-Pistol Magazine",
    "m35247dc5a00f",
+   "flat"
+  ],
+  "cherry:cargo_landing_barrier": [
+   "カーゴリフト乗り場の安全柵",
+   "Cargo Lift Landing Gate",
+   "m0fca5fc688c1",
+   "flat"
+  ],
+  "cherry:cargo_lift_call_button": [
+   "カーゴリフト呼び出しボタン",
+   "Cargo Lift Call Button",
+   "m82a10ae958b9",
+   "flat"
+  ],
+  "cherry:cargo_lift_controller": [
+   "重工業油圧大型カーゴエレベーター制御盤",
+   "Titan-Hydraulic Heavy Cargo Lift Controller",
+   "m49424d29a8d3",
+   "flat"
+  ],
+  "cherry:cargo_lift_frame": [
+   "カーゴリフトの枠",
+   "Cargo Lift Frame",
+   "m3815c4b4b482",
    "flat"
   ],
   "cherry:cp9": [
@@ -180,6 +210,66 @@
    "m7a014ef66458",
    "flat"
   ],
+  "cherry:elevator_cabin": [
+   "超高速パノラマ・ガラスエレベーターのかご",
+   "Aero-Glass High-Speed Elevator Cabin",
+   "m2342ac0b0f2a",
+   "flat"
+  ],
+  "cherry:elevator_call_button": [
+   "エレベーター呼び出しボタン",
+   "Elevator Call Button",
+   "m139a2228ff56",
+   "flat"
+  ],
+  "cherry:elevator_controller": [
+   "エレベーター制御盤",
+   "Elevator Controller",
+   "mb3942071badf",
+   "flat"
+  ],
+  "cherry:elevator_landing_door": [
+   "エレベーター乗り場の扉",
+   "Elevator Landing Door",
+   "mea5e1f4d69dc",
+   "flat"
+  ],
+  "cherry:escalator_controller": [
+   "連動ステップ式エスカレーター操作盤",
+   "Kinetic Modular Escalator Control Panel",
+   "m047a7c5a920c",
+   "flat"
+  ],
+  "cherry:escalator_flat": [
+   "動く歩道の骨組み",
+   "Moving Walkway Truss",
+   "m7e01f06088cb",
+   "flat"
+  ],
+  "cherry:escalator_incline_30": [
+   "エスカレーターの骨組み(30 度)",
+   "Escalator Truss (30°)",
+   "m97ea72619738",
+   "flat"
+  ],
+  "cherry:escalator_incline_45": [
+   "エスカレーターの骨組み(45 度)",
+   "Escalator Truss (45°)",
+   "mb2ac30d0b6a2",
+   "flat"
+  ],
+  "cherry:escalator_landing": [
+   "エスカレーターの乗り場",
+   "Escalator Landing",
+   "me96e9427faef",
+   "flat"
+  ],
+  "cherry:maglev_rail": [
+   "磁気浮上レール",
+   "Maglev Rail",
+   "m4ec090458aa4",
+   "flat"
+  ],
   "cherry:martian_ferrite_ingot": [
    "火星赤色フェライトのインゴット",
    "Martian Ferrite Ingot",
@@ -202,6 +292,18 @@
    "火星赤色フェライトの原石",
    "Raw Martian Ferrite",
    "mbc55654f8db3",
+   "flat"
+  ],
+  "cherry:security_robot": [
+   "警備ロボット",
+   "Security Robot",
+   "m8e143940ddde",
+   "flat"
+  ],
+  "cherry:security_terminal": [
+   "セキュリティ端末",
+   "Security Terminal",
+   "mf88725388a33",
    "flat"
   ],
   "cherry:titanium_carbon_plate": [
@@ -5024,6 +5126,40 @@
    "brand": "cherry"
   },
   {
+   "id": "cherry:auto_turret",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "cherry:titanium_carbon_plate",
+     "n": 6
+    },
+    {
+     "id": "cherry:precision_barrel_component",
+     "n": 1
+    },
+    {
+     "id": "cherry:cherry_core",
+     "n": 1
+    },
+    {
+     "id": "minecraft:observer",
+     "n": 1
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:auto_turret",
+     "n": 1
+    }
+   ],
+   "time": 400,
+   "brand": "cherry"
+  },
+  {
    "id": "cherry:c_pistol",
    "station": "fabricator",
    "inputs": [
@@ -5073,6 +5209,122 @@
     }
    ],
    "time": 40,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:cargo_landing_barrier",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "cherry:martian_ferrite_ingot",
+     "n": 1
+    },
+    {
+     "id": "minecraft:iron_bars",
+     "n": 4
+    },
+    {
+     "id": "minecraft:yellow_dye",
+     "n": 1
+    },
+    {
+     "id": "minecraft:black_dye",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:cargo_landing_barrier",
+     "n": 2
+    }
+   ],
+   "time": 80,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:cargo_lift_call_button",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "minecraft:stone_button",
+     "n": 2
+    },
+    {
+     "id": "minecraft:yellow_dye",
+     "n": 1
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:cargo_lift_call_button",
+     "n": 2
+    }
+   ],
+   "time": 60,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:cargo_lift_controller",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "cherry:titanium_carbon_plate",
+     "n": 4
+    },
+    {
+     "id": "cherry:martian_ferrite_ingot",
+     "n": 4
+    },
+    {
+     "id": "minecraft:piston",
+     "n": 4
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:cargo_lift_controller",
+     "n": 1
+    }
+   ],
+   "time": 400,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:cargo_lift_frame",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "cherry:martian_ferrite_ingot",
+     "n": 2
+    },
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 4
+    },
+    {
+     "id": "minecraft:yellow_dye",
+     "n": 1
+    },
+    {
+     "id": "minecraft:black_dye",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:cargo_lift_frame",
+     "n": 4
+    }
+   ],
+   "time": 120,
    "brand": "cherry"
   },
   {
@@ -5330,6 +5582,264 @@
    "brand": "cherry"
   },
   {
+   "id": "cherry:elevator_cabin",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "minecraft:glass",
+     "n": 24
+    },
+    {
+     "id": "cherry:titanium_carbon_plate",
+     "n": 6
+    },
+    {
+     "id": "cherry:cherry_core",
+     "n": 1
+    },
+    {
+     "id": "cherry:cosmic_helium3_cell",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:elevator_cabin",
+     "n": 1
+    }
+   ],
+   "time": 800,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:elevator_call_button",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "minecraft:stone_button",
+     "n": 2
+    },
+    {
+     "id": "minecraft:glowstone_dust",
+     "n": 1
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:elevator_call_button",
+     "n": 2
+    }
+   ],
+   "time": 60,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:elevator_controller",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "cherry:titanium_carbon_plate",
+     "n": 4
+    },
+    {
+     "id": "cherry:cherry_core",
+     "n": 1
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 8
+    },
+    {
+     "id": "minecraft:comparator",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:elevator_controller",
+     "n": 1
+    }
+   ],
+   "time": 400,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:elevator_landing_door",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "cherry:titanium_carbon_plate",
+     "n": 2
+    },
+    {
+     "id": "minecraft:glass",
+     "n": 4
+    },
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:elevator_landing_door",
+     "n": 1
+    }
+   ],
+   "time": 200,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:escalator_controller",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "cherry:titanium_carbon_plate",
+     "n": 2
+    },
+    {
+     "id": "cherry:cherry_core",
+     "n": 1
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 4
+    },
+    {
+     "id": "minecraft:comparator",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:escalator_controller",
+     "n": 1
+    }
+   ],
+   "time": 300,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:escalator_flat",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "cherry:titanium_carbon_plate",
+     "n": 1
+    },
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 6
+    },
+    {
+     "id": "minecraft:black_dye",
+     "n": 1
+    },
+    {
+     "id": "minecraft:glass",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:escalator_flat",
+     "n": 4
+    }
+   ],
+   "time": 160,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:escalator_incline_30",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "cherry:titanium_carbon_plate",
+     "n": 1
+    },
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 6
+    },
+    {
+     "id": "minecraft:black_dye",
+     "n": 1
+    },
+    {
+     "id": "minecraft:glass",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:escalator_incline_30",
+     "n": 4
+    }
+   ],
+   "time": 160,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:escalator_incline_45",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "cherry:titanium_carbon_plate",
+     "n": 1
+    },
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 6
+    },
+    {
+     "id": "minecraft:black_dye",
+     "n": 1
+    },
+    {
+     "id": "minecraft:glass",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:escalator_incline_45",
+     "n": 4
+    }
+   ],
+   "time": 160,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:escalator_landing",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "cherry:titanium_carbon_plate",
+     "n": 2
+    },
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 6
+    },
+    {
+     "id": "minecraft:glass",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:escalator_landing",
+     "n": 2
+    }
+   ],
+   "time": 200,
+   "brand": "cherry"
+  },
+  {
    "id": "cherry:guided_missile",
    "station": "fabricator",
    "inputs": [
@@ -5413,6 +5923,32 @@
     }
    ],
    "time": 800,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:maglev_rail",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "cherry:titanium_carbon_plate",
+     "n": 2
+    },
+    {
+     "id": "minecraft:copper_ingot",
+     "n": 4
+    },
+    {
+     "id": "cherry:cosmic_helium3_cell",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:maglev_rail",
+     "n": 4
+    }
+   ],
+   "time": 200,
    "brand": "cherry"
   },
   {
@@ -5513,6 +6049,70 @@
    "outputs": [
     {
      "id": "cherry:railgun_barrel",
+     "n": 1
+    }
+   ],
+   "time": 200,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:security_robot",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "cherry:titanium_carbon_plate",
+     "n": 6
+    },
+    {
+     "id": "cherry:precision_barrel_component",
+     "n": 1
+    },
+    {
+     "id": "cherry:cherry_core",
+     "n": 1
+    },
+    {
+     "id": "minecraft:iron_block",
+     "n": 2
+    },
+    {
+     "id": "minecraft:redstone_block",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:security_robot",
+     "n": 1
+    }
+   ],
+   "time": 600,
+   "brand": "cherry"
+  },
+  {
+   "id": "cherry:security_terminal",
+   "station": "fabricator",
+   "inputs": [
+    {
+     "id": "cherry:titanium_carbon_plate",
+     "n": 2
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 4
+    },
+    {
+     "id": "minecraft:glass_pane",
+     "n": 2
+    },
+    {
+     "id": "cherry:void_quartz_fragment",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "cherry:security_terminal",
      "n": 1
     }
    ],
@@ -5810,8 +6410,13 @@
   "cherry:aegis_x": "cherry Cherry Aegis-X cherry aegis-x cherry:aegis_x aegis_x cherry aegis-x チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate チェリー・コア ちぇりー・こあ cherry:cherry_core cherry_core cherry core 精密銃身部品 精密銃身部品 cherry:precision_barrel_component precision_barrel_component precision barrel component 推進剤キャニスター 推進剤きゃにすたー cherry:propellant_canister propellant_canister propellant canister",
   "cherry:apex1_booster": "cherry Apex-1 の補助ブースター apex-1 の補助ぶーすたー cherry:apex1_booster apex1_booster apex-1 booster コズミック・ヘリウム3・セル こずみっく・へりうむ3・せる cherry:cosmic_helium3_cell cosmic_helium3_cell cosmic helium-3 cell ルナ・レゴリス・コア るな・れごりす・こあ cherry:lunar_regolith_core lunar_regolith_core lunar regolith core チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 推進剤キャニスター 推進剤きゃにすたー cherry:propellant_canister propellant_canister propellant canister",
   "cherry:apex1_rocket": "cherry Cherry Apex-1 cherry apex-1 cherry:apex1_rocket apex1_rocket cherry apex-1 チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate Apex-1 の補助ブースター apex-1 の補助ぶーすたー cherry:apex1_booster apex1_booster apex-1 booster コズミック・ヘリウム3・セル こずみっく・へりうむ3・せる cherry:cosmic_helium3_cell cosmic_helium3_cell cosmic helium-3 cell",
+  "cherry:auto_turret": "cherry 自動タレット 自動たれっと cherry:auto_turret auto_turret automatic turret チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 精密銃身部品 精密銃身部品 cherry:precision_barrel_component precision_barrel_component precision barrel component チェリー・コア ちぇりー・こあ cherry:cherry_core cherry_core cherry core オブザーバー おぶざーばー minecraft:observer observer observer レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
   "cherry:c_pistol": "cherry C-Pistol タクティカルハンドガン c-pistol たくてぃかるはんどがん cherry:c_pistol c_pistol c-pistol tactical handgun チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 精密銃身部品 精密銃身部品 cherry:precision_barrel_component precision_barrel_component precision barrel component チェリー・コア ちぇりー・こあ cherry:cherry_core cherry_core cherry core",
   "cherry:c_pistol_magazine": "cherry C-ピストルの弾倉 c-ぴすとるの弾倉 cherry:c_pistol_magazine c_pistol_magazine c-pistol magazine レゴリス粉末 れごりす粉末 cherry:regolith_powder regolith_powder regolith powder 火薬 火薬 minecraft:gunpowder gunpowder gunpowder 銅インゴット 銅いんごっと minecraft:copper_ingot copper_ingot copper ingot",
+  "cherry:cargo_landing_barrier": "cherry カーゴリフト乗り場の安全柵 かーごりふと乗り場の安全柵 cherry:cargo_landing_barrier cargo_landing_barrier cargo lift landing gate 火星赤色フェライトのインゴット 火星赤色ふぇらいとのいんごっと cherry:martian_ferrite_ingot martian_ferrite_ingot martian ferrite ingot 鉄格子 鉄格子 minecraft:iron_bars iron_bars iron bars 黄色の染料 黄色の染料 minecraft:yellow_dye yellow_dye yellow dye 黒色の染料 黒色の染料 minecraft:black_dye black_dye black dye",
+  "cherry:cargo_lift_call_button": "cherry カーゴリフト呼び出しボタン かーごりふと呼び出しぼたん cherry:cargo_lift_call_button cargo_lift_call_button cargo lift call button 石のボタン 石のぼたん minecraft:stone_button stone_button stone button 黄色の染料 黄色の染料 minecraft:yellow_dye yellow_dye yellow dye レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "cherry:cargo_lift_controller": "cherry 重工業油圧大型カーゴエレベーター制御盤 重工業油圧大型かーごえれべーたー制御盤 cherry:cargo_lift_controller cargo_lift_controller titan-hydraulic heavy cargo lift controller チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 火星赤色フェライトのインゴット 火星赤色ふぇらいとのいんごっと cherry:martian_ferrite_ingot martian_ferrite_ingot martian ferrite ingot ピストン ぴすとん minecraft:piston piston piston レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "cherry:cargo_lift_frame": "cherry カーゴリフトの枠 かーごりふとの枠 cherry:cargo_lift_frame cargo_lift_frame cargo lift frame 火星赤色フェライトのインゴット 火星赤色ふぇらいとのいんごっと cherry:martian_ferrite_ingot martian_ferrite_ingot martian ferrite ingot 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 黄色の染料 黄色の染料 minecraft:yellow_dye yellow_dye yellow dye 黒色の染料 黒色の染料 minecraft:black_dye black_dye black dye",
   "cherry:cp9": "cherry CP-9 短機関銃 cp-9 短機関銃 cherry:cp9 cp9 cp-9 submachine gun チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 精密銃身部品 精密銃身部品 cherry:precision_barrel_component precision_barrel_component precision barrel component チェリー・コア ちぇりー・こあ cherry:cherry_core cherry_core cherry core",
   "cherry:cp9_magazine": "cherry CP-9 の弾倉 cp-9 の弾倉 cherry:cp9_magazine cp9_magazine cp-9 magazine レゴリス粉末 れごりす粉末 cherry:regolith_powder regolith_powder regolith powder 火薬 火薬 minecraft:gunpowder gunpowder gunpowder 銅インゴット 銅いんごっと minecraft:copper_ingot copper_ingot copper ingot",
   "cherry:cr14": "cherry CR-14 ブルパップ突撃銃 cr-14 ぶるぱっぷ突撃銃 cherry:cr14 cr14 cr-14 bullpup rifle チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 精密銃身部品 精密銃身部品 cherry:precision_barrel_component precision_barrel_component precision barrel component チェリー・コア ちぇりー・こあ cherry:cherry_core cherry_core cherry core",
@@ -5821,13 +6426,25 @@
   "cherry:cx12": "cherry CX-12 マグパルス散弾銃 cx-12 まぐぱるす散弾銃 cherry:cx12 cx12 cx-12 magpulse shotgun チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 精密銃身部品 精密銃身部品 cherry:precision_barrel_component precision_barrel_component precision barrel component チェリー・コア ちぇりー・こあ cherry:cherry_core cherry_core cherry core 銅ブロック 銅ぶろっく minecraft:copper_block copper_block block of copper",
   "cherry:cx12_magazine": "cherry CX-12 のイオン散弾 cx-12 のいおん散弾 cherry:cx12_magazine cx12_magazine cx-12 ion shells レゴリス粉末 れごりす粉末 cherry:regolith_powder regolith_powder regolith powder 火薬 火薬 minecraft:gunpowder gunpowder gunpowder 銅インゴット 銅いんごっと minecraft:copper_ingot copper_ingot copper ingot 紙 紙 minecraft:paper paper paper",
   "cherry:dreadnought": "cherry Cherry Dreadnought級 cherry dreadnought級 cherry:dreadnought dreadnought cherry dreadnought-class チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 鉄ブロック 鉄ぶろっく minecraft:iron_block iron_block block of iron レールガン砲身 れーるがん砲身 cherry:railgun_barrel railgun_barrel railgun barrel チェリー・コア ちぇりー・こあ cherry:cherry_core cherry_core cherry core",
+  "cherry:elevator_cabin": "cherry 超高速パノラマ・ガラスエレベーターのかご 超高速ぱのらま・がらすえれべーたーのかご cherry:elevator_cabin elevator_cabin aero-glass high-speed elevator cabin ガラス がらす minecraft:glass glass glass チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate チェリー・コア ちぇりー・こあ cherry:cherry_core cherry_core cherry core コズミック・ヘリウム3・セル こずみっく・へりうむ3・せる cherry:cosmic_helium3_cell cosmic_helium3_cell cosmic helium-3 cell",
+  "cherry:elevator_call_button": "cherry エレベーター呼び出しボタン えれべーたー呼び出しぼたん cherry:elevator_call_button elevator_call_button elevator call button 石のボタン 石のぼたん minecraft:stone_button stone_button stone button グロウストーンダスト ぐろうすとーんだすと minecraft:glowstone_dust glowstone_dust glowstone dust レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "cherry:elevator_controller": "cherry エレベーター制御盤 えれべーたー制御盤 cherry:elevator_controller elevator_controller elevator controller チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate チェリー・コア ちぇりー・こあ cherry:cherry_core cherry_core cherry core レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust レッドストーンコンパレーター れっどすとーんこんぱれーたー minecraft:comparator comparator redstone comparator",
+  "cherry:elevator_landing_door": "cherry エレベーター乗り場の扉 えれべーたー乗り場の扉 cherry:elevator_landing_door elevator_landing_door elevator landing door チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate ガラス がらす minecraft:glass glass glass 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot",
+  "cherry:escalator_controller": "cherry 連動ステップ式エスカレーター操作盤 連動すてっぷ式えすかれーたー操作盤 cherry:escalator_controller escalator_controller kinetic modular escalator control panel チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate チェリー・コア ちぇりー・こあ cherry:cherry_core cherry_core cherry core レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust レッドストーンコンパレーター れっどすとーんこんぱれーたー minecraft:comparator comparator redstone comparator",
+  "cherry:escalator_flat": "cherry 動く歩道の骨組み 動く歩道の骨組み cherry:escalator_flat escalator_flat moving walkway truss チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 黒色の染料 黒色の染料 minecraft:black_dye black_dye black dye ガラス がらす minecraft:glass glass glass",
+  "cherry:escalator_incline_30": "cherry エスカレーターの骨組み(30 度) えすかれーたーの骨組み(30 度) cherry:escalator_incline_30 escalator_incline_30 escalator truss (30°) チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 黒色の染料 黒色の染料 minecraft:black_dye black_dye black dye ガラス がらす minecraft:glass glass glass",
+  "cherry:escalator_incline_45": "cherry エスカレーターの骨組み(45 度) えすかれーたーの骨組み(45 度) cherry:escalator_incline_45 escalator_incline_45 escalator truss (45°) チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 黒色の染料 黒色の染料 minecraft:black_dye black_dye black dye ガラス がらす minecraft:glass glass glass",
+  "cherry:escalator_landing": "cherry エスカレーターの乗り場 えすかれーたーの乗り場 cherry:escalator_landing escalator_landing escalator landing チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot ガラス がらす minecraft:glass glass glass",
   "cherry:guided_missile": "cherry Cherry 誘導ミサイル cherry 誘導みさいる cherry:guided_missile guided_missile cherry guided missile チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 火薬 火薬 minecraft:gunpowder gunpowder gunpowder 推進剤キャニスター 推進剤きゃにすたー cherry:propellant_canister propellant_canister propellant canister レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
   "cherry:launch_pad": "cherry 発射台コンプレックス 発射台こんぷれっくす cherry:launch_pad launch_pad launch pad complex チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 鉄ブロック 鉄ぶろっく minecraft:iron_block iron_block block of iron レッドストーンブロック れっどすとーんぶろっく minecraft:redstone_block redstone_block block of redstone",
   "cherry:leviathan": "cherry Cherry Leviathan級 cherry leviathan級 cherry:leviathan leviathan cherry leviathan-class チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 鉄ブロック 鉄ぶろっく minecraft:iron_block iron_block block of iron 精密銃身部品 精密銃身部品 cherry:precision_barrel_component precision_barrel_component precision barrel component コズミック・ヘリウム3・セル こずみっく・へりうむ3・せる cherry:cosmic_helium3_cell cosmic_helium3_cell cosmic helium-3 cell",
+  "cherry:maglev_rail": "cherry 磁気浮上レール 磁気浮上れーる cherry:maglev_rail maglev_rail maglev rail チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 銅インゴット 銅いんごっと minecraft:copper_ingot copper_ingot copper ingot コズミック・ヘリウム3・セル こずみっく・へりうむ3・せる cherry:cosmic_helium3_cell cosmic_helium3_cell cosmic helium-3 cell",
   "cherry:perchlorate_propellant": "cherry 過塩素酸推進剤 過塩素酸推進剤 cherry:perchlorate_propellant perchlorate_propellant perchlorate propellant 過塩素酸エナジーソルト 過塩素酸えなじーそると cherry:perchlorate_salt perchlorate_salt perchlorate energy salt 推進剤キャニスター 推進剤きゃにすたー cherry:propellant_canister propellant_canister propellant canister",
   "cherry:precision_barrel_component": "cherry 精密銃身部品 精密銃身部品 cherry:precision_barrel_component precision_barrel_component precision barrel component 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot ヴォイド・クォーツ・フラグメント ゔぉいど・くぉーつ・ふらぐめんと cherry:void_quartz_fragment void_quartz_fragment void quartz fragment レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
   "cherry:propellant_canister": "cherry 推進剤キャニスター 推進剤きゃにすたー cherry:propellant_canister propellant_canister propellant canister 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 火薬 火薬 minecraft:gunpowder gunpowder gunpowder ブレイズパウダー ぶれいずぱうだー minecraft:blaze_powder blaze_powder blaze powder",
   "cherry:railgun_barrel": "cherry レールガン砲身 れーるがん砲身 cherry:railgun_barrel railgun_barrel railgun barrel ルナ・レゴリス・コア るな・れごりす・こあ cherry:lunar_regolith_core lunar_regolith_core lunar regolith core コズミック・ヘリウム3・セル こずみっく・へりうむ3・せる cherry:cosmic_helium3_cell cosmic_helium3_cell cosmic helium-3 cell 精密銃身部品 精密銃身部品 cherry:precision_barrel_component precision_barrel_component precision barrel component チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate",
+  "cherry:security_robot": "cherry 警備ロボット 警備ろぼっと cherry:security_robot security_robot security robot チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 精密銃身部品 精密銃身部品 cherry:precision_barrel_component precision_barrel_component precision barrel component チェリー・コア ちぇりー・こあ cherry:cherry_core cherry_core cherry core 鉄ブロック 鉄ぶろっく minecraft:iron_block iron_block block of iron レッドストーンブロック れっどすとーんぶろっく minecraft:redstone_block redstone_block block of redstone",
+  "cherry:security_terminal": "cherry セキュリティ端末 せきゅりてぃ端末 cherry:security_terminal security_terminal security terminal チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust ガラス板 がらす板 minecraft:glass_pane glass_pane glass pane ヴォイド・クォーツ・フラグメント ゔぉいど・くぉーつ・ふらぐめんと cherry:void_quartz_fragment void_quartz_fragment void quartz fragment",
   "cherry:stratos_900": "cherry Cherry Stratos-900 cherry stratos-900 cherry:stratos_900 stratos_900 cherry stratos-900 チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 鉄ブロック 鉄ぶろっく minecraft:iron_block iron_block block of iron ガラス板 がらす板 minecraft:glass_pane glass_pane glass pane 推進剤キャニスター 推進剤きゃにすたー cherry:propellant_canister propellant_canister propellant canister",
   "cherry:thermal_lining": "cherry 耐寒の内張り 耐寒の内張り cherry:thermal_lining thermal_lining thermal lining 白色の羊毛 白色の羊毛 minecraft:white_wool white_wool white wool ブレイズパウダー ぶれいずぱうだー minecraft:blaze_powder blaze_powder blaze powder 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot",
   "cherry:titanium_carbon_plate": "cherry チタン・カーボン板 ちたん・かーぼん板 cherry:titanium_carbon_plate titanium_carbon_plate titanium-carbon plate 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 石炭 石炭 minecraft:coal coal coal 火星赤色フェライトのインゴット 火星赤色ふぇらいとのいんごっと cherry:martian_ferrite_ingot martian_ferrite_ingot martian ferrite ingot",

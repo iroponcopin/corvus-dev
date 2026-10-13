@@ -632,6 +632,28 @@
     "warnings": [
      "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0 o successivo, GeckoLib 5.5.6 o successivo e Java 25."
     ]
+   },
+   {
+    "id": "cherry-v1.2.1",
+    "release": "V1.2.1",
+    "date": "2026-10-13",
+    "title": "Guardie, robot, torrette e trasporti",
+    "summary": "L'aggiornamento di Cherry per la difesa della base e i trasporti: i villaggi hanno abitanti guardia, un terminale di sicurezza e un robot proteggono la tua base, una torretta automatica spara con l'arma Cherry che vi monti, e un ascensore di vetro, un montacarichi pesante e una scala mobile trasportano te, il tuo carico e i tuoi veicoli. Il robot, il terminale, la torretta e i due elevatori funzionano a energia: un segnale redstone o, con OUKA V1.2 o successivo installato, la rete di OUKA.",
+    "highlights": [
+     "Abitanti guardia: la prima volta che un giocatore si avvicina a un villaggio con una campana, un letto e un abitante, il villaggio riceve 2 guardie (3 con dieci o più letti, 4 con venti o più). Portano alabarda, balestra e scudo, combattono i mob ostili entro 16 blocchi, arretrano davanti ai creeper e sparano loro da lontano, e arriva un sostituto ogni 5 minuti finché il villaggio è sotto il suo organico.",
+     "Le guardie si rivoltano contro un giocatore solo dopo che ha ferito un abitante o una guardia, e smettono 2 minuti dopo l'ultima offesa. Non combattono mai tra loro, né contro abitanti o golem, e non si rivoltano mai contro un giocatore in Pacifica.",
+     "Il Security Terminal e il Security Robot: chi posiziona un terminale ne è l'amministratore, e un clic destro registra il giocatore più vicino entro 2,5 blocchi. Un robot collegato a un terminale pattuglia entro 12 blocchi dal suo posto e, davanti a ogni giocatore non registrato che vede entro 16 blocchi, fa suonare una sirena, avvisa per 2 secondi e poi spara col fucile stordente ogni 1,5 secondi: 2 di danno e 3 secondi di stordimento. I giocatori registrati, le guardie e i giocatori in Creativa o Spettatore non vengono mai storditi.",
+     "Il fucile stordente del robot funziona con una batteria da 400 kJ che contiene 20 colpi. Il robot si ricarica entro 16 blocchi dal suo terminale finché il terminale ha energia, e il terminale si riempie con un segnale redstone accanto a sé. Un robot scarico fa comunque suonare la sirena e mira, ma non spara finché non è ricaricato. Con OUKA V1.2 o successivo installato, un robot o un terminale nel raggio di un pilone OUKA si ricarica anche dalla rete di OUKA.",
+     "L'Automatic Turret si monta su soffitto, parete o pavimento e ruota di 360 gradi. Mettici dentro un'arma Cherry e alimentala con i caricatori di quell'arma (va bene una tramoggia): segue i mob ostili, e i neutrali infuriati, entro 32 blocchi o la gittata dell'arma, il minore dei due, e spara con la cadenza e il suono propri di quell'arma. Non spara mai a giocatori, abitanti, guardie, robot, golem o animali domestici. Solo il proprietario e gli operatori possono aprirla o romperla, e una torretta rotta conserva arma, riserva e puntamento.",
+     "L'energia di torretta, ascensore di vetro, montacarichi, terminale e robot viene da un segnale redstone accanto al dispositivo (accanto al controller, per un elevatore), ed è tutto ciò che serve a una partita senza OUKA. Con OUKA V1.2 o successivo installato, un dispositivo nel raggio di un pilone OUKA (64 blocchi) altrimenti attinge alla rete di OUKA, batterie SMES comprese. Un dispositivo senza energia dice cosa sta aspettando.",
+     "L'Aero-Glass High-Speed Elevator: una cabina di vetro 3x3 su un controller e una colonna di binari maglev, in un vano che costruisci fino a 128 blocchi di altezza. Viaggia fino a 16 blocchi al secondo con partenza e arresto morbidi, suona un avviso all'arrivo e apre le porte poco dopo. Scegli il piano sul pannello olografico della cabina o col pulsante di chiamata del pianerottolo; le porte si riaprono se qualcuno è sulla soglia, e una porta di piano non si apre mai su un vano vuoto. Chiusa, la cabina trattiene l'aria sulla Luna e tiene fuori il freddo su Marte.",
+     "Il Titan-Hydraulic Heavy Cargo Lift: una piattaforma quadrata da 3x3 a 7x7 blocchi su gambe a forbice, sopra una fossa che incornici, che sale fino a 24 blocchi a 2 blocchi al secondo. Mentre si muove si chiudono cancelli giallo-neri e gira un faro ambra. Trasporta te, carrelli con baule, barche e veicoli Cherry che stanno sulla piattaforma, bloccati mentre si muove, e si ferma e torna indietro se qualcosa è d'intralcio. Si comanda con un piedistallo sulla piattaforma e un pulsante di chiamata a ogni pianerottolo; anche la redstone.",
+     "La Kinetic Modular Escalator: due pianerottoli, un modulo di traliccio per colonna e un pannello di controllo formano un tratto a 30 gradi, 45 gradi o piano fino a 32 blocchi (quelli più lunghi si concatenano tramite pianerottoli). Stai in piedi sui gradini in movimento, che avanzano a 4 blocchi al secondo, e un segnale redstone inverte il senso. Non richiede energia. Su navi e velivoli, che condividono la stessa fisica del ponte mobile, chi scende o salta dal ponte lo lascia subito, e accovacciarsi su un ponte mobile fa camminare invece di bloccarsi."
+    ],
+    "warnings": [
+     "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0 o successivo, GeckoLib 5.5.6 o successivo e Java 25.",
+     "La torretta, l'ascensore di vetro, il montacarichi, il terminale di sicurezza e il fucile del robot non fanno nulla senza energia: un segnale redstone accanto al dispositivo o, con OUKA V1.2 o successivo installato, il raggio di un pilone OUKA. Cherry funziona senza OUKA, e allora la redstone è la sua unica fonte."
+    ]
    }
   ],
   "aureum": [

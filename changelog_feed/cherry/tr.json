@@ -1,15 +1,45 @@
 {
  "lang": "tr",
  "brand": "cherry",
- "updated": "2026-09-28",
+ "updated": "2026-10-13",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-09-28 tarihinde güncellendi",
+ "updated_label": "2026-10-13 tarihinde güncellendi",
  "note": "Gösterilen hasar, hız gibi değerler MOD'un o an kurulan sürümündeki varsayılan değerlerdir. Sunucu tarafında yapılan config ayarlarına göre, oyun içinde hissettiğiniz gerçek değerler farklı olabilir.",
  "groups": [
   {
    "label": "V1.2",
-   "summary": "Silahlar, Ay'da yaşam, Lunaris Prime ve Mars",
+   "summary": "Muhafızlar, robotlar, taretler ve ulaşım",
    "releases": [
+    {
+     "version": "V1.2.1",
+     "date": "2026-10-13",
+     "type": "release",
+     "title": "Muhafızlar, robotlar, taretler ve ulaşım",
+     "summary": "Cherry'nin üs savunması ve ulaşım güncellemesi: köylerde muhafız köylüler bulunur, güvenlik terminali ve robotu kendi üssünü korur, otomatik tarete monte ettiğin Cherry silahı ateş eder, cam asansör, ağır yük asansörü ve yürüyen merdiven seni, yükünü ve araçlarını taşır. Robot, terminal, taret ve iki asansör enerjiyle çalışır: bir kızıltaş sinyali ya da OUKA V1.2 veya üzeri kuruluysa OUKA'nın şebekesi.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Muhafız köylüler: bir oyuncu çan, yatak ve köylüsü olan bir köye ilk kez yaklaştığında köye 2 muhafız verilir (on veya daha fazla yatakla 3, yirmi veya daha fazlasıyla 4). Teber, tatar yayı ve kalkan taşırlar, 16 blok içindeki düşman yaratıklarla savaşırlar, creeper'lardan geri çekilip uzaktan vururlar ve köy kotasının altında kaldığı sürece her 5 dakikada bir yedek gelir.",
+        "Muhafızlar yalnızca bir köylüye ya da muhafıza zarar vermiş oyuncuya saldırır ve son saldırıdan 2 dakika sonra vazgeçer. Birbirleriyle, köylülerle ya da golemlerle asla savaşmazlar ve Barışçıl modda bir oyuncuya asla saldırmazlar.",
+        "Security Terminal ve Security Robot: bir terminali yerleştiren kişi yöneticisi olur ve sağ tık 2,5 blok içindeki en yakın oyuncuyu kaydeder. Bir terminale bağlı robot, görev yerinin 12 blok çevresinde devriye gezer ve 16 blok içinde gördüğü kayıtsız bir oyuncuya siren çalar, 2 saniye uyarır, sonra her 1,5 saniyede bir sersemletici tüfeğini ateşler: 2 hasar ve 3 saniye sersemletme. Kayıtlı oyuncular, muhafızlar ve Yaratıcı ya da İzleyici moddaki oyuncular asla sersemletilmez.",
+        "Robotun sersemletici tüfeği, 20 atış tutan 400 kJ'lik bir pille çalışır. Robot, terminalinde enerji olduğu sürece terminalinin 16 blok içinde şarj olur; terminal de yanındaki bir kızıltaş sinyaliyle dolar. Boş bir robot yine siren çalar ve nişan alır, ama şarj olana kadar ateş etmez. OUKA V1.2 veya üzeri kuruluysa, bir OUKA direğinin menzilindeki robot ya da terminal OUKA'nın şebekesinden de şarj olur.",
+        "Automatic Turret tavana, duvara veya zemine kurulur ve 360 derece döner. İçine bir Cherry silahı koy ve o silahın şarjörlerini ver (huni de olur): 32 blok içindeki ya da silahın menzilindeki, hangisi kısaysa, düşman yaratıkları ve öfkeli tarafsız yaratıkları izler ve o silahın kendi atış hızı ve sesiyle ateş eder. Oyunculara, köylülere, muhafızlara, robotlara, golemlere ve evcil hayvanlara asla ateş etmez. Onu yalnızca sahibi ve operatörler açabilir ya da kırabilir; kırılan taret silahını, yedeğini ve nişan yönünü korur.",
+        "Taret, cam asansör, yük asansörü, terminal ve robotun enerjisi cihazın yanındaki (asansörde kontrolcünün yanındaki) bir kızıltaş sinyalinden gelir ve OUKA'sız bir oyunun ihtiyacı yalnızca budur. OUKA V1.2 veya üzeri kuruluysa, bir OUKA direğinin menzilindeki (64 blok) cihaz, aksi halde SMES pilleri dahil OUKA'nın şebekesinden enerji çeker. Enerjisiz cihaz neyi beklediğini söyler.",
+        "Aero-Glass High-Speed Elevator: bir kontrolcü ve maglev ray sütunu üzerinde 3x3 bir cam kabin; kendin kurduğun 128 bloğa kadar yükseklikte bir kuyuda çalışır. Saniyede 16 bloğa kadar, yumuşak kalkış ve duruşla gider, vardığında zil çalar ve bir an sonra kapılarını açar. Kabin içindeki holografik panelden ya da sahanlıktaki çağrı düğmesinden seç; birisi kapıdaysa kapılar yeniden açılır ve bir kat kapısı asla boş bir kuyuya açılmaz. Kapalıyken kabin Ay'da havayı içeride, Mars'ta soğuğu dışarıda tutar.",
+        "Titan-Hydraulic Heavy Cargo Lift: çerçevelediğin bir çukurun üzerinde makas ayaklı, 3x3'ten 7x7 bloğa kadar kare bir platform; saniyede 2 blok hızla 24 bloğa kadar yükselir. Hareket ederken etrafında sarı-siyah kapılar kapanır ve kehribar renkli bir fener döner. Seni, sandıklı vagonları, tekneleri ve platforma sığan Cherry araçlarını taşır; araçlar hareket ederken sabitlenir; yoluna bir şey çıkarsa durur ve geri döner. Platformdaki bir kürsü ve her sahanlıktaki bir çağrı düğmesiyle kullanılır; kızıltaşla da çalışır.",
+        "Kinetic Modular Escalator: iki sahanlık, her sütun için bir kafes modülü ve bir kontrol paneli 30 derece, 45 derece ya da düz, 32 bloğa kadar bir hat oluşturur (daha uzunları sahanlıklarla birbirine eklenir). Saniyede 4 blok hızla giden hareketli basamakların üzerinde durursun ve bir kızıltaş sinyali yönünü tersine çevirir. Enerji gerektirmez. Aynı hareketli güverte fiziğini kullanan gemilerde ve hava araçlarında güverteden inen ya da atlayan biri güverteyi hemen terk eder ve hareketli güvertede eğilmek donmak yerine yürümeyi sağlar."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya üzeri, Fabric API 0.161.0 veya üzeri, GeckoLib 5.5.6 veya üzeri ve Java 25 gerektirir.",
+        "Taret, cam asansör, yük asansörü, güvenlik terminali ve robotun tüfeği enerjisiz çalışmaz: cihazın yanında bir kızıltaş sinyali ya da OUKA V1.2 veya üzeri kuruluysa bir OUKA direğinin menzili gerekir. Cherry OUKA'sız da çalışır ve o zaman tek kaynağı kızıltaştır."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.2.0",
      "date": "2026-09-28",

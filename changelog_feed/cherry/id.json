@@ -1,15 +1,45 @@
 {
  "lang": "id",
  "brand": "cherry",
- "updated": "2026-09-28",
+ "updated": "2026-10-13",
  "title": "Riwayat Pembaruan",
- "updated_label": "Diperbarui 2026-09-28",
+ "updated_label": "Diperbarui 2026-10-13",
  "note": "Angka seperti damage dan kecepatan yang ditampilkan adalah nilai bawaan (default) saat dipasang. Angka yang benar-benar terasa saat bermain bisa berbeda karena penyesuaian config di sisi server.",
  "groups": [
   {
    "label": "V1.2",
-   "summary": "Senjata, kehidupan di Bulan, Lunaris Prime, dan Mars",
+   "summary": "Penjaga, robot, turret, dan transportasi",
    "releases": [
+    {
+     "version": "V1.2.1",
+     "date": "2026-10-13",
+     "type": "release",
+     "title": "Penjaga, robot, turret, dan transportasi",
+     "summary": "Pembaruan pertahanan pangkalan dan transportasi Cherry: desa kini punya penduduk penjaga, terminal keamanan dan robot menjaga pangkalanmu, turret otomatis menembakkan senjata Cherry yang kamu pasang di dalamnya, dan lift kaca, lift kargo berat, serta eskalator membawa kamu, muatanmu, dan kendaraanmu. Robot, terminal, turret, dan kedua lift berjalan dengan daya: sinyal redstone atau, dengan OUKA V1.2 atau yang lebih baru terpasang, jaringan listrik OUKA.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Penduduk penjaga: saat pemain pertama kali mendekati desa yang punya lonceng, tempat tidur, dan penduduk, desa itu diberi 2 penjaga (3 dengan sepuluh tempat tidur atau lebih, 4 dengan dua puluh atau lebih). Mereka membawa halberd, panah silang, dan perisai, melawan mob musuh dalam 16 blok, mundur dari creeper lalu menembaknya dari jauh, dan satu pengganti datang tiap 5 menit selama desa masih di bawah kuotanya.",
+        "Penjaga hanya menyerang pemain yang telah melukai penduduk atau penjaga, dan berhenti 2 menit setelah pelanggaran terakhir. Mereka tidak pernah saling bertarung, melawan penduduk, atau melawan golem, dan tidak pernah menyerang pemain di mode Damai.",
+        "Security Terminal dan Security Robot: siapa pun yang memasang terminal menjadi administratornya, dan klik kanan padanya mendaftarkan pemain terdekat dalam 2,5 blok. Robot yang terhubung ke terminal berpatroli dalam 12 blok dari posnya dan, pada pemain tak terdaftar yang terlihat dalam 16 blok, membunyikan sirene, memperingatkan selama 2 detik, lalu menembakkan senapan setrumnya tiap 1,5 detik: 2 kerusakan dan setrum 3 detik. Pemain terdaftar, penjaga, dan pemain di mode Kreatif atau Penonton tidak pernah disetrum.",
+        "Senapan setrum robot berjalan dengan baterai 400 kJ yang cukup untuk 20 tembakan. Robot mengisi daya dalam 16 blok dari terminalnya selama terminal menyimpan energi, dan terminal terisi dari sinyal redstone di sampingnya. Robot yang kosong tetap membunyikan sirene dan membidik, tetapi menahan tembakan sampai terisi. Dengan OUKA V1.2 atau yang lebih baru terpasang, robot atau terminal dalam jangkauan pilon OUKA juga mengisi daya dari jaringan listrik OUKA.",
+        "Automatic Turret dipasang di langit-langit, dinding, atau lantai dan berputar 360 derajat. Masukkan satu senjata Cherry dan isi dengan magasin senjata itu (hopper juga bisa): turret lalu membidik mob musuh, dan mob netral yang marah, dalam 32 blok atau jangkauan senjata, mana yang lebih pendek, dan menembak dengan kecepatan tembak dan suara senjata itu sendiri. Turret tidak pernah menembak pemain, penduduk, penjaga, robot, golem, atau hewan peliharaan. Hanya pemiliknya dan operator yang bisa membuka atau menghancurkannya, dan turret yang hancur tetap menyimpan senjata, cadangan, dan arah bidiknya.",
+        "Daya untuk turret, lift kaca, lift kargo, terminal, dan robot datang dari sinyal redstone di samping perangkat (di samping kontroler, untuk lift), dan itu satu-satunya yang dibutuhkan permainan tanpa OUKA. Dengan OUKA V1.2 atau yang lebih baru terpasang, perangkat dalam jangkauan pilon OUKA (64 blok) selain itu mengambil daya dari jaringan listrik OUKA, termasuk baterai SMES-nya. Perangkat tanpa daya menyebutkan apa yang ditunggunya.",
+        "Aero-Glass High-Speed Elevator: kabin kaca 3x3 di atas kontroler dan kolom rel maglev, dalam poros yang kamu bangun setinggi hingga 128 blok. Lift melaju hingga 16 blok per detik dengan start dan berhenti yang halus, membunyikan bel saat tiba, dan membuka pintu sesaat kemudian. Pilih lantai di panel holografik dalam kabin atau tombol panggil di lantai; pintu terbuka lagi jika ada yang berdiri di sana, dan pintu lantai tidak pernah terbuka ke poros kosong. Saat tertutup, kabin menahan udara di Bulan dan menahan dingin di Mars.",
+        "Titan-Hydraulic Heavy Cargo Lift: platform persegi 3x3 hingga 7x7 blok di atas kaki gunting, di atas lubang yang kamu bingkai, naik hingga 24 blok dengan 2 blok per detik. Gerbang kuning-hitam menutup di sekelilingnya dan suar kuning ambar berputar saat bergerak. Ia membawa kamu, minecart peti, perahu, dan kendaraan Cherry yang muat di platform, yang ditahan selama bergerak, dan berhenti lalu kembali jika ada yang menghalangi. Podium di platform dan tombol panggil di tiap lantai mengoperasikannya; redstone juga bisa.",
+        "Kinetic Modular Escalator: dua pendaratan, satu modul rangka untuk tiap kolom, dan panel kontrol membentuk lintasan 30 derajat, 45 derajat, atau datar hingga 32 blok (yang lebih panjang disambung lewat pendaratan). Kamu berdiri di anak tangga yang bergerak dengan kecepatan 4 blok per detik, dan sinyal redstone membalik arahnya. Ia tidak butuh daya. Di kapal dan pesawat, yang memakai fisika dek bergerak yang sama, penumpang yang turun atau melompat dari dek langsung meninggalkannya, dan berjongkok di dek bergerak membuat berjalan, bukan membeku."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0 atau lebih baru, GeckoLib 5.5.6 atau lebih baru, dan Java 25.",
+        "Turret, lift kaca, lift kargo, terminal keamanan, dan senapan robot tidak berfungsi tanpa daya: sinyal redstone di samping perangkat atau, dengan OUKA V1.2 atau yang lebih baru terpasang, jangkauan pilon OUKA. Cherry berjalan tanpa OUKA, dan redstone lalu menjadi satu-satunya sumbernya."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.2.0",
      "date": "2026-09-28",
