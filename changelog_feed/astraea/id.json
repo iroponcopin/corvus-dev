@@ -1,15 +1,41 @@
 {
  "lang": "id",
  "brand": "astraea",
- "updated": "2026-10-11",
+ "updated": "2026-10-13",
  "title": "Riwayat Pembaruan",
- "updated_label": "Diperbarui 2026-10-11",
+ "updated_label": "Diperbarui 2026-10-13",
  "note": "",
  "groups": [
   {
    "label": "V1.5",
-   "summary": "The 49 Sovereign Implementations",
+   "summary": "Heavy Industry",
    "releases": [
+    {
+     "version": "V1.5.2",
+     "date": "2026-10-13",
+     "type": "release",
+     "title": "Heavy Industry",
+     "summary": "Mesin industri dibangun ulang sebesar pabrik sungguhan: tungku busur setinggi enam blok, kolom distilasi dua belas blok, menara dua puluh blok, semuanya di jaringan OUKA. Setiap item kini menjelaskan cara pakainya, dan Corvus Book Pro menjadi perangkat yang diletakkan. Mulai versi ini, OUKA 1.4.0 atau yang lebih baru wajib dipasang.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Sepuluh pabrik, ditempatkan utuh: Refinery Smelter 5×5×6, Still 3×3×12, Crystalliser 5×5×5, Purifier 5×4×4, Synthesizer 5×5×5, Heavy Mill 7×7×6, Dynamo 7×3×4, Transformer 4×3×5, High-Voltage Pylon 5×5×20 dan Fission Core 9×9×10. Menggunakan item di tanah kosong membuat pabrik naik menghadap Anda; menggunakan bagian mana pun akan membukanya, dan merusak bagian mana pun mengembalikannya sebagai satu item.",
+        "Pabrik-pabrik itu bergerak: tungku menurunkan elektrodanya, mengangkat atapnya, memiringkan dan menuangkan; kaca intip kolom menyala seiring mendidihnya cairan; drum penggiling berputar; roda gila dynamo melambat saat api padam; inti yang bekerja bersinar biru dan pitanya memijar saat terlalu panas. Pabrik yang bekerja menerangi tanah di sekitarnya.",
+        "Batch lebih besar dengan biaya sama: delapan debu atau empat bijih mentah masuk ke jalur pemurnian dan keluar sebagai dua puluh ingot; Synthesizer membuat empat sekaligus; Heavy Mill mengubah empat bijih menjadi dua belas debu OUKA. Daya dan air tiap item tidak berubah. Hopper atau pipa yang menempel pada bagian mana pun dari pabrik pemrosesan akan memasukkan bahan dan mengambil produknya.",
+        "Tahan Shift di atas item mana pun: setiap dari 284 item dan blok ASTRAEA kini menjelaskan apa itu, cara pakainya, dan apa yang dibutuhkannya.",
+        "Corvus Book Pro: letakkan di meja atau lantai dan gunakan di sana untuk membuka CorvusOS. Ia terbuka untuk pemiliknya dan pemain yang dipercayainya, menyimpan tautan dan dayanya, serta mengisi daya dari jaringan OUKA di tempat ia berada."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Memerlukan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, Java 25, dan – baru di versi ini – OUKA 1.4.0 atau lebih baru. Mesin yang berdiri di dunia V1.5.0 tetap sebagai blok tunggal dan tidak berfungsi: hancurkan lalu letakkan kembali. Heavy Mill tidak lagi dibangun sebagai kubus; selubung dan rotornya adalah bahan pembuatannya. Pemasangan ASTRAEA bersama Alpha tidak didukung.",
+        "Diperbaiki: menambahkan pemain ke daftar kepercayaan Corvus Book Pro dapat mencatat pemain yang salah di beberapa server, sehingga kamera terus mengikuti mereka. Kini pemain daring ditemukan berdasarkan nama, dan hasilnya ditampilkan di dalam jendela CorvusOS. Tidak ada di versi ini: kelompok lain yang dibangun ulang (logistik, pertahanan, pandai besi dan perlengkapan, kendaraan dan perbatasan, mitos, perabot) menyusul di versi berikutnya; suara mesin dibuat dan diperiksa hanya dengan pengukuran."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5.0",
      "date": "2026-10-11",

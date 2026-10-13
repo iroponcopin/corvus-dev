@@ -706,6 +706,22 @@
      "Minecraft 26.3, Fabric Loader 0.19.5 veya üzeri, Fabric API 0.161.0+26.3 veya üzeri ve Java 25 gerekir. OUKA isteğe bağlıdır. Cherry 1.2.0 ve OUKA 1.3.1 ile birlikte test edildi; Alpha ile birlikte kurulum desteklenmez. Her sistem ve on dokuz kolaylığın her biri config/astraea-sovereign.json içinde kapatılabilir.",
      "Bu sürümde olmayanlar: gövdeler eklemlerden bükülmez (yalnızca eğilir, zıplar ve düşer); elde tutulan ışık yaratıkları aydınlatmaz, su yansımaları ve normal haritalar yoktur; pistonlar sandıkları hareket ettirmez. Ayrıca düzeltildi: birinci kişi görünümde Celestial Blade ve Muramasa artık ikinci bir kılıç göstermiyor ve bloklar patlamalarda düşme kurallarına uyuyor."
     ]
+   },
+   {
+    "id": "astraea-v1.5.2",
+    "title": "Heavy Industry",
+    "summary": "Endüstriyel makineler gerçek tesis boyutunda yeniden yapıldı: altı blok yüksekliğinde bir ark fırını, on iki blokluk bir damıtma kulesi, yirmi blokluk bir direk; hepsi OUKA'nın şebekesinde. Her eşya artık nasıl kullanıldığını anlatıyor ve Corvus Book Pro, yere ya da masaya bırakılan bir cihaza dönüştü. Bu sürümden itibaren OUKA 1.4.0 veya üzeri gereklidir.",
+    "highlights": [
+     "On tesis, bütün olarak yerleştirildi: Refinery Smelter 5×5×6, Still 3×3×12, Crystalliser 5×5×5, Purifier 5×4×4, Synthesizer 5×5×5, Heavy Mill 7×7×6, Dynamo 7×3×4, Transformer 4×3×5, High-Voltage Pylon 5×5×20 ve Fission Core 9×9×10. Eşya açık bir zeminde kullanıldığında tesis, kullanana dönük olarak yükselir; herhangi bir parçayı kullanmak tesisi açar, herhangi bir parçayı kırmak ise onu tek bir eşya olarak geri verir.",
+     "Hareket ederler: fırın elektrotlarını indirir, çatısını kaldırır, eğilip döker; kulenin gözetleme camları kaynama yükseldikçe yanar; değirmenin tamburu döner; ateş söndüğünde dinamonun volanı yavaşlar; çalışan bir çekirdek maviyle parlar, aşırı ısındığında kuşakları kızarır. Çalışan tesisler çevrelerindeki zemini aydınlatır.",
+     "Aynı maliyetle daha büyük partiler: sekiz toz ya da dört ham cevher rafinaj hattına girer ve yirmi külçe olarak çıkar; Synthesizer bir seferde dört tane üretir; Heavy Mill dört cevheri on iki OUKA tozuna çevirir. Her eşyanın enerji ve su gereksinimi değişmedi. İşleme tesisinin herhangi bir parçasına dayanan bir huni ya da boru onu besler ve ürününü alır.",
+     "Herhangi bir eşyanın üzerinde Shift tuşunu basılı tutmak: ASTRAEA'nın 284 eşyası ve bloğunun her biri artık ne olduğunu, nasıl kullanıldığını ve neye ihtiyaç duyduğunu gösterir.",
+     "Corvus Book Pro: bir masaya ya da yere koyulup orada kullanıldığında CorvusOS açılır. Sahibi ve güvendiği oyuncular için açılır, bağlantılarını ve şarjını korur ve durduğu yerde OUKA'nın şebekesinden şarj olur."
+    ],
+    "warnings": [
+     "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni, Fabric API 0.161.0+26.3 veya daha yeni, Java 25 ve – bu sürümle gelen yenilik – OUKA 1.4.0 veya daha yeni gerekir. Bir V1.5.0 dünyasında duran makineler tek blok olarak kalır ve çalışmaz: kırılıp yeniden yerleştirilmeleri gerekir. Heavy Mill artık küp olarak inşa edilmiyor; gövdesi ve rotoru, onun yapıldığı malzemelerdir. ASTRAEA'nın Alpha ile birlikte kurulumu desteklenmiyor.",
+     "Düzeltildi: Corvus Book Pro'nun güven listesine bir oyuncu eklenmesi bazı sunucularda yanlış oyuncuyu kaydedebiliyor ve kameralar onları izlemeye devam ediyordu. Artık çevrimiçi bir oyuncu adıyla bulunuyor ve sonuç CorvusOS penceresinde gösteriliyor. Bu sürümde olmayanlar: yeniden yapılan diğer gruplar (lojistik, savunma, dövme ve donanım, araçlar ve sınır, mit, mobilya) sonraki sürümlerde gelecek; makinelerin sesleri yalnızca ölçümle üretildi ve kontrol edildi."
+    ]
    }
   ],
   "tsubomi": [

@@ -140,6 +140,12 @@
         "release": "V1.5.0",
         "date": "2026-10-11",
         "type": "release"
+      },
+      {
+        "id": "astraea-v1.5.2",
+        "release": "V1.5.2",
+        "date": "2026-10-13",
+        "type": "release"
       }
     ],
     "tsubomi": [

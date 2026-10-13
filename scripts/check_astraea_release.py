@@ -10,7 +10,7 @@ other checker here reads for ASTRAEA, is checked here — a live gate, not a ret
   1. exactly one downloads/ASTRAEA_MODs_v<ver>+mc<mc>.zip, and it is TRACKED by git: an untracked zip builds a manifest
      and a Store card whose download 404s on the live site (three sessions nearly shipped that on 2026-09-15);
   2. its mods/ holds exactly one jar, and that jar's own fabric.mod.json says id "astraea" and the zip name's version;
-  3. that jar depends on nothing but fabricloader, minecraft, java and fabric-api, and names no other mod in
+  3. that jar depends on nothing but fabricloader, minecraft, java, fabric-api and (since V1.5.2) ouka, and names no other mod in
      recommends / suggests / breaks / conflicts (since V1.1.0 it may suggest "ouka", its optional power partner, and
      only that): ASTRAEA bundles nothing and has no compatibility with Alpha (the
      owner's decision D-1). No entry of the zip or of the jar is named after Alpha's modules ("sorakaze");
@@ -44,7 +44,10 @@ ROOT = Path(__file__).resolve().parent.parent
 LANGS = ["ja", "en", "es", "fr", "zh", "ko", "pt-br", "it", "ar", "ru", "id", "de", "tr"]
 ZIP_RE = re.compile(r"^ASTRAEA_MODs_v(\d+(?:\.\d+)*)\+mc(\d+(?:\.\d+)*)\.zip$")
 SITE = "https://iroponcopin.github.io/aurora-corvus"
-ALLOWED_DEPENDS = {"fabricloader", "minecraft", "java", "fabric-api"}
+# Since V1.5.2 (2026-10-13) ASTRAEA needs OUKA 1.4.0: its rebuilt machines run on OUKA's grid and nowhere else (the owner,
+# 2026-10-11: native to OUKA's power system). Depending on a mod is not bundling it: the zip must still hold ASTRAEA's jar
+# alone (rule 2), and it may depend on nothing else.
+ALLOWED_DEPENDS = {"fabricloader", "minecraft", "java", "fabric-api", "ouka"}
 ALLOWED_SUGGESTS = {"ouka"}
 
 

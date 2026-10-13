@@ -706,6 +706,22 @@
      "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. OUKA est facultatif. Testé avec Cherry 1.2.0 et OUKA 1.3.1 ; l'installation avec Alpha n'est pas prise en charge. Chaque système et chacune des dix-neuf commodités peuvent être désactivés dans config/astraea-sovereign.json.",
      "Absent de cette version : les corps ne se plient pas aux articulations (ils s'inclinent, sautent et tombent) ; la lumière tenue n'éclaire pas les créatures, et il n'y a ni reflets sur l'eau ni normal maps ; les pistons ne déplacent pas les coffres. Également corrigé : en vue à la première personne, la Celestial Blade et la Muramasa n'affichent plus une seconde épée, et les blocs suivent désormais leurs règles de chute lors des explosions."
     ]
+   },
+   {
+    "id": "astraea-v1.5.2",
+    "title": "Heavy Industry",
+    "summary": "Les machines industrielles sont reconstruites à la taille d'une vraie usine – un four à arc haut de six blocs, une colonne de distillation de douze blocs, un pylône de vingt blocs –, toutes sur le réseau d'OUKA. Chaque objet indique désormais son usage, et le Corvus Book Pro devient un appareil que l'on pose. OUKA 1.4.0 ou plus récent est désormais requis.",
+    "highlights": [
+     "Dix usines, placées entières : Refinery Smelter 5×5×6, Still 3×3×12, Crystalliser 5×5×5, Purifier 5×4×4, Synthesizer 5×5×5, Heavy Mill 7×7×6, Dynamo 7×3×4, Transformer 4×3×5, High-Voltage Pylon 5×5×20 et Fission Core 9×9×10. Utiliser l'objet sur un sol dégagé fait surgir l'usine face à vous ; utiliser n'importe quelle partie l'ouvre, et briser n'importe quelle partie la rend sous forme d'un seul objet.",
+     "Elles bougent : le four abaisse ses électrodes, soulève son toit, bascule et verse ; les hublots de la colonne s'allument à mesure que l'ébullition monte ; le tambour du broyeur tourne ; le volant du dynamo ralentit quand le feu s'éteint ; un cœur en fonctionnement brille en bleu, et ses bandes rougeoient en cas de surchauffe. Les usines en marche éclairent le sol alentour.",
+     "Lots plus grands au même coût : huit poudres ou quatre minerais bruts passent dans la ligne de raffinage et ressortent en vingt lingots ; le Synthesizer en produit quatre à la fois ; le Heavy Mill transforme quatre minerais en douze poudres OUKA. La puissance et l'eau de chaque objet ne changent pas. Une trémie ou un tuyau placé contre n'importe quelle partie d'une usine de transformation l'alimente et récupère son produit.",
+     "Maintenir Shift au-dessus de n'importe quel objet : chacun des 284 objets et blocs d'ASTRAEA indique désormais ce qu'il est, comment il s'utilise et ce qu'il lui faut.",
+     "Corvus Book Pro : le poser sur un bureau ou le sol et l'utiliser à cet endroit pour ouvrir CorvusOS. Il s'ouvre pour son propriétaire et les joueurs à qui celui-ci fait confiance, conserve ses liens et sa charge, et se recharge depuis le réseau d'OUKA à l'endroit où il se trouve."
+    ],
+    "warnings": [
+     "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent, Java 25 et – nouveauté de cette version – OUKA 1.4.0 ou plus récent. Les machines présentes dans un monde V1.5.0 restent des blocs isolés et ne fonctionnent pas : il faut les casser puis les reposer. Le Heavy Mill n'est plus construit en cube ; son enveloppe et son rotor sont les éléments dont il est fabriqué. L'installation d'ASTRAEA avec Alpha n'est pas prise en charge.",
+     "Corrigé : l'ajout d'un joueur à la liste de confiance du Corvus Book Pro pouvait enregistrer le mauvais joueur sur certains serveurs, si bien que les caméras continuaient de le suivre. Un joueur en ligne est désormais retrouvé par son nom, et le résultat s'affiche dans la fenêtre de CorvusOS. Non inclus dans cette version : les autres groupes reconstruits (logistique, défense, forge et équipement, véhicules et frontière, mythes, mobilier) suivront dans des versions ultérieures ; les sons des machines ont été générés et vérifiés uniquement par mesure."
+    ]
    }
   ],
   "tsubomi": [

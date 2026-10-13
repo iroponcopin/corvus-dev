@@ -1,15 +1,41 @@
 {
  "lang": "de",
  "brand": "astraea",
- "updated": "2026-10-11",
+ "updated": "2026-10-13",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-11",
+ "updated_label": "Aktualisiert am 2026-10-13",
  "note": "",
  "groups": [
   {
    "label": "V1.5",
-   "summary": "The 49 Sovereign Implementations",
+   "summary": "Heavy Industry",
    "releases": [
+    {
+     "version": "V1.5.2",
+     "date": "2026-10-13",
+     "type": "release",
+     "title": "Heavy Industry",
+     "summary": "Die Industriemaschinen wurden in der Größe echter Anlagen neu gebaut – ein Lichtbogenofen sechs Blöcke hoch, eine zwölf Blöcke hohe Destillationskolonne, ein zwanzig Blöcke hoher Mast –, alle am Netz von OUKA. Jeder Gegenstand zeigt nun, wie er verwendet wird, und das Corvus Book Pro wird zu einem Gerät, das man abstellt. OUKA 1.4.0 oder neuer ist ab dieser Version erforderlich.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Zehn Anlagen, ganz platziert: Refinery Smelter 5×5×6, Still 3×3×12, Crystalliser 5×5×5, Purifier 5×4×4, Synthesizer 5×5×5, Heavy Mill 7×7×6, Dynamo 7×3×4, Transformer 4×3×5, High-Voltage Pylon 5×5×20 und Fission Core 9×9×10. Wird der Gegenstand auf freiem Boden benutzt, erhebt sich die Anlage und steht dem Benutzer gegenüber; die Benutzung eines beliebigen Teils öffnet sie, und das Zerbrechen eines beliebigen Teils gibt sie als einen Gegenstand zurück.",
+        "Sie bewegen sich: der Ofen senkt seine Elektroden, hebt sein Dach, kippt und gießt aus; die Schaugläser der Kolonne leuchten, wenn das Sieden ansteigt; die Trommel der Mühle dreht sich; das Schwungrad des Dynamos läuft aus, wenn das Feuer erlischt; ein arbeitender Kern glüht blau, und seine Bänder glühen, wenn er überhitzt. Arbeitende Anlagen beleuchten den Boden um sie herum.",
+        "Größere Chargen zum gleichen Preis: acht Staub oder vier Roherze gehen durch die Raffinerielinie und kommen als zwanzig Barren heraus; der Synthesizer stellt vier auf einmal her; die Heavy Mill macht aus vier Erzen zwölf OUKA-Staub. Strom und Wasser je Gegenstand bleiben unverändert. Ein Trichter oder ein Rohr an einem beliebigen Teil einer Verarbeitungsanlage füttert sie und nimmt ihr Produkt ab.",
+        "Shift gedrückt halten über einem beliebigen Gegenstand: jeder der 284 Gegenstände und Blöcke von ASTRAEA sagt nun, was er ist, wie er verwendet wird und was er braucht.",
+        "Corvus Book Pro: auf einen Tisch oder den Boden stellen und dort benutzen, um CorvusOS zu öffnen. Es öffnet sich für seinen Besitzer und die Spieler, denen dieser vertraut, behält seine Verbindungen und seine Ladung und lädt sich am Standort aus dem Netz von OUKA auf."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Erforderlich sind Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer, Java 25 und – neu in dieser Version – OUKA 1.4.0 oder neuer. Maschinen, die in einer Welt von V1.5.0 stehen, bleiben als einzelne Blöcke erhalten und funktionieren nicht: Man zerbricht sie und stellt sie erneut auf. Der Heavy Mill wird nicht mehr als Würfel gebaut; sein Gehäuse und sein Rotor sind die Bestandteile, aus denen er hergestellt wird. Die gemeinsame Installation von ASTRAEA und Alpha wird nicht unterstützt.",
+        "Behoben: Das Hinzufügen eines Spielers zur Vertrauensliste des Corvus Book Pro konnte auf manchen Servern den falschen Spieler speichern, sodass die Kameras ihm weiter folgten. Ein online befindlicher Spieler wird nun über seinen Namen gefunden, und das Ergebnis wird im CorvusOS-Fenster angezeigt. Nicht in dieser Version: Die übrigen neu gebauten Gruppen (Logistik, Verteidigung, Schmiede und Ausrüstung, Fahrzeuge und Grenze, Mythos, Einrichtung) folgen in späteren Versionen; die Geräusche der Maschinen wurden nur durch Messung erzeugt und geprüft."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5.0",
      "date": "2026-10-11",

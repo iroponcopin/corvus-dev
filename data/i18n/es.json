@@ -706,6 +706,22 @@
      "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o posterior, Fabric API 0.161.0+26.3 o posterior y Java 25. OUKA es opcional. Probado junto con Cherry 1.2.0 y OUKA 1.3.1; instalarlo junto con Alpha no es compatible. Cada sistema y cada una de las diecinueve comodidades se pueden desactivar en config/astraea-sovereign.json.",
      "No incluido en esta versión: los cuerpos no se doblan en las articulaciones (solo se inclinan, saltan y caen); la luz en la mano no ilumina a las criaturas, y no hay reflejos en el agua ni normal maps; los pistones no mueven cofres. También corregido: en primera persona, la Celestial Blade y la Muramasa ya no muestran una segunda espada, y los bloques ahora obedecen sus reglas de caída en las explosiones."
     ]
+   },
+   {
+    "id": "astraea-v1.5.2",
+    "title": "Heavy Industry",
+    "summary": "Las máquinas industriales se han reconstruido a tamaño de planta real: un horno de arco de seis bloques de alto, una columna de destilación de doce bloques y un pilón de veinte bloques, todos conectados a la red de OUKA. Cada objeto indica ahora cómo se usa, y el Corvus Book Pro pasa a ser un dispositivo que se deja sobre una superficie. A partir de esta versión se requiere OUKA 1.4.0 o posterior.",
+    "highlights": [
+     "Diez plantas, colocadas enteras: Refinery Smelter 5×5×6, Still 3×3×12, Crystalliser 5×5×5, Purifier 5×4×4, Synthesizer 5×5×5, Heavy Mill 7×7×6, Dynamo 7×3×4, Transformer 4×3×5, High-Voltage Pylon 5×5×20 y Fission Core 9×9×10. Usar el objeto en un terreno despejado hace que la planta se levante de cara al jugador; usar cualquier parte la abre, y romper cualquier parte la devuelve como un solo objeto.",
+     "Se mueven: el horno baja sus electrodos, levanta su techo, se inclina y vierte; las mirillas de la columna se encienden a medida que sube la ebullición; el tambor del molino gira; el volante del dinamo se detiene cuando se apaga el fuego; un núcleo en funcionamiento brilla en azul y sus bandas se encienden al sobrecalentarse. Las plantas en marcha iluminan el terreno que las rodea.",
+     "Lotes más grandes al mismo coste: ocho polvos o cuatro minerales en bruto entran en la línea de refinado y salen como veinte lingotes; el Synthesizer produce cuatro a la vez; el Heavy Mill convierte cuatro minerales en doce polvos de OUKA. La energía y el agua de cada objeto no cambian. Una tolva o una tubería colocada contra cualquier parte de una planta de procesado la alimenta y recoge su producto.",
+     "Mantener Shift sobre cualquier objeto: cada uno de los 284 objetos y bloques de ASTRAEA indica ahora qué es, cómo se usa y qué necesita.",
+     "Corvus Book Pro: dejarlo sobre un escritorio o el suelo y usarlo allí para abrir CorvusOS. Se abre para su propietario y para los jugadores en los que este confía, conserva sus enlaces y su carga, y se carga desde la red de OUKA en el lugar donde esté."
+    ],
+    "warnings": [
+     "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o posterior, Fabric API 0.161.0+26.3 o posterior, Java 25 y, nuevo en esta versión, OUKA 1.4.0 o posterior. Las máquinas que están en un mundo de V1.5.0 se mantienen como bloques individuales y no funcionan: hay que romperlas y volver a colocarlas. El Heavy Mill ya no se construye como un cubo; su carcasa y su rotor son los componentes con los que se fabrica. La instalación de ASTRAEA junto con Alpha no es compatible.",
+     "Corregido: añadir a un jugador a la lista de confianza del Corvus Book Pro podía registrar al jugador equivocado en algunos servidores, así que las cámaras seguían siguiéndolo. Ahora un jugador en línea se localiza por su nombre y el resultado se muestra dentro de la ventana de CorvusOS. No incluido en esta versión: los demás grupos reconstruidos (logística, defensa, forja y equipo, vehículos y frontera, mito, mobiliario) llegarán en versiones posteriores; los sonidos de las máquinas se han generado y comprobado solo mediante medición."
+    ]
    }
   ],
   "tsubomi": [
