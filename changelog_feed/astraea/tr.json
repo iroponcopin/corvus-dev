@@ -8,8 +8,34 @@
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Lojistik ve Ev",
+   "summary": "Savunma",
    "releases": [
+    {
+     "version": "V1.5.4",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "Savunma",
+     "summary": "Savunma'nın 25 öğesinin tamamı gerçek boyutlarında yeniden yapıldı: sekiz blok yüksekliğinde, hazır bekleyen füzesiyle bir füze silosu, döner tablası üzerinde bir önleyici batarya, durumları değiştikçe hareket eden ve ışık yayan cihazlar ve takıldığında kendi gövdeleri olan zırh, gözlük ve maske. Daha önce olduğu gibi OUKA 1.4.0 veya üzeri gereklidir.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Üç tesis, bütün olarak yerleştirildi: Füze Silosu 3×3×8 (bir fırlatma platformu, bir servis kulesi ve uçarken kaybolan yedi blok yüksekliğinde bir füze), Önleyici Batarya 3×3×3 ve Gaz Temizleyici 2×1×2. Fırlatma ve açık gök kontrolü silonun ortasının üstünden yapılır.",
+        "Sekiz cihaz durumunu gösterir: alarmda alarm strobunun aynası lambasının etrafında döner ve hücre monitörü kırmızı yanıp söner; tuş takımı ve retina tarayıcısı bir kapının açılmasına izin verdiği sürece yeşil yanar; silahlı bir Claymore yanıp söner ve tetik ışınını gösterir; ayı tuzağının çeneleri tuttuğu şeyin üzerine kapanır; açılan bir gaz tüpü gazını bırakır.",
+        "Dikenli tel, kazık ve telden bir çittir; dikenli çukur zehirli kazıklarla dolu bir çukur; muhafaza perdesi tehlike bandı olan perçinli bir duvar; kalkan duvarı altıgenlerden oluşan saydam bir levha; termal lazer ve kalkan projektörü ise baktıkları yöne dönük başlıklardır.",
+        "Takılan donanımın da bir gövdesi vardır: taktik kask, yelek, tayt ve botlar, ışıklı camlı gece görüş gözlükleri ve kapalı maske taşıyanın üzerinden taşar, onunla birlikte hareket eder ve elde tutulduğunda da aynı görünür.",
+        "Önleyici füze ve hedefleme tableti elde gövdeye sahiptir; üç tesis ise Shift tuşuna basılı tutulduğunda kendi boyutunu ve ihtiyaç duyduğu alanı gösterir."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "V1.5.3'ten kalma bir dünyada, Savunma'dan zaten yerleştirilmiş olan her şeyi kırıp yeniden yerleştirin (içinde ne varsa düşer); o zamana kadar doğru çizilmeyebilir veya çalışmayabilir.",
+        "Alarm strobu, Claymore, ayı tuzağı ve iki gaz tüpü artık pistonlarla itilemez. Bu sürümde yeni ses yok. 284'ün geri kalanı V1.5.5 ile V1.5.9 arasında gelecek."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5.3",
      "date": "2026-10-14",

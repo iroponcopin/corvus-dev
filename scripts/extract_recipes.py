@@ -2346,6 +2346,17 @@ INTENDED_ICON_CHANGES = {
     "astraea:pneumatic_sender": ("t495", "t741", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
     "astraea:scriptoria_press": ("t538", "t742", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
     "astraea:sovereign_mint": ("t547", "t743", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:alarm_strobe": ("t393", "t744", "ASTRAEA V1.5.4: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:bear_trap": ("t410", "t745", "ASTRAEA V1.5.4: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:blister_gas_canister": ("t412", "t746", "ASTRAEA V1.5.4: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:cell_monitor": ("t417", "t747", "ASTRAEA V1.5.4: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:choking_gas_canister": ("t421", "t748", "ASTRAEA V1.5.4: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:claymore": ("t410", "t749", "ASTRAEA V1.5.4: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:defense_keypad": ("t440", "t750", "ASTRAEA V1.5.4: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:defense_retina_scanner": ("t440", "t751", "ASTRAEA V1.5.4: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:gas_scrubber": ("t458", "t752", "ASTRAEA V1.5.4: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:icbm_silo": ("t469", "t753", "ASTRAEA V1.5.4: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:interceptor_battery": ("t471", "t754", "ASTRAEA V1.5.4: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
 }
 
 

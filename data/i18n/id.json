@@ -775,6 +775,22 @@
      "Di dunia dari V1.5.2, pecahkan dan pasang ulang semua yang sudah terpasang dari Logistik dan Rumah (isi yang tersimpan akan jatuh); sampai saat itu mungkin tidak tergambar dengan benar atau tidak berfungsi.",
      "Kipas angin langit-langit yang dihentikan sinyal redstone tidak lagi membersihkan gas. Tidak ada suara baru di rilis ini: perangkat ini tetap memakai suara bawaan game. Sisa dari 284 menyusul di V1.5.4 hingga V1.5.9."
     ]
+   },
+   {
+    "id": "astraea-v1.5.4",
+    "title": "Pertahanan",
+    "summary": "Semua 25 benda Pertahanan dibangun ulang dalam ukuran sebenarnya: silo rudal setinggi delapan blok dengan rudalnya yang siap, baterai interseptor di atas meja putarnya, perangkat yang bergerak dan menyala seiring perubahan statusnya, serta pelindung, kacamata, dan masker yang punya wujud sendiri saat dikenakan. OUKA 1.4.0 atau yang lebih baru diperlukan, seperti sebelumnya.",
+    "highlights": [
+     "Tiga instalasi, ditempatkan utuh: Silo Rudal 3×3×8 (meja peluncuran, menara layanan, dan rudal setinggi tujuh blok yang hilang saat terbang), Baterai Interseptor 3×3×3, dan Pembersih Gas 2×1×2. Peluncuran dan pemeriksaan langit terbuka dilakukan dari puncak tengah silo.",
+     "Delapan perangkat menunjukkan statusnya: saat alarm, cermin lampu strobo alarm berputar mengelilingi lampunya dan monitor sel berkedip merah; papan tombol dan pemindai retina menyala hijau selama membiarkan pintu terbuka; claymore yang aktif berkedip dan menampilkan berkas pemicunya; rahang jebakan beruang menutup pada apa pun yang dijeratnya; kaleng gas yang dibuka mengeluarkan gasnya.",
+     "Kawat berduri berupa pagar patok dan kawat, lubang paku berupa lubang berisi patok beracun, sekat penahan berupa dinding berpaku dengan pita peringatan, dinding perisai berupa lembaran heksagon tembus pandang, dan laser termal serta proyektor perisai berupa kepala yang mengarah sesuai arah hadapnya.",
+     "Perlengkapan yang dikenakan punya wujud: helm taktis, rompi, legging, dan sepatu bot, kacamata penglihat malam dengan lensa bercahaya, serta masker kedap menonjol dari pemakainya dan bergerak bersamanya, dan tampilannya sama saat dipegang.",
+     "Rudal interseptor dan tablet pembidik punya wujud saat dipegang, dan ketiga instalasi menampilkan ukuran serta ruang yang dibutuhkannya saat Shift ditahan."
+    ],
+    "warnings": [
+     "Di dunia dari V1.5.3, pecahkan dan pasang ulang semua benda Pertahanan yang sudah terpasang (isi yang tersimpan akan jatuh); sampai saat itu mungkin tidak tergambar dengan benar atau tidak berfungsi.",
+     "Lampu strobo alarm, claymore, jebakan beruang, dan kedua kaleng gas tidak lagi bisa didorong piston. Tidak ada suara baru di rilis ini. Sisa dari 284 menyusul di V1.5.5 hingga V1.5.9."
+    ]
    }
   ],
   "tsubomi": [

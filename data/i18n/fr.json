@@ -775,6 +775,22 @@
      "Dans un monde de V1.5.2, cassez puis replacez tout élément de Logistique et maison déjà posé (ce qu'il contenait tombe) ; d'ici là, il peut ne pas être dessiné correctement ou ne pas fonctionner.",
      "Un ventilateur de plafond arrêté par un signal de redstone n'évacue plus le gaz. Aucun nouveau son dans cette version : ces appareils utilisent toujours les sons d'origine du jeu. Les 284 autres arrivent de V1.5.4 à V1.5.9."
     ]
+   },
+   {
+    "id": "astraea-v1.5.4",
+    "title": "Défense",
+    "summary": "Les 25 éléments de la Défense sont reconstruits à leur taille réelle : un silo à missiles haut de huit blocs avec son missile prêt au lancement, une batterie d'interception sur sa plateforme pivotante, des appareils qui bougent et s'allument selon leur état, et une armure, des lunettes et un masque dotés de leur propre corps lorsqu'on les porte. OUKA 1.4.0 ou plus récent est requis, comme auparavant.",
+    "highlights": [
+     "Trois installations, placées entières : silo à missiles 3×3×8 (une rampe de lancement, une tour de service et un missile haut de sept blocs qui disparaît pendant son vol), batterie d'interception 3×3×3 et épurateur de gaz 2×1×2. Le lancement et la vérification du ciel dégagé se font depuis le sommet du centre du silo.",
+     "Huit appareils montrent leur état : en alarme, le miroir du stroboscope d'alarme tourne autour de sa lampe et le moniteur de cellule clignote en rouge ; le clavier et le scanner rétinien s'allument en vert tant qu'ils laissent une porte s'ouvrir ; une claymore armée clignote et montre son faisceau de déclenchement ; les mâchoires du piège à ours se referment sur ce qu'elles retiennent ; une bonbonne de gaz ouverte laisse échapper son gaz.",
+     "Les barbelés sont une clôture de piquets et de fils, la fosse à pieux une fosse de pieux empoisonnés, la cloison de confinement un mur riveté avec une bande de danger, le mur bouclier une feuille translucide d'hexagones, et le laser thermique et le projecteur de bouclier sont des têtes orientées dans la direction où elles font face.",
+     "L'équipement porté a un corps : le casque tactique, le gilet, les leggings et les bottes, les lunettes de vision nocturne à leurs verres lumineux et le masque étanche se détachent de celui qui les porte et bougent avec lui, et gardent le même aspect dans la main.",
+     "Le missile intercepteur et la tablette de visée ont un corps en main, et les trois installations indiquent leur taille et l'espace qu'elles demandent lorsque vous maintenez Shift."
+    ],
+    "warnings": [
+     "Dans un monde de V1.5.3, cassez puis replacez tout élément de la Défense déjà posé (ce qu'il contenait tombe) ; d'ici là, il peut ne pas être dessiné correctement ou ne pas fonctionner.",
+     "Le stroboscope d'alarme, la claymore, le piège à ours et les deux bonbonnes de gaz ne peuvent plus être poussés par des pistons. Aucun nouveau son dans cette version. Les 284 autres arrivent de V1.5.5 à V1.5.9."
+    ]
    }
   ],
   "tsubomi": [

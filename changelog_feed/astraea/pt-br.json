@@ -8,8 +8,34 @@
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Logística e a casa",
+   "summary": "Defesa",
    "releases": [
+    {
+     "version": "V1.5.4",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "Defesa",
+     "summary": "Todos os 25 itens da Defesa foram reconstruídos no tamanho real: um silo de mísseis com oito blocos de altura e seu míssil pronto para o lançamento, uma bateria interceptora sobre sua plataforma giratória, dispositivos que se movem e acendem conforme o estado muda, e armadura, óculos e máscara com corpo próprio quando vestidos. É necessário o OUKA 1.4.0 ou mais recente, como antes.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "Três instalações, colocadas inteiras: silo de mísseis 3×3×8 (uma plataforma de lançamento, uma torre de serviço e um míssil de sete blocos de altura que some enquanto voa), bateria interceptora 3×3×3 e depurador de gás 2×1×2. O lançamento e a verificação do céu aberto são feitos a partir do topo do centro do silo.",
+        "Oito dispositivos mostram o seu estado: em alarme, o espelho da luz estroboscópica gira em volta da lâmpada e o monitor de célula pisca em vermelho; o teclado e o scanner de retina acendem em verde enquanto deixam uma porta abrir; uma claymore armada pisca e mostra seu feixe de disparo; as mandíbulas da armadilha para urso se fecham sobre o que ela segura; um cilindro de gás aberto solta o seu gás.",
+        "O arame farpado é uma cerca de estacas e fios, o poço de espinhos um buraco de estacas envenenadas, a antepara de contenção uma parede rebitada com faixa de perigo, a parede de escudo uma folha translúcida de hexágonos, e o laser térmico e o projetor de escudo são cabeças apontadas para o lado para onde estão voltadas.",
+        "O equipamento vestido tem corpo: o capacete tático, o colete, as calças justas e as botas, os óculos de visão noturna com as lentes brilhantes e a máscara selada se projetam para fora de quem veste e se movem com ele, e têm a mesma aparência na mão.",
+        "O míssil interceptor e o tablet de mira têm corpo na mão, e as três instalações mostram o tamanho e o espaço de que precisam quando você segura Shift."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Num mundo da V1.5.3, quebre e coloque de novo qualquer item da Defesa que já estivesse colocado (o que ele guardava cai); até lá, pode não ser desenhado corretamente nem funcionar.",
+        "A luz estroboscópica de alarme, a claymore, a armadilha para urso e os dois cilindros de gás não podem mais ser empurrados por pistões. Nenhum som novo nesta versão. Os 284 restantes chegam da V1.5.5 à V1.5.9."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5.3",
      "date": "2026-10-14",

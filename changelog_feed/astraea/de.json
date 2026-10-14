@@ -8,8 +8,34 @@
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Logistik und das Haus",
+   "summary": "Verteidigung",
    "releases": [
+    {
+     "version": "V1.5.4",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "Verteidigung",
+     "summary": "Alle 25 Elemente der Verteidigung wurden in der Größe des Originals neu gebaut: ein Raketensilo acht Blöcke hoch mit seiner bereitstehenden Rakete, eine Abfangbatterie auf ihrem Drehteller, Geräte, die sich bewegen und leuchten, wenn sich ihr Zustand ändert, sowie Rüstung, Brille und Maske mit eigenem Körper, wenn sie getragen werden. OUKA 1.4.0 oder neuer ist erforderlich, wie zuvor.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Drei Anlagen, ganz platziert: Raketensilo 3×3×8 (eine Startrampe, ein Wartungsturm und eine Rakete von sieben Blöcken Höhe, die während des Flugs verschwindet), Abfangbatterie 3×3×3 und Gasreiniger 2×1×2. Start und die Prüfung des freien Himmels erfolgen von der Mitte der Silooberseite aus.",
+        "Acht Geräte zeigen ihren Zustand: Im Alarm dreht sich der Spiegel des Alarmstrobos um seine Lampe, und der Zellenmonitor blinkt rot; das Tastenfeld und der Netzhautscanner leuchten grün, solange sie eine Tür öffnen lassen; eine scharfe Claymore blinkt und zeigt ihren Auslösestrahl; das Gebiss der Bärenfalle schließt sich um das, was sie hält; ein geöffneter Gaskanister lässt sein Gas entweichen.",
+        "Stacheldraht ist ein Zaun aus Pfählen und Strängen, die Stachelgrube eine Grube mit vergifteten Pfählen, das Schott eine genietete Wand mit Gefahrenstreifen, die Schutzwand ein durchsichtiges Blatt aus Sechsecken, und der Wärmelaser und der Schildprojektor sind Köpfe, die in die Richtung zeigen, in die sie blicken.",
+        "Getragene Ausrüstung hat einen Körper: der taktische Helm, die Weste, die Leggings und die Stiefel, die Nachtsichtbrille mit ihren leuchtenden Linsen und die versiegelte Maske stehen vom Träger ab und bewegen sich mit ihm, und in der Hand sehen sie genauso aus.",
+        "Die Abfangrakete und das Zieltablet haben einen Körper in der Hand, und die drei Anlagen zeigen dir ihre Größe und den Raum, den sie brauchen, wenn du Shift gedrückt hältst."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "In einer Welt aus V1.5.3 musst du alles von der Verteidigung, das bereits platziert war, abbauen und neu platzieren (was es enthielt, fällt heraus); bis dahin wird es womöglich nicht richtig dargestellt oder funktioniert nicht.",
+        "Alarmstrobe, Claymore, Bärenfalle und beide Gaskanister lassen sich nicht mehr mit Kolben verschieben. In dieser Version gibt es keine neuen Sounds. Die übrigen 284 folgen mit V1.5.5 bis V1.5.9."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5.3",
      "date": "2026-10-14",

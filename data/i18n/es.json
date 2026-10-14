@@ -775,6 +775,22 @@
      "En un mundo de V1.5.2, rompe y vuelve a colocar cualquier pieza de Logística y la casa que ya estuviera colocada (lo que contenía se cae); hasta entonces puede que no se dibuje bien o que no funcione.",
      "Un ventilador de techo detenido por una señal de redstone ya no retira gas. No hay sonidos nuevos en esta versión: estos dispositivos siguen usando los sonidos propios del juego. Los 284 restantes llegan de V1.5.4 a V1.5.9."
     ]
+   },
+   {
+    "id": "astraea-v1.5.4",
+    "title": "Defensa",
+    "summary": "Los 25 elementos de Defensa se han reconstruido a tamaño real: un silo de misiles de ocho bloques de alto con su misil listo para el lanzamiento, una batería interceptora sobre su plato giratorio, dispositivos que se mueven y se encienden cuando cambia su estado, y armadura, gafas y máscara con cuerpo propio cuando se llevan puestas. Se requiere OUKA 1.4.0 o posterior, como antes.",
+    "highlights": [
+     "Tres instalaciones, colocadas enteras: silo de misiles 3×3×8 (una plataforma de lanzamiento, una torre de servicio y un misil de siete bloques de alto que desaparece mientras vuela), batería interceptora 3×3×3 y depurador de gas 2×1×2. El lanzamiento y la comprobación del cielo abierto se hacen desde la parte superior del centro del silo.",
+     "Ocho dispositivos muestran su estado: en alarma, el espejo de la luz estroboscópica gira alrededor de su lámpara y el monitor de celda parpadea en rojo; el teclado y el escáner de retina se iluminan en verde mientras dejan abrir una puerta; una claymore armada parpadea y muestra su haz de activación; las mandíbulas de la trampa para osos se cierran sobre lo que retienen; una bombona de gas abierta deja salir su gas.",
+     "El alambre de púas es una valla de estacas y cables, la trampa de pinchos una fosa de estacas envenenadas, el mamparo de contención una pared remachada con franja de peligro, el muro escudo una lámina transparente de hexágonos, y el láser térmico y el proyector de escudo son cabezales orientados hacia donde miran.",
+     "El equipo que se lleva puesto tiene cuerpo: el casco táctico, el chaleco, las mallas y las botas, las gafas de visión nocturna con sus lentes luminosas y la máscara sellada sobresalen de quien lo lleva y se mueven con él, y en la mano tienen el mismo aspecto.",
+     "El misil interceptor y la tableta de puntería tienen cuerpo en la mano, y las tres instalaciones muestran su tamaño y el espacio que necesitan al mantener pulsado Shift."
+    ],
+    "warnings": [
+     "En un mundo de V1.5.3, rompe y vuelve a colocar cualquier elemento de Defensa que ya estuviera colocado (lo que contenía se cae); hasta entonces puede que no se dibuje bien o que no funcione.",
+     "La luz estroboscópica de alarma, la claymore, la trampa para osos y ambas bombonas de gas ya no pueden ser empujadas por pistones. No hay sonidos nuevos en esta versión. Los 284 restantes llegan de V1.5.5 a V1.5.9."
+    ]
    }
   ],
   "tsubomi": [

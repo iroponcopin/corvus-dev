@@ -8,8 +8,34 @@
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Logistica e casa",
+   "summary": "Difesa",
    "releases": [
+    {
+     "version": "V1.5.4",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "Difesa",
+     "summary": "Tutti i 25 elementi della Difesa sono stati ricostruiti alla dimensione reale: un silo missilistico alto otto blocchi con il suo missile pronto al lancio, una batteria intercettrice sulla sua piattaforma girevole, dispositivi che si muovono e si accendono al cambiare del loro stato, e armatura, occhiali e maschera con un corpo proprio quando vengono indossati. È richiesto OUKA 1.4.0 o successivo, come prima.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Tre impianti, collocati interi: silo missilistico 3×3×8 (una rampa di lancio, una torre di servizio e un missile alto sette blocchi che scompare mentre vola), batteria intercettrice 3×3×3 e depuratore di gas 2×1×2. Lancio e verifica del cielo libero si fanno dalla sommità del centro del silo.",
+        "Otto dispositivi mostrano il loro stato: in allarme lo specchio della luce stroboscopica gira attorno alla sua lampada e il monitor della cella lampeggia di rosso; il tastierino e lo scanner retinico si accendono di verde mentre lasciano aprire una porta; una claymore armata lampeggia e mostra il suo raggio di innesco; le ganasce della trappola per orsi si chiudono su ciò che trattengono; una bombola di gas aperta fa uscire il suo gas.",
+        "Il filo spinato è una recinzione di paletti e fili, la fossa a punte una buca di paletti avvelenati, la paratia di contenimento un muro con rivetti e una fascia di pericolo, il muro scudo un foglio traslucido di esagoni, e il laser termico e il proiettore di scudo sono testate puntate nella direzione in cui guardano.",
+        "L'equipaggiamento indossato ha un corpo: il casco tattico, il gilet, i pantaloni aderenti e gli stivali, gli occhiali per la visione notturna con le lenti luminose e la maschera sigillata si staccano da chi li indossa e si muovono con lui, e in mano hanno lo stesso aspetto.",
+        "Il missile intercettore e il tablet di puntamento hanno un corpo in mano, e i tre impianti mostrano la loro dimensione e lo spazio di cui hanno bisogno quando tieni premuto Shift."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "In un mondo della V1.5.3, rompi e ricolloca ogni elemento della Difesa già piazzato (ciò che conteneva cade); fino ad allora potrebbe non essere disegnato correttamente o non funzionare.",
+        "La luce stroboscopica d'allarme, la claymore, la trappola per orsi e le due bombole di gas non possono più essere spinte dai pistoni. Nessun nuovo suono in questa versione. I restanti 284 arrivano da V1.5.5 a V1.5.9."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5.3",
      "date": "2026-10-14",

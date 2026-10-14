@@ -779,6 +779,22 @@
      "In a world from V1.5.2, break anything of Logistics and the House that was already placed and place it again (what it held drops); until then it may not be drawn properly or work.",
      "A ceiling fan stopped by a redstone signal no longer clears gas. No new sounds in this release: these devices still use the game's own sounds. The rest of the 284 follow in V1.5.4 to V1.5.9."
     ]
+   },
+   {
+    "id": "astraea-v1.5.4",
+    "title": "Defence",
+    "summary": "All 25 things of Defence are rebuilt at the size of the real thing: a missile silo eight blocks tall with its missile standing ready, an interceptor battery on its turntable, devices that move and light up as their state changes, and armour, goggles and a mask with bodies of their own when worn. OUKA 1.4.0 or newer is required, as before.",
+    "highlights": [
+     "Three plants, placed whole: Missile Silo 3×3×8 (a launch table, a service tower and a missile seven blocks tall that is gone while it flies), Interceptor Battery 3×3×3 and Gas Scrubber 2×1×2. Launch and the open-sky check are from the top of the silo's middle.",
+     "Eight devices show their state: in alarm the strobe's mirror turns round its lamp and the cell monitor flashes red; the keypad and the retina scanner light green while they let a door open; an armed claymore blinks and shows its trip beam; the bear trap's jaws close on what it holds; an opened gas canister lets its gas out.",
+     "Barbed wire is a fence of pickets and strands, the spike pit a pit of poisoned stakes, the containment bulkhead a riveted wall with a hazard band, the shield wall a see-through sheet of hexagons, and the thermal laser and the shield projector are heads aimed the way they face.",
+     "Worn gear has a body: the tactical helmet, vest, leggings and boots, the night-vision goggles with their glowing lenses and the sealed mask stand out from the wearer and move with them, and look the same in the hand.",
+     "The interceptor missile and the targeting tablet have bodies in the hand, and the three plants tell you their size and the room they need when you hold Shift."
+    ],
+    "warnings": [
+     "In a world from V1.5.3, break anything of Defence that was already placed and place it again (what it held drops); until then it may not be drawn properly or work.",
+     "The alarm strobe, the claymore, the bear trap and both gas canisters can no longer be pushed by pistons. No new sounds in this release. The rest of the 284 follow in V1.5.5 to V1.5.9."
+    ]
    }
   ],
   "tsubomi": [
