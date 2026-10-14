@@ -759,6 +759,22 @@
      "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successivo, Java 25 e – novità di questa versione – OUKA 1.4.0 o successivo. Le macchine presenti in un mondo V1.5.0 restano blocchi singoli e non funzionano: vanno rotte e ricollocate. Il Heavy Mill non è più costruito come cubo; il suo involucro e il suo rotore sono ciò con cui viene fabbricato. L'installazione di ASTRAEA insieme ad Alpha non è supportata.",
      "Corretto: aggiungere un giocatore alla lista di fiducia del Corvus Book Pro poteva registrare il giocatore sbagliato su alcuni server, facendo sì che le telecamere continuassero a seguirlo. Ora un giocatore online viene trovato per nome e il risultato appare nella finestra di CorvusOS. Non incluso in questa versione: gli altri gruppi ricostruiti (logistica, difesa, forgia ed equipaggiamento, veicoli e frontiera, mito, arredi) seguiranno nelle versioni successive; i suoni delle macchine sono stati generati e verificati soltanto tramite misurazione."
     ]
+   },
+   {
+    "id": "astraea-v1.5.3",
+    "title": "Logistica e casa",
+    "summary": "Tutti i 21 elementi di Logistica e casa sono stati ricostruiti alla dimensione reale: una pressa per monete alta tre blocchi, un ATM e un frigorifero alti quanto te, un compressore attorno al quale si può camminare, e dispositivi da un blocco che si muovono, si accendono e illuminano la stanza mentre lavorano. È richiesto OUKA 1.4.0 o successivo, come in V1.5.2.",
+    "highlights": [
+     "Sette impianti, collocati interi: Sovereign Mint 2×2×3, ATM 1×1×2, Scriptoria Press 2×1×2, Archive Shelf 1×1×2, Frigorifero 1×1×2, Compressore 2×2×2 e Lockdown Console 2×1×1. Usa l'oggetto su un terreno libero e l'impianto si erge di fronte a te; si può usare qualsiasi parte, e rompere qualsiasi parte lo restituisce intero come un unico oggetto.",
+     "Si muovono: il volano della Sovereign Mint oscilla e il suo maglio colpisce il tondello; la pressa tira un foglio sotto la sua piastra; lo scaffale mostra i libri che contiene; il manometro e il volano del compressore girano mentre il combustibile brucia; le spie della console diventano rosse quando si attiva il blocco.",
+     "Sette dispositivi da un blocco con un corpo tutto loro: un rubinetto su piedistallo che eroga acqua, un forno a microonde la cui finestra si illumina e le cui spie segnalano la cottura, un ventilatore da soffitto che gira (e si ferma con un segnale di redstone), un mittente e un ricevitore con un vettore che scorre in un tubo di vetro, una valvola di sicurezza il cui coperchio si solleva, e una piazzola per droni con luci di atterraggio. In funzione, ciascuno illumina la stanza.",
+     "Il drone corriere ora è un quadricottero, con rotori, pattini, luci di posizione e il suo vettore sospeso sotto, e si orienta nella direzione in cui vola.",
+     "Gold Sovereign e Holo-Note hanno un corpo da tenere in mano, e ciascuno dei sette impianti mostra la propria dimensione e lo spazio di cui ha bisogno quando tieni premuto Shift."
+    ],
+    "warnings": [
+     "In un mondo della V1.5.2, rompi e ricolloca ogni elemento di Logistica e casa già piazzato (ciò che conteneva cade); fino ad allora potrebbe non essere disegnato correttamente o non funzionare.",
+     "Un ventilatore da soffitto fermato da un segnale di redstone non rimuove più il gas. Nessun nuovo suono in questa versione: questi dispositivi usano ancora i suoni originali del gioco. I restanti 284 arrivano da V1.5.4 a V1.5.9."
+    ]
    }
   ],
   "tsubomi": [

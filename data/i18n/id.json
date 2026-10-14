@@ -759,6 +759,22 @@
      "Memerlukan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, Java 25, dan – baru di versi ini – OUKA 1.4.0 atau lebih baru. Mesin yang berdiri di dunia V1.5.0 tetap sebagai blok tunggal dan tidak berfungsi: hancurkan lalu letakkan kembali. Heavy Mill tidak lagi dibangun sebagai kubus; selubung dan rotornya adalah bahan pembuatannya. Pemasangan ASTRAEA bersama Alpha tidak didukung.",
      "Diperbaiki: menambahkan pemain ke daftar kepercayaan Corvus Book Pro dapat mencatat pemain yang salah di beberapa server, sehingga kamera terus mengikuti mereka. Kini pemain daring ditemukan berdasarkan nama, dan hasilnya ditampilkan di dalam jendela CorvusOS. Tidak ada di versi ini: kelompok lain yang dibangun ulang (logistik, pertahanan, pandai besi dan perlengkapan, kendaraan dan perbatasan, mitos, perabot) menyusul di versi berikutnya; suara mesin dibuat dan diperiksa hanya dengan pengukuran."
     ]
+   },
+   {
+    "id": "astraea-v1.5.3",
+    "title": "Logistik dan Rumah",
+    "summary": "Semua 21 benda Logistik dan Rumah dibangun ulang dalam ukuran sebenarnya: mesin cetak koin setinggi tiga blok, ATM dan kulkas setinggi badan Anda, kompresor yang bisa Anda kelilingi, serta perangkat satu blok yang bergerak, menyala, dan menerangi ruangan saat bekerja. OUKA 1.4.0 atau yang lebih baru diperlukan, seperti di V1.5.2.",
+    "highlights": [
+     "Tujuh instalasi, ditempatkan utuh: Sovereign Mint 2×2×3, ATM 1×1×2, Scriptoria Press 2×1×2, Archive Shelf 1×1×2, Kulkas 1×1×2, Kompresor 2×2×2 dan Lockdown Console 2×1×1. Gunakan item di tanah kosong dan instalasi akan berdiri menghadap Anda; bagian mana pun bisa digunakan, dan merusak bagian mana pun mengembalikan seluruhnya sebagai satu item.",
+     "Mereka bergerak: roda gila Sovereign Mint berayun dan palunya memukul logam kosong; mesin press menarik lembaran di bawah pelatnya; rak menampilkan buku yang disimpannya; penunjuk dan roda gila kompresor berputar selama bahan bakar terbakar; lampu konsol berubah merah saat lockdown diaktifkan.",
+     "Tujuh perangkat satu blok dengan wujudnya sendiri: keran pedestal yang mengalirkan air, microwave yang jendelanya menyala dan lampunya menunjukkan proses memasak, kipas angin langit-langit yang berputar (dan berhenti saat ada sinyal redstone), pengirim dan penerima dengan pembawa yang meluncur di tabung kaca, katup pengaman yang tutupnya terangkat, serta landasan drone dengan lampu pendaratan. Saat bekerja, masing-masing menerangi ruangan.",
+     "Drone kurir kini berupa quadcopter, dengan baling-baling, kaki pendarat, lampu navigasi, dan pembawa yang tergantung di bawah; drone menghadap arah terbangnya.",
+     "Gold Sovereign dan Holo-Note punya bentuk untuk dipegang, dan setiap tujuh instalasi menunjukkan ukurannya serta ruang yang dibutuhkannya saat Shift ditahan."
+    ],
+    "warnings": [
+     "Di dunia dari V1.5.2, pecahkan dan pasang ulang semua yang sudah terpasang dari Logistik dan Rumah (isi yang tersimpan akan jatuh); sampai saat itu mungkin tidak tergambar dengan benar atau tidak berfungsi.",
+     "Kipas angin langit-langit yang dihentikan sinyal redstone tidak lagi membersihkan gas. Tidak ada suara baru di rilis ini: perangkat ini tetap memakai suara bawaan game. Sisa dari 284 menyusul di V1.5.4 hingga V1.5.9."
+    ]
    }
   ],
   "tsubomi": [

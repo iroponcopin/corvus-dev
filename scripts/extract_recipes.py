@@ -2332,6 +2332,20 @@ def published_textures():
 # 組にかぎって通す(別の鍵・別の品は今までどおり止まる)。前の鍵の絵(PNG)は、そのまま残さなければならない(下の見張りが、バイトまで見る)。
 INTENDED_ICON_CHANGES = {
     "ouka:operating_shelter_block": ("t157", "t269", "V1.4 new shelter look, owner-intended 2026-10-05"),
+    "astraea:appliance_ceiling_fan": ("t396", "t730", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:appliance_faucet": ("t397", "t731", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:appliance_microwave": ("t398", "t732", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:appliance_refrigerator": ("t400", "t733", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:archive_shelf": ("t402", "t734", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:atm_terminal": ("t408", "t735", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:lockdown_console": ("t476", "t736", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:pneumatic_compressor": ("t491", "t737", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:pneumatic_drone_pad": ("t492", "t738", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:pneumatic_receiver": ("t493", "t739", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:pneumatic_safety_valve": ("t494", "t740", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:pneumatic_sender": ("t495", "t741", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:scriptoria_press": ("t538", "t742", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "astraea:sovereign_mint": ("t547", "t743", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
 }
 
 

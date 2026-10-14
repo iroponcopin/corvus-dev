@@ -759,6 +759,22 @@
      "Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente, Fabric API 0.161.0+26.3 ou mais recente, Java 25 e – novidade nesta versão – OUKA 1.4.0 ou mais recente. As máquinas que estavam em um mundo da V1.5.0 continuam como blocos únicos e não funcionam: é preciso quebrá-las e colocá-las de novo. O Heavy Mill não é mais construído como cubo; seu revestimento e seu rotor são o que ele é feito. Instalar o ASTRAEA junto com o Alpha não é suportado.",
      "Corrigido: adicionar um jogador à lista de confiança do Corvus Book Pro podia registrar o jogador errado em alguns servidores, e as câmeras continuavam seguindo essas pessoas. Agora um jogador online é encontrado pelo nome, e o resultado aparece dentro da janela do CorvusOS. Não nesta versão: os outros grupos reconstruídos (logística, defesa, forja e equipamento, veículos e fronteira, mito, mobília) virão em versões seguintes; os sons das máquinas foram gerados e verificados apenas por medição."
     ]
+   },
+   {
+    "id": "astraea-v1.5.3",
+    "title": "Logística e a casa",
+    "summary": "Todos os 21 itens de Logística e a casa foram reconstruídos no tamanho real: uma prensa de cunhagem com três blocos de altura, um ATM e uma geladeira na sua altura, um compressor em volta do qual dá para andar e dispositivos de um bloco que se movem, acendem e iluminam o ambiente enquanto trabalham. É necessário o OUKA 1.4.0 ou mais recente, como na V1.5.2.",
+    "highlights": [
+     "Sete instalações, colocadas inteiras: Sovereign Mint 2×2×3, ATM 1×1×2, Scriptoria Press 2×1×2, Archive Shelf 1×1×2, Geladeira 1×1×2, Compressor 2×2×2 e Lockdown Console 2×1×1. Use o item em terreno livre e a instalação surge voltada para você; qualquer parte pode ser usada, e quebrar qualquer parte devolve o conjunto como um único item.",
+     "Elas se movem: o volante da Sovereign Mint balança e o martelo bate na peça bruta; a prensa puxa uma folha sob a placa; a estante mostra os livros que guarda; o manômetro e o volante do compressor giram enquanto o combustível queima; as luzes do console ficam vermelhas quando o bloqueio é acionado.",
+     "Sete dispositivos de um bloco com corpo próprio: uma torneira de pedestal que solta água, um micro-ondas cuja janela brilha e cujas luzes indicam o cozimento, um ventilador de teto que gira (e para com um sinal de redstone), um emissor e um receptor com um transportador que corre num tubo de vidro, uma válvula de segurança cuja tampa se levanta, e uma plataforma de drones com luzes de pouso. Em funcionamento, cada um ilumina o ambiente.",
+     "O drone de entrega agora é um quadricóptero, com hélices, patins, luzes de navegação e o transportador preso embaixo, e fica virado na direção em que voa.",
+     "O Gold Sovereign e o Holo-Note têm corpo na mão, e cada uma das sete instalações mostra seu tamanho e o espaço de que precisa ao segurar Shift."
+    ],
+    "warnings": [
+     "Num mundo da V1.5.2, quebre e coloque de novo qualquer item de Logística e a casa que já estava colocado (o que ele guardava cai); até lá, pode não ser desenhado corretamente nem funcionar.",
+     "Um ventilador de teto parado por um sinal de redstone não limpa mais o gás. Nenhum som novo nesta versão: esses dispositivos ainda usam os sons do próprio jogo. Os 284 restantes chegam da V1.5.4 à V1.5.9."
+    ]
    }
   ],
   "tsubomi": [

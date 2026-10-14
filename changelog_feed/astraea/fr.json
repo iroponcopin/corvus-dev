@@ -1,15 +1,41 @@
 {
  "lang": "fr",
  "brand": "astraea",
- "updated": "2026-10-13",
+ "updated": "2026-10-14",
  "title": "Historique des mises à jour",
- "updated_label": "Mis à jour le 2026-10-13",
+ "updated_label": "Mis à jour le 2026-10-14",
  "note": "",
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Heavy Industry",
+   "summary": "Logistique et maison",
    "releases": [
+    {
+     "version": "V1.5.3",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "Logistique et maison",
+     "summary": "Les 21 éléments de Logistique et maison sont reconstruits à leur taille réelle : une presse à monnayer haute de trois blocs, un ATM et un réfrigérateur à votre hauteur, un compresseur autour duquel on peut marcher, et des appareils d'un bloc qui bougent, s'allument et éclairent la pièce pendant leur fonctionnement. OUKA 1.4.0 ou plus récent est requis, comme dans V1.5.2.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Sept installations, placées entières : Sovereign Mint 2×2×3, ATM 1×1×2, Scriptoria Press 2×1×2, Archive Shelf 1×1×2, Réfrigérateur 1×1×2, Compresseur 2×2×2 et Lockdown Console 2×1×1. Utiliser l'objet sur un sol dégagé fait surgir l'installation face à vous ; n'importe quelle partie peut servir, et casser n'importe quelle partie rend l'ensemble sous forme d'un seul objet.",
+        "Elles bougent : le volant de la Sovereign Mint oscille et son piston frappe le flan ; la presse tire une feuille sous sa platine ; l'étagère montre les livres qu'elle contient ; le manomètre et le volant du compresseur tournent pendant que le combustible brûle ; les voyants de la console deviennent rouges quand le verrouillage est déclenché.",
+        "Sept appareils d'un bloc dotés de leur propre corps : un robinet sur colonne qui coule, un micro-ondes dont la vitre s'éclaire et dont les voyants indiquent la cuisson, un ventilateur de plafond qui tourne (et s'arrête sur un signal de redstone), un émetteur et un récepteur avec un porteur qui file dans un tube de verre, une soupape de sécurité dont le capuchon se soulève, et une aire d'atterrissage de drones avec ses feux. En fonctionnement, chacun éclaire la pièce.",
+        "Le drone de livraison est désormais un quadricoptère, avec rotors, patins, feux de position et son porteur suspendu dessous ; il fait face à la direction de son vol.",
+        "Le Gold Sovereign et le Holo-Note ont un corps en main, et chacune des sept installations indique sa taille et l'espace qu'elle demande lorsque vous maintenez Shift."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Dans un monde de V1.5.2, cassez puis replacez tout élément de Logistique et maison déjà posé (ce qu'il contenait tombe) ; d'ici là, il peut ne pas être dessiné correctement ou ne pas fonctionner.",
+        "Un ventilateur de plafond arrêté par un signal de redstone n'évacue plus le gaz. Aucun nouveau son dans cette version : ces appareils utilisent toujours les sons d'origine du jeu. Les 284 autres arrivent de V1.5.4 à V1.5.9."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5.2",
      "date": "2026-10-13",

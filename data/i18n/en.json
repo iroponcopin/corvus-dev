@@ -763,6 +763,22 @@
      "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer, Java 25 and — new in this version — OUKA 1.4.0 or newer. Machines standing in a V1.5.0 world stay as single blocks and do not work: break them and set them down again. The Heavy Mill is no longer built as a cube; its casing and rotor are what it is crafted from. Installing ASTRAEA together with Alpha is not supported.",
      "Fixed: adding a player to the Corvus Book Pro's trust list could record the wrong player on some servers, so the cameras went on following them — an online player is now found by name, and the result is shown inside the CorvusOS window. Not in this version: the other rebuilt groups (logistics, defence, forge and gear, vehicles and the frontier, myth, furnishings) follow in later versions; the machines' sounds have been generated and checked by measurement only."
     ]
+   },
+   {
+    "id": "astraea-v1.5.3",
+    "title": "Logistics and the House",
+    "summary": "All 21 things of Logistics and the House are rebuilt at the size of the real thing: a coining press three blocks tall, an ATM and a refrigerator as tall as you are, a compressor you can walk round, and one-block devices that move, light up and light the room while they work. OUKA 1.4.0 or newer is required, as in V1.5.2.",
+    "highlights": [
+     "Seven plants, placed whole: Sovereign Mint 2×2×3, ATM 1×1×2, Scriptoria Press 2×1×2, Archive Shelf 1×1×2, Refrigerator 1×1×2, Compressor 2×2×2 and Lockdown Console 2×1×1. Use the item on clear ground and it stands facing you; any part can be used, and breaking any part returns the whole as one item.",
+     "They move: the mint's fly swings and its ram strikes the blank; the press pulls a sheet under its platen; the shelf shows the books it holds; the compressor's gauge and flywheel run while fuel burns; the console's lamps turn red when the lockdown is thrown.",
+     "Seven one-block devices with bodies of their own: a pedestal faucet that runs, a microwave whose window glows and whose lamps count the cook, a ceiling fan that turns (and stops on a redstone signal), a sender and a receiver with a carrier running in a glass tube, a safety valve whose cap lifts, and a drone pad with landing lights. Working, each lights the room.",
+     "The courier drone is a quadcopter now, with rotors, skids, running lights and its carrier slung beneath, and it faces the way it flies.",
+     "The water pipe is a pipe, the pneumatic tube has brass collars, the display case a brass frame, the holo-sign is a projector and the maglev conveyor a track. The Gold Sovereign and the Holo-Note have bodies in the hand, and each of the seven plants tells you its size and the room it needs when you hold Shift."
+    ],
+    "warnings": [
+     "In a world from V1.5.2, break anything of Logistics and the House that was already placed and place it again (what it held drops); until then it may not be drawn properly or work.",
+     "A ceiling fan stopped by a redstone signal no longer clears gas. No new sounds in this release: these devices still use the game's own sounds. The rest of the 284 follow in V1.5.4 to V1.5.9."
+    ]
    }
   ],
   "tsubomi": [

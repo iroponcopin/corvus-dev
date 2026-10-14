@@ -759,6 +759,22 @@
      "Erforderlich sind Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer, Java 25 und – neu in dieser Version – OUKA 1.4.0 oder neuer. Maschinen, die in einer Welt von V1.5.0 stehen, bleiben als einzelne Blöcke erhalten und funktionieren nicht: Man zerbricht sie und stellt sie erneut auf. Der Heavy Mill wird nicht mehr als Würfel gebaut; sein Gehäuse und sein Rotor sind die Bestandteile, aus denen er hergestellt wird. Die gemeinsame Installation von ASTRAEA und Alpha wird nicht unterstützt.",
      "Behoben: Das Hinzufügen eines Spielers zur Vertrauensliste des Corvus Book Pro konnte auf manchen Servern den falschen Spieler speichern, sodass die Kameras ihm weiter folgten. Ein online befindlicher Spieler wird nun über seinen Namen gefunden, und das Ergebnis wird im CorvusOS-Fenster angezeigt. Nicht in dieser Version: Die übrigen neu gebauten Gruppen (Logistik, Verteidigung, Schmiede und Ausrüstung, Fahrzeuge und Grenze, Mythos, Einrichtung) folgen in späteren Versionen; die Geräusche der Maschinen wurden nur durch Messung erzeugt und geprüft."
     ]
+   },
+   {
+    "id": "astraea-v1.5.3",
+    "title": "Logistik und das Haus",
+    "summary": "Alle 21 Dinge aus Logistik und das Haus wurden in der Größe des Originals neu gebaut: eine Prägepresse drei Blöcke hoch, ein ATM und ein Kühlschrank in Körpergröße, ein Kompressor, um den man herumgehen kann, und Geräte aus einem Block, die sich bewegen, leuchten und den Raum beleuchten, während sie arbeiten. OUKA 1.4.0 oder neuer ist erforderlich, wie schon in V1.5.2.",
+    "highlights": [
+     "Sieben Anlagen, ganz platziert: Sovereign Mint 2×2×3, ATM 1×1×2, Scriptoria Press 2×1×2, Archive Shelf 1×1×2, Kühlschrank 1×1×2, Kompressor 2×2×2 und Lockdown Console 2×1×1. Den Gegenstand auf freiem Boden benutzen, dann steht die Anlage dem Spieler gegenüber; jedes Teil kann benutzt werden, und wer ein beliebiges Teil zerbricht, erhält das Ganze als einen Gegenstand zurück.",
+     "Sie bewegen sich: das Schwungrad der Sovereign Mint schwingt und ihr Stempel schlägt auf den Rohling; die Presse zieht ein Blatt unter ihre Druckplatte; das Regal zeigt die Bücher, die es enthält; Anzeige und Schwungrad des Kompressors laufen, solange Brennstoff verbrennt; die Lampen der Konsole werden rot, wenn der Lockdown ausgelöst wird.",
+     "Sieben Geräte aus einem Block mit eigenem Körper: ein Wasserhahn auf einem Sockel, der Wasser fließen lässt; eine Mikrowelle, deren Fenster leuchtet und deren Lampen den Garvorgang zählen; ein Deckenventilator, der sich dreht (und auf ein Redstone-Signal hin stoppt); ein Sender und ein Empfänger, zwischen denen ein Träger durch eine Glasröhre läuft; ein Sicherheitsventil, dessen Kappe sich hebt; und ein Drohnenlandeplatz mit Landelichtern. Im Betrieb beleuchtet jedes Gerät den Raum.",
+     "Die Kurierdrohne ist jetzt ein Quadrocopter mit Rotoren, Landekufen, Positionslichtern und dem darunter hängenden Träger, und sie zeigt in die Richtung, in die sie fliegt.",
+     "Gold Sovereign und Holo-Note haben einen Körper zum Anfassen, und jede der sieben Anlagen zeigt beim Halten von Shift ihre Größe und den Raum, den sie braucht."
+    ],
+    "warnings": [
+     "In einer Welt aus V1.5.2: Alles von Logistik und das Haus, das bereits platziert war, zerbrechen und neu platzieren (was es enthielt, fällt heraus); bis dahin wird es womöglich nicht richtig gezeichnet oder funktioniert nicht.",
+     "Ein Deckenventilator, der durch ein Redstone-Signal angehalten wurde, entfernt kein Gas mehr. Keine neuen Geräusche in dieser Version: Diese Geräte verwenden weiterhin die Geräusche des Spiels. Die übrigen 284 folgen mit V1.5.4 bis V1.5.9."
+    ]
    }
   ],
   "tsubomi": [

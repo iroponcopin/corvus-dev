@@ -759,6 +759,22 @@
      "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni, Fabric API 0.161.0+26.3 veya daha yeni, Java 25 ve – bu sürümle gelen yenilik – OUKA 1.4.0 veya daha yeni gerekir. Bir V1.5.0 dünyasında duran makineler tek blok olarak kalır ve çalışmaz: kırılıp yeniden yerleştirilmeleri gerekir. Heavy Mill artık küp olarak inşa edilmiyor; gövdesi ve rotoru, onun yapıldığı malzemelerdir. ASTRAEA'nın Alpha ile birlikte kurulumu desteklenmiyor.",
      "Düzeltildi: Corvus Book Pro'nun güven listesine bir oyuncu eklenmesi bazı sunucularda yanlış oyuncuyu kaydedebiliyor ve kameralar onları izlemeye devam ediyordu. Artık çevrimiçi bir oyuncu adıyla bulunuyor ve sonuç CorvusOS penceresinde gösteriliyor. Bu sürümde olmayanlar: yeniden yapılan diğer gruplar (lojistik, savunma, dövme ve donanım, araçlar ve sınır, mit, mobilya) sonraki sürümlerde gelecek; makinelerin sesleri yalnızca ölçümle üretildi ve kontrol edildi."
     ]
+   },
+   {
+    "id": "astraea-v1.5.3",
+    "title": "Lojistik ve Ev",
+    "summary": "Lojistik ve Ev'in 21 öğesinin tamamı gerçek boyutlarında yeniden yapıldı: üç blok yüksekliğinde bir darphane presi, boyunuz kadar bir ATM ve buzdolabı, etrafında dolaşabileceğiniz bir kompresör ve çalışırken hareket eden, ışık yayan ve odayı aydınlatan tek bloklu cihazlar. V1.5.2'de olduğu gibi OUKA 1.4.0 veya üzeri gereklidir.",
+    "highlights": [
+     "Yedi tesis, bütün olarak yerleştirildi: Sovereign Mint 2×2×3, ATM 1×1×2, Scriptoria Press 2×1×2, Archive Shelf 1×1×2, Buzdolabı 1×1×2, Kompresör 2×2×2 ve Lockdown Console 2×1×1. Eşyayı açık bir zeminde kullandığınızda tesis size dönük olarak yükselir; herhangi bir parçayı kullanmak tesisi açar, herhangi bir parçayı kırmak ise tümünü tek bir eşya olarak geri verir.",
+     "Hareket ederler: Sovereign Mint'in volanı sallanır ve tokmağı boş parçaya vurur; pres, plakasının altına bir levha çeker; raf içindeki kitapları gösterir; kompresörün göstergesi ve volanı yakıt yanarken çalışır; konsolun lambaları kilitleme devreye girince kırmızıya döner.",
+     "Kendi gövdeleri olan yedi tek bloklu cihaz: çalışan bir ayaklı musluk, penceresi parlayan ve lambaları pişirme süresini gösteren bir mikrodalga fırın, redstone sinyaliyle duran ve dönen bir tavan vantilatörü, cam bir tüpte taşıyıcının kaydığı bir gönderici ve bir alıcı, kapağı kalkan bir emniyet supabı ve iniş ışıklı bir drone pedi. Çalıştıklarında her biri odayı aydınlatır.",
+     "Kurye drone'u artık dört pervaneli bir quadcopter; pervaneleri, iniş takımları ve seyir ışıkları var ve taşıyıcısı altına sarkıyor. Uçtuğu yöne bakıyor.",
+     "Gold Sovereign ve Holo-Note elde tutulabilen bir gövdeye sahip; yedi tesisin her biri, Shift tuşuna basılı tutulduğunda kendi boyutunu ve ihtiyaç duyduğu alanı gösterir."
+    ],
+    "warnings": [
+     "V1.5.2'den kalma bir dünyada, Lojistik ve Ev'den zaten yerleştirilmiş olan her şeyi kırıp yeniden yerleştirin (içinde ne varsa düşer); o zamana kadar doğru çizilmeyebilir veya çalışmayabilir.",
+     "Redstone sinyaliyle durdurulan bir tavan vantilatörü artık gazı temizlemez. Bu sürümde yeni ses yok: bu cihazlar hâlâ oyunun kendi seslerini kullanıyor. 284'ün geri kalanı V1.5.4 ile V1.5.9 arasında gelecek."
+    ]
    }
   ],
   "tsubomi": [

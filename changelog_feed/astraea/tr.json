@@ -1,15 +1,41 @@
 {
  "lang": "tr",
  "brand": "astraea",
- "updated": "2026-10-13",
+ "updated": "2026-10-14",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-13 tarihinde güncellendi",
+ "updated_label": "2026-10-14 tarihinde güncellendi",
  "note": "",
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Heavy Industry",
+   "summary": "Lojistik ve Ev",
    "releases": [
+    {
+     "version": "V1.5.3",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "Lojistik ve Ev",
+     "summary": "Lojistik ve Ev'in 21 öğesinin tamamı gerçek boyutlarında yeniden yapıldı: üç blok yüksekliğinde bir darphane presi, boyunuz kadar bir ATM ve buzdolabı, etrafında dolaşabileceğiniz bir kompresör ve çalışırken hareket eden, ışık yayan ve odayı aydınlatan tek bloklu cihazlar. V1.5.2'de olduğu gibi OUKA 1.4.0 veya üzeri gereklidir.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Yedi tesis, bütün olarak yerleştirildi: Sovereign Mint 2×2×3, ATM 1×1×2, Scriptoria Press 2×1×2, Archive Shelf 1×1×2, Buzdolabı 1×1×2, Kompresör 2×2×2 ve Lockdown Console 2×1×1. Eşyayı açık bir zeminde kullandığınızda tesis size dönük olarak yükselir; herhangi bir parçayı kullanmak tesisi açar, herhangi bir parçayı kırmak ise tümünü tek bir eşya olarak geri verir.",
+        "Hareket ederler: Sovereign Mint'in volanı sallanır ve tokmağı boş parçaya vurur; pres, plakasının altına bir levha çeker; raf içindeki kitapları gösterir; kompresörün göstergesi ve volanı yakıt yanarken çalışır; konsolun lambaları kilitleme devreye girince kırmızıya döner.",
+        "Kendi gövdeleri olan yedi tek bloklu cihaz: çalışan bir ayaklı musluk, penceresi parlayan ve lambaları pişirme süresini gösteren bir mikrodalga fırın, redstone sinyaliyle duran ve dönen bir tavan vantilatörü, cam bir tüpte taşıyıcının kaydığı bir gönderici ve bir alıcı, kapağı kalkan bir emniyet supabı ve iniş ışıklı bir drone pedi. Çalıştıklarında her biri odayı aydınlatır.",
+        "Kurye drone'u artık dört pervaneli bir quadcopter; pervaneleri, iniş takımları ve seyir ışıkları var ve taşıyıcısı altına sarkıyor. Uçtuğu yöne bakıyor.",
+        "Gold Sovereign ve Holo-Note elde tutulabilen bir gövdeye sahip; yedi tesisin her biri, Shift tuşuna basılı tutulduğunda kendi boyutunu ve ihtiyaç duyduğu alanı gösterir."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "V1.5.2'den kalma bir dünyada, Lojistik ve Ev'den zaten yerleştirilmiş olan her şeyi kırıp yeniden yerleştirin (içinde ne varsa düşer); o zamana kadar doğru çizilmeyebilir veya çalışmayabilir.",
+        "Redstone sinyaliyle durdurulan bir tavan vantilatörü artık gazı temizlemez. Bu sürümde yeni ses yok: bu cihazlar hâlâ oyunun kendi seslerini kullanıyor. 284'ün geri kalanı V1.5.4 ile V1.5.9 arasında gelecek."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5.2",
      "date": "2026-10-13",
