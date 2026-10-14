@@ -307,6 +307,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.2",
+    "title": "The Grand Synthesis 1.6.2 — el tren maglev Ryusei",
+    "summary": "Una actualización ferroviaria. El tren maglev Ryusei circula por una vía que tú trazas, con estaciones, una consola de despacho y un tren de cuatro vagones por el que se puede caminar. Añade 6 objetos nuevos y 3 bloques nuevos.",
+    "highlights": [
+     "Une los nodos de la vía en orden con el Topógrafo Ryusei. Cada enlace informa de la longitud de la línea, de su curva más cerrada y de la velocidad permitida, y se rechaza cualquier curva o pendiente que el tren no pueda tomar.",
+     "Coloca una bobina de parada junto a una vía enlazada para crear una estación, y una consola de despacho cerca. Usa una tarjeta de composición en la consola para situar el tren en esa estación y arrancar la lanzadera entre estaciones.",
+     "Viaja en el tren de cuatro vagones: siéntate en un asiento y camina por el pasillo mientras el tren se mueve. Las puertas solo se abren cuando el tren está detenido en su estación y permanecen cerradas mientras se mueve.",
+     "La cabina del vagón de cabeza muestra la velocidad, la frecuencia del inversor y el voltaje de la línea. Si algo está en la vía, el tren espera antes de ello, y nunca rompe bloques."
+    ],
+    "warnings": [
+     "Esta versión todavía no tiene bloques de energía ni red eléctrica. El voltaje y la frecuencia de la cabina son solo de adorno. Si vuelves a la versión anterior después de jugar, los objetos y bloques Ryusei desaparecen del mundo.",
+     "Antes de instalar 1.6.2, quita el jar antiguo de OUKA de la carpeta mods y deja solo una copia de GeckoLib 5.5.6. Necesita Minecraft 26.3, Fabric Loader 0.19.5 o más reciente, y Fabric API 0.161.0+26.3 o más reciente. Instálalo en el cliente y en el servidor."
+    ]
+   },
+   {
     "id": "ouka-v1.6.1",
     "title": "The Grand Synthesis 1.6.1 — vena espiritual, hechicería y señales de sello",
     "summary": "Una actualización de la vena espiritual. Una Daga ritual de plata abre tu vena, y con ella llegan la lluvia de hojas fantasma, la vista espiritual y las señales de protección. Añade 4 objetos nuevos y 1 bloque nuevo, la señal de sello.",

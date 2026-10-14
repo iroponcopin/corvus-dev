@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis 1.6.1 — veine spirituelle, sorcellerie et signes de sceau",
+   "summary": "The Grand Synthesis 1.6.2 — le train maglev Ryusei",
    "releases": [
+    {
+     "version": "V1.6.2",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.2 — le train maglev Ryusei",
+     "summary": "Une mise à jour ferroviaire. Le train maglev Ryusei roule sur une voie que vous tracez vous-même, avec des gares, un pupitre de régulation et un train de quatre voitures où l'on peut marcher. Elle ajoute 6 nouveaux objets et 3 nouveaux blocs.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Reliez les nœuds de voie dans l'ordre avec le Relevé Ryusei. Chaque liaison annonce la longueur de la ligne, sa courbe la plus serrée et la vitesse autorisée, et une courbe ou une pente que le train ne peut pas prendre est refusée.",
+        "Placez une bobine d'arrêt à côté d'une voie reliée pour créer une gare, puis un pupitre de régulation à proximité. Utilisez une carte de rame sur le pupitre pour poser le train à cette gare et lancer la navette entre les gares.",
+        "Montez dans le train de quatre voitures : asseyez-vous sur un siège et marchez dans le couloir pendant que le train roule. Les portes ne s'ouvrent que lorsque le train est arrêté à sa gare, et restent verrouillées pendant la marche.",
+        "La cabine de la voiture de tête affiche la vitesse, la fréquence de l'onduleur et la tension de la ligne. Si un objet se trouve sur la voie, le train attend avant lui, et il ne casse jamais de blocs."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Cette version n'a pas encore de blocs d'alimentation ni de réseau électrique. La tension et la fréquence de la cabine ne sont qu'un affichage. Si vous revenez à la version précédente après avoir joué, les objets et blocs Ryusei disparaissent du monde.",
+        "Avant d'installer 1.6.2, retirez l'ancien jar d'OUKA du dossier mods et ne gardez qu'un seul exemplaire de GeckoLib 5.5.6. Il faut Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, et Fabric API 0.161.0+26.3 ou plus récent. Installez-le sur le client et sur le serveur."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.1",
      "date": "2026-10-14",

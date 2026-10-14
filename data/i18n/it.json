@@ -307,6 +307,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.2",
+    "title": "The Grand Synthesis 1.6.2 — il treno maglev Ryusei",
+    "summary": "Un aggiornamento ferroviario. Il treno maglev Ryusei corre su un binario che tracci tu, con stazioni, una consolle di smistamento e un treno di quattro vetture in cui si può camminare. Aggiunge 6 nuovi oggetti e 3 nuovi blocchi.",
+    "highlights": [
+     "Collega in ordine i nodi del binario con lo Strumento di rilievo Ryusei. Ogni collegamento riporta la lunghezza della linea, la curva più stretta e la velocità consentita, e una curva o una pendenza che il treno non può percorrere viene rifiutata.",
+     "Metti una bobina di fermata accanto a un binario collegato per creare una stazione, poi una consolle di smistamento lì vicino. Usa una scheda di composizione sulla consolle per piazzare il treno in quella stazione e avviare la navetta tra le stazioni.",
+     "Viaggia sul treno di quattro vetture: siediti su un sedile e percorri il corridoio mentre il treno si muove. Le porte si aprono solo quando il treno è fermo alla sua stazione e restano chiuse mentre si muove.",
+     "La cabina della vettura di testa mostra la velocità, la frequenza dell'inverter e la tensione di linea. Se qualcosa è sul binario, il treno si ferma prima, e non rompe mai i blocchi."
+    ],
+    "warnings": [
+     "Questa versione non ha ancora blocchi di alimentazione né rete elettrica. La tensione e la frequenza in cabina sono solo di scena. Se torni alla versione precedente dopo aver giocato, gli oggetti e i blocchi Ryusei spariscono dal mondo.",
+     "Prima di installare 1.6.2, rimuovi il vecchio jar di OUKA dalla cartella mods e tieni una sola copia di GeckoLib 5.5.6. Richiede Minecraft 26.3, Fabric Loader 0.19.5 o più recente e Fabric API 0.161.0+26.3 o più recente. Installalo sul client e sul server."
+    ]
+   },
+   {
     "id": "ouka-v1.6.1",
     "title": "The Grand Synthesis 1.6.1 — vena spirituale, stregoneria e segni del sigillo",
     "summary": "Un aggiornamento della vena spirituale. Un Pugnale rituale d'argento apre la tua vena, e con esso arrivano la pioggia di lame fantasma, la vista spirituale e i segni di protezione. Aggiunge 4 nuovi oggetti e 1 nuovo blocco, il segno del sigillo.",

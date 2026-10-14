@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis 1.6.1 — Urat Roh, sihir, dan tanda segel",
+   "summary": "The Grand Synthesis 1.6.2 — kereta maglev Ryusei",
    "releases": [
+    {
+     "version": "V1.6.2",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.2 — kereta maglev Ryusei",
+     "summary": "Pembaruan kereta. Kereta maglev Ryusei berjalan di jalur yang Anda buat sendiri, dengan stasiun, konsol pengatur, dan kereta empat gerbong yang bisa dijelajahi. Menambahkan 6 item baru dan 3 blok baru.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Hubungkan Node Jalur secara berurutan dengan Alat Survei Ryusei. Setiap sambungan melaporkan panjang jalur, tikungan paling tajam, dan kecepatan yang diizinkan jalur itu; tikungan atau tanjakan yang tidak bisa dilalui kereta akan ditolak.",
+        "Letakkan Koil Berhenti di dekat jalur yang sudah tersambung untuk membuat stasiun, lalu letakkan Konsol Pengatur di dekatnya. Gunakan Kartu Rangkaian pada konsol untuk menempatkan kereta di stasiun itu dan memulai bolak-balik antarstasiun.",
+        "Naiki kereta empat gerbong: duduk di kursi dan berjalan di lorong saat kereta bergerak. Pintu hanya terbuka saat kereta berhenti di stasiunnya, dan tetap terkunci saat bergerak.",
+        "Kabin gerbong depan menampilkan kecepatan, frekuensi inverter, dan tegangan jalur. Jika ada sesuatu di jalur, kereta menunggu sebelum itu, dan kereta tidak pernah merusak blok."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Versi ini belum punya blok daya dan jaringan listrik. Tegangan dan frekuensi di kabin hanya tampilan. Jika kembali ke versi sebelumnya setelah bermain, item dan blok Ryusei akan hilang dari dunia.",
+        "Sebelum memasang 1.6.2, hapus jar OUKA lama dari folder mods dan simpan hanya satu salinan GeckoLib 5.5.6. Dibutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di klien dan server."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.1",
      "date": "2026-10-14",

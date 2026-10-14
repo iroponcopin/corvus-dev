@@ -307,6 +307,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.2",
+    "title": "The Grand Synthesis 1.6.2 — Ryusei maglev treni",
+    "summary": "Bir tren güncellemesi. Ryusei maglev treni, sizin çizdiğiniz bir hat üzerinde gider; istasyonları, bir sevk konsolu ve içinde gezilebilen dört vagonlu bir tren vardır. 6 yeni eşya ve 3 yeni blok ekler.",
+    "highlights": [
+     "Hat düğümlerini Ryusei Ölçüm Aleti ile sırayla bağlayın. Her bağlantı hattın uzunluğunu, en keskin virajını ve hattın izin verdiği hızı bildirir; trenin geçemeyeceği bir viraj ya da eğim reddedilir.",
+     "Bağlı bir hattın yanına bir Durdurma Bobini koyarak istasyon oluşturun, yakınına da bir sevk konsolu yerleştirin. Konsolda bir Tren Kartı kullanarak treni o istasyona koyun ve istasyonlar arası gidip gelmeyi başlatın.",
+     "Dört vagonlu trende yolculuk edin: bir koltuğa oturun ve tren hareket ederken koridorda yürüyün. Kapılar yalnızca tren istasyonunda durduğunda açılır, hareket halindeyken kilitli kalır.",
+     "Baş vagonun kabinindeki gösterge hızı, evirici frekansını ve hat gerilimini gösterir. Hatta bir şey varsa tren önünde bekler ve bloku hiçbir zaman kırmaz."
+    ],
+    "warnings": [
+     "Bu sürümde henüz güç blokları ve elektrik şebekesi yok. Kabindeki gerilim ve frekans yalnızca görünümdür. Oynadıktan sonra önceki sürüme dönerseniz Ryusei eşyaları ve blokları dünyadan kaybolur.",
+     "1.6.2'yi kurmadan önce eski OUKA jar dosyasını mods klasöründen silin ve yalnızca bir GeckoLib 5.5.6 kopyası bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun."
+    ]
+   },
+   {
     "id": "ouka-v1.6.1",
     "title": "The Grand Synthesis 1.6.1 — Ruh Damarı, büyücülük ve mühür işaretleri",
     "summary": "Bir ruh damarı güncellemesi. Gümüş Ritüel Hançeri damarını açar; onunla birlikte hayalet kılıç yağmuru, ruh görüşü ve koruma işaretleri gelir. 4 yeni eşya ve 1 yeni blok ekler: mühür işareti.",

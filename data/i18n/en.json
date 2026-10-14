@@ -311,6 +311,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.2",
+    "title": "The Grand Synthesis 1.6.2 — the Ryusei maglev train",
+    "summary": "A train update. The Ryusei maglev train runs on guideway you lay out, with stations, a dispatch console and a four-car train you can walk through. It adds 6 new items and 3 new blocks.",
+    "highlights": [
+     "Link Guideway Nodes in order with the Ryusei Survey Transit. Each link reports the line's length, its tightest curve and the speed the line allows, and a curve or slope the train cannot take is refused.",
+     "Place a Stop Coil beside a linked guideway to make a station, then put a Dispatch Console nearby. Use a Consist Card on the console to set the train at that station, and start the shuttle between stations.",
+     "Ride the four-car train: sit in a seat, and walk the aisle while the train moves. The doors open only while the train is stopped at its station, and they stay locked while it moves.",
+     "The head car's cab shows the speed, the inverter frequency and the line voltage. If something stands in the guideway, the train waits short of it, and it never breaks blocks."
+    ],
+    "warnings": [
+     "This version has no power blocks or power network yet. The voltage and frequency on the cab are for show only. Going back to the previous version after playing removes the Ryusei items and blocks from the world.",
+     "Before you install 1.6.2, remove the old OUKA jar from the mods folder and keep only one copy of GeckoLib 5.5.6. It needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, and Fabric API 0.161.0+26.3 or newer. Install it on both the client and the server."
+    ]
+   },
+   {
     "id": "ouka-v1.6.1",
     "title": "The Grand Synthesis 1.6.1 — the Spirit Vein, sorcery and Sigil Marks",
     "summary": "A Spirit Vein update. A Silver Rite Dagger opens your vein, and with it come the Phantom Blade Rain, Spirit Sight and ward marks. It adds 4 new items and 1 new block, the Sigil Mark.",

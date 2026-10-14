@@ -1,6 +1,6 @@
 {
  "sources": {
-  "ouka": "1.6.1",
+  "ouka": "1.6.2",
   "cherry": "1.2.1"
  },
  "stations": [
@@ -366,12 +366,6 @@
    "m1b6baa022aa2",
    "flat"
   ],
-  "minecraft:spyglass": [
-   "望遠鏡",
-   "Spyglass",
-   "mf5fa0ef1e0b2",
-   "flat"
-  ],
   "minecraft:wheat_seeds": [
    "小麦の種",
    "Wheat Seeds",
@@ -480,12 +474,6 @@
    "m0d9f2862d704",
    "flat"
   ],
-  "ouka:carbon_plate": [
-   "カーボンプレート",
-   "Carbon Plate",
-   "ma8fcdbe26e90",
-   "flat"
-  ],
   "ouka:catalyst_pellet": [
    "触媒ペレット",
    "Catalyst Pellet",
@@ -556,12 +544,6 @@
    "重水素セル",
    "Deuterium Cell",
    "m3c4de1753649",
-   "flat"
-  ],
-  "ouka:electrolytic_copper_plate": [
-   "電解銅板",
-   "Electrolytic Copper Plate",
-   "m0cba4ec74223",
    "flat"
   ],
   "ouka:electrolytic_refining_cell": [
@@ -786,12 +768,6 @@
    "ma63fee0671e7",
    "flat"
   ],
-  "ouka:micro_circuit_board": [
-   "微細回路基板",
-   "Micro Circuit Board",
-   "m6f720d7e94f4",
-   "flat"
-  ],
   "ouka:molten_salt_exchanger": [
    "高温溶融塩熱交換タワー",
    "Molten Salt Exchanger Tower",
@@ -828,12 +804,6 @@
    "m1f6c043f552d",
    "flat"
   ],
-  "ouka:precision_module": [
-   "精密モジュール",
-   "Precision Module",
-   "m282af5ff1f12",
-   "flat"
-  ],
   "ouka:pure_titanium_ingot": [
    "超高純度チタンのインゴット",
    "Pure Titanium Ingot",
@@ -844,12 +814,6 @@
    "高圧熱分解炭素重合機",
    "Pyrolytic Carbon Press",
    "m75a07c613f05",
-   "flat"
-  ],
-  "ouka:quantum_chip": [
-   "量子チップ",
-   "Quantum Chip",
-   "m3a6e206a23e9",
    "flat"
   ],
   "ouka:rare_gas_canister": [
@@ -924,12 +888,6 @@
    "m1036372e3d37",
    "flat"
   ],
-  "ouka:superconducting_coil": [
-   "超伝導コイル",
-   "Superconducting Coil",
-   "mb9021783ee7e",
-   "flat"
-  ],
   "ouka:superconducting_coil_winder": [
    "超伝導コイル巻線機",
    "Superconducting Coil Winder",
@@ -982,12 +940,6 @@
    "チタンの粉",
    "Titanium Dust",
    "m3ee85cca2f12",
-   "flat"
-  ],
-  "ouka:titanium_plate": [
-   "チタンの板",
-   "Titanium Plate",
-   "mfff01529ba05",
    "flat"
   ],
   "ouka:tungsten_carbide_billet": [

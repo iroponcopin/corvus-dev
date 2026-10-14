@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis 1.6.1 — Geisterader, Zauberei und Siegelmarken",
+   "summary": "The Grand Synthesis 1.6.2 — der Ryusei-Magnetschwebezug",
    "releases": [
+    {
+     "version": "V1.6.2",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.2 — der Ryusei-Magnetschwebezug",
+     "summary": "Ein Zug-Update. Der Ryusei-Magnetschwebezug fährt auf einer Trasse, die Sie selbst anlegen, mit Haltestellen, einem Betriebspult und einem vierteiligen Zug, durch den Sie gehen können. Es kommen 6 neue Gegenstände und 3 neue Blöcke hinzu.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Verbinden Sie die Trassenknoten nacheinander mit dem Ryusei-Vermessungsinstrument. Jede Verbindung meldet die Länge der Strecke, die engste Kurve und die Geschwindigkeit, die die Strecke erlaubt. Eine Kurve oder Steigung, die der Zug nicht fahren kann, wird abgelehnt.",
+        "Setzen Sie einen Haltespulen-Block neben eine verbundene Trasse, dann entsteht eine Haltestelle. Stellen Sie ein Betriebspult in die Nähe. Mit einer Zugkarte auf dem Pult setzen Sie den Zug an dieser Haltestelle ab und starten den Pendelverkehr zwischen den Haltestellen.",
+        "Fahren Sie im vierteiligen Zug: Setzen Sie sich auf einen Sitz und gehen Sie den Gang entlang, während der Zug fährt. Die Türen öffnen sich nur, wenn der Zug an der Haltestelle steht, und bleiben während der Fahrt verriegelt.",
+        "Die Führerkabine des Triebwagens zeigt Geschwindigkeit, Wechselrichterfrequenz und Fahrleitungsspannung. Steht etwas auf der Trasse, wartet der Zug davor, und Blöcke werden nie zerstört."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Diese Version hat noch keine Stromblöcke und kein Stromnetz. Spannung und Frequenz in der Kabine sind nur Anzeige. Wenn Sie nach dem Spielen zur vorherigen Version zurückkehren, verschwinden die Ryusei-Gegenstände und -Blöcke aus der Welt.",
+        "Bevor Sie 1.6.2 installieren, entfernen Sie die alte OUKA-jar aus dem mods-Ordner und behalten Sie nur eine Kopie von GeckoLib 5.5.6. Es benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Installieren Sie es auf dem Client und dem Server."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.1",
      "date": "2026-10-14",

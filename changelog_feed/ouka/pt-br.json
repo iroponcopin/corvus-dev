@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis 1.6.1 — veio espiritual, feitiçaria e sinais de selo",
+   "summary": "The Grand Synthesis 1.6.2 — o trem maglev Ryusei",
    "releases": [
+    {
+     "version": "V1.6.2",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.2 — o trem maglev Ryusei",
+     "summary": "Uma atualização ferroviária. O trem maglev Ryusei corre numa via que você mesmo traça, com estações, um console de despacho e um trem de quatro vagões por onde dá para andar. Acrescenta 6 itens novos e 3 blocos novos.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "Ligue os nós da via em ordem com o Topógrafo Ryusei. Cada ligação informa o comprimento da linha, a curva mais fechada e a velocidade permitida, e uma curva ou inclinação que o trem não consegue fazer é recusada.",
+        "Coloque uma bobina de parada ao lado de uma via ligada para criar uma estação, e um console de despacho por perto. Use um cartão de composição no console para colocar o trem nessa estação e iniciar a navette entre as estações.",
+        "Ande no trem de quatro vagões: sente-se num assento e caminhe pelo corredor enquanto o trem se move. As portas só abrem quando o trem está parado na sua estação e ficam trancadas enquanto ele anda.",
+        "A cabine do vagão da frente mostra a velocidade, a frequência do inversor e a tensão da linha. Se algo estiver na via, o trem espera antes dele, e nunca quebra blocos."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Esta versão ainda não tem blocos de energia nem rede elétrica. A tensão e a frequência da cabine são só enfeite. Se você voltar à versão anterior depois de jogar, os itens e blocos Ryusei somem do mundo.",
+        "Antes de instalar 1.6.2, remova o jar antigo do OUKA da pasta mods e deixe só uma cópia do GeckoLib 5.5.6. Ele precisa de Minecraft 26.3, Fabric Loader 0.19.5 ou mais novo, e Fabric API 0.161.0+26.3 ou mais novo. Instale no cliente e no servidor."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.1",
      "date": "2026-10-14",

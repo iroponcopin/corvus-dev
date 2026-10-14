@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis 1.6.1 — Ruh Damarı, büyücülük ve mühür işaretleri",
+   "summary": "The Grand Synthesis 1.6.2 — Ryusei maglev treni",
    "releases": [
+    {
+     "version": "V1.6.2",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.2 — Ryusei maglev treni",
+     "summary": "Bir tren güncellemesi. Ryusei maglev treni, sizin çizdiğiniz bir hat üzerinde gider; istasyonları, bir sevk konsolu ve içinde gezilebilen dört vagonlu bir tren vardır. 6 yeni eşya ve 3 yeni blok ekler.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Hat düğümlerini Ryusei Ölçüm Aleti ile sırayla bağlayın. Her bağlantı hattın uzunluğunu, en keskin virajını ve hattın izin verdiği hızı bildirir; trenin geçemeyeceği bir viraj ya da eğim reddedilir.",
+        "Bağlı bir hattın yanına bir Durdurma Bobini koyarak istasyon oluşturun, yakınına da bir sevk konsolu yerleştirin. Konsolda bir Tren Kartı kullanarak treni o istasyona koyun ve istasyonlar arası gidip gelmeyi başlatın.",
+        "Dört vagonlu trende yolculuk edin: bir koltuğa oturun ve tren hareket ederken koridorda yürüyün. Kapılar yalnızca tren istasyonunda durduğunda açılır, hareket halindeyken kilitli kalır.",
+        "Baş vagonun kabinindeki gösterge hızı, evirici frekansını ve hat gerilimini gösterir. Hatta bir şey varsa tren önünde bekler ve bloku hiçbir zaman kırmaz."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Bu sürümde henüz güç blokları ve elektrik şebekesi yok. Kabindeki gerilim ve frekans yalnızca görünümdür. Oynadıktan sonra önceki sürüme dönerseniz Ryusei eşyaları ve blokları dünyadan kaybolur.",
+        "1.6.2'yi kurmadan önce eski OUKA jar dosyasını mods klasöründen silin ve yalnızca bir GeckoLib 5.5.6 kopyası bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.1",
      "date": "2026-10-14",
