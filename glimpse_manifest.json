@@ -12,30 +12,30 @@
     "changelog_url": "https://iroponcopin.github.io/aurora-corvus/en/changelog/"
   },
   "launcher": {
-    "latest": "4.1.0",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-4.1.0.jar",
-    "file_name": "corvus-4.1.0.jar",
-    "file_size": 14889905,
-    "sha256": "5da668b8117a4738dba6464f81aa5309b340b902a03ed71b669a876b47cb4550",
-    "notes": "Corvus Store 4.1.0 adds one thing: Corvus Agent can be set up from the Store.\n\nCorvus Agent is the small program that sits beside a Minecraft server you host yourself and keeps its mods in step with the Store. Until now it was a zip from the website and a command typed in a terminal. It is now the last entry on the Store's shelf. Press GET and choose your server folder: the Store downloads the agent, checks its size and SHA-256 against the site, puts it in that folder as corvus-agent.jar, and writes its configuration and two start scripts (start-with-corvus.bat, and .sh for Linux and macOS). It looks in the folder's mods and lists the Corvus mods it finds there, and it reads your server's own start command from the .bat or .sh you already use, so there is nothing to edit by hand. From then on you start the server with start-with-corvus: the agent checks for updates before the server starts and every ten minutes while it runs, stops the server with its own \"stop\" command when nobody is online, swaps the mods, starts it again, and puts the old files back if it does not come up. The Store itself never starts, stops or talks to your server.\n\nA folder that is not a server folder is refused before anything is downloaded, and nothing is changed. An existing configuration is never overwritten, and a start script the Store did not just create is never edited: if you set the agent up by hand before, the Store tells you the one line to change. When a newer agent is published the entry shows UPDATE; updating replaces that one jar and touches nothing else. If the server is running and holds the file, the Store says so and changes nothing: stop the server, then press Update again.\n\nCorvus Agent 4.1.1 comes with it. Its --init command now finds the mods in the folder too, and the package from the website is otherwise as before.\n\nEverything else is 4.0.0.\n\nVerified: 1,081 unit tests pass (460, 83 and 538 in the three modules), with the compiler set to refuse any warning. The Store was drawn without a window in all 13 languages and every check passed. The installer was run on a copy of a real Fabric 26.3 server folder on macOS: it found the three mods there, read the server's command, and the server was then started with the script it wrote; the agent updated one mod before the first start and stopped the server with its world saved when asked to close. On a Windows machine in CI the agent's tests pass, including the ones that run a real child process.\nNot verified, and worth saying: nobody has pressed the buttons in a real Store window yet, so the dialogs and the folder chooser have only been tested from code; nothing has been run on a real Windows server; the update has not been run against a published package; the \"server is running\" case was simulated; the words in the eleven languages other than English and Japanese were translated plainly and have not been read by a native speaker. The entry's icon is the Corvus mark, not artwork of its own.",
+    "latest": "5.0.0",
+    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.0.jar",
+    "file_name": "corvus-5.0.0.jar",
+    "file_size": 15015272,
+    "sha256": "9e06fd12d794cb0b659957d951579b7e44d832b823fb1159ae414eb8df8d0d3a",
+    "notes": "Corvus Store 5.0.0 and Corvus Agent 5.0.0 take care of a Minecraft server you host yourself, so that you no longer have to.\n\nCorvus Agent now runs the server for you. When an update is published it waits until nobody is playing, backs up the world, stops the server, swaps the mods, starts it again and checks that it answers; if it does not, it puts the old mods back and starts it again. It backs the world up on its own every six hours by default (keeping the newest seven), pausing the game's saving while it copies so the copy is never half-written, and it can put any of those backups back with one confirmation, taking a fresh backup first. If you use playit.gg it opens the tunnel once the server is up, and if playit is stopped it tries once to start it. Everything it does is written down.\n\nCorvus Store has a new screen for this: Agents (Corvus Studio). The Dashboard shows the server, the tunnel, the backups and any update at a glance, with Start, Stop, Restart, Back up now and Update now. Activity lists what the agent did, in your language, and lets you restore a backup or read the logs. Settings let you turn automatic updates and automatic backups on or off, choose how often to back up and how many to keep, start the server when Corvus Store opens, keep it running when Corvus Store quits (the default), and open Corvus Store when the computer starts. Together that is: switch the computer on, and the server and the tunnel come up by themselves.\n\nIf you set the agent up with an earlier version, 5.0.0 picks up where it was. If the old agent is still running the server, Corvus Agent 5 does not start a second one; it says so, and takes over once the old window is closed. A start script that Corvus wrote is updated to the new agent; one you changed is left alone, and the Store tells you the one line to change.\n\nVerified: 1,212 unit tests pass (474, 149 and 589 in the three modules), with the compiler set to refuse any warning. Corvus Agent 5 was run against a real Fabric 26.3 server on macOS: it started the server, took a backup through Corvus Store's controls (saving paused and resumed), installed an update in the order above, restored a backup after asking for confirmation, refused to start a second server while an Agent 4.1 ran the same folder and took over when it stopped, and shut everything down cleanly. On Windows (CI), the installed Corvus Store started the agent, the agent kept running after the Store quit, its controls answered, a second agent in the same folder refused to start, and the \"open at start-up\" switch wrote and removed the correct entry; the official playit installer was installed and its real output is what the agent reads.\nNot verified, and worth saying: nobody has yet pressed the new buttons in a real Corvus Store window on Windows, or run a real Minecraft server on Windows with it; a playit account was never claimed here, so a live tunnel, the wording playit prints while running, and whether playit can be started without administrator rights on your PC are not confirmed (if it cannot, the Dashboard tells you); \"open at start-up\" was not tried through a real sign-in; the words in the eleven languages other than English and Japanese were translated plainly and not read by a native speaker.",
     "native": {
       "macos": {
-        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-4.1.0-macos.dmg",
-        "file_name": "corvus-4.1.0-macos.dmg",
-        "file_size": 64631424,
-        "sha256": "7510d77affbde9b19a73f5adfe52f70ee3b05f9b6a82f2491000488c30c4fffa"
+        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.0-macos.dmg",
+        "file_name": "corvus-5.0.0-macos.dmg",
+        "file_size": 64754319,
+        "sha256": "b7a24d2515c62afc3ad8bd22de709521c172d5c829ec0326bc85caf7da62c08c"
       },
       "windows": {
-        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-4.1.0-windows.msi",
-        "file_name": "corvus-4.1.0-windows.msi",
-        "file_size": 62329692,
-        "sha256": "c8ce7b996fe6fa5055ba8c4258464d0daca4cf0f570e0f74d08e96740d8310c8"
+        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.0-windows.msi",
+        "file_name": "corvus-5.0.0-windows.msi",
+        "file_size": 62452572,
+        "sha256": "9ce2003801400887ac381817fb56f68b320f1a427ade0bb84e78624253b2d3eb"
       },
       "linux": {
-        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-4.1.0-linux.deb",
-        "file_name": "corvus-4.1.0-linux.deb",
-        "file_size": 51713658,
-        "sha256": "028353d68302175b08ec6ee210511a729cc715ab90caab729d65a55ab78c5a32"
+        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.0-linux.deb",
+        "file_name": "corvus-5.0.0-linux.deb",
+        "file_size": 51839210,
+        "sha256": "66e0c74947fc64a31fa09621a00e88f76fdfbde1a2a07608edd14f43fc380332"
       }
     }
   },
@@ -124,11 +124,11 @@
     "sha256": "cbd330d75c91d2360860bb22176772bd863f097516084b208a97eccb58c94154"
   },
   "agent": {
-    "latest": "4.1.1",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-agent-4.1.1.zip",
-    "file_name": "corvus-agent-4.1.1.zip",
-    "file_size": 268020,
-    "sha256": "37e52dfb75e54d4462034fdfb6344c0b2d892925609bcd26670f9f7d7072ef60"
+    "latest": "5.0.0",
+    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-agent-5.0.0.zip",
+    "file_name": "corvus-agent-5.0.0.zip",
+    "file_size": 355134,
+    "sha256": "eb8068500a2f040d33c67b3417e524b309e36577385268c9456e385c48c2c79f"
   },
   "noctua": {
     "latest": "1.0.0",
