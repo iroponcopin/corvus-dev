@@ -209,6 +209,12 @@ NAV_SECTIONS = [
     # (Aureum は別ジャンル Mods なので含まれない)」。OUKA は Cherry の上位、
     # すなわちブランド線の最上位に立つ。
     ("ouka", "ouka/"),
+    # 2026-10-14: the Store group (NAV_GROUPS) has listed astraea, tsubomi and halia since their releases, but no
+    # section entry ever named them, so any build that drew the legacy menu (build_ouka.py for OUKA 1.6.2) died
+    # with KeyError. Their pages are the portal's (astraea/, tsubomi/, halia/), served at these addresses.
+    ("astraea", "astraea/"),
+    ("tsubomi", "tsubomi/"),
+    ("halia", "halia/"),
     # 2026-09-10、所有者:「Aureum と Cherry、Alpha のページを作成して、
     # それを Store という新規のタブを作成して、メガメニューに 3 つの Mods を
     # 表示する。」Alpha はこれまで<b>ブランドのページを持っていなかった</b> ——
@@ -821,6 +827,11 @@ def _nav_html(bundle: dict, active: str, lang_prefix: str) -> str:
     for _g, keys in NAV_GROUPS:
         filed.update(keys)
     missing = [k for k, _s in NAV_SECTIONS if k not in filed]
+    # And the other way round (2026-10-14): a group that names a key no section defines has no address to link to.
+    unaddressed = sorted(k for k in filed if k not in slug_of)
+    if unaddressed:
+        raise SystemExit("ERROR: site_common.NAV_GROUPS/NAV_SOLO name %s, which NAV_SECTIONS gives no address."
+                         % ", ".join(unaddressed))
     if missing:
         raise SystemExit(
             "ERROR: site_common.NAV_SECTIONS lists %s, which no NAV_GROUPS group and no "
