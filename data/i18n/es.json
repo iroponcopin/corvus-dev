@@ -308,13 +308,13 @@
   "ouka": [
    {
     "id": "ouka-v1.6.1",
-    "title": "The Grand Synthesis 1.6.1 — vena espiritual, hechicería y marcas de sello",
-    "summary": "Una actualización de la vena espiritual. Una Daga ritual de plata abre tu vena, y con ella llegan la lluvia de hojas fantasma, la vista espiritual y las marcas de protección. Añade 4 objetos nuevos y 1 bloque nuevo, la marca de sello.",
+    "title": "The Grand Synthesis 1.6.1 — vena espiritual, hechicería y señales de sello",
+    "summary": "Una actualización de la vena espiritual. Una Daga ritual de plata abre tu vena, y con ella llegan la lluvia de hojas fantasma, la vista espiritual y las señales de protección. Añade 4 objetos nuevos y 1 bloque nuevo, la señal de sello.",
     "highlights": [
      "Fabrica la Daga ritual de plata en la línea de ensamblaje. Agáchate y úsala para realizar el rito de sangre: cuesta un poco de salud y abre tu vena espiritual. Con poca salud el rito se rechaza, y nunca te mata.",
      "Sostén un Foco de sello en la mano principal y mantén pulsada la tecla predeterminada J de la lluvia de hojas fantasma: las hojas vuelan lejos hacia donde miras, se clavan y estallan un momento después. Las hojas nunca rompen bloques.",
      "Mantén pulsado el uso con una Lente de vista para mirar a través de ella, y pulsa la tecla predeterminada U de vista espiritual para cambiar entre la vista de quietud y la vista aguda. La vista aguda hace mucho más daño a los puntos débiles con tus armas OUKA y tus hojas fantasma.",
-     "Dibuja una marca con Tiza de protección encima de un bloque y luego vierte espíritu en ella con un Foco de sello. Entonces se levantan alrededor las protecciones de alarma, sifón y baluarte. Pulsa la tecla predeterminada I para leer tu espíritu."
+     "Dibuja una señal con Tiza de protección encima de un bloque y luego vierte espíritu en ella con un Foco de sello. Entonces se levantan alrededor las protecciones de alarma, sifón y baluarte. Pulsa la tecla predeterminada I para leer tu espíritu."
     ],
     "warnings": [
      "Una protección nunca bloquea ni atrapa a nadie, y no protege bloques. El baluarte solo detiene proyectiles y explosiones que llegan desde fuera. El sifón drena salud de jugadores y criaturas que no son de confianza.",

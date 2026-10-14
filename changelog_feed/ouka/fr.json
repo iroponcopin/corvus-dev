@@ -8,14 +8,14 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis 1.6.1 — veine spirituelle, sorcellerie et marques de sceau",
+   "summary": "The Grand Synthesis 1.6.1 — veine spirituelle, sorcellerie et signes de sceau",
    "releases": [
     {
      "version": "V1.6.1",
      "date": "2026-10-14",
      "type": "release",
-     "title": "The Grand Synthesis 1.6.1 — veine spirituelle, sorcellerie et marques de sceau",
-     "summary": "Une mise à jour de la veine spirituelle. Une Dague rituelle d'argent ouvre votre veine, avec la pluie de lames fantômes, la vision spirituelle et les marques de garde. Elle ajoute 4 nouveaux objets et 1 nouveau bloc, la marque de sceau.",
+     "title": "The Grand Synthesis 1.6.1 — veine spirituelle, sorcellerie et signes de sceau",
+     "summary": "Une mise à jour de la veine spirituelle. Une Dague rituelle d'argent ouvre votre veine, avec la pluie de lames fantômes, la vision spirituelle et les signes de garde. Elle ajoute 4 nouveaux objets et 1 nouveau bloc, la signe de sceau.",
      "sections": [
       {
        "title": "Changements",
@@ -23,7 +23,7 @@
         "Fabriquez la Dague rituelle d'argent sur la ligne d'assemblage. Accroupi, utilisez-la pour accomplir le rite de sang : il coûte un peu de vie et ouvre votre veine spirituelle. Si votre vie est basse, le rite est refusé, et il ne tue jamais.",
         "Tenez un Foyer de sceau dans la main principale et maintenez la touche par défaut J de la pluie de lames fantômes : les lames fantômes volent loin là où vous regardez, se plantent et éclatent un peu plus tard. Les lames ne cassent jamais de blocs.",
         "Maintenez l'utilisation avec une Lentille de vision pour regarder à travers, et appuyez sur la touche par défaut U de vision spirituelle pour basculer entre la vision de l'immobilité et la vision aiguë. La vision aiguë frappe bien plus fort les points faibles avec vos armes OUKA et vos lames fantômes.",
-        "Tracez une marque de Craie de garde sur le dessus d'un bloc, puis versez-y de l'esprit avec un Foyer de sceau. Les gardes d'alarme, de siphon et de rempart se dressent alors autour. Appuyez sur la touche par défaut I pour lire votre esprit."
+        "Tracez une signe de Craie de garde sur le dessus d'un bloc, puis versez-y de l'esprit avec un Foyer de sceau. Les gardes d'alarme, de siphon et de rempart se dressent alors autour. Appuyez sur la touche par défaut I pour lire votre esprit."
        ]
       },
       {
