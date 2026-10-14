@@ -1,15 +1,40 @@
 {
  "lang": "tr",
  "brand": "ouka",
- "updated": "2026-10-12",
+ "updated": "2026-10-14",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-12 tarihinde güncellendi",
+ "updated_label": "2026-10-14 tarihinde güncellendi",
  "note": "",
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis 1.6.0.1 — kil, ×2 güç tüketimi ve daha yumuşak bir OUKA Feneri",
+   "summary": "The Grand Synthesis 1.6.1 — Ruh Damarı, büyücülük ve mühür işaretleri",
    "releases": [
+    {
+     "version": "V1.6.1",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.1 — Ruh Damarı, büyücülük ve mühür işaretleri",
+     "summary": "Bir ruh damarı güncellemesi. Gümüş Ritüel Hançeri damarını açar; onunla birlikte hayalet kılıç yağmuru, ruh görüşü ve koruma işaretleri gelir. 4 yeni eşya ve 1 yeni blok ekler: mühür işareti.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Gümüş Ritüel Hançeri'ni montaj hattında üret. Çömelip kullanarak kan ritüelini yap: biraz can bedeli öder ve ruh damarını açar. Canın azsa ritüel reddedilir; asla öldürmez.",
+        "Ana elinde bir Mühür Odağı tut ve varsayılan J tuşuna basılı tut: hayalet kılıçlar baktığın yere uzağa uçar, saplanır ve biraz sonra patlar. Kılıçlar asla blok kırmaz.",
+        "Bir Görüş Merceği ile kullanma tuşunu basılı tutarak bakabilirsin; varsayılan U ruh görüşü tuşuna basarak durgunluk görüşü ile keskin görüş arasında geçiş yap. Keskin görüş, OUKA silahların ve hayalet kılıçların zayıf noktalara çok daha sert vurmasını sağlar.",
+        "Bir bloğun üstüne Koruma Tebeşiri ile işaret çiz, sonra bir Mühür Odağı ile içine ruh dök. Etrafında alarm, emme ve siper korumaları yükselir. Varsayılan I tuşuna basarak ruhunu oku."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Bir koruma kimseyi engellemez veya hapsetmez, hiçbir bloğu korumaz. Siper yalnızca dışarıdan gelen mermileri ve patlamaları durdurur. Emme, güvenilmeyen oyuncu ve yaratıklardan can emer.",
+        "1.6.1'i kurmadan önce eski OUKA jar dosyasını mods klasöründen sil ve yalnızca bir GeckoLib 5.5.6 kopyası bırak. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kur."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.0.1",
      "date": "2026-10-12",

@@ -1,15 +1,40 @@
 {
  "lang": "de",
  "brand": "ouka",
- "updated": "2026-10-12",
+ "updated": "2026-10-14",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-12",
+ "updated_label": "Aktualisiert am 2026-10-14",
  "note": "",
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis 1.6.0.1 — Ton, Stromverbrauch ×2 und ein sanfteres OUKA-Leuchtfeuer",
+   "summary": "The Grand Synthesis 1.6.1 — Geisterader, Zauberei und Siegelmarken",
    "releases": [
+    {
+     "version": "V1.6.1",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.1 — Geisterader, Zauberei und Siegelmarken",
+     "summary": "Ein Update zur Geisterader. Ein Silbernes Ritualmesser öffnet deine Ader, dazu kommen der Regen der Phantomklingen, die Geistersicht und die Schutzmarken. Es fügt 4 neue Gegenstände und 1 neuen Block hinzu, die Siegelmarke.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Stelle das Silberne Ritualmesser an der Montagelinie her. Schleiche und benutze es, um das Blutritual auszuführen: Es kostet etwas Gesundheit und öffnet deine Geisterader. Bei wenig Gesundheit wird das Ritual abgelehnt, es tötet dich nie.",
+        "Halte einen Siegelfokus in der Haupthand und halte die Standardtaste J für den Regen der Phantomklingen gedrückt: Phantomklingen fliegen weit dorthin, wohin du schaust, pflanzen sich ein und bersten kurz danach. Klingen zerbrechen nie Blöcke.",
+        "Halte mit einer Sichtlinse die Benutzentaste gedrückt, um hindurchzusehen, und drücke die Standardtaste U der Geistersicht, um zwischen Stillstands-Sicht und Scharfsicht zu wechseln. Die Scharfsicht trifft Schwachstellen mit OUKA-Waffen und Phantomklingen deutlich stärker.",
+        "Zeichne eine Schutzkreide-Markierung auf die Oberseite eines Blocks und gieße danach mit einem Siegelfokus Geist hinein. Dann stehen Alarm-, Saug- und Abschirmungsschutz darum. Mit der Standardtaste I liest du deinen Geist ab."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Ein Schutz hält niemanden auf oder fest und schützt keine Blöcke. Die Abschirmung hält nur Projektile und Explosionen von außen auf. Der Lebensentzug zieht Gesundheit von Wesen und Spielern, die nicht vertraut sind.",
+        "Bevor du 1.6.1 installierst, entferne die alte OUKA-jar aus dem mods-Ordner und behalte nur eine Kopie von GeckoLib 5.5.6. Es braucht Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Installiere es auf dem Client und dem Server."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.0.1",
      "date": "2026-10-12",

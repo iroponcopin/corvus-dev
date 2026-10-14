@@ -1,15 +1,40 @@
 {
  "lang": "en",
  "brand": "ouka",
- "updated": "2026-10-12",
+ "updated": "2026-10-14",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-12",
+ "updated_label": "Updated 2026-10-14",
  "note": "",
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis 1.6.0.1 — clay, power draw ×2, and a gentler OUKA Beacon",
+   "summary": "The Grand Synthesis 1.6.1 — the Spirit Vein, sorcery and Sigil Marks",
    "releases": [
+    {
+     "version": "V1.6.1",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.1 — the Spirit Vein, sorcery and Sigil Marks",
+     "summary": "A Spirit Vein update. A Silver Rite Dagger opens your vein, and with it come the Phantom Blade Rain, Spirit Sight and ward marks. It adds 4 new items and 1 new block, the Sigil Mark.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "Make the Silver Rite Dagger on the assembly line. Sneak and use it to perform the Blood Rite: it costs a little health and opens your spirit vein. When your health is low the rite is refused, and it never kills you.",
+        "Hold a Sigil Focus in your main hand and hold the Phantom Blade Rain key (default J): phantom blades fly far where you look, plant themselves and burst a moment later. Blades never break blocks.",
+        "Hold use with a Sight Lens to look through it, and press the Spirit Sight key (default U) to switch between Stillness Sight and Keen Sight. Keen Sight makes your OUKA guns and phantom blades hit weak points much harder.",
+        "Draw a Ward Chalk mark on top of a block, then pour spirit into it with a Sigil Focus, and Alarm, Siphon and Bulwark wards stand around it. Press the Vein Status key (default I) to read your spirit."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Wards trap no one and protect no blocks. The Bulwark ward stops damage from projectiles and explosions coming from outside. The Siphon ward drains health from players and creatures it has not been told to trust.",
+        "Before you install 1.6.1, remove the old OUKA jar from the mods folder and keep only one copy of GeckoLib 5.5.6. It needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, and Fabric API 0.161.0+26.3 or newer. Install it on both the client and the server."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.0.1",
      "date": "2026-10-12",

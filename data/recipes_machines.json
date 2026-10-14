@@ -1,6 +1,6 @@
 {
  "sources": {
-  "ouka": "1.6.0.1",
+  "ouka": "1.6.1",
   "cherry": "1.2.1"
  },
  "stations": [
@@ -888,10 +888,28 @@
    "m729e9816e580",
    "flat"
   ],
+  "ouka:sight_lens": [
+   "霊眼のレンズ",
+   "Sight Lens",
+   "mad9a410970e9",
+   "flat"
+  ],
+  "ouka:sigil_focus": [
+   "地紋の焦点",
+   "Sigil Focus",
+   "m49f8adee832e",
+   "flat"
+  ],
   "ouka:silicon_wafer": [
    "シリコンウェハー",
    "Silicon Wafer",
    "mb48f615bac01",
+   "flat"
+  ],
+  "ouka:silver_rite_dagger": [
+   "銀の祭刀",
+   "Silver Rite Dagger",
+   "mda78f4d3053e",
    "flat"
   ],
   "ouka:slag": [
@@ -1054,6 +1072,12 @@
    "真空焼結炉",
    "Vacuum Sintering Furnace",
    "mfae4eec996d1",
+   "flat"
+  ],
+  "ouka:ward_chalk": [
+   "結界の白墨",
+   "Ward Chalk",
+   "me36fe5617b2c",
    "flat"
   ],
   "ouka:wind_turbine": [
@@ -2847,6 +2871,85 @@
    "brand": "ouka"
   },
   {
+   "id": "ouka:assembly/sight_lens",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:gold_plate",
+     "n": 1
+    },
+    {
+     "id": "minecraft:glass_pane",
+     "n": 1
+    },
+    {
+     "id": "minecraft:amethyst_shard",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:sight_lens",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/sigil_focus",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:gold_plate",
+     "n": 2
+    },
+    {
+     "id": "minecraft:amethyst_shard",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:sigil_focus",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/silver_rite_dagger",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 2
+    },
+    {
+     "id": "ouka:iron_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:gold_plate",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:silver_rite_dagger",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
    "id": "ouka:assembly/superconducting_coil_winder",
    "station": "assembly",
    "inputs": [
@@ -3095,6 +3198,31 @@
     {
      "id": "ouka:vacuum_sintering_furnace",
      "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/ward_chalk",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:calcite",
+     "n": 1
+    },
+    {
+     "id": "minecraft:bone_meal",
+     "n": 2
+    },
+    {
+     "id": "ouka:gold_dust",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:ward_chalk",
+     "n": 8
     }
    ],
    "brand": "ouka"
@@ -6303,6 +6431,9 @@
   "ouka:assembly/plasma_arc_gasifier": "ouka プラズマアーク廃棄物分解炉 ぷらずまあーく廃棄物分解炉 ouka:plasma_arc_gasifier plasma_arc_gasifier plasma arc gasifier 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 耐火レンガ 耐火れんが ouka:refractory_brick refractory_brick refractory brick タングステンの板 たんぐすてんの板 ouka:tungsten_plate tungsten_plate tungsten plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/pyrolytic_carbon_press": "ouka 高圧熱分解炭素重合機 高圧熱分解炭素重合機 ouka:pyrolytic_carbon_press pyrolytic_carbon_press pyrolytic carbon press 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 潤滑油の缶 潤滑油の缶 ouka:lubricant_canister lubricant_canister lubricant canister",
   "ouka:assembly/rotary_calciner": "ouka 回転式焼成炉 回転式焼成炉 ouka:rotary_calciner rotary_calciner rotary calciner 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 鉄板 鉄板 ouka:iron_plate iron_plate iron plate チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/sight_lens": "ouka 霊眼のレンズ 霊眼のれんず ouka:sight_lens sight_lens sight lens チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate 金板 金板 ouka:gold_plate gold_plate gold plate ガラス板 がらす板 minecraft:glass_pane glass_pane glass pane アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard",
+  "ouka:assembly/sigil_focus": "ouka 地紋の焦点 地紋の焦点 ouka:sigil_focus sigil_focus sigil focus 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 金板 金板 ouka:gold_plate gold_plate gold plate アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard",
+  "ouka:assembly/silver_rite_dagger": "ouka 銀の祭刀 銀の祭刀 ouka:silver_rite_dagger silver_rite_dagger silver rite dagger チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 金板 金板 ouka:gold_plate gold_plate gold plate",
   "ouka:assembly/superconducting_coil_winder": "ouka 超伝導コイル巻線機 超伝導こいる巻線機 ouka:superconducting_coil_winder superconducting_coil_winder superconducting coil winder 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 電解銅板 電解銅板 ouka:electrolytic_copper_plate electrolytic_copper_plate electrolytic copper plate チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/superconducting_fractionating_tower": "ouka 超伝導精留塔 超伝導精留塔 ouka:superconducting_fractionating_tower superconducting_fractionating_tower superconducting fractionating tower 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate タングステンの板 たんぐすてんの板 ouka:tungsten_plate tungsten_plate tungsten plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/supersonic_jet_mill": "ouka 超音速ジェットミル粉砕機 超音速じぇっとみる粉砕機 ouka:supersonic_jet_mill supersonic_jet_mill supersonic jet mill 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
@@ -6312,6 +6443,7 @@
   "ouka:assembly/uranium_fuel_rod": "ouka ウラン燃料棒 うらん燃料棒 ouka:uranium_fuel_rod uranium_fuel_rod uranium fuel rod チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 濃縮ウラン 濃縮うらん ouka:enriched_uranium enriched_uranium enriched uranium 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate",
   "ouka:assembly/vacuum_pump": "ouka 真空ポンプ 真空ぽんぷ ouka:vacuum_pump vacuum_pump vacuum pump 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 銅板 銅板 ouka:copper_plate copper_plate copper plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/vacuum_sintering_furnace": "ouka 真空焼結炉 真空焼結炉 ouka:vacuum_sintering_furnace vacuum_sintering_furnace vacuum sintering furnace 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/ward_chalk": "ouka 結界の白墨 結界の白墨 ouka:ward_chalk ward_chalk ward chalk 方解石 方解石 minecraft:calcite calcite calcite 骨粉 骨粉 minecraft:bone_meal bone_meal bone meal 金の粉 金の粉 ouka:gold_dust gold_dust gold dust",
   "ouka:assembly/wind_turbine": "ouka OUKA Type-W1「風神」風力発電機 ouka type-w1「風神」風力発電機 ouka:wind_turbine wind_turbine ouka type-w1 \"fujin\" wind turbine 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 銅板 銅板 ouka:copper_plate copper_plate copper plate",
   "ouka:assembly/wrought_iron_statue": "ouka 鋼鉄の守護騎士の彫像 鋼鉄の守護騎士の彫像 ouka:wrought_iron_statue wrought_iron_statue wrought iron statue 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
   "ouka:assembly/wrought_plate_boots": "ouka 重鉄の防壁の靴 重鉄の防壁の靴 ouka:wrought_plate_boots wrought_plate_boots wrought plate boots 重鉄の防壁インゴット 重鉄の防壁いんごっと ouka:wrought_plate_ingot wrought_plate_ingot wrought plate ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic 鉄板 鉄板 ouka:iron_plate iron_plate iron plate",

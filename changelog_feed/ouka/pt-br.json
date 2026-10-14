@@ -1,15 +1,40 @@
 {
  "lang": "pt-br",
  "brand": "ouka",
- "updated": "2026-10-12",
+ "updated": "2026-10-14",
  "title": "Histórico de atualizações",
- "updated_label": "Atualizado em 2026-10-12",
+ "updated_label": "Atualizado em 2026-10-14",
  "note": "",
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis 1.6.0.1 — argila, consumo de energia ×2 e um Sinalizador OUKA mais brando",
+   "summary": "The Grand Synthesis 1.6.1 — veio espiritual, feitiçaria e marcas de selo",
    "releases": [
+    {
+     "version": "V1.6.1",
+     "date": "2026-10-14",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.1 — veio espiritual, feitiçaria e marcas de selo",
+     "summary": "Uma atualização do veio espiritual. Uma Adaga ritual de prata abre o seu veio, e com ela vêm a chuva de lâminas fantasmas, a visão espiritual e as marcas de proteção. Acrescenta 4 itens novos e 1 bloco novo, a marca de selo.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "Fabrique a Adaga ritual de prata na linha de montagem. Agache e use-a para realizar o rito de sangue: ele custa um pouco de vida e abre o seu veio espiritual. Com pouca vida, o rito é recusado, e ele nunca mata.",
+        "Segure um Foco de selo na mão principal e mantenha pressionada a tecla padrão J da chuva de lâminas fantasmas: as lâminas voam longe para onde você olha, se fincam e explodem um pouco depois. As lâminas nunca quebram blocos.",
+        "Mantenha o uso pressionado com uma Lente de visão para olhar através dela, e aperte a tecla padrão U de visão espiritual para alternar entre a visão de imobilidade e a visão aguda. A visão aguda acerta bem mais forte os pontos fracos com suas armas OUKA e lâminas fantasmas.",
+        "Desenhe uma marca com Giz de proteção em cima de um bloco e depois derrame espírito nela com um Foco de selo. Então surgem em volta as proteções de alarme, sifão e baluarte. Aperte a tecla padrão I para ler seu espírito."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Uma proteção nunca bloqueia nem prende ninguém, e não protege blocos. O baluarte só para projéteis e explosões vindos de fora. O sifão drena vida de jogadores e criaturas que não são de confiança.",
+        "Antes de instalar a 1.6.1, remova o jar antigo do OUKA da pasta mods e mantenha só uma cópia do GeckoLib 5.5.6. Ela precisa de Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente e Fabric API 0.161.0+26.3 ou mais recente. Instale no cliente e no servidor."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.0.1",
      "date": "2026-10-12",

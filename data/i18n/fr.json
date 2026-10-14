@@ -307,6 +307,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.1",
+    "title": "The Grand Synthesis 1.6.1 — veine spirituelle, sorcellerie et marques de sceau",
+    "summary": "Une mise à jour de la veine spirituelle. Une Dague rituelle d'argent ouvre votre veine, avec la pluie de lames fantômes, la vision spirituelle et les marques de garde. Elle ajoute 4 nouveaux objets et 1 nouveau bloc, la marque de sceau.",
+    "highlights": [
+     "Fabriquez la Dague rituelle d'argent sur la ligne d'assemblage. Accroupi, utilisez-la pour accomplir le rite de sang : il coûte un peu de vie et ouvre votre veine spirituelle. Si votre vie est basse, le rite est refusé, et il ne tue jamais.",
+     "Tenez un Foyer de sceau dans la main principale et maintenez la touche par défaut J de la pluie de lames fantômes : les lames fantômes volent loin là où vous regardez, se plantent et éclatent un peu plus tard. Les lames ne cassent jamais de blocs.",
+     "Maintenez l'utilisation avec une Lentille de vision pour regarder à travers, et appuyez sur la touche par défaut U de vision spirituelle pour basculer entre la vision de l'immobilité et la vision aiguë. La vision aiguë frappe bien plus fort les points faibles avec vos armes OUKA et vos lames fantômes.",
+     "Tracez une marque de Craie de garde sur le dessus d'un bloc, puis versez-y de l'esprit avec un Foyer de sceau. Les gardes d'alarme, de siphon et de rempart se dressent alors autour. Appuyez sur la touche par défaut I pour lire votre esprit."
+    ],
+    "warnings": [
+     "Une garde n'arrête ni n'emprisonne personne et ne protège aucun bloc. Le rempart n'arrête que les projectiles et les explosions venant de l'extérieur. Le siphon draine la vie des joueurs et des créatures qui ne sont pas de confiance.",
+     "Avant d'installer 1.6.1, retirez l'ancien jar d'OUKA du dossier mods et ne gardez qu'une copie de GeckoLib 5.5.6. Il faut Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, et Fabric API 0.161.0+26.3 ou plus récent. Installez-le sur le client et sur le serveur."
+    ]
+   },
+   {
     "id": "ouka-v1.6.0.1",
     "title": "The Grand Synthesis 1.6.0.1 — argile, consommation électrique ×2 et une Balise OUKA plus douce",
     "summary": "Une petite mise à jour d'équilibrage. Le synthétiseur de pierre fabrique de l'argile, chaque machine électrique consomme davantage, et la Balise OUKA est plus douce mais moins chère à construire. Aucun nouveau bloc ni objet.",

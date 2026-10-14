@@ -307,6 +307,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.1",
+    "title": "The Grand Synthesis 1.6.1 — vena spirituale, stregoneria e segni del sigillo",
+    "summary": "Un aggiornamento della vena spirituale. Un Pugnale rituale d'argento apre la tua vena, e con esso arrivano la pioggia di lame fantasma, la vista spirituale e i segni di protezione. Aggiunge 4 nuovi oggetti e 1 nuovo blocco, il segno del sigillo.",
+    "highlights": [
+     "Crea il Pugnale rituale d'argento sulla linea di assemblaggio. Accovacciati e usalo per compiere il rito del sangue: costa un po' di salute e apre la tua vena spirituale. Con la salute bassa il rito viene rifiutato, e non ti uccide mai.",
+     "Tieni un Fuoco del sigillo nella mano principale e tieni premuto il tasto predefinito J della pioggia di lame fantasma: le lame volano lontano dove guardi, si piantano ed esplodono un attimo dopo. Le lame non rompono mai blocchi.",
+     "Tieni premuto l'uso con una Lente della vista per guardarci attraverso, e premi il tasto predefinito U della vista spirituale per passare tra vista di immobilità e vista acuta. La vista acuta colpisce molto più forte i punti deboli con le tue armi OUKA e le lame fantasma.",
+     "Disegna un segno con il Gesso di protezione sopra un blocco, poi versaci dentro spirito con un Fuoco del sigillo. Attorno si alzano le protezioni di allarme, sifone e baluardo. Premi il tasto predefinito I per leggere il tuo spirito."
+    ],
+    "warnings": [
+     "Una protezione non blocca né intrappola nessuno, e non protegge blocchi. Il baluardo ferma solo proiettili ed esplosioni che arrivano dall'esterno. Il sifone prosciuga la salute di giocatori e creature non fidati.",
+     "Prima di installare 1.6.1, rimuovi il vecchio jar di OUKA dalla cartella mods e tieni una sola copia di GeckoLib 5.5.6. Servono Minecraft 26.3, Fabric Loader 0.19.5 o più recente e Fabric API 0.161.0+26.3 o più recente. Installalo sul client e sul server."
+    ]
+   },
+   {
     "id": "ouka-v1.6.0.1",
     "title": "The Grand Synthesis 1.6.0.1 — argilla, consumo elettrico ×2 e un Faro OUKA più mite",
     "summary": "Un piccolo aggiornamento di bilanciamento. Il sintetizzatore di pietra produce argilla, ogni macchina elettrica consuma di più e il Faro OUKA è più mite ma meno costoso da costruire. Non ci sono nuovi blocchi né oggetti.",

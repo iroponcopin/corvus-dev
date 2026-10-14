@@ -307,6 +307,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.1",
+    "title": "The Grand Synthesis 1.6.1 — Urat Roh, sihir, dan tanda segel",
+    "summary": "Pembaruan urat roh. Belati Ritual Perak membuka urat Anda, dan bersamanya datang hujan bilah hantu, penglihatan roh, dan tanda pelindung. Menambahkan 4 item baru dan 1 blok baru, Tanda Segel.",
+    "highlights": [
+     "Buat Belati Ritual Perak di lini perakitan. Jongkok lalu gunakan untuk melakukan ritual darah: ritual ini memakan sedikit kesehatan dan membuka urat roh Anda. Jika kesehatan rendah, ritual ditolak, dan tidak pernah membunuh.",
+     "Pegang Fokus Segel di tangan utama dan tahan tombol bawaan J untuk hujan bilah hantu: bilah terbang jauh ke arah yang Anda lihat, menancap, lalu meledak sesaat kemudian. Bilah tidak pernah merusak blok.",
+     "Tahan penggunaan dengan Lensa Penglihatan untuk melihat melaluinya, dan tekan tombol bawaan U penglihatan roh untuk berganti antara Penglihatan Diam dan Penglihatan Tajam. Penglihatan Tajam membuat senjata OUKA dan bilah hantu jauh lebih keras memukul titik lemah.",
+     "Gambar tanda dengan Kapur Pelindung di atas sebuah blok, lalu tuangkan roh ke dalamnya dengan Fokus Segel. Pelindung alarm, penyedot, dan benteng kemudian berdiri di sekitarnya. Tekan tombol bawaan I untuk membaca roh Anda."
+    ],
+    "warnings": [
+     "Pelindung tidak pernah memblokir atau menjebak siapa pun, dan tidak melindungi blok. Benteng hanya menghentikan proyektil dan ledakan dari luar. Penyedot menguras kesehatan pemain dan makhluk yang tidak tepercaya.",
+     "Sebelum memasang 1.6.1, hapus jar OUKA lama dari folder mods dan sisakan satu salinan GeckoLib 5.5.6. Dibutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di klien dan server."
+    ]
+   },
+   {
     "id": "ouka-v1.6.0.1",
     "title": "The Grand Synthesis 1.6.0.1 — tanah liat, konsumsi daya ×2, dan Suar OUKA yang lebih lembut",
     "summary": "Pembaruan keseimbangan kecil. Penyintesis batu kini membuat tanah liat, setiap mesin bertenaga listrik memakai lebih banyak daya, dan Suar OUKA lebih lembut tetapi lebih murah dibuat. Tidak ada blok atau item baru.",
