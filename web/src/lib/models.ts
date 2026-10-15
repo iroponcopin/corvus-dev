@@ -5,10 +5,10 @@
  */
 export const MODELS: readonly (readonly [id: string, name: string, href: string])[] = [
   ["halia", "Halia", "halia/"],
-  ["astraea", "ASTRAEA", "astraea/"],
   ["ouka", "OUKA", "ouka/"],
+  ["astraea", "ASTRAEA", "astraea/"],
   ["cherry", "Cherry", "cherry/"],
   ["tsubomi", "Tsubomi", "tsubomi/"],
-  ["aureum", "Aureum", "aureum/"],
   ["noctua", "Noctua", "noctua/"],
+  ["aureum", "Aureum", "aureum/"],
 ];

@@ -69,23 +69,22 @@ export function DownloadPage({ lang }: { lang: Lang }) {
         </p>
       </section>
 
-      <section className="ac-wrap ac-dl-section" aria-labelledby="dl-aureum">
-        <h2 id="dl-aureum" className="ac-h3">
-          {dl.aureum.heading}
-        </h2>
-        <p className="ac-small ac-dl-note">{dl.aureum.body}</p>
-        <div className="ac-grid-2">
-          <FileCard tag={`${d.chrome.version} ${dl.aureum.version}`} file={dl.aureum.file} cta={dl.aureum.cta} labels={labels} />
-          <div className="ac-card ac-file-aside">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={asset("icons/aureum.png")} alt="" width={64} height={64} />
-            <p className="ac-small">{dl.aureum.note}</p>
-            <Link className="ac-link" href={pathOf(lang, "aureum/")}>
-              Aureum <span className="ac-flip">{d.chrome.arrow}</span>
-            </Link>
+      {dl.halia ? (
+        <section className="ac-wrap ac-dl-section" aria-labelledby="dl-halia">
+          <h2 id="dl-halia" className="ac-h3">
+            Halia {d.products.halia?.jp ?? ""}
+          </h2>
+          <p className="ac-small ac-dl-note">{d.products.halia?.tagline}</p>
+          <div className="ac-grid-2">
+            <FileCard tag={`${d.chrome.version} ${dl.halia.version}`} file={dl.halia.file} cta={d.chrome.primaryCta} labels={labels} />
+            <div className="ac-card ac-file-aside">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={asset("icons/halia.png")} alt="" width={64} height={64} />
+              <p className="ac-small ac-ltr">Minecraft {mc} · Fabric</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
 
       {dl.astraea ? (
         <section className="ac-wrap ac-dl-section" aria-labelledby="dl-astraea">
@@ -98,23 +97,6 @@ export function DownloadPage({ lang }: { lang: Lang }) {
             <div className="ac-card ac-file-aside">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={asset("icons/astraea.png")} alt="" width={64} height={64} />
-              <p className="ac-small ac-ltr">Minecraft {mc} · Fabric</p>
-            </div>
-          </div>
-        </section>
-      ) : null}
-
-      {dl.halia ? (
-        <section className="ac-wrap ac-dl-section" aria-labelledby="dl-halia">
-          <h2 id="dl-halia" className="ac-h3">
-            Halia {d.products.halia?.jp ?? ""}
-          </h2>
-          <p className="ac-small ac-dl-note">{d.products.halia?.tagline}</p>
-          <div className="ac-grid-2">
-            <FileCard tag={`${d.chrome.version} ${dl.halia.version}`} file={dl.halia.file} cta={d.chrome.primaryCta} labels={labels} />
-            <div className="ac-card ac-file-aside">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={asset("icons/halia.png")} alt="" width={64} height={64} />
               <p className="ac-small ac-ltr">Minecraft {mc} · Fabric</p>
             </div>
           </div>
@@ -137,6 +119,24 @@ export function DownloadPage({ lang }: { lang: Lang }) {
           </div>
         </section>
       ) : null}
+
+      <section className="ac-wrap ac-dl-section" aria-labelledby="dl-aureum">
+        <h2 id="dl-aureum" className="ac-h3">
+          {dl.aureum.heading}
+        </h2>
+        <p className="ac-small ac-dl-note">{dl.aureum.body}</p>
+        <div className="ac-grid-2">
+          <FileCard tag={`${d.chrome.version} ${dl.aureum.version}`} file={dl.aureum.file} cta={dl.aureum.cta} labels={labels} />
+          <div className="ac-card ac-file-aside">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={asset("icons/aureum.png")} alt="" width={64} height={64} />
+            <p className="ac-small">{dl.aureum.note}</p>
+            <Link className="ac-link" href={pathOf(lang, "aureum/")}>
+              Aureum <span className="ac-flip">{d.chrome.arrow}</span>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {dl.agent ? (
         <section className="ac-wrap ac-dl-section" aria-labelledby="dl-agent">

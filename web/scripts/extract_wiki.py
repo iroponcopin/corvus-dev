@@ -172,8 +172,8 @@ def git_facts() -> dict:
 
 def product_ids() -> list[str]:
     """The Store order (the portal's STORE_ORDER): the brand line, then the coming and the archived."""
-    # Halia first (2026-10-11): the owner's order is HALIA, ASTRAEA, OUKA, CHERRY, TSUBOMI, and the Store lists it first.
-    return ["halia", "ouka", "cherry", "aureum", "astraea", "tsubomi", "noctua", "alpha"]
+    # The owner's order: HALIA, OUKA, ASTRAEA, CHERRY, TSUBOMI, then NOCTUA, AUREUM; the archived pack last.
+    return ["halia", "ouka", "astraea", "cherry", "tsubomi", "noctua", "aureum", "alpha"]
 
 
 def availability(pid: str, manifest: dict, retirement: dict) -> str:

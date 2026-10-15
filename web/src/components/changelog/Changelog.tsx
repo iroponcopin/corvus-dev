@@ -7,7 +7,7 @@ import { BrandStage } from "../BrandStage";
 import { Icon } from "../Icon";
 import { Rich } from "../Rich";
 
-const BRANDS = ["all", "ouka", "cherry", "alpha", "aureum", "astraea", "tsubomi", "halia", "corvus"] as const;
+const BRANDS = ["all", "halia", "ouka", "astraea", "cherry", "tsubomi", "aureum", "alpha", "corvus"] as const;
 const COLLAPSE_AFTER = 8;
 
 /**

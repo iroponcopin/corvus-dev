@@ -569,10 +569,11 @@ export function StoreSim({ products, labels, hrefs }: { products: Product[]; lab
               )
             ) : tab === "discover" ? (
               <div className="ac-st-discover">
-                {products.filter((p) => p.id === "ouka").map((p) => card(p, "big"))}
-                {pair("cherry", "aureum")}
-                {pair("astraea", "tsubomi")}
-                {pair("noctua", "alpha")}
+                {products.filter((p) => p.id === "halia").map((p) => card(p, "big"))}
+                {pair("ouka", "astraea")}
+                {pair("cherry", "tsubomi")}
+                {pair("noctua", "aureum")}
+                <div className="ac-st-pair">{products.filter((p) => p.id === "alpha").map((p) => card(p, "small"))}</div>
               </div>
             ) : tab === "mods" ? (
               <ul className="ac-st-rows">{products.map(row)}</ul>
