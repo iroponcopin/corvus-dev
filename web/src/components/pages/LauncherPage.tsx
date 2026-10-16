@@ -14,8 +14,9 @@ import { LauncherFiles } from "./DownloadPage";
 const BLUE: readonly [number, number, number] = [0.25, 0.55, 1];
 
 /** The Store's order of its products, and the hub ring's order of the six marks. */
-const PRODUCTS = ["halia", "ouka", "cherry", "aureum", "astraea", "tsubomi", "noctua", "alpha"] as const;
-const RING = ["astraea", "ouka", "cherry", "tsubomi", "noctua", "alpha"] as const;
+// ASTRAEA's service ended on 2026-10-16: it is the last model in both lists, before the archived Alpha.
+const PRODUCTS = ["halia", "ouka", "cherry", "tsubomi", "noctua", "aureum", "astraea", "alpha"] as const;
+const RING = ["ouka", "cherry", "tsubomi", "noctua", "astraea", "alpha"] as const;
 
 /**
  * Corvus Store: the hub (the astrolabe with the six marks in orbit, read one by one as the page
@@ -44,7 +45,7 @@ export function LauncherPage({ lang }: { lang: Lang }) {
       badge: p.badge,
       category: p.category,
       tagline: p.tagline,
-      about: p.availability === "archived" ? p.about : null,
+      about: p.availability === "archived" ? (p.id === "astraea" ? f.astraeaEnded.about : p.about) : null,
       status: status(p),
       available: p.availability === "available",
       archived: p.availability === "archived",
@@ -103,6 +104,7 @@ export function LauncherPage({ lang }: { lang: Lang }) {
                 perch: l.perch,
                 perchToggle: l.perchToggle,
                 fresh: f.store,
+                ended: { title: f.astraeaEnded.title, body: f.astraeaEnded.archivedBody },
                 track: d.brands.ouka.player.track,
               }}
             />

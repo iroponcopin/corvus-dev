@@ -20,8 +20,11 @@ const SPARXIE: readonly [number, number, number] = [0.98, 0.42, 0.5];
 const CYAN: readonly [number, number, number] = [0.3, 0.75, 1];
 const BLURPLE: readonly [number, number, number] = [0.36, 0.4, 0.96];
 
-/** The codex realm's three recipes: a blade, the ingot it is forged from, the crucible's fusion. */
-const FEATURED = ["astraea:celestial_blade", "astraea:celestial_ingot", "cherry:astral_catalyst"] as const;
+/**
+ * The codex realm's three recipes: an OUKA ammunition, the OUKA alloy ingot, the crucible's fusion. ASTRAEA's
+ * recipes stay in the sheet as history, but ASTRAEA's service has ended (2026-10-16), so it is not featured here.
+ */
+const FEATURED = ["ouka:ammo_energy", "ouka:ouka_alloy_ingot", "cherry:astral_catalyst"] as const;
 /** Brand icons of the changelog's brands (the Store's own mark for Corvus Store). */
 const BRAND_ICON: Record<string, string> = {
   ouka: "icons/ouka.png",
@@ -49,11 +52,11 @@ export function HomePage({ lang }: { lang: Lang }) {
   const status = (id: string): string =>
     p[id]?.availability === "soon" ? t.comingSoon : p[id]?.availability === "archived" ? t.archived : t.available;
 
-  // The six marks the old hero carried, in its order.
+  // The marks the hero carries, in its order. ASTRAEA is not one of them since its service ended (2026-10-16); its
+  // page is still in the Models menu, last.
   const cards = [
     { id: "halia", name: "Halia", jp: null, line: p.halia?.tagline ?? "", href: pathOf(lang, "halia/"), icon: "icons/halia.png", status: status("halia") },
     { id: "ouka", name: "OUKA", jp: null, line: p.ouka?.lede ?? "", href: pathOf(lang, "ouka/"), icon: "icons/ouka.png", status: status("ouka") },
-    { id: "astraea", name: "ASTRAEA", jp: p.astraea?.jp ?? null, line: p.astraea?.tagline ?? "", href: pathOf(lang, "astraea/"), icon: "icons/astraea.png", status: status("astraea") },
     { id: "cherry", name: "Cherry", jp: null, line: p.cherry?.lede ?? "", href: pathOf(lang, "cherry/"), icon: "icons/cherry.png", status: status("cherry") },
     { id: "tsubomi", name: "Tsubomi", jp: p.tsubomi?.jp ?? null, line: p.tsubomi?.tagline ?? "", href: pathOf(lang, "tsubomi/"), icon: "icons/tsubomi.png", status: status("tsubomi") },
     { id: "noctua", name: p.noctua?.name ?? "Noctua", jp: p.noctua?.jp ?? null, line: p.noctua?.tagline ?? "", href: pathOf(lang, "noctua/"), icon: "icons/noctua.png", status: status("noctua"), soon: p.noctua?.availability !== "available" },
@@ -83,7 +86,8 @@ export function HomePage({ lang }: { lang: Lang }) {
         );
     return [{ key: rec.key, name: itemName(id), station: fill(rl.madeIn, stationName(rec.station)), result: { icon: recipeIcon(it.icon), kind: it.kind }, ingredients }];
   });
-  const blade = recipeIcon(R.items["astraea:celestial_blade"]?.icon ?? null);
+  // The skin showroom holds ASTRAEA's blade only while ASTRAEA is offered; it is not, so the showroom is bladeless.
+  const blade = null;
 
   // Time: the latest release of each brand, newest first, then what comes next.
   const c = d.changelog;

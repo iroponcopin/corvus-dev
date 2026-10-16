@@ -593,6 +593,18 @@ def available_langs() -> list[str]:
     return [c for c in LANG_CODES if (I18N_DIR / f"{c}.json").exists()]
 
 
+def retirement(product: str) -> dict:
+    """data/retirement.json's block for `product`, or {} when that product has no block.
+
+    One reader for every retired product (2026-09-28 Alpha; 2026-10-16 ASTRAEA, a notice rather than an erasure).
+    The file is the one place that says what is retired, so no builder keeps its own copy of the dates.
+    """
+    p = ROOT / "data" / "retirement.json"
+    if not p.exists():
+        return {}
+    return json.loads(p.read_text(encoding="utf-8")).get(product) or {}
+
+
 def alpha_retirement() -> dict:
     """data/retirement.json's "alpha" block, or {} when Alpha has not been retired.
 
@@ -602,10 +614,7 @@ def alpha_retirement() -> dict:
     or compare the recipe sheet against a version it was never meant to be generated from
     (check_recipe_sources.py). One file says it; every reader goes through here.
     """
-    p = ROOT / "data" / "retirement.json"
-    if not p.exists():
-        return {}
-    block = json.loads(p.read_text(encoding="utf-8")).get("alpha") or {}
+    block = retirement("alpha")
     if block.get("retired"):
         missing = [k for k in ("retired_version", "last_playable") if not str(block.get(k, "")).strip()]
         if missing:

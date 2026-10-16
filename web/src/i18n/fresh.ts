@@ -76,6 +76,25 @@ export interface Fresh {
    * what is coming. `{0}` is the list of names; `{p}` (Korean) is the topic particle after it.
    * Each pair is [one name, several names]. `join` goes between the sentences.
    */
+  /**
+   * ASTRAEA's service ended on 2026-10-16 (owner's order: the site says so). A notice, not an erasure: the
+   * ASTRAEA page keeps its record under this notice; the Download page and the Store offer no install.
+   * `next` is the three things that happen now, in order.
+   */
+  astraeaEnded: {
+    badge: string;
+    about: string;
+    title: string;
+    lede: string;
+    thanks: string;
+    nextTitle: string;
+    next: [string, string, string];
+    backupTitle: string;
+    backup: string;
+    ouka: string;
+    closing: string;
+    archivedBody: string;
+  };
   lineup: {
     out: [string, string];
     coming: [string, string];
@@ -219,6 +238,20 @@ export const FRESH: Record<Lang, Fresh> = {
       filter: "コマンドを絞り込む…",
     },
     debug: { drawCalls: "描画コール", fps: "FPS" },
+    astraeaEnded: {
+      badge: "サービス終了",
+      about: "ASTRAEA のサービスは 2026年10月16日に終了しました。",
+      title: "ASTRAEA はサービスを終了しました",
+      lede: "ASTRAEA は 2026年10月16日をもってサービスを終了しました。V1.0 から最終版の V1.5.4「防衛」まで、遊んでくださったすべての皆さまに感謝します。",
+      thanks: "不具合を知らせてくださった皆さまにも、心から感謝します。防壁ドアや錠前、宿星刀、天星の道具、建物の大きさの機械たちを、皆さまの世界に置いていただけたことを嬉しく思います。",
+      nextTitle: "これから起きること",
+      next: ["Corvus Store では ASTRAEA はアーカイブ済みとなり、新しく入れることはできなくなります。", "Corvus Agent が、入っている ASTRAEA を 2026年10月23日以降の最初の同期で、ワールドのバックアップを取ったうえで自動的に無効化し、削除します。", "このページからのダウンロードは終了し、各ページはサービス終了の記録として残します。"],
+      backupTitle: "大切なお願い",
+      backup: "ASTRAEA を外すと、そのブロックとアイテムは世界から消えます。残しておきたいワールドは、2026年10月23日までにバックアップを取ってください。",
+      ouka: "OUKA は影響を受けません。",
+      closing: "これまで本当にありがとうございました。",
+      archivedBody: "ASTRAEA は 2026年10月16日にサービスを終了しました。新しく入れることはできません。",
+    },
     lineup: {
       out: ["{0} は公開中。", "{0} は公開中。"],
       coming: ["{0} は近日公開。", "{0} は近日公開。"],
@@ -357,6 +390,20 @@ export const FRESH: Record<Lang, Fresh> = {
       filter: "Filter commands…",
     },
     debug: { drawCalls: "Draw calls", fps: "FPS" },
+    astraeaEnded: {
+      badge: "Service ended",
+      about: "ASTRAEA's service ended on 16 October 2026.",
+      title: "ASTRAEA's service has ended",
+      lede: "ASTRAEA ended its service on 16 October 2026. Thank you to everyone who played it, from V1.0 to the final release, V1.5.4 \"Defence\".",
+      thanks: "Thank you, too, to everyone who told us about its bugs. It meant a great deal to see the blast doors and locks, the celestial blade and tools, and machines the size of buildings standing in your worlds.",
+      nextTitle: "What happens now",
+      next: ["In Corvus Store, ASTRAEA is archived and can no longer be installed.", "Corvus Agent disables and removes ASTRAEA from servers automatically, after taking a world backup, on its first sync on or after 23 October 2026.", "Its download is no longer offered on this site. The pages stay up as a record of ASTRAEA."],
+      backupTitle: "Please read this",
+      backup: "When ASTRAEA is removed, its blocks and items disappear from your worlds. Back up any world you want to keep before 23 October 2026.",
+      ouka: "OUKA is not affected.",
+      closing: "Thank you, all of you, for everything.",
+      archivedBody: "ASTRAEA ended its service on 16 October 2026. It can no longer be installed.",
+    },
     lineup: {
       out: ["{0} is out.", "{0} are out."],
       coming: ["{0} is coming.", "{0} are coming."],
@@ -495,6 +542,20 @@ export const FRESH: Record<Lang, Fresh> = {
       filter: "Filtrar comandos…",
     },
     debug: { drawCalls: "Llamadas de dibujo", fps: "FPS" },
+    astraeaEnded: {
+      badge: "Servicio finalizado",
+      about: "El servicio de ASTRAEA finalizó el 16 de octubre de 2026.",
+      title: "El servicio de ASTRAEA ha finalizado",
+      lede: "ASTRAEA finalizó su servicio el 16 de octubre de 2026. Gracias a todos los que jugaron desde la V1.0 hasta la última versión, la V1.5.4 «Defence».",
+      thanks: "Gracias también a quienes nos informaron de sus errores. Nos ha significado mucho ver las puertas blindadas y las cerraduras, la hoja celestial, las herramientas y las máquinas del tamaño de edificios en sus mundos.",
+      nextTitle: "Qué pasará ahora",
+      next: ["En Corvus Store, ASTRAEA está archivada y ya no se puede instalar.", "Corvus Agent desactiva y elimina ASTRAEA de los servidores automáticamente, tras hacer una copia de seguridad del mundo, en su primera sincronización a partir del 23 de octubre de 2026.", "Su descarga ya no se ofrece en este sitio. Estas páginas se conservan como registro de ASTRAEA."],
+      backupTitle: "Por favor, lea esto",
+      backup: "Al eliminar ASTRAEA, sus bloques y objetos desaparecen de sus mundos. Haga una copia de seguridad de cualquier mundo que quiera conservar antes del 23 de octubre de 2026.",
+      ouka: "OUKA no se ve afectada.",
+      closing: "Muchas gracias a todos, por todo.",
+      archivedBody: "El servicio de ASTRAEA finalizó el 16 de octubre de 2026. Ya no se puede instalar.",
+    },
     lineup: {
       out: ["{0} ya está disponible.", "{0} ya están disponibles."],
       coming: ["{0} llega pronto.", "{0} llegan pronto."],
@@ -633,6 +694,20 @@ export const FRESH: Record<Lang, Fresh> = {
       filter: "Filtrer les commandes…",
     },
     debug: { drawCalls: "Appels de rendu", fps: "IPS" },
+    astraeaEnded: {
+      badge: "Service terminé",
+      about: "Le service d'ASTRAEA a pris fin le 16 octobre 2026.",
+      title: "Le service d'ASTRAEA a pris fin",
+      lede: "ASTRAEA a mis fin à son service le 16 octobre 2026. Merci à tous ceux et celles qui y ont joué, de la V1.0 à la dernière version, la V1.5.4 « Defence ».",
+      thanks: "Merci aussi à ceux et celles qui nous ont signalé ses bogues. Voir les portes blindées et les verrous, la lame céleste, les outils et les machines grandes comme des bâtiments dans vos mondes a beaucoup compté pour nous.",
+      nextTitle: "Ce qui se passe maintenant",
+      next: ["Dans Corvus Store, ASTRAEA est archivée et ne peut plus être installée.", "Corvus Agent désactive et retire ASTRAEA des serveurs automatiquement, après une sauvegarde du monde, lors de sa première synchronisation à partir du 23 octobre 2026.", "Son téléchargement n'est plus proposé sur ce site. Ces pages sont conservées en souvenir d'ASTRAEA."],
+      backupTitle: "Merci de lire ceci",
+      backup: "Lorsqu'ASTRAEA est retirée, ses blocs et ses objets disparaissent de vos mondes. Sauvegardez tout monde que vous souhaitez garder avant le 23 octobre 2026.",
+      ouka: "OUKA n'est pas concernée.",
+      closing: "Merci à vous toutes et tous, pour tout.",
+      archivedBody: "Le service d'ASTRAEA a pris fin le 16 octobre 2026. ASTRAEA ne peut plus être installée.",
+    },
     lineup: {
       out: ["{0} est disponible.", "{0} sont disponibles."],
       coming: ["{0} arrive bientôt.", "{0} arrivent bientôt."],
@@ -771,6 +846,20 @@ export const FRESH: Record<Lang, Fresh> = {
       filter: "筛选命令…",
     },
     debug: { drawCalls: "绘制调用", fps: "FPS" },
+    astraeaEnded: {
+      badge: "服务已结束",
+      about: "ASTRAEA 的服务已于 2026 年 10 月 16 日结束。",
+      title: "ASTRAEA 服务已结束",
+      lede: "ASTRAEA 已于 2026 年 10 月 16 日结束服务。感谢每一位玩过它的朋友，从 V1.0 一路到最终版本 V1.5.4「Defence」。",
+      thanks: "也感谢每一位向我们报告问题的朋友。看到防爆门与门锁、宿星刀、工具，以及建筑般大小的机器立在你们的世界里，我们非常感动。",
+      nextTitle: "接下来会发生什么",
+      next: ["在 Corvus Store 中，ASTRAEA 已归档，无法再安装。", "Corvus Agent 会在 2026 年 10 月 23 日或之后的第一次同步时，先备份世界，再自动停用并移除服务器上的 ASTRAEA。", "此网站不再提供下载。这些页面将作为 ASTRAEA 的记录保留。"],
+      backupTitle: "请务必阅读",
+      backup: "移除 ASTRAEA 后，它的方块和物品会从你的世界中消失。想保留的世界，请在 2026 年 10 月 23 日之前备份。",
+      ouka: "OUKA 不受影响。",
+      closing: "感谢大家的一切。",
+      archivedBody: "ASTRAEA 的服务已于 2026 年 10 月 16 日结束，无法再安装。",
+    },
     lineup: {
       out: ["{0} 已经推出。", "{0} 已经推出。"],
       coming: ["{0} 即将到来。", "{0} 即将到来。"],
@@ -909,6 +998,20 @@ export const FRESH: Record<Lang, Fresh> = {
       filter: "명령어 필터…",
     },
     debug: { drawCalls: "드로 콜", fps: "FPS" },
+    astraeaEnded: {
+      badge: "서비스 종료",
+      about: "ASTRAEA의 서비스는 2026년 10월 16일에 종료되었습니다.",
+      title: "ASTRAEA의 서비스가 종료되었습니다",
+      lede: "ASTRAEA는 2026년 10월 16일에 서비스를 종료했습니다. V1.0부터 최종 버전인 V1.5.4 \"Defence\"까지 함께해 주신 모든 분께 감사드립니다.",
+      thanks: "버그를 알려 주신 모든 분께도 감사드립니다. 여러분의 세계에 놓인 방벽 문과 잠금장치, 천상의 검과 도구들, 건물만큼 거대한 기계들을 보며 큰 의미를 느꼈습니다.",
+      nextTitle: "앞으로 일어날 일",
+      next: ["Corvus Store에서 ASTRAEA는 보관 처리되며 더 이상 설치할 수 없습니다.", "Corvus Agent가 2026년 10월 23일 이후 처음 동기화할 때, 월드를 백업한 뒤 설치된 ASTRAEA를 자동으로 비활성화하고 제거합니다.", "이 사이트에서는 더 이상 다운로드를 제공하지 않으며, 이 페이지들은 ASTRAEA의 기록으로 남습니다."],
+      backupTitle: "꼭 읽어 주세요",
+      backup: "ASTRAEA를 제거하면 그 블록과 아이템이 월드에서 사라집니다. 남기고 싶은 월드는 2026년 10월 23일 전에 반드시 백업해 주세요.",
+      ouka: "OUKA는 영향을 받지 않습니다.",
+      closing: "지금까지 정말 감사했습니다.",
+      archivedBody: "ASTRAEA는 2026년 10월 16일에 서비스를 종료했습니다. 더 이상 설치할 수 없습니다.",
+    },
     lineup: {
       out: ["{0}{p} 공개 중입니다.", "{0}{p} 공개 중입니다."],
       coming: ["{0}{p} 곧 공개됩니다.", "{0}{p} 곧 공개됩니다."],
@@ -1047,6 +1150,20 @@ export const FRESH: Record<Lang, Fresh> = {
       filter: "Filtrar comandos…",
     },
     debug: { drawCalls: "Chamadas de desenho", fps: "FPS" },
+    astraeaEnded: {
+      badge: "Serviço encerrado",
+      about: "O serviço da ASTRAEA foi encerrado em 16 de outubro de 2026.",
+      title: "O serviço da ASTRAEA foi encerrado",
+      lede: "A ASTRAEA encerrou seu serviço em 16 de outubro de 2026. Obrigado a todos que jogaram, da V1.0 até a última versão, a V1.5.4 \"Defence\".",
+      thanks: "Obrigado também a quem nos avisou sobre os bugs. Foi muito especial ver as portas blindadas e as fechaduras, a lâmina celestial, as ferramentas e as máquinas do tamanho de prédios nos seus mundos.",
+      nextTitle: "O que acontece agora",
+      next: ["Na Corvus Store, a ASTRAEA está arquivada e não pode mais ser instalada.", "O Corvus Agent desativa e remove a ASTRAEA dos servidores automaticamente, depois de fazer um backup do mundo, na primeira sincronização a partir de 23 de outubro de 2026.", "O download deixa de ser oferecido neste site. Estas páginas permanecem como registro da ASTRAEA."],
+      backupTitle: "Por favor, leia",
+      backup: "Ao remover a ASTRAEA, os blocos e itens dela desaparecem dos seus mundos. Faça um backup de qualquer mundo que queira manter antes de 23 de outubro de 2026.",
+      ouka: "A OUKA não é afetada.",
+      closing: "Muito obrigado a todos, por tudo.",
+      archivedBody: "O serviço da ASTRAEA foi encerrado em 16 de outubro de 2026. Ela não pode mais ser instalada.",
+    },
     lineup: {
       out: ["{0} já está disponível.", "{0} já estão disponíveis."],
       coming: ["{0} está chegando.", "{0} estão chegando."],
@@ -1185,6 +1302,20 @@ export const FRESH: Record<Lang, Fresh> = {
       filter: "Filtra i comandi…",
     },
     debug: { drawCalls: "Chiamate di disegno", fps: "FPS" },
+    astraeaEnded: {
+      badge: "Servizio terminato",
+      about: "Il servizio di ASTRAEA è terminato il 16 ottobre 2026.",
+      title: "Il servizio di ASTRAEA è terminato",
+      lede: "ASTRAEA ha concluso il suo servizio il 16 ottobre 2026. Grazie a tutti coloro che l'hanno giocata, dalla V1.0 fino all'ultima versione, la V1.5.4 «Defence».",
+      thanks: "Grazie anche a chi ci ha segnalato i suoi bug. Ci ha fatto davvero piacere vedere porte blindate e serrature, la lama celeste, gli strumenti e le macchine grandi come edifici nei vostri mondi.",
+      nextTitle: "Cosa succede ora",
+      next: ["In Corvus Store ASTRAEA è archiviata e non può più essere installata.", "Corvus Agent disattiva e rimuove ASTRAEA dai server in automatico, dopo aver salvato una copia del mondo, alla prima sincronizzazione dal 23 ottobre 2026 in poi.", "Il download non viene più offerto su questo sito. Queste pagine restano a ricordo di ASTRAEA."],
+      backupTitle: "Leggete questo",
+      backup: "Quando ASTRAEA viene rimossa, i suoi blocchi e i suoi oggetti scompaiono dai vostri mondi. Fate una copia di sicurezza di ogni mondo che volete conservare prima del 23 ottobre 2026.",
+      ouka: "OUKA non è interessata.",
+      closing: "Grazie di cuore a tutti, per tutto.",
+      archivedBody: "Il servizio di ASTRAEA è terminato il 16 ottobre 2026. ASTRAEA non può più essere installata.",
+    },
     lineup: {
       out: ["{0} è disponibile.", "{0} sono disponibili."],
       coming: ["{0} arriva presto.", "{0} arrivano presto."],
@@ -1323,6 +1454,20 @@ export const FRESH: Record<Lang, Fresh> = {
       filter: "صفِّ الأوامر…",
     },
     debug: { drawCalls: "استدعاءات الرسم", fps: "إطار/ث" },
+    astraeaEnded: {
+      badge: "انتهت الخدمة",
+      about: "انتهت خدمة ASTRAEA في 16 أكتوبر 2026.",
+      title: "انتهت خدمة ASTRAEA",
+      lede: "أنهت ASTRAEA خدمتها في 16 أكتوبر 2026. شكرًا لكل من لعب بها، من الإصدار V1.0 حتى الإصدار الأخير V1.5.4 «Defence».",
+      thanks: "وشكرًا كذلك لكل من أبلغنا عن أخطائها. كان يسعدنا كثيرًا أن نرى الأبواب المدرعة والأقفال والسيف السماوي والأدوات والآلات بحجم المباني في عوالمكم.",
+      nextTitle: "ماذا يحدث الآن",
+      next: ["في Corvus Store أصبحت ASTRAEA مؤرشفة، ولم يعد بالإمكان تثبيتها.", "يُعطّل Corvus Agent ASTRAEA المثبتة على الخوادم ويزيلها تلقائيًا، بعد أخذ نسخة احتياطية من العالم، في أول مزامنة له في 23 أكتوبر 2026 أو بعده.", "لم يعد تنزيلها متاحًا في هذا الموقع، وتبقى الصفحات سجلًا لـ ASTRAEA."],
+      backupTitle: "يرجى قراءة هذا",
+      backup: "عند إزالة ASTRAEA تختفي كتلها وعناصرها من عالمك. يُرجى أخذ نسخة احتياطية من أي عالم تريد الاحتفاظ به قبل 23 أكتوبر 2026.",
+      ouka: "OUKA لا تتأثر.",
+      closing: "شكرًا لكم جميعًا على كل شيء.",
+      archivedBody: "انتهت خدمة ASTRAEA في 16 أكتوبر 2026، ولم يعد بالإمكان تثبيتها.",
+    },
     lineup: {
       out: ["{0} متاحة الآن.", "{0} متاحة الآن."],
       coming: ["أما {0} فقادمة قريبًا.", "أما {0} فقادمة قريبًا."],
@@ -1461,6 +1606,20 @@ export const FRESH: Record<Lang, Fresh> = {
       filter: "Фильтр команд…",
     },
     debug: { drawCalls: "Вызовы отрисовки", fps: "FPS" },
+    astraeaEnded: {
+      badge: "Служба завершена",
+      about: "Служба ASTRAEA завершена 16 октября 2026 г.",
+      title: "Служба ASTRAEA завершена",
+      lede: "ASTRAEA завершила работу 16 октября 2026 г. Спасибо всем, кто играл в неё, от V1.0 до финальной версии V1.5.4 «Defence».",
+      thanks: "Спасибо и всем, кто сообщал нам об ошибках. Нам было очень приятно видеть в ваших мирах бронированные двери и замки, небесный клинок, инструменты и машины размером с здания.",
+      nextTitle: "Что будет дальше",
+      next: ["В Corvus Store ASTRAEA перенесена в архив и больше не может быть установлена.", "Corvus Agent автоматически отключает и удаляет ASTRAEA с серверов после резервного копирования миров — при первой синхронизации 23 октября 2026 г. или позже.", "Загрузка на этом сайте больше не предлагается. Страницы сохраняются как память об ASTRAEA."],
+      backupTitle: "Пожалуйста, прочтите",
+      backup: "При удалении ASTRAEA её блоки и предметы исчезают из ваших миров. Сделайте резервную копию всех миров, которые хотите сохранить, до 23 октября 2026 г.",
+      ouka: "OUKA это не затрагивает.",
+      closing: "Спасибо вам всем за всё.",
+      archivedBody: "Служба ASTRAEA завершена 16 октября 2026 г. Установить её больше нельзя.",
+    },
     lineup: {
       out: ["{0} уже вышел.", "{0} уже вышли."],
       coming: ["{0} скоро появится.", "{0} скоро появятся."],
@@ -1599,6 +1758,20 @@ export const FRESH: Record<Lang, Fresh> = {
       filter: "Saring perintah…",
     },
     debug: { drawCalls: "Panggilan gambar", fps: "FPS" },
+    astraeaEnded: {
+      badge: "Layanan berakhir",
+      about: "Layanan ASTRAEA berakhir pada 16 Oktober 2026.",
+      title: "Layanan ASTRAEA telah berakhir",
+      lede: "ASTRAEA mengakhiri layanannya pada 16 Oktober 2026. Terima kasih kepada semua yang telah memainkannya, dari V1.0 hingga rilis terakhir, V1.5.4 \"Defence\".",
+      thanks: "Terima kasih juga kepada semua yang melaporkan bug-nya kepada kami. Kami sangat senang melihat pintu baja dan kunci, bilah surgawi, alat, serta mesin sebesar bangunan berdiri di dunia Anda.",
+      nextTitle: "Apa yang terjadi sekarang",
+      next: ["Di Corvus Store, ASTRAEA telah diarsipkan dan tidak bisa lagi dipasang.", "Corvus Agent akan menonaktifkan dan menghapus ASTRAEA dari server secara otomatis, setelah membuat cadangan dunia, pada sinkronisasi pertamanya mulai 23 Oktober 2026.", "Unduhannya tidak lagi ditawarkan di situs ini. Halaman-halaman ini tetap ada sebagai catatan tentang ASTRAEA."],
+      backupTitle: "Mohon baca ini",
+      backup: "Saat ASTRAEA dihapus, blok dan itemnya akan hilang dari dunia Anda. Cadangkan dunia yang ingin Anda simpan sebelum 23 Oktober 2026.",
+      ouka: "OUKA tidak terpengaruh.",
+      closing: "Terima kasih, semuanya, atas segalanya.",
+      archivedBody: "Layanan ASTRAEA berakhir pada 16 Oktober 2026. ASTRAEA tidak bisa lagi dipasang.",
+    },
     lineup: {
       out: ["{0} sudah tersedia.", "{0} sudah tersedia."],
       coming: ["{0} segera hadir.", "{0} segera hadir."],
@@ -1737,6 +1910,20 @@ export const FRESH: Record<Lang, Fresh> = {
       filter: "Befehle filtern…",
     },
     debug: { drawCalls: "Draw-Calls", fps: "FPS" },
+    astraeaEnded: {
+      badge: "Dienst beendet",
+      about: "Der Dienst von ASTRAEA wurde am 16. Oktober 2026 beendet.",
+      title: "Der Dienst von ASTRAEA ist beendet",
+      lede: "ASTRAEA hat seinen Dienst am 16. Oktober 2026 eingestellt. Vielen Dank an alle, die es gespielt haben, von V1.0 bis zur letzten Version V1.5.4 „Defence“.",
+      thanks: "Ebenso danken wir allen, die uns von Fehlern berichtet haben. Es hat uns sehr bedeutet, die Panzertüren und Schlösser, die Himmelsklinge, die Werkzeuge und die gebäudegroßen Maschinen in Ihren Welten zu sehen.",
+      nextTitle: "Was jetzt passiert",
+      next: ["Im Corvus Store ist ASTRAEA archiviert und kann nicht mehr installiert werden.", "Corvus Agent deaktiviert und entfernt ASTRAEA auf Servern automatisch, nach einer Sicherung der Welt, bei der ersten Synchronisation am 23. Oktober 2026 oder danach.", "Der Download wird hier nicht mehr angeboten. Diese Seiten bleiben als Erinnerung an ASTRAEA erhalten."],
+      backupTitle: "Bitte lesen Sie das",
+      backup: "Beim Entfernen von ASTRAEA verschwinden deren Blöcke und Gegenstände aus Ihren Welten. Sichern Sie Welten, die Sie behalten möchten, bitte vor dem 23. Oktober 2026.",
+      ouka: "OUKA ist nicht betroffen.",
+      closing: "Vielen Dank Ihnen allen für alles.",
+      archivedBody: "Der Dienst von ASTRAEA wurde am 16. Oktober 2026 beendet. ASTRAEA kann nicht mehr installiert werden.",
+    },
     lineup: {
       out: ["{0} ist erschienen.", "{0} sind erschienen."],
       coming: ["{0} folgt.", "{0} folgen."],
@@ -1875,6 +2062,20 @@ export const FRESH: Record<Lang, Fresh> = {
       filter: "Komutları süz…",
     },
     debug: { drawCalls: "Çizim çağrıları", fps: "FPS" },
+    astraeaEnded: {
+      badge: "Hizmet sona erdi",
+      about: "ASTRAEA'nın hizmeti 16 Ekim 2026'da sona erdi.",
+      title: "ASTRAEA'nın hizmeti sona erdi",
+      lede: "ASTRAEA hizmetini 16 Ekim 2026'da sonlandırdı. V1.0'dan son sürüm V1.5.4 \"Defence\"'e kadar oynayan herkese teşekkür ederiz.",
+      thanks: "Hatalarını bize bildiren herkese de teşekkür ederiz. Dünyalarınızda savunma kapılarının ve kilitlerin, gök kılıcının ve araçların, bina boyutundaki makinelerin durduğunu görmek bizim için çok anlamlıydı.",
+      nextTitle: "Şimdi neler olacak",
+      next: ["Corvus Store'da ASTRAEA arşivlendi ve artık yüklenemez.", "Corvus Agent, 23 Ekim 2026 ve sonrasındaki ilk senkronizasyonunda, dünyaların yedeğini aldıktan sonra kurulu ASTRAEA'yı otomatik olarak devre dışı bırakır ve kaldırır.", "Buradan indirme artık sunulmuyor. Bu sayfalar ASTRAEA'nın kaydı olarak kalacak."],
+      backupTitle: "Lütfen bunu okuyun",
+      backup: "ASTRAEA kaldırıldığında blokları ve eşyaları dünyalarınızdan kaybolur. Saklamak istediğiniz dünyaların yedeğini 23 Ekim 2026'dan önce alın.",
+      ouka: "OUKA etkilenmez.",
+      closing: "Hepinize, her şey için çok teşekkür ederiz.",
+      archivedBody: "ASTRAEA'nın hizmeti 16 Ekim 2026'da sona erdi. Artık yüklenemez.",
+    },
     lineup: {
       out: ["{0} çıktı.", "{0} çıktı."],
       coming: ["{0} yolda.", "{0} yolda."],

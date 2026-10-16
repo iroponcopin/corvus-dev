@@ -7,6 +7,7 @@ import { BrandStage } from "../BrandStage";
 import { CopyButton } from "../CopyButton";
 import { RealmAnchor } from "../RealmAnchor";
 import { ThemePlayer } from "../ThemePlayer";
+import { AstraeaEnded } from "./AstraeaEnded";
 
 const PINK: readonly [number, number, number] = [1, 0.58, 0.74];
 const ROSE: readonly [number, number, number] = [1, 0.42, 0.55];
@@ -235,6 +236,11 @@ export function CatalogueModelPage({ lang, id }: { lang: Lang; id: CatalogueMode
   const hasLog = d.changelog.brands.some((b) => b.id === id);
   return (
     <>
+      {id === "astraea" && p.availability === "archived" ? (
+        <div className="ac-wrap ac-sections">
+          <AstraeaEnded lang={lang} />
+        </div>
+      ) : null}
       <RealmAnchor className="ac-brand-hero" config={{ formation: stage.formation, x: 0.72, xNarrow: 0.5, scale: 0.32, scaleNarrow: 0.26, tint: stage.tint }}>
         <div className="ac-wrap ac-brand-grid">
           <div className="ac-brand-copy">

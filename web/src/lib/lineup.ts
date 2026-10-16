@@ -7,11 +7,11 @@ import type { Fresh } from "@/i18n/fresh";
 export const LINEUP: readonly (readonly [id: string, name: string])[] = [
   ["halia", "Halia"],
   ["ouka", "OUKA"],
-  ["astraea", "ASTRAEA"],
   ["cherry", "Cherry"],
   ["tsubomi", "Tsubomi"],
   ["noctua", "Noctua"],
   ["aureum", "Aureum"],
+  ["astraea", "ASTRAEA"],
 ];
 
 type Lineup = Fresh["lineup"];

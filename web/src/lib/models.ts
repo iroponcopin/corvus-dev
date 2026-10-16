@@ -6,9 +6,10 @@
 export const MODELS: readonly (readonly [id: string, name: string, href: string])[] = [
   ["halia", "Halia", "halia/"],
   ["ouka", "OUKA", "ouka/"],
-  ["astraea", "ASTRAEA", "astraea/"],
   ["cherry", "Cherry", "cherry/"],
   ["tsubomi", "Tsubomi", "tsubomi/"],
   ["noctua", "Noctua", "noctua/"],
   ["aureum", "Aureum", "aureum/"],
+  // ASTRAEA's service ended on 2026-10-16: it stays in the menu, last, with its service-ended label.
+  ["astraea", "ASTRAEA", "astraea/"],
 ];

@@ -5,6 +5,7 @@ import { asset, pathOf } from "@/lib/site";
 import { langData, wiki } from "@/lib/wiki";
 import type { Lang, LangData } from "@/lib/wiki-types";
 import { FileCard, type FileCardLabels } from "../FileCard";
+import { AstraeaEnded } from "./AstraeaEnded";
 import { RealmAnchor } from "../RealmAnchor";
 
 const BLUE: readonly [number, number, number] = [0.25, 0.55, 1];
@@ -86,7 +87,11 @@ export function DownloadPage({ lang }: { lang: Lang }) {
         </section>
       ) : null}
 
-      {dl.astraea ? (
+      {d.products.astraea?.availability === "archived" ? (
+        <section className="ac-wrap ac-dl-section" aria-labelledby="astraea-ended-h">
+          <AstraeaEnded lang={lang} />
+        </section>
+      ) : dl.astraea ? (
         <section className="ac-wrap ac-dl-section" aria-labelledby="dl-astraea">
           <h2 id="dl-astraea" className="ac-h3">
             ASTRAEA

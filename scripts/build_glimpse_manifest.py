@@ -103,7 +103,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from site_common import (  # noqa: E402
     ROOT, LAUNCHER_APP_NAME, newest_launcher_jar, launcher_native_files,
-    PACK_NAME, pack_zip_path,
+    PACK_NAME, pack_zip_path, retirement,
 )
 from build_download import _aureum_facts  # noqa: E402  (single source of truth
 # for which Aureum jar is current -- same import build_aureum.py already makes)
@@ -548,7 +548,7 @@ def _astraea_block():
         raise SystemExit(
             f"ERROR: {zpath.name} is named for version {zip_version}, but its own jar {jars[own]['path']} declares "
             f"{jars[own]['version']}. An installed ASTRAEA would compare itself against the wrong number.")
-    return {
+    block = {
         "mod_id": own,
         "latest": jars[own]["version"],
         "download_url": f"{SITE_BASE_URL}/downloads/{zpath.name}",
@@ -557,6 +557,21 @@ def _astraea_block():
         "sha256": _sha256(zpath),
         "jars": jars,
     }
+    # 2026-10-16: ASTRAEA's service has ended (data/retirement.json). The ZIP stays here, because the Store and
+    # Corvus Agent read this block; `retired` tells them the model is ended, when Agent removes it, and where the
+    # notice is. Added last, so every other key keeps its position and bytes.
+    ended = retirement("astraea")
+    if ended.get("retired"):
+        if ended.get("last_version") != block["latest"]:
+            raise SystemExit(
+                f"ERROR: data/retirement.json says ASTRAEA ended at {ended.get('last_version')!r}, but the ZIP {zpath.name} "
+                f"is {block['latest']}. The retirement must name the last version that is published.")
+        block["retired"] = {
+            "date": ended["date"],
+            "remove_after": ended["remove_after"],
+            "notice_url": f"{SITE_BASE_URL}/astraea/",
+        }
+    return block
 
 
 def _tsubomi_block():

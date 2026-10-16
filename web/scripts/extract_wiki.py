@@ -172,13 +172,16 @@ def git_facts() -> dict:
 
 def product_ids() -> list[str]:
     """The Store order (the portal's STORE_ORDER): the brand line, then the coming and the archived."""
-    # The owner's order: HALIA, OUKA, ASTRAEA, CHERRY, TSUBOMI, then NOCTUA, AUREUM; the archived pack last.
-    return ["halia", "ouka", "astraea", "cherry", "tsubomi", "noctua", "aureum", "alpha"]
+    # The owner's order: HALIA, OUKA, CHERRY, TSUBOMI, then NOCTUA, AUREUM. ASTRAEA, whose service ended on
+    # 2026-10-16, is demoted to the end of the models (2026-10-16, owner); the archived pack Alpha stays last.
+    return ["halia", "ouka", "cherry", "tsubomi", "noctua", "aureum", "astraea", "alpha"]
 
 
 def availability(pid: str, manifest: dict, retirement: dict) -> str:
     if pid == "alpha":
         return "archived" if retirement.get("retired") else "available"
+    if SC.retirement(pid).get("retired"):  # ASTRAEA (2026-10-16): the notice, the Store shows it archived
+        return "archived"
     return "available" if pid in manifest and manifest[pid].get("latest") else "soon"
 
 
@@ -786,9 +789,12 @@ def build_lang(lang: str, ctx: dict) -> dict:
                    "cta": dl["aureum_cta"], "version": aureum_file["latest"],
                    "file": file_facts(aureum_file["file_name"], aureum_file["download_url"],
                                       aureum_file["file_size"], aureum_file["sha256"])},
-        "astraea": astraea_file and {"version": astraea_file["latest"], "requirements": mc_reqs,
-                                     "file": file_facts(astraea_file["file_name"], astraea_file["download_url"],
-                                                        astraea_file["file_size"], astraea_file["sha256"])},
+        # ASTRAEA's service has ended (2026-10-16): no install path is offered, so the page carries no file. The
+        # portal shows the notice in its place while the product is archived.
+        "astraea": None if SC.retirement("astraea").get("retired") else astraea_file and {
+            "version": astraea_file["latest"], "requirements": mc_reqs,
+            "file": file_facts(astraea_file["file_name"], astraea_file["download_url"],
+                               astraea_file["file_size"], astraea_file["sha256"])},
         "tsubomi": tsubomi_file and {"version": tsubomi_file["latest"], "requirements": mc_reqs,
                                      "file": file_facts(tsubomi_file["file_name"], tsubomi_file["download_url"],
                                                         tsubomi_file["file_size"], tsubomi_file["sha256"])},

@@ -19,6 +19,10 @@ other checker here reads for ASTRAEA, is checked here — a live gate, not a ret
      Discord release bot announces from this block, and the Store installs from it;
   5. changelog_feed/brands.json lists ASTRAEA with its feed, and each of the 13 languages' changelog_feed/astraea feed
      leads with V<ver>: the site does not publish a release its changelog has not reached.
+  6. Since 2026-10-16 (ASTRAEA's service ended, owner's instruction) data/retirement.json's "astraea" block says so, and
+     the manifest's astraea block carries exactly one more key, "retired" = {date, remove_after, notice_url}, derived
+     from that block (notice_url is the site's /astraea/ page). Its "last_version" must be the ZIP's version. The ZIP
+     itself is still described exactly as in rule 4: the notice changes what the site offers, never what the zip is.
 
 Independent by construction: it imports nothing from the builders (not site_common, not build_glimpse_manifest, not
 build_changelog_feed). The language list, the site address and the file-name rule are written out again here, so a
@@ -49,6 +53,7 @@ SITE = "https://iroponcopin.github.io/aurora-corvus"
 # alone (rule 2), and it may depend on nothing else.
 ALLOWED_DEPENDS = {"fabricloader", "minecraft", "java", "fabric-api", "ouka"}
 ALLOWED_SUGGESTS = {"ouka"}
+RETIREMENT_FILE = ("data", "retirement.json")
 
 
 def git_tracked(root: Path, rel: str) -> bool:
@@ -123,6 +128,15 @@ def check(root: Path, tracked=git_tracked):
         "sha256": hashlib.sha256(data).hexdigest(),
         "jars": expected_jars,
     }
+    try:
+        ended = (json.loads((root.joinpath(*RETIREMENT_FILE)).read_text(encoding="utf-8")).get("astraea") or {})
+    except (OSError, ValueError) as exc:
+        return problems + [f"data/retirement.json cannot be read ({exc})"], {}
+    if ended.get("retired"):
+        if ended.get("last_version") != version:
+            problems.append(f"data/retirement.json says ASTRAEA ended at {ended.get('last_version')!r}, the ZIP is {version}")
+        expected["retired"] = {"date": ended.get("date"), "remove_after": ended.get("remove_after"),
+                               "notice_url": f"{SITE}/astraea/"}
     if block is None:
         problems.append("glimpse_manifest.json has no 'astraea' block: the bot would announce nothing and the Store offer nothing")
     elif block != expected:
@@ -169,6 +183,8 @@ def self_test() -> int:
         shutil.copy2(ROOT / "downloads" / zname, dst / "downloads" / zname)
         shutil.copy2(ROOT / "glimpse_manifest.json", dst / "glimpse_manifest.json")
         shutil.copytree(ROOT / "changelog_feed", dst / "changelog_feed")
+        (dst / "data").mkdir()
+        shutil.copy2(ROOT / "data" / "retirement.json", dst / "data" / "retirement.json")
 
     def rewrite_zip(path: Path, change):
         """Rebuild the zip with change(entries) applied to {name: bytes}; entries of the jar under '<jar>!<inner>'."""
@@ -229,6 +245,12 @@ def self_test() -> int:
         ("the jar's version differs from the zip's name",
          lambda d: rewrite_zip(d / "downloads" / zname, jar_with(lambda m: m.update(version="0.9.9"))), True, True),
         ("one language's feed lags the release", lambda d: edit_feed(d, "ar", "V0.9.0"), True, True),
+        ("the retirement is announced but the manifest lost its retired block (the notice does not reach the Store)",
+         lambda d: edit_manifest(d, lambda m: m["astraea"].pop("retired")), True, True),
+        ("the manifest's retired.remove_after differs from data/retirement.json",
+         lambda d: edit_manifest(d, lambda m: m["astraea"]["retired"].update(remove_after="2026-10-30")), True, True),
+        ("the retirement names another last version than the ZIP",
+         lambda d: _edit_json(d / "data" / "retirement.json", lambda r: r["astraea"].update(last_version="1.5.3")), True, True),
     ]
     ok = True
     for label, plant, is_tracked, should_fail in plants:
@@ -242,6 +264,12 @@ def self_test() -> int:
         print(f"  self-test [{'ok' if right else 'WRONG'}] {label}: {'red' if failed else 'green'}")
     print("SELF-TEST VERDICT:", "PASS" if ok else "FAIL")
     return 0 if ok else 1
+
+
+def _edit_json(path: Path, change):
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    change(doc)
+    path.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 def _tiny_jar(mod_id: str) -> bytes:

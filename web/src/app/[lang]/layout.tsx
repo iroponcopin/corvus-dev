@@ -61,10 +61,14 @@ export default async function LangLayout({ children, params }: { children: React
   const f = FRESH[lang];
   const c = d.chrome;
   const t = d.launcher.text;
-  // The Models menu, in the owner's order; a line the Store lists as "soon" says so (today, Noctua).
+  // The Models menu, in the owner's order; a line the Store lists as "soon" says so (today, Noctua), and an ended
+  // one says it has ended (ASTRAEA, 2026-10-16: its page stays, its menu line stays, last).
   const models: ModelLink[] = MODELS.map(([key, name, href]) => {
-    const soon = d.products[key]?.availability === "soon";
-    return { key, label: d.products[key]?.name ?? name, href: pathOf(lang, href), status: soon ? t.comingSoon : t.available, soon };
+    const availability = d.products[key]?.availability;
+    const soon = availability === "soon";
+    const ended = availability === "archived";
+    const status = soon ? t.comingSoon : ended ? (key === "astraea" ? f.astraeaEnded.badge : t.archived) : t.available;
+    return { key, label: d.products[key]?.name ?? name, href: pathOf(lang, href), status, soon };
   });
   const updates: UpdateLink[] = [
     { key: "changelog", label: c.changelog, desc: f.nav.updatesDesc.changelog, href: pathOf(lang, "changelog/"), icon: "library" },

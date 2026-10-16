@@ -35,6 +35,8 @@ export interface StoreSimLabels {
   perch: Record<string, string>;
   perchToggle: { title: string; description: string };
   fresh: StoreFresh;
+  /** The sheet an archived model opens with its own words (ASTRAEA, 2026-10-16); other archived models use the archived text. */
+  ended: { title: string; body: string };
   track: string;
 }
 
@@ -161,7 +163,7 @@ export function StoreSim({ products, labels, hrefs }: { products: Product[]; lab
   const [favourite, setFavourite] = useState(false);
   const [volume, setVolume] = useState(70);
   const [restart, setRestart] = useState(0);
-  const [sheet, setSheet] = useState(false);
+  const [sheet, setSheet] = useState<string | null>(null);
   const [toast, setToast] = useState<string | null>(null);
   const [announce, setAnnounce] = useState("");
   const [narrow, setNarrow] = useState(false);
@@ -248,7 +250,7 @@ export function StoreSim({ products, labels, hrefs }: { products: Product[]; lab
         queued.current.push(toastTimer.current);
         break;
       case "archived":
-        setSheet(true);
+        setSheet(id);
         break;
       default:
         break;
@@ -294,7 +296,7 @@ export function StoreSim({ products, labels, hrefs }: { products: Product[]; lab
   useEffect(() => {
     const onKey = (e: KeyboardEvent): void => {
       if (e.key !== "Escape") return;
-      if (sheet) setSheet(false);
+      if (sheet !== null) setSheet(null);
       else if (article) setArticle(null);
       else if (account) setAccount(false);
       else if (perchOpen) setPerchOpen(false);
@@ -570,9 +572,9 @@ export function StoreSim({ products, labels, hrefs }: { products: Product[]; lab
             ) : tab === "discover" ? (
               <div className="ac-st-discover">
                 {products.filter((p) => p.id === "halia").map((p) => card(p, "big"))}
-                {pair("ouka", "astraea")}
-                {pair("cherry", "tsubomi")}
-                {pair("noctua", "aureum")}
+                {pair("ouka", "cherry")}
+                {pair("tsubomi", "noctua")}
+                {pair("aureum", "astraea")}
                 <div className="ac-st-pair">{products.filter((p) => p.id === "alpha").map((p) => card(p, "small"))}</div>
               </div>
             ) : tab === "mods" ? (
@@ -725,19 +727,19 @@ export function StoreSim({ products, labels, hrefs }: { products: Product[]; lab
         </div>
       ) : null}
 
-      {sheet ? (
-        <div className="ac-stp-scrim" onClick={() => setSheet(false)}>
+      {sheet !== null ? (
+        <div className="ac-stp-scrim" onClick={() => setSheet(null)}>
           <div className="ac-stp-sheet" role="alertdialog" aria-modal="true" aria-labelledby="stp-sheet-h" onClick={(e) => e.stopPropagation()}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={asset("icons/alpha.png")} alt="" width={64} height={64} data-dim="true" />
-            <h4 id="stp-sheet-h">{t.archivedTitle}</h4>
-            <p>{t.archivedBody}</p>
+            <img src={asset(`icons/${sheet}.png`)} alt="" width={64} height={64} data-dim="true" />
+            <h4 id="stp-sheet-h">{sheet === "astraea" ? labels.ended.title : t.archivedTitle}</h4>
+            <p>{sheet === "astraea" ? labels.ended.body : t.archivedBody}</p>
             <button
               ref={(el) => el?.focus({ preventScroll: true })}
               type="button"
               className="ac-btn ac-btn--small"
               onClick={() => {
-                setSheet(false);
+                setSheet(null);
                 setTab("mods");
               }}
             >

@@ -105,6 +105,11 @@
         "file_size": 4292616,
         "sha256": "a0d27f95cd7ccf5760195d43acc9477ee48278735772f3b60fec15fc9dfb29f4"
       }
+    },
+    "retired": {
+      "date": "2026-10-16",
+      "remove_after": "2026-10-23",
+      "notice_url": "https://iroponcopin.github.io/aurora-corvus/astraea/"
     }
   },
   "tsubomi": {

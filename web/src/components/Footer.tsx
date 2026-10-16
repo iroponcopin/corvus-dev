@@ -18,7 +18,12 @@ export function Footer({ lang, d }: { lang: Lang; d: LangData }) {
       links: MODELS.map(([id, name, href]) => ({
         label: d.products[id]?.name ?? name,
         href: pathOf(lang, href),
-        note: d.products[id]?.availability === "soon" ? d.launcher.text.comingSoon : undefined,
+        note:
+          d.products[id]?.availability === "soon"
+            ? d.launcher.text.comingSoon
+            : d.products[id]?.availability === "archived"
+              ? (id === "astraea" ? f.astraeaEnded.badge : d.launcher.text.archived)
+              : undefined,
       })),
     },
     {
