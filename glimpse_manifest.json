@@ -12,30 +12,30 @@
     "changelog_url": "https://iroponcopin.github.io/aurora-corvus/en/changelog/"
   },
   "launcher": {
-    "latest": "5.0.1",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.1.jar",
-    "file_name": "corvus-5.0.1.jar",
-    "file_size": 15035648,
-    "sha256": "20cb5c7b025c768951fa9ab5aa67780264d4b9ca13d10c98b244924dbcb2fff8",
-    "notes": "Corvus Store 5.0.1 rearranges the Store.\n\nThe Mods section is now Arcade. At the top a large banner shows the models' own artwork in turn, with the model's line and its button; below it you can show all models, only the ones you have installed, or only the ones with an update. Top Models lists every released model, numbered, in this order: Halia, OUKA, ASTRAEA, Cherry, Tsubomi, Noctua and Aureum. Noctua runs on Palworld servers, so the Store does not install it; its button opens its page on the website. It used to be listed as Coming soon, which was wrong: it has been out since 4 October. The retired Alpha follows underneath.\n\nThe new Work section holds Corvus Agent: its card to get, update or open it, and under it Corvus Studio (Dashboard, Activity, Settings) for the server it looks after. It takes the place of the Agents section, so there is still the same number of sections. Corvus Agent is no longer listed among the models; an update to it is offered on its card in Work.\n\nEverything else is 5.0.0.\n\nVerified: the unit tests pass (594, 474 and 149 in the three modules) with the compiler set to refuse any warning, including new tests that hold the order, keep Corvus Agent out of Arcade and check every language says Arcade and Work. The Store was drawn without a window in all 13 languages, and the new Arcade and Work screens were looked at in English, Japanese and Arabic (mirrored).\nNot verified, and worth saying: the banner's crossfade, hover and press have not been seen in a real window; nothing new was run on Windows; the words in the eleven languages other than English and Japanese were translated plainly and have not been read by a native speaker.",
+    "latest": "5.0.2",
+    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.2.jar",
+    "file_name": "corvus-5.0.2.jar",
+    "file_size": 15046963,
+    "sha256": "caf55c0874ed3454b68ed3a3ce22a9f300c1b6db4756ebe7cf546867ce0e7502",
+    "notes": "Corvus Store 5.0.2 and Corvus Agent 5.0.1 carry out the end of ASTRAEA's service.\n\nASTRAEA ended its service on 16 October 2026. In the Store it is now archived: it moves to the end of Arcade, just before Alpha, it is no longer numbered in Top Models or shown in the banner, and it can no longer be installed or updated. Its button opens the notice on the website. A copy already on your computer is left as it is.\n\nCorvus Agent 5.0.1 removes ASTRAEA from the servers it looks after, on its first sync on or after 23 October 2026. Before then it changes nothing; Corvus Studio's Dashboard shows the date. On the day, it takes a world backup first, stops the server, moves the ASTRAEA jar into .corvus-retired (it is not deleted), starts the server again and checks that it answers; if it does not, everything is put back. This happens even when automatic updates are off. OUKA and every other mod stay exactly as they were. Removing ASTRAEA removes its blocks, items and worlds (the Moon, Mars and the station) from your world, so back up any world you want to keep; the backup the agent takes is in .corvus/backups. To get the removal, update Corvus Agent from its card in Work.\n\nEverything else is 5.0.1.\n\nVerified: the unit tests pass (601, 481 and 159 in the three modules), including new tests for the removal date, the move, the roll-back and that no other file changes. On a real Minecraft 26.3 server with OUKA 1.6.2 and ASTRAEA 1.5.4, the agent changed nothing before the date; on the date it made the world backup (with ASTRAEA's worlds in it), moved the jar, and the server started without ASTRAEA while the other six mods were byte-identical. The Store was drawn without a window in all 13 languages with ASTRAEA archived, and was looked at in a real window. Corvus Agent 5.0.0 and Corvus Store 5.0.1 read the new website data without trouble.\nNot verified, and worth saying: the Dashboard's date line and the ASTRAEA notice in the Store have not been seen in a real window; the new words in the eleven languages other than English and Japanese have not been read by a native speaker; until you update, Corvus Store 5.0.1 still offers ASTRAEA, and Corvus Agent 5.0.0 does not remove it.",
     "native": {
       "macos": {
-        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.1-macos.dmg",
-        "file_name": "corvus-5.0.1-macos.dmg",
-        "file_size": 64783495,
-        "sha256": "a522bdd1e110213d23e396a824d4872cf84d08bf6473c4c00664765e491bc892"
+        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.2-macos.dmg",
+        "file_name": "corvus-5.0.2-macos.dmg",
+        "file_size": 64797112,
+        "sha256": "d6bfcbe98aeb659ab58da697d0ac0c816ab8f627bb9668bf9a56938151cae231"
       },
       "windows": {
-        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.1-windows.msi",
-        "file_name": "corvus-5.0.1-windows.msi",
-        "file_size": 62473052,
-        "sha256": "2c5288dab22dd74e09741060f49d0fdb0a8734995177cb080ff31da7da15e8d2"
+        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.2-windows.msi",
+        "file_name": "corvus-5.0.2-windows.msi",
+        "file_size": 62481244,
+        "sha256": "d9a301c2a678e99f9de17aabdf52b0e5862e54902fa318c31eca3009627849c6"
       },
       "linux": {
-        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.1-linux.deb",
-        "file_name": "corvus-5.0.1-linux.deb",
-        "file_size": 51922784,
-        "sha256": "36e538ba8418f4d4a23a91a5cb9ca3284c1bb77d57e356957ddf0a6ee6e004b5"
+        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.2-linux.deb",
+        "file_name": "corvus-5.0.2-linux.deb",
+        "file_size": 51939310,
+        "sha256": "dd92807f7980555312454ba17ec56760ecf55056aeddd1eb5e2954e373de20ec"
       }
     }
   },
@@ -129,11 +129,11 @@
     "sha256": "cbd330d75c91d2360860bb22176772bd863f097516084b208a97eccb58c94154"
   },
   "agent": {
-    "latest": "5.0.0",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-agent-5.0.0.zip",
-    "file_name": "corvus-agent-5.0.0.zip",
-    "file_size": 355134,
-    "sha256": "eb8068500a2f040d33c67b3417e524b309e36577385268c9456e385c48c2c79f"
+    "latest": "5.0.1",
+    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-agent-5.0.1.zip",
+    "file_name": "corvus-agent-5.0.1.zip",
+    "file_size": 363191,
+    "sha256": "9ba8f75fc833babe17ad9887172a2c12b8703b32cf837b51bc1de2bfb43c85e6"
   },
   "noctua": {
     "latest": "1.0.0",
