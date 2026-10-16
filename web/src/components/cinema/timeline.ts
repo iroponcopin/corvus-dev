@@ -174,7 +174,8 @@ export function poseAt(p: number, a: number, vw: number, vh: number, narrow: boo
     bg: p * BG_SPAN,
     blur: smooth(0.35, 1, p),
     letter: lerp(narrow ? 0.16 : 0.42, -0.03, smooth(0.05, 0.3, p)),
-    title1: 1 - smooth(0, 0.1, a),
+    // HALIA is gone by a = 0.03; CORVUS waits until a = 0.10, a 4% gap of section progress with neither title shown.
+    title1: 1 - smooth(0, 0.03, a),
     eagle: Math.round(clamp01((p - 0.35) / 0.65) * (EAGLE_COUNT - 1)),
     eagleAlpha: smooth(0.28, 0.36, p) * (1 - smooth(0.12, 0.2, a)),
     eagleLeft: eLeft,
@@ -187,8 +188,8 @@ export function poseAt(p: number, a: number, vw: number, vh: number, narrow: boo
     teal: smooth(0, 0.15, a),
     bg2: act2Pair(a * (ACT2_COUNT - 1)),
     wisp: smooth(0.4, 0.6, a),
-    letter2: lerp(narrow ? 0.16 : 0.42, -0.03, smooth(0.05, 0.3, a)),
-    title2: smooth(0.02, 0.12, a),
+    letter2: lerp(narrow ? 0.16 : 0.42, -0.03, smooth(0.1, 0.35, a)),
+    title2: smooth(0.1, 0.18, a),
     crow: crowPose(a, vw, vh, narrow),
   };
 }
