@@ -15,8 +15,13 @@ export const EAGLE_ASPECT = 921 / 1400;
 export const BG_ASPECT = 16 / 9;
 /** The sun in background-frame coordinates (x, y down), measured on f080. */
 export const SUN_IMAGE: readonly [number, number] = [0.51, 0.22];
-/** The midpoint between the eagle's eyes in its frame coordinates (x, y down): the same in every frame, frontal or profile. */
-export const EYE_MID: readonly [number, number] = [0.53, 0.18];
+/** Eagle frame coordinates (x, y down) after the horizontal mirror, which makes it face left toward the title. */
+/** Midpoint between the eyes. */
+export const EYE_MID: readonly [number, number] = [0.47, 0.18];
+/** Beak tip. */
+export const BEAK_TIP: readonly [number, number] = [0.185, 0.3];
+/** Top of the head. */
+export const HEAD_TOP_Y = 0.107;
 
 export function clamp01(x: number): number {
   return x < 0 ? 0 : x > 1 ? 1 : x;
@@ -51,22 +56,29 @@ export interface Pose {
   light: [number, number];
 }
 
-/** Layout knobs: the eagle's final placement differs on narrow screens. */
+/**
+ * Layout. The eagle's cut edge (the right edge after the mirror) is always kept at or beyond the viewport's right
+ * edge, and its bottom beyond the bottom edge (clamps below), so no footage edge ever shows.
+ */
 export function poseAt(p: number, vw: number, vh: number, narrow: boolean, sunScreen: [number, number]): Pose {
-  // Eagle rise: from the bottom-right, scaling up, the beak landing on the end of the word by p = 0.8.
   const te = smooth(0.3, 0.8, p);
-  const zoom = 1 + 0.05 * smooth(0.8, 1, p);
-  const hFinal = (narrow ? 0.92 : 1.2) * vh;
-  const hStart = 0.5 * vh;
-  const H = lerp(hStart, hFinal, te) * zoom;
+  const zoom = 1 + 0.03 * smooth(0.8, 1, p);
+  const hFinal = (narrow ? 0.95 : 1.15) * vh;
+  const H = lerp(0.5 * vh, hFinal, te) * zoom;
   const W = H * EAGLE_ASPECT;
-  // The eyes end on the right half; at this height the beak lands on the last letters of the word.
-  const finalEye: [number, number] = narrow ? [0.62 * vw, 0.58 * vh] : [0.67 * vw, 0.3 * vh];
-  const startEye: [number, number] = [1.05 * vw, 1.1 * vh];
-  const ex = lerp(startEye[0], finalEye[0], te);
-  const ey = lerp(startEye[1], finalEye[1], te);
-  const left = ex - EYE_MID[0] * W;
-  const top = ey - EYE_MID[1] * H;
+  // Desktop: the head fills the right ~40%, the beak tip lands on the last letter. Phones: head below the title.
+  const beakX = narrow ? 0.25 * vw : 0.73 * vw;
+  const headY = narrow ? 0.55 * vh : 0.12 * vh;
+  const topFinal = headY - HEAD_TOP_Y * H;
+  const leftFinal = beakX - BEAK_TIP[0] * W;
+  // Rise: from below and right of the frame.
+  const leftStart = vw - 0.45 * W;
+  const topStart = vh - 0.2 * H;
+  let left = lerp(leftStart, leftFinal, te);
+  let top = lerp(topStart, topFinal, te);
+  // Clamp: the cut edge (right) and the bottom stay off-screen.
+  left = Math.max(left, vw - W);
+  top = Math.max(top, vh - H);
   const cx = left + W * 0.5;
   const cy = top + H * 0.5;
   const dx = sunScreen[0] * vw - cx;

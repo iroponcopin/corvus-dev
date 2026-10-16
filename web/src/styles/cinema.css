@@ -100,10 +100,11 @@
 .cin-tagline {
   margin: clamp(10px, 2vh, 22px) 0 0;
   font-family: "Didot", "Bodoni 72", "Bodoni MT", "Hoefler Text", "Playfair Display", "Times New Roman", Times, serif;
-  font-style: italic;
+  font-style: normal;
+  font-weight: 400;
   font-size: clamp(18px, 2.2vw, 30px);
   line-height: 1.3;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   color: #eadcc2;
   text-shadow: 0 1px 4px rgb(0 0 0 / 0.55), 0 0 22px rgb(0 0 0 / 0.45);
 }
@@ -112,7 +113,6 @@ html:lang(ar) .cin-tagline,
 html:lang(ja) .cin-tagline,
 html:lang(zh) .cin-tagline,
 html:lang(ko) .cin-tagline {
-  font-style: normal;
   letter-spacing: 0.04em;
 }
 

@@ -154,6 +154,8 @@ out vec4 outColor;
 
 void main() {
   vec2 uv = vec2(gl_FragCoord.x / uRes.x, 1.0 - gl_FragCoord.y / uRes.y);
+  // Mirrored: the eagle faces left, toward the title.
+  uv.x = 1.0 - uv.x;
   vec4 c = texture(uTex, uv);
   float a = c.a;
   if (a <= 0.001) {
@@ -161,9 +163,6 @@ void main() {
     return;
   }
   vec3 rgb = c.rgb / a;
-  // The footage is cut at its own frame edges: fade those out so no hard line shows.
-  float feather = smoothstep(0.0, 0.07, uv.x) * smoothstep(0.0, 0.07, 1.0 - uv.x) * smoothstep(1.0, 0.92, uv.y);
-  a *= feather;
 
   // Alpha gradient: g points into the bird, so the outward normal is -g.
   float aR = texture(uTex, uv + vec2(uTexel.x * 3.0, 0.0)).a;
@@ -174,11 +173,15 @@ void main() {
   float gl = length(g);
   vec2 n = gl > 0.0001 ? -g / gl : vec2(0.0);
   float edge = clamp(gl * 1.6, 0.0, 1.0);
-  float facing = clamp(dot(n, uLight) * 0.5 + 0.5, 0.0, 1.0);
-  float rim = edge * facing * facing * uRim * a;
 
-  // Sunrise grade: two-thirds of the brightness, warmer; the rim is the only light on the edge.
+  // Rim: only the top and back of the head that face the sun, inside the alpha, a quarter of the old strength.
+  float sunSide = smoothstep(0.55, 0.95, dot(n, uLight));
+  float crown = smoothstep(0.5, 0.15, uv.y);
+  float rim = edge * sunSide * crown * uRim * a;
+
+  // Sunrise grade, and light wrap: the lit edge sinks slightly toward the background tone.
   vec3 col = rgb * uBright * vec3(1.06, 0.9, 0.72);
+  col *= 1.0 - 0.12 * edge;
   col += vec3(1.0, 0.66, 0.34) * rim * 0.9;
   if (uGrain > 0.0) {
     float gr = hash(gl_FragCoord.xy + fract(uTime * 7.3) * vec2(57.0, 13.0)) - 0.5;

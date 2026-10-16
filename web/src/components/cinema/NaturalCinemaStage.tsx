@@ -216,7 +216,7 @@ export function NaturalCinemaStage({ title, tagline, credit, hint }: { title: st
       gl.uniform2f(u.uTexel ?? null, 1 / EAGLE_W, 1 / EAGLE_H);
       gl.uniform2f(u.uLight ?? null, pose.light[0], pose.light[1]);
       gl.uniform1f(u.uBright ?? null, 0.66);
-      gl.uniform1f(u.uRim ?? null, 0.9);
+      gl.uniform1f(u.uRim ?? null, 0.225);
       gl.uniform1f(u.uGrain ?? null, effects ? 0.015 : 0);
       gl.uniform1f(u.uTime ?? null, performance.now() / 1000);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
