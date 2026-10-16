@@ -3,8 +3,8 @@
 
 .cin-section {
   position: relative;
-  height: 400vh;
-  height: 400svh;
+  height: 800vh;
+  height: 800svh;
   background: #000;
 }
 
@@ -184,10 +184,61 @@ html:lang(ko) .cin-tagline {
   .cin-title {
     font-size: clamp(56px, 22vw, 120px);
   }
+  /* CORVUS has six letters: it takes a smaller size on phones so it fits. */
+  .cin-title--2 {
+    font-size: clamp(48px, 18vw, 100px);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .cin-tagline {
     transition: none;
   }
+}
+
+/* Act II: CORVUS, the crow and the mist that passes in front of it. */
+.cin-copy--2 {
+  pointer-events: none;
+}
+
+.cin-title--2,
+.cin-tagline--2 {
+  opacity: 0;
+}
+
+.cin-crow-canvas,
+.cin-crow-img {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.cin-crow-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.cin-crow-img {
+  display: none;
+  inset: auto;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  transform-origin: 0 0;
+  will-change: transform, opacity;
+}
+
+.cin-stage[data-mode="img"] .cin-crow-img {
+  display: block;
+}
+
+.cin-stage[data-mode="img"] .cin-crow-canvas {
+  display: none;
+}
+
+.cin-credit-2 {
+  color: rgb(255 255 255 / 0.55);
 }

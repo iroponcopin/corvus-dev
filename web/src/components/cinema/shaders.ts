@@ -50,6 +50,13 @@ ${COMMON}
 uniform sampler2D uA;
 uniform sampler2D uB;
 uniform float uMix;
+uniform sampler2D uC;
+uniform sampler2D uD;
+uniform float uMix2;
+uniform float uDis;
+uniform float uFog;
+uniform float uTeal;
+uniform float uSunAmt;
 uniform vec2 uRes;
 uniform vec2 uScale;
 uniform vec2 uSun;
@@ -89,6 +96,15 @@ vec3 sampleDof(sampler2D t, vec2 iuv, float ca) {
   return acc / 9.0;
 }
 
+// Two footage frames blended by m.
+vec3 sampleBlend(sampler2D t1, sampler2D t2, float m, vec2 iuv, float ca) {
+  vec3 c = sampleDof(t1, iuv, ca);
+  if (m > 0.001) {
+    c = mix(c, sampleDof(t2, iuv, ca), m);
+  }
+  return c;
+}
+
 void main() {
   vec2 suv = vec2(gl_FragCoord.x / uRes.x, 1.0 - gl_FragCoord.y / uRes.y);
   vec2 iuv = 0.5 + (suv - 0.5) * uScale;
@@ -97,16 +113,20 @@ void main() {
   float edge = smoothstep(0.35, 1.05, length(q));
   float ca = uCA * edge * 0.006;
 
-  vec3 col = sampleDof(uA, iuv, ca);
-  if (uMix > 0.001) {
-    col = mix(col, sampleDof(uB, iuv, ca), uMix);
+  // Act I footage, then Act II footage; uDis cross-dissolves between them.
+  vec3 col = vec3(0.0);
+  if (uDis < 0.999) {
+    col = sampleBlend(uA, uB, uMix, iuv, ca);
+  }
+  if (uDis > 0.001) {
+    col = mix(col, sampleBlend(uC, uD, uMix2, iuv, ca), uDis);
   }
 
-  // Sun glow: a tight core and a wide halo, warm.
+  // Sun glow: a tight core and a wide halo, warm (Act I only).
   vec2 sd = (suv - uSun) * vec2(aspect, 1.0);
   float d2 = dot(sd, sd);
   float glow = exp(-d2 * 26.0) * 0.55 + exp(-d2 * 3.2) * 0.14;
-  col += vec3(1.0, 0.74, 0.45) * glow;
+  col += vec3(1.0, 0.74, 0.45) * glow * uSunAmt;
 
   // Mist: fbm drifting slowly, brighter toward the sun (forward scattering).
   if (uMist > 0.0) {
@@ -117,10 +137,25 @@ void main() {
     col += vec3(1.0, 0.82, 0.58) * 0.09 * m * fwd * uMist;
   }
 
-  // Filmic grade with a golden cast.
+  // Cloud: a dense pale mist that drifts over the footage, thinning as the clouds part (Act II).
+  if (uFog > 0.001) {
+    float t = uTime * 0.02;
+    float fm = smoothstep(0.3, 0.75, fbm(q * vec2(1.1, 1.7) + vec2(t, -t * 0.4)));
+    col = mix(col, vec3(0.80, 0.85, 0.85), clamp(uFog * (0.45 + 0.55 * fm), 0.0, 0.95));
+  }
+
+  // Cool grade for Act II: teal-green shadows, and distance haze toward the top of the frame.
+  if (uTeal > 0.001) {
+    float lum = dot(col, vec3(0.3, 0.59, 0.11));
+    vec3 teal = col * vec3(0.88, 1.03, 1.0) + vec3(0.0, 0.03, 0.025) * (1.0 - lum);
+    col = mix(col, teal, uTeal * 0.85);
+    col = mix(col, vec3(0.80, 0.85, 0.85), uTeal * 0.22 * (1.0 - suv.y));
+  }
+
+  // Filmic grade with a golden cast (Act I), which fades out as Act II cools.
   col = aces(col * 1.02);
   col = mix(col, col * col * (3.0 - 2.0 * col), 0.3);
-  col *= vec3(1.05, 0.99, 0.88);
+  col *= mix(vec3(1.0), vec3(1.05, 0.99, 0.88), 1.0 - uTeal);
 
   // Vignette.
   col *= 1.0 - 0.45 * smoothstep(0.4, 1.1, length((suv - 0.5) * vec2(1.25, 1.0)));
@@ -189,5 +224,51 @@ void main() {
   }
   col = clamp(col, 0.0, 1.0);
   outColor = vec4(col * a, a);
+}
+`;
+
+/**
+ * The crow: a premultiplied RGBA frame placed in a box on the full-stage canvas. The frame's bottom edge is cut
+ * at the treetop (kept beyond the viewport). The black is lifted very slightly toward the mist colour, and
+ * soft wisps of mist pass in front, at low alpha, now and then.
+ */
+export const CROW_FRAG = `#version 300 es
+precision highp float;
+${COMMON}
+uniform sampler2D uTex;
+uniform vec2 uRes;
+uniform vec4 uBox;
+uniform float uAlpha;
+uniform float uWisp;
+uniform float uTime;
+out vec4 outColor;
+
+void main() {
+  vec2 fc = vec2(gl_FragCoord.x, uRes.y - gl_FragCoord.y);
+  vec4 crow = vec4(0.0);
+  vec2 lp = (fc - uBox.xy) / uBox.zw;
+  if (uAlpha > 0.001 && lp.x >= 0.0 && lp.x <= 1.0 && lp.y >= 0.0 && lp.y <= 1.0) {
+    vec4 c = texture(uTex, lp);
+    if (c.a > 0.001) {
+      vec3 rgb = c.rgb / c.a;
+      rgb = mix(rgb, vec3(0.42, 0.48, 0.47), 0.07);
+      crow = vec4(rgb * c.a * uAlpha, c.a * uAlpha);
+    }
+  }
+
+  float wa = 0.0;
+  if (uWisp > 0.001) {
+    vec2 suv = fc / uRes;
+    vec2 q = vec2(suv.x * uRes.x / uRes.y, suv.y);
+    float ev = smoothstep(0.55, 0.85, vnoise(vec2(uTime * 0.05, 3.7)));
+    float n = fbm(vec2(q.x * 1.4 - uTime * 0.04, q.y * 3.0 + uTime * 0.01));
+    float band = smoothstep(0.45, 0.8, n) * smoothstep(0.2, 0.5, suv.y) * (1.0 - smoothstep(0.85, 1.0, suv.y));
+    wa = band * ev * 0.14 * uWisp;
+  }
+  vec3 wcol = vec3(0.86, 0.9, 0.9);
+  // Over-composite the wisp onto the crow (premultiplied).
+  vec3 outRgb = wcol * wa + crow.rgb * (1.0 - wa);
+  float outA = wa + crow.a * (1.0 - wa);
+  outColor = vec4(outRgb, outA);
 }
 `;

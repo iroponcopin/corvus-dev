@@ -35,6 +35,7 @@ const copies = [
   [join(WIKI, "assets", "img", "recipes"), "wiki/recipes"],
   [join(WIKI, "assets", "video", "announcement"), "wiki/announcement"],
   [join(WIKI, "portal", "cinema", "act1"), "cinema/act1"],
+  [join(WIKI, "portal", "cinema", "act2"), "cinema/act2"],
   [join(WIKI, "assets", "img", "sparxie-front.png"), "wiki/skin/sparxie-front.png"],
   [join(WIKI, "assets", "img", "sparxie-model.png"), "wiki/skin/sparxie-model.png"],
 ];

@@ -115,7 +115,14 @@ export function HomePage({ lang }: { lang: Lang }) {
 
   return (
     <>
-      <NaturalCinemaStage title="HALIA" tagline={f.cinema.tagline} credit={f.cinema.credit} hint={f.heroScroll} />
+      <NaturalCinemaStage
+        title="HALIA"
+        title2="CORVUS"
+        tagline={f.cinema.tagline}
+        tagline2={f.cinema.tagline2}
+        credit={f.cinema.credit}
+        hint={f.heroScroll}
+      />
 
       <section className="ac-wrap ac-brands" aria-labelledby="ac-brands-title">
         <h2 id="ac-brands-title" className="ac-eyebrow">
