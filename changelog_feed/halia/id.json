@@ -8,8 +8,29 @@
  "groups": [
   {
    "label": "V1.2",
-   "summary": "Halia V1.2 — jaringan penyimpanan Aerie, 20 pedang baru dengan 7 jurus baru, dan SS-05",
+   "summary": "Halia V1.2.1 — perbaikan crash saat membuka inventaris",
    "releases": [
+    {
+     "version": "V1.2.1",
+     "date": "2026-10-16",
+     "type": "hotfix",
+     "title": "Halia V1.2.1 — perbaikan crash saat membuka inventaris",
+     "summary": "Halia V1.2.1 memperbaiki crash: saat OUKA juga terpasang, membuka inventaris dalam mode kreatif menutup permainan.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Diperbaiki: membuka inventaris dalam mode kreatif tidak lagi membuat permainan crash saat OUKA terpasang bersama Halia. Tab kreatif Aerie menampilkan Aerie Heart dua kali."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Persyaratan sama dengan V1.2.0: Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, Java 25. Tidak ada perubahan lain."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.2.0",
      "date": "2026-10-16",

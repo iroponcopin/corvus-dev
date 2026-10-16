@@ -864,6 +864,17 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.2.1",
+    "title": "Halia V1.2.1 — correção de um travamento ao abrir o inventário",
+    "summary": "O Halia V1.2.1 corrige um travamento: com o OUKA instalado, abrir o inventário no modo criativo fechava o jogo.",
+    "highlights": [
+     "Corrigido: abrir o inventário no modo criativo não fecha mais o jogo quando o OUKA está instalado junto com o Halia. A aba criativa do Aerie mostrava o Aerie Heart duas vezes."
+    ],
+    "warnings": [
+     "Os requisitos são os mesmos da V1.2.0: Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente, Fabric API 0.161.0+26.3 ou mais recente, Java 25. Nada mais mudou."
+    ]
+   },
+   {
     "id": "halia-v1.2.0",
     "title": "Halia V1.2 — a rede de armazenamento Aerie, 20 lâminas novas com 7 técnicas novas, e SS-05",
     "summary": "O Halia V1.2 adiciona o Aerie, uma rede de armazenamento que você monta com um Aerie Heart, condutes e células: todo item e fluido que você possui, pesquisável em um único console, é movido para dentro e para fora por Talon Intakes e Outlets, e fabricado sob demanda pelos Artificers. A Halia Blade ganha 20 lâminas com nome, 7 técnicas de corte e almas que uma lâmina coleta e gasta.",

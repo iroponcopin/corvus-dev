@@ -8,8 +8,29 @@
  "groups": [
   {
    "label": "V1.2",
-   "summary": "Halia V1.2 — la rete di stoccaggio Aerie, 20 nuove lame con 7 nuove tecniche e SS-05",
+   "summary": "Halia V1.2.1 — correzione di un crash all’apertura dell’inventario",
    "releases": [
+    {
+     "version": "V1.2.1",
+     "date": "2026-10-16",
+     "type": "hotfix",
+     "title": "Halia V1.2.1 — correzione di un crash all’apertura dell’inventario",
+     "summary": "Halia V1.2.1 corregge un crash: con OUKA installato, aprire l’inventario in modalità creativa chiudeva il gioco.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Corretto: aprire l’inventario in modalità creativa non fa più chiudere il gioco quando OUKA è installato insieme a Halia. La scheda creativa dell’Aerie mostrava l’Aerie Heart due volte."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "I requisiti sono gli stessi di V1.2.0: Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successivo, Java 25. Nient’altro è cambiato."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.2.0",
      "date": "2026-10-16",

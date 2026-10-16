@@ -8,8 +8,29 @@
  "groups": [
   {
    "label": "V1.2",
-   "summary": "Halia V1.2 — Aerie 저장 네트워크, 새 검 20자루와 새 베기 기술 7종, 그리고 SS-05",
+   "summary": "Halia V1.2.1 — 인벤토리를 열면 게임이 종료되는 문제 수정",
    "releases": [
+    {
+     "version": "V1.2.1",
+     "date": "2026-10-16",
+     "type": "hotfix",
+     "title": "Halia V1.2.1 — 인벤토리를 열면 게임이 종료되는 문제 수정",
+     "summary": "Halia V1.2.1은 OUKA를 함께 설치했을 때 크리에이티브 모드에서 인벤토리를 열면 게임이 종료되던 문제를 수정합니다.",
+     "sections": [
+      {
+       "title": "변경 사항",
+       "items": [
+        "수정: Halia와 OUKA를 함께 설치해도 크리에이티브 모드에서 인벤토리를 열 때 더 이상 게임이 종료되지 않습니다. Aerie의 크리에이티브 탭에 Aerie Heart가 두 번 표시된 것이 원인이었습니다."
+       ]
+      },
+      {
+       "title": "주의 사항",
+       "items": [
+        "요구 사항은 V1.2.0과 같습니다: Minecraft 26.3, Fabric Loader 0.19.5 이상, Fabric API 0.161.0+26.3 이상, Java 25. 그 밖의 변경은 없습니다."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.2.0",
      "date": "2026-10-16",

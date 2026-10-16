@@ -8,8 +8,29 @@
  "groups": [
   {
    "label": "V1.2",
-   "summary": "Halia V1.2 — Aerie 收纳网络、20 把新刀与 7 项新技，以及 SS-05",
+   "summary": "Halia V1.2.1 —— 修复打开物品栏时崩溃的问题",
    "releases": [
+    {
+     "version": "V1.2.1",
+     "date": "2026-10-16",
+     "type": "hotfix",
+     "title": "Halia V1.2.1 —— 修复打开物品栏时崩溃的问题",
+     "summary": "Halia V1.2.1 修复了一个崩溃问题：同时安装 OUKA 时，在创造模式下打开物品栏会导致游戏关闭。",
+     "sections": [
+      {
+       "title": "更新内容",
+       "items": [
+        "已修复：在与 Halia 一同安装 OUKA 的情况下，于创造模式打开物品栏不会再导致游戏崩溃。原因是 Aerie 的创造模式标签页中 Aerie Heart 被列出了两次。"
+       ]
+      },
+      {
+       "title": "注意事项",
+       "items": [
+        "运行要求与 V1.2.0 相同：Minecraft 26.3、Fabric Loader 0.19.5 或更新、Fabric API 0.161.0+26.3 或更新、Java 25。没有其他改动。"
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.2.0",
      "date": "2026-10-16",

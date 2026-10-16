@@ -8,8 +8,29 @@
  "groups": [
   {
    "label": "V1.2",
-   "summary": "Halia V1.2 — Aerie depolama ağı, 20 yeni kılıç, 7 yeni kesme tekniği ve SS-05",
+   "summary": "Halia V1.2.1 — envanter açılırken oluşan çökme düzeltildi",
    "releases": [
+    {
+     "version": "V1.2.1",
+     "date": "2026-10-16",
+     "type": "hotfix",
+     "title": "Halia V1.2.1 — envanter açılırken oluşan çökme düzeltildi",
+     "summary": "Halia V1.2.1 bir çökmeyi düzeltir: OUKA da kuruluyken yaratıcı modda envanteri açmak oyunu kapatıyordu.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Düzeltildi: OUKA, Halia ile birlikte kuruluyken yaratıcı modda envanteri açmak artık oyunu çökertmiyor. Aerie'nin yaratıcı sekmesi Aerie Heart'ı iki kez listeliyordu."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Gereksinimler V1.2.0 ile aynıdır: Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni, Fabric API 0.161.0+26.3 veya daha yeni, Java 25. Başka değişiklik yoktur."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.2.0",
      "date": "2026-10-16",

@@ -868,6 +868,17 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.2.1",
+    "title": "Halia V1.2.1 — fix for a crash when opening the inventory",
+    "summary": "Halia V1.2.1 fixes a crash: with OUKA also installed, opening the inventory in creative mode closed the game.",
+    "highlights": [
+     "Fixed: opening the inventory in creative mode no longer crashes the game when OUKA is installed beside Halia. The Aerie's creative tab listed the Aerie Heart twice."
+    ],
+    "warnings": [
+     "Requirements are unchanged from V1.2.0: Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer, Java 25. Nothing else changed."
+    ]
+   },
+   {
     "id": "halia-v1.2.0",
     "title": "Halia V1.2 — the Aerie storage network, 20 new blades with 7 new arts, and SS-05",
     "summary": "Halia V1.2 adds the Aerie, a storage network you build from an Aerie Heart, conduits and cells: every item and fluid you own, searchable from one console, moved in and out by Talon Intakes and Outlets and crafted on demand by Artificers. The Halia Blade gains 20 named blades, 7 slash arts, and souls that a blade collects and spends.",
