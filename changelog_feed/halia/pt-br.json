@@ -1,11 +1,49 @@
 {
  "lang": "pt-br",
  "brand": "halia",
- "updated": "2026-10-12",
+ "updated": "2026-10-16",
  "title": "Histórico de atualizações",
- "updated_label": "Atualizado em 2026-10-12",
+ "updated_label": "Atualizado em 2026-10-16",
  "note": "",
  "groups": [
+  {
+   "label": "V1.2",
+   "summary": "Halia V1.2 — a rede de armazenamento Aerie, 20 lâminas novas com 7 técnicas novas, e SS-05",
+   "releases": [
+    {
+     "version": "V1.2.0",
+     "date": "2026-10-16",
+     "type": "release",
+     "title": "Halia V1.2 — a rede de armazenamento Aerie, 20 lâminas novas com 7 técnicas novas, e SS-05",
+     "summary": "O Halia V1.2 adiciona o Aerie, uma rede de armazenamento que você monta com um Aerie Heart, condutes e células: todo item e fluido que você possui, pesquisável em um único console, é movido para dentro e para fora por Talon Intakes e Outlets, e fabricado sob demanda pelos Artificers. A Halia Blade ganha 20 lâminas com nome, 7 técnicas de corte e almas que uma lâmina coleta e gasta.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "O Aerie: coloque um Aerie Heart, conecte dispositivos com Aerie Conduits, coloque Clutch Cells em uma Clutch Bay e abra um Roost Console para ver e pesquisar tudo o que está armazenado. São 37 tipos de dispositivo, a maioria em 16 cores.",
+        "Movimentação e fabricação: Talon Intakes e Outlets movem itens e fluidos entre o Aerie e qualquer baú ou máquina; os Artificers fabricam sob demanda a partir de padrões escritos em um Scribe Console; Updraft Masts e Field Consoles alcançam o Aerie sem fios.",
+        "Energia com OUKA: se o OUKA estiver instalado, o Aerie Heart retira sua energia da rede de pilones Tesla do OUKA. Sem o OUKA, o Aerie não precisa de energia.",
+        "20 lâminas novas com nome: as linhas Gale Fang e Tempest Fang, Ironcrag, Ashen Crag, seis Plumes, de madeira a netherita, a Weathered Blade, Evenfall, Heartwood e os Raptors. A maioria é forjada na bigorna a partir de uma caixa de materiais; algumas caem de chefes; zumbis às vezes carregam uma Weathered Blade; e uma lâmina sem nome em um suporte que é atingida pela explosão de um Wither se transforma em Ashen Crag.",
+        "7 técnicas de corte novas: Blossom End, Void Slash, Circle Slash, Vertical Drive e Horizontal Drive, Wave Edge e Piercing. Os Drives lançam um corte voador à sua frente.",
+        "Almas: uma lâmina que você segura enquanto derrota inimigos reúne almas da experiência deles. Espadas invocadas agora custam almas em vez de experiência, e refinar uma lâmina na bigorna lhe dá almas.",
+        "Durabilidade e refino: cada lâmina com nome agora tem sua própria durabilidade, e refinar aumenta o dano da lâmina e sua durabilidade máxima (até o refino 200).",
+        "Stellar Remote SS-05 Tesseract: um quinto ataque, com vídeo próprio. Um cubo de luz de 640 blocos por lado surge em volta da sua mira; seu chão é cortado em células que são erguidas, giradas e suspensas no ar anel por anel, do centro para fora, e um cubo de luz se fixa no céu."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Requisitos: Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente, Fabric API 0.161.0+26.3 ou mais recente, Java 25. Para multijogador, o Halia também precisa estar instalado no servidor.",
+        "Mudanças nas lâminas da V1.1: o golpe de uma lâmina é 1 a menos do que antes com o mesmo valor base; lâminas com nome recém-fabricadas têm ataque base e durabilidade menores que na V1.1 (por exemplo, Yamato: ataque 9 → 7, durabilidade 100 → 40); espadas invocadas precisam de almas. As lâminas que já estão no seu mundo mantêm a durabilidade com que foram feitas.",
+        "Com o OUKA instalado, o Aerie não funciona até que seu Heart esteja ao alcance de um pilone energizado. Para usá-lo sem energia junto com o OUKA, defina powerFromOukaGrid como false em config/halia-aerie.json.",
+        "Os mundos da V1.1 abrem como estão. Não volte para a 1.1 com um mundo que tenha dispositivos Aerie ou as novas lâminas: eles seriam apagados.",
+        "O Stellar Remote destrói áreas muito grandes de forma permanente, e o SS-05 remodela uma área de 640 blocos de uma só vez: faça backup do seu mundo. Quem estiver dentro do cubo quando a onda passar, morre."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.1",
    "summary": "Halia V1.1.1 — correção de uma falha com «Improved Transparency»",

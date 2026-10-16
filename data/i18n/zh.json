@@ -864,6 +864,28 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.2.0",
+    "title": "Halia V1.2 — Aerie 收纳网络、20 把新刀与 7 项新技，以及 SS-05",
+    "summary": "Halia V1.2 新增 Aerie 收纳网络：由 Aerie Heart、导管和单元搭建，你拥有的每一种物品和流体都能在同一个控制台中搜索，由 Talon Intakes 与 Talon Outlets 搬入搬出，并由 Artificers 按需合成。Halia Blade 新增 20 把带名字的刀、7 项斩击技，以及刀在你击败敌人时收集、使用时消耗的灵魂。",
+    "highlights": [
+     "Aerie：放置一个 Aerie Heart，用 Aerie Conduits 连接设备，在 Clutch Bay 中放入 Clutch Cells，再打开 Roost Console，即可查看并搜索所有已存储的内容。共有 37 种设备，其中大多数有 16 种颜色。",
+     "搬运与合成：Talon Intakes 与 Talon Outlets 在 Aerie 与任何箱子或机器之间搬运物品和流体；Artificers 会依据 Scribe Console 上写好的配方按需合成；Updraft Masts 与 Field Consoles 无需线缆即可连接到 Aerie。",
+     "与 OUKA 的供电：若安装了 OUKA，Aerie Heart 会从 OUKA 的特斯拉电塔电网取电。没有 OUKA 时，Aerie 不需要电力。",
+     "20 把新的带名字的刀：Gale Fang 与 Tempest Fang 系列、Ironcrag、Ashen Crag、从木制到下界合金的六种 Plumes、Weathered Blade、Evenfall、Heartwood 与 Raptors。多数需用材料箱在铁砧上锻造；部分由首领掉落；僵尸有时会携带 Weathered Blade；放在刀架上的无名刀若被凋灵的爆炸波及，就会变成 Ashen Crag。",
+     "7 项新斩击技：Blossom End、Void Slash、Circle Slash、Vertical Drive 与 Horizontal Drive、Wave Edge 和 Piercing。Drive 会向你的前方发出一道飞斩。",
+     "灵魂：手持刀击败敌人时，刀会从敌人的经验中收集灵魂。召唤剑现在消耗灵魂而非经验，在铁砧上精炼刀也会为其增加灵魂。",
+     "耐久与精炼：每把带名字的刀现在都有各自的耐久。精炼会提高刀的伤害和最大耐久（精炼值最高可达 200）。",
+     "Stellar Remote SS-05 Tesseract：第五种攻击，附有专属影片。一个边长 640 方块的光之立方体会在准星周围升起；它的地面被切成若干单元，这些单元从中心向外一圈一圈地被托起、转动并悬吊在空中，而光之立方体则锁定在天空中。"
+    ],
+    "warnings": [
+     "运行要求：Minecraft 26.3、Fabric Loader 0.19.5 或更新版本、Fabric API 0.161.0+26.3 或更新版本、Java 25。多人游戏时，服务器也必须安装 Halia。",
+     "V1.1 刀的变化：基础值相同时，刀的每次攻击伤害比以前低 1。新制作的带名字的刀，其基础攻击和耐久比 V1.1 更低（例如 Yamato：攻击 9 → 7，耐久 100 → 40）。召唤剑需要灵魂。世界中已有的刀保持其制作时的耐久。",
+     "安装了 OUKA 时，Aerie 要等到其心核进入通电电塔的覆盖范围后才会运行。若想在 OUKA 旁边不使用电力运行，请将 config/halia-aerie.json 中的 powerFromOukaGrid 设为 false。",
+     "V1.1 的世界可以原样打开。请勿将含有 Aerie 设备或新刀的世界退回 1.1：这些内容会被删除。",
+     "Stellar Remote 会永久破坏非常大的区域，SS-05 会一次性重塑一个 640 方块的区域，请备份你的世界。波经过时，站在立方体内的任何人都会死亡。"
+    ]
+   },
+   {
     "id": "halia-v1.1.1",
     "title": "Halia V1.1.1 —— 修复开启 “Improved Transparency” 时的崩溃",
     "summary": "Halia V1.1.1 修复了 V1.1.0 中的一个错误：当视频设置 “Improved Transparency” 开启时，只要画面中出现会发光的 Halia 物品（例如破坏刀的材料箱时掉落的灵魂材料），游戏就会关闭；这些物品留在世界中时，也无法重新进入该世界。其他内容没有改变。",

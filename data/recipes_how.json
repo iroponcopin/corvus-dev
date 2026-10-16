@@ -1,6 +1,96 @@
 {
  "_comment": "station, inputs and the sentence (ja, en) of how-to cards; written by scripts/extract_recipes.py, read by web/scripts/extract_wiki.py",
  "cards": {
+  "halia:clutch_cell_16k": {
+   "station": "workbench",
+   "inputs": [
+    "halia:clutch_cell_1k",
+    "halia:clutch_cell_4k",
+    "halia:hoard_lattice_16k"
+   ],
+   "ja": "作業台で、抱卵セル 1K・抱卵セル 4K のどれかと蓄蔵格子 16Kを並べると、中身を保ったまま抱卵セル 16Kになります。",
+   "en": "On a crafting table, put Clutch Cell 1K or Clutch Cell 4K with Hoard Lattice 16K: the upgrade keeps the contents, and the result is Clutch Cell 16K."
+  },
+  "halia:clutch_cell_4k": {
+   "station": "workbench",
+   "inputs": [
+    "halia:clutch_cell_1k",
+    "halia:hoard_lattice_4k"
+   ],
+   "ja": "作業台で、抱卵セル 1Kと蓄蔵格子 4Kを並べると、中身を保ったまま抱卵セル 4Kになります。",
+   "en": "On a crafting table, put Clutch Cell 1K with Hoard Lattice 4K: the upgrade keeps the contents, and the result is Clutch Cell 4K."
+  },
+  "halia:clutch_cell_64k": {
+   "station": "workbench",
+   "inputs": [
+    "halia:clutch_cell_1k",
+    "halia:clutch_cell_4k",
+    "halia:clutch_cell_16k",
+    "halia:hoard_lattice_64k"
+   ],
+   "ja": "作業台で、抱卵セル 1K・抱卵セル 4K・抱卵セル 16K のどれかと蓄蔵格子 64Kを並べると、中身を保ったまま抱卵セル 64Kになります。",
+   "en": "On a crafting table, put Clutch Cell 1K or Clutch Cell 4K or Clutch Cell 16K with Hoard Lattice 64K: the upgrade keeps the contents, and the result is Clutch Cell 64K."
+  },
+  "halia:contour_circuit": {
+   "station": "furnace",
+   "inputs": [
+    "halia:unfired_contour_circuit"
+   ],
+   "ja": "かまどで、未焼成の正羽回路を焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Unfired Contour Circuit in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:down_circuit": {
+   "station": "furnace",
+   "inputs": [
+    "halia:unfired_down_circuit"
+   ],
+   "ja": "かまどで、未焼成の綿羽回路を焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Unfired Down Circuit in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:flight_circuit": {
+   "station": "furnace",
+   "inputs": [
+    "halia:unfired_flight_circuit"
+   ],
+   "ja": "かまどで、未焼成の風切回路を焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Unfired Flight Circuit in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:fortune_augment_1": {
+   "station": "workbench",
+   "inputs": [
+    "halia:blank_augment",
+    "minecraft:enchanted_book"
+   ],
+   "ja": "作業台で、無地の増設片と、幸運 I のエンチャントの本を並べると、幸運の増設片 Iになります。",
+   "en": "On a crafting table, put a Blank Augment with an enchanted book of Fortune I; the result is Fortune Augment I."
+  },
+  "halia:fortune_augment_2": {
+   "station": "workbench",
+   "inputs": [
+    "halia:blank_augment",
+    "minecraft:enchanted_book"
+   ],
+   "ja": "作業台で、無地の増設片と、幸運 II のエンチャントの本を並べると、幸運の増設片 IIになります。",
+   "en": "On a crafting table, put a Blank Augment with an enchanted book of Fortune II; the result is Fortune Augment II."
+  },
+  "halia:fortune_augment_3": {
+   "station": "workbench",
+   "inputs": [
+    "halia:blank_augment",
+    "minecraft:enchanted_book"
+   ],
+   "ja": "作業台で、無地の増設片と、幸運 III のエンチャントの本を並べると、幸運の増設片 IIIになります。",
+   "en": "On a crafting table, put a Blank Augment with an enchanted book of Fortune III; the result is Fortune Augment III."
+  },
+  "halia:gentle_augment": {
+   "station": "workbench",
+   "inputs": [
+    "halia:blank_augment",
+    "minecraft:enchanted_book"
+   ],
+   "ja": "作業台で、無地の増設片と、シルクタッチ のエンチャントの本を並べると、柔手の増設片になります。",
+   "en": "On a crafting table, put a Blank Augment with an enchanted book of Silk Touch; the result is Gentle Augment."
+  },
   "halia:halia_blade[item.halia.ex.fox.black]": {
    "station": "anvil",
    "inputs": [
@@ -46,6 +136,87 @@
    "ja": "金床の左に抜刀剣「」、右にこの材料箱を置くと、宝刀「付喪」結月になります。経験値レベルを 20 使います。撃破数と強化回数は引き継がれます。",
    "en": "On an anvil, put Halia Blade -- in the left slot and this box in the right slot to get Noble -Tukumo- Violet. Costs 20 experience levels. The blade keeps its kill count and refine."
   },
+  "halia:halia_blade[item.halia.gale_fang]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.gale_fang_rusted]",
+    "minecraft:chest[item.halia.gale_fang.material]"
+   ],
+   "ja": "金床の左に錆び付いた疾風牙、右にこの材料箱を置くと、習作「疾風牙」になります。経験値レベルを 1 使います。条件はチェストのツールチップに出ます。",
+   "en": "On an anvil, put Rusted Gale Fang in the left slot and this box in the right slot to get Study Blade \"Gale Fang\". Costs 1 experience level. The chest's tooltip lists the conditions."
+  },
+  "halia:halia_blade[item.halia.heartwood]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.simple.wood]",
+    "minecraft:chest[item.halia.heartwood.material]"
+   ],
+   "ja": "金床の左に無銘刀「木偶」、右にこの材料箱を置くと、木刀「樫芯」になります。経験値レベルを 1 使います。条件はチェストのツールチップに出ます。",
+   "en": "On an anvil, put Anonymity -Wood- in the left slot and this box in the right slot to get Wooden Blade \"Heartwood\". Costs 1 experience level. The chest's tooltip lists the conditions."
+  },
+  "halia:halia_blade[item.halia.ironcrag]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.weathered_blade]",
+    "minecraft:chest[item.halia.ironcrag.material]"
+   ],
+   "ja": "金床の左に風化した刀、右にこの材料箱を置くと、剛剣「鉄嶺」になります。経験値レベルを 1 使います。条件はチェストのツールチップに出ます。",
+   "en": "On an anvil, put Weathered Blade in the left slot and this box in the right slot to get Stout Blade \"Ironcrag\". Costs 1 experience level. The chest's tooltip lists the conditions."
+  },
+  "halia:halia_blade[item.halia.plume_diamond]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.simple.silverbamboo]",
+    "minecraft:chest[item.halia.plume_diamond.material]"
+   ],
+   "ja": "金床の左に名刀「銀紙竹光」、右にこの材料箱を置くと、ダイヤモンドの鷲羽になります。経験値レベルを 1 使います。条件はチェストのツールチップに出ます。",
+   "en": "On an anvil, put Noted -Silver Bamboo Light- in the left slot and this box in the right slot to get Diamond Plume. Costs 1 experience level. The chest's tooltip lists the conditions."
+  },
+  "halia:halia_blade[item.halia.plume_golden]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.simple.silverbamboo]",
+    "minecraft:chest[item.halia.plume_golden.material]"
+   ],
+   "ja": "金床の左に名刀「銀紙竹光」、右にこの材料箱を置くと、金の鷲羽になります。経験値レベルを 1 使います。条件はチェストのツールチップに出ます。",
+   "en": "On an anvil, put Noted -Silver Bamboo Light- in the left slot and this box in the right slot to get Golden Plume. Costs 1 experience level. The chest's tooltip lists the conditions."
+  },
+  "halia:halia_blade[item.halia.plume_iron]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.simple.silverbamboo]",
+    "minecraft:chest[item.halia.plume_iron.material]"
+   ],
+   "ja": "金床の左に名刀「銀紙竹光」、右にこの材料箱を置くと、鉄の鷲羽になります。経験値レベルを 1 使います。条件はチェストのツールチップに出ます。",
+   "en": "On an anvil, put Noted -Silver Bamboo Light- in the left slot and this box in the right slot to get Iron Plume. Costs 1 experience level. The chest's tooltip lists the conditions."
+  },
+  "halia:halia_blade[item.halia.plume_netherite]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.simple.silverbamboo]",
+    "minecraft:chest[item.halia.plume_netherite.material]"
+   ],
+   "ja": "金床の左に名刀「銀紙竹光」、右にこの材料箱を置くと、ネザライトの鷲羽になります。経験値レベルを 1 使います。条件はチェストのツールチップに出ます。",
+   "en": "On an anvil, put Noted -Silver Bamboo Light- in the left slot and this box in the right slot to get Netherite Plume. Costs 1 experience level. The chest's tooltip lists the conditions."
+  },
+  "halia:halia_blade[item.halia.plume_stone]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.simple.silverbamboo]",
+    "minecraft:chest[item.halia.plume_stone.material]"
+   ],
+   "ja": "金床の左に名刀「銀紙竹光」、右にこの材料箱を置くと、石の鷲羽になります。経験値レベルを 1 使います。条件はチェストのツールチップに出ます。",
+   "en": "On an anvil, put Noted -Silver Bamboo Light- in the left slot and this box in the right slot to get Stone Plume. Costs 1 experience level. The chest's tooltip lists the conditions."
+  },
+  "halia:halia_blade[item.halia.plume_wooden]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.simple.silverbamboo]",
+    "minecraft:chest[item.halia.plume_wooden.material]"
+   ],
+   "ja": "金床の左に名刀「銀紙竹光」、右にこの材料箱を置くと、木の鷲羽になります。経験値レベルを 1 使います。条件はチェストのツールチップに出ます。",
+   "en": "On an anvil, put Noted -Silver Bamboo Light- in the left slot and this box in the right slot to get Wooden Plume. Costs 1 experience level. The chest's tooltip lists the conditions."
+  },
   "halia:halia_blade[item.halia.simple.bamboo]": {
    "station": "anvil",
    "inputs": [
@@ -82,6 +253,71 @@
    "ja": "金床の左に無銘刀「木偶」、右にこの材料箱を置くと、利刀「白鞘」になります。経験値レベルを 5 使います。撃破数と強化回数は引き継がれます。",
    "en": "On an anvil, put Anonymity -Wood- in the left slot and this box in the right slot to get Sharpness -White-. Costs 5 experience levels. The blade keeps its kill count and refine."
   },
+  "halia:halia_blade[item.halia.tempest_fang]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.tempest_fang_sealed]",
+    "minecraft:chest[item.halia.tempest_fang.material]"
+   ],
+   "ja": "金床の左に封刀「嵐牙」、右にこの材料箱を置くと、名刀「嵐牙」になります。経験値レベルを 1 使います。条件はチェストのツールチップに出ます。",
+   "en": "On an anvil, put Sealed Blade \"Tempest Fang\" in the left slot and this box in the right slot to get Famed Blade \"Tempest Fang\". Costs 1 experience level. The chest's tooltip lists the conditions."
+  },
+  "halia:halia_blade[item.halia.tempest_fang_sealed]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.tempest_fang_rusted]",
+    "minecraft:chest[item.halia.tempest_fang_sealed.material]"
+   ],
+   "ja": "金床の左に錆び付いた嵐牙、右にこの材料箱を置くと、封刀「嵐牙」になります。経験値レベルを 1 使います。条件はチェストのツールチップに出ます。",
+   "en": "On an anvil, put Rusted Tempest Fang in the left slot and this box in the right slot to get Sealed Blade \"Tempest Fang\". Costs 1 experience level. The chest's tooltip lists the conditions."
+  },
+  "halia:halia_blade[item.halia.weathered_blade]": {
+   "station": "anvil",
+   "inputs": [
+    "halia:halia_blade[item.halia.weathered_blade_broken]",
+    "minecraft:chest[item.halia.weathered_blade.material]"
+   ],
+   "ja": "金床の左に折れた風化した刀、右にこの材料箱を置くと、風化した刀になります。経験値レベルを 1 使います。条件はチェストのツールチップに出ます。",
+   "en": "On an anvil, put Broken Weathered Blade in the left slot and this box in the right slot to get Weathered Blade. Costs 1 experience level. The chest's tooltip lists the conditions."
+  },
+  "halia:hoard_block_16k": {
+   "station": "workbench",
+   "inputs": [
+    "halia:hoard_block_1k",
+    "halia:hoard_block_4k",
+    "halia:hoard_lattice_16k"
+   ],
+   "ja": "作業台で、蓄蔵ブロック 1K・蓄蔵ブロック 4K のどれかと蓄蔵格子 16Kを並べると、中身を保ったまま蓄蔵ブロック 16Kになります。",
+   "en": "On a crafting table, put Hoard Block 1K or Hoard Block 4K with Hoard Lattice 16K: the upgrade keeps the contents, and the result is Hoard Block 16K."
+  },
+  "halia:hoard_block_4k": {
+   "station": "workbench",
+   "inputs": [
+    "halia:hoard_block_1k",
+    "halia:hoard_lattice_4k"
+   ],
+   "ja": "作業台で、蓄蔵ブロック 1Kと蓄蔵格子 4Kを並べると、中身を保ったまま蓄蔵ブロック 4Kになります。",
+   "en": "On a crafting table, put Hoard Block 1K with Hoard Lattice 4K: the upgrade keeps the contents, and the result is Hoard Block 4K."
+  },
+  "halia:hoard_block_64k": {
+   "station": "workbench",
+   "inputs": [
+    "halia:hoard_block_1k",
+    "halia:hoard_block_4k",
+    "halia:hoard_block_16k",
+    "halia:hoard_lattice_64k"
+   ],
+   "ja": "作業台で、蓄蔵ブロック 1K・蓄蔵ブロック 4K・蓄蔵ブロック 16K のどれかと蓄蔵格子 64Kを並べると、中身を保ったまま蓄蔵ブロック 64Kになります。",
+   "en": "On a crafting table, put Hoard Block 1K or Hoard Block 4K or Hoard Block 16K with Hoard Lattice 64K: the upgrade keeps the contents, and the result is Hoard Block 64K."
+  },
+  "halia:silica_wafer": {
+   "station": "furnace",
+   "inputs": [
+    "#c:gems/quartz"
+   ],
+   "ja": "かまどで、ネザークォーツを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Nether Quartz in a furnace (10 s; it cannot be made at a workbench)"
+  },
   "halia:soulsteel_ingot": {
    "station": "blast",
    "inputs": [
@@ -89,6 +325,66 @@
    ],
    "ja": "溶鉱炉で、コルヴスの魂を精錬する(10 秒。作業台では作れない)",
    "en": "Smelt Corvus Soul in a blast furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:tide_block_1024b": {
+   "station": "workbench",
+   "inputs": [
+    "halia:tide_block_64b",
+    "halia:tide_block_256b",
+    "halia:tide_lattice_1024b"
+   ],
+   "ja": "作業台で、潮溜ブロック 64B・潮溜ブロック 256B のどれかと潮溜格子 1024Bを並べると、中身を保ったまま潮溜ブロック 1024Bになります。",
+   "en": "On a crafting table, put Tide Block 64B or Tide Block 256B with Tide Lattice 1024B: the upgrade keeps the contents, and the result is Tide Block 1024B."
+  },
+  "halia:tide_block_256b": {
+   "station": "workbench",
+   "inputs": [
+    "halia:tide_block_64b",
+    "halia:tide_lattice_256b"
+   ],
+   "ja": "作業台で、潮溜ブロック 64Bと潮溜格子 256Bを並べると、中身を保ったまま潮溜ブロック 256Bになります。",
+   "en": "On a crafting table, put Tide Block 64B with Tide Lattice 256B: the upgrade keeps the contents, and the result is Tide Block 256B."
+  },
+  "halia:tide_block_4096b": {
+   "station": "workbench",
+   "inputs": [
+    "halia:tide_block_64b",
+    "halia:tide_block_256b",
+    "halia:tide_block_1024b",
+    "halia:tide_lattice_4096b"
+   ],
+   "ja": "作業台で、潮溜ブロック 64B・潮溜ブロック 256B・潮溜ブロック 1024B のどれかと潮溜格子 4096Bを並べると、中身を保ったまま潮溜ブロック 4096Bになります。",
+   "en": "On a crafting table, put Tide Block 64B or Tide Block 256B or Tide Block 1024B with Tide Lattice 4096B: the upgrade keeps the contents, and the result is Tide Block 4096B."
+  },
+  "halia:tide_cell_1024b": {
+   "station": "workbench",
+   "inputs": [
+    "halia:tide_cell_64b",
+    "halia:tide_cell_256b",
+    "halia:tide_lattice_1024b"
+   ],
+   "ja": "作業台で、潮溜セル 64B・潮溜セル 256B のどれかと潮溜格子 1024Bを並べると、中身を保ったまま潮溜セル 1024Bになります。",
+   "en": "On a crafting table, put Tide Cell 64B or Tide Cell 256B with Tide Lattice 1024B: the upgrade keeps the contents, and the result is Tide Cell 1024B."
+  },
+  "halia:tide_cell_256b": {
+   "station": "workbench",
+   "inputs": [
+    "halia:tide_cell_64b",
+    "halia:tide_lattice_256b"
+   ],
+   "ja": "作業台で、潮溜セル 64Bと潮溜格子 256Bを並べると、中身を保ったまま潮溜セル 256Bになります。",
+   "en": "On a crafting table, put Tide Cell 64B with Tide Lattice 256B: the upgrade keeps the contents, and the result is Tide Cell 256B."
+  },
+  "halia:tide_cell_4096b": {
+   "station": "workbench",
+   "inputs": [
+    "halia:tide_cell_64b",
+    "halia:tide_cell_256b",
+    "halia:tide_cell_1024b",
+    "halia:tide_lattice_4096b"
+   ],
+   "ja": "作業台で、潮溜セル 64B・潮溜セル 256B・潮溜セル 1024B のどれかと潮溜格子 4096Bを並べると、中身を保ったまま潮溜セル 4096Bになります。",
+   "en": "On a crafting table, put Tide Cell 64B or Tide Cell 256B or Tide Cell 1024B with Tide Lattice 4096B: the upgrade keeps the contents, and the result is Tide Cell 4096B."
   }
  }
 }

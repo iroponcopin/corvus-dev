@@ -21,6 +21,7 @@ Cherry V1.1.0 はレシピを 9 件足すと予告されている(2026-09-20、C
 `scripts/build.py` でページを作り直す。
 """
 import hashlib
+import io
 import json
 import sys
 import zipfile
@@ -59,6 +60,7 @@ def main():
     if pack.get("latest") and not retired:
         live["pack"] = pack["latest"]
     bare_checked = {}      # block -> (recipe result ids in its jar, recipe json count)
+    bare_set_aside = {}    # block -> (uncraftable json, recolouring json, nested jars read)
     recipe_less = []
     bad = []
     for block, info in manifest.items():
@@ -78,38 +80,74 @@ def main():
             if hashlib.sha256(jar.read_bytes()).hexdigest() != info.get("sha256"):
                 bad.append(f"{block}: {info['file_name']} does not hash to the manifest's sha256")
                 continue
-            with zipfile.ZipFile(jar) as jf:
-                names = [n for n in jf.namelist()
-                         if n.startswith(f"data/{info['mod_id']}/recipe/") and n.endswith(".json")]
-                bodies = {n: json.loads(jf.read(n).decode("utf-8")) for n in names}
-                # 2026-10-12 (Halia 1.1.0): a recipe whose every ingredient is a tag holding nothing but air can
-                # never be crafted (Halia keeps 11 such files as its creative-tab listing). Decided by opening
-                # the tag in the jar, never by a list typed here. Such a file owes the sheet no card.
-                def only_air(ing, _jf=jf):
+            # 2026-10-16 (Halia 1.2.0): the jar carries the Aerie inside itself (META-INF/jars/, listed in its own
+            # fabric.mod.json "jars"). Its recipes, and its item tags, are part of what the jar publishes; they are
+            # read from the nested bytes, not from a copy on disk. Recipes are paired with the jar they came from.
+            with zipfile.ZipFile(jar) as outer_jf:
+                jars = [("", outer_jf)]
+                listed = json.loads(outer_jf.read("fabric.mod.json").decode("utf-8")).get("jars", [])
+                for entry in listed:
+                    jars.append((entry["file"], zipfile.ZipFile(io.BytesIO(outer_jf.read(entry["file"])))))
+                bodies = {}
+                for where, jf in jars:
+                    for n in jf.namelist():
+                        if n.startswith(f"data/{info['mod_id']}/recipe/") and n.endswith(".json"):
+                            bodies[(where, n)] = json.loads(jf.read(n).decode("utf-8"))
+
+                def tag_values(ns, tag):
+                    # A tag is looked up in every jar of the package (Halia's tags are in the outer jar and the Aerie's
+                    # in the nested one); the first that defines it is the one the game reads.
+                    for _where, jf in jars:
+                        member = f"data/{ns}/tags/item/{tag}.json"
+                        if member in jf.namelist():
+                            return json.loads(jf.read(member).decode("utf-8"))["values"]
+                    return None
+
+                def only_air(ing):
                     if isinstance(ing, list):
                         ing = ing[0] if len(ing) == 1 else None
                     if not (isinstance(ing, str) and ing.startswith("#")):
                         return False
                     ns, tag = ing[1:].split(":", 1)
-                    try:
-                        values = json.loads(_jf.read(f"data/{ns}/tags/item/{tag}.json").decode("utf-8"))["values"]
-                    except KeyError:
+                    values = tag_values(ns, tag)
+                    if values is None:
                         return False
                     return bool(values) and all(v == "minecraft:air" for v in values)
-                names = [n for n in names
-                         if not (bodies[n].get("type") == "minecraft:crafting_shapeless"
-                                 and bodies[n].get("ingredients")
-                                 and all(only_air(i) for i in bodies[n]["ingredients"]))]
-                results = sorted({bodies[n]["result"]["id"] for n in names})
+
+                # 2026-10-12 (Halia 1.1.0): a recipe whose every ingredient is a tag holding nothing but air can
+                # never be crafted (Halia keeps 11 such files as its creative-tab listing; 1.2.0 keeps 31). Decided by
+                # opening the tag in the jar, never by a list typed here. Such a file owes the sheet no card.
+                # 2026-10-16 (Halia 1.2.0): the Aerie's 320 "any dye recolours this device" recipes (type
+                # halia:recoloring) are not cards either; the sheet says so in one line. Any other recipe type is a card.
+                names = []
+                set_aside_air = set_aside_recolour = 0
+                for key in sorted(bodies):
+                    body = bodies[key]
+                    if body.get("type") == "halia:recoloring":
+                        set_aside_recolour += 1
+                        continue
+                    if (body.get("type") == "minecraft:crafting_shapeless" and body.get("ingredients")
+                            and all(only_air(i) for i in body["ingredients"])):
+                        set_aside_air += 1
+                        continue
+                    names.append(key)
+
+                def result_of(body):
+                    r = body["result"]
+                    return r if isinstance(r, str) else r["id"]
+
+                results = sorted({result_of(bodies[k]) for k in names})
                 # A result that carries a second obtainable item (Halia's material box names the blade it becomes
                 # on an anvil) owes the sheet one more card.
-                second = sum(1 for n in names
-                             if any(k.endswith(":required_blade")
-                                    for k in (bodies[n]["result"].get("components") or {})))
+                second = sum(1 for k in names
+                             if isinstance(bodies[k]["result"], dict)
+                             and any(c.endswith(":required_blade")
+                                     for c in (bodies[k]["result"].get("components") or {})))
             if names:
                 if info.get("latest"):
                     live[block] = info["latest"]
                 bare_checked[block] = (results, len(names) + second)
+                bare_set_aside[block] = (set_aside_air, set_aside_recolour, len(jars) - 1)
             else:
                 recipe_less.append(block)
 
@@ -157,7 +195,9 @@ def main():
     print("GREEN: recipe sheet generated from " +
           ", ".join(f"{k} {v}" for k, v in sorted(sources.items())) +
           " - the same versions the site publishes" +
-          "".join(f"; {b}: all {n} jar recipe(s) have a card" for b, (_r, n) in sorted(bare_checked.items())) +
+          "".join(f"; {b}: all {n} jar recipe(s) have a card (set aside: {bare_set_aside[b][0]} that cannot be "
+                  f"crafted, {bare_set_aside[b][1]} recolouring; {bare_set_aside[b][2] + 1} jar(s) read)"
+                  for b, (_r, n) in sorted(bare_checked.items())) +
           ("; bare jar(s) with no recipe, not a source: " + ", ".join(recipe_less) if recipe_less else ""))
     return 0
 

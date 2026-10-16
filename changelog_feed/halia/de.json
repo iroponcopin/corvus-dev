@@ -1,11 +1,49 @@
 {
  "lang": "de",
  "brand": "halia",
- "updated": "2026-10-12",
+ "updated": "2026-10-16",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-12",
+ "updated_label": "Aktualisiert am 2026-10-16",
  "note": "",
  "groups": [
+  {
+   "label": "V1.2",
+   "summary": "Halia V1.2 — das Aerie-Speichernetzwerk, 20 neue Klingen mit 7 neuen Techniken und SS-05",
+   "releases": [
+    {
+     "version": "V1.2.0",
+     "date": "2026-10-16",
+     "type": "release",
+     "title": "Halia V1.2 — das Aerie-Speichernetzwerk, 20 neue Klingen mit 7 neuen Techniken und SS-05",
+     "summary": "Halia V1.2 fügt das Aerie hinzu, ein Speichernetzwerk, das du aus einem Aerie Heart, Leitungen und Zellen aufbaust: Jeder Gegenstand und jede Flüssigkeit, die du besitzt und über eine einzige Konsole durchsuchen kannst, werden von Talon Intakes und Outlets in beide Richtungen bewegt und von Artificers auf Abruf hergestellt. Die Halia Blade erhält 20 benannte Klingen, 7 Hiebtechniken und Seelen, die eine Klinge sammelt und ausgibt.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Das Aerie: Setze ein Aerie Heart, verbinde Geräte mit Aerie Conduits, lege Clutch Cells in eine Clutch Bay und öffne eine Roost Console, um alles Gespeicherte zu sehen und zu durchsuchen. 37 Gerätearten, die meisten in 16 Farben.",
+        "Transport und Herstellung: Talon Intakes und Outlets bewegen Gegenstände und Flüssigkeiten zwischen dem Aerie und jeder Truhe oder Maschine; Artificers stellen auf Abruf her, nach Mustern, die an einer Scribe Console geschrieben wurden; Updraft Masts und Field Consoles erreichen das Aerie ohne Kabel.",
+        "Strom mit OUKA: Ist OUKA installiert, bezieht das Aerie Heart seinen Strom aus dem Tesla-Pylon-Netz von OUKA. Ohne OUKA braucht das Aerie keinen Strom.",
+        "20 neue benannte Klingen: die Reihen Gale Fang und Tempest Fang, Ironcrag, Ashen Crag, sechs Plumes von Holz bis Netherit, die Weathered Blade, Evenfall, Heartwood und die Raptors. Die meisten werden am Amboss aus einer Materialkiste geschmiedet; einige fallen von Bossen; Zombies tragen manchmal eine Weathered Blade; und eine namenlose Klinge auf einem Ständer, die von einer Wither-Explosion erfasst wird, wird zu Ashen Crag.",
+        "7 neue Hiebtechniken: Blossom End, Void Slash, Circle Slash, Vertical Drive, Horizontal Drive, Wave Edge und Piercing. Drives schicken einen fliegenden Hieb vor dir her.",
+        "Seelen: Eine Klinge, die du in der Hand hältst, während du Gegner besiegst, sammelt Seelen aus deren Erfahrungspunkten. Beschworene Schwerter kosten nun Seelen statt Erfahrungspunkte, und das Verfeinern einer Klinge am Amboss gibt ihr Seelen.",
+        "Haltbarkeit und Verfeinerung: Jede benannte Klinge hat nun ihre eigene Haltbarkeit, und Verfeinern erhöht den Schaden einer Klinge und ihre maximale Haltbarkeit (bis Verfeinerung 200).",
+        "Stellar Remote SS-05 Tesseract: ein fünfter Angriff mit eigenem Film. Ein Lichtwürfel mit 640 Blöcken Seitenlänge erhebt sich um dein Fadenkreuz; sein Boden wird in Zellen zerlegt, die Ring für Ring von der Mitte nach außen angehoben, gedreht und in der Luft aufgehängt werden, und ein Lichtwürfel rastet am Himmel ein."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Anforderungen: Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer, Java 25. Für Mehrspieler muss Halia auch auf dem Server installiert sein.",
+        "Änderungen an den Klingen aus V1.1: Der Treffer einer Klinge ist bei gleichem Grundwert um 1 niedriger als zuvor; neu hergestellte benannte Klingen haben einen geringeren Grundangriff und eine geringere Haltbarkeit als in V1.1 (zum Beispiel Yamato: Angriff 9 → 7, Haltbarkeit 100 → 40); beschworene Schwerter brauchen Seelen. Klingen, die bereits in deiner Welt sind, behalten die Haltbarkeit, mit der sie hergestellt wurden.",
+        "Mit installiertem OUKA funktioniert das Aerie erst, wenn sein Heart in Reichweite eines bestromten Pylons liegt. Um es ohne Strom neben OUKA laufen zu lassen, setze powerFromOukaGrid in config/halia-aerie.json auf false.",
+        "Welten aus V1.1 öffnen sich so, wie sie sind. Wechsle nicht mit einer Welt, die Aerie-Geräte oder die neuen Klingen enthält, zurück zu 1.1: Diese würden gelöscht.",
+        "Die Stellar Remote zerstört sehr große Bereiche dauerhaft, und SS-05 formt einen Bereich von 640 Blöcken auf einmal um — sichere vorher deine Welt. Wer beim Durchgang seiner Welle im Würfel steht, stirbt."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.1",
    "summary": "Halia V1.1.1 — Absturz mit „Improved Transparency“ behoben",

@@ -259,6 +259,58 @@ def stage_published_pack(staging_root):
     return staged
 
 
+def stage_nested_jars(jar_bytes, modid, dest, wanted):
+    """A bare brand jar may carry other jars inside itself (Halia 1.2.0: the Aerie, META-INF/jars/
+    halia_aerie-1.2.0.jar, listed in its own fabric.mod.json "jars"). Their resources belong to the same mod id,
+    and the players who install the one file get them too, so they are staged beside the outer jar's own:
+    recipes, tags and lang. A file that both jars carry must be the same bytes, except the two lang files, which
+    are merged key by key; a key in both with different text stops the generation.
+
+    Only what the sheet reads is taken from a nested jar: its recipes, its item tags and its lang files. Its other
+    resources (models, sounds, textures, advancements) are not read here, and two jars may legitimately differ in
+    them (Halia's sounds.json and the Aerie's do), so they are not compared.
+
+    Returns the number of resource files written from the nested jars."""
+    written = 0
+    wanted_nested = (f"data/{modid}/recipe/", f"data/{modid}/tags/", f"assets/{modid}/lang/")
+    with zipfile.ZipFile(io.BytesIO(jar_bytes)) as jf:
+        listed = [e["file"] for e in json.loads(jf.read("fabric.mod.json").decode("utf-8")).get("jars", [])]
+        blobs = [(name, jf.read(name)) for name in listed]
+    for name, blob in blobs:
+        with zipfile.ZipFile(io.BytesIO(blob)) as nf:
+            nmeta = json.loads(nf.read("fabric.mod.json").decode("utf-8"))
+            n_files = n_recipes = 0
+            for member in nf.namelist():
+                if member.endswith("/") or not member.startswith(wanted_nested):
+                    continue
+                data = nf.read(member)
+                out = dest / member
+                if out.exists():
+                    if member.endswith(".json") and "/lang/" in member:
+                        have = json.loads(out.read_text(encoding="utf-8"))
+                        more = json.loads(data.decode("utf-8"))
+                        clash = sorted(k for k in set(have) & set(more) if have[k] != more[k])
+                        if clash:
+                            raise SystemExit(f"ERROR: {name} and the outer jar both translate {member} "
+                                             f"differently ({len(clash)} key(s), e.g. {clash[0]!r}).")
+                        have.update(more)
+                        out.write_text(json.dumps(have, ensure_ascii=False, indent=1), encoding="utf-8")
+                        continue
+                    if out.read_bytes() != data:
+                        raise SystemExit(f"ERROR: {name} and the outer jar both carry {member} with different "
+                                         f"bytes. Refusing to pick one.")
+                    continue
+                out.parent.mkdir(parents=True, exist_ok=True)
+                out.write_bytes(data)
+                n_files += 1
+                if member.startswith(f"data/{modid}/recipe/") and member.endswith(".json"):
+                    n_recipes += 1
+            written += n_files
+            print(f"nested jar staged: {nmeta['id']} {nmeta['version']} from {name} "
+                  f"({n_files} new resource file(s), {n_recipes} recipe json)")
+    return written
+
+
 def stage_published_brands(staging_root):
     """配布済みブランドの jar を downloads/ から取り出し、資源を mods-src と同じ形に並べる。
 
@@ -360,6 +412,8 @@ def stage_published_brands(staging_root):
                 out.parent.mkdir(parents=True, exist_ok=True)
                 out.write_bytes(jf.read(member))
                 n += 1
+        if bare:
+            n += stage_nested_jars(jar_bytes, modid, dest, wanted)
         recipes = len(list((dest / "data" / modid / "recipe").glob("*.json")))
         if recipes == 0:
             raise SystemExit(f"ERROR: {block} staged {n} resource file(s) but no recipe json. "
@@ -2437,6 +2491,11 @@ def mod_item_tag(ns, name, _seen=None):
     if key in seen:
         raise SystemExit("ERROR: item tag #%s:%s refers to itself (cycle)" % key)
     seen.add(key)
+    if ns == "c":
+        # Fabric's common tags (#c:ingots/iron, #c:glass_blocks ...) belong to no mod of the suite: Fabric API
+        # provides them at run time. Halia 1.2.0's grids use 13 of them, so they are read from the Fabric API
+        # version Halia is built against, not typed here.
+        return common_tag_members(name, seen)
     for mod_dir, modid, _cat in MODS:
         if modid == ns:
             path = mod_resources(mod_dir) / "data" / ns / "tags" / "item" / f"{name}.json"
@@ -2567,6 +2626,9 @@ def halia_register_readings(lang_ja):
         for key, entry in (idx.get(section) or {}).items():
             if section == "blades" and key == "":
                 key_in_lang = "item.halia.halia_blade"
+            elif entry.get("lang"):
+                # An item whose name the jar keys under another id (Fortune Augment I is item.halia.fortune_upgrade.1).
+                key_in_lang = entry["lang"]
             else:
                 key_in_lang = keyer(key)
             ja = lang_ja.get(key_in_lang) or lang_ja.get(key_in_lang.replace("item.", "block.", 1))
@@ -2586,13 +2648,20 @@ def halia_register_readings(lang_ja):
                 bucket.sort(key=len, reverse=True)
 
 
+HALIA_RECOLOUR = "halia:recoloring"   # the Aerie's 320 "any dye recolours this device" recipes: not cards (below)
+
+
 def halia_cards(recipe_dir, mod_cat, reg, cards, no_yomi, seen_published, published):
-    """Every recipe of the published Halia jar -> its card(s). Returns (cards made, json files that are not crafts,
-    cards that come on top of one-per-json: the blade a material box turns into on the anvil)."""
+    """Every recipe of the published Halia jar (its own and the Aerie's, staged together) -> its card(s).
+
+    Returns (cards made, json files that can never be crafted, cards that come on top of one-per-json: the blade a
+    material box turns into on the anvil, json files that are recolouring recipes and so are not cards).
+    The recolouring recipes are set aside by their type, and the count is printed, so 320 recipes are never
+    silently absent."""
     halia_register_readings(reg.lang_by_modid["halia"])
     files = sorted(recipe_dir.rglob("*.json"))
     published["halia"] = {q.relative_to(recipe_dir).as_posix() for q in files}
-    made = uncraftable = extra = 0
+    made = uncraftable = extra = recolour = 0
 
     def add(card_id, cells, count, how, extra_ids=()):
         ja, en, _tex = reg.register(card_id)
@@ -2609,14 +2678,27 @@ def halia_cards(recipe_dir, mod_cat, reg, cards, no_yomi, seen_published, publis
         cards.append({"cat": cat, "id": card_id, "cells": cells, "count": count, "how": how,
                       "s": search_blob(tokens)})
 
+    def how_to(card_id, entry):
+        # One sentence per card that is not a grid: the portal reads station, inputs and text from here. Two cards
+        # with one key would make one of them say the other's sentence, so that stops the generation.
+        if card_id in HALIA_HOW:
+            raise SystemExit(f"ERROR: two Halia how-to cards are keyed {card_id!r}; one would show the other's text.")
+        HALIA_HOW[card_id] = entry
+
+    def name_of(item_id):
+        return reg.register(item_id)
+
     for path in files:
         rel = path.relative_to(recipe_dir).as_posix()
         seen_published.add(f"halia/{rel}")
         data = json.loads(path.read_text(encoding="utf-8"))
+        rtype = data.get("type")
+        if rtype == HALIA_RECOLOUR:
+            recolour += 1
+            continue
         if halia_uncraftable(data):
             uncraftable += 1
             continue
-        rtype = data.get("type")
         if rtype == "minecraft:blasting":
             ing = ingredient_id(data["ingredient"])
             ing_ja, _en, _t = reg.register(ing)
@@ -2625,19 +2707,79 @@ def halia_cards(recipe_dir, mod_cat, reg, cards, no_yomi, seen_published, publis
             blast_id = halia_result_id(data["result"])
             how = "溶鉱炉で、%sを精錬する(%s 秒。作業台では作れない)" % (ing_ja, secs_txt)
             add(blast_id, None, None, how, [ing, "minecraft:blast_furnace"])
-            HALIA_HOW[blast_id] = {"station": "blast", "inputs": [ing], "ja": how,
-                                   "en": "Smelt %s in a blast furnace (%s s; it cannot be made at a workbench)"
-                                         % (_en, secs_txt)}
+            how_to(blast_id, {"station": "blast", "inputs": [ing], "ja": how,
+                              "en": "Smelt %s in a blast furnace (%s s; it cannot be made at a workbench)"
+                                    % (_en, secs_txt)})
+            made += 1
+            continue
+        if rtype == "minecraft:smelting":
+            ing = ingredient_id(data["ingredient"])
+            ing_ja, ing_en, _t = reg.register(ing)
+            secs = data["cookingtime"] / 20.0
+            secs_txt = ("%d" % secs) if secs == int(secs) else ("%g" % secs)
+            res_id = halia_result_id(data["result"])
+            how = "かまどで、%sを焼く(%s 秒。作業台では作れない)" % (ing_ja, secs_txt)
+            add(res_id, None, None, how, [ing, "minecraft:furnace"])
+            how_to(res_id, {"station": "furnace", "inputs": [ing], "ja": how,
+                            "en": "Smelt %s in a furnace (%s s; it cannot be made at a workbench)"
+                                  % (ing_en, secs_txt)})
+            made += 1
+            continue
+        if rtype == "halia:storage_container_upgrade":
+            # A cell upgraded in place on a crafting table: one of the sources and the part; the contents stay.
+            # All sources are shown (any of them), not only the first.
+            res_id = data["result"]
+            srcs = list(data["sources"])
+            part = data["part"]
+            src_ja = [name_of(x)[0] for x in srcs]
+            src_en = [name_of(x)[1] for x in srcs]
+            part_ja, part_en, _t = name_of(part)
+            res_ja, res_en, _t = name_of(res_id)
+            src_txt_ja = ("・".join(src_ja) + " のどれか") if len(srcs) > 1 else src_ja[0]
+            src_txt_en = " or ".join(src_en)
+            how = "作業台で、%sと%sを並べると、中身を保ったまま%sになります。" % (src_txt_ja, part_ja, res_ja)
+            add(res_id, None, None, how, srcs + [part])
+            how_to(res_id, {"station": "workbench", "inputs": srcs + [part], "ja": how,
+                            "en": "On a crafting table, put %s with %s: the upgrade keeps the contents, and "
+                                  "the result is %s." % (src_txt_en, part_en, res_en)})
+            made += 1
+            continue
+        if rtype == "halia:blank_augment_with_enchanted_book":
+            # The Fortune I-III augments: a blank augment and an enchanted book of the named enchantment.
+            ench = data["enchantment"]
+            lvl = data["level"]
+            ench_ja = (reg.van_ja.get("enchantment." + ench.replace(":", ".", 1)) or "").strip()
+            ench_en = reg.van_en.get("enchantment." + ench.replace(":", ".", 1))
+            # The Silk Touch augment's recipe says level 0, which is no roman numeral: the book is named without one
+            # (the recipe says nothing more, and the sheet does not invent a level).
+            if lvl == 0:
+                lvl_ja = lvl_en = ""
+            else:
+                lvl_ja = reg.van_ja.get("enchantment.level.%d" % lvl)
+                lvl_en = reg.van_en.get("enchantment.level.%d" % lvl)
+            if not (ench_ja and ench_en and (lvl == 0 or (lvl_ja and lvl_en))):
+                raise SystemExit(f"ERROR: the vanilla lang files do not name {ench} level {lvl} (halia/{rel}).")
+            res_id = data["result"]["id"]
+            blank_ja, blank_en, _t = name_of("halia:blank_augment")
+            res_ja, res_en, _t = name_of(res_id)
+            how = "作業台で、%sと、%s%s のエンチャントの本を並べると、%sになります。" % (
+                blank_ja, ench_ja, (" " + lvl_ja) if lvl_ja else "", res_ja)
+            add(res_id, None, None, how, ["halia:blank_augment", "minecraft:enchanted_book"])
+            how_to(res_id, {"station": "workbench", "inputs": ["halia:blank_augment", "minecraft:enchanted_book"],
+                            "ja": how,
+                            "en": "On a crafting table, put a %s with an enchanted book of %s%s; the result is %s."
+                                  % (blank_en, ench_en, (" " + lvl_en) if lvl_en else "", res_en)})
             made += 1
             continue
         parsed = parse_recipe(path)
         if parsed is None:
             raise SystemExit(f"ERROR: halia/{rel} (type {rtype}) is a kind of recipe this script cannot show.")
         result = data["result"]
-        card_id = halia_result_id(result)
+        card_id = result if isinstance(result, str) else halia_result_id(result)
         add(card_id, parsed["cells"], parsed["count"], None)
         made += 1
-        required = (result.get("components") or {}).get("halia:required_blade")
+        comp = {} if isinstance(result, str) else (result.get("components") or {})
+        required = comp.get("halia:required_blade")
         if required is not None:
             # The box is half of the recipe: on an anvil, with the blade it names, it becomes the named blade.
             box_key = card_id[len("minecraft:chest["):-1]
@@ -2648,11 +2790,15 @@ def halia_cards(recipe_dir, mod_cat, reg, cards, no_yomi, seen_published, publis
             need = f"{HALIA_BLADE}[{need_key}]" if need_key else HALIA_BLADE
             blade_id = halia_result_id(required["result"])
             add(blade_id, None, None, how, [card_id, need, "minecraft:anvil"])
-            HALIA_HOW[blade_id] = {"station": "anvil", "inputs": [need, card_id], "ja": how,
-                                   "en": halia_index()["anvil"][box_key]["en"]}
+            how_to(blade_id, {"station": "anvil", "inputs": [need, card_id], "ja": how,
+                              "en": halia_index()["anvil"][box_key]["en"]})
             made += 1
             extra += 1
-    return made, uncraftable, extra
+    return made, uncraftable, extra, recolour
+
+
+DYE_COLOURS = ("white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray", "cyan",
+               "purple", "blue", "brown", "green", "red", "black")
 
 
 class ItemRegistry:
@@ -2696,6 +2842,37 @@ class ItemRegistry:
             self.tex_order.append(payload)
         return key
 
+    def halia_member_names(self, item_id):
+        """(ja, en) of one Halia item from the jar's own lang, without a picture (for a tag's list of names)."""
+        modid, name = item_id.split(":", 1)
+        lang_key = (halia_index().get("items") or {}).get(item_id, {}).get("lang")
+        if lang_key:
+            ja, en = self.lang_by_modid["halia"].get(lang_key), self.lang_en_by_modid["halia"].get(lang_key)
+        else:
+            ja = display_name(self.lang_by_modid["halia"], modid, name)
+            en = display_name(self.lang_en_by_modid["halia"], modid, name)
+            if ja == name or en == name:
+                # A dyed device (white_artificer): the jar names it with its colour and its base device, through its own
+                # template item.halia.color_and_item_name ("%s %s"), and the colour is the vanilla dye name.
+                color = next((c for c in sorted(DYE_COLOURS, key=len, reverse=True) if name.startswith(c + "_")), None)
+                base = name[len(color) + 1:] if color else ""
+                if not color or not base:
+                    raise SystemExit("ERROR: the Halia jar's lang files do not name %s" % item_id)
+                base_ja, base_en = (self.lang_by_modid["halia"].get("item.halia." + base)
+                                    or self.lang_by_modid["halia"].get("block.halia." + base),
+                                    self.lang_en_by_modid["halia"].get("item.halia." + base)
+                                    or self.lang_en_by_modid["halia"].get("block.halia." + base))
+                tmpl_ja = self.lang_by_modid["halia"].get("item.halia.color_and_item_name")
+                tmpl_en = self.lang_en_by_modid["halia"].get("item.halia.color_and_item_name")
+                col_ja = self.van_ja.get("color.minecraft." + color)
+                col_en = self.van_en.get("color.minecraft." + color)
+                if not (base_ja and base_en and tmpl_ja and tmpl_en and col_ja and col_en):
+                    raise SystemExit("ERROR: the Halia jar's lang files do not name %s" % item_id)
+                ja, en = tmpl_ja % (col_ja, base_ja), tmpl_en % (col_en, base_en)
+        if not ja or not en or ja == name or en == name:
+            raise SystemExit("ERROR: the Halia jar's lang files do not name %s" % item_id)
+        return [ja, en, None]
+
     def register(self, item_id):
         entry = self.items.get(item_id)
         if entry is not None:
@@ -2736,7 +2913,20 @@ class ItemRegistry:
             # A tag of a staged mod (`#tsubomi:copper_quartz_repair`): shown as the vanilla tags are - one
             # representative icon (the first member) and a name that says any of them will do.
             members = mod_item_tag(ns[1:], name)
-            member_entries = [self.register(m) for m in members]
+            if ns == "#halia":
+                # Halia's Aerie lists each device in its 16 dyes, and the 16 colour variants have no pictures of their
+                # own (the icon index draws the base device). The names come from the jar's lang for every member;
+                # the picture is the first member that has one, which is the base device (the tag's first entries are
+                # the white variants). A tag with no member that has a picture stops the generation.
+                member_entries = [self.halia_member_names(m) for m in members]
+                rep = next((m for m in members if m in (halia_index().get("items") or {})), None)
+                if rep is None:
+                    raise SystemExit("ERROR: the Halia tag #%s has no member with a picture in data/halia_icons/"
+                                     % name)
+                pic = self.register(rep)[2]
+            else:
+                member_entries = [self.register(m) for m in members]
+                pic = member_entries[0][2]
             mem_ja = [e[0] for e in member_entries]
             mem_en = [e[1] for e in member_entries]
             if len(members) > 4:
@@ -2745,7 +2935,7 @@ class ItemRegistry:
             else:
                 ja = "・".join(mem_ja) + " のどれか" if len(members) > 1 else mem_ja[0]
                 en = " or ".join(mem_en)
-            entry = [ja, en, member_entries[0][2]]
+            entry = [ja, en, pic]
             self.items[item_id] = entry
             return entry
         if ns == "minecraft":
@@ -2783,8 +2973,16 @@ class ItemRegistry:
         else:
             for mod_dir, modid, _cat in MODS:
                 if modid == ns:
-                    ja = display_name(self.lang_by_modid[modid], modid, name)
-                    en = display_name(self.lang_en_by_modid[modid], modid, name)
+                    lang_key = (halia_index().get("items") or {}).get(item_id, {}).get("lang") if modid == "halia" else None
+                    if lang_key:
+                        ja = self.lang_by_modid[modid].get(lang_key)
+                        en = self.lang_en_by_modid[modid].get(lang_key)
+                        if not ja or not en:
+                            raise SystemExit("ERROR: the Halia icon index names %s as %s, which the jar does not translate."
+                                             % (item_id, lang_key))
+                    else:
+                        ja = display_name(self.lang_by_modid[modid], modid, name)
+                        en = display_name(self.lang_en_by_modid[modid], modid, name)
                     b64 = mod_texture_b64(mod_dir, modid, name)
                     break
             else:
@@ -2862,6 +3060,70 @@ ALL_TAB_ICON = "minecraft:crafting_table"
 
 def first(v):
     return v[0] if isinstance(v, list) else v
+
+
+FABRIC_API_VERSION = "0.161.0+26.3"   # the version Halia 1.2.0 is built against (its own build file)
+_CONVENTION_ZIP = None
+
+
+def convention_tags_zip():
+    """The Fabric convention-tags module (fabric-convention-tags-v2) that ships inside Fabric API 0.161.0+26.3,
+    read from the Gradle cache of the Halia build. Stops with the reason if the cache is not there."""
+    global _CONVENTION_ZIP
+    if _CONVENTION_ZIP is None:
+        base = Path.home() / ".gradle/caches/modules-2/files-2.1/net.fabricmc.fabric-api/fabric-api"
+        hits = sorted(base.glob(f"{FABRIC_API_VERSION}/*/fabric-api-{FABRIC_API_VERSION}.jar"))
+        if not hits:
+            raise SystemExit(f"ERROR: Halia's recipes use Fabric's common tags (#c:...), which Fabric API "
+                             f"{FABRIC_API_VERSION} provides, and no copy of that jar is in {base}. "
+                             f"Without it the tags cannot be opened.")
+        with zipfile.ZipFile(hits[0]) as outer:
+            nested = [n for n in outer.namelist()
+                      if n.startswith("META-INF/jars/fabric-convention-tags-v2-") and n.endswith(".jar")]
+            if len(nested) != 1:
+                raise SystemExit(f"ERROR: {hits[0]} carries {len(nested)} convention-tags module(s), not one.")
+            _CONVENTION_ZIP = zipfile.ZipFile(io.BytesIO(outer.read(nested[0])))
+    return _CONVENTION_ZIP
+
+
+def common_tag_members(name, seen):
+    """`#c:<name>` -> the item ids, opened from the convention tag file. A nested `#c:` / `#minecraft:` / `#mod:`
+    reference is opened the same way; an entry marked "required": false that cannot be opened is skipped (that is
+    what the flag means), anything else that cannot be opened stops the generation."""
+    key = ("c", name)
+    if key in _MOD_TAG_CACHE:
+        return _MOD_TAG_CACHE[key]
+    zf = convention_tags_zip()
+    path = f"data/c/tags/item/{name}.json"
+    if path not in zf.namelist():
+        raise SystemExit(f"ERROR: a recipe uses the item tag #c:{name}, which the Fabric convention tags do not define.")
+    out = []
+    for v in json.loads(zf.read(path).decode("utf-8"))["values"]:
+        optional = isinstance(v, dict) and v.get("required") is False
+        vid = v["id"] if isinstance(v, dict) else v
+        if vid.startswith("#"):
+            tns, tname = vid[1:].split(":", 1)
+            try:
+                if tns == "c":
+                    members = common_tag_members(tname, seen)
+                elif tns == "minecraft":
+                    members = vanilla_item_tag(tname)
+                else:
+                    members = mod_item_tag(tns, tname, seen)
+            except SystemExit:
+                if optional:
+                    continue
+                raise
+        else:
+            members = [vid]
+        for m in members:
+            if m not in out:
+                out.append(m)
+    if not out:
+        raise SystemExit(f"ERROR: item tag #c:{name} resolved to nothing - the card would show an empty slot "
+                         f"where an ingredient belongs")
+    _MOD_TAG_CACHE[key] = out
+    return out
 
 
 def ingredient_id(ing):
@@ -6674,16 +6936,17 @@ def _main_body():
     withheld = []    # 作業木にしか無いレシピ(配られていないので載せない)
     seen_published = set()   # 実際に読んだ配布済みレシピ(取りこぼしを後で数える)
     cards_per_mod = {}       # mod_dir -> このループで作ったカード数(EVERY_RECIPE_SHOWN の照合用)
-    halia_counts = (0, 0)    # (recipe json that are not crafts, cards on top of one per json)
+    halia_counts = (0, 0, 0)  # (json that can never be crafted, cards on top of one per json, recolouring json)
     for mod_dir, modid, mod_cat in MODS:
         recipe_dir = mod_resources(mod_dir) / "data" / modid / "recipe"
         if mod_dir == "halia":
-            made, not_crafts, on_top = halia_cards(recipe_dir, mod_cat, reg, cards, no_yomi, seen_published,
-                                                   published)
+            made, not_crafts, on_top, recolour = halia_cards(recipe_dir, mod_cat, reg, cards, no_yomi,
+                                                             seen_published, published)
             cards_per_mod[mod_dir] = made
-            halia_counts = (not_crafts, on_top)
+            halia_counts = (not_crafts, on_top, recolour)
             print(f"halia: {made} card(s); {not_crafts} recipe json are not crafts (their only ingredient is a tag "
-                  f"holding nothing but air); {on_top} card(s) are the anvil half of a material box")
+                  f"holding nothing but air); {on_top} card(s) are the anvil half of a material box; "
+                  f"{recolour} recolouring recipe(s) of the Aerie are set aside (not cards)")
             continue
         if mod_dir in MOD_RESOURCE_ROOT:
             # 別ブランドは配布済み jar そのものを展開したものなので、ここに在る = 配られている。
@@ -6793,13 +7056,14 @@ def _main_body():
                      for name in published.get(modid, ()))
         n_cards = cards_per_mod.get(mod_dir, 0)
         if mod_dir == "halia":
-            n_json = n_json - halia_counts[0] + halia_counts[1]
+            n_json = n_json - halia_counts[0] - halia_counts[2] + halia_counts[1]
         if n_json != n_cards or n_json == 0:
             raise SystemExit(f"ERROR: {mod_dir}: {n_json} recipe json in the published jar but {n_cards} card(s) "
                              f"made from them - EVERY_RECIPE_SHOWN says there must be one each (and at least one).")
         if mod_dir == "halia":
             print(f"halia: {n_cards} card(s) for the published jar's craftable recipes, none missing "
-                  f"({halia_counts[0]} uncraftable json set aside, {halia_counts[1]} anvil card(s) on top)")
+                  f"({halia_counts[0]} uncraftable json set aside, {halia_counts[2]} recolouring json set aside, "
+                  f"{halia_counts[1]} anvil card(s) on top)")
         else:
             print(f"{mod_dir}: all {n_json} recipe json in the published jar became a card")
 

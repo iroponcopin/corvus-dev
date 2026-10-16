@@ -122,11 +122,11 @@
   },
   "halia": {
     "mod_id": "halia",
-    "latest": "1.1.1",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/halia-1.1.1.jar",
-    "file_name": "halia-1.1.1.jar",
-    "file_size": 12030675,
-    "sha256": "cbd330d75c91d2360860bb22176772bd863f097516084b208a97eccb58c94154"
+    "latest": "1.2.0",
+    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/halia-1.2.0.jar",
+    "file_name": "halia-1.2.0.jar",
+    "file_size": 17630786,
+    "sha256": "8569660ffcf29e3516efdc1bffe4cc2030ec3e19c987ecbcb252f1f7a456d427"
   },
   "agent": {
     "latest": "5.0.1",
