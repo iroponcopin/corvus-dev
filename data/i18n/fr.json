@@ -307,6 +307,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.2.2",
+    "title": "The Grand Synthesis 1.6.2.2 — carburant du four, matériaux d'assemblage et générateur à manivelle",
+    "summary": "Une mise à jour industrielle qui reprend aussi les corrections de 1.6.2.1. Le Four de fusion catalytique fond maintenant le minerai directement, la Ligne d'assemblage de précision automatisée reçoit un stock de matériaux à remplir avant de choisir une recette, et le nouveau Générateur à manivelle apporte l'énergie OUKA à la survie pure. Il ajoute 1 nouveau bloc.",
+    "highlights": [
+     "Le Four de fusion catalytique accepte directement le Tungstène brut et les Débris antiques, sans les broyer d'abord en poudre. Il brûle des Cartouches d'argon de son propre emplacement de combustible, et les trémies n'alimentent en combustible que cet emplacement.",
+     "La Ligne d'assemblage de précision automatisée a un onglet Matériaux. Mettez des pièces de votre inventaire dans son stock, puis choisissez une recette : si le stock contient tout ce qu'il faut, la ligne la fabrique aussitôt. Une barre verte dans la liste des recettes indique ce que le stock peut fabriquer dès maintenant. Les trémies et les convoyeurs alimentent toujours l'entrée comme avant.",
+     "Le Générateur à manivelle est fabriqué uniquement avec des objets vanilla. Maintenez le clic droit pour tourner la manivelle et envoyer de l'énergie à un pylône Tesla voisin, afin que même un monde hardcore puisse alimenter ses premières machines.",
+     "Depuis 1.6.2.1 : l'icône de l'effet Bénédiction d'Ouka reste, et survoler cette icône dans l'inventaire liste chaque bénédiction que vous avez et sa puissance. Ryusei explique maintenant une mauvaise pose ou utilisation, donne des indications pour conduire le train, et indique aux passagers pourquoi le train ne peut pas s'arrêter à la prochaine gare."
+    ],
+    "warnings": [
+     "Si vous revenez à une version antérieure après avoir joué, le Générateur à manivelle disparaît du monde.",
+     "Avant d'installer 1.6.2.2, retirez l'ancien jar d'OUKA (1.6.2 ou plus ancien) du dossier mods et ne gardez qu'une copie de GeckoLib 5.5.6. Il faut Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, et Fabric API 0.161.0+26.3 ou plus récent. Installez-le sur le client et sur le serveur."
+    ]
+   },
+   {
     "id": "ouka-v1.6.2",
     "title": "The Grand Synthesis 1.6.2 — le train maglev Ryusei",
     "summary": "Une mise à jour ferroviaire. Le train maglev Ryusei roule sur une voie que vous tracez vous-même, avec des gares, un pupitre de régulation et un train de quatre voitures où l'on peut marcher. Elle ajoute 6 nouveaux objets et 3 nouveaux blocs.",

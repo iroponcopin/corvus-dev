@@ -1,15 +1,40 @@
 {
  "lang": "id",
  "brand": "ouka",
- "updated": "2026-10-14",
+ "updated": "2026-10-16",
  "title": "Riwayat Pembaruan",
- "updated_label": "Diperbarui 2026-10-14",
+ "updated_label": "Diperbarui 2026-10-16",
  "note": "",
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis 1.6.2 — kereta maglev Ryusei",
+   "summary": "The Grand Synthesis 1.6.2.2 — bahan bakar tungku, bahan perakitan, dan generator engkol",
    "releases": [
+    {
+     "version": "V1.6.2.2",
+     "date": "2026-10-16",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.2.2 — bahan bakar tungku, bahan perakitan, dan generator engkol",
+     "summary": "Pembaruan industri yang juga memuat perbaikan 1.6.2.1. Tungku Peleburan Katalitik kini meleburkan bijih langsung dari tanah, Lini Perakitan Presisi Otomatis mendapat penyimpanan bahan yang bisa diisi sebelum memilih resep, dan Generator Engkol baru membawa daya OUKA bahkan ke survival murni. Menambahkan 1 blok baru.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Tungku Peleburan Katalitik menerima Tungsten Mentah dan Puing Kuno langsung, tanpa menggilingnya dulu menjadi debu. Tungku membakar Kaleng Argon dari slot bahan bakarnya sendiri, dan hopper hanya memasukkan bahan bakar ke slot itu.",
+        "Lini Perakitan Presisi Otomatis punya tab Bahan. Masukkan bagian dari inventaris Anda ke penyimpanannya, lalu pilih resep: jika penyimpanan berisi semua yang dibutuhkan resep, lini langsung membuatnya. Bilah hijau di daftar resep menandai apa yang bisa dibuat penyimpanan saat ini. Hopper dan konveyor tetap mengisi input seperti sebelumnya.",
+        "Generator Engkol hanya dibuat dari item vanilla. Tahan klik kanan untuk memutar engkol dan mengirim daya ke Menara Tesla terdekat, sehingga bahkan dunia hardcore bisa menjalankan mesin pertamanya.",
+        "Sejak 1.6.2.1: ikon efek Berkah Ouka tetap ada, dan jika kursor diarahkan ke ikon itu di inventaris, semua berkah yang Anda miliki dan kekuatannya terdaftar. Ryusei kini menjelaskan penempatan atau penggunaan yang salah, memberi petunjuk mengoperasikan kereta, dan memberi tahu penumpang mengapa kereta tidak bisa berhenti di stasiun berikutnya."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Jika Anda kembali ke versi sebelumnya setelah bermain, Generator Engkol akan hilang dari dunia.",
+        "Sebelum memasang 1.6.2.2, hapus jar OUKA lama (1.6.2 atau lebih lama) dari folder mods dan simpan hanya satu salinan GeckoLib 5.5.6. Dibutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di klien dan server."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.2",
      "date": "2026-10-14",

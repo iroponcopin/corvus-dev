@@ -1,15 +1,40 @@
 {
  "lang": "it",
  "brand": "ouka",
- "updated": "2026-10-14",
+ "updated": "2026-10-16",
  "title": "Changelog",
- "updated_label": "Aggiornato il 2026-10-14",
+ "updated_label": "Aggiornato il 2026-10-16",
  "note": "",
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis 1.6.2 — il treno maglev Ryusei",
+   "summary": "The Grand Synthesis 1.6.2.2 — combustibile del forno, materiali di assemblaggio e generatore a manovella",
    "releases": [
+    {
+     "version": "V1.6.2.2",
+     "date": "2026-10-16",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.2.2 — combustibile del forno, materiali di assemblaggio e generatore a manovella",
+     "summary": "Un aggiornamento industriale che include anche le correzioni di 1.6.2.1. Il Forno di fusione catalitica ora fonde il minerale direttamente, la Linea di assemblaggio di precisione automatizzata riceve un magazzino di materiali da riempire prima di scegliere una ricetta, e il nuovo Generatore a manovella porta l'energia OUKA anche nella sopravvivenza pura. Aggiunge 1 nuovo blocco.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Il Forno di fusione catalitica accetta direttamente Tungsteno grezzo e Detriti antichi, senza polverizzarli prima. Brucia cartucce di argon dal proprio slot del combustibile, e le tramogge inseriscono combustibile solo in quello slot.",
+        "La Linea di assemblaggio di precisione automatizzata ha una scheda Materiali. Metti i pezzi dal tuo inventario nel suo magazzino, poi scegli una ricetta: se il magazzino contiene tutto ciò che serve, la linea la costruisce subito. Una barra verde nell'elenco delle ricette segnala ciò che il magazzino può già costruire. Tramogge e nastri continuano ad alimentare l'ingresso come prima.",
+        "Il Generatore a manovella è costruito solo con oggetti vanilla. Tieni premuto il clic destro per girare la manovella e inviare energia a un pilone Tesla vicino, così anche un mondo hardcore può alimentare le prime macchine.",
+        "Dalla 1.6.2.1: l'icona dell'effetto Benedizione di Ouka resta, e passando sopra di essa nell'inventario compaiono tutte le benedizioni che hai e la loro intensità. Ryusei spiega un posizionamento o un uso sbagliato, dà suggerimenti per guidare il treno e dice ai passeggeri perché il treno non può fermarsi alla stazione successiva."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Se dopo aver giocato torni a una versione precedente, il Generatore a manovella scompare dal mondo.",
+        "Prima di installare la 1.6.2.2, rimuovi il vecchio jar di OUKA (1.6.2 o precedente) dalla cartella mods e tieni una sola copia di GeckoLib 5.5.6. Richiede Minecraft 26.3, Fabric Loader 0.19.5 o più recente e Fabric API 0.161.0+26.3 o più recente. Installalo su client e server."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.2",
      "date": "2026-10-14",

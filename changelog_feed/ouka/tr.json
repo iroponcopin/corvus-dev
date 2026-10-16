@@ -1,15 +1,40 @@
 {
  "lang": "tr",
  "brand": "ouka",
- "updated": "2026-10-14",
+ "updated": "2026-10-16",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-14 tarihinde güncellendi",
+ "updated_label": "2026-10-16 tarihinde güncellendi",
  "note": "",
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis 1.6.2 — Ryusei maglev treni",
+   "summary": "The Grand Synthesis 1.6.2.2 — fırın yakıtı, montaj malzemeleri ve el kolu jeneratörü",
    "releases": [
+    {
+     "version": "V1.6.2.2",
+     "date": "2026-10-16",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.2.2 — fırın yakıtı, montaj malzemeleri ve el kolu jeneratörü",
+     "summary": "1.6.2.1 düzeltmelerini de içeren bir endüstri güncellemesi. Katalitik Ergitme Fırını artık cevheri doğrudan yerden eritiyor, Otomatik Hassas Montaj Hattı tarif seçmeden önce doldurduğunuz bir malzeme deposu kazanıyor ve yeni El Kolu Jeneratörü saf hayatta kalma modunda da OUKA gücü sağlıyor. 1 yeni blok ekler.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Katalitik Ergitme Fırını, Ham Tungsten ve Antik Kalıntıları önce toza öğütmeden doğrudan kabul eder. Kendi yakıt yuvasındaki argon tüplerini yakar; hunilere yakıt yalnızca o yuvaya girer.",
+        "Otomatik Hassas Montaj Hattı bir Malzemeler sekmesine sahip. Envanterinizdeki parçaları deposuna koyun, sonra bir tarif seçin: depoda tarifin ihtiyaç duyduğu her şey varsa hat hemen üretir. Tarif listesindeki yeşil çizgi, deponun şu anda neyi üretebildiğini gösterir. Huniler ve konveyörler girişi eskisi gibi besler.",
+        "El Kolu Jeneratörü yalnızca vanilya eşyalarından yapılır. Kolu çevirmek ve yakındaki bir Tesla Kulesine güç göndermek için sağ tıklayıp basılı tutun; böylece zorlu bir dünyada bile ilk makineler çalıştırılabilir.",
+        "1.6.2.1'den itibaren: Ouka Kutsaması efekt simgesi kalır ve envanterde üzerine gelindiğinde sahip olduğunuz tüm kutsamalar ve güçleri listelenir. Ryusei yanlış yerleştirme ya da kullanımı açıklar, treni kullanma ipuçları verir ve yolculara trenin bir sonraki istasyonda neden duramadığını söyler."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Oynadıktan sonra önceki bir sürüme dönerseniz El Kolu Jeneratörü dünyadan silinir.",
+        "1.6.2.2'yi kurmadan önce eski OUKA jar dosyasını (1.6.2 veya daha eski) mods klasöründen kaldırın ve yalnızca bir GeckoLib 5.5.6 kopyası bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.2",
      "date": "2026-10-14",

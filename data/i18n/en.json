@@ -311,6 +311,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.2.2",
+    "title": "The Grand Synthesis 1.6.2.2 — furnace fuel, assembly materials and the hand-crank generator",
+    "summary": "An industry update that also carries the 1.6.2.1 fixes. The Catalytic Smelting Furnace now smelts ore straight from the ground, the Automated Precision Assembly Line gains a materials store you fill before choosing a recipe, and the new Hand-Crank Generator brings OUKA power to pure survival. It adds 1 new block.",
+    "highlights": [
+     "The Catalytic Smelting Furnace takes Raw Tungsten and Ancient Debris directly, without grinding them to dust first. It burns Argon Canisters from its own fuel slot, and hoppers feed fuel only into that slot.",
+     "The Automated Precision Assembly Line has a Materials tab. Put parts into its materials store from your inventory, then pick a recipe: if the store holds everything the recipe needs, the line builds it at once. A green bar in the recipe list marks what the store can build right now. Hoppers and conveyors still feed the intake as before.",
+     "The Hand-Crank Generator is made from vanilla items only. Hold right-click on it to turn the crank and send power to a nearby Tesla pylon, so even a hardcore world can power its first machines.",
+     "From 1.6.2.1: the Ouka Blessing effect icon stays, and hovering it in your inventory lists every blessing you have and how strong it is. Ryusei now explains a wrong placement or use, gives hints for operating the train, and tells riders why the train cannot stop at the next station."
+    ],
+    "warnings": [
+     "Going back to an earlier version after playing removes the Hand-Crank Generator from the world.",
+     "Before you install 1.6.2.2, remove the old OUKA jar (1.6.2 or older) from the mods folder and keep only one copy of GeckoLib 5.5.6. It needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, and Fabric API 0.161.0+26.3 or newer. Install it on both the client and the server."
+    ]
+   },
+   {
     "id": "ouka-v1.6.2",
     "title": "The Grand Synthesis 1.6.2 — the Ryusei maglev train",
     "summary": "A train update. The Ryusei maglev train runs on guideway you lay out, with stations, a dispatch console and a four-car train you can walk through. It adds 6 new items and 3 new blocks.",

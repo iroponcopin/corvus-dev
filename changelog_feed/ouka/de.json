@@ -1,15 +1,40 @@
 {
  "lang": "de",
  "brand": "ouka",
- "updated": "2026-10-14",
+ "updated": "2026-10-16",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-14",
+ "updated_label": "Aktualisiert am 2026-10-16",
  "note": "",
  "groups": [
   {
    "label": "V1.6",
-   "summary": "The Grand Synthesis 1.6.2 — der Ryusei-Magnetschwebezug",
+   "summary": "The Grand Synthesis 1.6.2.2 — Ofenbrennstoff, Montagematerialien und der Handkurbelgenerator",
    "releases": [
+    {
+     "version": "V1.6.2.2",
+     "date": "2026-10-16",
+     "type": "release",
+     "title": "The Grand Synthesis 1.6.2.2 — Ofenbrennstoff, Montagematerialien und der Handkurbelgenerator",
+     "summary": "Ein Industrie-Update, das auch die Korrekturen aus 1.6.2.1 enthält. Der Katalytische Schmelzofen schmilzt Erz jetzt direkt aus dem Boden, die Automatisierte Präzisions-Montagelinie erhält einen Materialspeicher, den du vor der Rezeptwahl füllst, und der neue Handkurbelgenerator bringt OUKA-Strom auch ins reine Überleben. Es kommt 1 neuer Block hinzu.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Der Katalytische Schmelzofen nimmt Rohen Wolfram und Antike Trümmer direkt an, ohne sie vorher zu Staub zu mahlen. Er verbrennt Argon-Kanister aus seinem eigenen Brennstofffach, und Trichter füllen Brennstoff nur in dieses Fach.",
+        "Die Automatisierte Präzisions-Montagelinie hat einen Materialien-Reiter. Lege Teile aus deinem Inventar in ihren Materialspeicher und wähle dann ein Rezept: Enthält der Speicher alles, was das Rezept braucht, baut die Linie es sofort. Ein grüner Balken in der Rezeptliste markiert, was der Speicher schon jetzt bauen kann. Trichter und Förderbänder füllen den Eingang wie bisher.",
+        "Der Handkurbelgenerator besteht nur aus Vanilla-Gegenständen. Halte die rechte Maustaste gedrückt, um die Kurbel zu drehen und Strom an einen nahen Tesla-Pylon zu schicken, sodass selbst eine Hardcore-Welt ihre ersten Maschinen betreiben kann.",
+        "Ab 1.6.2.1: Das Symbol des Ouka-Segens bleibt, und wenn du im Inventar darauf zeigst, werden alle Segen und ihre Stärke aufgelistet. Ryusei erklärt falsches Platzieren oder Benutzen, gibt Hinweise zum Betrieb des Zugs und sagt Fahrgästen, warum der Zug an der nächsten Station nicht halten kann."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Wenn du nach dem Spielen zu einer früheren Version zurückkehrst, verschwindet der Handkurbelgenerator aus der Welt.",
+        "Bevor du 1.6.2.2 installierst, entferne die alte OUKA-jar (1.6.2 oder älter) aus dem mods-Ordner und behalte nur eine Kopie von GeckoLib 5.5.6. Es benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Installiere es auf Client und Server."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6.2",
      "date": "2026-10-14",
