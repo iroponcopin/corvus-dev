@@ -237,7 +237,7 @@ export function CatalogueModelPage({ lang, id }: { lang: Lang; id: CatalogueMode
   return (
     <>
       {id === "astraea" && p.availability === "archived" ? (
-        <div className="ac-wrap ac-sections">
+        <div className="ac-wrap ac-ended-top">
           <AstraeaEnded lang={lang} />
         </div>
       ) : null}

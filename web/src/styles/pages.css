@@ -589,6 +589,19 @@ html:lang(ar) .ac-facts dt {
   font-size: 17px;
 }
 
+/* ASTRAEA's end-of-service notice (2026-10-16): first thing on its page, so it clears the fixed header itself. */
+.ac-ended-top {
+  padding-top: calc(var(--header-h) + 32px);
+}
+
+.ac-ended {
+  max-width: 760px;
+}
+
+.ac-ended .ac-req {
+  margin-bottom: 12px;
+}
+
 .ac-req {
   display: grid;
   gap: 4px;
