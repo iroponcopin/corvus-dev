@@ -57,6 +57,14 @@ export const SECTIONS = [
 ] as const;
 export type Section = (typeof SECTIONS)[number];
 
+const HOME_PATHS: ReadonlySet<string> = new Set(["/", ...LANG_CODES.filter((l) => l !== "ja").map((l) => `/${l}/`)]);
+
+/** Whether a page path (without the base path) is a language's home page. */
+export function isHomePath(pathname: string): boolean {
+  const p = pathname.endsWith("/") ? pathname : `${pathname}/`;
+  return HOME_PATHS.has(p);
+}
+
 /** App-relative path of a section in a language (Next adds the basePath to <Link>). */
 export function pathOf(lang: Lang, section: string): string {
   return `/${lang === "ja" ? "" : `${lang}/`}${section}`;

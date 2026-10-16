@@ -2,15 +2,14 @@ import Link from "next/link";
 import { Formation } from "@/engine/store";
 import { FRESH, fill } from "@/i18n/fresh";
 import { asset, pathOf, recipeIcon } from "@/lib/site";
-import { langData, lineupFor, wiki } from "@/lib/wiki";
+import { langData, wiki } from "@/lib/wiki";
 import type { Lang, Release } from "@/lib/wiki-types";
 import { BRAND_COLOR, ChronoDriver } from "../ChronoDriver";
+import { NaturalCinemaStage } from "../cinema/NaturalCinemaStage";
 import { CopyButton } from "../CopyButton";
 import { FeedTelemetry } from "../discord/FeedTelemetry";
 import { RealmAnchor } from "../RealmAnchor";
-import { Stagger } from "../Stagger";
 import { CodexPreview, type FeaturedRecipe } from "./CodexPreview";
-import { HeroMarks, type MarkLink } from "./HeroMarks";
 import { ShowroomPreview } from "./ShowroomPreview";
 import { StorePreview } from "./StorePreview";
 
@@ -38,9 +37,8 @@ const BRAND_ICON: Record<string, string> = {
 };
 
 /**
- * The home page: the Event Horizon (the astrolabe and the six marks), the brands, then the five
- * realms the particles travel through as the page scrolls (codex, showroom, store, time, nexus)
- * and the explore grid.
+ * The home page: Act I (the natural cinema stage), the brands, then the five realms the particles travel
+ * through as the page scrolls (codex, showroom, store, time, nexus) and the explore grid.
  */
 export function HomePage({ lang }: { lang: Lang }) {
   const d = langData(lang);
@@ -62,7 +60,6 @@ export function HomePage({ lang }: { lang: Lang }) {
     { id: "noctua", name: p.noctua?.name ?? "Noctua", jp: p.noctua?.jp ?? null, line: p.noctua?.tagline ?? "", href: pathOf(lang, "noctua/"), icon: "icons/noctua.png", status: status("noctua"), soon: p.noctua?.availability !== "available" },
     { id: "store", name: h.ctaStore, jp: null, line: h.storeTagline, href: pathOf(lang, "launcher/"), icon: "icons/store.png", status: `${d.chrome.launcherVersion} ${d.launcherFiles.version}` },
   ];
-  const marks: MarkLink[] = cards.map((c) => ({ id: c.id, icon: c.icon, href: c.href, label: c.name }));
 
   // Codex: real recipes, prepared exactly as the codex prepares them.
   const R = w.recipes;
@@ -118,40 +115,7 @@ export function HomePage({ lang }: { lang: Lang }) {
 
   return (
     <>
-      <RealmAnchor
-        className="ac-hero"
-        aria-labelledby="ac-hero-title"
-        config={{ formation: Formation.Horizon, x: 0.5, y: 0.34, scale: 0.21, scaleNarrow: 0.2, astrolabe: 1, tint: BLUE }}
-      >
-        <div className="ac-hero-stage" role="img" aria-label={h.symbolLabel}>
-          <div className="ac-hero-poster ac-only-fallback" aria-hidden="true">
-            {cards.map((x) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img key={x.id} src={asset(x.icon)} alt="" width={96} height={96} />
-            ))}
-          </div>
-          <HeroMarks marks={marks} hint={h.hint} />
-        </div>
-        <div className="ac-hero-copy ac-wrap">
-          <h1 id="ac-hero-title" className="ac-display">
-            <Stagger text={f.heroLine1} lang={lang} className="ac-hero-line1" />
-            <br />
-            <Stagger text={f.heroLine2} lang={lang} offset={f.heroLine1.length} className="ac-hero-line2" />
-          </h1>
-          <p className="ac-lead ac-hero-sub">{lineupFor(lang)}</p>
-          <div className="ac-hero-cta">
-            <Link className="ac-btn" href={pathOf(lang, "launcher/")}>
-              {h.ctaStore}
-            </Link>
-            <Link className="ac-btn ac-btn--ghost" href={pathOf(lang, "download/")}>
-              {d.chrome.download}
-            </Link>
-          </div>
-        </div>
-        <p className="ac-hero-scroll ac-small" aria-hidden="true">
-          {f.heroScroll}
-        </p>
-      </RealmAnchor>
+      <NaturalCinemaStage title="HALIA" tagline={f.cinema.tagline} credit={f.cinema.credit} hint={f.heroScroll} />
 
       <section className="ac-wrap ac-brands" aria-labelledby="ac-brands-title">
         <h2 id="ac-brands-title" className="ac-eyebrow">

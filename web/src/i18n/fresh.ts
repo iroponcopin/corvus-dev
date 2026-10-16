@@ -13,6 +13,8 @@ export interface Fresh {
   heroLine1: string;
   heroLine2: string;
   heroScroll: string;
+  /** Act I of the home page: the tagline under the title, and the footage credit (the same in every language). */
+  cinema: { tagline: string; credit: string };
   sound: string;
   soundOn: string;
   soundOff: string;
@@ -154,6 +156,7 @@ export const FRESH: Record<Lang, Fresh> = {
     heroLine1: "Corvus.",
     heroLine2: "次元の限界を超えて。",
     heroScroll: "スクロールして探索",
+    cinema: { tagline: "「空の頂点へ。」", credit: "Footage: nrhawkes, whateverett-takes — Pexels" },
     sound: "サウンド",
     soundOn: "サウンドをオンにする",
     soundOff: "サウンドをオフにする",
@@ -306,6 +309,7 @@ export const FRESH: Record<Lang, Fresh> = {
     heroLine1: "Corvus.",
     heroLine2: "Beyond Dimensional Limits.",
     heroScroll: "Scroll to explore",
+    cinema: { tagline: "The apex of the sky.", credit: "Footage: nrhawkes, whateverett-takes — Pexels" },
     sound: "Sound",
     soundOn: "Turn sound on",
     soundOff: "Turn sound off",
@@ -458,6 +462,7 @@ export const FRESH: Record<Lang, Fresh> = {
     heroLine1: "Corvus.",
     heroLine2: "Más allá de los límites dimensionales.",
     heroScroll: "Desplázate para explorar",
+    cinema: { tagline: "El ápice del cielo.", credit: "Footage: nrhawkes, whateverett-takes — Pexels" },
     sound: "Sonido",
     soundOn: "Activar el sonido",
     soundOff: "Desactivar el sonido",
@@ -610,6 +615,7 @@ export const FRESH: Record<Lang, Fresh> = {
     heroLine1: "Corvus.",
     heroLine2: "Au-delà des limites dimensionnelles.",
     heroScroll: "Faites défiler pour explorer",
+    cinema: { tagline: "Le sommet du ciel.", credit: "Footage: nrhawkes, whateverett-takes — Pexels" },
     sound: "Son",
     soundOn: "Activer le son",
     soundOff: "Couper le son",
@@ -762,6 +768,7 @@ export const FRESH: Record<Lang, Fresh> = {
     heroLine1: "Corvus.",
     heroLine2: "超越维度的极限。",
     heroScroll: "滚动以探索",
+    cinema: { tagline: "通往天空之巅。", credit: "Footage: nrhawkes, whateverett-takes — Pexels" },
     sound: "声音",
     soundOn: "开启声音",
     soundOff: "关闭声音",
@@ -914,6 +921,7 @@ export const FRESH: Record<Lang, Fresh> = {
     heroLine1: "Corvus.",
     heroLine2: "차원의 한계를 넘어서.",
     heroScroll: "스크롤하여 탐색",
+    cinema: { tagline: "하늘의 정점으로.", credit: "Footage: nrhawkes, whateverett-takes — Pexels" },
     sound: "사운드",
     soundOn: "사운드 켜기",
     soundOff: "사운드 끄기",
@@ -1066,6 +1074,7 @@ export const FRESH: Record<Lang, Fresh> = {
     heroLine1: "Corvus.",
     heroLine2: "Além dos limites dimensionais.",
     heroScroll: "Role para explorar",
+    cinema: { tagline: "하늘의 정점으로.", credit: "Footage: nrhawkes, whateverett-takes — Pexels" },
     sound: "Som",
     soundOn: "Ativar o som",
     soundOff: "Desativar o som",
@@ -1218,6 +1227,7 @@ export const FRESH: Record<Lang, Fresh> = {
     heroLine1: "Corvus.",
     heroLine2: "Oltre i limiti dimensionali.",
     heroScroll: "Scorri per esplorare",
+    cinema: { tagline: "L'apice del cielo.", credit: "Footage: nrhawkes, whateverett-takes — Pexels" },
     sound: "Suono",
     soundOn: "Attiva il suono",
     soundOff: "Disattiva il suono",
@@ -1370,6 +1380,7 @@ export const FRESH: Record<Lang, Fresh> = {
     heroLine1: "Corvus.",
     heroLine2: "ما وراء حدود الأبعاد.",
     heroScroll: "مرّر للاستكشاف",
+    cinema: { tagline: "قمّة السماء.", credit: "Footage: nrhawkes, whateverett-takes — Pexels" },
     sound: "الصوت",
     soundOn: "تشغيل الصوت",
     soundOff: "إيقاف الصوت",
@@ -1522,6 +1533,7 @@ export const FRESH: Record<Lang, Fresh> = {
     heroLine1: "Corvus.",
     heroLine2: "За пределами измерений.",
     heroScroll: "Прокрутите, чтобы исследовать",
+    cinema: { tagline: "Вершина неба.", credit: "Footage: nrhawkes, whateverett-takes — Pexels" },
     sound: "Звук",
     soundOn: "Включить звук",
     soundOff: "Выключить звук",
@@ -1674,6 +1686,7 @@ export const FRESH: Record<Lang, Fresh> = {
     heroLine1: "Corvus.",
     heroLine2: "Melampaui batas dimensi.",
     heroScroll: "Gulir untuk menjelajah",
+    cinema: { tagline: "Puncak langit.", credit: "Footage: nrhawkes, whateverett-takes — Pexels" },
     sound: "Suara",
     soundOn: "Nyalakan suara",
     soundOff: "Matikan suara",
@@ -1826,6 +1839,7 @@ export const FRESH: Record<Lang, Fresh> = {
     heroLine1: "Corvus.",
     heroLine2: "Jenseits der Grenzen der Dimensionen.",
     heroScroll: "Zum Erkunden scrollen",
+    cinema: { tagline: "Der Gipfel des Himmels.", credit: "Footage: nrhawkes, whateverett-takes — Pexels" },
     sound: "Ton",
     soundOn: "Ton einschalten",
     soundOff: "Ton ausschalten",
@@ -1978,6 +1992,7 @@ export const FRESH: Record<Lang, Fresh> = {
     heroLine1: "Corvus.",
     heroLine2: "Boyutların sınırlarının ötesinde.",
     heroScroll: "Keşfetmek için kaydırın",
+    cinema: { tagline: "Gökyüzünün zirvesi.", credit: "Footage: nrhawkes, whateverett-takes — Pexels" },
     sound: "Ses",
     soundOn: "Sesi aç",
     soundOff: "Sesi kapat",

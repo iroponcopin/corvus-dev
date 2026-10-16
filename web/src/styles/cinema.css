@@ -1,0 +1,193 @@
+/* Act I of the home page: the natural cinema stage (components/cinema). Layers, back to front:
+   background (image, then canvas), veil, title and tagline, eagle, hint and credit. */
+
+.cin-section {
+  position: relative;
+  height: 400vh;
+  height: 400svh;
+  background: #000;
+}
+
+.cin-section[data-static="true"] {
+  height: 100vh;
+  height: 100svh;
+}
+
+.cin-stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+  background: #000;
+  color: #f6eee0;
+  isolation: isolate;
+}
+
+.cin-section[data-static="true"] .cin-stage {
+  position: relative;
+}
+
+.cin-bg-img,
+.cin-bg-canvas,
+.cin-eagle-img,
+.cin-eagle-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.cin-bg-img {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.cin-bg-canvas {
+  z-index: 1;
+}
+
+.cin-stage[data-ready="true"] .cin-bg-img {
+  display: none;
+}
+
+.cin-stage[data-mode="img"] .cin-bg-img {
+  display: block;
+}
+
+.cin-stage[data-mode="img"] .cin-bg-canvas {
+  display: none;
+}
+
+.cin-veil {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgb(0 0 0 / 0.46) 0%, rgb(0 0 0 / 0.1) 36%, rgb(0 0 0 / 0) 60%, rgb(0 0 0 / 0.55) 100%);
+}
+
+.cin-copy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  z-index: 2;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 var(--ac-gutter);
+  pointer-events: none;
+}
+
+.cin-title {
+  margin: 0;
+  font-family: "Didot", "Bodoni 72", "Bodoni MT", "Hoefler Text", "Playfair Display", "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: clamp(64px, min(24vw, 26vh), 360px);
+  line-height: 0.9;
+  letter-spacing: 0.42em;
+  white-space: nowrap;
+  color: #f6eee0;
+  text-shadow: 0 0 60px rgb(255 190 110 / 0.28), 0 2px 18px rgb(0 0 0 / 0.5), 0 0 3px rgb(0 0 0 / 0.25);
+  font-variant-ligatures: none;
+}
+
+.cin-tagline {
+  margin: clamp(10px, 2vh, 22px) 0 0;
+  font-family: "Didot", "Bodoni 72", "Bodoni MT", "Hoefler Text", "Playfair Display", "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: clamp(18px, 2.2vw, 30px);
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: #eadcc2;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 0.55), 0 0 22px rgb(0 0 0 / 0.45);
+}
+
+html:lang(ar) .cin-tagline,
+html:lang(ja) .cin-tagline,
+html:lang(zh) .cin-tagline,
+html:lang(ko) .cin-tagline {
+  font-style: normal;
+  letter-spacing: 0.04em;
+}
+
+.cin-eagle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.cin-eagle-img {
+  display: none;
+  object-fit: contain;
+}
+
+.cin-stage[data-mode="img"] .cin-eagle-img {
+  display: block;
+}
+
+.cin-stage[data-mode="img"] .cin-eagle-canvas {
+  display: none;
+}
+
+.cin-hint {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 26px;
+  z-index: 4;
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: rgb(255 255 255 / 0.7);
+  pointer-events: none;
+}
+
+.cin-section[data-static="true"] .cin-hint {
+  display: none;
+}
+
+.cin-credit {
+  position: absolute;
+  left: var(--ac-gutter);
+  bottom: 14px;
+  z-index: 4;
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 0.01em;
+  color: rgb(255 255 255 / 0.55);
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  /* The eagle takes the right half: the tagline sits under the left letters. */
+  .cin-tagline {
+    transform: translateX(-24vw);
+  }
+}
+
+@media (max-width: 767px) {
+  .cin-copy {
+    top: 36%;
+  }
+  .cin-title {
+    font-size: clamp(56px, 22vw, 120px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cin-tagline {
+    transition: none;
+  }
+}

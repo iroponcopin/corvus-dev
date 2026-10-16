@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Header, type ModelLink, type UpdateLink } from "@/components/Header";
 import { Reveal } from "@/components/Reveal";
 import { SmoothScroll } from "@/components/SmoothScroll";
-import { Experience } from "@/engine/Experience";
+import { WorldGate } from "@/engine/WorldGate";
 import { FRESH } from "@/i18n/fresh";
 import { MODELS } from "@/lib/models";
 import { asset, BASE_PATH, isLang, LANG_CODES, pathOf } from "@/lib/site";
@@ -88,7 +88,7 @@ export default async function LangLayout({ children, params }: { children: React
         <a className="ac-skip" href="#main">
           {c.skipLink}
         </a>
-        <Experience dir={d.dir} />
+        <WorldGate dir={d.dir} />
         <SmoothScroll />
         <Reveal />
         <Header
