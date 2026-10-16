@@ -108,7 +108,7 @@ export function NaturalCinemaStage({ title, tagline, credit, hint }: { title: st
     if (!section || !stage || !bgCanvas || !bgImg || !titleEl || !taglineEl || !hintEl || !eagle || !eagleCanvas || !eagleImg) return;
 
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const small = window.innerWidth < 768 || window.devicePixelRatio * window.innerWidth < 1600;
+    const small = window.innerWidth < 768 || window.devicePixelRatio * window.innerWidth <= 1100;
     const quality = new QualityManager();
     if (reduced) section.dataset.static = "true";
 
