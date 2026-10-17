@@ -1,40 +1,23 @@
 import Link from "next/link";
-import { Formation } from "@/engine/store";
 import { FRESH, fill } from "@/i18n/fresh";
 import { asset, pathOf, recipeIcon } from "@/lib/site";
 import { langData, wiki } from "@/lib/wiki";
 import type { Lang, Release } from "@/lib/wiki-types";
-import { BRAND_COLOR, ChronoDriver } from "../ChronoDriver";
+import { BRAND_COLOR, BRAND_ICON } from "@/lib/brands";
 import { NaturalCinemaStage } from "../cinema/NaturalCinemaStage";
+import { AltitudeStream, type StreamRelease } from "./AltitudeStream";
 import { CopyButton } from "../CopyButton";
 import { FeedTelemetry } from "../discord/FeedTelemetry";
-import { RealmAnchor } from "../RealmAnchor";
 import { CodexPreview, type FeaturedRecipe } from "./CodexPreview";
 import { ShowroomPreview } from "./ShowroomPreview";
 import { StorePreview } from "./StorePreview";
 
-const BLUE: readonly [number, number, number] = [0.32, 0.6, 1];
-const GOLD: readonly [number, number, number] = [1, 0.74, 0.36];
-const SPARXIE: readonly [number, number, number] = [0.98, 0.42, 0.5];
-const CYAN: readonly [number, number, number] = [0.3, 0.75, 1];
-const BLURPLE: readonly [number, number, number] = [0.36, 0.4, 0.96];
 
 /**
  * The codex realm's three recipes: an OUKA ammunition, the OUKA alloy ingot, the crucible's fusion. ASTRAEA's
  * recipes stay in the sheet as history, but ASTRAEA's service has ended (2026-10-16), so it is not featured here.
  */
 const FEATURED = ["ouka:ammo_energy", "ouka:ouka_alloy_ingot", "cherry:astral_catalyst"] as const;
-/** Brand icons of the changelog's brands (the Store's own mark for Corvus Store). */
-const BRAND_ICON: Record<string, string> = {
-  ouka: "icons/ouka.png",
-  cherry: "icons/cherry.png",
-  aureum: "icons/aureum.png",
-  astraea: "icons/astraea.png",
-  tsubomi: "icons/tsubomi.png",
-  halia: "icons/halia.png",
-  alpha: "icons/alpha.png",
-  corvus: "icons/store.png",
-};
 
 /**
  * The home page: Act I (the natural cinema stage), the brands, then the five realms the particles travel
@@ -92,17 +75,27 @@ export function HomePage({ lang }: { lang: Lang }) {
     .map((b) => ({ brand: b, release: b.releases[0] }))
     .filter((x): x is { brand: (typeof c.brands)[number]; release: Release } => x.release !== undefined)
     .sort((a, b) => (b.release.date ?? "9999").localeCompare(a.release.date ?? "9999"));
-  const beacons = [
-    ...latest
-      .slice()
-      .reverse()
-      .map((x, i) => ({ u: 0.05 + i * 0.045, color: BRAND_COLOR[x.brand.id] ?? "#2997ff" })),
-  ];
-  const lastBeacon = beacons[beacons.length - 1]?.u ?? 0.3;
 
   // Nexus: a taste of the command list.
   const k = d.discord;
   const commands = k.groups.flatMap((g) => g.subcommands.filter((s) => !s.admin).map((s) => ({ cmd: `/${g.name} ${s.name}`, gloss: s.gloss }))).slice(0, 5);
+
+  // The altitude stream: the latest releases of every model but Alpha (archived), newest first.
+  const altitude: StreamRelease[] = c.brands
+    .filter((b) => b.id !== "alpha")
+    .flatMap((b) => b.releases.map((r) => ({ r, b })))
+    .sort((x, y) => (y.r.date ?? "").localeCompare(x.r.date ?? ""))
+    .slice(0, 10)
+    .map(({ r, b }) => ({
+      key: r.id,
+      href: `${pathOf(lang, "changelog/")}?model=${b.id}`,
+      icon: BRAND_ICON[b.id] ?? "icons/store.png",
+      brand: b.name,
+      version: r.version,
+      date: r.date,
+      title: r.title,
+      color: BRAND_COLOR[b.id] ?? "#2997ff",
+    }));
 
   const explore = [
     { href: "launcher/", title: d.launcher.title, body: d.launcher.description },
@@ -122,6 +115,13 @@ export function HomePage({ lang }: { lang: Lang }) {
         tagline2={f.cinema.tagline2}
         credit={f.cinema.credit}
         hint={f.heroScroll}
+      />
+
+      <AltitudeStream
+        title={f.altitude.title}
+        lede={f.altitude.lede}
+        openLabel={f.chrono.open}
+        releases={altitude}
       />
 
       <section className="ac-wrap ac-brands" aria-labelledby="ac-brands-title">
@@ -152,10 +152,9 @@ export function HomePage({ lang }: { lang: Lang }) {
         </ul>
       </section>
 
-      <RealmAnchor
+      <section
         className="ac-realm"
         aria-labelledby="realm-codex-h"
-        config={{ formation: Formation.Codex, x: 0.7, xNarrow: 0.5, y: 0.5, scale: 0.22, scaleNarrow: 0.2, tint: GOLD }}
       >
         <div className="ac-wrap ac-realm-grid">
           <div className="ac-realm-copy">
@@ -175,12 +174,11 @@ export function HomePage({ lang }: { lang: Lang }) {
             labels={{ synthesise: f.synth.synthesise, featured: f.synth.featured, result: f.synth.result, fusing: f.synth.fusing, drag: rl.preview.drag, title: rl.preview.title }}
           />
         </div>
-      </RealmAnchor>
+      </section>
 
-      <RealmAnchor
+      <section
         className="ac-realm ac-realm--flip"
         aria-labelledby="realm-showroom-h"
-        config={{ formation: Formation.Showroom, x: 0.3, xNarrow: 0.5, y: 0.5, scale: 0.19, scaleNarrow: 0.18, tint: SPARXIE }}
       >
         <div className="ac-wrap ac-realm-grid">
           <div className="ac-realm-copy">
@@ -210,12 +208,11 @@ export function HomePage({ lang }: { lang: Lang }) {
             }}
           />
         </div>
-      </RealmAnchor>
+      </section>
 
-      <RealmAnchor
+      <section
         className="ac-realm"
         aria-labelledby="realm-store-h"
-        config={{ formation: Formation.Store, x: 0.7, xNarrow: 0.5, y: 0.55, scale: 0.2, scaleNarrow: 0.2, tint: BLUE }}
       >
         <div className="ac-wrap ac-realm-grid">
           <div className="ac-realm-copy">
@@ -245,15 +242,13 @@ export function HomePage({ lang }: { lang: Lang }) {
             />
           ) : null}
         </div>
-      </RealmAnchor>
+      </section>
 
-      <RealmAnchor
+      <section
         id="realm-chrono"
         className="ac-realm ac-realm--time"
         aria-labelledby="realm-chrono-h"
-        config={{ formation: Formation.Chronology, x: 0.5, scale: 1, world: true, tint: CYAN }}
       >
-        <ChronoDriver nodes={beacons} targetId="realm-chrono" from={0.02} to={lastBeacon} weight={1} scoped />
         <div className="ac-wrap ac-time-head">
           <p className="ac-eyebrow ac-reveal">{f.realms.chronology.eyebrow}</p>
           <h2 id="realm-chrono-h" className="ac-h2 ac-reveal">
@@ -304,12 +299,11 @@ export function HomePage({ lang }: { lang: Lang }) {
             {f.realms.chronology.ctaNext}
           </Link>
         </div>
-      </RealmAnchor>
+      </section>
 
-      <RealmAnchor
+      <section
         className="ac-realm ac-realm--flip"
         aria-labelledby="realm-nexus-h"
-        config={{ formation: Formation.Nexus, x: 0.3, xNarrow: 0.5, y: 0.5, scale: 0.22, scaleNarrow: 0.2, tint: BLURPLE }}
       >
         <div className="ac-wrap ac-realm-grid">
           <div className="ac-realm-copy">
@@ -365,7 +359,7 @@ export function HomePage({ lang }: { lang: Lang }) {
             </div>
           </div>
         </div>
-      </RealmAnchor>
+      </section>
 
       <section className="ac-section ac-explore" aria-labelledby="ac-explore-h">
         <div className="ac-wrap">

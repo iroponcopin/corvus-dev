@@ -1,13 +1,10 @@
-import { Formation } from "@/engine/store";
 import { FRESH } from "@/i18n/fresh";
 import { pathOf } from "@/lib/site";
 import { langData } from "@/lib/wiki";
 import type { Lang } from "@/lib/wiki-types";
-import { BRAND_COLOR } from "../ChronoDriver";
-import { RealmAnchor } from "../RealmAnchor";
+import { BRAND_COLOR } from "@/lib/brands";
 import { type ReelTeaser, TeaserReel } from "../teasers/TeaserReel";
 
-const PINK: readonly [number, number, number] = [1, 0.55, 0.72];
 
 /** How much reading a character is worth: the scripts that pack a word into one or two characters read slower per character. */
 const DENSITY: Partial<Record<Lang, number>> = { ja: 2.2, zh: 2.2, ko: 1.5 };
@@ -45,12 +42,12 @@ export function TeasersPage({ lang }: { lang: Lang }) {
     };
   });
   return (
-    <RealmAnchor id="ac-teasers" config={{ formation: Formation.Bloom, x: 0.5, y: 0.42, scale: 0.36, scaleNarrow: 0.3, tint: PINK }}>
+    <section id="ac-teasers">
       <div className="ac-wrap ac-page-head">
         <h1 className="ac-h1">{t.title}</h1>
         <p className="ac-lead">{t.lede}</p>
       </div>
       <TeaserReel teasers={teasers} labels={t} density={DENSITY[lang] ?? 1} arrow={d.dir === "rtl" ? "←" : "→"} />
-    </RealmAnchor>
+    </section>
   );
 }

@@ -5,6 +5,7 @@ import { DebugHud } from "@/components/DebugHud";
 import { Footer } from "@/components/Footer";
 import { Header, type ModelLink, type UpdateLink } from "@/components/Header";
 import { Reveal } from "@/components/Reveal";
+import { SiteBackdrop } from "@/components/SiteBackdrop";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { WorldGate } from "@/engine/WorldGate";
 import { FRESH } from "@/i18n/fresh";
@@ -88,6 +89,7 @@ export default async function LangLayout({ children, params }: { children: React
         <a className="ac-skip" href="#main">
           {c.skipLink}
         </a>
+        <SiteBackdrop />
         <WorldGate dir={d.dir} />
         <SmoothScroll />
         <Reveal />

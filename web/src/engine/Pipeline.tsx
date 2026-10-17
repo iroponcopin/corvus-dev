@@ -1,12 +1,12 @@
 "use client";
 
 import { useFrame, useThree } from "@react-three/fiber";
-import { useEffect, useMemo } from "react";
-import type { PerspectiveCamera, WebGLRenderer } from "three";
+import { useEffect } from "react";
+import type { WebGLRenderer } from "three";
 import { damp } from "./math";
 import { engine } from "./store";
+import { updateTracked } from "./tracked";
 import { views } from "./views";
-import { setWorld, World } from "./world/World";
 
 /** Adaptive resolution: step the DPR down when frames run long, back up when there is room. */
 const quality = {
@@ -85,15 +85,12 @@ function renderViews(gl: WebGLRenderer, height: number): void {
 }
 
 /**
- * Takes over rendering (priority 1): advance the world, draw it full-screen, then draw every
- * visible viewport inside its element. Counts draw calls across all passes of the frame.
+ * Takes over rendering (priority 1): clear the canvas to transparent, then draw every visible
+ * viewport inside its element (the 3D stages of the realms). Counts draw calls across the frame.
  */
 export function Pipeline(): null {
   const gl = useThree((s) => s.gl);
-  const scene = useThree((s) => s.scene);
-  const camera = useThree((s) => s.camera) as PerspectiveCamera;
   const setDpr = useThree((s) => s.setDpr);
-  const world = useMemo(() => new World(gl), [gl]);
 
   useEffect(() => {
     gl.autoClear = false;
@@ -101,21 +98,7 @@ export function Pipeline(): null {
     quality.maxDpr = Math.min(window.devicePixelRatio || 1, 2);
     engine.dpr = quality.maxDpr;
     setDpr(engine.dpr);
-    scene.add(world.root);
-    setWorld(world);
-    const canvas = gl.domElement;
-    const lost = (e: Event): void => e.preventDefault();
-    const restored = (): void => world.starfield.reseed();
-    canvas.addEventListener("webglcontextlost", lost);
-    canvas.addEventListener("webglcontextrestored", restored);
-    return () => {
-      canvas.removeEventListener("webglcontextlost", lost);
-      canvas.removeEventListener("webglcontextrestored", restored);
-      setWorld(null);
-      scene.remove(world.root);
-      world.dispose();
-    };
-  }, [gl, scene, world, setDpr]);
+  }, [gl, setDpr]);
 
   useFrame((state) => {
     const w = state.size.width;
@@ -124,13 +107,13 @@ export function Pipeline(): null {
     engine.height = h;
     adapt(engine.dt, setDpr);
 
+    // Measure the stages on screen (their boxes, and whether they are visible) before drawing them.
+    updateTracked(engine.scrollY, w, h);
     gl.info.reset();
-    world.frame(camera, w, h);
-
     gl.setRenderTarget(null);
     gl.setViewport(0, 0, w, h);
+    gl.setClearColor(0x000000, 0);
     gl.clear(true, true, false);
-    gl.render(scene, camera);
     renderViews(gl, h);
 
     engine.drawCalls = gl.info.render.calls;

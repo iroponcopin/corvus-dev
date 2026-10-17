@@ -169,7 +169,7 @@ void main() {
     skin = t.rgb * light;
   }
 
-  // The reveal sweeps from the feet up, through a band of starlight.
+  // The reveal sweeps from the feet up, through a band of light.
   float edge = vWorld.y + 1.05 - uReveal * 2.4 + snoise(vWorld * 9.0) * 0.08;
   float shown = 1.0 - smoothstep(-0.03, 0.03, edge);
   float band = exp(-edge * edge * 900.0) * step(0.001, uReveal) * step(uReveal, 0.999);

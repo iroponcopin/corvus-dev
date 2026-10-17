@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import type { Texture } from "three";
 import { chime } from "@/engine/audio";
-import { burst } from "@/engine/store";
 import { Stage3D } from "@/engine/View";
 import { openSealed, sha256Hex, WrongPin } from "@/realms/acsk";
 import { type Pose, type Rig, SkinModel } from "@/realms/SkinModel";
@@ -111,7 +110,6 @@ export function Showroom({
       setHref(URL.createObjectURL(new Blob([plain.slice().buffer], { type: "image/png" })));
       setStatus("open");
       chime("unlock");
-      burst(0, 0, 0, 1.2);
     } catch (err) {
       setStatus(err instanceof WrongPin ? "wrong" : "error");
       chime("error");
@@ -281,7 +279,6 @@ export function Showroom({
               onClick={() => {
                 setSaved(true);
                 chime("unlock");
-                burst(0, 0, 0, 0.8);
               }}
             >
               <Icon name="download" size={16} />

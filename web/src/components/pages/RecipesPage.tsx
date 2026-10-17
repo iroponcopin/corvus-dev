@@ -1,12 +1,9 @@
-import { Formation } from "@/engine/store";
 import { FRESH } from "@/i18n/fresh";
 import { recipeIcon } from "@/lib/site";
 import { langData, wiki } from "@/lib/wiki";
 import type { Lang } from "@/lib/wiki-types";
-import { RealmAnchor } from "../RealmAnchor";
 import { Codex, type CodexData } from "../recipes/Codex";
 
-const GOLD: readonly [number, number, number] = [1, 0.74, 0.36];
 
 export function RecipesPage({ lang }: { lang: Lang }) {
   const d = langData(lang);
@@ -30,7 +27,7 @@ export function RecipesPage({ lang }: { lang: Lang }) {
   };
   const f = FRESH[lang];
   return (
-    <RealmAnchor config={{ formation: Formation.Codex, x: 0.8, xNarrow: 0.5, y: 0.45, scale: 0.34, scaleNarrow: 0.3, tint: GOLD }}>
+    <section>
       <div className="ac-wrap ac-page-head">
         <h1 className="ac-h1">{r.title}</h1>
         <p className="ac-lead">{r.intro}</p>
@@ -61,6 +58,6 @@ export function RecipesPage({ lang }: { lang: Lang }) {
           </ul>
         </noscript>
       </div>
-    </RealmAnchor>
+    </section>
   );
 }

@@ -1,14 +1,11 @@
-import { Formation } from "@/engine/store";
 import { FRESH } from "@/i18n/fresh";
 import { langData, wiki } from "@/lib/wiki";
 import type { Lang } from "@/lib/wiki-types";
 import { BrandStage } from "../BrandStage";
 import { CommandBrowser } from "../discord/CommandBrowser";
 import { FeedTelemetry } from "../discord/FeedTelemetry";
-import { RealmAnchor } from "../RealmAnchor";
 import { TrustedHtml } from "../Rich";
 
-const BLURPLE: readonly [number, number, number] = [0.36, 0.4, 0.96];
 
 export function DiscordPage({ lang }: { lang: Lang }) {
   const d = langData(lang);
@@ -24,7 +21,7 @@ export function DiscordPage({ lang }: { lang: Lang }) {
   ];
   return (
     <>
-      <RealmAnchor className="ac-brand-hero" config={{ formation: Formation.Nexus, x: 0.72, xNarrow: 0.5, scale: 0.3, scaleNarrow: 0.26, tint: BLURPLE }}>
+      <section className="ac-brand-hero">
         <div className="ac-wrap ac-brand-grid">
           <div className="ac-brand-copy">
             <p className="ac-eyebrow ac-reveal">{k.eyebrow}</p>
@@ -43,7 +40,7 @@ export function DiscordPage({ lang }: { lang: Lang }) {
           </div>
           <BrandStage icon="icons/store.png" label="" />
         </div>
-      </RealmAnchor>
+      </section>
 
       <section className="ac-wrap ac-dc-section" aria-labelledby="dc-status">
         <h2 id="dc-status" className="ac-h3">

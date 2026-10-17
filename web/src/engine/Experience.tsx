@@ -57,7 +57,7 @@ export function Experience({ dir }: { dir: "ltr" | "rtl" }) {
   }, []);
 
   const created = useCallback((state: RootState): void => {
-    state.gl.setClearColor(0x000000, 1);
+    state.gl.setClearColor(0x000000, 0);
     root.current = state;
     attachRoot(state);
   }, []);
@@ -72,7 +72,7 @@ export function Experience({ dir }: { dir: "ltr" | "rtl" }) {
         flat
         gl={{
           antialias: true,
-          alpha: false,
+          alpha: true,
           depth: true,
           stencil: false,
           powerPreference: "high-performance",

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { chime } from "@/engine/audio";
-import { burst, engine } from "@/engine/store";
+import { engine } from "@/engine/store";
 import { Stage3D } from "@/engine/View";
 import { type SynthIngredient, Synthesizer, type SynthItem } from "@/realms/Synthesizer";
 import { Icon } from "../Icon";
@@ -45,7 +45,6 @@ export function CodexPreview({
   const play = (i: number): void => {
     setIndex(i);
     setPlayKey((k) => k + 1);
-    burst(0, 0, 0, 0.5);
     chime("tick");
   };
 

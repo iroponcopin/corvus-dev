@@ -8,7 +8,7 @@ import { Icon } from "./Icon";
 /**
  * OUKA's theme, "Silver and Petals": never autoplayed (preload none, loop), it plays on the
  * first press and pauses on the second; a refused play() resets the button. While it plays the
- * page's own drone steps back and the starfield pulses with the music.
+ * page's own drone steps back.
  */
 export function ThemePlayer({ track, play, pause }: { track: string; play: string; pause: string }) {
   const audio = useRef<HTMLAudioElement>(null);

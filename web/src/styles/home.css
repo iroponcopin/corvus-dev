@@ -1,137 +1,5 @@
-/* Home: the Event Horizon and the realms. */
+/* Home: the realm sections and the chronology (the cinema, Act I and II, lives in cinema.css). */
 
-.ac-hero {
-  position: relative;
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: clamp(56px, 9vh, 120px);
-  overflow: clip;
-}
-
-.ac-hero-stage {
-  position: absolute;
-  inset: 0 0 32% 0;
-}
-
-.ac-hero-hit {
-  position: absolute;
-  inset: 0;
-}
-
-.ac-hero-poster {
-  position: absolute;
-  inset: 12% 10% 0;
-  display: grid;
-  grid-template-columns: repeat(3, 96px);
-  place-content: center;
-  gap: 28px;
-}
-
-.ac-hero-poster img {
-  border-radius: 22.37%;
-  box-shadow: 0 20px 60px -20px rgb(0 113 227 / 0.5);
-}
-
-.ac-hero-copy {
-  position: relative;
-  text-align: center;
-  pointer-events: none;
-}
-
-.ac-hero-copy a,
-.ac-hero-copy button {
-  pointer-events: auto;
-}
-
-.ac-hero-copy h1 {
-  margin: 0;
-  font-size: clamp(42px, 6.6vw, 92px);
-  text-shadow: 0 0 60px rgb(0 113 227 / 0.35);
-}
-
-.ac-hero-line1 {
-  color: #fff;
-}
-
-.ac-hero-line2 {
-  color: rgb(245 245 247 / 0.62);
-  font-weight: 600;
-}
-
-.ac-hero-sub {
-  max-width: 34em;
-  margin: 22px auto 0;
-}
-
-.ac-hero-cta {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 30px;
-  animation: ac-fade-up 1.1s 1.1s var(--ease-apple) both;
-}
-
-.ac-hero-sub {
-  animation: ac-fade-up 1.1s 0.9s var(--ease-apple) both;
-}
-
-.ac-hero-hint {
-  position: absolute;
-  /* Just above the astrolabe's outer ring. On wide screens its centre sits at 34% of the hero and
-     its radius is 21% of the height (HomePage's anchor, World.fitScale), so the ring's top is at
-     13%; a fixed offset under the header ran into the ring on screens under ~850px tall. */
-  top: max(calc(var(--header-h) + 6px), calc(13svh - 1.5em - 12px));
-  inset-inline: 0;
-  margin: 0;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 1s 1.4s;
-}
-
-.ac-hero-hint[data-ready="true"] {
-  opacity: 0.85;
-}
-
-@media (max-height: 600px) {
-  /* No room between the header and the ring; the marks still open on a click. */
-  .ac-hero-hint {
-    display: none;
-  }
-}
-
-.ac-hero-scroll {
-  position: absolute;
-  bottom: 22px;
-  inset-inline: 0;
-  margin: 0;
-  text-align: center;
-  letter-spacing: 0.08em;
-  animation: ac-breathe 3.2s ease-in-out infinite;
-}
-
-@keyframes ac-fade-up {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 18px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes ac-breathe {
-  0%,
-  100% {
-    opacity: 0.35;
-  }
-  50% {
-    opacity: 0.9;
-  }
-}
 
 /* The brands */
 .ac-brands {
@@ -214,16 +82,14 @@
   color: var(--color-amber);
 }
 
-/* Realm sections: each holds its copy and its preview still while its formation is read. */
+/* Realm sections: copy and preview side by side. */
 .ac-realm {
   position: relative;
-  min-height: 150vh;
-  padding-block: 18vh 14vh;
+  padding-block: 96px 72px;
 }
 
 .ac-realm-grid {
-  position: sticky;
-  top: calc(var(--header-h) + 6vh);
+  position: relative;
   display: grid;
   gap: 40px;
   align-items: center;
@@ -241,18 +107,6 @@
 
   .ac-realm--flip .ac-realm-copy {
     order: 2;
-  }
-}
-
-@media (max-height: 640px), (max-width: 899px) {
-  .ac-realm {
-    min-height: 0;
-    padding-block: 96px 72px;
-  }
-
-  .ac-realm-grid {
-    position: relative;
-    top: 0;
   }
 }
 

@@ -1,23 +1,12 @@
 import Link from "next/link";
-import { Formation } from "@/engine/store";
 import { pathOf } from "@/lib/site";
 import { langData } from "@/lib/wiki";
 import type { ControlToken, Lang, Requirement } from "@/lib/wiki-types";
 import { BrandStage } from "../BrandStage";
 import { CopyButton } from "../CopyButton";
-import { RealmAnchor } from "../RealmAnchor";
 import { ThemePlayer } from "../ThemePlayer";
 import { AstraeaEnded } from "./AstraeaEnded";
 
-const PINK: readonly [number, number, number] = [1, 0.58, 0.74];
-const ROSE: readonly [number, number, number] = [1, 0.42, 0.55];
-const GOLD: readonly [number, number, number] = [1, 0.72, 0.3];
-const ASH: readonly [number, number, number] = [0.7, 0.55, 0.45];
-const VIOLET: readonly [number, number, number] = [0.65, 0.55, 1];
-const SPRING: readonly [number, number, number] = [0.7, 1, 0.72];
-const NIGHT: readonly [number, number, number] = [0.45, 0.55, 1];
-/** Halia: the gold of its eagle (owner, 2026-10-11: the accent colour is the bald eagle). */
-const EAGLE_GOLD: readonly [number, number, number] = [1, 0.84, 0.5];
 
 function ReleaseCard({
   lang,
@@ -73,7 +62,7 @@ export function OukaPage({ lang }: { lang: Lang }) {
   const c = d.chrome;
   return (
     <>
-      <RealmAnchor className="ac-brand-hero" config={{ formation: Formation.Bloom, x: 0.72, xNarrow: 0.5, scale: 0.34, scaleNarrow: 0.28, tint: PINK }}>
+      <section className="ac-brand-hero">
         <div className="ac-wrap ac-brand-grid">
           <div className="ac-brand-copy">
             <p className="ac-eyebrow ac-reveal">{b.eyebrow}</p>
@@ -99,7 +88,7 @@ export function OukaPage({ lang }: { lang: Lang }) {
           </div>
           <BrandStage icon="icons/ouka.png" label={b.title} />
         </div>
-      </RealmAnchor>
+      </section>
       <ReleaseCard lang={lang} requirements={b.release.requirements} file={b.release.file} />
     </>
   );
@@ -111,7 +100,7 @@ export function CherryPage({ lang }: { lang: Lang }) {
   const c = d.chrome;
   return (
     <>
-      <RealmAnchor className="ac-brand-hero" config={{ formation: Formation.Horizon, x: 0.72, xNarrow: 0.5, scale: 0.3, scaleNarrow: 0.26, tint: ROSE }}>
+      <section className="ac-brand-hero">
         <div className="ac-wrap ac-brand-grid">
           <div className="ac-brand-copy">
             <p className="ac-eyebrow ac-reveal">{b.eyebrow}</p>
@@ -137,7 +126,7 @@ export function CherryPage({ lang }: { lang: Lang }) {
           </div>
           <BrandStage icon="icons/cherry.png" label={b.title} />
         </div>
-      </RealmAnchor>
+      </section>
       <ReleaseCard lang={lang} requirements={b.release.requirements} file={b.release.file} />
     </>
   );
@@ -149,7 +138,7 @@ export function AureumPage({ lang }: { lang: Lang }) {
   const c = d.chrome;
   return (
     <>
-      <RealmAnchor className="ac-brand-hero" config={{ formation: Formation.Aurum, x: 0.72, xNarrow: 0.5, scale: 0.32, scaleNarrow: 0.26, tint: GOLD }}>
+      <section className="ac-brand-hero">
         <div className="ac-wrap ac-brand-grid">
           <div className="ac-brand-copy">
             <p className="ac-eyebrow ac-reveal">
@@ -170,7 +159,7 @@ export function AureumPage({ lang }: { lang: Lang }) {
           </div>
           <BrandStage icon="icons/aureum.png" label={a.title} />
         </div>
-      </RealmAnchor>
+      </section>
       <div className="ac-wrap ac-aureum">
         <h2 className="ac-h3 ac-reveal">{a.statsHeading}</h2>
         <div className="ac-stats">
@@ -218,13 +207,6 @@ export function AureumPage({ lang }: { lang: Lang }) {
 /** The models whose page is built from the store catalogue and the manifest alone. */
 export type CatalogueModel = "astraea" | "tsubomi" | "noctua" | "halia";
 
-const CATALOGUE_STAGE: Record<CatalogueModel, { formation: number; tint: readonly [number, number, number] }> = {
-  astraea: { formation: Formation.Horizon, tint: VIOLET },
-  tsubomi: { formation: Formation.Bloom, tint: SPRING },
-  halia: { formation: Formation.Horizon, tint: EAGLE_GOLD },
-  noctua: { formation: Formation.Nexus, tint: NIGHT },
-};
-
 /** ASTRAEA, Tsubomi and Noctua: the same hero, stage and release card as OUKA and Cherry. */
 export function CatalogueModelPage({ lang, id }: { lang: Lang; id: CatalogueModel }) {
   const d = langData(lang);
@@ -232,7 +214,6 @@ export function CatalogueModelPage({ lang, id }: { lang: Lang; id: CatalogueMode
   if (!p) throw new Error(`${id}: not in the store catalogue`);
   const dl = d.download[id];
   const c = d.chrome;
-  const stage = CATALOGUE_STAGE[id];
   const hasLog = d.changelog.brands.some((b) => b.id === id);
   return (
     <>
@@ -241,7 +222,7 @@ export function CatalogueModelPage({ lang, id }: { lang: Lang; id: CatalogueMode
           <AstraeaEnded lang={lang} />
         </div>
       ) : null}
-      <RealmAnchor className="ac-brand-hero" config={{ formation: stage.formation, x: 0.72, xNarrow: 0.5, scale: 0.32, scaleNarrow: 0.26, tint: stage.tint }}>
+      <section className="ac-brand-hero">
         <div className="ac-wrap ac-brand-grid">
           <div className="ac-brand-copy">
             <p className="ac-eyebrow ac-reveal">{p.badge ?? p.category}</p>
@@ -271,7 +252,7 @@ export function CatalogueModelPage({ lang, id }: { lang: Lang; id: CatalogueMode
           </div>
           <BrandStage icon={`icons/${id}.png`} label={p.name} />
         </div>
-      </RealmAnchor>
+      </section>
       {dl ? <ReleaseCard lang={lang} requirements={dl.requirements} file={dl.file} /> : null}
     </>
   );
@@ -282,7 +263,7 @@ export function AlphaPage({ lang }: { lang: Lang }) {
   const a = d.alpha;
   return (
     <>
-      <RealmAnchor className="ac-brand-hero" config={{ formation: Formation.Ember, x: 0.72, xNarrow: 0.5, scale: 0.36, scaleNarrow: 0.3, tint: ASH }}>
+      <section className="ac-brand-hero">
         <div className="ac-wrap ac-brand-grid">
           <div className="ac-brand-copy">
             <p className="ac-eyebrow ac-ltr ac-reveal">{a.version}</p>
@@ -301,7 +282,7 @@ export function AlphaPage({ lang }: { lang: Lang }) {
           </div>
           <BrandStage icon="icons/alpha.png" label={a.title} dim />
         </div>
-      </RealmAnchor>
+      </section>
       <div className="ac-wrap ac-sections ac-alpha">
         {a.sections.map((s) => (
           <section key={s.heading} className="ac-card ac-section-card ac-reveal">
@@ -362,7 +343,7 @@ export function ControlsPage({ lang }: { lang: Lang }) {
   const d = langData(lang);
   const k = d.brands.controls;
   return (
-    <RealmAnchor className="ac-controls" config={{ formation: Formation.Store, x: 0.5, y: 0.62, scale: 0.42, tint: ROSE }}>
+    <section className="ac-controls">
       <div className="ac-wrap ac-page-head">
         <p className="ac-eyebrow">
           <Link href={pathOf(lang, "cherry/")} lang="en" dir="ltr">
@@ -421,6 +402,6 @@ export function ControlsPage({ lang }: { lang: Lang }) {
           </section>
         ))}
       </div>
-    </RealmAnchor>
+    </section>
   );
 }

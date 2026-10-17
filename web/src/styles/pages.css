@@ -3042,7 +3042,9 @@ html:lang(ar) .ac-st-eyebrow {
 
 .ac-hub {
   position: relative;
-  height: 320vh;
+  display: grid;
+  gap: clamp(28px, 5vh, 48px);
+  padding-block: clamp(56px, 10vh, 112px);
 }
 
 .ac-hub-skip {
@@ -3052,42 +3054,8 @@ html:lang(ar) .ac-st-eyebrow {
   z-index: 3;
 }
 
-.ac-hub-sticky {
-  position: sticky;
-  top: 0;
-  height: 100svh;
-  overflow: clip;
-}
-
-.ac-hub-poster {
-  position: absolute;
-  inset: 0 0 42%;
-  display: grid;
-  place-items: center;
-}
-
-.ac-hub-poster img {
-  width: clamp(110px, 16vw, 160px);
-  height: auto;
-  border-radius: 22.37%;
-  box-shadow: 0 30px 90px -20px rgb(0 113 227 / 0.6);
-}
-
-.ac-hub-hit {
-  position: absolute;
-  inset: 0 0 44% 0;
-}
-
 .ac-hub-hero {
-  position: absolute;
-  top: 60%;
-  inset-inline: 0;
-  padding-inline: var(--ac-gutter);
   text-align: center;
-  transition:
-    opacity 0.6s var(--ease-apple),
-    transform 0.9s var(--ease-apple),
-    visibility 0s;
 }
 
 .ac-hub-hero h1 {
@@ -3100,62 +3068,10 @@ html:lang(ar) .ac-st-eyebrow {
   margin: 14px auto 0;
 }
 
-.ac-hub-scroll {
-  position: absolute;
-  bottom: 22px;
-  inset-inline: 0;
-  margin: 0;
-  letter-spacing: 0.08em;
-  opacity: calc(0.85 - min(0.85, var(--hub-p, 0) * 10));
-  text-align: center;
-  animation: ac-nudge 2.6s ease-in-out infinite;
-}
-
-@keyframes ac-nudge {
-  0%,
-  100% {
-    transform: none;
-  }
-  50% {
-    transform: translate3d(0, 6px, 0);
-  }
-}
-
 .ac-hub-ring {
-  position: absolute;
-  bottom: clamp(18px, 4vh, 44px);
-  inset-inline: 0;
   display: grid;
   justify-items: center;
   gap: clamp(10px, 2vh, 18px);
-  padding-inline: var(--ac-gutter);
-  opacity: 0;
-  visibility: hidden;
-  transform: translate3d(0, 28px, 0);
-  transition:
-    opacity 0.6s var(--ease-apple),
-    transform 0.9s var(--ease-apple),
-    visibility 0s 0.6s;
-}
-
-.ac-hub[data-beat="ring"] .ac-hub-hero {
-  opacity: 0;
-  visibility: hidden;
-  transform: translate3d(0, -28px, 0);
-  transition:
-    opacity 0.6s var(--ease-apple),
-    transform 0.9s var(--ease-apple),
-    visibility 0s 0.6s;
-}
-
-.ac-hub[data-beat="ring"] .ac-hub-ring {
-  opacity: 1;
-  visibility: visible;
-  transform: none;
-  transition:
-    opacity 0.6s var(--ease-apple),
-    transform 0.9s var(--ease-apple),
-    visibility 0s;
 }
 
 .ac-hub-ring-head {
@@ -3326,39 +3242,6 @@ html:lang(ar) .ac-st-eyebrow {
 }
 
 /* Everything at once: reduced motion, or a viewport too short for the beats. */
-.ac-hub[data-beat="all"] {
-  height: auto;
-}
-
-.ac-hub[data-beat="all"] .ac-hub-sticky {
-  position: relative;
-  display: grid;
-  gap: 40px;
-  height: auto;
-  padding: 56svh 0 56px;
-  overflow: visible;
-}
-
-.ac-hub[data-beat="all"] .ac-hub-hero,
-.ac-hub[data-beat="all"] .ac-hub-ring {
-  position: relative;
-  top: auto;
-  bottom: auto;
-  opacity: 1;
-  visibility: visible;
-  transform: none;
-  transition: none;
-}
-
-.ac-hub[data-beat="all"] .ac-hub-scroll {
-  display: none;
-}
-
-.ac-hub[data-beat="all"] .ac-hub-hit {
-  inset: 0 0 auto;
-  height: 56svh;
-}
-
 .ac-deck-section {
   overflow-x: clip;
 }

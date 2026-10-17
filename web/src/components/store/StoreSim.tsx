@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { chime } from "@/engine/audio";
-import { burst } from "@/engine/store";
 import { asset } from "@/lib/site";
 import type { Product, StoreText } from "@/lib/wiki-types";
 import { Icon, type IconName } from "../Icon";
@@ -765,7 +764,6 @@ export function StoreSim({ products, labels, hrefs }: { products: Product[]; lab
           onClick={() => {
             setPlayerFront((v) => !v);
             setAnnounce(playerFront ? labels.fresh.perchShown : labels.fresh.perchHidden);
-            if (playerFront) burst(0, 0, 0, 0.3);
           }}
         >
           {playerFront ? labels.fresh.perchLeave : labels.fresh.perchFront}

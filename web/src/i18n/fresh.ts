@@ -10,11 +10,11 @@ import type { Lang } from "@/lib/wiki-types";
  * `{0}`, `{1}` are positional placeholders.
  */
 export interface Fresh {
-  heroLine1: string;
-  heroLine2: string;
   heroScroll: string;
   /** Act I of the home page: the tagline under the title, and the footage credit (the same in every language). */
   cinema: { tagline: string; credit: string; tagline2: string };
+  /** The altitude stream on the home page: its heading and lede. */
+  altitude: { title: string; lede: string };
   sound: string;
   soundOn: string;
   soundOff: string;
@@ -153,10 +153,9 @@ export interface Fresh {
 
 export const FRESH: Record<Lang, Fresh> = {
   ja: {
-    heroLine1: "Corvus.",
-    heroLine2: "次元の限界を超えて。",
     heroScroll: "スクロールして探索",
     cinema: { tagline: "「空の頂点へ。」", credit: "Footage: nrhawkes, whateverett-takes — Pexels", tagline2: "「深い森の番人。」" },
+    altitude: { title: "気流 — 最新のリリース", lede: "すべてのモデルの最新リリースを、新しい順に。" },
     sound: "サウンド",
     soundOn: "サウンドをオンにする",
     soundOff: "サウンドをオフにする",
@@ -182,7 +181,7 @@ export const FRESH: Record<Lang, Fresh> = {
       chronology: {
         eyebrow: "クロノロジー",
         title: "リリースからリリースへ、時を進む。",
-        lede: "スクロールすると、カメラが時間の軌道を進みます。届いたもの、そして次に来るもの。",
+        lede: "スクロールすると、道が時間の中を伸びていきます。届いたもの、そして次に来るもの。",
         cta: "更新履歴を見る",
         ctaNext: "映像を見る",
       },
@@ -306,10 +305,9 @@ export const FRESH: Record<Lang, Fresh> = {
     agent: { title: "Corvus Agent", body: "自分で運用している Minecraft サーバーの Mod を、Corvus Store と同じ状態に保つプログラムです。ダウンロードを検証してから、サーバーを停止・入れ替え・起動し、起動しなければ元に戻します。", note: "Java 25 · 導入ガイドと設定例を同梱" },
   },
   en: {
-    heroLine1: "Corvus.",
-    heroLine2: "Beyond Dimensional Limits.",
     heroScroll: "Scroll to explore",
     cinema: { tagline: "The apex of the sky.", credit: "Footage: nrhawkes, whateverett-takes — Pexels", tagline2: "Keeper of the deep forest." },
+    altitude: { title: "Altitude stream — latest releases", lede: "The newest releases across every model, newest first." },
     sound: "Sound",
     soundOn: "Turn sound on",
     soundOff: "Turn sound off",
@@ -335,7 +333,7 @@ export const FRESH: Record<Lang, Fresh> = {
       chronology: {
         eyebrow: "Chronology",
         title: "Through time, release by release.",
-        lede: "Scroll, and the camera travels the orbit of time: what has shipped, and what comes next.",
+        lede: "Scroll, and the path winds through time: what has shipped, and what comes next.",
         cta: "See the changelog",
         ctaNext: "Watch the films",
       },
@@ -459,10 +457,9 @@ export const FRESH: Record<Lang, Fresh> = {
     agent: { title: "Corvus Agent", body: "A program for the Minecraft server you host yourself: it keeps the server's mods in step with Corvus Store. It checks each download, stops the server, swaps the files, starts it again, and puts the old files back if it does not come up.", note: "Java 25 · setup guide and example config inside" },
   },
   es: {
-    heroLine1: "Corvus.",
-    heroLine2: "Más allá de los límites dimensionales.",
     heroScroll: "Desplázate para explorar",
     cinema: { tagline: "El ápice del cielo.", credit: "Footage: nrhawkes, whateverett-takes — Pexels", tagline2: "Guardián del bosque profundo." },
+    altitude: { title: "Corriente de altitud — últimas versiones", lede: "Las versiones más recientes de cada modelo, primero las más nuevas." },
     sound: "Sonido",
     soundOn: "Activar el sonido",
     soundOff: "Desactivar el sonido",
@@ -488,7 +485,7 @@ export const FRESH: Record<Lang, Fresh> = {
       chronology: {
         eyebrow: "Cronología",
         title: "A través del tiempo, versión a versión.",
-        lede: "Desplázate y la cámara recorre la órbita del tiempo: lo que ya se publicó y lo que viene.",
+        lede: "Desplázate y el camino recorre el tiempo: lo que ya se publicó y lo que viene.",
         cta: "Ver el historial",
         ctaNext: "Ver los vídeos",
       },
@@ -612,10 +609,9 @@ export const FRESH: Record<Lang, Fresh> = {
     agent: { title: "Corvus Agent", body: "Un programa para el servidor de Minecraft que alojas tú: mantiene los mods del servidor al día con Corvus Store. Comprueba cada descarga, detiene el servidor, cambia los archivos, lo arranca de nuevo y restaura los anteriores si no arranca.", note: "Java 25 · incluye guía de instalación y configuración de ejemplo" },
   },
   fr: {
-    heroLine1: "Corvus.",
-    heroLine2: "Au-delà des limites dimensionnelles.",
     heroScroll: "Faites défiler pour explorer",
     cinema: { tagline: "Le sommet du ciel.", credit: "Footage: nrhawkes, whateverett-takes — Pexels", tagline2: "Gardien de la forêt profonde." },
+    altitude: { title: "Courant d'altitude — dernières versions", lede: "Les dernières versions de chaque modèle, la plus récente en premier." },
     sound: "Son",
     soundOn: "Activer le son",
     soundOff: "Couper le son",
@@ -641,7 +637,7 @@ export const FRESH: Record<Lang, Fresh> = {
       chronology: {
         eyebrow: "Chronologie",
         title: "À travers le temps, version après version.",
-        lede: "Faites défiler : la caméra parcourt l’orbite du temps, ce qui est sorti et ce qui arrive.",
+        lede: "Faites défiler : le chemin traverse le temps, ce qui est sorti et ce qui arrive.",
         cta: "Voir les mises à jour",
         ctaNext: "Voir les vidéos",
       },
@@ -765,10 +761,9 @@ export const FRESH: Record<Lang, Fresh> = {
     agent: { title: "Corvus Agent", body: "Un programme pour le serveur Minecraft que vous hébergez vous-même : il garde les mods du serveur au même niveau que Corvus Store. Il vérifie chaque téléchargement, arrête le serveur, remplace les fichiers, le relance, et remet les anciens s'il ne redémarre pas.", note: "Java 25 · guide d'installation et exemple de configuration inclus" },
   },
   zh: {
-    heroLine1: "Corvus.",
-    heroLine2: "超越维度的极限。",
     heroScroll: "滚动以探索",
     cinema: { tagline: "通往天空之巅。", credit: "Footage: nrhawkes, whateverett-takes — Pexels", tagline2: "深林的守护者。" },
+    altitude: { title: "气流 — 最新发布", lede: "所有模型的最新版本，按时间倒序。" },
     sound: "声音",
     soundOn: "开启声音",
     soundOff: "关闭声音",
@@ -794,7 +789,7 @@ export const FRESH: Record<Lang, Fresh> = {
       chronology: {
         eyebrow: "时间轴",
         title: "穿越时间，一个版本接一个版本。",
-        lede: "滚动页面，镜头便沿着时间的轨道前行：已经发布的，以及即将到来的。",
+        lede: "滚动页面，道路便穿越时间：已经发布的，以及即将到来的。",
         cta: "查看更新日志",
         ctaNext: "观看影片",
       },
@@ -918,10 +913,9 @@ export const FRESH: Record<Lang, Fresh> = {
     agent: { title: "Corvus Agent", body: "面向自建 Minecraft 服务器的程序:让服务器的模组与 Corvus Store 保持一致。它会校验每个下载,停止服务器,替换文件,重新启动;如果服务器没有启动,就恢复原来的文件。", note: "Java 25 · 内含安装指南和示例配置" },
   },
   ko: {
-    heroLine1: "Corvus.",
-    heroLine2: "차원의 한계를 넘어서.",
     heroScroll: "스크롤하여 탐색",
     cinema: { tagline: "하늘의 정점으로.", credit: "Footage: nrhawkes, whateverett-takes — Pexels", tagline2: "깊은 숲의 수호자." },
+    altitude: { title: "기류 — 최신 릴리스", lede: "모든 모델의 최신 릴리스를 최신순으로." },
     sound: "사운드",
     soundOn: "사운드 켜기",
     soundOff: "사운드 끄기",
@@ -1071,10 +1065,9 @@ export const FRESH: Record<Lang, Fresh> = {
     agent: { title: "Corvus Agent", body: "직접 운영하는 Minecraft 서버를 위한 프로그램입니다. 서버의 모드를 Corvus Store와 같은 상태로 유지합니다. 다운로드를 검증하고, 서버를 멈춘 뒤 파일을 교체하고 다시 시작하며, 서버가 올라오지 않으면 이전 파일로 되돌립니다.", note: "Java 25 · 설치 안내와 예시 설정 포함" },
   },
   "pt-br": {
-    heroLine1: "Corvus.",
-    heroLine2: "Além dos limites dimensionais.",
     heroScroll: "Role para explorar",
     cinema: { tagline: "하늘의 정점으로.", credit: "Footage: nrhawkes, whateverett-takes — Pexels", tagline2: "깊은 숲의 수호자." },
+    altitude: { title: "기류 — 최신 릴리스", lede: "모든 모델의 최신 릴리스를 최신순으로." },
     sound: "Som",
     soundOn: "Ativar o som",
     soundOff: "Desativar o som",
@@ -1100,7 +1093,7 @@ export const FRESH: Record<Lang, Fresh> = {
       chronology: {
         eyebrow: "Cronologia",
         title: "Pelo tempo, versão após versão.",
-        lede: "Role, e a câmera percorre a órbita do tempo: o que já saiu e o que vem por aí.",
+        lede: "Role, e o caminho atravessa o tempo: o que já saiu e o que vem por aí.",
         cta: "Ver o histórico",
         ctaNext: "Ver os vídeos",
       },
@@ -1224,10 +1217,9 @@ export const FRESH: Record<Lang, Fresh> = {
     agent: { title: "Corvus Agent", body: "Um programa para o servidor de Minecraft que você mesmo hospeda: mantém os mods do servidor em dia com o Corvus Store. Ele confere cada download, para o servidor, troca os arquivos, inicia de novo e devolve os arquivos antigos se o servidor não subir.", note: "Java 25 · inclui guia de instalação e configuração de exemplo" },
   },
   it: {
-    heroLine1: "Corvus.",
-    heroLine2: "Oltre i limiti dimensionali.",
     heroScroll: "Scorri per esplorare",
     cinema: { tagline: "L'apice del cielo.", credit: "Footage: nrhawkes, whateverett-takes — Pexels", tagline2: "Custode della foresta profonda." },
+    altitude: { title: "Corrente d'altitudine — ultime versioni", lede: "Le versioni più recenti di ogni modello, prima la più nuova." },
     sound: "Suono",
     soundOn: "Attiva il suono",
     soundOff: "Disattiva il suono",
@@ -1253,7 +1245,7 @@ export const FRESH: Record<Lang, Fresh> = {
       chronology: {
         eyebrow: "Cronologia",
         title: "Attraverso il tempo, versione dopo versione.",
-        lede: "Scorri, e la telecamera percorre l’orbita del tempo: ciò che è uscito e ciò che arriverà.",
+        lede: "Scorri, e il sentiero attraversa il tempo: ciò che è uscito e ciò che arriverà.",
         cta: "Vedi il changelog",
         ctaNext: "Guarda i video",
       },
@@ -1377,10 +1369,9 @@ export const FRESH: Record<Lang, Fresh> = {
     agent: { title: "Corvus Agent", body: "Un programma per il server Minecraft che ospiti tu: tiene i mod del server allineati a Corvus Store. Controlla ogni download, ferma il server, sostituisce i file, lo riavvia e rimette i file precedenti se non riparte.", note: "Java 25 · guida all'installazione e configurazione di esempio incluse" },
   },
   ar: {
-    heroLine1: "Corvus.",
-    heroLine2: "ما وراء حدود الأبعاد.",
     heroScroll: "مرّر للاستكشاف",
     cinema: { tagline: "قمّة السماء.", credit: "Footage: nrhawkes, whateverett-takes — Pexels", tagline2: "حارس الغابة العميقة." },
+    altitude: { title: "تيار الارتفاع — أحدث الإصدارات", lede: "أحدث إصدارات كل نموذج، الأحدث أولاً." },
     sound: "الصوت",
     soundOn: "تشغيل الصوت",
     soundOff: "إيقاف الصوت",
@@ -1406,7 +1397,7 @@ export const FRESH: Record<Lang, Fresh> = {
       chronology: {
         eyebrow: "التسلسل الزمني",
         title: "عبر الزمن، إصدارًا بعد إصدار.",
-        lede: "مرّر، فتسير الكاميرا على مدار الزمن: ما صدر بالفعل، وما سيأتي.",
+        lede: "مرّر، فيمتد الطريق عبر الزمن: ما صدر بالفعل، وما سيأتي.",
         cta: "اطّلع على سجل التحديثات",
         ctaNext: "شاهد المقاطع",
       },
@@ -1530,10 +1521,9 @@ export const FRESH: Record<Lang, Fresh> = {
     agent: { title: "Corvus Agent", body: "برنامج لخادم Minecraft الذي تستضيفه بنفسك: يُبقي مودات الخادم مطابقة لما في Corvus Store. يتحقق من كل تنزيل، ثم يوقف الخادم ويستبدل الملفات ويشغّله من جديد، ويعيد الملفات السابقة إن لم يعمل.", note: "Java 25 · يتضمن دليل الإعداد ومثالًا للإعدادات" },
   },
   ru: {
-    heroLine1: "Corvus.",
-    heroLine2: "За пределами измерений.",
     heroScroll: "Прокрутите, чтобы исследовать",
     cinema: { tagline: "Вершина неба.", credit: "Footage: nrhawkes, whateverett-takes — Pexels", tagline2: "Страж глубокого леса." },
+    altitude: { title: "Воздушный поток — последние выпуски", lede: "Новейшие выпуски всех моделей, сначала самые свежие." },
     sound: "Звук",
     soundOn: "Включить звук",
     soundOff: "Выключить звук",
@@ -1559,7 +1549,7 @@ export const FRESH: Record<Lang, Fresh> = {
       chronology: {
         eyebrow: "Хронология",
         title: "Сквозь время, от выпуска к выпуску.",
-        lede: "Прокручивайте — камера движется по орбите времени: что уже вышло и что впереди.",
+        lede: "Прокручивайте — тропа проходит сквозь время: что уже вышло и что будет дальше.",
         cta: "История обновлений",
         ctaNext: "Смотреть видео",
       },
@@ -1683,10 +1673,9 @@ export const FRESH: Record<Lang, Fresh> = {
     agent: { title: "Corvus Agent", body: "Программа для сервера Minecraft, который вы держите сами: она поддерживает моды сервера в том же состоянии, что и Corvus Store. Проверяет каждую загрузку, останавливает сервер, заменяет файлы, запускает его снова и возвращает прежние файлы, если сервер не поднялся.", note: "Java 25 · руководство по установке и пример настроек внутри" },
   },
   id: {
-    heroLine1: "Corvus.",
-    heroLine2: "Melampaui batas dimensi.",
     heroScroll: "Gulir untuk menjelajah",
     cinema: { tagline: "Puncak langit.", credit: "Footage: nrhawkes, whateverett-takes — Pexels", tagline2: "Penjaga hutan yang dalam." },
+    altitude: { title: "Arus ketinggian — rilis terbaru", lede: "Rilis terbaru dari setiap model, yang paling baru lebih dulu." },
     sound: "Suara",
     soundOn: "Nyalakan suara",
     soundOff: "Matikan suara",
@@ -1712,7 +1701,7 @@ export const FRESH: Record<Lang, Fresh> = {
       chronology: {
         eyebrow: "Kronologi",
         title: "Menembus waktu, rilis demi rilis.",
-        lede: "Gulir, dan kamera menyusuri orbit waktu: apa yang sudah dirilis, dan apa yang akan datang.",
+        lede: "Gulir, dan jalan menelusuri waktu: apa yang sudah dirilis, dan apa yang akan datang.",
         cta: "Lihat riwayat pembaruan",
         ctaNext: "Tonton videonya",
       },
@@ -1836,10 +1825,9 @@ export const FRESH: Record<Lang, Fresh> = {
     agent: { title: "Corvus Agent", body: "Program untuk server Minecraft yang Anda kelola sendiri: menjaga mod server tetap sama dengan Corvus Store. Program ini memeriksa setiap unduhan, menghentikan server, mengganti berkas, menyalakannya lagi, dan mengembalikan berkas lama jika server tidak menyala.", note: "Java 25 · panduan pemasangan dan contoh konfigurasi disertakan" },
   },
   de: {
-    heroLine1: "Corvus.",
-    heroLine2: "Jenseits der Grenzen der Dimensionen.",
     heroScroll: "Zum Erkunden scrollen",
     cinema: { tagline: "Der Gipfel des Himmels.", credit: "Footage: nrhawkes, whateverett-takes — Pexels", tagline2: "Hüter des tiefen Waldes." },
+    altitude: { title: "Luftstrom — neueste Veröffentlichungen", lede: "Die neuesten Veröffentlichungen aller Modelle, die neueste zuerst." },
     sound: "Ton",
     soundOn: "Ton einschalten",
     soundOff: "Ton ausschalten",
@@ -1865,7 +1853,7 @@ export const FRESH: Record<Lang, Fresh> = {
       chronology: {
         eyebrow: "Chronologie",
         title: "Durch die Zeit, Version für Version.",
-        lede: "Scrollen Sie, und die Kamera folgt der Umlaufbahn der Zeit: was erschienen ist und was als Nächstes kommt.",
+        lede: "Scrollen Sie, und der Weg führt durch die Zeit: was erschienen ist und was als Nächstes kommt.",
         cta: "Zum Änderungsprotokoll",
         ctaNext: "Videos ansehen",
       },
@@ -1989,10 +1977,9 @@ export const FRESH: Record<Lang, Fresh> = {
     agent: { title: "Corvus Agent", body: "Ein Programm für den Minecraft-Server, den du selbst betreibst: Es hält die Mods des Servers auf dem Stand von Corvus Store. Es prüft jeden Download, stoppt den Server, tauscht die Dateien, startet ihn wieder und stellt die alten Dateien zurück, wenn er nicht hochkommt.", note: "Java 25 · Einrichtungsanleitung und Beispielkonfiguration liegen bei" },
   },
   tr: {
-    heroLine1: "Corvus.",
-    heroLine2: "Boyutların sınırlarının ötesinde.",
     heroScroll: "Keşfetmek için kaydırın",
     cinema: { tagline: "Gökyüzünün zirvesi.", credit: "Footage: nrhawkes, whateverett-takes — Pexels", tagline2: "Derin ormanın bekçisi." },
+    altitude: { title: "Yükseklik akımı — son sürümler", lede: "Her modelin en yeni sürümleri, en yenisi önce." },
     sound: "Ses",
     soundOn: "Sesi aç",
     soundOff: "Sesi kapat",
@@ -2018,7 +2005,7 @@ export const FRESH: Record<Lang, Fresh> = {
       chronology: {
         eyebrow: "Kronoloji",
         title: "Zamanın içinden, sürüm sürüm.",
-        lede: "Kaydırın; kamera zamanın yörüngesinde ilerlesin: yayımlananlar ve sırada olanlar.",
+        lede: "Kaydırın; yol zamanın içinden kıvrılsın: yayımlananlar ve sırada olanlar.",
         cta: "Güncelleme geçmişine bak",
         ctaNext: "Videoları izle",
       },

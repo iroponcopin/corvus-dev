@@ -1,12 +1,9 @@
 import Link from "next/link";
-import { Formation } from "@/engine/store";
 import { fill, FRESH } from "@/i18n/fresh";
 import { asset, pathOf } from "@/lib/site";
 import { wiki } from "@/lib/wiki";
 import type { Lang } from "@/lib/wiki-types";
-import { RealmAnchor } from "../RealmAnchor";
 
-const BLUE: readonly [number, number, number] = [0.45, 0.7, 1];
 
 /** 74 → "1:14". */
 function clock(seconds: number): string {
@@ -23,7 +20,7 @@ export function AnnouncementPage({ lang }: { lang: Lang }) {
   const t = FRESH[lang].announcement;
   const names = new Intl.DateTimeFormat(lang === "pt-br" ? "pt-BR" : lang, { dateStyle: "long", timeZone: "UTC" });
   return (
-    <RealmAnchor id="ac-announcement" config={{ formation: Formation.Bloom, x: 0.5, y: 0.42, scale: 0.36, scaleNarrow: 0.3, tint: BLUE }}>
+    <section id="ac-announcement">
       <div className="ac-wrap ac-page-head">
         <h1 className="ac-h1">{t.title}</h1>
         <p className="ac-lead">{t.lede}</p>
@@ -63,6 +60,6 @@ export function AnnouncementPage({ lang }: { lang: Lang }) {
           })}
         </ul>
       </div>
-    </RealmAnchor>
+    </section>
   );
 }

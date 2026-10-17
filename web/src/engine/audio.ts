@@ -1,10 +1,9 @@
 import { engine } from "./store";
 
 /**
- * Acoustic synesthesia: a procedural drone of spatial harmonics that the page plays like an
- * instrument. Partials of a just-intonation chord sit on HRTF panners around the listener and
- * orbit with the astrolabe; scroll velocity opens the filter, swells the upper harmonics and
- * raises a band of starlight "air"; each realm glides the chord to its own mode.
+ * A quiet procedural drone of spatial harmonics: partials of a just-intonation chord on HRTF panners
+ * around the listener. Scroll velocity opens the filter, swells the upper harmonics and raises a
+ * band of soft "air".
  *
  * Off by default and never started without a gesture (the Sound toggle). The per-frame update
  * only schedules AudioParam targets — no nodes, no objects, no garbage.
@@ -12,18 +11,8 @@ import { engine } from "./store";
 
 const STORAGE_KEY = "aurora-corvus-sound";
 
-/** Chord ratios per formation (index = Formation id), over a 55 Hz fundamental. */
-const CHORDS: readonly (readonly number[])[] = [
-  [1, 1.5, 2, 2.5, 3, 4.5], // Horizon: open fifths, a major third above
-  [1, 1.2, 1.5, 2, 2.4, 3], // Codex: minor colour
-  [1, 1.25, 1.5, 2, 2.5, 3.75], // Showroom: major seventh
-  [1, 1.5, 2.25, 3, 4, 4.5], // Store: stacked fifths
-  [1, 1.125, 1.5, 2, 2.25, 3], // Chronology: suspended
-  [1, 1.333, 1.5, 2, 2.667, 4], // Nexus: quartal
-  [1, 1.2, 1.5, 1.8, 2.4, 3.6], // Bloom
-  [1, 1.25, 1.5, 1.875, 2.5, 3.75], // Aurum
-  [1, 1.5, 2, 3, 4, 6], // Ember: pure harmonics
-];
+/** The drone's chord ratios over a 55 Hz fundamental: open fifths, a major third above. */
+const CHORD: readonly number[] = [1, 1.5, 2, 2.5, 3, 4.5];
 const VOICES = 6;
 const BASE_HZ = 55;
 
@@ -43,7 +32,6 @@ let graph: Graph | null = null;
 let enabled = false;
 let ducked = false;
 const listeners = new Set<(on: boolean) => void>();
-let lastFormation = -1;
 let lastUpdate = 0;
 
 function readStored(): boolean {
@@ -127,7 +115,7 @@ function build(): Graph | null {
   const oscs: OscillatorNode[] = [];
   const gains: GainNode[] = [];
   const panners: PannerNode[] = [];
-  const chord = CHORDS[0]!;
+  const chord = CHORD;
   for (let i = 0; i < VOICES; i++) {
     const osc = ctx.createOscillator();
     osc.type = i < 2 ? "sine" : "triangle";
@@ -233,21 +221,9 @@ export function updateSound(): void {
   g.air.gain.setTargetAtTime(0.004 + e * 0.07, t, 0.15);
   g.airFilter.frequency.setTargetAtTime(1800 + e * 4200, t, 0.2);
 
-  // Chord: the dominant formation's mode, glided.
-  const form = engine.morph >= 0.5 ? engine.formationB : engine.formationA;
-  if (form !== lastFormation) {
-    lastFormation = form;
-    const chord = CHORDS[form] ?? CHORDS[0]!;
-    for (let i = 0; i < VOICES; i++) {
-      const target = BASE_HZ * (chord[i] ?? 1) * (i % 2 === 0 ? 1 : 2);
-      g.oscs[i]!.frequency.setTargetAtTime(target, t, 0.9);
-    }
-  }
-
-  // Voices orbit the listener; the upper ones swell with energy.
-  const orbit = now * (0.05 + e * 0.4);
+  // The voices hold their places around the listener; the upper ones swell with energy.
   for (let i = 0; i < VOICES; i++) {
-    const a = orbit * (1 + i * 0.13) + (i / VOICES) * Math.PI * 2;
+    const a = (i / VOICES) * Math.PI * 2;
     const r = 1.6 + i * 0.35;
     const p = g.panners[i]!;
     if (p.positionX !== undefined) {
@@ -346,7 +322,7 @@ let musicBins: Uint8Array<ArrayBuffer> | null = null;
 const attached = new WeakSet<HTMLMediaElement>();
 
 /**
- * Route a page's <audio> through an analyser so the starfield can pulse with it. Called from
+ * Route a page's <audio> through an analyser so the page can react to the music. Called from
  * the play button's click (a gesture), once per element.
  */
 export function attachMusic(el: HTMLMediaElement): void {

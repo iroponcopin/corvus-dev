@@ -1,17 +1,14 @@
 import Link from "next/link";
-import { Formation } from "@/engine/store";
 import { FRESH } from "@/i18n/fresh";
 import { asset, pathOf } from "@/lib/site";
 import { langData } from "@/lib/wiki";
 import type { Lang, Product } from "@/lib/wiki-types";
-import { RealmAnchor } from "../RealmAnchor";
 import { TrustedHtml } from "../Rich";
 import { Stagger } from "../Stagger";
 import { BrandRing, type RingItem } from "../store/BrandRing";
 import { StoreSim } from "../store/StoreSim";
 import { LauncherFiles } from "./DownloadPage";
 
-const BLUE: readonly [number, number, number] = [0.25, 0.55, 1];
 
 /** The Store's order of its products, and the hub ring's order of the six marks. */
 // ASTRAEA's service ended on 2026-10-16: it is the last model in both lists, before the archived Alpha.
@@ -19,9 +16,8 @@ const PRODUCTS = ["halia", "ouka", "cherry", "tsubomi", "noctua", "aureum", "ast
 const RING = ["ouka", "cherry", "tsubomi", "noctua", "astraea", "alpha"] as const;
 
 /**
- * Corvus Store: the hub (the astrolabe with the six marks in orbit, read one by one as the page
- * scrolls), the Store itself running in the page on its 3D deck, then the installers, the mods,
- * the release notes and the guide.
+ * Corvus Store: the hub (the models, one card each), the Store itself running in the page, then
+ * the installers, the mods, the release notes and the guide.
  */
 export function LauncherPage({ lang }: { lang: Lang }) {
   const d = langData(lang);
@@ -54,37 +50,22 @@ export function LauncherPage({ lang }: { lang: Lang }) {
 
   return (
     <>
-      <RealmAnchor
-        id="hub"
-        className="ac-hub"
-        aria-label={l.hub.title}
-        config={{ formation: Formation.Horizon, x: 0.5, y: 0.34, scale: 0.17, scaleNarrow: 0.19, astrolabe: 1, tint: BLUE }}
-      >
+      <section id="hub" className="ac-wrap ac-section ac-hub" aria-label={l.hub.title}>
         <a className="ac-hub-skip ac-btn ac-btn--ghost ac-btn--small" href="#hub-get">
           {l.hub.skip}
         </a>
-        <div className="ac-hub-sticky">
-          <div className="ac-hub-poster ac-only-fallback" aria-hidden="true">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={asset("logo.png")} alt="" width={160} height={160} />
-          </div>
-          <div className="ac-hub-hero">
-            <h1 className="ac-display" dir="ltr">
-              <Stagger text={l.hub.title} lang="en" />
-            </h1>
-            <p className="ac-lead">{l.hub.tagline}</p>
-          </div>
-          <p className="ac-hub-scroll ac-small" aria-hidden="true">
-            {l.hub.scroll}
-          </p>
-          <BrandRing hubId="hub" items={ring} title={l.hub.brandsTitle} hint={l.hub.brandsHint} readMore={t.readMore} />
+        <div className="ac-hub-hero">
+          <h1 className="ac-display" dir="ltr">
+            <Stagger text={l.hub.title} lang="en" />
+          </h1>
+          <p className="ac-lead">{l.hub.tagline}</p>
         </div>
-      </RealmAnchor>
+        <BrandRing items={ring} title={l.hub.brandsTitle} hint={l.hub.brandsHint} readMore={t.readMore} />
+      </section>
 
-      <RealmAnchor
+      <section
         className="ac-section ac-deck-section"
         aria-labelledby="deck-title"
-        config={{ formation: Formation.Store, x: 0.5, y: 0.55, scale: 0.3, scaleNarrow: 0.36, tint: BLUE }}
       >
         <div className="ac-wrap ac-deck-head">
           <p className="ac-eyebrow">{f.realms.store.eyebrow}</p>
@@ -111,7 +92,7 @@ export function LauncherPage({ lang }: { lang: Lang }) {
           </div>
           <div className="ac-deck-floor" aria-hidden="true" />
         </div>
-      </RealmAnchor>
+      </section>
 
       <section id="hub-get" className="ac-wrap ac-section ac-hub-get" aria-labelledby="hub-get-h">
         <p className="ac-eyebrow">

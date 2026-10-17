@@ -1,14 +1,11 @@
 import { FRESH } from "@/i18n/fresh";
 import Link from "next/link";
-import { Formation } from "@/engine/store";
 import { asset, pathOf } from "@/lib/site";
 import { langData, wiki } from "@/lib/wiki";
 import type { Lang, LangData } from "@/lib/wiki-types";
 import { FileCard, type FileCardLabels } from "../FileCard";
 import { AstraeaEnded } from "./AstraeaEnded";
-import { RealmAnchor } from "../RealmAnchor";
 
-const BLUE: readonly [number, number, number] = [0.25, 0.55, 1];
 
 export function fileLabels(d: LangData): FileCardLabels {
   return { fileSize: d.chrome.fileSize, sha256: d.chrome.sha256, copy: d.chrome.copy, copied: d.chrome.copied };
@@ -48,7 +45,7 @@ export function DownloadPage({ lang }: { lang: Lang }) {
   const labels = fileLabels(d);
   const mc = w.versions.mc;
   return (
-    <RealmAnchor config={{ formation: Formation.Store, x: 0.5, y: 0.7, scale: 0.4, tint: BLUE }}>
+    <section>
       <div className="ac-wrap ac-page-head">
         <p className="ac-eyebrow">
           {d.chrome.launcher} <span className="ac-ltr">{d.launcherFiles.version}</span>
@@ -188,6 +185,6 @@ export function DownloadPage({ lang }: { lang: Lang }) {
           </Link>
         </p>
       </section>
-    </RealmAnchor>
+    </section>
   );
 }

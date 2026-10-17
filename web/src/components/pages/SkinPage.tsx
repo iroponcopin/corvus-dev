@@ -1,12 +1,9 @@
-import { Formation } from "@/engine/store";
 import { FRESH } from "@/i18n/fresh";
 import { recipeIcon } from "@/lib/site";
 import { langData, wiki } from "@/lib/wiki";
 import type { Lang } from "@/lib/wiki-types";
-import { RealmAnchor } from "../RealmAnchor";
 import { Showroom } from "../skin/Showroom";
 
-const SPARXIE: readonly [number, number, number] = [0.98, 0.42, 0.5];
 
 export function SkinPage({ lang }: { lang: Lang }) {
   const d = langData(lang);
@@ -22,7 +19,7 @@ export function SkinPage({ lang }: { lang: Lang }) {
       ? s.labels
       : { ...s.labels, lede: "", pinLabel: "", unlock: "", working: "", wrong: "", locked: "", lockedHint: "", unlocked: "", blobError: "" };
   return (
-    <RealmAnchor config={{ formation: Formation.Showroom, x: 0.3, xNarrow: 0.5, y: 0.52, scale: 0.36, scaleNarrow: 0.3, tint: SPARXIE }}>
+    <section>
       <div className="ac-wrap ac-page-head">
         <h1 className="ac-h1">{s.title}</h1>
       </div>
@@ -37,6 +34,6 @@ export function SkinPage({ lang }: { lang: Lang }) {
           bladeIcon={blade}
         />
       </div>
-    </RealmAnchor>
+    </section>
   );
 }

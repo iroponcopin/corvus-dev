@@ -198,7 +198,7 @@ const SLOT = 0.66;
 
 /**
  * The matter synthesiser: a recipe's ingredients appear on the crafting grid (or around the
- * crucible's ring), fly inward on spiral paths, fuse in a flash of starlight, and leave the
+ * crucible's ring), fly inward on spiral paths, fuse in a flash of light, and leave the
  * finished item turning on its altar. `playKey` replays the synthesis; drag turns the result.
  */
 export function Synthesizer({

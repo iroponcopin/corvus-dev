@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { chime } from "@/engine/audio";
-import { burst, engine } from "@/engine/store";
+import { engine } from "@/engine/store";
 import { Stage3D } from "@/engine/View";
 import { Synthesizer, type SynthIngredient } from "@/realms/Synthesizer";
 import { recipeIcon } from "@/lib/site";
@@ -367,7 +367,6 @@ export function Codex({
                     className="ac-btn ac-btn--ghost ac-btn--small"
                     onClick={() => {
                       setPlayKey((k) => k + 1);
-                      burst(0, 0, 0, 0.6);
                     }}
                   >
                     <Icon name="sparkle" size={14} />

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { Fragment, type ReactNode, useEffect, useMemo, useRef, useState } from "react";
 import { chime } from "@/engine/audio";
-import { burst } from "@/engine/store";
 import type { Fresh } from "@/i18n/fresh";
 import { asset } from "@/lib/site";
 import { Icon } from "../Icon";
@@ -112,7 +111,6 @@ export function TeaserReel({
   // Each scene lands with a little light, and a tick when the sound is on.
   useEffect(() => {
     if (!playing) return;
-    burst(0, 0, 0, scene === 0 ? 0.9 : 0.45);
     chime("tick");
   }, [playing, scene, current]);
 

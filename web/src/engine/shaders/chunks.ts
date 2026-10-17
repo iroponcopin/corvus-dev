@@ -177,7 +177,7 @@ vec3 environment(vec3 d) {
   // Deep field: almost black, a breath of blue towards the horizon.
   float horizon = 1.0 - abs(d.y);
   col += vec3(0.004, 0.006, 0.012) * horizon * horizon;
-  // Aurora in the upper sky, carried by the brand tint.
+  // A faint light in the upper sky, carried by the brand tint.
   float band = sin(d.x * 3.1 + d.z * 2.3 + uTime * 0.05) * 0.5 + 0.5;
   float aur = smoothstep(0.15, 0.75, d.y) * smoothstep(1.0, 0.55, d.y) * band;
   col += uTint * aur * 0.05;
@@ -186,11 +186,6 @@ vec3 environment(vec3 d) {
   col += vec3(0.85, 0.9, 1.0) * 1.35 * softbox(d, normalize(vec3(-1.0, 0.1, 0.2)), vec3(0.0, 1.0, 0.0), 0.08, 0.9, 0.05);
   col += vec3(0.9, 0.93, 1.0) * 1.1 * softbox(d, normalize(vec3(1.0, 0.05, -0.25)), vec3(0.0, 1.0, 0.0), 0.06, 0.9, 0.05);
   col += uTint * 0.9 * softbox(d, normalize(vec3(0.0, -0.55, -1.0)), vec3(0.0, 1.0, 0.0), 1.2, 0.08, 0.12);
-  // Pinpoint stars in the environment so refractions sparkle.
-  vec3 cell = floor(d * 90.0);
-  vec3 h = hash33(cell);
-  float star = step(0.985, h.x) * smoothstep(0.42, 0.0, length(fract(d * 90.0) - 0.5 - (h.yzx - 0.5) * 0.6));
-  col += vec3(0.8, 0.88, 1.0) * star * (0.6 + h.y * 1.4);
   return col;
 }
 `;
