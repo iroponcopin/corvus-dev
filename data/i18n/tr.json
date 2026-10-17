@@ -307,6 +307,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.2.2",
+    "title": "The Grand Synthesis 1.6.2.2 — fırın yakıtı, montaj malzemeleri ve el kolu jeneratörü",
+    "summary": "1.6.2.1 düzeltmelerini de içeren bir endüstri güncellemesi. Katalitik Ergitme Fırını artık cevheri doğrudan yerden eritiyor, Otomatik Hassas Montaj Hattı tarif seçmeden önce doldurduğunuz bir malzeme deposu kazanıyor ve yeni El Kolu Jeneratörü saf hayatta kalma modunda da OUKA gücü sağlıyor. 1 yeni blok ekler.",
+    "highlights": [
+     "Katalitik Ergitme Fırını, Ham Tungsten ve Antik Kalıntıları önce toza öğütmeden doğrudan kabul eder. Kendi yakıt yuvasındaki argon tüplerini yakar; hunilere yakıt yalnızca o yuvaya girer.",
+     "Otomatik Hassas Montaj Hattı bir Malzemeler sekmesine sahip. Envanterinizdeki parçaları deposuna koyun, sonra bir tarif seçin: depoda tarifin ihtiyaç duyduğu her şey varsa hat hemen üretir. Tarif listesindeki yeşil çizgi, deponun şu anda neyi üretebildiğini gösterir. Huniler ve konveyörler girişi eskisi gibi besler.",
+     "El Kolu Jeneratörü yalnızca vanilya eşyalarından yapılır. Kolu çevirmek ve yakındaki bir Tesla Kulesine güç göndermek için sağ tıklayıp basılı tutun; böylece zorlu bir dünyada bile ilk makineler çalıştırılabilir.",
+     "1.6.2.1'den itibaren: Ouka Kutsaması efekt simgesi kalır ve envanterde üzerine gelindiğinde sahip olduğunuz tüm kutsamalar ve güçleri listelenir. Ryusei yanlış yerleştirme ya da kullanımı açıklar, treni kullanma ipuçları verir ve yolculara trenin bir sonraki istasyonda neden duramadığını söyler."
+    ],
+    "warnings": [
+     "Oynadıktan sonra önceki bir sürüme dönerseniz El Kolu Jeneratörü dünyadan silinir.",
+     "1.6.2.2'yi kurmadan önce eski OUKA jar dosyasını (1.6.2 veya daha eski) mods klasöründen kaldırın ve yalnızca bir GeckoLib 5.5.6 kopyası bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun."
+    ]
+   },
+   {
     "id": "ouka-v1.6.2",
     "title": "The Grand Synthesis 1.6.2 — Ryusei maglev treni",
     "summary": "Bir tren güncellemesi. Ryusei maglev treni, sizin çizdiğiniz bir hat üzerinde gider; istasyonları, bir sevk konsolu ve içinde gezilebilen dört vagonlu bir tren vardır. 6 yeni eşya ve 3 yeni blok ekler.",
@@ -863,6 +878,39 @@
    }
   ],
   "halia": [
+   {
+    "id": "halia-v1.2.1",
+    "title": "Halia V1.2.1 — envanter açılırken oluşan çökme düzeltildi",
+    "summary": "Halia V1.2.1 bir çökmeyi düzeltir: OUKA da kuruluyken yaratıcı modda envanteri açmak oyunu kapatıyordu.",
+    "highlights": [
+     "Düzeltildi: OUKA, Halia ile birlikte kuruluyken yaratıcı modda envanteri açmak artık oyunu çökertmiyor. Aerie'nin yaratıcı sekmesi Aerie Heart'ı iki kez listeliyordu."
+    ],
+    "warnings": [
+     "Gereksinimler V1.2.0 ile aynıdır: Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni, Fabric API 0.161.0+26.3 veya daha yeni, Java 25. Başka değişiklik yoktur."
+    ]
+   },
+   {
+    "id": "halia-v1.2.0",
+    "title": "Halia V1.2 — Aerie depolama ağı, 20 yeni kılıç, 7 yeni kesme tekniği ve SS-05",
+    "summary": "Halia V1.2, bir Aerie Heart, konduit ve hücrelerden kurduğunuz bir depolama ağı olan Aerie'yi ekler: sahip olduğunuz her eşya ve sıvı, tek bir konsoldan aranabilir, Talon Intakes ve Outlets ile içeri ve dışarı taşınır ve Artificers tarafından istek üzerine üretilir. Halia Blade'e 20 adlandırılmış kılıç, 7 kesme tekniği ve bir kılıcın topladığı ve harcadığı ruhlar eklenir.",
+    "highlights": [
+     "Aerie: bir Aerie Heart yerleştirin, aygıtları Aerie Conduits ile birleştirin, Clutch Cells'i bir Clutch Bay'e koyun ve depolanan her şeyi görmek ve aramak için bir Roost Console açın. 37 çeşit aygıt var; çoğu 16 renkte.",
+     "Taşıma ve üretim: Talon Intakes ve Outlets, Aerie ile herhangi bir sandık veya makine arasında eşya ve sıvı taşır; Artificers, Scribe Console'da yazılmış şablonlardan istek üzerine üretim yapar; Updraft Masts ve Field Consoles kablo olmadan Aerie'ye ulaşır.",
+     "OUKA ile güç: OUKA kuruluysa, Aerie Heart gücünü OUKA'nın Tesla pylon ağından çeker. OUKA olmadan Aerie'nin güce ihtiyacı yoktur.",
+     "20 yeni adlandırılmış kılıç: Gale Fang ve Tempest Fang serileri, Ironcrag, Ashen Crag, odundan netherit'e altı Plumes, Weathered Blade, Evenfall, Heartwood ve Raptors. Çoğu bir malzeme kutusundan örslerde dövülerek yapılır; bazıları patronlardan düşer; zombiler bazen bir Weathered Blade taşır; ve bir Wither patlamasına yakalanan, bir sehpada duran adsız bir kılıç Ashen Crag'e dönüşür.",
+     "7 yeni kesme tekniği: Blossom End, Void Slash, Circle Slash, Vertical ve Horizontal Drive, Wave Edge ve Piercing. Drive'lar önünüze uçan bir kesik gönderir.",
+     "Ruhlar: bir kılıç, siz düşmanları yenerken elinizdeyse, onların deneyiminden ruh toplar. Çağrılan kılıçlar artık deneyim yerine ruh gerektirir ve örsteki bir kılıcı geliştirmek ona ruh verir.",
+     "Dayanıklılık ve geliştirme: her adlandırılmış kılıcın artık kendi dayanıklılığı var ve geliştirme, bir kılıcın hasarını ve azami dayanıklılığını artırır (geliştirme değeri 200'e kadar).",
+     "Stellar Remote SS-05 Tesseract: beşinci bir saldırı, kendi filmiyle birlikte. Bir kenarı 640 blok olan bir ışık küpü nişangâhınızın etrafında yükselir; zemini hücrelere bölünür, bu hücreler ortadan dışarıya doğru halka halka kaldırılır, döndürülür ve havada asılır; ve bir ışık küpü gökyüzünde kilitlenir."
+    ],
+    "warnings": [
+     "Gereksinimler: Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni, Fabric API 0.161.0+26.3 veya daha yeni, Java 25. Çok oyunculu için Halia'nın sunucuya da kurulmuş olması gerekir.",
+     "V1.1 kılıçlarında değişiklikler: aynı temel değerde bir kılıcın vuruşu öncekinden 1 daha düşüktür; yeni yapılan adlandırılmış kılıçların temel saldırısı ve dayanıklılığı V1.1'dekinden daha düşüktür (örneğin Yamato: saldırı 9 → 7, dayanıklılık 100 → 40); çağrılan kılıçlar ruh gerektirir. Dünyanızda zaten bulunan kılıçlar, yapıldıkları dayanıklılığı korur.",
+     "OUKA kuruluyken, Aerie, Heart'i enerjili bir pylon'un erişim alanına girene kadar çalışmaz. OUKA'nın yanında enerjisiz çalıştırmak için config/halia-aerie.json içinde powerFromOukaGrid değerini false yapın.",
+     "V1.1'den gelen dünyalar olduğu gibi açılır. Aerie aygıtları veya yeni kılıçlar içeren bir dünyayla 1.1'e geri dönmeyin: onlar silinir.",
+     "Stellar Remote çok geniş alanları kalıcı olarak yok eder; SS-05 ise 640 blokluk bir alanı bir anda yeniden şekillendirir — dünyanızı yedekleyin. Dalgası geçerken küpün içinde duran herkes ölür."
+    ]
+   },
    {
     "id": "halia-v1.1.1",
     "title": "Halia V1.1.1 — «Improved Transparency» ile çöküş düzeltmesi",

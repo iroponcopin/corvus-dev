@@ -74,6 +74,12 @@
         "release": "V1.6.2",
         "date": "2026-10-14",
         "type": "release"
+      },
+      {
+        "id": "ouka-v1.6.2.2",
+        "release": "V1.6.2.2",
+        "date": "2026-10-16",
+        "type": "release"
       }
     ],
     "cherry": [
@@ -215,6 +221,18 @@
         "id": "halia-v1.1.1",
         "release": "V1.1.1",
         "date": "2026-10-12",
+        "type": "hotfix"
+      },
+      {
+        "id": "halia-v1.2.0",
+        "release": "V1.2.0",
+        "date": "2026-10-16",
+        "type": "release"
+      },
+      {
+        "id": "halia-v1.2.1",
+        "release": "V1.2.1",
+        "date": "2026-10-16",
         "type": "hotfix"
       }
     ]

@@ -1,11 +1,70 @@
 {
  "lang": "ko",
  "brand": "halia",
- "updated": "2026-10-12",
+ "updated": "2026-10-16",
  "title": "업데이트 기록",
- "updated_label": "최종 업데이트 2026-10-12",
+ "updated_label": "최종 업데이트 2026-10-16",
  "note": "",
  "groups": [
+  {
+   "label": "V1.2",
+   "summary": "Halia V1.2.1 — 인벤토리를 열면 게임이 종료되는 문제 수정",
+   "releases": [
+    {
+     "version": "V1.2.1",
+     "date": "2026-10-16",
+     "type": "hotfix",
+     "title": "Halia V1.2.1 — 인벤토리를 열면 게임이 종료되는 문제 수정",
+     "summary": "Halia V1.2.1은 OUKA를 함께 설치했을 때 크리에이티브 모드에서 인벤토리를 열면 게임이 종료되던 문제를 수정합니다.",
+     "sections": [
+      {
+       "title": "변경 사항",
+       "items": [
+        "수정: Halia와 OUKA를 함께 설치해도 크리에이티브 모드에서 인벤토리를 열 때 더 이상 게임이 종료되지 않습니다. Aerie의 크리에이티브 탭에 Aerie Heart가 두 번 표시된 것이 원인이었습니다."
+       ]
+      },
+      {
+       "title": "주의 사항",
+       "items": [
+        "요구 사항은 V1.2.0과 같습니다: Minecraft 26.3, Fabric Loader 0.19.5 이상, Fabric API 0.161.0+26.3 이상, Java 25. 그 밖의 변경은 없습니다."
+       ]
+      }
+     ]
+    },
+    {
+     "version": "V1.2.0",
+     "date": "2026-10-16",
+     "type": "release",
+     "title": "Halia V1.2 — Aerie 저장 네트워크, 새 검 20자루와 새 베기 기술 7종, 그리고 SS-05",
+     "summary": "Halia V1.2는 Aerie 저장 네트워크를 추가합니다. Aerie Heart, 도관, 셀로 직접 구축하는 이 네트워크에서는 소유한 모든 아이템과 유체를 하나의 콘솔에서 검색할 수 있고, Talon Intakes 및 Talon Outlets가 이를 넣고 빼며, Artificers가 필요할 때 바로 제작합니다. Halia Blade에는 이름 있는 검 20자루, 베기 기술 7종, 그리고 검이 모으고 쓰는 영혼이 추가됩니다.",
+     "sections": [
+      {
+       "title": "변경 사항",
+       "items": [
+        "Aerie: Aerie Heart를 설치하고, Aerie Conduits로 기기를 연결하고, Clutch Bay에 Clutch Cells를 넣고, Roost Console을 열면 저장된 모든 것을 보고 검색할 수 있습니다. 기기는 37종이며, 대부분 16가지 색상이 있습니다.",
+        "이동과 제작: Talon Intakes 및 Talon Outlets는 Aerie와 모든 상자 또는 기계 사이에서 아이템과 유체를 옮깁니다. Artificers는 Scribe Console에 적어 둔 패턴에 따라 필요할 때 제작합니다. Updraft Masts와 Field Consoles는 전선 없이 Aerie에 닿습니다.",
+        "OUKA와의 전력 연동: OUKA가 설치되어 있으면 Aerie Heart는 OUKA의 테슬라 송전탑 전력망에서 전력을 얻습니다. OUKA가 없으면 Aerie는 전력이 필요 없습니다.",
+        "이름 있는 검 20자루: Gale Fang과 Tempest Fang 계열, Ironcrag, Ashen Crag, 나무에서 네더라이트까지 6종의 Plumes, Weathered Blade, Evenfall, Heartwood, 그리고 Raptors입니다. 대부분 재료 상자를 사용해 모루에서 단조하고, 일부는 보스가 떨어뜨리며, 좀비가 가끔 Weathered Blade를 지니고 있고, 받침대 위의 이름 없는 검이 위더의 폭발에 휘말리면 Ashen Crag가 됩니다.",
+        "새 베기 기술 7종: Blossom End, Void Slash, Circle Slash, Vertical Drive와 Horizontal Drive, Wave Edge, Piercing. Drive는 앞으로 날아가는 참격을 보냅니다.",
+        "영혼: 검을 쥔 채 적을 쓰러뜨리면, 검이 적의 경험치에서 영혼을 모읍니다. 소환검은 이제 경험치 대신 영혼을 소모하며, 모루에서 검을 강화하면 검에 영혼이 깃듭니다.",
+        "내구도와 강화: 이름 있는 검마다 이제 고유한 내구도를 가지며, 강화하면 검의 피해와 최대 내구도가 올라갑니다(강화 수치 200까지).",
+        "Stellar Remote SS-05 Tesseract: 다섯 번째 공격이며, 전용 영상이 있습니다. 한 변 640블록짜리 빛의 정육면체가 조준선 둘레에 솟아오르고, 발밑의 땅은 셀로 나뉘어 중심에서 바깥으로 한 고리씩 들어 올려지고 돌려지고 공중에 매달리며, 빛의 정육면체는 하늘에 고정됩니다."
+       ]
+      },
+      {
+       "title": "주의 사항",
+       "items": [
+        "요구 사항: Minecraft 26.3, Fabric Loader 0.19.5 이상, Fabric API 0.161.0+26.3 이상, Java 25. 멀티플레이에서는 서버에도 Halia를 설치해야 합니다.",
+        "V1.1 검의 변경 사항: 같은 기본 값일 때 검의 한 번 타격 피해는 이전보다 1 낮습니다. 새로 만드는 이름 있는 검은 V1.1보다 기본 공격력과 내구도가 낮습니다(예: Yamato: 공격력 9 → 7, 내구도 100 → 40). 소환검에는 영혼이 필요합니다. 이미 월드에 있는 검은 만들어졌을 때의 내구도를 그대로 유지합니다.",
+        "OUKA가 설치되어 있으면 Aerie는 Aerie Heart가 전력이 흐르는 송전탑의 범위 안에 들어오기 전까지 작동하지 않습니다. OUKA 옆에서 전력 없이 실행하려면 config/halia-aerie.json에서 powerFromOukaGrid를 false로 설정하세요.",
+        "V1.1 월드는 그대로 열립니다. Aerie 기기나 새 검이 있는 월드를 1.1로 되돌리지 마세요. 그것들이 삭제됩니다.",
+        "Stellar Remote는 매우 넓은 지역을 영구히 파괴하고, SS-05는 한 번에 640블록 범위를 다시 만듭니다 — 월드를 백업해 두세요. 파동이 지나갈 때 큐브 안에 서 있던 사람은 누구든 죽습니다."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.1",
    "summary": "Halia V1.1.1 — “Improved Transparency” 사용 시 충돌 수정",

@@ -307,6 +307,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.2.2",
+    "title": "The Grand Synthesis 1.6.2.2 — combustibile del forno, materiali di assemblaggio e generatore a manovella",
+    "summary": "Un aggiornamento industriale che include anche le correzioni di 1.6.2.1. Il Forno di fusione catalitica ora fonde il minerale direttamente, la Linea di assemblaggio di precisione automatizzata riceve un magazzino di materiali da riempire prima di scegliere una ricetta, e il nuovo Generatore a manovella porta l'energia OUKA anche nella sopravvivenza pura. Aggiunge 1 nuovo blocco.",
+    "highlights": [
+     "Il Forno di fusione catalitica accetta direttamente Tungsteno grezzo e Detriti antichi, senza polverizzarli prima. Brucia cartucce di argon dal proprio slot del combustibile, e le tramogge inseriscono combustibile solo in quello slot.",
+     "La Linea di assemblaggio di precisione automatizzata ha una scheda Materiali. Metti i pezzi dal tuo inventario nel suo magazzino, poi scegli una ricetta: se il magazzino contiene tutto ciò che serve, la linea la costruisce subito. Una barra verde nell'elenco delle ricette segnala ciò che il magazzino può già costruire. Tramogge e nastri continuano ad alimentare l'ingresso come prima.",
+     "Il Generatore a manovella è costruito solo con oggetti vanilla. Tieni premuto il clic destro per girare la manovella e inviare energia a un pilone Tesla vicino, così anche un mondo hardcore può alimentare le prime macchine.",
+     "Dalla 1.6.2.1: l'icona dell'effetto Benedizione di Ouka resta, e passando sopra di essa nell'inventario compaiono tutte le benedizioni che hai e la loro intensità. Ryusei spiega un posizionamento o un uso sbagliato, dà suggerimenti per guidare il treno e dice ai passeggeri perché il treno non può fermarsi alla stazione successiva."
+    ],
+    "warnings": [
+     "Se dopo aver giocato torni a una versione precedente, il Generatore a manovella scompare dal mondo.",
+     "Prima di installare la 1.6.2.2, rimuovi il vecchio jar di OUKA (1.6.2 o precedente) dalla cartella mods e tieni una sola copia di GeckoLib 5.5.6. Richiede Minecraft 26.3, Fabric Loader 0.19.5 o più recente e Fabric API 0.161.0+26.3 o più recente. Installalo su client e server."
+    ]
+   },
+   {
     "id": "ouka-v1.6.2",
     "title": "The Grand Synthesis 1.6.2 — il treno maglev Ryusei",
     "summary": "Un aggiornamento ferroviario. Il treno maglev Ryusei corre su un binario che tracci tu, con stazioni, una consolle di smistamento e un treno di quattro vetture in cui si può camminare. Aggiunge 6 nuovi oggetti e 3 nuovi blocchi.",
@@ -863,6 +878,39 @@
    }
   ],
   "halia": [
+   {
+    "id": "halia-v1.2.1",
+    "title": "Halia V1.2.1 — correzione di un crash all’apertura dell’inventario",
+    "summary": "Halia V1.2.1 corregge un crash: con OUKA installato, aprire l’inventario in modalità creativa chiudeva il gioco.",
+    "highlights": [
+     "Corretto: aprire l’inventario in modalità creativa non fa più chiudere il gioco quando OUKA è installato insieme a Halia. La scheda creativa dell’Aerie mostrava l’Aerie Heart due volte."
+    ],
+    "warnings": [
+     "I requisiti sono gli stessi di V1.2.0: Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successivo, Java 25. Nient’altro è cambiato."
+    ]
+   },
+   {
+    "id": "halia-v1.2.0",
+    "title": "Halia V1.2 — la rete di stoccaggio Aerie, 20 nuove lame con 7 nuove tecniche e SS-05",
+    "summary": "Halia V1.2 aggiunge l'Aerie, una rete di stoccaggio che si costruisce con un Aerie Heart, dei condotti e delle celle: ogni oggetto e ogni fluido che possiedi, consultabili da un'unica console, vengono spostati in entrambe le direzioni dai Talon Intakes e Outlets e fabbricati su richiesta dagli Artificers. La Halia Blade ottiene 20 lame con nome, 7 tecniche di taglio e anime che una lama raccoglie e spende.",
+    "highlights": [
+     "L'Aerie: posiziona un Aerie Heart, collega i dispositivi con gli Aerie Conduits, metti i Clutch Cells in una Clutch Bay e apri una Roost Console per vedere e cercare tutto ciò che è immagazzinato. 37 tipi di dispositivo, la maggior parte in 16 colori.",
+     "Spostamento e fabbricazione: i Talon Intakes e Outlets spostano oggetti e fluidi tra l'Aerie e qualsiasi baule o macchina; gli Artificers fabbricano su richiesta seguendo degli schemi scritti in una Scribe Console; gli Updraft Masts e le Field Consoles raggiungono l'Aerie senza fili.",
+     "Energia con OUKA: se OUKA è installato, l'Aerie Heart prende la sua energia dalla rete di piloni Tesla di OUKA. Senza OUKA, l'Aerie non richiede energia.",
+     "20 nuove lame con nome: le serie Gale Fang e Tempest Fang, Ironcrag, Ashen Crag, sei Plumes dal legno alla netherite, la Weathered Blade, Evenfall, Heartwood e i Raptors. La maggior parte si forgia sull'incudine a partire da una cassa di materiali; alcune cadono dai boss; gli zombie a volte portano una Weathered Blade; e una lama senza nome su un supporto, colpita dall'esplosione di un Wither, diventa Ashen Crag.",
+     "7 nuove tecniche di taglio: Blossom End, Void Slash, Circle Slash, Vertical Drive, Horizontal Drive, Wave Edge e Piercing. I Drive scagliano un fendente volante davanti a te.",
+     "Anime: una lama impugnata mentre sconfiggi dei nemici raccoglie anime dalla loro esperienza. Le spade evocate ora costano anime invece di esperienza, e affinare una lama sull'incudine le dà anime.",
+     "Durabilità e affinamento: ogni lama con nome ha ora una propria durabilità, e l'affinamento aumenta il danno di una lama e la sua durabilità massima (fino all'affinamento 200).",
+     "Stellar Remote SS-05 Tesseract: un quinto attacco, con un proprio filmato. Un cubo di luce di 640 blocchi per lato sale intorno al tuo mirino; il suo suolo viene diviso in celle che vengono sollevate, ruotate e sospese in aria anello per anello, dal centro verso l'esterno, e un cubo di luce si blocca nel cielo."
+    ],
+    "warnings": [
+     "Requisiti: Minecraft 26.3, Fabric Loader 0.19.5 o più recente, Fabric API 0.161.0+26.3 o più recente, Java 25. Per il multigiocatore, Halia deve essere installato anche sul server.",
+     "Modifiche alle lame di V1.1: il colpo di una lama è 1 più basso di prima, a parità di valore base; le lame con nome appena fabbricate hanno un attacco base e una durabilità inferiori rispetto a V1.1 (ad esempio Yamato: attacco 9 → 7, durabilità 100 → 40); le spade evocate richiedono anime. Le lame già presenti nel tuo mondo mantengono la durabilità con cui sono state fabbricate.",
+     "Con OUKA installato, l'Aerie non funziona finché il suo Heart non si trova entro la portata di un pilone alimentato. Per farlo funzionare senza energia accanto a OUKA, imposta powerFromOukaGrid su false in config/halia-aerie.json.",
+     "I mondi della V1.1 si aprono così come sono. Non tornare alla 1.1 con un mondo che contiene dispositivi Aerie o le nuove lame: verrebbero eliminati.",
+     "Lo Stellar Remote distrugge in modo permanente aree molto grandi, e SS-05 rimodella un'area di 640 blocchi in una sola volta: fai un backup del tuo mondo. Chiunque si trovi dentro il cubo quando passa la sua onda muore."
+    ]
+   },
    {
     "id": "halia-v1.1.1",
     "title": "Halia V1.1.1 — correzione di un crash con «Improved Transparency»",

@@ -1,11 +1,70 @@
 {
  "lang": "id",
  "brand": "halia",
- "updated": "2026-10-12",
+ "updated": "2026-10-16",
  "title": "Riwayat Pembaruan",
- "updated_label": "Diperbarui 2026-10-12",
+ "updated_label": "Diperbarui 2026-10-16",
  "note": "",
  "groups": [
+  {
+   "label": "V1.2",
+   "summary": "Halia V1.2.1 — perbaikan crash saat membuka inventaris",
+   "releases": [
+    {
+     "version": "V1.2.1",
+     "date": "2026-10-16",
+     "type": "hotfix",
+     "title": "Halia V1.2.1 — perbaikan crash saat membuka inventaris",
+     "summary": "Halia V1.2.1 memperbaiki crash: saat OUKA juga terpasang, membuka inventaris dalam mode kreatif menutup permainan.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Diperbaiki: membuka inventaris dalam mode kreatif tidak lagi membuat permainan crash saat OUKA terpasang bersama Halia. Tab kreatif Aerie menampilkan Aerie Heart dua kali."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Persyaratan sama dengan V1.2.0: Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, Java 25. Tidak ada perubahan lain."
+       ]
+      }
+     ]
+    },
+    {
+     "version": "V1.2.0",
+     "date": "2026-10-16",
+     "type": "release",
+     "title": "Halia V1.2 — jaringan penyimpanan Aerie, 20 pedang baru dengan 7 jurus baru, dan SS-05",
+     "summary": "Halia V1.2 menambahkan Aerie, jaringan penyimpanan yang dibangun dari Aerie Heart, konduit, dan sel: setiap item dan cairan yang Anda miliki, dapat dicari dari satu konsol, dipindahkan masuk dan keluar oleh Talon Intakes dan Outlets, serta dibuat sesuai permintaan oleh Artificers. Halia Blade mendapat 20 pedang bernama, 7 jurus tebasan, dan jiwa yang dikumpulkan serta dibelanjakan oleh sebuah pedang.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Aerie: letakkan Aerie Heart, hubungkan perangkat dengan Aerie Conduits, masukkan Clutch Cells ke Clutch Bay, lalu buka Roost Console untuk melihat dan mencari semua yang tersimpan. 37 jenis perangkat, sebagian besar dalam 16 warna.",
+        "Pemindahan dan pembuatan: Talon Intakes dan Outlets memindahkan item dan cairan antara Aerie dan peti atau mesin mana pun; Artificers membuat sesuai permintaan dari pola yang ditulis di Scribe Console; Updraft Masts dan Field Consoles menjangkau Aerie tanpa kabel.",
+        "Daya bersama OUKA: jika OUKA terpasang, Aerie Heart mengambil dayanya dari jaringan pylon Tesla milik OUKA. Tanpa OUKA, Aerie tidak memerlukan daya.",
+        "20 pedang bernama baru: lini Gale Fang dan Tempest Fang, Ironcrag, Ashen Crag, enam Plumes dari kayu sampai netherite, Weathered Blade, Evenfall, Heartwood, dan Raptors. Sebagian besar ditempa di landasan dari sebuah kotak material; sebagian jatuh dari bos; zombie kadang membawa Weathered Blade; dan pedang tanpa nama di atas dudukan yang terkena ledakan Wither menjadi Ashen Crag.",
+        "7 jurus tebasan baru: Blossom End, Void Slash, Circle Slash, Vertical dan Horizontal Drive, Wave Edge, dan Piercing. Drive melepaskan tebasan terbang ke depan Anda.",
+        "Jiwa: pedang yang dipegang saat Anda mengalahkan musuh mengumpulkan jiwa dari pengalaman mereka. Pedang yang dipanggil kini membutuhkan jiwa, bukan pengalaman, dan memperkuat pedang di landasan memberinya jiwa.",
+        "Ketahanan dan penguatan: setiap pedang bernama kini memiliki ketahanannya sendiri, dan penguatan menaikkan kerusakan pedang serta ketahanan maksimumnya (sampai nilai penguatan 200).",
+        "Stellar Remote SS-05 Tesseract: serangan kelima, dengan filmnya sendiri. Sebuah kubus cahaya dengan sisi 640 blok naik di sekitar bidikan Anda; tanahnya terbagi menjadi sel-sel yang diangkat, diputar, dan digantung di udara, cincin demi cincin dari tengah ke luar, dan sebuah kubus cahaya terkunci di langit."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Persyaratan: Minecraft 26.3, Fabric Loader 0.19.5 atau yang lebih baru, Fabric API 0.161.0+26.3 atau yang lebih baru, Java 25. Untuk multipemain, Halia juga harus dipasang di server.",
+        "Perubahan pada pedang V1.1: pukulan sebuah pedang 1 lebih rendah dari sebelumnya pada nilai dasar yang sama; pedang bernama yang baru dibuat memiliki serangan dasar dan ketahanan yang lebih rendah daripada di V1.1 (misalnya Yamato: serangan 9 → 7, ketahanan 100 → 40); pedang yang dipanggil membutuhkan jiwa. Pedang yang sudah ada di dunia Anda tetap memiliki ketahanan saat dibuat.",
+        "Jika OUKA terpasang, Aerie tidak berfungsi sampai Heart-nya berada dalam jangkauan pylon yang bertenaga. Untuk menjalankannya tanpa daya di samping OUKA, atur powerFromOukaGrid menjadi false di config/halia-aerie.json.",
+        "Dunia dari V1.1 terbuka apa adanya. Jangan kembali ke 1.1 dengan dunia yang berisi perangkat Aerie atau pedang baru: perangkat dan pedang itu akan terhapus.",
+        "Stellar Remote menghancurkan area yang sangat luas secara permanen, dan SS-05 membentuk ulang area 640 blok sekaligus — cadangkan dunia Anda. Siapa pun yang berdiri di dalam kubus saat gelombangnya lewat akan mati."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.1",
    "summary": "Halia V1.1.1 — perbaikan crash dengan «Improved Transparency»",

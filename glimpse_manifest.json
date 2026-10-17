@@ -71,11 +71,11 @@
   },
   "ouka": {
     "mod_id": "ouka",
-    "latest": "1.6.2",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/OUKA_MODs_v1.6.2+mc26.3.zip",
-    "file_name": "OUKA_MODs_v1.6.2+mc26.3.zip",
-    "file_size": 13601413,
-    "sha256": "ff4ed1287207b2bff0bfbbe89564d1240de57c8e9178aadc9c06bcba6ca4f86a",
+    "latest": "1.6.2.2",
+    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/OUKA_MODs_v1.6.2.2+mc26.3.zip",
+    "file_name": "OUKA_MODs_v1.6.2.2+mc26.3.zip",
+    "file_size": 13625731,
+    "sha256": "df7115aa1f36a7d1eda31eb614904d9c292e868de1e6351e6c313529746f18f5",
     "jars": {
       "geckolib": {
         "path": "mods/geckolib-fabric-26.3-5.5.6.jar",
@@ -84,10 +84,10 @@
         "sha256": "68e861d4dbbf0143261503a1e958833d2b9a1a4c91b4887faf28749d66fc1cf3"
       },
       "ouka": {
-        "path": "mods/ouka-1.6.2+mc26.3.jar",
-        "version": "1.6.2",
-        "file_size": 13263350,
-        "sha256": "1e6c7223ceebb8603d00543e5bc935c3b3a7ad9bbaa8ad85168449f43c92d467"
+        "path": "mods/ouka-1.6.2.2+mc26.3.jar",
+        "version": "1.6.2.2",
+        "file_size": 13289069,
+        "sha256": "8584943417e8176b1f587c1730122d0c59cc65221a5f0bdeec1c21dc2219f6cc"
       }
     }
   },
@@ -122,11 +122,11 @@
   },
   "halia": {
     "mod_id": "halia",
-    "latest": "1.1.1",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/halia-1.1.1.jar",
-    "file_name": "halia-1.1.1.jar",
-    "file_size": 12030675,
-    "sha256": "cbd330d75c91d2360860bb22176772bd863f097516084b208a97eccb58c94154"
+    "latest": "1.2.1",
+    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/halia-1.2.1.jar",
+    "file_name": "halia-1.2.1.jar",
+    "file_size": 17631196,
+    "sha256": "e691ff206b1f2de17ad445a15d98abbb8bbb701b66c37d3daeabf0dc5da1f0ff"
   },
   "agent": {
     "latest": "5.0.1",

@@ -311,6 +311,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.2.2",
+    "title": "The Grand Synthesis 1.6.2.2 — furnace fuel, assembly materials and the hand-crank generator",
+    "summary": "An industry update that also carries the 1.6.2.1 fixes. The Catalytic Smelting Furnace now smelts ore straight from the ground, the Automated Precision Assembly Line gains a materials store you fill before choosing a recipe, and the new Hand-Crank Generator brings OUKA power to pure survival. It adds 1 new block.",
+    "highlights": [
+     "The Catalytic Smelting Furnace takes Raw Tungsten and Ancient Debris directly, without grinding them to dust first. It burns Argon Canisters from its own fuel slot, and hoppers feed fuel only into that slot.",
+     "The Automated Precision Assembly Line has a Materials tab. Put parts into its materials store from your inventory, then pick a recipe: if the store holds everything the recipe needs, the line builds it at once. A green bar in the recipe list marks what the store can build right now. Hoppers and conveyors still feed the intake as before.",
+     "The Hand-Crank Generator is made from vanilla items only. Hold right-click on it to turn the crank and send power to a nearby Tesla pylon, so even a hardcore world can power its first machines.",
+     "From 1.6.2.1: the Ouka Blessing effect icon stays, and hovering it in your inventory lists every blessing you have and how strong it is. Ryusei now explains a wrong placement or use, gives hints for operating the train, and tells riders why the train cannot stop at the next station."
+    ],
+    "warnings": [
+     "Going back to an earlier version after playing removes the Hand-Crank Generator from the world.",
+     "Before you install 1.6.2.2, remove the old OUKA jar (1.6.2 or older) from the mods folder and keep only one copy of GeckoLib 5.5.6. It needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, and Fabric API 0.161.0+26.3 or newer. Install it on both the client and the server."
+    ]
+   },
+   {
     "id": "ouka-v1.6.2",
     "title": "The Grand Synthesis 1.6.2 — the Ryusei maglev train",
     "summary": "A train update. The Ryusei maglev train runs on guideway you lay out, with stations, a dispatch console and a four-car train you can walk through. It adds 6 new items and 3 new blocks.",
@@ -867,6 +882,39 @@
    }
   ],
   "halia": [
+   {
+    "id": "halia-v1.2.1",
+    "title": "Halia V1.2.1 — fix for a crash when opening the inventory",
+    "summary": "Halia V1.2.1 fixes a crash: with OUKA also installed, opening the inventory in creative mode closed the game.",
+    "highlights": [
+     "Fixed: opening the inventory in creative mode no longer crashes the game when OUKA is installed beside Halia. The Aerie's creative tab listed the Aerie Heart twice."
+    ],
+    "warnings": [
+     "Requirements are unchanged from V1.2.0: Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer, Java 25. Nothing else changed."
+    ]
+   },
+   {
+    "id": "halia-v1.2.0",
+    "title": "Halia V1.2 — the Aerie storage network, 20 new blades with 7 new arts, and SS-05",
+    "summary": "Halia V1.2 adds the Aerie, a storage network you build from an Aerie Heart, conduits and cells: every item and fluid you own, searchable from one console, moved in and out by Talon Intakes and Outlets and crafted on demand by Artificers. The Halia Blade gains 20 named blades, 7 slash arts, and souls that a blade collects and spends.",
+    "highlights": [
+     "The Aerie: place an Aerie Heart, join devices with Aerie Conduits, put Clutch Cells in a Clutch Bay, and open a Roost Console to see and search everything stored. 37 kinds of device, most of them in 16 colours.",
+     "Moving and crafting: Talon Intakes and Outlets move items and fluids between the Aerie and any chest or machine; Artificers craft on demand from patterns written at a Scribe Console; Updraft Masts and Field Consoles reach the Aerie without wires.",
+     "Power with OUKA: if OUKA is installed, the Aerie Heart draws its power from OUKA's Tesla pylon grid. Without OUKA the Aerie needs no power.",
+     "20 new named blades: the Gale Fang and Tempest Fang lines, Ironcrag, Ashen Crag, six Plumes from wood to netherite, the Weathered Blade, Evenfall, Heartwood and the Raptors. Most are forged on the anvil from a material box; some drop from bosses; zombies sometimes carry a Weathered Blade; and a nameless blade on a stand caught in a Wither's blast becomes the Ashen Crag.",
+     "7 new slash arts: Blossom End, Void Slash, Circle Slash, Vertical and Horizontal Drive, Wave Edge and Piercing. Drives send a flying slash ahead of you.",
+     "Souls: a blade held while you defeat enemies gathers souls from their experience. Summoned swords now cost souls instead of experience, and refining a blade on the anvil gives it souls.",
+     "Durability and refining: each named blade now has its own durability, and refining raises a blade's damage and its maximum durability (up to refine 200).",
+     "Stellar Remote SS-05 Tesseract: a fifth attack, with its own film. A cube of light 640 blocks on a side rises round your crosshair; its ground is cut into cells that are lifted, turned and hung in the air ring by ring from the middle outward, and a cube of light locks in the sky."
+    ],
+    "warnings": [
+     "Requirements: Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer, Java 25. For multiplayer, Halia must also be installed on the server.",
+     "Changes to V1.1 blades: a blade's hit is 1 lower than before at the same base value; newly made named blades have lower base attack and durability than in V1.1 (for example Yamato: attack 9 → 7, durability 100 → 40); summoned swords need souls. Blades already in your world keep the durability they were made with.",
+     "With OUKA installed, the Aerie does not work until its Heart is within reach of a powered pylon. To run it without power beside OUKA, set powerFromOukaGrid to false in config/halia-aerie.json.",
+     "Worlds from V1.1 open as they are. Do not go back to 1.1 with a world that holds Aerie devices or the new blades: they would be deleted.",
+     "The Stellar Remote destroys very large areas permanently, and SS-05 reshapes a 640-block area at once — back up your world. Anyone standing inside the cube when its wave passes dies."
+    ]
+   },
    {
     "id": "halia-v1.1.1",
     "title": "Halia V1.1.1 — fix for a crash with Improved Transparency",

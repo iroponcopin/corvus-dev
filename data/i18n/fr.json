@@ -307,6 +307,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.2.2",
+    "title": "The Grand Synthesis 1.6.2.2 — carburant du four, matériaux d'assemblage et générateur à manivelle",
+    "summary": "Une mise à jour industrielle qui reprend aussi les corrections de 1.6.2.1. Le Four de fusion catalytique fond maintenant le minerai directement, la Ligne d'assemblage de précision automatisée reçoit un stock de matériaux à remplir avant de choisir une recette, et le nouveau Générateur à manivelle apporte l'énergie OUKA à la survie pure. Il ajoute 1 nouveau bloc.",
+    "highlights": [
+     "Le Four de fusion catalytique accepte directement le Tungstène brut et les Débris antiques, sans les broyer d'abord en poudre. Il brûle des Cartouches d'argon de son propre emplacement de combustible, et les trémies n'alimentent en combustible que cet emplacement.",
+     "La Ligne d'assemblage de précision automatisée a un onglet Matériaux. Mettez des pièces de votre inventaire dans son stock, puis choisissez une recette : si le stock contient tout ce qu'il faut, la ligne la fabrique aussitôt. Une barre verte dans la liste des recettes indique ce que le stock peut fabriquer dès maintenant. Les trémies et les convoyeurs alimentent toujours l'entrée comme avant.",
+     "Le Générateur à manivelle est fabriqué uniquement avec des objets vanilla. Maintenez le clic droit pour tourner la manivelle et envoyer de l'énergie à un pylône Tesla voisin, afin que même un monde hardcore puisse alimenter ses premières machines.",
+     "Depuis 1.6.2.1 : l'icône de l'effet Bénédiction d'Ouka reste, et survoler cette icône dans l'inventaire liste chaque bénédiction que vous avez et sa puissance. Ryusei explique maintenant une mauvaise pose ou utilisation, donne des indications pour conduire le train, et indique aux passagers pourquoi le train ne peut pas s'arrêter à la prochaine gare."
+    ],
+    "warnings": [
+     "Si vous revenez à une version antérieure après avoir joué, le Générateur à manivelle disparaît du monde.",
+     "Avant d'installer 1.6.2.2, retirez l'ancien jar d'OUKA (1.6.2 ou plus ancien) du dossier mods et ne gardez qu'une copie de GeckoLib 5.5.6. Il faut Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, et Fabric API 0.161.0+26.3 ou plus récent. Installez-le sur le client et sur le serveur."
+    ]
+   },
+   {
     "id": "ouka-v1.6.2",
     "title": "The Grand Synthesis 1.6.2 — le train maglev Ryusei",
     "summary": "Une mise à jour ferroviaire. Le train maglev Ryusei roule sur une voie que vous tracez vous-même, avec des gares, un pupitre de régulation et un train de quatre voitures où l'on peut marcher. Elle ajoute 6 nouveaux objets et 3 nouveaux blocs.",
@@ -863,6 +878,39 @@
    }
   ],
   "halia": [
+   {
+    "id": "halia-v1.2.1",
+    "title": "Halia V1.2.1 — correction d’un plantage à l’ouverture de l’inventaire",
+    "summary": "Halia V1.2.1 corrige un plantage : avec OUKA installé, ouvrir l’inventaire en mode créatif fermait le jeu.",
+    "highlights": [
+     "Corrigé : ouvrir l’inventaire en mode créatif ne fait plus planter le jeu quand OUKA est installé à côté de Halia. L’onglet créatif de l’Aerie affichait l’Aerie Heart deux fois."
+    ],
+    "warnings": [
+     "La configuration requise est la même que pour V1.2.0 : Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent, Java 25. Rien d’autre ne change."
+    ]
+   },
+   {
+    "id": "halia-v1.2.0",
+    "title": "Halia V1.2 — le réseau de stockage Aerie, 20 nouvelles lames avec 7 nouvelles techniques, et SS-05",
+    "summary": "Halia V1.2 ajoute l'Aerie, un réseau de stockage que l'on construit avec un Aerie Heart, des conduits et des cellules : chaque objet et chaque fluide que vous possédez, consultables depuis une seule console, sont déplacés dans les deux sens par les Talon Intakes et Outlets et fabriqués à la demande par les Artificers. La Halia Blade gagne 20 lames nommées, 7 techniques de taille et des âmes qu'une lame collecte et dépense.",
+    "highlights": [
+     "L'Aerie : posez un Aerie Heart, reliez les appareils avec des Aerie Conduits, placez des Clutch Cells dans une Clutch Bay et ouvrez une Roost Console pour voir et chercher tout ce qui est stocké. 37 types d'appareils, dont la plupart existent en 16 couleurs.",
+     "Transport et fabrication : les Talon Intakes et Outlets déplacent objets et fluides entre l'Aerie et n'importe quel coffre ou machine ; les Artificers fabriquent à la demande à partir de motifs écrits sur une Scribe Console ; les Updraft Masts et les Field Consoles atteignent l'Aerie sans fils.",
+     "Énergie avec OUKA : si OUKA est installé, l'Aerie Heart puise son énergie dans le réseau de pylônes Tesla d'OUKA. Sans OUKA, l'Aerie n'a besoin d'aucune énergie.",
+     "20 nouvelles lames nommées : les lignées Gale Fang et Tempest Fang, Ironcrag, Ashen Crag, six Plumes, du bois au netherite, la Weathered Blade, Evenfall, Heartwood et les Raptors. La plupart se forgent sur l'enclume à partir d'une caisse de matériaux ; certaines tombent de boss ; des zombies portent parfois une Weathered Blade ; et une lame sans nom posée sur un support, frappée par l'explosion d'un Wither, devient l'Ashen Crag.",
+     "7 nouvelles techniques de taille : Blossom End, Void Slash, Circle Slash, Vertical Drive, Horizontal Drive, Wave Edge et Piercing. Les Drives envoient une entaille volante devant vous.",
+     "Âmes : une lame que vous tenez en main pendant que vous vainquez des ennemis récolte des âmes à partir de leur expérience. Les épées invoquées coûtent désormais des âmes au lieu de points d'expérience, et affiner une lame sur l'enclume lui donne des âmes.",
+     "Durabilité et affinage : chaque lame nommée possède désormais sa propre durabilité, et l'affinage augmente les dégâts d'une lame ainsi que sa durabilité maximale (jusqu'à l'affinage 200).",
+     "Stellar Remote SS-05 Tesseract : une cinquième attaque, avec son propre film. Un cube de lumière de 640 blocs de côté s'élève autour de votre viseur ; son sol est découpé en cellules qui sont soulevées, tournées et suspendues dans les airs anneau par anneau, du centre vers l'extérieur, et un cube de lumière se verrouille dans le ciel."
+    ],
+    "warnings": [
+     "Prérequis : Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent, Java 25. En multijoueur, Halia doit aussi être installé sur le serveur.",
+     "Modifications des lames de V1.1 : le coup d'une lame est inférieur de 1 à ce qu'il était, à valeur de base égale ; les lames nommées nouvellement fabriquées ont une attaque de base et une durabilité plus faibles qu'en V1.1 (par exemple Yamato : attaque 9 → 7, durabilité 100 → 40) ; les épées invoquées nécessitent des âmes. Les lames déjà présentes dans votre monde conservent la durabilité avec laquelle elles ont été fabriquées.",
+     "Avec OUKA installé, l'Aerie ne fonctionne pas tant que son Heart ne se trouve pas à portée d'un pylône alimenté. Pour le faire tourner sans énergie à côté d'OUKA, réglez powerFromOukaGrid sur false dans config/halia-aerie.json.",
+     "Les mondes de V1.1 s'ouvrent tels qu'ils sont. Ne revenez pas à la 1.1 avec un monde qui contient des appareils Aerie ou les nouvelles lames : ils seraient supprimés.",
+     "Le Stellar Remote détruit de très grandes zones de façon permanente, et SS-05 remodèle une zone de 640 blocs d'un seul coup : sauvegardez votre monde. Quiconque se trouve dans le cube au passage de sa vague meurt."
+    ]
+   },
    {
     "id": "halia-v1.1.1",
     "title": "Halia V1.1.1 — correction d'un plantage avec « Improved Transparency »",

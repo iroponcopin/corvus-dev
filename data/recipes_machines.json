@@ -1,6 +1,6 @@
 {
  "sources": {
-  "ouka": "1.6.2",
+  "ouka": "1.6.2.2",
   "cherry": "1.2.1"
  },
  "stations": [
@@ -4676,6 +4676,24 @@
    "brand": "ouka"
   },
   {
+   "id": "ouka:process/smelt_ancient_debris",
+   "station": "catalytic_smelting_furnace",
+   "inputs": [
+    {
+     "id": "minecraft:ancient_debris",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "minecraft:netherite_scrap",
+     "n": 1
+    }
+   ],
+   "time": 160,
+   "brand": "ouka"
+  },
+  {
    "id": "ouka:process/smelt_pure_titanium",
    "station": "catalytic_smelting_furnace",
    "inputs": [
@@ -4696,6 +4714,25 @@
    "outputs": [
     {
      "id": "ouka:pure_titanium_ingot",
+     "n": 2
+    }
+   ],
+   "time": 160,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/smelt_raw_tungsten",
+   "station": "catalytic_smelting_furnace",
+   "inputs": [
+    {
+     "id": "ouka:raw_tungsten",
+     "n": 1,
+     "any": true
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:tungsten_ingot",
      "n": 2
     }
    ],
@@ -6466,7 +6503,9 @@
   "ouka:process/sinter_iron_ingot": "ouka 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 鉄の超微粉 鉄の超微粉 ouka:ultrafine_iron_powder ultrafine_iron_powder ultrafine iron powder アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
   "ouka:process/sinter_titanium_ingot": "ouka チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot チタンの超微粉 ちたんの超微粉 ouka:ultrafine_titanium_powder ultrafine_titanium_powder ultrafine titanium powder アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
   "ouka:process/sinter_tungsten_ingot": "ouka タングステンのインゴット たんぐすてんのいんごっと ouka:tungsten_ingot tungsten_ingot tungsten ingot タングステンの超微粉 たんぐすてんの超微粉 ouka:ultrafine_tungsten_powder ultrafine_tungsten_powder ultrafine tungsten powder アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
+  "ouka:process/smelt_ancient_debris": "ouka ネザライトの欠片 ねざらいとの欠片 minecraft:netherite_scrap netherite_scrap netherite scrap 古代の残骸 古代の残骸 minecraft:ancient_debris ancient_debris ancient debris",
   "ouka:process/smelt_pure_titanium": "ouka 超高純度チタンのインゴット 超高純度ちたんのいんごっと ouka:pure_titanium_ingot pure_titanium_ingot pure titanium ingot チタンの粉 ちたんの粉 ouka:titanium_dust titanium_dust titanium dust 液体酸素の缶 液体酸素の缶 ouka:liquid_oxygen_canister liquid_oxygen_canister liquid oxygen canister 触媒ペレット 触媒ぺれっと ouka:catalyst_pellet catalyst_pellet catalyst pellet",
+  "ouka:process/smelt_raw_tungsten": "ouka タングステンのインゴット たんぐすてんのいんごっと ouka:tungsten_ingot tungsten_ingot tungsten ingot タングステン原石 たんぐすてん原石 ouka:raw_tungsten raw_tungsten raw tungsten",
   "ouka:process/smelt_tungsten": "ouka タングステンのインゴット たんぐすてんのいんごっと ouka:tungsten_ingot tungsten_ingot tungsten ingot タングステンの粉 たんぐすてんの粉 ouka:tungsten_dust tungsten_dust tungsten dust 液体酸素の缶 液体酸素の缶 ouka:liquid_oxygen_canister liquid_oxygen_canister liquid oxygen canister 触媒ペレット 触媒ぺれっと ouka:catalyst_pellet catalyst_pellet catalyst pellet",
   "ouka:process/wind_superconducting_coil": "ouka 超伝導コイル 超伝導こいる ouka:superconducting_coil superconducting_coil superconducting coil 電解銅板 電解銅板 ouka:electrolytic_copper_plate electrolytic_copper_plate electrolytic copper plate 超高純度チタンのインゴット 超高純度ちたんのいんごっと ouka:pure_titanium_ingot pure_titanium_ingot pure titanium ingot チタンの超微粉 ちたんの超微粉 ouka:ultrafine_titanium_powder ultrafine_titanium_powder ultrafine titanium powder",
   "ouka:process_b4/fractionate_crude": "ouka ガソリンの缶 がそりんの缶 ouka:gasoline_canister gasoline_canister gasoline canister 灯油の缶 灯油の缶 ouka:kerosene_canister kerosene_canister kerosene canister 潤滑油の缶 潤滑油の缶 ouka:lubricant_canister lubricant_canister lubricant canister 原油の缶 原油の缶 ouka:crude_oil_canister crude_oil_canister crude oil canister",

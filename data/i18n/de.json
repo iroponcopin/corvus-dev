@@ -307,6 +307,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.6.2.2",
+    "title": "The Grand Synthesis 1.6.2.2 — Ofenbrennstoff, Montagematerialien und der Handkurbelgenerator",
+    "summary": "Ein Industrie-Update, das auch die Korrekturen aus 1.6.2.1 enthält. Der Katalytische Schmelzofen schmilzt Erz jetzt direkt aus dem Boden, die Automatisierte Präzisions-Montagelinie erhält einen Materialspeicher, den du vor der Rezeptwahl füllst, und der neue Handkurbelgenerator bringt OUKA-Strom auch ins reine Überleben. Es kommt 1 neuer Block hinzu.",
+    "highlights": [
+     "Der Katalytische Schmelzofen nimmt Rohen Wolfram und Antike Trümmer direkt an, ohne sie vorher zu Staub zu mahlen. Er verbrennt Argon-Kanister aus seinem eigenen Brennstofffach, und Trichter füllen Brennstoff nur in dieses Fach.",
+     "Die Automatisierte Präzisions-Montagelinie hat einen Materialien-Reiter. Lege Teile aus deinem Inventar in ihren Materialspeicher und wähle dann ein Rezept: Enthält der Speicher alles, was das Rezept braucht, baut die Linie es sofort. Ein grüner Balken in der Rezeptliste markiert, was der Speicher schon jetzt bauen kann. Trichter und Förderbänder füllen den Eingang wie bisher.",
+     "Der Handkurbelgenerator besteht nur aus Vanilla-Gegenständen. Halte die rechte Maustaste gedrückt, um die Kurbel zu drehen und Strom an einen nahen Tesla-Pylon zu schicken, sodass selbst eine Hardcore-Welt ihre ersten Maschinen betreiben kann.",
+     "Ab 1.6.2.1: Das Symbol des Ouka-Segens bleibt, und wenn du im Inventar darauf zeigst, werden alle Segen und ihre Stärke aufgelistet. Ryusei erklärt falsches Platzieren oder Benutzen, gibt Hinweise zum Betrieb des Zugs und sagt Fahrgästen, warum der Zug an der nächsten Station nicht halten kann."
+    ],
+    "warnings": [
+     "Wenn du nach dem Spielen zu einer früheren Version zurückkehrst, verschwindet der Handkurbelgenerator aus der Welt.",
+     "Bevor du 1.6.2.2 installierst, entferne die alte OUKA-jar (1.6.2 oder älter) aus dem mods-Ordner und behalte nur eine Kopie von GeckoLib 5.5.6. Es benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Installiere es auf Client und Server."
+    ]
+   },
+   {
     "id": "ouka-v1.6.2",
     "title": "The Grand Synthesis 1.6.2 — der Ryusei-Magnetschwebezug",
     "summary": "Ein Zug-Update. Der Ryusei-Magnetschwebezug fährt auf einer Trasse, die Sie selbst anlegen, mit Haltestellen, einem Betriebspult und einem vierteiligen Zug, durch den Sie gehen können. Es kommen 6 neue Gegenstände und 3 neue Blöcke hinzu.",
@@ -863,6 +878,39 @@
    }
   ],
   "halia": [
+   {
+    "id": "halia-v1.2.1",
+    "title": "Halia V1.2.1 — Absturz beim Öffnen des Inventars behoben",
+    "summary": "Halia V1.2.1 behebt einen Absturz: Mit installiertem OUKA schloss sich das Spiel, wenn man im Kreativmodus das Inventar öffnete.",
+    "highlights": [
+     "Behoben: Das Öffnen des Inventars im Kreativmodus lässt das Spiel nicht mehr abstürzen, wenn OUKA neben Halia installiert ist. Der Kreativ-Reiter der Aerie führte das Aerie Heart doppelt auf."
+    ],
+    "warnings": [
+     "Die Voraussetzungen sind dieselben wie bei V1.2.0: Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer, Java 25. Sonst hat sich nichts geändert."
+    ]
+   },
+   {
+    "id": "halia-v1.2.0",
+    "title": "Halia V1.2 — das Aerie-Speichernetzwerk, 20 neue Klingen mit 7 neuen Techniken und SS-05",
+    "summary": "Halia V1.2 fügt das Aerie hinzu, ein Speichernetzwerk, das du aus einem Aerie Heart, Leitungen und Zellen aufbaust: Jeder Gegenstand und jede Flüssigkeit, die du besitzt und über eine einzige Konsole durchsuchen kannst, werden von Talon Intakes und Outlets in beide Richtungen bewegt und von Artificers auf Abruf hergestellt. Die Halia Blade erhält 20 benannte Klingen, 7 Hiebtechniken und Seelen, die eine Klinge sammelt und ausgibt.",
+    "highlights": [
+     "Das Aerie: Setze ein Aerie Heart, verbinde Geräte mit Aerie Conduits, lege Clutch Cells in eine Clutch Bay und öffne eine Roost Console, um alles Gespeicherte zu sehen und zu durchsuchen. 37 Gerätearten, die meisten in 16 Farben.",
+     "Transport und Herstellung: Talon Intakes und Outlets bewegen Gegenstände und Flüssigkeiten zwischen dem Aerie und jeder Truhe oder Maschine; Artificers stellen auf Abruf her, nach Mustern, die an einer Scribe Console geschrieben wurden; Updraft Masts und Field Consoles erreichen das Aerie ohne Kabel.",
+     "Strom mit OUKA: Ist OUKA installiert, bezieht das Aerie Heart seinen Strom aus dem Tesla-Pylon-Netz von OUKA. Ohne OUKA braucht das Aerie keinen Strom.",
+     "20 neue benannte Klingen: die Reihen Gale Fang und Tempest Fang, Ironcrag, Ashen Crag, sechs Plumes von Holz bis Netherit, die Weathered Blade, Evenfall, Heartwood und die Raptors. Die meisten werden am Amboss aus einer Materialkiste geschmiedet; einige fallen von Bossen; Zombies tragen manchmal eine Weathered Blade; und eine namenlose Klinge auf einem Ständer, die von einer Wither-Explosion erfasst wird, wird zu Ashen Crag.",
+     "7 neue Hiebtechniken: Blossom End, Void Slash, Circle Slash, Vertical Drive, Horizontal Drive, Wave Edge und Piercing. Drives schicken einen fliegenden Hieb vor dir her.",
+     "Seelen: Eine Klinge, die du in der Hand hältst, während du Gegner besiegst, sammelt Seelen aus deren Erfahrungspunkten. Beschworene Schwerter kosten nun Seelen statt Erfahrungspunkte, und das Verfeinern einer Klinge am Amboss gibt ihr Seelen.",
+     "Haltbarkeit und Verfeinerung: Jede benannte Klinge hat nun ihre eigene Haltbarkeit, und Verfeinern erhöht den Schaden einer Klinge und ihre maximale Haltbarkeit (bis Verfeinerung 200).",
+     "Stellar Remote SS-05 Tesseract: ein fünfter Angriff mit eigenem Film. Ein Lichtwürfel mit 640 Blöcken Seitenlänge erhebt sich um dein Fadenkreuz; sein Boden wird in Zellen zerlegt, die Ring für Ring von der Mitte nach außen angehoben, gedreht und in der Luft aufgehängt werden, und ein Lichtwürfel rastet am Himmel ein."
+    ],
+    "warnings": [
+     "Anforderungen: Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer, Java 25. Für Mehrspieler muss Halia auch auf dem Server installiert sein.",
+     "Änderungen an den Klingen aus V1.1: Der Treffer einer Klinge ist bei gleichem Grundwert um 1 niedriger als zuvor; neu hergestellte benannte Klingen haben einen geringeren Grundangriff und eine geringere Haltbarkeit als in V1.1 (zum Beispiel Yamato: Angriff 9 → 7, Haltbarkeit 100 → 40); beschworene Schwerter brauchen Seelen. Klingen, die bereits in deiner Welt sind, behalten die Haltbarkeit, mit der sie hergestellt wurden.",
+     "Mit installiertem OUKA funktioniert das Aerie erst, wenn sein Heart in Reichweite eines bestromten Pylons liegt. Um es ohne Strom neben OUKA laufen zu lassen, setze powerFromOukaGrid in config/halia-aerie.json auf false.",
+     "Welten aus V1.1 öffnen sich so, wie sie sind. Wechsle nicht mit einer Welt, die Aerie-Geräte oder die neuen Klingen enthält, zurück zu 1.1: Diese würden gelöscht.",
+     "Die Stellar Remote zerstört sehr große Bereiche dauerhaft, und SS-05 formt einen Bereich von 640 Blöcken auf einmal um — sichere vorher deine Welt. Wer beim Durchgang seiner Welle im Würfel steht, stirbt."
+    ]
+   },
    {
     "id": "halia-v1.1.1",
     "title": "Halia V1.1.1 — Absturz mit „Improved Transparency“ behoben",

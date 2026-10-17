@@ -1,11 +1,70 @@
 {
  "lang": "en",
  "brand": "halia",
- "updated": "2026-10-12",
+ "updated": "2026-10-16",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-12",
+ "updated_label": "Updated 2026-10-16",
  "note": "",
  "groups": [
+  {
+   "label": "V1.2",
+   "summary": "Halia V1.2.1 — fix for a crash when opening the inventory",
+   "releases": [
+    {
+     "version": "V1.2.1",
+     "date": "2026-10-16",
+     "type": "hotfix",
+     "title": "Halia V1.2.1 — fix for a crash when opening the inventory",
+     "summary": "Halia V1.2.1 fixes a crash: with OUKA also installed, opening the inventory in creative mode closed the game.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "Fixed: opening the inventory in creative mode no longer crashes the game when OUKA is installed beside Halia. The Aerie's creative tab listed the Aerie Heart twice."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Requirements are unchanged from V1.2.0: Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer, Java 25. Nothing else changed."
+       ]
+      }
+     ]
+    },
+    {
+     "version": "V1.2.0",
+     "date": "2026-10-16",
+     "type": "release",
+     "title": "Halia V1.2 — the Aerie storage network, 20 new blades with 7 new arts, and SS-05",
+     "summary": "Halia V1.2 adds the Aerie, a storage network you build from an Aerie Heart, conduits and cells: every item and fluid you own, searchable from one console, moved in and out by Talon Intakes and Outlets and crafted on demand by Artificers. The Halia Blade gains 20 named blades, 7 slash arts, and souls that a blade collects and spends.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "The Aerie: place an Aerie Heart, join devices with Aerie Conduits, put Clutch Cells in a Clutch Bay, and open a Roost Console to see and search everything stored. 37 kinds of device, most of them in 16 colours.",
+        "Moving and crafting: Talon Intakes and Outlets move items and fluids between the Aerie and any chest or machine; Artificers craft on demand from patterns written at a Scribe Console; Updraft Masts and Field Consoles reach the Aerie without wires.",
+        "Power with OUKA: if OUKA is installed, the Aerie Heart draws its power from OUKA's Tesla pylon grid. Without OUKA the Aerie needs no power.",
+        "20 new named blades: the Gale Fang and Tempest Fang lines, Ironcrag, Ashen Crag, six Plumes from wood to netherite, the Weathered Blade, Evenfall, Heartwood and the Raptors. Most are forged on the anvil from a material box; some drop from bosses; zombies sometimes carry a Weathered Blade; and a nameless blade on a stand caught in a Wither's blast becomes the Ashen Crag.",
+        "7 new slash arts: Blossom End, Void Slash, Circle Slash, Vertical and Horizontal Drive, Wave Edge and Piercing. Drives send a flying slash ahead of you.",
+        "Souls: a blade held while you defeat enemies gathers souls from their experience. Summoned swords now cost souls instead of experience, and refining a blade on the anvil gives it souls.",
+        "Durability and refining: each named blade now has its own durability, and refining raises a blade's damage and its maximum durability (up to refine 200).",
+        "Stellar Remote SS-05 Tesseract: a fifth attack, with its own film. A cube of light 640 blocks on a side rises round your crosshair; its ground is cut into cells that are lifted, turned and hung in the air ring by ring from the middle outward, and a cube of light locks in the sky."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Requirements: Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer, Java 25. For multiplayer, Halia must also be installed on the server.",
+        "Changes to V1.1 blades: a blade's hit is 1 lower than before at the same base value; newly made named blades have lower base attack and durability than in V1.1 (for example Yamato: attack 9 → 7, durability 100 → 40); summoned swords need souls. Blades already in your world keep the durability they were made with.",
+        "With OUKA installed, the Aerie does not work until its Heart is within reach of a powered pylon. To run it without power beside OUKA, set powerFromOukaGrid to false in config/halia-aerie.json.",
+        "Worlds from V1.1 open as they are. Do not go back to 1.1 with a world that holds Aerie devices or the new blades: they would be deleted.",
+        "The Stellar Remote destroys very large areas permanently, and SS-05 reshapes a 640-block area at once — back up your world. Anyone standing inside the cube when its wave passes dies."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.1",
    "summary": "Halia V1.1.1 — fix for a crash with Improved Transparency",
