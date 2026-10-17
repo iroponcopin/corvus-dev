@@ -41,7 +41,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 LANGS = ["ja", "en", "es", "fr", "zh", "ko", "pt-br", "it", "ar", "ru", "id", "de", "tr"]
 JAR_RE = re.compile(r"^halia-(\d+(?:\.\d+)*)\.jar$")
-SITE = "https://iroponcopin.github.io/aurora-corvus"
+SITE = "https://iroponcopin.github.io/corvus-dev"
 ALLOWED_DEPENDS = {"fabricloader", "minecraft", "java", "fabric-api"}
 ALLOWED_SOFT = set()               # Halia recommends and suggests nothing
 

@@ -1,4 +1,4 @@
-/* Aurora Corvus — the home page's opening beat, glyph half.
+/* Corvus — the home page's opening beat, glyph half.
  *
  * Loaded by build_home.py only (extra_head), deferred, after main.js's own
  * contract. Read hero-mark.css first: it explains the whole opening. This

@@ -25,7 +25,7 @@ import { fileURLToPath } from "node:url";
 const WEB = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = process.argv[2] ?? join(WEB, "out");
 const REPO = join(WEB, "..");
-const BASE = "/aurora-corvus";
+const BASE = "/corvus-dev";
 const ORIGIN = "https://iroponcopin.github.io";
 const LANGS = ["ja", "en", "es", "fr", "zh", "ko", "pt-br", "it", "ar", "ru", "id", "de", "tr"];
 /** Served by this repository, not by the export: the only paths a page may reach outside out/. */
@@ -118,7 +118,7 @@ for (const f of pages) {
     if (!/<html[^>]*\slang="[a-z-]+"[^>]*\sdir="(ltr|rtl)"/.test(html)) problem(where, "no <html lang dir>");
     if (!/<title>[^<]+<\/title>/.test(html)) problem(where, "no <title>");
     if (!/<meta name="description" content="[^"]+"/.test(html)) problem(where, "no description");
-    if (!/<link rel="canonical" href="https:\/\/iroponcopin\.github\.io\/aurora-corvus\/[^"]*"/.test(html)) problem(where, "no canonical");
+    if (!/<link rel="canonical" href="https:\/\/iroponcopin\.github\.io\/corvus-dev\/[^"]*"/.test(html)) problem(where, "no canonical");
     const alternates = Array.from(html.matchAll(/<link rel="alternate" hrefLang="([^"]+)" href="([^"]+)"/gi), (m) => m[1]);
     if (alternates.length !== LANGS.length + 1 || !alternates.includes("x-default")) problem(where, `hreflang alternates: ${alternates.length}`);
     if (!/<meta property="og:title" content="[^"]+"/.test(html)) problem(where, "no og:title");
@@ -155,7 +155,7 @@ for (const f of files.filter((x) => extname(x) === ".css")) {
 // Asset paths written into the JS chunks (images, audio, the detector, feeds the pages fetch).
 for (const f of files.filter((x) => extname(x) === ".js")) {
   const js = readFileSync(f, "utf8");
-  for (const m of js.matchAll(/["'`](\/aurora-corvus\/(?:portal|downloads|data)\/[^"'`$\s]+?)["'`]/g)) {
+  for (const m of js.matchAll(/["'`](\/corvus-dev\/(?:portal|downloads|data)\/[^"'`$\s]+?)["'`]/g)) {
     refs += 1;
     checkRef(rel(f), m[1], null);
   }
@@ -201,7 +201,7 @@ if (existsSync(join(REPO, "data", "skin_public.json"))) {
 let printed = 0;
 for (const f of pages) {
   const html = readFileSync(f, "utf8");
-  const links = Array.from(html.matchAll(/\shref="((?:https:\/\/iroponcopin\.github\.io)?\/aurora-corvus\/downloads\/[^"#?]+)"/g), (m) =>
+  const links = Array.from(html.matchAll(/\shref="((?:https:\/\/iroponcopin\.github\.io)?\/corvus-dev\/downloads\/[^"#?]+)"/g), (m) =>
     m[1].replace(ORIGIN, "").replace(/&amp;/g, "&"),
   );
   const served = new Set();

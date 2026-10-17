@@ -1,4 +1,4 @@
-/* Aurora Corvus — shared behaviour layer.
+/* Corvus — shared behaviour layer.
  *
  * Performance contract for everything in this file (owner directive: the
  * site must feel right on a 120Hz ProMotion display, not merely on 60Hz):
@@ -234,7 +234,7 @@
   // THE KEY NAME IS A CONTRACT with the language detector loaded in the
   // <head> (assets/js/lang.js, generated from scripts/lang_detect.py),
   // exactly like the theme key above. Change one side and you must change
-  // the other; grep "aurora-corvus-lang" to find them together.
+  // the other; grep "corvus-dev-lang" to find them together.
   //
   // The detector treats a stored value as the visitor's own decision and
   // honours it over device language and region FOREVER, so it is written
@@ -249,7 +249,7 @@
       var a = e.target && e.target.closest && e.target.closest("a[data-lang]");
       if (!a) return;
       try {
-        localStorage.setItem("aurora-corvus-lang", a.getAttribute("data-lang"));
+        localStorage.setItem("corvus-dev-lang", a.getAttribute("data-lang"));
       } catch (err) { /* storage unavailable: the link still navigates */ }
     };
     langSwitch.addEventListener("click", rememberLang);

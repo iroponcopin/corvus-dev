@@ -16,7 +16,7 @@ scripts/check_site.py and run on every audit:
 
 The claims that DO need the PIN (it decrypts; a wrong PIN is refused; the PIN
 is in no committed file) live in scripts/check_skin_gate.py, which is run by
-hand at release time with AURORA_SKIN_PIN set.
+hand at release time with CORVUS_SKIN_PIN set.
 """
 import hashlib
 import json
@@ -76,7 +76,7 @@ def main() -> int:
             problems.append(
                 f"STALE: the game ships a skin of {live} but the site's sealed blob is of "
                 f"{manifest['plain_sha256']}. Re-seal with "
-                f"AURORA_SKIN_PIN=**** python3 scripts/build_skin_gate.py")
+                f"CORVUS_SKIN_PIN=**** python3 scripts/build_skin_gate.py")
 
     pages = 0
     for lang in LANGS:

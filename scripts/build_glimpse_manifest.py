@@ -110,7 +110,7 @@ from build_download import _aureum_facts  # noqa: E402  (single source of truth
 
 MC_VERSION = "26.3"
 DOWNLOAD_DIR = ROOT / "downloads"
-SITE_BASE_URL = "https://iroponcopin.github.io/aurora-corvus"
+SITE_BASE_URL = "https://iroponcopin.github.io/corvus-dev"
 CHERRY_ZIP_PREFIX = "Cherry_MODs_v"
 CHERRY_ZIP_SUFFIX = f"+mc{MC_VERSION}.zip"
 OUKA_ZIP_PREFIX = "OUKA_MODs_v"

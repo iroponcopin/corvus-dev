@@ -63,7 +63,7 @@ import lang_regions
 # U+1F1EF U+1F1F5 as one glyph, so the pair measures about as wide as a single
 # indicator; Chrome/Edge on Windows draw two letter-boxes and measure about
 # twice as wide. The threshold sits at 1.5x, halfway between the two
-# populations. Both raw measurements are published on window.__auroraCorvusLang
+# populations. Both raw measurements are published on window.__corvusLang
 # so the ratio can be read out of a real browser instead of assumed.
 #
 # TAG MATCHING is not string equality: en-US / en-GB / en must all reach "en".
@@ -74,12 +74,12 @@ import lang_regions
 #   in -> id                (the pre-1989 ISO 639 code, still emitted by some
 #                            clients)
 #
-# window.__auroraCorvusLang is deliberate, not debris: it is how the resolution
+# window.__corvusLang is deliberate, not debris: it is how the resolution
 # order is driven with mocked inputs in a test, and it is inert otherwise.
 _DETECT_JS = r"""function (C) {
   var LANGS = C.l, HREF = C.h, CUR = C.c, SECTION = C.s;
-  /* KEY is a contract with assets/js/main.js — grep "aurora-corvus-lang". */
-  var KEY = "aurora-corvus-lang", ONCE = "aurora-corvus-lang-redirected";
+  /* KEY is a contract with assets/js/main.js — grep "corvus-dev-lang". */
+  var KEY = "corvus-dev-lang", ONCE = "corvus-dev-lang-redirected";
 
   var flagW = null;
   function composesFlags() {
@@ -168,7 +168,7 @@ _DETECT_JS = r"""function (C) {
   function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) { } }
 
-  /* Site root derived, not hardcoded: /aurora-corvus/ on Pages, / locally. */
+  /* Site root derived, not hardcoded: /corvus-dev/ on Pages, / locally. */
   var here = location.pathname.replace(/index\.html$/, "");
   if (here.charAt(here.length - 1) !== "/") here += "/";
   var tail = (CUR === "ja" ? "" : CUR + "/") + SECTION;
@@ -212,7 +212,7 @@ _DETECT_JS = r"""function (C) {
     tags: tags, tz: tz
   };
   var decision = resolve(env);
-  window.__auroraCorvusLang = {
+  window.__corvusLang = {
     resolve: resolve, env: env, decision: decision, flagWidths: flagW,
     href: HREF, cur: CUR, section: SECTION, base: base, langs: LANGS
   };
@@ -228,7 +228,7 @@ _DETECT_JS = r"""function (C) {
 # diagnostic object the detector itself publishes; the per-page call below
 # guards on it, so a missing or blocked lang.js degrades to "no detection and
 # emoji flags" rather than to a ReferenceError in the head of every page.
-JS_GLOBAL = "__auroraCorvusLangInit"
+JS_GLOBAL = "__corvusLangInit"
 
 
 def js_file_source() -> str:

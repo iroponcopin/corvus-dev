@@ -7,7 +7,7 @@ Owner directive (2026-09-10, verbatim):
       Appleらしさを追求した方法でCorvusのできることを説明してください。
       展開しているブランドに関して言及することも良いでしょう。ただし
       シンプルかつ洗練された説明文に留めることです。」
-    「全体的にテーマがスカイブルーではなく、以前のAuroraテーマが残っている
+    「全体的にテーマがスカイブルーではなく、以前のテーマが残っている
       のでこれも含めて改善をしてください。」
 
 So the home page is an Apple product page now, top to bottom:

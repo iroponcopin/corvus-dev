@@ -1118,7 +1118,7 @@ HEAD = """<link rel="stylesheet" href="__ROOT__assets/css/cherry-tokens.css">
   background:var(--ch-bg-lift);border:1px solid var(--ch-line)}
 .cc-h2{margin:0 0 1rem;padding:0;border:0;font-size:clamp(1.2rem,3.4vw,1.45rem);
   line-height:1.4;color:var(--ch-petal)}
-/* style.css marks every h2 with the site's aurora-green bar; these pages are in the Cherry colours */
+/* style.css marks every h2 with the site's glow-green bar; these pages are in the Cherry colours */
 .cc-h2::before{content:none}
 .cc-h3{margin:1.75rem 0 .6rem;padding:0;border:0;font-size:1rem;line-height:1.5;
   color:var(--ch-petal-deep)}

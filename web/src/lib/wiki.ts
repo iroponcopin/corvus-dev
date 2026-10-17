@@ -21,7 +21,7 @@ export function wiki(): Wiki {
       throw new Error(`${path} is missing: run "npm run extract" (python3 -B scripts/extract_wiki.py) first`);
     }
     const parsed = JSON.parse(raw) as Wiki;
-    if (!parsed.schema.startsWith("aurora-corvus.wiki/")) throw new Error(`unexpected wiki schema ${parsed.schema}`);
+    if (!parsed.schema.startsWith("corvus.wiki/")) throw new Error(`unexpected wiki schema ${parsed.schema}`);
     cache = parsed;
   }
   return cache;

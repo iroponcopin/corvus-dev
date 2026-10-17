@@ -111,7 +111,7 @@ export function HomePage({ lang }: { lang: Lang }) {
       <NaturalCinemaStage
         title="HALIA"
         title2="CORVUS"
-        title3="AURORA CORVUS"
+        title3="Corvus"
         tagline={f.cinema.tagline}
         tagline2={f.cinema.tagline2}
         tagline3={f.cinema.tagline3}

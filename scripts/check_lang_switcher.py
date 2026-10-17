@@ -44,7 +44,7 @@ FLAG = {
 ORDER = ["ja", "en", "es", "fr", "zh", "ko", "pt-br", "it", "ar", "ru", "id", "de", "tr"]
 HREFLANG = {c: c for c in ORDER}
 HREFLANG["pt-br"] = "pt-BR"
-BASE = "https://iroponcopin.github.io/aurora-corvus"
+BASE = "https://iroponcopin.github.io/corvus-dev"
 # Directories that are not language sections. Named rather than pattern-matched
 # so a genuinely new section cannot be skipped by accident.
 SKIP_DIRS = {"assets", "data", "scripts", "downloads", "scratchpad",
@@ -167,7 +167,7 @@ def audit(lang, section, path):
             bad(f"{where}: {m.group(1)!r} does not resolve to a file")
 
     # --- 5. detector config matches the page it is on ----------------------
-    m = re.search(r'__auroraCorvusLangInit\((\{.*?\})\);</script>', html, re.S)
+    m = re.search(r'__corvusLangInit\((\{.*?\})\);</script>', html, re.S)
     checks += 3
     if not m:
         bad(f"{where}: no detector config")
@@ -210,7 +210,7 @@ h404 = (REPO / "404.html").read_text(encoding="utf-8")
 checks += 2
 if 'rel="alternate"' in h404:
     bad("404.html emits hreflang alternates for a section it does not have")
-if "__auroraCorvusLangInit" in h404:
+if "__corvusLangInit" in h404:
     bad("404.html runs the language detector")
 
 # --- 9. every flag has real artwork in the fallback stylesheet -------------

@@ -3,7 +3,7 @@
 
 Three claims, each of which can fail on its own:
 
-  1. The blob in downloads/ decrypts, with the PIN from $AURORA_SKIN_PIN, to a
+  1. The blob in downloads/ decrypts, with the PIN from $CORVUS_SKIN_PIN, to a
      png whose sha256 matches data/skin_gate.json AND matches the skin the
      game actually ships. A stale blob (skin changed, seal not re-run) fails
      here — that is the whole reason the manifest carries the plaintext hash.
@@ -12,7 +12,7 @@ Three claims, each of which can fail on its own:
   3. The PIN appears in no committed file. This is the claim the owner asked
      for in as many words: 「PIN CODEはウェブサイト等には一切記載せず」.
 
-Without $AURORA_SKIN_PIN this check is RED, not skipped. A gate nobody can run
+Without $CORVUS_SKIN_PIN this check is RED, not skipped. A gate nobody can run
 is not a gate — and this one guards the one thing in the repository that must
 never be committed.
 """
@@ -31,7 +31,7 @@ MANIFEST = ROOT / "data" / "skin_gate.json"
 SKIN_SOURCE = (ROOT.parent / "mods-src" / "sorakaze-planarcadia" / "src" / "main"
                / "resources" / "assets" / "sorakaze_planarcadia" / "textures"
                / "entity" / "sparxie.png")
-ENV_PIN = "AURORA_SKIN_PIN"
+ENV_PIN = "CORVUS_SKIN_PIN"
 
 
 def main() -> int:
@@ -100,10 +100,10 @@ def main() -> int:
                 problems.append(f"the PIN appears in a committed text file: {line}")
         # Non-empty guard: the search must be able to find something, or the
         # zero above means "grep is broken", not "the PIN is absent".
-        probe = subprocess.run(["git", "grep", "-I", "-l", "--", "AURORA_SKIN_PIN"], cwd=ROOT,
+        probe = subprocess.run(["git", "grep", "-I", "-l", "--", "CORVUS_SKIN_PIN"], cwd=ROOT,
                                capture_output=True, text=True)
         if probe.returncode != 0 or not probe.stdout.strip():
-            problems.append("git grep found no file containing 'AURORA_SKIN_PIN' — the search "
+            problems.append("git grep found no file containing 'CORVUS_SKIN_PIN' — the search "
                             "itself is not working, so 'the PIN is absent' proves nothing")
     except OSError as error:
         problems.append(f"could not run git grep to look for the PIN: {error}")

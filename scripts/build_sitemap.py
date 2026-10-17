@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE_URL = "https://iroponcopin.github.io/aurora-corvus"
+SITE_URL = "https://iroponcopin.github.io/corvus-dev"
 
 
 def build():

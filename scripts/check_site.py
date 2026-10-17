@@ -39,7 +39,7 @@ CHECKS = [
     # every language, its blob path resolves, the blob is well formed, it is NOT
     # stale against the skin the game ships, and no digit run leaked into the
     # markup. The PIN-bearing half is scripts/check_skin_gate.py, run by hand at
-    # release time with AURORA_SKIN_PIN set — it cannot live here because this
+    # release time with CORVUS_SKIN_PIN set — it cannot live here because this
     # entry point must stay runnable by anyone.
     ("skin", "check_skin_page.py", [],
      "/skin/ in 13 languages + downloads/sparxie-skin.acsk vs the in-game skin"),

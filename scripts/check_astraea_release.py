@@ -47,7 +47,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 LANGS = ["ja", "en", "es", "fr", "zh", "ko", "pt-br", "it", "ar", "ru", "id", "de", "tr"]
 ZIP_RE = re.compile(r"^ASTRAEA_MODs_v(\d+(?:\.\d+)*)\+mc(\d+(?:\.\d+)*)\.zip$")
-SITE = "https://iroponcopin.github.io/aurora-corvus"
+SITE = "https://iroponcopin.github.io/corvus-dev"
 # Since V1.5.2 (2026-10-13) ASTRAEA needs OUKA 1.4.0: its rebuilt machines run on OUKA's grid and nowhere else (the owner,
 # 2026-10-11: native to OUKA's power system). Depending on a mod is not bundling it: the zip must still hold ASTRAEA's jar
 # alone (rule 2), and it may depend on nothing else.

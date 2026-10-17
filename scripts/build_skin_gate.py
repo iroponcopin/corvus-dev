@@ -14,7 +14,7 @@ WHAT IS AND IS NOT IN THIS REPOSITORY
 IN:   the SEALED blob (downloads/sparxie-skin.acsk), its salt, its iteration
       count, and the sha256 of the PLAINTEXT png.
 OUT:  the PIN. It is never written to a file, a page, a script or a commit.
-      This build reads it from the environment variable AURORA_SKIN_PIN and
+      This build reads it from the environment variable CORVUS_SKIN_PIN and
       uses it only to derive a key. Running the build without that variable
       re-publishes whatever blob is already committed and says so.
 
@@ -34,7 +34,7 @@ reach at these iterations. Either way, someone who downloads the blob can
 try them all offline; at 600,000 PBKDF2 iterations that is on the order of an
 hour of one CPU, and much less with optimised code. This gate stops casual
 copying and keeps the file out of search results. It is NOT secrecy. Rotating
-the PIN means re-sealing (this script with a new AURORA_SKIN_PIN), which
+the PIN means re-sealing (this script with a new CORVUS_SKIN_PIN), which
 changes the blob — old copies stay readable with the old PIN.
 """
 import hashlib
@@ -83,7 +83,7 @@ MANIFEST = ROOT / "data" / "skin_gate.json"
 # rainbow table to defeat.
 SALT = hashlib.sha256(b"aurora-corvus-sparxie-skin-v1").digest()[:skin_crypt.SALT_LEN]
 
-ENV_PIN = "AURORA_SKIN_PIN"
+ENV_PIN = "CORVUS_SKIN_PIN"
 
 TITLE = {
     "ja": "Sparxie スキン",

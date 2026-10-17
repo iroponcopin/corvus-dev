@@ -55,7 +55,7 @@ from site_common import (  # noqa: E402
     ROOT, LANGUAGES, esc, page, load_bundle, available_langs,
 )
 
-ABS_BASE = "/aurora-corvus/"
+ABS_BASE = "/corvus-dev/"
 
 # The two sentences this page says, per language. They live here rather than in
 # data/i18n/*.json for the same reason site_common.NAV_LABEL_FALLBACK does: this

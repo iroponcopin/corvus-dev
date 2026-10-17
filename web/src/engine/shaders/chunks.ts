@@ -154,7 +154,7 @@ vec3 curlNoise(vec3 p) {
 
 /**
  * A procedural studio environment: OLED-black space, three softboxes (the crisp reflections
- * that make brushed titanium read as metal), a faint aurora in the upper sky and the brand tint.
+ * that make brushed titanium read as metal), a faint glow in the upper sky and the brand tint.
  * Shared by the titanium, the diamond rings and the gem so they reflect one coherent world.
  */
 export const ENVIRONMENT = glsl`

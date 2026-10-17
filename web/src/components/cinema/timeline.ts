@@ -1,7 +1,7 @@
 /**
  * The timeline of the cinema: one scroll section, three acts. Act I (the eagle, HALIA) runs over the first ACT1_VH
  * viewport heights; Act II (the forest, CORVUS, the crow) over the next ACT2_VH; Act III (the headland at dusk,
- * AURORA CORVUS, the close crow) over the last ACT3_VH. The altitude stream closes the story after it. Pure
+ * the Corvus title) over the last ACT3_VH. The altitude stream closes the story after it. Pure
  * functions, so the stage's DOM and GL code only reads numbers from here.
  */
 
@@ -22,15 +22,12 @@ export const ACT2_COUNT = 182;
 export const CROW_COUNT = 105;
 /** Act III background footage: f001..f196, indexed 0..195. Shot one ends at index 131. */
 export const ACT3_COUNT = 196;
-/** Act III close crow footage: k001..k048, indexed 0..47. */
-export const CROW3_COUNT = 48;
 
 /** Eagle frame size in pixels (921 x 1400). */
 export const EAGLE_ASPECT = 921 / 1400;
 /** Crow frame size in pixels (1260 x 580). */
 export const CROW_ASPECT = 1260 / 580;
 /** Close crow frame size in pixels (2003 x 1100). */
-export const CROW3_ASPECT = 2003 / 1100;
 /** The footage's own aspect, 16 x 9. */
 export const BG_ASPECT = 16 / 9;
 /** The sun in background-frame coordinates (x, y down), measured on f080. */
@@ -50,8 +47,6 @@ export const CROW_BODY_CX = 0.53;
 /** The bird's final height in viewport heights (desktop, phones). Sized so the title stays readable. */
 const CROW_FINAL_VH = 0.3;
 const CROW_FINAL_VH_NARROW = 0.13;
-/** The close crow (k frames): its beak tip sits at 4% of the frame's width. */
-const CROW3_BEAK_X = 0.04;
 
 export function clamp01(x: number): number {
   return x < 0 ? 0 : x > 1 ? 1 : x;
@@ -115,11 +110,9 @@ export interface Pose {
   dissolve3: number;
   bg3: Pair;
   dusk: number;
-  /** AURORA CORVUS letter-spacing (em) and opacity. */
+  /** CORVUS (Act III) letter-spacing (em) and opacity. */
   letter3: number;
   title3: number;
-  /** The close crow of Act III. */
-  crow3: CrowPose;
 }
 
 /**
@@ -164,27 +157,6 @@ function crowPose(a: number, vw: number, vh: number, narrow: boolean): CrowPose 
     h,
     frame: Math.round(clamp01((a - 0.55) / 0.45) * (CROW_COUNT - 1)),
     alpha: smooth(0.5, 0.6, a),
-  };
-}
-
-/**
- * The close crow of Act III: it enters during the headland, rising into place on the right half, its beak pointing
- * left. Its right and bottom edges are cut by the frame, so the frame is kept beyond the viewport's right and bottom.
- */
-function crow3Pose(c: number, vw: number, vh: number, narrow: boolean): CrowPose {
-  const e = smooth(0.35, 0.95, c);
-  const h = narrow ? 0.55 * vh : 1.0 * vh;
-  const w = h * CROW3_ASPECT;
-  const topRest = narrow ? 0.5 * vh : 0.42 * vh;
-  const top = lerp(vh + 0.3 * vh, topRest, e);
-  const beakX = narrow ? 0.3 * vw : 0.45 * vw;
-  return {
-    left: beakX - CROW3_BEAK_X * w,
-    top,
-    w,
-    h,
-    frame: Math.round(clamp01((c - 0.35) / 0.6) * (CROW3_COUNT - 1)),
-    alpha: smooth(0.3, 0.5, c),
   };
 }
 
@@ -265,11 +237,10 @@ export function poseAt(
     dusk: lerp(duskA, duskB, bg3.m),
     letter3: lerp(narrow ? 0.16 : 0.42, -0.03, smooth(0.1, 0.35, c)),
     title3: smooth(0.1, 0.18, c),
-    crow3: crow3Pose(c, vw, vh, narrow),
   };
 }
 
-/** Reduced motion: Act III as one still: the headland at f171, the close crow on its last frame, AURORA CORVUS in place. */
+/** Reduced motion: Act III as one still: the headland at f171, with its title in place. */
 export function staticPose(vw: number, vh: number, narrow: boolean, sunScreen: [number, number]): Pose {
   const base = poseAt(1, 1, 1, vw, vh, narrow, sunScreen);
   return {
@@ -289,7 +260,6 @@ export function staticPose(vw: number, vh: number, narrow: boolean, sunScreen: [
     dusk: 0,
     letter3: -0.03,
     title3: 1,
-    crow3: { ...base.crow3, frame: CROW3_COUNT - 1, alpha: 1 },
   };
 }
 

@@ -10,8 +10,6 @@ import {
   act3FrameUrl,
   bgFrameUrl,
   BG_ORDER,
-  crow3FrameUrl,
-  CROW3_ORDER,
   crowFrameUrl,
   CROW_ORDER,
   eagleFrameUrl,
@@ -29,7 +27,6 @@ import {
   BG_COUNT,
   clamp01,
   coverScale,
-  CROW3_COUNT,
   CROW_COUNT,
   EAGLE_COUNT,
   type CrowPose,
@@ -59,9 +56,9 @@ interface Renderer {
   vao: WebGLVertexArrayObject;
   u: Uniforms;
   store: FrameStore;
-  /** The Act II background (background renderer), and the close crow (crow renderer). */
+  /** The Act II background (background renderer). */
   store2?: FrameStore;
-  /** The Act III headland (background renderer), and the close crow's frames (crow renderer). */
+  /** The Act III headland (background renderer). */
   store3?: FrameStore;
 }
 
@@ -93,18 +90,17 @@ function createBg(canvas: HTMLCanvasElement, small: boolean, onChange: () => voi
   }
 }
 
-/** The crow renderer: premultiplied output, on the full-stage canvas (two crows: Act II and the close crow of Act III). */
+/** The crow renderer: premultiplied output, on the full-stage canvas (the Act II crow). */
 function createCrow(canvas: HTMLCanvasElement, onChange: () => void): Renderer | null {
   const gl = canvas.getContext("webgl2", { alpha: true, premultipliedAlpha: true, antialias: false, depth: false, stencil: false });
   if (gl === null) return null;
   try {
     const prog = program(gl, VERT, CROW_FRAG);
-    const u = uniforms(gl, prog, ["uTex", "uRes", "uBox", "uAlpha", "uWisp", "uTime", "uDusk"]);
+    const u = uniforms(gl, prog, ["uTex", "uRes", "uBox", "uAlpha", "uWisp", "uTime"]);
     gl.useProgram(prog);
     gl.uniform1i(u.uTex ?? null, 0);
     const store = new FrameStore(gl, { count: CROW_COUNT, capacity: 40, premultiply: true, url: crowFrameUrl, onChange });
-    const store3 = new FrameStore(gl, { count: CROW3_COUNT, capacity: 24, premultiply: true, url: crow3FrameUrl, onChange });
-    return { gl, prog, vao: emptyVao(gl), u, store, store3 };
+    return { gl, prog, vao: emptyVao(gl), u, store };
   } catch {
     return null;
   }
@@ -154,8 +150,7 @@ function pick(store: FrameStore, pair: Pair, count: number): Picked | null {
 /**
  * The cinema: one scroll story in three acts. Act I: a drone shot over the clouds scrubs while the eagle rises to
  * profile in front of HALIA. Act II: the cloud dissolves into a forest, CORVUS comes in, and a crow rises in front of
- * it. Act III: a headland at dusk, AURORA CORVUS, and a close crow entering on the right. The altitude stream closes
- * the story. Without WebGL 2 the same stages are plain images.
+ * it. Act III: a headland at dusk and the Corvus title. The altitude stream closes the story. Without WebGL 2 the same stages are plain images.
  */
 export function NaturalCinemaStage({
   title,
@@ -237,7 +232,7 @@ export function NaturalCinemaStage({
     bg = createBg(bgCanvas, small, markDirty);
     eg = bg === null ? null : createEagle(eagleCanvas, markDirty);
     cr = bg === null ? null : createCrow(crowCanvas, markDirty);
-    if (bg !== null && eg !== null && cr !== null && bg.store2 !== undefined && bg.store3 !== undefined && cr.store3 !== undefined) {
+    if (bg !== null && eg !== null && cr !== null && bg.store2 !== undefined && bg.store3 !== undefined) {
       mode = "gl";
       stage.dataset.mode = "gl";
       void bg.store.load(BG_ORDER, 3);
@@ -245,7 +240,6 @@ export function NaturalCinemaStage({
       void bg.store3.load(ACT3_ORDER, 3);
       void eg.store.load(EAGLE_ORDER, 2);
       void cr.store.load(CROW_ORDER, 2);
-      void cr.store3.load(CROW3_ORDER, 2);
     } else {
       // No WebGL 2: the posters become plain image layers.
       for (const r of [bg, eg, cr]) r?.gl.getExtension("WEBGL_lose_context")?.loseContext();
@@ -350,7 +344,7 @@ export function NaturalCinemaStage({
     };
 
     /** One crow drawn into its box on the full-stage canvas (blended over what is already there). */
-    const drawOneCrow = (r: Renderer, store: FrameStore, c: CrowPose, wisp: number, dusk: number): void => {
+    const drawOneCrow = (r: Renderer, store: FrameStore, c: CrowPose, wisp: number): void => {
       if (c.alpha <= 0.001) return;
       const fi = c.frame;
       store.setProtected([0, fi]);
@@ -371,7 +365,6 @@ export function NaturalCinemaStage({
       gl.uniform4f(u.uBox ?? null, c.left * sx, c.top * sy, c.w * sx, c.h * sy);
       gl.uniform1f(u.uAlpha ?? null, c.alpha);
       gl.uniform1f(u.uWisp ?? null, quality.effects && !reduced ? wisp : 0);
-      gl.uniform1f(u.uDusk ?? null, dusk);
       gl.uniform1f(u.uTime ?? null, performance.now() / 1000);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
     };
@@ -382,8 +375,7 @@ export function NaturalCinemaStage({
       gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
       gl.clearColor(0, 0, 0, 0);
       gl.clear(gl.COLOR_BUFFER_BIT);
-      if (r.store3 !== undefined) drawOneCrow(r, r.store, pose.crow, pose.wisp, 0);
-      if (r.store3 !== undefined) drawOneCrow(r, r.store3, pose.crow3, 0, 1);
+      drawOneCrow(r, r.store, pose.crow, pose.wisp);
       gl.disable(gl.BLEND);
     };
 
@@ -451,7 +443,7 @@ export function NaturalCinemaStage({
         const drew = drawBg(bg, pose, effects);
         if (drew) stage.dataset.ready = "true";
         if (pose.eagleAlpha > 0.001) drawEagle(eg, pose);
-        const crowOn = pose.crow.alpha > 0.001 || pose.crow3.alpha > 0.001 || pose.wisp > 0.001;
+        const crowOn = pose.crow.alpha > 0.001 || pose.wisp > 0.001;
         crowCanvas.style.visibility = crowOn ? "visible" : "hidden";
         if (crowOn) drawCrows(cr, pose);
         if (!reduced && quality.sample(dt * 1000)) resize = true;
@@ -474,9 +466,8 @@ export function NaturalCinemaStage({
         lastEagleImg = eSrc;
         eagleImg.src = eSrc;
       }
-      const showC3 = pose.crow3.alpha > pose.crow.alpha;
-      const crow = showC3 ? pose.crow3 : pose.crow;
-      const cSrc = showC3 ? crow3FrameUrl(crow.frame) : crowFrameUrl(crow.frame);
+      const crow = pose.crow;
+      const cSrc = crowFrameUrl(crow.frame);
       if (cSrc !== lastCrowImg) {
         lastCrowImg = cSrc;
         crowImg.src = cSrc;
@@ -502,7 +493,6 @@ export function NaturalCinemaStage({
       eg?.store.dispose();
       if (eg !== null) eg.gl.deleteProgram(eg.prog);
       cr?.store.dispose();
-      cr?.store3?.dispose();
       if (cr !== null) cr.gl.deleteProgram(cr.prog);
     };
   }, []);

@@ -29,7 +29,7 @@ REPO = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 \
 LANGS = ["ja", "en", "es", "fr", "zh", "ko", "pt-br", "it", "ar", "ru", "id", "de", "tr"]
 RTL = {"ar"}
 # The absolute path the site is published under (GitHub Pages project page).
-ABS = "/aurora-corvus/"
+ABS = "/corvus-dev/"
 
 
 def main():

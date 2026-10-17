@@ -62,7 +62,7 @@ BUILD_SCRIPTS = [
     "build_discord.py",
     # V4.3.0: the Sparxie skin behind its PIN. After the download page (it is a
     # companion to it) and before the feeds, which walk whatever pages exist.
-    # Without AURORA_SKIN_PIN in the environment this re-publishes the committed
+    # Without CORVUS_SKIN_PIN in the environment this re-publishes the committed
     # blob and REFUSES if the skin has changed since it was sealed.
     "build_skin_gate.py",
     "build_changelog_feed.py",

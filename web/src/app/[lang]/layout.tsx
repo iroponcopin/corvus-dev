@@ -51,7 +51,7 @@ function langInit(lang: Lang): string {
     `if(p.slice(-1)!=="/")p+="/";var r=p.indexOf(B)===0?p.slice(B.length):p.replace(/^\\//,"");` +
     `if(c!=="ja"&&r.indexOf(c+"/")===0)r=r.slice(c.length+1);var h={};` +
     `for(var i=0;i<L.length;i++)h[L[i]]=B+(L[i]==="ja"?"":L[i]+"/")+r;` +
-    `window.__auroraCorvusLangInit&&__auroraCorvusLangInit({l:L,h:h,c:c,s:r})})();`
+    `window.__corvusLangInit&&__corvusLangInit({l:L,h:h,c:c,s:r})})();`
   );
 }
 

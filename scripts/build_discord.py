@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Builds /discord/ in every language: how to use the Aurora Corvus Discord bot.
+"""Builds /discord/ in every language: how to use the Corvus Discord bot.
 
 Two sources, deliberately split
 -------------------------------

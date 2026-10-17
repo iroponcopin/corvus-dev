@@ -197,7 +197,7 @@ HEAD = """<style>
   to{opacity:1;transform:none}}
 .al-name{font-size:clamp(2.6rem,7vw,4.2rem);line-height:1.02;margin:0 0 .8rem;
   letter-spacing:-.02em;
-  background:linear-gradient(100deg,var(--text) 18%,var(--accent-strong) 62%,var(--aurora-green) 96%);
+  background:linear-gradient(100deg,var(--text) 18%,var(--accent-strong) 62%,var(--glow-green) 96%);
   -webkit-background-clip:text;background-clip:text;color:transparent}
 .al-lede{font-size:1.14rem;line-height:1.78;color:var(--text);margin:0 0 1.6rem}
 .al-cta{display:flex;gap:.7rem;flex-wrap:wrap;margin-bottom:2.6rem}

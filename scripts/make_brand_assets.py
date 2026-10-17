@@ -41,13 +41,13 @@ TILE = BRAND / "corvus-tile.png"
 RAVEN_EDGE = (64, 196, 255)   # the cyan of the raven's edge, for the share card's halo
 
 # Corvus palette, taken from the live site's dark theme (style.css).
-# 2026-09-10: the aurora mint (140,240,205) and violet (139,123,255) became the
+# 2026-09-10: the glow mint (140,240,205) and violet (139,123,255) became the
 # sky-blue family the site moved to — the old tile's glow and the share card were
 # the last two surfaces still carrying the old colours. The names are kept so the
 # call sites below read the same; the values are what changed.
 INK = (10, 12, 16)          # near-black page ground
-AURORA = (90, 200, 250)     # --accent  (#5ac8fa)
-AURORA_VIOLET = (10, 132, 255)   # Apple system blue, the deep end of the band
+GLOW = (90, 200, 250)     # --accent  (#5ac8fa)
+GLOW_VIOLET = (10, 132, 255)   # Apple system blue, the deep end of the band
 
 # Candidate faces for the share card's wordmark, best first. Every entry is
 # optional: if none of them resolve the card is still rendered, just without
@@ -127,16 +127,16 @@ def _load_font(size):
 
 
 def og_card(tile, width=1200, height=630):
-    """The 1200x630 Open Graph share card: the site's own dark aurora ground,
+    """The 1200x630 Open Graph share card: the site's own dark glow ground,
     the raven icon, and the wordmark. Same recipe as the page background in
     style.css (soft radial washes over near-black), composed here so link
     previews look like the site rather than like a blank rectangle."""
     card = Image.new("RGBA", (width, height), INK + (255,))
 
-    # Two soft aurora washes, matching .sky__aurora's green + violet.
+    # Two soft glow washes, matching .sky__glow's green + violet.
     for (cx, cy, rad, rgb, peak) in (
-        (0.24 * width, 0.20 * height, 0.62 * width, AURORA, 46),
-        (0.80 * width, 0.16 * height, 0.55 * width, AURORA_VIOLET, 40),
+        (0.24 * width, 0.20 * height, 0.62 * width, GLOW, 46),
+        (0.80 * width, 0.16 * height, 0.55 * width, GLOW_VIOLET, 40),
         (0.55 * width, 0.92 * height, 0.60 * width, (70, 168, 255), 26),
     ):
         layer = Image.new("L", (width, height), 0)

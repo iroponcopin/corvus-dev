@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Aurora Corvus portal — the one reader of the wiki's data.
+"""Corvus portal — the one reader of the wiki's data.
 
 Everything the portal shows comes through here, at build time, from this repository:
 
@@ -52,9 +52,9 @@ with contextlib.redirect_stdout(_quiet):
     import build_changelog as BCL  # noqa: E402
     import build_skin_gate as BSG  # noqa: E402
 
-SCHEMA = "aurora-corvus.wiki/4"
+SCHEMA = "corvus.wiki/4"
 BASE_URL = SC.SITE_BASE_URL
-BASE_PATH = "/aurora-corvus"
+BASE_PATH = "/corvus-dev"
 LANGS = SC.available_langs()
 # The models with a page of their own (src/app/[lang]/<id>/).
 MODEL_PAGES = ("ouka", "cherry", "aureum", "alpha", "astraea", "tsubomi", "noctua", "halia")

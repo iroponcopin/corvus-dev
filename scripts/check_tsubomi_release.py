@@ -44,7 +44,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 LANGS = ["ja", "en", "es", "fr", "zh", "ko", "pt-br", "it", "ar", "ru", "id", "de", "tr"]
 JAR_RE = re.compile(r"^tsubomi-(\d+(?:\.\d+)*)\.jar$")
-SITE = "https://iroponcopin.github.io/aurora-corvus"
+SITE = "https://iroponcopin.github.io/corvus-dev"
 ALLOWED_DEPENDS = {"fabricloader", "minecraft", "java", "fabric-api"}
 ALLOWED_SOFT = {"cherry"}          # recommends / suggests may name Cherry, and nothing else
 ALPHA_PREFIX = "sorakaze_"         # breaks / conflicts may name Alpha's modules, and nothing else

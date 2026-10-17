@@ -14,7 +14,7 @@ import { fileURLToPath } from "node:url";
 
 const WEB = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = join(WEB, "out");
-const BASE_URL = "https://iroponcopin.github.io/aurora-corvus";
+const BASE_URL = "https://iroponcopin.github.io/corvus-dev";
 const LANGS = ["ja", "en", "es", "fr", "zh", "ko", "pt-br", "it", "ar", "ru", "id", "de", "tr"];
 const SECTIONS = ["", "alpha/", "aureum/", "changelog/", "cherry-controls/", "cherry/", "discord/", "download/",
   "launcher/", "ouka/", "recipes/", "skin/", "teasers/", "announcement/", "astraea/", "tsubomi/", "noctua/", "halia/"];
@@ -79,7 +79,7 @@ writeFileSync(
   join(OUT, "portal", "build.json"),
   JSON.stringify(
     {
-      what: `Aurora Corvus portal ${pkg.version}, static export. Made by web/ (npm run build); nothing here is a contract file.`,
+      what: `Corvus portal ${pkg.version}, static export. Made by web/ (npm run build); nothing here is a contract file.`,
       wiki_commit: wiki.build.commit,
       wiki_branch: wiki.build.branch,
       wiki_dirty: wiki.build.dataDirty,

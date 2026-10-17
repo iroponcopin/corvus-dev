@@ -211,16 +211,7 @@ html:lang(ko) .cin-tagline {
   opacity: 0;
 }
 
-/* Act III: AURORA CORVUS is the longest title; it is set smaller than HALIA and CORVUS. */
-.cin-title--3 {
-  font-size: clamp(36px, min(7.6vw, 14vh), 130px);
-}
-
-@media (max-width: 767px) {
-  .cin-title--3 {
-    font-size: clamp(26px, 8vw, 56px);
-  }
-}
+/* Act III: the Corvus title is set like CORVUS. */
 
 .cin-crow-canvas,
 .cin-crow-img {
@@ -465,7 +456,7 @@ html:lang(ko) .cin-tagline {
   }
 }
 
-/* Act III: AURORA CORVUS and its tagline share one left margin (the gutter), and the title never exceeds 90vw. */
+/* Act III: the Corvus title and its tagline share one left margin (the gutter), and the title never exceeds 90vw. */
 .cin-copy--3 {
   align-items: flex-start;
   text-align: left;

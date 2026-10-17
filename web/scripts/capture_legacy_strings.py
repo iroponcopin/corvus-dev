@@ -365,7 +365,7 @@ def main() -> None:
     if not (WIKI / "portal" / "build.json").exists():
         raise SystemExit("the pre-4.0 portal export is not laid over this tree; nothing to capture")
     build = json.loads((WIKI / "portal" / "build.json").read_text(encoding="utf-8"))
-    if str(build.get("what", "")).startswith("Aurora Corvus portal 4"):
+    if str(build.get("what", "")).startswith("Corvus portal 4"):
         raise SystemExit("this tree already carries the 4.x export; legacy.json must not be re-captured")
     nf = html_of(WIKI / "404.html")
     out = {

@@ -9,7 +9,7 @@ import { engine } from "./store";
  * only schedules AudioParam targets — no nodes, no objects, no garbage.
  */
 
-const STORAGE_KEY = "aurora-corvus-sound";
+const STORAGE_KEY = "corvus-dev-sound";
 
 /** The drone's chord ratios over a 55 Hz fundamental: open fifths, a major third above. */
 const CHORD: readonly number[] = [1, 1.5, 2, 2.5, 3, 4.5];

@@ -35,8 +35,8 @@ function configFor(urlPath, mount) {
   const f = pageFile(urlPath, mount);
   if (!cfgCache.has(f)) {
     const html = fs.readFileSync(f, "utf8");
-    const m = html.match(/__auroraCorvusLangInit\((\{[\s\S]*?\})\);<\/script>/);
-    if (!m) throw new Error(`no __auroraCorvusLangInit config in ${f}`);
+    const m = html.match(/__corvusLangInit\((\{[\s\S]*?\})\);<\/script>/);
+    if (!m) throw new Error(`no __corvusLangInit config in ${f}`);
     cfgCache.set(f, JSON.parse(m[1]));
   }
   return cfgCache.get(f);
@@ -97,13 +97,13 @@ function run(opts) {
   win.localStorage = sandbox.localStorage;
   vm.createContext(sandbox);
   vm.runInContext(LANG_JS, sandbox, { filename: "lang.js" });
-  if (typeof win.__auroraCorvusLangInit !== "function")
-    throw new Error("lang.js did not define window.__auroraCorvusLangInit");
-  win.__auroraCorvusLangInit(cfg);
+  if (typeof win.__corvusLangInit !== "function")
+    throw new Error("lang.js did not define window.__corvusLangInit");
+  win.__corvusLangInit(cfg);
 
   return {
-    decision: win.__auroraCorvusLang.decision,
-    diag: win.__auroraCorvusLang,
+    decision: win.__corvusLang.decision,
+    diag: win.__corvusLang,
     redirects: calls,
     classes: [...classes],
     local: sandbox.localStorage._data,
@@ -134,7 +134,7 @@ module.exports = { run, check, resolveTarget, configFor };
 
 // ============================================================ THE TEST MATRIX
 if (require.main === module) {
-  const MOUNTS = ["/", "/aurora-corvus/"];
+  const MOUNTS = ["/", "/corvus-dev/"];
 
   note("=== A. resolution order, mocked devices ===");
   const M = "/";
@@ -168,13 +168,13 @@ if (require.main === module) {
       "/", { languages: ["mn-MN", "mn"], timeZone: "Asia/Ulaanbaatar" },
       { act: "stay", why: "no-signal" }],
     ["stored ES beats a JA device in Japan",
-      "/", { languages: ["ja-JP"], timeZone: "Asia/Tokyo", local: { "aurora-corvus-lang": "es" } },
+      "/", { languages: ["ja-JP"], timeZone: "Asia/Tokyo", local: { "corvus-dev-lang": "es" } },
       { act: "go", to: "es", why: "stored" }],
     ["stored JA on an English page beats device+region",
-      "/en/", { languages: ["en-US"], timeZone: "America/New_York", local: { "aurora-corvus-lang": "ja" } },
+      "/en/", { languages: ["en-US"], timeZone: "America/New_York", local: { "corvus-dev-lang": "ja" } },
       { act: "go", to: "ja", why: "stored" }],
     ["stored EN on the English page: nothing happens",
-      "/en/", { languages: ["ja-JP"], timeZone: "Asia/Tokyo", local: { "aurora-corvus-lang": "en" } },
+      "/en/", { languages: ["ja-JP"], timeZone: "Asia/Tokyo", local: { "corvus-dev-lang": "en" } },
       { act: "stay", why: "stored-is-current" }],
     ["en-GB reaches en",
       "/", { languages: ["en-GB"], timeZone: "Europe/London" },
@@ -210,18 +210,18 @@ if (require.main === module) {
     check("  /en/ -> / via switcher: no redirect",
       { act: r.decision.act, redirects: r.redirects.length }, { act: "stay", redirects: 0 });
     check("  ...and the choice is adopted so it survives the visit",
-      r.local["aurora-corvus-lang"], "ja");
+      r.local["corvus-dev-lang"], "ja");
   }
   {
     // stored=en, but they deliberately navigated to the JA page in-site
     const r = run({
       url: "/", mount: M, referrer: "https://example.test/en/",
       languages: ["en-US"], timeZone: "America/New_York",
-      local: { "aurora-corvus-lang": "en" },
+      local: { "corvus-dev-lang": "en" },
     });
     check("  stored EN + in-site nav to JA: still no redirect",
       { act: r.decision.act, redirects: r.redirects.length }, { act: "stay", redirects: 0 });
-    check("  ...and stored flips to ja", r.local["aurora-corvus-lang"], "ja");
+    check("  ...and stored flips to ja", r.local["corvus-dev-lang"], "ja");
   }
   {
     // ordinary in-site nav within one language must NOT rewrite the preference
@@ -230,7 +230,7 @@ if (require.main === module) {
       languages: ["en-US"], timeZone: "America/New_York",
     });
     check("  in-site nav within JA: no redirect, no adoption",
-      { act: r.decision.act, stored: r.local["aurora-corvus-lang"] || null },
+      { act: r.decision.act, stored: r.local["corvus-dev-lang"] || null },
       { act: "stay", stored: null });
   }
   {
@@ -240,7 +240,7 @@ if (require.main === module) {
       languages: ["en-US"], timeZone: "America/New_York",
     });
     check("  in-site nav across language AND section: no adoption",
-      r.local["aurora-corvus-lang"] || null, null);
+      r.local["corvus-dev-lang"] || null, null);
   }
   {
     const r = run({
@@ -255,7 +255,7 @@ if (require.main === module) {
   {
     const r = run({
       url: "/", mount: M, languages: ["de-DE"], timeZone: "Europe/Berlin",
-      session: { "aurora-corvus-lang-redirected": "1" },
+      session: { "corvus-dev-lang-redirected": "1" },
     });
     check("  marker already set: decision is still go, but nothing navigates",
       { act: r.decision.act, redirects: r.redirects.length }, { act: "go", redirects: 0 });
@@ -319,7 +319,7 @@ if (require.main === module) {
             for (const stored of STORED) {
               let url = mount + (lang === "ja" ? "" : lang + "/") + section;
               const session = {};
-              const local = stored ? { "aurora-corvus-lang": stored } : {};
+              const local = stored ? { "corvus-dev-lang": stored } : {};
               let referrer = "";           // an ENTRY: no referrer at all
               let n = 0;
               checked++;

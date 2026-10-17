@@ -46,7 +46,7 @@ export interface UpdateLink {
   icon: "library" | "compass" | "play" | "user";
 }
 
-const LANG_KEY = "aurora-corvus-lang";
+const LANG_KEY = "corvus-dev-lang";
 const MODEL_SECTIONS = new Set(["ouka", "cherry", "aureum", "cherry-controls"]);
 const UPDATE_SECTIONS = new Set(["changelog", "announcement", "teasers", "skin"]);
 type Menu = "models" | "updates" | null;

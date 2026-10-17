@@ -21,7 +21,7 @@ import sys
 import time
 import urllib.request
 
-BASE = "https://iroponcopin.github.io/aurora-corvus"
+BASE = "https://iroponcopin.github.io/corvus-dev"
 
 
 def fetch(url, timeout=120):

@@ -6,8 +6,8 @@ import type { Dir, Lang } from "./wiki-types";
  * that the two agree, so a language added on the wiki side cannot be silently dropped here.
  */
 
-export const BASE_PATH = "/aurora-corvus";
-export const BASE_URL = "https://iroponcopin.github.io/aurora-corvus";
+export const BASE_PATH = "/corvus-dev";
+export const BASE_URL = "https://iroponcopin.github.io/corvus-dev";
 
 export const LANGUAGES: readonly { code: Lang; name: string; dir: Dir; hreflang: string }[] = [
   { code: "ja", name: "日本語", dir: "ltr", hreflang: "ja" },

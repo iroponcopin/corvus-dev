@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Aurora Corvus — the opening beat of the home-page film
+   Corvus — the opening beat of the home-page film
    --------------------------------------------------------------------------
    Loaded by build_home.py ONLY (extra_head), so nothing here can reach any
    other page. Everything here is additive to the "Film" block in style.css;
@@ -9,9 +9,9 @@
 
    THE IDEA — "the light becomes the bird".
    The mark is a corvid whose five wing feathers dissolve into long trailing
-   ribbons: the same shape language as an aurora curtain, and the brand is
-   literally called Aurora Corvus. So the mark is not faded in. A raked front
-   of aurora light crosses the frame at 112deg — the SAME angle as the
+   ribbons: the same shape language as an glow curtain, and the brand is
+   literally called Corvus. So the mark is not faded in. A raked front
+   of glow light crosses the frame at 112deg — the SAME angle as the
    wordmark's gradient in style.css, i.e. one light source across the whole
    lockup — and the mark is *deposited* behind it: beak, then head, then
    body, then the ribbons unfurling outward in order. The shape supplies the
@@ -97,14 +97,14 @@
 
    1. .hm-w stops a line breaking INSIDE a word. Each glyph becomes its own
       box once lit, so every letter boundary is a break opportunity, and
-      without this "Aurora" can wrap between the "r" and the "o" at 375px.
+      without this "Glow" can wrap between the "r" and the "o" at 375px.
 
    2. `direction: ltr` on the wordmark itself. THIS IS NOT COSMETIC. Arabic
       is served with dir="rtl" on <html>, and an inline-block is a NEUTRAL
       object to the bidi algorithm — so in an RTL paragraph the twelve glyph
       boxes (and the two word boxes) lay out right-to-left and the brand name
       renders "suvroC aroruA". Plain text does not have this problem, because
-      "Aurora Corvus" is strong-LTR and forms its own LTR run; splitting it
+      "Corvus" is strong-LTR and forms its own LTR run; splitting it
       into boxes is what loses that. Forcing the base direction restores
       exactly the pre-split rendering, and is a no-op in the twelve LTR
       languages and in the static state.
@@ -164,8 +164,8 @@
   }
 
   /* --- 0. the bloom seeds -------------------------------------------------
-     Unmasked aurora light behind the mark, pre-composed from soft radial
-     gradients rather than a blur — for the same reason .sky__aurora is (see
+     Unmasked glow light behind the mark, pre-composed from soft radial
+     gradients rather than a blur — for the same reason .sky__glow is (see
      style.css): a blurred surface re-rasterised at a new scale every frame
      is exactly what stops a page holding 120Hz. */
   html.js .hm .hm__bloom {
@@ -174,11 +174,11 @@
     pointer-events: none;
     background:
       radial-gradient(40% 38% at 40% 50%,
-        color-mix(in srgb, var(--aurora-green) 32%, transparent), transparent 70%),
+        color-mix(in srgb, var(--glow-green) 32%, transparent), transparent 70%),
       radial-gradient(48% 42% at 64% 46%,
-        color-mix(in srgb, var(--aurora-violet) 28%, transparent), transparent 72%),
+        color-mix(in srgb, var(--glow-violet) 28%, transparent), transparent 72%),
       radial-gradient(58% 50% at 52% 56%,
-        color-mix(in srgb, var(--aurora-blue) 20%, transparent), transparent 74%);
+        color-mix(in srgb, var(--glow-blue) 20%, transparent), transparent 74%);
     opacity: 0;
     animation: hm-bloom 2.1s var(--ease-out-quart) both;
   }
@@ -213,7 +213,7 @@
   html.js .hm .hm__halo-i {
     display: block; position: absolute; inset: 0;
     background: linear-gradient(112deg,
-      var(--aurora-green), var(--aurora-blue) 52%, var(--aurora-violet));
+      var(--glow-green), var(--glow-blue) 52%, var(--glow-violet));
     -webkit-mask-image: url("../img/brand/corvus-mark.png");
             mask-image: url("../img/brand/corvus-mark.png");
     -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
@@ -293,7 +293,7 @@
     to   { transform: translate3d(36%, 0, 0); }
   }
 
-  /* 2b. the aurora front. It runs on the SAME hm-wipe keyframes as the
+  /* 2b. the glow front. It runs on the SAME hm-wipe keyframes as the
          plate — one light, one motion — and gets its lead from where its
          stops sit on the gradient line instead of from a second, separately
          tuned translate: its core is at p=0.86 against the plate's edge at
@@ -302,17 +302,17 @@
          same animation. Its own opacity envelope is a second animation on
          the same element, touching a property hm-wipe does not.
 
-         color-mix keeps --aurora-* in style.css as the single source of the
+         color-mix keeps --glow-* in style.css as the single source of the
          brand's colour; a browser without color-mix drops this one
          declaration, loses the band, and still gets the whole mark. */
   html.js .hm .hm__flow {
     z-index: 2;
     background: linear-gradient(112deg,
       transparent 0 76%,
-      color-mix(in srgb, var(--aurora-violet) 38%, transparent) 80%,
-      color-mix(in srgb, var(--aurora-blue) 58%, transparent) 83.5%,
+      color-mix(in srgb, var(--glow-violet) 38%, transparent) 80%,
+      color-mix(in srgb, var(--glow-blue) 58%, transparent) 83.5%,
       rgba(236, 247, 255, 0.92) 86%,
-      color-mix(in srgb, var(--aurora-green) 62%, transparent) 89%,
+      color-mix(in srgb, var(--glow-green) 62%, transparent) 89%,
       transparent 95%);
     will-change: transform, opacity;
     animation: hm-wipe 1.15s var(--hm-ease-front) 0.06s both,
@@ -352,7 +352,7 @@
   }
 
   /* 2d. after the opening the surface stays faintly alive — the brand is an
-         aurora and this is the only object on the page. One composited quad
+         glow and this is the only object on the page. One composited quad
          translating linearly: no repaint, no main-thread work. It is PAUSED
          whenever the stage is off screen, using the `is-live` class main.js
          already toggles for its own will-change management, so a page that
@@ -361,9 +361,9 @@
     z-index: 4;
     background: linear-gradient(112deg,
       transparent 0 30%,
-      color-mix(in srgb, var(--aurora-blue) 18%, transparent) 44%,
-      color-mix(in srgb, var(--aurora-green) 14%, transparent) 52%,
-      color-mix(in srgb, var(--aurora-violet) 20%, transparent) 60%,
+      color-mix(in srgb, var(--glow-blue) 18%, transparent) 44%,
+      color-mix(in srgb, var(--glow-green) 14%, transparent) 52%,
+      color-mix(in srgb, var(--glow-violet) 20%, transparent) 60%,
       transparent 74%);
     opacity: 0;
     animation: hm-ambient-in 1.6s linear 2.4s both,

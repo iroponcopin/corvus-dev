@@ -260,7 +260,6 @@ uniform vec4 uBox;
 uniform float uAlpha;
 uniform float uWisp;
 uniform float uTime;
-uniform float uDusk;
 out vec4 outColor;
 
 void main() {
@@ -272,9 +271,7 @@ void main() {
     if (c.a > 0.001) {
       vec3 rgb = c.rgb / c.a;
       rgb = mix(rgb, vec3(0.42, 0.48, 0.47), 0.07);
-      // Act III: the bird is graded into the twilight, with a faint purple-blue sheen on the feathers.
-      rgb = mix(rgb, rgb * vec3(0.8, 0.86, 1.06) * 0.82 + vec3(0.02, 0.012, 0.05), uDusk);
-      rgb += uDusk * vec3(0.05, 0.035, 0.12) * (1.0 - rgb.r);
+
       crow = vec4(rgb * c.a * uAlpha, c.a * uAlpha);
     }
   }

@@ -49,7 +49,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 LANGS = ["ja", "en", "es", "fr", "zh", "ko", "pt-br", "it", "ar", "ru", "id", "de", "tr"]
 ZIP_RE = re.compile(r"^Cherry_MODs_v(\d+(?:\.\d+)*)\+mc(\d+(?:\.\d+)*)\.zip$")
-SITE = "https://iroponcopin.github.io/aurora-corvus"
+SITE = "https://iroponcopin.github.io/corvus-dev"
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source",
         "track", "wbr"}
 

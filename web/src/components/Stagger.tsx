@@ -39,7 +39,7 @@ function rtlUnits(words: string[]): { text: string; ltr: boolean }[] {
  * letter, since splitting a cursive script into separate boxes would break its letter joins,
  * and a run of Latin words inside it travels as one left-to-right box; a line with no
  * right-to-left letters at all is laid out left to right even on an Arabic page, so the order
- * stays the one the reader expects ("Aurora Corvus." never turns into ".Corvus Aurora").
+ * stays the one the reader expects ("Corvus." never turns into ".Corvus Glow").
  * Screen readers get the sentence once, whole.
  */
 export function Stagger({ text, lang, offset = 0, className }: { text: string; lang: Lang; offset?: number; className?: string }) {

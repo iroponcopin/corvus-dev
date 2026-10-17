@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Aurora Corvus — shared stylesheet (Apple-grade typography + motion pass)
+   Corvus — shared stylesheet (Apple-grade typography + motion pass)
 
    Design language: deep near-black night sky, sky-tinted light washes,
    glassy translucent surfaces. Typography is the Apple system stack — SF Pro
@@ -56,13 +56,13 @@
      ここではその帯の中から、暗い地(--bg #07090f)に載せて
      <b>本文リンクとして読める</b>ものを選んである(下の実測値)。
 
-     ★ 名前は --aurora-* のまま残す。トークン名を変えると
+     ★ 名前は --glow-* のまま残す。トークン名を変えると
        hero-mark.css / changelog.css / aureum.css の参照を一斉に
        書き換えることになり、1 か所落とすと<b>その要素だけ色が消える</b>。
        名前ではなく値を変えるほうが、変更の範囲が読める。 */
-  --aurora-green: #64d2ff;   /* was #57e6ae — now the teal end of the sky band */
-  --aurora-violet: #4a9dff;  /* was #8b7bff — now the deep end, no purple */
-  --aurora-blue: #5ac8fa;
+  --glow-green: #64d2ff;   /* was #57e6ae — now the teal end of the sky band */
+  --glow-violet: #4a9dff;  /* was #8b7bff — now the deep end, no purple */
+  --glow-blue: #5ac8fa;
   --accent: #5ac8fa;
   --accent-strong: #9adcff;
   --accent-contrast: #04121c;
@@ -226,7 +226,7 @@ h2::before {
   content: "";
   position: absolute; top: 0; inset-inline-start: 0;
   width: 56px; height: 2px; border-radius: 2px;
-  background: linear-gradient(90deg, var(--aurora-green), var(--aurora-blue), transparent);
+  background: linear-gradient(90deg, var(--glow-green), var(--glow-blue), transparent);
   opacity: 0.85;
 }
 h2:first-child { margin-top: 0; }
@@ -266,7 +266,7 @@ strong, b { font-weight: 600; }
 :focus-visible { outline: 2px solid rgba(var(--accent-rgb), 0.8); outline-offset: 2px; }
 
 /* ==========================================================================
-   Sky — fixed atmospheric backdrop (aurora washes + starfield)
+   Sky — fixed atmospheric backdrop (glow washes + starfield)
    Pure CSS, no external assets. Sits behind everything; pointer-inert.
 
    PERF: this used to be `filter: blur(58px) saturate(1.25)` on a full-
@@ -291,20 +291,20 @@ strong, b { font-weight: 600; }
   background-size: 520px 520px, 460px 460px, 640px 640px, 380px 380px, 560px 560px, 700px 700px;
   opacity: 0.55;
 }
-.sky__aurora {
+.sky__glow {
   position: absolute; inset: -30%;
   background:
-    /* 2026-09-10, owner: 「全体的にテーマがスカイブルーではなく、以前の Aurora
+    /* 2026-09-10, owner: 「全体的にテーマがスカイブルーではなく、以前の Glow
        テーマが残っている」。これがその残りだった —— トークンを空色に変えても、
        この 3 つの洗いは生の rgba(緑 87,230,174 と紫 139,123,255)のままで、
        全ページの背景が依然オーロラだった。3 つとも空色の一族に。 */
     radial-gradient(38% 30% at 24% 20%, rgba(90, 200, 250, 0.20), transparent 72%),
     radial-gradient(42% 32% at 76% 15%, rgba(10, 132, 255, 0.17), transparent 72%),
     radial-gradient(52% 40% at 52% 48%, rgba(120, 214, 255, 0.12), transparent 74%);
-  animation: aurora-drift 42s var(--ease-in-out-soft) infinite alternate;
+  animation: glow-drift 42s var(--ease-in-out-soft) infinite alternate;
   will-change: transform;
 }
-@keyframes aurora-drift {
+@keyframes glow-drift {
   0%   { transform: translate3d(-2%, -1.5%, 0); }
   50%  { transform: translate3d(2.5%, 2%, 0); }
   100% { transform: translate3d(-1%, 3.5%, 0); }
@@ -785,7 +785,7 @@ main:has(> .film) { padding-top: 0; }
   font-weight: 700; line-height: 1.02;
   letter-spacing: var(--tracking-display);
   margin: 0; text-align: center; text-wrap: balance;
-  background: linear-gradient(112deg, var(--text) 22%, var(--accent-strong) 56%, var(--aurora-violet) 94%);
+  background: linear-gradient(112deg, var(--text) 22%, var(--accent-strong) 56%, var(--glow-violet) 94%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 
@@ -836,7 +836,7 @@ main:has(> .film) { padding-top: 0; }
    window-shaped cards, lit from behind by CSS light fields — no video, no
    canvas, no library, no generated pictures. Sky-blue only: every light in
    this block is rgba(90,200,250,x) or rgba(10,132,255,x), the same pair
-   .hero::before and .sky__aurora use; nothing green or violet.
+   .hero::before and .sky__glow use; nothing green or violet.
    ========================================================================== */
 .home-beat {
   margin: clamp(72px, 12vh, 150px) 0 0;
@@ -1095,7 +1095,7 @@ a.card { text-decoration: none; }
   box-shadow: var(--glass-highlight), 0 0 0 3px rgba(var(--accent-rgb), 0.15);
 }
 
-/* Neutral toggle chips — quiet glass; selected state = aurora-tinted glass */
+/* Neutral toggle chips — quiet glass; selected state = glow-tinted glass */
 .chip {
   border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-muted);
   padding: 8px 14px; border-radius: 999px; cursor: pointer; font-size: 0.88rem; font-weight: 600;
@@ -1301,7 +1301,7 @@ td code, th code { overflow-wrap: anywhere; word-break: break-word; }
 .empty-state { text-align: center; color: var(--text-muted); padding: 40px 0; }
 
 /* ==========================================================================
-   Recipe tabs (neutral controls — selected = aurora-tinted glass)
+   Recipe tabs (neutral controls — selected = glow-tinted glass)
    ========================================================================== */
 .tab-bar { display: flex; flex-wrap: wrap; gap: 6px; margin: 18px 0; }
 .tab-btn {
@@ -1463,7 +1463,7 @@ html.js .hero.reveal.is-visible { transform: translate3d(0, 0, 0); }
   }
   .hero, .hero::before { translate: none !important; }
   .hero::before { animation: none !important; }
-  .sky__aurora { animation: none !important; }
+  .sky__glow { animation: none !important; }
   .mega-panel__inner { animation: none !important; }
   .card, .card::before, .card::after,
   .btn, .btn::after, .btn--ghost, .chip, .chip::before,
@@ -1518,7 +1518,7 @@ html.js .hero.reveal.is-visible { transform: translate3d(0, 0, 0); }
 .up-disclaimer p { margin: 0; color: var(--text-muted); font-size: 0.92rem; line-height: 1.85; }
 
 /* ----------------------------------------------------------------- /discord/
-   How to use the Aurora Corvus Discord bot (scripts/build_discord.py).
+   How to use the Corvus Discord bot (scripts/build_discord.py).
    Namespaced .dc-* so nothing here can reach another page. Permanent, like
    /upcoming/, so it lives here rather than in a file to be deleted later. */
 .dc-hero .dc-lede { max-width: 46em; color: var(--text-muted); }

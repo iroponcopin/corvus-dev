@@ -22,7 +22,7 @@ from site_common import ROOT, PACK_NAME, pack_zip_path  # noqa: E402
 
 MC_VERSION = "26.3"
 DOWNLOAD_DIR = ROOT / "downloads"
-SITE_BASE_URL = "https://iroponcopin.github.io/aurora-corvus"
+SITE_BASE_URL = "https://iroponcopin.github.io/corvus-dev"
 
 
 def _mod_version():

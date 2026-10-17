@@ -27,14 +27,14 @@ I18N_DIR = ROOT / "data" / "i18n"
 DOWNLOADS_DIR = ROOT / "downloads"
 
 # Three distinct names, deliberately kept apart:
-#   SITE_TITLE          the website              -> "Aurora Corvus"
+#   SITE_TITLE          the website              -> "Corvus"
 #   PACK_NAME           the mod pack product     -> "Alpha" (was "Glimpse
 #                       Alpha" until the V2.5.0 rename; see below)
 #   LAUNCHER_APP_NAME   the desktop updater app  -> "Corvus" (was
 #                       "Glimpse Launcher" until the 1.3.0 rename)
 SITE_TITLE = "Corvus"  # brand name, unchanged across languages
-# 2026-09-10、所有者:「Aurora Corvus から Corvus に名称を変更」。
-# 旧名は Aurora Corvus。リポジトリ名(aurora-corvus)と公開 URL は
+# 2026-09-10、所有者:「Corvus から Corvus に名称を変更」。
+# 旧名は Corvus。リポジトリ名(corvus-dev)と公開 URL は
 # **変えない** —— 変えると既に配布したランチャーの取得先が 404 になる
 # (cross-repo filename coupling と同じ罠)。変わるのは表示名だけである。
 LAUNCHER_APP_NAME = "Corvus"
@@ -98,7 +98,7 @@ def pack_zip_path(version: str, mc_version: str = "26.2", *, why: str = "This pa
 # requires an ABSOLUTE og:image URL — a relative one is silently ignored by
 # every scraper, which is how a site ends up with no share preview at all.
 # (build_glimpse_manifest.py keeps its own copy for the launcher manifest.)
-SITE_BASE_URL = "https://iroponcopin.github.io/aurora-corvus"
+SITE_BASE_URL = "https://iroponcopin.github.io/corvus-dev"
 OG_IMAGE_URL = f"{SITE_BASE_URL}/assets/img/brand/og-image.png"
 
 # (code, native display name, text direction). Order = language-switcher order.
@@ -194,7 +194,7 @@ def recipe_cat_index(cat_name):
     return _cat_index_cache[cat_name]
 
 # slugs are relative to EACH LANGUAGE's own root (no leading slash!). GitHub
-# Pages serves this repo at https://<user>.github.io/aurora-corvus/, not
+# Pages serves this repo at https://<user>.github.io/corvus-dev/, not
 # the domain root, so every link in this site is prefix-relative.
 NAV_SECTIONS = [
     ("home", ""),
@@ -976,7 +976,7 @@ def page(
         relative depth (the site-wide 404.html — GitHub Pages serves its
         *content* at whatever broken URL the visitor hit, at any depth, so
         relative asset/nav paths would resolve against the wrong base). Pass
-        e.g. "/aurora-corvus/" to force every link/asset in the shell to
+        e.g. "/corvus-dev/" to force every link/asset in the shell to
         an absolute path instead of a depth-relative one.
     """
     bundle = load_bundle(lang)
@@ -1070,7 +1070,7 @@ def page(
 </script>
 {extra_head}</head>
 <body>
-<div class="sky" aria-hidden="true"><div class="sky__aurora"></div></div>
+<div class="sky" aria-hidden="true"><div class="sky__glow"></div></div>
 <a class="skip-link" href="#main">{esc(ui['skip_link'])}</a>
 <div class="nav-scrim" id="navScrim" aria-hidden="true"></div>
 <header class="site-header">
