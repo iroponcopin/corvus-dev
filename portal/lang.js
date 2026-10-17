@@ -9,14 +9,14 @@
    The three tables below are region guesses, not location data: see
    scripts/lang_regions.py for why a static site on GitHub Pages has
    nothing better than the device timezone to go on. */
-window.__auroraCorvusLangInit=(function(){
+window.__corvusLangInit=(function(){
 var TZ="ja Tokyo|ko Seoul Pyongyang|zh Shanghai Chongqing Chungking Harbin Urumqi Kashgar Taipei Hong_Kong Macau|id Jakarta Pontianak Makassar Jayapura Kuala_Lumpur Kuching Brunei|tr Istanbul Baku|de Berlin Vienna Zurich Busingen Vaduz|it Rome Vatican San_Marino|fr Paris Monaco Brussels Luxembourg Dakar Abidjan Kinshasa Lubumbashi Bamako Ouagadougou Niamey Conakry Libreville Brazzaville Douala Bangui Ndjamena Porto-Novo Lome Djibouti Antananarivo Reunion Mayotte Martinique Guadeloupe Cayenne Port-au-Prince|es Madrid Canary Ceuta Andorra Mexico_City Cancun Merida Monterrey Chihuahua Hermosillo Mazatlan Tijuana Ojinaga Buenos_Aires Cordoba Mendoza Salta Tucuman Jujuy Bogota Lima Santiago Punta_Arenas Caracas Guatemala Montevideo Asuncion La_Paz Havana Santo_Domingo Costa_Rica Panama Managua Tegucigalpa El_Salvador Guayaquil Galapagos Puerto_Rico Malabo|pt-br Sao_Paulo Bahia Fortaleza Recife Manaus Belem Cuiaba Campo_Grande Porto_Velho Rio_Branco Noronha Maceio Araguaina Santarem Eirunepe Boa_Vista Lisbon Azores Madeira Cape_Verde Luanda Maputo Bissau Sao_Tome|ar Riyadh Dubai Qatar Kuwait Bahrain Muscat Baghdad Amman Beirut Damascus Gaza Hebron Aden Cairo Khartoum Tripoli Tunis Algiers Casablanca El_Aaiun Nouakchott Mogadishu Comoro|ru Moscow Kaliningrad Samara Volgograd Saratov Astrakhan Ulyanovsk Kirov Yekaterinburg Omsk Novosibirsk Krasnoyarsk Irkutsk Yakutsk Vladivostok Magadan Kamchatka Sakhalin Chita Novokuznetsk Barnaul Tomsk Anadyr Khandyga Ust-Nera Srednekolymsk Minsk Almaty Aqtobe Aqtau Atyrau Oral Qostanay Qyzylorda Bishkek Tashkent Samarkand Dushanbe Ashgabat Yerevan Tbilisi|en Kolkata Calcutta Colombo Dhaka Karachi Kathmandu Thimphu Singapore Manila Jerusalem Bangkok Ho_Chi_Minh Phnom_Penh Vientiane Yangon Nicosia Famagusta Kabul Tehran";
 var RG="ja JP|ko KR KP|zh CN TW HK MO SG|id ID MY BN|tr TR AZ CY|de DE AT CH LI|it IT SM VA|fr FR BE LU MC SN CI CD CM ML BF NE GN GA CG TD BJ TG MG RE HT DJ|es ES MX AR CO PE CL VE GT UY PY BO CU DO CR PA NI HN SV EC PR GQ AD|pt-br BR PT AO MZ CV GW ST TL|ar SA AE QA KW BH OM IQ JO LB SY PS YE EG SD LY TN DZ MA MR SO KM EH|ru RU BY KZ KG UZ TJ TM AM GE|en GB US CA AU NZ IE ZA IN PK BD LK NP PH SG MY NG KE GH TZ UG ZM ZW IL TH VN KH MM JM TT BB BS MT";
 var AR="en Europe America Africa Australia Pacific Atlantic Indian";
 return function (C) {
   var LANGS = C.l, HREF = C.h, CUR = C.c, SECTION = C.s;
-  /* KEY is a contract with assets/js/main.js — grep "aurora-corvus-lang". */
-  var KEY = "aurora-corvus-lang", ONCE = "aurora-corvus-lang-redirected";
+  /* KEY is a contract with assets/js/main.js — grep "corvus-dev-lang". */
+  var KEY = "corvus-dev-lang", ONCE = "corvus-dev-lang-redirected";
 
   var flagW = null;
   function composesFlags() {
@@ -105,7 +105,7 @@ return function (C) {
   function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) { } }
 
-  /* Site root derived, not hardcoded: /aurora-corvus/ on Pages, / locally. */
+  /* Site root derived, not hardcoded: /corvus-dev/ on Pages, / locally. */
   var here = location.pathname.replace(/index\.html$/, "");
   if (here.charAt(here.length - 1) !== "/") here += "/";
   var tail = (CUR === "ja" ? "" : CUR + "/") + SECTION;
@@ -149,7 +149,7 @@ return function (C) {
     tags: tags, tz: tz
   };
   var decision = resolve(env);
-  window.__auroraCorvusLang = {
+  window.__corvusLang = {
     resolve: resolve, env: env, decision: decision, flagWidths: flagW,
     href: HREF, cur: CUR, section: SECTION, base: base, langs: LANGS
   };
