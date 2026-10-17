@@ -163,7 +163,7 @@ html:lang(ko) .cin-tagline {
   left: var(--ac-gutter);
   bottom: 14px;
   z-index: 4;
-  max-width: min(46ch, calc(100% - 2 * var(--ac-gutter)));
+  max-width: min(90ch, calc(100% - 2 * var(--ac-gutter)));
   margin: 0;
   font-size: 12px;
   line-height: 1.4;
@@ -213,7 +213,7 @@ html:lang(ko) .cin-tagline {
 
 /* Act III: AURORA CORVUS is the longest title; it is set smaller than HALIA and CORVUS. */
 .cin-title--3 {
-  font-size: clamp(40px, min(9vw, 15vh), 150px);
+  font-size: clamp(36px, min(7.6vw, 14vh), 130px);
 }
 
 @media (max-width: 767px) {
@@ -311,7 +311,8 @@ html:lang(ko) .cin-tagline {
 .ac-altitude {
   position: relative;
   overflow-x: clip;
-  padding-block: clamp(72px, 12vh, 128px);
+  /* The stream starts below the Dock: at least the header's height and 24px. */
+  padding-block: max(clamp(72px, 12vh, 128px), calc(var(--header-h) + 36px)) clamp(72px, 12vh, 128px);
   /* A soft, dim light behind the glass, so the frost has something to blur. */
   background-color: #000;
   background-size: cover;
@@ -351,6 +352,8 @@ html:lang(ko) .cin-tagline {
   }
 }
 
+/* Each card drifts at most 6px sideways (and 2px more on its own), so neighbours in a row, which drift in opposite
+   directions, keep at least 18 - 2 * 8 = 2px between them; rows are a gap apart vertically and never meet. */
 .ac-altitude-card {
   transform: translate3d(calc(var(--wind, 0) * var(--dx, 0px)), 0, 0);
   transition: border-color 0.3s var(--ease-apple), background-color 0.3s var(--ease-apple);
@@ -365,10 +368,10 @@ html:lang(ko) .cin-tagline {
 
 @keyframes ac-altitude-drift {
   from {
-    translate: -4px 0;
+    translate: -2px 0;
   }
   to {
-    translate: 4px 0;
+    translate: 2px 0;
   }
 }
 
@@ -460,4 +463,18 @@ html:lang(ko) .cin-tagline {
   .ac-altitude-rise {
     animation: none;
   }
+}
+
+/* Act III: AURORA CORVUS and its tagline share one left margin (the gutter), and the title never exceeds 90vw. */
+.cin-copy--3 {
+  align-items: flex-start;
+  text-align: left;
+  padding-inline: var(--ac-gutter);
+}
+
+.cin-copy--3 .cin-title--3,
+.cin-copy--3 .cin-tagline--3 {
+  align-self: flex-start;
+  max-width: 90vw;
+  transform: none;
 }

@@ -422,15 +422,15 @@ export function NaturalCinemaStage({
 
       // Typography: each title spaces in with its own act; the hint leaves at the first scroll.
       titleEl.style.letterSpacing = `${pose.letter}em`;
-      titleEl.style.paddingLeft = `${pose.letter}em`;
+      titleEl.style.paddingLeft = `${Math.max(0, pose.letter)}em`;
       titleEl.style.opacity = String(pose.title1);
       taglineEl.style.opacity = String(pose.title1);
       title2El.style.letterSpacing = `${pose.letter2}em`;
-      title2El.style.paddingLeft = `${pose.letter2}em`;
+      title2El.style.paddingLeft = `${Math.max(0, pose.letter2)}em`;
       title2El.style.opacity = String(pose.title2);
       tagline2El.style.opacity = String(pose.title2);
       title3El.style.letterSpacing = `${pose.letter3}em`;
-      title3El.style.paddingLeft = `${pose.letter3}em`;
+      title3El.style.paddingLeft = `${Math.max(0, pose.letter3)}em`;
       title3El.style.opacity = String(pose.title3);
       tagline3El.style.opacity = String(pose.title3);
       hintEl.style.opacity = String(1 - smooth(0, 0.05, p));

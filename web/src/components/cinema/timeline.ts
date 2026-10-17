@@ -235,7 +235,8 @@ export function poseAt(
 
   // The Act II crow leaves as the headland comes in.
   const crow2 = crowPose(a, vw, vh, narrow);
-  crow2.alpha *= 1 - smooth(0, 0.1, c);
+  // The Act II crow is fully gone before the headland starts to dissolve in.
+  crow2.alpha *= 1 - smooth(0, 0.03, c);
 
   return {
     bg: p * BG_SPAN,
@@ -244,13 +245,14 @@ export function poseAt(
     // HALIA is gone by a = 0.03; CORVUS waits until a = 0.10, a 4% gap of section progress with neither title shown.
     title1: 1 - smooth(0, 0.03, a),
     eagle: Math.round(clamp01((p - 0.35) / 0.65) * (EAGLE_COUNT - 1)),
-    eagleAlpha: smooth(0.28, 0.36, p) * (1 - smooth(0.12, 0.2, a)),
+    // The eagle is gone before the cloud starts to dissolve, so it never hangs over another shot.
+    eagleAlpha: smooth(0.28, 0.36, p) * (1 - smooth(0, 0.04, a)),
     eagleLeft: eLeft,
     eagleTop: eTop,
     eagleW: W,
     eagleH: H,
     light: [dx / len, dy / len],
-    dissolve: smooth(0, 0.12, a),
+    dissolve: smooth(0.04, 0.14, a),
     fog: smooth(0, 0.1, a) * lerp(0.9, 0.3, smooth(0, 0.5, a)),
     teal: smooth(0, 0.15, a),
     bg2: act2Pair(a * (ACT2_COUNT - 1)),
@@ -258,7 +260,7 @@ export function poseAt(
     letter2: lerp(narrow ? 0.16 : 0.42, -0.03, smooth(0.1, 0.35, a)),
     title2: smooth(0.1, 0.18, a) * (1 - smooth(0, 0.03, c)),
     crow: crow2,
-    dissolve3: smooth(0, 0.12, c),
+    dissolve3: smooth(0.03, 0.15, c),
     bg3,
     dusk: lerp(duskA, duskB, bg3.m),
     letter3: lerp(narrow ? 0.16 : 0.42, -0.03, smooth(0.1, 0.35, c)),

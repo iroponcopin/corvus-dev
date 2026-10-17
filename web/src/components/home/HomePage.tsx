@@ -80,9 +80,9 @@ export function HomePage({ lang }: { lang: Lang }) {
   const k = d.discord;
   const commands = k.groups.flatMap((g) => g.subcommands.filter((s) => !s.admin).map((s) => ({ cmd: `/${g.name} ${s.name}`, gloss: s.gloss }))).slice(0, 5);
 
-  // The altitude stream: the latest releases of every model but Alpha (archived), newest first.
+  // The altitude stream: the latest releases of the live models (not archived or ended), newest first.
   const altitude: StreamRelease[] = c.brands
-    .filter((b) => b.id !== "alpha")
+    .filter((b) => d.products[b.id]?.availability !== "archived")
     .flatMap((b) => b.releases.map((r) => ({ r, b })))
     .sort((x, y) => (y.r.date ?? "").localeCompare(x.r.date ?? ""))
     .slice(0, 10)

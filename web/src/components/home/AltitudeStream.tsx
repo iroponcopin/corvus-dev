@@ -66,7 +66,7 @@ export function AltitudeStream({
               <Link
                 href={r.href}
                 className="ac-frost ac-altitude-card"
-                style={{ "--dx": `${(i % 3 === 0 ? -56 : i % 3 === 1 ? 24 : 80) + (i % 2) * 14}px` } as React.CSSProperties}
+                style={{ "--dx": `${i % 2 === 0 ? 6 : -6}px` } as React.CSSProperties}
                 data-brand={r.brand}
               >
                 <div className="ac-altitude-top">
