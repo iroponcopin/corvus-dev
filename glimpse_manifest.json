@@ -5,34 +5,34 @@
     "published_at": "2026-09-28T00:00:00+00:00",
     "title": "Alpha v4.4.0.2",
     "summary": "Alpha has been retired. This last release (4.4.0.2) switches Alpha off: its 13 mods are replaced by placeholders that add nothing to the game. Back up your worlds before updating: blocks that Alpha added turn into empty air, and once a world has been saved that way they do not come back. See the changelog on the Wiki for what to do if you installed by hand or run a server.",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/Alpha_MODs_v4.4.0.2+mc26.3.zip",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/Alpha_MODs_v4.4.0.2+mc26.3.zip",
     "file_name": "Alpha_MODs_v4.4.0.2+mc26.3.zip",
     "file_size": 11060,
     "sha256": "61562fc78eb2a178df638390fea8b2131c33df51b66cd5ca6acb4432f6c827b3",
-    "changelog_url": "https://iroponcopin.github.io/aurora-corvus/en/changelog/"
+    "changelog_url": "https://iroponcopin.github.io/corvus-dev/en/changelog/"
   },
   "launcher": {
     "latest": "5.0.2",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.2.jar",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.0.2.jar",
     "file_name": "corvus-5.0.2.jar",
     "file_size": 15046963,
     "sha256": "caf55c0874ed3454b68ed3a3ce22a9f300c1b6db4756ebe7cf546867ce0e7502",
     "notes": "Corvus Store 5.0.2 and Corvus Agent 5.0.1 carry out the end of ASTRAEA's service.\n\nASTRAEA ended its service on 16 October 2026. In the Store it is now archived: it moves to the end of Arcade, just before Alpha, it is no longer numbered in Top Models or shown in the banner, and it can no longer be installed or updated. Its button opens the notice on the website. A copy already on your computer is left as it is.\n\nCorvus Agent 5.0.1 removes ASTRAEA from the servers it looks after, on its first sync on or after 23 October 2026. Before then it changes nothing; Corvus Studio's Dashboard shows the date. On the day, it takes a world backup first, stops the server, moves the ASTRAEA jar into .corvus-retired (it is not deleted), starts the server again and checks that it answers; if it does not, everything is put back. This happens even when automatic updates are off. OUKA and every other mod stay exactly as they were. Removing ASTRAEA removes its blocks, items and worlds (the Moon, Mars and the station) from your world, so back up any world you want to keep; the backup the agent takes is in .corvus/backups. To get the removal, update Corvus Agent from its card in Work.\n\nEverything else is 5.0.1.\n\nVerified: the unit tests pass (601, 481 and 159 in the three modules), including new tests for the removal date, the move, the roll-back and that no other file changes. On a real Minecraft 26.3 server with OUKA 1.6.2 and ASTRAEA 1.5.4, the agent changed nothing before the date; on the date it made the world backup (with ASTRAEA's worlds in it), moved the jar, and the server started without ASTRAEA while the other six mods were byte-identical. The Store was drawn without a window in all 13 languages with ASTRAEA archived, and was looked at in a real window. Corvus Agent 5.0.0 and Corvus Store 5.0.1 read the new website data without trouble.\nNot verified, and worth saying: the Dashboard's date line and the ASTRAEA notice in the Store have not been seen in a real window; the new words in the eleven languages other than English and Japanese have not been read by a native speaker; until you update, Corvus Store 5.0.1 still offers ASTRAEA, and Corvus Agent 5.0.0 does not remove it.",
     "native": {
       "macos": {
-        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.2-macos.dmg",
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.0.2-macos.dmg",
         "file_name": "corvus-5.0.2-macos.dmg",
         "file_size": 64797112,
         "sha256": "d6bfcbe98aeb659ab58da697d0ac0c816ab8f627bb9668bf9a56938151cae231"
       },
       "windows": {
-        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.2-windows.msi",
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.0.2-windows.msi",
         "file_name": "corvus-5.0.2-windows.msi",
         "file_size": 62481244,
         "sha256": "d9a301c2a678e99f9de17aabdf52b0e5862e54902fa318c31eca3009627849c6"
       },
       "linux": {
-        "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-5.0.2-linux.deb",
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.0.2-linux.deb",
         "file_name": "corvus-5.0.2-linux.deb",
         "file_size": 51939310,
         "sha256": "dd92807f7980555312454ba17ec56760ecf55056aeddd1eb5e2954e373de20ec"
@@ -42,7 +42,7 @@
   "aureum": {
     "mod_id": "aureum",
     "latest": "2.0.0",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/aureum-2.0.0.jar",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/aureum-2.0.0.jar",
     "file_name": "aureum-2.0.0.jar",
     "file_size": 39160,
     "sha256": "4132332e29b8b9b968277663ac44a1f86e1a729e46492a75e311a729a34ebff4"
@@ -50,7 +50,7 @@
   "cherry": {
     "mod_id": "cherry",
     "latest": "1.2.1",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/Cherry_MODs_v1.2.1+mc26.3.zip",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/Cherry_MODs_v1.2.1+mc26.3.zip",
     "file_name": "Cherry_MODs_v1.2.1+mc26.3.zip",
     "file_size": 4646731,
     "sha256": "1a128376be951014713dd5dcf6920e464a01b53daeea34db2240ad037c273968",
@@ -72,7 +72,7 @@
   "ouka": {
     "mod_id": "ouka",
     "latest": "1.6.2.2",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/OUKA_MODs_v1.6.2.2+mc26.3.zip",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/OUKA_MODs_v1.6.2.2+mc26.3.zip",
     "file_name": "OUKA_MODs_v1.6.2.2+mc26.3.zip",
     "file_size": 13625731,
     "sha256": "df7115aa1f36a7d1eda31eb614904d9c292e868de1e6351e6c313529746f18f5",
@@ -94,7 +94,7 @@
   "astraea": {
     "mod_id": "astraea",
     "latest": "1.5.4",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/ASTRAEA_MODs_v1.5.4+mc26.3.zip",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/ASTRAEA_MODs_v1.5.4+mc26.3.zip",
     "file_name": "ASTRAEA_MODs_v1.5.4+mc26.3.zip",
     "file_size": 3825157,
     "sha256": "063b42c9be463374584c5ccc7fff4f506a6fdf6eec5c5fcd65cf803559c572df",
@@ -109,13 +109,13 @@
     "retired": {
       "date": "2026-10-16",
       "remove_after": "2026-10-23",
-      "notice_url": "https://iroponcopin.github.io/aurora-corvus/astraea/"
+      "notice_url": "https://iroponcopin.github.io/corvus-dev/astraea/"
     }
   },
   "tsubomi": {
     "mod_id": "tsubomi",
     "latest": "1.1.0",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/tsubomi-1.1.0.jar",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/tsubomi-1.1.0.jar",
     "file_name": "tsubomi-1.1.0.jar",
     "file_size": 506800,
     "sha256": "f90eada3073694c903bf4330b4742828aa33248f6b56a8fc22ef6d9d28bc78f9"
@@ -123,21 +123,21 @@
   "halia": {
     "mod_id": "halia",
     "latest": "1.2.1",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/halia-1.2.1.jar",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/halia-1.2.1.jar",
     "file_name": "halia-1.2.1.jar",
     "file_size": 17631196,
     "sha256": "e691ff206b1f2de17ad445a15d98abbb8bbb701b66c37d3daeabf0dc5da1f0ff"
   },
   "agent": {
     "latest": "5.0.1",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/corvus-agent-5.0.1.zip",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-agent-5.0.1.zip",
     "file_name": "corvus-agent-5.0.1.zip",
     "file_size": 363191,
     "sha256": "9ba8f75fc833babe17ad9887172a2c12b8703b32cf837b51bc1de2bfb43c85e6"
   },
   "noctua": {
     "latest": "1.0.0",
-    "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/Noctua_v1.0.0+pal1.0.zip",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/Noctua_v1.0.0+pal1.0.zip",
     "file_name": "Noctua_v1.0.0+pal1.0.zip",
     "file_size": 119991,
     "sha256": "4d773fd11e7140b79dc4b6a1dec66ebb822b3292bcfcef156d6f9df8a8660e23"

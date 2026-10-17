@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-10-16T00:00:00+00:00",
-  "page_url": "https://iroponcopin.github.io/aurora-corvus/upcoming/",
+  "page_url": "https://iroponcopin.github.io/corvus-dev/upcoming/",
   "entries": [
     {
       "id": "v4-4-1",
@@ -17,7 +17,7 @@
         "A landing table: touch the Runway Deck in the Ashen Sparrow below 0.25 vertical speed for no damage and \"Soft on the taxi.\", 0.25–0.49 for 4 damage, 0.50 or more for 8 damage and a one-second stall. It replaces V4.4.0's single 0.35 / 8 threshold",
         "Door, hook and chalk fixes: the Hangar Door remembers whether it is open, and a chunk unloading mid-roll snaps it to where you left it (toggles wait 0.75 seconds and never double-sound). A sparrow on a Hangar Hook or on the hangar floor counts as roofed, so grit never reaches it. Taxi Chalk pads survive relogging like Parking Chalk pads (8 per player). Breaking the hatch above someone in the shaft does not suffocate them. No second airfield"
       ],
-      "url": "https://iroponcopin.github.io/aurora-corvus/upcoming/"
+      "url": "https://iroponcopin.github.io/corvus-dev/upcoming/"
     },
     {
       "id": "v4-4-2",
@@ -34,7 +34,7 @@
         "Chock: use it on a Sparrow or chassis sitting on the Runway Deck or the hangar floor and it stays put — no drift and no idle fuel drain. The owner removes it by sneak-using an empty hand, and the chock comes back. You cannot chock someone else's locked frame",
         "Hotfixes: two Sparrows on the same taxi cell bump for 2 damage instead of clipping into each other. Approach lights only go dark when the bunker is under 1000 mB and the Filter Ring main is uncharged at the same time. The leak warning gets a per-player cooldown, and strangers cannot read a locked bunker's level by command"
       ],
-      "url": "https://iroponcopin.github.io/aurora-corvus/upcoming/"
+      "url": "https://iroponcopin.github.io/corvus-dev/upcoming/"
     },
     {
       "id": "v4-5-0",
@@ -51,7 +51,7 @@
         "Fluid on the grid: if the condensate relays link up, up to 50 mB a second moves from the fuller header tank to the emptier one, between the Sump Hall and the tank V4.3.0 left empty in Stackworks (paths of 64 nodes or less). Gasoline stays on the bunker and Hangar One side, never shares a relay with condensate, and not one drop enters the Filter Ring",
         "Freight Waybill: a slip marked with a destination (east, west, south, north or loft), stacking to 16. Use it at a freight anchor or a signal-only relay: the right hub gives Speed I for 10 seconds, the wrong one tells you the destination's coordinates. The Freight Ticket stays. This is still not a moving train — it is signage"
       ],
-      "url": "https://iroponcopin.github.io/aurora-corvus/upcoming/"
+      "url": "https://iroponcopin.github.io/corvus-dev/upcoming/"
     },
     {
       "id": "v4-5-1",
@@ -68,7 +68,7 @@
         "Fixed modes: the Sump Hall and Filter Ring relays are locked to condensate and the avgas bunker relay to gasoline; an operator who tries to change them is told that hub forces its mode. The condensate path can no longer pull avgas into the header tank, an isolated relay never starts a 50 mB move, and with the grid switched off nothing moves at all",
         "Dispatch Board fixes: the board now gives a comparator signal — 0 while the Filter Ring is unpressurised, 8 when it is pressurised and the header tank holds at least 200 mB, 15 when avgas is at 1000 mB or more on top of that. The board keeps its last reading, so for the first 2 seconds after a chunk reloads it may show the old numbers before going live. A Freight Waybill for the loft is now accepted at the loft's relay or at the board, and the loft lamps follow the V4.2.4 pressure rules instead of staying lit"
       ],
-      "url": "https://iroponcopin.github.io/aurora-corvus/upcoming/"
+      "url": "https://iroponcopin.github.io/corvus-dev/upcoming/"
     }
   ]
 }

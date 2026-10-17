@@ -2,10 +2,10 @@
   "version": "4.4.0.2",
   "title": "Alpha v4.4.0.2",
   "summary": "Alpha has been retired. This last release (4.4.0.2) switches Alpha off: its 13 mods are replaced by placeholders that add nothing to the game. Back up your worlds before updating: blocks that Alpha added turn into empty air, and once a world has been saved that way they do not come back. See the changelog on the Wiki for what to do if you installed by hand or run a server.",
-  "download_url": "https://iroponcopin.github.io/aurora-corvus/downloads/Alpha_MODs_v4.4.0.2+mc26.3.zip",
+  "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/Alpha_MODs_v4.4.0.2+mc26.3.zip",
   "file_name": "Alpha_MODs_v4.4.0.2+mc26.3.zip",
   "file_size": 11060,
   "sha256": "61562fc78eb2a178df638390fea8b2131c33df51b66cd5ca6acb4432f6c827b3",
   "published_at": "2026-09-28T00:00:00+00:00",
-  "changelog_url": "https://iroponcopin.github.io/aurora-corvus/en/changelog/"
+  "changelog_url": "https://iroponcopin.github.io/corvus-dev/en/changelog/"
 }
