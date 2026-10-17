@@ -88,6 +88,10 @@ VANILLA = {
     "minecraft:gold_ore": ["金鉱石", "Gold Ore", "gold_ore.png", "cube"],
     "minecraft:gravel": ["砂利", "Gravel", "gravel.png", "cube"],
     "minecraft:honey_bottle": ["ハチミツ入りの瓶", "Honey Bottle", "honey_bottle.png", "flat"],
+    # Used by a machine recipe; the sheet named them only through ASTRAEA's cards, which left the sheet on 2026-10-17.
+    "minecraft:iron_bars": ["鉄格子", "Iron Bars", "iron_bars.png", "cube"],
+    "minecraft:stone_button": ["石のボタン", "Stone Button", "stone_button.png", "cube"],
+    "minecraft:yellow_dye": ["黄色の染料", "Yellow Dye", "yellow_dye.png", "flat"],
     "minecraft:iron_ore": ["鉄鉱石", "Iron Ore", "iron_ore.png", "cube"],
     "minecraft:lapis_lazuli": ["ラピスラズリ", "Lapis Lazuli", "lapis_lazuli.png", "flat"],
     "minecraft:raw_copper": ["銅の原石", "Raw Copper", "raw_copper.png", "flat"],

@@ -336,6 +336,12 @@
    "meec7412eadff",
    "cube"
   ],
+  "minecraft:iron_bars": [
+   "鉄格子",
+   "Iron Bars",
+   "m37b3748d072f",
+   "cube"
+  ],
   "minecraft:iron_ore": [
    "鉄鉱石",
    "Iron Ore",
@@ -366,10 +372,22 @@
    "m1b6baa022aa2",
    "flat"
   ],
+  "minecraft:stone_button": [
+   "石のボタン",
+   "Stone Button",
+   "m730b77cdb1fc",
+   "cube"
+  ],
   "minecraft:wheat_seeds": [
    "小麦の種",
    "Wheat Seeds",
    "m2a825109133f",
+   "flat"
+  ],
+  "minecraft:yellow_dye": [
+   "黄色の染料",
+   "Yellow Dye",
+   "m3339e4682390",
    "flat"
   ],
   "ouka:argon_canister": [
