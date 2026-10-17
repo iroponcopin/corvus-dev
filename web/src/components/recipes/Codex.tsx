@@ -62,7 +62,7 @@ function MachineFacts({ facts, labels }: { facts: NonNullable<CodexData["recipes
 }
 
 /**
- * The Alchemy Codex: every crafting recipe of OUKA, Cherry and ASTRAEA. Search, category and
+ * The Alchemy Codex: every crafting recipe of the live models that have one (OUKA, Cherry, Tsubomi, Halia). Search, category and
  * station filters, the 3×3 grid laid out as on a crafting table (left to right even in Arabic),
  * the ingredient tree three levels deep, and the synthesiser that builds the item in 3D.
  * `#0`–`#2` choose a category and `#item=<id>` an item; choosing writes the hash in place.

@@ -77,7 +77,7 @@
    "changelog_balance_label": "Balance changes",
    "changelog_warnings_label": "Warnings",
    "changelog_limitations_label": "Not yet implemented/confirmed at this point",
-   "recipes_intro": "Crafting recipes for every item in Cherry, OUKA and ASTRAEA, {count} in total. Click an item to see its recipe laid out on the same 3×3 grid as an actual crafting table. Cherry, OUKA and ASTRAEA are separate mods, and each has a tab of its own here.",
+   "recipes_intro": "Crafting recipes for every item in OUKA, Cherry, Tsubomi and Halia, {count} in total. Click an item to see its recipe laid out on the same 3×3 grid as an actual crafting table. OUKA, Cherry, Tsubomi and Halia are separate mods, and each has a tab of its own here. ",
    "guide_intro": "A walkthrough covering everything from enabling the mods to actually starting to play. If you're just joining as a player, the \"For Players\" chapter alone is enough.",
    "audience_player": "For Players",
    "audience_admin": "For Server Admins",
@@ -121,7 +121,7 @@
   },
   "page_descriptions": {
    "changelog": "The update history of OUKA, Cherry, Aureum, ASTRAEA, Tsubomi and Halia, and the notice that ended Alpha. Choose a brand to see what changed in each release, newest first.",
-   "recipes": "A quick-reference table of crafting recipes for every item in Cherry, OUKA and ASTRAEA. Supports search and category filtering.",
+   "recipes": "A quick-reference table of crafting recipes for every item in OUKA, Cherry, Tsubomi and Halia. Supports search and category filtering.",
    "download": "Alpha has ended distribution. Its last release, V{pack_version}, switches Alpha off; it is here with file size and SHA-256, beside the downloads for Corvus and Aureum.",
    "launcher": "What Corvus is, how to install it, point it at an existing pack folder, use automatic or manual update mode, and restore from a backup.",
    "aureum": "Aureum: a separate, honestly-measured lightweight optimisation mod. Not a Sodium replacement — it optimises the side Sodium doesn't touch."
@@ -170,7 +170,6 @@
   "cat_names": [
    "OUKA",
    "Cherry",
-   "ASTRAEA",
    "Tsubomi",
    "Halia"
   ],

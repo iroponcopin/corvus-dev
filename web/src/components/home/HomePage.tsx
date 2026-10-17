@@ -15,7 +15,7 @@ import { StorePreview } from "./StorePreview";
 
 /**
  * The codex realm's three recipes: an OUKA ammunition, the OUKA alloy ingot, the crucible's fusion. ASTRAEA's
- * recipes stay in the sheet as history, but ASTRAEA's service has ended (2026-10-16), so it is not featured here.
+ * recipes left the sheet with its end of service (2026-10-17), so it is not featured here.
  */
 const FEATURED = ["ouka:ammo_energy", "ouka:ouka_alloy_ingot", "cherry:astral_catalyst"] as const;
 

@@ -75,7 +75,7 @@
    "changelog_balance_label": "Denge Ayarları",
    "changelog_warnings_label": "Dikkat Edilmesi Gerekenler",
    "changelog_limitations_label": "Bu sürümde henüz eklenmemiş veya doğrulanmamış olanlar",
-   "recipes_intro": "Cherry, OUKA ve ASTRAEA'daki her eşyanın üretim tarifleri, toplam {count}. Bir eşyaya tıklayarak tarifini gerçek bir çalışma masasıyla aynı 3×3 ızgarada görün. Cherry, OUKA ve ASTRAEA ayrı modlardır ve her birinin burada kendi sekmesi vardır.",
+   "recipes_intro": "OUKA, Cherry, Tsubomi ve Halia'daki her eşyanın üretim tarifleri, toplam {count}. Bir eşyaya tıklayarak tarifini gerçek bir çalışma masasıyla aynı 3×3 ızgarada görün. OUKA, Cherry, Tsubomi ve Halia ayrı modlardır ve her birinin burada kendi sekmesi vardır. ",
    "guide_intro": "MOD'ları etkinleştirmekten oyuna başlamaya kadar olan adımları bir araya getirdik. Sadece oyuncu olarak katılacaksanız \"Oyuncular İçin\" bölümü yeterlidir.",
    "audience_player": "Oyuncular İçin",
    "audience_admin": "Sunucu Yöneticileri İçin",
@@ -118,7 +118,7 @@
   },
   "page_descriptions": {
    "changelog": "OUKA, Cherry, Aureum, ASTRAEA, Tsubomi ve Halia'nın güncelleme geçmişi ve Alpha'nın sonunu bildiren duyuru. Her sürümde neyin değiştiğini görmek için bir marka seçin; en yeni en üstte.",
-   "recipes": "Cherry, OUKA ve ASTRAEA'daki her eşyanın üretim tariflerini gösteren hızlı başvuru tablosu. Arama ve kategori filtresi destekler.",
+   "recipes": "OUKA, Cherry, Tsubomi ve Halia'daki her eşyanın üretim tariflerini gösteren hızlı başvuru tablosu. Arama ve kategori filtresi destekler.",
    "download": "Alpha artık dağıtılmıyor. Son sürümü V{pack_version}, Alpha'yı kapatır; burada dosya boyutu ve SHA-256 ile, Corvus ve Aureum indirmelerinin yanında duruyor.",
    "aureum": "Aureum: ayrı, dürüstçe ölçülmüş, hafif bir optimizasyon modu. Sodium'un yerine geçmez — Sodium'un dokunmadığı tarafı optimize eder."
   }
@@ -166,7 +166,6 @@
   "cat_names": [
    "OUKA",
    "Cherry",
-   "ASTRAEA",
    "Tsubomi",
    "Halia"
   ],

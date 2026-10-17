@@ -75,7 +75,7 @@
    "changelog_balance_label": "平衡性调整",
    "changelog_warnings_label": "注意事项",
    "changelog_limitations_label": "截至当时尚未实现或未确认的内容",
-   "recipes_intro": "Cherry、OUKA 和 ASTRAEA 每件物品的合成配方，共 {count} 条。点击物品，即可在与真实工作台相同的 3×3 网格上查看配方。Cherry、OUKA 和 ASTRAEA 是各自独立的模组，在此页各有一个标签页。",
+   "recipes_intro": "OUKA、Cherry、Tsubomi 和 Halia 每件物品的合成配方，共 {count} 条。点击物品，即可在与真实工作台相同的 3×3 网格上查看配方。OUKA、Cherry、Tsubomi 和 Halia 是各自独立的模组，在此页各有一个标签页。 ",
    "guide_intro": "本页汇总了从启用 MOD 到开始游玩的完整步骤。如果只是作为玩家加入服务器，阅读「面向玩家」章节即可。",
    "audience_player": "面向玩家",
    "audience_admin": "面向服务器管理员",
@@ -118,7 +118,7 @@
   },
   "page_descriptions": {
    "changelog": "OUKA、Cherry、Aureum、ASTRAEA、Tsubomi 和 Halia 的更新记录，以及 Alpha 终止的公告。选择一个品牌，按从新到旧查看每个版本的变化。",
-   "recipes": "Cherry、OUKA 和 ASTRAEA 每件物品的合成配方速查表。支持搜索和分类筛选。",
+   "recipes": "OUKA、Cherry、Tsubomi 和 Halia 每件物品的合成配方速查表。支持搜索和分类筛选。",
    "download": "Alpha 已终止发布。它的最后一个版本 V{pack_version} 会停用 Alpha；本页提供该版本，附文件大小和 SHA-256，并与 Corvus、Aureum 的下载并列。",
    "aureum": "Aureum：独立的、经过如实测量的轻量优化模组。它不是 Sodium 的替代品——它优化的是 Sodium 不触及的那一面。"
   }
@@ -166,7 +166,6 @@
   "cat_names": [
    "OUKA",
    "Cherry",
-   "ASTRAEA",
    "Tsubomi",
    "Halia"
   ],

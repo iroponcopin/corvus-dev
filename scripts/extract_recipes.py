@@ -158,6 +158,25 @@ def _alpha_retired():
 RETIRED = _alpha_retired()
 
 
+def _retired_brands():
+    """Brand blocks that data/retirement.json says are retired (ASTRAEA, 2026-10-16: end of service).
+
+    A retired brand is not part of the recipe sheet at all: no tab, no cards, no items, no how-to text, and its
+    jar is not read. Its jar stays published (the Store and the Agent read the manifest); the sheet just stops
+    describing it. This is the same rule as Alpha's, for every product, so the next retirement is one line in
+    data/retirement.json.
+    """
+    rp = SITE_ROOT / "data" / "retirement.json"
+    if not rp.exists():
+        return frozenset()
+    blocks = json.loads(rp.read_text(encoding="utf-8"))
+    return frozenset(k for k, v in blocks.items() if isinstance(v, dict) and v.get("retired"))
+
+
+RETIRED_BRANDS = _retired_brands()
+LIVE_BRAND_CATEGORY = {b: c for b, c in BRAND_CATEGORY.items() if b not in RETIRED_BRANDS}
+
+
 def _recipe_pack_source(manifest):
     """(version, zip file name) of the pack zip the recipe sheet is generated from, or (None, None)
     when Alpha is retired and the pack is not a source of the sheet any more."""
@@ -174,7 +193,7 @@ def recipe_sources():
     pack_version, _pack_zip = _recipe_pack_source(manifest)
     if pack_version:
         out["pack"] = pack_version
-    for block in sorted(BRAND_CATEGORY):
+    for block in sorted(LIVE_BRAND_CATEGORY):
         info = manifest.get(block) or {}
         if info.get("latest"):
             out[block] = info["latest"]
@@ -342,7 +361,12 @@ def stage_published_brands(staging_root):
     staged = []
     unknown = []
     skipped_no_recipe = []
+    skipped_retired = []
     for block, info in sorted(blocks.items()):
+        if block in RETIRED_BRANDS:
+            # Retired (data/retirement.json): not a source of the sheet, and its jar is not read at all.
+            skipped_retired.append(block)
+            continue
         modid = info["mod_id"]
         bare = is_bare_jar_brand(info)
         cat = BRAND_CATEGORY.get(block)
@@ -430,12 +454,14 @@ def stage_published_brands(staging_root):
             "Add them to BRAND_CATEGORY and BRAND_TAB_ICON - leaving them out is how a whole "
             "product's recipes go missing without a word."
             % (len(unknown), ", ".join(sorted(unknown))))
-    if len(staged) + len(skipped_no_recipe) != len(blocks):
+    if len(staged) + len(skipped_no_recipe) + len(skipped_retired) != len(blocks):
         raise SystemExit(f"ERROR: the manifest counts {len(blocks)} brand(s) but only "
-                         f"{len(staged)} were staged and {len(skipped_no_recipe)} set aside as "
-                         f"recipe-less.")
+                         f"{len(staged)} were staged, {len(skipped_no_recipe)} set aside as "
+                         f"recipe-less and {len(skipped_retired)} retired.")
     if skipped_no_recipe:
         print("brand set aside (bare jar, verified to carry no recipe): " + ", ".join(skipped_no_recipe))
+    if skipped_retired:
+        print("brand retired (data/retirement.json), not in the sheet: " + ", ".join(skipped_retired))
     return staged
 
 
@@ -2372,13 +2398,13 @@ def published_textures():
     """[(\"t<N>\", base64 payload), ...] of the recipe textures on the published branch, in numeric order.
 
     The published numbers must be kept: data/recipes.json names a texture by its t<N>, and the portal's recipe page
-    loads assets/img/recipes/t<N>.png. The list must be contiguous from t0, or the append rule (new = next number)
-    would reuse a hole."""
+    loads assets/img/recipes/t<N>.png. A number is never reused: a picture that goes (a retired product's, 2026-10-17)
+    leaves a hole, and the next new picture takes the number after the highest one (ItemRegistry.next_tex)."""
     names = _git_bytes("ls-tree", "--name-only", PUBLISHED_REF, "assets/img/recipes/").decode().split()
     numbered = sorted((int(re.fullmatch(r"assets/img/recipes/t(\d+)\.png", n).group(1)), n)
                       for n in names if re.fullmatch(r"assets/img/recipes/t(\d+)\.png", n))
-    if [n for n, _ in numbered] != list(range(len(numbered))):
-        raise SystemExit(f"ERROR: the published textures on {PUBLISHED_REF} are not t0..t{len(numbered) - 1} without gaps.")
+    if len({n for n, _ in numbered}) != len(numbered):
+        raise SystemExit(f"ERROR: the published textures on {PUBLISHED_REF} repeat a number.")
     return [(f"t{n}", base64.b64encode(_git_bytes("show", f"{PUBLISHED_REF}:{path}")).decode()) for n, path in numbered]
 
 
@@ -2457,18 +2483,48 @@ def icon_guard_self_test():
     return bad
 
 
+def retired_namespaces():
+    """The mod ids of the retired brands (data/retirement.json), read from their manifest blocks."""
+    manifest = json.loads((SITE_ROOT / "glimpse_manifest.json").read_text(encoding="utf-8"))
+    return {manifest[b]["mod_id"] for b in RETIRED_BRANDS if isinstance(manifest.get(b), dict) and "mod_id" in manifest[b]}
+
+
+def retired_only_textures(old):
+    """The picture keys only a retired product's items used on the published sheet `old` (its data/recipes.json).
+
+    An item leaves the sheet with its retired product when no live card, live tab icon or guide still shows it (a
+    vanilla ingredient only ASTRAEA's cards used included). Its picture may leave the folder with it, unless a live
+    item uses the same picture. Returns (keys, old_live, old_retired)."""
+    gone = retired_namespaces()
+    # What a live part of the published sheet still shows: its cards, its tab icons and its guides.
+    gone_tabs = {i for i, c in enumerate(old.get("cats") or []) if str(c[1]).split(":", 1)[0] in gone}
+    live_text = json.dumps([[c for i, c in enumerate(old["cards"]) if c[0] not in gone_tabs],
+                            [c for i, c in enumerate(old.get("cats") or []) if i not in gone_tabs],
+                            old.get("all_tab_icon"), old.get("guides")], ensure_ascii=False)
+    live_refs = set(re.findall(r'"(#?[a-z0-9_.-]+:[a-z0-9_/.-]+)"', live_text))
+    old_live = {k: v for k, v in old["items"].items() if k in live_refs and k.split(":", 1)[0] not in gone}
+    old_retired = {k: v for k, v in old["items"].items() if k not in old_live}
+    keys = ({v[2] for v in old_retired.values() if v[2]} - {v[2] for v in old_live.values() if v[2]})
+    return keys, old_live, old_retired
+
+
 def guard_published_textures():
     """Every item the published sheet had keeps its texture key (but for the named intended changes), and the PNG at that path keeps its bytes.
 
-    Compares the files this run wrote with PUBLISHED_REF, never with themselves. Returns the problems (empty = green)."""
+    A retired product's items (2026-10-17, ASTRAEA) may leave the sheet, and a picture only they used may leave the folder;
+    a picture a live item still uses is never exempt. Compares the files this run wrote with PUBLISHED_REF, never with
+    themselves. Returns the problems (empty = green)."""
     old = json.loads(_git_bytes("show", f"{PUBLISHED_REF}:data/recipes.json"))
     new = json.loads((OUT_DATA_DIR / "recipes.json").read_text(encoding="utf-8"))
-    problems, keep = icon_problems(old["items"], new["items"])
+    retired_only, old_live, _old_retired = retired_only_textures(old)
+    problems, keep = icon_problems(old_live, new["items"])
     for item, key_old in keep:
         path = f"assets/img/recipes/{key_old}.png"
         if (SITE_ROOT / path).read_bytes() != _git_bytes("show", f"{PUBLISHED_REF}:{path}"):
             problems.append(f"{path} (the texture of {item}) is not byte-identical to the published one")
     for key, payload in published_textures():
+        if key in retired_only:
+            continue
         path = SITE_ROOT / f"assets/img/recipes/{key}.png"
         if not path.exists() or path.read_bytes() != base64.b64decode(payload):
             problems.append(f"assets/img/recipes/{key}.png changed or vanished")
@@ -2824,9 +2880,11 @@ class ItemRegistry:
         # 全部振り直された(中身は同じ、番号だけ別)。ポータルのレシピ頁は t<N> を使うので、公開済みの番号は
         # 動かさない —— 新しい画像だけが後ろ(t198…)に付く。種は origin/main の画像(公開物)で、この実行が
         # 上書きする作業木ではない。
-        for key, payload in published_textures():
+        published = published_textures()
+        for key, payload in published:
             self.tex_payloads[payload] = key
             self.tex_order.append(payload)
+        self.next_tex = max((int(k[1:]) for k, _ in published), default=-1) + 1
 
     def _tex_key(self, b64):
         if b64 is None:
@@ -2837,7 +2895,8 @@ class ItemRegistry:
         payload = base64.b64encode(packed).decode()
         key = self.tex_payloads.get(payload)
         if key is None:
-            key = f"t{len(self.tex_order)}"
+            key = f"t{self.next_tex}"
+            self.next_tex += 1
             self.tex_payloads[payload] = key
             self.tex_order.append(payload)
         return key
@@ -7073,7 +7132,8 @@ def _main_body():
                  # Tsubomi(2026-10-05)は ASTRAEA の後ろ(同じ理由: 既存のタブ番号 #0〜#2 を動かさない)。
                  # ASTRAEA(2026-09-30)は Cherry の後ろ: 既存のタブの番号(OUKA 0・Cherry 1)と札の並びを
                  # 一つも動かさない(ポータルのレシピ頁は #0/#1 の深いリンクと t<N> を使う)。
-                 *[BRAND_CATEGORY[b] for b in ("ouka", "cherry", "astraea", "tsubomi", "halia")]]
+                 *[LIVE_BRAND_CATEGORY[b] for b in ("ouka", "cherry", "astraea", "tsubomi", "halia")
+                   if b in LIVE_BRAND_CATEGORY]]
     missing = {c["cat"] for c in cards} - set(cat_order)
     if missing:
         raise SystemExit(
@@ -7309,12 +7369,6 @@ def _main_body():
     # (TEMPLATE, unused in this copy), we write the same data as JSON +
     # individual PNGs for this wiki's own multi-page, natively-styled
     # recipes/ section to fetch and render.
-    OUT_IMG_DIR.mkdir(parents=True, exist_ok=True)
-    for old in OUT_IMG_DIR.glob("t*.png"):
-        old.unlink()
-    for i, payload in enumerate(reg.tex_order):
-        (OUT_IMG_DIR / f"t{i}.png").write_bytes(base64.b64decode(payload))
-
     OUT_DATA_DIR.mkdir(parents=True, exist_ok=True)
     recipes_data = {
         "total": total,
@@ -7327,6 +7381,19 @@ def _main_body():
         "cards": cards_json,     # [cat_index, id, grid_or_null, count, how_or_0, search_blob]
         "guides": guides_json,
     }
+    OUT_IMG_DIR.mkdir(parents=True, exist_ok=True)
+    for old in OUT_IMG_DIR.glob("t*.png"):
+        old.unlink()
+    # Only the pictures the new sheet names are written. A picture only a retired product used (ASTRAEA, 2026-10-17)
+    # is not written, so it is not in the folder any more; every other picture keeps its number and its bytes.
+    referenced = set(re.findall(r'"(t\d+)"', json.dumps(recipes_data, ensure_ascii=False) + json.dumps(HALIA_HOW, ensure_ascii=False)))
+    published_old = json.loads(_git_bytes("show", f"{PUBLISHED_REF}:data/recipes.json"))
+    drop = retired_only_textures(published_old)[0] - referenced
+    for payload in reg.tex_order:
+        key = reg.tex_payloads[payload]
+        if key not in drop:
+            (OUT_IMG_DIR / f"{key}.png").write_bytes(base64.b64decode(payload))
+
     # The portal's half of the how-to cards that are not grids (Halia): written only when there is one, sorted.
     (OUT_DATA_DIR / "recipes_how.json").write_text(
         json.dumps({"_comment": "station, inputs and the sentence (ja, en) of how-to cards; written by "
@@ -7345,7 +7412,7 @@ def _main_body():
         for cat, name, chars in no_yomi:
             print(f"  WARNING: [{cat}] {name}  (未登録の文字: {chars})")
     print(f"reading coverage: {total - len(no_yomi)}/{total} card titles have a full yomi")
-    packed_bytes = sum(len(base64.b64decode(p)) for p in reg.tex_order)
+    packed_bytes = sum(len(base64.b64decode(p)) for p in reg.tex_order if reg.tex_payloads[p] not in drop)
     print(f"textures: {len(reg.tex_order)} unique payloads "
           f"({reg.raw_bytes / 1048576:.2f} MiB source -> {packed_bytes / 1048576:.2f} MiB "
           f"written as individual PNGs, verified-lossless)")

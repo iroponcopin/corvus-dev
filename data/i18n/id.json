@@ -75,7 +75,7 @@
    "changelog_balance_label": "Penyesuaian Balance",
    "changelog_warnings_label": "Catatan Penting",
    "changelog_limitations_label": "Yang Belum Diimplementasikan / Belum Dikonfirmasi Saat Itu",
-   "recipes_intro": "Resep pembuatan untuk setiap item di Cherry, OUKA, dan ASTRAEA, total {count}. Klik item untuk melihat resepnya pada kisi 3×3 yang sama seperti meja kerja sungguhan. Cherry, OUKA, dan ASTRAEA adalah mod terpisah, dan masing-masing punya tab sendiri di sini.",
+   "recipes_intro": "Resep pembuatan untuk setiap item di OUKA, Cherry, Tsubomi, dan Halia, total {count}. Klik item untuk melihat resepnya pada kisi 3×3 yang sama seperti meja kerja sungguhan. OUKA, Cherry, Tsubomi, dan Halia adalah mod terpisah, dan masing-masing punya tab sendiri di sini. ",
    "guide_intro": "Merangkum langkah-langkah dari mengaktifkan MOD hingga mulai bermain. Jika kamu hanya ingin bergabung sebagai pemain, cukup baca bagian \"Untuk Pemain\" saja.",
    "audience_player": "Untuk Pemain",
    "audience_admin": "Untuk Admin Server",
@@ -118,7 +118,7 @@
   },
   "page_descriptions": {
    "changelog": "Riwayat pembaruan OUKA, Cherry, Aureum, ASTRAEA, Tsubomi, dan Halia, serta pengumuman berakhirnya Alpha. Pilih merek untuk melihat apa yang berubah di setiap rilis, dari yang terbaru.",
-   "recipes": "Tabel rujukan cepat resep pembuatan untuk setiap item di Cherry, OUKA, dan ASTRAEA. Mendukung pencarian dan penyaringan kategori.",
+   "recipes": "Tabel rujukan cepat resep pembuatan untuk setiap item di OUKA, Cherry, Tsubomi, dan Halia. Mendukung pencarian dan penyaringan kategori.",
    "download": "Alpha tidak lagi didistribusikan. Rilis terakhirnya, V{pack_version}, mematikan Alpha; ada di sini beserta ukuran berkas dan SHA-256, di samping unduhan Corvus dan Aureum.",
    "aureum": "Aureum: mod optimasi ringan yang terpisah dan diukur dengan jujur. Bukan pengganti Sodium — ia mengoptimalkan sisi yang tidak disentuh Sodium."
   }
@@ -166,7 +166,6 @@
   "cat_names": [
    "OUKA",
    "Cherry",
-   "ASTRAEA",
    "Tsubomi",
    "Halia"
   ],

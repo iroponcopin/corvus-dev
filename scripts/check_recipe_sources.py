@@ -56,15 +56,22 @@ def main():
     # all (extract_recipes.py: RETIRED). The pack is then NOT a source: a `pack` entry left in `sources` is a
     # sheet still describing it, and is named as such below (nothing publishes it as a recipe source now).
     rp = ROOT / "data" / "retirement.json"
-    retired = rp.exists() and bool((json.loads(rp.read_text(encoding="utf-8")).get("alpha") or {}).get("retired"))
+    retirement = json.loads(rp.read_text(encoding="utf-8")) if rp.exists() else {}
+    retired = bool((retirement.get("alpha") or {}).get("retired"))
     if pack.get("latest") and not retired:
         live["pack"] = pack["latest"]
+    # 2026-10-17: ASTRAEA's service has ended (data/retirement.json, "astraea": retired). Like Alpha, a retired product
+    # is not a source of the sheet: its jar is not opened and it is not in `live`. The assertions below check that the
+    # sheet holds no trace of it (no tab, no card, no item), so a sheet that still shows it goes RED.
+    retired_blocks = {k for k, v in retirement.items() if isinstance(v, dict) and v.get("retired")}
     bare_checked = {}      # block -> (recipe result ids in its jar, recipe json count)
     bare_set_aside = {}    # block -> (uncraftable json, recolouring json, nested jars read)
     recipe_less = []
     bad = []
     for block, info in manifest.items():
         if not (isinstance(info, dict) and "mod_id" in info):
+            continue
+        if block in retired_blocks:
             continue
         if isinstance(info.get("jars"), dict):
             if info.get("latest"):
@@ -164,6 +171,20 @@ def main():
             bad.append(f"{name}: the sheet was generated from {was}, but nothing publishes it now")
         elif was != now:
             bad.append(f"{name}: the sheet was generated from {was}, the site now serves {now}")
+
+    # A retired product must leave no trace in the sheet (2026-10-17, ASTRAEA): not a source, no tab, no card, no item.
+    for block in sorted(retired_blocks & set(manifest)):
+        if block in sources:
+            bad.append(f"{block}: retired (data/retirement.json), but the sheet still names it as a source")
+        tabs = [i for i, c in enumerate(recipes.get("cats", [])) if str(c[0]).lower() == block]
+        if tabs:
+            bad.append(f"{block}: retired, but the sheet still has its tab {[recipes['cats'][i][0] for i in tabs]}")
+        cards = [c for c in recipes.get("cards", []) if c[0] in tabs or str(c[1]).split(":", 1)[0] == block]
+        if cards:
+            bad.append(f"{block}: retired, but the sheet still has {len(cards)} card(s) for it")
+        items = [k for k in recipes.get("items", {}) if k.split(":", 1)[0] == block]
+        if items:
+            bad.append(f"{block}: retired, but the sheet still describes {len(items)} item(s) of it (e.g. {items[0]})")
 
     # A matching version does not prove the sheet is COMPLETE. For a bare-jar brand every recipe json must have
     # become a card of the brand's own tab (extract_recipes.py: EVERY_RECIPE_SHOWN); count that here, from the

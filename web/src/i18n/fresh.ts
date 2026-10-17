@@ -163,7 +163,7 @@ export const FRESH: Record<Lang, Fresh> = {
       codex: {
         eyebrow: "錬成の書",
         title: "すべてのレシピを、三次元で錬成。",
-        lede: "素材が宙を舞い、ひとつに溶け合って完成品になる。OUKA・Cherry・ASTRAEA の全レシピを、作業台と同じ 3×3 で。",
+        lede: "素材が宙を舞い、ひとつに溶け合って完成品になる。OUKA・Cherry・Tsubomi・Halia の全レシピを、作業台と同じ 3×3 で。",
         cta: "レシピ集を開く",
       },
       showroom: {
@@ -315,7 +315,7 @@ export const FRESH: Record<Lang, Fresh> = {
       codex: {
         eyebrow: "Alchemy Codex",
         title: "Every recipe, synthesised in three dimensions.",
-        lede: "Ingredients take flight and fuse into the finished item. Every OUKA, Cherry and ASTRAEA recipe, on the same 3×3 grid as a crafting table.",
+        lede: "Ingredients take flight and fuse into the finished item. Every OUKA, Cherry, Tsubomi and Halia recipe, on the same 3×3 grid as a crafting table.",
         cta: "Open the codex",
       },
       showroom: {
@@ -467,7 +467,7 @@ export const FRESH: Record<Lang, Fresh> = {
       codex: {
         eyebrow: "Códice alquímico",
         title: "Cada receta, sintetizada en tres dimensiones.",
-        lede: "Los ingredientes alzan el vuelo y se funden en el objeto terminado. Todas las recetas de OUKA, Cherry y ASTRAEA, en la misma cuadrícula de 3×3 que una mesa de trabajo.",
+        lede: "Los ingredientes alzan el vuelo y se funden en el objeto terminado. Todas las recetas de OUKA, Cherry, Tsubomi y Halia, en la misma cuadrícula de 3×3 que una mesa de trabajo.",
         cta: "Abrir el códice",
       },
       showroom: {
@@ -619,7 +619,7 @@ export const FRESH: Record<Lang, Fresh> = {
       codex: {
         eyebrow: "Codex alchimique",
         title: "Chaque recette, synthétisée en trois dimensions.",
-        lede: "Les ingrédients s’envolent et fusionnent en objet fini. Toutes les recettes d’OUKA, Cherry et ASTRAEA, sur la même grille 3×3 qu’un établi.",
+        lede: "Les ingrédients s’envolent et fusionnent en objet fini. Toutes les recettes d’OUKA, Cherry, Tsubomi et Halia, sur la même grille 3×3 qu’un établi.",
         cta: "Ouvrir le codex",
       },
       showroom: {
@@ -771,7 +771,7 @@ export const FRESH: Record<Lang, Fresh> = {
       codex: {
         eyebrow: "炼金法典",
         title: "每一份配方，都在三维中合成。",
-        lede: "材料腾空而起，熔合成成品。OUKA、Cherry 与 ASTRAEA 的全部配方，排布在与工作台相同的 3×3 网格上。",
+        lede: "材料腾空而起，熔合成成品。OUKA、Cherry、Tsubomi 与 Halia 的全部配方，排布在与工作台相同的 3×3 网格上。",
         cta: "打开法典",
       },
       showroom: {
@@ -923,7 +923,7 @@ export const FRESH: Record<Lang, Fresh> = {
       codex: {
         eyebrow: "연금술 코덱스",
         title: "모든 레시피를 3차원으로 합성합니다.",
-        lede: "재료가 날아올라 하나로 녹아들며 완성품이 됩니다. OUKA·Cherry·ASTRAEA의 모든 레시피를 제작대와 같은 3×3 격자로.",
+        lede: "재료가 날아올라 하나로 녹아들며 완성품이 됩니다. OUKA·Cherry·Tsubomi·Halia의 모든 레시피를 제작대와 같은 3×3 격자로.",
         cta: "코덱스 열기",
       },
       showroom: {
@@ -1075,7 +1075,7 @@ export const FRESH: Record<Lang, Fresh> = {
       codex: {
         eyebrow: "Códice alquímico",
         title: "Cada receita, sintetizada em três dimensões.",
-        lede: "Os ingredientes levantam voo e se fundem no item pronto. Todas as receitas de OUKA, Cherry e ASTRAEA, na mesma grade 3×3 de uma bancada de trabalho.",
+        lede: "Os ingredientes levantam voo e se fundem no item pronto. Todas as receitas de OUKA, Cherry, Tsubomi e Halia, na mesma grade 3×3 de uma bancada de trabalho.",
         cta: "Abrir o códice",
       },
       showroom: {
@@ -1227,7 +1227,7 @@ export const FRESH: Record<Lang, Fresh> = {
       codex: {
         eyebrow: "Codice alchemico",
         title: "Ogni ricetta, sintetizzata in tre dimensioni.",
-        lede: "Gli ingredienti prendono il volo e si fondono nell’oggetto finito. Tutte le ricette di OUKA, Cherry e ASTRAEA, sulla stessa griglia 3×3 di un banco da lavoro.",
+        lede: "Gli ingredienti prendono il volo e si fondono nell’oggetto finito. Tutte le ricette di OUKA, Cherry, Tsubomi e Halia, sulla stessa griglia 3×3 di un banco da lavoro.",
         cta: "Apri il codice",
       },
       showroom: {
@@ -1379,7 +1379,7 @@ export const FRESH: Record<Lang, Fresh> = {
       codex: {
         eyebrow: "مخطوطة الخيمياء",
         title: "كل وصفة، مُركّبة في ثلاثة أبعاد.",
-        lede: "تحلّق المكوّنات ثم تنصهر في العنصر النهائي. كل وصفات OUKA وCherry وASTRAEA على شبكة 3×3 نفسها التي في طاولة الصناعة.",
+        lede: "تحلّق المكوّنات ثم تنصهر في العنصر النهائي. كل وصفات OUKA وCherry وTsubomi وHalia على شبكة 3×3 نفسها التي في طاولة الصناعة.",
         cta: "افتح المخطوطة",
       },
       showroom: {
@@ -1531,7 +1531,7 @@ export const FRESH: Record<Lang, Fresh> = {
       codex: {
         eyebrow: "Алхимический кодекс",
         title: "Каждый рецепт — синтез в трёх измерениях.",
-        lede: "Ингредиенты взлетают и сплавляются в готовый предмет. Все рецепты OUKA, Cherry и ASTRAEA — на той же сетке 3×3, что и у верстака.",
+        lede: "Ингредиенты взлетают и сплавляются в готовый предмет. Все рецепты OUKA, Cherry, Tsubomi и Halia — на той же сетке 3×3, что и у верстака.",
         cta: "Открыть кодекс",
       },
       showroom: {
@@ -1683,7 +1683,7 @@ export const FRESH: Record<Lang, Fresh> = {
       codex: {
         eyebrow: "Kodeks Alkimia",
         title: "Setiap resep, disintesis dalam tiga dimensi.",
-        lede: "Bahan-bahan melayang lalu melebur menjadi item jadi. Semua resep OUKA, Cherry, dan ASTRAEA, di kisi 3×3 yang sama dengan meja kerja.",
+        lede: "Bahan-bahan melayang lalu melebur menjadi item jadi. Semua resep OUKA, Cherry, Tsubomi, dan Halia, di kisi 3×3 yang sama dengan meja kerja.",
         cta: "Buka kodeks",
       },
       showroom: {
@@ -1835,7 +1835,7 @@ export const FRESH: Record<Lang, Fresh> = {
       codex: {
         eyebrow: "Alchemistischer Kodex",
         title: "Jedes Rezept, in drei Dimensionen synthetisiert.",
-        lede: "Die Zutaten heben ab und verschmelzen zum fertigen Gegenstand. Alle Rezepte von OUKA, Cherry und ASTRAEA, auf demselben 3×3-Raster wie eine Werkbank.",
+        lede: "Die Zutaten heben ab und verschmelzen zum fertigen Gegenstand. Alle Rezepte von OUKA, Cherry, Tsubomi und Halia, auf demselben 3×3-Raster wie eine Werkbank.",
         cta: "Den Kodex öffnen",
       },
       showroom: {
@@ -1987,7 +1987,7 @@ export const FRESH: Record<Lang, Fresh> = {
       codex: {
         eyebrow: "Simya Kodeksi",
         title: "Her tarif, üç boyutta sentezlenir.",
-        lede: "Malzemeler havalanır ve birleşip bitmiş eşyaya dönüşür. OUKA, Cherry ve ASTRAEA’nın tüm tarifleri, çalışma masasıyla aynı 3×3 ızgarada.",
+        lede: "Malzemeler havalanır ve birleşip bitmiş eşyaya dönüşür. OUKA, Cherry, Tsubomi ve Halia’nın tüm tarifleri, çalışma masasıyla aynı 3×3 ızgarada.",
         cta: "Kodeksi aç",
       },
       showroom: {

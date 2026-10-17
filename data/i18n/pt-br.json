@@ -75,7 +75,7 @@
    "changelog_balance_label": "Ajustes de balanceamento",
    "changelog_warnings_label": "Pontos de atenção",
    "changelog_limitations_label": "O que ainda não estava implementado ou confirmado nesse momento",
-   "recipes_intro": "Receitas de criação de todos os itens de Cherry, OUKA e ASTRAEA, {count} no total. Clique em um item para ver a receita na mesma grade 3×3 de uma bancada de trabalho de verdade. Cherry, OUKA e ASTRAEA são mods separados, e cada um tem aqui uma aba própria.",
+   "recipes_intro": "Receitas de criação de todos os itens de OUKA, Cherry, Tsubomi e Halia, {count} no total. Clique em um item para ver a receita na mesma grade 3×3 de uma bancada de trabalho de verdade. OUKA, Cherry, Tsubomi e Halia são mods separados, e cada um tem aqui uma aba própria. ",
    "guide_intro": "Aqui está o passo a passo desde ativar os MODs até começar a jogar. Se você só vai entrar como jogador, o capítulo “Para jogadores” já é suficiente.",
    "audience_player": "Para jogadores",
    "audience_admin": "Para administradores do servidor",
@@ -118,7 +118,7 @@
   },
   "page_descriptions": {
    "changelog": "O histórico de atualizações de OUKA, Cherry, Aureum, ASTRAEA, Tsubomi e Halia, e o aviso do fim do Alpha. Escolha uma marca para ver o que mudou em cada versão, da mais recente para a mais antiga.",
-   "recipes": "Uma tabela de consulta rápida com as receitas de criação de todos os itens de Cherry, OUKA e ASTRAEA. Com busca e filtro por categoria.",
+   "recipes": "Uma tabela de consulta rápida com as receitas de criação de todos os itens de OUKA, Cherry, Tsubomi e Halia. Com busca e filtro por categoria.",
    "download": "O Alpha deixou de ser distribuído. A última versão, V{pack_version}, desativa o Alpha; ela está aqui com tamanho de arquivo e SHA-256, junto dos downloads do Corvus e do Aureum.",
    "aureum": "Aureum: um mod de otimização leve, independente e medido com honestidade. Não substitui o Sodium: otimiza o lado que o Sodium não toca."
   }
@@ -166,7 +166,6 @@
   "cat_names": [
    "OUKA",
    "Cherry",
-   "ASTRAEA",
    "Tsubomi",
    "Halia"
   ],

@@ -95,7 +95,7 @@
    "changelog_balance_label": "バランス調整",
    "changelog_warnings_label": "注意点",
    "changelog_limitations_label": "この時点で未実装・未確認だったこと",
-   "recipes_intro": "Cherry・OUKA・ASTRAEA の全アイテムのクラフトレシピ(合計 {count} 件)。アイテムを押すと、本物の作業台と同じ 3×3 の枠でレシピが見られます。Cherry・OUKA・ASTRAEA はそれぞれ別の MOD で、このページにも 1 つずつタブがあります。",
+   "recipes_intro": "OUKA・Cherry・Tsubomi・Halia の全アイテムのクラフトレシピ(合計 {count} 件)。アイテムを押すと、本物の作業台と同じ 3×3 の枠でレシピが見られます。OUKA・Cherry・Tsubomi・Halia はそれぞれ別の MOD で、このページにも 1 つずつタブがあります。 ",
    "guide_intro": "MOD を有効化してから遊び始めるまでの手順をまとめています。プレイヤーとして参加するだけなら「プレイヤー向け」の章だけで十分です。",
    "audience_player": "プレイヤー向け",
    "audience_admin": "サーバー管理者向け",
@@ -139,7 +139,7 @@
   },
   "page_descriptions": {
    "changelog": "OUKA・Cherry・Aureum・ASTRAEA・Tsubomi・Halia の更新履歴と、Alpha の終了のお知らせ。ブランドを選ぶと、各リリースの変更点を新しい順に見られます。",
-   "recipes": "Cherry・OUKA・ASTRAEA の全アイテムのクラフトレシピの早見表。検索とカテゴリ絞り込みに対応。",
+   "recipes": "OUKA・Cherry・Tsubomi・Halia の全アイテムのクラフトレシピの早見表。検索とカテゴリ絞り込みに対応。",
    "download": "Alpha は配信を終了しました。最後の版 V{pack_version} は Alpha を止めます。ファイルサイズと SHA-256 を添えて、Corvus・Aureum のダウンロードと並べています。",
    "launcher": "Corvus とは何か、導入方法、既存の MOD パックフォルダーの指定方法、自動更新と手動更新の違い、更新に失敗したときのバックアップからの復元方法。",
    "aureum": "Aureum: 実測に誠実な、独立した軽量化 MOD。Sodium の代わりではなく、Sodium が触らない側を軽くします。"
@@ -172,7 +172,6 @@
   "cat_names": [
    "OUKA",
    "Cherry",
-   "ASTRAEA",
    "Tsubomi",
    "Halia"
   ],

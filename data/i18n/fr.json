@@ -75,7 +75,7 @@
    "changelog_balance_label": "Ajustements d'équilibrage",
    "changelog_warnings_label": "Points d'attention",
    "changelog_limitations_label": "Ce qui n'était pas encore implémenté ou vérifié à ce stade",
-   "recipes_intro": "Recettes de fabrication de chaque objet de Cherry, OUKA et ASTRAEA, {count} au total. Cliquez sur un objet pour voir sa recette sur la même grille 3×3 qu'un véritable établi. Cherry, OUKA et ASTRAEA sont des mods distincts, et chacun a ici son propre onglet.",
+   "recipes_intro": "Recettes de fabrication de chaque objet de OUKA, Cherry, Tsubomi et Halia, {count} au total. Cliquez sur un objet pour voir sa recette sur la même grille 3×3 qu'un véritable établi. OUKA, Cherry, Tsubomi et Halia sont des mods distincts, et chacun a ici son propre onglet. ",
    "guide_intro": "Ce guide récapitule toutes les étapes, de l'activation des MOD jusqu'au moment où vous pouvez enfin jouer. Si vous rejoignez simplement en tant que joueur, le chapitre « Pour les joueurs » suffit amplement.",
    "audience_player": "Pour les joueurs",
    "audience_admin": "Pour les administrateurs du serveur",
@@ -118,7 +118,7 @@
   },
   "page_descriptions": {
    "changelog": "L'historique des mises à jour d'OUKA, Cherry, Aureum, ASTRAEA, Tsubomi et Halia, et l'annonce de la fin d'Alpha. Choisissez une marque pour voir ce qui a changé à chaque version, de la plus récente à la plus ancienne.",
-   "recipes": "Un tableau de référence rapide des recettes de fabrication de chaque objet de Cherry, OUKA et ASTRAEA. Avec recherche et filtre par catégorie.",
+   "recipes": "Un tableau de référence rapide des recettes de fabrication de chaque objet de OUKA, Cherry, Tsubomi et Halia. Avec recherche et filtre par catégorie.",
    "download": "Alpha n'est plus distribué. Sa dernière version, la V{pack_version}, désactive Alpha ; elle est ici avec sa taille de fichier et son SHA-256, à côté des téléchargements de Corvus et d'Aureum.",
    "aureum": "Aureum : un mod d'optimisation léger, indépendant et mesuré honnêtement. Il ne remplace pas Sodium : il optimise le côté que Sodium ne touche pas."
   }
@@ -166,7 +166,6 @@
   "cat_names": [
    "OUKA",
    "Cherry",
-   "ASTRAEA",
    "Tsubomi",
    "Halia"
   ],

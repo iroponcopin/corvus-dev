@@ -75,7 +75,7 @@
    "changelog_balance_label": "Ajustes de balance",
    "changelog_warnings_label": "Advertencias",
    "changelog_limitations_label": "Lo que aún no estaba implementado o confirmado en este momento",
-   "recipes_intro": "Recetas de creación de todos los objetos de Cherry, OUKA y ASTRAEA, {count} en total. Pulsa un objeto para ver su receta en la misma cuadrícula de 3×3 de una mesa de trabajo real. Cherry, OUKA y ASTRAEA son mods independientes y cada uno tiene aquí su propia pestaña.",
+   "recipes_intro": "Recetas de creación de todos los objetos de OUKA, Cherry, Tsubomi y Halia, {count} en total. Pulsa un objeto para ver su receta en la misma cuadrícula de 3×3 de una mesa de trabajo real. OUKA, Cherry, Tsubomi y Halia son mods independientes y cada uno tiene aquí su propia pestaña. ",
    "guide_intro": "Aquí se resumen los pasos desde que activas los MOD hasta que empiezas a jugar. Si solo vas a participar como jugador, te basta con el capítulo «Para jugadores».",
    "audience_player": "Para jugadores",
    "audience_admin": "Para administradores del servidor",
@@ -118,7 +118,7 @@
   },
   "page_descriptions": {
    "changelog": "El historial de actualizaciones de OUKA, Cherry, Aureum, ASTRAEA, Tsubomi y Halia, y el aviso del fin de Alpha. Elige una marca para ver qué cambió en cada versión, de la más reciente a la más antigua.",
-   "recipes": "Una tabla de consulta rápida con las recetas de creación de todos los objetos de Cherry, OUKA y ASTRAEA. Admite búsqueda y filtro por categoría.",
+   "recipes": "Una tabla de consulta rápida con las recetas de creación de todos los objetos de OUKA, Cherry, Tsubomi y Halia. Admite búsqueda y filtro por categoría.",
    "download": "Alpha ha dejado de distribuirse. Su última versión, V{pack_version}, desactiva Alpha; está aquí con tamaño de archivo y SHA-256, junto a las descargas de Corvus y Aureum.",
    "aureum": "Aureum: un mod de optimización ligero, independiente y medido con honestidad. No sustituye a Sodium: optimiza el lado que Sodium no toca."
   }
@@ -166,7 +166,6 @@
   "cat_names": [
    "OUKA",
    "Cherry",
-   "ASTRAEA",
    "Tsubomi",
    "Halia"
   ],

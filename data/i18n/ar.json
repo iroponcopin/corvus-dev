@@ -75,7 +75,7 @@
    "changelog_balance_label": "تعديلات التوازن",
    "changelog_warnings_label": "ملاحظات هامة",
    "changelog_limitations_label": "أمور لم تُنفَّذ أو لم يتم التحقق منها حتى هذه اللحظة",
-   "recipes_intro": "وصفات الصنع لكل عنصر في Cherry وOUKA وASTRAEA، بمجموع {count}. انقر على عنصر لترى وصفته على شبكة 3×3 نفسها التي في طاولة الصنع الحقيقية. Cherry وOUKA وASTRAEA إضافات منفصلة، ولكل منها تبويب خاص هنا.",
+   "recipes_intro": "وصفات الصنع لكل عنصر في OUKA وCherry وTsubomi وHalia، بمجموع {count}. انقر على عنصر لترى وصفته على شبكة 3×3 نفسها التي في طاولة الصنع الحقيقية. OUKA وCherry وTsubomi وHalia إضافات منفصلة، ولكل منها تبويب خاص هنا. ",
    "guide_intro": "يجمع هذا الدليل خطوات تفعيل الإضافات حتى بدء اللعب. إذا كنت ستنضم كلاعب فقط، فيكفيك قراءة فصل \"للاعبين\".",
    "audience_player": "للاعبين",
    "audience_admin": "لمديري الخادم",
@@ -118,7 +118,7 @@
   },
   "page_descriptions": {
    "changelog": "سجل تحديثات OUKA وCherry وAureum وASTRAEA وTsubomi وHalia، وإعلان انتهاء Alpha. اختر علامة لترى ما تغيّر في كل إصدار، من الأحدث إلى الأقدم.",
-   "recipes": "جدول مرجعي سريع لوصفات الصنع لكل عنصر في Cherry وOUKA وASTRAEA. يدعم البحث والتصفية حسب الفئة.",
+   "recipes": "جدول مرجعي سريع لوصفات الصنع لكل عنصر في OUKA وCherry وTsubomi وHalia. يدعم البحث والتصفية حسب الفئة.",
    "download": "توقّف توزيع Alpha. آخر إصدار له، V{pack_version}، يعطّل Alpha؛ وهو هنا مع حجم الملف وقيمة SHA-256، إلى جانب تنزيلات Corvus وAureum.",
    "aureum": "Aureum: إضافة تحسين خفيفة ومستقلة وقِيست بأمانة. ليست بديلًا عن Sodium — فهي تحسّن الجانب الذي لا يمسّه Sodium."
   }
@@ -166,7 +166,6 @@
   "cat_names": [
    "OUKA",
    "Cherry",
-   "ASTRAEA",
    "Tsubomi",
    "Halia"
   ],
