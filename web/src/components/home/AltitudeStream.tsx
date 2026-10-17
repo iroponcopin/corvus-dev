@@ -26,11 +26,14 @@ export function AltitudeStream({
   lede,
   releases,
   openLabel,
+  backdrop,
 }: {
   title: string;
   lede: string;
   releases: StreamRelease[];
   openLabel: string;
+  /** The end frame of Act III, behind the stream (darkened). */
+  backdrop: string;
 }) {
   const ref = useRef<HTMLElement>(null);
 
@@ -46,7 +49,12 @@ export function AltitudeStream({
   }, []);
 
   return (
-    <section ref={ref} className="ac-altitude" aria-labelledby="ac-altitude-h">
+    <section
+      ref={ref}
+      className="ac-altitude"
+      aria-labelledby="ac-altitude-h"
+      style={{ backgroundImage: `linear-gradient(180deg, rgb(0 0 0 / 0.55), rgb(0 0 0 / 0.82)), url("${asset(backdrop)}")` }}
+    >
       <div className="ac-wrap">
         <h2 id="ac-altitude-h" className="ac-h2">
           {title}
@@ -54,10 +62,10 @@ export function AltitudeStream({
         <p className="ac-lead ac-altitude-lede">{lede}</p>
         <ul className="ac-altitude-grid">
           {releases.map((r, i) => (
-            <li key={r.key}>
+            <li key={r.key} className="ac-altitude-rise" style={{ animationDelay: `${Math.min(i, 9) * 70}ms` }}>
               <Link
                 href={r.href}
-                className="ac-glass ac-altitude-card"
+                className="ac-frost ac-altitude-card"
                 style={{ "--dx": `${(i % 3 === 0 ? -56 : i % 3 === 1 ? 24 : 80) + (i % 2) * 14}px` } as React.CSSProperties}
                 data-brand={r.brand}
               >

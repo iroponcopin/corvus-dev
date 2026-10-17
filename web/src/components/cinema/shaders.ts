@@ -53,6 +53,11 @@ uniform float uMix;
 uniform sampler2D uC;
 uniform sampler2D uD;
 uniform float uMix2;
+uniform sampler2D uE;
+uniform sampler2D uF;
+uniform float uMix3;
+uniform float uDis3;
+uniform float uDusk;
 uniform float uDis;
 uniform float uFog;
 uniform float uTeal;
@@ -105,6 +110,12 @@ vec3 sampleBlend(sampler2D t1, sampler2D t2, float m, vec2 iuv, float ca) {
   return c;
 }
 
+// The dusk grade: lower exposure, cooler, a deep blue in the shadows and on the water.
+vec3 col3grade(vec3 c) {
+  vec3 cool = c * vec3(0.62, 0.78, 1.14) + vec3(0.0, 0.012, 0.06);
+  return cool * 0.74;
+}
+
 void main() {
   vec2 suv = vec2(gl_FragCoord.x / uRes.x, 1.0 - gl_FragCoord.y / uRes.y);
   vec2 iuv = 0.5 + (suv - 0.5) * uScale;
@@ -113,13 +124,21 @@ void main() {
   float edge = smoothstep(0.35, 1.05, length(q));
   float ca = uCA * edge * 0.006;
 
-  // Act I footage, then Act II footage; uDis cross-dissolves between them.
+  // Act I footage, then Act II footage; uDis cross-dissolves between them, and uDis3 dissolves into Act III.
   vec3 col = vec3(0.0);
   if (uDis < 0.999) {
     col = sampleBlend(uA, uB, uMix, iuv, ca);
   }
   if (uDis > 0.001) {
     col = mix(col, sampleBlend(uC, uD, uMix2, iuv, ca), uDis);
+  }
+  if (uDis3 > 0.001) {
+    vec3 c3 = sampleBlend(uE, uF, uMix3, iuv, ca);
+    // Shot one of Act III is graded toward dusk: cooler, darker, deep blue water.
+    float dk = uDusk;
+    vec3 cool = col3grade(c3);
+    c3 = mix(c3, cool, dk);
+    col = mix(col, c3, uDis3);
   }
 
   // Sun glow: a tight core and a wide halo, warm (Act I only).
@@ -241,6 +260,7 @@ uniform vec4 uBox;
 uniform float uAlpha;
 uniform float uWisp;
 uniform float uTime;
+uniform float uDusk;
 out vec4 outColor;
 
 void main() {
@@ -252,6 +272,9 @@ void main() {
     if (c.a > 0.001) {
       vec3 rgb = c.rgb / c.a;
       rgb = mix(rgb, vec3(0.42, 0.48, 0.47), 0.07);
+      // Act III: the bird is graded into the twilight, with a faint purple-blue sheen on the feathers.
+      rgb = mix(rgb, rgb * vec3(0.8, 0.86, 1.06) * 0.82 + vec3(0.02, 0.012, 0.05), uDusk);
+      rgb += uDusk * vec3(0.05, 0.035, 0.12) * (1.0 - rgb.r);
       crow = vec4(rgb * c.a * uAlpha, c.a * uAlpha);
     }
   }

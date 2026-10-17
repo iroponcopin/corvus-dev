@@ -61,7 +61,8 @@ const changed = git("status", "--porcelain", "-uall", "--no-renames")
   .split("\n")
   .filter(Boolean)
   .map((line) => line.slice(3))
-  .filter((p) => !p.startsWith("web/") && p !== "README.md");
+  // The cinema footage is a source (assets/cinema/actN, copied into the export by prepare-public), not an export output.
+  .filter((p) => !p.startsWith("web/") && !p.startsWith("assets/cinema/") && p !== "README.md");
 const contract = changed.filter((p) => CONTRACT.some((re) => re.test(p)));
 const foreign = changed.filter((p) => !allowed(p));
 if (contract.length > 0) fail(`contract files changed (they must never be):\n  ${contract.join("\n  ")}`);

@@ -111,8 +111,10 @@ export function HomePage({ lang }: { lang: Lang }) {
       <NaturalCinemaStage
         title="HALIA"
         title2="CORVUS"
+        title3="AURORA CORVUS"
         tagline={f.cinema.tagline}
         tagline2={f.cinema.tagline2}
+        tagline3={f.cinema.tagline3}
         credit={f.cinema.credit}
         hint={f.heroScroll}
       />
@@ -121,6 +123,7 @@ export function HomePage({ lang }: { lang: Lang }) {
         title={f.altitude.title}
         lede={f.altitude.lede}
         openLabel={f.chrono.open}
+        backdrop="cinema/act3/bg/f196.webp"
         releases={altitude}
       />
 

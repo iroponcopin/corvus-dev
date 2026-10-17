@@ -429,7 +429,7 @@ html:lang(ar) .ac-facts dt {
   gap: 14px 22px;
 }
 
-.ac-brand-stage {
+.ac-model-stage {
   justify-self: center;
   width: min(100%, 520px);
   aspect-ratio: 1;
@@ -788,7 +788,7 @@ html:lang(ar) .ac-facts dt {
   height: 112px;
 }
 
-.ac-cl-plate .ac-brand-stage {
+.ac-cl-plate .ac-model-stage {
   width: 100%;
   height: 100%;
 }

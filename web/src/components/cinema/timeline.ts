@@ -1,12 +1,14 @@
 /**
- * The timeline of the cinema: one scroll section, two acts. Act I (the eagle, HALIA) runs over the first
- * ACT1_VH viewport heights; Act II (the forest, CORVUS, the crow) over the next ACT2_VH. Pure functions, so
- * the stage's DOM and GL code only reads numbers from here.
+ * The timeline of the cinema: one scroll section, three acts. Act I (the eagle, HALIA) runs over the first ACT1_VH
+ * viewport heights; Act II (the forest, CORVUS, the crow) over the next ACT2_VH; Act III (the headland at dusk,
+ * AURORA CORVUS, the close crow) over the last ACT3_VH. The altitude stream closes the story after it. Pure
+ * functions, so the stage's DOM and GL code only reads numbers from here.
  */
 
-/** Scroll, in viewport heights, of Act I and of Act II (the section is 8 viewport heights; 7 scroll). */
+/** Scroll, in viewport heights, of each act. The section is the three acts' total plus one viewport. */
 export const ACT1_VH = 3;
 export const ACT2_VH = 4;
+export const ACT3_VH = 4;
 
 /** Act I background footage: f001..f113, indexed 0..112 here. */
 export const BG_COUNT = 113;
@@ -18,11 +20,17 @@ export const EAGLE_COUNT = 60;
 export const ACT2_COUNT = 182;
 /** Act II crow footage: c001..c105, indexed 0..104. */
 export const CROW_COUNT = 105;
+/** Act III background footage: f001..f196, indexed 0..195. Shot one ends at index 131. */
+export const ACT3_COUNT = 196;
+/** Act III close crow footage: k001..k048, indexed 0..47. */
+export const CROW3_COUNT = 48;
 
 /** Eagle frame size in pixels (921 x 1400). */
 export const EAGLE_ASPECT = 921 / 1400;
 /** Crow frame size in pixels (1260 x 580). */
 export const CROW_ASPECT = 1260 / 580;
+/** Close crow frame size in pixels (2003 x 1100). */
+export const CROW3_ASPECT = 2003 / 1100;
 /** The footage's own aspect, 16 x 9. */
 export const BG_ASPECT = 16 / 9;
 /** The sun in background-frame coordinates (x, y down), measured on f080. */
@@ -42,6 +50,8 @@ export const CROW_BODY_CX = 0.53;
 /** The bird's final height in viewport heights (desktop, phones). Sized so the title stays readable. */
 const CROW_FINAL_VH = 0.3;
 const CROW_FINAL_VH_NARROW = 0.13;
+/** The close crow (k frames): its beak tip sits at 4% of the frame's width. */
+const CROW3_BEAK_X = 0.04;
 
 export function clamp01(x: number): number {
   return x < 0 ? 0 : x > 1 ? 1 : x;
@@ -101,24 +111,41 @@ export interface Pose {
   letter2: number;
   title2: number;
   crow: CrowPose;
+  /** Act III: the dissolve from Act II to the headland (0..1), its frames, the dusk grade of shot one (0..1). */
+  dissolve3: number;
+  bg3: Pair;
+  dusk: number;
+  /** AURORA CORVUS letter-spacing (em) and opacity. */
+  letter3: number;
+  title3: number;
+  /** The close crow of Act III. */
+  crow3: CrowPose;
 }
 
 /**
- * The Act II background: frames 0..88 scrub normally; the hard cut between f090 and f091 (indices 89 and 90) is a
- * cross-dissolve over ten steps; the rest of the second shot is stretched over the remaining steps.
+ * A two-shot scrub. Frames up to the cut scrub normally; the hard cut between `cut` and `cut + 1` is a cross-dissolve
+ * over `win` steps; the second shot is stretched over the remaining steps.
  */
-export function act2Pair(x: number): Pair {
-  const CUT = 89;
-  const WIN = 10;
-  const N = ACT2_COUNT - 1;
-  if (x < CUT) {
+export function shotPair(x: number, count: number, cut: number, win: number): Pair {
+  const N = count - 1;
+  if (x < cut) {
     const a = Math.floor(x);
-    return { a, b: Math.min(a + 1, CUT), m: x - a };
+    return { a, b: Math.min(a + 1, cut), m: x - a };
   }
-  if (x < CUT + WIN) return { a: CUT, b: CUT + 1, m: (x - CUT) / WIN };
-  const y = CUT + 1 + (x - (CUT + WIN)) * ((N - (CUT + 1)) / (N - (CUT + WIN)));
+  if (x < cut + win) return { a: cut, b: cut + 1, m: (x - cut) / win };
+  const y = cut + 1 + (x - (cut + win)) * ((N - (cut + 1)) / (N - (cut + win)));
   const a = Math.min(Math.floor(y), N - 1);
   return { a, b: Math.min(a + 1, N), m: y - a };
+}
+
+/** Act II: the cut between f090 and f091 (indices 89 and 90), a cross-dissolve over ten steps. */
+export function act2Pair(x: number): Pair {
+  return shotPair(x, ACT2_COUNT, 89, 10);
+}
+
+/** Act III: the cut between f132 and f133 (indices 131 and 132), a cross-dissolve over ten steps. */
+export function act3Pair(x: number): Pair {
+  return shotPair(x, ACT3_COUNT, 131, 10);
 }
 
 function crowPose(a: number, vw: number, vh: number, narrow: boolean): CrowPose {
@@ -140,8 +167,39 @@ function crowPose(a: number, vw: number, vh: number, narrow: boolean): CrowPose 
   };
 }
 
-/** The whole timeline at once: p = Act I progress (0..1), a = Act II progress (0..1). */
-export function poseAt(p: number, a: number, vw: number, vh: number, narrow: boolean, sunScreen: [number, number]): Pose {
+/**
+ * The close crow of Act III: it enters during the headland, rising into place on the right half, its beak pointing
+ * left. Its right and bottom edges are cut by the frame, so the frame is kept beyond the viewport's right and bottom.
+ */
+function crow3Pose(c: number, vw: number, vh: number, narrow: boolean): CrowPose {
+  const e = smooth(0.35, 0.95, c);
+  const h = narrow ? 0.55 * vh : 1.0 * vh;
+  const w = h * CROW3_ASPECT;
+  const topRest = narrow ? 0.5 * vh : 0.42 * vh;
+  const top = lerp(vh + 0.3 * vh, topRest, e);
+  const beakX = narrow ? 0.3 * vw : 0.45 * vw;
+  return {
+    left: beakX - CROW3_BEAK_X * w,
+    top,
+    w,
+    h,
+    frame: Math.round(clamp01((c - 0.35) / 0.6) * (CROW3_COUNT - 1)),
+    alpha: smooth(0.3, 0.5, c),
+  };
+}
+
+/**
+ * The whole timeline at once: p = Act I progress (0..1), a = Act II progress (0..1), c = Act III progress (0..1).
+ */
+export function poseAt(
+  p: number,
+  a: number,
+  c: number,
+  vw: number,
+  vh: number,
+  narrow: boolean,
+  sunScreen: [number, number],
+): Pose {
   // Act I: the eagle rises from the bottom-right; the beak lands on the end of the word.
   const te = smooth(0.3, 0.8, p);
   const zoom = 1 + 0.03 * smooth(0.8, 1, p);
@@ -170,6 +228,15 @@ export function poseAt(p: number, a: number, vw: number, vh: number, narrow: boo
   const dy = sunScreen[1] * vh - cy;
   const len = Math.hypot(dx, dy) || 1;
 
+  // Act III's shot one (f001..f132) is graded toward dusk; the weight follows the cross-dissolve at the cut.
+  const bg3 = act3Pair(c * (ACT3_COUNT - 1));
+  const duskA = bg3.a <= 131 ? 1 : 0;
+  const duskB = bg3.b <= 131 ? 1 : 0;
+
+  // The Act II crow leaves as the headland comes in.
+  const crow2 = crowPose(a, vw, vh, narrow);
+  crow2.alpha *= 1 - smooth(0, 0.1, c);
+
   return {
     bg: p * BG_SPAN,
     blur: smooth(0.35, 1, p),
@@ -189,26 +256,38 @@ export function poseAt(p: number, a: number, vw: number, vh: number, narrow: boo
     bg2: act2Pair(a * (ACT2_COUNT - 1)),
     wisp: smooth(0.4, 0.6, a),
     letter2: lerp(narrow ? 0.16 : 0.42, -0.03, smooth(0.1, 0.35, a)),
-    title2: smooth(0.1, 0.18, a),
-    crow: crowPose(a, vw, vh, narrow),
+    title2: smooth(0.1, 0.18, a) * (1 - smooth(0, 0.03, c)),
+    crow: crow2,
+    dissolve3: smooth(0, 0.12, c),
+    bg3,
+    dusk: lerp(duskA, duskB, bg3.m),
+    letter3: lerp(narrow ? 0.16 : 0.42, -0.03, smooth(0.1, 0.35, c)),
+    title3: smooth(0.1, 0.18, c),
+    crow3: crow3Pose(c, vw, vh, narrow),
   };
 }
 
-/** Reduced motion: Act II as one still: bg f150, crow c105, CORVUS in place. */
+/** Reduced motion: Act III as one still: the headland at f171, the close crow on its last frame, AURORA CORVUS in place. */
 export function staticPose(vw: number, vh: number, narrow: boolean, sunScreen: [number, number]): Pose {
-  const base = poseAt(1, 1, vw, vh, narrow, sunScreen);
+  const base = poseAt(1, 1, 1, vw, vh, narrow, sunScreen);
   return {
     ...base,
     eagleAlpha: 0,
     title1: 0,
     dissolve: 1,
-    fog: 0.25,
+    fog: 0.2,
     teal: 1,
-    bg2: { a: 149, b: 149, m: 0 },
+    bg2: { a: ACT2_COUNT - 1, b: ACT2_COUNT - 1, m: 0 },
     wisp: 0,
     letter2: -0.03,
-    title2: 1,
-    crow: { ...base.crow, frame: CROW_COUNT - 1, alpha: 1 },
+    title2: 0,
+    crow: { ...base.crow, alpha: 0 },
+    dissolve3: 1,
+    bg3: { a: 170, b: 170, m: 0 },
+    dusk: 0,
+    letter3: -0.03,
+    title3: 1,
+    crow3: { ...base.crow3, frame: CROW3_COUNT - 1, alpha: 1 },
   };
 }
 

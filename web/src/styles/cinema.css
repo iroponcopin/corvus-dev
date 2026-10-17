@@ -3,8 +3,8 @@
 
 .cin-section {
   position: relative;
-  height: 800vh;
-  height: 800svh;
+  height: 1200vh;
+  height: 1200svh;
   background: #000;
 }
 
@@ -163,10 +163,13 @@ html:lang(ko) .cin-tagline {
   left: var(--ac-gutter);
   bottom: 14px;
   z-index: 4;
+  max-width: min(46ch, calc(100% - 2 * var(--ac-gutter)));
   margin: 0;
-  font-size: 11px;
+  font-size: 12px;
+  line-height: 1.4;
   letter-spacing: 0.01em;
-  color: rgb(255 255 255 / 0.55);
+  color: #e8e8ec;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 0.8);
   pointer-events: none;
 }
 
@@ -202,8 +205,21 @@ html:lang(ko) .cin-tagline {
 }
 
 .cin-title--2,
-.cin-tagline--2 {
+.cin-tagline--2,
+.cin-title--3,
+.cin-tagline--3 {
   opacity: 0;
+}
+
+/* Act III: AURORA CORVUS is the longest title; it is set smaller than HALIA and CORVUS. */
+.cin-title--3 {
+  font-size: clamp(40px, min(9vw, 15vh), 150px);
+}
+
+@media (max-width: 767px) {
+  .cin-title--3 {
+    font-size: clamp(26px, 8vw, 56px);
+  }
 }
 
 .cin-crow-canvas,
@@ -239,9 +255,6 @@ html:lang(ko) .cin-tagline {
   display: none;
 }
 
-.cin-credit-2 {
-  color: rgb(255 255 255 / 0.55);
-}
 
 /* The site's backdrop on every page but the home page: one still of our footage, dark and desaturated, with a
    slow mist. It sits behind the page and the (transparent) 3D stage. */
@@ -297,12 +310,12 @@ html:lang(ko) .cin-tagline {
 /* The altitude stream (home, after Act II): the latest releases on frosted glass, drifting on a wind. */
 .ac-altitude {
   position: relative;
+  overflow-x: clip;
   padding-block: clamp(72px, 12vh, 128px);
   /* A soft, dim light behind the glass, so the frost has something to blur. */
-  background:
-    radial-gradient(60% 50% at 20% 10%, rgb(70 100 92 / 0.28), transparent 70%),
-    radial-gradient(50% 45% at 85% 85%, rgb(120 150 140 / 0.14), transparent 70%),
-    #000;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
 }
 
 .ac-altitude-lede {
@@ -319,7 +332,7 @@ html:lang(ko) .cin-tagline {
   list-style: none;
 }
 
-.ac-glass {
+.ac-frost {
   position: relative;
   display: block;
   padding: 18px;
@@ -333,7 +346,7 @@ html:lang(ko) .cin-tagline {
 
 /* Browsers without backdrop-filter: an opaque surface keeps the text legible. */
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-  .ac-glass {
+  .ac-frost {
     background: rgb(28 28 30 / 0.94);
   }
 }
@@ -399,6 +412,52 @@ html:lang(ko) .cin-tagline {
 @media (prefers-reduced-motion: reduce) {
   .ac-altitude-card {
     transform: none;
+    animation: none;
+  }
+}
+
+/* Model art: the model's own icon, large and static, with a soft shadow and a faint reflection of the backdrop. */
+.ac-model-art {
+  display: grid;
+  place-items: center;
+}
+
+.ac-model-art img {
+  width: min(100%, 340px);
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 22.37%;
+  box-shadow:
+    0 34px 80px -22px rgb(0 0 0 / 0.75),
+    0 0 0 1px rgb(255 255 255 / 0.08);
+  -webkit-box-reflect: below 8px linear-gradient(transparent 64%, rgb(255 255 255 / 0.12));
+  box-reflect: below 8px linear-gradient(transparent 64%, rgb(255 255 255 / 0.12));
+}
+
+@media (max-width: 767px) {
+  .ac-model-art img {
+    width: min(78vw, 300px);
+  }
+}
+
+/* The altitude stream sits over the darkened end of Act III: its own still behind the cards, and a rise on entry. */
+.ac-altitude-rise {
+  animation: ac-altitude-rise 1s var(--ease-apple) both;
+}
+
+@keyframes ac-altitude-rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 36px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ac-altitude-rise {
     animation: none;
   }
 }

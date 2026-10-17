@@ -1,10 +1,9 @@
-"use client";
-
-import { Stage3D } from "@/engine/View";
-import { IconPlate } from "@/realms/IconPlate";
 import { asset } from "@/lib/site";
 
-/** A brand's icon as a 3D plate (or, without WebGL, the icon itself). */
+/**
+ * A model's own icon, large, as an app icon: a static image with a soft shadow and a faint reflection
+ * of the backdrop below it (no WebGL). `dim` greys an archived model.
+ */
 export function BrandStage({
   icon,
   label,
@@ -17,23 +16,21 @@ export function BrandStage({
   className?: string;
 }) {
   return (
-    <Stage3D
-      className={`ac-brand-stage ${className ?? ""}`}
-      label={label || undefined}
-      fov={30}
-      position={[0, 0, 8]}
-      fallback={
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={asset(icon)}
-          alt=""
-          width={256}
-          height={256}
-          style={{ width: "62%", borderRadius: "22.37%", ...(dim ? { filter: "grayscale(0.75)", opacity: 0.62 } : {}) }}
-        />
-      }
+    <div
+      className={`ac-model-stage ac-model-art ${className ?? ""}`}
+      role={label ? "img" : undefined}
+      aria-label={label || undefined}
+      aria-hidden={label ? undefined : true}
     >
-      <IconPlate src={asset(icon)} dim={dim} />
-    </Stage3D>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={asset(icon)}
+        alt=""
+        width={340}
+        height={340}
+        data-dim={dim}
+        style={dim ? { filter: "grayscale(0.75)", opacity: 0.62 } : undefined}
+      />
+    </div>
   );
 }
