@@ -5,11 +5,11 @@ import { useEffect } from "react";
 import { isHomePath } from "@/lib/site";
 import { Experience } from "./Experience";
 
-/** The pages whose scenes draw into the shared 3D stage: the recipe Codex and the Sparxie skin. */
-const STAGE_PAGES = ["recipes/", "skin/"];
+/** The pages whose scenes draw into the shared 3D stage: the Sparxie skin. The recipe Tome has its own canvas. */
+const STAGE_PAGES = ["skin/"];
 
 /**
- * Mounts the shared 3D stage only where a page has a 3D scene (the Codex and the Skin). Everywhere else, and on the
+ * Mounts the shared 3D stage only where a page has a 3D scene (the Skin). Everywhere else, and on the
  * home page (whose cinema draws its own footage), the stage is absent, exactly as on a device without WebGL 2, and
  * the posters show.
  */

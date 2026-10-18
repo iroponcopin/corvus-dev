@@ -1,0 +1,781 @@
+/*
+ * The Recipe Tome (/recipes): an obsidian stage with the book on the left and the crafting pedestal on the right.
+ * The accent (--accent, set per model by the component) lights the stage and the spine; everything else is neutral.
+ * Motion uses cubic-bezier(0.22, 1, 0.36, 1) or the component's own easing; reduced motion turns the turns off in JS.
+ */
+
+.tome {
+  --tome-ink: #070709;
+  --tome-ink-2: #0d0f14;
+  --tome-paper: #efe6cf;
+  --tome-paper-2: #e3d6b6;
+  --tome-text: #1f1a14;
+  --tome-muted: #5c5142;
+  --tome-hair: rgb(255 255 255 / 0.08);
+  position: relative;
+  isolation: isolate;
+  margin-block: 8px 48px;
+  padding: clamp(12px, 2vw, 22px);
+  border-radius: 28px;
+  color: #f5f5f7;
+  background:
+    radial-gradient(70% 60% at 22% 18%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 70%),
+    radial-gradient(50% 45% at 85% 90%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 75%),
+    linear-gradient(180deg, var(--tome-ink) 0%, var(--tome-ink-2) 100%);
+  transition: background 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.tome-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+/* The engraved bar: a search field cut into the book's cover (it opens the spotlight). */
+.tome-engraved {
+  flex: 1 1 320px;
+  max-width: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 14px;
+  border: 1px solid var(--tome-hair);
+  background: rgb(255 255 255 / 0.03);
+  box-shadow: inset 0 2px 8px rgb(0 0 0 / 0.6), inset 0 -1px 0 rgb(255 255 255 / 0.04);
+  color: #a1a1a6;
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  transition: border-color 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.tome-engraved:hover {
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+}
+.tome-engraved-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: start;
+}
+.tome-kbd {
+  flex: none;
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 12px;
+  padding: 2px 7px;
+  border-radius: 7px;
+  border: 1px solid var(--tome-hair);
+  color: #d2d2d7;
+}
+
+/* Layout: 55 % book, 45 % sticky pedestal from 1024 px. */
+.tome-layout {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (min-width: 1024px) {
+  .tome-layout {
+    grid-template-columns: minmax(0, 55fr) minmax(0, 45fr);
+    align-items: start;
+  }
+  .tome-stage-col {
+    position: sticky;
+    top: 92px;
+    height: min(78vh, 760px);
+  }
+}
+
+/* Ribbons: the physical bookmarks, one per model (All first). */
+.tome-ribbon-list {
+  display: flex;
+  gap: 6px;
+  margin: 0;
+  padding: 4px 2px 10px;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.tome-ribbon-list::-webkit-scrollbar {
+  display: none;
+}
+.tome-ribbon {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px 12px;
+  border: 0;
+  border-radius: 0 0 6px 6px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: #15110c;
+  background: linear-gradient(180deg, var(--ribbon, var(--accent)) 0%, color-mix(in srgb, var(--ribbon, var(--accent)) 66%, #000) 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 84%, 0 100%);
+  box-shadow: 0 8px 18px rgb(0 0 0 / 0.45);
+  cursor: pointer;
+  transform-origin: top center;
+  transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1), filter 300ms ease;
+}
+.tome-ribbon:hover {
+  filter: brightness(1.08);
+}
+.tome-ribbon[aria-pressed="true"] {
+  transform: translateY(-5px);
+  filter: brightness(1.12) saturate(1.1);
+}
+.tome-ribbon--all {
+  --ribbon: #e2c07a;
+}
+.tome-ribbon .ac-count {
+  color: #15110c;
+  opacity: 0.7;
+}
+.tome-ribbon:focus-visible,
+.tome-card:focus-visible,
+.tome-tree-node:focus-visible,
+.tome-turn:focus-visible,
+.tome-engraved:focus-visible,
+.tome-cmd-input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.tome-stations {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+.tome-stations > * {
+  flex: none;
+}
+.tome-stations::-webkit-scrollbar {
+  display: none;
+}
+
+.tome-viewtabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+/* Bookmarks on the right edge of the book (decorative: the same chapters, the top ribbons are the keyboard path). */
+.tome-ribbons-edge {
+  position: absolute;
+  top: 56px;
+  right: -22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 7;
+}
+.tome-ribbon-edge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  min-height: 104px;
+  padding: 10px 0;
+  border: 0;
+  border-radius: 0 6px 6px 0;
+  background: linear-gradient(90deg, var(--ribbon, var(--accent)), color-mix(in srgb, var(--ribbon, var(--accent)) 66%, #000));
+  box-shadow: 4px 6px 14px rgb(0 0 0 / 0.45);
+  cursor: pointer;
+  overflow: hidden;
+  transition: width 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.tome-ribbon-edge span {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #15110c;
+}
+.tome-ribbon-edge[aria-pressed="true"] {
+  width: 34px;
+}
+.tome-book-wrap {
+  overflow: visible;
+}
+@media (max-width: 1023px) {
+  .tome-ribbons-edge {
+    display: none;
+  }
+}
+
+/* The book. Two pages under a 2200 px perspective; the leaf turns about the spine. */
+.tome-book-wrap {
+  perspective: 2200px;
+  padding-bottom: 14px;
+}
+.tome-book {
+  position: relative;
+  padding: 14px 14px 10px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #1b1510 0%, #110d0a 100%);
+  border: 1px solid var(--tome-hair);
+  box-shadow: 0 40px 80px -30px rgb(0 0 0 / 0.8), 0 0 0 1px rgb(255 255 255 / 0.03) inset;
+  outline: none;
+  touch-action: pan-y;
+}
+.tome-book:focus-visible {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+.tome-pages {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  min-height: 560px;
+  transform-style: preserve-3d;
+  border-radius: 6px;
+}
+.tome-book.is-narrow .tome-pages {
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 0;
+}
+.tome-page,
+.tome-leaf-face {
+  position: relative;
+  padding: 22px 22px 18px;
+  color: var(--tome-text);
+  background-color: var(--tome-paper);
+  background-image: radial-gradient(rgb(60 40 20 / 0.06) 0.6px, transparent 0.9px);
+  background-size: 5px 5px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.tome-page--l {
+  border-radius: 8px 0 0 8px;
+  background-image:
+    linear-gradient(90deg, rgb(60 40 20 / 0.18), transparent 22%),
+    radial-gradient(rgb(60 40 20 / 0.06) 0.6px, transparent 0.9px);
+  background-size: auto, 5px 5px;
+}
+.tome-page--r {
+  border-radius: 0 8px 8px 0;
+  background-image:
+    linear-gradient(270deg, rgb(60 40 20 / 0.18), transparent 22%),
+    radial-gradient(rgb(60 40 20 / 0.06) 0.6px, transparent 0.9px);
+  background-size: auto, 5px 5px;
+}
+.tome-book.is-narrow .tome-page--l,
+.tome-book.is-narrow .tome-page--r {
+  border-radius: 8px;
+  background-image: radial-gradient(rgb(60 40 20 / 0.06) 0.6px, transparent 0.9px);
+  background-size: 5px 5px;
+}
+
+/* Text on parchment: the site's grey metadata is darkened to read on paper. */
+.tome .tome-page .ac-small,
+.tome .tome-leaf-face .ac-small,
+.tome .tome-page .ac-eyebrow,
+.tome .tome-leaf-face .ac-eyebrow {
+  color: var(--tome-muted);
+}
+.tome .tome-page .ac-count,
+.tome .tome-leaf-face .ac-count {
+  color: var(--tome-muted);
+}
+.tome-page .ac-chip,
+.tome-leaf-face .ac-chip {
+  color: var(--tome-text);
+  border-color: rgb(60 40 20 / 0.2);
+  background: rgb(60 40 20 / 0.05);
+}
+.tome-page .ac-chip[aria-pressed="true"] {
+  background: var(--tome-text);
+  color: var(--tome-paper);
+}
+
+.tome-spine {
+  position: absolute;
+  top: 14px;
+  bottom: 10px;
+  left: 50%;
+  width: 26px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, rgb(0 0 0 / 0.42) 45%, rgb(0 0 0 / 0.5) 50%, rgb(0 0 0 / 0.42) 55%, transparent);
+  pointer-events: none;
+  z-index: 6;
+}
+/* Page stacks: the thickness of each side grows with the pages turned over (--stack-l, --stack-r). */
+.tome-stack {
+  position: absolute;
+  bottom: 0;
+  height: 6px;
+  pointer-events: none;
+  z-index: 0;
+  background: repeating-linear-gradient(90deg, #e6dbbd 0 2px, #bfb08c 2px 3px);
+  border-radius: 0 0 6px 6px;
+}
+.tome-stack--l {
+  left: 14px;
+  right: 50%;
+  transform: translateY(calc(var(--stack-l, 0px) * 0.25));
+}
+.tome-stack--r {
+  left: 50%;
+  right: 14px;
+  transform: translateY(calc(var(--stack-r, 0px) * 0.25));
+}
+.tome-book.is-narrow .tome-stack,
+.tome-book.is-narrow .tome-spine {
+  display: none;
+}
+
+.tome-page-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  min-height: 100%;
+}
+.tome-page-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(60 40 20 / 0.18);
+}
+.tome-chapter {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--tome-text);
+}
+.tome-title {
+  margin: 0;
+  font-size: clamp(22px, 2.6vw, 30px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--tome-text);
+}
+.tome-title-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.tome-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--tome-text);
+  color: var(--tome-paper);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.tome-badge--station {
+  background: color-mix(in srgb, var(--accent) 80%, #000);
+  color: #120d08;
+}
+
+/* The index: a 3 x 3 list of real buttons. */
+.tome-index {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tome-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 100%;
+  min-height: 104px;
+  padding: 12px 8px;
+  border-radius: 12px;
+  border: 1px solid rgb(60 40 20 / 0.14);
+  background: rgb(60 40 20 / 0.05);
+  color: var(--tome-text);
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.25;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 450ms cubic-bezier(0.22, 1, 0.36, 1), background 300ms ease;
+}
+.tome-card:hover {
+  transform: translateY(-2px);
+  background: rgb(60 40 20 / 0.09);
+}
+.tome-card[aria-pressed="true"] {
+  box-shadow: 0 0 0 2px var(--accent), 0 10px 22px -10px rgb(0 0 0 / 0.45);
+  background: rgb(60 40 20 / 0.12);
+}
+.tome-card span:last-child {
+  overflow-wrap: anywhere;
+}
+
+/* The blueprint. */
+.tome-blueprint .ac-made-in {
+  margin: 0;
+}
+.tome-craft {
+  align-self: flex-start;
+}
+.tome-craft .ac-slot,
+.tome-craft .ac-craft-arrow {
+  color: var(--tome-text);
+}
+.tome .tome-craft .ac-slot {
+  background: rgb(60 40 20 / 0.08);
+  border-color: rgb(60 40 20 / 0.25);
+}
+.tome-lines {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tome-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
+}
+.tome-line small {
+  color: var(--tome-muted);
+}
+.tome-facts,
+.tome .tome-page .ac-how-line {
+  margin: 0;
+  color: var(--tome-muted);
+}
+.tome-station-plate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-weight: 600;
+  color: var(--tome-text);
+}
+.tome-station h3,
+.tome-grid-block h3,
+.tome-fusion h3,
+.tome-tree-block h3 {
+  margin: 4px 0 0;
+}
+.tome-tree {
+  margin: 0;
+  padding: 0 0 0 14px;
+  list-style: none;
+  border-inline-start: 1px dashed rgb(60 40 20 / 0.3);
+}
+.tome-tree-node {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+  padding: 4px 10px 4px 6px;
+  border-radius: 999px;
+  border: 1px solid rgb(60 40 20 / 0.16);
+  background: rgb(60 40 20 / 0.05);
+  color: var(--tome-text);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.tome-tree-node[disabled] {
+  cursor: default;
+  opacity: 0.85;
+}
+.tome-tree-node small {
+  color: var(--tome-muted);
+}
+
+/* Folio, turn buttons, hint. */
+.tome-foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px 6px 2px;
+}
+.tome-turn {
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  line-height: 1;
+  border-radius: 999px;
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+}
+.tome-folio {
+  min-width: 9ch;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.tome-hint {
+  margin: 8px 4px 0;
+}
+
+/* The turn: a leaf lifted from the spine; the back face is the page it lands on. */
+.tome-flip {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  perspective: 2200px;
+  transform-style: preserve-3d;
+}
+.tome-leaf {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  transform-origin: left center;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.tome-flip.is-back .tome-leaf {
+  left: 0;
+  transform-origin: right center;
+}
+.tome-flip.is-single .tome-leaf {
+  left: 0;
+  width: 100%;
+}
+.tome-leaf-face {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.tome-leaf-back {
+  transform: rotateY(180deg);
+}
+.tome-leaf-face::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: var(--shade, 0);
+  pointer-events: none;
+}
+.tome-flip.is-back .tome-leaf-front,
+.tome-flip.is-back .tome-leaf-back {
+  border-radius: 8px 0 0 8px;
+}
+.tome-flip:not(.is-back) .tome-leaf-front,
+.tome-flip:not(.is-back) .tome-leaf-back {
+  border-radius: 0 8px 8px 0;
+}
+.tome-flip.is-single .tome-leaf-front,
+.tome-flip.is-single .tome-leaf-back {
+  border-radius: 8px;
+}
+.tome-book.is-turning,
+.tome-book.is-turning * {
+  user-select: none;
+  -webkit-user-select: none;
+}
+.tome-book.is-turning .tome-page {
+  cursor: grabbing;
+}
+
+/* The spotlight: a modal over the page. */
+.tome-cmd-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 12vh 16px 16px;
+  background: rgb(0 0 0 / 0.5);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.tome-cmd {
+  width: min(640px, 100%);
+  padding: 14px;
+  border-radius: 20px;
+  color: #f5f5f7;
+  background: rgb(22 24 30 / 0.78);
+  border: 1px solid var(--tome-hair);
+  box-shadow: 0 30px 80px rgb(0 0 0 / 0.6), inset 0 1px 0 rgb(255 255 255 / 0.06);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+}
+.tome-cmd-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 6px 0 12px;
+  min-height: 48px;
+  border-radius: 14px;
+  background: rgb(255 255 255 / 0.04);
+  border: 1px solid var(--tome-hair);
+}
+.tome-cmd-input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 17px;
+}
+.tome-cmd-count {
+  margin: 10px 4px 4px;
+}
+.tome-cmd-list {
+  max-height: 52vh;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tome-cmd-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.tome-cmd-item[aria-selected="true"] {
+  background: rgb(255 255 255 / 0.08);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.08);
+}
+.tome-cmd-text {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+}
+.tome-cmd-item .tome-badge {
+  background: rgb(255 255 255 / 0.12);
+  color: #e5e5ea;
+}
+
+/* The pedestal: a glass panel holding the canvas and its four switches. */
+.tome-stage-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  border-radius: 24px;
+  border: 1px solid var(--tome-hair);
+  background: rgb(255 255 255 / 0.025);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  overflow: hidden;
+}
+.tome-stage-canvas {
+  position: relative;
+  flex: 1;
+  min-height: 340px;
+}
+.tome-stage-canvas canvas {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  touch-action: none;
+}
+.tome-stage-poster {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 20px;
+  text-align: center;
+}
+.tome-stage-poster img {
+  width: 160px;
+  height: 160px;
+}
+.tome-stage-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid var(--tome-hair);
+}
+.tome-stage-col.is-narrow .tome-stage-toggle {
+  margin-bottom: 10px;
+}
+.tome-stage-inner.is-collapsed {
+  height: auto;
+}
+.tome-stage-inner.is-collapsed .tome-stage-canvas,
+.tome-stage-inner.is-collapsed .tome-stage-controls {
+  display: none;
+}
+.tome-stage-col.is-narrow .tome-stage-canvas {
+  flex: none;
+  min-height: 280px;
+  height: 46vh;
+}
+
+/* Narrow screens: one page at a time, the pedestal as an expandable viewport above the book. */
+@media (max-width: 1023px) {
+  .tome {
+    padding: 10px;
+    border-radius: 22px;
+  }
+  /* The pedestal is the viewport above the book on narrow screens. */
+  .tome-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .tome-stage-col {
+    order: -1;
+  }
+  .tome-index {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .tome-page,
+  .tome-leaf-face {
+    padding: 16px 14px 14px;
+  }
+  .tome-card {
+    min-height: 92px;
+  }
+  .tome-stage-col {
+    margin-top: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tome,
+  .tome-card,
+  .tome-ribbon,
+  .tome-engraved {
+    transition: none !important;
+  }
+}

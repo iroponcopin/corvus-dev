@@ -2,21 +2,32 @@ import { FRESH } from "@/i18n/fresh";
 import { recipeIcon } from "@/lib/site";
 import { langData, wiki } from "@/lib/wiki";
 import type { Lang } from "@/lib/wiki-types";
-import { Codex, type CodexData } from "../recipes/Codex";
+import { RecipeBookScene } from "../recipes/RecipeBookScene";
+import type { TomeData } from "../recipes/tome-data";
 
-
+/**
+ * The recipes page: the Recipe Tome (the book and the crafting pedestal). The server prepares the shared sheet for
+ * the language (names, search text, chapter names), and the one client component draws it. The static list in the
+ * noscript block keeps every recipe readable without JavaScript.
+ */
 export function RecipesPage({ lang }: { lang: Lang }) {
   const d = langData(lang);
   const shared = wiki().recipes;
   const r = d.recipes;
-  const data: CodexData = {
+  const data: TomeData = {
     total: shared.total,
-    cats: shared.cats.map((c, i) => ({ ...c, name: r.catNames[i] ?? c.name })),
+    cats: shared.cats.map((c, i) => ({
+      index: c.index,
+      name: r.catNames[i] ?? c.name,
+      model: shared.recipes.find((rec) => rec.cat === i)?.result.split(":")[0] ?? "",
+      icon: c.icon,
+      count: c.count,
+    })),
     allTabIcon: shared.allTabIcon,
     items: Object.fromEntries(
       Object.entries(shared.items).map(([id, it]) => [
         id,
-        { name: r.names[id] ?? it.en, ...(r.subs[id] ? { sub: r.subs[id] } : {}), icon: it.icon, kind: it.kind },
+        { id, name: r.names[id] ?? it.en, ...(r.subs[id] ? { sub: r.subs[id] } : {}), icon: it.icon, kind: it.kind },
       ]),
     ),
     recipes: shared.recipes.map((rec) =>
@@ -33,7 +44,7 @@ export function RecipesPage({ lang }: { lang: Lang }) {
         <p className="ac-lead">{r.intro}</p>
       </div>
       <div className="ac-wrap">
-        <Codex data={data} labels={r.labels} fresh={{ synthesise: f.synth.synthesise, replay: f.synth.replay, result: f.synth.result, fusing: f.synth.fusing }} />
+        <RecipeBookScene data={data} labels={r.labels} t={f.tome} dir={d.dir} />
         <noscript>
           <ul className="ac-cx-all">
             {shared.recipes.map((rec) => {
