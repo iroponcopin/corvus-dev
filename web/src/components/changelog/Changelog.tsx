@@ -18,13 +18,26 @@ type Filter = "all" | "ended" | string;
 
 /** Runs a filter change inside a View Transition where the browser has one and motion is allowed. */
 function transition(update: () => void): void {
-  const doc = document as Document & { startViewTransition?: (cb: () => void) => unknown };
+  const doc = document as Document & { startViewTransition?: (cb: () => void) => { ready: Promise<unknown>; finished: Promise<unknown> } };
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (reduced || typeof doc.startViewTransition !== "function") {
     update();
     return;
   }
-  doc.startViewTransition(() => flushSync(update));
+  // The update runs once: inside the transition when the browser takes its snapshot, or on a timer if
+  // that snapshot never comes (a background tab), so the filter can never be left behind.
+  let applied = false;
+  const apply = (): void => {
+    if (applied) return;
+    applied = true;
+    flushSync(update);
+  };
+  // A transition the browser skips rejects its `ready` and `finished` promises; the filter has already
+  // applied by then, so the rejection is expected and is handled here rather than logged.
+  const view = doc.startViewTransition(apply);
+  view.ready.catch(() => undefined);
+  view.finished.catch(() => undefined);
+  window.setTimeout(apply, 240);
 }
 
 /**

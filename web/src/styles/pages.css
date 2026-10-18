@@ -705,6 +705,7 @@ html:lang(ar) .ac-facts dt {
 
 .ac-cl {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
   padding-bottom: clamp(80px, 12vh, 140px);
 }
@@ -745,12 +746,8 @@ html:lang(ar) .ac-facts dt {
   box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.14);
 }
 
-.ac-cl-chip[data-group="ended"] {
+.ac-cl-chip[data-group="ended"]:not([aria-pressed="true"]) {
   color: var(--color-muted);
-}
-
-.ac-cl-chip[data-group="ended"][aria-pressed="true"] {
-  color: var(--color-fg);
 }
 
 /* The list crossfades between filter states (View Transitions); reduced motion keeps it instant. */
