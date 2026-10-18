@@ -4509,7 +4509,6 @@ html:lang(tr) .ac-hub-hero h1 {
 /* Phones: a page title must fit the width ("CHANGELOG" is nine wide capitals). */
 @media (max-width: 800px) {
   .ac-page-head h1 {
-    font-size: clamp(30px, 10.5vw, 64px);
-    overflow-wrap: anywhere;
+    font-size: clamp(28px, 8.6vw, 64px);
   }
 }
