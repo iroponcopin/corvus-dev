@@ -9,7 +9,7 @@ import { BentoReleases, type BentoItem } from "./BentoReleases";
 import { Lineup, type LineupItem } from "./Lineup";
 import { Chronology, type ChronoItem } from "./Chronology";
 import { CopyButton } from "../CopyButton";
-import { FeedTelemetry } from "../discord/FeedTelemetry";
+import { MissionControl } from "./MissionControl";
 import { CodexPreview, type FeaturedRecipe } from "./CodexPreview";
 import { ShowroomPreview } from "./ShowroomPreview";
 import { StorePreview } from "./StorePreview";
@@ -354,7 +354,7 @@ export function HomePage({ lang }: { lang: Lang }) {
             </p>
           </div>
           <div className="ac-preview ac-nexus-preview">
-            <FeedTelemetry
+            <MissionControl
               lazy
               labels={{
                 feeds: f.nexus.feeds,
@@ -363,6 +363,12 @@ export function HomePage({ lang }: { lang: Lang }) {
                 latency: f.nexus.latency,
                 measured: f.nexus.measured,
                 unreachable: f.nexus.unreachable,
+                inspect: HOME_V2[lang].telemetry.inspect,
+                payload: HOME_V2[lang].telemetry.payload,
+                bytes: HOME_V2[lang].telemetry.bytes,
+                modified: HOME_V2[lang].telemetry.modified,
+                truncated: HOME_V2[lang].telemetry.truncated,
+                drawer: HOME_V2[lang].telemetry.drawer,
               }}
             />
             <div className="ac-term ac-card ac-term--cmds" role="group" aria-label={f.nexus.commands}>
