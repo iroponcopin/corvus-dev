@@ -3,7 +3,7 @@ import { recipeIcon } from "@/lib/site";
 import { langData, recipeModelList, wiki } from "@/lib/wiki";
 import type { Lang } from "@/lib/wiki-types";
 import { RecipeBookScene } from "../recipes/RecipeBookScene";
-import type { TomeData } from "../recipes/tome-data";
+import { modelOfCat, type TomeData } from "../recipes/tome-data";
 
 /**
  * The recipes page: the Recipe Tome (the book and the crafting pedestal). The server prepares the shared sheet for
@@ -19,7 +19,7 @@ export function RecipesPage({ lang }: { lang: Lang }) {
     cats: shared.cats.map((c, i) => ({
       index: c.index,
       name: r.catNames[i] ?? c.name,
-      model: shared.recipes.find((rec) => rec.cat === i)?.result.split(":")[0] ?? "",
+      model: modelOfCat(shared, i),
       icon: c.icon,
       count: c.count,
     })),

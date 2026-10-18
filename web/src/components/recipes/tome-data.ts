@@ -124,7 +124,7 @@ export function pageOf(ids: readonly string[], id: string, size: number = PAGE_S
  * holds recipes whose result is a vanilla item (Tsubomi 2.0.0's apple, OUKA's vanilla outputs), and one of those can
  * come first, so "minecraft" never names a chapter: the most common other prefix does.
  */
-export function modelOfCat(data: TomeData, cat: number): string {
+export function modelOfCat(data: { recipes: readonly { cat: number; result: string }[] }, cat: number): string {
   const counts = new Map<string, number>();
   for (const r of data.recipes) {
     if (r.cat !== cat) continue;
