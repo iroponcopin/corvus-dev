@@ -940,6 +940,24 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.3.0",
+    "title": "Halia V1.3 — Vigil、46 扇门与 Doorwright's Bench",
+    "summary": "Halia V1.3 新增 Vigil，这是一组用于守护你所建造内容的设备：只有所有者能破坏的守护方块、摄像头、密码锁、通行读卡器、陷阱和炮塔。还新增 46 种门、活板门和闸门，它们带有真实的开合动作，以及 Doorwright's Bench，你可以在那里设计自己的门。",
+    "highlights": [
+     "Vigil：593 种守护版建筑方块，只有其所有者能破坏；可通过 Watch Slate 查看的 Watch Eyes；Code Plates、Coded Doors、Coded Chests 及其他带密码的容器；Watch Passes 和 Pass Readers；Tripbeams、Stir Lamps 和 Klaxon；40 个伪装成普通方块的陷阱；以及 Watch Turret，它会射击进入范围内的敌对生物。",
+     "46 种有真实动作的门、活板门和闸门：Cell Bars、玻璃滑门、Clean-room Door、Foundry Door、Paper Screen Door、16 个 Drapes、六个 Floor and Slide Hatches、Tavern Doors 和 Bulkhead Door。",
+     "大型门：八个 3 x 3 的 Grand Gates、3 x 2 的 Iris Door、Roller Shutter（一叠可向上卷入天花板的面板）、带梯子的 2 x 2 Corroded Hatch，以及 Barrier Veil，一面你用 Veil Emitter 在两个拐角之间升起的光墙。",
+     "Coach-house Door 和 Keep Door：4 x 5 的双开门，门框由制作它所用的方块构成（一扇门加五个或更多同种方块）。",
+     "Mimic Fence Gate 会呈现出其两侧方块的外观。",
+     "Doorwright's Bench：可选择 18 种运动方式之一、开门时间、自动关闭、玩家靠近时开门、红石规则、双门配对、12 种声音之一，以及最多六位数字的密码，然后用任意门框方块和两个面板方块制作 Crafted Door（火、传送门、水和岩浆也可作为面板）。之后可以在工作台重新设置已制作的门。"
+    ],
+    "warnings": [
+     "系统要求：Minecraft 26.3、Fabric Loader 0.19.5 或更新版本、Fabric API 0.161.0+26.3 或更新版本、Java 25。多人游戏时，服务器上也必须安装 Halia。",
+     "已修复：自 V1.2 起，破坏 Aerie 存储方块会使其丢失与所存内容的关联，因此被移动的方块会变空。现在它会保留内容。已经以这种方式丢失的内容无法恢复。",
+     "V1.2 的世界可以原样打开。不要在包含 Vigil 设备或新门的世界中退回 1.2，否则这些内容会被删除。"
+    ]
+   },
+   {
     "id": "halia-v1.2.1",
     "title": "Halia V1.2.1 —— 修复打开物品栏时崩溃的问题",
     "summary": "Halia V1.2.1 修复了一个崩溃问题：同时安装 OUKA 时，在创造模式下打开物品栏会导致游戏关闭。",

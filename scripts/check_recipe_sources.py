@@ -140,6 +140,12 @@ def main():
                     names.append(key)
 
                 def result_of(body):
+                    # Halia 1.3.0 (the Vigil): a brewing recipe names its "output"; warding and unwarding have no
+                    # result of their own, and their card is the first warding tool they name ("reinforcer").
+                    if "result" not in body and "output" in body:
+                        return body["output"]["id"]
+                    if "result" not in body and body.get("reinforcer"):
+                        return body["reinforcer"][0]
                     r = body["result"]
                     return r if isinstance(r, str) else r["id"]
 
@@ -147,7 +153,7 @@ def main():
                 # A result that carries a second obtainable item (Halia's material box names the blade it becomes
                 # on an anvil) owes the sheet one more card.
                 second = sum(1 for k in names
-                             if isinstance(bodies[k]["result"], dict)
+                             if isinstance(bodies[k].get("result"), dict)
                              and any(c.endswith(":required_blade")
                                      for c in (bodies[k]["result"].get("components") or {})))
             if names:

@@ -310,6 +310,14 @@ def stage_nested_jars(jar_bytes, modid, dest, wanted):
                         have = json.loads(out.read_text(encoding="utf-8"))
                         more = json.loads(data.decode("utf-8"))
                         clash = sorted(k for k in set(have) & set(more) if have[k] != more[k])
+                        # Halia 1.3.0: the Aerie and the Vigil each title their own config screen under the one
+                        # key halia.configuration.title. A config-screen title names no item and no card, so that
+                        # key alone is not a clash for the sheet (the first jar's text is kept, and it is printed).
+                        cfg = [k for k in clash if k.endswith(".configuration.title")]
+                        for k in cfg:
+                            print(f"note: {name} titles its config screen {more[k]!r}; kept {have[k]!r} ({k})")
+                            more[k] = have[k]
+                        clash = [k for k in clash if k not in cfg]
                         if clash:
                             raise SystemExit(f"ERROR: {name} and the outer jar both translate {member} "
                                              f"differently ({len(clash)} key(s), e.g. {clash[0]!r}).")
@@ -875,6 +883,12 @@ VANILLA_JA_NAMES = {
 # "block/<name>.png" texture (multi-face blocks, pane models that borrow another
 # block's texture) - map those to the closest single representative texture.
 VANILLA_TEXTURE_OVERRIDE = {
+    # Halia V1.3.0 (2026-10-18): vanilla ingredients of the Vigil's recipes with no item/<name>.png.
+    "birch_fence_gate": "block/birch_planks",
+    "jungle_fence_gate": "block/jungle_planks", "acacia_fence_gate": "block/acacia_planks",
+    "smoker": "block/smoker_front",
+    "suspicious_sand": "block/suspicious_sand_0", "suspicious_gravel": "block/suspicious_gravel_0",
+    "enchanted_golden_apple": "item/golden_apple",
     # V4.0.1: V4 の材料 3 種。いずれも面ごとに別テクスチャのブロックで item/<name>.png を持たない。
     # 音響タレット(スカルクセンサー)、虚空ポーチ(樽)、共鳴レール(石のハーフブロック = block/stone)。
     "sculk_sensor": "block/sculk_sensor_top",
@@ -984,6 +998,14 @@ MOD_TEXTURE_OVERRIDE = {
 # (照合は常に「その位置で一致する最長のキー」を選ぶ)。
 #   例) 「金庫」を入れておかないと「金」+「庫」に割れる。「格子戸」は「格子」に勝つ。
 YOMI = {
+    # --- Halia V1.3.0 (2026-10-18): the Vigil's 593 warded blocks are all named 護りの<plain block>. ---
+    "護り": "まもり",
+    "ひび割れた": "ひびわれた", "塀": "へい", "凝灰岩": "ぎょうかいがん", "固めた泥": "かためたどろ", "強力な": "きょうりょくな",
+    "硫黄": "いおう", "書見台": "しょけんだい", "彩釉": "さいゆう", "模様入り": "もよういり", "樹皮を剥いだ": "じゅひをはいだ",
+    "表皮を剥いだ": "ひょうひをはいだ", "樹脂": "じゅし", "桃色": "ももいろ", "橙色": "だいだいいろ", "歪んだ": "ゆがんだ",
+    "菌糸": "きんし", "真紅": "しんく", "研がれた": "とがれた", "辰砂": "しんしゃ", "秘めた": "ひめた", "吊り看板": "つりかんばん",
+    "竹細工": "たけざいく", "粗い土": "あらいつち", "粘着": "ねんちゃく", "色あせた": "いろあせた", "赤紫色": "あかむらさきいろ",
+    "青緑色": "あおみどりいろ", "黄緑色": "きみどりいろ", "黄色": "きいろ", "電球": "でんきゅう", "玄武岩": "げんぶがん",
     # --- Tsubomi V2.1.0 (2026-10-18) 不吉な瓶 Lv.6〜13。読みは tsubomi-src/docs/JA_READINGS_V2.1.0.json(未確認)。 ---
     "不吉な瓶 Lv.6": "ふきつなびん えるぶいろく", "不吉な瓶 Lv.7": "ふきつなびん えるぶいなな", "不吉な瓶 Lv.8": "ふきつなびん えるぶいはち", "不吉な瓶 Lv.9": "ふきつなびん えるぶいきゅう", "不吉な瓶 Lv.10": "ふきつなびん えるぶいじゅう", "不吉な瓶 Lv.11": "ふきつなびん えるぶいじゅういち", "不吉な瓶 Lv.12": "ふきつなびん えるぶいじゅうに", "不吉な瓶 Lv.13": "ふきつなびん えるぶいじゅうさん",
     # Tsubomi V2.0.0 のスポーンエッグ(バニラの表示名)で YOMI に無い漢字を含む 4 つ: 表示名まるごとの読み。
@@ -2689,13 +2711,15 @@ _HALIA_INDEX = None
 HALIA_HOW = {}
 
 
-def _halia_png_b64(png):
+def _halia_png_b64(png, edge_to_edge=False):
     from PIL import Image
     with Image.open(png) as im:
         im = im.convert("RGBA")
         if im.width != im.height:
             raise SystemExit(f"ERROR: {png} is {im.width}x{im.height}; a Halia icon must be square.")
-        if im.getextrema()[3][0] == 255:
+        # A flat item drawn edge to edge (the 1.3 sigils, grand gates, corroded pieces) has no transparent pixel
+        # and is still an icon: the index marks each such picture "edge_to_edge": true, checked by eye.
+        if im.getextrema()[3][0] == 255 and not edge_to_edge:
             raise SystemExit(f"ERROR: {png} has no transparent pixel at all: it is a screenshot, not an icon.")
         if im.width != HALIA_ICON_PX:
             im = im.resize((HALIA_ICON_PX, HALIA_ICON_PX), Image.LANCZOS)
@@ -2722,7 +2746,7 @@ def halia_icon_b64(section, key):
     png = HALIA_ICON_DIR / entry["file"]
     if not png.exists():
         raise SystemExit(f"ERROR: {png} is named by the Halia icon index but is not there.")
-    return _halia_png_b64(png)
+    return _halia_png_b64(png, bool(entry.get("edge_to_edge")))
 
 
 def halia_result_id(result):
@@ -2737,6 +2761,10 @@ def halia_result_id(result):
         if not key:
             raise SystemExit("ERROR: a Halia recipe makes a chest with no custom name: %s" % json.dumps(result)[:200])
         return f"{rid}[{key}]"
+    # Halia 1.3.0 (the Vigil): a lens tinted by its recipe (minecraft:dyed_color) and a limited watch pass
+    # (halia:keycard_data) are still the one item; the card is the item, and its grid shows the dye or the pass.
+    if comp and set(comp) <= {"minecraft:dyed_color", "halia:keycard_data"}:
+        return rid
     if comp:
         raise SystemExit("ERROR: a Halia recipe result carries components this script cannot name: %s"
                          % json.dumps(result)[:200])
@@ -2789,6 +2817,66 @@ def halia_register_readings(lang_ja):
                 bucket.sort(key=len, reverse=True)
 
 
+_HALIA_JAR_MODELS = None
+
+
+def halia_warded_texture(name):
+    """A warded block's picture, read from the published jar's own item and block models (Halia 1.3.0's Vigil,
+    nested in META-INF/jars/): the vanilla texture its model names (a fence's planks, a chest's wood), so a shape
+    whose plain block has no flat texture still gets the right picture. None when the model names no vanilla
+    texture (the caller then draws the plain vanilla item)."""
+    global _HALIA_JAR_MODELS
+    if _HALIA_JAR_MODELS is None:
+        _HALIA_JAR_MODELS = {}
+        manifest = json.loads((SITE_ROOT / "glimpse_manifest.json").read_text(encoding="utf-8"))
+        jar = SITE_ROOT / "downloads" / manifest["halia"]["file_name"]
+        with zipfile.ZipFile(jar) as outer:
+            for nested in [n for n in outer.namelist() if n.startswith("META-INF/jars/halia_") and n.endswith(".jar")]:
+                with zipfile.ZipFile(io.BytesIO(outer.read(nested))) as nf:
+                    for m in nf.namelist():
+                        if m.startswith(("assets/halia/items/", "assets/halia/models/")) and m.endswith(".json"):
+                            _HALIA_JAR_MODELS.setdefault(m, json.loads(nf.read(m).decode("utf-8")))
+                        elif m.startswith("assets/halia/textures/") and m.endswith(".png"):
+                            _HALIA_JAR_MODELS.setdefault(m, nf.read(m))
+
+    def model_textures(ref, depth=0):
+        if not ref or depth > 6:
+            return {}
+        ns, path = ref.split(":", 1) if ":" in ref else ("minecraft", ref)
+        if ns != "halia":
+            return {}
+        body = _HALIA_JAR_MODELS.get(f"assets/halia/models/{path}.json") or {}
+        tex = dict(model_textures(body.get("parent"), depth + 1))
+        tex.update(body.get("textures") or {})
+        return tex
+
+    item = _HALIA_JAR_MODELS.get(f"assets/halia/items/{name}.json") or {}
+    ref = ((item.get("model") or {}).get("model"))
+    candidates = [ref] if ref else []
+    candidates += [f"halia:item/{name}", f"halia:block/{name}"]
+    for ref in candidates:
+        tex = model_textures(ref)
+        keys = [k for k in ("layer0", "all", "texture", "planks", "block", "side", "particle", "top", "end", "wall")
+                if k in tex] + sorted(tex)
+        for key in keys:
+            v = tex.get(key)
+            for _ in range(4):
+                if isinstance(v, str) and v.startswith("#"):
+                    v = tex.get(v[1:])
+            if isinstance(v, str) and ":" not in v:
+                v = "minecraft:" + v
+            if isinstance(v, str) and v.startswith("halia:"):
+                png = _HALIA_JAR_MODELS.get(f"assets/halia/textures/{v.split(':', 1)[1]}.png")
+                if png:
+                    return base64.b64encode(png).decode()
+            if isinstance(v, str) and v.startswith("minecraft:"):
+                try:
+                    return base64.b64encode(vanilla_zip().read(f"assets/minecraft/textures/{v.split(':', 1)[1]}.png")).decode()
+                except KeyError:
+                    continue
+    return None
+
+
 HALIA_RECOLOUR = "halia:recoloring"   # the Aerie's 320 "any dye recolours this device" recipes: not cards (below)
 
 
@@ -2822,9 +2910,16 @@ def halia_cards(recipe_dir, mod_cat, reg, cards, no_yomi, seen_published, publis
     def how_to(card_id, entry):
         # One sentence per card that is not a grid: the portal reads station, inputs and text from here. Two cards
         # with one key would make one of them say the other's sentence, so that stops the generation.
-        if card_id in HALIA_HOW:
-            raise SystemExit(f"ERROR: two Halia how-to cards are keyed {card_id!r}; one would show the other's text.")
-        HALIA_HOW[card_id] = entry
+        # Halia 1.3.0: the Vigil cuts one warded shape from up to four warded blocks, and brews each false bucket
+        # from six potions, so one item has several how-to cards. The first keeps the item's id; the others are
+        # keyed "<id>@2", "<id>@3"..., and the portal pairs each card with the entry whose sentence it carries.
+        key, n = card_id, 1
+        while key in HALIA_HOW:
+            if HALIA_HOW[key]["ja"] == entry["ja"]:
+                raise SystemExit(f"ERROR: two Halia how-to cards for {card_id!r} say the same thing: {entry['ja']}")
+            n += 1
+            key = f"{card_id}@{n}"
+        HALIA_HOW[key] = entry
 
     def name_of(item_id):
         return reg.register(item_id)
@@ -2910,6 +3005,101 @@ def halia_cards(recipe_dir, mod_cat, reg, cards, no_yomi, seen_published, publis
                             "ja": how,
                             "en": "On a crafting table, put a %s with an enchanted book of %s%s; the result is %s."
                                   % (blank_en, ench_en, (" " + lvl_en) if lvl_en else "", res_en)})
+            made += 1
+            continue
+        if rtype == "minecraft:stonecutting":
+            cut_id, cut_count, how, how_en, cut_ids = parse_stonecutting_recipe(path, reg)
+            add(cut_id, None, cut_count, how, cut_ids + ["minecraft:stonecutter"])
+            how_to(cut_id, {"station": "stonecutter", "inputs": cut_ids, "ja": how, "en": how_en})
+            made += 1
+            continue
+        if rtype == "minecraft:brewing":
+            # The Vigil's false buckets: the bucket stands in a bottle's place and the potion is the ingredient.
+            base = data["input"]
+            base = base["item"] if isinstance(base, dict) and set(base) == {"item"} else ingredient_id(base)
+            reagent = data["reagent"]
+            potion = (reagent.get("potion_contents") or {}).get("potions")
+            if set(reagent) - {"item", "potion_contents"} or not potion:
+                raise SystemExit(f"ERROR: halia/{rel}: a brewing reagent this script cannot name: {reagent}")
+            kind = reagent["item"].split(":", 1)[1]           # potion / splash_potion / lingering_potion
+            effect = potion.split(":", 1)[1].removeprefix("strong_").removeprefix("long_")
+            pot_ja = reg.van_ja.get(f"item.minecraft.{kind}.effect.{effect}")
+            pot_en = reg.van_en.get(f"item.minecraft.{kind}.effect.{effect}")
+            strong = potion.split(":", 1)[1].startswith("strong_")
+            if not (pot_ja and pot_en):
+                raise SystemExit(f"ERROR: the vanilla lang files do not name {kind} of {potion} (halia/{rel}).")
+            if strong:
+                pot_ja, pot_en = pot_ja + " II", pot_en + " II"
+            base_ja, base_en, _t = name_of(base)
+            res_id = data["output"]["id"]
+            how = "醸造台で、%sを瓶の場所に置き、%sを材料にする(作業台では作れない)" % (base_ja, pot_ja)
+            how_en = ("In a brewing stand, put %s in a bottle's place and %s as the ingredient (it cannot be made "
+                      "at a workbench)" % (base_en, pot_en))
+            add(res_id, None, None, how, [base, reagent["item"], "minecraft:brewing_stand"])
+            how_to(res_id, {"station": "brewing", "inputs": [base, reagent["item"]], "ja": how, "en": how_en})
+            made += 1
+            continue
+        if rtype == "halia:framed_door":
+            # The Coach-house and Keep doors: the door and five or more of one block, which becomes the frame.
+            door = ingredient_id(data["door"])
+            door_ja, door_en, _t = name_of(door)
+            res_id = data["result"]["id"]
+            how = "作業台で(並べ方は自由)、%sと、同じブロック 5 つ以上を並べる。そのブロックが枠になります。" % door_ja
+            how_en = ("On a crafting table (any arrangement), put %s with five or more of one block; that block "
+                      "becomes the frame." % door_en)
+            add(res_id, None, None, how, [door])
+            how_to(res_id, {"station": "workbench", "inputs": [door], "ja": how, "en": how_en})
+            made += 1
+            continue
+        if rtype == "minecraft:crafting_dye":
+            target = ingredient_id(data["target"])
+            dye = ingredient_id(data["dye"])
+            t_ja, t_en, _t = name_of(target)
+            res_id = data["result"]["id"]
+            how = "作業台で、%sと好きな染料を並べると、その色に染まります。" % t_ja
+            how_en = "On a crafting table, put %s with any dye to colour it." % t_en
+            add(res_id, None, None, how, [target, dye])
+            how_to(res_id, {"station": "workbench", "inputs": [target, dye], "ja": how, "en": how_en})
+            made += 1
+            continue
+        if rtype == "halia:limited_use_keycard_recipe":
+            first_id, second_id = ingredient_id(data["first"]), ingredient_id(data["second"])
+            f_ja, f_en, _t = name_of(first_id)
+            s_ja, s_en, _t = name_of(second_id)
+            res_id = halia_result_id(data["result"])
+            cnt = int(data["result"].get("count", 1))
+            how = "作業台で、%sと%sを並べると、回数に限りのある%sが %d 枚できます。" % (f_ja, s_ja, f_ja, cnt)
+            how_en = "On a crafting table, put %s with %s: it makes %d %s with a limited number of uses." % (
+                f_en, s_en, cnt, f_en)
+            add(res_id, None, cnt, how, [first_id, second_id])
+            how_to(res_id, {"station": "workbench", "inputs": [first_id, second_id], "ja": how, "en": how_en})
+            made += 1
+            continue
+        if rtype == "halia:copy_position_component_item_recipe":
+            src = ingredient_id(data["input"])
+            s_ja, s_en, _t = name_of(src)
+            res_id = data["result"] if isinstance(data["result"], str) else data["result"]["id"]
+            how = "作業台で、設定済みの%sと新しい%sを並べると、設定を写した 2 つ目ができます。" % (s_ja, s_ja)
+            how_en = "On a crafting table, put a set-up %s with a new one to copy its settings to it." % s_en
+            add(res_id, None, None, how, [src])
+            how_to(res_id, {"station": "workbench", "inputs": [src, src], "ja": how, "en": how_en})
+            made += 1
+            continue
+        if rtype in ("halia:block_reinforcing_recipe", "halia:block_unreinforcing_recipe"):
+            # Warding (and unwarding) any block it can ward: one json, no result of its own. The card is the tool.
+            tools = [ingredient_id(t) for t in data["reinforcer"]]
+            tool_ja = "・".join(name_of(t)[0] for t in tools)
+            tool_en = " or ".join(name_of(t)[1] for t in tools)
+            if rtype == "halia:block_reinforcing_recipe":
+                how = "作業台で、護りの工具(%s のどれか)と護れるブロックを合わせると、護りのブロックになります。" % tool_ja
+                how_en = ("On a crafting table, put a warding tool (%s) with any block it can ward to get the "
+                          "warded block." % tool_en)
+            else:
+                how = "作業台で、護りのブロックと護りの工具(%s のどれか)を合わせると、元のブロックに戻ります。" % tool_ja
+                how_en = ("On a crafting table, put a warded block with a warding tool (%s) to get the plain "
+                          "block back." % tool_en)
+            add(tools[0], None, None, how, tools)
+            how_to(tools[0], {"station": "workbench", "inputs": tools, "ja": how, "en": how_en})
             made += 1
             continue
         parsed = parse_recipe(path)
@@ -3022,6 +3212,30 @@ class ItemRegistry:
         if entry is not None:
             return entry
         ns, name = item_id.split(":", 1)
+        if (ns == "halia" and name.startswith(("warded_", "hushed_"))
+                and item_id not in (halia_index().get("items") or {})):
+            # Halia 1.3.0: the Vigil's 593 warded blocks (and hushed signs) are the plain vanilla block drawn with a
+            # tint (assets/halia/items/warded_*.json point at minecraft:block/<plain>). The card shows the plain
+            # block's picture; the name is the jar's own. A plain id vanilla does not name stops the generation.
+            plain = "minecraft:" + name.split("_", 1)[1].removesuffix("_item")
+            tex = halia_warded_texture(name)
+            if tex is not None:
+                ja = display_name(self.lang_by_modid["halia"], ns, name)
+                en = display_name(self.lang_en_by_modid["halia"], ns, name)
+                if ja == name or en == name:
+                    raise SystemExit("ERROR: the Halia jar's lang files do not name %s" % item_id)
+                entry = [ja, en, self._tex_key(tex)]
+                self.items[item_id] = entry
+                return entry
+            if not (self.van_ja.get("block." + plain.replace(":", ".")) or self.van_ja.get("item." + plain.replace(":", "."))):
+                raise SystemExit(f"ERROR: {item_id} has no picture in data/halia_icons/ and {plain} is not a vanilla block.")
+            ja = display_name(self.lang_by_modid["halia"], ns, name)
+            en = display_name(self.lang_en_by_modid["halia"], ns, name)
+            if ja == name or en == name:
+                raise SystemExit("ERROR: the Halia jar's lang files do not name %s" % item_id)
+            entry = [ja, en, self.register(plain)[2]]
+            self.items[item_id] = entry
+            return entry
         if item_id.startswith((HALIA_BLADE + "[", "minecraft:chest[item.halia.")):
             key = item_id[item_id.index("[") + 1:-1]
             ja = self.lang_by_modid["halia"].get(key)
@@ -3064,6 +3278,9 @@ class ItemRegistry:
                 # the white variants). A tag with no member that has a picture stops the generation.
                 member_entries = [self.halia_member_names(m) for m in members]
                 rep = next((m for m in members if m in (halia_index().get("items") or {})), None)
+                if rep is None:
+                    # Halia 1.3.0: the Vigil's tags list warded blocks, drawn as their plain blocks (register()).
+                    rep = next((m for m in members if m.split(":", 1)[1].startswith(("warded_", "hushed_"))), None)
                 if rep is None:
                     raise SystemExit("ERROR: the Halia tag #%s has no member with a picture in data/halia_icons/"
                                      % name)

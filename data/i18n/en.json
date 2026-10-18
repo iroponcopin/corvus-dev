@@ -944,6 +944,24 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.3.0",
+    "title": "Halia V1.3 — the Vigil, 46 doors, and the Doorwright's Bench",
+    "summary": "Halia V1.3 adds the Vigil, a set of devices for guarding what you build: warded blocks only their owner can break, cameras, code locks, pass readers, snares and turrets. It also adds 46 doors, hatches and gates that open with real motion, and the Doorwright's Bench, where you design your own door.",
+    "highlights": [
+     "The Vigil: 593 warded versions of building blocks, broken only by their owner; Watch Eyes you can look through from a Watch Slate; Code Plates, Coded Doors, Coded Chests and other coded containers; Watch Passes and Pass Readers; Tripbeams, Stir Lamps and the Klaxon; 40 snares disguised as ordinary blocks; and the Watch Turret, which shoots hostile mobs that come into range.",
+     "46 doors, hatches and gates with real motion: Cell Bars, glass sliders, the Clean-room Door, the Foundry Door, the Paper Screen Door, 16 Drapes, six Floor and Slide Hatches, the Tavern Doors and the Bulkhead Door.",
+     "Big doors: eight 3 x 3 Grand Gates, the 3 x 2 Iris Door, the Roller Shutter (a stack of panels that rolls up into the ceiling), the 2 x 2 Corroded Hatch with its ladder, and the Barrier Veil, a wall of light you raise between two corners with the Veil Emitter.",
+     "The Coach-house Door and the Keep Door: 4 x 5 double doors whose frame is made of the block you craft them with (one door and five or more of one block).",
+     "The Mimic Fence Gate takes on the look of the blocks on either side of it.",
+     "The Doorwright's Bench: choose one of 18 movements, the opening time, auto-close, opening when a player comes near, the redstone rule, the double-door pairing, one of 12 sounds and a code of up to six digits, then make a Crafted Door from any frame block and two panel blocks (fire, a portal, water and lava too). Crafted doors can be re-set at the bench later."
+    ],
+    "warnings": [
+     "Requirements: Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer, Java 25. For multiplayer, Halia must also be installed on the server.",
+     "Fixed: since V1.2, breaking an Aerie storage block dropped it without the link to what it stored, so a moved block came back empty. It now keeps its contents. Contents already lost this way cannot be restored.",
+     "Worlds from V1.2 open as they are. Do not go back to 1.2 with a world that holds Vigil devices or the new doors: they would be deleted."
+    ]
+   },
+   {
     "id": "halia-v1.2.1",
     "title": "Halia V1.2.1 — fix for a crash when opening the inventory",
     "summary": "Halia V1.2.1 fixes a crash: with OUKA also installed, opening the inventory in creative mode closed the game.",

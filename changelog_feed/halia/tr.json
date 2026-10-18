@@ -1,11 +1,45 @@
 {
  "lang": "tr",
  "brand": "halia",
- "updated": "2026-10-16",
+ "updated": "2026-10-19",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-16 tarihinde güncellendi",
+ "updated_label": "2026-10-19 tarihinde güncellendi",
  "note": "",
  "groups": [
+  {
+   "label": "V1.3",
+   "summary": "Halia V1.3 — Vigil, 46 kapı ve Doorwright's Bench",
+   "releases": [
+    {
+     "version": "V1.3.0",
+     "date": "2026-10-19",
+     "type": "release",
+     "title": "Halia V1.3 — Vigil, 46 kapı ve Doorwright's Bench",
+     "summary": "Halia V1.3, inşa ettiklerinizi korumanız için bir dizi cihaz olan Vigil'i ekliyor: yalnızca sahibinin kırabileceği korumalı bloklar, kameralar, kod kilitleri, geçiş okuyucuları, tuzaklar ve taretler. Ayrıca gerçek bir hareketle açılan 46 kapı, kapak ve geçit ile kendi kapınızı tasarladığınız Doorwright's Bench'i ekliyor.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Vigil: sahibi dışında kimsenin kıramayacağı, yapı bloklarının 593 korumalı sürümü; Watch Slate'ten bakılabilen Watch Eyes; Code Plates, Coded Doors, Coded Chests ve diğer kodlu sandıklar; Watch Passes ve Pass Readers; Tripbeams, Stir Lamps ve Klaxon; sıradan bloklar gibi gizlenmiş 40 tuzak; ve menziline giren düşman mobları vuran Watch Turret.",
+        "Gerçek hareketli 46 kapı, kapak ve geçit: Cell Bars, cam kaydırıcılar, Clean-room Door, Foundry Door, Paper Screen Door, 16 Drapes, altı Floor and Slide Hatches, Tavern Doors ve Bulkhead Door.",
+        "Büyük kapılar: sekiz adet 3 x 3 Grand Gates, 3 x 2 Iris Door, Roller Shutter (tavana doğru sarılan panel yığını), merdivenli 2 x 2 Corroded Hatch ve Veil Emitter ile iki köşe arasında kaldırdığınız ışık duvarı Barrier Veil.",
+        "Coach-house Door ve Keep Door: çerçevesi, onları yaptığınız blokla yapılmış 4 x 5 çift kanatlı kapılar (bir kapı ve aynı bloktan beş veya daha fazlası).",
+        "Mimic Fence Gate, iki yanındaki blokların görünümünü alır.",
+        "Doorwright's Bench: 18 hareketten birini, açılma süresini, otomatik kapanmayı, bir oyuncu yaklaştığında açılmayı, redstone kuralını, çift kapı eşleşmesini, 12 sesten birini ve en fazla altı haneli bir kodu seçin; ardından herhangi bir çerçeve bloğu ve iki panel bloğuyla bir Crafted Door yapın (ateş, portal, su ve lav da olabilir). Crafted kapılar daha sonra tezgâhta yeniden ayarlanabilir."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Gereksinimler: Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni, Fabric API 0.161.0+26.3 veya daha yeni, Java 25. Çok oyunculu oyun için Halia sunucuya da kurulmalıdır.",
+        "Düzeltildi: V1.2'den beri bir Aerie depolama bloğunu kırmak, bloğu içindeki bağlantı olmadan düşürüyordu; bu yüzden taşınan blok boş geri geliyordu. Artık içeriğini koruyor. Bu yolla daha önce kaybolan içerik geri getirilemez.",
+        "V1.2 dünyaları olduğu gibi açılır. Vigil cihazları ya da yeni kapılar içeren bir dünyayla V1.2'ye geri dönmeyin: bunlar silinir."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.2",
    "summary": "Halia V1.2.1 — envanter açılırken oluşan çökme düzeltildi",

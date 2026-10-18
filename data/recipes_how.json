@@ -1,6 +1,14 @@
 {
  "_comment": "station, inputs and the sentence (ja, en) of how-to cards; written by scripts/extract_recipes.py, read by web/scripts/extract_wiki.py",
  "cards": {
+  "halia:chiseled_dawn_quartz": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:dawn_quartz"
+   ],
+   "ja": "石切台で、暁の水晶ブロックを切り出す(作業台では作れない)",
+   "en": "Cut Block of Dawn Quartz on a stonecutter (it cannot be made at a workbench)"
+  },
   "halia:clutch_cell_16k": {
    "station": "workbench",
    "inputs": [
@@ -31,6 +39,23 @@
    "ja": "作業台で、抱卵セル 1K・抱卵セル 4K・抱卵セル 16K のどれかと蓄蔵格子 64Kを並べると、中身を保ったまま抱卵セル 64Kになります。",
    "en": "On a crafting table, put Clutch Cell 1K or Clutch Cell 4K or Clutch Cell 16K with Hoard Lattice 64K: the upgrade keeps the contents, and the result is Clutch Cell 64K."
   },
+  "halia:coach_house_door": {
+   "station": "workbench",
+   "inputs": [
+    "minecraft:oak_door"
+   ],
+   "ja": "作業台で(並べ方は自由)、オークのドアと、同じブロック 5 つ以上を並べる。そのブロックが枠になります。",
+   "en": "On a crafting table (any arrangement), put Oak Door with five or more of one block; that block becomes the frame."
+  },
+  "halia:coded_satchel": {
+   "station": "workbench",
+   "inputs": [
+    "halia:coded_satchel",
+    "#minecraft:dyes"
+   ],
+   "ja": "作業台で、暗証鞄と好きな染料を並べると、その色に染まります。",
+   "en": "On a crafting table, put Coded Satchel with any dye to colour it."
+  },
   "halia:contour_circuit": {
    "station": "furnace",
    "inputs": [
@@ -39,6 +64,38 @@
    "ja": "かまどで、未焼成の正羽回路を焼く(10 秒。作業台では作れない)",
    "en": "Smelt Unfired Contour Circuit in a furnace (10 s; it cannot be made at a workbench)"
   },
+  "halia:dawn_quartz_bricks": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:dawn_quartz"
+   ],
+   "ja": "石切台で、暁の水晶ブロックを切り出す(作業台では作れない)",
+   "en": "Cut Block of Dawn Quartz on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:dawn_quartz_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:dawn_quartz"
+   ],
+   "ja": "石切台で、暁の水晶ブロックを切り出す(作業台では作れない)",
+   "en": "Cut Block of Dawn Quartz on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:dawn_quartz_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:dawn_quartz"
+   ],
+   "ja": "石切台で、暁の水晶ブロックを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Block of Dawn Quartz on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:dawn_quartz_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:dawn_quartz"
+   ],
+   "ja": "石切台で、暁の水晶ブロックを切り出す(作業台では作れない)",
+   "en": "Cut Block of Dawn Quartz on a stonecutter (it cannot be made at a workbench)"
+  },
   "halia:down_circuit": {
    "station": "furnace",
    "inputs": [
@@ -46,6 +103,123 @@
    ],
    "ja": "かまどで、未焼成の綿羽回路を焼く(10 秒。作業台では作れない)",
    "en": "Smelt Unfired Down Circuit in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:eye_lens": {
+   "station": "workbench",
+   "inputs": [
+    "halia:eye_lens",
+    "#minecraft:dyes"
+   ],
+   "ja": "作業台で、眼のレンズと好きな染料を並べると、その色に染まります。",
+   "en": "On a crafting table, put Eye Lens with any dye to colour it."
+  },
+  "halia:false_lava_bucket": {
+   "station": "brewing",
+   "inputs": [
+    "minecraft:lava_bucket",
+    "minecraft:lingering_potion"
+   ],
+   "ja": "醸造台で、溶岩入りバケツを瓶の場所に置き、治癒の残留ポーションを材料にする(作業台では作れない)",
+   "en": "In a brewing stand, put Lava Bucket in a bottle's place and Lingering Potion of Healing as the ingredient (it cannot be made at a workbench)"
+  },
+  "halia:false_lava_bucket@2": {
+   "station": "brewing",
+   "inputs": [
+    "minecraft:lava_bucket",
+    "minecraft:potion"
+   ],
+   "ja": "醸造台で、溶岩入りバケツを瓶の場所に置き、治癒のポーションを材料にする(作業台では作れない)",
+   "en": "In a brewing stand, put Lava Bucket in a bottle's place and Potion of Healing as the ingredient (it cannot be made at a workbench)"
+  },
+  "halia:false_lava_bucket@3": {
+   "station": "brewing",
+   "inputs": [
+    "minecraft:lava_bucket",
+    "minecraft:splash_potion"
+   ],
+   "ja": "醸造台で、溶岩入りバケツを瓶の場所に置き、治癒のスプラッシュポーションを材料にする(作業台では作れない)",
+   "en": "In a brewing stand, put Lava Bucket in a bottle's place and Splash Potion of Healing as the ingredient (it cannot be made at a workbench)"
+  },
+  "halia:false_lava_bucket@4": {
+   "station": "brewing",
+   "inputs": [
+    "minecraft:lava_bucket",
+    "minecraft:lingering_potion"
+   ],
+   "ja": "醸造台で、溶岩入りバケツを瓶の場所に置き、治癒の残留ポーション IIを材料にする(作業台では作れない)",
+   "en": "In a brewing stand, put Lava Bucket in a bottle's place and Lingering Potion of Healing II as the ingredient (it cannot be made at a workbench)"
+  },
+  "halia:false_lava_bucket@5": {
+   "station": "brewing",
+   "inputs": [
+    "minecraft:lava_bucket",
+    "minecraft:potion"
+   ],
+   "ja": "醸造台で、溶岩入りバケツを瓶の場所に置き、治癒のポーション IIを材料にする(作業台では作れない)",
+   "en": "In a brewing stand, put Lava Bucket in a bottle's place and Potion of Healing II as the ingredient (it cannot be made at a workbench)"
+  },
+  "halia:false_lava_bucket@6": {
+   "station": "brewing",
+   "inputs": [
+    "minecraft:lava_bucket",
+    "minecraft:splash_potion"
+   ],
+   "ja": "醸造台で、溶岩入りバケツを瓶の場所に置き、治癒のスプラッシュポーション IIを材料にする(作業台では作れない)",
+   "en": "In a brewing stand, put Lava Bucket in a bottle's place and Splash Potion of Healing II as the ingredient (it cannot be made at a workbench)"
+  },
+  "halia:false_water_bucket": {
+   "station": "brewing",
+   "inputs": [
+    "minecraft:water_bucket",
+    "minecraft:lingering_potion"
+   ],
+   "ja": "醸造台で、水入りバケツを瓶の場所に置き、負傷の残留ポーションを材料にする(作業台では作れない)",
+   "en": "In a brewing stand, put Water Bucket in a bottle's place and Lingering Potion of Harming as the ingredient (it cannot be made at a workbench)"
+  },
+  "halia:false_water_bucket@2": {
+   "station": "brewing",
+   "inputs": [
+    "minecraft:water_bucket",
+    "minecraft:potion"
+   ],
+   "ja": "醸造台で、水入りバケツを瓶の場所に置き、負傷のポーションを材料にする(作業台では作れない)",
+   "en": "In a brewing stand, put Water Bucket in a bottle's place and Potion of Harming as the ingredient (it cannot be made at a workbench)"
+  },
+  "halia:false_water_bucket@3": {
+   "station": "brewing",
+   "inputs": [
+    "minecraft:water_bucket",
+    "minecraft:splash_potion"
+   ],
+   "ja": "醸造台で、水入りバケツを瓶の場所に置き、負傷のスプラッシュポーションを材料にする(作業台では作れない)",
+   "en": "In a brewing stand, put Water Bucket in a bottle's place and Splash Potion of Harming as the ingredient (it cannot be made at a workbench)"
+  },
+  "halia:false_water_bucket@4": {
+   "station": "brewing",
+   "inputs": [
+    "minecraft:water_bucket",
+    "minecraft:lingering_potion"
+   ],
+   "ja": "醸造台で、水入りバケツを瓶の場所に置き、負傷の残留ポーション IIを材料にする(作業台では作れない)",
+   "en": "In a brewing stand, put Water Bucket in a bottle's place and Lingering Potion of Harming II as the ingredient (it cannot be made at a workbench)"
+  },
+  "halia:false_water_bucket@5": {
+   "station": "brewing",
+   "inputs": [
+    "minecraft:water_bucket",
+    "minecraft:potion"
+   ],
+   "ja": "醸造台で、水入りバケツを瓶の場所に置き、負傷のポーション IIを材料にする(作業台では作れない)",
+   "en": "In a brewing stand, put Water Bucket in a bottle's place and Potion of Harming II as the ingredient (it cannot be made at a workbench)"
+  },
+  "halia:false_water_bucket@6": {
+   "station": "brewing",
+   "inputs": [
+    "minecraft:water_bucket",
+    "minecraft:splash_potion"
+   ],
+   "ja": "醸造台で、水入りバケツを瓶の場所に置き、負傷のスプラッシュポーション IIを材料にする(作業台では作れない)",
+   "en": "In a brewing stand, put Water Bucket in a bottle's place and Splash Potion of Harming II as the ingredient (it cannot be made at a workbench)"
   },
   "halia:flight_circuit": {
    "station": "furnace",
@@ -310,6 +484,14 @@
    "ja": "作業台で、蓄蔵ブロック 1K・蓄蔵ブロック 4K・蓄蔵ブロック 16K のどれかと蓄蔵格子 64Kを並べると、中身を保ったまま蓄蔵ブロック 64Kになります。",
    "en": "On a crafting table, put Hoard Block 1K or Hoard Block 4K or Hoard Block 16K with Hoard Lattice 64K: the upgrade keeps the contents, and the result is Hoard Block 64K."
   },
+  "halia:keep_door": {
+   "station": "workbench",
+   "inputs": [
+    "minecraft:spruce_door"
+   ],
+   "ja": "作業台で(並べ方は自由)、トウヒのドアと、同じブロック 5 つ以上を並べる。そのブロックが枠になります。",
+   "en": "On a crafting table (any arrangement), put Spruce Door with five or more of one block; that block becomes the frame."
+  },
   "halia:silica_wafer": {
    "station": "furnace",
    "inputs": [
@@ -317,6 +499,39 @@
    ],
    "ja": "かまどで、ネザークォーツを焼く(10 秒。作業台では作れない)",
    "en": "Smelt Nether Quartz in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:smooth_dawn_quartz": {
+   "station": "furnace",
+   "inputs": [
+    "halia:dawn_quartz"
+   ],
+   "ja": "かまどで、暁の水晶ブロックを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Block of Dawn Quartz in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:smooth_dawn_quartz_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:smooth_dawn_quartz"
+   ],
+   "ja": "石切台で、滑らかな暁の水晶ブロックを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Smooth Dawn Quartz Block on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:smooth_dawn_quartz_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:smooth_dawn_quartz"
+   ],
+   "ja": "石切台で、滑らかな暁の水晶ブロックを切り出す(作業台では作れない)",
+   "en": "Cut Smooth Dawn Quartz Block on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:snare_remote": {
+   "station": "workbench",
+   "inputs": [
+    "halia:snare_remote",
+    "halia:snare_remote"
+   ],
+   "ja": "作業台で、設定済みの罠の遠隔器と新しい罠の遠隔器を並べると、設定を写した 2 つ目ができます。",
+   "en": "On a crafting table, put a set-up Snare Remote with a new one to copy its settings to it."
   },
   "halia:soulsteel_ingot": {
    "station": "blast",
@@ -385,6 +600,2529 @@
    ],
    "ja": "作業台で、潮溜セル 64B・潮溜セル 256B・潮溜セル 1024B のどれかと潮溜格子 4096Bを並べると、中身を保ったまま潮溜セル 4096Bになります。",
    "en": "On a crafting table, put Tide Cell 64B or Tide Cell 256B or Tide Cell 1024B with Tide Lattice 4096B: the upgrade keeps the contents, and the result is Tide Cell 4096B."
+  },
+  "halia:tone_lock": {
+   "station": "workbench",
+   "inputs": [
+    "halia:tone_lock",
+    "halia:tone_lock"
+   ],
+   "ja": "作業台で、設定済みの音律錠と新しい音律錠を並べると、設定を写した 2 つ目ができます。",
+   "en": "On a crafting table, put a set-up Tone Lock with a new one to copy its settings to it."
+  },
+  "halia:turret_remote": {
+   "station": "workbench",
+   "inputs": [
+    "halia:turret_remote",
+    "halia:turret_remote"
+   ],
+   "ja": "作業台で、設定済みの砲台の遠隔器と新しい砲台の遠隔器を並べると、設定を写した 2 つ目ができます。",
+   "en": "On a crafting table, put a set-up Turret Remote with a new one to copy its settings to it."
+  },
+  "halia:warded_andesite_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_andesite"
+   ],
+   "ja": "石切台で、護りの安山岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Andesite on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_andesite_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_andesite"
+   ],
+   "ja": "石切台で、護りの安山岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Andesite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_andesite_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_andesite"
+   ],
+   "ja": "石切台で、護りの安山岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Andesite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_black_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_black_terracotta"
+   ],
+   "ja": "かまどで、護りの黒色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Black Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_blackstone_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_blackstone"
+   ],
+   "ja": "石切台で、護りのブラックストーンを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Blackstone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_blackstone_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_blackstone"
+   ],
+   "ja": "石切台で、護りのブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_blackstone_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_blackstone"
+   ],
+   "ja": "石切台で、護りのブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_blue_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_blue_terracotta"
+   ],
+   "ja": "かまどで、護りの青色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Blue Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_brick_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_bricks"
+   ],
+   "ja": "石切台で、護りのレンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_brick_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_bricks"
+   ],
+   "ja": "石切台で、護りのレンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_brick_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_bricks"
+   ],
+   "ja": "石切台で、護りのレンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_brown_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_brown_terracotta"
+   ],
+   "ja": "かまどで、護りの茶色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Brown Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_cinnabar": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar"
+   ],
+   "ja": "石切台で、護りの辰砂を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cinnabar on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_copper": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_copper_block"
+   ],
+   "ja": "石切台で、護りの銅ブロックを切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Block of Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_copper@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cut_copper"
+   ],
+   "ja": "石切台で、護りの切り込み入りの銅を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cut Copper on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_dawn_quartz_block": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_dawn_quartz_block"
+   ],
+   "ja": "石切台で、護りの暁の水晶ブロックを切り出す(作業台では作れない)",
+   "en": "Cut Warded Block of Dawn Quartz on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_deepslate": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_nether_bricks": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_nether_bricks"
+   ],
+   "ja": "石切台で、護りのネザーレンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Nether Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_polished_blackstone": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_blackstone"
+   ],
+   "ja": "石切台で、護りのブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_polished_blackstone@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_blackstone"
+   ],
+   "ja": "石切台で、護りの磨かれたブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_quartz_block": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_quartz_block"
+   ],
+   "ja": "石切台で、護りのクォーツブロックを切り出す(作業台では作れない)",
+   "en": "Cut Warded Block of Quartz on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_red_sandstone": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_red_sandstone"
+   ],
+   "ja": "石切台で、護りの赤い砂岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Red Sandstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_resin_bricks": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_resin_bricks"
+   ],
+   "ja": "石切台で、護りの樹脂レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Resin Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_sandstone": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sandstone"
+   ],
+   "ja": "石切台で、護りの砂岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Sandstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_stone_bricks": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_stone_bricks"
+   ],
+   "ja": "石切台で、護りの石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_stone_bricks@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_stone"
+   ],
+   "ja": "石切台で、護りの石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Stone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_sulfur": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur"
+   ],
+   "ja": "石切台で、護りの硫黄を切り出す(作業台では作れない)",
+   "en": "Cut Warded Sulfur on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_tuff": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff"
+   ],
+   "ja": "石切台で、護りの凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_tuff_bricks": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_tuff"
+   ],
+   "ja": "石切台で、護りの磨かれた凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_tuff_bricks@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff_bricks"
+   ],
+   "ja": "石切台で、護りの凝灰岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Tuff Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_chiseled_tuff_bricks@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff"
+   ],
+   "ja": "石切台で、護りの凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cinnabar_brick_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar_bricks"
+   ],
+   "ja": "石切台で、護りの辰砂レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Cinnabar Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cinnabar_brick_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar"
+   ],
+   "ja": "石切台で、護りの辰砂を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Cinnabar on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cinnabar_brick_slab@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_cinnabar"
+   ],
+   "ja": "石切台で、護りの磨かれた辰砂を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Cinnabar on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cinnabar_brick_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar_bricks"
+   ],
+   "ja": "石切台で、護りの辰砂レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Cinnabar Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cinnabar_brick_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar"
+   ],
+   "ja": "石切台で、護りの辰砂を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cinnabar on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cinnabar_brick_stairs@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_cinnabar"
+   ],
+   "ja": "石切台で、護りの磨かれた辰砂を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Cinnabar on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cinnabar_brick_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar_bricks"
+   ],
+   "ja": "石切台で、護りの辰砂レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Cinnabar Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cinnabar_brick_wall@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar"
+   ],
+   "ja": "石切台で、護りの辰砂を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cinnabar on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cinnabar_brick_wall@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_cinnabar"
+   ],
+   "ja": "石切台で、護りの磨かれた辰砂を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Cinnabar on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cinnabar_bricks": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar"
+   ],
+   "ja": "石切台で、護りの辰砂を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cinnabar on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cinnabar_bricks@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_cinnabar"
+   ],
+   "ja": "石切台で、護りの磨かれた辰砂を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Cinnabar on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cinnabar_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar"
+   ],
+   "ja": "石切台で、護りの辰砂を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Cinnabar on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cinnabar_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar"
+   ],
+   "ja": "石切台で、護りの辰砂を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cinnabar on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cinnabar_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar"
+   ],
+   "ja": "石切台で、護りの辰砂を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cinnabar on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cobbled_deepslate_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cobbled_deepslate_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cobbled_deepslate_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cobblestone_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobblestone"
+   ],
+   "ja": "石切台で、護りの丸石を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Cobblestone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cobblestone_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobblestone"
+   ],
+   "ja": "石切台で、護りの丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cobblestone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cobblestone_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobblestone"
+   ],
+   "ja": "石切台で、護りの丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cobblestone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_copper_grate": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_copper_block"
+   ],
+   "ja": "石切台で、護りの銅ブロックを切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Block of Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cracked_deepslate_bricks": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_deepslate_bricks"
+   ],
+   "ja": "かまどで、護りの深層岩レンガを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Deepslate Bricks in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_cracked_deepslate_tiles": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_deepslate_tiles"
+   ],
+   "ja": "かまどで、護りの深層岩タイルを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Deepslate Tiles in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_cracked_nether_bricks": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_nether_bricks"
+   ],
+   "ja": "かまどで、護りのネザーレンガを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Nether Bricks in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_cracked_polished_blackstone_bricks": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_polished_blackstone_bricks"
+   ],
+   "ja": "かまどで、護りの磨かれたブラックストーンレンガを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Polished Blackstone Bricks in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_cracked_stone_bricks": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_stone_bricks"
+   ],
+   "ja": "かまどで、護りの石レンガを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Stone Bricks in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_cut_copper": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_copper_block"
+   ],
+   "ja": "石切台で、護りの銅ブロックを切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Block of Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cut_copper_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_copper_block"
+   ],
+   "ja": "石切台で、護りの銅ブロックを切り出す(8 個できる)(作業台では作れない)",
+   "en": "Cut Warded Block of Copper on a stonecutter (makes 8) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cut_copper_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cut_copper"
+   ],
+   "ja": "石切台で、護りの切り込み入りの銅を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Cut Copper on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cut_copper_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_copper_block"
+   ],
+   "ja": "石切台で、護りの銅ブロックを切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Block of Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cut_copper_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cut_copper"
+   ],
+   "ja": "石切台で、護りの切り込み入りの銅を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cut Copper on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cut_red_sandstone": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_red_sandstone"
+   ],
+   "ja": "石切台で、護りの赤い砂岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Red Sandstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cut_red_sandstone_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cut_red_sandstone"
+   ],
+   "ja": "石切台で、護りの研がれた赤い砂岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Cut Red Sandstone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cut_red_sandstone_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_red_sandstone"
+   ],
+   "ja": "石切台で、護りの赤い砂岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Red Sandstone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cut_sandstone": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sandstone"
+   ],
+   "ja": "石切台で、護りの砂岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Sandstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_cut_sandstone_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cut_sandstone"
+   ],
+   "ja": "石切台で、護りの研がれた砂岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Cut Sandstone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cut_sandstone_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sandstone"
+   ],
+   "ja": "石切台で、護りの砂岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Sandstone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_cyan_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_cyan_terracotta"
+   ],
+   "ja": "かまどで、護りの青緑色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Cyan Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_dark_prismarine_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_dark_prismarine"
+   ],
+   "ja": "石切台で、護りのダークプリズマリンを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Dark Prismarine on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_dark_prismarine_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_dark_prismarine"
+   ],
+   "ja": "石切台で、護りのダークプリズマリンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Dark Prismarine on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_dawn_quartz_bricks": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_dawn_quartz_block"
+   ],
+   "ja": "石切台で、護りの暁の水晶ブロックを切り出す(作業台では作れない)",
+   "en": "Cut Warded Block of Dawn Quartz on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_dawn_quartz_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_dawn_quartz_block"
+   ],
+   "ja": "石切台で、護りの暁の水晶ブロックを切り出す(作業台では作れない)",
+   "en": "Cut Warded Block of Dawn Quartz on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_dawn_quartz_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_dawn_quartz_block"
+   ],
+   "ja": "石切台で、護りの暁の水晶ブロックを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Block of Dawn Quartz on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_dawn_quartz_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_dawn_quartz_block"
+   ],
+   "ja": "石切台で、護りの暁の水晶ブロックを切り出す(作業台では作れない)",
+   "en": "Cut Warded Block of Dawn Quartz on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "かまどで、護りの深層岩の丸石を焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Cobbled Deepslate in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_brick_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_brick_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_deepslate_bricks"
+   ],
+   "ja": "石切台で、護りの深層岩レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Deepslate Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_brick_slab@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_deepslate"
+   ],
+   "ja": "石切台で、護りの磨かれた深層岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Deepslate on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_brick_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_brick_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_deepslate_bricks"
+   ],
+   "ja": "石切台で、護りの深層岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Deepslate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_brick_stairs@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_deepslate"
+   ],
+   "ja": "石切台で、護りの磨かれた深層岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_brick_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_brick_wall@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_deepslate_bricks"
+   ],
+   "ja": "石切台で、護りの深層岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Deepslate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_brick_wall@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_deepslate"
+   ],
+   "ja": "石切台で、護りの磨かれた深層岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_bricks": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_bricks@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_deepslate"
+   ],
+   "ja": "石切台で、護りの磨かれた深層岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tile_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tile_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_deepslate_bricks"
+   ],
+   "ja": "石切台で、護りの深層岩レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Deepslate Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tile_slab@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_deepslate_tiles"
+   ],
+   "ja": "石切台で、護りの深層岩タイルを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Deepslate Tiles on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tile_slab@4": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_deepslate"
+   ],
+   "ja": "石切台で、護りの磨かれた深層岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Deepslate on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tile_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tile_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_deepslate_bricks"
+   ],
+   "ja": "石切台で、護りの深層岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Deepslate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tile_stairs@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_deepslate_tiles"
+   ],
+   "ja": "石切台で、護りの深層岩タイルを切り出す(作業台では作れない)",
+   "en": "Cut Warded Deepslate Tiles on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tile_stairs@4": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_deepslate"
+   ],
+   "ja": "石切台で、護りの磨かれた深層岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tile_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tile_wall@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_deepslate_bricks"
+   ],
+   "ja": "石切台で、護りの深層岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Deepslate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tile_wall@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_deepslate_tiles"
+   ],
+   "ja": "石切台で、護りの深層岩タイルを切り出す(作業台では作れない)",
+   "en": "Cut Warded Deepslate Tiles on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tile_wall@4": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_deepslate"
+   ],
+   "ja": "石切台で、護りの磨かれた深層岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tiles@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_deepslate_bricks"
+   ],
+   "ja": "石切台で、護りの深層岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Deepslate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_deepslate_tiles@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_deepslate"
+   ],
+   "ja": "石切台で、護りの磨かれた深層岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_diorite_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_diorite"
+   ],
+   "ja": "石切台で、護りの閃緑岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Diorite on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_diorite_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_diorite"
+   ],
+   "ja": "石切台で、護りの閃緑岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Diorite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_diorite_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_diorite"
+   ],
+   "ja": "石切台で、護りの閃緑岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Diorite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_end_stone_brick_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_end_stone_bricks"
+   ],
+   "ja": "石切台で、護りのエンドストーンレンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded End Stone Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_end_stone_brick_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_end_stone"
+   ],
+   "ja": "石切台で、護りのエンドストーンを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded End Stone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_end_stone_brick_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_end_stone_bricks"
+   ],
+   "ja": "石切台で、護りのエンドストーンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded End Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_end_stone_brick_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_end_stone"
+   ],
+   "ja": "石切台で、護りのエンドストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded End Stone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_end_stone_brick_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_end_stone_bricks"
+   ],
+   "ja": "石切台で、護りのエンドストーンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded End Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_end_stone_brick_wall@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_end_stone"
+   ],
+   "ja": "石切台で、護りのエンドストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded End Stone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_end_stone_bricks": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_end_stone"
+   ],
+   "ja": "石切台で、護りのエンドストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded End Stone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_exposed_chiseled_copper": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_exposed_copper"
+   ],
+   "ja": "石切台で、護りの風化した銅を切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Exposed Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_exposed_chiseled_copper@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_exposed_cut_copper"
+   ],
+   "ja": "石切台で、護りの風化した切り込み入りの銅を切り出す(作業台では作れない)",
+   "en": "Cut Warded Exposed Cut Copper on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_exposed_copper_grate": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_exposed_copper"
+   ],
+   "ja": "石切台で、護りの風化した銅を切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Exposed Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_exposed_cut_copper": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_exposed_copper"
+   ],
+   "ja": "石切台で、護りの風化した銅を切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Exposed Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_exposed_cut_copper_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_exposed_copper"
+   ],
+   "ja": "石切台で、護りの風化した銅を切り出す(8 個できる)(作業台では作れない)",
+   "en": "Cut Warded Exposed Copper on a stonecutter (makes 8) (it cannot be made at a workbench)"
+  },
+  "halia:warded_exposed_cut_copper_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_exposed_cut_copper"
+   ],
+   "ja": "石切台で、護りの風化した切り込み入りの銅を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Exposed Cut Copper on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_exposed_cut_copper_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_exposed_copper"
+   ],
+   "ja": "石切台で、護りの風化した銅を切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Exposed Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_exposed_cut_copper_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_exposed_cut_copper"
+   ],
+   "ja": "石切台で、護りの風化した切り込み入りの銅を切り出す(作業台では作れない)",
+   "en": "Cut Warded Exposed Cut Copper on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_glass": {
+   "station": "furnace",
+   "inputs": [
+    "#halia:reinforced/sand"
+   ],
+   "ja": "かまどで、護りの赤い砂・護りの砂・怪しげな砂の罠 のどれかを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Red Sand or Warded Sand or Suspicious Sand Snare in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_granite_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_granite"
+   ],
+   "ja": "石切台で、護りの花崗岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Granite on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_granite_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_granite"
+   ],
+   "ja": "石切台で、護りの花崗岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Granite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_granite_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_granite"
+   ],
+   "ja": "石切台で、護りの花崗岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Granite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_gray_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_gray_terracotta"
+   ],
+   "ja": "かまどで、護りの灰色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Gray Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_green_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_green_terracotta"
+   ],
+   "ja": "かまどで、護りの緑色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Green Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_hardened_clay": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_clay"
+   ],
+   "ja": "かまどで、護りの粘土を焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Clay in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_light_blue_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_light_blue_terracotta"
+   ],
+   "ja": "かまどで、護りの空色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Light Blue Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_light_gray_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_light_gray_terracotta"
+   ],
+   "ja": "かまどで、護りの薄灰色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Light Gray Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_lime_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_lime_terracotta"
+   ],
+   "ja": "かまどで、護りの黄緑色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Lime Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_magenta_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_magenta_terracotta"
+   ],
+   "ja": "かまどで、護りの赤紫色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Magenta Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_mossy_cobblestone_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_mossy_cobblestone"
+   ],
+   "ja": "石切台で、護りの苔むした丸石を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Mossy Cobblestone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_mossy_cobblestone_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_mossy_cobblestone"
+   ],
+   "ja": "石切台で、護りの苔むした丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Mossy Cobblestone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_mossy_cobblestone_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_mossy_cobblestone"
+   ],
+   "ja": "石切台で、護りの苔むした丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Mossy Cobblestone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_mossy_stone_brick_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_mossy_stone_bricks"
+   ],
+   "ja": "石切台で、護りの苔むした石レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Mossy Stone Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_mossy_stone_brick_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_mossy_stone_bricks"
+   ],
+   "ja": "石切台で、護りの苔むした石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Mossy Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_mossy_stone_brick_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_mossy_stone_bricks"
+   ],
+   "ja": "石切台で、護りの苔むした石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Mossy Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_mud_brick_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_mud_bricks"
+   ],
+   "ja": "石切台で、護りの泥レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Mud Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_mud_brick_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_mud_bricks"
+   ],
+   "ja": "石切台で、護りの泥レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Mud Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_mud_brick_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_mud_bricks"
+   ],
+   "ja": "石切台で、護りの泥レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Mud Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_nether_brick_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_nether_bricks"
+   ],
+   "ja": "石切台で、護りのネザーレンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Nether Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_nether_brick_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_nether_bricks"
+   ],
+   "ja": "石切台で、護りのネザーレンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Nether Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_nether_brick_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_nether_bricks"
+   ],
+   "ja": "石切台で、護りのネザーレンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Nether Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_normal_stone_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_stone"
+   ],
+   "ja": "石切台で、護りの石を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Stone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_orange_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_orange_terracotta"
+   ],
+   "ja": "かまどで、護りの橙色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Orange Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_oxidized_chiseled_copper": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_oxidized_copper"
+   ],
+   "ja": "石切台で、護りの酸化した銅を切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Oxidized Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_oxidized_chiseled_copper@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_oxidized_cut_copper"
+   ],
+   "ja": "石切台で、護りの酸化した切り込み入りの銅を切り出す(作業台では作れない)",
+   "en": "Cut Warded Oxidized Cut Copper on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_oxidized_copper_grate": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_oxidized_copper"
+   ],
+   "ja": "石切台で、護りの酸化した銅を切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Oxidized Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_oxidized_cut_copper": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_oxidized_copper"
+   ],
+   "ja": "石切台で、護りの酸化した銅を切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Oxidized Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_oxidized_cut_copper_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_oxidized_copper"
+   ],
+   "ja": "石切台で、護りの酸化した銅を切り出す(8 個できる)(作業台では作れない)",
+   "en": "Cut Warded Oxidized Copper on a stonecutter (makes 8) (it cannot be made at a workbench)"
+  },
+  "halia:warded_oxidized_cut_copper_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_oxidized_cut_copper"
+   ],
+   "ja": "石切台で、護りの酸化した切り込み入りの銅を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Oxidized Cut Copper on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_oxidized_cut_copper_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_oxidized_copper"
+   ],
+   "ja": "石切台で、護りの酸化した銅を切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Oxidized Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_oxidized_cut_copper_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_oxidized_cut_copper"
+   ],
+   "ja": "石切台で、護りの酸化した切り込み入りの銅を切り出す(作業台では作れない)",
+   "en": "Cut Warded Oxidized Cut Copper on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_pink_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_pink_terracotta"
+   ],
+   "ja": "かまどで、護りの桃色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Pink Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_andesite": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_andesite"
+   ],
+   "ja": "石切台で、護りの安山岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Andesite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_andesite_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_andesite"
+   ],
+   "ja": "石切台で、護りの安山岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Andesite on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_andesite_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_andesite"
+   ],
+   "ja": "石切台で、護りの磨かれた安山岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Andesite on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_andesite_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_andesite"
+   ],
+   "ja": "石切台で、護りの安山岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Andesite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_andesite_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_andesite"
+   ],
+   "ja": "石切台で、護りの磨かれた安山岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Andesite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_basalt": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_basalt"
+   ],
+   "ja": "石切台で、護りの玄武岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Basalt on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_blackstone"
+   ],
+   "ja": "石切台で、護りのブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_brick_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_blackstone"
+   ],
+   "ja": "石切台で、護りのブラックストーンを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Blackstone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_brick_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_blackstone_bricks"
+   ],
+   "ja": "石切台で、護りの磨かれたブラックストーンレンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Blackstone Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_brick_slab@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_blackstone"
+   ],
+   "ja": "石切台で、護りの磨かれたブラックストーンを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Blackstone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_brick_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_blackstone"
+   ],
+   "ja": "石切台で、護りのブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_brick_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_blackstone_bricks"
+   ],
+   "ja": "石切台で、護りの磨かれたブラックストーンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Blackstone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_brick_stairs@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_blackstone"
+   ],
+   "ja": "石切台で、護りの磨かれたブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_brick_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_blackstone"
+   ],
+   "ja": "石切台で、護りのブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_brick_wall@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_blackstone_bricks"
+   ],
+   "ja": "石切台で、護りの磨かれたブラックストーンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Blackstone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_brick_wall@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_blackstone"
+   ],
+   "ja": "石切台で、護りの磨かれたブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_bricks": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_blackstone"
+   ],
+   "ja": "石切台で、護りのブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_bricks@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_blackstone"
+   ],
+   "ja": "石切台で、護りの磨かれたブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_blackstone"
+   ],
+   "ja": "石切台で、護りのブラックストーンを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Blackstone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_blackstone"
+   ],
+   "ja": "石切台で、護りの磨かれたブラックストーンを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Blackstone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_blackstone"
+   ],
+   "ja": "石切台で、護りのブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_blackstone"
+   ],
+   "ja": "石切台で、護りの磨かれたブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_blackstone"
+   ],
+   "ja": "石切台で、護りのブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_blackstone_wall@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_blackstone"
+   ],
+   "ja": "石切台で、護りの磨かれたブラックストーンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Blackstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_cinnabar": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar"
+   ],
+   "ja": "石切台で、護りの辰砂を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cinnabar on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_cinnabar_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar"
+   ],
+   "ja": "石切台で、護りの辰砂を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Cinnabar on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_cinnabar_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_cinnabar"
+   ],
+   "ja": "石切台で、護りの磨かれた辰砂を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Cinnabar on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_cinnabar_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar"
+   ],
+   "ja": "石切台で、護りの辰砂を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cinnabar on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_cinnabar_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_cinnabar"
+   ],
+   "ja": "石切台で、護りの磨かれた辰砂を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Cinnabar on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_cinnabar_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cinnabar"
+   ],
+   "ja": "石切台で、護りの辰砂を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cinnabar on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_cinnabar_wall@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_cinnabar"
+   ],
+   "ja": "石切台で、護りの磨かれた辰砂を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Cinnabar on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_deepslate": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_deepslate_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_deepslate_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_deepslate"
+   ],
+   "ja": "石切台で、護りの磨かれた深層岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Deepslate on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_deepslate_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_deepslate_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_deepslate"
+   ],
+   "ja": "石切台で、護りの磨かれた深層岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_deepslate_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_cobbled_deepslate"
+   ],
+   "ja": "石切台で、護りの深層岩の丸石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Cobbled Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_deepslate_wall@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_deepslate"
+   ],
+   "ja": "石切台で、護りの磨かれた深層岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Deepslate on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_diorite": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_diorite"
+   ],
+   "ja": "石切台で、護りの閃緑岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Diorite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_diorite_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_diorite"
+   ],
+   "ja": "石切台で、護りの閃緑岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Diorite on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_diorite_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_diorite"
+   ],
+   "ja": "石切台で、護りの磨かれた閃緑岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Diorite on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_diorite_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_diorite"
+   ],
+   "ja": "石切台で、護りの閃緑岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Diorite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_diorite_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_diorite"
+   ],
+   "ja": "石切台で、護りの磨かれた閃緑岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Diorite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_granite": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_granite"
+   ],
+   "ja": "石切台で、護りの花崗岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Granite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_granite_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_granite"
+   ],
+   "ja": "石切台で、護りの花崗岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Granite on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_granite_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_granite"
+   ],
+   "ja": "石切台で、護りの磨かれた花崗岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Granite on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_granite_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_granite"
+   ],
+   "ja": "石切台で、護りの花崗岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Granite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_granite_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_granite"
+   ],
+   "ja": "石切台で、護りの磨かれた花崗岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Granite on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_sulfur": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur"
+   ],
+   "ja": "石切台で、護りの硫黄を切り出す(作業台では作れない)",
+   "en": "Cut Warded Sulfur on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_sulfur_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_sulfur"
+   ],
+   "ja": "石切台で、護りの磨かれた硫黄を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Sulfur on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_sulfur_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur"
+   ],
+   "ja": "石切台で、護りの硫黄を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Sulfur on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_sulfur_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_sulfur"
+   ],
+   "ja": "石切台で、護りの磨かれた硫黄を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Sulfur on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_sulfur_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur"
+   ],
+   "ja": "石切台で、護りの硫黄を切り出す(作業台では作れない)",
+   "en": "Cut Warded Sulfur on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_sulfur_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_sulfur"
+   ],
+   "ja": "石切台で、護りの磨かれた硫黄を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Sulfur on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_sulfur_wall@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur"
+   ],
+   "ja": "石切台で、護りの硫黄を切り出す(作業台では作れない)",
+   "en": "Cut Warded Sulfur on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_tuff": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff"
+   ],
+   "ja": "石切台で、護りの凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_tuff_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff"
+   ],
+   "ja": "石切台で、護りの凝灰岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Tuff on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_tuff_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff"
+   ],
+   "ja": "石切台で、護りの凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_tuff_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_tuff"
+   ],
+   "ja": "石切台で、護りの磨かれた凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_polished_tuff_wall@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff"
+   ],
+   "ja": "石切台で、護りの凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_prismarine_brick_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_prismarine_bricks"
+   ],
+   "ja": "石切台で、護りのプリズマリンレンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Prismarine Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_prismarine_brick_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_prismarine_bricks"
+   ],
+   "ja": "石切台で、護りのプリズマリンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Prismarine Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_prismarine_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_prismarine"
+   ],
+   "ja": "石切台で、護りのプリズマリンを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Prismarine on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_prismarine_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_prismarine"
+   ],
+   "ja": "石切台で、護りのプリズマリンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Prismarine on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_prismarine_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_prismarine"
+   ],
+   "ja": "石切台で、護りのプリズマリンを切り出す(作業台では作れない)",
+   "en": "Cut Warded Prismarine on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_purple_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_purple_terracotta"
+   ],
+   "ja": "かまどで、護りの紫色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Purple Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_purpur_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_purpur_block"
+   ],
+   "ja": "石切台で、護りのプルプァブロックを切り出す(作業台では作れない)",
+   "en": "Cut Warded Purpur Block on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_purpur_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_purpur_block"
+   ],
+   "ja": "石切台で、護りのプルプァブロックを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Purpur Block on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_purpur_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_purpur_block"
+   ],
+   "ja": "石切台で、護りのプルプァブロックを切り出す(作業台では作れない)",
+   "en": "Cut Warded Purpur Block on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_quartz_bricks": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_quartz_block"
+   ],
+   "ja": "石切台で、護りのクォーツブロックを切り出す(作業台では作れない)",
+   "en": "Cut Warded Block of Quartz on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_quartz_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_quartz_block"
+   ],
+   "ja": "石切台で、護りのクォーツブロックを切り出す(作業台では作れない)",
+   "en": "Cut Warded Block of Quartz on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_quartz_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_quartz_block"
+   ],
+   "ja": "石切台で、護りのクォーツブロックを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Block of Quartz on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_quartz_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_quartz_block"
+   ],
+   "ja": "石切台で、護りのクォーツブロックを切り出す(作業台では作れない)",
+   "en": "Cut Warded Block of Quartz on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_red_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_red_terracotta"
+   ],
+   "ja": "かまどで、護りの赤色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Red Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_red_nether_brick_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_red_nether_bricks"
+   ],
+   "ja": "石切台で、護りの赤いネザーレンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Red Nether Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_red_nether_brick_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_red_nether_bricks"
+   ],
+   "ja": "石切台で、護りの赤いネザーレンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Red Nether Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_red_nether_brick_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_red_nether_bricks"
+   ],
+   "ja": "石切台で、護りの赤いネザーレンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Red Nether Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_red_sandstone_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_red_sandstone"
+   ],
+   "ja": "石切台で、護りの赤い砂岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Red Sandstone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_red_sandstone_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_red_sandstone"
+   ],
+   "ja": "石切台で、護りの赤い砂岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Red Sandstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_red_sandstone_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_red_sandstone"
+   ],
+   "ja": "石切台で、護りの赤い砂岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Red Sandstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_resin_brick_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_resin_bricks"
+   ],
+   "ja": "石切台で、護りの樹脂レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Resin Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_resin_brick_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_resin_bricks"
+   ],
+   "ja": "石切台で、護りの樹脂レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Resin Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_resin_brick_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_resin_bricks"
+   ],
+   "ja": "石切台で、護りの樹脂レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Resin Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_sandstone_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sandstone"
+   ],
+   "ja": "石切台で、護りの砂岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Sandstone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_sandstone_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sandstone"
+   ],
+   "ja": "石切台で、護りの砂岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Sandstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_sandstone_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sandstone"
+   ],
+   "ja": "石切台で、護りの砂岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Sandstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_smooth_basalt": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_basalt"
+   ],
+   "ja": "かまどで、護りの玄武岩を焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Basalt in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_smooth_dawn_quartz": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_dawn_quartz_block"
+   ],
+   "ja": "かまどで、護りの暁の水晶ブロックを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Block of Dawn Quartz in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_smooth_dawn_quartz_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_smooth_dawn_quartz"
+   ],
+   "ja": "石切台で、護りの滑らかな暁の水晶ブロックを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Smooth Dawn Quartz Block on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_smooth_dawn_quartz_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_smooth_dawn_quartz"
+   ],
+   "ja": "石切台で、護りの滑らかな暁の水晶ブロックを切り出す(作業台では作れない)",
+   "en": "Cut Warded Smooth Dawn Quartz Block on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_smooth_quartz": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_quartz_block"
+   ],
+   "ja": "かまどで、護りのクォーツブロックを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Block of Quartz in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_smooth_quartz_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_smooth_quartz"
+   ],
+   "ja": "石切台で、護りの滑らかなクォーツブロックを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Smooth Quartz Block on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_smooth_quartz_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_smooth_quartz"
+   ],
+   "ja": "石切台で、護りの滑らかなクォーツブロックを切り出す(作業台では作れない)",
+   "en": "Cut Warded Smooth Quartz Block on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_smooth_red_sandstone": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_red_sandstone"
+   ],
+   "ja": "かまどで、護りの赤い砂岩を焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Red Sandstone in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_smooth_red_sandstone_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_smooth_red_sandstone"
+   ],
+   "ja": "石切台で、護りの滑らかな赤い砂岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Smooth Red Sandstone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_smooth_red_sandstone_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_smooth_red_sandstone"
+   ],
+   "ja": "石切台で、護りの滑らかな赤い砂岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Smooth Red Sandstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_smooth_sandstone": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_sandstone"
+   ],
+   "ja": "かまどで、護りの砂岩を焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Sandstone in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_smooth_sandstone_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_smooth_sandstone"
+   ],
+   "ja": "石切台で、護りの滑らかな砂岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Smooth Sandstone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_smooth_sandstone_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_smooth_sandstone"
+   ],
+   "ja": "石切台で、護りの滑らかな砂岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Smooth Sandstone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_smooth_stone": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_stone"
+   ],
+   "ja": "かまどで、護りの石を焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Stone in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_stone": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_cobblestone"
+   ],
+   "ja": "かまどで、護りの丸石を焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Cobblestone in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_stone_brick_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_stone_bricks"
+   ],
+   "ja": "石切台で、護りの石レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Stone Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_stone_brick_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_stone"
+   ],
+   "ja": "石切台で、護りの石を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Stone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_stone_brick_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_stone_bricks"
+   ],
+   "ja": "石切台で、護りの石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_stone_brick_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_stone"
+   ],
+   "ja": "石切台で、護りの石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Stone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_stone_brick_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_stone_bricks"
+   ],
+   "ja": "石切台で、護りの石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_stone_brick_wall@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_stone"
+   ],
+   "ja": "石切台で、護りの石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Stone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_stone_bricks": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_stone"
+   ],
+   "ja": "石切台で、護りの石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Stone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_stone_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_smooth_stone"
+   ],
+   "ja": "石切台で、護りの滑らかな石を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Smooth Stone on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_stone_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_stone"
+   ],
+   "ja": "石切台で、護りの石を切り出す(作業台では作れない)",
+   "en": "Cut Warded Stone on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_sulfur_brick_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_sulfur"
+   ],
+   "ja": "石切台で、護りの磨かれた硫黄を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Sulfur on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_sulfur_brick_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur_bricks"
+   ],
+   "ja": "石切台で、護りの硫黄レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Sulfur Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_sulfur_brick_slab@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur"
+   ],
+   "ja": "石切台で、護りの硫黄を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Sulfur on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_sulfur_brick_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_sulfur"
+   ],
+   "ja": "石切台で、護りの磨かれた硫黄を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Sulfur on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_sulfur_brick_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur_bricks"
+   ],
+   "ja": "石切台で、護りの硫黄レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Sulfur Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_sulfur_brick_stairs@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur"
+   ],
+   "ja": "石切台で、護りの硫黄を切り出す(作業台では作れない)",
+   "en": "Cut Warded Sulfur on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_sulfur_brick_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_sulfur"
+   ],
+   "ja": "石切台で、護りの磨かれた硫黄を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Sulfur on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_sulfur_brick_wall@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur_bricks"
+   ],
+   "ja": "石切台で、護りの硫黄レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Sulfur Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_sulfur_brick_wall@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur"
+   ],
+   "ja": "石切台で、護りの硫黄を切り出す(作業台では作れない)",
+   "en": "Cut Warded Sulfur on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_sulfur_bricks": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_sulfur"
+   ],
+   "ja": "石切台で、護りの磨かれた硫黄を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Sulfur on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_sulfur_bricks@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur"
+   ],
+   "ja": "石切台で、護りの硫黄を切り出す(作業台では作れない)",
+   "en": "Cut Warded Sulfur on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_sulfur_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur"
+   ],
+   "ja": "石切台で、護りの硫黄を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Sulfur on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_sulfur_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur"
+   ],
+   "ja": "石切台で、護りの硫黄を切り出す(作業台では作れない)",
+   "en": "Cut Warded Sulfur on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_sulfur_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_sulfur"
+   ],
+   "ja": "石切台で、護りの硫黄を切り出す(作業台では作れない)",
+   "en": "Cut Warded Sulfur on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_brick_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_tuff"
+   ],
+   "ja": "石切台で、護りの磨かれた凝灰岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Tuff on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_brick_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff_bricks"
+   ],
+   "ja": "石切台で、護りの凝灰岩レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Tuff Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_brick_slab@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff"
+   ],
+   "ja": "石切台で、護りの凝灰岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Tuff on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_brick_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_tuff"
+   ],
+   "ja": "石切台で、護りの磨かれた凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_brick_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff_bricks"
+   ],
+   "ja": "石切台で、護りの凝灰岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Tuff Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_brick_stairs@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff"
+   ],
+   "ja": "石切台で、護りの凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_brick_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_tuff"
+   ],
+   "ja": "石切台で、護りの磨かれた凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_brick_wall@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff_bricks"
+   ],
+   "ja": "石切台で、護りの凝灰岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Warded Tuff Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_brick_wall@3": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff"
+   ],
+   "ja": "石切台で、護りの凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_bricks": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_tuff"
+   ],
+   "ja": "石切台で、護りの磨かれた凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_bricks@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff"
+   ],
+   "ja": "石切台で、護りの凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_tuff"
+   ],
+   "ja": "石切台で、護りの磨かれた凝灰岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Polished Tuff on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff"
+   ],
+   "ja": "石切台で、護りの凝灰岩を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Tuff on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_polished_tuff"
+   ],
+   "ja": "石切台で、護りの磨かれた凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Polished Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff"
+   ],
+   "ja": "石切台で、護りの凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_tuff_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_tuff"
+   ],
+   "ja": "石切台で、護りの凝灰岩を切り出す(作業台では作れない)",
+   "en": "Cut Warded Tuff on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_weathered_chiseled_copper": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_weathered_copper"
+   ],
+   "ja": "石切台で、護りの錆びた銅を切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Weathered Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_weathered_chiseled_copper@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_weathered_cut_copper"
+   ],
+   "ja": "石切台で、護りの錆びた切り込み入りの銅を切り出す(作業台では作れない)",
+   "en": "Cut Warded Weathered Cut Copper on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_weathered_copper_grate": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_weathered_copper"
+   ],
+   "ja": "石切台で、護りの錆びた銅を切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Weathered Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_weathered_cut_copper": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_weathered_copper"
+   ],
+   "ja": "石切台で、護りの錆びた銅を切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Weathered Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_weathered_cut_copper_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_weathered_copper"
+   ],
+   "ja": "石切台で、護りの錆びた銅を切り出す(8 個できる)(作業台では作れない)",
+   "en": "Cut Warded Weathered Copper on a stonecutter (makes 8) (it cannot be made at a workbench)"
+  },
+  "halia:warded_weathered_cut_copper_slab@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_weathered_cut_copper"
+   ],
+   "ja": "石切台で、護りの錆びた切り込み入りの銅を切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Warded Weathered Cut Copper on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "halia:warded_weathered_cut_copper_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_weathered_copper"
+   ],
+   "ja": "石切台で、護りの錆びた銅を切り出す(4 個できる)(作業台では作れない)",
+   "en": "Cut Warded Weathered Copper on a stonecutter (makes 4) (it cannot be made at a workbench)"
+  },
+  "halia:warded_weathered_cut_copper_stairs@2": {
+   "station": "stonecutter",
+   "inputs": [
+    "halia:warded_weathered_cut_copper"
+   ],
+   "ja": "石切台で、護りの錆びた切り込み入りの銅を切り出す(作業台では作れない)",
+   "en": "Cut Warded Weathered Cut Copper on a stonecutter (it cannot be made at a workbench)"
+  },
+  "halia:warded_white_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_white_terracotta"
+   ],
+   "ja": "かまどで、護りの白色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded White Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warded_yellow_glazed_terracotta": {
+   "station": "furnace",
+   "inputs": [
+    "halia:warded_yellow_terracotta"
+   ],
+   "ja": "かまどで、護りの黄色のテラコッタを焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Warded Yellow Terracotta in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "halia:warding_tool_1": {
+   "station": "workbench",
+   "inputs": [
+    "halia:warding_tool_1",
+    "halia:warding_tool_2",
+    "halia:warding_tool_3"
+   ],
+   "ja": "作業台で、護りの工具(護りの工具 1・護りの工具 2・護りの工具 3 のどれか)と護れるブロックを合わせると、護りのブロックになります。",
+   "en": "On a crafting table, put a warding tool (Warding Tool 1 or Warding Tool 2 or Warding Tool 3) with any block it can ward to get the warded block."
+  },
+  "halia:warding_tool_2": {
+   "station": "workbench",
+   "inputs": [
+    "halia:warding_tool_2",
+    "halia:warding_tool_3"
+   ],
+   "ja": "作業台で、護りのブロックと護りの工具(護りの工具 2・護りの工具 3 のどれか)を合わせると、元のブロックに戻ります。",
+   "en": "On a crafting table, put a warded block with a warding tool (Warding Tool 2 or Warding Tool 3) to get the plain block back."
+  },
+  "halia:watch_pass_1": {
+   "station": "workbench",
+   "inputs": [
+    "halia:watch_pass_1",
+    "halia:fading_watch_pass"
+   ],
+   "ja": "作業台で、見張りの通行証 1と消えゆく通行証を並べると、回数に限りのある見張りの通行証 1が 2 枚できます。",
+   "en": "On a crafting table, put Level 1 Watch Pass with Fading Watch Pass: it makes 2 Level 1 Watch Pass with a limited number of uses."
+  },
+  "halia:watch_pass_2": {
+   "station": "workbench",
+   "inputs": [
+    "halia:watch_pass_2",
+    "halia:fading_watch_pass"
+   ],
+   "ja": "作業台で、見張りの通行証 2と消えゆく通行証を並べると、回数に限りのある見張りの通行証 2が 2 枚できます。",
+   "en": "On a crafting table, put Level 2 Watch Pass with Fading Watch Pass: it makes 2 Level 2 Watch Pass with a limited number of uses."
+  },
+  "halia:watch_pass_3": {
+   "station": "workbench",
+   "inputs": [
+    "halia:watch_pass_3",
+    "halia:fading_watch_pass"
+   ],
+   "ja": "作業台で、見張りの通行証 3と消えゆく通行証を並べると、回数に限りのある見張りの通行証 3が 2 枚できます。",
+   "en": "On a crafting table, put Level 3 Watch Pass with Fading Watch Pass: it makes 2 Level 3 Watch Pass with a limited number of uses."
+  },
+  "halia:watch_pass_4": {
+   "station": "workbench",
+   "inputs": [
+    "halia:watch_pass_4",
+    "halia:fading_watch_pass"
+   ],
+   "ja": "作業台で、見張りの通行証 4と消えゆく通行証を並べると、回数に限りのある見張りの通行証 4が 2 枚できます。",
+   "en": "On a crafting table, put Level 4 Watch Pass with Fading Watch Pass: it makes 2 Level 4 Watch Pass with a limited number of uses."
+  },
+  "halia:watch_pass_5": {
+   "station": "workbench",
+   "inputs": [
+    "halia:watch_pass_5",
+    "halia:fading_watch_pass"
+   ],
+   "ja": "作業台で、見張りの通行証 5と消えゆく通行証を並べると、回数に限りのある見張りの通行証 5が 2 枚できます。",
+   "en": "On a crafting table, put Level 5 Watch Pass with Fading Watch Pass: it makes 2 Level 5 Watch Pass with a limited number of uses."
+  },
+  "halia:watch_slate": {
+   "station": "workbench",
+   "inputs": [
+    "halia:watch_slate",
+    "halia:watch_slate"
+   ],
+   "ja": "作業台で、設定済みの見張りの石板と新しい見張りの石板を並べると、設定を写した 2 つ目ができます。",
+   "en": "On a crafting table, put a set-up Watch Slate with a new one to copy its settings to it."
   },
   "tsubomi:ancient_shrine_stone_chiseled": {
    "station": "stonecutter",

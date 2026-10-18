@@ -1,11 +1,45 @@
 {
  "lang": "de",
  "brand": "halia",
- "updated": "2026-10-16",
+ "updated": "2026-10-19",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-16",
+ "updated_label": "Aktualisiert am 2026-10-19",
  "note": "",
  "groups": [
+  {
+   "label": "V1.3",
+   "summary": "Halia V1.3 — die Vigil, 46 Türen und die Doorwright's Bench",
+   "releases": [
+    {
+     "version": "V1.3.0",
+     "date": "2026-10-19",
+     "type": "release",
+     "title": "Halia V1.3 — die Vigil, 46 Türen und die Doorwright's Bench",
+     "summary": "Halia V1.3 fügt die Vigil hinzu, eine Reihe von Geräten zum Sichern dessen, was du baust: geschützte Blöcke, die nur ihr Besitzer abbauen kann, Kameras, Codeschlösser, Passleser, Fallen und Geschütztürme. Außerdem kommen 46 Türen, Luken und Tore hinzu, die sich mit echter Bewegung öffnen, und die Doorwright's Bench, an der du deine eigene Tür entwirfst.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Die Vigil: 593 geschützte Varianten von Bausteinen, die nur ihr Besitzer abbauen kann; Watch Eyes, durch die du von einem Watch Slate aus hindurchsehen kannst; Code Plates, Coded Doors, Coded Chests und weitere Codebehälter; Watch Passes und Pass Readers; Tripbeams, Stir Lamps und das Klaxon; 40 Fallen, die als gewöhnliche Blöcke getarnt sind; und der Watch Turret, der feindliche Mobs beschießt, die in Reichweite kommen.",
+        "46 Türen, Luken und Tore mit echter Bewegung: Cell Bars, Glasschieber, die Clean-room Door, die Foundry Door, die Paper Screen Door, 16 Drapes, sechs Floor and Slide Hatches, die Tavern Doors und die Bulkhead Door.",
+        "Große Türen: acht Grand Gates mit 3 x 3, die Iris Door mit 3 x 2, die Roller Shutter (ein Stapel Platten, der sich in die Decke aufrollt), die Corroded Hatch mit 2 x 2 samt Leiter und die Barrier Veil, eine Lichtwand, die du mit dem Veil Emitter zwischen zwei Ecken aufziehst.",
+        "Die Coach-house Door und die Keep Door: Doppeltüren mit 4 x 5, deren Rahmen aus dem Block besteht, mit dem du sie herstellst (eine Tür und fünf oder mehr Blöcke derselben Sorte).",
+        "Das Mimic Fence Gate nimmt das Aussehen der Blöcke an, die links und rechts davon stehen.",
+        "Die Doorwright's Bench: Wähle eine von 18 Bewegungen, die Öffnungszeit, automatisches Schließen, Öffnen, wenn sich ein Spieler nähert, die Redstone-Regel, die Paarung von Doppeltüren, einen von 12 Sounds und einen Code aus bis zu sechs Ziffern. Dann stellst du eine Crafted Door aus einem beliebigen Rahmenblock und zwei Paneelblöcken her (auch Feuer, ein Portal, Wasser und Lava). Crafted Doors können später an der Bank neu eingestellt werden."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Voraussetzungen: Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer, Java 25. Für Multiplayer muss Halia außerdem auf dem Server installiert sein.",
+        "Behoben: Seit V1.2 ließ ein abgebauter Aerie-Speicherblock seinen Inhalt fallen, ohne die Verbindung zu dem, was er speicherte; ein verschobener Block kam deshalb leer zurück. Er behält nun seinen Inhalt. Inhalte, die auf diese Weise bereits verloren gingen, können nicht wiederhergestellt werden.",
+        "Welten ab V1.2 öffnen sich unverändert. Gehe nicht zurück zu V1.2 mit einer Welt, die Vigil-Geräte oder die neuen Türen enthält: Diese würden gelöscht."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.2",
    "summary": "Halia V1.2.1 — Absturz beim Öffnen des Inventars behoben",

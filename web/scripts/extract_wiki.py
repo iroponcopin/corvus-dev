@@ -293,8 +293,14 @@ def recipes_shared(legacy: dict) -> dict:
         cat, result, grid, count, how, search = card
         rec = {"key": f"{result}#{i}", "cat": cat, "result": result, "count": count, "grid": grid,
                "station": "workbench", "search": search}
-        if how and result in stated:
-            st = stated[result]
+        # Halia 1.3.0: one item may have several stated how-to cards ("<id>", "<id>@2", ...); each card takes the
+        # entry whose sentence it carries.
+        st = None
+        if how:
+            st = next((v for k, v in stated.items() if k.split("@", 1)[0] == result and v["ja"] == how), None)
+            if st is None and result in stated:
+                st = stated[result]
+        if st is not None:
             rec["how"] = how
             rec["howText"] = {"ja": st["ja"], "en": st["en"]}
             rec["count"] = count or 1
@@ -352,6 +358,8 @@ def recipes_shared(legacy: dict) -> dict:
                     "anvil": "minecraft:anvil",
                     # Tsubomi 2.0.0 (2026-10-18): 120 stonecutter recipes, stated in data/recipes_how.json.
                     "stonecutter": "minecraft:stonecutter",
+                    # Halia 1.3.0 (2026-10-18): the Vigil's false buckets are brewed.
+                    "brewing": "minecraft:brewing_stand",
                     **{st["id"]: st["item"] for st in m["stations"]}}
     # 2026-10-05: the "tsubomi" placeholder chip (a brewing station that never had a recipe, with the
     # message "Tsubomi has not been released") is gone: Tsubomi is released and has its own tab.
@@ -654,7 +662,11 @@ def build_lang(lang: str, ctx: dict) -> dict:
     ui, dl, ap = b["ui"], b["download"], b["aureum_page"]
     leg = ctx["legacy"]["langs"][lang]
     man = ctx["manifest"]
-    store = ctx["store"]["messages"][lang]
+    store = dict(ctx["store"]["messages"][lang])
+    # Halia 1.3.0 (2026-10-18): ASTRAEA has ended and the Store dropped "Beyond Astraea" from Halia's tagline; the
+    # launcher jar the site reads still carries it, so the site drops it too (every language; the rest is kept).
+    for _k in [k for k in store if k.startswith("store.halia.")]:
+        store[_k] = re.sub(r"\s*[·・]\s*Beyond Astraea", "", store[_k]).replace("Beyond Astraea", "").strip()
     up = ctx["upcoming"].get(lang) or die(f"data/upcoming.json has no {lang} block")
     dcb = ctx["discordBot"].get(lang) or die(f"data/discord_bot.json has no {lang} block")
 

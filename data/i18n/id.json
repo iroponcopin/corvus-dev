@@ -940,6 +940,24 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.3.0",
+    "title": "Halia V1.3 — Vigil, 46 pintu, dan Doorwright's Bench",
+    "summary": "Halia V1.3 menambahkan Vigil, sekumpulan perangkat untuk menjaga apa yang kamu bangun: blok berpelindung yang hanya bisa dihancurkan pemiliknya, kamera, kunci kode, pembaca pass, jebakan, dan turret. Ada juga 46 pintu, hatch, dan gerbang yang terbuka dengan gerakan nyata, serta Doorwright's Bench, tempat kamu merancang pintumu sendiri.",
+    "highlights": [
+     "Vigil: 593 versi berpelindung dari blok bangunan, hanya bisa dihancurkan oleh pemiliknya; Watch Eyes yang bisa dilihat melalui Watch Slate; Code Plates, Coded Doors, Coded Chests, dan wadah berkode lainnya; Watch Passes dan Pass Readers; Tripbeams, Stir Lamps, dan Klaxon; 40 jebakan yang menyamar sebagai blok biasa; dan Watch Turret, yang menembak mob musuh yang masuk jangkauan.",
+     "46 pintu, hatch, dan gerbang dengan gerakan nyata: Cell Bars, geser kaca, Clean-room Door, Foundry Door, Paper Screen Door, 16 Drapes, enam Floor and Slide Hatches, Tavern Doors, dan Bulkhead Door.",
+     "Pintu besar: delapan Grand Gates berukuran 3 x 3, Iris Door 3 x 2, Roller Shutter (tumpukan panel yang menggulung ke langit-langit), Corroded Hatch 2 x 2 dengan tangganya, dan Barrier Veil, dinding cahaya yang kamu angkat di antara dua sudut dengan Veil Emitter.",
+     "Coach-house Door dan Keep Door: pintu ganda 4 x 5 yang bingkainya terbuat dari blok yang kamu gunakan untuk membuatnya (satu pintu dan lima blok sejenis atau lebih).",
+     "Mimic Fence Gate menyesuaikan tampilannya dengan blok di kedua sisinya.",
+     "Doorwright's Bench: pilih salah satu dari 18 gerakan, waktu buka, tutup otomatis, buka saat pemain mendekat, aturan redstone, pasangan pintu ganda, salah satu dari 12 suara, dan kode hingga enam digit. Lalu buat Crafted Door dari blok bingkai apa pun dan dua blok panel (api, portal, air, dan lava juga). Crafted Door bisa diatur ulang nanti di bench."
+    ],
+    "warnings": [
+     "Persyaratan: Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, Java 25. Untuk multipemain, Halia juga harus dipasang di server.",
+     "Diperbaiki: sejak V1.2, memecahkan blok penyimpanan Aerie menjatuhkannya tanpa tautan ke isinya, sehingga blok yang dipindahkan kembali kosong. Sekarang isinya tetap tersimpan. Isi yang sudah hilang dengan cara ini tidak bisa dipulihkan.",
+     "Dunia dari V1.2 terbuka apa adanya. Jangan kembali ke V1.2 dengan dunia yang berisi perangkat Vigil atau pintu baru: semuanya akan terhapus."
+    ]
+   },
+   {
     "id": "halia-v1.2.1",
     "title": "Halia V1.2.1 — perbaikan crash saat membuka inventaris",
     "summary": "Halia V1.2.1 memperbaiki crash: saat OUKA juga terpasang, membuka inventaris dalam mode kreatif menutup permainan.",

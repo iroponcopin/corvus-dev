@@ -312,36 +312,6 @@
    "m09588a82c0d8",
    "flat"
   ],
-  "minecraft:ancient_debris": [
-   "古代の残骸",
-   "Ancient Debris",
-   "m9575ebf4dba4",
-   "cube"
-  ],
-  "minecraft:copper_ore": [
-   "銅鉱石",
-   "Copper Ore",
-   "m1e01a0d74a1f",
-   "cube"
-  ],
-  "minecraft:gold_ore": [
-   "金鉱石",
-   "Gold Ore",
-   "meec7412eadff",
-   "cube"
-  ],
-  "minecraft:iron_bars": [
-   "鉄格子",
-   "Iron Bars",
-   "m37b3748d072f",
-   "cube"
-  ],
-  "minecraft:iron_ore": [
-   "鉄鉱石",
-   "Iron Ore",
-   "mda412ba20f17",
-   "cube"
-  ],
   "minecraft:raw_copper": [
    "銅の原石",
    "Raw Copper",
@@ -365,12 +335,6 @@
    "Stone Button",
    "m730b77cdb1fc",
    "cube"
-  ],
-  "minecraft:yellow_dye": [
-   "黄色の染料",
-   "Yellow Dye",
-   "m3339e4682390",
-   "flat"
   ],
   "ouka:argon_canister": [
    "アルゴンの缶",
