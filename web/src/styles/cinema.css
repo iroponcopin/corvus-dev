@@ -194,7 +194,7 @@ html:lang(ko) .cin-tagline {
     width: calc(100vw - 40px);
   }
   .cin-title {
-    font-size: clamp(48px, 17vw, 96px);
+    font-size: clamp(40px, 12.5vw, 96px);
   }
   /* CORVUS has six letters: it takes a smaller size on phones so it fits. */
   .cin-title--2,
