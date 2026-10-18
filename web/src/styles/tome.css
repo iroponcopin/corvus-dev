@@ -13,7 +13,6 @@
   --tome-muted: #5c5142;
   --tome-hair: var(--color-hair);
   position: relative;
-  isolation: isolate;
   margin-block: 8px 48px;
   padding: clamp(12px, 2vw, 22px);
   border-radius: var(--radius-card);
