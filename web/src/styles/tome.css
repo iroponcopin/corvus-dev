@@ -7,20 +7,20 @@
 .tome {
   --tome-ink: var(--color-obsidian);
   --tome-ink-2: var(--color-glass);
-  --tome-paper: #e8e5dc;
-  --tome-paper-2: #d6d2c6;
-  --tome-text: #0a0a0a;
-  --tome-muted: rgb(10 10 10 / 0.6);
+  --tome-paper: #efe6cf;
+  --tome-paper-2: #e3d6b6;
+  --tome-text: #1f1a14;
+  --tome-muted: #5c5142;
   --tome-hair: var(--color-hair);
   position: relative;
   margin-block: 8px 48px;
   padding: clamp(12px, 2vw, 22px);
-  border-radius: 0;
+  border-radius: var(--radius-card);
   color: var(--color-fg);
   background:
-    radial-gradient(70% 60% at 22% 18%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 70%),
-    #0a0a0a;
-  box-shadow: inset 0 0 0 1px var(--color-hair);
+    radial-gradient(70% 60% at 22% 18%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 70%),
+    radial-gradient(50% 45% at 85% 90%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 75%),
+    linear-gradient(180deg, var(--tome-ink) 0%, var(--tome-ink-2) 100%);
   transition: background 900ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -47,17 +47,20 @@
   gap: 12px;
   min-height: 44px;
   padding: 0 14px;
-  border-radius: 0;
+  border-radius: 14px;
   border: 1px solid var(--tome-hair);
-  background: #0a0a0a;
+  background: rgb(255 255 255 / 0.03);
+  box-shadow: inset 0 2px 8px rgb(0 0 0 / 0.6), inset 0 -1px 0 rgb(255 255 255 / 0.04);
   color: var(--color-soft);
   font: inherit;
-  font-size: 14px;
+  font-size: 15px;
   cursor: pointer;
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
   transition: border-color 400ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 .tome-engraved:hover {
-  border-color: #e8e5dc;
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
 }
 .tome-engraved-text {
   overflow: hidden;
@@ -70,7 +73,7 @@
   font-family: var(--font-mono, ui-monospace, monospace);
   font-size: 12px;
   padding: 2px 7px;
-  border-radius: 0;
+  border-radius: 7px;
   border: 1px solid var(--tome-hair);
   color: #d2d2d7;
 }
@@ -113,15 +116,14 @@
   gap: 7px;
   padding: 8px 16px 12px;
   border: 0;
-  border-radius: 0;
+  border-radius: 0 0 6px 6px;
   font: inherit;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
   color: #15110c;
   background: linear-gradient(180deg, var(--ribbon, var(--accent)) 0%, color-mix(in srgb, var(--ribbon, var(--accent)) 66%, #000) 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 84%, 0 100%);
+  box-shadow: 0 8px 18px rgb(0 0 0 / 0.45);
   cursor: pointer;
   transform-origin: top center;
   transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1), filter 300ms ease;
@@ -133,11 +135,8 @@
   transform: translateY(-5px);
   filter: brightness(1.12) saturate(1.1);
 }
-html:lang(tr) .tome-ribbon {
-  text-transform: none;
-}
 .tome-ribbon--all {
-  --ribbon: #e8e5dc;
+  --ribbon: #e2c07a;
 }
 .tome-ribbon .ac-count {
   color: #15110c;
@@ -189,7 +188,7 @@ html:lang(tr) .tome-ribbon {
   min-height: 104px;
   padding: 10px 0;
   border: 0;
-  border-radius: 0;
+  border-radius: 0 6px 6px 0;
   background: linear-gradient(90deg, var(--ribbon, var(--accent)), color-mix(in srgb, var(--ribbon, var(--accent)) 66%, #000));
   box-shadow: 4px 6px 14px rgb(0 0 0 / 0.45);
   cursor: pointer;
@@ -225,8 +224,8 @@ html:lang(tr) .tome-ribbon {
 .tome-book {
   position: relative;
   padding: 14px 14px 10px;
-  border-radius: 0;
-  background: #0a0a0a;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #1b1510 0%, #110d0a 100%);
   border: 1px solid var(--tome-hair);
   box-shadow: 0 40px 80px -30px rgb(0 0 0 / 0.8), 0 0 0 1px rgb(255 255 255 / 0.03) inset;
   outline: none;
@@ -241,7 +240,7 @@ html:lang(tr) .tome-ribbon {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   min-height: 560px;
   transform-style: preserve-3d;
-  border-radius: 0;
+  border-radius: 6px;
 }
 .tome-book.is-narrow .tome-pages {
   grid-template-columns: minmax(0, 1fr);
@@ -260,14 +259,14 @@ html:lang(tr) .tome-ribbon {
   -webkit-backface-visibility: hidden;
 }
 .tome-page--l {
-  border-radius: 0;
+  border-radius: 8px 0 0 8px;
   background-image:
     linear-gradient(90deg, rgb(60 40 20 / 0.18), transparent 22%),
     radial-gradient(rgb(60 40 20 / 0.06) 0.6px, transparent 0.9px);
   background-size: auto, 5px 5px;
 }
 .tome-page--r {
-  border-radius: 0;
+  border-radius: 0 8px 8px 0;
   background-image:
     linear-gradient(270deg, rgb(60 40 20 / 0.18), transparent 22%),
     radial-gradient(rgb(60 40 20 / 0.06) 0.6px, transparent 0.9px);
@@ -275,7 +274,7 @@ html:lang(tr) .tome-ribbon {
 }
 .tome-book.is-narrow .tome-page--l,
 .tome-book.is-narrow .tome-page--r {
-  border-radius: 0;
+  border-radius: 8px;
   background-image: radial-gradient(rgb(60 40 20 / 0.06) 0.6px, transparent 0.9px);
   background-size: 5px 5px;
 }
@@ -320,8 +319,8 @@ html:lang(tr) .tome-ribbon {
   height: 6px;
   pointer-events: none;
   z-index: 0;
-  background: var(--tome-paper-2);
-  border-radius: 0;
+  background: repeating-linear-gradient(90deg, #e6dbbd 0 2px, #bfb08c 2px 3px);
+  border-radius: 0 0 6px 6px;
 }
 .tome-stack--l {
   left: 14px;
@@ -378,7 +377,7 @@ html:lang(tr) .tome-ribbon {
   display: inline-flex;
   align-items: center;
   padding: 3px 10px;
-  border-radius: 0;
+  border-radius: 999px;
   background: var(--tome-text);
   color: var(--tome-paper);
   font-size: 12px;
@@ -409,7 +408,7 @@ html:lang(tr) .tome-ribbon {
   width: 100%;
   min-height: 104px;
   padding: 12px 4px;
-  border-radius: 0;
+  border-radius: 12px;
   border: 1px solid rgb(60 40 20 / 0.14);
   background: rgb(60 40 20 / 0.05);
   color: var(--tome-text);
@@ -508,7 +507,7 @@ html:lang(tr) .tome-ribbon {
   gap: 8px;
   margin: 4px 0;
   padding: 4px 10px 4px 6px;
-  border-radius: 0;
+  border-radius: 999px;
   border: 1px solid rgb(60 40 20 / 0.16);
   background: rgb(60 40 20 / 0.05);
   color: var(--tome-text);
@@ -537,7 +536,9 @@ html:lang(tr) .tome-ribbon {
   height: 40px;
   font-size: 22px;
   line-height: 1;
-  border-radius: 0;
+  border-radius: 999px;
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
 }
 .tome-folio {
   min-width: 9ch;
@@ -593,15 +594,15 @@ html:lang(tr) .tome-ribbon {
 }
 .tome-flip.is-back .tome-leaf-front,
 .tome-flip.is-back .tome-leaf-back {
-  border-radius: 0;
+  border-radius: 8px 0 0 8px;
 }
 .tome-flip:not(.is-back) .tome-leaf-front,
 .tome-flip:not(.is-back) .tome-leaf-back {
-  border-radius: 0;
+  border-radius: 0 8px 8px 0;
 }
 .tome-flip.is-single .tome-leaf-front,
 .tome-flip.is-single .tome-leaf-back {
-  border-radius: 0;
+  border-radius: 8px;
 }
 .tome-book.is-turning,
 .tome-book.is-turning * {
@@ -623,15 +624,19 @@ html:lang(tr) .tome-ribbon {
   justify-content: center;
   padding: 12vh 16px 16px;
   background: rgb(0 0 0 / 0.5);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 .tome-cmd {
   width: min(640px, 100%);
   padding: 14px;
-  border-radius: 0;
+  border-radius: 20px;
   color: #f5f5f7;
   background: rgb(22 24 30 / 0.78);
   border: 1px solid var(--tome-hair);
   box-shadow: 0 30px 80px rgb(0 0 0 / 0.6), inset 0 1px 0 rgb(255 255 255 / 0.06);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
 }
 .tome-cmd-field {
   display: flex;
@@ -639,7 +644,7 @@ html:lang(tr) .tome-ribbon {
   gap: 10px;
   padding: 0 6px 0 12px;
   min-height: 48px;
-  border-radius: 0;
+  border-radius: 14px;
   background: rgb(255 255 255 / 0.04);
   border: 1px solid var(--tome-hair);
 }
@@ -668,7 +673,7 @@ html:lang(tr) .tome-ribbon {
   align-items: center;
   gap: 12px;
   padding: 9px 12px;
-  border-radius: 0;
+  border-radius: 12px;
   cursor: pointer;
 }
 .tome-cmd-item[aria-selected="true"] {
@@ -692,9 +697,11 @@ html:lang(tr) .tome-ribbon {
   flex-direction: column;
   height: 100%;
   min-height: 0;
-  border-radius: 0;
+  border-radius: 24px;
   border: 1px solid var(--tome-hair);
   background: rgb(255 255 255 / 0.025);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
   overflow: hidden;
 }
 .tome-stage-canvas {
@@ -751,7 +758,7 @@ html:lang(tr) .tome-ribbon {
 @media (max-width: 1023px) {
   .tome {
     padding: 10px;
-    border-radius: 0;
+    border-radius: 22px;
   }
   /* The pedestal is the viewport above the book on narrow screens. */
   .tome-layout {
