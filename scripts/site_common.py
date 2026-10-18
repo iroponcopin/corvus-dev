@@ -439,6 +439,11 @@ NATIVE_LAUNCHER_PLATFORMS = [
 ]
 
 
+# Jars named corvus-<word>-... that are not the launcher: Corvus XHard (2026-10-18), a server-side mod the manifest
+# carries in its own `xhard` block. Named here so the launcher scan skips it on purpose, not by accident.
+NOT_LAUNCHER_JAR_PREFIXES = ("corvus-xhard-",)
+
+
 def launcher_version_key(version: str) -> tuple[int, ...]:
     """"1.10.0" -> (1, 10, 0). Numeric, so 1.10.0 > 1.2.1 — which is exactly
     what plain string sorting got wrong."""
@@ -455,6 +460,8 @@ def find_launcher_jars(download_dir: Path | None = None) -> list[dict]:
         if not p.name.endswith(".jar"):
             continue
         if not p.name.startswith(tuple(f"{x}-" for x in LAUNCHER_JAR_PREFIXES)):
+            continue
+        if p.name.startswith(NOT_LAUNCHER_JAR_PREFIXES):
             continue
         m = _LAUNCHER_JAR_RE.match(p.name)
         if not m:

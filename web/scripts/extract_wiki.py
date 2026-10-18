@@ -389,7 +389,7 @@ def series_of(release: str) -> str:
     return BCL.brand_group_label(release)
 
 
-def changelog_lang(lang: str, bundle: dict, launcher_notes: dict) -> list[dict]:
+def changelog_lang(lang: str, bundle: dict, launcher_notes: dict, launcher_notes_i18n: dict | None = None) -> list[dict]:
     structural = BCL.load_brand_structural()
     brands = []
     with contextlib.redirect_stdout(_quiet):
@@ -419,7 +419,7 @@ def changelog_lang(lang: str, bundle: dict, launcher_notes: dict) -> list[dict]:
             brands.append({"id": brand, "name": SC.NAV_LABEL_FALLBACK[brand], "releases": releases})
     corvus = []
     for version in sorted(launcher_notes, key=SC.launcher_version_key, reverse=True):
-        notes = launcher_notes[version]
+        notes = ((launcher_notes_i18n or {}).get(lang) or {}).get(version) or launcher_notes[version]
         corvus.append({
             "id": f"corvus-{version}", "brand": "corvus", "version": version, "date": None, "type": "release",
             "series": series_of(version), "title": corvus_title(notes), "summary": "",
@@ -528,7 +528,8 @@ MODEL_WORDS: dict[str, list[tuple[str, str]]] = {
     "tr": [("Temel Taş Markası", "Temel Taş Modeli"), ("Öne çıkan marka", "Öne çıkan model"),
            ("bir marka seçin", "bir model seçin"), ("ayrı bir mod markası", "ayrı bir model")],
 }
-# The Corvus Store's own release notes (data/launcher_notes.json) are English on every language's page.
+# The Corvus Store's own release notes (data/launcher_notes.json) are English on every language's page, except where
+# data/launcher_notes_i18n.json carries a translation (from 5.1.0).
 ENGLISH_BRAND = re.compile(r"\b([Bb])rand(s|'s)?\b")
 MODEL_USED: set[tuple[str, str]] = set()
 
@@ -862,7 +863,7 @@ def build_lang(lang: str, ctx: dict) -> dict:
         "description": ui["page_descriptions"]["changelog"],
         "labels": cl_labels,
         "noteBrands": list(BCL.NOTE_BRANDS),
-        "brands": changelog_lang(lang, b, ctx["launcherNotes"]),
+        "brands": changelog_lang(lang, b, ctx["launcherNotes"], ctx["launcherNotesI18n"]),
     }
 
     rec_labels = dict(leg["recipes"]["labels"])
@@ -983,6 +984,8 @@ def main() -> None:
         "upcoming": read_json("data/upcoming.json"), "discordBot": read_json("data/discord_bot.json"),
         "discordCommands": read_json("data/discord_commands.json"),
         "launcherNotes": english_model(read_json("data/launcher_notes.json")),
+        # From 5.1.0 a Corvus Store note may carry translations (data/launcher_notes_i18n.json); missing ones stay English.
+        "launcherNotesI18n": {k: v for k, v in read_json("data/launcher_notes_i18n.json").items() if not k.startswith("_")},
         "skinGate": read_json("data/skin_gate.json"),
         "teasers": read_json("data/teasers.json")["teasers"],
         "recipes": recipes_shared(legacy),
