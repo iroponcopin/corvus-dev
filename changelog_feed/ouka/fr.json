@@ -1,11 +1,43 @@
 {
  "lang": "fr",
  "brand": "ouka",
- "updated": "2026-10-16",
+ "updated": "2026-10-18",
  "title": "Historique des mises à jour",
- "updated_label": "Mis à jour le 2026-10-16",
+ "updated_label": "Mis à jour le 2026-10-18",
  "note": "",
  "groups": [
+  {
+   "label": "V1.7",
+   "summary": "Limitless 1.7.0 — L'Infini, les domaines et le Roi des Fléaux",
+   "releases": [
+    {
+     "version": "V1.7.0",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Limitless 1.7.0 — L'Infini, les domaines et le Roi des Fléaux",
+     "summary": "OUKA ajoute un ensemble complet de sorcellerie : jouez Gojo avec Infinity, Lapse Blue, Reversal Red, Hollow Purple et le domaine Infinite Void, ou Sukuna avec Dismantle, Cleave, Open et le Malevolent Shrine. Les armes Kamutoke et Hiten, le Blindfold et le Character Guide s'ajoutent. Il ajoute 10 objets et 1 bloc, et reprend tout ce qui est dans 1.6.2.2.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Gojo : Infinity arrête ce qui vient vers vous. Lapse Blue attire le monde vers vous, Reversal Red le renvoie, et les deux se rejoignent en Hollow Purple. Déployez l'Infinite Void pour enfermer tout ce qui se trouve sous son dôme.",
+        "Sukuna : Dismantle et Cleave tranchent ce qui se trouve devant vous, Open embrase le sol, et le Malevolent Shrine est un domaine à part entière. Kamutoke fait tomber la foudre.",
+        "Changez de capacité avec R, utilisez-les avec Z et V, et ouvrez le menu des techniques avec C. Le Character Guide, remis une fois à votre arrivée, explique chaque technique.",
+        "La Domain Barrier est le mur d'un domaine : elle ne peut être ni brisée ni détruite par une explosion. Deux domaines peuvent entrer en collision quand ils se rencontrent."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Avec l'option graphique Improved Transparency activée (désactivée par défaut), la sphère de Hollow Purple est dessinée devant l'eau au lieu de derrière. C'est un problème connu, corrigé en 1.7.1. Avec l'option désactivée, elle s'affiche correctement.",
+        "Revenir à une version antérieure après avoir joué à 1.7.0 supprime du monde la Domain Barrier et tous les objets Limitless (Kamutoke, Hiten, Blindfold, Character Guide et les 6 œufs d'apparition).",
+        "Avant d'installer 1.7.0, retirez l'ancien jar d'OUKA (1.6.2.2 ou antérieur) du dossier mods et ne gardez qu'une copie de GeckoLib 5.5.6. Il faut Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, et Fabric API 0.161.0+26.3 ou plus récent. Installez-le côté client et côté serveur."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.6",
    "summary": "The Grand Synthesis 1.6.2.2 — carburant du four, matériaux d'assemblage et générateur à manivelle",
