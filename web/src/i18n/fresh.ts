@@ -27,6 +27,10 @@ export interface Fresh {
   };
   /** The Recipe Tome page's own copy (the book, the ribbons, the command bar, the 3D pedestal). */
   tome: {
+    /** The recipes page intro: {count} is the number of items. */
+    intro: string;
+    /** The unit the counts use ("items"): one word per language. */
+    itemWord: string;
     eyebrow: string;
     pageOf: string;
     prev: string;
@@ -232,6 +236,8 @@ export const FRESH: Record<Lang, Fresh> = {
       result: "完成品",
     },
     tome: {
+      intro: "OUKA・Cherry・Tsubomi・Halia の全 {count} アイテムのクラフトレシピを、一冊の本にまとめました。MOD や設備で絞り込み、検索し、アイテムを選ぶと、錬成台の上でレシピが組み上がる様子を見られます。",
+      itemWord: "アイテム",
       eyebrow: "レシピの書",
       pageOf: "{0} / {1} ページ",
       prev: "前のページ",
@@ -414,6 +420,8 @@ export const FRESH: Record<Lang, Fresh> = {
       result: "Result",
     },
     tome: {
+      intro: "Every recipe for the {count} items in OUKA, Cherry, Tsubomi and Halia, in one book. Filter by mod or station, search, and pick an item to watch its recipe assemble on the pedestal.",
+      itemWord: "items",
       eyebrow: "Recipe Tome",
       pageOf: "Page {0} of {1}",
       prev: "Previous page",
@@ -596,6 +604,8 @@ export const FRESH: Record<Lang, Fresh> = {
       result: "Resultado",
     },
     tome: {
+      intro: "Las recetas de los {count} objetos de OUKA, Cherry, Tsubomi y Halia, en un solo libro. Filtra por mod o estación, busca, y elige un objeto para ver cómo se forma su receta sobre el pedestal.",
+      itemWord: "objetos",
       eyebrow: "Libro de recetas",
       pageOf: "Página {0} de {1}",
       prev: "Página anterior",
@@ -778,6 +788,8 @@ export const FRESH: Record<Lang, Fresh> = {
       result: "Résultat",
     },
     tome: {
+      intro: "Les recettes des {count} objets d'OUKA, Cherry, Tsubomi et Halia, dans un seul livre. Filtrez par mod ou par station, cherchez, et choisissez un objet pour voir sa recette se former sur le socle.",
+      itemWord: "objets",
       eyebrow: "Grimoire des recettes",
       pageOf: "Page {0} sur {1}",
       prev: "Page précédente",
@@ -960,6 +972,8 @@ export const FRESH: Record<Lang, Fresh> = {
       result: "成品",
     },
     tome: {
+      intro: "OUKA、Cherry、Tsubomi 和 Halia 的全部 {count} 件物品的合成配方，收录在同一本书中。可按模组或设备筛选、搜索，选中一件物品，即可在底座上看到配方逐步成型。",
+      itemWord: "件物品",
       eyebrow: "配方之书",
       pageOf: "第 {0} / {1} 页",
       prev: "上一页",
@@ -1142,6 +1156,8 @@ export const FRESH: Record<Lang, Fresh> = {
       result: "완성품",
     },
     tome: {
+      intro: "OUKA, Cherry, Tsubomi, Halia의 아이템 {count}개에 대한 제작 레시피를 한 권의 책에 담았습니다. 모드나 설비로 거르고 검색한 뒤, 아이템을 고르면 받침대 위에서 레시피가 완성되는 모습을 볼 수 있습니다.",
+      itemWord: "개 아이템",
       eyebrow: "레시피 책",
       pageOf: "{0} / {1} 쪽",
       prev: "이전 쪽",
@@ -1324,6 +1340,8 @@ export const FRESH: Record<Lang, Fresh> = {
       result: "Resultado",
     },
     tome: {
+      intro: "As receitas dos {count} itens de OUKA, Cherry, Tsubomi e Halia, num único livro. Filtre por mod ou estação, pesquise e escolha um item para ver a receita se montar sobre o pedestal.",
+      itemWord: "itens",
       eyebrow: "Tomo de receitas",
       pageOf: "Página {0} de {1}",
       prev: "Página anterior",
@@ -1506,6 +1524,8 @@ export const FRESH: Record<Lang, Fresh> = {
       result: "Risultato",
     },
     tome: {
+      intro: "Le ricette dei {count} oggetti di OUKA, Cherry, Tsubomi e Halia, in un unico libro. Filtra per mod o stazione, cerca, e scegli un oggetto per vedere la sua ricetta comporsi sul piedistallo.",
+      itemWord: "oggetti",
       eyebrow: "Tomo delle ricette",
       pageOf: "Pagina {0} di {1}",
       prev: "Pagina precedente",
@@ -1688,6 +1708,8 @@ export const FRESH: Record<Lang, Fresh> = {
       result: "الناتج",
     },
     tome: {
+      intro: "وصفات الصنع لعناصر OUKA وCherry وTsubomi وHalia البالغ عددها {count}، في كتاب واحد. صفِّ حسب المود أو المحطة، وابحث، واختر عنصرًا لترى وصفته تتشكّل على القاعدة.",
+      itemWord: "عنصر",
       eyebrow: "كتاب الوصفات",
       pageOf: "الصفحة {0} من {1}",
       prev: "الصفحة السابقة",
@@ -1870,6 +1892,8 @@ export const FRESH: Record<Lang, Fresh> = {
       result: "Результат",
     },
     tome: {
+      intro: "Рецепты всех {count} предметов OUKA, Cherry, Tsubomi и Halia в одной книге. Фильтруйте по моду или станции, ищите и выберите предмет, чтобы увидеть, как его рецепт собирается на подставке.",
+      itemWord: "предметов",
       eyebrow: "Книга рецептов",
       pageOf: "Страница {0} из {1}",
       prev: "Предыдущая страница",
@@ -2052,6 +2076,8 @@ export const FRESH: Record<Lang, Fresh> = {
       result: "Hasil",
     },
     tome: {
+      intro: "Resep untuk {count} item dari OUKA, Cherry, Tsubomi, dan Halia, dalam satu buku. Saring menurut mod atau stasiun, cari, dan pilih item untuk melihat resepnya tersusun di atas alas.",
+      itemWord: "item",
       eyebrow: "Buku Resep",
       pageOf: "Halaman {0} dari {1}",
       prev: "Halaman sebelumnya",
@@ -2234,6 +2260,8 @@ export const FRESH: Record<Lang, Fresh> = {
       result: "Ergebnis",
     },
     tome: {
+      intro: "Die Rezepte aller {count} Gegenstände aus OUKA, Cherry, Tsubomi und Halia, in einem Buch. Nach Mod oder Station filtern, suchen und einen Gegenstand wählen, um sein Rezept auf dem Podest entstehen zu sehen.",
+      itemWord: "Gegenstände",
       eyebrow: "Rezeptbuch",
       pageOf: "Seite {0} von {1}",
       prev: "Vorherige Seite",
@@ -2416,6 +2444,8 @@ export const FRESH: Record<Lang, Fresh> = {
       result: "Sonuç",
     },
     tome: {
+      intro: "OUKA, Cherry, Tsubomi ve Halia'daki {count} eşyanın tarifleri, tek bir kitapta. Mod ya da istasyona göre süzün, arayın ve bir eşya seçerek tarifinin sunakta nasıl oluştuğunu izleyin.",
+      itemWord: "eşya",
       eyebrow: "Tarif Kitabı",
       pageOf: "Sayfa {0} / {1}",
       prev: "Önceki sayfa",

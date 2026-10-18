@@ -1,17 +1,20 @@
 "use client";
 
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { type ComponentRef, useEffect, useMemo, useRef, useState } from "react";
+import { type ComponentRef, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   AdditiveBlending,
+  Box3,
   BufferAttribute,
   BufferGeometry,
   CylinderGeometry,
   type Group,
   LineBasicMaterial,
+  Matrix4,
   type LineSegments,
   type Mesh,
+  type PerspectiveCamera,
   MeshBasicMaterial,
   MeshStandardMaterial,
   PlaneGeometry,
@@ -241,6 +244,9 @@ function Scene({
   item: TomeItem;
 }) {
   const controls = useRef<ComponentRef<typeof OrbitControls>>(null);
+  const { camera, size } = useThree();
+  const [fit, setFit] = useState<Fit | null>(null);
+  const fitRef = useRef<Fit | null>(null);
   const pedestal = useRef<Group>(null);
   const itemGroup = useRef<Group>(null);
   const altar = useRef<Group>(null);
@@ -273,9 +279,41 @@ function Scene({
     if (model?.wire) model.wire.visible = gridOn;
   }, [model, gridOn]);
 
+  // Frame the model: the sphere that holds it, at the distance where it just fits the narrower of the two fields of view
+  // (portrait phones are limited by the horizontal one), with a margin. Recomputed when the canvas changes shape.
+  const aspect = size.width / Math.max(1, size.height);
   useEffect(() => {
-    if (resetSignal > 0) controls.current?.reset();
-  }, [resetSignal]);
+    if (!model) return;
+    const s = modelSphere(model.group);
+    const vFov = ((camera as PerspectiveCamera).fov * Math.PI) / 180;
+    const hFov = 2 * Math.atan(Math.tan(vFov / 2) * aspect);
+    const radius = s.r * 1.5;
+    const dist = (radius / Math.sin(Math.min(vFov, hFov) / 2)) * 1.12;
+    setFit({ target: [0, ITEM_Y + s.c.y * 1.5, 0], dist });
+  }, [model, aspect, camera]);
+
+  const poseTo = useCallback(
+    (f: Fit) => {
+      fitRef.current = f;
+      camera.position.set(f.target[0] + VIEW_DIR.x * f.dist, f.target[1] + VIEW_DIR.y * f.dist, f.target[2] + VIEW_DIR.z * f.dist);
+      camera.lookAt(f.target[0], f.target[1], f.target[2]);
+      const c = controls.current;
+      if (c) {
+        c.target.set(f.target[0], f.target[1], f.target[2]);
+        c.update();
+      }
+    },
+    [camera],
+  );
+
+  useEffect(() => {
+    if (fit) poseTo(fit);
+  }, [fit, poseTo]);
+
+  // Reset returns to the fit (not to the pose the controls were built with, which is the fallback before a model loads).
+  useEffect(() => {
+    if (resetSignal > 0 && fitRef.current) poseTo(fitRef.current);
+  }, [resetSignal, poseTo]);
 
   useEffect(
     () => () => {
@@ -355,10 +393,44 @@ function Scene({
       <mesh geometry={plinthGeo} material={plinthMat} position={[0, PLINTH_Y, 0]} />
       <mesh geometry={ringGeo} material={ringMat} position={[0, PLINTH_Y + 0.07, 0]} rotation={[-Math.PI / 2, 0, 0]} />
 
-      <OrbitControls ref={controls} makeDefault enableDamping dampingFactor={0.08} enablePan={false} minDistance={3.4} maxDistance={9} target={[0, 0.75, 0]} />
+      <OrbitControls ref={controls} makeDefault enableDamping dampingFactor={0.08} enablePan={false} minDistance={fit ? fit.dist * 0.6 : 3.4} maxDistance={fit ? fit.dist * 1.6 : 9} />
     </>
   );
 }
+
+/**
+ * The voxel model's bounds in its own units, read from the geometry through the group's frame. Not read from the
+ * live scene: the item starts at scale 0.0001 during the ritual and the pedestal turns, so the scene is the wrong
+ * thing to measure. Returns the centre and the half-diagonal (a sphere that holds the whole box).
+ */
+function modelSphere(group: Group): { c: Vector3; r: number } {
+  group.updateWorldMatrix(true, true);
+  const inv = new Matrix4().copy(group.matrixWorld).invert();
+  const box = new Box3();
+  const p = new Vector3();
+  group.traverse((o) => {
+    const mesh = o as Mesh;
+    if (!mesh.isMesh || !mesh.geometry) return;
+    mesh.geometry.computeBoundingBox();
+    const bb = mesh.geometry.boundingBox;
+    if (!bb) return;
+    const toLocal = new Matrix4().multiplyMatrices(inv, mesh.matrixWorld);
+    for (let i = 0; i < 8; i++) {
+      p.set(i & 1 ? bb.max.x : bb.min.x, i & 2 ? bb.max.y : bb.min.y, i & 4 ? bb.max.z : bb.min.z).applyMatrix4(toLocal);
+      box.expandByPoint(p);
+    }
+  });
+  if (box.isEmpty()) return { c: new Vector3(), r: 1 };
+  return { c: box.getCenter(new Vector3()), r: box.getSize(new Vector3()).length() / 2 };
+}
+
+/** The camera pose that frames the item: the look-at point, and the distance along the default viewing direction. */
+interface Fit {
+  target: V3;
+  dist: number;
+}
+/** The default viewing direction (the pose the stage opens with): a little above, looking down the item. */
+const VIEW_DIR = new Vector3(0, 0.25, 1).normalize();
 
 function webglAvailable(): boolean {
   try {

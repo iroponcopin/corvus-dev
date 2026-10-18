@@ -1,4 +1,4 @@
-import { FRESH } from "@/i18n/fresh";
+import { FRESH, fill } from "@/i18n/fresh";
 import { recipeIcon } from "@/lib/site";
 import { langData, wiki } from "@/lib/wiki";
 import type { Lang } from "@/lib/wiki-types";
@@ -37,11 +37,13 @@ export function RecipesPage({ lang }: { lang: Lang }) {
     stations: shared.stations,
   };
   const f = FRESH[lang];
+  // One unit everywhere: the number of ITEMS (distinct results), the same count the book and the bar show.
+  const itemCount = new Set(shared.recipes.map((rec) => rec.result)).size;
   return (
     <section>
       <div className="ac-wrap ac-page-head">
-        <h1 className="ac-h1">{r.title}</h1>
-        <p className="ac-lead">{r.intro}</p>
+        <h1 className="ac-h1 tome-title">{r.title}</h1>
+        <p className="ac-lead">{fill(f.tome.intro, itemCount)}</p>
       </div>
       <div className="ac-wrap">
         <RecipeBookScene data={data} labels={r.labels} t={f.tome} dir={d.dir} />

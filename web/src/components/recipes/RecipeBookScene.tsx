@@ -87,6 +87,11 @@ export function RecipeBookScene({ data, labels, t, dir }: RecipeBookSceneProps) 
   // ---- the committed state, derived --------------------------------------------------------------------------
 
   const ids = useMemo(() => filterIds(data, index, filter), [data, index, filter]);
+  // One unit everywhere: an ITEM (a distinct result the book lists), counted with the same filter the book uses.
+  // The All chip, every chapter ribbon, every station chip, the count line and the command bar all read this.
+  const allCount = index.order.length;
+  const catCounts = useMemo(() => new Map(data.cats.map((c) => [c.index, filterIds(data, index, { cat: c.index, station: null, query: "" }).length])), [data, index]);
+  const stationCounts = useMemo(() => new Map(data.stations.map((s) => [s.id, filterIds(data, index, { cat: null, station: s.id, query: "" }).length])), [data, index]);
   const pages = useMemo(() => paginate(ids), [ids]);
   const last = Math.max(0, pages.length - 1);
   const cur = Math.min(spread, last);
@@ -134,7 +139,7 @@ export function RecipeBookScene({ data, labels, t, dir }: RecipeBookSceneProps) 
       selected={picked}
       onPick={pick}
       chapter={catName(cat)}
-      count={countText(list.length, labels.countSuffix)}
+      count={countText(list.length, t.itemWord)}
       empty={labels.empty}
       eyebrow={fill(t.pageOf, String(n + 1), String(Math.max(1, total)))}
     />
@@ -442,7 +447,7 @@ export function RecipeBookScene({ data, labels, t, dir }: RecipeBookSceneProps) 
             <img src={recipeIcon(data.allTabIcon) ?? ""} alt="" width={20} height={20} className="ac-pixel" />
           ) : null}
           <span>{labels.all}</span>
-          <small className="ac-count">{data.total}</small>
+          <small className="ac-count">{allCount}</small>
         </button>
       </li>
       {data.cats.map((c) => (
@@ -459,7 +464,7 @@ export function RecipeBookScene({ data, labels, t, dir }: RecipeBookSceneProps) 
               <img src={asset(MODEL_ICON[c.model] ?? "")} alt="" width={20} height={20} className="ac-pixel" />
             ) : null}
             <span>{c.name}</span>
-            <small className="ac-count">{c.count}</small>
+            <small className="ac-count">{catCounts.get(c.index) ?? 0}</small>
           </button>
         </li>
       ))}
@@ -471,7 +476,7 @@ export function RecipeBookScene({ data, labels, t, dir }: RecipeBookSceneProps) 
       <div className="tome-toolbar">
         <button type="button" className="tome-engraved" onClick={openCmd} aria-haspopup="dialog">
           <span className="tome-engraved-text">{filter.query !== "" ? filter.query : labels.search}</span>
-          <kbd className="tome-kbd">Ctrl K</kbd>
+          <kbd className="tome-kbd">⌘K / Ctrl K</kbd>
         </button>
         {filter.query !== "" ? (
           <button type="button" className="ac-chip" onClick={clearQuery}>
@@ -479,7 +484,7 @@ export function RecipeBookScene({ data, labels, t, dir }: RecipeBookSceneProps) 
           </button>
         ) : null}
         <span className="ac-small" aria-live="polite">
-          {countText(ids.length, labels.countSuffix)}
+          {countText(ids.length, t.itemWord)}
         </span>
       </div>
 
@@ -491,11 +496,11 @@ export function RecipeBookScene({ data, labels, t, dir }: RecipeBookSceneProps) 
           <div className="tome-stations" role="group" aria-label={labels.stations}>
             <span className="ac-small">{labels.stations}</span>
             {data.stations
-              .filter((s) => s.count > 0)
+              .filter((s) => (stationCounts.get(s.id) ?? 0) > 0)
               .map((s) => (
                 <button key={s.id} type="button" className="ac-chip" aria-pressed={filter.station === s.id} onClick={() => chooseStation(s.id)}>
                   {stationName(s.id)}
-                  <span className="ac-count">{s.count}</span>
+                  <span className="ac-count">{stationCounts.get(s.id) ?? 0}</span>
                 </button>
               ))}
           </div>
@@ -610,7 +615,7 @@ export function RecipeBookScene({ data, labels, t, dir }: RecipeBookSceneProps) 
         title={t.commandTitle}
         placeholder={labels.search}
         closeLabel={t.clear}
-        countLabel={labels.countSuffix}
+        countLabel={t.itemWord}
         emptyLabel={labels.empty}
       />
     </div>
