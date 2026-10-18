@@ -159,6 +159,7 @@ export function NaturalCinemaStage({
   tagline,
   tagline2,
   tagline3,
+  closing,
   credit,
   hint,
 }: {
@@ -168,6 +169,8 @@ export function NaturalCinemaStage({
   tagline: string;
   tagline2: string;
   tagline3: string;
+  /** The closing line at the end of Act III ("Corvus — Where Every Release Returns"). */
+  closing: string;
   credit: string;
   hint: string;
 }) {
@@ -181,6 +184,7 @@ export function NaturalCinemaStage({
   const tagline2Ref = useRef<HTMLParagraphElement>(null);
   const title3Ref = useRef<HTMLHeadingElement>(null);
   const tagline3Ref = useRef<HTMLParagraphElement>(null);
+  const closingRef = useRef<HTMLParagraphElement>(null);
   const hintRef = useRef<HTMLParagraphElement>(null);
   const eagleRef = useRef<HTMLDivElement>(null);
   const eagleCanvasRef = useRef<HTMLCanvasElement>(null);
@@ -199,6 +203,7 @@ export function NaturalCinemaStage({
     const tagline2El = tagline2Ref.current;
     const title3El = title3Ref.current;
     const tagline3El = tagline3Ref.current;
+    const closingEl = closingRef.current;
     const hintEl = hintRef.current;
     const eagle = eagleRef.current;
     const eagleCanvas = eagleCanvasRef.current;
@@ -425,6 +430,7 @@ export function NaturalCinemaStage({
       title3El.style.paddingLeft = `${Math.max(0, pose.letter3)}em`;
       title3El.style.opacity = String(pose.title3);
       tagline3El.style.opacity = String(pose.title3);
+      if (closingEl !== null) closingEl.style.opacity = String(pose.closing);
       hintEl.style.opacity = String(1 - smooth(0, 0.05, p));
 
       // The eagle layer, placed in CSS pixels.
@@ -536,6 +542,9 @@ export function NaturalCinemaStage({
           </h2>
           <p ref={tagline3Ref} className="cin-tagline cin-tagline--3">
             {tagline3}
+          </p>
+          <p ref={closingRef} className="cin-closing">
+            {closing}
           </p>
         </div>
         <div ref={eagleRef} className="cin-eagle" aria-hidden="true">

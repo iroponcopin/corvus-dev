@@ -113,6 +113,8 @@ export interface Pose {
   /** CORVUS (Act III) letter-spacing (em) and opacity. */
   letter3: number;
   title3: number;
+  /** The closing line after Act III's tagline (0..1): it enters once the tagline has faded. */
+  closing: number;
 }
 
 /**
@@ -237,6 +239,7 @@ export function poseAt(
     dusk: lerp(duskA, duskB, bg3.m),
     letter3: lerp(narrow ? 0.16 : 0.42, -0.03, smooth(0.1, 0.35, c)),
     title3: smooth(0.1, 0.18, c),
+    closing: smooth(0.2, 0.28, c),
   };
 }
 
@@ -260,6 +263,7 @@ export function staticPose(vw: number, vh: number, narrow: boolean, sunScreen: [
     dusk: 0,
     letter3: -0.03,
     title3: 1,
+    closing: 1,
   };
 }
 

@@ -12,14 +12,21 @@ export interface FeedResult {
   bytes: number;
   modified: string | null;
   attempts: number;
+  /** The body as text, only when the caller asked for it (`{ body: true }`). */
+  text: string | null;
 }
 
 export async function fetchFeed(
   path: string,
-  { attempts = 3, baseDelayMs = 400, signal }: { attempts?: number; baseDelayMs?: number; signal?: AbortSignal } = {},
+  {
+    attempts = 3,
+    baseDelayMs = 400,
+    signal,
+    body = false,
+  }: { attempts?: number; baseDelayMs?: number; signal?: AbortSignal; body?: boolean } = {},
 ): Promise<FeedResult> {
   const t0 = performance.now();
-  let last: FeedResult = { ok: false, status: null, ms: 0, bytes: 0, modified: null, attempts: 0 };
+  let last: FeedResult = { ok: false, status: null, ms: 0, bytes: 0, modified: null, attempts: 0, text: null };
   for (let n = 0; n < attempts; n++) {
     if (n > 0) await new Promise((r) => setTimeout(r, baseDelayMs * 2 ** (n - 1)));
     if (signal?.aborted) break;
@@ -33,10 +40,11 @@ export async function fetchFeed(
         bytes: buf.byteLength,
         modified: res.headers.get("last-modified"),
         attempts: n + 1,
+        text: body && res.status === 200 ? new TextDecoder().decode(buf) : null,
       };
       if (res.status < 500) return last;
     } catch {
-      last = { ok: false, status: null, ms: Math.round(performance.now() - t0), bytes: 0, modified: null, attempts: n + 1 };
+      last = { ok: false, status: null, ms: Math.round(performance.now() - t0), bytes: 0, modified: null, attempts: n + 1, text: null };
     }
   }
   return last;

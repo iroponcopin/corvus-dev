@@ -86,7 +86,7 @@
 
 .cin-title {
   margin: 0;
-  font-family: "Didot", "Bodoni 72", "Bodoni MT", "Hoefler Text", "Playfair Display", "Times New Roman", Times, serif;
+  font-family: var(--font-display);
   font-weight: 400;
   font-size: clamp(64px, min(24vw, 26vh), 360px);
   line-height: 0.9;
@@ -207,8 +207,21 @@ html:lang(ko) .cin-tagline {
 .cin-title--2,
 .cin-tagline--2,
 .cin-title--3,
-.cin-tagline--3 {
+.cin-tagline--3,
+.cin-closing {
   opacity: 0;
+}
+
+/* The closing line of Act III: Syne, set under the tagline, entering after it. */
+.cin-closing {
+  margin: clamp(14px, 3vh, 30px) 0 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(16px, 1.9vw, 26px);
+  letter-spacing: 0.02em;
+  color: #f6eee0;
+  text-shadow: 0 1px 4px rgb(0 0 0 / 0.6);
+  will-change: opacity;
 }
 
 /* Act III: the Corvus title is set like CORVUS. */

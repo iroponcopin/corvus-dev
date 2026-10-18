@@ -11,6 +11,7 @@ import { FeedTelemetry } from "../discord/FeedTelemetry";
 import { CodexPreview, type FeaturedRecipe } from "./CodexPreview";
 import { ShowroomPreview } from "./ShowroomPreview";
 import { StorePreview } from "./StorePreview";
+import { HOME_V2 } from "@/i18n/home";
 
 
 /**
@@ -115,6 +116,7 @@ export function HomePage({ lang }: { lang: Lang }) {
         tagline={f.cinema.tagline}
         tagline2={f.cinema.tagline2}
         tagline3={f.cinema.tagline3}
+        closing={HOME_V2[lang].closing}
         credit={f.cinema.credit}
         hint={f.heroScroll}
       />

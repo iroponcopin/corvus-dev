@@ -1066,7 +1066,7 @@ export const FRESH: Record<Lang, Fresh> = {
   },
   "pt-br": {
     heroScroll: "Role para explorar",
-    cinema: { tagline: "하늘의 정점으로.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "깊은 숲의 수호자.", tagline3: "모든 릴리스가 돌아오는 곳." },
+    cinema: { tagline: "O ápice do céu.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Guardião da floresta profunda.", tagline3: "Onde cada lançamento retorna." },
     altitude: { title: "기류 — 최신 릴리스", lede: "모든 모델의 최신 릴리스를 최신순으로." },
     sound: "Som",
     soundOn: "Ativar o som",
