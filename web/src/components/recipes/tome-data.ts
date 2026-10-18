@@ -119,10 +119,23 @@ export function pageOf(ids: readonly string[], id: string, size: number = PAGE_S
   return at < 0 ? -1 : Math.floor(at / size);
 }
 
-/** Which model a chapter belongs to: the id prefix of the items it makes ("ouka:ouka_caster" is OUKA). */
+/**
+ * Which model a chapter belongs to: the id prefix of the items it makes ("ouka:ouka_caster" is OUKA). A chapter also
+ * holds recipes whose result is a vanilla item (Tsubomi 2.0.0's apple, OUKA's vanilla outputs), and one of those can
+ * come first, so "minecraft" never names a chapter: the most common other prefix does.
+ */
 export function modelOfCat(data: TomeData, cat: number): string {
-  const first = data.recipes.find((r) => r.cat === cat);
-  return first ? (first.result.split(":")[0] ?? "") : "";
+  const counts = new Map<string, number>();
+  for (const r of data.recipes) {
+    if (r.cat !== cat) continue;
+    const ns = r.result.split(":")[0] ?? "";
+    if (ns === "" || ns === "minecraft") continue;
+    counts.set(ns, (counts.get(ns) ?? 0) + 1);
+  }
+  let best = "";
+  let n = 0;
+  for (const [ns, c] of counts) if (c > n) [best, n] = [ns, c];
+  return best;
 }
 
 /** The chapter index a model id names, or null. `?model=halia` and the chapter ribbons use the same ids. */

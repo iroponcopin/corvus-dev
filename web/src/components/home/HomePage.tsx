@@ -127,14 +127,15 @@ export function HomePage({ lang }: { lang: Lang }) {
     };
   });
 
+  // Each line is the hero line of the model's own page (brands.*.line / the catalogue headline), never the Store badge.
   // The Lineup: the live models in the Store's order, with corvus Store 5.x last. ASTRAEA and Alpha are not in it.
   const lineup: LineupItem[] = byOrder([
-    { key: "halia", name: "Halia", line: p.halia?.tagline ?? "", status: status("halia"), icon: "icons/halia.png", accent: BRAND_COLOR.halia ?? "#2997ff", href: pathOf(lang, "halia/"), demo: "blade" },
-    { key: "ouka", name: "OUKA", line: p.ouka?.lede ?? "", status: status("ouka"), icon: "icons/ouka.png", accent: BRAND_COLOR.ouka ?? "#2997ff", href: pathOf(lang, "ouka/"), demo: "power" },
-    { key: "cherry", name: "Cherry", line: p.cherry?.lede ?? "", status: status("cherry"), icon: "icons/cherry.png", accent: BRAND_COLOR.cherry ?? "#2997ff", href: pathOf(lang, "cherry/"), demo: null },
-    { key: "tsubomi", name: "Tsubomi", line: p.tsubomi?.tagline ?? "", status: status("tsubomi"), icon: "icons/tsubomi.png", accent: BRAND_COLOR.tsubomi ?? "#2997ff", href: pathOf(lang, "tsubomi/"), demo: null },
-    { key: "noctua", name: p.noctua?.name ?? "Noctua", line: p.noctua?.tagline ?? "", status: status("noctua"), icon: "icons/noctua.png", accent: BRAND_COLOR.noctua ?? "#2997ff", href: pathOf(lang, "noctua/"), demo: null },
-    { key: "aureum", name: "Aureum", line: p.aureum?.tagline ?? "", status: status("aureum"), icon: "icons/aureum.png", accent: BRAND_COLOR.aureum ?? "#2997ff", href: pathOf(lang, "aureum/"), demo: null },
+    { key: "halia", name: "Halia", line: p.halia?.headline ?? "", status: status("halia"), icon: "icons/halia.png", accent: BRAND_COLOR.halia ?? "#2997ff", href: pathOf(lang, "halia/"), demo: "blade" },
+    { key: "ouka", name: "OUKA", line: d.brands.ouka.line, status: status("ouka"), icon: "icons/ouka.png", accent: BRAND_COLOR.ouka ?? "#2997ff", href: pathOf(lang, "ouka/"), demo: "power" },
+    { key: "cherry", name: "Cherry", line: d.brands.cherry.line, status: status("cherry"), icon: "icons/cherry.png", accent: BRAND_COLOR.cherry ?? "#2997ff", href: pathOf(lang, "cherry/"), demo: null },
+    { key: "tsubomi", name: "Tsubomi", line: p.tsubomi?.headline ?? "", status: status("tsubomi"), icon: "icons/tsubomi.png", accent: BRAND_COLOR.tsubomi ?? "#2997ff", href: pathOf(lang, "tsubomi/"), demo: null },
+    { key: "noctua", name: p.noctua?.name ?? "Noctua", line: p.noctua?.headline ?? "", status: status("noctua"), icon: "icons/noctua.png", accent: BRAND_COLOR.noctua ?? "#2997ff", href: pathOf(lang, "noctua/"), demo: null },
+    { key: "aureum", name: "Aureum", line: d.brands.aureum.tagline, status: status("aureum"), icon: "icons/aureum.png", accent: BRAND_COLOR.aureum ?? "#2997ff", href: pathOf(lang, "aureum/"), demo: null },
     { key: "store", name: h.ctaStore, line: h.storeTagline, status: `${d.chrome.launcherVersion} ${d.launcherFiles.version}`, icon: "icons/store.png", accent: "#2997ff", href: pathOf(lang, "launcher/"), demo: null },
   ]);
 
