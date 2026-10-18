@@ -752,6 +752,51 @@ def _agent_block():
     }
 
 
+XHARD_JAR_PREFIX = "corvus-xhard-"
+XHARD_JAR_SUFFIX = ".jar"
+XHARD_MOD_ID = "corvus_xhard"
+
+
+def _xhard_block():
+    """The `xhard` block (Corvus XHard, 2026-10-18), or None when no jar has been published.
+
+    Corvus XHard is the server-side Fabric mod behind the "XHard" difficulty; Corvus Agent 5.1 installs it from this
+    block when a server is set to XHard. It is not a model (the Store does not list it), so the block carries the mod
+    id beside the file: name, size, SHA-256. The version is the file name's and must be the version the jar's
+    fabric.mod.json declares, and the jar must declare the mod id corvus_xhard, so a renamed jar cannot pass for
+    another. Exactly one jar; a function of its own, so it cannot change a byte of another block; never dropped once
+    published (see build()).
+    """
+    jars = sorted(p for p in DOWNLOAD_DIR.glob(f"{XHARD_JAR_PREFIX}*{XHARD_JAR_SUFFIX}") if p.is_file())
+    if not jars:
+        return None
+    if len(jars) > 1:
+        raise SystemExit(f"ERROR: more than one Corvus XHard jar in {DOWNLOAD_DIR} "
+                         f"({', '.join(j.name for j in jars)}). Publish exactly one.")
+    jpath = jars[0]
+    version = jpath.name[len(XHARD_JAR_PREFIX):-len(XHARD_JAR_SUFFIX)]
+    if not re.fullmatch(r"\d+\.\d+\.\d+", version):
+        raise SystemExit(f"ERROR: {jpath.name} is not named corvus-xhard-<major.minor.patch>.jar.")
+    try:
+        with zipfile.ZipFile(jpath) as jar:
+            meta = json.loads(jar.read("fabric.mod.json").decode("utf-8"))
+    except (OSError, KeyError, ValueError, zipfile.BadZipFile) as exc:
+        raise SystemExit(f"ERROR: could not read fabric.mod.json out of {jpath} ({exc}).")
+    if meta.get("id") != XHARD_MOD_ID:
+        raise SystemExit(f"ERROR: {jpath.name} declares mod id {meta.get('id')!r}, not {XHARD_MOD_ID!r}.")
+    if str(meta.get("version")) != version:
+        raise SystemExit(f"ERROR: {jpath.name} is named for {version}, but its fabric.mod.json declares "
+                         f"{meta.get('version')!r}.")
+    return {
+        "mod_id": XHARD_MOD_ID,
+        "latest": version,
+        "download_url": f"{SITE_BASE_URL}/downloads/{jpath.name}",
+        "file_name": jpath.name,
+        "file_size": jpath.stat().st_size,
+        "sha256": _sha256(jpath),
+    }
+
+
 def _previously_published_manifest():
     """The manifest currently committed at the repo root, or {} if there is none."""
     path = ROOT / "glimpse_manifest.json"
@@ -924,6 +969,14 @@ def build():
     elif "agent" in _previously_published_manifest():
         raise SystemExit(f"ERROR: no Corvus Agent package found in {DOWNLOAD_DIR}, but the published manifest carries an "
                          f"'agent' block. Dropping it would silently withdraw the release.")
+
+    xhard = _xhard_block()
+    if xhard is not None:
+        manifest["xhard"] = xhard
+        print(f"glimpse_manifest.py: Corvus XHard {xhard['latest']} ({xhard['file_name']}) selected, including 'xhard' block")
+    elif "xhard" in _previously_published_manifest():
+        raise SystemExit(f"ERROR: no Corvus XHard jar found in {DOWNLOAD_DIR}, but the published manifest carries an "
+                         f"'xhard' block. Dropping it would silently withdraw the release.")
 
     noctua = _noctua_block()
     if noctua is not None:

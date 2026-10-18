@@ -97,9 +97,29 @@ def check(root: Path, tracked=git_tracked):
                                         "sha256": hashlib.sha256(blob).hexdigest(), "_meta": meta}
     except (zipfile.BadZipFile, KeyError, ValueError) as exc:
         return problems + [f"{zpath.name} cannot be read as a release ({exc})"], {}
-    if sorted(jars) != ["astraea"]:
+    # 2026-10-18: after the retirement the zip may be the retirement placeholder named in data/retirement.json
+    # ("placeholder_mod_id"): one empty jar under another mod id, which agents 4.1.x/5.0.0 (no retirement code)
+    # install over ASTRAEA, so no jar with ASTRAEA's mod id stays on their servers. It must be truly empty.
+    try:
+        _ended = (json.loads((root.joinpath(*RETIREMENT_FILE)).read_text(encoding="utf-8")).get("astraea") or {})
+    except (OSError, ValueError):
+        _ended = {}
+    placeholder = _ended.get("placeholder_mod_id") if _ended.get("retired") else None
+    own_id = placeholder or "astraea"
+    if sorted(jars) != [own_id]:
         problems.append(f"{zpath.name}'s mods/ holds {sorted(jars) or 'no jar'}; ASTRAEA ships exactly one jar, its own")
-    own = jars.get("astraea")
+    if placeholder and placeholder in jars:
+        pmeta = jars[placeholder]["_meta"]
+        if set(pmeta.get("depends") or {}) - {"fabricloader"}:
+            problems.append(f"the placeholder jar depends on {sorted(pmeta.get('depends'))}: only fabricloader is allowed")
+        for field in ("entrypoints", "mixins", "accessWidener", "jars", "provides", "breaks", "conflicts", "recommends", "suggests"):
+            if pmeta.get(field):
+                problems.append(f"the placeholder jar's fabric.mod.json carries {field}: it must be empty")
+        with zipfile.ZipFile(io.BytesIO(zipfile.ZipFile(io.BytesIO(data)).read(jars[placeholder]["path"]))) as pj:
+            stray = [n for n in pj.namelist() if n not in ("META-INF/MANIFEST.MF", "fabric.mod.json") and not n.endswith("/")]
+        if stray:
+            problems.append(f"the placeholder jar carries {stray}: it must hold only fabric.mod.json and its manifest")
+    own = None if placeholder else jars.get("astraea")
     if own:
         if own["version"] != version:
             problems.append(f"{zpath.name} is named for {version}, but its jar declares {own['version']}")
@@ -120,7 +140,7 @@ def check(root: Path, tracked=git_tracked):
         return problems + [f"glimpse_manifest.json cannot be read ({exc})"], {}
     expected_jars = {k: {x: v[x] for x in ("path", "version", "file_size", "sha256")} for k, v in jars.items()}
     expected = {
-        "mod_id": "astraea",
+        "mod_id": own_id,
         "latest": version,
         "download_url": f"{SITE}/downloads/{zpath.name}",
         "file_name": zpath.name,
@@ -160,8 +180,10 @@ def check(root: Path, tracked=git_tracked):
         except (OSError, ValueError, KeyError, IndexError) as exc:
             problems.append(f"changelog_feed/astraea/{lang}.json cannot be read for its newest release ({exc})")
             continue
-        if newest != f"V{version}":
-            problems.append(f"changelog_feed/astraea/{lang}.json leads with {newest}, but the site publishes V{version}")
+        # The placeholder is not a release: no changelog entry (nothing is announced), the feeds keep the last content version.
+        lead = _ended.get("last_content_version") if placeholder else version
+        if newest != f"V{lead}":
+            problems.append(f"changelog_feed/astraea/{lang}.json leads with {newest}, but the site publishes V{lead}")
     return problems, {"zip": zpath.name, "version": version, "size": len(data), "sha256": expected["sha256"]}
 
 
@@ -232,7 +254,7 @@ def self_test() -> int:
         ("the zip is untracked (the live 404)", lambda d: None, False, True),
         ("the manifest has no astraea block", lambda d: edit_manifest(d, lambda m: m.pop("astraea")), True, True),
         ("the manifest's sha256 is stale", lambda d: edit_manifest(d, lambda m: m["astraea"].update(sha256="0" * 64)), True, True),
-        ("the manifest's jars miss a field", lambda d: edit_manifest(d, lambda m: m["astraea"]["jars"]["astraea"].pop("sha256")), True, True),
+        ("the manifest's jars miss a field", lambda d: edit_manifest(d, lambda m: next(iter(m["astraea"]["jars"].values())).pop("sha256")), True, True),
         ("the zip is replaced after the manifest was built",
          lambda d: rewrite_zip(d / "downloads" / zname, lambda e: e.update({"README.txt": e["README.txt"] + b" "})), True, True),
         ("a second jar is bundled", lambda d: rewrite_zip(d / "downloads" / zname, lambda e: e.update({"mods/other.jar": _tiny_jar("other")})), True, True),
@@ -252,6 +274,20 @@ def self_test() -> int:
         ("the retirement names another last version than the ZIP",
          lambda d: _edit_json(d / "data" / "retirement.json", lambda r: r["astraea"].update(last_version="1.5.3")), True, True),
     ]
+    if json.loads((ROOT / "data" / "retirement.json").read_text(encoding="utf-8")).get("astraea", {}).get("placeholder_mod_id"):
+        plants += [
+            ("the placeholder gains an entrypoint",
+             lambda d: rewrite_zip(d / "downloads" / zname, jar_with(lambda m: m.update(entrypoints={"main": ["x.Y"]}))), True, True),
+            ("the placeholder gains a mixin config",
+             lambda d: rewrite_zip(d / "downloads" / zname, jar_with(lambda m: m.update(mixins=["x.mixins.json"]))), True, True),
+            ("the placeholder depends on minecraft (an unmet depends would stop the server and roll back)",
+             lambda d: rewrite_zip(d / "downloads" / zname, jar_with(lambda m: m["depends"].update(minecraft="~26.3"))), True, True),
+            ("the placeholder carries a class",
+             lambda d: rewrite_zip(d / "downloads" / zname, jar_with(extra_inner={"x/Y.class": b"\xca\xfe"})), True, True),
+            ("the placeholder declares ASTRAEA's own mod id",
+             lambda d: rewrite_zip(d / "downloads" / zname, jar_with(lambda m: m.update(id="astraea"))), True, True),
+            ("a feed announces the placeholder as a release", lambda d: edit_feed(d, "en", "V1.5.5"), True, True),
+        ]
     ok = True
     for label, plant, is_tracked, should_fail in plants:
         with tempfile.TemporaryDirectory() as temp:
