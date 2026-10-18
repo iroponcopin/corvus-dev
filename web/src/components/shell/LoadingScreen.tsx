@@ -47,7 +47,12 @@ export function LoadingScreen({ labels }: { labels: Shell["loader"] }) {
       else window.addEventListener("load", () => resolve(), { once: true });
     });
     const fonts = document.fonts?.ready ?? Promise.resolve();
-    void Promise.all([loaded, fonts]).then(() => requestAnimationFrame(lift));
+    // The home theatre (the template's scroll-scrubbed film) also waits for its first painted frame; the guards still apply.
+    const film = new Promise<void>((resolve) => {
+      if (document.querySelector("[data-theatre]") === null || root.dataset.hero === "ready") resolve();
+      else window.addEventListener("corvus:hero-ready", () => resolve(), { once: true });
+    });
+    void Promise.all([loaded, fonts, film]).then(() => requestAnimationFrame(lift));
     timers.push(window.setTimeout(lift, READY_GUARD_MS));
     timers.push(window.setTimeout(() => {
       if (!lifted) {

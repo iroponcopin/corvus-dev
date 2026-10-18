@@ -37,6 +37,7 @@ const copies = [
   [join(WIKI, "assets", "cinema", "act1"), "cinema/act1"],
   [join(WIKI, "assets", "cinema", "act2"), "cinema/act2"],
   [join(WIKI, "assets", "cinema", "act3"), "cinema/act3"],
+  [join(WIKI, "assets", "cinema", "hero"), "cinema/hero"],
   [join(WIKI, "assets", "img", "sparxie-front.png"), "wiki/skin/sparxie-front.png"],
   [join(WIKI, "assets", "img", "sparxie-model.png"), "wiki/skin/sparxie-model.png"],
   [join(WEB, "src", "app", "fonts", "OFL-Syne.txt"), "fonts/OFL-Syne.txt"],

@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { FRESH, fill } from "@/i18n/fresh";
-import { pathOf, recipeIcon } from "@/lib/site";
+import { asset, pathOf, recipeIcon } from "@/lib/site";
 import { langData, recipeModelList, wiki } from "@/lib/wiki";
 import type { Lang, Release } from "@/lib/wiki-types";
 import { BRAND_COLOR, BRAND_ICON } from "@/lib/brands";
-import { NaturalCinemaStage } from "../cinema/NaturalCinemaStage";
+import { TheatreHero, type TheatreChapter } from "./TheatreHero";
+import { THEATRE } from "@/i18n/theatre";
 import { BentoReleases, type BentoItem } from "./BentoReleases";
 import { Lineup, type LineupItem } from "./Lineup";
 import { Chronology, type ChronoItem } from "./Chronology";
@@ -24,7 +25,7 @@ import { ENDED_MODELS, inModelOrder, MODEL_ORDER } from "@/lib/models";
 const FEATURED = ["ouka:ammo_energy", "ouka:ouka_alloy_ingot", "cherry:astral_catalyst"] as const;
 
 /**
- * The home page: Act I (the natural cinema stage), the brands, then the five realms the particles travel
+ * The home page: the theatre (the template's scroll-scrubbed film, one chapter per model), the brands, then the five realms the particles travel
  * through as the page scrolls (codex, showroom, store, time, nexus) and the explore grid.
  */
 export function HomePage({ lang }: { lang: Lang }) {
@@ -137,6 +138,26 @@ export function HomePage({ lang }: { lang: Lang }) {
     { key: "store", name: h.ctaStore, line: h.storeTagline, status: `${d.chrome.launcherVersion} ${d.launcherFiles.version}`, icon: "icons/store.png", accent: "#2997ff", href: pathOf(lang, "launcher/"), demo: null },
   ]);
 
+  // The theatre: Corvus, each live model in MODEL_ORDER, then the Store; the film scrubs under them as the page scrolls.
+  const th = THEATRE[lang];
+  const download = pathOf(lang, "download/");
+  const pad2 = (n: number): string => String(n).padStart(2, "0");
+  const models = lineup.filter((x) => x.key !== "store");
+  const chapters: TheatreChapter[] = [
+    { key: "corvus", eyebrow: `CORVUS / ${pad2(1)}`, title: th.title, lede: th.lede, href: download, link: th.cta, accent: "#e8e5dc", icon: null },
+    ...models.map((m, i) => ({
+      key: m.key,
+      eyebrow: `${th.chapter} ${pad2(i + 2)} — ${m.status}`,
+      title: [m.name],
+      lede: m.line,
+      href: m.href,
+      link: th.open,
+      accent: m.accent,
+      icon: asset(m.icon),
+    })),
+    { key: "store", eyebrow: `Corvus Store / ${pad2(models.length + 2)}`, title: th.endTitle, lede: th.endLede, href: download, link: th.cta, accent: "#2997ff", icon: asset("icons/store.png") },
+  ];
+
   const explore = [
     { href: "launcher/", title: d.launcher.title, body: d.launcher.description },
     { href: "announcement/", title: f.announcement.title, body: f.announcement.description },
@@ -148,16 +169,7 @@ export function HomePage({ lang }: { lang: Lang }) {
 
   return (
     <>
-      <NaturalCinemaStage
-        title="HALIA"
-        title2="CORVUS"
-        title3="Corvus"
-        tagline={f.cinema.tagline}
-        tagline2={f.cinema.tagline2}
-        closing={HOME_V2[lang].closing}
-        credit={f.cinema.credit}
-        hint={f.heroScroll}
-      />
+      <TheatreHero label={th.label} src={asset("cinema/hero/hero.mp4")} srcSmall={asset("cinema/hero/hero-sm.mp4")} chapters={chapters} />
 
       <section className="ac-section ac-bento-section" aria-labelledby="ac-bento-h">
         <div className="ac-wrap">
