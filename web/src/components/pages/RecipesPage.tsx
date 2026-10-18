@@ -42,7 +42,7 @@ export function RecipesPage({ lang }: { lang: Lang }) {
   return (
     <section>
       <div className="ac-wrap ac-page-head">
-        <h1 className="ac-h1 tome-title">{r.title}</h1>
+        <h1 className="ac-h1 tome-page-title">{r.title}</h1>
         <p className="ac-lead">{f.tome.intro.replace("{count}", String(itemCount))}</p>
       </div>
       <div className="ac-wrap">

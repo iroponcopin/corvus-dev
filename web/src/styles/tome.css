@@ -34,7 +34,7 @@
 }
 
 /* The page title: the overhaul's display face (Syne, falls back to the sans in the scripts it lacks). */
-.tome-title {
+.tome-page-title {
   font-family: var(--font-display);
 }
 
