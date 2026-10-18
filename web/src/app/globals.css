@@ -8,6 +8,15 @@
 @import "../styles/pages.css";
 @import "../styles/cinema.css";
 
+/* Syne, the template's display face (OFL 1.1, see portal/fonts/OFL-Syne.txt). Variable 400-800. */
+@font-face {
+  font-family: "Syne";
+  src: url("./fonts/Syne-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+}
+
 /*
  * Corvus — strict Apple dark minimal.
  * OLED black canvas, #1C1C1E system surfaces, Apple Blue. SF Pro on Apple devices (the system
@@ -32,6 +41,32 @@
   --color-red: #ff453a;
   --color-discord: #5865f2;
 
+  /* V2 design tokens: obsidian canvas, elevated glass, hairline, the template's ink and paper. */
+  --color-obsidian: #050507;
+  --color-glass: #0c0e14;
+  --color-hairline: rgb(255 255 255 / 0.08);
+  --color-ink-tpl: #0a0a0a;
+  --color-paper: #e8e5dc;
+
+  /* Per-model accents: the two stops of each model's gradient. */
+  --accent-halia: #e11d48;
+  --accent-halia-2: #f59e0b;
+  --accent-ouka: #38bdf8;
+  --accent-ouka-2: #94a3b8;
+  --accent-cherry: #fb7185;
+  --accent-cherry-2: #fda4af;
+  --accent-tsubomi: #34d399;
+  --accent-tsubomi-2: #fbcfe8;
+  --accent-astraea: #f97316;
+  --accent-astraea-2: #10b981;
+  --accent-noctua: #818cf8;
+  --accent-noctua-2: #eab308;
+  --accent-aureum: #818cf8;
+  --accent-aureum-2: #eab308;
+
+  --ease-reveal: cubic-bezier(0.22, 1, 0.36, 1);
+  --font-display: "Syne", var(--font-sans);
+
   --font-sans:
     -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter Variable", "Inter", "Helvetica Neue",
     "Hiragino Sans", "Hiragino Kaku Gothic ProN", "PingFang SC", "Apple SD Gothic Neo", "Noto Sans CJK JP",
@@ -55,7 +90,7 @@
   }
 
   html {
-    background: #000;
+    background: var(--color-obsidian);
     color: var(--color-fg);
     font-family: var(--font-sans);
     font-feature-settings: "kern" 1;
@@ -74,7 +109,7 @@
   body {
     margin: 0;
     min-height: 100dvh;
-    background: #000;
+    background: var(--color-obsidian);
     font-size: 17px;
     line-height: 1.47;
     letter-spacing: -0.022em;
@@ -107,6 +142,21 @@
     outline: 2px solid var(--color-link);
     outline-offset: 3px;
     border-radius: 6px;
+  }
+
+  h1,
+  h2 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  /* Syne covers Latin only: the scripts it cannot draw keep the system face, so no heading mixes two faces. */
+  html:lang(ar),
+  html:lang(ja),
+  html:lang(ko),
+  html:lang(ru),
+  html:lang(zh) {
+    --font-display: var(--font-sans);
   }
 
   code,

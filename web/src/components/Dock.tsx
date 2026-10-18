@@ -6,11 +6,13 @@ import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { getLenis } from "./SmoothScroll";
 import { Icon } from "./Icon";
 import { SoundToggle } from "./SoundToggle";
+import { openPalette } from "./palette/event";
 import { asset, BASE_PATH, LANGUAGES, pathOf } from "@/lib/site";
 import { sectionKey, splitPath } from "@/lib/paths";
 import type { Lang } from "@/lib/wiki-types";
 
-export interface HeaderLabels {
+/** The Dock's words: the wordmark, the navigation, and the search button (the palette opens from it). */
+export interface DockLabels {
   siteTitle: string;
   home: string;
   launcher: string;
@@ -23,6 +25,7 @@ export interface HeaderLabels {
   close: string;
   language: string;
   primary: string;
+  search: string;
   sound: string;
   soundOn: string;
   soundOff: string;
@@ -80,14 +83,14 @@ function useDismiss(open: boolean, close: () => void, refs: React.RefObject<HTML
   }, [open, close, refs]);
 }
 
-export function Header({
+export function Dock({
   lang,
   labels,
   models,
   updates,
 }: {
   lang: Lang;
-  labels: HeaderLabels;
+  labels: DockLabels;
   models: ModelLink[];
   updates: UpdateLink[];
 }) {
@@ -109,6 +112,7 @@ export function Header({
   const updatesId = useId();
   const langId = useId();
   const sheetId = useId();
+  const headerRef = useRef<HTMLElement>(null);
 
   const closeMenu = useCallback(() => setMenu(null), []);
   const closeLang = useCallback(() => {
@@ -151,6 +155,35 @@ export function Header({
     };
   }, [sheet]);
 
+  // Magnetic hover: an element marked data-magnetic leans a few pixels toward the pointer (fine pointers only).
+  useEffect(() => {
+    const root = headerRef.current;
+    if (!root || !window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const lean = (el: HTMLElement, x: number, y: number): void => {
+      el.style.setProperty("--mx", `${(x * 7).toFixed(2)}px`);
+      el.style.setProperty("--my", `${(y * 5).toFixed(2)}px`);
+    };
+    const onMove = (e: PointerEvent): void => {
+      const el = (e.target as Element | null)?.closest?.<HTMLElement>("[data-magnetic]");
+      if (!el) return;
+      const r = el.getBoundingClientRect();
+      lean(el, (e.clientX - (r.left + r.width / 2)) / Math.max(r.width, 1), (e.clientY - (r.top + r.height / 2)) / Math.max(r.height, 1));
+    };
+    const onOut = (e: PointerEvent): void => {
+      const el = (e.target as Element | null)?.closest?.<HTMLElement>("[data-magnetic]");
+      if (!el || (e.relatedTarget instanceof Node && el.contains(e.relatedTarget))) return;
+      el.style.removeProperty("--mx");
+      el.style.removeProperty("--my");
+    };
+    root.addEventListener("pointermove", onMove);
+    root.addEventListener("pointerout", onOut);
+    return () => {
+      root.removeEventListener("pointermove", onMove);
+      root.removeEventListener("pointerout", onOut);
+    };
+  }, []);
+
   // Footer links (and any other a[data-lang]) remember the choice too.
   useEffect(() => {
     const onClick = (e: MouseEvent): void => {
@@ -192,7 +225,7 @@ export function Header({
   const current = (k: string): "page" | undefined => (k === key ? "page" : undefined);
   const toggle = (m: Exclude<Menu, null>): void => setMenu((v) => (v === m ? null : m));
   return (
-    <header className="ac-header" data-compact={compact ? "true" : "false"}>
+    <header ref={headerRef} className="ac-header" data-compact={compact ? "true" : "false"}>
       <div className="ac-header-pill ac-glass">
         <Link href={pathOf(lang, "")} className="ac-brand" aria-label={`${labels.siteTitle} · ${labels.home}`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -201,14 +234,14 @@ export function Header({
         </Link>
 
         <nav className="ac-nav" aria-label={labels.primary}>
-          <Link href={pathOf(lang, "launcher/")} className="ac-nav-link" aria-current={current("launcher")}>
+          <Link href={pathOf(lang, "launcher/")} className="ac-nav-link" data-magnetic aria-current={current("launcher")}>
             {labels.launcher}
           </Link>
           <div className="ac-nav-menu">
             <button
               ref={modelsBtn}
               type="button"
-              className="ac-nav-link"
+              className="ac-nav-link" data-magnetic
               aria-expanded={menu === "models"}
               aria-haspopup="true"
               aria-controls={modelsId}
@@ -235,14 +268,14 @@ export function Header({
               </ul>
             </div>
           </div>
-          <Link href={pathOf(lang, "recipes/")} className="ac-nav-link" aria-current={current("recipes")}>
+          <Link href={pathOf(lang, "recipes/")} className="ac-nav-link" data-magnetic aria-current={current("recipes")}>
             {labels.recipes}
           </Link>
           <div className="ac-nav-menu">
             <button
               ref={updatesBtn}
               type="button"
-              className="ac-nav-link"
+              className="ac-nav-link" data-magnetic
               aria-expanded={menu === "updates"}
               aria-haspopup="true"
               aria-controls={updatesId}
@@ -270,12 +303,22 @@ export function Header({
               </ul>
             </div>
           </div>
-          <Link href={pathOf(lang, "discord/")} className="ac-nav-link" aria-current={current("discord")}>
+          <Link href={pathOf(lang, "discord/")} className="ac-nav-link" data-magnetic aria-current={current("discord")}>
             {labels.discord}
           </Link>
         </nav>
 
         <div className="ac-header-end">
+          <button
+            type="button"
+            className="ac-iconbtn ac-dock-search"
+            data-magnetic
+            aria-label={labels.search}
+            title={labels.search}
+            onClick={() => openPalette()}
+          >
+            <Icon name="search" size={17} />
+          </button>
           <SoundToggle label={labels.sound} on={labels.soundOn} off={labels.soundOff} />
           <div className="ac-lang">
             <button
@@ -314,7 +357,7 @@ export function Header({
           </div>
           <Link
             href={pathOf(lang, "download/")}
-            className="ac-btn ac-btn--small ac-cta"
+            className="ac-btn ac-btn--small ac-cta" data-magnetic
             aria-current={current("download")}
           >
             {labels.download}

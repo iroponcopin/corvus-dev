@@ -39,6 +39,7 @@ const copies = [
   [join(WIKI, "assets", "cinema", "act3"), "cinema/act3"],
   [join(WIKI, "assets", "img", "sparxie-front.png"), "wiki/skin/sparxie-front.png"],
   [join(WIKI, "assets", "img", "sparxie-model.png"), "wiki/skin/sparxie-model.png"],
+  [join(WEB, "src", "app", "fonts", "OFL-Syne.txt"), "fonts/OFL-Syne.txt"],
 ];
 
 rmSync(OUT, { recursive: true, force: true });
@@ -50,6 +51,28 @@ for (const [from, to] of copies) {
   const dest = join(OUT, to);
   mkdirSync(dirname(dest), { recursive: true });
   cpSync(from, dest, { recursive: true });
+}
+
+// The Cmd/Ctrl+K palette's index, one file per language (fetched on first open, never inlined in a page):
+// the seven models, the changelog entries of the live models, and the recipe results. Built from the wiki's
+// data (web/.data/wiki.json, written by extract_wiki.py just before this script runs).
+const LIVE_MODELS = ["halia", "ouka", "cherry", "tsubomi", "noctua", "aureum"];
+const MODEL_PAGES = [["halia", "halia/"], ["ouka", "ouka/"], ["cherry", "cherry/"], ["tsubomi", "tsubomi/"], ["noctua", "noctua/"], ["aureum", "aureum/"], ["astraea", "astraea/"]];
+const wikiData = JSON.parse(readFileSync(join(WEB, ".data", "wiki.json"), "utf8"));
+const LANG_CODES = Object.keys(wikiData.langs);
+mkdirSync(join(OUT, "search"), { recursive: true });
+for (const lang of LANG_CODES) {
+  const d = wikiData.langs[lang];
+  const names = d.recipes.names;
+  const models = MODEL_PAGES.map(([id, href]) => ({ id, name: d.products[id]?.name ?? id, href, archived: d.products[id]?.availability === "archived" }));
+  const changelog = [];
+  for (const b of d.changelog.brands) {
+    if (!LIVE_MODELS.includes(b.id)) continue;
+    for (const r of b.releases) changelog.push({ id: r.id, model: b.id, title: r.title, version: r.version, date: r.date, href: `changelog/?model=${b.id}#cl-p-${r.id}` });
+  }
+  const results = [...new Set(wikiData.recipes.recipes.map((r) => r.result))];
+  const recipes = results.map((id) => ({ id, name: names[id] ?? wikiData.recipes.items[id]?.en ?? id, href: `recipes/#item=${encodeURIComponent(id)}` }));
+  writeFileSync(join(OUT, "search", `${lang}.json`), JSON.stringify({ models, changelog, recipes }));
 }
 
 // Recipe icons are named by stable ids and are 219 of them: they keep plain URLs.

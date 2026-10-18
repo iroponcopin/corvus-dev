@@ -3,12 +3,15 @@ import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { DebugHud } from "@/components/DebugHud";
 import { Footer } from "@/components/Footer";
-import { Header, type ModelLink, type UpdateLink } from "@/components/Header";
+import { Dock, type ModelLink, type UpdateLink } from "@/components/Dock";
+import { Palette } from "@/components/palette/Palette";
+import { LoadingScreen } from "@/components/shell/LoadingScreen";
 import { Reveal } from "@/components/Reveal";
 import { SiteBackdrop } from "@/components/SiteBackdrop";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { WorldGate } from "@/engine/WorldGate";
 import { FRESH } from "@/i18n/fresh";
+import { SHELL } from "@/i18n/shell";
 import { MODELS } from "@/lib/models";
 import { asset, BASE_PATH, isLang, LANG_CODES, pathOf } from "@/lib/site";
 import { langData } from "@/lib/wiki";
@@ -32,6 +35,17 @@ export const viewport: Viewport = {
  * hide their resting state), and settle the cheap half of the WebGL verdict at once, so a page
  * that will never draw WebGL shows its posters from the first frame. Experience settles the rest.
  */
+/**
+ * Before first paint, decide whether the loading screen shows: once per session (sessionStorage) and never under reduced
+ * motion; ?loader=show or ?loader=skip overrides. The screen lifts in components/shell/LoadingScreen.tsx, and its guards
+ * set the attribute to "done" whatever happens, so a page is never stranded behind it.
+ */
+const LOADER_BOOT =
+  `(function(){var d=document.documentElement;try{var q=new URLSearchParams(location.search),m=q.get("loader"),s=sessionStorage;` +
+  `var rm=matchMedia("(prefers-reduced-motion: reduce)").matches;var seen=s.getItem("corvus-intro")==="1";` +
+  `if(rm||m==="skip"||(seen&&m!=="show")){d.setAttribute("data-loader","skip");}` +
+  `else{d.setAttribute("data-loader","show");s.setItem("corvus-intro","1");}}catch(e){d.setAttribute("data-loader","skip")}})();`;
+
 const BOOT =
   `(function(){var d=document.documentElement;d.setAttribute("data-js","1");try{var q=new URLSearchParams(location.search),` +
   `n=navigator,c=n.connection;if(q.get("webgl")==="off"||q.get("stage")==="off"||(c&&c.saveData===true)||` +
@@ -84,6 +98,7 @@ export default async function LangLayout({ children, params }: { children: React
         <script src={asset("lang.js")} />
         <script dangerouslySetInnerHTML={{ __html: langInit(lang) }} />
         <script dangerouslySetInnerHTML={{ __html: BOOT }} />
+        <script dangerouslySetInnerHTML={{ __html: LOADER_BOOT }} />
       </head>
       <body>
         <a className="ac-skip" href="#main">
@@ -93,7 +108,8 @@ export default async function LangLayout({ children, params }: { children: React
         <WorldGate dir={d.dir} />
         <SmoothScroll />
         <Reveal />
-        <Header
+        <LoadingScreen labels={SHELL[lang].loader} />
+        <Dock
           lang={lang}
           models={models}
           updates={updates}
@@ -106,6 +122,7 @@ export default async function LangLayout({ children, params }: { children: React
             recipes: c.recipes,
             discord: c.discord,
             download: c.download,
+            search: SHELL[lang].palette.open,
             menu: c.menu,
             close: c.close,
             language: c.language,
@@ -119,6 +136,11 @@ export default async function LangLayout({ children, params }: { children: React
           <main id="main">{children}</main>
           <Footer lang={lang} d={d} />
         </div>
+        <Palette
+          lang={lang}
+          labels={SHELL[lang].palette}
+          modelLabels={Object.fromEntries(models.map((m) => [m.key, m.label]))}
+        />
         <DebugHud labels={{ fps: f.debug.fps, drawCalls: f.debug.drawCalls }} />
       </body>
     </html>

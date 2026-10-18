@@ -43,6 +43,12 @@ export function Changelog({
       if (b !== null && b !== "all" && (BRANDS as readonly string[]).includes(b)) url.searchParams.set("model", b);
       window.history.replaceState(window.history.state, "", url.pathname + url.search + url.hash);
     }
+    // A deep link from the palette (#cl-p-<release id>) opens that entry and brings it into view.
+    const hash = decodeURIComponent(window.location.hash.slice(1));
+    if (hash.startsWith("cl-p-")) {
+      setOpen(new Set([hash.slice(5)]));
+      window.setTimeout(() => document.getElementById(hash)?.closest("article")?.scrollIntoView({ block: "center" }), 0);
+    }
   }, []);
 
   const names = useMemo(() => Object.fromEntries(brands.map((b) => [b.id, b.name])), [brands]);
