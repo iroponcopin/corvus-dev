@@ -30,6 +30,33 @@ import unicodedata
 import zipfile
 from pathlib import Path
 
+# The one model order (web/src/lib/models.ts MODEL_ORDER), read from the TypeScript so it is never written twice.
+_MODELS_TS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "src", "lib", "models.ts")
+with open(_MODELS_TS, encoding="utf-8") as _fh:
+    _m = re.search(r"MODEL_ORDER[^=]*=\s*\[([^\]]*)\]", _fh.read())
+MODEL_ORDER_IDS = re.findall(r'"([a-z]+)"', _m.group(1)) if _m else []
+_MODEL_SPELL = {"halia": "Halia", "ouka": "OUKA", "cherry": "Cherry", "tsubomi": "Tsubomi", "noctua": "Noctua", "aureum": "Aureum", "astraea": "ASTRAEA"}
+_NAME = "(?:" + "|".join(_MODEL_SPELL.values()) + ")"
+_RUN = re.compile(_NAME + r"(?:(?:[^\"A-Za-z]{1,3}|[^\"A-Za-z]{0,2}(?:and|und|et|e|y|ve|и|dan|和|与)[^\"A-Za-z]{1,2}|[^\"A-Za-z]{0,2}و)" + _NAME + "){2,}")
+
+
+def in_model_order(text: str) -> str:
+    """Reorder every run of three or more model names in contract copy into MODEL_ORDER, separators kept in place.
+    A Turkish case suffix stays on the last name and follows its vowel ('daki after a, 'deki after i)."""
+
+    def fix(m: re.Match) -> str:
+        run = m.group(0)
+        names = re.findall(_NAME, run)
+        seps = re.split(_NAME, run)
+        rank = {_MODEL_SPELL[i]: n for n, i in enumerate(MODEL_ORDER_IDS)}
+        ordered = sorted(names, key=lambda x: rank.get(x, len(rank)))
+        return "".join(seps[i] + ordered[i] for i in range(len(ordered))) + seps[-1]
+
+    out = _RUN.sub(fix, text)
+    out = re.sub(r"Tsubomi(['’])(daki|nın)", lambda m: "Tsubomi" + m.group(1) + {"daki": "deki", "nın": "nin"}[m.group(2)], out)
+    return out
+
+
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
 WEB = HERE.parent
@@ -860,7 +887,7 @@ def build_lang(lang: str, ctx: dict) -> dict:
     cl_labels = dict(leg["changelog"]["labels"])
     changelog = {
         "title": ui["page_titles"]["changelog"],
-        "description": ui["page_descriptions"]["changelog"],
+        "description": in_model_order(ui["page_descriptions"]["changelog"]),
         "labels": cl_labels,
         "noteBrands": list(BCL.NOTE_BRANDS),
         "brands": changelog_lang(lang, b, ctx["launcherNotes"], ctx["launcherNotesI18n"]),
@@ -871,8 +898,8 @@ def build_lang(lang: str, ctx: dict) -> dict:
     recipes = {
         "title": ui["page_titles"]["recipes"],
         "navTitle": ui["nav"]["recipes"],
-        "description": ui["page_descriptions"]["recipes"],
-        "intro": common["recipes_intro"].replace("{count}", str(ctx["recipes"]["total"])),
+        "description": in_model_order(ui["page_descriptions"]["recipes"]),
+        "intro": in_model_order(common["recipes_intro"]).replace("{count}", str(ctx["recipes"]["total"])),
         "labels": rec_labels,
         **recipes_lang(lang, ctx["recipes"], b),
     }
