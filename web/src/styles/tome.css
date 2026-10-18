@@ -7,15 +7,15 @@
 .tome {
   --tome-ink: var(--color-obsidian);
   --tome-ink-2: var(--color-glass);
-  --tome-paper: #efe6cf;
-  --tome-paper-2: #e3d6b6;
-  --tome-text: #1f1a14;
-  --tome-muted: #5c5142;
+  --tome-paper: #e8e5dc;
+  --tome-paper-2: #d6d2c6;
+  --tome-text: #0a0a0a;
+  --tome-muted: rgb(10 10 10 / 0.6);
   --tome-hair: var(--color-hair);
   position: relative;
   margin-block: 8px 48px;
   padding: clamp(12px, 2vw, 22px);
-  border-radius: var(--radius-card);
+  border-radius: 0;
   color: var(--color-fg);
   background:
     radial-gradient(70% 60% at 22% 18%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 70%),
@@ -47,7 +47,7 @@
   gap: 12px;
   min-height: 44px;
   padding: 0 14px;
-  border-radius: 14px;
+  border-radius: 0;
   border: 1px solid var(--tome-hair);
   background: rgb(255 255 255 / 0.03);
   box-shadow: inset 0 2px 8px rgb(0 0 0 / 0.6), inset 0 -1px 0 rgb(255 255 255 / 0.04);
@@ -73,7 +73,7 @@
   font-family: var(--font-mono, ui-monospace, monospace);
   font-size: 12px;
   padding: 2px 7px;
-  border-radius: 7px;
+  border-radius: 0;
   border: 1px solid var(--tome-hair);
   color: #d2d2d7;
 }
@@ -136,7 +136,7 @@
   filter: brightness(1.12) saturate(1.1);
 }
 .tome-ribbon--all {
-  --ribbon: #e2c07a;
+  --ribbon: #e8e5dc;
 }
 .tome-ribbon .ac-count {
   color: #15110c;
@@ -154,19 +154,14 @@
 
 .tome-stations {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
   margin-bottom: 12px;
-  overflow-x: auto;
-  padding-bottom: 4px;
-  scrollbar-width: none;
 }
 .tome-stations > * {
-  flex: none;
-}
-.tome-stations::-webkit-scrollbar {
-  display: none;
+  flex: 0 0 auto;
+  max-width: 100%;
 }
 
 .tome-viewtabs {
@@ -229,8 +224,8 @@
 .tome-book {
   position: relative;
   padding: 14px 14px 10px;
-  border-radius: 18px;
-  background: linear-gradient(180deg, #1b1510 0%, #110d0a 100%);
+  border-radius: 0;
+  background: #0a0a0a;
   border: 1px solid var(--tome-hair);
   box-shadow: 0 40px 80px -30px rgb(0 0 0 / 0.8), 0 0 0 1px rgb(255 255 255 / 0.03) inset;
   outline: none;
@@ -245,7 +240,7 @@
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   min-height: 560px;
   transform-style: preserve-3d;
-  border-radius: 6px;
+  border-radius: 0;
 }
 .tome-book.is-narrow .tome-pages {
   grid-template-columns: minmax(0, 1fr);
@@ -264,7 +259,7 @@
   -webkit-backface-visibility: hidden;
 }
 .tome-page--l {
-  border-radius: 8px 0 0 8px;
+  border-radius: 0;
   background-image:
     linear-gradient(90deg, rgb(60 40 20 / 0.18), transparent 22%),
     radial-gradient(rgb(60 40 20 / 0.06) 0.6px, transparent 0.9px);
@@ -279,7 +274,7 @@
 }
 .tome-book.is-narrow .tome-page--l,
 .tome-book.is-narrow .tome-page--r {
-  border-radius: 8px;
+  border-radius: 0;
   background-image: radial-gradient(rgb(60 40 20 / 0.06) 0.6px, transparent 0.9px);
   background-size: 5px 5px;
 }
@@ -324,7 +319,7 @@
   height: 6px;
   pointer-events: none;
   z-index: 0;
-  background: repeating-linear-gradient(90deg, #e6dbbd 0 2px, #bfb08c 2px 3px);
+  background: var(--tome-paper-2);
   border-radius: 0 0 6px 6px;
 }
 .tome-stack--l {
@@ -382,7 +377,7 @@
   display: inline-flex;
   align-items: center;
   padding: 3px 10px;
-  border-radius: 999px;
+  border-radius: 0;
   background: var(--tome-text);
   color: var(--tome-paper);
   font-size: 12px;
@@ -412,8 +407,8 @@
   gap: 8px;
   width: 100%;
   min-height: 104px;
-  padding: 12px 8px;
-  border-radius: 12px;
+  padding: 12px 4px;
+  border-radius: 0;
   border: 1px solid rgb(60 40 20 / 0.14);
   background: rgb(60 40 20 / 0.05);
   color: var(--tome-text);
@@ -432,8 +427,21 @@
   box-shadow: 0 0 0 2px var(--accent), 0 10px 22px -10px rgb(0 0 0 / 0.45);
   background: rgb(60 40 20 / 0.12);
 }
+/* A name breaks only between words: a word is never split. Hyphens (en) and a line clamp keep long names inside the cell;
+   overflow-wrap: anywhere is the last resort for a single word wider than the cell, and the small size keeps that from happening. */
 .tome-card span:last-child {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  max-width: calc(100% + 8px);
+  margin-inline: -4px;
+  word-break: normal;
   overflow-wrap: anywhere;
+  hyphens: manual;
+  font-size: 11px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 /* The blueprint. */
@@ -499,7 +507,7 @@
   gap: 8px;
   margin: 4px 0;
   padding: 4px 10px 4px 6px;
-  border-radius: 999px;
+  border-radius: 0;
   border: 1px solid rgb(60 40 20 / 0.16);
   background: rgb(60 40 20 / 0.05);
   color: var(--tome-text);
@@ -528,7 +536,7 @@
   height: 40px;
   font-size: 22px;
   line-height: 1;
-  border-radius: 999px;
+  border-radius: 0;
   backdrop-filter: blur(24px) saturate(180%);
   -webkit-backdrop-filter: blur(24px) saturate(180%);
 }
@@ -586,7 +594,7 @@
 }
 .tome-flip.is-back .tome-leaf-front,
 .tome-flip.is-back .tome-leaf-back {
-  border-radius: 8px 0 0 8px;
+  border-radius: 0;
 }
 .tome-flip:not(.is-back) .tome-leaf-front,
 .tome-flip:not(.is-back) .tome-leaf-back {
@@ -594,7 +602,7 @@
 }
 .tome-flip.is-single .tome-leaf-front,
 .tome-flip.is-single .tome-leaf-back {
-  border-radius: 8px;
+  border-radius: 0;
 }
 .tome-book.is-turning,
 .tome-book.is-turning * {
@@ -622,7 +630,7 @@
 .tome-cmd {
   width: min(640px, 100%);
   padding: 14px;
-  border-radius: 20px;
+  border-radius: 0;
   color: #f5f5f7;
   background: rgb(22 24 30 / 0.78);
   border: 1px solid var(--tome-hair);
@@ -636,7 +644,7 @@
   gap: 10px;
   padding: 0 6px 0 12px;
   min-height: 48px;
-  border-radius: 14px;
+  border-radius: 0;
   background: rgb(255 255 255 / 0.04);
   border: 1px solid var(--tome-hair);
 }
@@ -665,7 +673,7 @@
   align-items: center;
   gap: 12px;
   padding: 9px 12px;
-  border-radius: 12px;
+  border-radius: 0;
   cursor: pointer;
 }
 .tome-cmd-item[aria-selected="true"] {
@@ -689,7 +697,7 @@
   flex-direction: column;
   height: 100%;
   min-height: 0;
-  border-radius: 24px;
+  border-radius: 0;
   border: 1px solid var(--tome-hair);
   background: rgb(255 255 255 / 0.025);
   backdrop-filter: blur(24px) saturate(180%);
@@ -750,7 +758,7 @@
 @media (max-width: 1023px) {
   .tome {
     padding: 10px;
-    border-radius: 22px;
+    border-radius: 0;
   }
   /* The pedestal is the viewport above the book on narrow screens. */
   .tome-layout {

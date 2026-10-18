@@ -4,6 +4,7 @@ import { type CSSProperties, type KeyboardEvent, type PointerEvent as ReactPoint
 import { chime } from "@/engine/audio";
 import type { Fresh } from "@/i18n/fresh";
 import { BRAND_COLOR } from "@/lib/brands";
+import { modelRank } from "@/lib/models";
 import { asset, recipeIcon } from "@/lib/site";
 import type { Dir, RecipeLabels } from "@/lib/wiki-types";
 import { BlueprintPage, fill, IndexPage } from "./BookSpread";
@@ -90,6 +91,8 @@ export function RecipeBookScene({ data, labels, t, dir }: RecipeBookSceneProps) 
   // One unit everywhere: an ITEM (a distinct result the book lists), counted with the same filter the book uses.
   // The All chip, every chapter ribbon, every station chip, the count line and the command bar all read this.
   const allCount = index.order.length;
+  /** The chapters in the shared model order (Halia, OUKA, Cherry, Tsubomi, ...); each keeps its own index. */
+  const sortedCats = useMemo(() => [...data.cats].sort((a, b) => modelRank(a.model) - modelRank(b.model)), [data.cats]);
   const catCounts = useMemo(() => new Map(data.cats.map((c) => [c.index, filterIds(data, index, { cat: c.index, station: null, query: "" }).length])), [data, index]);
   const stationCounts = useMemo(() => new Map(data.stations.map((s) => [s.id, filterIds(data, index, { cat: null, station: s.id, query: "" }).length])), [data, index]);
   const pages = useMemo(() => paginate(ids), [ids]);
@@ -453,7 +456,7 @@ export function RecipeBookScene({ data, labels, t, dir }: RecipeBookSceneProps) 
           <small className="ac-count">{allCount}</small>
         </button>
       </li>
-      {data.cats.map((c) => (
+      {sortedCats.map((c) => (
         <li key={c.index}>
           <button
             type="button"
@@ -530,7 +533,7 @@ export function RecipeBookScene({ data, labels, t, dir }: RecipeBookSceneProps) 
             >
               <div className="tome-spine" aria-hidden="true" />
               <nav className="tome-ribbons-edge" aria-hidden="true">
-                {data.cats.map((c) => (
+                {sortedCats.map((c) => (
                   <button
                     key={c.index}
                     type="button"
