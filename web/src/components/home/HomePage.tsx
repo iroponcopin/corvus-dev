@@ -7,6 +7,7 @@ import { BRAND_COLOR, BRAND_ICON } from "@/lib/brands";
 import { NaturalCinemaStage } from "../cinema/NaturalCinemaStage";
 import { BentoReleases, type BentoItem } from "./BentoReleases";
 import { Lineup, type LineupItem } from "./Lineup";
+import { Chronology, type ChronoItem } from "./Chronology";
 import { CopyButton } from "../CopyButton";
 import { FeedTelemetry } from "../discord/FeedTelemetry";
 import { CodexPreview, type FeaturedRecipe } from "./CodexPreview";
@@ -71,12 +72,27 @@ export function HomePage({ lang }: { lang: Lang }) {
   // The skin showroom holds ASTRAEA's blade only while ASTRAEA is offered; it is not, so the showroom is bladeless.
   const blade = null;
 
-  // Time: the latest release of each brand, newest first, then what comes next.
+  // Time: the latest release of each live model (never ASTRAEA or Alpha), newest first.
+  const CHRONO_IDS = ["halia", "ouka", "cherry", "tsubomi", "aureum", "corvus"] as const;
   const c = d.changelog;
-  const latest = c.brands
+  const latest: { brand: (typeof c.brands)[number]; release: Release }[] = c.brands
+    .filter((b): b is (typeof c.brands)[number] => (CHRONO_IDS as readonly string[]).includes(b.id))
     .map((b) => ({ brand: b, release: b.releases[0] }))
     .filter((x): x is { brand: (typeof c.brands)[number]; release: Release } => x.release !== undefined)
     .sort((a, b) => (b.release.date ?? "9999").localeCompare(a.release.date ?? "9999"));
+  const chrono: ChronoItem[] = latest.map(({ brand, release }, i) => ({
+    key: release.id,
+    brand: brand.name,
+    icon: BRAND_ICON[brand.id] ?? "icons/store.png",
+    color: BRAND_COLOR[brand.id] ?? "#2997ff",
+    version: release.version,
+    date: release.date,
+    title: release.title,
+    summary: release.summary,
+    href: `${pathOf(lang, "changelog/")}?model=${brand.id}`,
+    english: brand.id === "corvus",
+    now: i === 0,
+  }));
 
   // Nexus: a taste of the command list.
   const k = d.discord;
@@ -299,40 +315,9 @@ export function HomePage({ lang }: { lang: Lang }) {
           <p className="ac-lead ac-reveal">{f.realms.chronology.lede}</p>
           <p className="ac-small ac-reveal">{f.chrono.hint}</p>
         </div>
-        <ol className="ac-wrap ac-time-list">
-          {latest.map(({ brand, release }, i) => (
-            <li key={release.id} className="ac-time-card ac-card ac-reveal" data-side={i % 2 === 0 ? "a" : "b"} data-brand={brand.id}>
-              <span className="ac-time-dot" aria-hidden="true" style={{ background: BRAND_COLOR[brand.id] ?? "#2997ff" }} />
-              <div className="ac-time-top">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={asset(BRAND_ICON[brand.id] ?? "icons/store.png")} alt="" width={44} height={44} data-dim={brand.id === "alpha"} />
-                <div>
-                  <p className="ac-eyebrow">
-                    {i === 0 ? f.chrono.now : f.chrono.shipped} · {brand.name}
-                  </p>
-                  <h3>
-                    <span className="ac-ltr">{release.version}</span>
-                    {release.date ? (
-                      <small className="ac-ltr">
-                        {" · "}
-                        {release.date}
-                      </small>
-                    ) : null}
-                  </h3>
-                </div>
-              </div>
-              <p className="ac-time-title" lang={brand.id === "corvus" ? "en" : undefined}>
-                {release.title}
-              </p>
-              <p className="ac-small ac-time-summary" lang={brand.id === "corvus" ? "en" : undefined}>
-                {release.summary}
-              </p>
-              <Link className="ac-link" href={`${pathOf(lang, "changelog/")}?model=${brand.id}`}>
-                {f.chrono.open} <span className="ac-flip">{d.chrome.arrow}</span>
-              </Link>
-            </li>
-          ))}
-        </ol>
+        <div className="ac-wrap">
+          <Chronology items={chrono} labels={{ now: f.chrono.now, shipped: f.chrono.shipped, open: f.chrono.open }} />
+        </div>
         <div className="ac-wrap ac-time-foot ac-reveal">
           <Link className="ac-btn" href={pathOf(lang, "changelog/")}>
             {f.realms.chronology.cta}
