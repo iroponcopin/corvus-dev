@@ -1,5 +1,6 @@
 "use client";
 
+import { MODEL_ORDER } from "@/lib/models";
 import Link from "next/link";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { chime } from "@/engine/audio";
@@ -400,7 +401,7 @@ export function StoreSim({ products, labels, hrefs }: { products: Product[]; lab
 
   const art = article ? byId[article.id] : undefined;
   const pair = (a: string, b: string) => (
-    <div className="ac-st-pair">{products.filter((p) => p.id === a || p.id === b).map((p) => card(p, "small"))}</div>
+    <div key={`${a}-${b}`} className="ac-st-pair">{products.filter((p) => p.id === a || p.id === b).map((p) => card(p, "small"))}</div>
   );
 
   const restartTrack = (): void => {
@@ -570,10 +571,9 @@ export function StoreSim({ products, labels, hrefs }: { products: Product[]; lab
               )
             ) : tab === "discover" ? (
               <div className="ac-st-discover">
-                {products.filter((p) => p.id === "halia").map((p) => card(p, "big"))}
-                {pair("ouka", "cherry")}
-                {pair("tsubomi", "noctua")}
-                {pair("aureum", "astraea")}
+                {/* MODEL_ORDER: the first model large, then the rest two by two. */}
+                {products.filter((p) => p.id === MODEL_ORDER[0]).map((p) => card(p, "big"))}
+                {MODEL_ORDER.slice(1).flatMap((id, i, rest) => (i % 2 === 0 ? [pair(id, rest[i + 1] ?? "")] : []))}
                 <div className="ac-st-pair">{products.filter((p) => p.id === "alpha").map((p) => card(p, "small"))}</div>
               </div>
             ) : tab === "mods" ? (

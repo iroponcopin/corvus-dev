@@ -1,5 +1,6 @@
 "use client";
 
+import { modelRank } from "@/lib/models";
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
 import { asset, BASE_PATH, pathOf } from "@/lib/site";
 import type { Lang } from "@/lib/wiki-types";
@@ -111,7 +112,8 @@ export function Palette({
   const options = useMemo<Option[]>(() => {
     if (index === null) return [];
     const q = norm(query);
-    const modelOpts: Option[] = index.models
+    const modelOpts: Option[] = [...index.models]
+      .sort((a, b) => modelRank(a.id) - modelRank(b.id))
       .filter((m) => q === "" || norm(`${m.name} ${m.id}`).includes(q))
       .map((m) => ({ kind: "models", key: `m-${m.id}`, label: m.name, sub: m.archived ? "" : (modelLabels[m.id] ?? ""), href: m.href }));
     const clOpts: Option[] = [];

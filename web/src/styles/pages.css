@@ -1616,12 +1616,9 @@ html:lang(ar) .ac-facts dt {
 
 /* ———————————————————————————— Discord nexus ———————————————————————————— */
 
+/* The Discord call to action is the template's text CTA like every other. */
 .ac-btn--discord {
-  background: var(--color-discord);
-}
-
-.ac-btn--discord:hover {
-  background: #4752c4;
+  border-color: #e8e5dc;
 }
 
 .ac-dc-section {
@@ -1686,10 +1683,13 @@ html:lang(ar) .ac-facts dt {
   place-items: center;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
-  background: var(--color-discord);
-  font-size: 14px;
+  border-radius: 0;
+  border: 1px solid rgb(232 229 220 / 0.72);
+  background: transparent;
+  color: #e8e5dc;
+  font-size: 10px;
   font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 .ac-steps h3 {
@@ -3166,15 +3166,23 @@ html:lang(ar) .ac-st-eyebrow {
   padding-block: clamp(56px, 10vh, 112px);
 }
 
-.ac-hub-skip {
-  position: absolute;
-  top: calc(var(--header-h) + 14px);
-  inset-inline-end: var(--ac-gutter);
-  z-index: 3;
+/* The hub opens like the template's hero: the title flush to the start edge, the skip link after it. */
+.ac-hub {
+  padding-top: calc(var(--header-h) + clamp(64px, 14vh, 160px));
 }
 
 .ac-hub-hero {
-  text-align: center;
+  order: 1;
+  text-align: start;
+}
+
+.ac-hub-skip {
+  order: 2;
+  justify-self: start;
+}
+
+.ac-hub > :not(.ac-hub-hero, .ac-hub-skip) {
+  order: 3;
 }
 
 .ac-hub-hero h1 {
@@ -3187,8 +3195,8 @@ html:lang(tr) .ac-hub-hero h1 {
 }
 
 .ac-hub-hero p {
-  max-width: 30em;
-  margin: 14px auto 0;
+  max-width: 420px;
+  margin: 24px 0 0;
 }
 
 .ac-hub-ring {

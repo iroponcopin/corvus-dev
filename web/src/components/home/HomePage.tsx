@@ -14,6 +14,7 @@ import { CodexPreview, type FeaturedRecipe } from "./CodexPreview";
 import { ShowroomPreview } from "./ShowroomPreview";
 import { StorePreview } from "./StorePreview";
 import { HOME_V2 } from "@/i18n/home";
+import { ENDED_MODELS, inModelOrder, MODEL_ORDER } from "@/lib/models";
 
 
 /**
@@ -62,10 +63,10 @@ export function HomePage({ lang }: { lang: Lang }) {
   const blade = null;
 
   // Time: the latest release of each live model (never ASTRAEA or Alpha), newest first.
-  const CHRONO_IDS = ["halia", "ouka", "cherry", "tsubomi", "aureum", "corvus"] as const;
+  const CHRONO_IDS: readonly string[] = [...MODEL_ORDER.filter((id) => !ENDED_MODELS.includes(id) && id !== "noctua"), "corvus"];
   const c = d.changelog;
   const latest: { brand: (typeof c.brands)[number]; release: Release }[] = c.brands
-    .filter((b): b is (typeof c.brands)[number] => (CHRONO_IDS as readonly string[]).includes(b.id))
+    .filter((b): b is (typeof c.brands)[number] => CHRONO_IDS.includes(b.id))
     .map((b) => ({ brand: b, release: b.releases[0] }))
     .filter((x): x is { brand: (typeof c.brands)[number]; release: Release } => x.release !== undefined)
     .sort((a, b) => (b.release.date ?? "9999").localeCompare(a.release.date ?? "9999"));
@@ -99,7 +100,10 @@ export function HomePage({ lang }: { lang: Lang }) {
     { key: "store", manifest: "launcher", changelog: "corvus", size: "l", href: "launcher/" },
     { key: "agent", manifest: "agent", changelog: null, size: "m", href: "launcher/" },
   ];
-  const bento: BentoItem[] = BENTO.map((x) => {
+  // MODEL_ORDER decides the order; Store and Agent (not models) keep their place after every model.
+  const byOrder = <T extends { key: string }>(xs: T[]): T[] =>
+    inModelOrder(xs.map((x) => x.key)).map((k) => xs.find((x) => x.key === k) as T);
+  const bento: BentoItem[] = byOrder(BENTO).map((x) => {
     const brand = x.changelog === null ? undefined : c.brands.find((b) => b.id === x.changelog);
     const rel = brand?.releases[0];
     const prod = p[x.key];
@@ -123,7 +127,7 @@ export function HomePage({ lang }: { lang: Lang }) {
   });
 
   // The Lineup: the live models in the Store's order, with corvus Store 5.x last. ASTRAEA and Alpha are not in it.
-  const lineup: LineupItem[] = [
+  const lineup: LineupItem[] = byOrder([
     { key: "halia", name: "Halia", line: p.halia?.tagline ?? "", status: status("halia"), icon: "icons/halia.png", accent: BRAND_COLOR.halia ?? "#2997ff", href: pathOf(lang, "halia/"), demo: "blade" },
     { key: "ouka", name: "OUKA", line: p.ouka?.lede ?? "", status: status("ouka"), icon: "icons/ouka.png", accent: BRAND_COLOR.ouka ?? "#2997ff", href: pathOf(lang, "ouka/"), demo: "power" },
     { key: "cherry", name: "Cherry", line: p.cherry?.lede ?? "", status: status("cherry"), icon: "icons/cherry.png", accent: BRAND_COLOR.cherry ?? "#2997ff", href: pathOf(lang, "cherry/"), demo: null },
@@ -131,7 +135,7 @@ export function HomePage({ lang }: { lang: Lang }) {
     { key: "noctua", name: p.noctua?.name ?? "Noctua", line: p.noctua?.tagline ?? "", status: status("noctua"), icon: "icons/noctua.png", accent: BRAND_COLOR.noctua ?? "#2997ff", href: pathOf(lang, "noctua/"), demo: null },
     { key: "aureum", name: "Aureum", line: p.aureum?.tagline ?? "", status: status("aureum"), icon: "icons/aureum.png", accent: BRAND_COLOR.aureum ?? "#2997ff", href: pathOf(lang, "aureum/"), demo: null },
     { key: "store", name: h.ctaStore, line: h.storeTagline, status: `${d.chrome.launcherVersion} ${d.launcherFiles.version}`, icon: "icons/store.png", accent: "#2997ff", href: pathOf(lang, "launcher/"), demo: null },
-  ];
+  ]);
 
   const explore = [
     { href: "launcher/", title: d.launcher.title, body: d.launcher.description },

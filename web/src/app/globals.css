@@ -170,6 +170,16 @@
     color: #f2eee5;
   }
 
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+  }
+
+  html:is(:lang(ar), :lang(ja), :lang(ko), :lang(ru), :lang(zh)) h3 {
+    letter-spacing: 0;
+  }
+
   /* Syne draws Latin only; it stays first for every language, so Latin words (model names, versions) keep the
      template face and the scripts it cannot draw fall through to the system face. Negative tracking is wrong for
      those scripts, so it is relaxed per language below. */
@@ -248,6 +258,17 @@
     font-weight: 800;
     color: #f2eee5;
     text-wrap: balance;
+  }
+
+  /* The template sets its display lines in capitals. */
+  .ac-display,
+  .ac-h1,
+  .ac-h2 {
+    text-transform: uppercase;
+  }
+
+  html:lang(tr) :is(.ac-display, .ac-h1, .ac-h2) {
+    text-transform: none;
   }
 
   .ac-display {

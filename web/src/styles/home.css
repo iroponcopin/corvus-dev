@@ -629,10 +629,9 @@
 
 .ac-chrono-spline path {
   fill: none;
-  stroke: rgb(255 255 255 / 0.55);
-  stroke-width: 2;
-  stroke-linecap: round;
-  filter: drop-shadow(0 0 6px rgb(255 255 255 / 0.25));
+  stroke: rgb(232 229 220 / 0.48);
+  stroke-width: 1;
+  stroke-linecap: square;
 }
 
 .ac-chrono-node {
@@ -644,19 +643,20 @@
   pointer-events: none;
   opacity: 0.3;
   transform: scale(0.6);
-  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s ease, box-shadow 0.4s ease;
 }
 
 .ac-chrono-node[data-lit="true"] {
   opacity: 1;
   transform: scale(1);
-  box-shadow: 0 0 0 4px rgb(255 255 255 / 0.08), 0 0 22px 4px currentColor;
+  box-shadow: 0 0 0 4px rgb(232 229 220 / 0.12);
 }
 
 .ac-chrono-card {
   opacity: 0;
-  transform: translate3d(var(--chrono-x, 0px), 28px, 0) scale(0.97);
-  transition: transform 0.9s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.6s ease;
+  transform: translate3d(var(--chrono-x, 0px), 24px, 0);
+  filter: blur(6px);
+  transition: transform 1100ms cubic-bezier(0.22, 1, 0.36, 1), opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), filter 1100ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .ac-chrono-card[data-side="a"] {
@@ -670,6 +670,7 @@
 .ac-chrono-card[data-in="true"] {
   opacity: 1;
   transform: none;
+  filter: none;
 }
 
 @media (max-width: 719px) {
@@ -912,5 +913,156 @@
 @media (prefers-reduced-motion: reduce) {
   .ac-mc-drawer {
     animation: none;
+  }
+}
+
+/* ———— Atelier Noir: the home sections in the template's language ————
+ * Ink panels drawn by 1px paper hairlines, tracked capitals for every label, Syne 800 for every name, square
+ * text CTAs, and no coloured glow: a model's accent is reduced to a 1px rule on the active card. */
+
+.ac-tile {
+  padding: 28px;
+  background: #0a0a0a;
+  box-shadow: inset 0 0 0 1px var(--color-hair);
+  transition: box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.ac-tile:hover {
+  transform: none;
+  box-shadow: inset 0 0 0 1px #e8e5dc;
+}
+
+.ac-tile h3 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.ac-tile p {
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+.ac-bento-tile {
+  border-color: var(--color-hair);
+  background: #0a0a0a;
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.ac-bento-tile::before {
+  display: none;
+}
+
+.ac-bento-tile:hover,
+.ac-bento-tile:focus-visible {
+  transform: none;
+  border-color: #e8e5dc;
+}
+
+.ac-bento-tile:focus-visible {
+  outline: 2px solid #e8e5dc;
+  outline-offset: 4px;
+}
+
+.ac-bento-name {
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.ac-bento-pill,
+.ac-lineup-status {
+  padding: 5px 8px 4px;
+  border: 1px solid rgb(232 229 220 / 0.72);
+  background: transparent;
+  color: #e8e5dc;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.ac-bento-pill[data-state="live"]::before {
+  background: #e8e5dc;
+}
+
+.ac-bento-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.ac-bento-summary {
+  font-family: var(--font-body);
+}
+
+.ac-lineup {
+  background:
+    radial-gradient(90vw 70vh at 50% 40%, color-mix(in srgb, var(--lineup-accent) 7%, transparent), transparent 70%),
+    #0a0a0a;
+}
+
+.ac-lineup-head {
+  max-width: none;
+  padding-inline: 40px;
+}
+
+.ac-lineup-track {
+  padding: 0 40px;
+}
+
+.ac-lineup-card {
+  border: 1px solid var(--color-hair);
+  background: #0a0a0a;
+  opacity: 0.5;
+}
+
+.ac-lineup-card[data-active="true"] {
+  border-color: #e8e5dc;
+}
+
+.ac-lineup-media {
+  background: none;
+  border-bottom: 1px solid var(--color-hair);
+}
+
+.ac-lineup-name {
+  font-weight: 800;
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 0.9;
+  letter-spacing: -0.075em;
+  text-transform: uppercase;
+}
+
+.ac-lineup-line {
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+.ac-lineup-link .ac-link,
+.ac-bento-tile .ac-link,
+.ac-tile .ac-link {
+  color: #e8e5dc;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+html:lang(tr) :is(.ac-tile h3, .ac-bento-name, .ac-lineup-name, .ac-bento-pill, .ac-lineup-status, .ac-link) {
+  text-transform: none;
+}
+
+@media (max-width: 800px) {
+  .ac-lineup-head {
+    padding-inline: 20px;
+  }
+
+  .ac-lineup-track {
+    padding: 0 20px;
   }
 }

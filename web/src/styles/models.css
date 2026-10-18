@@ -49,6 +49,10 @@
     padding-bottom: 42px;
   }
 
+  .ac-model-name {
+    font-size: clamp(40px, 13.5vw, 96px);
+  }
+
   .ac-model-hero > .ac-wrap,
   .ac-model-hero > .ac-wide {
     width: calc(100% - 40px);
@@ -82,11 +86,11 @@
 .ac-model-name {
   padding-block: 0.04em 0.06em;
   color: #f2eee5;
-  font-size: clamp(56px, 9vw, 152px);
+  font-size: clamp(44px, min(7.4vw, 15vw), 132px);
   line-height: 0.84;
   letter-spacing: -0.075em;
   text-transform: uppercase;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
 }
 
 html:lang(tr) .ac-model-name {

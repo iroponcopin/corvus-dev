@@ -1,18 +1,13 @@
 import type { Fresh } from "@/i18n/fresh";
+import { MODEL_NAMES, MODEL_ORDER } from "@/lib/models";
 
 /**
- * The brand line in the Store's order (extract_wiki.py's product_ids, without the archived pack),
+ * The brand line in MODEL_ORDER (the owner's order: Halia, OUKA, Cherry, Tsubomi, then the rest),
  * spelt as the copy spells them in every language.
  */
-export const LINEUP: readonly (readonly [id: string, name: string])[] = [
-  ["halia", "Halia"],
-  ["ouka", "OUKA"],
-  ["cherry", "Cherry"],
-  ["tsubomi", "Tsubomi"],
-  ["noctua", "Noctua"],
-  ["aureum", "Aureum"],
-  ["astraea", "ASTRAEA"],
-];
+export const LINEUP: readonly (readonly [id: string, name: string])[] = MODEL_ORDER.map(
+  (id) => [id, MODEL_NAMES[id] ?? id] as const,
+);
 
 type Lineup = Fresh["lineup"];
 

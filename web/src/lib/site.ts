@@ -57,7 +57,9 @@ export const SECTIONS = [
 ] as const;
 export type Section = (typeof SECTIONS)[number];
 
-const HOME_PATHS: ReadonlySet<string> = new Set(["/", ...LANG_CODES.filter((l) => l !== "ja").map((l) => `/${l}/`)]);
+// "/ja/" is listed too: the export prerenders Japanese at /ja/ (usePathname says so on the server) and
+// finalize-export moves it to the root, where the client sees "/". Both must agree, or hydration fails (#418).
+const HOME_PATHS: ReadonlySet<string> = new Set(["/", ...LANG_CODES.map((l) => `/${l}/`)]);
 
 /** Whether a page path (without the base path) is a language's home page. */
 export function isHomePath(pathname: string): boolean {

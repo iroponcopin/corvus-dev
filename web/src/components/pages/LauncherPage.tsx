@@ -8,12 +8,15 @@ import { Stagger } from "../Stagger";
 import { BrandRing, type RingItem } from "../store/BrandRing";
 import { StoreSim } from "../store/StoreSim";
 import { LauncherFiles } from "./DownloadPage";
+import { MODEL_ORDER } from "@/lib/models";
 
 
 /** The Store's order of its products, and the hub ring's order of the six marks. */
 // ASTRAEA's service ended on 2026-10-16: it is the last model in both lists, before the archived Alpha.
-const PRODUCTS = ["halia", "ouka", "cherry", "tsubomi", "noctua", "aureum", "astraea", "alpha"] as const;
-const RING = ["ouka", "cherry", "tsubomi", "noctua", "astraea", "alpha"] as const;
+// Both derive from MODEL_ORDER; the ring keeps its six marks (the copy counts them), in that order.
+const PRODUCTS: readonly string[] = [...MODEL_ORDER, "alpha"];
+const RING_MARKS = new Set(["ouka", "cherry", "tsubomi", "noctua", "astraea", "alpha"]);
+const RING: readonly string[] = PRODUCTS.filter((id) => RING_MARKS.has(id));
 
 /**
  * Corvus Store: the hub (the models, one card each), the Store itself running in the page, then

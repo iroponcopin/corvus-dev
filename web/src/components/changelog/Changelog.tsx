@@ -7,11 +7,12 @@ import type { ChangelogBrand, ChangelogLabels, Release } from "@/lib/wiki-types"
 import { BrandStage } from "../BrandStage";
 import { Icon } from "../Icon";
 import { Rich } from "../Rich";
+import { ENDED_MODELS, MODEL_ORDER } from "@/lib/models";
 
-/** The live models, in the order the chips show them. Corvus Store is the launcher's own feed. */
-const LIVE = ["halia", "ouka", "cherry", "tsubomi", "aureum", "noctua", "corvus"] as const;
+/** The live models, in MODEL_ORDER (the order the chips show them). Corvus Store is the launcher's own feed. */
+const LIVE: readonly string[] = [...MODEL_ORDER.filter((id) => !ENDED_MODELS.includes(id)), "corvus"];
 /** The models that have ended: they appear under the Ended filter only, never in All. */
-const ENDED = ["astraea", "alpha"] as const;
+const ENDED: readonly string[] = [...ENDED_MODELS, "alpha"];
 const COLLAPSE_AFTER = 8;
 
 type Filter = "all" | "ended" | string;
