@@ -1,11 +1,43 @@
 {
  "lang": "pt-br",
  "brand": "tsubomi",
- "updated": "2026-10-11",
+ "updated": "2026-10-18",
  "title": "Histórico de atualizações",
- "updated_label": "Atualizado em 2026-10-11",
+ "updated_label": "Atualizado em 2026-10-18",
  "note": "",
  "groups": [
+  {
+   "label": "V2.0",
+   "summary": "Tsubomi V2 — 200 blocos novos, a maçã encantada, um gerador fabricável",
+   "releases": [
+    {
+     "version": "V2.0.0",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Tsubomi V2 — 200 blocos novos, a maçã encantada, um gerador fabricável",
+     "summary": "O Tsubomi V2.0.0 traz 200 blocos de construção em 20 séries de material de 10 formas, a maçã encantada, um gerador de monstros fabricável e uma receita para cada ovo gerador.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "200 blocos novos em 20 séries de material de 10 formas cada: tijolos, cinzelado, pilar, ladrilhos, lâmpada, grade, placa reforçada, escada, laje e muro. Cada série é fabricada com um material simples e pode ser cortada de seus tijolos na serra de pedra.",
+        "Maçã encantada: uma maçã e uma estrela do Nether. Ao comê-la, cura todos os jogadores online de uma vez e dá a eles Regeneração II e Velocidade II.",
+        "Gerador de monstros fabricável: fragmentos de ametista, grama alta, estrelas do Nether, uma maçã encantada e o bloco de liga Ouka do OUKA. A receita só aparece se o OUKA estiver instalado.",
+        "Uma receita de ovo gerador para as 88 criaturas: uma estrela do Nether (mais nas criaturas mais fortes) e itens que combinam com a criatura.",
+        "Leve para o servidor: nenhum bloco tem entidade de bloco nem ticker, e os blocos novos não recebem ticks aleatórios. A maçã encantada age uma única vez, ao ser comida."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais novo, Fabric API 0.161.0+26.3 ou mais nova e Java 25. Nenhum outro mod é necessário; o Cherry é opcional.",
+        "O Tsubomi não pode ser usado junto com o Alpha. Se houver um único mod do Alpha instalado, o jogo não inicia; remova antes os jars do Alpha."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.1",
    "summary": "Tsubomi V1.1 — 100 blocos novos",

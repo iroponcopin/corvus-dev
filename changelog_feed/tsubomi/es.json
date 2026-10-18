@@ -1,11 +1,43 @@
 {
  "lang": "es",
  "brand": "tsubomi",
- "updated": "2026-10-11",
+ "updated": "2026-10-18",
  "title": "Historial de actualizaciones",
- "updated_label": "Actualizado el 2026-10-11",
+ "updated_label": "Actualizado el 2026-10-18",
  "note": "",
  "groups": [
+  {
+   "label": "V2.0",
+   "summary": "Tsubomi V2 — 200 bloques nuevos, la manzana encantada, un generador fabricable",
+   "releases": [
+    {
+     "version": "V2.0.0",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Tsubomi V2 — 200 bloques nuevos, la manzana encantada, un generador fabricable",
+     "summary": "Tsubomi V2.0.0 añade 200 bloques de construcción en 20 series de material de 10 formas, la manzana encantada, un generador de monstruos fabricable y una receta para cada huevo generador.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "200 bloques nuevos en 20 series de material de 10 formas cada una: ladrillos, cincelado, pilar, baldosas, lámpara, rejilla, placa reforzada, escalera, losa y muro. Cada serie se fabrica con un material sencillo y se corta de sus ladrillos en el cortapiedras.",
+        "Manzana encantada: una manzana y una estrella del Nether. Al comerla cura a la vez a todos los jugadores conectados y les da Regeneración II y Velocidad II.",
+        "Generador de monstruos fabricable: fragmentos de amatista, hierba alta, estrellas del Nether, una manzana encantada y el bloque de aleación Ouka de OUKA. La receta solo aparece si OUKA está instalado.",
+        "Una receta de huevo generador para las 88 criaturas: una estrella del Nether (más en las criaturas más fuertes) y objetos propios de la criatura.",
+        "Ligero para el servidor: ningún bloque tiene entidad de bloque ni ticker, y los bloques nuevos no reciben ticks aleatorios. La manzana encantada actúa una sola vez, al comerla."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+        "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.1",
    "summary": "Tsubomi V1.1 — 100 bloques nuevos",

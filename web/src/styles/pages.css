@@ -306,6 +306,11 @@ html:lang(ar) .ac-facts dt {
 
 .ac-pixel {
   image-rendering: pixelated;
+  /* An animated block texture is a strip of square frames (magma, sea lantern, the runic matrix): show the first
+     frame in a square instead of letting the strip stretch its card. */
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: top;
 }
 
 .ac-noicon {

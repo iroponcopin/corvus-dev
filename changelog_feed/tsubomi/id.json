@@ -1,11 +1,43 @@
 {
  "lang": "id",
  "brand": "tsubomi",
- "updated": "2026-10-11",
+ "updated": "2026-10-18",
  "title": "Riwayat Pembaruan",
- "updated_label": "Diperbarui 2026-10-11",
+ "updated_label": "Diperbarui 2026-10-18",
  "note": "",
  "groups": [
+  {
+   "label": "V2.0",
+   "summary": "Tsubomi V2 — 200 blok baru, apel terpesona, spawner yang bisa dibuat",
+   "releases": [
+    {
+     "version": "V2.0.0",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Tsubomi V2 — 200 blok baru, apel terpesona, spawner yang bisa dibuat",
+     "summary": "Tsubomi V2.0.0 menambahkan 200 blok bangunan dalam 20 seri bahan masing-masing 10 bentuk, apel terpesona, spawner monster yang bisa dibuat, dan resep untuk setiap telur spawn.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "200 blok baru dalam 20 seri bahan dengan masing-masing 10 bentuk: bata, berukir, pilar, ubin, lampu, kisi, pelat lapis baja, tangga, setengah balok, dan dinding. Setiap seri dibuat dari bahan biasa dan bisa dipotong dari batanya di pemotong batu.",
+        "Apel terpesona: sebuah apel dan sebuah bintang Nether. Memakannya menyembuhkan semua pemain yang online sekaligus dan memberi mereka Regenerasi II dan Kecepatan II.",
+        "Spawner monster yang bisa dibuat: pecahan kecubung, rumput tinggi, bintang Nether, sebuah apel terpesona, dan blok paduan Ouka milik OUKA. Resepnya hanya muncul jika OUKA terpasang.",
+        "Resep telur spawn untuk semua 88 makhluk: sebuah bintang Nether (lebih banyak untuk makhluk yang lebih kuat) ditambah barang yang cocok dengan makhluknya.",
+        "Ringan bagi server: tidak ada blok yang punya entitas blok atau ticker, dan blok baru tidak menerima tick acak. Apel terpesona hanya bekerja sekali, saat dimakan."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+        "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.1",
    "summary": "Tsubomi V1.1 — 100 blok baru",

@@ -286,7 +286,7 @@ def recipes_shared(legacy: dict) -> dict:
                    "fabricator": items.get("cherry:advanced_cherry_fabricator", [""])[0]}
     names_by_len = sorted(((v[0], k) for k, v in items.items() if v[0]), key=lambda t: -len(t[0]))
     # How-to cards whose station, inputs and sentence the sheet states outright (Halia 1.1.0: the anvil, the blast
-    # furnace). For these nothing is guessed from the Japanese text.
+    # furnace; Tsubomi 2.0.0: the stonecutter, whose card's count is the recipe's own). For these nothing is guessed from the Japanese text.
     stated = read_json("data/recipes_how.json")["cards"]
     recipes = []
     for i, card in enumerate(r["cards"]):
@@ -350,6 +350,8 @@ def recipes_shared(legacy: dict) -> dict:
         counts[mr["station"]] += 1
     station_item = {"workbench": "minecraft:crafting_table", "crucible": "cherry:resonance_crucible",
                     "anvil": "minecraft:anvil",
+                    # Tsubomi 2.0.0 (2026-10-18): 120 stonecutter recipes, stated in data/recipes_how.json.
+                    "stonecutter": "minecraft:stonecutter",
                     **{st["id"]: st["item"] for st in m["stations"]}}
     # 2026-10-05: the "tsubomi" placeholder chip (a brewing station that never had a recipe, with the
     # message "Tsubomi has not been released") is gone: Tsubomi is released and has its own tab.

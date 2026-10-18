@@ -1,11 +1,43 @@
 {
  "lang": "tr",
  "brand": "tsubomi",
- "updated": "2026-10-11",
+ "updated": "2026-10-18",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-11 tarihinde güncellendi",
+ "updated_label": "2026-10-18 tarihinde güncellendi",
  "note": "",
  "groups": [
+  {
+   "label": "V2.0",
+   "summary": "Tsubomi V2 — 200 yeni blok, büyülü elma, üretilebilir doğurucu",
+   "releases": [
+    {
+     "version": "V2.0.0",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Tsubomi V2 — 200 yeni blok, büyülü elma, üretilebilir doğurucu",
+     "summary": "Tsubomi V2.0.0, her biri 10 biçimli 20 malzeme serisinde 200 yapı bloğu, büyülü elma, üretilebilir canavar doğurucusu ve her doğma yumurtası için bir tarif ekliyor.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Her biri 10 biçimli 20 malzeme serisinde 200 yeni blok: tuğla, oyma, sütun, karo, lamba, ızgara, takviyeli zırh plakası, merdiven, döşeme ve duvar. Her seri sade bir malzemeden üretilir ve taş kesicide kendi tuğlalarından kesilebilir.",
+        "Büyülü elma: bir elma ve bir Nether yıldızı. Yenildiğinde çevrimiçi tüm oyuncuları bir anda iyileştirir ve onlara Yenilenme II ile Hız II verir.",
+        "Üretilebilir canavar doğurucusu: ametist parçaları, uzun çimen, Nether yıldızları, bir büyülü elma ve OUKA'nın Ouka alaşım bloğu. Tarif yalnızca OUKA kuruluysa görünür.",
+        "Tüm 88 yaratık için doğma yumurtası tarifi: bir Nether yıldızı (güçlü yaratıklar için daha fazla) ve yaratığa uygun eşyalar.",
+        "Sunucuya hafif: hiçbir bloğun blok varlığı ya da ticker'ı yoktur ve yeni bloklar rastgele tick almaz. Büyülü elma yalnızca yenildiği anda bir kez etki eder."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+        "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.1",
    "summary": "Tsubomi V1.1 — 100 yeni blok",

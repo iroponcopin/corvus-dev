@@ -874,6 +874,22 @@
      "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
      "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
     ]
+   },
+   {
+    "id": "tsubomi-v2.0.0",
+    "title": "Tsubomi V2 — 200 neue Blöcke, der verzauberte Apfel, ein herstellbarer Spawner",
+    "summary": "Tsubomi V2.0.0 fügt 200 Baublöcke in 20 Materialserien zu je 10 Formen hinzu, den verzauberten Apfel, einen herstellbaren Monster-Spawner und ein Rezept für jedes Spawn-Ei.",
+    "highlights": [
+     "200 neue Blöcke in 20 Materialserien zu je 10 Formen: Ziegel, gemeißelt, Säule, Fliesen, Lampe, Gitter, verstärkte Panzerplatte, Treppe, Stufe und Mauer. Jede Serie wird aus einem einfachen Material hergestellt und lässt sich am Steinsäger aus ihren Ziegeln schneiden.",
+     "Verzauberter Apfel: ein Apfel und ein Netherstern. Wer ihn isst, heilt alle Online-Spieler auf einmal und gibt ihnen Regeneration II und Geschwindigkeit II.",
+     "Herstellbarer Monster-Spawner: Amethystsplitter, hohes Gras, Nethersterne, ein verzauberter Apfel und OUKAs Ouka-Legierungsblock. Das Rezept erscheint nur, wenn OUKA installiert ist.",
+     "Ein Spawn-Ei-Rezept für alle 88 Kreaturen: ein Netherstern (mehr bei stärkeren Kreaturen) plus Gegenstände, die zur Kreatur passen.",
+     "Schonend für den Server: Kein Block hat eine Blockentität oder einen Ticker, und die neuen Blöcke erhalten keine zufälligen Ticks. Der verzauberte Apfel wirkt nur einmal, beim Essen."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+     "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
+    ]
    }
   ],
   "halia": [

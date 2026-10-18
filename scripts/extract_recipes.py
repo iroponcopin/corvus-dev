@@ -139,6 +139,7 @@ BRAND_TAB_ICON = {
 # recipe json, so the day one of them gains a recipe the generation stops (the NO_RECIPE_MODULES rule).
 BARE_JAR_WITHOUT_RECIPES = {
     "aureum": "an optimisation mod; its jar carries no data/ at all",
+    "xhard": "Corvus XHard (server difficulty, 5.1.0): a server-side mod with no recipe",
 }
 
 
@@ -887,6 +888,11 @@ VANILLA_TEXTURE_OVERRIDE = {
     # V4.2.2 の工場の手引き: 自動製作機は面ごとのテクスチャで item/crafter.png を持たない。
     "crafter": "block/crafter_top",
     "furnace": "block/furnace_front",
+    # Tsubomi 2.0.0 (2026-10-18): the stonecutter is a station now; item/stonecutter.png does not exist.
+    "stonecutter": "block/stonecutter_top",
+    # Tsubomi 2.0.0 の材料(どれも item/<name>.png を持たない。tall_grass は下の compose_grass_tinted_icon で色を付ける)。
+    "white_carpet": "block/white_wool", "blue_carpet": "block/blue_wool", "cactus": "block/cactus_side",
+    "mycelium": "block/mycelium_side", "crossbow": "item/crossbow_standby",
     "glass_pane": "block/glass",
     # ASTRAEA V1.5.0 の素材。いずれも item/<name>.png を持たない(面ごとのテクスチャ、または元のブロックの流用)。
     # (smithing_table・heavy_weighted_pressure_plate・stonecutter・spruce_slab・dark_oak_slab・ender_chest も同じ理由で絵が無いが、
@@ -978,6 +984,53 @@ MOD_TEXTURE_OVERRIDE = {
 # (照合は常に「その位置で一致する最長のキー」を選ぶ)。
 #   例) 「金庫」を入れておかないと「金」+「庫」に割れる。「格子戸」は「格子」に勝つ。
 YOMI = {
+    # Tsubomi V2.0.0 のスポーンエッグ(バニラの表示名)で YOMI に無い漢字を含む 4 つ: 表示名まるごとの読み。
+    "洞窟グモのスポーンエッグ": "どうくつぐものすぽーんえっぐ", "商人のラマのスポーンエッグ": "しょうにんのらまのすぽーんえっぐ",
+    "熱帯魚のスポーンエッグ": "ねったいぎょのすぽーんえっぐ", "行商人のスポーンエッグ": "ぎょうしょうにんのすぽーんえっぐ",
+    # --- Tsubomi V2.0.0 (2026-10-18) の行列 200 枚 + エンチャントリンゴ。V1.1.0 と同じく表示名まるごとを 1 語として入れる。
+    #     読みは Tsubomi 担当が書いた未確認のもの(tsubomi-src/docs/JA_READINGS_V2.0.0.json)。 ---
+    "窯焼き陶土レンガ": "かまやきとうどれんが", "模様入り窯焼き陶土": "もよういりかまやきとうど", "窯焼き陶土の柱": "かまやきとうどのはしら", "窯焼き陶土タイル": "かまやきとうどたいる", "窯焼き陶土ランプ": "かまやきとうどらんぷ",
+    "窯焼き陶土グレーティング": "かまやきとうどぐれーてぃんぐ", "窯焼き陶土強化装甲板": "かまやきとうどきょうかそうこうばん", "窯焼き陶土の階段": "かまやきとうどのかいだん", "窯焼き陶土のハーフブロック": "かまやきとうどのはーふぶろっく", "窯焼き陶土の塀": "かまやきとうどのへい",
+    "藍青金石レンガ": "あいせいきんせきれんが", "模様入り藍青金石": "もよういりあいせいきんせき", "藍青金石の柱": "あいせいきんせきのはしら", "藍青金石タイル": "あいせいきんせきたいる", "藍青金石ランプ": "あいせいきんせきらんぷ",
+    "藍青金石グレーティング": "あいせいきんせきぐれーてぃんぐ", "藍青金石強化装甲板": "あいせいきんせききょうかそうこうばん", "藍青金石の階段": "あいせいきんせきのかいだん", "藍青金石のハーフブロック": "あいせいきんせきのはーふぶろっく", "藍青金石の塀": "あいせいきんせきのへい",
+    "ハリア蒼結晶レンガ": "はりあそうけっしょうれんが", "模様入りハリア蒼結晶": "もよういりはりあそうけっしょう", "ハリア蒼結晶の柱": "はりあそうけっしょうのはしら", "ハリア蒼結晶タイル": "はりあそうけっしょうたいる", "ハリア蒼結晶ランプ": "はりあそうけっしょうらんぷ",
+    "ハリア蒼結晶グレーティング": "はりあそうけっしょうぐれーてぃんぐ", "ハリア蒼結晶強化装甲板": "はりあそうけっしょうきょうかそうこうばん", "ハリア蒼結晶の階段": "はりあそうけっしょうのかいだん", "ハリア蒼結晶のハーフブロック": "はりあそうけっしょうのはーふぶろっく", "ハリア蒼結晶の塀": "はりあそうけっしょうのへい",
+    "藤黒曜石レンガ": "ふじこくようせきれんが", "模様入り藤黒曜石": "もよういりふじこくようせき", "藤黒曜石の柱": "ふじこくようせきのはしら", "藤黒曜石タイル": "ふじこくようせきたいる", "藤黒曜石ランプ": "ふじこくようせきらんぷ",
+    "藤黒曜石グレーティング": "ふじこくようせきぐれーてぃんぐ", "藤黒曜石強化装甲板": "ふじこくようせききょうかそうこうばん", "藤黒曜石の階段": "ふじこくようせきのかいだん", "藤黒曜石のハーフブロック": "ふじこくようせきのはーふぶろっく", "藤黒曜石の塀": "ふじこくようせきのへい",
+    "天界紫水晶レンガ": "てんかいむらさきすいしょうれんが", "模様入り天界紫水晶": "もよういりてんかいむらさきすいしょう", "天界紫水晶の柱": "てんかいむらさきすいしょうのはしら", "天界紫水晶タイル": "てんかいむらさきすいしょうたいる", "天界紫水晶ランプ": "てんかいむらさきすいしょうらんぷ",
+    "天界紫水晶グレーティング": "てんかいむらさきすいしょうぐれーてぃんぐ", "天界紫水晶強化装甲板": "てんかいむらさきすいしょうきょうかそうこうばん", "天界紫水晶の階段": "てんかいむらさきすいしょうのかいだん", "天界紫水晶のハーフブロック": "てんかいむらさきすいしょうのはーふぶろっく", "天界紫水晶の塀": "てんかいむらさきすいしょうのへい",
+    "戦術カーボンレンガ": "せんじゅつかーぼんれんが", "模様入り戦術カーボン": "もよういりせんじゅつかーぼん", "戦術カーボンの柱": "せんじゅつかーぼんのはしら", "戦術カーボンタイル": "せんじゅつかーぼんたいる", "戦術カーボンランプ": "せんじゅつかーぼんらんぷ",
+    "戦術カーボングレーティング": "せんじゅつかーぼんぐれーてぃんぐ", "戦術カーボン強化装甲板": "せんじゅつかーぼんきょうかそうこうばん", "戦術カーボンの階段": "せんじゅつかーぼんのかいだん", "戦術カーボンのハーフブロック": "せんじゅつかーぼんのはーふぶろっく", "戦術カーボンの塀": "せんじゅつかーぼんのへい",
+    "氷華プリズマリンレンガ": "ひょうかぷりずまりんれんが", "模様入り氷華プリズマリン": "もよういりひょうかぷりずまりん", "氷華プリズマリンの柱": "ひょうかぷりずまりんのはしら", "氷華プリズマリンタイル": "ひょうかぷりずまりんたいる", "氷華プリズマリンランプ": "ひょうかぷりずまりんらんぷ",
+    "氷華プリズマリングレーティング": "ひょうかぷりずまりんぐれーてぃんぐ", "氷華プリズマリン強化装甲板": "ひょうかぷりずまりんきょうかそうこうばん", "氷華プリズマリンの階段": "ひょうかぷりずまりんのかいだん", "氷華プリズマリンのハーフブロック": "ひょうかぷりずまりんのはーふぶろっく", "氷華プリズマリンの塀": "ひょうかぷりずまりんのへい",
+    "深孔雀石レンガ": "ふかくじゃくせきれんが", "模様入り深孔雀石": "もよういりふかくじゃくせき", "深孔雀石の柱": "ふかくじゃくせきのはしら", "深孔雀石タイル": "ふかくじゃくせきたいる", "深孔雀石ランプ": "ふかくじゃくせきらんぷ",
+    "深孔雀石グレーティング": "ふかくじゃくせきぐれーてぃんぐ", "深孔雀石強化装甲板": "ふかくじゃくせききょうかそうこうばん", "深孔雀石の階段": "ふかくじゃくせきのかいだん", "深孔雀石のハーフブロック": "ふかくじゃくせきのはーふぶろっく", "深孔雀石の塀": "ふかくじゃくせきのへい",
+    "雪白大理石レンガ": "せっぱくだいりせきれんが", "模様入り雪白大理石": "もよういりせっぱくだいりせき", "雪白大理石の柱": "せっぱくだいりせきのはしら", "雪白大理石タイル": "せっぱくだいりせきたいる", "雪白大理石ランプ": "せっぱくだいりせきらんぷ",
+    "雪白大理石グレーティング": "せっぱくだいりせきぐれーてぃんぐ", "雪白大理石強化装甲板": "せっぱくだいりせききょうかそうこうばん", "雪白大理石の階段": "せっぱくだいりせきのかいだん", "雪白大理石のハーフブロック": "せっぱくだいりせきのはーふぶろっく", "雪白大理石の塀": "せっぱくだいりせきのへい",
+    "幻影合金レンガ": "げんえいごうきんれんが", "模様入り幻影合金": "もよういりげんえいごうきん", "幻影合金の柱": "げんえいごうきんのはしら", "幻影合金タイル": "げんえいごうきんたいる", "幻影合金ランプ": "げんえいごうきんらんぷ",
+    "幻影合金グレーティング": "げんえいごうきんぐれーてぃんぐ", "幻影合金強化装甲板": "げんえいごうきんきょうかそうこうばん", "幻影合金の階段": "げんえいごうきんのかいだん", "幻影合金のハーフブロック": "げんえいごうきんのはーふぶろっく", "幻影合金の塀": "げんえいごうきんのへい",
+    "翠竹石レンガ": "すいちくせきれんが", "模様入り翠竹石": "もよういりすいちくせき", "翠竹石の柱": "すいちくせきのはしら", "翠竹石タイル": "すいちくせきたいる", "翠竹石ランプ": "すいちくせきらんぷ",
+    "翠竹石グレーティング": "すいちくせきぐれーてぃんぐ", "翠竹石強化装甲板": "すいちくせききょうかそうこうばん", "翠竹石の階段": "すいちくせきのかいだん", "翠竹石のハーフブロック": "すいちくせきのはーふぶろっく", "翠竹石の塀": "すいちくせきのへい",
+    "影玄武岩レンガ": "かげげんぶがんれんが", "模様入り影玄武岩": "もよういりかげげんぶがん", "影玄武岩の柱": "かげげんぶがんのはしら", "影玄武岩タイル": "かげげんぶがんたいる", "影玄武岩ランプ": "かげげんぶがんらんぷ",
+    "影玄武岩グレーティング": "かげげんぶがんぐれーてぃんぐ", "影玄武岩強化装甲板": "かげげんぶがんきょうかそうこうばん", "影玄武岩の階段": "かげげんぶがんのかいだん", "影玄武岩のハーフブロック": "かげげんぶがんのはーふぶろっく", "影玄武岩の塀": "かげげんぶがんのへい",
+    "虹彩ビスマスレンガ": "こうさいびすますれんが", "模様入り虹彩ビスマス": "もよういりこうさいびすます", "虹彩ビスマスの柱": "こうさいびすますのはしら", "虹彩ビスマスタイル": "こうさいびすますたいる", "虹彩ビスマスランプ": "こうさいびすますらんぷ",
+    "虹彩ビスマスグレーティング": "こうさいびすますぐれーてぃんぐ", "虹彩ビスマス強化装甲板": "こうさいびすますきょうかそうこうばん", "虹彩ビスマスの階段": "こうさいびすますのかいだん", "虹彩ビスマスのハーフブロック": "こうさいびすますのはーふぶろっく", "虹彩ビスマスの塀": "こうさいびすますのへい",
+    "星輝ネザーレンガ": "せいきねざーれんが", "模様入り星輝ネザーレンガ": "もよういりせいきねざーれんが", "星輝ネザーレンガの柱": "せいきねざーれんがのはしら", "星輝ネザーレンガタイル": "せいきねざーれんがたいる", "星輝ネザーレンガランプ": "せいきねざーれんがらんぷ",
+    "星輝ネザーレンガグレーティング": "せいきねざーれんがぐれーてぃんぐ", "星輝ネザーレンガ強化装甲板": "せいきねざーれんがきょうかそうこうばん", "星輝ネザーレンガの階段": "せいきねざーれんがのかいだん", "星輝ネザーレンガのハーフブロック": "せいきねざーれんがのはーふぶろっく", "星輝ネザーレンガの塀": "せいきねざーれんがのへい",
+    "エンチャントリンゴ": "えんちゃんとりんご",
+    #     **仮の読み**(読みが揺れうる、と担当が挙げた 6 系統: pale_serpentine, ouka_steel, kurogane_titanium, crimson_tamahagane, golden_kintsugi, ancient_shrine_stone。所有者の確認待ち):
+    "桜花鋼レンガ": "おうかこうれんが", "模様入り桜花鋼": "もよういりおうかこう", "桜花鋼の柱": "おうかこうのはしら", "桜花鋼タイル": "おうかこうたいる", "桜花鋼ランプ": "おうかこうらんぷ",
+    "桜花鋼グレーティング": "おうかこうぐれーてぃんぐ", "桜花鋼強化装甲板": "おうかこうきょうかそうこうばん", "桜花鋼の階段": "おうかこうのかいだん", "桜花鋼のハーフブロック": "おうかこうのはーふぶろっく", "桜花鋼の塀": "おうかこうのへい",
+    "黒鉄チタニウムレンガ": "くろがねちたにうむれんが", "模様入り黒鉄チタニウム": "もよういりくろがねちたにうむ", "黒鉄チタニウムの柱": "くろがねちたにうむのはしら", "黒鉄チタニウムタイル": "くろがねちたにうむたいる", "黒鉄チタニウムランプ": "くろがねちたにうむらんぷ",
+    "黒鉄チタニウムグレーティング": "くろがねちたにうむぐれーてぃんぐ", "黒鉄チタニウム強化装甲板": "くろがねちたにうむきょうかそうこうばん", "黒鉄チタニウムの階段": "くろがねちたにうむのかいだん", "黒鉄チタニウムのハーフブロック": "くろがねちたにうむのはーふぶろっく", "黒鉄チタニウムの塀": "くろがねちたにうむのへい",
+    "赫灼玉鋼レンガ": "かくしゃくたまはがねれんが", "模様入り赫灼玉鋼": "もよういりかくしゃくたまはがね", "赫灼玉鋼の柱": "かくしゃくたまはがねのはしら", "赫灼玉鋼タイル": "かくしゃくたまはがねたいる", "赫灼玉鋼ランプ": "かくしゃくたまはがねらんぷ",
+    "赫灼玉鋼グレーティング": "かくしゃくたまはがねぐれーてぃんぐ", "赫灼玉鋼強化装甲板": "かくしゃくたまはがねきょうかそうこうばん", "赫灼玉鋼の階段": "かくしゃくたまはがねのかいだん", "赫灼玉鋼のハーフブロック": "かくしゃくたまはがねのはーふぶろっく", "赫灼玉鋼の塀": "かくしゃくたまはがねのへい",
+    "金継ぎ黒石レンガ": "きんつぎくろいしれんが", "模様入り金継ぎ黒石": "もよういりきんつぎくろいし", "金継ぎ黒石の柱": "きんつぎくろいしのはしら", "金継ぎ黒石タイル": "きんつぎくろいしたいる", "金継ぎ黒石ランプ": "きんつぎくろいしらんぷ",
+    "金継ぎ黒石グレーティング": "きんつぎくろいしぐれーてぃんぐ", "金継ぎ黒石強化装甲板": "きんつぎくろいしきょうかそうこうばん", "金継ぎ黒石の階段": "きんつぎくろいしのかいだん", "金継ぎ黒石のハーフブロック": "きんつぎくろいしのはーふぶろっく", "金継ぎ黒石の塀": "きんつぎくろいしのへい",
+    "淡蛇紋石レンガ": "たんじゃもんせきれんが", "模様入り淡蛇紋石": "もよういりたんじゃもんせき", "淡蛇紋石の柱": "たんじゃもんせきのはしら", "淡蛇紋石タイル": "たんじゃもんせきたいる", "淡蛇紋石ランプ": "たんじゃもんせきらんぷ",
+    "淡蛇紋石グレーティング": "たんじゃもんせきぐれーてぃんぐ", "淡蛇紋石強化装甲板": "たんじゃもんせききょうかそうこうばん", "淡蛇紋石の階段": "たんじゃもんせきのかいだん", "淡蛇紋石のハーフブロック": "たんじゃもんせきのはーふぶろっく", "淡蛇紋石の塀": "たんじゃもんせきのへい",
+    "古社寺石レンガ": "こしゃじせきれんが", "模様入り古社寺石": "もよういりこしゃじせき", "古社寺石の柱": "こしゃじせきのはしら", "古社寺石タイル": "こしゃじせきたいる", "古社寺石ランプ": "こしゃじせきらんぷ",
+    "古社寺石グレーティング": "こしゃじせきぐれーてぃんぐ", "古社寺石強化装甲板": "こしゃじせききょうかそうこうばん", "古社寺石の階段": "こしゃじせきのかいだん", "古社寺石のハーフブロック": "こしゃじせきのはーふぶろっく", "古社寺石の塀": "こしゃじせきのへい",
     # --- ASTRAEA V1.5.0 (2026-10-11) の 112 枚(バニラ素材の数枚を含む)。Tsubomi と同じく表示名まるごとを 1 語として入れる
     #     (最長一致なので、ほかの語の読みを動かさない)。読みは ASTRAEA 担当が書いたもの。足さないと 112 枚が
     #     「未登録の文字」の警告のまま五十音順の間違った場所に並ぶ。 ---
@@ -1825,7 +1878,35 @@ def compose_water_bottle_icon(zf):
     return base64.b64encode(buf.getvalue()).decode()
 
 
+def compose_grass_tinted_icon(zf, name):
+    """An item whose definition tints its one layer with the grass colour (tall grass): the layer times the
+    colormap colour at the definition's own temperature and downfall, as the game draws it. Read from the jar;
+    a definition of another shape stops the generation instead of drawing a grey plant."""
+    from PIL import Image
+    node = json.loads(zf.read(f"assets/minecraft/items/{name}.json").decode("utf-8"))["model"]
+    tints = node.get("tints") or []
+    if node.get("type") != "minecraft:model" or len(tints) != 1 or tints[0].get("type") != "minecraft:grass":
+        raise SystemExit(f"ERROR: items/{name}.json is no longer one model with one grass tint.")
+    model = json.loads(zf.read("assets/minecraft/models/" + node["model"].split(":", 1)[1] + ".json").decode("utf-8"))
+    layer = model["textures"]["layer0"].split(":", 1)[-1]
+    temp = min(max(float(tints[0]["temperature"]), 0.0), 1.0)
+    down = min(max(float(tints[0]["downfall"]), 0.0), 1.0) * temp
+    cmap = Image.open(io.BytesIO(zf.read("assets/minecraft/textures/colormap/grass.png"))).convert("RGB")
+    cr, cg, cb = cmap.getpixel((int((1.0 - temp) * 255), int((1.0 - down) * 255)))
+    img = Image.open(io.BytesIO(zf.read(f"assets/minecraft/textures/{layer}.png"))).convert("RGBA")
+    px = [(r * cr // 255, g * cg // 255, b * cb // 255, a) for r, g, b, a in img.getdata()]
+    img.putdata(px)
+    buf = io.BytesIO()
+    img.save(buf, format="PNG", optimize=True)
+    return base64.b64encode(buf.getvalue()).decode()
+
+
+GRASS_TINTED_ITEMS = {"tall_grass"}
+
+
 def vanilla_texture_b64(zf, name):
+    if name in GRASS_TINTED_ITEMS:
+        return compose_grass_tinted_icon(zf, name)
     if name == "chest":
         return compose_chest_icon(zf)
     if name == "shield":
@@ -2411,6 +2492,8 @@ def published_textures():
 # 公開済みの絵のうち、意図して変える 1 件ずつの表(2026-10-05、Corvus の判断 A)。見張りは、ここに書いた品を、ここに書いた「前の鍵 → 新しい鍵」の
 # 組にかぎって通す(別の鍵・別の品は今までどおり止まる)。前の鍵の絵(PNG)は、そのまま残さなければならない(下の見張りが、バイトまで見る)。
 INTENDED_ICON_CHANGES = {
+    "minecraft:white_carpet": (None, "t50", "Tsubomi 2.0.0 uses it; drawn with the white wool picture it already shared, never had one"),
+    "minecraft:stonecutter": (None, "t889", "Tsubomi 2.0.0: the stonecutter became a station (120 recipes); it had no picture"),
     "ouka:operating_shelter_block": ("t157", "t269", "V1.4 new shelter look, owner-intended 2026-10-05"),
     "astraea:appliance_ceiling_fan": ("t396", "t730", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
     "astraea:appliance_faucet": ("t397", "t731", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
@@ -3246,6 +3329,28 @@ def parse_campfire_recipe(path, reg):
     secs_txt = ("%d" % secs) if secs == int(secs) else ("%g" % secs)
     how = "焚き火で、%sを焼く(%s 秒。作業台では作れない)" % (ing_ja, secs_txt)
     return data["result"]["id"], how, [ing]
+
+
+def parse_stonecutting_recipe(path, reg):
+    """A `minecraft:stonecutting` recipe -> (result id, count, how-to text ja, how-to text en, ingredient ids), else None.
+
+    Tsubomi 2.0.0 (2026-10-18) ships 120 of them. A stonecutter takes one ingredient and gives the result times
+    the recipe's count; the sentence is assembled from those fields only. The card is a how-to card (no grid), so
+    the sheet's data shape is unchanged: the Store's album shows the sentence as it shows a campfire's."""
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("type") != "minecraft:stonecutting":
+        return None
+    ing = ingredient_id(data["ingredient"])
+    ing_ja, ing_en, _t = reg.register(ing)
+    result = data["result"]
+    count = int(result.get("count", 1))
+    if count < 1:
+        raise SystemExit(f"ERROR: {path.name}: a stonecutting recipe with count {count}")
+    many_ja = "" if count == 1 else "(%d 個できる)" % count
+    many_en = "" if count == 1 else " (makes %d)" % count
+    how = "石切台で、%sを切り出す%s(作業台では作れない)" % (ing_ja, many_ja)
+    how_en = "Cut %s on a stonecutter%s (it cannot be made at a workbench)" % (ing_en, many_en)
+    return result["id"], count, how, how_en, [ing]
 
 
 def cat_tokens(cat):
@@ -7044,6 +7149,26 @@ def _main_body():
                         tokens.append(cen)
                     cards.append({"cat": cat, "id": cooked_id, "cells": None, "count": None,
                                   "how": cooked_how, "s": search_blob(tokens)})
+                    cards_per_mod[mod_dir] = cards_per_mod.get(mod_dir, 0) + 1
+                elif (cut := parse_stonecutting_recipe(path, reg)) is not None:
+                    # 石切台: 3x3 ではないので「入手方法」カード。駅(station)・材料・文(ja, en)は
+                    # recipes_how.json に書く(Halia の溶鉱炉と同じ形。ポータルが「石切台で作る」と出す)。
+                    cut_id, cut_count, cut_how, cut_how_en, cut_ids = cut
+                    ja, en, _tex = reg.register(cut_id)
+                    cat = category_of(mod_cat, cut_id.split(":", 1)[1])
+                    _, unknown = reading_of(ja)
+                    if unknown:
+                        no_yomi.append((cat, ja, "".join(sorted(set(unknown)))))
+                    tokens = cat_tokens(cat) + item_tokens(cut_id, ja) + [en, cut_how]
+                    for cid in cut_ids + ["minecraft:stonecutter"]:
+                        cja, cen, _ = reg.register(cid)
+                        tokens += item_tokens(cid, cja)
+                        tokens.append(cen)
+                    cards.append({"cat": cat, "id": cut_id, "cells": None, "count": cut_count,
+                                  "how": cut_how, "s": search_blob(tokens)})
+                    if cut_id in HALIA_HOW:
+                        raise SystemExit(f"ERROR: two how-to cards are keyed {cut_id!r}; one would show the other's text.")
+                    HALIA_HOW[cut_id] = {"station": "stonecutter", "inputs": cut_ids, "ja": cut_how, "en": cut_how_en}
                     cards_per_mod[mod_dir] = cards_per_mod.get(mod_dir, 0) + 1
                 elif mod_dir in EVERY_RECIPE_SHOWN:
                     raise SystemExit(
