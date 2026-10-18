@@ -17,7 +17,27 @@
     "file_name": "corvus-5.2.0.jar",
     "file_size": 15151250,
     "sha256": "ec0545610f472e707d536aa1c4be05dce4618da095577015e9ad6ee11224d2a9",
-    "notes": "Corvus Store 5.2.0 and Corvus Agent 5.2.0 add Pro, a difficulty above XHard.\n\nOn Pro, hostile mobs have 2.8 times the health and attack, bosses included: the Wither, the Ender Dragon, the Elder Guardian and the Warden. The Ender Dragon's bite and breath, the Wither's skulls and the Warden's sonic boom also hit 2.8 times harder. The Warden's health stops at 1024, the game's own limit. Everything else is as on XHard, and it is not hardcore.\n\nTo celebrate Halia V1.3, every server runs on Pro until 19 November 2026 (UTC). There is nothing to do: Corvus Agent switches the server by itself, and Corvus Studio shows the end date. After that, admins can choose any difficulty again; the server stays on Pro until they do. XHard is unchanged."
+    "notes": "Corvus Store 5.2.0 and Corvus Agent 5.2.0 add Pro, a difficulty above XHard.\n\nOn Pro, hostile mobs have 2.8 times the health and attack, bosses included: the Wither, the Ender Dragon, the Elder Guardian and the Warden. The Ender Dragon's bite and breath, the Wither's skulls and the Warden's sonic boom also hit 2.8 times harder. The Warden's health stops at 1024, the game's own limit. Everything else is as on XHard, and it is not hardcore.\n\nTo celebrate Halia V1.3, every server runs on Pro until 19 November 2026 (UTC). There is nothing to do: Corvus Agent switches the server by itself, and Corvus Studio shows the end date. After that, admins can choose any difficulty again; the server stays on Pro until they do. XHard is unchanged.",
+    "native": {
+      "macos": {
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.2.0-macos.dmg",
+        "file_name": "corvus-5.2.0-macos.dmg",
+        "file_size": 64899426,
+        "sha256": "f658841b10eeb9bc490967566027b1d217eafc74be74c18f5be4d6f14f3119d8"
+      },
+      "windows": {
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.2.0-windows.msi",
+        "file_name": "corvus-5.2.0-windows.msi",
+        "file_size": 62583644,
+        "sha256": "9082325d2e9b9f141a274e59ef1abb2f2c680f114abc0a3fea214108dacc0bec"
+      },
+      "linux": {
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.2.0-linux.deb",
+        "file_name": "corvus-5.2.0-linux.deb",
+        "file_size": 52029958,
+        "sha256": "9b541a573137f708835002a93994ee002793419e920249f093bce3e3d8b9360b"
+      }
+    }
   },
   "aureum": {
     "mod_id": "aureum",
