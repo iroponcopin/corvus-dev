@@ -1,5 +1,5 @@
 {
-  "_comment": "Alpha was retired on 2026-09-28 (owner's instruction) and, the same day, erased from the site (owner: 「Alphaは公式に配信を終了したことを記載し、抹消」). `retired_version` is the last pack release: 13 placeholder jars that switch Alpha off, kept because Corvus delivers it. `last_playable` is the last version that carried Alpha's content; its zip is no longer on the site. While `retired` is true, Alpha is not a source of the recipe sheet (extract_recipes.py, check_recipe_sources.py) and the download and Alpha pages are the retirement notice. ASTRAEA's service ended on 2026-10-16 (owner's instruction, 「WebサイトからもAstraeaはサービス終了の旨を掲載してください」): a NOTICE, not an erasure. Its zip stays in downloads/ (the Store and Corvus Agent read the manifest), its pages stay with a notice on top, and `remove_after` is the date from which Corvus Agent removes it from servers on its first sync (moved forward on 2026-10-18 from 2026-10-23, so servers match players, who already lost ASTRAEA in Store 5.1 and cannot join servers). Its block is read by site_common.retirement('astraea') and goes into glimpse_manifest.json as the astraea block's `retired` key.",
+  "_comment": "Alpha was retired on 2026-09-28 (owner's instruction) and, the same day, erased from the site (owner: 「Alphaは公式に配信を終了したことを記載し、抹消」). `retired_version` is the last pack release: 13 placeholder jars that switch Alpha off, kept because Corvus delivers it. `last_playable` is the last version that carried Alpha's content; its zip is no longer on the site. While `retired` is true, Alpha is not a source of the recipe sheet (extract_recipes.py, check_recipe_sources.py) and the download and Alpha pages are the retirement notice. ASTRAEA's service ended on 2026-10-16 (owner's instruction, 「WebサイトからもAstraeaはサービス終了の旨を掲載してください」): a NOTICE, not an erasure. Its zip stays in downloads/ (the Store and Corvus Agent read the manifest), its pages stay with a notice on top, and `remove_after` is the date from which Corvus Agent removes it from servers on its first sync (moved forward on 2026-10-18 from 2026-10-23, so servers match players, who already lost ASTRAEA in Store 5.1 and cannot join servers). On 2026-10-18 the zip became 1.5.5, an empty placeholder jar (mod id `placeholder_mod_id`) so agents 4.1.x/5.0.0, which have no retirement code, replace ASTRAEA with it; `last_content_version` is the last version with content, which the changelog feeds keep leading with (the placeholder is not announced). Its block is read by site_common.retirement('astraea') and goes into glimpse_manifest.json as the astraea block's `retired` key.",
   "alpha": {
     "retired": true,
     "retired_version": "4.4.0.2",
@@ -10,6 +10,8 @@
     "retired": true,
     "date": "2026-10-16",
     "remove_after": "2026-10-18",
-    "last_version": "1.5.4"
+    "last_version": "1.5.5",
+    "last_content_version": "1.5.4",
+    "placeholder_mod_id": "astraea_retired"
   }
 }

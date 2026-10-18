@@ -92,18 +92,18 @@
     }
   },
   "astraea": {
-    "mod_id": "astraea",
-    "latest": "1.5.4",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/ASTRAEA_MODs_v1.5.4+mc26.3.zip",
-    "file_name": "ASTRAEA_MODs_v1.5.4+mc26.3.zip",
-    "file_size": 3825157,
-    "sha256": "063b42c9be463374584c5ccc7fff4f506a6fdf6eec5c5fcd65cf803559c572df",
+    "mod_id": "astraea_retired",
+    "latest": "1.5.5",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/ASTRAEA_MODs_v1.5.5+mc26.3.zip",
+    "file_name": "ASTRAEA_MODs_v1.5.5+mc26.3.zip",
+    "file_size": 1921,
+    "sha256": "86371e129589d5b84ebd58841f83236a73658c588ab648e9917bb0cba7148cc6",
     "jars": {
-      "astraea": {
-        "path": "mods/astraea-1.5.4+mc26.3.jar",
-        "version": "1.5.4",
-        "file_size": 4292616,
-        "sha256": "a0d27f95cd7ccf5760195d43acc9477ee48278735772f3b60fec15fc9dfb29f4"
+      "astraea_retired": {
+        "path": "mods/astraea-retired-1.5.5+mc26.3.jar",
+        "version": "1.5.5",
+        "file_size": 494,
+        "sha256": "37a1037e53d3e71b261225d1b5ddc708833b80bdeb4895b686630e6f2eea7dcc"
       }
     },
     "retired": {
