@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { FRESH } from "@/i18n/fresh";
 import { composeLineup, LINEUP } from "./lineup";
+import { MODEL_NAMES, MODEL_ORDER } from "./models";
 import type { Lang, LangData, Wiki } from "./wiki-types";
 
 /**
@@ -44,4 +45,16 @@ export function lineupFor(lang: Lang): string {
     else if (a === "soon") coming.push(name);
   }
   return composeLineup(FRESH[lang].lineup, out, coming);
+}
+
+/**
+ * The models that have recipes in the Tome, named and joined for the language in MODEL_ORDER (Halia, OUKA,
+ * Cherry, Tsubomi): the copy carries a {models} slot, so a new model or a new order never needs a translation edit.
+ */
+export function recipeModelList(lang: Lang): string {
+  const present = new Set(wiki().recipes.recipes.map((rec) => rec.result.split(":")[0]));
+  const names = MODEL_ORDER.filter((id) => present.has(id)).map((id) => MODEL_NAMES[id] ?? id);
+  if (lang === "ja") return names.join("・");
+  if (lang === "ko") return names.join("·");
+  return new Intl.ListFormat(lang === "pt-br" ? "pt-BR" : lang, { style: "long", type: "conjunction" }).format(names);
 }

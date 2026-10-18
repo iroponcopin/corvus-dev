@@ -661,3 +661,13 @@ html[data-js]:not([data-webgl="off"]) .ac-only-fallback {
     scroll-behavior: auto !important;
   }
 }
+
+/*
+ * Uppercase labels are a Latin-script flourish. Under lang="tr" text-transform turns every i into a dotted İ
+ * (DİSCORD, MODELLER), so Turkish keeps the authored case everywhere, including selectors added after this rule.
+ */
+html:lang(tr) *,
+html:lang(tr) *::before,
+html:lang(tr) *::after {
+  text-transform: none !important;
+}

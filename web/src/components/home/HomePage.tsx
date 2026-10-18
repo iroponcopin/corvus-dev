@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FRESH, fill } from "@/i18n/fresh";
 import { pathOf, recipeIcon } from "@/lib/site";
-import { langData, wiki } from "@/lib/wiki";
+import { langData, recipeModelList, wiki } from "@/lib/wiki";
 import type { Lang, Release } from "@/lib/wiki-types";
 import { BRAND_COLOR, BRAND_ICON } from "@/lib/brands";
 import { NaturalCinemaStage } from "../cinema/NaturalCinemaStage";
@@ -184,7 +184,7 @@ export function HomePage({ lang }: { lang: Lang }) {
             <h2 id="realm-codex-h" className="ac-h2 ac-reveal">
               {f.realms.codex.title}
             </h2>
-            <p className="ac-lead ac-reveal">{f.realms.codex.lede}</p>
+            <p className="ac-lead ac-reveal">{f.realms.codex.lede.replace("{models}", recipeModelList(lang))}</p>
             <p className="ac-reveal">
               <Link className="ac-btn" href={pathOf(lang, "recipes/")}>
                 {f.realms.codex.cta}

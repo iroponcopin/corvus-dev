@@ -1,6 +1,6 @@
 import { FRESH } from "@/i18n/fresh";
 import { recipeIcon } from "@/lib/site";
-import { langData, wiki } from "@/lib/wiki";
+import { langData, recipeModelList, wiki } from "@/lib/wiki";
 import type { Lang } from "@/lib/wiki-types";
 import { RecipeBookScene } from "../recipes/RecipeBookScene";
 import type { TomeData } from "../recipes/tome-data";
@@ -43,7 +43,7 @@ export function RecipesPage({ lang }: { lang: Lang }) {
     <section>
       <div className="ac-wrap ac-page-head">
         <h1 className="ac-h1 tome-page-title">{r.title}</h1>
-        <p className="ac-lead">{f.tome.intro.replace("{count}", String(itemCount))}</p>
+        <p className="ac-lead">{f.tome.intro.replace("{count}", String(itemCount)).replace("{models}", recipeModelList(lang))}</p>
       </div>
       <div className="ac-wrap">
         <RecipeBookScene data={data} labels={r.labels} t={f.tome} dir={d.dir} />
