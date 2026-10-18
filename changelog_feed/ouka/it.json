@@ -8,13 +8,38 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Limitless 1.7.0 — Infinito, i domini e il Re delle Maledizioni",
+   "summary": "Ouka JJK 1.7.1 — il nuovo nome e un OUKA Beacon ribilanciato",
    "releases": [
+    {
+     "version": "V1.7.1",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Ouka JJK 1.7.1 — il nuovo nome e un OUKA Beacon ribilanciato",
+     "summary": "Limitless ora si chiama Ouka JJK. L'OUKA Beacon è stato ribilanciato: le sue benedizioni sono ridotte a un quarto, la ricetta richiede due Heavy Core e ora si consuma con l'uso e si ripara con un Heavy Core.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Limitless viene rinominato Ouka JJK: la scheda creativa, la categoria Controls e la ruota delle tecniche usano il nuovo nome. Tecniche e oggetti mantengono i loro nomi.",
+        "Le benedizioni dell'OUKA Beacon sono ridotte a un quarto; il raggio resta invariato. Il terminale mostra la nuova potenza. La resistenza non ti rende più immune, e l'immunità al fuoco e la visione notturna piena richiedono un livello più alto.",
+        "La ricetta dell'OUKA Beacon richiede due Heavy Core, negli angoli in basso.",
+        "L'OUKA Beacon ha una durabilità. Si consuma più in fretta quanti più giocatori benedice e quanto più alti sono i suoi livelli, e si ferma quando si rompe. Fai clic destro su di esso con un Heavy Core per ripararlo del tutto. Il terminale mostra quanto resta, e un beacon conserva la sua durabilità quando lo raccogli."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Con l'opzione grafica Improved Transparency attiva (di default è disattivata), la sfera di Hollow Purple viene ancora disegnata davanti all'acqua. Sarà corretto in 1.7.2.",
+        "Prima di installare 1.7.1, rimuovi il vecchio jar di OUKA (1.7.0 o precedente) dalla cartella mods e tieni una sola copia di GeckoLib 5.5.6. Richiede Minecraft 26.3, Fabric Loader 0.19.5 o più recente e Fabric API 0.161.0+26.3 o più recente. Installalo sia sul client sia sul server."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.0",
      "date": "2026-10-18",
      "type": "release",
-     "title": "Limitless 1.7.0 — Infinito, i domini e il Re delle Maledizioni",
+     "title": "Ouka JJK 1.7.0 — Infinito, i domini e il Re delle Maledizioni",
      "summary": "OUKA aggiunge un intero set di magia: gioca come Gojo con Infinity, Lapse Blue, Reversal Red, Hollow Purple e il dominio Infinite Void, oppure come Sukuna con Dismantle, Cleave, Open e il Malevolent Shrine. Arrivano anche le armi Kamutoke e Hiten, la Blindfold e il Character Guide. Aggiunge 10 oggetti e 1 blocco e include tutto ciò che c'è in 1.6.2.2.",
      "sections": [
       {
@@ -30,7 +55,7 @@
        "title": "Avvertenze",
        "items": [
         "Con l'opzione grafica Improved Transparency attiva (disattiva di default), la sfera di Hollow Purple viene disegnata davanti all'acqua invece che dietro. È un problema noto che sarà corretto in 1.7.1. Con l'opzione disattivata viene disegnata correttamente.",
-        "Tornare a una versione precedente dopo aver giocato 1.7.0 rimuove dal mondo la Domain Barrier e tutti gli oggetti Limitless (Kamutoke, Hiten, Blindfold, Character Guide e le 6 uova di generazione).",
+        "Tornare a una versione precedente dopo aver giocato 1.7.0 rimuove dal mondo la Domain Barrier e tutti gli oggetti Ouka JJK (Kamutoke, Hiten, Blindfold, Character Guide e le 6 uova di generazione).",
         "Prima di installare 1.7.0, rimuovi dalla cartella mods il vecchio jar di OUKA (1.6.2.2 o precedente) e tieni una sola copia di GeckoLib 5.5.6. Servono Minecraft 26.3, Fabric Loader 0.19.5 o più recente e Fabric API 0.161.0+26.3 o più recente. Installalo sia sul client sia sul server."
        ]
       }

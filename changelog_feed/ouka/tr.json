@@ -8,13 +8,38 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Limitless 1.7.0 — Sınırsızlık, alanlar ve Lanetlerin Kralı",
+   "summary": "Ouka JJK 1.7.1 — yeni ad ve yeniden dengelenmiş bir OUKA Beacon",
    "releases": [
+    {
+     "version": "V1.7.1",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Ouka JJK 1.7.1 — yeni ad ve yeniden dengelenmiş bir OUKA Beacon",
+     "summary": "Limitless artık Ouka JJK adıyla anılıyor. OUKA Beacon yeniden dengelendi: bereketleri dörtte bir gücünde, tarifi iki Heavy Core istiyor ve artık kullanıldıkça aşınıyor, bir Heavy Core ile onarılıyor.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Limitless, Ouka JJK olarak yeniden adlandırıldı: yaratıcı sekme, Controls kategorisi ve teknik çemberi yeni adı kullanıyor. Teknikler ve eşyalar adlarını korur.",
+        "OUKA Beacon'ın bereketleri öncekinin dörtte biri kadar güçlü; menzil değişmedi. Terminal yeni gücü gösterir. Direnç artık bağışıklık vermez; ateş bağışıklığı ve tam gece görüşü daha yüksek seviye ister.",
+        "OUKA Beacon tarifi, alt köşelerde iki Heavy Core ister.",
+        "OUKA Beacon'ın dayanıklılığı var. Kutsadığı oyuncu sayısı ve ayarlanan seviyeleri arttıkça daha hızlı aşınır ve kırılınca durur. Üzerine sağ tıklayıp bir Heavy Core ile tamamen onarabilirsiniz. Terminal ne kadar kaldığını gösterir; bir beacon alındığında dayanıklılığını korur."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Improved Transparency grafik seçeneği açıkken (varsayılan olarak kapalıdır) Hollow Purple küresi suyun önünde hâlâ çizilir. Bu, 1.7.2'de düzeltilecek.",
+        "1.7.1'i kurmadan önce eski OUKA jar dosyasını (1.7.0 veya daha eski) mods klasöründen silin ve yalnızca bir GeckoLib 5.5.6 kopyası bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.0",
      "date": "2026-10-18",
      "type": "release",
-     "title": "Limitless 1.7.0 — Sınırsızlık, alanlar ve Lanetlerin Kralı",
+     "title": "Ouka JJK 1.7.0 — Sınırsızlık, alanlar ve Lanetlerin Kralı",
      "summary": "OUKA tam bir büyü takımı ekliyor: Gojo olarak Infinity, Lapse Blue, Reversal Red, Hollow Purple ve Infinite Void alanıyla, ya da Sukuna olarak Dismantle, Cleave, Open ve Malevolent Shrine ile oynayın. Kamutoke ve Hiten silahları, Blindfold ve Character Guide de gelir. 10 eşya ve 1 blok ekler ve 1.6.2.2'deki her şeyi içerir.",
      "sections": [
       {
@@ -30,7 +55,7 @@
        "title": "Dikkat Edilmesi Gerekenler",
        "items": [
         "Improved Transparency grafik seçeneği açıksa (varsayılan olarak kapalıdır), Hollow Purple küresi suyun arkasında değil önünde çizilir. Bu bilinen bir sorundur ve 1.7.1'de düzeltilecektir. Seçenek kapalıyken doğru çizilir.",
-        "1.7.0 oynadıktan sonra daha eski bir sürüme dönmek, Domain Barrier'ı ve tüm Limitless eşyalarını (Kamutoke, Hiten, Blindfold, Character Guide ve 6 çağırma yumurtası) dünyadan kaldırır.",
+        "1.7.0 oynadıktan sonra daha eski bir sürüme dönmek, Domain Barrier'ı ve tüm Ouka JJK eşyalarını (Kamutoke, Hiten, Blindfold, Character Guide ve 6 çağırma yumurtası) dünyadan kaldırır.",
         "1.7.0'ı kurmadan önce mods klasöründen eski OUKA jar dosyasını (1.6.2.2 veya daha eski) çıkarın ve yalnızca bir GeckoLib 5.5.6 kopyası bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun."
        ]
       }

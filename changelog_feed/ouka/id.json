@@ -8,13 +8,38 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Limitless 1.7.0 — Infinity, domain, dan Raja Kutukan",
+   "summary": "Ouka JJK 1.7.1 — nama baru dan OUKA Beacon yang diseimbangkan ulang",
    "releases": [
+    {
+     "version": "V1.7.1",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Ouka JJK 1.7.1 — nama baru dan OUKA Beacon yang diseimbangkan ulang",
+     "summary": "Limitless sekarang bernama Ouka JJK. OUKA Beacon diseimbangkan ulang: berkatnya tinggal seperempat kekuatan, resepnya butuh dua Heavy Core, dan kini ia aus seiring pemakaian serta diperbaiki dengan satu Heavy Core.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Limitless diganti namanya menjadi Ouka JJK: tab kreatif, kategori Controls, dan roda teknik memakai nama baru. Teknik dan item tetap dengan namanya.",
+        "Berkat OUKA Beacon kini tinggal seperempat dari sebelumnya; jangkauannya tidak berubah. Terminal menampilkan kekuatan yang baru. Ketahanan tidak lagi membuatmu kebal, dan kekebalan api serta penglihatan malam penuh butuh level lebih tinggi.",
+        "Resep OUKA Beacon butuh dua Heavy Core, di sudut bawah.",
+        "OUKA Beacon punya daya tahan. Ia makin cepat aus semakin banyak pemain yang diberkati dan semakin tinggi level yang diatur, dan berhenti saat rusak. Klik kanan dengan satu Heavy Core untuk memperbaikinya sampai penuh. Terminal menampilkan sisanya, dan beacon tetap menyimpan daya tahannya saat diambil."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Dengan opsi grafis Improved Transparency dinyalakan (defaultnya mati), bola Hollow Purple tetap digambar di depan air. Ini akan diperbaiki di 1.7.2.",
+        "Sebelum memasang 1.7.1, hapus jar OUKA lama (1.7.0 atau lebih lama) dari folder mods dan sisakan satu salinan GeckoLib 5.5.6. Butuh Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di klien dan server."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.0",
      "date": "2026-10-18",
      "type": "release",
-     "title": "Limitless 1.7.0 — Infinity, domain, dan Raja Kutukan",
+     "title": "Ouka JJK 1.7.0 — Infinity, domain, dan Raja Kutukan",
      "summary": "OUKA menghadirkan paket sihir lengkap: mainkan sebagai Gojo dengan Infinity, Lapse Blue, Reversal Red, Hollow Purple, dan domain Infinite Void, atau sebagai Sukuna dengan Dismantle, Cleave, Open, dan Malevolent Shrine. Senjata Kamutoke dan Hiten, Blindfold, serta Character Guide juga ikut. Menambahkan 10 item dan 1 blok, dan memuat semua yang ada di 1.6.2.2.",
      "sections": [
       {
@@ -30,7 +55,7 @@
        "title": "Catatan Penting",
        "items": [
         "Dengan opsi grafis Improved Transparency dinyalakan (defaultnya mati), bola Hollow Purple digambar di depan air, bukan di belakangnya. Ini masalah yang sudah diketahui dan akan diperbaiki di 1.7.1. Dengan opsi mati, bola digambar dengan benar.",
-        "Kembali ke versi sebelumnya setelah bermain 1.7.0 menghapus Domain Barrier dan semua item Limitless (Kamutoke, Hiten, Blindfold, Character Guide, dan 6 telur kemunculan) dari dunia.",
+        "Kembali ke versi sebelumnya setelah bermain 1.7.0 menghapus Domain Barrier dan semua item Ouka JJK (Kamutoke, Hiten, Blindfold, Character Guide, dan 6 telur kemunculan) dari dunia.",
         "Sebelum memasang 1.7.0, hapus jar OUKA lama (1.6.2.2 atau yang lebih lama) dari folder mods dan simpan hanya satu salinan GeckoLib 5.5.6. Perlu Minecraft 26.3, Fabric Loader 0.19.5 atau yang lebih baru, dan Fabric API 0.161.0+26.3 atau yang lebih baru. Pasang di klien dan server."
        ]
       }

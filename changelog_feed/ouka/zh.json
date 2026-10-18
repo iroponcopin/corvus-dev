@@ -8,13 +8,38 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Limitless 1.7.0 — 无下限、领域与咒王",
+   "summary": "Ouka JJK 1.7.1 — 新名称与重新平衡的 OUKA Beacon",
    "releases": [
+    {
+     "version": "V1.7.1",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Ouka JJK 1.7.1 — 新名称与重新平衡的 OUKA Beacon",
+     "summary": "Limitless 现在改名为 Ouka JJK。OUKA Beacon 已重新平衡：其加护强度降为原来的四分之一，合成需要两个 Heavy Core，并且现在会随使用磨损，可用一个 Heavy Core 修复。",
+     "sections": [
+      {
+       "title": "更新内容",
+       "items": [
+        "Limitless 改名为 Ouka JJK：创造模式标签、Controls 分类和术式轮盘都使用新名称。术式与物品名称保持不变。",
+        "OUKA Beacon 的加护强度降为原来的四分之一，范围不变。终端会显示新的强度。抗性不再让你免疫，火焰免疫与完全夜视需要更高的等级。",
+        "OUKA Beacon 的合成需要两个 Heavy Core，放在下方两角。",
+        "OUKA Beacon 现在有耐久。受加护的玩家越多、设定的等级越高，它磨损得越快，损坏后停止工作。用一个 Heavy Core 右键即可修复至满。终端会显示剩余耐久，拾起信标时耐久会保留。"
+       ]
+      },
+      {
+       "title": "注意事项",
+       "items": [
+        "开启画质选项 Improved Transparency 后（默认关闭），Hollow Purple 球体仍会画在水的前面。将在 1.7.2 修复。",
+        "安装 1.7.1 之前，请从 mods 文件夹删除旧的 OUKA jar（1.7.0 或更早），只保留一份 GeckoLib 5.5.6。需要 Minecraft 26.3、Fabric Loader 0.19.5 或更新版本，以及 Fabric API 0.161.0+26.3 或更新版本。客户端和服务器都要安装。"
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.0",
      "date": "2026-10-18",
      "type": "release",
-     "title": "Limitless 1.7.0 — 无下限、领域与咒王",
+     "title": "Ouka JJK 1.7.0 — 无下限、领域与咒王",
      "summary": "OUKA 加入一整套咒术：以五条悟的身份使用无下限 Infinity、Lapse Blue、Reversal Red、Hollow Purple 与无限空间领域 Infinite Void，或以宿傩的身份使用 Dismantle、Cleave、Open 与 Malevolent Shrine。还包括武器 Kamutoke 和 Hiten，以及 Blindfold 与 Character Guide。新增 10 个物品和 1 个方块，并包含 1.6.2.2 的全部内容。",
      "sections": [
       {
@@ -30,7 +55,7 @@
        "title": "注意事项",
        "items": [
         "开启画质选项 Improved Transparency（默认关闭）后，Hollow Purple 的球体会画在水的前方而非后方。这是已知问题，将在 1.7.1 修复。关闭该选项时显示正确。",
-        "玩过 1.7.0 后再回到较早版本，会把 Domain Barrier 和所有 Limitless 物品（Kamutoke、Hiten、Blindfold、Character Guide 以及 6 个刷怪蛋）从世界中移除。",
+        "玩过 1.7.0 后再回到较早版本，会把 Domain Barrier 和所有 Ouka JJK 物品（Kamutoke、Hiten、Blindfold、Character Guide 以及 6 个刷怪蛋）从世界中移除。",
         "安装 1.7.0 之前，请从 mods 文件夹中删除旧的 OUKA jar（1.6.2.2 或更早），并只保留一份 GeckoLib 5.5.6。需要 Minecraft 26.3、Fabric Loader 0.19.5 或更新版本，以及 Fabric API 0.161.0+26.3 或更新版本。客户端和服务器都要安装。"
        ]
       }

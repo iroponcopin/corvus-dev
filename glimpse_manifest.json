@@ -71,11 +71,11 @@
   },
   "ouka": {
     "mod_id": "ouka",
-    "latest": "1.7.0",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/OUKA_MODs_v1.7.0+mc26.3.zip",
-    "file_name": "OUKA_MODs_v1.7.0+mc26.3.zip",
-    "file_size": 14082263,
-    "sha256": "538a4f2b2837c2b06f189740aad438fd2cf68caa12d25a9fc449db1a1ecdeff7",
+    "latest": "1.7.1",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/OUKA_MODs_v1.7.1+mc26.3.zip",
+    "file_name": "OUKA_MODs_v1.7.1+mc26.3.zip",
+    "file_size": 14086795,
+    "sha256": "7ed5e6ced3360ea98d11dafaf265f7e96890c805f9c5797151d17e2f9eb2e1a3",
     "jars": {
       "geckolib": {
         "path": "mods/geckolib-fabric-26.3-5.5.6.jar",
@@ -84,10 +84,10 @@
         "sha256": "68e861d4dbbf0143261503a1e958833d2b9a1a4c91b4887faf28749d66fc1cf3"
       },
       "ouka": {
-        "path": "mods/ouka-1.7.0+mc26.3.jar",
-        "version": "1.7.0",
-        "file_size": 13769395,
-        "sha256": "9f7835b43b894733de8cc13d4c61334ec5a63a5bc465f5b21755bea9585fc9f1"
+        "path": "mods/ouka-1.7.1+mc26.3.jar",
+        "version": "1.7.1",
+        "file_size": 13773146,
+        "sha256": "1d0678e0a2123840f19243d64a86fc373e6af0fc28f16cd639ae3b4a03008430"
       }
     }
   },

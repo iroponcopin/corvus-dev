@@ -8,13 +8,38 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Limitless 1.7.0 — 無下限・領域展開・呪いの王",
+   "summary": "Ouka JJK 1.7.1 — 新しい名前と Ouka ビーコンの調整",
    "releases": [
+    {
+     "version": "V1.7.1",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Ouka JJK 1.7.1 — 新しい名前と Ouka ビーコンの調整",
+     "summary": "Limitless は Ouka JJK という名前になりました。Ouka ビーコンを調整しました。加護の強さは 四分の一になり、作るにはヘビーコアが二つ要り、使うほど耐久が減って、ヘビーコアで直せます。",
+     "sections": [
+      {
+       "title": "変更点",
+       "items": [
+        "Limitless の名前を Ouka JJK に変えました。クリエイティブのタブ、操作設定の欄、術式の輪が新しい名前になります。術式と品の名前は変わりません。",
+        "Ouka ビーコンの加護の強さを、これまでの四分の一にしました。届く範囲は変わりません。端末には新しい強さが出ます。耐性で傷を受けなくなることはなくなり、火炎耐性の無効化と暗視の全開には高いレベルが要ります。",
+        "Ouka ビーコンの作り方に、ヘビーコアが二つ要ります(下の段の両端)。",
+        "Ouka ビーコンに耐久ができました。加護を受ける人が多いほど、設定したレベルが高いほど早く減り、壊れると止まります。ヘビーコアを持って右クリックすると満タンに直ります。残りは端末に出て、拾っても耐久は残ります。"
+       ]
+      },
+      {
+       "title": "注意点",
+       "items": [
+        "画質の設定「Improved Transparency」をオンにすると(既定はオフ)、Hollow Purple の球がまだ水の手前に描かれます。1.7.2 で直します。",
+        "1.7.1 を入れる前に、古い OUKA の jar(1.7.0 以前)を mods フォルダーから消し、GeckoLib 5.5.6 は一つだけ残してください。Minecraft 26.3、Fabric Loader 0.19.5 以上、Fabric API 0.161.0+26.3 以上が必要です。クライアントとサーバーの両方に入れてください。"
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.0",
      "date": "2026-10-18",
      "type": "release",
-     "title": "Limitless 1.7.0 — 無下限・領域展開・呪いの王",
+     "title": "Ouka JJK 1.7.0 — 無下限・領域展開・呪いの王",
      "summary": "OUKA に術式がひとそろい入ります。五条として無下限、Lapse Blue、Reversal Red、Hollow Purple、領域 Infinite Void を、宿儺として Dismantle、Cleave、Open、Malevolent Shrine を使えます。武器の Kamutoke と Hiten、Blindfold、Character Guide も加わります。アイテム 10 個とブロック 1 個を追加し、1.6.2.2 の内容もすべて含みます。",
      "sections": [
       {
@@ -30,7 +55,7 @@
        "title": "注意点",
        "items": [
         "画質の設定「Improved Transparency」をオンにすると(既定はオフ)、Hollow Purple の球が水の奥ではなく手前に描かれます。既知の不具合で、1.7.1 で直します。オフのときは正しく描かれます。",
-        "1.7.0 で遊んだあとに前の版へ戻すと、Domain Barrier と Limitless のアイテムすべて(Kamutoke・Hiten・Blindfold・Character Guide・6 種のスポーンエッグ)が世界から消えます。",
+        "1.7.0 で遊んだあとに前の版へ戻すと、Domain Barrier と Ouka JJK のアイテムすべて(Kamutoke・Hiten・Blindfold・Character Guide・6 種のスポーンエッグ)が世界から消えます。",
         "1.7.0 を入れる前に、古い OUKA の jar(1.6.2.2 以前)を mods フォルダーから消し、GeckoLib 5.5.6 は一つだけ残してください。Minecraft 26.3、Fabric Loader 0.19.5 以上、Fabric API 0.161.0+26.3 以上が必要です。クライアントとサーバーの両方に入れてください。"
        ]
       }
