@@ -184,7 +184,8 @@ def check(root: Path, tracked=git_tracked):
         lead = _ended.get("last_content_version") if placeholder else version
         if newest != f"V{lead}":
             problems.append(f"changelog_feed/astraea/{lang}.json leads with {newest}, but the site publishes V{lead}")
-    return problems, {"zip": zpath.name, "version": version, "size": len(data), "sha256": expected["sha256"]}
+    lead_shown = _ended.get("last_content_version") if placeholder else version
+    return problems, {"zip": zpath.name, "version": version, "lead": lead_shown, "size": len(data), "sha256": expected["sha256"]}
 
 
 # --- self-test ----------------------------------------------------------------------------------
@@ -325,7 +326,8 @@ def main() -> int:
         print(f"astraea release: RED ({len(problems)} problem(s))")
         return 1
     print(f"astraea release: {facts['zip']} ({facts['size']:,} bytes, sha256 {facts['sha256'][:16]}…) is tracked, one jar, "
-          f"no Alpha, described exactly by the manifest's astraea block, and led by V{facts['version']} in all 13 feeds: GREEN")
+          f"no Alpha, described exactly by the manifest's astraea block, and led by V{facts['lead']} in all 13 feeds: GREEN"
+          + (f" (the zip is the retirement placeholder {facts['version']}; the feeds lead with its last content version)" if facts['lead'] != facts['version'] else ""))
     return 0
 
 
