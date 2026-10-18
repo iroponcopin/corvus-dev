@@ -193,7 +193,7 @@ export function Changelog({
                 ) : null}
                 {(r.paragraphs ?? []).map((p, i) => (
                   <p key={i} className="ac-cl-lede">
-                    {p}
+                    <Rich text={p} />
                   </p>
                 ))}
                 {sections.map(([title, items, warn]) =>

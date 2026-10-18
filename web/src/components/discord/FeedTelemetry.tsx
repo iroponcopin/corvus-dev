@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { chime } from "@/engine/audio";
-import { wikiFile } from "@/lib/site";
+import { fetchFeed } from "@/lib/feeds";
 import { Icon } from "../Icon";
 
 interface Probe {
@@ -37,20 +37,8 @@ export function FeedTelemetry({
     setBusy(true);
     const results: Probe[] = [];
     for (const path of FEEDS) {
-      const t0 = performance.now();
-      try {
-        const res = await fetch(`${wikiFile(path)}?t=${Date.now()}`, { cache: "no-store" });
-        const buf = await res.arrayBuffer();
-        results.push({
-          path,
-          status: res.status,
-          ms: Math.round(performance.now() - t0),
-          bytes: buf.byteLength,
-          modified: res.headers.get("last-modified"),
-        });
-      } catch {
-        results.push({ path, status: null, ms: null, bytes: null, modified: null });
-      }
+      const r = await fetchFeed(path);
+      results.push({ path, status: r.status, ms: r.status === null ? null : r.ms, bytes: r.status === null ? null : r.bytes, modified: r.modified });
     }
     setProbes(results);
     setAt(new Date().toLocaleTimeString());
