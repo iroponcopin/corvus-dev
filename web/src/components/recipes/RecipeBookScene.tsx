@@ -25,6 +25,7 @@ import {
   type TomeIngredient,
 } from "./tome-data";
 import { VoxelItemStage } from "./VoxelItemStage";
+import { loadPixels } from "@/realms/voxel";
 
 type TomeLabels = Fresh["tome"];
 
@@ -34,6 +35,29 @@ const ALL_ACCENT = "#e2c07a";
 const MODEL_ICON: Record<string, string> = { ouka: "icons/ouka.png", cherry: "icons/cherry.png", tsubomi: "icons/tsubomi.png", halia: "icons/halia.png" };
 /** Result rows the command bar draws at most; the count line tells the rest. */
 const CMD_LIMIT = 40;
+/** Mean luma (0..1, of the opaque pixels) a picture needs to be the pedestal's default item. Blindfold is ~0.08. */
+const LIT_LUMA = 0.12;
+const lumaCache = new Map<string, Promise<number>>();
+function iconLuma(url: string): Promise<number> {
+  let p = lumaCache.get(url);
+  if (p === undefined) {
+    p = loadPixels(url).then(
+      ({ data }) => {
+        let sum = 0;
+        let n = 0;
+        for (let i = 0; i < data.length; i += 4) {
+          if ((data[i + 3] ?? 0) <= 110) continue;
+          sum += (0.2126 * (data[i] ?? 0) + 0.7152 * (data[i + 1] ?? 0) + 0.0722 * (data[i + 2] ?? 0)) / 255;
+          n++;
+        }
+        return n === 0 ? 0 : sum / n;
+      },
+      () => 0,
+    );
+    lumaCache.set(url, p);
+  }
+  return p;
+}
 const ALL: TomeFilter = { cat: null, station: null, query: "" };
 
 export interface RecipeBookSceneProps {
@@ -98,8 +122,9 @@ export function RecipeBookScene({ data, labels, t, dir }: RecipeBookSceneProps) 
   const pages = useMemo(() => paginate(ids), [ids]);
   const last = Math.max(0, pages.length - 1);
   const cur = Math.min(spread, last);
-  const pageIds = pages[cur] ?? [];
-  const current = selected !== null && pageIds.includes(selected) ? selected : (pageIds[0] ?? null);
+  const pageIds = useMemo(() => pages[cur] ?? [], [pages, cur]);
+  const [litPick, setLitPick] = useState<string | null>(null);
+  const current = selected !== null && pageIds.includes(selected) ? selected : litPick !== null && pageIds.includes(litPick) ? litPick : (pageIds[0] ?? null);
   const recipes = current !== null ? (index.byResult.get(current) ?? []) : [];
   const recipe = recipes[Math.min(recipeIdx, Math.max(0, recipes.length - 1))];
   const item = current !== null ? data.items[current] : undefined;
@@ -161,6 +186,27 @@ export function RecipeBookScene({ data, labels, t, dir }: RecipeBookSceneProps) 
       stationName={stationName}
     />
   );
+
+  // With nothing chosen, the pedestal shows the first item on the page whose picture has colour enough to read in 3D
+  // (an all-black icon, such as OUKA's Blindfold, would stand there as a black slab). The book does not move.
+  useEffect(() => {
+    if (selected !== null && pageIds.includes(selected)) return;
+    let alive = true;
+    void (async () => {
+      for (const id of pageIds) {
+        const url = recipeIcon(data.items[id]?.icon ?? null);
+        if (url === null) continue;
+        if ((await iconLuma(url)) >= LIT_LUMA) {
+          if (alive) setLitPick(id);
+          return;
+        }
+      }
+      if (alive) setLitPick(null);
+    })();
+    return () => {
+      alive = false;
+    };
+  }, [pageIds, selected, data.items]);
 
   // ---- committing a move -------------------------------------------------------------------------------------
 

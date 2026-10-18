@@ -64,16 +64,28 @@ export function spriteTexture(url: string): Texture {
 }
 
 /** Adds the explode offset to a material's vertices. Every material shares the same uniform object. */
-function withExplode(material: MeshStandardMaterial | MeshBasicMaterial, explode: { value: number }): void {
+function withExplode(material: MeshStandardMaterial | MeshBasicMaterial, explode: { value: number }, rim = false): void {
   material.onBeforeCompile = (shader) => {
     shader.uniforms.uExplode = explode;
     shader.vertexShader = `attribute vec3 aOffset;\nuniform float uExplode;\n${shader.vertexShader}`.replace(
       "#include <begin_vertex>",
       "#include <begin_vertex>\ntransformed += aOffset * uExplode;",
     );
+    // A very dark picture (its mean luma under DARK_LUMA) gets a faint cool rim, added after lighting so it does not
+    // depend on the near-black albedo: the faces turned away from the camera catch it, and the shape reads. Models
+    // of ordinary pictures compile without it and look exactly as before.
+    if (rim) {
+      shader.fragmentShader = shader.fragmentShader.replace(
+        "#include <dithering_fragment>",
+        "float corvusRim = pow(1.0 - abs(dot(normalize(normal), normalize(vViewPosition))), 1.6);\ngl_FragColor.rgb += vec3(0.16, 0.18, 0.24) * corvusRim + vec3(0.025, 0.028, 0.035);\n#include <dithering_fragment>",
+      );
+    }
   };
-  material.customProgramCacheKey = () => "corvus-voxel-explode";
+  material.customProgramCacheKey = () => (rim ? "corvus-voxel-explode-rim" : "corvus-voxel-explode");
 }
+
+/** Mean luma of a picture's opaque pixels under which its model gets the rim (OUKA's Blindfold is ~0.08). */
+const DARK_LUMA = 0.12;
 
 interface Faces {
   positions: number[];
@@ -110,7 +122,7 @@ function toGeometry(f: Faces): BufferGeometry {
 }
 
 /** Voxelises a picture: the longest side spans 1 unit, centred on the origin. */
-async function voxelise(url: string): Promise<{ body: BufferGeometry; glow: BufferGeometry | null }> {
+async function voxelise(url: string): Promise<{ body: BufferGeometry; glow: BufferGeometry | null; luma: number }> {
   const { w, h, data } = await loadPixels(url);
   const depth = Math.max(1, Math.round(Math.max(w, h) / 16));
   const s = 1 / Math.max(w, h);
@@ -118,6 +130,8 @@ async function voxelise(url: string): Promise<{ body: BufferGeometry; glow: Buff
   const solid = (x: number, y: number, z: number): boolean => z >= 0 && z < depth && alphaAt(x, y) > 110;
   const body = newFaces();
   const glow = newFaces();
+  let lumaSum = 0;
+  let lumaN = 0;
 
   for (let y = 0; y < h; y++) {
     for (let x = 0; x < w; x++) {
@@ -128,6 +142,8 @@ async function voxelise(url: string): Promise<{ body: BufferGeometry; glow: Buff
       const b8 = data[i + 2] ?? 0;
       const c: V3 = [srgbToLinear(r8), srgbToLinear(g8), srgbToLinear(b8)];
       const luma = 0.2126 * (r8 / 255) + 0.7152 * (g8 / 255) + 0.0722 * (b8 / 255);
+      lumaSum += luma;
+      lumaN++;
       const bright = luma > 0.82 && alphaAt(x, y) > 200;
       const x0 = (x - w / 2) * s;
       const x1 = x0 + s;
@@ -152,7 +168,7 @@ async function voxelise(url: string): Promise<{ body: BufferGeometry; glow: Buff
       }
     }
   }
-  return { body: toGeometry(body), glow: glow.positions.length > 0 ? toGeometry(glow) : null };
+  return { body: toGeometry(body), glow: glow.positions.length > 0 ? toGeometry(glow) : null, luma: lumaN === 0 ? 0 : lumaSum / lumaN };
 }
 
 /** A voxel picture, a block (the picture on a cube), or no picture (a dark cube). */
@@ -179,10 +195,10 @@ async function build(url: string | null, kind: ItemKind): Promise<VoxelModel> {
     return { group, explode, wire: null, dispose };
   }
 
-  const { body, glow } = await voxelise(url);
+  const { body, glow, luma } = await voxelise(url);
   owned.push(body);
   const bodyMat = new MeshStandardMaterial({ vertexColors: true, roughness: 0.35, metalness: 0.15 });
-  withExplode(bodyMat, explode);
+  withExplode(bodyMat, explode, luma < DARK_LUMA);
   owned.push(bodyMat);
   group.add(new Mesh(body, bodyMat));
   if (glow !== null) {
