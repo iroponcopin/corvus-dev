@@ -226,10 +226,9 @@ export function Dock({
   const toggle = (m: Exclude<Menu, null>): void => setMenu((v) => (v === m ? null : m));
   return (
     <header ref={headerRef} className="ac-header" data-compact={compact ? "true" : "false"}>
-      <div className="ac-header-pill ac-glass">
+      <div className="ac-header-pill">
         <Link href={pathOf(lang, "")} className="ac-brand" aria-label={`${labels.siteTitle} · ${labels.home}`}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={asset("logo.png")} alt="" width={22} height={22} />
+          {/* The template's wordmark: the name alone, set in the nav's tracked capitals. */}
           <span>{labels.siteTitle}</span>
         </Link>
 

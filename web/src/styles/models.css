@@ -1,7 +1,7 @@
 /* ———————————————————— Model pages ————————————————————
- * OUKA, Cherry, Aureum, ASTRAEA, Tsubomi, Noctua and Halia share one design: the Syne name in the model's accent
- * gradient, a version pill from the manifest, text calls to action with arrows, glass panels on the obsidian tokens,
- * and a page-wide ambient light in the model's own accents. The accents are the --accent-<model> tokens of globals.css.
+ * Halia, OUKA, Cherry, Tsubomi, Noctua, Aureum and ASTRAEA share the template's hero: copy anchored bottom-left,
+ * the name in Syne 800 capitals on paper, a tracked version label, square text CTAs, ink panels drawn by a 1px
+ * hairline. The model's accent survives only as a faint light behind the page (the --accent-<model> tokens).
  */
 
 .ac-model-page {
@@ -25,29 +25,45 @@
   overflow: hidden;
   pointer-events: none;
   background:
-    radial-gradient(60rem 42rem at 82% -6%, color-mix(in srgb, var(--accent) 24%, transparent), transparent 70%),
-    radial-gradient(48rem 36rem at 4% 46%, color-mix(in srgb, var(--accent-2) 14%, transparent), transparent 72%),
-    radial-gradient(40rem 30rem at 72% 100%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 70%);
+    radial-gradient(60rem 42rem at 82% -6%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 70%),
+    radial-gradient(ellipse 78% 72% at 50% 47%, transparent 46%, rgb(0 0 0 / 0.5) 100%);
 }
 
 /* ———— Hero ———— */
 
 .ac-model-hero {
   display: flex;
-  align-items: center;
-  min-height: min(100svh, 980px);
-  padding-block: calc(var(--header-h) + 48px) 48px;
+  align-items: flex-end;
+  min-height: 100svh;
+  padding-block: calc(var(--header-h) + 48px) 64px;
+}
+
+.ac-model-hero > .ac-wrap,
+.ac-model-hero > .ac-wide {
+  width: calc(100% - 80px);
+  max-width: none;
+}
+
+@media (max-width: 800px) {
+  .ac-model-hero {
+    padding-bottom: 42px;
+  }
+
+  .ac-model-hero > .ac-wrap,
+  .ac-model-hero > .ac-wide {
+    width: calc(100% - 40px);
+  }
 }
 
 .ac-model-grid {
   display: grid;
-  align-items: center;
+  align-items: end;
   gap: 32px;
 }
 
 @media (min-width: 900px) {
   .ac-model-grid {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   }
 }
 
@@ -56,7 +72,7 @@
   min-width: 0;
   flex-direction: column;
   align-items: flex-start;
-  gap: 18px;
+  gap: 0;
 }
 
 .ac-model-copy > * {
@@ -64,97 +80,126 @@
 }
 
 .ac-model-name {
-  padding-block: 0.04em 0.12em;
-  background: linear-gradient(100deg, var(--accent) 0%, var(--accent-2) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  padding-block: 0.04em 0.06em;
+  color: #f2eee5;
+  font-size: clamp(56px, 9vw, 152px);
+  line-height: 0.84;
+  letter-spacing: -0.075em;
+  text-transform: uppercase;
   overflow-wrap: anywhere;
+}
+
+html:lang(tr) .ac-model-name {
+  text-transform: none;
 }
 
 .ac-model-version {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px 14px;
-  color: var(--color-soft);
-  font-size: 17px;
+  gap: 10px 16px;
+  margin-top: 22px !important;
+  color: rgb(232 229 220 / 0.52);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
 .ac-model-pill {
   display: inline-flex;
   align-items: center;
-  min-height: 30px;
-  padding: 2px 14px;
-  border: 1px solid color-mix(in srgb, var(--accent) 50%, transparent);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--accent) 14%, transparent);
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  min-height: 24px;
+  padding: 0 9px;
+  border: 1px solid rgb(232 229 220 / 0.72);
+  border-radius: 0;
+  background: transparent;
+  color: #e8e5dc;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
   font-variant-numeric: tabular-nums;
 }
 
 .ac-model-codename {
-  color: var(--color-muted);
+  color: rgb(232 229 220 / 0.52);
 }
 
 .ac-model-line {
-  max-width: 30ch;
-  color: var(--color-soft);
-  font-size: clamp(19px, 2vw, 24px);
-  line-height: 1.38;
+  max-width: 420px;
+  margin-top: 24px !important;
+  color: rgb(242 238 229 / 0.82);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
 }
 
 .ac-model-lead {
-  max-width: 36ch;
+  max-width: 420px;
+  margin-top: 10px !important;
+  font-size: 13px;
+  color: rgb(242 238 229 / 0.6);
 }
 
 .ac-model-actions {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 14px 28px;
+  gap: 12px;
+  margin-top: 28px !important;
 }
 
-/* A call to action as a text link with an arrow: the arrow nudges forward on hover (backward in Arabic). */
+/* A call to action: the template's square text CTA, arrow included. */
 .ac-model-cta {
   display: inline-flex;
-  align-items: baseline;
-  gap: 8px;
-  padding-block: 6px;
-  border-bottom: 1px solid transparent;
-  color: var(--accent);
-  font-size: 17px;
-  font-weight: 500;
-  letter-spacing: -0.01em;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 17px 13px;
+  border: 1px solid rgb(232 229 220 / 0.32);
+  border-radius: 0;
+  background: rgb(7 7 7 / 0.24);
+  color: #e8e5dc;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   text-decoration: none;
   transition:
-    border-color 0.3s var(--ease-reveal),
-    color 0.3s var(--ease-reveal);
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+html:lang(tr) .ac-model-cta {
+  text-transform: none;
 }
 
 .ac-model-cta--primary {
-  font-size: 20px;
-  font-weight: 600;
+  border-color: rgb(232 229 220 / 0.72);
 }
 
 .ac-model-cta:hover,
 .ac-model-cta:focus-visible {
-  border-bottom-color: currentColor;
+  border-color: #e8e5dc;
+  background: #e8e5dc;
+  color: #0a0a0a;
 }
 
 .ac-model-cta .ac-flip {
-  transition: transform 0.5s var(--ease-reveal);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 0.6;
+  transition: transform 180ms ease;
 }
 
 .ac-model-cta:hover .ac-flip {
-  transform: translateX(4px);
+  transform: translateX(3px);
 }
 
 html:lang(ar) .ac-model-cta:hover .ac-flip {
-  transform: translateX(-4px);
+  transform: translateX(-3px);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -172,19 +217,8 @@ html:lang(ar) .ac-model-cta:hover .ac-flip {
 /* ———— Glass panels ———— */
 
 .ac-model-page .ac-card {
-  background: rgb(12 14 20 / 0.72);
-  box-shadow:
-    inset 0 0 0 1px var(--color-hairline),
-    inset 0 1px 0 rgb(255 255 255 / 0.05),
-    0 30px 80px -40px rgb(0 0 0 / 0.9);
-  -webkit-backdrop-filter: blur(28px) saturate(190%);
-  backdrop-filter: blur(28px) saturate(190%);
-}
-
-@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-  .ac-model-page .ac-card {
-    background: var(--color-glass);
-  }
+  background: rgb(10 10 10 / 0.88);
+  box-shadow: inset 0 0 0 1px var(--color-hair);
 }
 
 .ac-model-page .ac-hash {
@@ -225,10 +259,7 @@ html:lang(ar) .ac-model-cta:hover .ac-flip {
 /* ———— Aureum: the stats and sections, in the model's accents ———— */
 
 .ac-model-page .ac-stat b {
-  background: linear-gradient(100deg, var(--accent) 0%, var(--accent-2) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #f2eee5;
 }
 
 .ac-model-page .ac-section-card {

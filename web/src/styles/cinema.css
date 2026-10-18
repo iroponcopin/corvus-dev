@@ -60,60 +60,73 @@
   display: none;
 }
 
+/* The template's hero-shade: a radial vignette over the footage, plus a floor gradient under the copy. */
 .cin-veil {
   position: absolute;
   inset: 0;
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(180deg, rgb(0 0 0 / 0.46) 0%, rgb(0 0 0 / 0.1) 36%, rgb(0 0 0 / 0) 60%, rgb(0 0 0 / 0.55) 100%);
+    radial-gradient(
+      ellipse 78% 72% at 50% 47%,
+      rgb(0 0 0 / 0.06) 0%,
+      rgb(0 0 0 / 0.16) 46%,
+      rgb(0 0 0 / 0.54) 82%,
+      rgb(0 0 0 / 0.78) 100%
+    ),
+    linear-gradient(180deg, rgb(0 0 0 / 0.3) 0%, rgb(0 0 0 / 0) 30%, rgb(0 0 0 / 0) 60%, rgb(0 0 0 / 0.5) 100%);
 }
 
+/* The footage is graded as the template grades its film. */
+.cin-bg-img,
+.cin-bg-canvas {
+  filter: saturate(0.7) contrast(1.08);
+}
+
+/* The template's hero-content: copy anchored bottom-left (40px / 64px; 20px / 42px on phones). */
 .cin-copy {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 40%;
+  inset-inline-start: 40px;
+  bottom: 64px;
   z-index: 2;
-  transform: translateY(-50%);
+  width: min(1080px, calc(100vw - 80px));
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0 var(--ac-gutter);
+  align-items: flex-start;
+  text-align: start;
   pointer-events: none;
 }
 
 .cin-title {
   margin: 0;
   font-family: var(--font-display);
-  font-weight: 400;
-  font-size: clamp(64px, min(24vw, 26vh), 360px);
-  line-height: 0.9;
-  letter-spacing: 0.42em;
+  font-weight: 800;
+  font-size: clamp(56px, 10vw, 168px);
+  line-height: 0.84;
+  letter-spacing: -0.075em;
+  text-transform: uppercase;
   white-space: nowrap;
-  color: #f6eee0;
-  text-shadow: 0 0 60px rgb(255 190 110 / 0.28), 0 2px 18px rgb(0 0 0 / 0.5), 0 0 3px rgb(0 0 0 / 0.25);
+  color: #f2eee5;
   font-variant-ligatures: none;
 }
 
 .cin-tagline {
-  margin: clamp(10px, 2vh, 22px) 0 0;
-  font-family: "Didot", "Bodoni 72", "Bodoni MT", "Hoefler Text", "Playfair Display", "Times New Roman", Times, serif;
+  max-width: 420px;
+  margin: 24px 0 0;
+  font-family: var(--font-body);
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(18px, 2.2vw, 30px);
-  line-height: 1.3;
-  letter-spacing: 0.04em;
-  color: #eadcc2;
-  text-shadow: 0 1px 4px rgb(0 0 0 / 0.55), 0 0 22px rgb(0 0 0 / 0.45);
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: rgb(242 238 229 / 0.82);
 }
 
 html:lang(ar) .cin-tagline,
 html:lang(ja) .cin-tagline,
 html:lang(zh) .cin-tagline,
 html:lang(ko) .cin-tagline {
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
 }
 
 .cin-eagle {
@@ -142,15 +155,15 @@ html:lang(ko) .cin-tagline {
 
 .cin-hint {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 26px;
+  inset-inline-end: 40px;
+  bottom: 64px;
   z-index: 4;
   margin: 0;
-  text-align: center;
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  color: rgb(255 255 255 / 0.7);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgb(232 229 220 / 0.52);
   pointer-events: none;
 }
 
@@ -160,36 +173,44 @@ html:lang(ko) .cin-tagline {
 
 .cin-credit {
   position: absolute;
-  left: var(--ac-gutter);
-  bottom: 14px;
+  inset-inline-start: 40px;
+  bottom: 22px;
   z-index: 4;
-  max-width: min(90ch, calc(100% - 2 * var(--ac-gutter)));
+  max-width: min(90ch, calc(100% - 80px));
   margin: 0;
-  font-size: 12px;
+  font-size: 9px;
+  font-weight: 700;
   line-height: 1.4;
-  letter-spacing: 0.01em;
-  color: #e8e8ec;
-  text-shadow: 0 1px 3px rgb(0 0 0 / 0.8);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgb(232 229 220 / 0.48);
   pointer-events: none;
 }
 
-@media (min-width: 768px) {
-  /* The eagle takes the right half: the tagline sits under the left letters. */
-  .cin-tagline {
-    transform: translateX(-24vw);
-  }
-}
-
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .cin-copy {
-    top: 36%;
+    inset-inline-start: 20px;
+    bottom: 64px;
+    width: calc(100vw - 40px);
   }
   .cin-title {
-    font-size: clamp(56px, 22vw, 120px);
+    font-size: clamp(48px, 17vw, 96px);
   }
   /* CORVUS has six letters: it takes a smaller size on phones so it fits. */
-  .cin-title--2 {
-    font-size: clamp(48px, 18vw, 100px);
+  .cin-title--2,
+  .cin-title--3 {
+    font-size: clamp(42px, 14vw, 80px);
+  }
+  .cin-tagline {
+    max-width: 330px;
+    font-size: 13px;
+  }
+  .cin-hint {
+    display: none;
+  }
+  .cin-credit {
+    inset-inline-start: 20px;
+    max-width: calc(100% - 40px);
   }
 }
 
@@ -213,13 +234,13 @@ html:lang(ko) .cin-tagline {
 
 /* The closing line of Act III: Syne, set under the tagline, entering after it. */
 .cin-closing {
-  margin: clamp(14px, 3vh, 30px) 0 0;
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: clamp(16px, 1.9vw, 26px);
-  letter-spacing: 0.02em;
-  color: #f6eee0;
-  text-shadow: 0 1px 4px rgb(0 0 0 / 0.6);
+  margin: 28px 0 0;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #e8e5dc;
   will-change: opacity;
 }
 
@@ -267,7 +288,7 @@ html:lang(ko) .cin-tagline {
   z-index: 0;
   overflow: hidden;
   pointer-events: none;
-  background: #000;
+  background: #0a0a0a;
 }
 
 .ac-backdrop-img {
@@ -301,7 +322,8 @@ html:lang(ko) .cin-tagline {
 .ac-backdrop-veil {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgb(0 0 0 / 0.4) 0%, rgb(0 0 0 / 0.6) 60%, rgb(0 0 0 / 0.8) 100%);
+  /* Ink over the still: the template's page is ink #0a0a0a; the footage only shows through faintly. */
+  background: linear-gradient(180deg, rgb(10 10 10 / 0.72) 0%, rgb(10 10 10 / 0.86) 50%, rgb(10 10 10 / 0.95) 100%);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -315,11 +337,9 @@ html:lang(ko) .cin-tagline {
   display: block;
   padding: 18px;
   border: 1px solid rgb(255 255 255 / 0.14);
-  border-radius: 22px;
+  border-radius: 0;
   background: rgb(255 255 255 / 0.06);
   color: #f5f5f7;
-  -webkit-backdrop-filter: blur(18px) saturate(1.2);
-  backdrop-filter: blur(18px) saturate(1.2);
 }
 
 /* Browsers without backdrop-filter: an opaque surface keeps the text legible. */
