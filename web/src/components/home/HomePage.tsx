@@ -5,7 +5,7 @@ import { langData, wiki } from "@/lib/wiki";
 import type { Lang, Release } from "@/lib/wiki-types";
 import { BRAND_COLOR, BRAND_ICON } from "@/lib/brands";
 import { NaturalCinemaStage } from "../cinema/NaturalCinemaStage";
-import { AltitudeStream, type StreamRelease } from "./AltitudeStream";
+import { BentoReleases, type BentoItem } from "./BentoReleases";
 import { CopyButton } from "../CopyButton";
 import { FeedTelemetry } from "../discord/FeedTelemetry";
 import { CodexPreview, type FeaturedRecipe } from "./CodexPreview";
@@ -81,22 +81,40 @@ export function HomePage({ lang }: { lang: Lang }) {
   const k = d.discord;
   const commands = k.groups.flatMap((g) => g.subcommands.filter((s) => !s.admin).map((s) => ({ cmd: `/${g.name} ${s.name}`, gloss: s.gloss }))).slice(0, 5);
 
-  // The altitude stream: the latest releases of the live models (not archived or ended), newest first.
-  const altitude: StreamRelease[] = c.brands
-    .filter((b) => d.products[b.id]?.availability !== "archived")
-    .flatMap((b) => b.releases.map((r) => ({ r, b })))
-    .sort((x, y) => (y.r.date ?? "").localeCompare(x.r.date ?? ""))
-    .slice(0, 10)
-    .map(({ r, b }) => ({
-      key: r.id,
-      href: `${pathOf(lang, "changelog/")}?model=${b.id}`,
-      icon: BRAND_ICON[b.id] ?? "icons/store.png",
-      brand: b.name,
-      version: r.version,
-      date: r.date,
-      title: r.title,
-      color: BRAND_COLOR[b.id] ?? "#2997ff",
-    }));
+  // The Bento grid: the latest release of each live model (never ASTRAEA or Alpha), by id. Store and Agent read
+  // the Store's own entries and the manifest. The pill is the build-time version until the feed answers.
+  const BENTO: { key: string; manifest: string; changelog: string | null; size: BentoItem["size"]; href: string }[] = [
+    { key: "halia", manifest: "halia", changelog: "halia", size: "xl", href: "halia/" },
+    { key: "ouka", manifest: "ouka", changelog: "ouka", size: "l", href: "ouka/" },
+    { key: "cherry", manifest: "cherry", changelog: "cherry", size: "m", href: "cherry/" },
+    { key: "tsubomi", manifest: "tsubomi", changelog: "tsubomi", size: "m", href: "tsubomi/" },
+    { key: "noctua", manifest: "noctua", changelog: null, size: "m", href: "noctua/" },
+    { key: "aureum", manifest: "aureum", changelog: "aureum", size: "m", href: "aureum/" },
+    { key: "store", manifest: "launcher", changelog: "corvus", size: "l", href: "launcher/" },
+    { key: "agent", manifest: "agent", changelog: null, size: "m", href: "launcher/" },
+  ];
+  const bento: BentoItem[] = BENTO.map((x) => {
+    const brand = x.changelog === null ? undefined : c.brands.find((b) => b.id === x.changelog);
+    const rel = brand?.releases[0];
+    const prod = p[x.key];
+    const name = x.key === "store" ? h.ctaStore : x.key === "agent" ? "Corvus Agent" : prod?.name ?? brand?.name ?? x.key;
+    const color = BRAND_COLOR[x.changelog ?? x.key] ?? "#2997ff";
+    const entry = rel
+      ? { version: rel.version, date: rel.date, title: rel.title, summary: rel.summary, paragraphs: rel.paragraphs ?? [], highlights: rel.highlights, warnings: rel.warnings }
+      : { version: prod?.version ?? "", date: null, title: prod?.tagline ?? h.storeTagline, summary: prod?.headline ?? "", paragraphs: [], highlights: [], warnings: [] };
+    return {
+      key: x.key,
+      manifest: x.manifest,
+      name,
+      icon: BRAND_ICON[x.changelog ?? x.key] ?? (x.key === "store" || x.key === "agent" ? "icons/store.png" : `icons/${x.key}.png`),
+      color,
+      size: x.size,
+      version: rel?.version ?? prod?.version ?? "",
+      entry,
+      href: pathOf(lang, x.href),
+      changelogHref: `${pathOf(lang, "changelog/")}?model=${x.changelog ?? x.key}`,
+    };
+  });
 
   const explore = [
     { href: "launcher/", title: d.launcher.title, body: d.launcher.description },
@@ -121,13 +139,18 @@ export function HomePage({ lang }: { lang: Lang }) {
         hint={f.heroScroll}
       />
 
-      <AltitudeStream
-        title={f.altitude.title}
-        lede={f.altitude.lede}
-        openLabel={f.chrono.open}
-        backdrop="cinema/act3/bg/f196.webp"
-        releases={altitude}
-      />
+      <section className="ac-section ac-bento-section" aria-labelledby="ac-bento-h">
+        <div className="ac-wrap">
+          <h2 id="ac-bento-h" className="ac-h2">
+            {HOME_V2[lang].bento.title}
+          </h2>
+          <p className="ac-lead">{HOME_V2[lang].bento.lede}</p>
+          <BentoReleases
+            items={bento}
+            labels={{ title: HOME_V2[lang].bento.title, lede: HOME_V2[lang].bento.lede, open: HOME_V2[lang].bento.open, close: HOME_V2[lang].bento.close, modal: HOME_V2[lang].bento.modal, pill: HOME_V2[lang].bento.pill }}
+          />
+        </div>
+      </section>
 
       <section className="ac-wrap ac-brands" aria-labelledby="ac-brands-title">
         <h2 id="ac-brands-title" className="ac-eyebrow">
