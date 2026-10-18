@@ -1,3 +1,4 @@
+import { FRESH } from "@/i18n/fresh";
 import { langData } from "@/lib/wiki";
 import type { Lang } from "@/lib/wiki-types";
 import { Changelog } from "../changelog/Changelog";
@@ -12,7 +13,7 @@ export function ChangelogPage({ lang }: { lang: Lang }) {
         <p className="ac-lead">{c.description}</p>
       </div>
       <div className="ac-wrap">
-        <Changelog brands={c.brands} labels={c.labels} noteBrands={c.noteBrands} />
+        <Changelog brands={c.brands} labels={c.labels} noteBrands={c.noteBrands} ui={FRESH[lang].changelogUi} />
       </div>
     </section>
   );
