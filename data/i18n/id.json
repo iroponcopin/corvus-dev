@@ -306,6 +306,22 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.0",
+    "title": "Limitless 1.7.0 — Infinity, domain, dan Raja Kutukan",
+    "summary": "OUKA menghadirkan paket sihir lengkap: mainkan sebagai Gojo dengan Infinity, Lapse Blue, Reversal Red, Hollow Purple, dan domain Infinite Void, atau sebagai Sukuna dengan Dismantle, Cleave, Open, dan Malevolent Shrine. Senjata Kamutoke dan Hiten, Blindfold, serta Character Guide juga ikut. Menambahkan 10 item dan 1 blok, dan memuat semua yang ada di 1.6.2.2.",
+    "highlights": [
+     "Gojo: Infinity menghentikan apa pun yang datang padamu. Lapse Blue menarik dunia ke arahmu, Reversal Red melemparkannya kembali, dan keduanya bertemu menjadi Hollow Purple. Bentangkan Infinite Void untuk mengurung semua yang ada di dalam kubahnya.",
+     "Sukuna: Dismantle dan Cleave memotong apa pun di depanmu, Open membakar tanah, dan Malevolent Shrine adalah domain tersendiri. Kamutoke memanggil petir.",
+     "Ganti kemampuan dengan R, gunakan dengan Z dan V, dan buka menu teknik dengan C. Character Guide, yang diberikan sekali saat kamu bergabung, menjelaskan setiap teknik.",
+     "Domain Barrier adalah dinding sebuah domain: tidak bisa dihancurkan atau diledakkan. Domain bisa saling bertabrakan saat dua domain bertemu."
+    ],
+    "warnings": [
+     "Dengan opsi grafis Improved Transparency dinyalakan (defaultnya mati), bola Hollow Purple digambar di depan air, bukan di belakangnya. Ini masalah yang sudah diketahui dan akan diperbaiki di 1.7.1. Dengan opsi mati, bola digambar dengan benar.",
+     "Kembali ke versi sebelumnya setelah bermain 1.7.0 menghapus Domain Barrier dan semua item Limitless (Kamutoke, Hiten, Blindfold, Character Guide, dan 6 telur kemunculan) dari dunia.",
+     "Sebelum memasang 1.7.0, hapus jar OUKA lama (1.6.2.2 atau yang lebih lama) dari folder mods dan simpan hanya satu salinan GeckoLib 5.5.6. Perlu Minecraft 26.3, Fabric Loader 0.19.5 atau yang lebih baru, dan Fabric API 0.161.0+26.3 atau yang lebih baru. Pasang di klien dan server."
+    ]
+   },
+   {
     "id": "ouka-v1.6.2.2",
     "title": "The Grand Synthesis 1.6.2.2 — bahan bakar tungku, bahan perakitan, dan generator engkol",
     "summary": "Pembaruan industri yang juga memuat perbaikan 1.6.2.1. Tungku Peleburan Katalitik kini meleburkan bijih langsung dari tanah, Lini Perakitan Presisi Otomatis mendapat penyimpanan bahan yang bisa diisi sebelum memilih resep, dan Generator Engkol baru membawa daya OUKA bahkan ke survival murni. Menambahkan 1 blok baru.",

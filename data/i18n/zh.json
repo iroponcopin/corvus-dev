@@ -306,6 +306,22 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.0",
+    "title": "Limitless 1.7.0 — 无下限、领域与咒王",
+    "summary": "OUKA 加入一整套咒术：以五条悟的身份使用无下限 Infinity、Lapse Blue、Reversal Red、Hollow Purple 与无限空间领域 Infinite Void，或以宿傩的身份使用 Dismantle、Cleave、Open 与 Malevolent Shrine。还包括武器 Kamutoke 和 Hiten，以及 Blindfold 与 Character Guide。新增 10 个物品和 1 个方块，并包含 1.6.2.2 的全部内容。",
+    "highlights": [
+     "五条：无下限会挡下向你袭来的东西。Lapse Blue 把周围拉向你，Reversal Red 将其弹开，两者相会便成为 Hollow Purple。展开 Infinite Void，可将穹顶内的一切困住。",
+     "宿傩：Dismantle 与 Cleave 斩断你面前的东西，Open 让地面燃起火焰，Malevolent Shrine 是独立的领域。Kamutoke 能召来雷电。",
+     "用 R 切换能力，用 Z 和 V 施放，用 C 打开术式菜单。初次加入时获得一次的 Character Guide 会讲解每一种术式。",
+     "Domain Barrier 是领域的墙壁：无法被破坏，也无法被爆炸摧毁。两个领域相遇时会发生碰撞。"
+    ],
+    "warnings": [
+     "开启画质选项 Improved Transparency（默认关闭）后，Hollow Purple 的球体会画在水的前方而非后方。这是已知问题，将在 1.7.1 修复。关闭该选项时显示正确。",
+     "玩过 1.7.0 后再回到较早版本，会把 Domain Barrier 和所有 Limitless 物品（Kamutoke、Hiten、Blindfold、Character Guide 以及 6 个刷怪蛋）从世界中移除。",
+     "安装 1.7.0 之前，请从 mods 文件夹中删除旧的 OUKA jar（1.6.2.2 或更早），并只保留一份 GeckoLib 5.5.6。需要 Minecraft 26.3、Fabric Loader 0.19.5 或更新版本，以及 Fabric API 0.161.0+26.3 或更新版本。客户端和服务器都要安装。"
+    ]
+   },
+   {
     "id": "ouka-v1.6.2.2",
     "title": "The Grand Synthesis 1.6.2.2 — 炉子燃料、组装材料与手摇发电机",
     "summary": "工业更新，同时包含 1.6.2.1 的修正。触媒热化学熔炉现在可以直接冶炼刚开采的矿石，精密自动组装线新增一个可在选择配方前先装入材料的材料库，新的手摇发电机让纯生存世界也能获得 OUKA 电力。新增 1 个方块。",

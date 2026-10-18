@@ -1,11 +1,43 @@
 {
  "lang": "de",
  "brand": "ouka",
- "updated": "2026-10-16",
+ "updated": "2026-10-18",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-16",
+ "updated_label": "Aktualisiert am 2026-10-18",
  "note": "",
  "groups": [
+  {
+   "label": "V1.7",
+   "summary": "Limitless 1.7.0 — Unendlichkeit, die Domänen und der König der Flüche",
+   "releases": [
+    {
+     "version": "V1.7.0",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Limitless 1.7.0 — Unendlichkeit, die Domänen und der König der Flüche",
+     "summary": "OUKA bringt einen vollständigen Satz Zauberkünste mit: Spiele als Gojo mit Infinity, Lapse Blue, Reversal Red, Hollow Purple und der Domäne Infinite Void, oder als Sukuna mit Dismantle, Cleave, Open und dem Malevolent Shrine. Dazu kommen die Waffen Kamutoke und Hiten, die Blindfold und der Character Guide. Es fügt 10 Gegenstände und 1 Block hinzu und enthält alles aus 1.6.2.2.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Gojo: Infinity hält auf, was auf dich zukommt. Lapse Blue zieht die Umgebung heran, Reversal Red schleudert sie zurück, und beide treffen sich als Hollow Purple. Entfalte die Infinite Void, um alles unter ihrer Kuppel einzuschließen.",
+        "Sukuna: Dismantle und Cleave schneiden durch alles, was vor dir steht, Open setzt den Boden in Flammen, und der Malevolent Shrine ist eine eigene Domäne. Kamutoke ruft Blitze herab.",
+        "Wechsle die Fähigkeiten mit R, benutze sie mit Z und V und öffne das Techniken-Menü mit C. Der Character Guide, den du beim ersten Beitritt einmal erhältst, erklärt jede Technik.",
+        "Die Domain Barrier ist die Wand einer Domäne: Sie lässt sich weder brechen noch sprengen. Domänen können aufeinanderprallen, wenn zwei von ihnen zusammentreffen."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Wenn die Grafikoption Improved Transparency eingeschaltet ist (standardmäßig aus), wird die Hollow-Purple-Kugel vor dem Wasser statt dahinter gezeichnet. Das ist ein bekannter Fehler und wird in 1.7.1 behoben. Bei ausgeschalteter Option wird sie korrekt gezeichnet.",
+        "Wenn du nach dem Spielen von 1.7.0 zu einer früheren Version zurückkehrst, verschwinden die Domain Barrier und alle Limitless-Gegenstände (Kamutoke, Hiten, Blindfold, Character Guide und die 6 Spawn-Eier) aus der Welt.",
+        "Entferne vor der Installation von 1.7.0 die alte OUKA-jar (1.6.2.2 oder älter) aus dem mods-Ordner und behalte nur eine Kopie von GeckoLib 5.5.6. Es braucht Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Installiere es sowohl auf dem Client als auch auf dem Server."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.6",
    "summary": "The Grand Synthesis 1.6.2.2 — Ofenbrennstoff, Montagematerialien und der Handkurbelgenerator",

@@ -291,7 +291,7 @@ KEYS = ("title", "desc", "lede", "line")
 # build until its own line and name exist (see the docstring).
 # V1.4.0 (2026-10-05): the line and codename are V1.4's own. The codename is the working title from the spec
 # (Update/OUKA_V1.4_IMPLEMENTATION_NOTES.md); the owner has not confirmed a public one, so confirm before the release.
-COPY_FOR = "1.6.2.2"
+COPY_FOR = "1.7.0"
 CODENAME = "The Grand Synthesis"
 FIRST_RELEASE = (1, 0, 0)
 RELEASE_RE = re.compile(r"^OUKA_MODs_v(?P<ver>\d+(?:\.\d+)*)\+mc(?P<mc>\d+(?:\.\d+)*)\.zip$")

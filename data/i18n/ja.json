@@ -441,6 +441,22 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.0",
+    "title": "Limitless 1.7.0 — 無下限・領域展開・呪いの王",
+    "summary": "OUKA に術式がひとそろい入ります。五条として無下限、Lapse Blue、Reversal Red、Hollow Purple、領域 Infinite Void を、宿儺として Dismantle、Cleave、Open、Malevolent Shrine を使えます。武器の Kamutoke と Hiten、Blindfold、Character Guide も加わります。アイテム 10 個とブロック 1 個を追加し、1.6.2.2 の内容もすべて含みます。",
+    "highlights": [
+     "五条: 無下限は向かってくるものを止めます。Lapse Blue は周りを引き寄せ、Reversal Red は弾き返し、二つが合わさると Hollow Purple になります。Infinite Void を展開すると、ドームの中のものを閉じ込めます。",
+     "宿儺: Dismantle と Cleave は前にあるものを斬り、Open は地面に火を放ち、Malevolent Shrine は宿儺の領域です。Kamutoke は雷を落とします。",
+     "R で能力を切り替え、Z と V で使い、C で術式のメニューを開きます。初めて入ったときにもらえる Character Guide に、それぞれの術式の説明があります。",
+     "Domain Barrier は領域の壁で、壊すことも爆発で消すこともできません。二つの領域がぶつかると、領域の押し合いになります。"
+    ],
+    "warnings": [
+     "画質の設定「Improved Transparency」をオンにすると(既定はオフ)、Hollow Purple の球が水の奥ではなく手前に描かれます。既知の不具合で、1.7.1 で直します。オフのときは正しく描かれます。",
+     "1.7.0 で遊んだあとに前の版へ戻すと、Domain Barrier と Limitless のアイテムすべて(Kamutoke・Hiten・Blindfold・Character Guide・6 種のスポーンエッグ)が世界から消えます。",
+     "1.7.0 を入れる前に、古い OUKA の jar(1.6.2.2 以前)を mods フォルダーから消し、GeckoLib 5.5.6 は一つだけ残してください。Minecraft 26.3、Fabric Loader 0.19.5 以上、Fabric API 0.161.0+26.3 以上が必要です。クライアントとサーバーの両方に入れてください。"
+    ]
+   },
+   {
     "id": "ouka-v1.6.2.2",
     "title": "The Grand Synthesis 1.6.2.2 — 炉の燃料・組立ラインの材料・手回し発電機",
     "summary": "工業の使い勝手を良くする更新で、1.6.2.1 の修正も含みます。触媒熱化学溶鉱炉は掘ったままの鉱石を焼けるようになり、高精度オートメーション組立ラインには先に材料を入れておける枠が付き、新しい手回し発電機でサバイバルだけの世界でも OUKA の電気を起こせます。新しいブロックを 1 つ足しました。",

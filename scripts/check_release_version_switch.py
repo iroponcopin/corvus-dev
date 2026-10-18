@@ -150,6 +150,41 @@ def declared_mc_versions(path):
     return found
 
 
+def placeholder_problem(path, mod_id):
+    """空の退役 placeholder である理由。空なら "" を返す。
+
+    data/retirement.json が `placeholder_mod_id` を宣言した退役ブランドだけが対象。成果物の
+    zip の中の jar が**ちょうど 1 つ**で、その fabric.mod.json の id が宣言どおり、
+    jar の中身は META-INF/MANIFEST.MF と fabric.mod.json だけ、depends は fabricloader だけ、
+    entrypoints・mixins 等の欄は空、でなければならない。1 つでも外れれば "" ではなく理由を返す
+    （中身のある placeholder は、Minecraft の宣言が無い物として赤になる）。
+    """
+    import zipfile, io, json as _json
+    try:
+        with zipfile.ZipFile(path) as z:
+            jars = [n for n in z.namelist() if n.lower().endswith(".jar")]
+            if len(jars) != 1:
+                return "zip の中の jar が %d 個（placeholder は 1 個だけ）" % len(jars)
+            with zipfile.ZipFile(io.BytesIO(z.read(jars[0]))) as jz:
+                names = [n for n in jz.namelist() if not n.endswith("/")]
+                meta = _json.loads(jz.read("fabric.mod.json").decode("utf-8", "replace"))
+    except Exception as exc:
+        return "読めない (%s)" % exc
+    if meta.get("id") != mod_id:
+        return "jar の id が %r（宣言は %r）" % (meta.get("id"), mod_id)
+    stray = sorted(set(names) - {"META-INF/MANIFEST.MF", "fabric.mod.json"})
+    if stray:
+        return "中身がある: %s" % ", ".join(stray[:5])
+    deps = set((meta.get("depends") or {}).keys())
+    if deps - {"fabricloader"}:
+        return "depends が fabricloader 以外: %s" % ", ".join(sorted(deps - {"fabricloader"}))
+    for field in ("entrypoints", "mixins", "accessWidener", "jars", "provides", "breaks",
+                  "conflicts", "recommends", "suggests"):
+        if meta.get(field):
+            return "fabric.mod.json に %s がある" % field
+    return ""
+
+
 #: Minecraft ではない配布物。性質 5 の「Minecraft の版を宣言しているか」は意味を持たない。
 #: 2026-10-04: Noctua（Palworld のサーバー側 MOD）。
 NOT_MINECRAFT = frozenset({"noctua", "agent"})   # 2026-10-12: Corvus Agent runs beside a server, not in the game
@@ -241,6 +276,14 @@ def check(root, old, new, baseline):
     # ここでは名前を一切見ず、zip なら中の jar、jar ならそれ自身の fabric.mod.json を読む。
     manifest_rel = "glimpse_manifest.json"
     manifest_path = os.path.join(root, manifest_rel)
+    # 退役ブランドの placeholder だけは Minecraft の宣言を持たないのが正しい（2026-10-18、ASTRAEA 1.5.5 は
+    # 空の placeholder jar で、agents が ASTRAEA を外すために置く）。免除は data/retirement.json が
+    # `placeholder_mod_id` を宣言し、かつ jar が**本当に空**のときだけ。宣言が無いブランドは免除されない。
+    try:
+        with open(os.path.join(root, "data", "retirement.json"), encoding="utf-8") as fh:
+            retirement = json.load(fh)
+    except Exception:
+        retirement = {}
     if os.path.isfile(manifest_path):
         try:
             with open(manifest_path, encoding="utf-8") as fh:
@@ -271,6 +314,18 @@ def check(root, old, new, baseline):
                 if not os.path.isfile(art):
                     failures.append("5. manifest の %s が指すファイルが downloads に無い: %s"
                                     % (brand, file_name))
+                    continue
+                ret = retirement.get(brand) if isinstance(retirement.get(brand), dict) else {}
+                pid = ret.get("placeholder_mod_id")
+                if ret.get("retired") and pid and block.get("mod_id") == pid:
+                    why = placeholder_problem(art, pid)
+                    if why:
+                        failures.append("5. manifest の %s (%s) は退役の placeholder (%s) と宣言されているが、"
+                                        "空ではない: %s。空でない物は Minecraft の宣言が無いので赤。"
+                                        % (brand, file_name, pid, why))
+                    else:
+                        notes.append("5. %s (%s) は data/retirement.json が宣言した空の退役 placeholder "
+                                     "(%s) なので、Minecraft の宣言を免除" % (brand, file_name, pid))
                     continue
                 if brand in NOT_MINECRAFT:
                     # 名指しで除外する（黙って飛ばさない）。Noctua は Palworld のサーバー側 MOD で、
@@ -514,7 +569,42 @@ def self_test(root, old, new):
         run_green("履歴が基準表どおり（合成の基準表・対照）", plant_one_mention, 2, baseline=synthetic)
         run("履歴の 1 件が消えた（合成の基準表）", lambda work: None, 2, baseline=synthetic)
 
+    def retirement_undeclared(work):
+        """placeholder は残し、退役の宣言だけを外す = 宣言の無いブランドは免除されない（負の対照）。"""
+        _stage_downloads(work)
+        rp = os.path.join(work, "data", "retirement.json")
+        with open(rp, encoding="utf-8") as fh:
+            doc = json.load(fh)
+        doc["astraea"]["retired"] = False
+        with open(rp, "w", encoding="utf-8") as fh:
+            json.dump(doc, fh, ensure_ascii=False, indent=2)
+
+    def placeholder_with_content(work):
+        """退役の placeholder に中身（クラス）を入れる = 「空」の条件を破る。"""
+        import zipfile, io
+        man = _stage_downloads(work)
+        path = os.path.join(work, "downloads", man["astraea"]["file_name"])
+        with zipfile.ZipFile(path) as z:
+            entries = {n: z.read(n) for n in z.namelist()}
+        jar_name = next(n for n in entries if n.endswith(".jar"))
+        with zipfile.ZipFile(io.BytesIO(entries[jar_name])) as jz:
+            inner = {n: jz.read(n) for n in jz.namelist()}
+        inner["x/Y.class"] = b"\xca\xfe"
+        jb = io.BytesIO()
+        with zipfile.ZipFile(jb, "w") as jz:
+            for n, b in inner.items():
+                jz.writestr(n, b)
+        entries[jar_name] = jb.getvalue()
+        out = io.BytesIO()
+        with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
+            for n, b in entries.items():
+                z.writestr(n, b)
+        with open(path, "wb") as fh:
+            fh.write(out.getvalue())
+
     run_green("成果物を置いただけ（壊していない）", stage_only, 5)
+    run("退役の宣言を外す（宣言の無い placeholder は免除されない）", retirement_undeclared, 5)
+    run("退役の placeholder に中身（クラス）を入れる", placeholder_with_content, 5)
     run("1 ブランドだけ中身が古い成果物を指させる", stale_artefact, 5)
     run("1 ブランドの file_name を消す（黙って飛ばされる形）", drop_file_name, 5)
     run_green("成果物を置いただけ（性質 6 の対照）", stage_only, 6)

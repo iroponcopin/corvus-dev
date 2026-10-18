@@ -1,11 +1,43 @@
 {
  "lang": "tr",
  "brand": "ouka",
- "updated": "2026-10-16",
+ "updated": "2026-10-18",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-16 tarihinde güncellendi",
+ "updated_label": "2026-10-18 tarihinde güncellendi",
  "note": "",
  "groups": [
+  {
+   "label": "V1.7",
+   "summary": "Limitless 1.7.0 — Sınırsızlık, alanlar ve Lanetlerin Kralı",
+   "releases": [
+    {
+     "version": "V1.7.0",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Limitless 1.7.0 — Sınırsızlık, alanlar ve Lanetlerin Kralı",
+     "summary": "OUKA tam bir büyü takımı ekliyor: Gojo olarak Infinity, Lapse Blue, Reversal Red, Hollow Purple ve Infinite Void alanıyla, ya da Sukuna olarak Dismantle, Cleave, Open ve Malevolent Shrine ile oynayın. Kamutoke ve Hiten silahları, Blindfold ve Character Guide de gelir. 10 eşya ve 1 blok ekler ve 1.6.2.2'deki her şeyi içerir.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Gojo: Infinity üzerinize gelenleri durdurur. Lapse Blue dünyayı size çeker, Reversal Red onu geri fırlatır, ikisi birleşince Hollow Purple olur. Infinite Void'i açarak kubbesinin içindeki her şeyi hapsedin.",
+        "Sukuna: Dismantle ve Cleave önünüzdekileri keser, Open zemini ateşe verir, Malevolent Shrine ise ayrı bir alandır. Kamutoke şimşek indirir.",
+        "Yeteneği R ile değiştirin, Z ve V ile kullanın, C ile teknik menüsünü açın. İlk katılışınızda bir kez verilen Character Guide her tekniği açıklar.",
+        "Domain Barrier bir alanın duvarıdır: kırılamaz ve patlamayla yok edilemez. İki alan bir araya geldiğinde çarpışabilir."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Improved Transparency grafik seçeneği açıksa (varsayılan olarak kapalıdır), Hollow Purple küresi suyun arkasında değil önünde çizilir. Bu bilinen bir sorundur ve 1.7.1'de düzeltilecektir. Seçenek kapalıyken doğru çizilir.",
+        "1.7.0 oynadıktan sonra daha eski bir sürüme dönmek, Domain Barrier'ı ve tüm Limitless eşyalarını (Kamutoke, Hiten, Blindfold, Character Guide ve 6 çağırma yumurtası) dünyadan kaldırır.",
+        "1.7.0'ı kurmadan önce mods klasöründen eski OUKA jar dosyasını (1.6.2.2 veya daha eski) çıkarın ve yalnızca bir GeckoLib 5.5.6 kopyası bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.6",
    "summary": "The Grand Synthesis 1.6.2.2 — fırın yakıtı, montaj malzemeleri ve el kolu jeneratörü",
