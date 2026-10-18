@@ -878,6 +878,22 @@
      "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
      "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
     ]
+   },
+   {
+    "id": "tsubomi-v2.0.0",
+    "title": "Tsubomi V2 — 200 new blocks, the Enchanted Apple, a craftable spawner",
+    "summary": "Tsubomi V2.0.0 adds 200 building blocks in 20 material series of 10 shapes, the Enchanted Apple, a craftable Monster Spawner and a recipe for every Spawn Egg.",
+    "highlights": [
+     "200 new blocks in 20 material series of 10 shapes each: bricks, chiseled, pillar, tiles, lamp, grate, reinforced plating, stairs, slab and wall. Every series is crafted from a plain material and can be cut from its bricks at the stonecutter.",
+     "Enchanted Apple: an apple and a Nether Star. Eating it heals every player online at once and gives them Regeneration II and Speed II.",
+     "Craftable Monster Spawner: amethyst shards, tall grass, Nether Stars, an Enchanted Apple and OUKA's Ouka Alloy Block. The recipe appears only when OUKA is installed.",
+     "A Spawn Egg recipe for all 88 mobs: a Nether Star (more for the stronger mobs) plus items that suit the mob.",
+     "Light on the server: no block has a block entity or a ticker, and the new blocks take no random ticks. The Enchanted Apple acts once, when it is eaten."
+    ],
+    "warnings": [
+     "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+     "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
+    ]
    }
   ],
   "halia": [

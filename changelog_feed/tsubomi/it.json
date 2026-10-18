@@ -1,11 +1,43 @@
 {
  "lang": "it",
  "brand": "tsubomi",
- "updated": "2026-10-11",
+ "updated": "2026-10-18",
  "title": "Changelog",
- "updated_label": "Aggiornato il 2026-10-11",
+ "updated_label": "Aggiornato il 2026-10-18",
  "note": "",
  "groups": [
+  {
+   "label": "V2.0",
+   "summary": "Tsubomi V2 — 200 nuovi blocchi, la mela incantata, uno spawner creabile",
+   "releases": [
+    {
+     "version": "V2.0.0",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Tsubomi V2 — 200 nuovi blocchi, la mela incantata, uno spawner creabile",
+     "summary": "Tsubomi V2.0.0 aggiunge 200 blocchi da costruzione in 20 serie di materiali da 10 forme, la mela incantata, uno spawner di mostri creabile e una ricetta per ogni uovo generatore.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "200 nuovi blocchi in 20 serie di materiali da 10 forme ciascuna: mattoni, cesellato, pilastro, piastrelle, lampada, griglia, piastra rinforzata, scala, lastra e muretto. Ogni serie si crea da un materiale semplice e si taglia dai suoi mattoni con il tagliapietre.",
+        "Mela incantata: una mela e una stella del Nether. Mangiarla cura tutti i giocatori online in una volta e dà loro Rigenerazione II e Velocità II.",
+        "Spawner di mostri creabile: frammenti di ametista, erba alta, stelle del Nether, una mela incantata e il blocco di lega Ouka di OUKA. La ricetta compare solo se OUKA è installato.",
+        "Una ricetta di uovo generatore per tutte le 88 creature: una stella del Nether (di più per le creature più forti) e oggetti adatti alla creatura.",
+        "Leggero per il server: nessun blocco ha un'entità blocco o un ticker, e i nuovi blocchi non ricevono tick casuali. La mela incantata agisce una sola volta, quando viene mangiata."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+        "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.1",
    "summary": "Tsubomi V1.1 — 100 nuovi blocchi",

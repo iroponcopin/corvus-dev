@@ -1,11 +1,43 @@
 {
  "lang": "fr",
  "brand": "tsubomi",
- "updated": "2026-10-11",
+ "updated": "2026-10-18",
  "title": "Historique des mises à jour",
- "updated_label": "Mis à jour le 2026-10-11",
+ "updated_label": "Mis à jour le 2026-10-18",
  "note": "",
  "groups": [
+  {
+   "label": "V2.0",
+   "summary": "Tsubomi V2 — 200 nouveaux blocs, la pomme enchantée, un spawner fabricable",
+   "releases": [
+    {
+     "version": "V2.0.0",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Tsubomi V2 — 200 nouveaux blocs, la pomme enchantée, un spawner fabricable",
+     "summary": "Tsubomi V2.0.0 ajoute 200 blocs de construction en 20 séries de matériaux de 10 formes, la pomme enchantée, un générateur de monstres fabricable et une recette pour chaque œuf d'apparition.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "200 nouveaux blocs en 20 séries de matériaux de 10 formes chacune : briques, ciselé, pilier, carreaux, lampe, grille, plaque blindée, escalier, dalle et muret. Chaque série se fabrique à partir d'un matériau simple et se découpe depuis ses briques à la scie à pierre.",
+        "Pomme enchantée : une pomme et une étoile du Nether. La manger soigne d'un coup tous les joueurs en ligne et leur donne Régénération II et Vitesse II.",
+        "Générateur de monstres fabricable : éclats d'améthyste, hautes herbes, étoiles du Nether, une pomme enchantée et le bloc d'alliage Ouka d'OUKA. La recette n'apparaît que si OUKA est installé.",
+        "Une recette d'œuf d'apparition pour les 88 créatures : une étoile du Nether (plus pour les créatures puissantes) et des objets adaptés à la créature.",
+        "Léger pour le serveur : aucun bloc n'a d'entité de bloc ni de ticker, et les nouveaux blocs ne reçoivent aucun tick aléatoire. La pomme enchantée n'agit qu'une fois, quand on la mange."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+        "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.1",
    "summary": "Tsubomi V1.1 — 100 nouveaux blocs",
