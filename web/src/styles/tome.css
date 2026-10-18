@@ -605,8 +605,9 @@
   cursor: grabbing;
 }
 
-/* The spotlight: a modal over the page. */
+/* The spotlight: a modal over the page, portalled to the body, so it carries the tokens its parts use. */
 .tome-cmd-scrim {
+  --tome-hair: var(--color-hair);
   position: fixed;
   inset: 0;
   z-index: 300;

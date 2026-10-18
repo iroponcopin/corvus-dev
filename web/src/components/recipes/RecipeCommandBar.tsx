@@ -1,6 +1,7 @@
 "use client";
 
 import { type KeyboardEvent, useEffect, useId, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { recipeIcon } from "@/lib/site";
 import { Icon } from "../Icon";
 
@@ -87,7 +88,8 @@ export function RecipeCommandBar({
     }
   };
 
-  return (
+  // Rendered at the body: the page's own stacking (the book, the header Dock) cannot sit above the spotlight.
+  return createPortal(
     <div className="tome-cmd-scrim" onMouseDown={onClose}>
       <div className="tome-cmd" role="dialog" aria-modal="true" aria-labelledby={titleId} onMouseDown={(e) => e.stopPropagation()} onKeyDown={onKey}>
         <h2 id={titleId} className="sr-only">
@@ -156,5 +158,5 @@ export function RecipeCommandBar({
         </ul>
       </div>
     </div>
-  );
+  , document.body);
 }
