@@ -12,7 +12,7 @@ import type { Lang } from "@/lib/wiki-types";
 export interface Fresh {
   heroScroll: string;
   /** Act I of the home page: the tagline under the title, and the footage credit (the same in every language). */
-  cinema: { tagline: string; credit: string; tagline2: string; tagline3: string };
+  cinema: { tagline: string; credit: string; tagline2: string };
   /** The altitude stream on the home page: its heading and lede. */
   altitude: { title: string; lede: string };
   sound: string;
@@ -154,7 +154,7 @@ export interface Fresh {
 export const FRESH: Record<Lang, Fresh> = {
   ja: {
     heroScroll: "スクロールして探索",
-    cinema: { tagline: "「空の頂点へ。」", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "「深い森の番人。」", tagline3: "すべてのリリースが帰る場所。" },
+    cinema: { tagline: "「空の頂点へ。」", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "「深い森の番人。」" },
     altitude: { title: "気流 — 最新のリリース", lede: "すべてのモデルの最新リリースを、新しい順に。" },
     sound: "サウンド",
     soundOn: "サウンドをオンにする",
@@ -306,7 +306,7 @@ export const FRESH: Record<Lang, Fresh> = {
   },
   en: {
     heroScroll: "Scroll to explore",
-    cinema: { tagline: "The apex of the sky.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Keeper of the deep forest.", tagline3: "Where every release comes home." },
+    cinema: { tagline: "The apex of the sky.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Keeper of the deep forest." },
     altitude: { title: "Altitude stream — latest releases", lede: "The newest releases across every model, newest first." },
     sound: "Sound",
     soundOn: "Turn sound on",
@@ -458,7 +458,7 @@ export const FRESH: Record<Lang, Fresh> = {
   },
   es: {
     heroScroll: "Desplázate para explorar",
-    cinema: { tagline: "El ápice del cielo.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Guardián del bosque profundo.", tagline3: "Donde cada versión vuelve a casa." },
+    cinema: { tagline: "El ápice del cielo.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Guardián del bosque profundo." },
     altitude: { title: "Corriente de altitud — últimas versiones", lede: "Las versiones más recientes de cada modelo, primero las más nuevas." },
     sound: "Sonido",
     soundOn: "Activar el sonido",
@@ -610,7 +610,7 @@ export const FRESH: Record<Lang, Fresh> = {
   },
   fr: {
     heroScroll: "Faites défiler pour explorer",
-    cinema: { tagline: "Le sommet du ciel.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Gardien de la forêt profonde.", tagline3: "Là où chaque version revient." },
+    cinema: { tagline: "Le sommet du ciel.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Gardien de la forêt profonde." },
     altitude: { title: "Courant d'altitude — dernières versions", lede: "Les dernières versions de chaque modèle, la plus récente en premier." },
     sound: "Son",
     soundOn: "Activer le son",
@@ -762,7 +762,7 @@ export const FRESH: Record<Lang, Fresh> = {
   },
   zh: {
     heroScroll: "滚动以探索",
-    cinema: { tagline: "通往天空之巅。", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "深林的守护者。", tagline3: "每一次发布都回到这里。" },
+    cinema: { tagline: "通往天空之巅。", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "深林的守护者。" },
     altitude: { title: "气流 — 最新发布", lede: "所有模型的最新版本，按时间倒序。" },
     sound: "声音",
     soundOn: "开启声音",
@@ -914,7 +914,7 @@ export const FRESH: Record<Lang, Fresh> = {
   },
   ko: {
     heroScroll: "스크롤하여 탐색",
-    cinema: { tagline: "하늘의 정점으로.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "깊은 숲의 수호자.", tagline3: "모든 릴리스가 돌아오는 곳." },
+    cinema: { tagline: "하늘의 정점으로.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "깊은 숲의 수호자." },
     altitude: { title: "기류 — 최신 릴리스", lede: "모든 모델의 최신 릴리스를 최신순으로." },
     sound: "사운드",
     soundOn: "사운드 켜기",
@@ -1066,7 +1066,7 @@ export const FRESH: Record<Lang, Fresh> = {
   },
   "pt-br": {
     heroScroll: "Role para explorar",
-    cinema: { tagline: "O ápice do céu.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Guardião da floresta profunda.", tagline3: "Onde cada lançamento retorna." },
+    cinema: { tagline: "O ápice do céu.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Guardião da floresta profunda." },
     altitude: { title: "기류 — 최신 릴리스", lede: "모든 모델의 최신 릴리스를 최신순으로." },
     sound: "Som",
     soundOn: "Ativar o som",
@@ -1218,7 +1218,7 @@ export const FRESH: Record<Lang, Fresh> = {
   },
   it: {
     heroScroll: "Scorri per esplorare",
-    cinema: { tagline: "L'apice del cielo.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Custode della foresta profonda.", tagline3: "Dove ogni versione torna a casa." },
+    cinema: { tagline: "L'apice del cielo.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Custode della foresta profonda." },
     altitude: { title: "Corrente d'altitudine — ultime versioni", lede: "Le versioni più recenti di ogni modello, prima la più nuova." },
     sound: "Suono",
     soundOn: "Attiva il suono",
@@ -1370,7 +1370,7 @@ export const FRESH: Record<Lang, Fresh> = {
   },
   ar: {
     heroScroll: "مرّر للاستكشاف",
-    cinema: { tagline: "قمّة السماء.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "حارس الغابة العميقة.", tagline3: "حيث تعود كل إصدارة إلى الوطن." },
+    cinema: { tagline: "قمّة السماء.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "حارس الغابة العميقة." },
     altitude: { title: "تيار الارتفاع — أحدث الإصدارات", lede: "أحدث إصدارات كل نموذج، الأحدث أولاً." },
     sound: "الصوت",
     soundOn: "تشغيل الصوت",
@@ -1522,7 +1522,7 @@ export const FRESH: Record<Lang, Fresh> = {
   },
   ru: {
     heroScroll: "Прокрутите, чтобы исследовать",
-    cinema: { tagline: "Вершина неба.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Страж глубокого леса.", tagline3: "Куда возвращается каждый выпуск." },
+    cinema: { tagline: "Вершина неба.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Страж глубокого леса." },
     altitude: { title: "Воздушный поток — последние выпуски", lede: "Новейшие выпуски всех моделей, сначала самые свежие." },
     sound: "Звук",
     soundOn: "Включить звук",
@@ -1674,7 +1674,7 @@ export const FRESH: Record<Lang, Fresh> = {
   },
   id: {
     heroScroll: "Gulir untuk menjelajah",
-    cinema: { tagline: "Puncak langit.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Penjaga hutan yang dalam.", tagline3: "Tempat setiap rilis pulang." },
+    cinema: { tagline: "Puncak langit.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Penjaga hutan yang dalam." },
     altitude: { title: "Arus ketinggian — rilis terbaru", lede: "Rilis terbaru dari setiap model, yang paling baru lebih dulu." },
     sound: "Suara",
     soundOn: "Nyalakan suara",
@@ -1826,7 +1826,7 @@ export const FRESH: Record<Lang, Fresh> = {
   },
   de: {
     heroScroll: "Zum Erkunden scrollen",
-    cinema: { tagline: "Der Gipfel des Himmels.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Hüter des tiefen Waldes.", tagline3: "Wo jede Veröffentlichung heimkehrt." },
+    cinema: { tagline: "Der Gipfel des Himmels.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Hüter des tiefen Waldes." },
     altitude: { title: "Luftstrom — neueste Veröffentlichungen", lede: "Die neuesten Veröffentlichungen aller Modelle, die neueste zuerst." },
     sound: "Ton",
     soundOn: "Ton einschalten",
@@ -1978,7 +1978,7 @@ export const FRESH: Record<Lang, Fresh> = {
   },
   tr: {
     heroScroll: "Keşfetmek için kaydırın",
-    cinema: { tagline: "Gökyüzünün zirvesi.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Derin ormanın bekçisi.", tagline3: "Her sürümün eve döndüğü yer." },
+    cinema: { tagline: "Gökyüzünün zirvesi.", credit: "Footage via Pexels: nrhawkes, whateverett-takes, Max Parada, A.S. Kacar, Sosa Films, Scott Mackay, João Pinheiro", tagline2: "Derin ormanın bekçisi." },
     altitude: { title: "Yükseklik akımı — son sürümler", lede: "Her modelin en yeni sürümleri, en yenisi önce." },
     sound: "Ses",
     soundOn: "Sesi aç",

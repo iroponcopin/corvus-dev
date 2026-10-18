@@ -207,7 +207,6 @@ html:lang(ko) .cin-tagline {
 .cin-title--2,
 .cin-tagline--2,
 .cin-title--3,
-.cin-tagline--3,
 .cin-closing {
   opacity: 0;
 }
@@ -311,32 +310,6 @@ html:lang(ko) .cin-tagline {
   }
 }
 
-/* The altitude stream (home, after Act II): the latest releases on frosted glass, drifting on a wind. */
-.ac-altitude {
-  position: relative;
-  overflow-x: clip;
-  /* The stream starts below the Dock: at least the header's height and 24px. */
-  padding-block: max(clamp(72px, 12vh, 128px), calc(var(--header-h) + 36px)) clamp(72px, 12vh, 128px);
-  /* A soft, dim light behind the glass, so the frost has something to blur. */
-  background-color: #000;
-  background-size: cover;
-  background-position: center;
-}
-
-.ac-altitude-lede {
-  max-width: 40em;
-  margin-top: 14px;
-}
-
-.ac-altitude-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
-  gap: 18px;
-  margin: clamp(28px, 5vh, 48px) 0 0;
-  padding: 0;
-  list-style: none;
-}
-
 .ac-frost {
   position: relative;
   display: block;
@@ -353,73 +326,6 @@ html:lang(ko) .cin-tagline {
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
   .ac-frost {
     background: rgb(28 28 30 / 0.94);
-  }
-}
-
-/* Each card drifts at most 6px sideways (and 2px more on its own), so neighbours in a row, which drift in opposite
-   directions, keep at least 18 - 2 * 8 = 2px between them; rows are a gap apart vertically and never meet. */
-.ac-altitude-card {
-  transform: translate3d(calc(var(--wind, 0) * var(--dx, 0px)), 0, 0);
-  transition: border-color 0.3s var(--ease-apple), background-color 0.3s var(--ease-apple);
-  animation: ac-altitude-drift 18s ease-in-out infinite alternate;
-}
-
-.ac-altitude-card:hover,
-.ac-altitude-card:focus-visible {
-  border-color: rgb(255 255 255 / 0.3);
-  background: rgb(255 255 255 / 0.1);
-}
-
-@keyframes ac-altitude-drift {
-  from {
-    translate: -2px 0;
-  }
-  to {
-    translate: 2px 0;
-  }
-}
-
-.ac-altitude-top {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.ac-altitude-top img {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  flex: none;
-}
-
-.ac-altitude-brand {
-  margin: 0;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-}
-
-.ac-altitude-version {
-  margin: 2px 0 0;
-  font-size: 13px;
-  color: #a1a1a6;
-}
-
-.ac-altitude-title {
-  margin: 14px 0 12px;
-  font-size: 16px;
-  line-height: 1.4;
-  color: #f5f5f7;
-}
-
-.ac-altitude-card .ac-link {
-  font-size: 14px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .ac-altitude-card {
-    transform: none;
-    animation: none;
   }
 }
 
@@ -447,28 +353,6 @@ html:lang(ko) .cin-tagline {
   }
 }
 
-/* The altitude stream sits over the darkened end of Act III: its own still behind the cards, and a rise on entry. */
-.ac-altitude-rise {
-  animation: ac-altitude-rise 1s var(--ease-apple) both;
-}
-
-@keyframes ac-altitude-rise {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 36px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .ac-altitude-rise {
-    animation: none;
-  }
-}
-
 /* Act III: the Corvus title and its tagline share one left margin (the gutter), and the title never exceeds 90vw. */
 .cin-copy--3 {
   align-items: flex-start;
@@ -476,8 +360,7 @@ html:lang(ko) .cin-tagline {
   padding-inline: var(--ac-gutter);
 }
 
-.cin-copy--3 .cin-title--3,
-.cin-copy--3 .cin-tagline--3 {
+.cin-copy--3 .cin-title--3 {
   align-self: flex-start;
   max-width: 90vw;
   transform: none;

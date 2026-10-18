@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FRESH, fill } from "@/i18n/fresh";
-import { asset, pathOf, recipeIcon } from "@/lib/site";
+import { pathOf, recipeIcon } from "@/lib/site";
 import { langData, wiki } from "@/lib/wiki";
 import type { Lang, Release } from "@/lib/wiki-types";
 import { BRAND_COLOR, BRAND_ICON } from "@/lib/brands";
@@ -35,17 +35,6 @@ export function HomePage({ lang }: { lang: Lang }) {
   const t = d.launcher.text;
   const status = (id: string): string =>
     p[id]?.availability === "soon" ? t.comingSoon : p[id]?.availability === "archived" ? t.archived : t.available;
-
-  // The marks the hero carries, in its order. ASTRAEA is not one of them since its service ended (2026-10-16); its
-  // page is still in the Models menu, last.
-  const cards = [
-    { id: "halia", name: "Halia", jp: null, line: p.halia?.tagline ?? "", href: pathOf(lang, "halia/"), icon: "icons/halia.png", status: status("halia") },
-    { id: "ouka", name: "OUKA", jp: null, line: p.ouka?.lede ?? "", href: pathOf(lang, "ouka/"), icon: "icons/ouka.png", status: status("ouka") },
-    { id: "cherry", name: "Cherry", jp: null, line: p.cherry?.lede ?? "", href: pathOf(lang, "cherry/"), icon: "icons/cherry.png", status: status("cherry") },
-    { id: "tsubomi", name: "Tsubomi", jp: p.tsubomi?.jp ?? null, line: p.tsubomi?.tagline ?? "", href: pathOf(lang, "tsubomi/"), icon: "icons/tsubomi.png", status: status("tsubomi") },
-    { id: "noctua", name: p.noctua?.name ?? "Noctua", jp: p.noctua?.jp ?? null, line: p.noctua?.tagline ?? "", href: pathOf(lang, "noctua/"), icon: "icons/noctua.png", status: status("noctua"), soon: p.noctua?.availability !== "available" },
-    { id: "store", name: h.ctaStore, jp: null, line: h.storeTagline, href: pathOf(lang, "launcher/"), icon: "icons/store.png", status: `${d.chrome.launcherVersion} ${d.launcherFiles.version}` },
-  ];
 
   // Codex: real recipes, prepared exactly as the codex prepares them.
   const R = w.recipes;
@@ -161,7 +150,6 @@ export function HomePage({ lang }: { lang: Lang }) {
         title3="Corvus"
         tagline={f.cinema.tagline}
         tagline2={f.cinema.tagline2}
-        tagline3={f.cinema.tagline3}
         closing={HOME_V2[lang].closing}
         credit={f.cinema.credit}
         hint={f.heroScroll}
@@ -178,34 +166,6 @@ export function HomePage({ lang }: { lang: Lang }) {
             labels={{ title: HOME_V2[lang].bento.title, lede: HOME_V2[lang].bento.lede, open: HOME_V2[lang].bento.open, close: HOME_V2[lang].bento.close, modal: HOME_V2[lang].bento.modal, pill: HOME_V2[lang].bento.pill }}
           />
         </div>
-      </section>
-
-      <section className="ac-wrap ac-brands" aria-labelledby="ac-brands-title">
-        <h2 id="ac-brands-title" className="ac-eyebrow">
-          {h.brandsTitle}
-        </h2>
-        <ul className="ac-brand-cards">
-          {cards.map((x, i) => (
-            <li key={x.id}>
-              <Link href={x.href} className="ac-brand-card ac-card" data-mark={i} data-soon={x.soon ? "true" : undefined}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={asset(x.icon)} alt="" width={52} height={52} />
-                <span>
-                  <b>
-                    {x.name}
-                    {x.jp ? (
-                      <i lang="ja" className="ac-jp">
-                        {x.jp}
-                      </i>
-                    ) : null}
-                  </b>
-                  <span>{x.line}</span>
-                  <em>{x.status}</em>
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
       </section>
 
       <Lineup items={lineup} labels={{ title: HOME_V2[lang].lineup.title, lede: HOME_V2[lang].lineup.lede, scrub: HOME_V2[lang].lineup.scrub, open: HOME_V2[lang].lineup.open, power: HOME_V2[lang].lineup.power, blade: HOME_V2[lang].lineup.blade }} />

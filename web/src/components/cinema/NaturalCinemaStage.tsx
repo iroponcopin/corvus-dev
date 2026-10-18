@@ -158,7 +158,6 @@ export function NaturalCinemaStage({
   title3,
   tagline,
   tagline2,
-  tagline3,
   closing,
   credit,
   hint,
@@ -168,7 +167,6 @@ export function NaturalCinemaStage({
   title3: string;
   tagline: string;
   tagline2: string;
-  tagline3: string;
   /** The closing line at the end of Act III ("Corvus — Where Every Release Returns"). */
   closing: string;
   credit: string;
@@ -183,7 +181,6 @@ export function NaturalCinemaStage({
   const title2Ref = useRef<HTMLHeadingElement>(null);
   const tagline2Ref = useRef<HTMLParagraphElement>(null);
   const title3Ref = useRef<HTMLHeadingElement>(null);
-  const tagline3Ref = useRef<HTMLParagraphElement>(null);
   const closingRef = useRef<HTMLParagraphElement>(null);
   const hintRef = useRef<HTMLParagraphElement>(null);
   const eagleRef = useRef<HTMLDivElement>(null);
@@ -202,7 +199,6 @@ export function NaturalCinemaStage({
     const title2El = title2Ref.current;
     const tagline2El = tagline2Ref.current;
     const title3El = title3Ref.current;
-    const tagline3El = tagline3Ref.current;
     const closingEl = closingRef.current;
     const hintEl = hintRef.current;
     const eagle = eagleRef.current;
@@ -211,7 +207,7 @@ export function NaturalCinemaStage({
     const crowCanvas = crowCanvasRef.current;
     const crowImg = crowImgRef.current;
     if (!section || !stage || !bgCanvas || !bgImg || !titleEl || !taglineEl || !title2El || !tagline2El) return;
-    if (!title3El || !tagline3El || !hintEl || !eagle || !eagleCanvas || !eagleImg || !crowCanvas || !crowImg) return;
+    if (!title3El || !hintEl || !eagle || !eagleCanvas || !eagleImg || !crowCanvas || !crowImg) return;
 
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const small = window.innerWidth < 768 || window.devicePixelRatio * window.innerWidth <= 1100;
@@ -429,7 +425,6 @@ export function NaturalCinemaStage({
       title3El.style.letterSpacing = `${pose.letter3}em`;
       title3El.style.paddingLeft = `${Math.max(0, pose.letter3)}em`;
       title3El.style.opacity = String(pose.title3);
-      tagline3El.style.opacity = String(pose.title3);
       if (closingEl !== null) closingEl.style.opacity = String(pose.closing);
       hintEl.style.opacity = String(1 - smooth(0, 0.05, p));
 
@@ -540,9 +535,6 @@ export function NaturalCinemaStage({
           <h2 ref={title3Ref} className="cin-title cin-title--3">
             {title3}
           </h2>
-          <p ref={tagline3Ref} className="cin-tagline cin-tagline--3">
-            {tagline3}
-          </p>
           <p ref={closingRef} className="cin-closing">
             {closing}
           </p>

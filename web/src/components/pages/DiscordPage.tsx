@@ -3,7 +3,8 @@ import { langData, wiki } from "@/lib/wiki";
 import type { Lang } from "@/lib/wiki-types";
 import { BrandStage } from "../BrandStage";
 import { CommandBrowser } from "../discord/CommandBrowser";
-import { FeedTelemetry } from "../discord/FeedTelemetry";
+import { MissionControl } from "../home/MissionControl";
+import { HOME_V2 } from "@/i18n/home";
 import { TrustedHtml } from "../Rich";
 
 
@@ -69,7 +70,7 @@ export function DiscordPage({ lang }: { lang: Lang }) {
           </div>
         </dl>
         <p className="ac-small">{st.statusNote}</p>
-        <FeedTelemetry
+        <MissionControl
           labels={{
             feeds: f.nexus.feeds,
             ping: f.nexus.ping,
@@ -77,6 +78,12 @@ export function DiscordPage({ lang }: { lang: Lang }) {
             latency: f.nexus.latency,
             measured: f.nexus.measured,
             unreachable: f.nexus.unreachable,
+            inspect: HOME_V2[lang].telemetry.inspect,
+            payload: HOME_V2[lang].telemetry.payload,
+            bytes: HOME_V2[lang].telemetry.bytes,
+            modified: HOME_V2[lang].telemetry.modified,
+            truncated: HOME_V2[lang].telemetry.truncated,
+            drawer: HOME_V2[lang].telemetry.drawer,
           }}
         />
       </section>
