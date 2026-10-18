@@ -315,6 +315,7 @@
 }
 
 .ac-bento-dialog {
+  margin: auto;
   width: min(680px, calc(100vw - 32px));
   max-height: calc(100dvh - 48px);
   padding: 0;

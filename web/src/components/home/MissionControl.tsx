@@ -140,7 +140,7 @@ export function MissionControl({ labels, lazy = false }: { labels: MissionContro
               <span className="ac-mc-badge ac-ltr" data-speed={s}>
                 {p.ms === null ? "—" : `${p.ms} ms`}
               </span>
-              <span className="ac-mc-status ac-ltr">{p.status ?? (busy ? "…" : labels.unreachable)}</span>
+              <span className="ac-mc-status ac-ltr">{p.status ?? (busy || at === null ? "…" : labels.unreachable)}</span>
               <span className="ac-mc-meta ac-ltr">
                 <span className="ac-mc-k">{labels.bytes}</span> {p.bytes === null ? "—" : p.bytes.toLocaleString("en-US")}
               </span>
