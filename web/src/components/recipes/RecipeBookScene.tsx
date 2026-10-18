@@ -360,16 +360,19 @@ export function RecipeBookScene({ data, labels, t, dir }: RecipeBookSceneProps) 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data, index]);
 
+  // The page's own spotlight takes ⌘K / Ctrl K before the site palette (a document listener) sees it: this runs in the
+  // capture phase on window and stops the event there, so the palette opens only from the header's search button.
   useEffect(() => {
     const onKey = (e: globalThis.KeyboardEvent): void => {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+      if ((e.metaKey || e.ctrlKey) && !e.shiftKey && !e.altKey && e.key.toLowerCase() === "k") {
         e.preventDefault();
+        e.stopImmediatePropagation();
         if (cmdOpen) closeCmd();
         else openCmd();
       }
     };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    window.addEventListener("keydown", onKey, true);
+    return () => window.removeEventListener("keydown", onKey, true);
     // openCmd reads only the committed filter; re-binding on the open state is enough.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cmdOpen, closeCmd]);
