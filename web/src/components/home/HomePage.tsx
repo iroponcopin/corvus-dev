@@ -6,6 +6,7 @@ import type { Lang, Release } from "@/lib/wiki-types";
 import { BRAND_COLOR, BRAND_ICON } from "@/lib/brands";
 import { NaturalCinemaStage } from "../cinema/NaturalCinemaStage";
 import { BentoReleases, type BentoItem } from "./BentoReleases";
+import { Lineup, type LineupItem } from "./Lineup";
 import { CopyButton } from "../CopyButton";
 import { FeedTelemetry } from "../discord/FeedTelemetry";
 import { CodexPreview, type FeaturedRecipe } from "./CodexPreview";
@@ -116,6 +117,17 @@ export function HomePage({ lang }: { lang: Lang }) {
     };
   });
 
+  // The Lineup: the live models in the Store's order, with corvus Store 5.x last. ASTRAEA and Alpha are not in it.
+  const lineup: LineupItem[] = [
+    { key: "halia", name: "Halia", line: p.halia?.tagline ?? "", status: status("halia"), icon: "icons/halia.png", accent: BRAND_COLOR.halia ?? "#2997ff", href: pathOf(lang, "halia/"), demo: "blade" },
+    { key: "ouka", name: "OUKA", line: p.ouka?.lede ?? "", status: status("ouka"), icon: "icons/ouka.png", accent: BRAND_COLOR.ouka ?? "#2997ff", href: pathOf(lang, "ouka/"), demo: "power" },
+    { key: "cherry", name: "Cherry", line: p.cherry?.lede ?? "", status: status("cherry"), icon: "icons/cherry.png", accent: BRAND_COLOR.cherry ?? "#2997ff", href: pathOf(lang, "cherry/"), demo: null },
+    { key: "tsubomi", name: "Tsubomi", line: p.tsubomi?.tagline ?? "", status: status("tsubomi"), icon: "icons/tsubomi.png", accent: BRAND_COLOR.tsubomi ?? "#2997ff", href: pathOf(lang, "tsubomi/"), demo: null },
+    { key: "noctua", name: p.noctua?.name ?? "Noctua", line: p.noctua?.tagline ?? "", status: status("noctua"), icon: "icons/noctua.png", accent: BRAND_COLOR.noctua ?? "#2997ff", href: pathOf(lang, "noctua/"), demo: null },
+    { key: "aureum", name: "Aureum", line: p.aureum?.tagline ?? "", status: status("aureum"), icon: "icons/aureum.png", accent: BRAND_COLOR.aureum ?? "#2997ff", href: pathOf(lang, "aureum/"), demo: null },
+    { key: "store", name: h.ctaStore, line: h.storeTagline, status: `${d.chrome.launcherVersion} ${d.launcherFiles.version}`, icon: "icons/store.png", accent: "#2997ff", href: pathOf(lang, "launcher/"), demo: null },
+  ];
+
   const explore = [
     { href: "launcher/", title: d.launcher.title, body: d.launcher.description },
     { href: "announcement/", title: f.announcement.title, body: f.announcement.description },
@@ -179,6 +191,8 @@ export function HomePage({ lang }: { lang: Lang }) {
           ))}
         </ul>
       </section>
+
+      <Lineup items={lineup} labels={{ title: HOME_V2[lang].lineup.title, lede: HOME_V2[lang].lineup.lede, scrub: HOME_V2[lang].lineup.scrub, open: HOME_V2[lang].lineup.open, power: HOME_V2[lang].lineup.power, blade: HOME_V2[lang].lineup.blade }} />
 
       <section
         className="ac-realm"

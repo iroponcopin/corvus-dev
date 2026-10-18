@@ -409,3 +409,285 @@
     transform: none;
   }
 }
+
+/* ---- The Lineup: a pinned horizontal showcase ---- */
+
+@property --lineup-accent {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #2997ff;
+}
+
+.ac-lineup {
+  --lineup-accent: #2997ff;
+  position: relative;
+  height: 300vh;
+  background: radial-gradient(90vw 70vh at 50% 40%, color-mix(in srgb, var(--lineup-accent) 22%, transparent), transparent 70%), #07070a;
+  transition: --lineup-accent 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ac-lineup-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100dvh;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(20px, 4vh, 40px);
+}
+
+.ac-lineup-head {
+  padding-inline: 16px;
+  max-width: 1200px;
+  margin-inline: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ac-lineup-scrub {
+  margin: 10px 0 0;
+  opacity: 0.6;
+}
+
+.ac-lineup-track {
+  list-style: none;
+  margin: 0;
+  padding: 0 16px;
+  display: flex;
+  gap: clamp(14px, 2vw, 24px);
+  width: max-content;
+  will-change: transform;
+}
+
+.ac-lineup-card {
+  --accent: #2997ff;
+  width: min(380px, 78vw);
+  flex: none;
+  border-radius: 24px;
+  border: 1px solid rgb(255 255 255 / 0.1);
+  background: rgb(20 20 26 / 0.7);
+  transition: border-color 0.4s ease, opacity 0.4s ease;
+  opacity: 0.55;
+}
+
+.ac-lineup-card[data-active="true"] {
+  opacity: 1;
+  border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+}
+
+.ac-lineup-link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  padding: clamp(18px, 2.4vw, 28px);
+  color: inherit;
+  text-decoration: none;
+  border-radius: 24px;
+}
+
+.ac-lineup-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.ac-lineup-media {
+  position: relative;
+  height: 180px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 70%);
+}
+
+.ac-lineup-icon {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  transform: translate3d(var(--par, 0px), 0, 0);
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ac-lineup-card[data-active="true"] .ac-lineup-icon {
+  transform: translate3d(var(--par, 0px), -4px, 0) scale(1.03);
+}
+
+.ac-lineup-name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+}
+
+.ac-lineup-line {
+  margin: 0;
+  line-height: 1.45;
+  opacity: 0.8;
+}
+
+.ac-lineup-status {
+  align-self: flex-start;
+  font-size: 0.8rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.ac-lineup-link .ac-link {
+  margin-top: auto;
+}
+
+/* Micro-demos: they run only while their card is active. */
+.ac-demo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.35;
+  transition: opacity 0.5s ease;
+}
+
+.ac-lineup-card[data-active="true"] .ac-demo {
+  opacity: 1;
+}
+
+.ac-demo-line {
+  stroke: var(--accent);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-dasharray: 12 88;
+  stroke-dashoffset: 100;
+  opacity: 0.5;
+}
+
+.ac-demo-node {
+  fill: var(--accent);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: ac-node-pulse 1.8s ease-in-out infinite;
+}
+
+.ac-demo-slash {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  opacity: 0;
+  animation: ac-slash 1.5s ease-in-out infinite;
+}
+
+.ac-lineup-card[data-active="true"] .ac-demo-line {
+  animation: ac-pulse-run 1.6s linear infinite;
+}
+
+.ac-lineup-card[data-active="true"] .ac-demo-node {
+  animation-play-state: running;
+}
+
+.ac-lineup-card:not([data-active="true"]) .ac-demo * {
+  animation-play-state: paused;
+}
+
+.ac-lineup-card[data-active="true"] .ac-demo-slash {
+  animation-play-state: running;
+}
+
+@keyframes ac-pulse-run {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: -12;
+  }
+}
+
+@keyframes ac-node-pulse {
+  0%,
+  100% {
+    transform: scale(0.85);
+    opacity: 0.55;
+  }
+  50% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+}
+
+@keyframes ac-slash {
+  0% {
+    stroke-dashoffset: 100;
+    opacity: 0;
+  }
+  35% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .ac-lineup {
+    height: auto;
+  }
+  .ac-lineup-sticky {
+    position: static;
+    height: auto;
+    overflow: visible;
+    padding-block: 56px;
+  }
+  .ac-lineup-track {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 16px;
+    transform: none !important;
+  }
+  .ac-lineup-card {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ac-lineup {
+    height: auto;
+    transition: none;
+  }
+  .ac-lineup-sticky {
+    position: static;
+    height: auto;
+    overflow: visible;
+    padding-block: 56px;
+  }
+  .ac-lineup-track {
+    flex-direction: column;
+    width: 100%;
+    transform: none !important;
+  }
+  .ac-lineup-card {
+    width: 100%;
+    opacity: 1;
+  }
+  .ac-demo *,
+  .ac-lineup-card .ac-demo-line {
+    animation: none !important;
+  }
+  .ac-demo-slash {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+  .ac-demo-line {
+    stroke-dashoffset: 0;
+  }
+}
