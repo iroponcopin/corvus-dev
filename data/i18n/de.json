@@ -906,6 +906,21 @@
      "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
      "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
     ]
+   },
+   {
+    "id": "tsubomi-v2.1.0",
+    "title": "Tsubomi V2.1 — Unheilvolle Flaschen, Stufe 6 bis 13",
+    "summary": "Tsubomi V2.1.0 fügt acht Unheilvolle Flaschen (Stufe 6 bis 13) hinzu, die deine Stufe des Unheilvollen Omens erhöhen. Je höher die Stufe, desto besser die Belohnungen der Unheilvollen Truhe, bis hin zu einem garantierten Schweren Kern.",
+    "highlights": [
+     "Acht Unheilvolle Flaschen, Stufe 6 bis 13. Wer eine trinkt, erhält das Unheilvolle Omen dieser Stufe. Jede Flasche glitzert, und der Tooltip zeigt die Chance auf einen Schweren Kern und den Belohnungsmultiplikator.",
+     "Bessere Belohnungen der Unheilvollen Truhe auf jeder Stufe: Die Chance auf einen Schweren Kern steigt von 18% bis zur Garantie auf Stufe 13, dazu 1 bis 6 zusätzliche Beutewürfe und Belohnungen, die nur diese Stufe bietet.",
+     "Oder opfere eine Flasche direkt: Schleichend auf einen Spawner, eine Truhe mit Schloss oder einen Ouka-Legierungsblock benutzen, und die Belohnung kommt sofort.",
+     "Jede Flasche wird aus der nächstniedrigeren mit Nethersternen hergestellt. Stufe 10 und 13 brauchen OUKAs Ouka-Legierungsblock, daher erscheinen diese beiden Rezepte nur, wenn OUKA installiert ist."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+     "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
+    ]
    }
   ],
   "halia": [

@@ -906,6 +906,21 @@
      "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
      "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.1.0",
+    "title": "Tsubomi V2.1 — Fiale infauste, livelli da 6 a 13",
+    "summary": "Tsubomi V2.1.0 aggiunge otto fiale infauste (livelli da 6 a 13) che aumentano il livello di Cattivo presagio. Più il livello è alto, migliori sono le ricompense del forziere infausto, fino a un Nucleo pesante garantito.",
+    "highlights": [
+     "Otto fiale infauste, livelli da 6 a 13. Berne una dà il Cattivo presagio di quel livello. Ogni fiala brilla e la descrizione mostra la probabilità di Nucleo pesante e il moltiplicatore di ricompensa.",
+     "Ricompense migliori del forziere infausto a ogni livello: la probabilità di Nucleo pesante sale dal 18% fino a essere garantita al livello 13, con da 1 a 6 estrazioni di bottino extra e ricompense esclusive di ogni livello.",
+     "Oppure offri una fiala direttamente: da accovacciato, usala su uno spawner, un forziere o un blocco di lega Ouka per ottenere subito la ricompensa.",
+     "Ogni fiala si crea da quella del livello inferiore con stelle del Nether. I livelli 10 e 13 richiedono il blocco di lega Ouka di OUKA, quindi queste due ricette compaiono solo se OUKA è installato."
+    ],
+    "warnings": [
+     "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+     "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
+    ]
    }
   ],
   "halia": [

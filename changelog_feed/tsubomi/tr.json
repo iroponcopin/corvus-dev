@@ -7,6 +7,37 @@
  "note": "",
  "groups": [
   {
+   "label": "V2.1",
+   "summary": "Tsubomi V2.1 — Uğursuz Şişeler, seviye 6 ile 13",
+   "releases": [
+    {
+     "version": "V2.1.0",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Tsubomi V2.1 — Uğursuz Şişeler, seviye 6 ile 13",
+     "summary": "Tsubomi V2.1.0, Kötü Alamet seviyenizi yükselten sekiz Uğursuz Şişe (seviye 6 ile 13) ekler. Seviye yükseldikçe uğursuz kasanın ödülleri iyileşir, en sonda Ağır Çekirdek garanti olur.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Sekiz Uğursuz Şişe, seviye 6 ile 13. Birini içmek o seviyedeki Kötü Alameti verir. Şişeler her zaman parlar ve ipucunda Ağır Çekirdek şansı ile ödül çarpanı görünür.",
+        "Her seviyede daha iyi uğursuz kasa ödülleri: Ağır Çekirdek şansı %18'den başlar, 13. seviyede garanti olur; ayrıca 1 ile 6 ek ganimet çekilişi ve yalnızca o seviyeye özel ödüller vardır.",
+        "Ya da şişeyi doğrudan adayın: eğilerek bir yumurtlatıcıya, kasaya veya Ouka Alaşım Bloğuna kullanın, ödül hemen gelir.",
+        "Her şişe, bir alt seviyedeki şişeden ve Nether Yıldızlarından yapılır. 10 ve 13. seviyeler OUKA'nın Ouka Alaşım Bloğunu ister, bu yüzden bu iki tarif yalnızca OUKA kuruluyken görünür."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+        "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
    "label": "V2.0",
    "summary": "Tsubomi V2 — 200 yeni blok, büyülü elma, üretilebilir doğurucu",
    "releases": [

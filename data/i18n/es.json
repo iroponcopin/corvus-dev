@@ -906,6 +906,21 @@
      "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
      "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.1.0",
+    "title": "Tsubomi V2.1 — Frascos ominosos, niveles 6 a 13",
+    "summary": "Tsubomi V2.1.0 añade ocho frascos ominosos (niveles 6 a 13) que suben tu nivel de Mal presagio. Cuanto más alto el nivel, mejores las recompensas de la cámara ominosa, hasta un Núcleo pesado garantizado.",
+    "highlights": [
+     "Ocho frascos ominosos, niveles 6 a 13. Al beber uno recibes el Mal presagio de ese nivel. Cada frasco brilla, y su descripción muestra la probabilidad de Núcleo pesado y el multiplicador de recompensa.",
+     "Mejores recompensas de la cámara ominosa en cada nivel: la probabilidad de Núcleo pesado sube desde el 18% hasta estar garantizada en el nivel 13, con de 1 a 6 tiradas de botín extra y recompensas exclusivas de cada nivel.",
+     "O ofrece un frasco directamente: agáchate y úsalo sobre un generador, una cámara o un bloque de aleación Ouka para recibir la recompensa al instante.",
+     "Cada frasco se fabrica con el del nivel anterior y estrellas del Nether. Los niveles 10 y 13 necesitan el bloque de aleación Ouka de OUKA, así que esas dos recetas solo aparecen si OUKA está instalado."
+    ],
+    "warnings": [
+     "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+     "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
+    ]
    }
   ],
   "halia": [

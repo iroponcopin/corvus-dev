@@ -906,6 +906,21 @@
      "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
      "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.1.0",
+    "title": "Tsubomi V2.1 — Botol Pertanda Buruk, level 6 sampai 13",
+    "summary": "Tsubomi V2.1.0 menambahkan delapan Botol Pertanda Buruk (level 6 sampai 13) yang menaikkan level Bad Omen. Semakin tinggi levelnya, semakin bagus hadiah vault pertanda buruk, hingga Heavy Core yang pasti didapat.",
+    "highlights": [
+     "Delapan Botol Pertanda Buruk, level 6 sampai 13. Meminumnya memberi Bad Omen pada level itu. Botolnya selalu berkilau, dan tooltip menampilkan peluang Heavy Core serta pengali hadiah.",
+     "Hadiah vault pertanda buruk makin bagus di tiap level: peluang Heavy Core naik dari 18% hingga pasti di level 13, ditambah 1 sampai 6 putaran loot ekstra dan hadiah yang hanya ada di level itu.",
+     "Atau persembahkan botol langsung: sambil jongkok, gunakan pada Spawner, Vault, atau Ouka Alloy Block untuk langsung mendapat hadiahnya.",
+     "Setiap botol dibuat dari botol level di bawahnya dengan Nether Star. Level 10 dan 13 membutuhkan Ouka Alloy Block dari OUKA, jadi kedua resep itu hanya muncul jika OUKA terpasang."
+    ],
+    "warnings": [
+     "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+     "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+    ]
    }
   ],
   "halia": [

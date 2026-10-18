@@ -7,6 +7,37 @@
  "note": "",
  "groups": [
   {
+   "label": "V2.1",
+   "summary": "Tsubomi V2.1 — Ominous Bottles, level 6 to 13",
+   "releases": [
+    {
+     "version": "V2.1.0",
+     "date": "2026-10-18",
+     "type": "release",
+     "title": "Tsubomi V2.1 — Ominous Bottles, level 6 to 13",
+     "summary": "Tsubomi V2.1.0 adds eight Ominous Bottles (levels 6 to 13) that raise your Bad Omen level and make ominous vault rewards better the higher you go, up to a guaranteed Heavy Core.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "Eight Ominous Bottles, levels 6 to 13. Drinking one gives Bad Omen at that level. Each bottle glints, and its tooltip shows the Heavy Core rate and the reward multiplier.",
+        "Better ominous vault rewards at every level: the Heavy Core chance rises from 18% to a guaranteed one at level 13, 1 to 6 bonus loot rolls, and rewards that only that level gives.",
+        "Or offer a bottle directly: sneak and use it on a Spawner, a Vault or an Ouka Alloy Block to get the reward at once.",
+        "Each bottle is crafted from the one below it with Nether Stars. Levels 10 and 13 need OUKA's Ouka Alloy Block, so those two recipes appear only when OUKA is installed."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+        "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
    "label": "V2.0",
    "summary": "Tsubomi V2 — 200 new blocks, the Enchanted Apple, a craftable spawner",
    "releases": [
