@@ -139,6 +139,7 @@ BRAND_TAB_ICON = {
 # recipe json, so the day one of them gains a recipe the generation stops (the NO_RECIPE_MODULES rule).
 BARE_JAR_WITHOUT_RECIPES = {
     "aureum": "an optimisation mod; its jar carries no data/ at all",
+    "xhard": "Corvus XHard (server difficulty, 5.1.0): a server-side mod with no recipe",
 }
 
 
