@@ -797,6 +797,31 @@ def _xhard_block():
     }
 
 
+DIFFICULTY_LOCK_FILE = ROOT / "data" / "difficulty_lock.json"
+
+
+def _difficulty_lock():
+    """The top-level `difficulty_lock` (Corvus Agent 5.2, 2026-10-18), or None when data/difficulty_lock.json is absent.
+
+    Every Corvus Agent 5.2 holds its server at `level` on the UTC days [from, until). The file is copied as it is after
+    checking it: level "pro", ISO dates, from before until. Agents older than 5.2 ignore the key.
+    """
+    if not DIFFICULTY_LOCK_FILE.is_file():
+        return None
+    lock = json.loads(DIFFICULTY_LOCK_FILE.read_text(encoding="utf-8"))
+    if set(lock) != {"level", "from", "until"} or lock["level"] != "pro":
+        raise SystemExit(f"ERROR: {DIFFICULTY_LOCK_FILE} must be exactly {{level: pro, from, until}} (was {lock}).")
+    import datetime
+    try:
+        start = datetime.date.fromisoformat(lock["from"])
+        end = datetime.date.fromisoformat(lock["until"])
+    except (TypeError, ValueError):
+        raise SystemExit(f"ERROR: {DIFFICULTY_LOCK_FILE}: from and until must be YYYY-MM-DD.")
+    if not start < end:
+        raise SystemExit(f"ERROR: {DIFFICULTY_LOCK_FILE}: from must be before until.")
+    return {"level": "pro", "from": lock["from"], "until": lock["until"]}
+
+
 def _previously_published_manifest():
     """The manifest currently committed at the repo root, or {} if there is none."""
     path = ROOT / "glimpse_manifest.json"
@@ -977,6 +1002,11 @@ def build():
     elif "xhard" in _previously_published_manifest():
         raise SystemExit(f"ERROR: no Corvus XHard jar found in {DOWNLOAD_DIR}, but the published manifest carries an "
                          f"'xhard' block. Dropping it would silently withdraw the release.")
+
+    lock = _difficulty_lock()
+    if lock is not None:
+        manifest["difficulty_lock"] = lock
+        print(f"glimpse_manifest.py: difficulty_lock {lock['level']} from {lock['from']} until {lock['until']} (UTC)")
 
     noctua = _noctua_block()
     if noctua is not None:

@@ -187,7 +187,10 @@ def placeholder_problem(path, mod_id):
 
 #: Minecraft ではない配布物。性質 5 の「Minecraft の版を宣言しているか」は意味を持たない。
 #: 2026-10-04: Noctua（Palworld のサーバー側 MOD）。
-NOT_MINECRAFT = frozenset({"noctua", "agent"})   # 2026-10-12: Corvus Agent runs beside a server, not in the game
+NOT_MINECRAFT = frozenset({"noctua", "agent"})
+# 2026-10-18: manifest の鍵のうち、ファイルを配らない「設定」。成果物が無いので性質 5 の対象外だが、黙って飛ばさず
+# 名前で数え、file_name を持っていたら（ファイルの block と取り違えた）赤にする。
+SETTING_KEYS = frozenset({"difficulty_lock", "ai_chat"})   # 2026-10-12: Corvus Agent runs beside a server, not in the game
 
 
 def check(root, old, new, baseline):
@@ -302,6 +305,12 @@ def check(root, old, new, baseline):
                 if brand == "launcher":       # ランチャーは MOD ではないので mc を宣言しない
                     continue
                 block = manifest[brand]
+                if brand in SETTING_KEYS:
+                    if isinstance(block, dict) and "file_name" in block:
+                        failures.append("5. %s は設定の鍵なのに file_name を持っている" % brand)
+                    else:
+                        notes.append("5. %s は設定（ファイルを配らない）なので成果物の判定から外した" % brand)
+                    continue
                 if not isinstance(block, dict):
                     skipped.append("%s（辞書ではない）" % brand)
                     continue
