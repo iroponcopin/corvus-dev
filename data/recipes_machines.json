@@ -318,12 +318,6 @@
    "m9575ebf4dba4",
    "cube"
   ],
-  "minecraft:coal": [
-   "石炭",
-   "Coal",
-   "ma915938d9b09",
-   "flat"
-  ],
   "minecraft:copper_ore": [
    "銅鉱石",
    "Copper Ore",
@@ -366,23 +360,11 @@
    "m3b0c0323f5e6",
    "flat"
   ],
-  "minecraft:rotten_flesh": [
-   "腐った肉",
-   "Rotten Flesh",
-   "m1b6baa022aa2",
-   "flat"
-  ],
   "minecraft:stone_button": [
    "石のボタン",
    "Stone Button",
    "m730b77cdb1fc",
    "cube"
-  ],
-  "minecraft:wheat_seeds": [
-   "小麦の種",
-   "Wheat Seeds",
-   "m2a825109133f",
-   "flat"
   ],
   "minecraft:yellow_dye": [
    "黄色の染料",

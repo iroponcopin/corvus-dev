@@ -888,6 +888,11 @@ VANILLA_TEXTURE_OVERRIDE = {
     # V4.2.2 の工場の手引き: 自動製作機は面ごとのテクスチャで item/crafter.png を持たない。
     "crafter": "block/crafter_top",
     "furnace": "block/furnace_front",
+    # Tsubomi 2.0.0 (2026-10-18): the stonecutter is a station now; item/stonecutter.png does not exist.
+    "stonecutter": "block/stonecutter_top",
+    # Tsubomi 2.0.0 の材料(どれも item/<name>.png を持たない。tall_grass は下の compose_grass_tinted_icon で色を付ける)。
+    "white_carpet": "block/white_wool", "blue_carpet": "block/blue_wool", "cactus": "block/cactus_side",
+    "mycelium": "block/mycelium_side", "crossbow": "item/crossbow_standby",
     "glass_pane": "block/glass",
     # ASTRAEA V1.5.0 の素材。いずれも item/<name>.png を持たない(面ごとのテクスチャ、または元のブロックの流用)。
     # (smithing_table・heavy_weighted_pressure_plate・stonecutter・spruce_slab・dark_oak_slab・ender_chest も同じ理由で絵が無いが、
@@ -979,6 +984,9 @@ MOD_TEXTURE_OVERRIDE = {
 # (照合は常に「その位置で一致する最長のキー」を選ぶ)。
 #   例) 「金庫」を入れておかないと「金」+「庫」に割れる。「格子戸」は「格子」に勝つ。
 YOMI = {
+    # Tsubomi V2.0.0 のスポーンエッグ(バニラの表示名)で YOMI に無い漢字を含む 4 つ: 表示名まるごとの読み。
+    "洞窟グモのスポーンエッグ": "どうくつぐものすぽーんえっぐ", "商人のラマのスポーンエッグ": "しょうにんのらまのすぽーんえっぐ",
+    "熱帯魚のスポーンエッグ": "ねったいぎょのすぽーんえっぐ", "行商人のスポーンエッグ": "ぎょうしょうにんのすぽーんえっぐ",
     # --- Tsubomi V2.0.0 (2026-10-18) の行列 200 枚 + エンチャントリンゴ。V1.1.0 と同じく表示名まるごとを 1 語として入れる。
     #     読みは Tsubomi 担当が書いた未確認のもの(tsubomi-src/docs/JA_READINGS_V2.0.0.json)。 ---
     "窯焼き陶土レンガ": "かまやきとうどれんが", "模様入り窯焼き陶土": "もよういりかまやきとうど", "窯焼き陶土の柱": "かまやきとうどのはしら", "窯焼き陶土タイル": "かまやきとうどたいる", "窯焼き陶土ランプ": "かまやきとうどらんぷ",
@@ -1870,7 +1878,35 @@ def compose_water_bottle_icon(zf):
     return base64.b64encode(buf.getvalue()).decode()
 
 
+def compose_grass_tinted_icon(zf, name):
+    """An item whose definition tints its one layer with the grass colour (tall grass): the layer times the
+    colormap colour at the definition's own temperature and downfall, as the game draws it. Read from the jar;
+    a definition of another shape stops the generation instead of drawing a grey plant."""
+    from PIL import Image
+    node = json.loads(zf.read(f"assets/minecraft/items/{name}.json").decode("utf-8"))["model"]
+    tints = node.get("tints") or []
+    if node.get("type") != "minecraft:model" or len(tints) != 1 or tints[0].get("type") != "minecraft:grass":
+        raise SystemExit(f"ERROR: items/{name}.json is no longer one model with one grass tint.")
+    model = json.loads(zf.read("assets/minecraft/models/" + node["model"].split(":", 1)[1] + ".json").decode("utf-8"))
+    layer = model["textures"]["layer0"].split(":", 1)[-1]
+    temp = min(max(float(tints[0]["temperature"]), 0.0), 1.0)
+    down = min(max(float(tints[0]["downfall"]), 0.0), 1.0) * temp
+    cmap = Image.open(io.BytesIO(zf.read("assets/minecraft/textures/colormap/grass.png"))).convert("RGB")
+    cr, cg, cb = cmap.getpixel((int((1.0 - temp) * 255), int((1.0 - down) * 255)))
+    img = Image.open(io.BytesIO(zf.read(f"assets/minecraft/textures/{layer}.png"))).convert("RGBA")
+    px = [(r * cr // 255, g * cg // 255, b * cb // 255, a) for r, g, b, a in img.getdata()]
+    img.putdata(px)
+    buf = io.BytesIO()
+    img.save(buf, format="PNG", optimize=True)
+    return base64.b64encode(buf.getvalue()).decode()
+
+
+GRASS_TINTED_ITEMS = {"tall_grass"}
+
+
 def vanilla_texture_b64(zf, name):
+    if name in GRASS_TINTED_ITEMS:
+        return compose_grass_tinted_icon(zf, name)
     if name == "chest":
         return compose_chest_icon(zf)
     if name == "shield":
@@ -2456,6 +2492,8 @@ def published_textures():
 # 公開済みの絵のうち、意図して変える 1 件ずつの表(2026-10-05、Corvus の判断 A)。見張りは、ここに書いた品を、ここに書いた「前の鍵 → 新しい鍵」の
 # 組にかぎって通す(別の鍵・別の品は今までどおり止まる)。前の鍵の絵(PNG)は、そのまま残さなければならない(下の見張りが、バイトまで見る)。
 INTENDED_ICON_CHANGES = {
+    "minecraft:white_carpet": (None, "t50", "Tsubomi 2.0.0 uses it; drawn with the white wool picture it already shared, never had one"),
+    "minecraft:stonecutter": (None, "t889", "Tsubomi 2.0.0: the stonecutter became a station (120 recipes); it had no picture"),
     "ouka:operating_shelter_block": ("t157", "t269", "V1.4 new shelter look, owner-intended 2026-10-05"),
     "astraea:appliance_ceiling_fan": ("t396", "t730", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
     "astraea:appliance_faucet": ("t397", "t731", "ASTRAEA V1.5.3: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
@@ -3291,6 +3329,28 @@ def parse_campfire_recipe(path, reg):
     secs_txt = ("%d" % secs) if secs == int(secs) else ("%g" % secs)
     how = "焚き火で、%sを焼く(%s 秒。作業台では作れない)" % (ing_ja, secs_txt)
     return data["result"]["id"], how, [ing]
+
+
+def parse_stonecutting_recipe(path, reg):
+    """A `minecraft:stonecutting` recipe -> (result id, count, how-to text ja, how-to text en, ingredient ids), else None.
+
+    Tsubomi 2.0.0 (2026-10-18) ships 120 of them. A stonecutter takes one ingredient and gives the result times
+    the recipe's count; the sentence is assembled from those fields only. The card is a how-to card (no grid), so
+    the sheet's data shape is unchanged: the Store's album shows the sentence as it shows a campfire's."""
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("type") != "minecraft:stonecutting":
+        return None
+    ing = ingredient_id(data["ingredient"])
+    ing_ja, ing_en, _t = reg.register(ing)
+    result = data["result"]
+    count = int(result.get("count", 1))
+    if count < 1:
+        raise SystemExit(f"ERROR: {path.name}: a stonecutting recipe with count {count}")
+    many_ja = "" if count == 1 else "(%d 個できる)" % count
+    many_en = "" if count == 1 else " (makes %d)" % count
+    how = "石切台で、%sを切り出す%s(作業台では作れない)" % (ing_ja, many_ja)
+    how_en = "Cut %s on a stonecutter%s (it cannot be made at a workbench)" % (ing_en, many_en)
+    return result["id"], count, how, how_en, [ing]
 
 
 def cat_tokens(cat):
@@ -7089,6 +7149,26 @@ def _main_body():
                         tokens.append(cen)
                     cards.append({"cat": cat, "id": cooked_id, "cells": None, "count": None,
                                   "how": cooked_how, "s": search_blob(tokens)})
+                    cards_per_mod[mod_dir] = cards_per_mod.get(mod_dir, 0) + 1
+                elif (cut := parse_stonecutting_recipe(path, reg)) is not None:
+                    # 石切台: 3x3 ではないので「入手方法」カード。駅(station)・材料・文(ja, en)は
+                    # recipes_how.json に書く(Halia の溶鉱炉と同じ形。ポータルが「石切台で作る」と出す)。
+                    cut_id, cut_count, cut_how, cut_how_en, cut_ids = cut
+                    ja, en, _tex = reg.register(cut_id)
+                    cat = category_of(mod_cat, cut_id.split(":", 1)[1])
+                    _, unknown = reading_of(ja)
+                    if unknown:
+                        no_yomi.append((cat, ja, "".join(sorted(set(unknown)))))
+                    tokens = cat_tokens(cat) + item_tokens(cut_id, ja) + [en, cut_how]
+                    for cid in cut_ids + ["minecraft:stonecutter"]:
+                        cja, cen, _ = reg.register(cid)
+                        tokens += item_tokens(cid, cja)
+                        tokens.append(cen)
+                    cards.append({"cat": cat, "id": cut_id, "cells": None, "count": cut_count,
+                                  "how": cut_how, "s": search_blob(tokens)})
+                    if cut_id in HALIA_HOW:
+                        raise SystemExit(f"ERROR: two how-to cards are keyed {cut_id!r}; one would show the other's text.")
+                    HALIA_HOW[cut_id] = {"station": "stonecutter", "inputs": cut_ids, "ja": cut_how, "en": cut_how_en}
                     cards_per_mod[mod_dir] = cards_per_mod.get(mod_dir, 0) + 1
                 elif mod_dir in EVERY_RECIPE_SHOWN:
                     raise SystemExit(
