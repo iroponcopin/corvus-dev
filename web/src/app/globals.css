@@ -17,6 +17,7 @@
   font-weight: 400 800;
   font-display: swap;
 }
+@import "../styles/tome.css";
 
 /*
  * Corvus — strict Apple dark minimal.

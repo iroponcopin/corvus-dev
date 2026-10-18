@@ -9,7 +9,7 @@ import { BoxGeometry, BufferAttribute, BufferGeometry } from "three";
 
 const cache = new Map<string, Promise<BufferGeometry>>();
 
-function loadPixels(url: string): Promise<{ w: number; h: number; data: Uint8ClampedArray }> {
+export function loadPixels(url: string): Promise<{ w: number; h: number; data: Uint8ClampedArray }> {
   return new Promise((resolve, reject) => {
     const img = new Image();
     img.decoding = "async";
@@ -33,7 +33,7 @@ function loadPixels(url: string): Promise<{ w: number; h: number; data: Uint8Cla
   });
 }
 
-function srgbToLinear(c: number): number {
+export function srgbToLinear(c: number): number {
   const v = c / 255;
   return v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
 }
