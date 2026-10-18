@@ -1,0 +1,236 @@
+/* ———————————————————— Model pages ————————————————————
+ * OUKA, Cherry, Aureum, ASTRAEA, Tsubomi, Noctua and Halia share one design: the Syne name in the model's accent
+ * gradient, a version pill from the manifest, text calls to action with arrows, glass panels on the obsidian tokens,
+ * and a page-wide ambient light in the model's own accents. The accents are the --accent-<model> tokens of globals.css.
+ */
+
+.ac-model-page {
+  position: relative;
+  isolation: isolate;
+}
+
+.ac-model-page[data-model="ouka"] { --accent: var(--accent-ouka); --accent-2: var(--accent-ouka-2); }
+.ac-model-page[data-model="cherry"] { --accent: var(--accent-cherry); --accent-2: var(--accent-cherry-2); }
+.ac-model-page[data-model="aureum"] { --accent: var(--accent-aureum); --accent-2: var(--accent-aureum-2); }
+.ac-model-page[data-model="astraea"] { --accent: var(--accent-astraea); --accent-2: var(--accent-astraea-2); }
+.ac-model-page[data-model="tsubomi"] { --accent: var(--accent-tsubomi); --accent-2: var(--accent-tsubomi-2); }
+.ac-model-page[data-model="noctua"] { --accent: var(--accent-noctua); --accent-2: var(--accent-noctua-2); }
+.ac-model-page[data-model="halia"] { --accent: var(--accent-halia); --accent-2: var(--accent-halia-2); }
+
+/* One layer, clipped to the page: the light never widens the document, so there is no horizontal scroll at 375. */
+.ac-model-ambient {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(60rem 42rem at 82% -6%, color-mix(in srgb, var(--accent) 24%, transparent), transparent 70%),
+    radial-gradient(48rem 36rem at 4% 46%, color-mix(in srgb, var(--accent-2) 14%, transparent), transparent 72%),
+    radial-gradient(40rem 30rem at 72% 100%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 70%);
+}
+
+/* ———— Hero ———— */
+
+.ac-model-hero {
+  display: flex;
+  align-items: center;
+  min-height: min(100svh, 980px);
+  padding-block: calc(var(--header-h) + 48px) 48px;
+}
+
+.ac-model-grid {
+  display: grid;
+  align-items: center;
+  gap: 32px;
+}
+
+@media (min-width: 900px) {
+  .ac-model-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+.ac-model-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.ac-model-copy > * {
+  margin: 0;
+}
+
+.ac-model-name {
+  padding-block: 0.04em 0.12em;
+  background: linear-gradient(100deg, var(--accent) 0%, var(--accent-2) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  overflow-wrap: anywhere;
+}
+
+.ac-model-version {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  color: var(--color-soft);
+  font-size: 17px;
+}
+
+.ac-model-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 2px 14px;
+  border: 1px solid color-mix(in srgb, var(--accent) 50%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+.ac-model-codename {
+  color: var(--color-muted);
+}
+
+.ac-model-line {
+  max-width: 30ch;
+  color: var(--color-soft);
+  font-size: clamp(19px, 2vw, 24px);
+  line-height: 1.38;
+}
+
+.ac-model-lead {
+  max-width: 36ch;
+}
+
+.ac-model-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 28px;
+}
+
+/* A call to action as a text link with an arrow: the arrow nudges forward on hover (backward in Arabic). */
+.ac-model-cta {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding-block: 6px;
+  border-bottom: 1px solid transparent;
+  color: var(--accent);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  transition:
+    border-color 0.3s var(--ease-reveal),
+    color 0.3s var(--ease-reveal);
+}
+
+.ac-model-cta--primary {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ac-model-cta:hover,
+.ac-model-cta:focus-visible {
+  border-bottom-color: currentColor;
+}
+
+.ac-model-cta .ac-flip {
+  transition: transform 0.5s var(--ease-reveal);
+}
+
+.ac-model-cta:hover .ac-flip {
+  transform: translateX(4px);
+}
+
+html:lang(ar) .ac-model-cta:hover .ac-flip {
+  transform: translateX(-4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ac-model-cta,
+  .ac-model-cta .ac-flip {
+    transition: none;
+  }
+
+  .ac-model-cta:hover .ac-flip,
+  html:lang(ar) .ac-model-cta:hover .ac-flip {
+    transform: none;
+  }
+}
+
+/* ———— Glass panels ———— */
+
+.ac-model-page .ac-card {
+  background: rgb(12 14 20 / 0.72);
+  box-shadow:
+    inset 0 0 0 1px var(--color-hairline),
+    inset 0 1px 0 rgb(255 255 255 / 0.05),
+    0 30px 80px -40px rgb(0 0 0 / 0.9);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  backdrop-filter: blur(28px) saturate(190%);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .ac-model-page .ac-card {
+    background: var(--color-glass);
+  }
+}
+
+.ac-model-page .ac-hash {
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}
+
+/* ———— Release card (file facts and the download) ———— */
+
+.ac-model-release {
+  padding-bottom: clamp(80px, 12vh, 140px);
+}
+
+.ac-model-release-card {
+  display: grid;
+  gap: 28px;
+  padding: clamp(22px, 3vw, 36px);
+  scroll-margin-top: calc(var(--header-h) + 24px);
+}
+
+@media (min-width: 900px) {
+  .ac-model-release-card {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+.ac-model-release-side {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.ac-model-release-dl {
+  margin: 0;
+}
+
+/* ———— Aureum: the stats and sections, in the model's accents ———— */
+
+.ac-model-page .ac-stat b {
+  background: linear-gradient(100deg, var(--accent) 0%, var(--accent-2) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.ac-model-page .ac-section-card {
+  padding: clamp(22px, 3vw, 32px);
+}

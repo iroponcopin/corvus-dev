@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { pathOf } from "@/lib/site";
 import { langData } from "@/lib/wiki";
 import type { ControlToken, Lang, Requirement } from "@/lib/wiki-types";
@@ -7,6 +8,88 @@ import { CopyButton } from "../CopyButton";
 import { ThemePlayer } from "../ThemePlayer";
 import { AstraeaEnded } from "./AstraeaEnded";
 
+/** The models that share the model-page design: each sets its accent pair on `.ac-model-page[data-model]`. */
+export type ModelId = "ouka" | "cherry" | "aureum" | "astraea" | "tsubomi" | "noctua" | "halia";
+
+/**
+ * A model page's frame: the page-wide ambient light in the model's own accents (one fixed-size layer, clipped so it
+ * never widens the page), then the page. Accents come from globals.css (`--accent-<model>`), so no colour is set here.
+ */
+function ModelPage({ id, children }: { id: ModelId; children: ReactNode }) {
+  return (
+    <div className="ac-model-page" data-model={id}>
+      <div className="ac-model-ambient" aria-hidden="true" />
+      {children}
+    </div>
+  );
+}
+
+/** A call to action as a text link with an arrow, in the template's style. `primary` is the download. */
+function CtaDownload({ href, label, arrow, primary = false }: { href: string; label: string; arrow: string; primary?: boolean }) {
+  return (
+    <a className={`ac-model-cta${primary ? " ac-model-cta--primary" : ""}`} href={href} download>
+      {label} <span className="ac-flip">{arrow}</span>
+    </a>
+  );
+}
+
+function CtaLink({ href, label, arrow }: { href: string; label: string; arrow: string }) {
+  return (
+    <Link className="ac-model-cta" href={href}>
+      {label} <span className="ac-flip">{arrow}</span>
+    </Link>
+  );
+}
+
+/**
+ * The hero every model page shares: eyebrow, Syne name in the model's accent gradient, the version pill from the
+ * manifest, the line and lead, the text CTAs, and the model's own icon art beside them.
+ */
+function ModelHero({
+  eyebrow,
+  title,
+  version,
+  detail,
+  line,
+  lead,
+  actions,
+  footer,
+  icon,
+  dim = false,
+}: {
+  eyebrow?: string;
+  title: string;
+  version?: string;
+  detail?: ReactNode;
+  line?: string;
+  lead?: string;
+  actions: ReactNode;
+  footer?: ReactNode;
+  icon: string;
+  dim?: boolean;
+}) {
+  return (
+    <section className="ac-model-hero">
+      <div className="ac-wrap ac-model-grid">
+        <div className="ac-model-copy">
+          {eyebrow ? <p className="ac-eyebrow ac-reveal">{eyebrow}</p> : null}
+          <h1 className="ac-display ac-model-name ac-reveal">{title}</h1>
+          {version ? (
+            <p className="ac-model-version ac-reveal">
+              <span className="ac-model-pill ac-ltr">V{version}</span>
+              {detail}
+            </p>
+          ) : null}
+          {line ? <p className="ac-model-line ac-reveal">{line}</p> : null}
+          {lead ? <p className="ac-lead ac-model-lead ac-reveal">{lead}</p> : null}
+          <div className="ac-model-actions ac-reveal">{actions}</div>
+          {footer ? <div className="ac-reveal">{footer}</div> : null}
+        </div>
+        <BrandStage icon={icon} label={title} dim={dim} />
+      </div>
+    </section>
+  );
+}
 
 function ReleaseCard({
   lang,
@@ -19,8 +102,8 @@ function ReleaseCard({
 }) {
   const c = langData(lang).chrome;
   return (
-    <div className="ac-wrap ac-release">
-      <div className="ac-card ac-release-card ac-reveal" id="release">
+    <div className="ac-wrap ac-model-release">
+      <div className="ac-card ac-model-release-card ac-reveal" id="release">
         <dl className="ac-facts">
           {requirements.map((r) => (
             <div key={r.label}>
@@ -35,7 +118,7 @@ function ReleaseCard({
             </dd>
           </div>
         </dl>
-        <div className="ac-release-side">
+        <div className="ac-model-release-side">
           <dl className="ac-facts">
             <div>
               <dt>{c.sha256}</dt>
@@ -45,10 +128,8 @@ function ReleaseCard({
               </dd>
             </div>
           </dl>
-          <p className="ac-release-dl">
-            <a className="ac-btn" href={file.url} download>
-              {c.primaryCta}
-            </a>
+          <p className="ac-model-release-dl">
+            <CtaDownload href={file.url} label={c.primaryCta} arrow={c.arrow} primary />
           </p>
         </div>
       </div>
@@ -61,36 +142,24 @@ export function OukaPage({ lang }: { lang: Lang }) {
   const b = d.brands.ouka;
   const c = d.chrome;
   return (
-    <>
-      <section className="ac-brand-hero">
-        <div className="ac-wrap ac-brand-grid">
-          <div className="ac-brand-copy">
-            <p className="ac-eyebrow ac-reveal">{b.eyebrow}</p>
-            <h1 className="ac-display ac-brand-name ac-reveal">{b.title}</h1>
-            <p className="ac-brand-version ac-reveal">
-              <b className="ac-ltr">V{b.release.version}</b>
-              <span className="ac-ltr" lang="en">
-                {b.release.codename}
-              </span>
-            </p>
-            <p className="ac-brand-line ac-reveal">{b.line}</p>
-            <div className="ac-brand-actions ac-reveal">
-              <a className="ac-btn" href={b.release.file.url} download>
-                {c.primaryCta}
-              </a>
-              <Link className="ac-link" href={pathOf(lang, "changelog/?model=ouka")}>
-                {c.changelog} <span className="ac-flip">{c.arrow}</span>
-              </Link>
-            </div>
-            <div className="ac-reveal">
-              <ThemePlayer track={b.player.track} play={b.player.play} pause={b.player.pause} />
-            </div>
-          </div>
-          <BrandStage icon="icons/ouka.png" label={b.title} />
-        </div>
-      </section>
+    <ModelPage id="ouka">
+      <ModelHero
+        eyebrow={b.eyebrow}
+        title={b.title}
+        version={b.release.version}
+        detail={<span className="ac-model-codename ac-ltr" lang="en">{b.release.codename}</span>}
+        line={b.line}
+        icon="icons/ouka.png"
+        actions={
+          <>
+            <CtaDownload href={b.release.file.url} label={c.primaryCta} arrow={c.arrow} primary />
+            <CtaLink href={pathOf(lang, "changelog/?model=ouka")} label={c.changelog} arrow={c.arrow} />
+          </>
+        }
+        footer={<ThemePlayer track={b.player.track} play={b.player.play} pause={b.player.pause} />}
+      />
       <ReleaseCard lang={lang} requirements={b.release.requirements} file={b.release.file} />
-    </>
+    </ModelPage>
   );
 }
 
@@ -99,36 +168,24 @@ export function CherryPage({ lang }: { lang: Lang }) {
   const b = d.brands.cherry;
   const c = d.chrome;
   return (
-    <>
-      <section className="ac-brand-hero">
-        <div className="ac-wrap ac-brand-grid">
-          <div className="ac-brand-copy">
-            <p className="ac-eyebrow ac-reveal">{b.eyebrow}</p>
-            <h1 className="ac-display ac-brand-name ac-reveal">{b.title}</h1>
-            <p className="ac-brand-version ac-reveal">
-              <b className="ac-ltr">V{b.release.version}</b>
-              <span className="ac-ltr" lang="en">
-                {b.release.codename}
-              </span>
-            </p>
-            <p className="ac-brand-line ac-reveal">{b.line}</p>
-            <div className="ac-brand-actions ac-reveal">
-              <a className="ac-btn" href={b.release.file.url} download>
-                {c.primaryCta}
-              </a>
-              <Link className="ac-link" href={pathOf(lang, "changelog/?model=cherry")}>
-                {c.changelog} <span className="ac-flip">{c.arrow}</span>
-              </Link>
-              <Link className="ac-link" href={pathOf(lang, "cherry-controls/")}>
-                {b.controlsLabel} <span className="ac-flip">{c.arrow}</span>
-              </Link>
-            </div>
-          </div>
-          <BrandStage icon="icons/cherry.png" label={b.title} />
-        </div>
-      </section>
+    <ModelPage id="cherry">
+      <ModelHero
+        eyebrow={b.eyebrow}
+        title={b.title}
+        version={b.release.version}
+        detail={<span className="ac-model-codename ac-ltr" lang="en">{b.release.codename}</span>}
+        line={b.line}
+        icon="icons/cherry.png"
+        actions={
+          <>
+            <CtaDownload href={b.release.file.url} label={c.primaryCta} arrow={c.arrow} primary />
+            <CtaLink href={pathOf(lang, "changelog/?model=cherry")} label={c.changelog} arrow={c.arrow} />
+            <CtaLink href={pathOf(lang, "cherry-controls/")} label={b.controlsLabel} arrow={c.arrow} />
+          </>
+        }
+      />
       <ReleaseCard lang={lang} requirements={b.release.requirements} file={b.release.file} />
-    </>
+    </ModelPage>
   );
 }
 
@@ -137,29 +194,19 @@ export function AureumPage({ lang }: { lang: Lang }) {
   const a = d.brands.aureum;
   const c = d.chrome;
   return (
-    <>
-      <section className="ac-brand-hero">
-        <div className="ac-wrap ac-brand-grid">
-          <div className="ac-brand-copy">
-            <p className="ac-eyebrow ac-reveal">
-              {c.version} <span className="ac-ltr">{a.version}</span>
-            </p>
-            <h1 className="ac-display ac-brand-name ac-gold ac-reveal">{a.title}</h1>
-            <p className="ac-lead ac-reveal" style={{ maxWidth: "36ch" }}>
-              {a.tagline}
-            </p>
-            <div className="ac-brand-actions ac-reveal">
-              <a className="ac-btn" href={a.download.url} download>
-                {a.download.label}
-              </a>
-              <Link className="ac-link" href={pathOf(lang, "download/")}>
-                {a.detailsLabel}
-              </Link>
-            </div>
-          </div>
-          <BrandStage icon="icons/aureum.png" label={a.title} />
-        </div>
-      </section>
+    <ModelPage id="aureum">
+      <ModelHero
+        title={a.title}
+        version={a.version}
+        lead={a.tagline}
+        icon="icons/aureum.png"
+        actions={
+          <>
+            <CtaDownload href={a.download.url} label={a.download.label} arrow={c.arrow} primary />
+            <CtaLink href={pathOf(lang, "download/")} label={a.detailsLabel} arrow={c.arrow} />
+          </>
+        }
+      />
       <div className="ac-wrap ac-aureum">
         <h2 className="ac-h3 ac-reveal">{a.statsHeading}</h2>
         <div className="ac-stats">
@@ -194,67 +241,54 @@ export function AureumPage({ lang }: { lang: Lang }) {
           {a.closingLine} · {c.version} <span className="ac-ltr">{a.version}</span> · {c.sha256}{" "}
           <code className="ac-hash">{a.sha256}</code>
         </p>
-        <p className="ac-aureum-log">
-          <Link className="ac-link" href={pathOf(lang, "changelog/?model=aureum")}>
-            {c.changelog} <span className="ac-flip">{c.arrow}</span>
-          </Link>
+        <p className="ac-aureum-log ac-reveal">
+          <CtaLink href={pathOf(lang, "changelog/?model=aureum")} label={c.changelog} arrow={c.arrow} />
         </p>
       </div>
-    </>
+    </ModelPage>
   );
 }
 
 /** The models whose page is built from the store catalogue and the manifest alone. */
 export type CatalogueModel = "astraea" | "tsubomi" | "noctua" | "halia";
 
-/** ASTRAEA, Tsubomi and Noctua: the same hero, stage and release card as OUKA and Cherry. */
+/**
+ * ASTRAEA, Tsubomi, Noctua and Halia: the same hero, stage and release card as OUKA and Cherry. An archived model keeps
+ * its page as a notice: greyed art, no download.
+ */
 export function CatalogueModelPage({ lang, id }: { lang: Lang; id: CatalogueModel }) {
   const d = langData(lang);
   const p = d.products[id];
   if (!p) throw new Error(`${id}: not in the store catalogue`);
-  const dl = d.download[id];
   const c = d.chrome;
+  const archived = p.availability === "archived";
+  const dl = archived ? undefined : d.download[id];
   const hasLog = d.changelog.brands.some((b) => b.id === id);
   return (
-    <>
-      {id === "astraea" && p.availability === "archived" ? (
+    <ModelPage id={id}>
+      {id === "astraea" && archived ? (
         <div className="ac-wrap ac-ended-top">
           <AstraeaEnded lang={lang} />
         </div>
       ) : null}
-      <section className="ac-brand-hero">
-        <div className="ac-wrap ac-brand-grid">
-          <div className="ac-brand-copy">
-            <p className="ac-eyebrow ac-reveal">{p.badge ?? p.category}</p>
-            <h1 className="ac-display ac-brand-name ac-reveal">{p.name}</h1>
-            <p className="ac-brand-version ac-reveal">
-              <b className="ac-ltr">V{dl?.version ?? p.version}</b>
-              {p.jp ? <span lang="ja">{p.jp}</span> : null}
-            </p>
-            <p className="ac-brand-line ac-reveal">{p.headline}</p>
-            {p.tagline !== p.headline ? (
-              <p className="ac-lead ac-reveal" style={{ maxWidth: "36ch" }}>
-                {p.tagline}
-              </p>
-            ) : null}
-            <div className="ac-brand-actions ac-reveal">
-              {dl ? (
-                <a className="ac-btn" href={dl.file.url} download>
-                  {c.primaryCta}
-                </a>
-              ) : null}
-              {hasLog ? (
-                <Link className="ac-link" href={pathOf(lang, `changelog/?model=${id}`)}>
-                  {c.changelog} <span className="ac-flip">{c.arrow}</span>
-                </Link>
-              ) : null}
-            </div>
-          </div>
-          <BrandStage icon={`icons/${id}.png`} label={p.name} />
-        </div>
-      </section>
+      <ModelHero
+        eyebrow={p.badge ?? p.category}
+        title={p.name}
+        version={dl?.version ?? p.version}
+        detail={p.jp ? <span className="ac-model-codename" lang="ja">{p.jp}</span> : undefined}
+        line={p.headline}
+        lead={p.tagline !== p.headline ? p.tagline : undefined}
+        icon={`icons/${id}.png`}
+        dim={archived}
+        actions={
+          <>
+            {dl ? <CtaDownload href={dl.file.url} label={c.primaryCta} arrow={c.arrow} primary /> : null}
+            {hasLog ? <CtaLink href={pathOf(lang, `changelog/?model=${id}`)} label={c.changelog} arrow={c.arrow} /> : null}
+          </>
+        }
+      />
       {dl ? <ReleaseCard lang={lang} requirements={dl.requirements} file={dl.file} /> : null}
-    </>
+    </ModelPage>
   );
 }
 

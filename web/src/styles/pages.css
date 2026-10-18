@@ -435,40 +435,6 @@ html:lang(ar) .ac-facts dt {
   aspect-ratio: 1;
 }
 
-.ac-gold {
-  background: linear-gradient(100deg, #fff4d6 0%, #ffc35a 42%, #fff1c8 68%, #e8a93a 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.ac-release {
-  padding-bottom: clamp(80px, 12vh, 140px);
-}
-
-.ac-release-card {
-  display: grid;
-  gap: 28px;
-  padding: clamp(22px, 3vw, 36px);
-  scroll-margin-top: calc(var(--header-h) + 24px);
-}
-
-@media (min-width: 900px) {
-  .ac-release-card {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  }
-}
-
-.ac-release-side {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-.ac-release-dl {
-  margin: 0;
-}
-
 .ac-player {
   display: flex;
   flex-wrap: wrap;
