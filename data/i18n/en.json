@@ -940,6 +940,22 @@
      "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
      "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
     ]
+   },
+   {
+    "id": "tsubomi-v2.2.0",
+    "title": "Tsubomi V2.2 — 500 more blocks and a craftable Nether Star",
+    "summary": "Tsubomi V2.2.0 adds 500 building blocks in 50 new material series of 10 shapes, the Emblem of the Ocean, and a recipe that crafts the Nether Star.",
+    "highlights": [
+     "500 new blocks in 50 material series of 10 shapes each: bricks, chiseled, pillar, tiles, lamp, grate, reinforced plating, stairs, slab and wall. The series come in five themes: Japanese architecture, Sengoku metals, cyberpunk facilities, celestial crystals and sacred stones.",
+     "Every series is crafted from two plain materials in a 2x2 pattern and cut from its bricks at the stonecutter. Timber series are mined with an axe, the rest with a pickaxe.",
+     "Emblem of the Ocean: a new relic that cannot be crafted and is found only in Ocean Monuments. Elder Guardians drop it (15%, more with Looting), Guardians rarely (1.5%), and digging up Wet Sponges or Sea Lanterns underwater sometimes uncovers one (2%).",
+     "Craftable Nether Star: the Emblem of the Ocean, a Silence Armor Trim template, a Netherite Ingot, four Diamonds and two Ouka Alloy Blocks, or the five different items together. The recipes appear only when OUKA is installed.",
+     "Light on the server: no block has a block entity or a ticker, and the new blocks take no random ticks."
+    ],
+    "warnings": [
+     "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+     "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
+    ]
    }
   ],
   "halia": [

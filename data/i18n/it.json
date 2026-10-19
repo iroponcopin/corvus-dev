@@ -936,6 +936,22 @@
      "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
      "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.2.0",
+    "title": "Tsubomi V2.2 — altri 500 blocchi e una Stella del Nether creabile",
+    "summary": "Tsubomi V2.2.0 aggiunge 500 blocchi da costruzione in 50 nuove serie di materiali da 10 forme, e una ricetta per creare la Stella del Nether.",
+    "highlights": [
+     "500 nuovi blocchi in 50 serie di materiali da 10 forme ciascuna: mattoni, cesellato, pilastro, piastrelle, lampada, griglia, corazza rinforzata, scale, lastra e muretto. Le serie seguono cinque temi: architettura giapponese, metalli Sengoku, impianti cyberpunk, cristalli celesti e pietre sacre.",
+     "Ogni serie si crea con due materiali semplici in uno schema 2x2 e si taglia anche dai suoi mattoni al tagliapietre. Le serie di legno si rompono con l'ascia, le altre con il piccone.",
+     "Emblema dell'oceano: una nuova reliquia non creabile, che si trova solo nei monumenti oceanici. Gli antichi guardiani la lasciano (15%, di più con Bottino), i guardiani raramente (1,5%), e rompendo spugne bagnate o lanterne marine sott'acqua a volte ne spunta una (2%).",
+     "Stella del Nether creabile: l'emblema dell'oceano, un modello di fabbro per decoro armatura Silenzio, un lingotto di netherite, quattro diamanti e due blocchi di lega Ouka, oppure i cinque oggetti diversi insieme. Le ricette compaiono solo se OUKA è installato.",
+     "Leggero per il server: nessun blocco ha un'entità blocco o un ticker, e i nuovi blocchi non ricevono tick casuali."
+    ],
+    "warnings": [
+     "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+     "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
+    ]
    }
   ],
   "halia": [

@@ -936,6 +936,22 @@
      "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
      "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
     ]
+   },
+   {
+    "id": "tsubomi-v2.2.0",
+    "title": "Tsubomi V2.2 — 500 weitere Blöcke und ein herstellbarer Nether-Stern",
+    "summary": "Tsubomi V2.2.0 fügt 500 Baublöcke in 50 neuen Materialserien mit je 10 Formen hinzu sowie ein Rezept für den Nether-Stern.",
+    "highlights": [
+     "500 neue Blöcke in 50 Materialserien mit je 10 Formen: Ziegel, gemeißelt, Säule, Fliesen, Lampe, Gitter, verstärkte Panzerung, Treppe, Stufe und Mauer. Die Serien gehören zu fünf Themen: japanische Architektur, Sengoku-Metalle, Cyberpunk-Anlagen, himmlische Kristalle und heilige Steine.",
+     "Jede Serie wird aus zwei einfachen Materialien im 2x2-Muster hergestellt und lässt sich aus ihren Ziegeln auch an der Steinsäge schneiden. Holzserien baut man mit der Axt ab, alle anderen mit der Spitzhacke.",
+     "Emblem des Ozeans: ein neues Relikt, das sich nicht herstellen lässt und nur in Ozeanmonumenten zu finden ist. Große Wächter lassen es fallen (15%, mehr mit Plünderung), Wächter selten (1,5%), und beim Abbauen von nassen Schwämmen oder Seelaternen unter Wasser kommt manchmal eines zum Vorschein (2%).",
+     "Herstellbarer Nether-Stern: das Emblem des Ozeans, eine Stille-Rüstungsverzierung-Schmiedevorlage, ein Netherit-Barren, vier Diamanten und zwei Ouka-Legierungsblöcke, oder die fünf verschiedenen Gegenstände zusammen. Die Rezepte erscheinen nur, wenn OUKA installiert ist.",
+     "Schonend für den Server: Kein Block hat eine Blockentität oder einen Ticker, und die neuen Blöcke erhalten keine zufälligen Ticks."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+     "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
+    ]
    }
   ],
   "halia": [

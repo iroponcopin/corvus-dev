@@ -936,6 +936,22 @@
      "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
      "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
     ]
+   },
+   {
+    "id": "tsubomi-v2.2.0",
+    "title": "Tsubomi V2.2 — 500 blok daha ve üretilebilir Nether Yıldızı",
+    "summary": "Tsubomi V2.2.0, her biri 10 şekle sahip 50 yeni malzeme serisinde 500 yapı bloğu ve Nether Yıldızı üreten bir tarif ekler.",
+    "highlights": [
+     "Her biri 10 şekle sahip 50 malzeme serisinde 500 yeni blok: tuğla, oyma, sütun, karo, lamba, ızgara, güçlendirilmiş zırh, merdiven, slab ve duvar. Seriler beş temaya ayrılır: Japon mimarisi, Sengoku metalleri, siberpunk tesisleri, gök kristalleri ve kutsal taşlar.",
+     "Her seri iki sade malzemeyle 2x2 düzeninde üretilir ve tuğlalarından taş kesiciyle de kesilebilir. Ahşap serileri baltayla, diğerleri kazmayla kazılır.",
+     "Okyanus Amblemi: üretilemeyen ve yalnızca Okyanus Anıtlarında bulunan yeni bir kalıntı. Yaşlı Koruyucular düşürür (%15, Yağma ile artar), Koruyucular nadiren (%1,5), sualtında ıslak süngerleri veya deniz fenerlerini kazmak da bazen bir tane çıkarır (%2).",
+     "Üretilebilir Nether Yıldızı: Okyanus Amblemi, bir Sessizlik zırh süsü demircilik şablonu, bir Netherit Külçe, dört Elmas ve iki Ouka Alaşım Bloğu 3x3 düzeninde veya bu beş farklı eşya birlikte. Tarifler yalnızca OUKA kuruluyken görünür.",
+     "Sunucuya hafif: hiçbir blokta blok varlığı veya zamanlayıcı yoktur, yeni bloklar rastgele tik almaz."
+    ],
+    "warnings": [
+     "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+     "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
+    ]
    }
   ],
   "halia": [

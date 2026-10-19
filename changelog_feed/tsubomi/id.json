@@ -1,11 +1,43 @@
 {
  "lang": "id",
  "brand": "tsubomi",
- "updated": "2026-10-18",
+ "updated": "2026-10-19",
  "title": "Riwayat Pembaruan",
- "updated_label": "Diperbarui 2026-10-18",
+ "updated_label": "Diperbarui 2026-10-19",
  "note": "",
  "groups": [
+  {
+   "label": "V2.2",
+   "summary": "Tsubomi V2.2 — 500 blok lagi dan Nether Star yang bisa dibuat",
+   "releases": [
+    {
+     "version": "V2.2.0",
+     "date": "2026-10-19",
+     "type": "release",
+     "title": "Tsubomi V2.2 — 500 blok lagi dan Nether Star yang bisa dibuat",
+     "summary": "Tsubomi V2.2.0 menambahkan 500 blok bangunan dalam 50 seri bahan baru dengan 10 bentuk, serta resep untuk membuat Nether Star.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "500 blok baru dalam 50 seri bahan dengan masing-masing 10 bentuk: bata, ukiran, pilar, ubin, lampu, kisi, pelat lapis baja, tangga, slab dan dinding. Serinya terbagi dalam lima tema: arsitektur Jepang, logam Sengoku, fasilitas cyberpunk, kristal langit dan batu suci.",
+        "Setiap seri dibuat dari dua bahan biasa dalam pola 2x2 dan juga bisa dipotong dari batanya di stonecutter. Seri kayu ditambang dengan kapak, sisanya dengan beliung.",
+        "Emblem of the Ocean: relik baru yang tidak bisa dibuat dan hanya ada di Ocean Monument. Elder Guardian menjatuhkannya (15%, lebih tinggi dengan Looting), Guardian jarang (1,5%), dan menambang Wet Sponge atau Sea Lantern di bawah air kadang menemukannya (2%).",
+        "Nether Star yang bisa dibuat: Emblem of the Ocean, satu template smithing hiasan armor Silence, satu Netherite Ingot, empat Diamond dan dua Ouka Alloy Block dalam pola 3x3, atau kelima item berbeda itu bersama-sama. Resepnya hanya muncul jika OUKA terpasang.",
+        "Ringan untuk server: tidak ada blok yang punya block entity atau ticker, dan blok baru tidak menerima random tick."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+        "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V2.1",
    "summary": "Tsubomi V2.1 — Botol Pertanda Buruk, level 6 sampai 13",

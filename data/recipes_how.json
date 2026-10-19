@@ -3124,6 +3124,54 @@
    "ja": "作業台で、設定済みの見張りの石板と新しい見張りの石板を並べると、設定を写した 2 つ目ができます。",
    "en": "On a crafting table, put a set-up Watch Slate with a new one to copy its settings to it."
   },
+  "tsubomi:aka_urushi_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:aka_urushi_bricks"
+   ],
+   "ja": "石切台で、本朱漆塗レンガを切り出す(作業台では作れない)",
+   "en": "Cut Vermilion Urushi Lacquer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:aka_urushi_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:aka_urushi_bricks"
+   ],
+   "ja": "石切台で、本朱漆塗レンガを切り出す(作業台では作れない)",
+   "en": "Cut Vermilion Urushi Lacquer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:aka_urushi_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:aka_urushi_bricks"
+   ],
+   "ja": "石切台で、本朱漆塗レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Vermilion Urushi Lacquer Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:aka_urushi_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:aka_urushi_bricks"
+   ],
+   "ja": "石切台で、本朱漆塗レンガを切り出す(作業台では作れない)",
+   "en": "Cut Vermilion Urushi Lacquer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:aka_urushi_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:aka_urushi_bricks"
+   ],
+   "ja": "石切台で、本朱漆塗レンガを切り出す(作業台では作れない)",
+   "en": "Cut Vermilion Urushi Lacquer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:aka_urushi_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:aka_urushi_bricks"
+   ],
+   "ja": "石切台で、本朱漆塗レンガを切り出す(作業台では作れない)",
+   "en": "Cut Vermilion Urushi Lacquer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
   "tsubomi:ancient_shrine_stone_chiseled": {
    "station": "stonecutter",
    "inputs": [
@@ -3171,6 +3219,150 @@
    ],
    "ja": "石切台で、古社寺石レンガを切り出す(作業台では作れない)",
    "en": "Cut Ancient Shrine Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:aurora_electrum_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:aurora_electrum_bricks"
+   ],
+   "ja": "石切台で、琥珀金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Aurora Electrum Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:aurora_electrum_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:aurora_electrum_bricks"
+   ],
+   "ja": "石切台で、琥珀金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Aurora Electrum Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:aurora_electrum_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:aurora_electrum_bricks"
+   ],
+   "ja": "石切台で、琥珀金レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Aurora Electrum Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:aurora_electrum_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:aurora_electrum_bricks"
+   ],
+   "ja": "石切台で、琥珀金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Aurora Electrum Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:aurora_electrum_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:aurora_electrum_bricks"
+   ],
+   "ja": "石切台で、琥珀金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Aurora Electrum Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:aurora_electrum_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:aurora_electrum_bricks"
+   ],
+   "ja": "石切台で、琥珀金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Aurora Electrum Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:autumn_momiji_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:autumn_momiji_bricks"
+   ],
+   "ja": "石切台で、紅葉碧玉レンガを切り出す(作業台では作れない)",
+   "en": "Cut Crimson Momiji Jasper Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:autumn_momiji_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:autumn_momiji_bricks"
+   ],
+   "ja": "石切台で、紅葉碧玉レンガを切り出す(作業台では作れない)",
+   "en": "Cut Crimson Momiji Jasper Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:autumn_momiji_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:autumn_momiji_bricks"
+   ],
+   "ja": "石切台で、紅葉碧玉レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Crimson Momiji Jasper Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:autumn_momiji_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:autumn_momiji_bricks"
+   ],
+   "ja": "石切台で、紅葉碧玉レンガを切り出す(作業台では作れない)",
+   "en": "Cut Crimson Momiji Jasper Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:autumn_momiji_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:autumn_momiji_bricks"
+   ],
+   "ja": "石切台で、紅葉碧玉レンガを切り出す(作業台では作れない)",
+   "en": "Cut Crimson Momiji Jasper Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:autumn_momiji_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:autumn_momiji_bricks"
+   ],
+   "ja": "石切台で、紅葉碧玉レンガを切り出す(作業台では作れない)",
+   "en": "Cut Crimson Momiji Jasper Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:blood_moon_agate_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:blood_moon_agate_bricks"
+   ],
+   "ja": "石切台で、血月瑪瑙（メノウ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Blood Moon Agate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:blood_moon_agate_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:blood_moon_agate_bricks"
+   ],
+   "ja": "石切台で、血月瑪瑙（メノウ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Blood Moon Agate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:blood_moon_agate_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:blood_moon_agate_bricks"
+   ],
+   "ja": "石切台で、血月瑪瑙（メノウ）レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Blood Moon Agate Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:blood_moon_agate_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:blood_moon_agate_bricks"
+   ],
+   "ja": "石切台で、血月瑪瑙（メノウ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Blood Moon Agate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:blood_moon_agate_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:blood_moon_agate_bricks"
+   ],
+   "ja": "石切台で、血月瑪瑙（メノウ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Blood Moon Agate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:blood_moon_agate_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:blood_moon_agate_bricks"
+   ],
+   "ja": "石切台で、血月瑪瑙（メノウ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Blood Moon Agate Bricks on a stonecutter (it cannot be made at a workbench)"
   },
   "tsubomi:celestial_amethyst_chiseled": {
    "station": "stonecutter",
@@ -3220,6 +3412,150 @@
    "ja": "石切台で、天界紫水晶レンガを切り出す(作業台では作れない)",
    "en": "Cut Celestial Amethyst Bricks on a stonecutter (it cannot be made at a workbench)"
   },
+  "tsubomi:cobalt_chrome_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:cobalt_chrome_bricks"
+   ],
+   "ja": "石切台で、コバルトクロム合金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cobalt Chrome Alloy Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:cobalt_chrome_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:cobalt_chrome_bricks"
+   ],
+   "ja": "石切台で、コバルトクロム合金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cobalt Chrome Alloy Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:cobalt_chrome_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:cobalt_chrome_bricks"
+   ],
+   "ja": "石切台で、コバルトクロム合金レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Cobalt Chrome Alloy Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:cobalt_chrome_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:cobalt_chrome_bricks"
+   ],
+   "ja": "石切台で、コバルトクロム合金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cobalt Chrome Alloy Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:cobalt_chrome_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:cobalt_chrome_bricks"
+   ],
+   "ja": "石切台で、コバルトクロム合金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cobalt Chrome Alloy Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:cobalt_chrome_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:cobalt_chrome_bricks"
+   ],
+   "ja": "石切台で、コバルトクロム合金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cobalt Chrome Alloy Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:coral_limestone_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:coral_limestone_bricks"
+   ],
+   "ja": "石切台で、琉球珊瑚石灰岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ryukyu Coral Limestone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:coral_limestone_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:coral_limestone_bricks"
+   ],
+   "ja": "石切台で、琉球珊瑚石灰岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ryukyu Coral Limestone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:coral_limestone_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:coral_limestone_bricks"
+   ],
+   "ja": "石切台で、琉球珊瑚石灰岩レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Ryukyu Coral Limestone Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:coral_limestone_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:coral_limestone_bricks"
+   ],
+   "ja": "石切台で、琉球珊瑚石灰岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ryukyu Coral Limestone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:coral_limestone_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:coral_limestone_bricks"
+   ],
+   "ja": "石切台で、琉球珊瑚石灰岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ryukyu Coral Limestone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:coral_limestone_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:coral_limestone_bricks"
+   ],
+   "ja": "石切台で、琉球珊瑚石灰岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ryukyu Coral Limestone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:corvus_monolith_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:corvus_monolith_bricks"
+   ],
+   "ja": "石切台で、コルヴス黒曜装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Corvus Monolith Composite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:corvus_monolith_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:corvus_monolith_bricks"
+   ],
+   "ja": "石切台で、コルヴス黒曜装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Corvus Monolith Composite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:corvus_monolith_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:corvus_monolith_bricks"
+   ],
+   "ja": "石切台で、コルヴス黒曜装甲レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Corvus Monolith Composite Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:corvus_monolith_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:corvus_monolith_bricks"
+   ],
+   "ja": "石切台で、コルヴス黒曜装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Corvus Monolith Composite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:corvus_monolith_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:corvus_monolith_bricks"
+   ],
+   "ja": "石切台で、コルヴス黒曜装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Corvus Monolith Composite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:corvus_monolith_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:corvus_monolith_bricks"
+   ],
+   "ja": "石切台で、コルヴス黒曜装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Corvus Monolith Composite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
   "tsubomi:crimson_tamahagane_chiseled": {
    "station": "stonecutter",
    "inputs": [
@@ -3267,6 +3603,102 @@
    ],
    "ja": "石切台で、赫灼玉鋼レンガを切り出す(作業台では作れない)",
    "en": "Cut Crimson Tamahagane Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:cyber_graphene_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:cyber_graphene_bricks"
+   ],
+   "ja": "石切台で、六角グラフェン装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hexagonal Cyber Graphene Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:cyber_graphene_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:cyber_graphene_bricks"
+   ],
+   "ja": "石切台で、六角グラフェン装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hexagonal Cyber Graphene Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:cyber_graphene_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:cyber_graphene_bricks"
+   ],
+   "ja": "石切台で、六角グラフェン装甲レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Hexagonal Cyber Graphene Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:cyber_graphene_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:cyber_graphene_bricks"
+   ],
+   "ja": "石切台で、六角グラフェン装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hexagonal Cyber Graphene Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:cyber_graphene_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:cyber_graphene_bricks"
+   ],
+   "ja": "石切台で、六角グラフェン装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hexagonal Cyber Graphene Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:cyber_graphene_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:cyber_graphene_bricks"
+   ],
+   "ja": "石切台で、六角グラフェン装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hexagonal Cyber Graphene Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:damascus_oriharukon_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:damascus_oriharukon_bricks"
+   ],
+   "ja": "石切台で、積層ダマスカス鋼レンガを切り出す(作業台では作れない)",
+   "en": "Cut Layered Damascus Oriharukon Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:damascus_oriharukon_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:damascus_oriharukon_bricks"
+   ],
+   "ja": "石切台で、積層ダマスカス鋼レンガを切り出す(作業台では作れない)",
+   "en": "Cut Layered Damascus Oriharukon Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:damascus_oriharukon_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:damascus_oriharukon_bricks"
+   ],
+   "ja": "石切台で、積層ダマスカス鋼レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Layered Damascus Oriharukon Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:damascus_oriharukon_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:damascus_oriharukon_bricks"
+   ],
+   "ja": "石切台で、積層ダマスカス鋼レンガを切り出す(作業台では作れない)",
+   "en": "Cut Layered Damascus Oriharukon Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:damascus_oriharukon_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:damascus_oriharukon_bricks"
+   ],
+   "ja": "石切台で、積層ダマスカス鋼レンガを切り出す(作業台では作れない)",
+   "en": "Cut Layered Damascus Oriharukon Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:damascus_oriharukon_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:damascus_oriharukon_bricks"
+   ],
+   "ja": "石切台で、積層ダマスカス鋼レンガを切り出す(作業台では作れない)",
+   "en": "Cut Layered Damascus Oriharukon Bricks on a stonecutter (it cannot be made at a workbench)"
   },
   "tsubomi:deep_malachite_chiseled": {
    "station": "stonecutter",
@@ -3316,6 +3748,150 @@
    "ja": "石切台で、深孔雀石レンガを切り出す(作業台では作れない)",
    "en": "Cut Deep Malachite Bricks on a stonecutter (it cannot be made at a workbench)"
   },
+  "tsubomi:depleted_aetherium_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:depleted_aetherium_bricks"
+   ],
+   "ja": "石切台で、高密度エーテリウム装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Dense Aetherium Plate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:depleted_aetherium_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:depleted_aetherium_bricks"
+   ],
+   "ja": "石切台で、高密度エーテリウム装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Dense Aetherium Plate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:depleted_aetherium_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:depleted_aetherium_bricks"
+   ],
+   "ja": "石切台で、高密度エーテリウム装甲レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Dense Aetherium Plate Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:depleted_aetherium_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:depleted_aetherium_bricks"
+   ],
+   "ja": "石切台で、高密度エーテリウム装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Dense Aetherium Plate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:depleted_aetherium_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:depleted_aetherium_bricks"
+   ],
+   "ja": "石切台で、高密度エーテリウム装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Dense Aetherium Plate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:depleted_aetherium_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:depleted_aetherium_bricks"
+   ],
+   "ja": "石切台で、高密度エーテリウム装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Dense Aetherium Plate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:emerald_tourmaline_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:emerald_tourmaline_bricks"
+   ],
+   "ja": "石切台で、緑電気石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Verdelite Tourmaline Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:emerald_tourmaline_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:emerald_tourmaline_bricks"
+   ],
+   "ja": "石切台で、緑電気石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Verdelite Tourmaline Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:emerald_tourmaline_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:emerald_tourmaline_bricks"
+   ],
+   "ja": "石切台で、緑電気石レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Verdelite Tourmaline Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:emerald_tourmaline_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:emerald_tourmaline_bricks"
+   ],
+   "ja": "石切台で、緑電気石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Verdelite Tourmaline Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:emerald_tourmaline_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:emerald_tourmaline_bricks"
+   ],
+   "ja": "石切台で、緑電気石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Verdelite Tourmaline Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:emerald_tourmaline_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:emerald_tourmaline_bricks"
+   ],
+   "ja": "石切台で、緑電気石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Verdelite Tourmaline Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:eternity_bedrock_plate_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:eternity_bedrock_plate_bricks"
+   ],
+   "ja": "石切台で、永劫盤装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Refined Eternity Plate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:eternity_bedrock_plate_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:eternity_bedrock_plate_bricks"
+   ],
+   "ja": "石切台で、永劫盤装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Refined Eternity Plate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:eternity_bedrock_plate_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:eternity_bedrock_plate_bricks"
+   ],
+   "ja": "石切台で、永劫盤装甲レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Refined Eternity Plate Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:eternity_bedrock_plate_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:eternity_bedrock_plate_bricks"
+   ],
+   "ja": "石切台で、永劫盤装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Refined Eternity Plate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:eternity_bedrock_plate_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:eternity_bedrock_plate_bricks"
+   ],
+   "ja": "石切台で、永劫盤装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Refined Eternity Plate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:eternity_bedrock_plate_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:eternity_bedrock_plate_bricks"
+   ],
+   "ja": "石切台で、永劫盤装甲レンガを切り出す(作業台では作れない)",
+   "en": "Cut Refined Eternity Plate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
   "tsubomi:frost_prismarine_chiseled": {
    "station": "stonecutter",
    "inputs": [
@@ -3363,6 +3939,102 @@
    ],
    "ja": "石切台で、氷華プリズマリンレンガを切り出す(作業台では作れない)",
    "en": "Cut Frost Prismarine Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:gilded_travertine_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:gilded_travertine_bricks"
+   ],
+   "ja": "石切台で、湯の花黄金石灰華レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hot-Spring Gilded Travertine Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:gilded_travertine_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:gilded_travertine_bricks"
+   ],
+   "ja": "石切台で、湯の花黄金石灰華レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hot-Spring Gilded Travertine Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:gilded_travertine_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:gilded_travertine_bricks"
+   ],
+   "ja": "石切台で、湯の花黄金石灰華レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Hot-Spring Gilded Travertine Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:gilded_travertine_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:gilded_travertine_bricks"
+   ],
+   "ja": "石切台で、湯の花黄金石灰華レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hot-Spring Gilded Travertine Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:gilded_travertine_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:gilded_travertine_bricks"
+   ],
+   "ja": "石切台で、湯の花黄金石灰華レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hot-Spring Gilded Travertine Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:gilded_travertine_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:gilded_travertine_bricks"
+   ],
+   "ja": "石切台で、湯の花黄金石灰華レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hot-Spring Gilded Travertine Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:glacier_permafrost_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:glacier_permafrost_bricks"
+   ],
+   "ja": "石切台で、万年氷河岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Compressed Glacier Ice-Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:glacier_permafrost_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:glacier_permafrost_bricks"
+   ],
+   "ja": "石切台で、万年氷河岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Compressed Glacier Ice-Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:glacier_permafrost_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:glacier_permafrost_bricks"
+   ],
+   "ja": "石切台で、万年氷河岩レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Compressed Glacier Ice-Stone Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:glacier_permafrost_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:glacier_permafrost_bricks"
+   ],
+   "ja": "石切台で、万年氷河岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Compressed Glacier Ice-Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:glacier_permafrost_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:glacier_permafrost_bricks"
+   ],
+   "ja": "石切台で、万年氷河岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Compressed Glacier Ice-Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:glacier_permafrost_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:glacier_permafrost_bricks"
+   ],
+   "ja": "石切台で、万年氷河岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Compressed Glacier Ice-Stone Bricks on a stonecutter (it cannot be made at a workbench)"
   },
   "tsubomi:golden_kintsugi_chiseled": {
    "station": "stonecutter",
@@ -3460,6 +4132,198 @@
    "ja": "石切台で、ハリア蒼結晶レンガを切り出す(作業台では作れない)",
    "en": "Cut Halia Cyanite Bricks on a stonecutter (it cannot be made at a workbench)"
   },
+  "tsubomi:hiirogane_steel_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:hiirogane_steel_bricks"
+   ],
+   "ja": "石切台で、緋色金（ヒイロガネ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Mythic Hiirogane Steel Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:hiirogane_steel_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:hiirogane_steel_bricks"
+   ],
+   "ja": "石切台で、緋色金（ヒイロガネ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Mythic Hiirogane Steel Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:hiirogane_steel_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:hiirogane_steel_bricks"
+   ],
+   "ja": "石切台で、緋色金（ヒイロガネ）レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Mythic Hiirogane Steel Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:hiirogane_steel_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:hiirogane_steel_bricks"
+   ],
+   "ja": "石切台で、緋色金（ヒイロガネ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Mythic Hiirogane Steel Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:hiirogane_steel_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:hiirogane_steel_bricks"
+   ],
+   "ja": "石切台で、緋色金（ヒイロガネ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Mythic Hiirogane Steel Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:hiirogane_steel_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:hiirogane_steel_bricks"
+   ],
+   "ja": "石切台で、緋色金（ヒイロガネ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Mythic Hiirogane Steel Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:hinoki_timber_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:hinoki_timber_bricks"
+   ],
+   "ja": "石切台で、神代檜（ヒノキ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sacred Hinoki Timber Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:hinoki_timber_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:hinoki_timber_bricks"
+   ],
+   "ja": "石切台で、神代檜（ヒノキ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sacred Hinoki Timber Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:hinoki_timber_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:hinoki_timber_bricks"
+   ],
+   "ja": "石切台で、神代檜（ヒノキ）レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Sacred Hinoki Timber Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:hinoki_timber_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:hinoki_timber_bricks"
+   ],
+   "ja": "石切台で、神代檜（ヒノキ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sacred Hinoki Timber Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:hinoki_timber_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:hinoki_timber_bricks"
+   ],
+   "ja": "石切台で、神代檜（ヒノキ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sacred Hinoki Timber Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:hinoki_timber_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:hinoki_timber_bricks"
+   ],
+   "ja": "石切台で、神代檜（ヒノキ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sacred Hinoki Timber Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:holo_glass_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:holo_glass_bricks"
+   ],
+   "ja": "石切台で、ホログラム結晶壁レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hardlight Holo-Matrix Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:holo_glass_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:holo_glass_bricks"
+   ],
+   "ja": "石切台で、ホログラム結晶壁レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hardlight Holo-Matrix Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:holo_glass_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:holo_glass_bricks"
+   ],
+   "ja": "石切台で、ホログラム結晶壁レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Hardlight Holo-Matrix Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:holo_glass_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:holo_glass_bricks"
+   ],
+   "ja": "石切台で、ホログラム結晶壁レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hardlight Holo-Matrix Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:holo_glass_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:holo_glass_bricks"
+   ],
+   "ja": "石切台で、ホログラム結晶壁レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hardlight Holo-Matrix Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:holo_glass_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:holo_glass_bricks"
+   ],
+   "ja": "石切台で、ホログラム結晶壁レンガを切り出す(作業台では作れない)",
+   "en": "Cut Hardlight Holo-Matrix Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:imperial_onyx_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:imperial_onyx_bricks"
+   ],
+   "ja": "石切台で、黒曜縞瑪瑙レンガを切り出す(作業台では作れない)",
+   "en": "Cut Polished Imperial Onyx Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:imperial_onyx_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:imperial_onyx_bricks"
+   ],
+   "ja": "石切台で、黒曜縞瑪瑙レンガを切り出す(作業台では作れない)",
+   "en": "Cut Polished Imperial Onyx Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:imperial_onyx_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:imperial_onyx_bricks"
+   ],
+   "ja": "石切台で、黒曜縞瑪瑙レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Polished Imperial Onyx Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:imperial_onyx_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:imperial_onyx_bricks"
+   ],
+   "ja": "石切台で、黒曜縞瑪瑙レンガを切り出す(作業台では作れない)",
+   "en": "Cut Polished Imperial Onyx Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:imperial_onyx_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:imperial_onyx_bricks"
+   ],
+   "ja": "石切台で、黒曜縞瑪瑙レンガを切り出す(作業台では作れない)",
+   "en": "Cut Polished Imperial Onyx Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:imperial_onyx_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:imperial_onyx_bricks"
+   ],
+   "ja": "石切台で、黒曜縞瑪瑙レンガを切り出す(作業台では作れない)",
+   "en": "Cut Polished Imperial Onyx Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
   "tsubomi:indigo_lapis_chiseled": {
    "station": "stonecutter",
    "inputs": [
@@ -3507,6 +4371,102 @@
    ],
    "ja": "石切台で、藍青金石レンガを切り出す(作業台では作れない)",
    "en": "Cut Indigo Lapis Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:ion_conduit_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:ion_conduit_bricks"
+   ],
+   "ja": "石切台で、イオンプラズマ導管レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ion Plasma Conduit Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:ion_conduit_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:ion_conduit_bricks"
+   ],
+   "ja": "石切台で、イオンプラズマ導管レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ion Plasma Conduit Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:ion_conduit_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:ion_conduit_bricks"
+   ],
+   "ja": "石切台で、イオンプラズマ導管レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Ion Plasma Conduit Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:ion_conduit_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:ion_conduit_bricks"
+   ],
+   "ja": "石切台で、イオンプラズマ導管レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ion Plasma Conduit Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:ion_conduit_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:ion_conduit_bricks"
+   ],
+   "ja": "石切台で、イオンプラズマ導管レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ion Plasma Conduit Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:ion_conduit_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:ion_conduit_bricks"
+   ],
+   "ja": "石切台で、イオンプラズマ導管レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ion Plasma Conduit Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:kawara_slate_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kawara_slate_bricks"
+   ],
+   "ja": "石切台で、いぶし瓦石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ibushi Kawara Tile-Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:kawara_slate_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kawara_slate_bricks"
+   ],
+   "ja": "石切台で、いぶし瓦石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ibushi Kawara Tile-Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:kawara_slate_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kawara_slate_bricks"
+   ],
+   "ja": "石切台で、いぶし瓦石レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Ibushi Kawara Tile-Stone Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:kawara_slate_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kawara_slate_bricks"
+   ],
+   "ja": "石切台で、いぶし瓦石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ibushi Kawara Tile-Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:kawara_slate_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kawara_slate_bricks"
+   ],
+   "ja": "石切台で、いぶし瓦石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ibushi Kawara Tile-Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:kawara_slate_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kawara_slate_bricks"
+   ],
+   "ja": "石切台で、いぶし瓦石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ibushi Kawara Tile-Stone Bricks on a stonecutter (it cannot be made at a workbench)"
   },
   "tsubomi:kiln_terracotta_chiseled": {
    "station": "stonecutter",
@@ -3556,6 +4516,102 @@
    "ja": "石切台で、窯焼き陶土レンガを切り出す(作業台では作れない)",
    "en": "Cut Kiln Terracotta Bricks on a stonecutter (it cannot be made at a workbench)"
   },
+  "tsubomi:kiri_paulownia_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kiri_paulownia_bricks"
+   ],
+   "ja": "石切台で、桐箪笥材レンガを切り出す(作業台では作れない)",
+   "en": "Cut Kiri Paulownia Timber Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:kiri_paulownia_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kiri_paulownia_bricks"
+   ],
+   "ja": "石切台で、桐箪笥材レンガを切り出す(作業台では作れない)",
+   "en": "Cut Kiri Paulownia Timber Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:kiri_paulownia_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kiri_paulownia_bricks"
+   ],
+   "ja": "石切台で、桐箪笥材レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Kiri Paulownia Timber Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:kiri_paulownia_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kiri_paulownia_bricks"
+   ],
+   "ja": "石切台で、桐箪笥材レンガを切り出す(作業台では作れない)",
+   "en": "Cut Kiri Paulownia Timber Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:kiri_paulownia_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kiri_paulownia_bricks"
+   ],
+   "ja": "石切台で、桐箪笥材レンガを切り出す(作業台では作れない)",
+   "en": "Cut Kiri Paulownia Timber Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:kiri_paulownia_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kiri_paulownia_bricks"
+   ],
+   "ja": "石切台で、桐箪笥材レンガを切り出す(作業台では作れない)",
+   "en": "Cut Kiri Paulownia Timber Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:kuro_urushi_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kuro_urushi_bricks"
+   ],
+   "ja": "石切台で、黒呂色漆塗レンガを切り出す(作業台では作れない)",
+   "en": "Cut Jet Kuro-Urushi Lacquer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:kuro_urushi_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kuro_urushi_bricks"
+   ],
+   "ja": "石切台で、黒呂色漆塗レンガを切り出す(作業台では作れない)",
+   "en": "Cut Jet Kuro-Urushi Lacquer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:kuro_urushi_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kuro_urushi_bricks"
+   ],
+   "ja": "石切台で、黒呂色漆塗レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Jet Kuro-Urushi Lacquer Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:kuro_urushi_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kuro_urushi_bricks"
+   ],
+   "ja": "石切台で、黒呂色漆塗レンガを切り出す(作業台では作れない)",
+   "en": "Cut Jet Kuro-Urushi Lacquer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:kuro_urushi_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kuro_urushi_bricks"
+   ],
+   "ja": "石切台で、黒呂色漆塗レンガを切り出す(作業台では作れない)",
+   "en": "Cut Jet Kuro-Urushi Lacquer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:kuro_urushi_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:kuro_urushi_bricks"
+   ],
+   "ja": "石切台で、黒呂色漆塗レンガを切り出す(作業台では作れない)",
+   "en": "Cut Jet Kuro-Urushi Lacquer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
   "tsubomi:kurogane_titanium_chiseled": {
    "station": "stonecutter",
    "inputs": [
@@ -3604,6 +4660,150 @@
    "ja": "石切台で、黒鉄チタニウムレンガを切り出す(作業台では作れない)",
    "en": "Cut Kurogane Titanium Bricks on a stonecutter (it cannot be made at a workbench)"
   },
+  "tsubomi:lunar_selenite_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:lunar_selenite_bricks"
+   ],
+   "ja": "石切台で、月光透石膏レンガを切り出す(作業台では作れない)",
+   "en": "Cut Pale Lunar Selenite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:lunar_selenite_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:lunar_selenite_bricks"
+   ],
+   "ja": "石切台で、月光透石膏レンガを切り出す(作業台では作れない)",
+   "en": "Cut Pale Lunar Selenite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:lunar_selenite_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:lunar_selenite_bricks"
+   ],
+   "ja": "石切台で、月光透石膏レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Pale Lunar Selenite Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:lunar_selenite_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:lunar_selenite_bricks"
+   ],
+   "ja": "石切台で、月光透石膏レンガを切り出す(作業台では作れない)",
+   "en": "Cut Pale Lunar Selenite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:lunar_selenite_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:lunar_selenite_bricks"
+   ],
+   "ja": "石切台で、月光透石膏レンガを切り出す(作業台では作れない)",
+   "en": "Cut Pale Lunar Selenite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:lunar_selenite_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:lunar_selenite_bricks"
+   ],
+   "ja": "石切台で、月光透石膏レンガを切り出す(作業台では作れない)",
+   "en": "Cut Pale Lunar Selenite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:mist_celestite_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:mist_celestite_bricks"
+   ],
+   "ja": "石切台で、霞天青石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ethereal Mist Celestite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:mist_celestite_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:mist_celestite_bricks"
+   ],
+   "ja": "石切台で、霞天青石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ethereal Mist Celestite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:mist_celestite_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:mist_celestite_bricks"
+   ],
+   "ja": "石切台で、霞天青石レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Ethereal Mist Celestite Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:mist_celestite_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:mist_celestite_bricks"
+   ],
+   "ja": "石切台で、霞天青石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ethereal Mist Celestite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:mist_celestite_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:mist_celestite_bricks"
+   ],
+   "ja": "石切台で、霞天青石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ethereal Mist Celestite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:mist_celestite_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:mist_celestite_bricks"
+   ],
+   "ja": "石切台で、霞天青石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Ethereal Mist Celestite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:nebula_opal_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:nebula_opal_bricks"
+   ],
+   "ja": "石切台で、星雲オパールレンガを切り出す(作業台では作れない)",
+   "en": "Cut Iridescent Nebula Opal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:nebula_opal_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:nebula_opal_bricks"
+   ],
+   "ja": "石切台で、星雲オパールレンガを切り出す(作業台では作れない)",
+   "en": "Cut Iridescent Nebula Opal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:nebula_opal_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:nebula_opal_bricks"
+   ],
+   "ja": "石切台で、星雲オパールレンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Iridescent Nebula Opal Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:nebula_opal_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:nebula_opal_bricks"
+   ],
+   "ja": "石切台で、星雲オパールレンガを切り出す(作業台では作れない)",
+   "en": "Cut Iridescent Nebula Opal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:nebula_opal_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:nebula_opal_bricks"
+   ],
+   "ja": "石切台で、星雲オパールレンガを切り出す(作業台では作れない)",
+   "en": "Cut Iridescent Nebula Opal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:nebula_opal_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:nebula_opal_bricks"
+   ],
+   "ja": "石切台で、星雲オパールレンガを切り出す(作業台では作れない)",
+   "en": "Cut Iridescent Nebula Opal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
   "tsubomi:neon_bismuth_chiseled": {
    "station": "stonecutter",
    "inputs": [
@@ -3651,6 +4851,150 @@
    ],
    "ja": "石切台で、虹彩ビスマスレンガを切り出す(作業台では作れない)",
    "en": "Cut Neon Bismuth Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:neural_circuit_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:neural_circuit_bricks"
+   ],
+   "ja": "石切台で、ニューラル回路基板レンガを切り出す(作業台では作れない)",
+   "en": "Cut Neural Circuit Matrix Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:neural_circuit_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:neural_circuit_bricks"
+   ],
+   "ja": "石切台で、ニューラル回路基板レンガを切り出す(作業台では作れない)",
+   "en": "Cut Neural Circuit Matrix Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:neural_circuit_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:neural_circuit_bricks"
+   ],
+   "ja": "石切台で、ニューラル回路基板レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Neural Circuit Matrix Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:neural_circuit_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:neural_circuit_bricks"
+   ],
+   "ja": "石切台で、ニューラル回路基板レンガを切り出す(作業台では作れない)",
+   "en": "Cut Neural Circuit Matrix Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:neural_circuit_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:neural_circuit_bricks"
+   ],
+   "ja": "石切台で、ニューラル回路基板レンガを切り出す(作業台では作れない)",
+   "en": "Cut Neural Circuit Matrix Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:neural_circuit_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:neural_circuit_bricks"
+   ],
+   "ja": "石切台で、ニューラル回路基板レンガを切り出す(作業台では作れない)",
+   "en": "Cut Neural Circuit Matrix Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:nuri_kabe_clay_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:nuri_kabe_clay_bricks"
+   ],
+   "ja": "石切台で、塗り壁土レンガを切り出す(作業台では作れない)",
+   "en": "Cut Nuri-kabe Earthen Wall Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:nuri_kabe_clay_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:nuri_kabe_clay_bricks"
+   ],
+   "ja": "石切台で、塗り壁土レンガを切り出す(作業台では作れない)",
+   "en": "Cut Nuri-kabe Earthen Wall Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:nuri_kabe_clay_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:nuri_kabe_clay_bricks"
+   ],
+   "ja": "石切台で、塗り壁土レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Nuri-kabe Earthen Wall Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:nuri_kabe_clay_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:nuri_kabe_clay_bricks"
+   ],
+   "ja": "石切台で、塗り壁土レンガを切り出す(作業台では作れない)",
+   "en": "Cut Nuri-kabe Earthen Wall Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:nuri_kabe_clay_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:nuri_kabe_clay_bricks"
+   ],
+   "ja": "石切台で、塗り壁土レンガを切り出す(作業台では作れない)",
+   "en": "Cut Nuri-kabe Earthen Wall Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:nuri_kabe_clay_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:nuri_kabe_clay_bricks"
+   ],
+   "ja": "石切台で、塗り壁土レンガを切り出す(作業台では作れない)",
+   "en": "Cut Nuri-kabe Earthen Wall Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:orbital_ceramic_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:orbital_ceramic_bricks"
+   ],
+   "ja": "石切台で、軌道耐熱セラミックレンガを切り出す(作業台では作れない)",
+   "en": "Cut Heatshield Orbital Ceramic Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:orbital_ceramic_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:orbital_ceramic_bricks"
+   ],
+   "ja": "石切台で、軌道耐熱セラミックレンガを切り出す(作業台では作れない)",
+   "en": "Cut Heatshield Orbital Ceramic Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:orbital_ceramic_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:orbital_ceramic_bricks"
+   ],
+   "ja": "石切台で、軌道耐熱セラミックレンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Heatshield Orbital Ceramic Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:orbital_ceramic_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:orbital_ceramic_bricks"
+   ],
+   "ja": "石切台で、軌道耐熱セラミックレンガを切り出す(作業台では作れない)",
+   "en": "Cut Heatshield Orbital Ceramic Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:orbital_ceramic_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:orbital_ceramic_bricks"
+   ],
+   "ja": "石切台で、軌道耐熱セラミックレンガを切り出す(作業台では作れない)",
+   "en": "Cut Heatshield Orbital Ceramic Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:orbital_ceramic_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:orbital_ceramic_bricks"
+   ],
+   "ja": "石切台で、軌道耐熱セラミックレンガを切り出す(作業台では作れない)",
+   "en": "Cut Heatshield Orbital Ceramic Bricks on a stonecutter (it cannot be made at a workbench)"
   },
   "tsubomi:ouka_steel_chiseled": {
    "station": "stonecutter",
@@ -3796,6 +5140,198 @@
    "ja": "石切台で、幻影合金レンガを切り出す(作業台では作れない)",
    "en": "Cut Phantom Alloy Bricks on a stonecutter (it cannot be made at a workbench)"
   },
+  "tsubomi:quantum_polymer_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:quantum_polymer_bricks"
+   ],
+   "ja": "石切台で、量子ポリマー白壁レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cleanroom Quantum Polymer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:quantum_polymer_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:quantum_polymer_bricks"
+   ],
+   "ja": "石切台で、量子ポリマー白壁レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cleanroom Quantum Polymer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:quantum_polymer_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:quantum_polymer_bricks"
+   ],
+   "ja": "石切台で、量子ポリマー白壁レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Cleanroom Quantum Polymer Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:quantum_polymer_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:quantum_polymer_bricks"
+   ],
+   "ja": "石切台で、量子ポリマー白壁レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cleanroom Quantum Polymer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:quantum_polymer_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:quantum_polymer_bricks"
+   ],
+   "ja": "石切台で、量子ポリマー白壁レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cleanroom Quantum Polymer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:quantum_polymer_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:quantum_polymer_bricks"
+   ],
+   "ja": "石切台で、量子ポリマー白壁レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cleanroom Quantum Polymer Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:reactor_coolant_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:reactor_coolant_bricks"
+   ],
+   "ja": "石切台で、冷却リアクター外装レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cryo Reactor Casing Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:reactor_coolant_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:reactor_coolant_bricks"
+   ],
+   "ja": "石切台で、冷却リアクター外装レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cryo Reactor Casing Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:reactor_coolant_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:reactor_coolant_bricks"
+   ],
+   "ja": "石切台で、冷却リアクター外装レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Cryo Reactor Casing Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:reactor_coolant_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:reactor_coolant_bricks"
+   ],
+   "ja": "石切台で、冷却リアクター外装レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cryo Reactor Casing Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:reactor_coolant_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:reactor_coolant_bricks"
+   ],
+   "ja": "石切台で、冷却リアクター外装レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cryo Reactor Casing Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:reactor_coolant_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:reactor_coolant_bricks"
+   ],
+   "ja": "石切台で、冷却リアクター外装レンガを切り出す(作業台では作れない)",
+   "en": "Cut Cryo Reactor Casing Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:ronin_gunmetal_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:ronin_gunmetal_bricks"
+   ],
+   "ja": "石切台で、浪人ガンメタルレンガを切り出す(作業台では作れない)",
+   "en": "Cut Brushed Ronin Gunmetal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:ronin_gunmetal_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:ronin_gunmetal_bricks"
+   ],
+   "ja": "石切台で、浪人ガンメタルレンガを切り出す(作業台では作れない)",
+   "en": "Cut Brushed Ronin Gunmetal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:ronin_gunmetal_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:ronin_gunmetal_bricks"
+   ],
+   "ja": "石切台で、浪人ガンメタルレンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Brushed Ronin Gunmetal Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:ronin_gunmetal_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:ronin_gunmetal_bricks"
+   ],
+   "ja": "石切台で、浪人ガンメタルレンガを切り出す(作業台では作れない)",
+   "en": "Cut Brushed Ronin Gunmetal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:ronin_gunmetal_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:ronin_gunmetal_bricks"
+   ],
+   "ja": "石切台で、浪人ガンメタルレンガを切り出す(作業台では作れない)",
+   "en": "Cut Brushed Ronin Gunmetal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:ronin_gunmetal_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:ronin_gunmetal_bricks"
+   ],
+   "ja": "石切台で、浪人ガンメタルレンガを切り出す(作業台では作れない)",
+   "en": "Cut Brushed Ronin Gunmetal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sabi_rust_iron_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sabi_rust_iron_bricks"
+   ],
+   "ja": "石切台で、錆鉄レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sabi Rust Iron Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sabi_rust_iron_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sabi_rust_iron_bricks"
+   ],
+   "ja": "石切台で、錆鉄レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sabi Rust Iron Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sabi_rust_iron_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sabi_rust_iron_bricks"
+   ],
+   "ja": "石切台で、錆鉄レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Sabi Rust Iron Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:sabi_rust_iron_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sabi_rust_iron_bricks"
+   ],
+   "ja": "石切台で、錆鉄レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sabi Rust Iron Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sabi_rust_iron_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sabi_rust_iron_bricks"
+   ],
+   "ja": "石切台で、錆鉄レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sabi Rust Iron Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sabi_rust_iron_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sabi_rust_iron_bricks"
+   ],
+   "ja": "石切台で、錆鉄レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sabi Rust Iron Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
   "tsubomi:shadow_basalt_chiseled": {
    "station": "stonecutter",
    "inputs": [
@@ -3843,6 +5379,150 @@
    ],
    "ja": "石切台で、影玄武岩レンガを切り出す(作業台では作れない)",
    "en": "Cut Shadow Basalt Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shakudo_bronze_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shakudo_bronze_bricks"
+   ],
+   "ja": "石切台で、赤銅（シャクドウ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Patina Shakudo Bronze Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shakudo_bronze_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shakudo_bronze_bricks"
+   ],
+   "ja": "石切台で、赤銅（シャクドウ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Patina Shakudo Bronze Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shakudo_bronze_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shakudo_bronze_bricks"
+   ],
+   "ja": "石切台で、赤銅（シャクドウ）レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Patina Shakudo Bronze Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:shakudo_bronze_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shakudo_bronze_bricks"
+   ],
+   "ja": "石切台で、赤銅（シャクドウ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Patina Shakudo Bronze Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shakudo_bronze_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shakudo_bronze_bricks"
+   ],
+   "ja": "石切台で、赤銅（シャクドウ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Patina Shakudo Bronze Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shakudo_bronze_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shakudo_bronze_bricks"
+   ],
+   "ja": "石切台で、赤銅（シャクドウ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Patina Shakudo Bronze Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shibuichi_silver_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shibuichi_silver_bricks"
+   ],
+   "ja": "石切台で、四分一銀合金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Pale Shibuichi Silver Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shibuichi_silver_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shibuichi_silver_bricks"
+   ],
+   "ja": "石切台で、四分一銀合金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Pale Shibuichi Silver Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shibuichi_silver_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shibuichi_silver_bricks"
+   ],
+   "ja": "石切台で、四分一銀合金レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Pale Shibuichi Silver Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:shibuichi_silver_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shibuichi_silver_bricks"
+   ],
+   "ja": "石切台で、四分一銀合金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Pale Shibuichi Silver Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shibuichi_silver_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shibuichi_silver_bricks"
+   ],
+   "ja": "石切台で、四分一銀合金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Pale Shibuichi Silver Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shibuichi_silver_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shibuichi_silver_bricks"
+   ],
+   "ja": "石切台で、四分一銀合金レンガを切り出す(作業台では作れない)",
+   "en": "Cut Pale Shibuichi Silver Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shikkui_plaster_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shikkui_plaster_bricks"
+   ],
+   "ja": "石切台で、白鷺漆喰レンガを切り出す(作業台では作れない)",
+   "en": "Cut White Castle Shikkui Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shikkui_plaster_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shikkui_plaster_bricks"
+   ],
+   "ja": "石切台で、白鷺漆喰レンガを切り出す(作業台では作れない)",
+   "en": "Cut White Castle Shikkui Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shikkui_plaster_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shikkui_plaster_bricks"
+   ],
+   "ja": "石切台で、白鷺漆喰レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut White Castle Shikkui Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:shikkui_plaster_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shikkui_plaster_bricks"
+   ],
+   "ja": "石切台で、白鷺漆喰レンガを切り出す(作業台では作れない)",
+   "en": "Cut White Castle Shikkui Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shikkui_plaster_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shikkui_plaster_bricks"
+   ],
+   "ja": "石切台で、白鷺漆喰レンガを切り出す(作業台では作れない)",
+   "en": "Cut White Castle Shikkui Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:shikkui_plaster_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:shikkui_plaster_bricks"
+   ],
+   "ja": "石切台で、白鷺漆喰レンガを切り出す(作業台では作れない)",
+   "en": "Cut White Castle Shikkui Bricks on a stonecutter (it cannot be made at a workbench)"
   },
   "tsubomi:snow_marble_chiseled": {
    "station": "stonecutter",
@@ -3892,6 +5572,102 @@
    "ja": "石切台で、雪白大理石レンガを切り出す(作業台では作れない)",
    "en": "Cut Snow Marble Bricks on a stonecutter (it cannot be made at a workbench)"
   },
+  "tsubomi:snowcap_granite_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:snowcap_granite_bricks"
+   ],
+   "ja": "石切台で、富士白雪御影石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Fuji Snowcap Granite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:snowcap_granite_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:snowcap_granite_bricks"
+   ],
+   "ja": "石切台で、富士白雪御影石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Fuji Snowcap Granite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:snowcap_granite_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:snowcap_granite_bricks"
+   ],
+   "ja": "石切台で、富士白雪御影石レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Fuji Snowcap Granite Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:snowcap_granite_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:snowcap_granite_bricks"
+   ],
+   "ja": "石切台で、富士白雪御影石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Fuji Snowcap Granite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:snowcap_granite_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:snowcap_granite_bricks"
+   ],
+   "ja": "石切台で、富士白雪御影石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Fuji Snowcap Granite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:snowcap_granite_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:snowcap_granite_bricks"
+   ],
+   "ja": "石切台で、富士白雪御影石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Fuji Snowcap Granite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:soulfire_garnet_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:soulfire_garnet_bricks"
+   ],
+   "ja": "石切台で、魂炎ガーネットレンガを切り出す(作業台では作れない)",
+   "en": "Cut Soulfire Garnet Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:soulfire_garnet_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:soulfire_garnet_bricks"
+   ],
+   "ja": "石切台で、魂炎ガーネットレンガを切り出す(作業台では作れない)",
+   "en": "Cut Soulfire Garnet Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:soulfire_garnet_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:soulfire_garnet_bricks"
+   ],
+   "ja": "石切台で、魂炎ガーネットレンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Soulfire Garnet Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:soulfire_garnet_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:soulfire_garnet_bricks"
+   ],
+   "ja": "石切台で、魂炎ガーネットレンガを切り出す(作業台では作れない)",
+   "en": "Cut Soulfire Garnet Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:soulfire_garnet_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:soulfire_garnet_bricks"
+   ],
+   "ja": "石切台で、魂炎ガーネットレンガを切り出す(作業台では作れない)",
+   "en": "Cut Soulfire Garnet Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:soulfire_garnet_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:soulfire_garnet_bricks"
+   ],
+   "ja": "石切台で、魂炎ガーネットレンガを切り出す(作業台では作れない)",
+   "en": "Cut Soulfire Garnet Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
   "tsubomi:starlight_nether_brick_chiseled": {
    "station": "stonecutter",
    "inputs": [
@@ -3939,6 +5715,198 @@
    ],
    "ja": "石切台で、星輝ネザーレンガを切り出す(作業台では作れない)",
    "en": "Cut Starlight Nether Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:stealth_aramid_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:stealth_aramid_bricks"
+   ],
+   "ja": "石切台で、吸音ステルス複合材レンガを切り出す(作業台では作れない)",
+   "en": "Cut Acoustic Stealth Aramid Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:stealth_aramid_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:stealth_aramid_bricks"
+   ],
+   "ja": "石切台で、吸音ステルス複合材レンガを切り出す(作業台では作れない)",
+   "en": "Cut Acoustic Stealth Aramid Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:stealth_aramid_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:stealth_aramid_bricks"
+   ],
+   "ja": "石切台で、吸音ステルス複合材レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Acoustic Stealth Aramid Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:stealth_aramid_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:stealth_aramid_bricks"
+   ],
+   "ja": "石切台で、吸音ステルス複合材レンガを切り出す(作業台では作れない)",
+   "en": "Cut Acoustic Stealth Aramid Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:stealth_aramid_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:stealth_aramid_bricks"
+   ],
+   "ja": "石切台で、吸音ステルス複合材レンガを切り出す(作業台では作れない)",
+   "en": "Cut Acoustic Stealth Aramid Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:stealth_aramid_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:stealth_aramid_bricks"
+   ],
+   "ja": "石切台で、吸音ステルス複合材レンガを切り出す(作業台では作れない)",
+   "en": "Cut Acoustic Stealth Aramid Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sulphur_crystal_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sulphur_crystal_bricks"
+   ],
+   "ja": "石切台で、硫黄結晶レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sulphur Crystal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sulphur_crystal_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sulphur_crystal_bricks"
+   ],
+   "ja": "石切台で、硫黄結晶レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sulphur Crystal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sulphur_crystal_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sulphur_crystal_bricks"
+   ],
+   "ja": "石切台で、硫黄結晶レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Sulphur Crystal Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:sulphur_crystal_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sulphur_crystal_bricks"
+   ],
+   "ja": "石切台で、硫黄結晶レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sulphur Crystal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sulphur_crystal_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sulphur_crystal_bricks"
+   ],
+   "ja": "石切台で、硫黄結晶レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sulphur Crystal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sulphur_crystal_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sulphur_crystal_bricks"
+   ],
+   "ja": "石切台で、硫黄結晶レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sulphur Crystal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sumi_ink_slate_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sumi_ink_slate_bricks"
+   ],
+   "ja": "石切台で、墨硯石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sumi Ink Slate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sumi_ink_slate_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sumi_ink_slate_bricks"
+   ],
+   "ja": "石切台で、墨硯石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sumi Ink Slate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sumi_ink_slate_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sumi_ink_slate_bricks"
+   ],
+   "ja": "石切台で、墨硯石レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Sumi Ink Slate Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:sumi_ink_slate_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sumi_ink_slate_bricks"
+   ],
+   "ja": "石切台で、墨硯石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sumi Ink Slate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sumi_ink_slate_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sumi_ink_slate_bricks"
+   ],
+   "ja": "石切台で、墨硯石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sumi Ink Slate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sumi_ink_slate_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sumi_ink_slate_bricks"
+   ],
+   "ja": "石切台で、墨硯石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Sumi Ink Slate Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sunfire_citrine_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sunfire_citrine_bricks"
+   ],
+   "ja": "石切台で、赫陽シトリンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Sunfire Citrine Crystal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sunfire_citrine_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sunfire_citrine_bricks"
+   ],
+   "ja": "石切台で、赫陽シトリンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Sunfire Citrine Crystal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sunfire_citrine_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sunfire_citrine_bricks"
+   ],
+   "ja": "石切台で、赫陽シトリンレンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Sunfire Citrine Crystal Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:sunfire_citrine_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sunfire_citrine_bricks"
+   ],
+   "ja": "石切台で、赫陽シトリンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Sunfire Citrine Crystal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sunfire_citrine_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sunfire_citrine_bricks"
+   ],
+   "ja": "石切台で、赫陽シトリンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Sunfire Citrine Crystal Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:sunfire_citrine_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:sunfire_citrine_bricks"
+   ],
+   "ja": "石切台で、赫陽シトリンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Sunfire Citrine Crystal Bricks on a stonecutter (it cannot be made at a workbench)"
   },
   "tsubomi:tactical_carbon_chiseled": {
    "station": "stonecutter",
@@ -3988,6 +5956,198 @@
    "ja": "石切台で、戦術カーボンレンガを切り出す(作業台では作れない)",
    "en": "Cut Tactical Carbon Bricks on a stonecutter (it cannot be made at a workbench)"
   },
+  "tsubomi:tanzanite_dusk_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:tanzanite_dusk_bricks"
+   ],
+   "ja": "石切台で、夕暮れタンザナイトレンガを切り出す(作業台では作れない)",
+   "en": "Cut Tanzanite Dusk Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:tanzanite_dusk_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:tanzanite_dusk_bricks"
+   ],
+   "ja": "石切台で、夕暮れタンザナイトレンガを切り出す(作業台では作れない)",
+   "en": "Cut Tanzanite Dusk Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:tanzanite_dusk_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:tanzanite_dusk_bricks"
+   ],
+   "ja": "石切台で、夕暮れタンザナイトレンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Tanzanite Dusk Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:tanzanite_dusk_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:tanzanite_dusk_bricks"
+   ],
+   "ja": "石切台で、夕暮れタンザナイトレンガを切り出す(作業台では作れない)",
+   "en": "Cut Tanzanite Dusk Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:tanzanite_dusk_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:tanzanite_dusk_bricks"
+   ],
+   "ja": "石切台で、夕暮れタンザナイトレンガを切り出す(作業台では作れない)",
+   "en": "Cut Tanzanite Dusk Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:tanzanite_dusk_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:tanzanite_dusk_bricks"
+   ],
+   "ja": "石切台で、夕暮れタンザナイトレンガを切り出す(作業台では作れない)",
+   "en": "Cut Tanzanite Dusk Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:thunder_fulgurite_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:thunder_fulgurite_bricks"
+   ],
+   "ja": "石切台で、雷撃閃電岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Charged Thunder Fulgurite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:thunder_fulgurite_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:thunder_fulgurite_bricks"
+   ],
+   "ja": "石切台で、雷撃閃電岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Charged Thunder Fulgurite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:thunder_fulgurite_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:thunder_fulgurite_bricks"
+   ],
+   "ja": "石切台で、雷撃閃電岩レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Charged Thunder Fulgurite Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:thunder_fulgurite_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:thunder_fulgurite_bricks"
+   ],
+   "ja": "石切台で、雷撃閃電岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Charged Thunder Fulgurite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:thunder_fulgurite_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:thunder_fulgurite_bricks"
+   ],
+   "ja": "石切台で、雷撃閃電岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Charged Thunder Fulgurite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:thunder_fulgurite_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:thunder_fulgurite_bricks"
+   ],
+   "ja": "石切台で、雷撃閃電岩レンガを切り出す(作業台では作れない)",
+   "en": "Cut Charged Thunder Fulgurite Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:titan_vanadium_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:titan_vanadium_bricks"
+   ],
+   "ja": "石切台で、バナジウム鋼レンガを切り出す(作業台では作れない)",
+   "en": "Cut Titan Vanadium Steel Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:titan_vanadium_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:titan_vanadium_bricks"
+   ],
+   "ja": "石切台で、バナジウム鋼レンガを切り出す(作業台では作れない)",
+   "en": "Cut Titan Vanadium Steel Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:titan_vanadium_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:titan_vanadium_bricks"
+   ],
+   "ja": "石切台で、バナジウム鋼レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Titan Vanadium Steel Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:titan_vanadium_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:titan_vanadium_bricks"
+   ],
+   "ja": "石切台で、バナジウム鋼レンガを切り出す(作業台では作れない)",
+   "en": "Cut Titan Vanadium Steel Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:titan_vanadium_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:titan_vanadium_bricks"
+   ],
+   "ja": "石切台で、バナジウム鋼レンガを切り出す(作業台では作れない)",
+   "en": "Cut Titan Vanadium Steel Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:titan_vanadium_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:titan_vanadium_bricks"
+   ],
+   "ja": "石切台で、バナジウム鋼レンガを切り出す(作業台では作れない)",
+   "en": "Cut Titan Vanadium Steel Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:tungsten_carbide_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:tungsten_carbide_bricks"
+   ],
+   "ja": "石切台で、重装タングステンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Ballistic Tungsten Carbide Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:tungsten_carbide_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:tungsten_carbide_bricks"
+   ],
+   "ja": "石切台で、重装タングステンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Ballistic Tungsten Carbide Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:tungsten_carbide_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:tungsten_carbide_bricks"
+   ],
+   "ja": "石切台で、重装タングステンレンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Ballistic Tungsten Carbide Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:tungsten_carbide_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:tungsten_carbide_bricks"
+   ],
+   "ja": "石切台で、重装タングステンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Ballistic Tungsten Carbide Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:tungsten_carbide_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:tungsten_carbide_bricks"
+   ],
+   "ja": "石切台で、重装タングステンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Ballistic Tungsten Carbide Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:tungsten_carbide_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:tungsten_carbide_bricks"
+   ],
+   "ja": "石切台で、重装タングステンレンガを切り出す(作業台では作れない)",
+   "en": "Cut Ballistic Tungsten Carbide Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
   "tsubomi:verdant_bamboo_stone_chiseled": {
    "station": "stonecutter",
    "inputs": [
@@ -4036,6 +6196,150 @@
    "ja": "石切台で、翠竹石レンガを切り出す(作業台では作れない)",
    "en": "Cut Verdant Bamboo Stone Bricks on a stonecutter (it cannot be made at a workbench)"
   },
+  "tsubomi:viridian_peridot_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:viridian_peridot_bricks"
+   ],
+   "ja": "石切台で、橄欖石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Viridian Peridot Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:viridian_peridot_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:viridian_peridot_bricks"
+   ],
+   "ja": "石切台で、橄欖石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Viridian Peridot Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:viridian_peridot_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:viridian_peridot_bricks"
+   ],
+   "ja": "石切台で、橄欖石レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Viridian Peridot Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:viridian_peridot_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:viridian_peridot_bricks"
+   ],
+   "ja": "石切台で、橄欖石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Viridian Peridot Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:viridian_peridot_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:viridian_peridot_bricks"
+   ],
+   "ja": "石切台で、橄欖石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Viridian Peridot Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:viridian_peridot_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:viridian_peridot_bricks"
+   ],
+   "ja": "石切台で、橄欖石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Viridian Peridot Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:void_singularity_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:void_singularity_bricks"
+   ],
+   "ja": "石切台で、虚空特異点石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Abyssal Singularity Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:void_singularity_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:void_singularity_bricks"
+   ],
+   "ja": "石切台で、虚空特異点石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Abyssal Singularity Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:void_singularity_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:void_singularity_bricks"
+   ],
+   "ja": "石切台で、虚空特異点石レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Abyssal Singularity Stone Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:void_singularity_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:void_singularity_bricks"
+   ],
+   "ja": "石切台で、虚空特異点石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Abyssal Singularity Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:void_singularity_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:void_singularity_bricks"
+   ],
+   "ja": "石切台で、虚空特異点石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Abyssal Singularity Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:void_singularity_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:void_singularity_bricks"
+   ],
+   "ja": "石切台で、虚空特異点石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Abyssal Singularity Stone Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:volcanic_scoria_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:volcanic_scoria_bricks"
+   ],
+   "ja": "石切台で、浅間溶岩スコリアレンガを切り出す(作業台では作れない)",
+   "en": "Cut Asama Volcanic Scoria Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:volcanic_scoria_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:volcanic_scoria_bricks"
+   ],
+   "ja": "石切台で、浅間溶岩スコリアレンガを切り出す(作業台では作れない)",
+   "en": "Cut Asama Volcanic Scoria Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:volcanic_scoria_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:volcanic_scoria_bricks"
+   ],
+   "ja": "石切台で、浅間溶岩スコリアレンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Asama Volcanic Scoria Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:volcanic_scoria_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:volcanic_scoria_bricks"
+   ],
+   "ja": "石切台で、浅間溶岩スコリアレンガを切り出す(作業台では作れない)",
+   "en": "Cut Asama Volcanic Scoria Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:volcanic_scoria_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:volcanic_scoria_bricks"
+   ],
+   "ja": "石切台で、浅間溶岩スコリアレンガを切り出す(作業台では作れない)",
+   "en": "Cut Asama Volcanic Scoria Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:volcanic_scoria_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:volcanic_scoria_bricks"
+   ],
+   "ja": "石切台で、浅間溶岩スコリアレンガを切り出す(作業台では作れない)",
+   "en": "Cut Asama Volcanic Scoria Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
   "tsubomi:wisteria_obsidian_chiseled": {
    "station": "stonecutter",
    "inputs": [
@@ -4083,6 +6387,102 @@
    ],
    "ja": "石切台で、藤黒曜石レンガを切り出す(作業台では作れない)",
    "en": "Cut Wisteria Obsidian Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:yakisugi_cedar_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:yakisugi_cedar_bricks"
+   ],
+   "ja": "石切台で、焼杉（ヤキスギ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Charred Yakisugi Cedar Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:yakisugi_cedar_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:yakisugi_cedar_bricks"
+   ],
+   "ja": "石切台で、焼杉（ヤキスギ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Charred Yakisugi Cedar Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:yakisugi_cedar_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:yakisugi_cedar_bricks"
+   ],
+   "ja": "石切台で、焼杉（ヤキスギ）レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Charred Yakisugi Cedar Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:yakisugi_cedar_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:yakisugi_cedar_bricks"
+   ],
+   "ja": "石切台で、焼杉（ヤキスギ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Charred Yakisugi Cedar Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:yakisugi_cedar_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:yakisugi_cedar_bricks"
+   ],
+   "ja": "石切台で、焼杉（ヤキスギ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Charred Yakisugi Cedar Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:yakisugi_cedar_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:yakisugi_cedar_bricks"
+   ],
+   "ja": "石切台で、焼杉（ヤキスギ）レンガを切り出す(作業台では作れない)",
+   "en": "Cut Charred Yakisugi Cedar Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:yoshino_blossom_chiseled": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:yoshino_blossom_bricks"
+   ],
+   "ja": "石切台で、吉野桜花大理石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Petaled Yoshino Marble Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:yoshino_blossom_pillar": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:yoshino_blossom_bricks"
+   ],
+   "ja": "石切台で、吉野桜花大理石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Petaled Yoshino Marble Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:yoshino_blossom_slab": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:yoshino_blossom_bricks"
+   ],
+   "ja": "石切台で、吉野桜花大理石レンガを切り出す(2 個できる)(作業台では作れない)",
+   "en": "Cut Petaled Yoshino Marble Bricks on a stonecutter (makes 2) (it cannot be made at a workbench)"
+  },
+  "tsubomi:yoshino_blossom_stairs": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:yoshino_blossom_bricks"
+   ],
+   "ja": "石切台で、吉野桜花大理石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Petaled Yoshino Marble Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:yoshino_blossom_tiles": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:yoshino_blossom_bricks"
+   ],
+   "ja": "石切台で、吉野桜花大理石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Petaled Yoshino Marble Bricks on a stonecutter (it cannot be made at a workbench)"
+  },
+  "tsubomi:yoshino_blossom_wall": {
+   "station": "stonecutter",
+   "inputs": [
+    "tsubomi:yoshino_blossom_bricks"
+   ],
+   "ja": "石切台で、吉野桜花大理石レンガを切り出す(作業台では作れない)",
+   "en": "Cut Petaled Yoshino Marble Bricks on a stonecutter (it cannot be made at a workbench)"
   }
  }
 }
