@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import "./globals.css";
+
 
 /**
  * The root layout only carries the stylesheet: <html lang dir> belongs to the language

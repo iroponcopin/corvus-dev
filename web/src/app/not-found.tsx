@@ -1,3 +1,4 @@
+import "./globals.css";
 import { BASE_PATH, asset, LANGUAGES, pathOf } from "@/lib/site";
 import { wiki } from "@/lib/wiki";
 

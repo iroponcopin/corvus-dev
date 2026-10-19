@@ -1,0 +1,168 @@
+/*
+ * What the template has no place for, in its own vocabulary: --ink / --paper / --line, Syne 800 tracked -0.075em,
+ * 10-11px bold labels tracked 0.16-0.18em, the 14px Avenir body, the .text-cta, 40px gutters (20px under 800px).
+ * The surfaces are @samasante/liquid-glass <Glass> elements; this file only sizes and tints them.
+ */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  pointer-events: none;
+}
+
+.site-nav > * { pointer-events: auto; }
+
+.site-nav__glass {
+  border: 1px solid rgba(232, 229, 220, 0.24);
+  border-radius: 999px;
+  background: rgba(10, 10, 10, 0.28);
+}
+
+.site-nav__links {
+  display: flex;
+  gap: 22px;
+  padding: 11px 20px 10px;
+  white-space: nowrap;
+}
+
+.site-nav__links a { transition: color 180ms ease; }
+.site-nav__links a:hover { color: #fff; }
+
+.home-band {
+  position: relative;
+  padding: 120px 40px 40px;
+  background: #050505;
+}
+
+.home-band__eyebrow,
+.glass-card__eyebrow,
+.home-foot {
+  color: rgba(232, 229, 220, 0.52);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.home-band__title {
+  margin: 17px 0 0;
+  color: #f2eee5;
+  font-family: 'Syne', Arial, Helvetica, sans-serif;
+  font-size: clamp(34px, 4.2vw, 68px);
+  font-weight: 800;
+  line-height: 0.84;
+  letter-spacing: -0.075em;
+}
+
+.home-band__lede {
+  max-width: 420px;
+  margin-top: 24px;
+  color: rgba(242, 238, 229, 0.82);
+  font-family: 'Avenir Next', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.home-band__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.home-band__grid--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.glass-card {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(232, 229, 220, 0.05);
+}
+
+.glass-card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 26px 24px 24px;
+}
+
+.glass-card__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.glass-card__eyebrow img { border-radius: 4px; }
+
+.glass-card__title {
+  margin-top: 28px;
+  color: #f2eee5;
+  font-family: 'Syne', Arial, Helvetica, sans-serif;
+  font-size: clamp(26px, 2.4vw, 38px);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.07em;
+}
+
+.glass-card__body {
+  flex: 1;
+  margin-top: 16px;
+  color: rgba(242, 238, 229, 0.82);
+  font-family: 'Avenir Next', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.glass-card:hover .text-cta {
+  border-color: var(--paper);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.glass-card:hover .text-cta span { transform: translateX(3px); }
+
+.home-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 96px 40px 30px;
+  background: #050505;
+}
+
+.home-foot > span { color: var(--paper); }
+
+.home-foot__langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  letter-spacing: 0.06em;
+}
+
+.home-foot__langs a:hover,
+.home-foot__langs a[aria-current='page'] { color: var(--paper); }
+
+/* Japanese, Chinese and Korean set at the template's tight tracking collide; they keep its size with open tracking. */
+html:is(:lang(ja), :lang(zh), :lang(ko)) :is(h1, .home-band__title, .glass-card__title, .loading-screen__title) {
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+/* The template's label tracking, and no Avenir, under Arabic script. */
+html:lang(ar) :is(h1, .home-band__title, .glass-card__title, .loading-screen__title) { letter-spacing: 0; line-height: 1.2; }
+
+@media (max-width: 1100px) {
+  .home-band__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 800px) {
+  .site-nav__links { gap: 14px; padding: 9px 14px 8px; font-size: 10px; letter-spacing: 0.12em; }
+  .site-nav__links a:nth-child(n + 3) { display: none; }
+  .home-band { padding: 88px 20px 24px; }
+  .home-band__grid,
+  .home-band__grid--three { grid-template-columns: minmax(0, 1fr); }
+  .home-foot { padding: 72px 20px 22px; }
+}
