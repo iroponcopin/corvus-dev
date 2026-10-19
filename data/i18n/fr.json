@@ -952,6 +952,16 @@
      "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
      "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.2.1",
+    "title": "Tsubomi V2.2.1 — recette d'étoile du Nether en double retirée",
+    "summary": "Tsubomi V2.2.1 retire une recette d'étoile du Nether en double. Seule la recette 3x3 reste.",
+    "highlights": [
+     "La recette sans forme en double de l'étoile du Nether (un diamant et un bloc d'alliage Ouka) est retirée. L'étoile du Nether ne se fabrique plus qu'avec la recette 3x3 : 4 diamants et 2 blocs d'alliage Ouka.",
+     "La recette 3x3 n'apparaît toujours que si OUKA est installé. Rien d'autre ne change."
+    ],
+    "warnings": []
    }
   ],
   "halia": [

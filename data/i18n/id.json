@@ -952,6 +952,16 @@
      "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
      "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.2.1",
+    "title": "Tsubomi V2.2.1 — resep Nether Star ganda dihapus",
+    "summary": "Tsubomi V2.2.1 menghapus resep Nether Star ganda. Hanya resep 3x3 yang tersisa.",
+    "highlights": [
+     "Resep Nether Star tanpa pola yang ganda (satu Diamond dan satu Ouka Alloy Block) dihapus. Nether Star sekarang hanya dibuat dengan resep 3x3: 4 Diamond dan 2 Ouka Alloy Block.",
+     "Resep 3x3 tetap hanya muncul jika OUKA terpasang. Tidak ada perubahan lain."
+    ],
+    "warnings": []
    }
   ],
   "halia": [

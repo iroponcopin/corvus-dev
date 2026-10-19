@@ -8,8 +8,24 @@
  "groups": [
   {
    "label": "V2.2",
-   "summary": "Tsubomi V2.2 — 500 more blocks and a craftable Nether Star",
+   "summary": "Tsubomi V2.2.1 — duplicate Nether Star recipe removed",
    "releases": [
+    {
+     "version": "V2.2.1",
+     "date": "2026-10-19",
+     "type": "hotfix",
+     "title": "Tsubomi V2.2.1 — duplicate Nether Star recipe removed",
+     "summary": "Tsubomi V2.2.1 removes a duplicate Nether Star recipe. Only the 3x3 recipe remains.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "The duplicate shapeless Nether Star recipe, which used one Diamond and one Ouka Alloy Block, is removed. The 3x3 recipe (4 Diamonds and 2 Ouka Alloy Blocks) is now the only one.",
+        "The 3x3 recipe still appears only when OUKA is installed. Nothing else changes."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.2.0",
      "date": "2026-10-19",

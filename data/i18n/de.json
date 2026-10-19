@@ -952,6 +952,16 @@
      "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
      "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
     ]
+   },
+   {
+    "id": "tsubomi-v2.2.1",
+    "title": "Tsubomi V2.2.1 — doppeltes Nether-Stern-Rezept entfernt",
+    "summary": "Tsubomi V2.2.1 entfernt ein doppeltes Rezept für den Nether-Stern. Nur das 3x3-Rezept bleibt.",
+    "highlights": [
+     "Das doppelte, ungeordnete Nether-Stern-Rezept (mit einem Diamanten und einem Ouka-Legierungsblock) wurde entfernt. Der Nether-Stern wird nur noch mit dem 3x3-Rezept hergestellt: 4 Diamanten und 2 Ouka-Legierungsblöcke.",
+     "Das 3x3-Rezept erscheint weiterhin nur, wenn OUKA installiert ist. Sonst ändert sich nichts."
+    ],
+    "warnings": []
    }
   ],
   "halia": [

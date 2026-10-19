@@ -952,6 +952,16 @@
      "Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais novo, Fabric API 0.161.0+26.3 ou mais nova e Java 25. Nenhum outro mod é necessário; o Cherry é opcional.",
      "O Tsubomi não pode ser usado junto com o Alpha. Se houver um único mod do Alpha instalado, o jogo não inicia; remova antes os jars do Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.2.1",
+    "title": "Tsubomi V2.2.1 — receita duplicada da Estrela do Nether removida",
+    "summary": "Tsubomi V2.2.1 remove uma receita duplicada da Estrela do Nether. Só a receita 3x3 permanece.",
+    "highlights": [
+     "A receita sem formato duplicada da Estrela do Nether (um diamante e um bloco de liga Ouka) foi removida. A Estrela do Nether agora só é feita pela receita 3x3: 4 diamantes e 2 blocos de liga Ouka.",
+     "A receita 3x3 continua aparecendo só com o OUKA instalado. Nada mais muda."
+    ],
+    "warnings": []
    }
   ],
   "halia": [

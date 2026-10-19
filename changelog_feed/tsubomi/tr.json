@@ -8,8 +8,24 @@
  "groups": [
   {
    "label": "V2.2",
-   "summary": "Tsubomi V2.2 — 500 blok daha ve üretilebilir Nether Yıldızı",
+   "summary": "Tsubomi V2.2.1 — yinelenen Nether Yıldızı tarifi kaldırıldı",
    "releases": [
+    {
+     "version": "V2.2.1",
+     "date": "2026-10-19",
+     "type": "hotfix",
+     "title": "Tsubomi V2.2.1 — yinelenen Nether Yıldızı tarifi kaldırıldı",
+     "summary": "Tsubomi V2.2.1, yinelenen bir Nether Yıldızı tarifini kaldırır. Yalnızca 3x3 tarifi kalır.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Düzensiz ve yinelenen Nether Yıldızı tarifi (bir Elmas ve bir Ouka Alaşım Bloğu kullanan) kaldırıldı. Nether Yıldızı artık yalnızca 3x3 tarifiyle yapılır: 4 Elmas ve 2 Ouka Alaşım Bloğu.",
+        "3x3 tarifi yine yalnızca OUKA kuruluyken görünür. Başka bir şey değişmedi."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.2.0",
      "date": "2026-10-19",

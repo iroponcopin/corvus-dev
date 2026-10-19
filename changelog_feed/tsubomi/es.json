@@ -8,8 +8,24 @@
  "groups": [
   {
    "label": "V2.2",
-   "summary": "Tsubomi V2.2 — 500 bloques más y una estrella del Nether fabricable",
+   "summary": "Tsubomi V2.2.1 — receta duplicada de la estrella del Nether retirada",
    "releases": [
+    {
+     "version": "V2.2.1",
+     "date": "2026-10-19",
+     "type": "hotfix",
+     "title": "Tsubomi V2.2.1 — receta duplicada de la estrella del Nether retirada",
+     "summary": "Tsubomi V2.2.1 retira una receta duplicada de la estrella del Nether. Solo queda la receta 3x3.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "Se retiró la receta sin forma duplicada de la estrella del Nether (un diamante y un bloque de aleación Ouka). La estrella del Nether ahora solo se fabrica con la receta 3x3: 4 diamantes y 2 bloques de aleación Ouka.",
+        "La receta 3x3 sigue apareciendo solo si OUKA está instalado. Nada más cambia."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.2.0",
      "date": "2026-10-19",

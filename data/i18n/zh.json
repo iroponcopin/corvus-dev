@@ -952,6 +952,16 @@
      "需要 Minecraft 26.3、Fabric Loader 0.19.5 或更高、Fabric API 0.161.0+26.3 或更高以及 Java 25。不需要其他模组；Cherry 是可选的。",
      "Tsubomi 不能与 Alpha 同时使用。只要安装了任何一个 Alpha 模组，游戏就无法启动；请先移除 Alpha 的 jar。"
     ]
+   },
+   {
+    "id": "tsubomi-v2.2.1",
+    "title": "Tsubomi V2.2.1 — 删除重复的下界之星配方",
+    "summary": "Tsubomi V2.2.1 删除了重复的下界之星合成配方,现在只保留 3x3 配方。",
+    "highlights": [
+     "删除了重复的无序下界之星配方(使用 1 颗钻石和 1 个桜花合金块)。下界之星现在只用 3x3 配方合成(4 颗钻石、2 个桜花合金块)。",
+     "3x3 配方仍只在安装了 OUKA 时出现。没有其他改动。"
+    ],
+    "warnings": []
    }
   ],
   "halia": [

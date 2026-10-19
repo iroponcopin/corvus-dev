@@ -952,6 +952,16 @@
      "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
      "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
     ]
+   },
+   {
+    "id": "tsubomi-v2.2.1",
+    "title": "Tsubomi V2.2.1 — yinelenen Nether Yıldızı tarifi kaldırıldı",
+    "summary": "Tsubomi V2.2.1, yinelenen bir Nether Yıldızı tarifini kaldırır. Yalnızca 3x3 tarifi kalır.",
+    "highlights": [
+     "Düzensiz ve yinelenen Nether Yıldızı tarifi (bir Elmas ve bir Ouka Alaşım Bloğu kullanan) kaldırıldı. Nether Yıldızı artık yalnızca 3x3 tarifiyle yapılır: 4 Elmas ve 2 Ouka Alaşım Bloğu.",
+     "3x3 tarifi yine yalnızca OUKA kuruluyken görünür. Başka bir şey değişmedi."
+    ],
+    "warnings": []
    }
   ],
   "halia": [

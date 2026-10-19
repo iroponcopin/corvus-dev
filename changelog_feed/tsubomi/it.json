@@ -8,8 +8,24 @@
  "groups": [
   {
    "label": "V2.2",
-   "summary": "Tsubomi V2.2 — altri 500 blocchi e una Stella del Nether creabile",
+   "summary": "Tsubomi V2.2.1 — rimossa la ricetta duplicata della Stella del Nether",
    "releases": [
+    {
+     "version": "V2.2.1",
+     "date": "2026-10-19",
+     "type": "hotfix",
+     "title": "Tsubomi V2.2.1 — rimossa la ricetta duplicata della Stella del Nether",
+     "summary": "Tsubomi V2.2.1 rimuove una ricetta duplicata della Stella del Nether. Resta solo la ricetta 3x3.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "È stata rimossa la ricetta senza forma duplicata della Stella del Nether (un diamante e un blocco di lega Ouka). La Stella del Nether ora si crea solo con la ricetta 3x3: 4 diamanti e 2 blocchi di lega Ouka.",
+        "La ricetta 3x3 compare ancora solo se OUKA è installato. Non cambia nient'altro."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.2.0",
      "date": "2026-10-19",

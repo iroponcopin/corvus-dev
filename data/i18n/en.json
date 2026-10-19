@@ -956,6 +956,16 @@
      "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
      "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
     ]
+   },
+   {
+    "id": "tsubomi-v2.2.1",
+    "title": "Tsubomi V2.2.1 — duplicate Nether Star recipe removed",
+    "summary": "Tsubomi V2.2.1 removes a duplicate Nether Star recipe. Only the 3x3 recipe remains.",
+    "highlights": [
+     "The duplicate shapeless Nether Star recipe, which used one Diamond and one Ouka Alloy Block, is removed. The 3x3 recipe (4 Diamonds and 2 Ouka Alloy Blocks) is now the only one.",
+     "The 3x3 recipe still appears only when OUKA is installed. Nothing else changes."
+    ],
+    "warnings": []
    }
   ],
   "halia": [

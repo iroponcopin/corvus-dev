@@ -8,8 +8,24 @@
  "groups": [
   {
    "label": "V2.2",
-   "summary": "Tsubomi V2.2 — 500 weitere Blöcke und ein herstellbarer Nether-Stern",
+   "summary": "Tsubomi V2.2.1 — doppeltes Nether-Stern-Rezept entfernt",
    "releases": [
+    {
+     "version": "V2.2.1",
+     "date": "2026-10-19",
+     "type": "hotfix",
+     "title": "Tsubomi V2.2.1 — doppeltes Nether-Stern-Rezept entfernt",
+     "summary": "Tsubomi V2.2.1 entfernt ein doppeltes Rezept für den Nether-Stern. Nur das 3x3-Rezept bleibt.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Das doppelte, ungeordnete Nether-Stern-Rezept (mit einem Diamanten und einem Ouka-Legierungsblock) wurde entfernt. Der Nether-Stern wird nur noch mit dem 3x3-Rezept hergestellt: 4 Diamanten und 2 Ouka-Legierungsblöcke.",
+        "Das 3x3-Rezept erscheint weiterhin nur, wenn OUKA installiert ist. Sonst ändert sich nichts."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.2.0",
      "date": "2026-10-19",
