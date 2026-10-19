@@ -238,6 +238,12 @@
         "release": "V2.2.1",
         "date": "2026-10-19",
         "type": "hotfix"
+      },
+      {
+        "id": "tsubomi-v2.3.0",
+        "release": "V2.3.0",
+        "date": "2026-10-19",
+        "type": "release"
       }
     ],
     "halia": [

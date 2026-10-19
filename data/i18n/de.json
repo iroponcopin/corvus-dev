@@ -962,6 +962,21 @@
      "Das 3x3-Rezept erscheint weiterhin nur, wenn OUKA installiert ist. Sonst ändert sich nichts."
     ],
     "warnings": []
+   },
+   {
+    "id": "tsubomi-v2.3.0",
+    "title": "Tsubomi V2.3 — die Verzauberung Entropie",
+    "summary": "Tsubomi V2.3.0 fügt Entropie hinzu, eine Schatzverzauberung, die Ausrüstung mit XP schneller repariert als Reparatur, sowie einen seltenen Wächter-Drop, der sie trägt.",
+    "highlights": [
+     "Entropie, Stufen I bis III: repariert Werkzeuge, Waffen und Rüstung mit XP mit dem 1,75-, 2,25- und 2,75-fachen Tempo von Reparatur (3,5, 4,5 und 5,5 Haltbarkeit pro XP). Nachkommastellen werden per Zufall gerundet, es geht also nichts verloren. Sie lässt sich nicht mit Reparatur auf einem Gegenstand kombinieren.",
+     "Ein Wächter (Warden) lässt manchmal ein Entropie-Buch fallen: 12% (3% mehr pro Plünderungsstufe, 21% bei Plünderung III), als Stufe I, II oder III mit einer Gewichtung von 55%, 33% und 12%. Dazu gibt es eine Nachricht, einen Ton und Sculk-Partikel.",
+     "Das Buch ist ein gewöhnliches verzaubertes Buch, das im Amboss und im Schleifstein funktioniert. Bücher aller drei Stufen sind im Tsubomi-Kreativreiter.",
+     "Schonend für den Server: Es nutzt die eigene XP-Reparatur des Spiels, ohne zusätzlichen Tick und ohne Änderung an anderen Mods."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+     "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
+    ]
    }
   ],
   "halia": [

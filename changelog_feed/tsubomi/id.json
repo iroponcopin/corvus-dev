@@ -7,6 +7,37 @@
  "note": "",
  "groups": [
   {
+   "label": "V2.3",
+   "summary": "Tsubomi V2.3 — enchantment Entropy",
+   "releases": [
+    {
+     "version": "V2.3.0",
+     "date": "2026-10-19",
+     "type": "release",
+     "title": "Tsubomi V2.3 — enchantment Entropy",
+     "summary": "Tsubomi V2.3.0 menambahkan Entropy, enchantment harta yang memperbaiki perlengkapan dengan XP lebih cepat dari Mending, dan drop langka dari Warden yang membawanya.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Entropy, level I sampai III: memperbaiki alat, senjata, dan armor dengan XP dengan kecepatan 1,75, 2,25, dan 2,75 kali Mending (3,5, 4,5, dan 5,5 durability per XP). Pecahan dibulatkan secara acak sehingga tidak ada yang hilang. Tidak bisa berbagi item dengan Mending.",
+        "Warden kadang menjatuhkan buku Entropy: 12% (3% lebih tinggi per level Looting, 21% dengan Looting III), level I, II, atau III dengan bobot 55%, 33%, dan 12%. Ada pesan, suara, dan partikel sculk.",
+        "Bukunya adalah Enchanted Book biasa yang bisa dipakai di Anvil dan Grindstone. Buku ketiga level ada di tab kreatif Tsubomi.",
+        "Ringan untuk server: memakai perbaikan XP bawaan game, tanpa tick tambahan dan tanpa mengubah mod lain."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+        "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
    "label": "V2.2",
    "summary": "Tsubomi V2.2.1 — resep Nether Star ganda dihapus",
    "releases": [

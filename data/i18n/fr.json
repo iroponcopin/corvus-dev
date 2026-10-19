@@ -962,6 +962,21 @@
      "La recette 3x3 n'apparaît toujours que si OUKA est installé. Rien d'autre ne change."
     ],
     "warnings": []
+   },
+   {
+    "id": "tsubomi-v2.3.0",
+    "title": "Tsubomi V2.3 — l'enchantement Entropie",
+    "summary": "Tsubomi V2.3.0 ajoute Entropie, un enchantement de trésor qui répare l'équipement avec l'XP plus vite que Raccommodage, et un rare butin du Warden qui le porte.",
+    "highlights": [
+     "Entropie, niveaux I à III : répare outils, armes et armures avec l'XP à 1,75, 2,25 et 2,75 fois la vitesse de Raccommodage (3,5, 4,5 et 5,5 de durabilité par point d'XP). Les fractions sont arrondies au hasard, donc rien n'est perdu. Elle ne peut pas partager un objet avec Raccommodage.",
+     "Un Warden laisse parfois un livre d'Entropie : 12% (3% de plus par niveau de Butin, 21% avec Butin III), au niveau I, II ou III avec une pondération de 55%, 33% et 12%. Un message, un son et des particules de sculk l'accompagnent.",
+     "Le livre est un livre enchanté ordinaire, utilisable à l'enclume et à la meule. Les livres des trois niveaux sont dans l'onglet créatif de Tsubomi.",
+     "Léger pour le serveur : il utilise la réparation par l'XP du jeu, sans tick supplémentaire ni modification des autres mods."
+    ],
+    "warnings": [
+     "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+     "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
+    ]
    }
   ],
   "halia": [

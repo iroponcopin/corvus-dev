@@ -7,6 +7,37 @@
  "note": "",
  "groups": [
   {
+   "label": "V2.3",
+   "summary": "Tsubomi V2.3 — l'incantesimo Entropia",
+   "releases": [
+    {
+     "version": "V2.3.0",
+     "date": "2026-10-19",
+     "type": "release",
+     "title": "Tsubomi V2.3 — l'incantesimo Entropia",
+     "summary": "Tsubomi V2.3.0 aggiunge Entropia, un incantesimo del tesoro che ripara l'equipaggiamento con l'XP più in fretta di Rammendo, e un raro bottino del Warden che lo porta.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Entropia, livelli da I a III: ripara strumenti, armi e armature con l'XP a 1,75, 2,25 e 2,75 volte la velocità di Rammendo (3,5, 4,5 e 5,5 di durabilità per XP). Le frazioni sono arrotondate a caso, quindi non si perde nulla. Non può stare sullo stesso oggetto con Rammendo.",
+        "Un Warden a volte lascia un libro di Entropia: 12% (3% in più per livello di Saccheggio, 21% con Saccheggio III), di livello I, II o III con un peso di 55%, 33% e 12%. Arrivano un messaggio, un suono e particelle sculk.",
+        "Il libro è un normale libro incantato che funziona nell'incudine e nella cote. I libri dei tre livelli sono nella scheda creativa di Tsubomi.",
+        "Leggero per il server: usa la riparazione con l'XP del gioco, senza tick aggiuntivi e senza modifiche ad altri mod."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+        "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
    "label": "V2.2",
    "summary": "Tsubomi V2.2.1 — rimossa la ricetta duplicata della Stella del Nether",
    "releases": [

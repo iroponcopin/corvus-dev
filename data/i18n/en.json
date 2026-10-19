@@ -966,6 +966,21 @@
      "The 3x3 recipe still appears only when OUKA is installed. Nothing else changes."
     ],
     "warnings": []
+   },
+   {
+    "id": "tsubomi-v2.3.0",
+    "title": "Tsubomi V2.3 — the Entropy enchantment",
+    "summary": "Tsubomi V2.3.0 adds Entropy, a treasure enchantment that repairs gear with XP faster than Mending, and a rare Warden drop that carries it.",
+    "highlights": [
+     "Entropy, levels I to III: repairs tools, weapons and armour with XP at 1.75, 2.25 and 2.75 times the speed of Mending (3.5, 4.5 and 5.5 durability per XP). Fractions are rounded by chance, so nothing is lost. It cannot share an item with Mending.",
+     "A Warden sometimes drops an Entropy book: 12% (3% more per Looting level, 21% at Looting III), as level I, II or III with a 55%, 33% and 12% weighting. You get a message, a sound and sculk particles.",
+     "The book is an ordinary Enchanted Book that works in the Anvil and the Grindstone. Books for all three levels are in the Tsubomi creative tab.",
+     "Light on the server: it uses the game's own XP repair, with no extra tick and no change to other mods."
+    ],
+    "warnings": [
+     "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+     "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
+    ]
    }
   ],
   "halia": [

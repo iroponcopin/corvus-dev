@@ -962,6 +962,21 @@
      "La receta 3x3 sigue apareciendo solo si OUKA está instalado. Nada más cambia."
     ],
     "warnings": []
+   },
+   {
+    "id": "tsubomi-v2.3.0",
+    "title": "Tsubomi V2.3 — el encantamiento Entropía",
+    "summary": "Tsubomi V2.3.0 añade Entropía, un encantamiento de tesoro que repara el equipo con XP más rápido que Reparación, y un botín raro del Warden que lo lleva.",
+    "highlights": [
+     "Entropía, niveles I a III: repara herramientas, armas y armaduras con XP a 1,75, 2,25 y 2,75 veces la velocidad de Reparación (3,5, 4,5 y 5,5 de durabilidad por XP). Las fracciones se redondean al azar, así que no se pierde nada. No puede compartir objeto con Reparación.",
+     "Un Warden a veces suelta un libro de Entropía: 12% (3% más por nivel de Saqueo, 21% con Saqueo III), de nivel I, II o III con una ponderación de 55%, 33% y 12%. Se muestra un mensaje, un sonido y partículas de sculk.",
+     "El libro es un libro encantado normal que funciona en el yunque y en la piedra de afilar. Los libros de los tres niveles están en la pestaña creativa de Tsubomi.",
+     "Ligero para el servidor: usa la reparación por XP del propio juego, sin ticks adicionales ni cambios en otros mods."
+    ],
+    "warnings": [
+     "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+     "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
+    ]
    }
   ],
   "halia": [

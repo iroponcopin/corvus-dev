@@ -7,6 +7,37 @@
  "note": "",
  "groups": [
   {
+   "label": "V2.3",
+   "summary": "Tsubomi V2.3 — Entropi büyüsü",
+   "releases": [
+    {
+     "version": "V2.3.0",
+     "date": "2026-10-19",
+     "type": "release",
+     "title": "Tsubomi V2.3 — Entropi büyüsü",
+     "summary": "Tsubomi V2.3.0, ekipmanı XP ile Onarım'dan daha hızlı tamir eden bir hazine büyüsü olan Entropi'yi ve onu taşıyan nadir bir Warden düşüşünü ekler.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Entropi, I ile III arası seviyeler: aletleri, silahları ve zırhları XP ile Onarım'ın 1,75, 2,25 ve 2,75 katı hızda tamir eder (XP başına 3,5, 4,5 ve 5,5 dayanıklılık). Kesirler rastgele yuvarlanır, yani hiçbir şey kaybolmaz. Aynı eşyada Onarım ile birlikte olamaz.",
+        "Warden bazen bir Entropi kitabı düşürür: %12 (Yağma seviyesi başına %3 fazla, Yağma III ile %21), I, II veya III seviyesi %55, %33 ve %12 ağırlıkla. Bir mesaj, bir ses ve sculk parçacıkları gelir.",
+        "Kitap, Örs ve Bileme Taşı'nda çalışan sıradan bir Büyülü Kitaptır. Üç seviyenin kitapları Tsubomi yaratıcı sekmesindedir.",
+        "Sunucuya hafif: oyunun kendi XP onarımını kullanır, ek tik yoktur ve diğer modlara dokunmaz."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+        "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
    "label": "V2.2",
    "summary": "Tsubomi V2.2.1 — yinelenen Nether Yıldızı tarifi kaldırıldı",
    "releases": [
