@@ -36,7 +36,7 @@ let lastUpdate = 0;
 
 function readStored(): boolean {
   try {
-    return localStorage.getItem(STORAGE_KEY) === "on";
+    return sessionStorage.getItem(STORAGE_KEY) === "on";
   } catch {
     return false;
   }
@@ -44,7 +44,7 @@ function readStored(): boolean {
 
 function writeStored(on: boolean): void {
   try {
-    localStorage.setItem(STORAGE_KEY, on ? "on" : "off");
+    sessionStorage.setItem(STORAGE_KEY, on ? "on" : "off");
   } catch {
     /* not remembered */
   }

@@ -24,6 +24,7 @@ export default function NotFound() {
   return (
     <html lang="ja" dir="ltr">
       <head>
+        <meta name="referrer" content="no-referrer" />
         <title>{w.site.notFoundTitle}</title>
         <meta name="robots" content="noindex" />
         <meta name="theme-color" content="#000000" />

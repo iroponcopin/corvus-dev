@@ -69,6 +69,7 @@ export default async function LangLayout({ children, params }: { children: React
   return (
     <html lang={lang} dir={d.dir} suppressHydrationWarning>
       <head>
+        <meta name="referrer" content="no-referrer" />
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script src={asset("lang.js")} />
         <script dangerouslySetInnerHTML={{ __html: langInit(lang) }} />

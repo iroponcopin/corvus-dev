@@ -7,7 +7,6 @@ import { Dock, type ModelLink, type UpdateLink } from "@/components/Dock";
 import { Palette } from "@/components/palette/Palette";
 import { LoadingScreen } from "@/components/shell/LoadingScreen";
 import { Reveal } from "@/components/Reveal";
-import { SiteBackdrop } from "@/components/SiteBackdrop";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { WorldGate } from "@/engine/WorldGate";
 import { FRESH } from "@/i18n/fresh";
@@ -43,7 +42,6 @@ export default async function SiteLayout({ children, params }: { children: React
         <a className="ac-skip" href="#main">
           {c.skipLink}
         </a>
-        <SiteBackdrop />
         <WorldGate dir={d.dir} />
         <SmoothScroll />
         <Reveal />
