@@ -8,8 +8,31 @@
  "groups": [
   {
    "label": "V1.3",
-   "summary": "Halia V1.3 — Vigil, 46 дверей и Doorwright's Bench",
+   "summary": "Halia V1.3.0.1 — двери в творческом инвентаре",
    "releases": [
+    {
+     "version": "V1.3.0.1",
+     "date": "2026-10-19",
+     "type": "hotfix",
+     "title": "Halia V1.3.0.1 — двери в творческом инвентаре",
+     "summary": "Halia V1.3.0.1 добавляет все двери в творческий инвентарь: в V1.3.0 их можно было получить только крафтом или командой.",
+     "sections": [
+      {
+       "title": "Изменения",
+       "items": [
+        "Исправлено: все 46 дверей, Doorwright's Bench и Veil Emitter теперь есть во вкладке Halia творческого режима, а также Crafted Door с настройками по умолчанию.",
+        "Исправлено: Dawn Quartz из Vigil теперь есть в творческом инвентаре, рядом с блоками Dawn Quartz.",
+        "Исправлено: hushed sign из Vigil теперь называются правильно (например, \"Hushed Acacia Sign\" и \"Hushed Acacia Wall Sign\"; раньше после названия стояло \"Standing\" или \"Wall\")."
+       ]
+      },
+      {
+       "title": "Важно",
+       "items": [
+        "Требования те же, что и у V1.3.0: Minecraft 26.3, Fabric Loader 0.19.5 или новее, Fabric API 0.161.0+26.3 или новее, Java 25. Больше ничего не изменилось."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.3.0",
      "date": "2026-10-19",

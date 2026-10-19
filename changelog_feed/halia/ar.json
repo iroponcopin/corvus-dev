@@ -8,8 +8,31 @@
  "groups": [
   {
    "label": "V1.3",
-   "summary": "Halia V1.3 — Vigil و46 بابًا و Doorwright's Bench",
+   "summary": "Halia V1.3.0.1 — الأبواب في مخزون الوضع الإبداعي",
    "releases": [
+    {
+     "version": "V1.3.0.1",
+     "date": "2026-10-19",
+     "type": "hotfix",
+     "title": "Halia V1.3.0.1 — الأبواب في مخزون الوضع الإبداعي",
+     "summary": "يضع Halia V1.3.0.1 جميع الأبواب في مخزون الوضع الإبداعي: في V1.3.0 كان الحصول عليها ممكنًا بالصنع أو بالأوامر فقط.",
+     "sections": [
+      {
+       "title": "أبرز التغييرات",
+       "items": [
+        "تم الإصلاح: أصبحت الأبواب الـ 46 وDoorwright's Bench وVeil Emitter تظهر الآن في تبويب Halia الإبداعي، ومعها Crafted Door بالإعدادات الافتراضية.",
+        "تم الإصلاح: أصبح Dawn Quartz من Vigil يظهر الآن في مخزون الوضع الإبداعي، بجانب كتل Dawn Quartz.",
+        "تم الإصلاح: أصبحت hushed signs من Vigil تحمل أسماءها الصحيحة (مثل \"Hushed Acacia Sign\" و\"Hushed Acacia Wall Sign\"؛ كانت كلمة \"Standing\" أو \"Wall\" تظهر بعد الاسم)."
+       ]
+      },
+      {
+       "title": "ملاحظات هامة",
+       "items": [
+        "المتطلبات كما في V1.3.0: Minecraft 26.3، وFabric Loader 0.19.5 أو أحدث، وFabric API 0.161.0+26.3 أو أحدث، وJava 25. لم يتغير شيء آخر."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.3.0",
      "date": "2026-10-19",

@@ -276,6 +276,12 @@
         "release": "V1.3.0",
         "date": "2026-10-19",
         "type": "release"
+      },
+      {
+        "id": "halia-v1.3.0.1",
+        "release": "V1.3.0.1",
+        "date": "2026-10-19",
+        "type": "hotfix"
       }
     ]
   }

@@ -8,8 +8,31 @@
  "groups": [
   {
    "label": "V1.3",
-   "summary": "Halia V1.3 — Vigil, 46 pintu, dan Doorwright's Bench",
+   "summary": "Halia V1.3.0.1 — pintu di inventaris kreatif",
    "releases": [
+    {
+     "version": "V1.3.0.1",
+     "date": "2026-10-19",
+     "type": "hotfix",
+     "title": "Halia V1.3.0.1 — pintu di inventaris kreatif",
+     "summary": "Halia V1.3.0.1 memasukkan semua pintu ke inventaris kreatif: di V1.3.0 pintu hanya bisa didapat dengan crafting atau perintah.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Diperbaiki: ke-46 pintu, Doorwright's Bench, dan Veil Emitter kini ada di tab kreatif Halia, bersama sebuah Crafted Door dengan pengaturan bawaan.",
+        "Diperbaiki: Dawn Quartz dari Vigil kini ada di inventaris kreatif, di samping blok Dawn Quartz.",
+        "Diperbaiki: hushed sign dari Vigil kini memakai nama yang benar (misalnya \"Hushed Acacia Sign\" dan \"Hushed Acacia Wall Sign\"; sebelumnya ada \"Standing\" atau \"Wall\" di belakang namanya)."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Persyaratan sama dengan V1.3.0: Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, Java 25. Tidak ada perubahan lain."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.3.0",
      "date": "2026-10-19",

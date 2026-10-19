@@ -966,6 +966,19 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.3.0.1",
+    "title": "Halia V1.3.0.1 — pintu di inventaris kreatif",
+    "summary": "Halia V1.3.0.1 memasukkan semua pintu ke inventaris kreatif: di V1.3.0 pintu hanya bisa didapat dengan crafting atau perintah.",
+    "highlights": [
+     "Diperbaiki: ke-46 pintu, Doorwright's Bench, dan Veil Emitter kini ada di tab kreatif Halia, bersama sebuah Crafted Door dengan pengaturan bawaan.",
+     "Diperbaiki: Dawn Quartz dari Vigil kini ada di inventaris kreatif, di samping blok Dawn Quartz.",
+     "Diperbaiki: hushed sign dari Vigil kini memakai nama yang benar (misalnya \"Hushed Acacia Sign\" dan \"Hushed Acacia Wall Sign\"; sebelumnya ada \"Standing\" atau \"Wall\" di belakang namanya)."
+    ],
+    "warnings": [
+     "Persyaratan sama dengan V1.3.0: Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, Java 25. Tidak ada perubahan lain."
+    ]
+   },
+   {
     "id": "halia-v1.3.0",
     "title": "Halia V1.3 — Vigil, 46 pintu, dan Doorwright's Bench",
     "summary": "Halia V1.3 menambahkan Vigil, sekumpulan perangkat untuk menjaga apa yang kamu bangun: blok berpelindung yang hanya bisa dihancurkan pemiliknya, kamera, kunci kode, pembaca pass, jebakan, dan turret. Ada juga 46 pintu, hatch, dan gerbang yang terbuka dengan gerakan nyata, serta Doorwright's Bench, tempat kamu merancang pintumu sendiri.",

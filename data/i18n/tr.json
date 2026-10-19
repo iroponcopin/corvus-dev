@@ -966,6 +966,19 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.3.0.1",
+    "title": "Halia V1.3.0.1 — yaratıcı envanterdeki kapılar",
+    "summary": "Halia V1.3.0.1 tüm kapıları yaratıcı envantere koyar: V1.3.0'da bunlar yalnızca üretilerek ya da komutla alınabiliyordu.",
+    "highlights": [
+     "Düzeltildi: 46 kapının tümü, Doorwright's Bench ve Veil Emitter artık Halia yaratıcı sekmesinde; ayrıca varsayılan ayarlarda bir Crafted Door da var.",
+     "Düzeltildi: Vigil'in Dawn Quartz'ı artık yaratıcı envanterde, Dawn Quartz bloklarının yanında.",
+     "Düzeltildi: Vigil'in hushed sign'ları artık doğru adlarıyla görünüyor (örneğin \"Hushed Acacia Sign\" ve \"Hushed Acacia Wall Sign\"; önceden adın sonunda \"Standing\" ya da \"Wall\" yazıyordu)."
+    ],
+    "warnings": [
+     "Gereksinimler V1.3.0 ile aynıdır: Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni, Fabric API 0.161.0+26.3 veya daha yeni, Java 25. Başka bir şey değişmedi."
+    ]
+   },
+   {
     "id": "halia-v1.3.0",
     "title": "Halia V1.3 — Vigil, 46 kapı ve Doorwright's Bench",
     "summary": "Halia V1.3, inşa ettiklerinizi korumanız için bir dizi cihaz olan Vigil'i ekliyor: yalnızca sahibinin kırabileceği korumalı bloklar, kameralar, kod kilitleri, geçiş okuyucuları, tuzaklar ve taretler. Ayrıca gerçek bir hareketle açılan 46 kapı, kapak ve geçit ile kendi kapınızı tasarladığınız Doorwright's Bench'i ekliyor.",

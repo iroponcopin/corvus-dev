@@ -8,8 +8,31 @@
  "groups": [
   {
    "label": "V1.3",
-   "summary": "Halia V1.3 — el Vigil, 46 puertas y el Doorwright's Bench",
+   "summary": "Halia V1.3.0.1 — las puertas en el inventario creativo",
    "releases": [
+    {
+     "version": "V1.3.0.1",
+     "date": "2026-10-19",
+     "type": "hotfix",
+     "title": "Halia V1.3.0.1 — las puertas en el inventario creativo",
+     "summary": "Halia V1.3.0.1 coloca todas las puertas en el inventario creativo: en la V1.3.0 solo se podían conseguir fabricándolas o con comandos.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "Corregido: las 46 puertas, el Doorwright's Bench y el Veil Emitter ya aparecen en la pestaña creativa de Halia, junto con una Crafted Door con la configuración predeterminada.",
+        "Corregido: el Dawn Quartz de la Vigil ya aparece en el inventario creativo, junto a los bloques de Dawn Quartz.",
+        "Corregido: los hushed signs de la Vigil ya muestran su nombre correcto (por ejemplo, \"Hushed Acacia Sign\" y \"Hushed Acacia Wall Sign\"; antes aparecía \"Standing\" o \"Wall\" tras el nombre)."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Los requisitos son los mismos que en la V1.3.0: Minecraft 26.3, Fabric Loader 0.19.5 o posterior, Fabric API 0.161.0+26.3 o posterior, Java 25. No hay más cambios."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.3.0",
      "date": "2026-10-19",

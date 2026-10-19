@@ -966,6 +966,19 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.3.0.1",
+    "title": "Halia V1.3.0.1 —— 创造模式物品栏中的门",
+    "summary": "Halia V1.3.0.1 将所有门放入创造模式物品栏：在 V1.3.0 中，它们只能通过合成或命令获得。",
+    "highlights": [
+     "已修复：全部 46 种门、Doorwright's Bench 和 Veil Emitter 现在出现在 Halia 的创造模式标签页中，另有一扇默认设置的 Crafted Door。",
+     "已修复：Vigil 的 Dawn Quartz 现在出现在创造模式物品栏中，位于 Dawn Quartz 方块旁边。",
+     "已修复：Vigil 的 hushed sign（隐秘告示牌）现在显示正确的名称（例如 \"Hushed Acacia Sign\" 和 \"Hushed Acacia Wall Sign\"；此前名称后多出 \"Standing\" 或 \"Wall\"）。"
+    ],
+    "warnings": [
+     "运行要求与 V1.3.0 相同：Minecraft 26.3、Fabric Loader 0.19.5 或更新、Fabric API 0.161.0+26.3 或更新、Java 25。没有其他改动。"
+    ]
+   },
+   {
     "id": "halia-v1.3.0",
     "title": "Halia V1.3 — Vigil、46 扇门与 Doorwright's Bench",
     "summary": "Halia V1.3 新增 Vigil，这是一组用于守护你所建造内容的设备：只有所有者能破坏的守护方块、摄像头、密码锁、通行读卡器、陷阱和炮塔。还新增 46 种门、活板门和闸门，它们带有真实的开合动作，以及 Doorwright's Bench，你可以在那里设计自己的门。",

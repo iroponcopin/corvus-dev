@@ -970,6 +970,19 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.3.0.1",
+    "title": "Halia V1.3.0.1 — the doors in the creative inventory",
+    "summary": "Halia V1.3.0.1 puts every door in the creative inventory: in V1.3.0 they could only be crafted or given by command.",
+    "highlights": [
+     "Fixed: all 46 doors, the Doorwright's Bench and the Veil Emitter are now in the Halia creative tab, with a Crafted Door in its default settings.",
+     "Fixed: the Vigil's Dawn Quartz is now in the creative inventory, beside the Dawn Quartz blocks.",
+     "Fixed: the Vigil's hushed signs are named as they should be (for example \"Hushed Acacia Sign\" and \"Hushed Acacia Wall Sign\"; they showed \"Standing\" or \"Wall\" after the name). The wall hanging signs' Japanese names, left in English, are now in Japanese."
+    ],
+    "warnings": [
+     "Requirements are unchanged from V1.3.0: Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer, Java 25. Nothing else changed."
+    ]
+   },
+   {
     "id": "halia-v1.3.0",
     "title": "Halia V1.3 — the Vigil, 46 doors, and the Doorwright's Bench",
     "summary": "Halia V1.3 adds the Vigil, a set of devices for guarding what you build: warded blocks only their owner can break, cameras, code locks, pass readers, snares and turrets. It also adds 46 doors, hatches and gates that open with real motion, and the Doorwright's Bench, where you design your own door.",

@@ -1,7 +1,7 @@
 {
  "what": "Corvus portal 4.3.0, static export. Made by web/ (npm run build); nothing here is a contract file.",
- "wiki_commit": "fbf9580a6de0072e792782e09abd861f587364d2",
- "wiki_branch": "rel55",
+ "wiki_commit": "2785e4dc54187400db09b5f5be3c7ce6ec74f287",
+ "wiki_branch": "hal1301",
  "wiki_dirty": false,
  "corvus_store": "5.5.0",
  "ouka": "1.7.1",
@@ -9,6 +9,6 @@
  "aureum": "2.0.0",
  "astraea": "1.5.5",
  "tsubomi": "2.2.1",
- "halia": "1.3.0",
+ "halia": "1.3.0.1",
  "pages": 234
 }

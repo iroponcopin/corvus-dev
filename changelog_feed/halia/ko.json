@@ -8,8 +8,31 @@
  "groups": [
   {
    "label": "V1.3",
-   "summary": "Halia V1.3 — Vigil, 46개의 문, 그리고 Doorwright's Bench",
+   "summary": "Halia V1.3.0.1 — 크리에이티브 인벤토리의 문",
    "releases": [
+    {
+     "version": "V1.3.0.1",
+     "date": "2026-10-19",
+     "type": "hotfix",
+     "title": "Halia V1.3.0.1 — 크리에이티브 인벤토리의 문",
+     "summary": "Halia V1.3.0.1은 모든 문을 크리에이티브 인벤토리에 넣습니다. V1.3.0에서는 제작하거나 명령어로만 얻을 수 있었습니다.",
+     "sections": [
+      {
+       "title": "변경 사항",
+       "items": [
+        "수정: 46종의 문, Doorwright's Bench, Veil Emitter가 이제 Halia 크리에이티브 탭에 표시되며, 기본 설정의 Crafted Door도 함께 표시됩니다.",
+        "수정: Vigil의 Dawn Quartz가 이제 크리에이티브 인벤토리의 Dawn Quartz 블록 옆에 표시됩니다.",
+        "수정: Vigil의 hushed sign 이름이 올바르게 표시됩니다(예: \"Hushed Acacia Sign\", \"Hushed Acacia Wall Sign\". 이전에는 이름 뒤에 \"Standing\" 또는 \"Wall\"이 붙어 있었습니다)."
+       ]
+      },
+      {
+       "title": "주의 사항",
+       "items": [
+        "요구 사항은 V1.3.0과 같습니다: Minecraft 26.3, Fabric Loader 0.19.5 이상, Fabric API 0.161.0+26.3 이상, Java 25. 그 밖의 변경은 없습니다."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.3.0",
      "date": "2026-10-19",
