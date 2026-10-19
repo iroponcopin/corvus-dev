@@ -822,6 +822,23 @@ def _difficulty_lock():
     return {"level": "pro", "from": lock["from"], "until": lock["until"]}
 
 
+AI_CHAT_FILE = ROOT / "data" / "ai_chat.json"
+
+
+def _ai_chat():
+    """The top-level `ai_chat` block (Corvus Store 5.2+), or None when data/ai_chat.json is absent.
+
+    The Store shows its Chat only while this block is published; `url` must be https. Older Stores ignore the key.
+    """
+    if not AI_CHAT_FILE.is_file():
+        return None
+    block = json.loads(AI_CHAT_FILE.read_text(encoding="utf-8"))
+    url = block.get("url") if isinstance(block, dict) else None
+    if set(block) != {"url"} or not isinstance(url, str) or not url.startswith("https://"):
+        raise SystemExit(f"ERROR: {AI_CHAT_FILE} must be exactly {{url: https://...}} (was {block}).")
+    return {"url": url}
+
+
 def _previously_published_manifest():
     """The manifest currently committed at the repo root, or {} if there is none."""
     path = ROOT / "glimpse_manifest.json"
@@ -1007,6 +1024,11 @@ def build():
     if lock is not None:
         manifest["difficulty_lock"] = lock
         print(f"glimpse_manifest.py: difficulty_lock {lock['level']} from {lock['from']} until {lock['until']} (UTC)")
+
+    chat = _ai_chat()
+    if chat is not None:
+        manifest["ai_chat"] = chat
+        print(f"glimpse_manifest.py: ai_chat at {chat['url']}")
 
     noctua = _noctua_block()
     if noctua is not None:

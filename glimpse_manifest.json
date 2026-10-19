@@ -148,6 +148,9 @@
     "from": "2026-10-18",
     "until": "2026-11-19"
   },
+  "ai_chat": {
+    "url": "https://167-99-83-109.sslip.io"
+  },
   "noctua": {
     "latest": "1.0.0",
     "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/Noctua_v1.0.0+pal1.0.zip",
