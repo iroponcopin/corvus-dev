@@ -8,8 +8,31 @@
  "groups": [
   {
    "label": "V1.3",
-   "summary": "Halia V1.3.0.1 — le porte nell'inventario creativo",
+   "summary": "Halia V1.3.0.2 — link esterni rimossi dalla Vigil",
    "releases": [
+    {
+     "version": "V1.3.0.2",
+     "date": "2026-10-19",
+     "type": "hotfix",
+     "title": "Halia V1.3.0.2 — link esterni rimossi dalla Vigil",
+     "summary": "Halia V1.3.0.2 rimuove testi che non appartenevano a Halia: alcuni messaggi della Vigil rimandavano a siti esterni e il suo manuale mostrava nomi scaricati da internet.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Rimosso: i suggerimenti della Vigil all'ingresso che rimandavano a siti esterni. Resta solo il suggerimento del manuale.",
+        "Rimosso: due comandi di chat della Vigil che rimandavano a un server di chat esterno.",
+        "Rimosso: la pagina dei sostenitori del manuale (scaricava un elenco di nomi da internet) e il suo pulsante di collegamento. Le pagine dei dispositivi non mostrano più il nome di un progettista."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "I requisiti sono invariati rispetto alla V1.3.0: Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva, Java 25. Nient'altro è cambiato."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.3.0.1",
      "date": "2026-10-19",

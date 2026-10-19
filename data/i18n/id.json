@@ -981,6 +981,19 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.3.0.2",
+    "title": "Halia V1.3.0.2 — tautan luar dihapus dari Vigil",
+    "summary": "Halia V1.3.0.2 menghapus teks yang tidak semestinya ada di Halia: beberapa pesan Vigil mengarahkan pemain ke situs luar, dan buku panduannya menampilkan nama yang diunduh dari internet.",
+    "highlights": [
+     "Dihapus: tip Vigil saat masuk yang berisi tautan ke situs luar. Hanya tip buku panduan yang tersisa.",
+     "Dihapus: dua perintah obrolan Vigil yang mengarahkan ke server obrolan luar.",
+     "Dihapus: halaman pendukung di buku panduan (halaman itu mengunduh daftar nama dari internet) beserta tombol tautannya. Halaman perangkat tidak lagi menampilkan nama perancang."
+    ],
+    "warnings": [
+     "Persyaratan tidak berubah dari V1.3.0: Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, Java 25. Tidak ada perubahan lain."
+    ]
+   },
+   {
     "id": "halia-v1.3.0.1",
     "title": "Halia V1.3.0.1 — pintu di inventaris kreatif",
     "summary": "Halia V1.3.0.1 memasukkan semua pintu ke inventaris kreatif: di V1.3.0 pintu hanya bisa didapat dengan crafting atau perintah.",

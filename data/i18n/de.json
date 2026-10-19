@@ -981,6 +981,19 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.3.0.2",
+    "title": "Halia V1.3.0.2 — externe Links aus der Vigil entfernt",
+    "summary": "Halia V1.3.0.2 entfernt Text, der nicht zu Halia gehörte: Einige Meldungen der Vigil verwiesen auf externe Websites, und ihr Handbuch zeigte aus dem Internet geladene Namen.",
+    "highlights": [
+     "Entfernt: die Tipps der Vigil beim Betreten der Welt, die auf externe Websites verlinkten. Nur der Handbuch-Tipp bleibt.",
+     "Entfernt: zwei Chatbefehle der Vigil, die auf einen externen Chatserver verwiesen.",
+     "Entfernt: die Unterstützerseite des Handbuchs (sie lud eine Namensliste aus dem Internet) und ihre Link-Schaltfläche. Geräteseiten zeigen keinen Designernamen mehr."
+    ],
+    "warnings": [
+     "Die Voraussetzungen sind dieselben wie bei V1.3.0: Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer, Java 25. Sonst hat sich nichts geändert."
+    ]
+   },
+   {
     "id": "halia-v1.3.0.1",
     "title": "Halia V1.3.0.1 — die Türen im Kreativinventar",
     "summary": "Halia V1.3.0.1 legt alle Türen ins Kreativinventar: In V1.3.0 gab es sie nur über Herstellen oder Befehle.",

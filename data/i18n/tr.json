@@ -981,6 +981,19 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.3.0.2",
+    "title": "Halia V1.3.0.2 — Vigil'deki dış bağlantılar kaldırıldı",
+    "summary": "Halia V1.3.0.2, Halia'ya ait olmayan metinleri kaldırır: Vigil'in bazı mesajları oyuncuları dış web sitelerine yönlendiriyordu ve el kitabı internetten indirilen adları gösteriyordu.",
+    "highlights": [
+     "Kaldırıldı: Vigil'in giriş sırasında dış web sitelerine bağlantı veren ipuçları. Yalnızca el kitabı ipucu kaldı.",
+     "Kaldırıldı: Vigil'in dış bir sohbet sunucusuna yönlendiren iki sohbet komutu.",
+     "Kaldırıldı: el kitabının destekçiler sayfası (internetten bir ad listesi indiriyordu) ve bağlantı düğmesi. Cihaz sayfaları artık bir tasarımcının adını göstermiyor."
+    ],
+    "warnings": [
+     "Gereksinimler V1.3.0 ile aynı: Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi, Java 25. Başka bir şey değişmedi."
+    ]
+   },
+   {
     "id": "halia-v1.3.0.1",
     "title": "Halia V1.3.0.1 — yaratıcı envanterdeki kapılar",
     "summary": "Halia V1.3.0.1 tüm kapıları yaratıcı envantere koyar: V1.3.0'da bunlar yalnızca üretilerek ya da komutla alınabiliyordu.",
