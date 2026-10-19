@@ -205,6 +205,21 @@ export default function Home({ content: c }: { content: HomeContent }) {
   }, []);
   const handleVideoReady = useCallback(() => setVideoReady(true), []);
 
+  // Past the hero, the fixed wordmark sits on a glass pill, so it never runs over the sections' text.
+  const [pastHero, setPastHero] = useState(false);
+  useEffect(() => {
+    const hero = document.getElementById('top');
+    if (!hero) return;
+    const update = () => setPastHero(hero.getBoundingClientRect().bottom < window.innerHeight * 0.5);
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    return () => {
+      window.removeEventListener('scroll', update);
+      window.removeEventListener('resize', update);
+    };
+  }, []);
+
   useEffect(() => {
     let cancelled = false;
 
@@ -233,10 +248,18 @@ export default function Home({ content: c }: { content: HomeContent }) {
   return (
     <>
       <main className={`site-shell${isReady ? ' is-ready' : ''}`} aria-busy={!isReady}>
-      <header className="site-nav">
-        <a className="wordmark" href="#top" aria-label={c.homeLabel}>
-          {c.wordmark}
-        </a>
+      <header className={`site-nav${pastHero ? ' is-past' : ''}`}>
+        {pastHero ? (
+          <Glass className="site-nav__mark">
+            <a className="wordmark" href="#top" aria-label={c.homeLabel}>
+              {c.wordmark}
+            </a>
+          </Glass>
+        ) : (
+          <a className="wordmark" href="#top" aria-label={c.homeLabel}>
+            {c.wordmark}
+          </a>
+        )}
         <Glass className="site-nav__glass">
           <nav aria-label={c.navLabel} className="site-nav__links">
             {c.nav.map((l) => (

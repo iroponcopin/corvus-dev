@@ -20,6 +20,14 @@
   background: rgba(10, 10, 10, 0.28);
 }
 
+.site-nav__mark {
+  margin: -11px 0 -10px -20px;
+  padding: 11px 20px 10px;
+  border: 1px solid rgba(232, 229, 220, 0.24);
+  border-radius: 999px;
+  background: rgba(10, 10, 10, 0.28);
+}
+
 .site-nav__links {
   display: flex;
   gap: 22px;
@@ -159,6 +167,7 @@ html:lang(ar) :is(h1, .home-band__title, .glass-card__title, .loading-screen__ti
 }
 
 @media (max-width: 800px) {
+  .site-nav__mark { margin: -9px 0 -8px -14px; padding: 9px 14px 8px; }
   .site-nav__links { gap: 14px; padding: 9px 14px 8px; font-size: 10px; letter-spacing: 0.12em; }
   .site-nav__links a:nth-child(n + 3) { display: none; }
   .home-band { padding: 88px 20px 24px; }
@@ -166,3 +175,6 @@ html:lang(ar) :is(h1, .home-band__title, .glass-card__title, .loading-screen__ti
   .home-band__grid--three { grid-template-columns: minmax(0, 1fr); }
   .home-foot { padding: 72px 20px 22px; }
 }
+
+/* Past the hero the pills sit over text, not the film: the glass keeps its frost and takes a deeper tint. */
+.site-nav.is-past :is(.site-nav__mark, .site-nav__glass) { background: rgba(10, 10, 10, 0.78); }

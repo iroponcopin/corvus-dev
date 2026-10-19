@@ -30,6 +30,8 @@ import unicodedata
 import zipfile
 from pathlib import Path
 
+from site_copy import SITE_COPY
+
 # The one model order (web/src/lib/models.ts MODEL_ORDER), read from the TypeScript so it is never written twice.
 _MODELS_TS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "src", "lib", "models.ts")
 with open(_MODELS_TS, encoding="utf-8") as _fh:
@@ -667,6 +669,8 @@ def build_lang(lang: str, ctx: dict) -> dict:
     # launcher jar the site reads still carries it, so the site drops it too (every language; the rest is kept).
     for _k in [k for k in store if k.startswith("store.halia.")]:
         store[_k] = re.sub(r"\s*[·・]\s*Beyond Astraea", "", store[_k]).replace("Beyond Astraea", "").strip()
+    # 2026-10-19: Halia's V1.3 line replaces the jar's V1.0 one (web/scripts/site_copy.py).
+    store["store.halia.headline"] = SITE_COPY[lang]["halia"]
     up = ctx["upcoming"].get(lang) or die(f"data/upcoming.json has no {lang} block")
     dcb = ctx["discordBot"].get(lang) or die(f"data/discord_bot.json has no {lang} block")
 
@@ -789,7 +793,7 @@ def build_lang(lang: str, ctx: dict) -> dict:
                          "html": re.sub(r'\sclass="[^"]*"', "", sec["body_html"])})
     launcher_page = {
         "title": "Corvus Store",
-        "description": leg["store"]["tagline"],
+        "description": SITE_COPY[lang]["store"],
         "hub": leg["store"]["copy"],
         "text": stext,
         "modsHeading": leg["store"]["modsHeading"],
@@ -901,7 +905,7 @@ def build_lang(lang: str, ctx: dict) -> dict:
     cl_labels = dict(leg["changelog"]["labels"])
     changelog = {
         "title": ui["page_titles"]["changelog"],
-        "description": in_model_order(ui["page_descriptions"]["changelog"]),
+        "description": SITE_COPY[lang]["changelog"],
         "labels": cl_labels,
         "noteBrands": list(BCL.NOTE_BRANDS),
         "brands": changelog_lang(lang, b, ctx["launcherNotes"], ctx["launcherNotesI18n"]),
