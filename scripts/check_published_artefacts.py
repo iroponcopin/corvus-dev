@@ -14,6 +14,7 @@
 判定できなかったものは**失敗として数える**。取得できなかった、manifest に
 sha256 が無い、などを「合格」に化けさせない。
 """
+SETTING_BLOCKS = {"ai_chat", "difficulty_lock"}
 import argparse
 import hashlib
 import json
@@ -73,6 +74,11 @@ def main():
     for brand in sorted(manifest):
         block = manifest[brand]
         if not isinstance(block, dict):
+            continue
+        # Settings, not downloads: they carry no file by design (and must never carry one).
+        if brand in SETTING_BLOCKS:
+            if "file_name" in block:
+                failures.append("%s: a setting block must not name a file" % brand)
             continue
         name, want_sha, want_size = (block.get("file_name"), block.get("sha256"),
                                      block.get("file_size"))
