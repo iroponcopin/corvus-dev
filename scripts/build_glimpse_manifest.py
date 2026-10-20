@@ -685,8 +685,8 @@ def _noctua_block():
     zpath = zips[0]
     stem = zpath.name[len(NOCTUA_ZIP_PREFIX):-len(NOCTUA_ZIP_SUFFIX)]
     version = stem.split("+", 1)[0]
-    if not re.fullmatch(r"\d+\.\d+\.\d+", version) or "+pal" not in stem:
-        raise SystemExit(f"ERROR: {zpath.name} is not named Noctua_v<major.minor.patch>+pal<game version>.zip.")
+    if not re.fullmatch(r"\d+(\.\d+){2,3}", version) or "+pal" not in stem:
+        raise SystemExit(f"ERROR: {zpath.name} is not named Noctua_v<major.minor.patch[.build]>+pal<game version>.zip.")
     try:
         with zipfile.ZipFile(zpath) as zf:
             names = set(zf.namelist())
@@ -695,7 +695,7 @@ def _noctua_block():
         raise SystemExit(f"ERROR: could not read CHANGELOG.md out of {zpath} ({exc}).")
     if not any(n.endswith("NoctuaCore/scripts/main.lua") for n in names):
         raise SystemExit(f"ERROR: {zpath.name} holds no NoctuaCore/scripts/main.lua - it is not a Noctua package.")
-    heading = re.search(r"^## (\d+\.\d+\.\d+)", changelog, re.MULTILINE)
+    heading = re.search(r"^## (\d+(?:\.\d+){2,3})\b", changelog, re.MULTILINE)
     if not heading or heading.group(1) != version:
         raise SystemExit(
             f"ERROR: {zpath.name} is named for version {version}, but its CHANGELOG.md leads with "
@@ -730,8 +730,8 @@ def _agent_block():
                          f"({', '.join(z.name for z in zips)}). Publish exactly one.")
     zpath = zips[0]
     version = zpath.name[len(AGENT_ZIP_PREFIX):-len(AGENT_ZIP_SUFFIX)]
-    if not re.fullmatch(r"\d+\.\d+\.\d+", version):
-        raise SystemExit(f"ERROR: {zpath.name} is not named corvus-agent-<major.minor.patch>.zip.")
+    if not re.fullmatch(r"\d+(\.\d+){2,3}", version):
+        raise SystemExit(f"ERROR: {zpath.name} is not named corvus-agent-<major.minor.patch[.build]>.zip.")
     inner = f"corvus-agent-{version}/corvus-agent-{version}.jar"
     try:
         with zipfile.ZipFile(zpath) as zf:
@@ -775,8 +775,8 @@ def _xhard_block():
                          f"({', '.join(j.name for j in jars)}). Publish exactly one.")
     jpath = jars[0]
     version = jpath.name[len(XHARD_JAR_PREFIX):-len(XHARD_JAR_SUFFIX)]
-    if not re.fullmatch(r"\d+\.\d+\.\d+", version):
-        raise SystemExit(f"ERROR: {jpath.name} is not named corvus-xhard-<major.minor.patch>.jar.")
+    if not re.fullmatch(r"\d+(\.\d+){2,3}", version):
+        raise SystemExit(f"ERROR: {jpath.name} is not named corvus-xhard-<major.minor.patch[.build]>.jar.")
     try:
         with zipfile.ZipFile(jpath) as jar:
             meta = json.loads(jar.read("fabric.mod.json").decode("utf-8"))
