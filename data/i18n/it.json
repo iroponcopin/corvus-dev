@@ -306,6 +306,18 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.2",
+    "title": "Ouka JJK 1.7.2 — la sfera di Hollow Purple e la ricetta della finestra a traliccio",
+    "summary": "La sfera di Hollow Purple appare uguale con ogni impostazione grafica, e la finestra a traliccio ha una nuova ricetta.",
+    "highlights": [
+     "La sfera di Hollow Purple appare uguale con ogni impostazione grafica, anche sopra e sotto l'acqua. Con Improved Transparency non si spezza più in un reticolo.",
+     "La finestra a traliccio ha una nuova ricetta: assi di betulla e bastoncini disposti come PSP / SPS / PSP ne danno 2."
+    ],
+    "warnings": [
+     "Prima di installare 1.7.2, rimuovi il vecchio jar di OUKA (1.7.1 o precedente) dalla cartella mods e tieni una sola copia di GeckoLib 5.5.6. Richiede Minecraft 26.3, Fabric Loader 0.19.5 o più recente e Fabric API 0.161.0+26.3 o più recente. Installalo sia sul client sia sul server."
+    ]
+   },
+   {
     "id": "ouka-v1.7.1",
     "title": "Ouka JJK 1.7.1 — il nuovo nome e un OUKA Beacon ribilanciato",
     "summary": "Limitless ora si chiama Ouka JJK. L'OUKA Beacon è stato ribilanciato: le sue benedizioni sono ridotte a un quarto, la ricetta richiede due Heavy Core e ora si consuma con l'uso e si ripara con un Heavy Core.",

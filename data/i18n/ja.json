@@ -441,6 +441,18 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.2",
+    "title": "Ouka JJK 1.7.2 — Hollow Purple の球と格子窓の作り方",
+    "summary": "Hollow Purple の球は、どの画質の設定でも同じに描かれます。格子窓は作り方が変わりました。",
+    "highlights": [
+     "Hollow Purple の球は、どの画質の設定でも同じに描かれます(水の中・水の上も)。「Improved Transparency」をオンにしたときに格子のように崩れて見える不具合を直しました。",
+     "格子窓(ouka:koshi_mado)の作り方を変えました。白樺の板と棒を PSP / SPS / PSP の形に並べると 2 個できます。"
+    ],
+    "warnings": [
+     "1.7.2 を入れる前に、古い OUKA の jar(1.7.1 以前)を mods フォルダーから消し、GeckoLib 5.5.6 は一つだけ残してください。Minecraft 26.3、Fabric Loader 0.19.5 以上、Fabric API 0.161.0+26.3 以上が必要です。クライアントとサーバーの両方に入れてください。"
+    ]
+   },
+   {
     "id": "ouka-v1.7.1",
     "title": "Ouka JJK 1.7.1 — 新しい名前と Ouka ビーコンの調整",
     "summary": "Limitless は Ouka JJK という名前になりました。Ouka ビーコンを調整しました。加護の強さは 四分の一になり、作るにはヘビーコアが二つ要り、使うほど耐久が減って、ヘビーコアで直せます。",

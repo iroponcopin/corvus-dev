@@ -306,6 +306,18 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.2",
+    "title": "Ouka JJK 1.7.2 — la esfera de Hollow Purple y la receta de la ventana de celosía",
+    "summary": "La esfera de Hollow Purple se dibuja igual con cualquier opción gráfica, y la ventana de celosía tiene una receta nueva.",
+    "highlights": [
+     "La esfera de Hollow Purple se dibuja igual con cualquier opción gráfica, también sobre y bajo el agua. Con Improved Transparency ya no se rompe en una celosía.",
+     "La ventana de celosía tiene una receta nueva: tablones de abedul y palos en el patrón PSP / SPS / PSP dan 2."
+    ],
+    "warnings": [
+     "Antes de instalar 1.7.2, elimina el jar antiguo de OUKA (1.7.1 o anterior) de la carpeta mods y deja solo una copia de GeckoLib 5.5.6. Necesita Minecraft 26.3, Fabric Loader 0.19.5 o más reciente, y Fabric API 0.161.0+26.3 o más reciente. Instálalo en el cliente y en el servidor."
+    ]
+   },
+   {
     "id": "ouka-v1.7.1",
     "title": "Ouka JJK 1.7.1 — el nuevo nombre y un OUKA Beacon reequilibrado",
     "summary": "Limitless ahora se llama Ouka JJK. El OUKA Beacon está reequilibrado: sus bendiciones son un cuarto de fuertes, su receta necesita dos Heavy Core y ahora se desgasta con el uso y se repara con un Heavy Core.",

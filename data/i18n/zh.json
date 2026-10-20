@@ -306,6 +306,18 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.2",
+    "title": "Ouka JJK 1.7.2 — Hollow Purple 的球与格子窗配方",
+    "summary": "无论哪种画质设置，Hollow Purple 的球都画得一样；格子窗的配方也变了。",
+    "highlights": [
+     "无论哪种画质设置，Hollow Purple 的球都画得一样（水上水下也是）。开启 Improved Transparency 时也不再碎成格子状。",
+     "格子窗（ouka:koshi_mado）的配方变了：用桦木板和木棍按 PSP / SPS / PSP 摆放，做出 2 个。"
+    ],
+    "warnings": [
+     "安装 1.7.2 之前，请从 mods 文件夹删除旧的 OUKA jar（1.7.1 或更早），只保留一份 GeckoLib 5.5.6。需要 Minecraft 26.3、Fabric Loader 0.19.5 或更新版本，以及 Fabric API 0.161.0+26.3 或更新版本。客户端和服务器都要安装。"
+    ]
+   },
+   {
     "id": "ouka-v1.7.1",
     "title": "Ouka JJK 1.7.1 — 新名称与重新平衡的 OUKA Beacon",
     "summary": "Limitless 现在改名为 Ouka JJK。OUKA Beacon 已重新平衡：其加护强度降为原来的四分之一，合成需要两个 Heavy Core，并且现在会随使用磨损，可用一个 Heavy Core 修复。",

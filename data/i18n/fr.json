@@ -306,6 +306,18 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.2",
+    "title": "Ouka JJK 1.7.2 — la sphère Hollow Purple et la recette de la fenêtre treillis",
+    "summary": "La sphère Hollow Purple s'affiche de la même façon quel que soit le réglage graphique, et la fenêtre treillis a une nouvelle recette.",
+    "highlights": [
+     "La sphère Hollow Purple s'affiche de la même façon quel que soit le réglage graphique, y compris au-dessus et sous l'eau. Avec Improved Transparency, elle ne se découpe plus en treillis.",
+     "La fenêtre treillis a une nouvelle recette : des planches de bouleau et des bâtons disposés en PSP / SPS / PSP donnent 2 pièces."
+    ],
+    "warnings": [
+     "Avant d'installer 1.7.2, supprimez l'ancien jar OUKA (1.7.1 ou antérieur) du dossier mods et ne gardez qu'une seule copie de GeckoLib 5.5.6. Il demande Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, et Fabric API 0.161.0+26.3 ou plus récent. Installez-le sur le client et sur le serveur."
+    ]
+   },
+   {
     "id": "ouka-v1.7.1",
     "title": "Ouka JJK 1.7.1 — le nouveau nom et un OUKA Beacon rééquilibré",
     "summary": "Limitless s'appelle désormais Ouka JJK. Le OUKA Beacon est rééquilibré : ses bénédictions sont un quart aussi fortes, sa recette demande deux Heavy Core, et il s'use désormais à l'usage et se répare avec un Heavy Core.",

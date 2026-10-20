@@ -1,15 +1,37 @@
 {
  "lang": "en",
  "brand": "ouka",
- "updated": "2026-10-18",
+ "updated": "2026-10-20",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-18",
+ "updated_label": "Updated 2026-10-20",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK 1.7.1 — the new name and a rebalanced OUKA Beacon",
+   "summary": "Ouka JJK 1.7.2 — the Hollow Purple sphere and the lattice window recipe",
    "releases": [
+    {
+     "version": "V1.7.2",
+     "date": "2026-10-20",
+     "type": "release",
+     "title": "Ouka JJK 1.7.2 — the Hollow Purple sphere and the lattice window recipe",
+     "summary": "The Hollow Purple sphere renders the same on every graphics setting, and the lattice window has a new recipe.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "The Hollow Purple sphere renders the same on every graphics setting, including over and under water. With Improved Transparency on, it no longer breaks up into a lattice.",
+        "The lattice window has a new recipe: birch planks and sticks in the pattern PSP / SPS / PSP make 2."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Before you install 1.7.2, remove the old OUKA jar (1.7.1 or older) from the mods folder and keep only one copy of GeckoLib 5.5.6. It needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, and Fabric API 0.161.0+26.3 or newer. Install it on both the client and the server."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.1",
      "date": "2026-10-18",

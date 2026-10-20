@@ -1,15 +1,37 @@
 {
  "lang": "pt-br",
  "brand": "ouka",
- "updated": "2026-10-18",
+ "updated": "2026-10-20",
  "title": "Histórico de atualizações",
- "updated_label": "Atualizado em 2026-10-18",
+ "updated_label": "Atualizado em 2026-10-20",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK 1.7.1 — o novo nome e um OUKA Beacon rebalanceado",
+   "summary": "Ouka JJK 1.7.2 — a esfera de Hollow Purple e a receita da janela de treliça",
    "releases": [
+    {
+     "version": "V1.7.2",
+     "date": "2026-10-20",
+     "type": "release",
+     "title": "Ouka JJK 1.7.2 — a esfera de Hollow Purple e a receita da janela de treliça",
+     "summary": "A esfera de Hollow Purple aparece igual em qualquer configuração gráfica, e a janela de treliça tem uma receita nova.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "A esfera de Hollow Purple é desenhada igual em qualquer configuração gráfica, inclusive sobre e sob a água. Com Improved Transparency ela não se quebra mais em treliça.",
+        "A janela de treliça tem uma receita nova: tábuas de bétula e gravetos no padrão PSP / SPS / PSP dão 2."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Antes de instalar a 1.7.2, remova o jar antigo da OUKA (1.7.1 ou anterior) da pasta mods e mantenha apenas uma cópia do GeckoLib 5.5.6. Ele exige Minecraft 26.3, Fabric Loader 0.19.5 ou mais novo e Fabric API 0.161.0+26.3 ou mais nova. Instale no cliente e no servidor."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.1",
      "date": "2026-10-18",

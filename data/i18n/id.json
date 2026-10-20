@@ -306,6 +306,18 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.2",
+    "title": "Ouka JJK 1.7.2 — bola Hollow Purple dan resep jendela kisi",
+    "summary": "Bola Hollow Purple tampil sama di setiap pengaturan grafis, dan jendela kisi punya resep baru.",
+    "highlights": [
+     "Bola Hollow Purple tampil sama di setiap pengaturan grafis, termasuk di atas dan di bawah air. Dengan Improved Transparency, bola tidak lagi pecah menjadi kisi.",
+     "Jendela kisi punya resep baru: papan birch dan stik yang disusun PSP / SPS / PSP menghasilkan 2."
+    ],
+    "warnings": [
+     "Sebelum memasang 1.7.2, hapus jar OUKA lama (1.7.1 atau lebih lama) dari folder mods dan sisakan satu salinan GeckoLib 5.5.6. Butuh Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di klien dan server."
+    ]
+   },
+   {
     "id": "ouka-v1.7.1",
     "title": "Ouka JJK 1.7.1 — nama baru dan OUKA Beacon yang diseimbangkan ulang",
     "summary": "Limitless sekarang bernama Ouka JJK. OUKA Beacon diseimbangkan ulang: berkatnya tinggal seperempat kekuatan, resepnya butuh dua Heavy Core, dan kini ia aus seiring pemakaian serta diperbaiki dengan satu Heavy Core.",

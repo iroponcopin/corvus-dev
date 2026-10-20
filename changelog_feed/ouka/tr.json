@@ -1,15 +1,37 @@
 {
  "lang": "tr",
  "brand": "ouka",
- "updated": "2026-10-18",
+ "updated": "2026-10-20",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-18 tarihinde güncellendi",
+ "updated_label": "2026-10-20 tarihinde güncellendi",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK 1.7.1 — yeni ad ve yeniden dengelenmiş bir OUKA Beacon",
+   "summary": "Ouka JJK 1.7.2 — Hollow Purple küresi ve kafes pencere tarifi",
    "releases": [
+    {
+     "version": "V1.7.2",
+     "date": "2026-10-20",
+     "type": "release",
+     "title": "Ouka JJK 1.7.2 — Hollow Purple küresi ve kafes pencere tarifi",
+     "summary": "Hollow Purple küresi her grafik ayarında aynı çizilir ve kafes pencerenin tarifi yenilendi.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Hollow Purple küresi her grafik ayarında aynı çizilir; su üstünde ve altında da. Improved Transparency açıkken artık kafes gibi dağılmaz.",
+        "Kafes pencerenin tarifi yenilendi: huş tahtası ve çubuklar PSP / SPS / PSP deseninde dizilince 2 adet çıkar."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "1.7.2'i kurmadan önce eski OUKA jar dosyasını (1.7.1 veya daha eski) mods klasöründen silin ve yalnızca bir GeckoLib 5.5.6 kopyası bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.1",
      "date": "2026-10-18",

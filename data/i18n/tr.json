@@ -306,6 +306,18 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.2",
+    "title": "Ouka JJK 1.7.2 — Hollow Purple küresi ve kafes pencere tarifi",
+    "summary": "Hollow Purple küresi her grafik ayarında aynı çizilir ve kafes pencerenin tarifi yenilendi.",
+    "highlights": [
+     "Hollow Purple küresi her grafik ayarında aynı çizilir; su üstünde ve altında da. Improved Transparency açıkken artık kafes gibi dağılmaz.",
+     "Kafes pencerenin tarifi yenilendi: huş tahtası ve çubuklar PSP / SPS / PSP deseninde dizilince 2 adet çıkar."
+    ],
+    "warnings": [
+     "1.7.2'i kurmadan önce eski OUKA jar dosyasını (1.7.1 veya daha eski) mods klasöründen silin ve yalnızca bir GeckoLib 5.5.6 kopyası bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun."
+    ]
+   },
+   {
     "id": "ouka-v1.7.1",
     "title": "Ouka JJK 1.7.1 — yeni ad ve yeniden dengelenmiş bir OUKA Beacon",
     "summary": "Limitless artık Ouka JJK adıyla anılıyor. OUKA Beacon yeniden dengelendi: bereketleri dörtte bir gücünde, tarifi iki Heavy Core istiyor ve artık kullanıldıkça aşınıyor, bir Heavy Core ile onarılıyor.",

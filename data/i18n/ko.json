@@ -306,6 +306,18 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.2",
+    "title": "Ouka JJK 1.7.2 — Hollow Purple 구체와 격자창 제법",
+    "summary": "Hollow Purple 구체는 어떤 그래픽 설정에서도 같게 그려지며, 격자창에는 새 제법이 생겼습니다.",
+    "highlights": [
+     "Hollow Purple 구체는 어떤 그래픽 설정에서도 같게 그려집니다(물 위와 아래도 포함). Improved Transparency를 켜도 격자처럼 깨지지 않습니다.",
+     "격자창(ouka:koshi_mado)의 제법이 바뀌었습니다. 자작나무 판자와 막대기를 PSP / SPS / PSP 모양으로 놓으면 2개가 만들어집니다."
+    ],
+    "warnings": [
+     "1.7.2을 설치하기 전에 mods 폴더에서 예전 OUKA jar(1.7.1 이하)를 지우고 GeckoLib 5.5.6은 한 개만 남기세요. Minecraft 26.3, Fabric Loader 0.19.5 이상, Fabric API 0.161.0+26.3 이상이 필요합니다. 클라이언트와 서버 모두에 설치하세요."
+    ]
+   },
+   {
     "id": "ouka-v1.7.1",
     "title": "Ouka JJK 1.7.1 — 새 이름과 다시 맞춘 OUKA Beacon",
     "summary": "Limitless의 이름은 이제 Ouka JJK입니다. OUKA Beacon을 다시 맞췄습니다. 가호의 세기는 사분의 일이고, 제작에는 Heavy Core 두 개가 필요하며, 이제 쓸수록 닳고 Heavy Core 하나로 수리합니다.",

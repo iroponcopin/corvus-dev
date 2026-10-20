@@ -306,6 +306,18 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.2",
+    "title": "Ouka JJK 1.7.2 — die Hollow-Purple-Kugel und das Gitterfenster-Rezept",
+    "summary": "Die Hollow-Purple-Kugel wird bei jeder Grafikeinstellung gleich gezeichnet, und das Gitterfenster hat ein neues Rezept.",
+    "highlights": [
+     "Die Hollow-Purple-Kugel wird bei jeder Grafikeinstellung gleich gezeichnet, auch über und unter Wasser. Mit Improved Transparency zerfällt sie nicht mehr in ein Gitter.",
+     "Das Gitterfenster hat ein neues Rezept: Birkenbretter und Stöcke im Muster PSP / SPS / PSP ergeben 2 Stück."
+    ],
+    "warnings": [
+     "Bevor du 1.7.2 installierst, entferne die alte OUKA-jar (1.7.1 oder älter) aus dem Ordner mods und behalte nur eine Kopie von GeckoLib 5.5.6. Es braucht Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Installiere es auf Client und Server."
+    ]
+   },
+   {
     "id": "ouka-v1.7.1",
     "title": "Ouka JJK 1.7.1 — der neue Name und ein neu abgestimmter OUKA Beacon",
     "summary": "Limitless heißt jetzt Ouka JJK. Der OUKA Beacon ist neu abgestimmt: Seine Segnungen wirken nur noch ein Viertel so stark, sein Rezept braucht zwei Heavy Cores, und er nutzt sich nun mit dem Gebrauch ab und wird mit einem Heavy Core repariert.",
