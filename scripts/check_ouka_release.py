@@ -7,6 +7,13 @@ page on 2026-09-13. Nothing else on this site reads an OUKA file, so without thi
 a link that 404s from one language's depth, or a page still pointing at an older zip would all
 publish with every other checker green. This is check_cherry_release.py's gate, written again for OUKA.
 
+The OUKA pages were redesigned on the template export (V1.7.2, 2026-10): the old markup
+(<section class="ou-release">, <h1 class="ou-name">, data-bytes) is gone. The equivalents read here:
+  name     <h1 class="ac-model-name">        the page's one name
+  version  <span class="ac-model-pill">      the version badge, "V<ver>"
+  line     <p class="ac-model-line">         this language's own release line (the tagline)
+  release  <div class="ac-model-release">    the release section: facts, SHA-256, download link
+
 Independent by construction: it imports nothing from the builders (not site_common, not build_ouka,
 not build_glimpse_manifest) and nothing from the Cherry gate. The language list, the page paths, the
 site address and the size rule are written out again here, so a mistake in a builder cannot make this
@@ -14,21 +21,22 @@ gate agree with it.
 
 Per page, in every language:
   1. the page exists and <html lang> names its language;
-  2. exactly one link inside <section class="ou-release">, and its href, resolved from THIS page's
-     directory, is the newest downloads/OUKA_MODs_v<ver>+mc<mc>.zip (numeric version order);
-  3. the SHA-256 printed is that file's own, and so is the size (data-bytes == st_size, and the text
-     follows the Download page's rule: one decimal in MB, KB below 1 MB);
-  4. the version printed (V<ver>) is the file name's, and the ouka jar inside the zip says the same
+  2. exactly one link inside the release section, and its href, resolved from THIS page's
+     directory (or from the site root for an absolute site URL), is the newest
+     downloads/OUKA_MODs_v<ver>+mc<mc>.zip (numeric version order);
+  3. the SHA-256 printed is that file's own, and so is the size: the text reads
+     "<MB or KB, one decimal> (<bytes with separators> bytes)", exactly as the Download page's rule
+     writes it for this file;
+  4. the version badge prints V<ver>, the file name's, and the ouka jar inside the zip says the same
      in its fabric.mod.json;
-  5. no pre-release line (class "ou-soon") survives beside a release;
+  5. no pre-release marker (class "ac-soon" or "ou-soon") survives beside a release;
   6. the release line is this language's own, not the English one (the builder has no fallback;
      this catches one being added);
-  7. the version, every spec value and the hash carry dir="ltr". On the Arabic page, bidi
-     mirroring would otherwise print "≥" as "≤";
-  8. the name, <h1 class="ou-name">, carries dir="ltr". Its letters are separate inline blocks (the
-     entrance raises them one at a time), and a right-to-left page lays inline blocks out from the
-     right: the Arabic page printed the name as "AKUO" until that was seen on the rendered page
-     on 2026-09-15.
+  7. the version badge, every spec value and the hash are written left to right: class "ac-ltr" or
+     "ac-hash", or dir="ltr". On the Arabic page, bidi mirroring would otherwise print "≥" as "≤";
+  8. the name is not split into separate elements unless it carries dir="ltr". Separate inline blocks
+     are laid out from the right on a right-to-left page: the Arabic page printed the name as "AKUO"
+     until that was seen on the rendered page on 2026-09-15.
 And once for the site:
   9. glimpse_manifest.json carries an "ouka" block for that zip: mod_id "ouka", latest <ver>, the
      zip's file name, address, size and SHA-256, and "jars" listing exactly the jars in the zip's
@@ -58,6 +66,9 @@ ROOT = Path(__file__).resolve().parent.parent
 LANGS = ["ja", "en", "es", "fr", "zh", "ko", "pt-br", "it", "ar", "ru", "id", "de", "tr"]
 ZIP_RE = re.compile(r"^OUKA_MODs_v(\d+(?:\.\d+)*)\+mc(\d+(?:\.\d+)*)\.zip$")
 SITE = "https://iroponcopin.github.io/corvus-dev"
+SITE_PATH = "/corvus-dev"
+SIZE_RE = re.compile(r"\(([\d,]+) bytes\)")
+SOON_CLASSES = {"ac-soon", "ou-soon"}
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source",
         "track", "wbr"}
 
@@ -74,67 +85,93 @@ def fmt_size(num_bytes: int) -> str:
     return f"{num_bytes / 1024:.1f} KB"
 
 
+def resolve_href(page: Path, href: str, root: Path) -> Path:
+    """Where a link on this page lands on disk. Absolute site addresses and site-root paths are
+    depth-independent; anything else is resolved from the page's own directory."""
+    if href.startswith(SITE + "/"):
+        return (root / href[len(SITE) + 1:]).resolve()
+    if href.startswith(SITE_PATH + "/"):
+        return (root / href[len(SITE_PATH) + 1:]).resolve()
+    return (page.parent / href).resolve()
+
+
+def _classes(attrs: dict) -> set:
+    return set((attrs.get("class") or "").split())
+
+
+def _ltr(attrs: dict, classes: set) -> bool:
+    return attrs.get("dir") == "ltr" or bool(classes & {"ac-ltr", "ac-hash"})
+
+
 class ReleaseParser(HTMLParser):
-    """Collects what the release section says, and the name's attributes. Apart from the name, only
-    elements inside section.ou-release count."""
+    """Collects the release section's values, the version badge, the release line and the name.
+    The release section is any element whose class list holds ac-model-release."""
 
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.html_lang = None
         self.releases = 0
         self.soon = 0
-        self.stack = []          # (tag, classes, attrs, collector-or-None)
-        self.links = []
-        self.names = []          # attrs of every <h1 class="ou-name">, wherever it stands
-        self.values = []         # {"what", "dir", "text", "attrs"}
-        self.line = []
-
-    def _inside_release(self) -> bool:
-        return any("ou-release" in classes for _t, classes, _a, _c in self.stack)
+        self.stack = []          # dicts: tag, classes, collector, name (the open name's record, or None)
+        self.links = []          # attrs of every <a> inside the release section
+        self.download_links = [] # attrs of every <a> on the page whose href names an OUKA zip
+        self.names = []          # {"attrs", "classes", "children"} for every h1.ac-model-name
+        self.values = []         # {"what", "attrs", "classes", "text", "hash"}
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
-        classes = set((a.get("class") or "").split())
+        classes = _classes(a)
         if tag == "html":
             self.html_lang = a.get("lang")
-        if "ou-soon" in classes:
+        if classes & SOON_CLASSES:
             self.soon += 1
-        if "ou-release" in classes:
+        in_release = "ac-model-release" in classes or any(
+            "ac-model-release" in e["classes"] for e in self.stack)
+        if "ac-model-release" in classes:
             self.releases += 1
-        if tag == "h1" and "ou-name" in classes:
-            self.names.append(a)
+        for e in self.stack:
+            if e["name"] is not None:
+                e["name"]["children"] += 1
+        name = None
+        if tag == "h1" and "ac-model-name" in classes:
+            name = {"attrs": a, "classes": classes, "children": 0}
+            self.names.append(name)
+        if in_release and tag == "a":
+            self.links.append(a)
+        if tag == "a" and "downloads/OUKA" in (a.get("href") or ""):
+            self.download_links.append(a)
         collector = None
-        if self._inside_release() or "ou-release" in classes:
-            if tag == "a":
-                self.links.append(a)
-            if "ou-ver" in classes:
-                collector = {"what": "version", "attrs": a, "text": []}
-            elif tag == "dd":
-                collector = {"what": "spec", "attrs": a, "text": []}
-            elif tag == "code":
-                collector = {"what": "sha256", "attrs": a, "text": []}
-            elif "ou-line" in classes:
-                collector = {"what": "line", "attrs": a, "text": []}
-            if collector is not None:
-                self.values.append(collector)
+        if "ac-model-pill" in classes:
+            collector = {"what": "version", "attrs": a, "classes": classes, "text": [], "hash": False}
+        elif "ac-model-line" in classes:
+            collector = {"what": "line", "attrs": a, "classes": classes, "text": [], "hash": False}
+        elif in_release and tag == "dd":
+            collector = {"what": "spec", "attrs": a, "classes": classes, "text": [], "hash": False}
+        elif in_release and tag == "code" and "ac-hash" in classes:
+            collector = {"what": "sha256", "attrs": a, "classes": classes, "text": [], "hash": False}
+            for e in self.stack:
+                if e["tag"] == "dd" and e["collector"] is not None:
+                    e["collector"]["hash"] = True
+        if collector is not None:
+            self.values.append(collector)
         if tag not in VOID:
-            self.stack.append((tag, classes, a, collector))
+            self.stack.append({"tag": tag, "classes": classes, "collector": collector, "name": name})
 
     def handle_startendtag(self, tag, attrs):
         self.handle_starttag(tag, attrs)
-        if tag not in VOID and self.stack and self.stack[-1][0] == tag:
+        if tag not in VOID and self.stack and self.stack[-1]["tag"] == tag:
             self.stack.pop()
 
     def handle_endtag(self, tag):
         for i in range(len(self.stack) - 1, -1, -1):
-            if self.stack[i][0] == tag:
+            if self.stack[i]["tag"] == tag:
                 del self.stack[i:]
                 return
 
     def handle_data(self, data):
-        for _t, _c, _a, collector in self.stack:
-            if collector is not None:
-                collector["text"].append(data)
+        for e in self.stack:
+            if e["collector"] is not None:
+                e["collector"]["text"].append(data)
 
 
 def zip_jars(data: bytes) -> dict:
@@ -222,36 +259,43 @@ def judge(root: Path) -> tuple[list[str], str]:
         if p.html_lang != lang:
             problems.append(f"{rel}: <html lang={p.html_lang!r}>, expected {lang!r}")
         if p.soon:
-            problems.append(f"{rel}: the pre-release line (class ou-soon) is still on a page that "
-                            f"carries a release")
+            problems.append(f"{rel}: the pre-release marker (class ac-soon / ou-soon) is still on a page "
+                            f"that carries a release")
         if len(p.names) != 1:
-            problems.append(f"{rel}: {len(p.names)} <h1 class=\"ou-name\"> element(s); the page has one name")
-        elif p.names[0].get("dir") != "ltr":
-            problems.append(f"{rel}: the name <h1 class=\"ou-name\"> is not dir=\"ltr\" (dir="
-                            f"{p.names[0].get('dir')!r}); its letters are separate inline blocks, so a "
-                            f"right-to-left page lays them out backwards (OUKA printed as AKUO)")
+            problems.append(f"{rel}: {len(p.names)} <h1 class=\"ac-model-name\"> element(s); the page has one name")
+        else:
+            name = p.names[0]
+            if name["children"] and not _ltr(name["attrs"], name["classes"]):
+                problems.append(f"{rel}: the name <h1 class=\"ac-model-name\"> is split into {name['children']} "
+                                f"element(s) without dir=\"ltr\"; separate inline blocks are laid out backwards "
+                                f"on a right-to-left page (OUKA printed as AKUO)")
         if p.releases != 1:
             problems.append(f"{rel}: {p.releases} release section(s), expected exactly 1")
             continue
         if len(p.links) != 1:
             problems.append(f"{rel}: {len(p.links)} link(s) in the release section, expected exactly 1")
-        else:
-            href = p.links[0].get("href") or ""
-            target = (path.parent / href).resolve()
+        if not p.download_links:
+            problems.append(f"{rel}: no link to downloads/OUKA_* on the page")
+        for a in p.download_links:
+            href = a.get("href") or ""
+            target = resolve_href(path, href, root)
             if target != zpath.resolve():
                 problems.append(f"{rel}: the download link {href!r} resolves to {target}, not the "
                                 f"newest release downloads/{zpath.name}")
         found = {"version": 0, "sha256": 0, "size": 0, "line": 0}
         for v in p.values:
-            text = "".join(v["text"]).strip()
+            text = " ".join("".join(v["text"]).split())
             what = v["what"]
             if what == "line":
                 found["line"] += 1
                 lines[lang] = text
                 continue
-            if v["attrs"].get("dir") != "ltr":
-                problems.append(f"{rel}: the {what} value {text!r} has no dir=\"ltr\" (bidi would "
-                                f"reorder or mirror it on a right-to-left page)")
+            if what == "spec" and v["hash"]:
+                continue  # the SHA-256 row's own container; the hash inside it is checked as sha256
+            if not _ltr(v["attrs"], v["classes"]):
+                problems.append(f"{rel}: the {what} value {text!r} is not written left to right (no ac-ltr or "
+                                f"ac-hash class, no dir=\"ltr\"; bidi would reorder or mirror it on a "
+                                f"right-to-left page)")
             if what == "version":
                 found["version"] += 1
                 if text != f"V{ver}":
@@ -260,15 +304,14 @@ def judge(root: Path) -> tuple[list[str], str]:
                 found["sha256"] += 1
                 if text != sha:
                     problems.append(f"{rel}: prints SHA-256 {text!r}, the file's is {sha}")
-            elif what == "spec" and "data-bytes" in v["attrs"]:
+            elif what == "spec" and SIZE_RE.search(text):
                 found["size"] += 1
-                printed_bytes = v["attrs"].get("data-bytes")
-                if printed_bytes != str(size) or text != fmt_size(size):
-                    problems.append(f"{rel}: prints size {text!r} (data-bytes {printed_bytes}), the "
-                                    f"file is {size} bytes = {fmt_size(size)!r}")
+                expected = f"{fmt_size(size)} ({size:,} bytes)"
+                if text != expected:
+                    problems.append(f"{rel}: prints size {text!r}, the file is {size} bytes = {expected!r}")
         for what, count in found.items():
             if count != 1:
-                problems.append(f"{rel}: {count} {what} value(s) in the release section, expected 1")
+                problems.append(f"{rel}: {count} {what} value(s) on the page, expected 1")
     english = lines.get("en")
     for lang, line in sorted(lines.items()):
         if not line:
@@ -372,24 +415,28 @@ def self_test() -> int:
         _edit(page_path(t, "de"), sha, sha[:-1] + ("0" if sha[-1] != "0" else "1"))
 
     def plant_size(t):
-        _edit(page_path(t, "fr"), f'data-bytes="{size}"', f'data-bytes="{size + 1}"')
+        _edit(page_path(t, "fr"), f"{size:,}", f"{size + 1:,}")
 
     def plant_depth(t):
-        _edit(page_path(t, "en"), f'href="../../downloads/{newest.name}"', f'href="../downloads/{newest.name}"')
+        _edit(page_path(t, "en"), f'<p class="ac-model-release-dl"><a class="ac-model-cta ac-model-cta--primary" '
+                                   f'href="{SITE}/downloads/{newest.name}"',
+              f'<p class="ac-model-release-dl"><a class="ac-model-cta ac-model-cta--primary" '
+              f'href="../downloads/{newest.name}"')
 
     def plant_newer(t):
         shutil.copy2(newest, t / "downloads" / f"OUKA_MODs_v{ver}.9+mc{mc}.zip")
 
     def plant_soon(t):
-        _edit(page_path(t, "ko"), '<section class="ou-release', '<p class="ou-soon">x</p><section class="ou-release')
+        _edit(page_path(t, "ko"), '<div class="ac-wrap ac-model-release"',
+              '<p class="ac-soon">x</p><div class="ac-wrap ac-model-release"')
 
     def plant_fallback(t):
         en = ReleaseParser()
         en.feed(page_path(t, "en").read_text(encoding="utf-8"))
         it = ReleaseParser()
         it.feed(page_path(t, "it").read_text(encoding="utf-8"))
-        en_line = "".join(next(v for v in en.values if v["what"] == "line")["text"]).strip()
-        it_line = "".join(next(v for v in it.values if v["what"] == "line")["text"]).strip()
+        en_line = " ".join("".join(next(v for v in en.values if v["what"] == "line")["text"]).split())
+        it_line = " ".join("".join(next(v for v in it.values if v["what"] == "line")["text"]).split())
         # The parser hands back unescaped text, but the page holds the line escaped: the Italian line's
         # apostrophe is &#x27; on disk. Plant against the form the file actually carries.
         on_disk = page_path(t, "it").read_text(encoding="utf-8")
@@ -397,10 +444,12 @@ def self_test() -> int:
         _edit(page_path(t, "it"), old, html.escape(en_line, quote=True))
 
     def plant_rtl(t):
-        _edit(page_path(t, "ar"), f'<code dir="ltr">{sha}</code>', f"<code>{sha}</code>")
+        _edit(page_path(t, "ar"), f'<code class="ac-hash">{sha}</code>', f"<code>{sha}</code>")
 
-    def plant_name_rtl(t):
-        _edit(page_path(t, "ar"), '<h1 class="ou-name" dir="ltr"', '<h1 class="ou-name"')
+    def plant_name_split(t):
+        _edit(page_path(t, "ar"), '<h1 class="ac-display ac-model-name ac-reveal">OUKA</h1>',
+              '<h1 class="ac-display ac-model-name ac-reveal"><span>O</span><span>U</span>'
+              '<span>K</span><span>A</span></h1>')
 
     def plant_missing(t):
         page_path(t, "tr").unlink()
@@ -419,7 +468,15 @@ def self_test() -> int:
             z.unlink()
 
     def plant_two_links(t):
-        _edit(page_path(t, "zh"), "</dl>", '</dl><a href="#">x</a>')
+        _edit(page_path(t, "zh"), '<div class="ac-model-release-side">',
+              '<a href="#">x</a><div class="ac-model-release-side">')
+
+    def plant_no_version(t):
+        _edit(page_path(t, "ru"), '<span class="ac-model-pill ac-ltr">V<!-- -->1.7.2</span>',
+              '<span class="ac-model-pill ac-ltr">V<!-- -->1.7.1</span>')
+
+    def plant_no_release(t):
+        _edit(page_path(t, "pt-br"), '<div class="ac-wrap ac-model-release">', '<div class="ac-wrap">')
 
     def plant_manifest_sha(t):
         _edit_manifest(t, lambda d: d["ouka"].update(sha256=sha[:-1] + ("0" if sha[-1] != "0" else "1")))
@@ -438,16 +495,18 @@ def self_test() -> int:
         ("size off by one byte", plant_size, "prints size"),
         ("link written for the wrong depth", plant_depth, "resolves to"),
         ("a newer zip the page does not link", plant_newer, "not the newest release"),
-        ("pre-release line left beside the release", plant_soon, "pre-release line"),
+        ("pre-release marker left beside the release", plant_soon, "pre-release marker"),
         ("English line as a fallback", plant_fallback, "the English one"),
-        ("hash without dir=ltr on the Arabic page", plant_rtl, 'no dir="ltr"'),
-        ("name without dir=ltr on the Arabic page", plant_name_rtl, 'the name <h1 class="ou-name"> is not'),
+        ("hash without ltr on the Arabic page", plant_rtl, "is not written left to right"),
+        ("name split into letters on the Arabic page", plant_name_split, "is split into"),
         ("a language page missing", plant_missing, "tr/ouka/index.html: missing"),
         ("an unparseable OUKA file name", plant_bad_name, "does not parse"),
         ("zip whose jar names another version", plant_inner, "its ouka jar says"),
         ("wrong <html lang>", plant_lang, "<html lang="),
         ("no zip at all", plant_no_zip, "holds no OUKA"),
         ("a second link in the release section", plant_two_links, "expected exactly 1"),
+        ("version badge showing the previous version", plant_no_version, "prints 'V1.7.1'"),
+        ("page without a release section", plant_no_release, "release section(s), expected exactly 1"),
         ("manifest hash of another file", plant_manifest_sha, "ouka.sha256 is"),
         ("manifest without the ouka block", plant_manifest_missing, "no 'ouka' block"),
         ("manifest jars missing the bundled dependency", plant_manifest_jar, "ouka.jars is"),
