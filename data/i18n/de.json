@@ -1016,6 +1016,19 @@
      "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
      "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.2",
+    "title": "Tsubomi V2.3.0.2 — klarere Sternblüten-Gegenstände",
+    "summary": "Tsubomi V2.3.0.2 zeichnet den Sternblüten-Legierungsbarren und die Werkzeuge in den Formen der Vanilla-Diamantwerkzeuge und des Netherit-Barrens neu, in Sternblüten-Rosa und -Gold.",
+    "highlights": [
+     "Sternblüten-Spitzhacke, -Axt, -Schaufel, -Hacke und -Lanze haben jetzt genau die Formen ihrer Vanilla-Diamant-Gegenstücke, nur in Sternblüten-Rosa mit pflaumenfarbenem Griff, und sind so auf einen Blick erkennbar.",
+     "Der Sternblüten-Legierungsbarren hat jetzt die Form des Vanilla-Netherit-Barrens, in Sternblüten-Farben. Sonst ändert sich nichts."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+     "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
+    ]
    }
   ],
   "halia": [

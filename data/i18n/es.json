@@ -1016,6 +1016,19 @@
      "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
      "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.2",
+    "title": "Tsubomi V2.3.0.2 — objetos Flor Estelar más claros",
+    "summary": "Tsubomi V2.3.0.2 redibuja el lingote de aleación Flor Estelar y las herramientas con las formas de las herramientas de diamante y el lingote de netherita de vanilla, en rosa y dorado Flor Estelar.",
+    "highlights": [
+     "El pico, el hacha, la pala, la azada y la lanza Flor Estelar tienen ahora exactamente la forma de sus equivalentes de diamante de vanilla, solo recoloreadas en rosa Flor Estelar con mango ciruela; se reconocen a simple vista.",
+     "El lingote de aleación Flor Estelar tiene ahora la forma del lingote de netherita de vanilla, con los colores Flor Estelar. Nada más cambia."
+    ],
+    "warnings": [
+     "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+     "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
+    ]
    }
   ],
   "halia": [

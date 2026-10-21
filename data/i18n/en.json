@@ -1020,6 +1020,19 @@
      "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
      "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.2",
+    "title": "Tsubomi V2.3.0.2 — clearer Starbloom item designs",
+    "summary": "Tsubomi V2.3.0.2 redraws the Starbloom alloy ingot and tools in the same shapes as the vanilla Diamond tools and the Netherite Ingot, in Starbloom pink and gold.",
+    "highlights": [
+     "The Starbloom pickaxe, axe, shovel, hoe and lance now have exactly the shapes of their vanilla Diamond counterparts, recoloured in Starbloom pink with a plum handle, so each one is recognisable at a glance.",
+     "The Starbloom Alloy Ingot now has the shape of the vanilla Netherite Ingot, in Starbloom colours. Nothing else changes."
+    ],
+    "warnings": [
+     "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+     "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
+    ]
    }
   ],
   "halia": [

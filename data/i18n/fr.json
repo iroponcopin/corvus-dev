@@ -1016,6 +1016,19 @@
      "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
      "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.2",
+    "title": "Tsubomi V2.3.0.2 — des objets Floraison d'étoile plus lisibles",
+    "summary": "Tsubomi V2.3.0.2 redessine le lingot d'alliage Floraison d'étoile et les outils avec les formes des outils en diamant et du lingot de netherite du jeu de base, en rose et or Floraison d'étoile.",
+    "highlights": [
+     "La pioche, la hache, la pelle, la houe et la lance Floraison d'étoile ont maintenant exactement la forme de leurs équivalents en diamant du jeu de base, simplement recolorés en rose Floraison d'étoile avec un manche prune ; chacun se reconnaît au premier coup d'œil.",
+     "Le lingot d'alliage Floraison d'étoile a maintenant la forme du lingot de netherite du jeu de base, aux couleurs Floraison d'étoile. Rien d'autre ne change."
+    ],
+    "warnings": [
+     "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+     "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
+    ]
    }
   ],
   "halia": [

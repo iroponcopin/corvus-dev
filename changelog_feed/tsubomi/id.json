@@ -8,8 +8,31 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3.0.1 — alat Starbloom dan menggendong hewan dan penduduk desa",
+   "summary": "Tsubomi V2.3.0.2 — desain item Starbloom yang lebih jelas",
    "releases": [
+    {
+     "version": "V2.3.0.2",
+     "date": "2026-10-21",
+     "type": "release",
+     "title": "Tsubomi V2.3.0.2 — desain item Starbloom yang lebih jelas",
+     "summary": "Tsubomi V2.3.0.2 menggambar ulang Starbloom Alloy Ingot dan alatnya dengan bentuk alat berlian dan Netherite Ingot vanilla, dalam warna merah muda dan emas Starbloom.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Beliung, kapak, sekop, cangkul, dan tombak Starbloom kini berbentuk persis seperti padanan berlian vanilla-nya, hanya diwarnai ulang merah muda Starbloom dengan gagang plum, sehingga langsung dikenali.",
+        "Starbloom Alloy Ingot kini berbentuk seperti Netherite Ingot vanilla, dengan warna Starbloom. Tidak ada hal lain yang berubah."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+        "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3.0.1",
      "date": "2026-10-21",

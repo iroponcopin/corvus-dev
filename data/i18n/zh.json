@@ -1016,6 +1016,19 @@
      "需要 Minecraft 26.3、Fabric Loader 0.19.5 或更高、Fabric API 0.161.0+26.3 或更高以及 Java 25。不需要其他模组；Cherry 是可选的。",
      "Tsubomi 不能与 Alpha 同时使用。只要安装了任何一个 Alpha 模组，游戏就无法启动；请先移除 Alpha 的 jar。"
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.2",
+    "title": "Tsubomi V2.3.0.2 — 更清晰的星樱物品设计",
+    "summary": "Tsubomi V2.3.0.2 将星樱合金锭和工具重绘为与原版钻石工具和下界合金锭相同的形状,配以星樱的粉色与金色。",
+    "highlights": [
+     "星樱镐、斧、铲、锄和长枪现在与原版钻石工具的形状完全相同,只是换成星樱的粉色(手柄为深紫色),一眼就能认出。",
+     "星樱合金锭现在与原版下界合金锭形状相同,配以星樱的颜色。其他内容不变。"
+    ],
+    "warnings": [
+     "需要 Minecraft 26.3、Fabric Loader 0.19.5 或更高、Fabric API 0.161.0+26.3 或更高以及 Java 25。不需要其他模组；Cherry 是可选的。",
+     "Tsubomi 不能与 Alpha 同时使用。只要安装了任何一个 Alpha 模组，游戏就无法启动；请先移除 Alpha 的 jar。"
+    ]
    }
   ],
   "halia": [

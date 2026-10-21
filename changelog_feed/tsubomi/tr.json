@@ -8,8 +8,31 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3.0.1 — Yıldız Çiçeği aletleri ve hayvan ile köylü taşıma",
+   "summary": "Tsubomi V2.3.0.2 — daha anlaşılır Yıldız Çiçeği eşyaları",
    "releases": [
+    {
+     "version": "V2.3.0.2",
+     "date": "2026-10-21",
+     "type": "release",
+     "title": "Tsubomi V2.3.0.2 — daha anlaşılır Yıldız Çiçeği eşyaları",
+     "summary": "Tsubomi V2.3.0.2, Yıldız Çiçeği Alaşım Külçesi ve aletlerini vanilla elmas aletlerin ve Netherit Külçesi'nin biçimlerinde, Yıldız Çiçeği'nin pembe ve altın renklerinde yeniden çizer.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Yıldız Çiçeği kazması, baltası, küreği, çapası ve mızrağı artık vanilla elmas karşılıklarıyla birebir aynı biçimde; yalnızca Yıldız Çiçeği pembesine ve erik rengi saplara boyandı, böylece ilk bakışta tanınıyor.",
+        "Yıldız Çiçeği Alaşım Külçesi artık vanilla Netherit Külçesi biçiminde ve Yıldız Çiçeği renklerinde. Başka hiçbir şey değişmiyor."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+        "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3.0.1",
      "date": "2026-10-21",

@@ -1016,6 +1016,19 @@
      "Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais novo, Fabric API 0.161.0+26.3 ou mais nova e Java 25. Nenhum outro mod é necessário; o Cherry é opcional.",
      "O Tsubomi não pode ser usado junto com o Alpha. Se houver um único mod do Alpha instalado, o jogo não inicia; remova antes os jars do Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.2",
+    "title": "Tsubomi V2.3.0.2 — itens Flor Estelar mais claros",
+    "summary": "O Tsubomi V2.3.0.2 redesenha o lingote de liga Flor Estelar e as ferramentas com as formas das ferramentas de diamante e do lingote de netherita do jogo base, em rosa e dourado Flor Estelar.",
+    "highlights": [
+     "A picareta, o machado, a pá, a enxada e a lança Flor Estelar agora têm exatamente a forma de suas equivalentes de diamante do jogo base, só recoloridas em rosa Flor Estelar com cabo ameixa; cada uma é reconhecível à primeira vista.",
+     "O lingote de liga Flor Estelar agora tem a forma do lingote de netherita do jogo base, nas cores Flor Estelar. Nada mais muda."
+    ],
+    "warnings": [
+     "Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais novo, Fabric API 0.161.0+26.3 ou mais nova e Java 25. Nenhum outro mod é necessário; o Cherry é opcional.",
+     "O Tsubomi não pode ser usado junto com o Alpha. Se houver um único mod do Alpha instalado, o jogo não inicia; remova antes os jars do Alpha."
+    ]
    }
   ],
   "halia": [
