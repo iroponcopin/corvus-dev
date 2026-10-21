@@ -74,8 +74,8 @@
     "latest": "1.7.2.2",
     "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/OUKA_MODs_v1.7.2.2+mc26.3.zip",
     "file_name": "OUKA_MODs_v1.7.2.2+mc26.3.zip",
-    "file_size": 14105952,
-    "sha256": "0d4a718266ab27182710abcad119176c881e6dee9ff70eb529cd3d6d67fce80c",
+    "file_size": 14105960,
+    "sha256": "98358eb004a3de9b6c1c0dbcf705520619cca9dd975e0c8ba6aebad6d107f6d4",
     "jars": {
       "geckolib": {
         "path": "mods/geckolib-fabric-26.3-5.5.6.jar",
