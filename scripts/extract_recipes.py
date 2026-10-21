@@ -2575,12 +2575,12 @@ def published_textures():
 # 公開済みの絵のうち、意図して変える 1 件ずつの表(2026-10-05、Corvus の判断 A)。見張りは、ここに書いた品を、ここに書いた「前の鍵 → 新しい鍵」の
 # 組にかぎって通す(別の鍵・別の品は今までどおり止まる)。前の鍵の絵(PNG)は、そのまま残さなければならない(下の見張りが、バイトまで見る)。
 INTENDED_ICON_CHANGES = {
-    "tsubomi:starbloom_axe": ("t2049", "t2055", "Tsubomi V2.3.0.2: redrawn in the vanilla Diamond axe shape, Starbloom colours (owner request 2026-10-21)"),
-    "tsubomi:starbloom_ingot": ("t2050", "t2056", "Tsubomi V2.3.0.2: redrawn in the vanilla Netherite Ingot shape, Starbloom colours (owner request 2026-10-21)"),
-    "tsubomi:starbloom_hoe": ("t2051", "t2057", "Tsubomi V2.3.0.2: redrawn in the vanilla Diamond hoe shape, Starbloom colours (owner request 2026-10-21)"),
-    "tsubomi:starbloom_pickaxe": ("t2052", "t2058", "Tsubomi V2.3.0.2: redrawn in the vanilla Diamond pickaxe shape, Starbloom colours (owner request 2026-10-21)"),
-    "tsubomi:starbloom_shovel": ("t2053", "t2059", "Tsubomi V2.3.0.2: redrawn in the vanilla Diamond shovel shape, Starbloom colours (owner request 2026-10-21)"),
-    "tsubomi:starbloom_spear": ("t2054", "t2060", "Tsubomi V2.3.0.2: redrawn in the vanilla Diamond spear shape, Starbloom colours (owner request 2026-10-21)"),
+    "tsubomi:starbloom_axe": ("t2049", "t2057", "Tsubomi V2.3.0.2: redrawn in the vanilla Diamond axe shape, Starbloom colours (owner request 2026-10-21)"),
+    "tsubomi:starbloom_ingot": ("t2050", "t2058", "Tsubomi V2.3.0.2: redrawn in the vanilla Netherite Ingot shape, Starbloom colours (owner request 2026-10-21)"),
+    "tsubomi:starbloom_hoe": ("t2051", "t2059", "Tsubomi V2.3.0.2: redrawn in the vanilla Diamond hoe shape, Starbloom colours (owner request 2026-10-21)"),
+    "tsubomi:starbloom_pickaxe": ("t2052", "t2060", "Tsubomi V2.3.0.2: redrawn in the vanilla Diamond pickaxe shape, Starbloom colours (owner request 2026-10-21)"),
+    "tsubomi:starbloom_shovel": ("t2053", "t2061", "Tsubomi V2.3.0.2: redrawn in the vanilla Diamond shovel shape, Starbloom colours (owner request 2026-10-21)"),
+    "tsubomi:starbloom_spear": ("t2054", "t2062", "Tsubomi V2.3.0.2: redrawn in the vanilla Diamond spear shape, Starbloom colours (owner request 2026-10-21)"),
     "minecraft:white_carpet": (None, "t50", "Tsubomi 2.0.0 uses it; drawn with the white wool picture it already shared, never had one"),
     "minecraft:stonecutter": (None, "t889", "Tsubomi 2.0.0: the stonecutter became a station (120 recipes); it had no picture"),
     "ouka:operating_shelter_block": ("t157", "t269", "V1.4 new shelter look, owner-intended 2026-10-05"),
