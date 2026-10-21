@@ -1,15 +1,37 @@
 {
  "lang": "tr",
  "brand": "ouka",
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-20 tarihinde güncellendi",
+ "updated_label": "2026-10-21 tarihinde güncellendi",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK 1.7.2 — Hollow Purple küresi ve kafes pencere tarifi",
+   "summary": "Ouka JJK 1.7.2.1 — Heavy Core Ingot ve blok, OUKA Beacon dengesi",
    "releases": [
+    {
+     "version": "V1.7.2.1",
+     "date": "2026-10-21",
+     "type": "release",
+     "title": "Ouka JJK 1.7.2.1 — Heavy Core Ingot ve blok, OUKA Beacon dengesi",
+     "summary": "Bir Heavy Core Ingot ve bir Heavy Core bloğu, ayrıca OUKA Beacon için yeni değerler.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Heavy Core Ingot ve Heavy Core bloğu eklendi. OUKA Beacon artık 1 Heavy Core Ingot ile onarılıyor.",
+        "OUKA Beacon %25 daha hızlı aşınıyor, en yüksek dayanıklılığının %15'ini kaybediyor ve etkisi %15 daha güçlü. 1.000 blokluk menzil değişmiyor."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "1.7.2.1'i kurmadan önce mods klasöründen eski OUKA jar'ını (1.7.2 veya daha eski) kaldırın ve yalnızca 1 GeckoLib 5.5.6 kopyası bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerektirir. İstemciye ve sunucuya da kurun."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.2",
      "date": "2026-10-20",

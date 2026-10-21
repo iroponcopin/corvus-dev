@@ -306,6 +306,18 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.2.1",
+    "title": "Ouka JJK 1.7.2.1 — Heavy Core Ingot и блок, настройка OUKA Beacon",
+    "summary": "Слиток Heavy Core Ingot и блок Heavy Core, а также новые значения для OUKA Beacon.",
+    "highlights": [
+     "Добавлены Heavy Core Ingot и блок Heavy Core. Теперь OUKA Beacon чинится 1 Heavy Core Ingot.",
+     "OUKA Beacon изнашивается на 25 % быстрее, теряет 15 % максимальной прочности, а его эффект сильнее на 15 %. Радиус 1 000 блоков не меняется."
+    ],
+    "warnings": [
+     "Перед установкой 1.7.2.1 удалите из папки mods старый jar OUKA (1.7.2 или более ранний) и оставьте только 1 копию GeckoLib 5.5.6. Нужны Minecraft 26.3, Fabric Loader 0.19.5 или новее и Fabric API 0.161.0+26.3 или новее. Установите на клиент и на сервер."
+    ]
+   },
+   {
     "id": "ouka-v1.7.2",
     "title": "Ouka JJK 1.7.2 — сфера Hollow Purple и рецепт решётчатого окна",
     "summary": "Сфера Hollow Purple выглядит одинаково при любой графической настройке, а у решётчатого окна новый рецепт.",

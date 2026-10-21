@@ -306,6 +306,18 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.2.1",
+    "title": "Ouka JJK 1.7.2.1 — Heavy Core Ingot dan blok, penyeimbangan OUKA Beacon",
+    "summary": "Heavy Core Ingot dan blok Heavy Core, serta nilai baru untuk OUKA Beacon.",
+    "highlights": [
+     "Heavy Core Ingot dan blok Heavy Core ditambahkan. OUKA Beacon sekarang diperbaiki dengan 1 Heavy Core Ingot.",
+     "OUKA Beacon aus 25 % lebih cepat, kehilangan 15 % dari daya tahan maksimum, dan efeknya 15 % lebih kuat. Jangkauan 1.000 blok tidak berubah."
+    ],
+    "warnings": [
+     "Sebelum memasang 1.7.2.1, hapus jar OUKA lama (1.7.2 atau lebih lama) dari folder mods dan simpan hanya 1 salinan GeckoLib 5.5.6. Dibutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di klien dan server."
+    ]
+   },
+   {
     "id": "ouka-v1.7.2",
     "title": "Ouka JJK 1.7.2 — bola Hollow Purple dan resep jendela kisi",
     "summary": "Bola Hollow Purple tampil sama di setiap pengaturan grafis, dan jendela kisi punya resep baru.",

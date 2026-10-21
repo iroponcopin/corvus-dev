@@ -1,15 +1,37 @@
 {
  "lang": "ar",
  "brand": "ouka",
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "title": "سجل التحديثات",
- "updated_label": "آخر تحديث 2026-10-20",
+ "updated_label": "آخر تحديث 2026-10-21",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK 1.7.2 — كرة Hollow Purple ووصفة النافذة الشبكية",
+   "summary": "Ouka JJK 1.7.2.1 — Heavy Core Ingot والكتلة، وتعديل OUKA Beacon",
    "releases": [
+    {
+     "version": "V1.7.2.1",
+     "date": "2026-10-21",
+     "type": "release",
+     "title": "Ouka JJK 1.7.2.1 — Heavy Core Ingot والكتلة، وتعديل OUKA Beacon",
+     "summary": "إضافة Heavy Core Ingot وكتلة Heavy Core، مع قيم جديدة لـ OUKA Beacon.",
+     "sections": [
+      {
+       "title": "أبرز التغييرات",
+       "items": [
+        "أُضيف Heavy Core Ingot وكتلة Heavy Core. يُصلَح OUKA Beacon الآن بـ 1 من Heavy Core Ingot.",
+        "يتآكل OUKA Beacon أسرع بنسبة 25 %، ويفقد 15 % من أقصى متانة، وتصبح تأثيراته أقوى بنسبة 15 %. ويبقى مدى 1,000 كتلة كما هو."
+       ]
+      },
+      {
+       "title": "ملاحظات هامة",
+       "items": [
+        "قبل تثبيت 1.7.2.1، احذف ملف jar القديم لـ OUKA (1.7.2 أو أقدم) من مجلد mods، واحتفظ بنسخة 1 فقط من GeckoLib 5.5.6. يتطلب Minecraft 26.3 وFabric Loader 0.19.5 أو أحدث وFabric API 0.161.0+26.3 أو أحدث. ثبّته على العميل والخادم معاً."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.2",
      "date": "2026-10-20",

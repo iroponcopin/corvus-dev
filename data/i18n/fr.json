@@ -306,6 +306,18 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.2.1",
+    "title": "Ouka JJK 1.7.2.1 — Heavy Core Ingot et bloc, réglage de l'OUKA Beacon",
+    "summary": "Un Heavy Core Ingot et un bloc Heavy Core, et de nouveaux réglages pour l'OUKA Beacon.",
+    "highlights": [
+     "Le Heavy Core Ingot et le bloc Heavy Core sont ajoutés. L'OUKA Beacon se répare désormais avec 1 Heavy Core Ingot.",
+     "L'OUKA Beacon s'use 25 % plus vite, perd 15 % de sa durabilité maximale, et son effet est 15 % plus fort. Sa portée de 1 000 blocs ne change pas."
+    ],
+    "warnings": [
+     "Avant d'installer 1.7.2.1, supprime l'ancien jar OUKA (1.7.2 ou plus ancien) du dossier mods et ne garde qu'1 copie de GeckoLib 5.5.6. Il faut Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, et Fabric API 0.161.0+26.3 ou plus récent. Installe-le sur le client et sur le serveur."
+    ]
+   },
+   {
     "id": "ouka-v1.7.2",
     "title": "Ouka JJK 1.7.2 — la sphère Hollow Purple et la recette de la fenêtre treillis",
     "summary": "La sphère Hollow Purple s'affiche de la même façon quel que soit le réglage graphique, et la fenêtre treillis a une nouvelle recette.",
