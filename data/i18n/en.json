@@ -993,6 +993,21 @@
      "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
      "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.1",
+    "title": "Tsubomi V2.3.0.1 — Starbloom tools and carrying animals and villagers",
+    "summary": "Tsubomi V2.3.0.1 brings back the celestial tool set as Starbloom tools, 39% weaker than the originals, and lets you pick up animals and villagers.",
+    "highlights": [
+     "Starbloom tools: the lost celestial gear returns in Tsubomi's style. A Starbloom Alloy Ingot (Netherite Ingot, 4 Diamonds and 4 Copper Quartz Ingots) makes a quarry pickaxe that mines 3x3, a felling axe that fells whole trees, a levelling spade, a harvest hoe and a lance that dashes and throws light. Every number is 39% below the original.",
+     "Carry animals and villagers: with empty hands, look at one and press G; press G again to put it down. Hostile and large mobs refuse, and you move 15% slower while carrying. Carried mobs take no harm and are put down safely if you leave.",
+     "No key clashes: if another mod uses the same default as Tsubomi's Carry or Tool Pouch key, Tsubomi moves its key to a free one by itself, and never touches a key you set yourself. The quarry pickaxe switches its area with Sneak + use, so it needs no key at all.",
+     "Light on the server: nothing runs unless a tool or a carry is in use, and the tools break and drop blocks through the game's own rules."
+    ],
+    "warnings": [
+     "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+     "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
+    ]
    }
   ],
   "halia": [

@@ -1,15 +1,40 @@
 {
  "lang": "fr",
  "brand": "tsubomi",
- "updated": "2026-10-19",
+ "updated": "2026-10-21",
  "title": "Historique des mises à jour",
- "updated_label": "Mis à jour le 2026-10-19",
+ "updated_label": "Mis à jour le 2026-10-21",
  "note": "",
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3 — l'enchantement Entropie",
+   "summary": "Tsubomi V2.3.0.1 — outils Floraison d'étoile et port d'animaux et de villageois",
    "releases": [
+    {
+     "version": "V2.3.0.1",
+     "date": "2026-10-21",
+     "type": "release",
+     "title": "Tsubomi V2.3.0.1 — outils Floraison d'étoile et port d'animaux et de villageois",
+     "summary": "Tsubomi V2.3.0.1 ramène l'ensemble d'outils céleste sous le nom d'outils Floraison d'étoile, 39% plus faibles que les originaux, et vous permet de soulever animaux et villageois.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Outils Floraison d'étoile : l'équipement céleste perdu revient dans le style Tsubomi. Un lingot d'alliage Floraison d'étoile (lingot de netherite, 4 diamants et 4 lingots de quartz cuivré) donne une pioche d'extraction 3x3, une hache d'abattage d'arbres entiers, une pelle à niveler, une houe de récolte et une lance qui charge et lance de la lumière. Chaque valeur est 39% sous l'original.",
+        "Porter animaux et villageois : les mains vides, regardez-en un et appuyez sur G ; G de nouveau pour le reposer. Les mobs hostiles et les grands mobs refusent, et vous allez 15% plus lentement en portant. Les mobs portés ne subissent aucun mal et sont reposés en sécurité si vous partez.",
+        "Pas de conflit de touches : si un autre mod utilise la même touche par défaut que la touche Porter ou Sac d'outils de Tsubomi, Tsubomi déplace la sienne vers une touche libre, sans jamais toucher à une touche que vous avez choisie. La pioche change de zone avec Se baisser + utiliser, sans aucune touche.",
+        "Léger pour le serveur : rien ne tourne tant qu'un outil ou un port n'est pas utilisé, et les outils cassent et font tomber les blocs selon les règles du jeu."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+        "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3.0",
      "date": "2026-10-19",

@@ -1,15 +1,40 @@
 {
  "lang": "id",
  "brand": "tsubomi",
- "updated": "2026-10-19",
+ "updated": "2026-10-21",
  "title": "Riwayat Pembaruan",
- "updated_label": "Diperbarui 2026-10-19",
+ "updated_label": "Diperbarui 2026-10-21",
  "note": "",
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3 — enchantment Entropy",
+   "summary": "Tsubomi V2.3.0.1 — alat Starbloom dan menggendong hewan dan penduduk desa",
    "releases": [
+    {
+     "version": "V2.3.0.1",
+     "date": "2026-10-21",
+     "type": "release",
+     "title": "Tsubomi V2.3.0.1 — alat Starbloom dan menggendong hewan dan penduduk desa",
+     "summary": "Tsubomi V2.3.0.1 mengembalikan set alat langit sebagai alat Starbloom, 39% lebih lemah dari aslinya, dan memungkinkan Anda mengangkat hewan dan penduduk desa.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Alat Starbloom: perlengkapan langit yang hilang kembali dengan gaya Tsubomi. Satu Starbloom Alloy Ingot (Netherite Ingot, 4 Diamond, dan 4 Copper Quartz Ingot) membuat beliung tambang 3x3, kapak yang menebang seluruh pohon, sekop perata, cangkul panen, dan tombak yang menerjang dan melempar cahaya. Setiap angka 39% di bawah aslinya.",
+        "Menggendong hewan dan penduduk desa: dengan tangan kosong, lihat satu dan tekan G; tekan G lagi untuk menurunkannya. Mob musuh dan mob besar menolak, dan Anda bergerak 15% lebih lambat saat menggendong. Mob yang digendong tidak terluka dan diturunkan dengan aman jika Anda keluar.",
+        "Tanpa bentrok tombol: jika mod lain memakai tombol bawaan yang sama dengan tombol Gendong atau Kantong Alat Tsubomi, Tsubomi memindahkan tombolnya ke tombol bebas sendiri, tanpa pernah menyentuh tombol yang Anda atur. Beliung berganti area dengan Sneak + gunakan, jadi tidak butuh tombol.",
+        "Ringan untuk server: tidak ada yang berjalan kecuali alat atau gendongan sedang dipakai, dan alat memecah serta menjatuhkan blok lewat aturan game sendiri."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+        "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3.0",
      "date": "2026-10-19",

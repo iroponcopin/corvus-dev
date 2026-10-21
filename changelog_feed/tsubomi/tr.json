@@ -1,15 +1,40 @@
 {
  "lang": "tr",
  "brand": "tsubomi",
- "updated": "2026-10-19",
+ "updated": "2026-10-21",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-19 tarihinde güncellendi",
+ "updated_label": "2026-10-21 tarihinde güncellendi",
  "note": "",
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3 — Entropi büyüsü",
+   "summary": "Tsubomi V2.3.0.1 — Yıldız Çiçeği aletleri ve hayvan ile köylü taşıma",
    "releases": [
+    {
+     "version": "V2.3.0.1",
+     "date": "2026-10-21",
+     "type": "release",
+     "title": "Tsubomi V2.3.0.1 — Yıldız Çiçeği aletleri ve hayvan ile köylü taşıma",
+     "summary": "Tsubomi V2.3.0.1, göksel alet takımını orijinalinden %39 daha zayıf Yıldız Çiçeği aletleri olarak geri getirir ve hayvanları ile köylüleri kaldırmanızı sağlar.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Yıldız Çiçeği aletleri: kaybolan göksel donanım Tsubomi tarzında geri dönüyor. Bir Yıldız Çiçeği Alaşım Külçesi (Netherit Külçe, 4 Elmas ve 4 Bakır Kuvars Külçesi) 3x3 kazan bir taş ocağı kazması, ağaçları bütün halinde kesen bir balta, düzleyici kürek, hasat çapası ve atılıp ışık fırlatan bir mızrak yapar. Her sayı orijinalin %39 altında.",
+        "Hayvan ve köylü taşıma: eller boşken birine bakıp G'ye basın; bırakmak için tekrar G. Düşman ve büyük moblar reddeder, taşırken %15 daha yavaş hareket edersiniz. Taşınan moblar zarar görmez, siz çıkarsanız güvenle bırakılır.",
+        "Tuş çakışması yok: başka bir mod Tsubomi'nin Taşı veya Alet Çantası tuşuyla aynı varsayılan tuşu kullanıyorsa, Tsubomi kendi tuşunu boş bir tuşa kendisi taşır ve sizin atadığınız tuşa asla dokunmaz. Kazma, alanı Eğil + kullan ile değiştirir, tuşa gerek yoktur.",
+        "Sunucuya hafif: bir alet veya taşıma kullanılmadıkça hiçbir şey çalışmaz ve aletler blokları oyunun kendi kurallarıyla kırar ve düşürür."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+        "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3.0",
      "date": "2026-10-19",

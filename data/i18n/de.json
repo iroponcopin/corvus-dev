@@ -989,6 +989,21 @@
      "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
      "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.1",
+    "title": "Tsubomi V2.3.0.1 — Sternblüten-Werkzeuge und Tiere und Dorfbewohner tragen",
+    "summary": "Tsubomi V2.3.0.1 bringt das himmlische Werkzeugset als Sternblüten-Werkzeuge zurück, 39% schwächer als die Originale, und lässt dich Tiere und Dorfbewohner aufheben.",
+    "highlights": [
+     "Sternblüten-Werkzeuge: Die verlorene himmlische Ausrüstung kehrt im Tsubomi-Stil zurück. Ein Sternblüten-Legierungsbarren (Netherit-Barren, 4 Diamanten und 4 Kupferquarz-Barren) ergibt eine Abbauspitzhacke für 3x3, eine Fällaxt für ganze Bäume, eine Planierschaufel, eine Erntehacke und eine Lanze, die vorstürmt und Licht wirft. Jeder Wert liegt 39% unter dem Original.",
+     "Tiere und Dorfbewohner tragen: Mit leeren Händen ein Wesen ansehen und G drücken; erneut G zum Absetzen. Feindliche und große Mobs lassen sich nicht aufheben, und beim Tragen bist du 15% langsamer. Getragene Mobs nehmen keinen Schaden und werden sicher abgesetzt, wenn du gehst.",
+     "Keine Tastenkonflikte: Nutzt eine andere Mod dieselbe Standardtaste wie Tsubomis Trage- oder Werkzeugbeutel-Taste, weicht Tsubomi selbst auf eine freie Taste aus und fasst nie eine selbst gesetzte Taste an. Die Abbauspitzhacke wechselt ihren Bereich mit Schleichen + Benutzen, braucht also gar keine Taste.",
+     "Schonend für den Server: Nichts läuft, solange kein Werkzeug oder Tragen benutzt wird, und die Werkzeuge nutzen die eigenen Abbau- und Drop-Regeln des Spiels."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+     "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
+    ]
    }
   ],
   "halia": [

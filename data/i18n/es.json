@@ -989,6 +989,21 @@
      "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
      "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.1",
+    "title": "Tsubomi V2.3.0.1 — herramientas Flor Estelar y cargar animales y aldeanos",
+    "summary": "Tsubomi V2.3.0.1 recupera el conjunto de herramientas celestial como herramientas Flor Estelar, un 39% más débiles que las originales, y te deja levantar animales y aldeanos.",
+    "highlights": [
+     "Herramientas Flor Estelar: el equipo celestial perdido vuelve al estilo Tsubomi. Un lingote de aleación Flor Estelar (lingote de netherita, 4 diamantes y 4 lingotes de cuarzo cobrizo) da un pico de cantera de 3x3, un hacha que tala árboles enteros, una pala niveladora, una azada de cosecha y una lanza que embiste y lanza luz. Cada valor está un 39% por debajo del original.",
+     "Cargar animales y aldeanos: con las manos vacías, mira a uno y pulsa G; pulsa G otra vez para soltarlo. Los mobs hostiles y grandes se niegan, y vas un 15% más lento al cargar. Los mobs cargados no sufren daño y se sueltan con seguridad si te vas.",
+     "Sin choques de teclas: si otro mod usa la misma tecla por defecto que la de Cargar o la del Bolso de herramientas de Tsubomi, Tsubomi mueve la suya a una libre y nunca toca una tecla que hayas puesto tú. El pico cambia de zona con Agacharse + usar, así que no necesita tecla.",
+     "Ligero para el servidor: nada se ejecuta si no se usa una herramienta o una carga, y las herramientas rompen y sueltan bloques con las reglas propias del juego."
+    ],
+    "warnings": [
+     "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+     "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
+    ]
    }
   ],
   "halia": [

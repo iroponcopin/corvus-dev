@@ -989,6 +989,21 @@
      "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
      "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.1",
+    "title": "Tsubomi V2.3.0.1 — strumenti Fioritura Stellare e trasporto di animali e abitanti",
+    "summary": "Tsubomi V2.3.0.1 riporta il set di strumenti celeste come strumenti Fioritura Stellare, più deboli del 39% degli originali, e ti permette di sollevare animali e abitanti.",
+    "highlights": [
+     "Strumenti Fioritura Stellare: l'equipaggiamento celeste perduto torna nello stile Tsubomi. Un lingotto di lega Fioritura Stellare (lingotto di netherite, 4 diamanti e 4 lingotti di quarzo rame) dà un piccone da cava 3x3, un'ascia che abbatte alberi interi, una pala livellatrice, una zappa da raccolto e una lancia che carica e lancia luce. Ogni valore è inferiore del 39% all'originale.",
+     "Trasportare animali e abitanti: a mani libere, guardane uno e premi G; premi di nuovo G per posarlo. I mob ostili e grandi rifiutano, e ti muovi del 15% più lentamente mentre trasporti. I mob trasportati non subiscono danni e vengono posati in sicurezza se te ne vai.",
+     "Nessun conflitto di tasti: se un altro mod usa lo stesso tasto predefinito del tasto Trasporta o Borsa degli attrezzi di Tsubomi, Tsubomi sposta il suo su uno libero, senza mai toccare un tasto impostato da te. Il piccone cambia area con Accovacciati + usa, quindi non serve alcun tasto.",
+     "Leggero per il server: niente gira finché uno strumento o un trasporto non è in uso, e gli strumenti rompono e rilasciano blocchi con le regole del gioco."
+    ],
+    "warnings": [
+     "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+     "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
+    ]
    }
   ],
   "halia": [
