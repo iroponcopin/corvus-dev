@@ -1029,6 +1029,20 @@
      "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
      "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.3",
+    "title": "Tsubomi V2.3.0.3 — armatura, scudo, arco e freccia Fioritura Stellare",
+    "summary": "Tsubomi V2.3.0.3 aggiunge elmo, corazza, gambali, stivali, scudo, arco e freccia Fioritura Stellare, con i disegni di vanilla ricolorati in rosa e oro Fioritura Stellare e 1.75 volte più forti della netherite.",
+    "highlights": [
+     "Armatura Fioritura Stellare: elmo, corazza, gambali e stivali hanno le forme dell'armatura di netherite di vanilla, nei colori Fioritura Stellare, con 1.75 volte la difesa, la tenacia, la resistenza al contraccolpo e la durabilità della netherite. Un set completo raggiunge i limiti del gioco stesso (30 di armatura, 20 di tenacia).",
+     "Scudo, arco e freccia Fioritura Stellare: lo scudo para come quello di vanilla con 1.75 volte la durabilità; l'arco fa colpire ogni freccia 1.75 volte più forte (e dura 1.75 volte di più); la freccia Fioritura Stellare colpisce 1.75 volte più forte con qualsiasi arco, e l'arco con queste frecce somma i due effetti. Quattro frecce si fanno con un lingotto di lega, un bastoncino e una piuma.",
+     "Una correzione per gli strumenti Fioritura Stellare: ora sono nei tag degli strumenti di vanilla, quindi si possono applicare incantesimi per strumenti come Efficienza e Integrità."
+    ],
+    "warnings": [
+     "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+     "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
+    ]
    }
   ],
   "halia": [

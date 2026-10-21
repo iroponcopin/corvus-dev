@@ -8,8 +8,32 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3.0.2 — des objets Floraison d'étoile plus lisibles",
+   "summary": "Tsubomi V2.3.0.3 — armure, bouclier, arc et flèche Floraison d'étoile",
    "releases": [
+    {
+     "version": "V2.3.0.3",
+     "date": "2026-10-21",
+     "type": "release",
+     "title": "Tsubomi V2.3.0.3 — armure, bouclier, arc et flèche Floraison d'étoile",
+     "summary": "Tsubomi V2.3.0.3 ajoute le casque, le plastron, les jambières, les bottes, le bouclier, l'arc et la flèche Floraison d'étoile, aux dessins du jeu de base recolorés en rose et or Floraison d'étoile, et 1.75 fois plus forts que la netherite.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Armure Floraison d'étoile : le casque, le plastron, les jambières et les bottes ont les formes de l'armure en netherite du jeu de base, aux couleurs Floraison d'étoile, avec 1.75 fois la défense, la résistance, la résistance au recul et la durabilité de la netherite. Une panoplie complète atteint les plafonds du jeu (30 d'armure, 20 de résistance).",
+        "Bouclier, arc et flèche Floraison d'étoile : le bouclier bloque comme celui du jeu de base avec 1.75 fois la durabilité ; l'arc fait frapper chaque flèche 1.75 fois plus fort (et dure 1.75 fois plus longtemps) ; la flèche Floraison d'étoile frappe 1.75 fois plus fort avec n'importe quel arc, et l'arc avec ces flèches cumule les deux. Quatre flèches se fabriquent avec un lingot d'alliage, un bâton et une plume.",
+        "Une correction pour les outils Floraison d'étoile : ils figurent désormais dans les étiquettes d'outils du jeu de base, donc les enchantements d'outil comme Efficacité et Solidité peuvent leur être appliqués."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+        "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3.0.2",
      "date": "2026-10-21",

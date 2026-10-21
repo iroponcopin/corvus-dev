@@ -1033,6 +1033,20 @@
      "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
      "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.3",
+    "title": "Tsubomi V2.3.0.3 — Starbloom armour, shield, bow and arrow",
+    "summary": "Tsubomi V2.3.0.3 adds the Starbloom Helmet, Chestplate, Leggings, Boots, Shield, Bow and Arrow, in the vanilla designs recoloured Starbloom pink and gold, and 1.75× as strong as Netherite.",
+    "highlights": [
+     "Starbloom armour: the Helmet, Chestplate, Leggings and Boots have the shapes of the vanilla Netherite armour, in Starbloom colours, with 1.75× Netherite's defence, toughness, knockback resistance and durability. A full set reaches the game's own caps (30 armour, 20 toughness).",
+     "Starbloom Shield, Bow and Arrow: the shield blocks like a vanilla shield with 1.75× the durability; the bow makes every arrow hit 1.75× as hard (and lasts 1.75× longer); the Starbloom Arrow hits 1.75× as hard from any bow, and a Starbloom Bow with Starbloom Arrows combines both. Four arrows are made from an alloy ingot, a stick and a feather.",
+     "A fix for the Starbloom tools: they are now in the vanilla tool tags, so tool enchantments such as Efficiency and Unbreaking can be applied to them."
+    ],
+    "warnings": [
+     "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+     "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
+    ]
    }
   ],
   "halia": [

@@ -1029,6 +1029,20 @@
      "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
      "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.3",
+    "title": "Tsubomi V2.3.0.3 — Sternblüten-Rüstung, -Schild, -Bogen und -Pfeil",
+    "summary": "Tsubomi V2.3.0.3 fügt Sternblüten-Helm, -Brustplatte, -Beinschutz, -Stiefel, -Schild, -Bogen und -Pfeil hinzu, in den Vanilla-Designs mit Sternblüten-Rosa und -Gold und 1,75-mal so stark wie Netherit.",
+    "highlights": [
+     "Sternblüten-Rüstung: Helm, Brustplatte, Beinschutz und Stiefel haben die Formen der Vanilla-Netherit-Rüstung in Sternblüten-Farben, mit 1.75-facher Verteidigung, Zähigkeit, Rückstoßresistenz und Haltbarkeit von Netherit. Ein ganzes Set erreicht die Grenzen des Spiels (30 Rüstung, 20 Zähigkeit).",
+     "Sternblüten-Schild, -Bogen und -Pfeil: Der Schild blockt wie ein Vanilla-Schild bei 1.75-facher Haltbarkeit; der Bogen lässt jeden Pfeil 1.75-mal so hart treffen (und hält 1.75-mal so lange); der Sternblüten-Pfeil trifft aus jedem Bogen 1.75-mal so hart, und Sternblüten-Bogen mit Sternblüten-Pfeilen verbindet beides. Vier Pfeile entstehen aus einem Legierungsbarren, einem Stock und einer Feder.",
+     "Eine Korrektur für die Sternblüten-Werkzeuge: Sie stehen jetzt in den Vanilla-Werkzeug-Tags, sodass Werkzeug-Verzauberungen wie Effizienz und Haltbarkeit möglich sind."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+     "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
+    ]
    }
   ],
   "halia": [

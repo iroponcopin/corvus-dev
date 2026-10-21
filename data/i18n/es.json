@@ -1029,6 +1029,20 @@
      "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
      "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.3",
+    "title": "Tsubomi V2.3.0.3 — armadura, escudo, arco y flecha Flor Estelar",
+    "summary": "Tsubomi V2.3.0.3 añade el casco, la pechera, las grebas, las botas, el escudo, el arco y la flecha Flor Estelar, con los diseños de vanilla recoloreados en rosa y dorado Flor Estelar y 1.75 veces más fuertes que la netherita.",
+    "highlights": [
+     "Armadura Flor Estelar: el casco, la pechera, las grebas y las botas tienen las formas de la armadura de netherita de vanilla, con los colores Flor Estelar, y 1.75 veces la defensa, la dureza, la resistencia al retroceso y la durabilidad de la netherita. Un conjunto completo alcanza los límites del propio juego (30 de armadura, 20 de dureza).",
+     "Escudo, arco y flecha Flor Estelar: el escudo bloquea como el de vanilla con 1.75 veces la durabilidad; el arco hace que cada flecha golpee 1.75 veces más fuerte (y dura 1.75 veces más); la flecha Flor Estelar golpea 1.75 veces más fuerte con cualquier arco, y el arco con estas flechas combina ambos. Se hacen cuatro flechas con un lingote de aleación, un palo y una pluma.",
+     "Una corrección para las herramientas Flor Estelar: ahora están en las etiquetas de herramientas de vanilla, así que se les pueden aplicar encantamientos de herramienta como Eficiencia e Irrompibilidad."
+    ],
+    "warnings": [
+     "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+     "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
+    ]
    }
   ],
   "halia": [

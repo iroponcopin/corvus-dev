@@ -8,8 +8,32 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3.0.2 — daha anlaşılır Yıldız Çiçeği eşyaları",
+   "summary": "Tsubomi V2.3.0.3 — Yıldız Çiçeği zırhı, kalkanı, yayı ve oku",
    "releases": [
+    {
+     "version": "V2.3.0.3",
+     "date": "2026-10-21",
+     "type": "release",
+     "title": "Tsubomi V2.3.0.3 — Yıldız Çiçeği zırhı, kalkanı, yayı ve oku",
+     "summary": "Tsubomi V2.3.0.3; Yıldız Çiçeği Miğferi, Göğüslüğü, Pantolonu, Botları, Kalkanı, Yayı ve Okunu ekler: vanilla tasarımlar Yıldız Çiçeği'nin pembe ve altın renklerinde, Netherit'ten 1.75 kat güçlü.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Yıldız Çiçeği zırhı: Miğfer, Göğüslük, Pantolon ve Botlar vanilla Netherit zırhın biçimindedir, Yıldız Çiçeği renklerindedir; savunma, sağlamlık, geri itme direnci ve dayanıklılık Netherit'in 1.75 katıdır. Tam takım oyunun kendi sınırlarına (30 zırh, 20 sağlamlık) ulaşır.",
+        "Yıldız Çiçeği Kalkanı, Yayı ve Oku: Kalkan vanilla kalkan gibi engeller ve 1.75 kat dayanıklıdır; yay her okun 1.75 kat sert vurmasını sağlar (ve 1.75 kat uzun dayanır); Yıldız Çiçeği Oku her yaydan 1.75 kat sert vurur, Yıldız Çiçeği Yayı ile birlikte ikisi birleşir. Bir alaşım külçesi, bir çubuk ve bir tüyle dört ok yapılır.",
+        "Yıldız Çiçeği aletleri için bir düzeltme: artık vanilla alet etiketlerinde olduklarından Verimlilik ve Kırılmazlık gibi alet büyüleri uygulanabilir."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+        "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3.0.2",
      "date": "2026-10-21",

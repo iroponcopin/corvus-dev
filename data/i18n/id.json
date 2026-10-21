@@ -1029,6 +1029,20 @@
      "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
      "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.3",
+    "title": "Tsubomi V2.3.0.3 — zirah, perisai, busur, dan panah Starbloom",
+    "summary": "Tsubomi V2.3.0.3 menambahkan Helm, Baju Zirah, Pelindung Kaki, Sepatu, Perisai, Busur, dan Panah Starbloom, dengan desain vanilla berwarna merah muda dan emas Starbloom, dan 1.75 kali lebih kuat dari Netherite.",
+    "highlights": [
+     "Zirah Starbloom: Helm, Baju Zirah, Pelindung Kaki, dan Sepatu berbentuk seperti zirah Netherite vanilla dalam warna Starbloom, dengan pertahanan, ketangguhan, ketahanan dorongan, dan daya tahan 1.75 kali Netherite. Satu set penuh mencapai batas permainan itu sendiri (30 zirah, 20 ketangguhan).",
+     "Perisai, Busur, dan Panah Starbloom: perisai menahan seperti perisai vanilla dengan daya tahan 1.75 kali; busur membuat setiap panah memukul 1.75 kali lebih keras (dan awet 1.75 kali); Panah Starbloom memukul 1.75 kali lebih keras dari busur mana pun, dan Busur Starbloom dengan Panah Starbloom menggabungkan keduanya. Empat panah dibuat dari satu batangan paduan, satu tongkat, dan satu bulu.",
+     "Perbaikan untuk alat Starbloom: kini alat itu masuk dalam tag alat vanilla, sehingga enchantment alat seperti Efisiensi dan Unbreaking dapat dipasang."
+    ],
+    "warnings": [
+     "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+     "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+    ]
    }
   ],
   "halia": [
