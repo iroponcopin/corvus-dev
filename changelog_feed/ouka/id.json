@@ -8,8 +8,30 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK 1.7.2.1 — Heavy Core Ingot dan blok, penyeimbangan OUKA Beacon",
+   "summary": "Ouka JJK 1.7.2.2 — Exoskeleton Bahaya Industri disesuaikan",
    "releases": [
+    {
+     "version": "V1.7.2.2",
+     "date": "2026-10-21",
+     "type": "release",
+     "title": "Ouka JJK 1.7.2.2 — Exoskeleton Bahaya Industri disesuaikan",
+     "summary": "Set lengkap Exoskeleton Bahaya lebih ringan: kerusakan jatuh dan api turun 25%, dan berenang di lava dihapus.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Saat memakai ke-4 bagian, kerusakan jatuh turun 25% (dulu dibatalkan) dan kerusakan api turun 25% (dulu dibatalkan). Sekarang kamu bisa terbakar. Berenang di lava sudah tidak bisa.",
+        "Perlindungan petir, baju zirah, dan kecepatan menambang 3x tidak berubah."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Sebelum memasang 1.7.2.2, hapus jar OUKA lama (1.7.2.1 atau lebih lama) dari folder mods dan simpan hanya 1 salinan GeckoLib 5.5.6. Dibutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di klien dan server."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.2.1",
      "date": "2026-10-21",

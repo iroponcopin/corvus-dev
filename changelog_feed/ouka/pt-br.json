@@ -8,8 +8,30 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK 1.7.2.1 — Heavy Core Ingot e bloco, ajuste do OUKA Beacon",
+   "summary": "Ouka JJK 1.7.2.2 — Exoesqueleto de perigo industrial ajustado",
    "releases": [
+    {
+     "version": "V1.7.2.2",
+     "date": "2026-10-21",
+     "type": "release",
+     "title": "Ouka JJK 1.7.2.2 — Exoesqueleto de perigo industrial ajustado",
+     "summary": "O conjunto completo do exoesqueleto de perigo ficou mais leve: o dano de queda e de fogo cai 25 %, e nadar em lava deixou de existir.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "Com as 4 peças vestidas, o dano de queda cai 25 % (antes era anulado) e o dano de fogo cai 25 % (antes era anulado). Você agora pega fogo. Não dá mais para nadar na lava.",
+        "A proteção contra raios, a armadura e a velocidade de mineração 3x continuam iguais."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Antes de instalar a 1.7.2.2, remova da pasta mods o jar antigo do OUKA (1.7.2.1 ou anterior) e mantenha apenas 1 cópia do GeckoLib 5.5.6. Ele exige Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente e Fabric API 0.161.0+26.3 ou mais recente. Instale no cliente e no servidor."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.2.1",
      "date": "2026-10-21",

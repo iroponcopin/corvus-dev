@@ -310,6 +310,18 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.2.2",
+    "title": "Ouka JJK 1.7.2.2 — Industrial Hazard Exoskeleton adjusted",
+    "summary": "The Hazard Exoskeleton full set is softer: fall and fire damage are cut by 25%, and lava swimming is removed.",
+    "highlights": [
+     "Wearing all 4 pieces, fall damage is cut by 25% (it was cancelled), and fire damage is cut by 25% (it was cancelled). You now burn. You can no longer swim in lava.",
+     "Shock (lightning) protection, armour and the 3x mining speed are unchanged."
+    ],
+    "warnings": [
+     "Before you install 1.7.2.2, remove the old OUKA jar (1.7.2.1 or older) from the mods folder and keep only 1 copy of GeckoLib 5.5.6. It needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, and Fabric API 0.161.0+26.3 or newer. Install it on both the client and the server."
+    ]
+   },
+   {
     "id": "ouka-v1.7.2.1",
     "title": "Ouka JJK 1.7.2.1 — Heavy Core Ingot and Block, and the OUKA Beacon rebalance",
     "summary": "A Heavy Core Ingot and a Heavy Core Block, and new numbers for the OUKA Beacon.",

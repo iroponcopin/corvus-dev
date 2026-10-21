@@ -306,6 +306,18 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7.2.2",
+    "title": "Ouka JJK 1.7.2.2 — Exosquelette de danger industriel ajusté",
+    "summary": "L'ensemble complet de l'exosquelette de danger est plus léger : les dégâts de chute et de feu baissent de 25 %, et la nage dans la lave disparaît.",
+    "highlights": [
+     "Avec les 4 pièces portées, les dégâts de chute baissent de 25 % (ils étaient annulés) et les dégâts de feu de 25 % (ils étaient annulés). Vous prenez feu désormais. Nager dans la lave n'est plus possible.",
+     "La protection contre la foudre, l'armure et la vitesse de minage ×3 restent identiques."
+    ],
+    "warnings": [
+     "Avant d'installer 1.7.2.2, supprime l'ancien jar OUKA (1.7.2.1 ou plus ancien) du dossier mods et ne garde qu'1 copie de GeckoLib 5.5.6. Il faut Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, et Fabric API 0.161.0+26.3 ou plus récent. Installe-le sur le client et sur le serveur."
+    ]
+   },
+   {
     "id": "ouka-v1.7.2.1",
     "title": "Ouka JJK 1.7.2.1 — Heavy Core Ingot et bloc, réglage de l'OUKA Beacon",
     "summary": "Un Heavy Core Ingot et un bloc Heavy Core, et de nouveaux réglages pour l'OUKA Beacon.",

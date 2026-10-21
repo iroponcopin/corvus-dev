@@ -8,8 +8,30 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK 1.7.2.1 — Heavy Core Ingot ve blok, OUKA Beacon dengesi",
+   "summary": "Ouka JJK 1.7.2.2 — Endüstriyel Tehlike Dış İskeleti ayarlandı",
    "releases": [
+    {
+     "version": "V1.7.2.2",
+     "date": "2026-10-21",
+     "type": "release",
+     "title": "Ouka JJK 1.7.2.2 — Endüstriyel Tehlike Dış İskeleti ayarlandı",
+     "summary": "Tehlike Dış İskeleti'nin tam takımı yumuşadı: düşme ve ateş hasarı %25 azaldı ve lavda yüzme kaldırıldı.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "4 parçanın tamamı giyildiğinde düşme hasarı %25 azalır (önceden iptal ediliyordu), ateş hasarı da %25 azalır (önceden iptal ediliyordu). Artık yanarsın. Lavda yüzemezsin.",
+        "Şok (yıldırım) koruması, zırh ve 3 kat kazma hızı değişmedi."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "1.7.2.2'yi kurmadan önce mods klasöründen eski OUKA jar'ını (1.7.2.1 veya daha eski) kaldırın ve yalnızca 1 GeckoLib 5.5.6 kopyası bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerektirir. İstemciye ve sunucuya da kurun."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.2.1",
      "date": "2026-10-21",
