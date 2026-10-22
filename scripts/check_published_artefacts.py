@@ -14,7 +14,7 @@
 判定できなかったものは**失敗として数える**。取得できなかった、manifest に
 sha256 が無い、などを「合格」に化けさせない。
 """
-SETTING_BLOCKS = {"ai_chat", "difficulty_lock"}
+SETTING_BLOCKS = {"ai_chat", "difficulty_lock", "spawn_lock"}   # spawn_lock: 2026-10-22 (Halia V1.4 switches)
 import argparse
 import hashlib
 import json

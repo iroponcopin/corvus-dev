@@ -839,6 +839,67 @@ def _ai_chat():
     return {"url": url}
 
 
+SPAWN_LOCK_FILE = ROOT / "data" / "spawn_lock.json"
+HALIA_CREATURES_FILE = ROOT / "data" / "halia_creatures.json"
+
+
+def _spawn_lock():
+    """The top-level `spawn_lock` (Corvus Store 5.5.1.2+), or None when data/spawn_lock.json is absent.
+
+    Locks the Halia creatures' natural-spawn switches on for the UK-local days [from, until): the Store shows the
+    switches locked and holds every creature on for that span. The file is copied as it is after checking it: model
+    "halia", ISO dates, from before until. Older Stores ignore the key.
+    """
+    if not SPAWN_LOCK_FILE.is_file():
+        return None
+    lock = json.loads(SPAWN_LOCK_FILE.read_text(encoding="utf-8"))
+    if not isinstance(lock, dict) or set(lock) != {"model", "from", "until"} or lock["model"] != "halia":
+        raise SystemExit(f"ERROR: {SPAWN_LOCK_FILE} must be exactly {{model: halia, from, until}} (was {lock}).")
+    import datetime
+    try:
+        start = datetime.date.fromisoformat(lock["from"])
+        end = datetime.date.fromisoformat(lock["until"])
+    except (TypeError, ValueError):
+        raise SystemExit(f"ERROR: {SPAWN_LOCK_FILE}: from and until must be YYYY-MM-DD.")
+    if not start < end:
+        raise SystemExit(f"ERROR: {SPAWN_LOCK_FILE}: from must be before until.")
+    return {"model": "halia", "from": lock["from"], "until": lock["until"]}
+
+
+def _halia_creatures():
+    """The `halia.creatures` list (Corvus Store 5.5.1.2+), or None when data/halia_creatures.json is absent.
+
+    Each entry is exactly {id, name: {en, ja}, dimension}. The id has no namespace and matches the Store's pattern
+    [a-z][a-z0-9_]*, because the Store refuses anything else. The Store reads the list beside the halia block, so it
+    is added to that block in build() and never changes the block's own fields.
+    """
+    import re
+    if not HALIA_CREATURES_FILE.is_file():
+        return None
+    items = json.loads(HALIA_CREATURES_FILE.read_text(encoding="utf-8"))
+    if not isinstance(items, list) or not items:
+        raise SystemExit(f"ERROR: {HALIA_CREATURES_FILE} must be a non-empty list.")
+    pattern = re.compile(r"[a-z][a-z0-9_]*")
+    seen = set()
+    out = []
+    for item in items:
+        if not isinstance(item, dict) or set(item) != {"id", "name", "dimension"}:
+            raise SystemExit(f"ERROR: {HALIA_CREATURES_FILE}: every entry must be exactly {{id, name, dimension}} (was {item}).")
+        cid, name, dim = item["id"], item["name"], item["dimension"]
+        if not isinstance(cid, str) or not pattern.fullmatch(cid) or cid.startswith("halia:"):
+            raise SystemExit(f"ERROR: {HALIA_CREATURES_FILE}: id {cid!r} must be [a-z][a-z0-9_]* with no namespace.")
+        if cid in seen:
+            raise SystemExit(f"ERROR: {HALIA_CREATURES_FILE}: duplicate id {cid!r}.")
+        seen.add(cid)
+        if not isinstance(name, dict) or set(name) != {"en", "ja"} or not all(
+                isinstance(v, str) and v.strip() for v in name.values()):
+            raise SystemExit(f"ERROR: {HALIA_CREATURES_FILE}: {cid} needs name en and ja, both non-empty.")
+        if not isinstance(dim, str) or not dim.strip():
+            raise SystemExit(f"ERROR: {HALIA_CREATURES_FILE}: {cid} needs a dimension.")
+        out.append({"id": cid, "name": {"en": name["en"], "ja": name["ja"]}, "dimension": dim})
+    return out
+
+
 def _previously_published_manifest():
     """The manifest currently committed at the repo root, or {} if there is none."""
     path = ROOT / "glimpse_manifest.json"
@@ -994,6 +1055,10 @@ def build():
 
     halia = _halia_block()
     if halia is not None:
+        creatures = _halia_creatures()
+        if creatures is not None:
+            halia["creatures"] = creatures
+            print(f"glimpse_manifest.py: halia.creatures {len(creatures)} listed")
         manifest["halia"] = halia
         print(f"glimpse_manifest.py: Halia {halia['latest']} ({halia['file_name']}, mod id {halia['mod_id']!r}) "
               f"selected, including 'halia' block")
@@ -1029,6 +1094,11 @@ def build():
     if chat is not None:
         manifest["ai_chat"] = chat
         print(f"glimpse_manifest.py: ai_chat at {chat['url']}")
+
+    spawn = _spawn_lock()
+    if spawn is not None:
+        manifest["spawn_lock"] = spawn
+        print(f"glimpse_manifest.py: spawn_lock {spawn['model']} from {spawn['from']} until {spawn['until']} (UK local)")
 
     noctua = _noctua_block()
     if noctua is not None:

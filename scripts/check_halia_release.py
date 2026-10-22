@@ -16,7 +16,11 @@ here:
   5. glimpse_manifest.json carries a "halia" block for that jar and nothing else: mod_id "halia", latest <ver>, the
      jar's file name, address, size and SHA-256 — and no "jars" key (Halia 1.0.0 has no crafting recipes, so it is not a recipe-sheet source). The Discord release bot announces from this block;
   6. changelog_feed/brands.json lists Halia with its feed, and each of the 13 languages' changelog_feed/halia feed
-     leads with V<ver>: the site does not publish a release its changelog has not reached.
+     leads with V<ver>: the site does not publish a release its changelog has not reached;
+  7. (Halia 1.4.0, 2026-10-22) the manifest's top-level "spawn_lock" is exactly {model: "halia", from, until} with
+     YYYY-MM-DD dates and from before until, and halia.creatures is exactly seven entries: each {id, name: {en, ja},
+     dimension}, the id matching the Store's pattern [a-z][a-z0-9_]* with no "halia:" prefix, no duplicate ids, and
+     non-empty names and dimension. The Store refuses a list it cannot read and falls back to its bundled one.
 
 Independent by construction: it imports nothing from the builders (not site_common, not build_glimpse_manifest, not
 build_changelog_feed). The language list, the site address and the file-name rule are written out again here, so a
@@ -44,11 +48,59 @@ JAR_RE = re.compile(r"^halia-(\d+(?:\.\d+)*)\.jar$")
 SITE = "https://iroponcopin.github.io/corvus-dev"
 ALLOWED_DEPENDS = {"fabricloader", "minecraft", "java", "fabric-api"}
 ALLOWED_SOFT = set()               # Halia recommends and suggests nothing
+CREATURE_ID_RE = re.compile(r"[a-z][a-z0-9_]*")       # the Store's pattern (HaliaCreature.ID)
+CREATURE_COUNT = 7                 # the natural-spawn creatures of V1.4 (CREATURES_FOR_CORVUS.json "creatures")
 
 
 def git_tracked(root: Path, rel: str) -> bool:
     result = subprocess.run(["git", "ls-files", "--error-unmatch", rel], cwd=root, capture_output=True, text=True)
     return result.returncode == 0
+
+
+def spawn_and_creature_problems(manifest: dict, halia_block) -> list:
+    """Item 7: the spawn_lock setting and the halia.creatures list are well formed. Pure: takes the parsed manifest."""
+    from datetime import date
+    problems = []
+    lock = manifest.get("spawn_lock")
+    if lock is None:
+        problems.append("glimpse_manifest.json has no top-level 'spawn_lock': the Store would not lock the creature switches")
+    elif not isinstance(lock, dict) or set(lock) != {"model", "from", "until"}:
+        problems.append(f"glimpse_manifest.json spawn_lock must be exactly {{model, from, until}} (was {lock!r})")
+    else:
+        if lock["model"] != "halia":
+            problems.append(f"spawn_lock.model is {lock['model']!r}, not 'halia'")
+        try:
+            start, end = date.fromisoformat(lock["from"]), date.fromisoformat(lock["until"])
+        except (TypeError, ValueError):
+            problems.append(f"spawn_lock from/until must be YYYY-MM-DD (was {lock['from']!r}, {lock['until']!r})")
+        else:
+            if not start < end:
+                problems.append(f"spawn_lock from {lock['from']} is not before until {lock['until']}")
+    if halia_block is None:
+        return problems          # the missing halia block is already a problem above
+    creatures = halia_block.get("creatures")
+    if not isinstance(creatures, list):
+        return problems + ["glimpse_manifest.json halia.creatures is missing or not a list (the Store shows its bundled list)"]
+    if len(creatures) != CREATURE_COUNT:
+        problems.append(f"halia.creatures has {len(creatures)} entries, the V1.4 natural-spawn creatures are {CREATURE_COUNT}")
+    seen = set()
+    for i, c in enumerate(creatures):
+        if not isinstance(c, dict) or set(c) != {"id", "name", "dimension"}:
+            problems.append(f"halia.creatures[{i}] must be exactly {{id, name, dimension}} (was {c!r})")
+            continue
+        cid = c["id"]
+        if not isinstance(cid, str) or not CREATURE_ID_RE.fullmatch(cid) or cid.startswith("halia:"):
+            problems.append(f"halia.creatures[{i}] id {cid!r} does not match [a-z][a-z0-9_]* without a namespace")
+        elif cid in seen:
+            problems.append(f"halia.creatures id {cid!r} appears twice")
+        seen.add(cid)
+        name = c["name"]
+        if not isinstance(name, dict) or set(name) != {"en", "ja"} or not all(
+                isinstance(v, str) and v.strip() for v in name.values()):
+            problems.append(f"halia.creatures[{i}] ({cid}) needs non-empty name en and ja")
+        if not isinstance(c["dimension"], str) or not c["dimension"].strip():
+            problems.append(f"halia.creatures[{i}] ({cid}) needs a non-empty dimension")
+    return problems
 
 
 def check(root: Path, tracked=git_tracked):
@@ -91,9 +143,14 @@ def check(root: Path, tracked=git_tracked):
             problems.append(f"the halia jar declares {field} against {wrong}: Halia 1.0.0 refuses nothing, and the Store "
                             f"would turn an unconditional 'breaks' into a refused install")
     try:
-        block = json.loads((root / "glimpse_manifest.json").read_text(encoding="utf-8")).get("halia")
+        manifest = json.loads((root / "glimpse_manifest.json").read_text(encoding="utf-8"))
+        block = manifest.get("halia")
     except (OSError, ValueError) as exc:
         return problems + [f"glimpse_manifest.json cannot be read ({exc})"], {}
+    # item 7 reads creatures out of the block; the byte-for-byte comparison below covers the rest of the block.
+    problems += spawn_and_creature_problems(manifest, block)
+    if isinstance(block, dict) and "creatures" in block:
+        block = {k: v for k, v in block.items() if k != "creatures"}
     expected = {
         "mod_id": "halia",
         "latest": version,
@@ -208,6 +265,16 @@ def self_test() -> int:
         ("breaks names Cherry (a false incompatibility)",
          lambda d: rewrite_jar(d, lambda m: m.setdefault("breaks", {}).update(cherry="*")), True, True),
         ("one language's feed lags the release", lambda d: edit_feed(d, "ar", "V0.9.0"), True, True),
+        ("spawn_lock is missing (the switches would not lock)", lambda d: edit_manifest(d, lambda m: m.pop("spawn_lock")), True, True),
+        ("spawn_lock from is after until", lambda d: edit_manifest(d, lambda m: m["spawn_lock"].update({"from": "2027-01-01"})), True, True),
+        ("spawn_lock names another model", lambda d: edit_manifest(d, lambda m: m["spawn_lock"].update({"model": "ouka"})), True, True),
+        ("a creature id carries the halia: prefix",
+         lambda d: edit_manifest(d, lambda m: m["halia"]["creatures"][0].update({"id": "halia:glimmerwisp"})), True, True),
+        ("a creature is missing (six, not seven)", lambda d: edit_manifest(d, lambda m: m["halia"]["creatures"].pop()), True, True),
+        ("a creature has no Japanese name",
+         lambda d: edit_manifest(d, lambda m: m["halia"]["creatures"][1]["name"].update({"ja": ""})), True, True),
+        ("a creature id is duplicated",
+         lambda d: edit_manifest(d, lambda m: m["halia"]["creatures"].__setitem__(1, dict(m["halia"]["creatures"][0]))), True, True),
     ]
     ok = True
     for label, plant, is_tracked, should_fail in plants:

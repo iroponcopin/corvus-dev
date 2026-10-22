@@ -190,7 +190,7 @@ def placeholder_problem(path, mod_id):
 NOT_MINECRAFT = frozenset({"noctua", "agent"})
 # 2026-10-18: manifest の鍵のうち、ファイルを配らない「設定」。成果物が無いので性質 5 の対象外だが、黙って飛ばさず
 # 名前で数え、file_name を持っていたら（ファイルの block と取り違えた）赤にする。
-SETTING_KEYS = frozenset({"difficulty_lock", "ai_chat"})   # 2026-10-12: Corvus Agent runs beside a server, not in the game
+SETTING_KEYS = frozenset({"difficulty_lock", "ai_chat", "spawn_lock"})   # 2026-10-12: Corvus Agent runs beside a server, not in the game; 2026-10-22: spawn_lock (Halia switches)
 
 
 def check(root, old, new, baseline):
