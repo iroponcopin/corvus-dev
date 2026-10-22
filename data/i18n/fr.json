@@ -1063,7 +1063,7 @@
     "title": "Halia V1.4.0.37 — les bâtons tenus reprennent une taille normale",
     "summary": "Les bâtons tenus dans Halia sont de nouveau dessinés à une taille normale.",
     "highlights": [
-     "Le Staff of Bursting Mana, le Staff of Warped Space et le Sage's Rod étaient dessinés beaucoup trop grands lorsqu'on les tenait (à la première personne, le Staff of Bursting Mana couvrait un tiers de l'écran). Ils sont maintenant dessinés à une taille normale à la première et à la troisième personne, au sol et comme objets dans des cadres. (Halia V1.4.0.37)"
+     "Le Staff of Bursting Mana, le Staff of Warped Space et le Sage's Rod étaient dessinés beaucoup trop grands lorsqu'on les tenait. Ils sont maintenant dessinés à une taille normale lorsqu'on les tient, à la première et à la troisième personne. (Halia V1.4.0.37)"
     ],
     "warnings": [
      "La configuration requise est inchangée depuis la 1.4.0."
