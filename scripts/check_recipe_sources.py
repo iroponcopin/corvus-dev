@@ -30,6 +30,53 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 
+# The set-aside rules, mirrored from scripts/extract_recipes.py (halia_cards). Each kind is counted and printed, never
+# silently absent. Returns None for a recipe that owes the sheet a card.
+SET_ASIDE_PLAYWRIGHT = "halia:playwright_bookcloning"   # 2026-10-22 (Halia 1.4.0): no inputs, no result
+SET_ASIDE_BREW = "minecraft:brewing"                     # 2026-10-22: input is an {item, potion_contents} stack
+
+
+def set_aside_kind(body, only_air):
+    """'recolour', 'air', 'playwright', 'brew_potion' or None (a card). only_air is the jar's tag reader."""
+    if body.get("type") == "halia:recoloring":
+        return "recolour"
+    if (body.get("type") == "minecraft:crafting_shapeless" and body.get("ingredients")
+            and all(only_air(i) for i in body["ingredients"])):
+        return "air"
+    if body.get("type") == SET_ASIDE_PLAYWRIGHT:
+        return "playwright"
+    if (body.get("type") == SET_ASIDE_BREW and isinstance(body.get("input"), dict)
+            and "potion_contents" in body["input"]):
+        return "brew_potion"
+    return None
+
+
+def self_test() -> int:
+    """The control: the rule must set aside exactly the marker kinds and must NOT hide a real card or an unknown
+    recipe type. Each case is planted; a rule that swallows a card (or lets a marker through) turns this red."""
+    def no_air(_ing):
+        return False
+    cases = [
+        ("playwright marker is set aside", {"type": SET_ASIDE_PLAYWRIGHT, "category": "misc"}, "playwright", True),
+        ("brewing with potion input is set aside", {"type": SET_ASIDE_BREW,
+                                                    "input": {"item": "minecraft:potion",
+                                                              "potion_contents": {"potions": "minecraft:awkward"}}},
+         "brew_potion", True),
+        ("plain brewing with an item input is a card", {"type": SET_ASIDE_BREW, "input": {"item": "minecraft:potion"},
+                                                       "output": {"id": "minecraft:potion"}}, None, True),
+        ("a shaped craft is a card", {"type": "minecraft:crafting_shaped", "result": {"id": "x:y"}}, None, True),
+        ("an unknown type with no result is NOT silently set aside", {"type": "halia:some_new_thing"}, None, True),
+    ]
+    ok = True
+    for label, body, want, _ in cases:
+        got = set_aside_kind(body, no_air)
+        right = got == want
+        ok &= right
+        print(f"  self-test [{'ok' if right else 'WRONG'}] {label}: {got}")
+    print("SELF-TEST VERDICT:", "PASS" if ok else "FAIL")
+    return 0 if ok else 1
+
+
 def main():
     recipes_path = ROOT / "data" / "recipes.json"
     manifest_path = ROOT / "glimpse_manifest.json"
@@ -127,15 +174,21 @@ def main():
                 # 2026-10-16 (Halia 1.2.0): the Aerie's 320 "any dye recolours this device" recipes (type
                 # halia:recoloring) are not cards either; the sheet says so in one line. Any other recipe type is a card.
                 names = []
-                set_aside_air = set_aside_recolour = 0
+                set_aside_air = set_aside_recolour = set_aside_playwright = set_aside_brew = 0
                 for key in sorted(bodies):
                     body = bodies[key]
-                    if body.get("type") == "halia:recoloring":
+                    kind = set_aside_kind(body, only_air)
+                    if kind == "recolour":
                         set_aside_recolour += 1
                         continue
-                    if (body.get("type") == "minecraft:crafting_shapeless" and body.get("ingredients")
-                            and all(only_air(i) for i in body["ingredients"])):
+                    if kind == "air":
                         set_aside_air += 1
+                        continue
+                    if kind == "playwright":
+                        set_aside_playwright += 1
+                        continue
+                    if kind == "brew_potion":
+                        set_aside_brew += 1
                         continue
                     names.append(key)
 
@@ -160,7 +213,8 @@ def main():
                 if info.get("latest"):
                     live[block] = info["latest"]
                 bare_checked[block] = (results, len(names) + second)
-                bare_set_aside[block] = (set_aside_air, set_aside_recolour, len(jars) - 1)
+                bare_set_aside[block] = (set_aside_air, set_aside_recolour, len(jars) - 1,
+                                         set_aside_playwright, set_aside_brew)
             else:
                 recipe_less.append(block)
 
@@ -223,14 +277,16 @@ def main():
           ", ".join(f"{k} {v}" for k, v in sorted(sources.items())) +
           " - the same versions the site publishes" +
           "".join(f"; {b}: all {n} jar recipe(s) have a card (set aside: {bare_set_aside[b][0]} that cannot be "
-                  f"crafted, {bare_set_aside[b][1]} recolouring; {bare_set_aside[b][2] + 1} jar(s) read)"
+                  f"crafted, {bare_set_aside[b][1]} recolouring, {bare_set_aside[b][3]} playwright book-cloning "
+                  f"marker(s), {bare_set_aside[b][4]} brewing with potion contents (a known gap); "
+                  f"{bare_set_aside[b][2] + 1} jar(s) read)"
                   for b, (_r, n) in sorted(bare_checked.items())) +
           ("; bare jar(s) with no recipe, not a source: " + ", ".join(recipe_less) if recipe_less else ""))
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(self_test() if "--self-test" in sys.argv[1:] else main())
 
 # ---------------------------------------------------------------------------
 # 2026-09-20 の Pages 障害。次に同じ形を見たときのために結果だけ残す。

@@ -103,6 +103,26 @@ def spawn_and_creature_problems(manifest: dict, halia_block) -> list:
     return problems
 
 
+def nested_mod_ids(data: bytes) -> set:
+    """The mod ids declared by the jars nested under META-INF/jars/ of the Halia jar (read from each nested
+    fabric.mod.json). Unreadable nested jars contribute nothing, so they cannot excuse a dependency."""
+    ids = set()
+    try:
+        with zipfile.ZipFile(io.BytesIO(data)) as outer:
+            for name in outer.namelist():
+                if name.startswith("META-INF/jars/") and name.endswith(".jar"):
+                    try:
+                        with zipfile.ZipFile(io.BytesIO(outer.read(name))) as inner:
+                            mod = json.loads(inner.read("fabric.mod.json").decode("utf-8"))
+                        if isinstance(mod.get("id"), str):
+                            ids.add(mod["id"])
+                    except (zipfile.BadZipFile, KeyError, ValueError):
+                        continue
+    except zipfile.BadZipFile:
+        return set()
+    return ids
+
+
 def check(root: Path, tracked=git_tracked):
     """(problems, facts). A problem is a string; an empty list is green."""
     problems = []
@@ -130,9 +150,15 @@ def check(root: Path, tracked=git_tracked):
         problems.append(f"{jpath.name} declares the mod id {meta.get('id')!r}, not 'halia'")
     if meta.get("version") != version:
         problems.append(f"{jpath.name} is named for {version}, but its fabric.mod.json declares {meta.get('version')!r}")
-    extra = sorted(set(meta.get("depends") or {}) - ALLOWED_DEPENDS)
+    # Item 3 (decided 2026-10-22 by the parent, option B): besides the four base dependencies, a Halia jar may depend
+    # on a mod only when one of the jars it NESTS (META-INF/jars/*.jar) declares that exact mod id in its own
+    # fabric.mod.json. The nested copy is read from the jar, never typed here, so a dependency with nothing nested
+    # behind it stays red.
+    nested_ids = nested_mod_ids(data)
+    extra = sorted(set(meta.get("depends") or {}) - ALLOWED_DEPENDS - nested_ids)
     if extra:
-        problems.append(f"the halia jar depends on {extra}: it may depend only on {sorted(ALLOWED_DEPENDS)}")
+        problems.append(f"the halia jar depends on {extra}: it may depend only on {sorted(ALLOWED_DEPENDS)}, plus a mod "
+                        f"whose jar it nests under META-INF/jars (nested ids here: {sorted(nested_ids)})")
     for field in ("recommends", "suggests"):
         soft = sorted(set(meta.get(field) or {}) - ALLOWED_SOFT)
         if soft:
@@ -206,7 +232,7 @@ def self_test() -> int:
         shutil.copy2(ROOT / "glimpse_manifest.json", dst / "glimpse_manifest.json")
         shutil.copytree(ROOT / "changelog_feed", dst / "changelog_feed")
 
-    def rewrite_jar(dst: Path, meta_change=None, extra_inner=None, sync_manifest=True):
+    def rewrite_jar(dst: Path, meta_change=None, extra_inner=None, sync_manifest=True, drop_nested=()):
         """Rebuild the jar with the change applied. With sync_manifest the manifest block is rewritten to the new
         jar's size and hash, so only the planted fault can be what turns the gate red."""
         path = dst / "downloads" / jname
@@ -218,6 +244,9 @@ def self_test() -> int:
             inner["fabric.mod.json"] = json.dumps(meta).encode()
         if extra_inner:
             inner.update(extra_inner)
+        for prefix in drop_nested:
+            for name in [n for n in inner if n.startswith(prefix)]:
+                del inner[name]
         buf = io.BytesIO()
         with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as jar:
             for n, b in inner.items():
@@ -260,6 +289,11 @@ def self_test() -> int:
         ("the jar declares another mod id", lambda d: rewrite_jar(d, lambda m: m.update(id="halia_x")), True, True),
         ("the jar's version differs from its name", lambda d: rewrite_jar(d, lambda m: m.update(version="0.9.9")), True, True),
         ("Cherry as a hard dependency", lambda d: rewrite_jar(d, lambda m: m["depends"].update(cherry="*")), True, True),
+        ("geckolib depended on with no geckolib jar nested (the nested copy removed)",
+         lambda d: rewrite_jar(d, lambda m: m["depends"].update(geckolib=">=5.5.6"),
+                               extra_inner=None, sync_manifest=True, drop_nested=("META-INF/jars/geckolib-",)), True, True),
+        ("an unlisted mod depended on with nothing nested behind it",
+         lambda d: rewrite_jar(d, lambda m: m["depends"].update(cherry="*")), True, True),
         ("an Alpha module as a dependency", lambda d: rewrite_jar(d, lambda m: m["depends"].update(sorakaze_guns="*")), True, True),
         ("another mod suggested", lambda d: rewrite_jar(d, lambda m: m.update(suggests={"ouka": "*"})), True, True),
         ("breaks names Cherry (a false incompatibility)",
@@ -302,7 +336,7 @@ def main() -> int:
         print(f"halia release: RED ({len(problems)} problem(s))")
         return 1
     print(f"halia release: {facts['jar']} ({facts['size']:,} bytes, sha256 {facts['sha256'][:16]}…) is tracked, the one "
-          f"Halia jar, depends on Fabric only, refuses no other mod, is described exactly by the "
+          f"Halia jar, depends only on Fabric and the mods it nests, refuses no other mod, is described exactly by the "
           f"manifest's halia block, and led by V{facts['version']} in all 13 feeds: GREEN")
     return 0
 

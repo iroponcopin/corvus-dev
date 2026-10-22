@@ -998,6 +998,40 @@ MOD_TEXTURE_OVERRIDE = {
 # (照合は常に「その位置で一致する最長のキー」を選ぶ)。
 #   例) 「金庫」を入れておかないと「金」+「庫」に割れる。「格子戸」は「格子」に勝つ。
 YOMI = {
+    # --- Halia V1.4.0 (2026-10-22): readings of the 30 items with no picture in data/halia_icons/index.json yet.
+    #     Proposed by the author of this change, NOT reviewed: hiragana of the jar's own Japanese name. ---
+    "術師の大全": "じゅつしのたいぜん",
+    "機巧マナ回路": "からくりまなかいろ",
+    "ダイヤモンドジェム": "だいやもんどじぇむ",
+    "エメラルドジェム": "えめらるどじぇむ",
+    "チューナー": "ちゅーなー",
+    "捕まえた宝背": "つかまえたほうはい",
+    "術円投写器": "じゅつえんとうしゃき",
+    "妖精のケーキ": "ようせいのけーき",
+    "妖精のエッセンス": "ようせいのえっせんす",
+    "牙の短剣": "きばのたんけん",
+    "霧の投写器": "きりのとうしゃき",
+    "砕きの槌": "くだきのつち",
+    "マナ回路": "まなかいろ",
+    "すり鉢": "すりばち",
+    "すり鉢とすりこぎ": "すりばちとすりこぎ",
+    "すりこぎ": "すりこぎ",
+    "ダイヤモンドの粉末": "だいやもんどのふんまつ",
+    "エメラルドの粉末": "えめらるどのふんまつ",
+    "エンダーアイの粉": "えんだーあいのこ",
+    "エンダーパールの粉": "えんだーぱーるのこ",
+    "金の粉末": "きんのふんまつ",
+    "鉄の粉末": "てつのふんまつ",
+    "クォーツの粉末": "くぉーつのふんまつ",
+    "儀式の短剣": "ぎしきのたんけん",
+    "爪痕の原木": "つめあとのげんぼく",
+    "巻物入れ": "まきものいれ",
+    "巻物入れ‐始まりの術": "まきものいれ‐はじまりのじゅつ",
+    "羊皮紙": "ようひし",
+    "毒壺": "どくつぼ",
+    "翼蛇の牙": "よくじゃのきば",
+    # (Halia 1.4.0, 2026-10-22, proposed and NOT reviewed) the one name the 1.4.0 dry run found with no reading.
+    "木炭": "もくたん",
     # --- Tsubomi V2.3.0.1 (2026-10-21) 星桜の道具。読みは tsubomi-src/docs/JA_READINGS_V2.3.0.1.json(未確認)。均は「地均し」で読む。 ---
     "地均し": "じならし",
     "星桜合金インゴット": "ほしざくらごうきんいんごっと", "星桜の削岩鎚": "ほしざくらのさくがんづち", "星桜の大伐斧": "ほしざくらのだいばつおの",
@@ -2809,7 +2843,9 @@ def halia_index():
 def halia_icon_b64(section, key):
     entry = (halia_index().get(section) or {}).get(key)
     if not entry or not entry.get("file"):
-        raise SystemExit(f"ERROR: data/halia_icons/index.json has no picture for {section} {key!r}.")
+        # Collected, not raised: the run goes on so every missing picture is listed at once (see main()).
+        HALIA_MISSING_ICONS.append((section, key))
+        return HALIA_ICON_PLACEHOLDER
     png = HALIA_ICON_DIR / entry["file"]
     if not png.exists():
         raise SystemExit(f"ERROR: {png} is named by the Halia icon index but is not there.")
@@ -2945,6 +2981,18 @@ def halia_warded_texture(name):
 
 
 HALIA_RECOLOUR = "halia:recoloring"   # the Aerie's 320 "any dye recolours this device" recipes: not cards (below)
+# 2026-10-22 (Halia 1.4.0, parent's decision): a code-drawn recipe marker with no inputs and no result, set aside
+# like the recolouring ones, counted and printed. Mirrored in check_recipe_sources.py.
+HALIA_PLAYWRIGHT_BOOK = "halia:playwright_bookcloning"
+# 2026-10-22 (Halia 1.4.0, parent's decision): brewing recipes whose input is an {item, potion_contents} stack (the
+# Poison Resistance and awkward potions). The sheet has no display for them yet, so they are set aside, counted and
+# named, not guessed. Mirrored in check_recipe_sources.py. Known gap on the recipe sheet.
+HALIA_BREW_POTION_INPUT = "minecraft:brewing"
+HALIA_SET_ASIDE_NAMES = {"playwright": [], "brew_potion_contents": []}
+# Every halia icon id the run needs and does not have (section, key), collected instead of stopping at the first;
+# printed in full and the run stops before anything is written.
+HALIA_MISSING_ICONS = []
+HALIA_ICON_PLACEHOLDER = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR4nGNg+P//PwAF/gL+p9HU8QAAAABJRU5ErkJggg=="
 
 
 def halia_cards(recipe_dir, mod_cat, reg, cards, no_yomi, seen_published, published):
@@ -2998,6 +3046,12 @@ def halia_cards(recipe_dir, mod_cat, reg, cards, no_yomi, seen_published, publis
         rtype = data.get("type")
         if rtype == HALIA_RECOLOUR:
             recolour += 1
+            continue
+        if rtype == HALIA_PLAYWRIGHT_BOOK:
+            HALIA_SET_ASIDE_NAMES["playwright"].append(rel)
+            continue
+        if rtype == HALIA_BREW_POTION_INPUT and isinstance(data.get("input"), dict) and "potion_contents" in data["input"]:
+            HALIA_SET_ASIDE_NAMES["brew_potion_contents"].append(rel)
             continue
         if halia_uncraftable(data):
             uncraftable += 1
@@ -7386,14 +7440,20 @@ def _main_body():
     withheld = []    # 作業木にしか無いレシピ(配られていないので載せない)
     seen_published = set()   # 実際に読んだ配布済みレシピ(取りこぼしを後で数える)
     cards_per_mod = {}       # mod_dir -> このループで作ったカード数(EVERY_RECIPE_SHOWN の照合用)
-    halia_counts = (0, 0, 0)  # (json that can never be crafted, cards on top of one per json, recolouring json)
+    halia_counts = (0, 0, 0, 0)  # (json that can never be crafted, cards on top of one per json, recolouring json, set aside 1.4.0)
     for mod_dir, modid, mod_cat in MODS:
         recipe_dir = mod_resources(mod_dir) / "data" / modid / "recipe"
         if mod_dir == "halia":
             made, not_crafts, on_top, recolour = halia_cards(recipe_dir, mod_cat, reg, cards, no_yomi,
                                                              seen_published, published)
             cards_per_mod[mod_dir] = made
-            halia_counts = (not_crafts, on_top, recolour)
+            set_aside_n = len(HALIA_SET_ASIDE_NAMES["playwright"]) + len(HALIA_SET_ASIDE_NAMES["brew_potion_contents"])
+            halia_counts = (not_crafts, on_top, recolour, set_aside_n)
+            print(f"halia: {len(HALIA_SET_ASIDE_NAMES['playwright'])} playwright book-cloning marker(s) set aside "
+                  f"(no inputs and no result; not cards): {', '.join(HALIA_SET_ASIDE_NAMES['playwright']) or 'none'}")
+            print(f"halia: {len(HALIA_SET_ASIDE_NAMES['brew_potion_contents'])} brewing recipes with potion contents "
+                  f"set aside (a known gap on the recipe sheet; not cards): "
+                  f"{', '.join(HALIA_SET_ASIDE_NAMES['brew_potion_contents']) or 'none'}")
             print(f"halia: {made} card(s); {not_crafts} recipe json are not crafts (their only ingredient is a tag "
                   f"holding nothing but air); {on_top} card(s) are the anvil half of a material box; "
                   f"{recolour} recolouring recipe(s) of the Aerie are set aside (not cards)")
@@ -7526,13 +7586,14 @@ def _main_body():
                      for name in published.get(modid, ()))
         n_cards = cards_per_mod.get(mod_dir, 0)
         if mod_dir == "halia":
-            n_json = n_json - halia_counts[0] - halia_counts[2] + halia_counts[1]
+            n_json = n_json - halia_counts[0] - halia_counts[2] - halia_counts[3] + halia_counts[1]
         if n_json != n_cards or n_json == 0:
             raise SystemExit(f"ERROR: {mod_dir}: {n_json} recipe json in the published jar but {n_cards} card(s) "
                              f"made from them - EVERY_RECIPE_SHOWN says there must be one each (and at least one).")
         if mod_dir == "halia":
             print(f"halia: {n_cards} card(s) for the published jar's craftable recipes, none missing "
                   f"({halia_counts[0]} uncraftable json set aside, {halia_counts[2]} recolouring json set aside, "
+                  f"{halia_counts[3]} playwright or potion-input json set aside, "
                   f"{halia_counts[1]} anvil card(s) on top)")
         else:
             print(f"{mod_dir}: all {n_json} recipe json in the published jar became a card")
@@ -7780,6 +7841,13 @@ def _main_body():
     # (TEMPLATE, unused in this copy), we write the same data as JSON +
     # individual PNGs for this wiki's own multi-page, natively-styled
     # recipes/ section to fetch and render.
+    if HALIA_MISSING_ICONS:
+        # Nothing is written past this point: the sheet would carry placeholder pictures.
+        print(f"MISSING HALIA ICONS: {len(HALIA_MISSING_ICONS)} item/block picture(s) with no entry in "
+              f"data/halia_icons/index.json (the run stopped before writing anything):")
+        for section, key in sorted(set(HALIA_MISSING_ICONS)):
+            print(f"  {section}  {key}")
+        raise SystemExit(1)
     OUT_DATA_DIR.mkdir(parents=True, exist_ok=True)
     recipes_data = {
         "total": total,
