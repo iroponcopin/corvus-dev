@@ -16,7 +16,9 @@ here:
   5. glimpse_manifest.json carries a "halia" block for that jar and nothing else: mod_id "halia", latest <ver>, the
      jar's file name, address, size and SHA-256 — and no "jars" key (Halia 1.0.0 has no crafting recipes, so it is not a recipe-sheet source). The Discord release bot announces from this block;
   6. changelog_feed/brands.json lists Halia with its feed, and each of the 13 languages' changelog_feed/halia feed
-     leads with V<ver>: the site does not publish a release its changelog has not reached;
+     leads with the release that the jar is: "V" + <ver> (V1.4.0.37), or, for a jar version with exactly three numeric
+     parts a.b.c, the owner's notation "V<a>.<b> <c>" (V1.4 1140: the same numbers, one space, no other variant). The
+     site does not publish a release its changelog has not reached;
   7. (Halia 1.4.0, 2026-10-22) the manifest's top-level "spawn_lock" is exactly {model: "halia", from, until} with
      YYYY-MM-DD dates and from before until, and halia.creatures is exactly seven entries: each {id, name: {en, ja},
      dimension}, the id matching the Store's pattern [a-z][a-z0-9_]* with no "halia:" prefix, no duplicate ids, and
@@ -50,6 +52,19 @@ ALLOWED_DEPENDS = {"fabricloader", "minecraft", "java", "fabric-api"}
 ALLOWED_SOFT = set()               # Halia recommends and suggests nothing
 CREATURE_ID_RE = re.compile(r"[a-z][a-z0-9_]*")       # the Store's pattern (HaliaCreature.ID)
 CREATURE_COUNT = 7                 # the natural-spawn creatures of V1.4 (CREATURES_FOR_CORVUS.json "creatures")
+THREE_PART_RE = re.compile(r"([0-9]+)\.([0-9]+)\.([0-9]+)")
+
+
+def release_string_ok(newest, version: str) -> bool:
+    """Rule 6's test, pure: the feed's newest release string names the jar's version. Two forms and nothing looser:
+    "V" + the jar version (V1.4.0.37), and, when the jar version has exactly three numeric parts a.b.c, the owner's
+    "V<a>.<b> <c>" (V1.4 1140). No other variant: not two spaces, not a lowercase v, not trailing text."""
+    if not isinstance(newest, str):
+        return False
+    if newest == f"V{version}":
+        return True
+    three = THREE_PART_RE.fullmatch(version)
+    return three is not None and newest == f"V{three.group(1)}.{three.group(2)} {three.group(3)}"
 
 
 def git_tracked(root: Path, rel: str) -> bool:
@@ -208,8 +223,12 @@ def check(root: Path, tracked=git_tracked):
         except (OSError, ValueError, KeyError, IndexError) as exc:
             problems.append(f"changelog_feed/halia/{lang}.json cannot be read for its newest release ({exc})")
             continue
-        if newest != f"V{version}":
-            problems.append(f"changelog_feed/halia/{lang}.json leads with {newest}, but the site publishes V{version}")
+        if not release_string_ok(newest, version):
+            hint = ""
+            three = THREE_PART_RE.fullmatch(version)
+            if three:
+                hint = f" or V{three.group(1)}.{three.group(2)} {three.group(3)}"
+            problems.append(f"changelog_feed/halia/{lang}.json leads with {newest!r}, but the site publishes V{version}{hint}")
     return problems, {"jar": jpath.name, "version": version, "size": len(data), "sha256": expected["sha256"]}
 
 
@@ -268,6 +287,35 @@ def self_test() -> int:
         f["groups"][0]["releases"][0]["version"] = version
         p.write_text(json.dumps(f, ensure_ascii=False), encoding="utf-8")
 
+    def set_feeds(dst: Path, version: str):
+        """Every one of the 13 feeds leads with `version` (the release string, not the jar version)."""
+        for lang in LANGS:
+            edit_feed(dst, lang, version)
+
+    def retag(dst: Path, version: str):
+        """Re-version the planted copy to a three-part `version`: the jar moves to halia-<version>.jar with its own
+        fabric.mod.json, and the manifest's halia block (latest, file name, address, size, SHA-256) moves with it, so the
+        only thing the plant changes is the version the feeds are checked against."""
+        old = dst / "downloads" / jname
+        with zipfile.ZipFile(old) as jar:
+            inner = {n: jar.read(n) for n in jar.namelist()}
+        meta = json.loads(inner["fabric.mod.json"])
+        meta["version"] = version
+        inner["fabric.mod.json"] = json.dumps(meta).encode()
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as jar:
+            for n, b in inner.items():
+                jar.writestr(n, b)
+        data = buf.getvalue()
+        name = f"halia-{version}.jar"
+        (dst / "downloads" / name).write_bytes(data)
+        old.unlink()
+
+        def move_block(m):
+            m["halia"].update(latest=version, file_name=name, download_url=f"{SITE}/downloads/{name}",
+                              file_size=len(data), sha256=hashlib.sha256(data).hexdigest())
+        edit_manifest(dst, move_block)
+
     def brand(meta, **kv):
         meta.setdefault("custom", {}).setdefault("halia", {}).setdefault("brand", {}).update(kv)
 
@@ -309,6 +357,18 @@ def self_test() -> int:
          lambda d: edit_manifest(d, lambda m: m["halia"]["creatures"][1]["name"].update({"ja": ""})), True, True),
         ("a creature id is duplicated",
          lambda d: edit_manifest(d, lambda m: m["halia"]["creatures"].__setitem__(1, dict(m["halia"]["creatures"][0]))), True, True),
+        ("Halia 1.4.1140 with every feed in the owner's notation V1.4 1140 (control)",
+         lambda d: (retag(d, "1.4.1140"), set_feeds(d, "V1.4 1140")), True, False),
+        ("Halia 1.4.1140 with one feed at a wrong build: V1.4 1139",
+         lambda d: (retag(d, "1.4.1140"), set_feeds(d, "V1.4 1140"), edit_feed(d, "ar", "V1.4 1139")), True, True),
+        ("Halia 1.4.1140 with every feed in the dotted form V1.4.1140 (control)",
+         lambda d: (retag(d, "1.4.1140"), set_feeds(d, "V1.4.1140")), True, False),
+        ("Halia 1.4.1140 with two spaces in the notation: V1.4  1140",
+         lambda d: (retag(d, "1.4.1140"), set_feeds(d, "V1.4  1140")), True, True),
+        ("Halia 1.4.1140 with a lowercase v: v1.4 1140",
+         lambda d: (retag(d, "1.4.1140"), set_feeds(d, "v1.4 1140")), True, True),
+        ("Halia 1.4.1140 with trailing text: V1.4 1140 beta",
+         lambda d: (retag(d, "1.4.1140"), set_feeds(d, "V1.4 1140 beta")), True, True),
     ]
     ok = True
     for label, plant, is_tracked, should_fail in plants:

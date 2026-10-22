@@ -19,7 +19,9 @@ here:
      jar's file name, address, size and SHA-256 — and no "jars" key (check_recipe_sources keys on blocks with mod_id +
      jars, and Tsubomi's recipes are not part of this release). The Discord release bot announces from this block;
   6. changelog_feed/brands.json lists Tsubomi with its feed, and each of the 13 languages' changelog_feed/tsubomi feed
-     leads with V<ver>: the site does not publish a release its changelog has not reached.
+     leads with the release that the jar is: "V" + <ver> (V2.3.1024), or, for a jar version with exactly three numeric
+     parts a.b.c, the owner's notation "V<a>.<b> <c>" (V2.3 1024: the same numbers, one space, no other variant). The
+     site does not publish a release its changelog has not reached.
 
 Independent by construction: it imports nothing from the builders (not site_common, not build_glimpse_manifest, not
 build_changelog_feed). The language list, the site address and the file-name rule are written out again here, so a
@@ -49,6 +51,19 @@ ALLOWED_DEPENDS = {"fabricloader", "minecraft", "java", "fabric-api"}
 ALLOWED_SOFT = {"cherry"}          # recommends / suggests may name Cherry, and nothing else
 ALPHA_PREFIX = "sorakaze_"         # breaks / conflicts may name Alpha's modules, and nothing else
 INCOMPATIBLE_WITH = ["Alpha"]
+THREE_PART_RE = re.compile(r"([0-9]+)\.([0-9]+)\.([0-9]+)")
+
+
+def release_string_ok(newest, version: str) -> bool:
+    """Rule 6's test, pure: the feed's newest release string names the jar's version. Two forms and nothing looser:
+    "V" + the jar version (V2.3.1024), and, when the jar version has exactly three numeric parts a.b.c, the owner's
+    "V<a>.<b> <c>" (V2.3 1024). No other variant: not two spaces, not a lowercase v, not trailing text."""
+    if not isinstance(newest, str):
+        return False
+    if newest == f"V{version}":
+        return True
+    three = THREE_PART_RE.fullmatch(version)
+    return three is not None and newest == f"V{three.group(1)}.{three.group(2)} {three.group(3)}"
 
 
 def git_tracked(root: Path, rel: str) -> bool:
@@ -133,8 +148,12 @@ def check(root: Path, tracked=git_tracked):
         except (OSError, ValueError, KeyError, IndexError) as exc:
             problems.append(f"changelog_feed/tsubomi/{lang}.json cannot be read for its newest release ({exc})")
             continue
-        if newest != f"V{version}":
-            problems.append(f"changelog_feed/tsubomi/{lang}.json leads with {newest}, but the site publishes V{version}")
+        if not release_string_ok(newest, version):
+            hint = ""
+            three = THREE_PART_RE.fullmatch(version)
+            if three:
+                hint = f" or V{three.group(1)}.{three.group(2)} {three.group(3)}"
+            problems.append(f"changelog_feed/tsubomi/{lang}.json leads with {newest!r}, but the site publishes V{version}{hint}")
     return problems, {"jar": jpath.name, "version": version, "size": len(data), "sha256": expected["sha256"]}
 
 
@@ -218,6 +237,12 @@ def self_test() -> int:
         ("incompatible_with is missing", lambda d: rewrite_jar(d, lambda m: m["custom"]["tsubomi"]["brand"].pop("incompatible_with")), True, True),
         ("incompatible_with names the wrong brand", lambda d: rewrite_jar(d, lambda m: brand(m, incompatible_with=["Cherry"])), True, True),
         ("one language's feed lags the release", lambda d: edit_feed(d, "ar", "V0.9.0"), True, True),
+        ("the owner's notation V2.3 1024 in one feed (control)", lambda d: edit_feed(d, "ja", "V2.3 1024"), True, False),
+        ("the dotted form V2.3.1024 in one feed (control)", lambda d: edit_feed(d, "de", "V2.3.1024"), True, False),
+        ("a wrong build in the new notation: V2.3 1023", lambda d: edit_feed(d, "en", "V2.3 1023"), True, True),
+        ("the new notation with two spaces: V2.3  1024", lambda d: edit_feed(d, "fr", "V2.3  1024"), True, True),
+        ("the new notation with a lowercase v: v2.3 1024", lambda d: edit_feed(d, "ko", "v2.3 1024"), True, True),
+        ("the new notation with trailing text: V2.3 1024 beta", lambda d: edit_feed(d, "zh", "V2.3 1024 beta"), True, True),
     ]
     ok = True
     for label, plant, is_tracked, should_fail in plants:
