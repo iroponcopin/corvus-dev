@@ -8,8 +8,43 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 — die Arcana, sechs Kreaturen und drei Bosse",
+   "summary": "Halia V1.4.0.36 — Korrekturen aus einer großen Testrunde",
    "releases": [
+    {
+     "version": "V1.4.0.36",
+     "date": "2026-10-22",
+     "type": "hotfix",
+     "title": "Halia V1.4.0.36 — Korrekturen aus einer großen Testrunde",
+     "summary": "Eine große Testrunde für Halia hat diese Probleme gefunden und behoben. Arcana-Stäbe und -Klingen können von neuen Spielern wieder genutzt werden, und viele Texte im Spiel zeigen ihre richtigen Namen.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Arcana-Stäbe und -Klingen konnten von neuen Spielern nicht benutzt werden, weil ihr Mana-Limit niedriger war als ihre Kosten. Neue Spieler starten jetzt mit deutlich mehr Mana, und der Schaden bleibt ausgewogen.",
+        "Wenn ein Zauber nicht bezahlt werden kann, erscheint jetzt ein kurzer Hinweis „Nicht genug Mana“.",
+        "Usurper's Edge blockt jetzt tatsächlich, und sein Effekt Vengeance funktioniert.",
+        "Die Kreise der Flächensalve des Staff of Bursting Mana waren in den meisten Richtungen falsch herum gezeichnet. Sie zeigen jetzt zu dir.",
+        "Hunderte Texte im Spiel und Bucheinträge in Arcana, Halia Vigil und anderen Bereichen zeigten rohen internen Text statt ihrer Namen. Sie sind auf Englisch und Japanisch korrigiert.",
+        "Helion, the Sun Chieftain konnte einen Server zum Absturz bringen, wenn ein Spieler ihn traf. Behoben.",
+        "Die Klingenkunst Drive flog nicht. Sie fliegt jetzt.",
+        "Mana Circuit und Circle Projector ließen beim Abbauen nichts fallen. Sie lassen sich jetzt selbst fallen, und einige weitere Blöcke liefern die richtigen Gegenstände.",
+        "Das Watch Eye zeigte im Inventar und in der Hand eine fehlende Textur. Behoben.",
+        "Der Talon Wrench wurde von den Aerie-Blöcken nicht erkannt. Behoben.",
+        "Beim Ändern des Besitzers eines Blocks konnte ein dedizierter Server abstürzen. Behoben.",
+        "Der Device Lifter ist standardmäßig aus. Er meldet jetzt, dass er aus ist, statt stillschweigend nichts zu tun.",
+        "Das Verstärken und Entfernen der Verstärkung von Gerüsten liefert nicht mehr ein leeres Ergebnis.",
+        "Strahlen ohne Zauberer verursachen keinen Fehler mehr. Für Fae, Familiar und Venom Jar sind die Drops jetzt ausdrücklich festgelegt.",
+        "Besitzer können ihren verstärkten Werfer, Spender und Trichter wieder öffnen (das Öffnen löste einen Fehler aus)."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Die Voraussetzungen sind gegenüber 1.4.0 unverändert."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0",
      "date": "2026-10-22",

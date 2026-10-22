@@ -8,8 +8,43 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 — las Arcana, seis criaturas y tres jefes",
+   "summary": "Halia V1.4.0.36 — correcciones de una gran ronda de pruebas",
    "releases": [
+    {
+     "version": "V1.4.0.36",
+     "date": "2026-10-22",
+     "type": "hotfix",
+     "title": "Halia V1.4.0.36 — correcciones de una gran ronda de pruebas",
+     "summary": "Una gran ronda de pruebas de Halia encontró y corrigió estos problemas. Los bastones y hojas de Arcana vuelven a poder usarse por jugadores nuevos, y muchos textos del juego muestran sus nombres correctos.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "Los jugadores nuevos no podían usar los bastones y hojas de Arcana, porque su límite de maná era menor que su coste. Ahora los jugadores nuevos empiezan con mucho más maná, y el daño se mantiene equilibrado.",
+        "Ahora aparece un aviso breve de «Maná insuficiente» cuando no se puede pagar un hechizo.",
+        "Usurper's Edge ahora sí bloquea, y su efecto Vengeance funciona.",
+        "Los discos de la descarga de área del Staff of Bursting Mana estaban dibujados al revés en la mayoría de direcciones. Ahora miran hacia ti.",
+        "Cientos de textos del juego y entradas de libros de Arcana, Halia Vigil y otras partes mostraban texto interno sin formato en lugar de sus nombres. Están corregidos en inglés y japonés.",
+        "Helion, the Sun Chieftain podía bloquear un servidor cuando un jugador lo golpeaba. Corregido.",
+        "El arte de hoja Drive no volaba. Ahora sí vuela.",
+        "Mana Circuit y Circle Projector no soltaban nada al romperse. Ahora se sueltan a sí mismos, y varios bloques más sueltan los objetos correctos.",
+        "El Watch Eye mostraba una textura que faltaba en el inventario y en la mano. Corregido.",
+        "Los bloques de Aerie no reconocían el Talon Wrench. Corregido.",
+        "Un servidor dedicado podía bloquearse al cambiar el dueño de un bloque. Corregido.",
+        "El Device Lifter viene desactivado por defecto. Ahora lo indica en lugar de no hacer nada en silencio.",
+        "Reforzar y quitar el refuerzo de los andamios ya no devuelve un resultado vacío.",
+        "Los rayos sin lanzador ya no causan error. Los botines de Fae, Familiar y Venom Jar ahora están definidos explícitamente.",
+        "Los propietarios pueden volver a abrir su dispensador, soltador y tolva reforzados (abrirlos provocaba un error)."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Los requisitos no han cambiado desde la 1.4.0."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0",
      "date": "2026-10-22",

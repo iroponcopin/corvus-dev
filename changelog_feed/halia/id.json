@@ -8,8 +8,43 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 — Arcana, enam makhluk, dan tiga bos",
+   "summary": "Halia V1.4.0.36 — perbaikan dari putaran pengujian besar",
    "releases": [
+    {
+     "version": "V1.4.0.36",
+     "date": "2026-10-22",
+     "type": "hotfix",
+     "title": "Halia V1.4.0.36 — perbaikan dari putaran pengujian besar",
+     "summary": "Putaran pengujian besar Halia menemukan dan memperbaiki masalah berikut. Tongkat dan bilah Arcana kembali bisa dipakai pemain baru, dan banyak teks dalam game kini menampilkan nama yang benar.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Tongkat dan bilah Arcana tidak bisa dipakai pemain baru, karena batas mana-nya lebih rendah daripada biayanya. Pemain baru kini mulai dengan mana jauh lebih banyak, dan damage tetap seimbang.",
+        "Notifikasi singkat «Mana tidak cukup» kini muncul ketika sebuah mantra tidak bisa dibayar.",
+        "Usurper's Edge kini benar-benar memblokir, dan efek Vengeance-nya bekerja.",
+        "Cakram tembakan area Staff of Bursting Mana digambar terbalik di sebagian besar arah. Kini cakram itu menghadap Anda.",
+        "Ratusan teks dalam game dan entri buku di Arcana, Halia Vigil dan bagian lain menampilkan teks internal mentah alih-alih nama. Sudah diperbaiki dalam bahasa Inggris dan Jepang.",
+        "Helion, the Sun Chieftain bisa membuat server crash ketika dipukul pemain. Sudah diperbaiki.",
+        "Seni bilah Drive tidak terbang. Kini sudah terbang.",
+        "Mana Circuit dan Circle Projector tidak menjatuhkan apa pun ketika dihancurkan. Kini keduanya menjatuhkan dirinya sendiri, dan beberapa blok lain juga menjatuhkan item yang benar.",
+        "Watch Eye menampilkan tekstur yang hilang di inventaris dan saat dipegang. Sudah diperbaiki.",
+        "Talon Wrench tidak dikenali oleh blok Aerie. Sudah diperbaiki.",
+        "Server dedicated bisa crash ketika pemilik sebuah blok diubah. Sudah diperbaiki.",
+        "Device Lifter nonaktif secara default. Kini ia memberi tahu pemain bahwa ia nonaktif, bukan diam saja tanpa melakukan apa-apa.",
+        "Memperkuat dan melepas penguatan scaffolding tidak lagi mengembalikan hasil kosong.",
+        "Sinar tanpa pengguna tidak lagi menimbulkan error. Drop Fae, Familiar dan Venom Jar kini diatur secara eksplisit.",
+        "Pemilik dapat kembali membuka Dispenser, Dropper, dan Hopper yang diperkuat (membukanya sebelumnya menimbulkan galat)."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Persyaratan tidak berubah dari 1.4.0."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0",
      "date": "2026-10-22",

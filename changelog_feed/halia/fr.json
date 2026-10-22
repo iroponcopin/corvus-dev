@@ -8,8 +8,43 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 — les Arcana, six créatures et trois boss",
+   "summary": "Halia V1.4.0.36 — corrections après une vaste série de tests",
    "releases": [
+    {
+     "version": "V1.4.0.36",
+     "date": "2026-10-22",
+     "type": "hotfix",
+     "title": "Halia V1.4.0.36 — corrections après une vaste série de tests",
+     "summary": "Une vaste série de tests sur Halia a trouvé et corrigé ces problèmes. Les bâtons et lames d'Arcana sont de nouveau utilisables par les nouveaux joueurs, et de nombreux textes du jeu affichent leurs vrais noms.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Les bâtons et lames d'Arcana ne pouvaient pas être utilisés par les nouveaux joueurs, car leur limite de mana était inférieure à leur coût. Les nouveaux joueurs commencent maintenant avec beaucoup plus de mana, et les dégâts restent équilibrés.",
+        "Une courte notification « Pas assez de mana » apparaît désormais lorsqu'un sort ne peut pas être payé.",
+        "Usurper's Edge bloque désormais réellement, et son effet Vengeance fonctionne.",
+        "Les disques de la salve de zone du Staff of Bursting Mana étaient dessinés à l'envers dans la plupart des directions. Ils vous font maintenant face.",
+        "Des centaines de textes du jeu et d'entrées de livre d'Arcana, de Halia Vigil et d'autres parties affichaient du texte interne brut au lieu de leurs noms. Ils sont corrigés en anglais et en japonais.",
+        "Helion, the Sun Chieftain pouvait faire planter un serveur lorsqu'un joueur le frappait. Corrigé.",
+        "L'art de lame Drive ne volait pas. Il vole maintenant.",
+        "Mana Circuit et Circle Projector ne laissaient rien tomber lorsqu'ils étaient cassés. Ils se laissent maintenant tomber eux-mêmes, et plusieurs autres blocs donnent les bons objets.",
+        "Le Watch Eye affichait une texture manquante dans l'inventaire et en main. Corrigé.",
+        "Le Talon Wrench n'était pas reconnu par les blocs Aerie. Corrigé.",
+        "Un serveur dédié pouvait planter lorsqu'on changeait le propriétaire d'un bloc. Corrigé.",
+        "Le Device Lifter est désactivé par défaut. Il indique maintenant qu'il est désactivé, au lieu de ne rien faire sans prévenir.",
+        "La pose et le retrait de renfort sur les échafaudages ne renvoient plus un résultat vide.",
+        "Les rayons sans lanceur ne provoquent plus d'erreur. Les butins de Fae, Familiar et Venom Jar sont maintenant définis explicitement.",
+        "Les propriétaires peuvent de nouveau ouvrir leur distributeur, dropper et entonnoir renforcés (l'ouverture provoquait une erreur)."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "La configuration requise est inchangée depuis la 1.4.0."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0",
      "date": "2026-10-22",

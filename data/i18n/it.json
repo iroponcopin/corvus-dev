@@ -1059,6 +1059,31 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4.0.36",
+    "title": "Halia V1.4.0.36 — correzioni da un ampio ciclo di test",
+    "summary": "Un ampio ciclo di test su Halia ha trovato e corretto questi problemi. Bastoni e lame dell'Arcana tornano utilizzabili dai nuovi giocatori, e molti testi di gioco mostrano i loro nomi corretti.",
+    "highlights": [
+     "Bastoni e lame dell'Arcana non potevano essere usati dai nuovi giocatori, perché il loro limite di mana era inferiore al loro costo. I nuovi giocatori ora iniziano con molto più mana, e il danno resta bilanciato.",
+     "Ora compare un breve avviso «Mana insufficiente» quando un incantesimo non può essere pagato.",
+     "Usurper's Edge ora blocca davvero, e il suo effetto Vengeance funziona.",
+     "I dischi della raffica ad area dello Staff of Bursting Mana erano disegnati al contrario nella maggior parte delle direzioni. Ora ti guardano.",
+     "Centinaia di testi di gioco e voci di libro di Arcana, Halia Vigil e altre parti mostravano testo interno grezzo invece dei nomi. Sono corretti in inglese e giapponese.",
+     "Helion, the Sun Chieftain poteva mandare in crash un server quando un giocatore lo colpiva. Corretto.",
+     "L'arte della lama Drive non volava. Ora vola.",
+     "Mana Circuit e Circle Projector non lasciavano cadere nulla se rotti. Ora cadono da sé, e diversi altri blocchi forniscono gli oggetti giusti.",
+     "Il Watch Eye mostrava una texture mancante nell'inventario e in mano. Corretto.",
+     "Il Talon Wrench non era riconosciuto dai blocchi Aerie. Corretto.",
+     "Un server dedicato poteva andare in crash quando si cambiava il proprietario di un blocco. Corretto.",
+     "Il Device Lifter è disattivato per impostazione predefinita. Ora lo segnala, invece di non fare nulla in silenzio.",
+     "Rinforzare e rimuovere il rinforzo dalle impalcature non restituisce più un risultato vuoto.",
+     "I raggi senza un lanciatore non causano più errori. I drop di Fae, Familiar e Venom Jar ora sono impostati esplicitamente.",
+     "I proprietari possono di nuovo aprire il distributore, il dropper e la tramoggia rinforzati (aprirli causava un errore)."
+    ],
+    "warnings": [
+     "I requisiti non sono cambiati rispetto alla 1.4.0."
+    ]
+   },
+   {
     "id": "halia-v1.4.0",
     "title": "Halia V1.4 — le Arcana, sei creature e tre boss",
     "summary": "Halia V1.4 aggiunge le Arcana, la magia di Halia: 53 cerchi magici, 44 pergamene magiche, due bastoni e il Sage's Rod. Aggiunge inoltre sei creature che vivono tra Overworld, Nether ed End, tre boss che attendono nelle proprie strutture e il monastero di Daigan the Stoneshaper, la cui prova di arrampicata premia con il Quarry Gauntlet.",

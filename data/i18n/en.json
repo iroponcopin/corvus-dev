@@ -1063,6 +1063,31 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4.0.36",
+    "title": "Halia V1.4.0.36 — fixes from a large round of testing",
+    "summary": "Halia's large round of testing found and fixed these problems. Arcana staffs and blades work for new players again, and many in-game texts now show their proper names.",
+    "highlights": [
+     "Arcana staffs and blades could not be used by new players, because their mana limit was lower than what they cost. New players now start with far more mana, and the damage stays balanced.",
+     "A short 'not enough mana' notice now appears when a spell cannot be paid for.",
+     "Usurper's Edge now really blocks, and its Vengeance effect works.",
+     "The Staff of Bursting Mana's area volley discs now face you. In most directions they were drawn turned the wrong way.",
+     "Hundreds of in-game texts and book entries across the Arcana, Halia Vigil and other parts showed raw internal text instead of their names. They are fixed in English and Japanese.",
+     "Helion, the Sun Chieftain could crash a server when hit by a player. Fixed.",
+     "The Blade art Drive did not fly. It flies now.",
+     "The Mana Circuit and the Circle Projector dropped nothing when broken. They now drop themselves, and several more blocks drop the right items.",
+     "The Watch Eye showed a missing texture in the inventory and in the held view. Fixed.",
+     "The Talon Wrench was not recognised by the Aerie blocks. Fixed.",
+     "A dedicated server could crash when a block's owner was changed. Fixed.",
+     "The Device Lifter is off by default. It now tells you so, instead of silently doing nothing.",
+     "Reinforcing and unreinforcing scaffolding no longer returns an empty result.",
+     "Beams with no caster no longer cause an error. Fae, Familiar and Venom Jar now have their drops set explicitly.",
+     "Owners can open their Reinforced Dispenser, Dropper and Hopper again (opening them threw an error)."
+    ],
+    "warnings": [
+     "Requirements are unchanged from 1.4.0."
+    ]
+   },
+   {
     "id": "halia-v1.4.0",
     "title": "Halia V1.4 — the Arcana, six creatures, and three bosses",
     "summary": "Halia V1.4 adds the Arcana, Halia's magic: 53 spell circles, 44 spell scrolls, two staves and Sage's Rod. It adds six creatures that live across the Overworld, the Nether and the End, three bosses that wait in their own structures, and the monastery of Daigan the Stoneshaper, whose climbing trial rewards the Quarry Gauntlet.",

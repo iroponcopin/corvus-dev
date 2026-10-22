@@ -1059,6 +1059,31 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4.0.36",
+    "title": "Halia V1.4.0.36 — geniş test turundan gelen düzeltmeler",
+    "summary": "Halia için geniş bir test turu bu sorunları buldu ve düzeltti. Arcana asaları ve bıçakları yeni oyuncular tarafından yeniden kullanılabiliyor, oyundaki birçok metin de doğru adlarını gösteriyor.",
+    "highlights": [
+     "Arcana asaları ve bıçakları, mana sınırları maliyetlerinden düşük olduğu için yeni oyuncular tarafından kullanılamıyordu. Yeni oyuncular artık çok daha fazla manayla başlıyor ve hasar dengeli kalıyor.",
+     "Bir büyünün bedeli ödenemediğinde artık kısa bir «Yeterli mana yok» bildirimi çıkıyor.",
+     "Usurper's Edge artık gerçekten bloklama yapıyor ve Vengeance etkisi çalışıyor.",
+     "Staff of Bursting Mana'nın alan salvosu diskleri çoğu yönde ters çiziliyordu. Artık size dönük.",
+     "Arcana, Halia Vigil ve diğer bölümlerdeki yüzlerce oyun içi metin ve kitap girdisi, adları yerine ham iç metni gösteriyordu. İngilizce ve Japonca olarak düzeltildi.",
+     "Helion, the Sun Chieftain bir oyuncu tarafından vurulduğunda sunucuyu çökertebiliyordu. Düzeltildi.",
+     "Bıçak sanatı Drive uçmuyordu. Artık uçuyor.",
+     "Mana Circuit ve Circle Projector kırıldığında hiçbir şey düşürmüyordu. Artık kendilerini düşürüyorlar ve birkaç blok daha doğru eşyaları düşürüyor.",
+     "Watch Eye envanterde ve elde tutulduğunda eksik bir doku gösteriyordu. Düzeltildi.",
+     "Talon Wrench, Aerie blokları tarafından tanınmıyordu. Düzeltildi.",
+     "Bir bloğun sahibi değiştirilirken özel sunucu çökebiliyordu. Düzeltildi.",
+     "Device Lifter varsayılan olarak kapalıdır. Artık sessizce hiçbir şey yapmak yerine kapalı olduğunu bildiriyor.",
+     "Iskele takviyesi ekleme ve kaldırma artık boş bir sonuç döndürmüyor.",
+     "Yayıcısı olmayan ışınlar artık hata vermiyor. Fae, Familiar ve Venom Jar'ın düşürdükleri eşyalar artık açıkça tanımlı.",
+     "Sahipler güçlendirilmiş Dağıtıcı, Bırakıcı ve Huni'yi yeniden açabilir (açmak hataya neden oluyordu)."
+    ],
+    "warnings": [
+     "Gereksinimler 1.4.0 ile aynı kaldı."
+    ]
+   },
+   {
     "id": "halia-v1.4.0",
     "title": "Halia V1.4 — Arcana, altı yaratık ve üç patron",
     "summary": "Halia V1.4, Halia'nın büyüsü olan Arcana'yı ekler: 53 büyü çemberi, 44 büyü parşömeni, iki asa ve Sage's Rod. Ayrıca Overworld, Nether ve End boyunca yaşayan altı yaratık, kendi yapılarında bekleyen üç patron ve Daigan the Stoneshaper'ın manastırını ekler; manastırdaki tırmanma denemesi ödül olarak Quarry Gauntlet verir.",
