@@ -2613,6 +2613,7 @@ INTENDED_ICON_CHANGES = {
     "astraea:gas_scrubber": ("t458", "t752", "ASTRAEA V1.5.4: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
     "astraea:icbm_silo": ("t469", "t753", "ASTRAEA V1.5.4: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
     "astraea:interceptor_battery": ("t471", "t754", "ASTRAEA V1.5.4: hand-drawn icon of the rebuilt device (owner's rebuild order 2026-10-11)"),
+    "halia:watch_eye": ("t1691", "t2102", "Halia 1.4.0.36 hotfix: the Watch Eye inventory icon was the missing-texture block"),
 }
 
 
