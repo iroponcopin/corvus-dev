@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3 1024 — Starbloom Ultra",
+   "summary": "Tsubomi V2.3 1167 — Starbloom UltraFast",
    "releases": [
+    {
+     "version": "V2.3 1167",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Tsubomi V2.3 1167 — Starbloom UltraFast",
+     "summary": "Tsubomi V2.3 1167 menambahkan Starbloom UltraFast (biru muda): jajaran Ultra ditambah Pancing, alat yang menambang 1.75× lebih cepat dari Ultra, dan pasif set yang lebih kuat.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Starbloom UltraFast memiliki jajaran Starbloom Ultra (batangan paduan, beliung, kapak, sekop, cangkul, tombak, helm, baju zirah, celana, sepatu, perisai, busur dan panah) ditambah Pancing UltraFast. Daya tahan dan serangan sama dengan Max dan Ultra; alatnya menambang 1.75× lebih cepat dari Ultra, dan beliungnya mencapai 9×9 seperti Ultra.",
+        "Batangan Paduan UltraFast dibuat dari 8 Batangan Paduan Ultra dan satu Lambang Aomori, menghasilkan 8 batangan. Lambang Aomori memiliki peluang 3% muncul di setiap peti Nether (benteng Nether, empat peti Sisa Benteng, dan portal reruntuhan).",
+        "Pancing UltraFast datang dengan Umpan III dan Keberuntungan Laut III bawaan serta memiliki daya tahan 160. Hanya dengan pancing ini, setiap tangkapan memiliki peluang 0.05% menjadi buku Entropy.",
+        "Mengenakan set zirah Starbloom UltraFast lengkap memberi pasif: kerusakan jatuh −31%, kerusakan api −31%, kerusakan racun −15%, kerusakan saat berdiri di blok magma −40%, sonic boom Warden −13%, kecepatan menambang +10%, dan peluang 18% setiap efek merugikan baru ditepis. Hanya memakai sebagian set tidak memberi satu pun dari ini."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+        "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3 1024",
      "date": "2026-10-22",

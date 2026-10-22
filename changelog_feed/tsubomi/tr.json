@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3 1024 — Yıldız Çiçeği Ultra",
+   "summary": "Tsubomi V2.3 1167 — Yıldız Çiçeği UltraFast",
    "releases": [
+    {
+     "version": "V2.3 1167",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Tsubomi V2.3 1167 — Yıldız Çiçeği UltraFast",
+     "summary": "Tsubomi V2.3 1167, Yıldız Çiçeği UltraFast'ı (açık mavi) ekler: Ultra dizilimi artı bir Olta, Ultra'dan 1.75 kat hızlı kazan aletler ve daha güçlü bir tam takım pasifi.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Yıldız Çiçeği UltraFast, Yıldız Çiçeği Ultra'nın dizilimine sahiptir (alaşım külçesi, kazma, balta, kürek, çapa, mızrak, miğfer, göğüslük, pantolon, bot, kalkan, yay ve ok) artı UltraFast Olta. Dayanıklılık ve saldırı Max ve Ultra ile aynıdır; aletler Ultra'dan 1.75 kat hızlı kazar ve kazma Ultra'nınki gibi 9×9'a ulaşır.",
+        "UltraFast Alaşım Külçesi 8 Ultra Alaşım Külçesi ve bir Aomori Nişanı ile yapılır ve 8 külçe verir. Aomori Nişanı, Nether sandıklarının her birinde 3% ihtimalle çıkar (Nether kalesi, dört Bastion Kalıntısı sandığı ve harap portal).",
+        "UltraFast Olta, Yem III ve Denizin Şansı III ile birlikte gelir ve 160 dayanıklılığa sahiptir. Yalnızca bu oltayla her avın 0.05% ihtimalle bir Entropi kitabı olması mümkündür.",
+        "Tam bir Yıldız Çiçeği UltraFast zırh takımı giymek pasifler verir: düşme hasarı −31%, ateş hasarı −31%, zehir hasarı −15%, magma bloğu üzerinde durmaktan gelen hasar −40%, Warden'ın ses dalgası −13%, kazma hızı +10% ve yeni her zararlı etkinin 18% ihtimalle savuşturulması. Takımın yalnızca bir kısmını giymek bunlardan hiçbirini vermez."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+        "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3 1024",
      "date": "2026-10-22",

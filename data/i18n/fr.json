@@ -1083,6 +1083,21 @@
      "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
      "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3-1167",
+    "title": "Tsubomi V2.3 1167 — Floraison d'étoile UltraFast",
+    "summary": "Tsubomi V2.3 1167 ajoute Floraison d'étoile UltraFast (bleu clair) : la gamme Ultra plus une canne à pêche, des outils qui minent 1.75× plus vite que ceux d'Ultra, et un passif de panoplie plus fort.",
+    "highlights": [
+     "Floraison d'étoile UltraFast reprend la gamme de Floraison d'étoile Ultra (lingot d'alliage, pioche, hache, pelle, houe, lance, casque, plastron, jambières, bottes, bouclier, arc et flèche) plus la canne à pêche UltraFast. La durabilité et l'attaque sont celles de Max et d'Ultra ; les outils minent 1.75× plus vite que ceux d'Ultra, et la pioche atteint le 9×9 comme celle d'Ultra.",
+     "Le lingot d'alliage UltraFast se fabrique avec 8 lingots d'alliage Ultra et un emblème d'Aomori, et donne 8 lingots. L'emblème d'Aomori a 3% de chances d'apparaître dans chaque coffre du Nether (forteresse du Nether, les quatre coffres des Vestiges de bastion et le portail en ruine).",
+     "La canne à pêche UltraFast est livrée avec Appât III et Chance de la mer III intégrés et a 160 de durabilité. Uniquement avec cette canne, chaque prise a 0.05% de chances d'être un livre d'Entropie.",
+     "Porter une panoplie complète d'armure Floraison d'étoile UltraFast donne des passifs : dégâts de chute −31%, dégâts de feu −31%, dégâts de poison −15%, dégâts en se tenant sur des blocs de magma −40%, onde sonique du Warden −13%, vitesse de minage +10%, et 18% de chances que chaque nouvel effet néfaste soit repoussé. Porter seulement une partie de la panoplie ne donne aucun de ces effets."
+    ],
+    "warnings": [
+     "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+     "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
+    ]
    }
   ],
   "halia": [

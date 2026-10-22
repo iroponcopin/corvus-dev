@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3 1024 — 星樱 Ultra",
+   "summary": "Tsubomi V2.3 1167 — 星樱 UltraFast",
    "releases": [
+    {
+     "version": "V2.3 1167",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Tsubomi V2.3 1167 — 星樱 UltraFast",
+     "summary": "Tsubomi V2.3 1167 新增星樱 UltraFast(浅蓝色):Ultra 系列加上钓鱼竿,道具挖掘速度是 Ultra 的 1.75 倍,并且整套防具的被动效果更强。",
+     "sections": [
+      {
+       "title": "更新内容",
+       "items": [
+        "星樱 UltraFast 拥有星樱 Ultra 的全套物品(合金锭、镐、斧、铲、锄、长枪、头盔、胸甲、护腿、靴子、盾、弓和箭),另加 UltraFast 钓鱼竿。耐久和攻击力与 Max、Ultra 相同;道具挖掘速度是 Ultra 的 1.75 倍,镐可达到与 Ultra 相同的 9×9 挖掘。",
+        "UltraFast 合金锭由 8 个 Ultra 合金锭和一个青森之证制成,可得 8 个锭。青森之证在每个下界宝箱中出现的几率为 3%(下界要塞、四个堡垒遗迹宝箱和废弃传送门)。",
+        "UltraFast 钓鱼竿自带饵钓 III 和海之眷顾 III,耐久为 160。只有使用这根钓鱼竿时,每次钓鱼都有 0.05% 的几率钓到熵之书。",
+        "穿齐整套星樱 UltraFast 盔甲会获得被动效果:摔落伤害 −31%、火焰伤害 −31%、中毒伤害 −15%、站在岩浆块上的伤害 −40%、监守者的音波 −13%、挖掘速度 +10%,并且每个新的有害效果有 18% 的几率被抵挡。只穿戴部分套装则没有这些效果。"
+       ]
+      },
+      {
+       "title": "注意事项",
+       "items": [
+        "需要 Minecraft 26.3、Fabric Loader 0.19.5 或更高、Fabric API 0.161.0+26.3 或更高以及 Java 25。不需要其他模组；Cherry 是可选的。",
+        "Tsubomi 不能与 Alpha 同时使用。只要安装了任何一个 Alpha 模组，游戏就无法启动；请先移除 Alpha 的 jar。"
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3 1024",
      "date": "2026-10-22",

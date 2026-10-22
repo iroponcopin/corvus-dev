@@ -1087,6 +1087,21 @@
      "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
      "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3-1167",
+    "title": "Tsubomi V2.3 1167 — Starbloom UltraFast",
+    "summary": "Tsubomi V2.3 1167 adds Starbloom UltraFast (light blue): the Ultra lineup plus a Fishing Rod, tools that mine 1.75× as fast as Ultra's, and a stronger full-set passive.",
+    "highlights": [
+     "Starbloom UltraFast has the lineup of Starbloom Ultra without the shears (the alloy ingot, pickaxe, axe, spade, hoe, lance, helmet, chestplate, leggings, boots, shield, bow and arrow) plus the UltraFast Fishing Rod. Durability and attack are the same as Max's and Ultra's; the tools mine 1.75× as fast as Ultra's, and the pickaxe reaches 9×9 like Ultra's.",
+     "The UltraFast Alloy Ingot is made from 8 Ultra Alloy Ingots and an Aomori Emblem, giving 8 ingots. The Aomori Emblem has a 3% chance to appear in each of the Nether chests (Nether fortress, the four Bastion Remnant chests and the ruined portal).",
+     "The UltraFast Fishing Rod comes with Lure III and Luck of the Sea III built in and has 160 durability. Only with this rod, each catch has a 0.05% chance of being an Entropy book.",
+     "Wearing a full Starbloom UltraFast armour set gives passives: fall damage −31%, fire damage −31%, poison damage −15%, damage from standing on magma blocks −40%, the Warden's sonic boom −13%, mining speed +10%, and an 18% chance that each new harmful effect is shrugged off. Wearing only part of the set gives none of these."
+    ],
+    "warnings": [
+     "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+     "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
+    ]
    }
   ],
   "halia": [

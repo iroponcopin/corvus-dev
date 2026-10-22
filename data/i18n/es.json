@@ -1083,6 +1083,21 @@
      "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
      "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3-1167",
+    "title": "Tsubomi V2.3 1167 — Flor Estelar UltraFast",
+    "summary": "Tsubomi V2.3 1167 añade Flor Estelar UltraFast (azul claro): la línea de Ultra más una caña de pescar, herramientas que minan 1.75× más rápido que las de Ultra y una pasiva de conjunto más fuerte.",
+    "highlights": [
+     "Flor Estelar UltraFast tiene la línea de Flor Estelar Ultra (lingote de aleación, pico, hacha, pala, azada, lanza, casco, peto, mallas, botas, escudo, arco y flecha) más la caña de pescar UltraFast. La durabilidad y el ataque son los de Max y Ultra; las herramientas minan 1.75× más rápido que las de Ultra, y el pico llega a 9×9 como el de Ultra.",
+     "El lingote de aleación UltraFast se hace con 8 lingotes de aleación Ultra y un emblema de Aomori, y da 8 lingotes. El emblema de Aomori tiene un 3% de probabilidad de aparecer en cada cofre del Nether (fortaleza del Nether, los cuatro cofres de los Restos de baluarte y el portal en ruinas).",
+     "La caña de pescar UltraFast viene con Cebo III y Suerte marina III integrados y tiene 160 de durabilidad. Solo con esta caña, cada pesca tiene un 0.05% de probabilidad de ser un libro de Entropía.",
+     "Llevar un conjunto completo de armadura Flor Estelar UltraFast da pasivas: daño por caída −31%, daño por fuego −31%, daño por veneno −15%, daño por estar sobre bloques de magma −40%, el estallido sónico del Warden −13%, velocidad de minería +10%, y un 18% de probabilidad de que cada nuevo efecto dañino sea resistido. Llevar solo una parte del conjunto no da ninguno de estos."
+    ],
+    "warnings": [
+     "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+     "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
+    ]
    }
   ],
   "halia": [
