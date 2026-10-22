@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3 1167 — Yıldız Çiçeği UltraFast",
+   "summary": "Tsubomi V2.3 2408 — Yıldız Çiçeği UltraCore",
    "releases": [
+    {
+     "version": "V2.3 2408",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Tsubomi V2.3 2408 — Yıldız Çiçeği UltraCore",
+     "summary": "Tsubomi V2.3 2408, Yıldız Çiçeği UltraCore'u (bordo) ekler: Max dizilimi artı bir Orak, daha dayanıklı ekipman ve iniş şok dalgalı bir tam takım pasifi.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Yıldız Çiçeği UltraCore, Yıldız Çiçeği Max dizilimine sahiptir (alaşım külçesi, kazma, balta, kürek, çapa, mızrak, miğfer, göğüslük, pantolon, bot, kalkan, yay ve ok) artı UltraCore Orak. Dayanıklılığı UltraFast'ınkinin 1.25 katıdır; aletler UltraFast'ınki kadar hızlı kazar ve saldırısı Max ile aynıdır. Kazma 9×9'a ulaşır.",
+        "UltraCore Alaşım Külçesi 8 UltraFast Alaşım Külçesi ve bir Orman Nişanı ile yapılır ve 8 külçe verir. Orman Nişanı, Orman Konağı sandıklarının her birinde 3% ihtimalle çıkar.",
+        "UltraCore Orak yakın dövüş silahıdır: onun öldürdüğü bir yaratığın kendi canlandırma yumurtasını düşürme ihtimali 2%'dir.",
+        "Tam bir Yıldız Çiçeği UltraCore zırh takımı giymek pasifler verir: düşme hasarı −34%, ateş hasarı −32%, zehir hasarı −18%, magma hasarı −39%, Warden'ın ses dalgası −22%, kazma hızı +2%, hareket hızı +7%, saldırı +3% ve her yeni zararlı etkinin 25% ihtimalle savuşturulması. Bir düşüşten yere inmek, 4 blok içindeki düşman yaratıklara düşme hasarının 37%'sini veren bir şok dalgası çıkarır ve magma blokları artık zarar vermez. Takımın yalnızca bir kısmını giymek bunlardan hiçbirini vermez."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+        "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3 1167",
      "date": "2026-10-22",

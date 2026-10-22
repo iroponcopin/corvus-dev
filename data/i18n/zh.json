@@ -1098,6 +1098,21 @@
      "需要 Minecraft 26.3、Fabric Loader 0.19.5 或更高、Fabric API 0.161.0+26.3 或更高以及 Java 25。不需要其他模组；Cherry 是可选的。",
      "Tsubomi 不能与 Alpha 同时使用。只要安装了任何一个 Alpha 模组，游戏就无法启动；请先移除 Alpha 的 jar。"
     ]
+   },
+   {
+    "id": "tsubomi-v2.3-2408",
+    "title": "Tsubomi V2.3 2408 — 星樱 UltraCore",
+    "summary": "Tsubomi V2.3 2408 新增星樱 UltraCore（酒红色）：在 Max 系列的基础上加入镰刀、更耐用的装备，以及带有落地冲击波的整套防具被动效果。",
+    "highlights": [
+     "星樱 UltraCore 拥有星樱 Max 的全套物品（合金锭、镐、斧、铲、锄、长枪、头盔、胸甲、护腿、靴子、盾、弓和箭），另加 UltraCore 镰刀。耐久是 UltraFast 的 1.25×；道具挖掘速度与 UltraFast 相同，攻击力与 Max 相同。镐可达到 9×9 挖掘。",
+     "UltraCore 合金锭由 8 个 UltraFast 合金锭和一个森林之证制成，可得 8 个锭。森林之证在每个林地府邸宝箱中出现的几率为 3%。",
+     "UltraCore 镰刀是近战武器：被它杀死的生物有 2% 的几率掉落自己的刷怪蛋。",
+     "穿齐整套星樱 UltraCore 盔甲会获得被动效果：摔落伤害 −34%、火焰伤害 −32%、中毒伤害 −18%、岩浆伤害 −39%、监守者的音波 −22%、挖掘速度 +2%、移动速度 +7%、攻击力 +3%，并且每个新的有害效果有 25% 的几率被抵挡。落地时会释放冲击波，对 4 格内的敌对生物造成相当于摔落伤害 37% 的伤害，岩浆块也不再造成伤害。只穿戴部分套装则没有这些效果。"
+    ],
+    "warnings": [
+     "需要 Minecraft 26.3、Fabric Loader 0.19.5 或更高、Fabric API 0.161.0+26.3 或更高以及 Java 25。不需要其他模组；Cherry 是可选的。",
+     "Tsubomi 不能与 Alpha 同时使用。只要安装了任何一个 Alpha 模组，游戏就无法启动；请先移除 Alpha 的 jar。"
+    ]
    }
   ],
   "halia": [

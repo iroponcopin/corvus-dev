@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3 1167 — Fioritura Stellare UltraFast",
+   "summary": "Tsubomi V2.3 2408 — Fioritura Stellare UltraCore",
    "releases": [
+    {
+     "version": "V2.3 2408",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Tsubomi V2.3 2408 — Fioritura Stellare UltraCore",
+     "summary": "Tsubomi V2.3 2408 aggiunge Fioritura Stellare UltraCore (bordeaux): la gamma di Max più una falce, equipaggiamento più resistente e una passiva di set con onda d'urto all'atterraggio.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Fioritura Stellare UltraCore ha la gamma di Fioritura Stellare Max (lingotto di lega, piccone, ascia, pala, zappa, lancia, elmo, corazza, gambali, stivali, scudo, arco e freccia) più la falce UltraCore. La durabilità è 1.25× quella di UltraFast; gli strumenti scavano veloci quanto quelli di UltraFast, e l'attacco è quello di Max. Il piccone raggiunge il 9×9.",
+        "Il lingotto di lega UltraCore si crea con 8 lingotti di lega UltraFast e un emblema della foresta, e ne dà 8. L'emblema della foresta ha una probabilità del 3% di comparire in ogni forziere della Villa boschiva.",
+        "La falce UltraCore è un'arma da mischia: un mob che uccide ha una probabilità del 2% di far cadere il proprio uovo di generazione.",
+        "Indossare un set completo di armatura Fioritura Stellare UltraCore dà passive: danno da caduta −34%, danno da fuoco −32%, danno da veleno −18%, danno da lava −39%, boom sonico del Warden −22%, velocità di scavo +2%, velocità di movimento +7%, attacco +3%, e una probabilità del 25% che ogni nuovo effetto dannoso venga respinto. Atterrando da una caduta, si libera un'onda d'urto che infligge il 37% del danno da caduta ai mob ostili entro 4 blocchi, e i blocchi di magma non fanno più danno. Indossarne solo una parte non dà nessuno di questi."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+        "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3 1167",
      "date": "2026-10-22",

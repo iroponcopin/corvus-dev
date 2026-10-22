@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3 1167 — Starbloom UltraFast",
+   "summary": "Tsubomi V2.3 2408 — Starbloom UltraCore",
    "releases": [
+    {
+     "version": "V2.3 2408",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Tsubomi V2.3 2408 — Starbloom UltraCore",
+     "summary": "Tsubomi V2.3 2408 adds Starbloom UltraCore (burgundy): the Max lineup plus a Scythe, tougher gear, and a full-set passive with a landing shockwave.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "Starbloom UltraCore has the lineup of Starbloom Max (the alloy ingot, pickaxe, axe, spade, hoe, lance, helmet, chestplate, leggings, boots, shield, bow and arrow) plus the UltraCore Scythe. Durability is 1.25× UltraFast's; the tools mine as fast as UltraFast's and attack is the same as Max's. The pickaxe reaches 9×9.",
+        "The UltraCore Alloy Ingot is made from 8 UltraFast Alloy Ingots and a Forest Emblem, giving 8 ingots. The Forest Emblem has a 3% chance to appear in each Woodland Mansion chest.",
+        "The UltraCore Scythe is a melee weapon: a mob it kills has a 2% chance to drop its own spawn egg.",
+        "Wearing a full Starbloom UltraCore armour set gives passives: fall damage −34%, fire damage −32%, poison damage −18%, lava damage −39%, the Warden's sonic boom −22%, mining speed +2%, movement speed +7%, attack +3%, and a 25% chance that each new harmful effect is shrugged off. Landing from a fall sends a shockwave that deals 37% of the fall damage to hostile mobs within 4 blocks, and magma blocks no longer hurt. Wearing only part of the set gives none of these."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+        "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3 1167",
      "date": "2026-10-22",

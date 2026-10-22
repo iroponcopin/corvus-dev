@@ -1098,6 +1098,21 @@
      "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
      "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3-2408",
+    "title": "Tsubomi V2.3 2408 — Starbloom UltraCore",
+    "summary": "Tsubomi V2.3 2408 menambahkan Starbloom UltraCore (merah marun): jajaran Max ditambah Sabit, perlengkapan yang lebih tahan lama, dan pasif set lengkap dengan gelombang kejut saat mendarat.",
+    "highlights": [
+     "Starbloom UltraCore memiliki jajaran Starbloom Max (batangan paduan, beliung, kapak, sekop, cangkul, tombak, helm, baju zirah, celana, sepatu, perisai, busur dan panah) ditambah Sabit UltraCore. Daya tahannya 1.25× daya tahan UltraFast; alatnya menambang secepat alat UltraFast, dan seranganya sama dengan Max. Beliungnya mencapai 9×9.",
+     "Batangan Paduan UltraCore dibuat dari 8 Batangan Paduan UltraFast dan satu Lambang Hutan, menghasilkan 8 batangan. Lambang Hutan memiliki peluang 3% muncul di setiap peti Mansion Hutan.",
+     "Sabit UltraCore adalah senjata jarak dekat: makhluk yang dibunuhnya memiliki peluang 2% menjatuhkan Telur Kemunculan miliknya sendiri.",
+     "Mengenakan set zirah Starbloom UltraCore lengkap memberi pasif: kerusakan jatuh −34%, kerusakan api −32%, kerusakan racun −18%, kerusakan lava −39%, sonic boom Warden −22%, kecepatan menambang +2%, kecepatan gerak +7%, serangan +3%, dan peluang 25% setiap efek merugikan baru ditepis. Mendarat dari jatuhan mengeluarkan gelombang kejut yang memberi 37% kerusakan jatuh kepada makhluk musuh dalam radius 4 blok, dan blok magma tidak lagi melukai. Hanya memakai sebagian set tidak memberi satu pun dari ini."
+    ],
+    "warnings": [
+     "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+     "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+    ]
    }
   ],
   "halia": [

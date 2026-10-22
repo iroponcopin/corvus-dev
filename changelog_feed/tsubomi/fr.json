@@ -8,8 +8,33 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3 1167 — Floraison d'étoile UltraFast",
+   "summary": "Tsubomi V2.3 2408 — Floraison d'étoile UltraCore",
    "releases": [
+    {
+     "version": "V2.3 2408",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Tsubomi V2.3 2408 — Floraison d'étoile UltraCore",
+     "summary": "Tsubomi V2.3 2408 ajoute Floraison d'étoile UltraCore (bordeaux) : la gamme de Max plus une faux, un équipement plus résistant et un passif de panoplie avec onde de choc à la réception.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Floraison d'étoile UltraCore reprend la gamme de Floraison d'étoile Max (lingot d'alliage, pioche, hache, pelle, houe, lance, casque, plastron, jambières, bottes, bouclier, arc et flèche) plus la faux UltraCore. La durabilité est 1.25× celle d'UltraFast ; les outils minent aussi vite que ceux d'UltraFast, et l'attaque est celle de Max. La pioche atteint le 9×9.",
+        "Le lingot d'alliage UltraCore se fabrique avec 8 lingots d'alliage UltraFast et un emblème de la forêt, et donne 8 lingots. L'emblème de la forêt a 3% de chances d'apparaître dans chaque coffre du manoir de la forêt.",
+        "La faux UltraCore est une arme de mêlée : un mob qu'elle tue a 2% de chances de lâcher son propre œuf d'apparition.",
+        "Porter une panoplie complète de Floraison d'étoile UltraCore donne des passifs : dégâts de chute −34%, dégâts de feu −32%, dégâts de poison −18%, dégâts de lave −39%, onde sonique du Warden −22%, vitesse de minage +2%, vitesse de déplacement +7%, attaque +3%, et 25% de chances que chaque nouvel effet néfaste soit repoussé. Atterrir après une chute libère une onde de choc qui inflige 37% des dégâts de chute aux mobs hostiles dans un rayon de 4 blocs, et les blocs de magma ne blessent plus. Porter seulement une partie de la panoplie ne donne aucun de ces effets."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+        "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3 1167",
      "date": "2026-10-22",

@@ -1098,6 +1098,21 @@
      "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
      "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3-2408",
+    "title": "Tsubomi V2.3 2408 — Sternblüte UltraCore",
+    "summary": "Tsubomi V2.3 2408 fügt Sternblüte UltraCore (Burgunderrot) hinzu: das Sortiment von Max plus eine Sense, robustere Ausrüstung und einen Set-Passiveffekt mit Landungsschockwelle.",
+    "highlights": [
+     "Sternblüte UltraCore hat das Sortiment von Sternblüte Max (Legierungsbarren, Spitzhacke, Axt, Schaufel, Hacke, Lanze, Helm, Brustplatte, Beinschutz, Stiefel, Schild, Bogen und Pfeil) plus die UltraCore-Sense. Die Haltbarkeit ist 1.25× so hoch wie die von UltraFast; die Werkzeuge bauen so schnell ab wie die von UltraFast, und der Angriff entspricht dem von Max. Die Spitzhacke erreicht 9×9.",
+     "Der UltraCore-Legierungsbarren entsteht aus 8 UltraFast-Legierungsbarren und einem Waldzeichen und ergibt 8 Barren. Das Waldzeichen erscheint mit 3% Chance in jeder Truhe einer Waldvilla.",
+     "Die UltraCore-Sense ist eine Nahkampfwaffe: Ein Wesen, das sie tötet, lässt mit 2% Chance sein eigenes Spawn-Ei fallen.",
+     "Wer ein komplettes Sternblüte-UltraCore-Rüstungsset trägt, erhält Passiveffekte: Fallschaden −34%, Feuerschaden −32%, Giftschaden −18%, Lavaschaden −39%, Sonic Boom des Wardens −22%, Abbaugeschwindigkeit +2%, Bewegungsgeschwindigkeit +7%, Angriff +3% und eine Chance von 25%, dass jeder neue schädliche Effekt abgewehrt wird. Bei der Landung nach einem Sturz entsteht eine Schockwelle, die feindlichen Mobs im Umkreis von 4 Blöcken 37% des Fallschadens zufügt, und Magmablöcke fügen keinen Schaden mehr zu. Wer nur einen Teil des Sets trägt, erhält keinen davon."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+     "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
+    ]
    }
   ],
   "halia": [
