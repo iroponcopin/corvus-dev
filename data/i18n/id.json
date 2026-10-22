@@ -1059,6 +1059,17 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4.0.37",
+    "title": "Halia V1.4.0.37 — tongkat di tangan kembali ke ukuran normal",
+    "summary": "Tongkat Halia di tangan kembali digambar dengan ukuran normal.",
+    "highlights": [
+     "Staff of Bursting Mana, Staff of Warped Space dan Sage's Rod digambar terlalu besar saat dipegang (dari sudut pandang orang pertama, Staff of Bursting Mana menutupi sepertiga layar). Kini digambar dengan ukuran normal dari sudut pandang orang pertama dan ketiga, di tanah, dan sebagai item dalam bingkai. (Halia V1.4.0.37)"
+    ],
+    "warnings": [
+     "Persyaratan tidak berubah dari 1.4.0."
+    ]
+   },
+   {
     "id": "halia-v1.4.0.36",
     "title": "Halia V1.4.0.36 — perbaikan dari putaran pengujian besar",
     "summary": "Putaran pengujian besar Halia menemukan dan memperbaiki masalah berikut. Tongkat dan bilah Arcana kembali bisa dipakai pemain baru, dan banyak teks dalam game kini menampilkan nama yang benar.",

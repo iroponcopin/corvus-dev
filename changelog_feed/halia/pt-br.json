@@ -8,8 +8,29 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4.0.36 — correções de uma grande rodada de testes",
+   "summary": "Halia V1.4.0.37 — cajados na mão de volta ao tamanho normal",
    "releases": [
+    {
+     "version": "V1.4.0.37",
+     "date": "2026-10-22",
+     "type": "hotfix",
+     "title": "Halia V1.4.0.37 — cajados na mão de volta ao tamanho normal",
+     "summary": "Os cajados do Halia na mão voltam a ser desenhados em tamanho normal.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "O Staff of Bursting Mana, o Staff of Warped Space e o Sage's Rod eram desenhados grandes demais quando empunhados (em primeira pessoa, o Staff of Bursting Mana cobria um terço da tela). Agora são desenhados em tamanho normal em primeira e terceira pessoa, no chão e como itens em molduras. (Halia V1.4.0.37)"
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Os requisitos continuam iguais aos da 1.4.0."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0.36",
      "date": "2026-10-22",

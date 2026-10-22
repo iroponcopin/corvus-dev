@@ -1059,6 +1059,17 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4.0.37",
+    "title": "Halia V1.4.0.37 — 손에 든 지팡이 크기를 정상으로 되돌림",
+    "summary": "Halia에서 손에 든 지팡이가 다시 정상 크기로 그려집니다.",
+    "highlights": [
+     "Staff of Bursting Mana, Staff of Warped Space, Sage's Rod는 손에 들었을 때 지나치게 크게 그려졌습니다(일인칭에서는 Staff of Bursting Mana가 화면의 삼분의 일을 가렸습니다). 이제 일인칭과 삼인칭 모두, 바닥에 놓였을 때와 액자 속 아이템으로 있을 때 정상 크기로 그려집니다. (Halia V1.4.0.37)"
+    ],
+    "warnings": [
+     "요구 사항은 1.4.0과 동일합니다."
+    ]
+   },
+   {
     "id": "halia-v1.4.0.36",
     "title": "Halia V1.4.0.36 — 대규모 테스트에서 찾아 고친 문제",
     "summary": "Halia의 대규모 테스트에서 발견해 고친 문제들입니다. Arcana 지팡이와 칼날을 신규 플레이어도 다시 쓸 수 있으며, 많은 게임 내 텍스트가 올바른 이름으로 표시됩니다.",

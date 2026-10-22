@@ -8,8 +8,29 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4.0.36 —— 大规模测试后的修复",
+   "summary": "Halia V1.4.0.37 —— 手持法杖恢复正常大小",
    "releases": [
+    {
+     "version": "V1.4.0.37",
+     "date": "2026-10-22",
+     "type": "hotfix",
+     "title": "Halia V1.4.0.37 —— 手持法杖恢复正常大小",
+     "summary": "Halia 手中持握的法杖恢复为正常大小。",
+     "sections": [
+      {
+       "title": "更新内容",
+       "items": [
+        "Staff of Bursting Mana、Staff of Warped Space 与 Sage's Rod 手持时绘制得过大（第一人称下 Staff of Bursting Mana 遮住了画面的三分之一）。现在第一人称与第三人称下、放在地面上以及作为展示框中的物品时，均以正常大小绘制。 (Halia V1.4.0.37)"
+       ]
+      },
+      {
+       "title": "注意事项",
+       "items": [
+        "运行要求与 1.4.0 相同。"
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0.36",
      "date": "2026-10-22",

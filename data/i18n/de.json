@@ -1059,6 +1059,17 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4.0.37",
+    "title": "Halia V1.4.0.37 — gehaltene Stäbe wieder in normaler Größe",
+    "summary": "Halias gehaltene Stäbe werden wieder in normaler Größe gezeichnet.",
+    "highlights": [
+     "Staff of Bursting Mana, Staff of Warped Space und Sage's Rod wurden in der Hand viel zu groß gezeichnet (in der Ich-Perspektive bedeckte der Staff of Bursting Mana ein Drittel des Bildschirms). Sie werden nun in erster und dritter Person, am Boden und als Gegenstände in Rahmen in normaler Größe gezeichnet. (Halia V1.4.0.37)"
+    ],
+    "warnings": [
+     "Die Voraussetzungen sind gegenüber 1.4.0 unverändert."
+    ]
+   },
+   {
     "id": "halia-v1.4.0.36",
     "title": "Halia V1.4.0.36 — Korrekturen aus einer großen Testrunde",
     "summary": "Eine große Testrunde für Halia hat diese Probleme gefunden und behoben. Arcana-Stäbe und -Klingen können von neuen Spielern wieder genutzt werden, und viele Texte im Spiel zeigen ihre richtigen Namen.",

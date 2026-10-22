@@ -1063,6 +1063,17 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4.0.37",
+    "title": "Halia V1.4.0.37 — held staffs back to a normal size",
+    "summary": "Halia's held staffs are drawn at a normal size again.",
+    "highlights": [
+     "The Staff of Bursting Mana, the Staff of Warped Space and Sage's Rod were drawn far too large when held; in first person the Staff of Bursting Mana covered a third of the screen. They now draw at a normal size in first and third person, on the ground and as items in item frames. (Halia V1.4.0.37)"
+    ],
+    "warnings": [
+     "Requirements are unchanged from 1.4.0."
+    ]
+   },
+   {
     "id": "halia-v1.4.0.36",
     "title": "Halia V1.4.0.36 — fixes from a large round of testing",
     "summary": "Halia's large round of testing found and fixed these problems. Arcana staffs and blades work for new players again, and many in-game texts now show their proper names.",

@@ -1059,6 +1059,17 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4.0.37",
+    "title": "Halia V1.4.0.37 — cajados na mão de volta ao tamanho normal",
+    "summary": "Os cajados do Halia na mão voltam a ser desenhados em tamanho normal.",
+    "highlights": [
+     "O Staff of Bursting Mana, o Staff of Warped Space e o Sage's Rod eram desenhados grandes demais quando empunhados (em primeira pessoa, o Staff of Bursting Mana cobria um terço da tela). Agora são desenhados em tamanho normal em primeira e terceira pessoa, no chão e como itens em molduras. (Halia V1.4.0.37)"
+    ],
+    "warnings": [
+     "Os requisitos continuam iguais aos da 1.4.0."
+    ]
+   },
+   {
     "id": "halia-v1.4.0.36",
     "title": "Halia V1.4.0.36 — correções de uma grande rodada de testes",
     "summary": "Uma grande rodada de testes do Halia encontrou e corrigiu estes problemas. Os cajados e lâminas do Arcana voltaram a ser usáveis por jogadores novos, e muitos textos do jogo mostram seus nomes corretos.",

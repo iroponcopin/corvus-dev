@@ -8,8 +8,29 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4.0.36 — Korrekturen aus einer großen Testrunde",
+   "summary": "Halia V1.4.0.37 — gehaltene Stäbe wieder in normaler Größe",
    "releases": [
+    {
+     "version": "V1.4.0.37",
+     "date": "2026-10-22",
+     "type": "hotfix",
+     "title": "Halia V1.4.0.37 — gehaltene Stäbe wieder in normaler Größe",
+     "summary": "Halias gehaltene Stäbe werden wieder in normaler Größe gezeichnet.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Staff of Bursting Mana, Staff of Warped Space und Sage's Rod wurden in der Hand viel zu groß gezeichnet (in der Ich-Perspektive bedeckte der Staff of Bursting Mana ein Drittel des Bildschirms). Sie werden nun in erster und dritter Person, am Boden und als Gegenstände in Rahmen in normaler Größe gezeichnet. (Halia V1.4.0.37)"
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Die Voraussetzungen sind gegenüber 1.4.0 unverändert."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0.36",
      "date": "2026-10-22",

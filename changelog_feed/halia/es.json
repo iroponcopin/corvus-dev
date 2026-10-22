@@ -8,8 +8,29 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4.0.36 — correcciones de una gran ronda de pruebas",
+   "summary": "Halia V1.4.0.37 — los bastones en mano vuelven a su tamaño normal",
    "releases": [
+    {
+     "version": "V1.4.0.37",
+     "date": "2026-10-22",
+     "type": "hotfix",
+     "title": "Halia V1.4.0.37 — los bastones en mano vuelven a su tamaño normal",
+     "summary": "Los bastones de Halia en mano vuelven a dibujarse a un tamaño normal.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "El Staff of Bursting Mana, el Staff of Warped Space y el Sage's Rod se dibujaban demasiado grandes al sostenerlos (en primera persona, el Staff of Bursting Mana cubría un tercio de la pantalla). Ahora se dibujan a un tamaño normal en primera y tercera persona, en el suelo y como objetos en marcos. (Halia V1.4.0.37)"
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Los requisitos no han cambiado desde la 1.4.0."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0.36",
      "date": "2026-10-22",

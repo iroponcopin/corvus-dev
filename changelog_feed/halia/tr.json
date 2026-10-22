@@ -8,8 +8,29 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4.0.36 — geniş test turundan gelen düzeltmeler",
+   "summary": "Halia V1.4.0.37 — elde tutulan asalar normal boyuta döndü",
    "releases": [
+    {
+     "version": "V1.4.0.37",
+     "date": "2026-10-22",
+     "type": "hotfix",
+     "title": "Halia V1.4.0.37 — elde tutulan asalar normal boyuta döndü",
+     "summary": "Halia'da elde tutulan asalar yeniden normal boyutta çizilir.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Staff of Bursting Mana, Staff of Warped Space ve Sage's Rod elde tutulduğunda çok büyük çiziliyordu (birinci şahısta Staff of Bursting Mana ekranın üçte birini kaplıyordu). Artık birinci ve üçüncü şahısta, yerde ve çerçevelerdeki eşyalar olarak normal boyutta çiziliyor. (Halia V1.4.0.37)"
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Gereksinimler 1.4.0 ile aynı kaldı."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0.36",
      "date": "2026-10-22",

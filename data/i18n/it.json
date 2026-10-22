@@ -1059,6 +1059,17 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4.0.37",
+    "title": "Halia V1.4.0.37 — bastoni in mano di nuovo a dimensione normale",
+    "summary": "I bastoni di Halia in mano tornano ad essere disegnati a dimensione normale.",
+    "highlights": [
+     "Lo Staff of Bursting Mana, lo Staff of Warped Space e il Sage's Rod venivano disegnati troppo grandi quando tenuti in mano (in prima persona, lo Staff of Bursting Mana copriva un terzo dello schermo). Ora vengono disegnati a dimensione normale in prima e terza persona, a terra e come oggetti nelle cornici. (Halia V1.4.0.37)"
+    ],
+    "warnings": [
+     "I requisiti non sono cambiati rispetto alla 1.4.0."
+    ]
+   },
+   {
     "id": "halia-v1.4.0.36",
     "title": "Halia V1.4.0.36 — correzioni da un ampio ciclo di test",
     "summary": "Un ampio ciclo di test su Halia ha trovato e corretto questi problemi. Bastoni e lame dell'Arcana tornano utilizzabili dai nuovi giocatori, e molti testi di gioco mostrano i loro nomi corretti.",
