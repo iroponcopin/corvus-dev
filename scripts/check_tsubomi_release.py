@@ -169,6 +169,17 @@ def self_test() -> int:
             print("  " + p)
         return 2
     jname = sorted((ROOT / "downloads").glob("tsubomi-*.jar"))[0].name
+    # The controls and plants below are derived from the jar under test, never from a build number written here:
+    # the notation "V<a>.<b> <c>" and the dotted "V<a>.<b>.<c>" must stay green; the same notation with <c> minus one
+    # must be red; the format variants are red for their format alone (on the jar's own numbers).
+    three = THREE_PART_RE.fullmatch(JAR_RE.match(jname).group(1))
+    if three is None:
+        print(f"SELF-TEST CANNOT JUDGE: {jname} is not a three-part version a.b.c, so the notation rule has no controls")
+        return 2
+    part_a, part_b, part_c = three.group(1), three.group(2), three.group(3)
+    notation = f"V{part_a}.{part_b} {part_c}"
+    dotted = f"V{part_a}.{part_b}.{part_c}"
+    below = f"V{part_a}.{part_b} {int(part_c) - 1}"
 
     def copy_tree(dst: Path):
         (dst / "downloads").mkdir(parents=True)
@@ -237,12 +248,12 @@ def self_test() -> int:
         ("incompatible_with is missing", lambda d: rewrite_jar(d, lambda m: m["custom"]["tsubomi"]["brand"].pop("incompatible_with")), True, True),
         ("incompatible_with names the wrong brand", lambda d: rewrite_jar(d, lambda m: brand(m, incompatible_with=["Cherry"])), True, True),
         ("one language's feed lags the release", lambda d: edit_feed(d, "ar", "V0.9.0"), True, True),
-        ("the owner's notation V2.3 1024 in one feed (control)", lambda d: edit_feed(d, "ja", "V2.3 1024"), True, False),
-        ("the dotted form V2.3.1024 in one feed (control)", lambda d: edit_feed(d, "de", "V2.3.1024"), True, False),
-        ("a wrong build in the new notation: V2.3 1023", lambda d: edit_feed(d, "en", "V2.3 1023"), True, True),
-        ("the new notation with two spaces: V2.3  1024", lambda d: edit_feed(d, "fr", "V2.3  1024"), True, True),
-        ("the new notation with a lowercase v: v2.3 1024", lambda d: edit_feed(d, "ko", "v2.3 1024"), True, True),
-        ("the new notation with trailing text: V2.3 1024 beta", lambda d: edit_feed(d, "zh", "V2.3 1024 beta"), True, True),
+        (f"the owner's notation {notation} in one feed (control)", lambda d: edit_feed(d, "ja", notation), True, False),
+        (f"the dotted form {dotted} in one feed (control)", lambda d: edit_feed(d, "de", dotted), True, False),
+        (f"a wrong build in the new notation: {below}", lambda d: edit_feed(d, "en", below), True, True),
+        (f"the new notation with two spaces: V{part_a}.{part_b}  {part_c}", lambda d: edit_feed(d, "fr", f"V{part_a}.{part_b}  {part_c}"), True, True),
+        (f"the new notation with a lowercase v: v{part_a}.{part_b} {part_c}", lambda d: edit_feed(d, "ko", f"v{part_a}.{part_b} {part_c}"), True, True),
+        (f"the new notation with trailing text: {notation} beta", lambda d: edit_feed(d, "zh", f"{notation} beta"), True, True),
     ]
     ok = True
     for label, plant, is_tracked, should_fail in plants:
