@@ -122,11 +122,69 @@
   },
   "halia": {
     "mod_id": "halia",
-    "latest": "1.3.0.2",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/halia-1.3.0.2.jar",
-    "file_name": "halia-1.3.0.2.jar",
-    "file_size": 22580075,
-    "sha256": "a81edcaf9d151adb529f73292019ed1ba13b0271d07fd0f4cb42ab274d551baf"
+    "latest": "1.4.0",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/halia-1.4.0.jar",
+    "file_name": "halia-1.4.0.jar",
+    "file_size": 61528206,
+    "sha256": "fa07cfbd40bb127857cb9b4b302887884d6377d6b534643fabae7d3190dab96e",
+    "creatures": [
+      {
+        "id": "glimmerwisp",
+        "name": {
+          "en": "Glimmerwisp",
+          "ja": "灯の精"
+        },
+        "dimension": "Overworld, End"
+      },
+      {
+        "id": "snaremaw",
+        "name": {
+          "en": "Snaremaw",
+          "ja": "罠顎花"
+        },
+        "dimension": "Overworld, Nether"
+      },
+      {
+        "id": "gemback",
+        "name": {
+          "en": "Gemback",
+          "ja": "宝背"
+        },
+        "dimension": "Overworld, Nether"
+      },
+      {
+        "id": "cragling",
+        "name": {
+          "en": "Cragling",
+          "ja": "岩角の小鬼"
+        },
+        "dimension": "Overworld, Nether"
+      },
+      {
+        "id": "duskprowler_howler",
+        "name": {
+          "en": "Duskprowler Howler",
+          "ja": "宵の遠吠え"
+        },
+        "dimension": "Overworld"
+      },
+      {
+        "id": "cliff_wyrm",
+        "name": {
+          "en": "Cliff Wyrm",
+          "ja": "崖の翼蛇"
+        },
+        "dimension": "Overworld, End"
+      },
+      {
+        "id": "sunmask_raider",
+        "name": {
+          "en": "Sunmask Raider",
+          "ja": "陽面の襲撃者"
+        },
+        "dimension": "Overworld, Nether"
+      }
+    ]
   },
   "agent": {
     "latest": "5.5.1.2",
@@ -150,6 +208,11 @@
   },
   "ai_chat": {
     "url": "https://167-99-83-109.sslip.io"
+  },
+  "spawn_lock": {
+    "model": "halia",
+    "from": "2026-10-22",
+    "until": "2026-12-22"
   },
   "noctua": {
     "latest": "1.0.0",

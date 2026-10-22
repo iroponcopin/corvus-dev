@@ -1,0 +1,58 @@
+[
+  {
+    "id": "glimmerwisp",
+    "name": {
+      "en": "Glimmerwisp",
+      "ja": "灯の精"
+    },
+    "dimension": "Overworld, End"
+  },
+  {
+    "id": "snaremaw",
+    "name": {
+      "en": "Snaremaw",
+      "ja": "罠顎花"
+    },
+    "dimension": "Overworld, Nether"
+  },
+  {
+    "id": "gemback",
+    "name": {
+      "en": "Gemback",
+      "ja": "宝背"
+    },
+    "dimension": "Overworld, Nether"
+  },
+  {
+    "id": "cragling",
+    "name": {
+      "en": "Cragling",
+      "ja": "岩角の小鬼"
+    },
+    "dimension": "Overworld, Nether"
+  },
+  {
+    "id": "duskprowler_howler",
+    "name": {
+      "en": "Duskprowler Howler",
+      "ja": "宵の遠吠え"
+    },
+    "dimension": "Overworld"
+  },
+  {
+    "id": "cliff_wyrm",
+    "name": {
+      "en": "Cliff Wyrm",
+      "ja": "崖の翼蛇"
+    },
+    "dimension": "Overworld, End"
+  },
+  {
+    "id": "sunmask_raider",
+    "name": {
+      "en": "Sunmask Raider",
+      "ja": "陽面の襲撃者"
+    },
+    "dimension": "Overworld, Nether"
+  }
+]
