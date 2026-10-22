@@ -8,8 +8,31 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3.0.311 — Yıldız Çiçeği Max",
+   "summary": "Tsubomi V2.3 1024 — Yıldız Çiçeği Ultra",
    "releases": [
+    {
+     "version": "V2.3 1024",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Tsubomi V2.3 1024 — Yıldız Çiçeği Ultra",
+     "summary": "Tsubomi V2.3 1024, Yıldız Çiçeği Max'ın ardından Yıldız Çiçeği Ultra'yı (sarımsı yeşil) makas ve tam takım pasifiyle ekler.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Yıldız Çiçeği Ultra, Max serisine ek olarak Ultra Makas'a sahiptir ve sarımsı yeşil renktedir. Dayanıklılık ve saldırı Max ile aynıdır; Ultra Kazma 9×9 kazma ekler (1×1, 3×3, 5×5, 7×7, 9×9). Ultra Alaşım Külçesi 8 Max Alaşım Külçesi ve bir Okyanus Nişanı ile yapılır ve 8 külçe verir.",
+        "Tam bir Yıldız Çiçeği Ultra zırh takımı giymek pasifler verir: düşme hasarı −%27, ateş hasarı −%27 ve zehir hasarı −%10. Ultra Makas düşük bir ihtimalle uzun otu blok olarak kazabilir; dayanıklılık yerine 20 kullanımı vardır ve hiçbir şey düşmese bile bir kullanım sayılır. Vanilla makasın yerini tutmaz (koyun kırkamaz)."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+        "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3.0.311",
      "date": "2026-10-22",

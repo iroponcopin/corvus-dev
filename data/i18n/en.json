@@ -1074,6 +1074,19 @@
      "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
      "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3-1024",
+    "title": "Tsubomi V2.3 1024 — Starbloom Ultra",
+    "summary": "Tsubomi V2.3 1024 adds Starbloom Ultra (yellow-green), with Ultra Shears and a full-set passive, as the next step after Starbloom Max.",
+    "highlights": [
+     "Starbloom Ultra has the lineup of Starbloom Max plus the Ultra Shears, in yellow-green. Durability and attack are the same as Max's, and the Ultra Pickaxe adds 9×9 mining (1×1, 3×3, 5×5, 7×7, 9×9). The Ultra Alloy Ingot is made from 8 Max Alloy Ingots and an Ocean Emblem, giving 8 ingots.",
+     "Wearing a full Starbloom Ultra armour set gives passives: fall damage −27%, fire damage −27% and poison damage −10%. The Ultra Shears have a low chance to mine a tall grass as a block; they have 20 uses instead of durability, and a use is counted even when nothing drops. They are not a replacement for vanilla shears (they cannot shear sheep)."
+    ],
+    "warnings": [
+     "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+     "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
+    ]
    }
   ],
   "halia": [

@@ -8,8 +8,31 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3.0.311 — Sternblüte Max",
+   "summary": "Tsubomi V2.3 1024 — Sternblüte Ultra",
    "releases": [
+    {
+     "version": "V2.3 1024",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Tsubomi V2.3 1024 — Sternblüte Ultra",
+     "summary": "Tsubomi V2.3 1024 fügt nach Sternblüte Max nun Sternblüte Ultra (gelbgrün) mit Schere und Set-Passiveffekt hinzu.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Sternblüte Ultra hat das Sortiment von Sternblüte Max plus die Ultra-Schere, in Gelbgrün. Haltbarkeit und Angriff entsprechen Max, und die Ultra-Spitzhacke bringt 9×9-Abbau hinzu (1×1, 3×3, 5×5, 7×7, 9×9). Der Ultra-Legierungsbarren entsteht aus 8 Max-Legierungsbarren und einem Ozeanzeichen und ergibt 8 Barren.",
+        "Ein vollständiges Sternblüte-Ultra-Rüstungsset gibt passive Effekte: Fallschaden −27%, Feuerschaden −27% und Giftschaden −10%. Die Ultra-Schere baut mit geringer Chance hohes Gras als Block ab; sie hat 20 Anwendungen statt Haltbarkeit, und eine Anwendung zählt auch, wenn nichts fällt. Sie ersetzt keine Vanilla-Schere (Schafe scheren geht nicht)."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+        "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3.0.311",
      "date": "2026-10-22",

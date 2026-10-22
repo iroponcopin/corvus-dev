@@ -8,8 +8,31 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3.0.311 — Flor Estelar Max",
+   "summary": "Tsubomi V2.3 1024 — Flor Estelar Ultra",
    "releases": [
+    {
+     "version": "V2.3 1024",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Tsubomi V2.3 1024 — Flor Estelar Ultra",
+     "summary": "Tsubomi V2.3 1024 añade, tras Flor Estelar Max, Flor Estelar Ultra (verde amarillento), con tijeras y pasiva de conjunto.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "Flor Estelar Ultra tiene la gama de Max más las tijeras Ultra, en verde amarillento. La durabilidad y el ataque son los de Max, y el pico Ultra añade minería en 9×9 (1×1, 3×3, 5×5, 7×7, 9×9). El lingote de aleación Ultra se hace con 8 lingotes de aleación Max y un emblema oceánico, y da 8 lingotes.",
+        "Llevar un conjunto completo de armadura Flor Estelar Ultra da pasivas: daño por caída −27%, daño por fuego −27% y daño por veneno −10%. Las tijeras Ultra tienen una baja probabilidad de minar hierba alta como bloque; tienen 20 usos en lugar de durabilidad, y un uso cuenta aunque no caiga nada. No sustituyen a las tijeras de vanilla (no esquilan ovejas)."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+        "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3.0.311",
      "date": "2026-10-22",

@@ -8,8 +8,31 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3.0.311 — Fioritura Stellare Max",
+   "summary": "Tsubomi V2.3 1024 — Fioritura Stellare Ultra",
    "releases": [
+    {
+     "version": "V2.3 1024",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Tsubomi V2.3 1024 — Fioritura Stellare Ultra",
+     "summary": "Tsubomi V2.3 1024 aggiunge, dopo Fioritura Stellare Max, Fioritura Stellare Ultra (giallo-verde), con cesoie e passiva di set.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Fioritura Stellare Ultra ha la gamma di Max più le cesoie Ultra, in giallo-verde. Durabilità e attacco sono quelli di Max, e il piccone Ultra aggiunge lo scavo in 9×9 (1×1, 3×3, 5×5, 7×7, 9×9). Il lingotto di lega Ultra si fa con 8 lingotti di lega Max e un emblema oceanico, e ne dà 8.",
+        "Indossare un set completo di armatura Fioritura Stellare Ultra dà passive: danno da caduta −27%, danno da fuoco −27% e danno da veleno −10%. Le cesoie Ultra hanno una bassa probabilità di scavare erba alta come blocco; hanno 20 usi invece della durabilità, e un uso conta anche se non cade nulla. Non sostituiscono le cesoie di vanilla (non tosano le pecore)."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+        "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3.0.311",
      "date": "2026-10-22",

@@ -1070,6 +1070,19 @@
      "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
      "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3-1024",
+    "title": "Tsubomi V2.3 1024 — Starbloom Ultra",
+    "summary": "Tsubomi V2.3 1024 menambahkan Starbloom Ultra (hijau kekuningan) setelah Starbloom Max, dengan Gunting dan pasif set lengkap.",
+    "highlights": [
+     "Starbloom Ultra memiliki jajaran Starbloom Max ditambah Gunting Ultra, dalam warna hijau kekuningan. Daya tahan dan serangan sama dengan Max, dan Beliung Ultra menambahkan penambangan 9×9 (1×1, 3×3, 5×5, 7×7, 9×9). Batangan Paduan Ultra dibuat dari 8 Batangan Paduan Max dan satu Lambang Samudra, menghasilkan 8 batangan.",
+     "Mengenakan set zirah Starbloom Ultra lengkap memberi pasif: kerusakan jatuh −27%, kerusakan api −27%, dan kerusakan racun −10%. Gunting Ultra punya peluang kecil menambang rumput tinggi sebagai blok; ia punya 20 pemakaian, bukan daya tahan, dan satu pemakaian tetap dihitung meski tidak ada yang jatuh. Ia bukan pengganti gunting vanilla (tidak bisa mencukur domba)."
+    ],
+    "warnings": [
+     "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+     "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+    ]
    }
   ],
   "halia": [

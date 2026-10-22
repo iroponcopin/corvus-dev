@@ -8,8 +8,31 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3.0.311 — Floraison d'étoile Max",
+   "summary": "Tsubomi V2.3 1024 — Floraison d'étoile Ultra",
    "releases": [
+    {
+     "version": "V2.3 1024",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Tsubomi V2.3 1024 — Floraison d'étoile Ultra",
+     "summary": "Tsubomi V2.3 1024 ajoute, après Floraison d'étoile Max, Floraison d'étoile Ultra (vert-jaune), avec cisailles et passif de panoplie.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Floraison d'étoile Ultra reprend la gamme de Max, plus les cisailles Ultra, en vert-jaune. La durabilité et l'attaque sont celles de Max, et la pioche Ultra ajoute l'extraction en 9×9 (1×1, 3×3, 5×5, 7×7, 9×9). Le lingot d'alliage Ultra se fabrique avec 8 lingots d'alliage Max et un emblème océanique, pour 8 lingots.",
+        "Porter une panoplie Floraison d'étoile Ultra complète donne des passifs : dégâts de chute −27%, dégâts de feu −27% et dégâts de poison −10%. Les cisailles Ultra peuvent, avec une faible chance, miner une haute herbe sous forme de bloc ; elles ont 20 utilisations au lieu d'une durabilité, et une utilisation compte même si rien ne tombe. Elles ne remplacent pas les cisailles du jeu de base (elles ne tondent pas les moutons)."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+        "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3.0.311",
      "date": "2026-10-22",
