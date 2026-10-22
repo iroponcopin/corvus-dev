@@ -1059,6 +1059,33 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4.0",
+    "title": "Halia V1.4 — Arcana, 생물 여섯 종, 보스 셋",
+    "summary": "Halia V1.4는 Halia의 마법인 Arcana를 추가합니다. 마법진 53개, 주문 두루마리 44개, 지팡이 두 개와 Sage's Rod가 포함됩니다. 또한 오버월드, 네더, 엔드 전역에 사는 생물 여섯 종, 각자의 건축물에서 기다리는 보스 세 명, 그리고 Daigan the Stoneshaper의 수도원을 추가합니다. 수도원의 등반 시련은 Quarry Gauntlet을 보상으로 줍니다.",
+    "highlights": [
+     "Arcana: 마법진 53개는 각각 고유한 블록을 가지며, 주문 두루마리 44개에는 Downpour of Light, Shifting Ward, Gaze of Binding, Summon Familiar 등이 있습니다. 지팡이는 Staff of Bursting Mana, Staff of Warped Space, Sage's Rod이며, Circle Projector도 Arcana에 포함됩니다.",
+     "Glimmerwisp: 오버월드의 어두운 숲과 엔드의 고지대 및 중간 지역에 삽니다.",
+     "Snaremaw: 정글과 네더의 진홍 숲에 삽니다. 풀, 흙 또는 나뭇잎 위에 Snaremaw Seed를 심고 새싹에 고기를 먹이면 snaremaw로 자랍니다.",
+     "Gemback: 오버월드의 버섯밭을 제외한 지하와 네더의 황무지에 삽니다. Silk Touch 곡괭이로 캐면 Captured Gemback을 얻을 수 있으며, 이 아이템을 설치하면 Gemback을 풀어 줍니다. Gemback 블록도 게임에 있습니다.",
+     "Cragling: 오버월드의 종유석 동굴과 네더의 현무암 삼각주에 삽니다. Cragling Rod는 재료이며, 돌가시와 땅 균열이 공격입니다.",
+     "Duskprowler: Duskprowler Howler가 정글에서 Duskprowler 무리를 이끕니다. Duskprowler는 Moon Paw를 떨어뜨릴 수 있으며, 종류는 다섯 가지(Full, Gibbous, Half, Crescent and New Moon Paw)입니다. looting이 높을수록 확률이 올라갑니다. 각 발톱에는 고유한 효과가 있습니다.",
+     "Cliff Wyrm: 오버월드의 y 68 이상 돌 해안과 엔드의 고지대에 삽니다. Poison Balls를 뱉으며, 그 Wyrm Fang으로 Fang Dagger를 만들 수 있습니다. 이 단검은 적중할 때마다 독을 줍니다. Poison Resistance는 독을 치료하고 막아 줍니다.",
+     "Forgebound Colossus, 첫 번째 보스: 오버월드 지하의 거상 방과 네더에 있는 전용 방에 있습니다. 드롭 아이템은 Colossus Greataxe와 Colossus Helm입니다.",
+     "Rimefang, 두 번째 보스: 오버월드의 소굴과 엔드의 소굴에 있습니다. 얼어붙는 숨결을 내뿜으며, Rime Crystal을 가지고 우클릭을 누르고 있으면 얼어붙는 바람을 내뿜을 수 있습니다.",
+     "Daigan the Stoneshaper, 마지막 보스: 오버월드 수도원의 상인입니다. 시련 발판을 건너는 등반 시련을 내걸며, 일부 발판은 올라서고 얼마 지나지 않아 무너집니다. 시련의 보상은 Quarry Gauntlet으로, 바위를 던지고 구르고 내려치고 돌기둥을 세웁니다. 또한 지팡이 한 자루와 구슬, 법의, 허리띠, 짚신으로 이루어진 방어구 세트를 가지고 있습니다.",
+     "Sunmask 사람들: 사바나의 가면 부족이며, 이제는 네더의 진홍 숲과 황무지에도 삽니다. Sunmask Raider는 부하들의 무리를 거느리고 다니며, Sunmask와 Sunmask Seer는 숲을 지킵니다. Seer는 동족을 보호하고 그들의 족장을 치유합니다. 각 종족은 고유한 가면을 쓰며, 싸울 때는 머리 뒤에 태양이 떠오릅니다.",
+     "Helion, 태양 족장: 모든 Sunmask 숲의 왕좌에 있는 보스로, 오버월드와 네더에 있습니다. 태양 일격을 내리며, 체력이 5분의 3으로 떨어지면 Helion's Lance로 땅을 쓸고 Corona Burst로 부풀어 오릅니다.",
+     "Helion과의 거래: Sunmask 가면을 쓴 플레이어는 금 블록 일곱 개를 주고 Helion's Favour를 받을 수 있습니다. 축복 상태에서는 맨손으로 태양 일격을, 웅크리면 Helion's Lance를, 웅크린 채 두 버튼을 누르면 Corona Burst를 부르며, 각각 축복의 시간을 씁니다.",
+     "Solar Countenance: 머리에 쓰면 가면을 쓴 플레이어가 Sunmask 가면으로 Sunmask Raider Follower를 최대 열 명까지 소환할 수 있습니다. 이들은 소환자를 따라다니며 지켜 줍니다.",
+     "Daigan의 수도원은 이제 엔드의 외곽 섬에도 세워졌으며, end stone과 purpur로 지어졌습니다."
+    ],
+    "warnings": [
+     "요구 사양: Minecraft 26.3, Fabric Loader 0.19.5 이상, Fabric API 0.161.0+26.3 이상, Java 25. 멀티플레이에서는 서버에도 Halia를 설치해야 합니다.",
+     "Halia V1.4는 이제 GeckoLib 5.5.6을 사용합니다. GeckoLib은 Halia jar 안에 포함되어 있으므로 따로 설치할 필요가 없습니다. 다른 모드가 같은 GeckoLib을 가지고 있어도 게임은 하나만 사용합니다.",
+     "생물별 자연 생성은 Corvus 앱에서 생물마다 끌 수 있습니다. 스위치는 V1.4 출시 후 두 달 동안 켜진 상태로 잠기며, 잠금 종료일은 출시일에 정해집니다."
+    ]
+   },
+   {
     "id": "halia-v1.3.0.2",
     "title": "Halia V1.3.0.2 — Vigil에서 외부 링크를 제거했습니다",
     "summary": "Halia V1.3.0.2는 Halia에 맞지 않는 표시를 제거합니다. Vigil의 일부 메시지가 외부 웹사이트를 안내했고, 안내서가 인터넷에서 가져온 이름을 보여 주었습니다.",

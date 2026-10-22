@@ -1059,6 +1059,33 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4.0",
+    "title": "Halia V1.4 — Arcana, altı yaratık ve üç patron",
+    "summary": "Halia V1.4, Halia'nın büyüsü olan Arcana'yı ekler: 53 büyü çemberi, 44 büyü parşömeni, iki asa ve Sage's Rod. Ayrıca Overworld, Nether ve End boyunca yaşayan altı yaratık, kendi yapılarında bekleyen üç patron ve Daigan the Stoneshaper'ın manastırını ekler; manastırdaki tırmanma denemesi ödül olarak Quarry Gauntlet verir.",
+    "highlights": [
+     "Arcana: her biri kendi bloğuna sahip 53 büyü çemberi ve aralarında Downpour of Light, Shifting Ward, Gaze of Binding ve Summon Familiar'ın bulunduğu 44 büyü parşömeni. Asalar Staff of Bursting Mana, Staff of Warped Space ve Sage's Rod'dur; Circle Projector de Arcana'nın bir parçasıdır.",
+     "Glimmerwisp: Overworld'ün karanlık ormanlarında ve End'in yaylalarında ile orta bölgelerinde yaşar.",
+     "Snaremaw: Nether'ın junglelarında ve kızıl ormanlarında yaşar. Çimen, toprak ya da yapraklara bir Snaremaw Seed dikin; filizi etle besleyin, snaremaw'a dönüşür.",
+     "Gemback: Overworld'de mantar tarlalarının dışında, yeraltında ve Nether'ın çorak topraklarında yaşar. Captured Gemback elde etmek için Silk Touch kazmasıyla kazın; Gemback'i serbest bırakmak için bu eşyayı yerleştirin. Gemback bloğu da oyunda bulunur.",
+     "Cragling: Overworld'ün damla taşı mağaralarında ve Nether'ın bazalt deltalarında yaşar. Cragling Rod'u bir malzemedir; taş dikenleri ve yer yarıkları saldırılarıdır.",
+     "Duskprowler: Duskprowler Howler, jungle'larda bir Duskprowler sürüsüne önderlik eder. Duskprowler'lar beş türde Moon Paw düşürebilir (Full, Gibbous, Half, Crescent and New Moon Paw); looting bu şansı artırır. Her pençenin kendi etkisi vardır.",
+     "Cliff Wyrm: Overworld'ün y 68 üzerindeki taşlık kıyılarında ve End'in yaylalarında yaşar. Poison Balls tükürür; Wyrm Fang'i Fang Dagger yapar, bu hançer her vuruşta zehirler. Poison Resistance zehri iyileştirir ve engeller.",
+     "Forgebound Colossus, ilk patron: Overworld'deki yeraltı colossus odasında ve Nether'daki kendi odasında. Eşyaları Colossus Greataxe ve Colossus Helm'dir.",
+     "Rimefang, ikinci patron: Overworld'deki ininde ve End'deki bir ininde. Dondurucu hava üfler; Rime Crystal'i sağ tıka basılı tutarken dondurucu bir rüzgâr üflemenizi sağlar.",
+     "Daigan the Stoneshaper, son patron: Overworld'deki manastırında bir tüccar. Deneme platformları üzerinde bir tırmanma denemesi sunar; bazıları üzerine basıldıktan kısa süre sonra çöker. Denemenin ödülü Quarry Gauntlet'tir; kayaları güç biriktirip fırlatır, yuvarlanır, yere vurur ve sütunlar yükseltir. Ayrıca bir asası ve boncuk, cübbe, kemer ve sandaletten oluşan bir zırh takımı vardır.",
+     "Sunmask halkları: savanadaki maskeli kabileler ve artık Nether'ın kızıl ormanlarında ve çorak topraklarında yaşayanlar. Sunmask Raider, takipçilerinden oluşan bir halkayla dolaşır; Sunmask ve Sunmask Seer korulukları korur, Seer ise yakınlarını korur ve reislerini iyileştirir. Her tür kendi maskesini takar; savaşırken başının arkasında bir güneş belirir.",
+     "Helion, Güneş Reisi: her Sunmask korusunun tahtında oturan patron, Overworld ve Nether'da. Güneş vuruşları çağırır; can puanı beşte üç oranına düştüğünde Helion's Lance ile yeri süpürür ve Corona Burst'e dönüşerek şişer.",
+     "Helion ile ticaret: Sunmask maskesi takan bir oyuncu, Helion's Favour karşılığında ona yedi altın blok verebilir. Kutsanmışken boş el güneş vuruşu, çömelmek Helion's Lance, çömelirken iki tuşa birden basmak Corona Burst çağırır; her biri kutsamanın süresinden düşülür.",
+     "Solar Countenance: başa takıldığında, maskeli oyuncuya Sunmask maskelerinden on Sunmask Raider Follower'a kadar çağırma imkânı verir; bunlar çağıranlarını takip eder ve savunur.",
+     "Daigan'ın manastırı artık End'in dış adalarında da yer alır; end stone ve purpur ile inşa edilmiştir."
+    ],
+    "warnings": [
+     "Gereksinimler: Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni, Fabric API 0.161.0+26.3 veya daha yeni, Java 25. Çok oyunculu oyunda Halia sunucuya da kurulmalıdır.",
+     "Halia V1.4 artık GeckoLib 5.5.6 kullanıyor. GeckoLib, Halia jar dosyasının içinde geliyor, bu yüzden ayrıca bir şey kurmanıza gerek yok; başka bir mod aynı GeckoLib'i getirirse oyun yalnızca bir kopyasını kullanır.",
+     "Her yaratığın doğal oluşumu Corvus uygulamasından tek tek kapatılabilir. Anahtarlar V1.4 yayımlandıktan sonra iki ay boyunca açık olarak kilitli kalır; kilidin bitiş tarihi yayın günü belirlenir."
+    ]
+   },
+   {
     "id": "halia-v1.3.0.2",
     "title": "Halia V1.3.0.2 — Vigil'deki dış bağlantılar kaldırıldı",
     "summary": "Halia V1.3.0.2, Halia'ya ait olmayan metinleri kaldırır: Vigil'in bazı mesajları oyuncuları dış web sitelerine yönlendiriyordu ve el kitabı internetten indirilen adları gösteriyordu.",

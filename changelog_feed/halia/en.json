@@ -1,11 +1,54 @@
 {
  "lang": "en",
  "brand": "halia",
- "updated": "2026-10-19",
+ "updated": "2026-10-22",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-19",
+ "updated_label": "Updated 2026-10-22",
  "note": "",
  "groups": [
+  {
+   "label": "V1.4",
+   "summary": "Halia V1.4 — the Arcana, six creatures, and three bosses",
+   "releases": [
+    {
+     "version": "V1.4.0",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Halia V1.4 — the Arcana, six creatures, and three bosses",
+     "summary": "Halia V1.4 adds the Arcana, Halia's magic: 53 spell circles, 44 spell scrolls, two staves and Sage's Rod. It adds six creatures that live across the Overworld, the Nether and the End, three bosses that wait in their own structures, and the monastery of Daigan the Stoneshaper, whose climbing trial rewards the Quarry Gauntlet.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "The Arcana: 53 spell circles, each with its own block, and 44 spell scrolls, among them Downpour of Light, Shifting Ward, Gaze of Binding and Summon Familiar. The staves are the Staff of Bursting Mana, the Staff of Warped Space and Sage's Rod; the Circle Projector is also part of the Arcana.",
+        "Glimmerwisp: lives in dark forests of the Overworld and in the highlands and midlands of the End.",
+        "Snaremaw: lives in jungles and in the crimson forests of the Nether. Plant a Snaremaw Seed on grass, dirt or leaves; feed the sprout meat and it grows into a snaremaw.",
+        "Gemback: lives underground in the Overworld, outside the mushroom fields, and in the wastes of the Nether. Mine it with a Silk Touch pickaxe to get a Captured Gemback; place that item to let the Gemback go. The Gemback block is in the game too.",
+        "Cragling: lives in the dripstone caves of the Overworld and the basalt deltas of the Nether. Its Cragling Rod is a material; its stone spikes and ground fissures are its attacks.",
+        "Duskprowler: the Duskprowler Howler leads a pack of Duskprowlers in the jungles. Duskprowlers can drop Moon Paws, five kinds (Full, Gibbous, Half, Crescent and New Moon Paw), with a chance that looting raises; each paw has its own effect.",
+        "Cliff Wyrm: lives on the stony shores of the Overworld above y 68 and in the End's highlands. It spits Poison Balls; its Wyrm Fang makes the Fang Dagger, which poisons on every hit. Poison Resistance cures and blocks poison.",
+        "Forgebound Colossus, the first boss: in its underground colossus chamber in the Overworld, and in a Nether chamber of its own. Its items are the Colossus Greataxe and the Colossus Helm.",
+        "Rimefang, the second boss: in its lair in the Overworld, and in an End lair. It breathes freezing air, and its Rime Crystal lets you breathe a freezing wind while you hold right-click.",
+        "Daigan the Stoneshaper, the last boss: a trader in his monastery in the Overworld. He sets a climbing trial over trial platforms, and some of them crumble soon after you stand on them. The trial's reward is the Quarry Gauntlet, which charges and throws boulders, rolls, slams and raises pillars. He also has a staff and an armour set of beads, robe, belt and sandals.",
+        "The Sunmask people: masked tribes of the savanna and, now, the Nether's crimson forests and wastes. The Sunmask Raider roams with a ring of followers; the Sunmask and the Sunmask Seer keep the groves, and the Seer shields its kin and heals their chieftain. Each kind wears its own mask, with a sun behind its head while it fights.",
+        "Helion, the Sun Chieftain: the boss on the throne of every Sunmask grove, in the Overworld and the Nether. He calls down sunstrikes, and, once his health falls to three fifths, sweeps the ground with Helion's Lance and swells into Corona Burst.",
+        "Trade with Helion: a player who wears a Sunmask's mask may give him seven gold blocks for Helion's Favour. Blessed, an empty hand calls a sunstrike, sneaking calls Helion's Lance, and holding both buttons while sneaking calls Corona Burst, each paid from the blessing's time.",
+        "The Solar Countenance: worn on the head, it lets a masked player summon up to ten Sunmask Raider Followers from Sunmask masks; they follow and defend their summoner.",
+        "Daigan's monastery now also stands on the End's outer islands, built of end stone and purpur."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Requirements: Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer, Java 25. For multiplayer, Halia must also be installed on the server.",
+        "Halia V1.4 now uses GeckoLib 5.5.6. It comes inside the Halia jar, so there is nothing extra to install; if another mod brings the same GeckoLib, the game uses one copy.",
+        "Each creature's natural spawning can be switched off per creature from the Corvus app. The switches are locked on for two months after the release of V1.4; the lock's end date is set on release day."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.3",
    "summary": "Halia V1.3.0.2 — outside links removed from the Vigil",

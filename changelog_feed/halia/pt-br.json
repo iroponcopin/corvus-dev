@@ -1,11 +1,54 @@
 {
  "lang": "pt-br",
  "brand": "halia",
- "updated": "2026-10-19",
+ "updated": "2026-10-22",
  "title": "Histórico de atualizações",
- "updated_label": "Atualizado em 2026-10-19",
+ "updated_label": "Atualizado em 2026-10-22",
  "note": "",
  "groups": [
+  {
+   "label": "V1.4",
+   "summary": "Halia V1.4 — as Arcana, seis criaturas e três chefes",
+   "releases": [
+    {
+     "version": "V1.4.0",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Halia V1.4 — as Arcana, seis criaturas e três chefes",
+     "summary": "O Halia V1.4 adiciona as Arcana, a magia do Halia: 53 círculos de magia, 44 pergaminhos de magia, dois cajados e o Sage's Rod. Também adiciona seis criaturas que vivem pelo Overworld, o Nether e o End, três chefes que aguardam em suas próprias estruturas, e o mosteiro de Daigan the Stoneshaper, cuja prova de escalada recompensa com o Quarry Gauntlet.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "As Arcana: 53 círculos de magia, cada um com seu próprio bloco, e 44 pergaminhos de magia, entre eles Downpour of Light, Shifting Ward, Gaze of Binding e Summon Familiar. Os cajados são o Staff of Bursting Mana, o Staff of Warped Space e o Sage's Rod; o Circle Projector também faz parte das Arcana.",
+        "Glimmerwisp: vive em florestas escuras do Overworld e nas terras altas e médias do End.",
+        "Snaremaw: vive em selvas e nas florestas carmesim do Nether. Plante uma Snaremaw Seed sobre grama, terra ou folhas; alimente o broto com carne e ele crescerá até se tornar um snaremaw.",
+        "Gemback: vive subterrâneo no Overworld, fora dos campos de cogumelos, e nos ermos do Nether. Minere-o com uma picareta com Silk Touch para obter um Captured Gemback; coloque esse item para libertar o Gemback. O bloco Gemback também existe no jogo.",
+        "Cragling: vive nas cavernas de pedra pingente do Overworld e nos deltas de basalto do Nether. Seu Cragling Rod é um material; seus espinhos de pedra e fendas no chão são seus ataques.",
+        "Duskprowler: o Duskprowler Howler lidera uma matilha de Duskprowler nas selvas. Os Duskprowler podem deixar cair Moon Paws, em cinco tipos (Full, Gibbous, Half, Crescent and New Moon Paw), com uma chance que looting aumenta; cada pata tem seu próprio efeito.",
+        "Cliff Wyrm: vive nas margens rochosas do Overworld acima de y 68 e nas terras altas do End. Ele cospe Poison Balls; sua Wyrm Fang cria a Fang Dagger, que envenena a cada golpe. Poison Resistance cura e bloqueia o veneno.",
+        "Forgebound Colossus, o primeiro chefe: em sua câmara subterrânea de colosso no Overworld, e em uma câmara própria no Nether. Seus itens são o Colossus Greataxe e o Colossus Helm.",
+        "Rimefang, o segundo chefe: em seu covil no Overworld, e em um covil no End. Ele sopra ar congelante, e seu Rime Crystal permite soprar um vento gélido enquanto você mantém o botão direito pressionado.",
+        "Daigan the Stoneshaper, o último chefe: um comerciante em seu mosteiro no Overworld. Ele propõe uma prova de escalada sobre plataformas de prova, e algumas desabam logo depois que você pisa nelas. A recompensa da prova é o Quarry Gauntlet, que carrega e arremessa pedregulhos, rola, esmaga e ergue pilares. Ele também tem um cajado e um conjunto de armadura de contas, manto, cinto e sandálias.",
+        "Os povos Sunmask: tribos mascaradas da savana e, agora, das florestas carmesim e dos ermos do Nether. O Sunmask Raider percorre a região com um círculo de seguidores; o Sunmask e o Sunmask Seer guardam os bosques, e o Seer protege seus parentes e cura o chefe deles. Cada tipo usa sua própria máscara, com um sol atrás da cabeça enquanto luta.",
+        "Helion, o Chefe-Sol: o chefe no trono de todo bosque Sunmask, no Overworld e no Nether. Ele invoca golpes solares e, quando sua vida cai para três quintos, varre o chão com o Helion's Lance e incha até virar Corona Burst.",
+        "Troca com Helion: um jogador que usa a máscara de um Sunmask pode dar a ele sete blocos de ouro em troca do Helion's Favour. Abençoado, uma mão vazia invoca um golpe solar, agachar invoca o Helion's Lance, e segurar os dois botões agachado invoca o Corona Burst, cada um consumindo o tempo da bênção.",
+        "O Solar Countenance: usado na cabeça, permite que um jogador mascarado invoque até dez Sunmask Raider Follower a partir de máscaras Sunmask; eles seguem e defendem quem os invocou.",
+        "O mosteiro de Daigan agora também se ergue nas ilhas externas do End, construído com end stone e purpur."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Requisitos: Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente, Fabric API 0.161.0+26.3 ou mais recente, Java 25. Em multijogador, o Halia também precisa estar instalado no servidor.",
+        "O Halia V1.4 agora usa o GeckoLib 5.5.6. Ele vem dentro do jar do Halia, então não há nada a mais para instalar; se outro mod trouxer o mesmo GeckoLib, o jogo usa só uma cópia.",
+        "A geração natural de cada criatura pode ser desligada individualmente pelo aplicativo Corvus. As chaves ficam travadas ligadas por dois meses após o lançamento do V1.4; a data de término do bloqueio é definida no dia do lançamento."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.3",
    "summary": "Halia V1.3.0.2 — links externos removidos da Vigil",

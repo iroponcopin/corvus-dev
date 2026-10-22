@@ -1059,6 +1059,33 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4.0",
+    "title": "Halia V1.4 — Arcana、六种生物与三个 Boss",
+    "summary": "Halia V1.4 新增 Arcana，即 Halia 的魔法：53 个法术圆环、44 张法术卷轴、两根法杖，以及 Sage's Rod。新增的六种生物分布在主世界、下界和末地；三个首领在各自的建筑中等待；还有Daigan the Stoneshaper 的修道院，其攀登试炼的奖励是 Quarry Gauntlet。",
+    "highlights": [
+     "Arcana：53 个法术圆环，每个都有自己的方块；44 张法术卷轴，其中包括 Downpour of Light、Shifting Ward、Gaze of Binding 和 Summon Familiar。法杖有 Staff of Bursting Mana、Staff of Warped Space 和 Sage's Rod；Circle Projector 也属于 Arcana。",
+     "Glimmerwisp：生活在主世界的黑暗森林，以及末地的高地和中部地区。",
+     "Snaremaw：生活在丛林和下界的绯红森林中。把 Snaremaw Seed 种在草地、泥土或树叶上，用肉喂养幼苗，它就会长成 snaremaw。",
+     "Gemback：生活在主世界地下（蘑菇田除外）和下界的荒地。用 Silk Touch 镐挖掘即可获得 Captured Gemback；放置这个物品就能释放 Gemback。游戏中也有 Gemback 方块。",
+     "Cragling：生活在主世界的滴水石洞和下界的玄武岩三角洲。它的 Cragling Rod 是一种材料；石刺和地裂是它的攻击。",
+     "Duskprowler：Duskprowler Howler 带领丛林中的一群 Duskprowler。Duskprowler 可能掉落五种 Moon Paw（Full, Gibbous, Half, Crescent and New Moon Paw），looting 会提高掉落几率；每个爪子都有自己的效果。",
+     "Cliff Wyrm：生活在主世界 y 68 以上的岩石海岸和末地的高地。它会吐出 Poison Balls；它的 Wyrm Fang 可以制作 Fang Dagger，每次命中都会使目标中毒。Poison Resistance 可以治疗并防止中毒。",
+     "Forgebound Colossus（第一个首领）：位于主世界地下的巨像室，以及下界中它自己的一个房间。它的掉落物是 Colossus Greataxe 和 Colossus Helm。",
+     "Rimefang（第二个首领）：位于主世界的巢穴，以及末地的一个巢穴。它会喷出寒冷的气息；按住右键时，它的 Rime Crystal 可以让你吐出冰冷的寒风。",
+     "Daigan the Stoneshaper（最后一个首领）：主世界修道院里的商人。他设下一条由试炼平台组成的攀登试炼，其中一些平台在你站上去后不久就会崩塌。试炼的奖励是 Quarry Gauntlet，可以蓄力并投掷巨石、翻滚、猛击并升起石柱。他还持有一根法杖，以及由念珠、法衣、腰带和草鞋组成的一套防具。",
+     "Sunmask 部族：草原上的戴面具部落，如今也生活在下界的绯红森林和荒地中。Sunmask Raider 带着一圈随从四处游荡；Sunmask 和 Sunmask Seer 看守圣林，Seer 庇护同族，并治疗他们的首领。每个种族都戴着自己的面具，战斗时头后会出现一轮太阳。",
+     "太阳酋长 Helion：位于主世界和下界每个 Sunmask 圣林王座上的首领。他会降下阳光打击；当体力降至五分之三时，他会用 Helion's Lance 横扫地面，并膨胀成 Corona Burst。",
+     "与 Helion 交易：佩戴 Sunmask 面具的玩家可以用七个金块换取 Helion's Favour。受到祝福时，空手会召唤一次阳光打击，潜行会召唤 Helion's Lance，潜行时同时按住两个按键会召唤 Corona Burst，每次都消耗祝福的时间。",
+     "Solar Countenance：戴在头上后，佩戴面具的玩家可以用 Sunmask 面具召唤最多十个 Sunmask Raider Follower；它们会跟随并保护召唤者。",
+     "Daigan 的修道院现在也矗立在末地的外围岛屿上，由 end stone 和 purpur 建成。"
+    ],
+    "warnings": [
+     "系统要求：Minecraft 26.3、Fabric Loader 0.19.5 或更新版本、Fabric API 0.161.0+26.3 或更新版本、Java 25。多人游戏时，服务器上也必须安装 Halia。",
+     "Halia V1.4 现在使用 GeckoLib 5.5.6。它已包含在 Halia 的 jar 中，无需另外安装；如果其他模组也带有相同的 GeckoLib，游戏只会使用其中一份。",
+     "每种生物的自然生成都可以在 Corvus 应用中逐个关闭。V1.4 发布后两个月内，这些开关锁定在开启状态，锁定结束日期会在发布当天设定。"
+    ]
+   },
+   {
     "id": "halia-v1.3.0.2",
     "title": "Halia V1.3.0.2 — 移除了 Vigil 中的外部链接",
     "summary": "Halia V1.3.0.2 移除了不属于 Halia 的内容：Vigil 的部分消息会将玩家引向外部网站，手册还会显示从互联网获取的名字。",

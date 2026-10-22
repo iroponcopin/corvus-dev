@@ -1059,6 +1059,33 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4.0",
+    "title": "Halia V1.4 — les Arcana, six créatures et trois boss",
+    "summary": "Halia V1.4 ajoute les Arcana, la magie de Halia : 53 cercles de sort, 44 parchemins de sort, deux bâtons et le Sage's Rod. Il ajoute aussi six créatures qui vivent dans l'Overworld, le Nether et l'End, trois boss qui attendent dans leurs propres structures, et le monastère de Daigan the Stoneshaper, dont l'épreuve d'escalade récompense le Quarry Gauntlet.",
+    "highlights": [
+     "Les Arcana : 53 cercles de sort, chacun avec son propre bloc, et 44 parchemins de sort, parmi lesquels Downpour of Light, Shifting Ward, Gaze of Binding et Summon Familiar. Les bâtons sont le Staff of Bursting Mana, le Staff of Warped Space et le Sage's Rod ; le Circle Projector fait aussi partie des Arcana.",
+     "Glimmerwisp : vit dans les forêts sombres de l'Overworld et dans les hautes terres et les terres médianes de l'End.",
+     "Snaremaw : vit dans les jungles et dans les forêts cramoisies du Nether. Plantez une Snaremaw Seed sur de l'herbe, de la terre ou des feuilles ; nourrissez la pousse avec de la viande, et elle grandit en snaremaw.",
+     "Gemback : vit sous terre dans l'Overworld, hors des champs de champignons, et dans les terres désolées du Nether. Minez-le avec une pioche Silk Touch pour obtenir un Captured Gemback ; placez cet objet pour libérer le Gemback. Le bloc Gemback existe aussi dans le jeu.",
+     "Cragling : vit dans les grottes de stalactites de l'Overworld et dans les deltas de basalte du Nether. Son Cragling Rod est un matériau ; ses pointes de pierre et ses fissures au sol sont ses attaques.",
+     "Duskprowler : le Duskprowler Howler mène une meute de Duskprowler dans les jungles. Les Duskprowler peuvent lâcher des Moon Paws, en cinq sortes (Full, Gibbous, Half, Crescent and New Moon Paw), avec une chance que looting augmente ; chaque patte a son propre effet.",
+     "Cliff Wyrm : vit sur les rivages rocheux de l'Overworld au-dessus de y 68 et sur les hautes terres de l'End. Il crache des Poison Balls ; son Wyrm Fang fabrique le Fang Dagger, qui empoisonne à chaque coup. Poison Resistance soigne et bloque le poison.",
+     "Forgebound Colossus, le premier boss : dans sa chambre colossale souterraine de l'Overworld, et dans une chambre du Nether qui lui est propre. Ses objets sont le Colossus Greataxe et le Colossus Helm.",
+     "Rimefang, le deuxième boss : dans son repaire de l'Overworld, et dans un repaire de l'End. Il souffle un air glacial, et son Rime Crystal vous permet de souffler un vent glacé tant que vous maintenez le clic droit.",
+     "Daigan the Stoneshaper, le dernier boss : un marchand dans son monastère de l'Overworld. Il propose une épreuve d'escalade sur des plateformes d'épreuve, dont certaines s'effondrent peu après que vous vous y tenez. La récompense de l'épreuve est le Quarry Gauntlet, qui charge et lance des rochers, roule, frappe et dresse des piliers. Il possède aussi un bâton et un ensemble d'armure fait de perles, de robe, de ceinture et de sandales.",
+     "Les peuples Sunmask : des tribus masquées de la savane et, désormais, des forêts cramoisies et des terres désolées du Nether. Le Sunmask Raider erre avec un cercle de suivants ; le Sunmask et le Sunmask Seer gardent les bosquets, et le Seer protège ses semblables et soigne leur chef. Chaque espèce porte son propre masque, avec un soleil derrière la tête pendant le combat.",
+     "Helion, le Chef-Soleil : le boss qui trône sur chaque bosquet Sunmask, dans l'Overworld et le Nether. Il invoque des frappes solaires et, lorsque sa vie tombe aux trois cinquièmes, balaie le sol avec Helion's Lance puis gonfle en Corona Burst.",
+     "Échange avec Helion : un joueur qui porte le masque d'un Sunmask peut lui donner sept blocs d'or pour obtenir Helion's Favour. Béni, une main vide invoque une frappe solaire, s'accroupir invoque Helion's Lance, et maintenir les deux boutons en s'accroupissant invoque Corona Burst, chacun puisé dans la durée de la bénédiction.",
+     "Le Solar Countenance : porté sur la tête, il permet à un joueur masqué d'invoquer jusqu'à dix Sunmask Raider Follower à partir de masques Sunmask ; ils suivent leur invocateur et le défendent.",
+     "Le monastère de Daigan se dresse désormais aussi sur les îles extérieures de l'End, bâti en end stone et en purpur."
+    ],
+    "warnings": [
+     "Configuration requise : Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent, Java 25. En multijoueur, Halia doit aussi être installé sur le serveur.",
+     "Halia V1.4 utilise désormais GeckoLib 5.5.6. Il est inclus dans le jar de Halia : il n'y a rien de plus à installer, et si un autre mod fournit le même GeckoLib, le jeu n'en utilise qu'une copie.",
+     "L'apparition naturelle de chaque créature peut être désactivée individuellement depuis l'application Corvus. Les interrupteurs sont verrouillés sur activé pendant deux mois après la sortie de V1.4 ; la date de fin du verrouillage est fixée le jour de la sortie."
+    ]
+   },
+   {
     "id": "halia-v1.3.0.2",
     "title": "Halia V1.3.0.2 — liens externes retirés de la Vigil",
     "summary": "Halia V1.3.0.2 retire des textes qui n'avaient pas leur place dans Halia : certains messages de la Vigil renvoyaient vers des sites externes, et son manuel affichait des noms récupérés sur Internet.",

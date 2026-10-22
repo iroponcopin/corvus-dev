@@ -1059,6 +1059,33 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4.0",
+    "title": "Halia V1.4 — Arcana, enam makhluk, dan tiga bos",
+    "summary": "Halia V1.4 menambahkan Arcana, sihir Halia: 53 lingkaran mantra, 44 gulungan mantra, dua tongkat, dan Sage's Rod. Ada juga enam makhluk yang hidup di seluruh Overworld, Nether, dan End, tiga bos yang menunggu di bangunan mereka sendiri, serta biara Daigan the Stoneshaper, yang ujian pendakiannya memberi hadiah Quarry Gauntlet.",
+    "highlights": [
+     "Arcana: 53 lingkaran mantra, masing-masing dengan bloknya sendiri, dan 44 gulungan mantra, di antaranya Downpour of Light, Shifting Ward, Gaze of Binding, dan Summon Familiar. Tongkatnya adalah Staff of Bursting Mana, Staff of Warped Space, dan Sage's Rod; Circle Projector juga termasuk dalam Arcana.",
+     "Glimmerwisp: hidup di hutan gelap di Overworld dan di dataran tinggi serta dataran tengah End.",
+     "Snaremaw: hidup di hutan rimba dan hutan crimson di Nether. Tanam Snaremaw Seed di rumput, tanah, atau daun; beri tunas itu daging dan ia akan tumbuh menjadi snaremaw.",
+     "Gemback: hidup di bawah tanah di Overworld, di luar ladang jamur, dan di daerah tandus Nether. Tambang dengan beliung Silk Touch untuk mendapatkan Captured Gemback; letakkan item itu untuk melepaskan Gemback. Blok Gemback juga ada di dalam game.",
+     "Cragling: hidup di gua stalaktit di Overworld dan delta basal di Nether. Cragling Rod-nya adalah bahan; duri batu dan retakan tanahnya adalah serangannya.",
+     "Duskprowler: Duskprowler Howler memimpin kawanan Duskprowler di hutan rimba. Duskprowler dapat menjatuhkan Moon Paw, lima jenis (Full, Gibbous, Half, Crescent and New Moon Paw), dengan peluang yang naik oleh looting; setiap cakar punya efeknya sendiri.",
+     "Cliff Wyrm: hidup di pantai berbatu di Overworld di atas y 68 dan di dataran tinggi End. Ia meludahkan Poison Balls; Wyrm Fang-nya membuat Fang Dagger, yang meracuni setiap kali mengenai sasaran. Poison Resistance menyembuhkan dan mencegah racun.",
+     "Forgebound Colossus, bos pertama: di ruang colossus bawah tanahnya di Overworld, dan di ruang Nether miliknya sendiri. Itemnya adalah Colossus Greataxe dan Colossus Helm.",
+     "Rimefang, bos kedua: di sarangnya di Overworld, dan di sarang End. Ia menghembuskan udara beku, dan Rime Crystal-nya memungkinkan Anda menghembuskan angin beku selama klik kanan ditahan.",
+     "Daigan the Stoneshaper, bos terakhir: seorang pedagang di biaranya di Overworld. Ia memasang ujian pendakian di atas platform ujian, dan sebagian runtuh tak lama setelah Anda berdiri di atasnya. Hadiah ujian adalah Quarry Gauntlet, yang mengumpulkan tenaga lalu melempar batu besar, berguling, membanting, serta menegakkan pilar. Ia juga memiliki tongkat dan satu set zirah berupa manik, jubah, sabuk, dan sandal.",
+     "Suku Sunmask: suku bertopeng di sabana dan kini juga di hutan crimson dan daerah tandus Nether. Sunmask Raider berkeliaran bersama lingkaran pengikut; Sunmask dan Sunmask Seer menjaga hutan kecil, dan Seer melindungi kerabatnya serta menyembuhkan kepala suku mereka. Setiap jenis memakai topengnya sendiri, dengan matahari di belakang kepalanya saat bertarung.",
+     "Helion, Kepala Suku Matahari: bos di atas takhta setiap hutan kecil Sunmask, di Overworld dan Nether. Ia memanggil sambaran matahari dan, saat nyawanya turun ke tiga per lima, menyapu tanah dengan Helion's Lance lalu membengkak menjadi Corona Burst.",
+     "Perdagangan dengan Helion: pemain yang memakai topeng Sunmask dapat memberinya tujuh blok emas untuk Helion's Favour. Saat diberkati, tangan kosong memanggil sambaran matahari, mengendap memanggil Helion's Lance, dan menahan kedua tombol sambil mengendap memanggil Corona Burst, masing-masing dibayar dari durasi berkat.",
+     "Solar Countenance: dikenakan di kepala, memungkinkan pemain bertopeng memanggil hingga sepuluh Sunmask Raider Follower dari topeng Sunmask; mereka mengikuti dan membela pemanggilnya.",
+     "Biara Daigan kini juga berdiri di pulau-pulau luar End, dibangun dari end stone dan purpur."
+    ],
+    "warnings": [
+     "Persyaratan: Minecraft 26.3, Fabric Loader 0.19.5 atau yang lebih baru, Fabric API 0.161.0+26.3 atau yang lebih baru, Java 25. Untuk multipemain, Halia juga harus dipasang di server.",
+     "Halia V1.4 sekarang menggunakan GeckoLib 5.5.6. GeckoLib sudah disertakan di dalam jar Halia, jadi tidak ada yang perlu dipasang terpisah; jika mod lain membawa GeckoLib yang sama, game hanya memakai satu salinan.",
+     "Pemunculan alami setiap makhluk dapat dimatikan satu per satu dari aplikasi Corvus. Sakelarnya terkunci menyala selama dua bulan setelah rilis V1.4; tanggal berakhirnya kunci ditetapkan pada hari rilis."
+    ]
+   },
+   {
     "id": "halia-v1.3.0.2",
     "title": "Halia V1.3.0.2 — tautan luar dihapus dari Vigil",
     "summary": "Halia V1.3.0.2 menghapus teks yang tidak semestinya ada di Halia: beberapa pesan Vigil mengarahkan pemain ke situs luar, dan buku panduannya menampilkan nama yang diunduh dari internet.",
