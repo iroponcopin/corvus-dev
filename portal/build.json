@@ -1,9 +1,9 @@
 {
  "what": "Corvus portal 4.3.0, static export. Made by web/ (npm run build); nothing here is a contract file.",
- "wiki_commit": "e3103865bbffe2dce5a09989be5dc3ef8350e5e9",
- "wiki_branch": "ouka1722",
- "wiki_dirty": false,
- "corvus_store": "5.5.1.1",
+ "wiki_commit": "354f74108d92f02a2cf6e6238403a83eaeeb1d6a",
+ "wiki_branch": "store5512",
+ "wiki_dirty": true,
+ "corvus_store": "5.5.1.2",
  "ouka": "1.7.2.2",
  "cherry": "1.2.1",
  "aureum": "2.0.0",
