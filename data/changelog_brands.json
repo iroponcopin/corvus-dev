@@ -342,6 +342,12 @@
         "release": "V1.4.0.36",
         "date": "2026-10-22",
         "type": "hotfix"
+      },
+      {
+        "id": "halia-v1.4.0.37",
+        "release": "V1.4.0.37",
+        "date": "2026-10-22",
+        "type": "hotfix"
       }
     ]
   }
