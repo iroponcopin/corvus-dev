@@ -1055,6 +1055,21 @@
      "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
      "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.311",
+    "title": "Tsubomi V2.3.0.311 — Flor Estelar Max",
+    "summary": "Tsubomi V2.3.0.311 añade Flor Estelar Max: toda la gama de Flor Estelar, más fuerte, hecha con un huevo de dragón.",
+    "highlights": [
+     "Flor Estelar Max tiene la misma gama que Flor Estelar (lingote de aleación, pico, hacha, pala, azada, lanza, casco, pechera, grebas, botas, escudo, arco y flecha). La armadura, el escudo, el arco y la flecha son 2.5 veces más fuertes que la netherita (Flor Estelar, 1.75), y las herramientas, unas 1.43 veces las de Flor Estelar. Un conjunto completo alcanza los límites del propio juego (30 de armadura, 20 de dureza).",
+     "El pico Flor Estelar Max desbloquea la minería en 5×5 y 7×7 (agáchate y usa para alternar 1×1, 3×3, 5×5, 7×7); la pala y la azada trabajan en 5×5, y el hacha tala árboles más grandes. También puede minar amatista en brote, que entonces se suelta como bloque.",
+     "El lingote de aleación Flor Estelar Max se hace con un huevo de dragón y 8 lingotes de aleación Flor Estelar, y da 8 lingotes. Como solo hay un huevo, también se suelta un objeto huevo de dragón en el portal de salida cuando se vuelve a derrotar al dragón del End y no hay un bloque de huevo. Esta regla está cubierta por pruebas, pero aún no se ha observado en un combate real contra el dragón del End.",
+     "En el inventario creativo, las herramientas de Flor Estelar y Flor Estelar Max están ahora en la pestaña «Herramientas y utilidades» de vanilla, los lingotes de aleación junto al lingote de netherita en «Ingredientes», y los libros de Entropía entre los libros encantados de vanilla (Entropía I, II y III seguidos). Ya no están en la pestaña de Tsubomi; las armaduras, escudos, arcos y flechas siguen ahí."
+    ],
+    "warnings": [
+     "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+     "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
+    ]
    }
   ],
   "halia": [

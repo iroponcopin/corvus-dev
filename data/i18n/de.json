@@ -1055,6 +1055,21 @@
      "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
      "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.311",
+    "title": "Tsubomi V2.3.0.311 — Sternblüte Max",
+    "summary": "Tsubomi V2.3.0.311 fügt Sternblüte Max hinzu: das ganze Sternblüten-Sortiment, stärker, hergestellt aus einem Drachenei.",
+    "highlights": [
+     "Sternblüte Max hat das gleiche Sortiment wie Sternblüte (Legierungsbarren, Spitzhacke, Axt, Schaufel, Hacke, Lanze, Helm, Brustplatte, Beinschutz, Stiefel, Schild, Bogen und Pfeil). Rüstung, Schild, Bogen und Pfeil sind 2.5-mal so stark wie Netherit (Sternblüte 1.75-mal), die Werkzeuge etwa 1.43-mal so stark wie die der Sternblüte. Ein ganzes Rüstungsset erreicht die Grenzen des Spiels (30 Rüstung, 20 Zähigkeit).",
+     "Die Sternblüte-Max-Spitzhacke schaltet 5×5- und 7×7-Abbau frei (Schleichen und Benutzen wechselt zwischen 1×1, 3×3, 5×5, 7×7); Schaufel und Hacke arbeiten auf 5×5, die Axt fällt größere Bäume. Außerdem baut sie Knospenden Amethyst ab, der dann als Block fallen gelassen wird.",
+     "Der Sternblüte-Max-Legierungsbarren entsteht aus einem Drachenei und 8 Sternblüten-Legierungsbarren und ergibt 8 Barren. Da es nur ein Ei gibt, wird beim erneuten Besiegen des Enderdrachen ein Drachenei als Gegenstand am Ausgangsportal fallen gelassen, wenn dort kein Eiblock steht. Diese Regel ist durch Tests abgedeckt, wurde aber noch nicht in einem echten Enderdrachen-Kampf beobachtet.",
+     "Im Kreativinventar liegen die Werkzeuge von Sternblüte und Sternblüte Max jetzt im Vanilla-Reiter „Werkzeuge und Hilfsmittel“, die Legierungsbarren neben dem Netherit-Barren bei den Zutaten und die Entropie-Bücher zwischen den Vanilla-Verzauberungsbüchern (Entropie I, II und III hintereinander). Im Tsubomi-Reiter sind sie nicht mehr; Rüstungen, Schilde, Bögen und Pfeile bleiben dort."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+     "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
+    ]
    }
   ],
   "halia": [

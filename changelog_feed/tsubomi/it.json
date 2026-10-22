@@ -1,15 +1,40 @@
 {
  "lang": "it",
  "brand": "tsubomi",
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "title": "Changelog",
- "updated_label": "Aggiornato il 2026-10-21",
+ "updated_label": "Aggiornato il 2026-10-22",
  "note": "",
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3.0.3 — armatura, scudo, arco e freccia Fioritura Stellare",
+   "summary": "Tsubomi V2.3.0.311 — Fioritura Stellare Max",
    "releases": [
+    {
+     "version": "V2.3.0.311",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Tsubomi V2.3.0.311 — Fioritura Stellare Max",
+     "summary": "Tsubomi V2.3.0.311 aggiunge Fioritura Stellare Max: tutta la gamma Fioritura Stellare, più forte, fatta con un uovo di drago.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Fioritura Stellare Max ha la stessa gamma di Fioritura Stellare (lingotto di lega, piccone, ascia, pala, zappa, lancia, elmo, corazza, gambali, stivali, scudo, arco e freccia). Armatura, scudo, arco e freccia sono 2.5 volte più forti della netherite (Fioritura Stellare 1.75), e gli strumenti circa 1.43 volte quelli di Fioritura Stellare. Un set completo raggiunge i limiti del gioco stesso (30 di armatura, 20 di tenacia).",
+        "Il piccone Fioritura Stellare Max sblocca lo scavo in 5×5 e 7×7 (accovacciati e usa per alternare 1×1, 3×3, 5×5, 7×7); pala e zappa lavorano in 5×5, e l'ascia abbatte alberi più grandi. Può anche scavare l'ametista in germoglio, che cade come blocco.",
+        "Il lingotto di lega Fioritura Stellare Max si fa con un uovo di drago e 8 lingotti di lega Fioritura Stellare, e ne dà 8. Poiché c'è un solo uovo, un oggetto uovo di drago cade anche sul portale d'uscita quando il Drago dell'End viene sconfitto di nuovo e non c'è un blocco uovo. Questa regola è coperta da test, ma non è ancora stata osservata in un vero combattimento contro il Drago dell'End.",
+        "Nell'inventario creativo, gli strumenti di Fioritura Stellare e Fioritura Stellare Max si trovano ora nella scheda «Strumenti e utilità» di vanilla, i lingotti di lega accanto al lingotto di netherite in «Ingredienti», e i libri di Entropia tra i libri incantati di vanilla (Entropia I, II e III di seguito). Non sono più nella scheda di Tsubomi; armature, scudi, archi e frecce restano lì."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+        "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3.0.3",
      "date": "2026-10-21",

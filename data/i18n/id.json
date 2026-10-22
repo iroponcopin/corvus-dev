@@ -1055,6 +1055,21 @@
      "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
      "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.311",
+    "title": "Tsubomi V2.3.0.311 — Starbloom Max",
+    "summary": "Tsubomi V2.3.0.311 menambahkan Starbloom Max: seluruh jajaran Starbloom yang lebih kuat, dibuat dari Telur Naga.",
+    "highlights": [
+     "Starbloom Max memiliki jajaran yang sama dengan Starbloom (batangan paduan, beliung, kapak, sekop, cangkul, tombak, helm, baju zirah, pelindung kaki, sepatu, perisai, busur, dan panah). Zirah, perisai, busur, dan panah 2.5 kali lebih kuat dari Netherite (Starbloom 1.75 kali), dan alatnya sekitar 1.43 kali Starbloom. Satu set zirah penuh mencapai batas permainan itu sendiri (30 zirah, 20 ketangguhan).",
+     "Beliung Starbloom Max membuka penambangan 5×5 dan 7×7 (menyelinap lalu gunakan untuk berganti 1×1, 3×3, 5×5, 7×7); sekop dan cangkul bekerja pada 5×5, dan kapak menebang pohon yang lebih besar. Beliung ini juga dapat menambang Amethyst Bertunas, yang lalu jatuh sebagai blok.",
+     "Batangan Paduan Starbloom Max dibuat dari satu Telur Naga dan 8 Batangan Paduan Starbloom, menghasilkan 8 batangan. Karena hanya ada satu telur, item Telur Naga juga dijatuhkan di portal keluar ketika Ender Dragon dikalahkan lagi dan tidak ada blok telur di sana. Aturan ini sudah diuji, tetapi belum pernah teramati dalam pertarungan Ender Dragon yang sebenarnya.",
+     "Di inventaris Kreatif, alat Starbloom dan Starbloom Max kini berada di tab «Alat & Utilitas» vanilla, batangan paduan di samping Netherite Ingot di «Bahan», dan buku Entropi di antara buku enchant vanilla (Entropi I, II, dan III berurutan). Semuanya tidak lagi ada di tab Tsubomi; zirah, perisai, busur, dan panah tetap di sana."
+    ],
+    "warnings": [
+     "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+     "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+    ]
    }
   ],
   "halia": [

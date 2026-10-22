@@ -1055,6 +1055,21 @@
      "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
      "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3.0.311",
+    "title": "Tsubomi V2.3.0.311 — Floraison d'étoile Max",
+    "summary": "Tsubomi V2.3.0.311 ajoute Floraison d'étoile Max : toute la gamme Floraison d'étoile, plus puissante, fabriquée à partir d'un œuf de dragon.",
+    "highlights": [
+     "Floraison d'étoile Max reprend la gamme de Floraison d'étoile (lingot d'alliage, pioche, hache, pelle, houe, lance, casque, plastron, jambières, bottes, bouclier, arc et flèche). L'armure, le bouclier, l'arc et la flèche sont 2.5 fois plus forts que la netherite (1.75 pour Floraison d'étoile), et les outils environ 1.43 fois ceux de Floraison d'étoile. Une panoplie complète atteint les plafonds du jeu (30 d'armure, 20 de résistance).",
+     "La pioche Floraison d'étoile Max débloque l'extraction en 5×5 et en 7×7 (accroupi, utiliser fait passer de 1×1 à 3×3, 5×5, 7×7) ; la pelle et la houe travaillent en 5×5, et la hache abat de plus grands arbres. Elle peut aussi miner l'améthyste bourgeonnante, qui tombe alors sous forme de bloc.",
+     "Le lingot d'alliage Floraison d'étoile Max se fabrique avec un œuf de dragon et 8 lingots d'alliage Floraison d'étoile, pour 8 lingots. Comme il n'y a qu'un seul œuf, un objet œuf de dragon est aussi lâché sur le portail de sortie quand le dragon de l'Ender est de nouveau vaincu et qu'il n'y a pas de bloc d'œuf. Cette règle est couverte par des tests, mais n'a pas encore été observée dans un vrai combat contre le dragon de l'Ender.",
+     "Dans l'inventaire créatif, les outils de Floraison d'étoile et de Floraison d'étoile Max se trouvent désormais dans l'onglet « Outils et utilitaires » du jeu de base, les lingots d'alliage à côté du lingot de netherite dans « Ingrédients », et les livres d'Entropie parmi les livres enchantés du jeu de base (Entropie I, II et III à la suite). Ils ne sont plus dans l'onglet Tsubomi ; les armures, boucliers, arcs et flèches y restent."
+    ],
+    "warnings": [
+     "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+     "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
+    ]
    }
   ],
   "halia": [

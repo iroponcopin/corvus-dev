@@ -1,15 +1,40 @@
 {
  "lang": "tr",
  "brand": "tsubomi",
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-21 tarihinde güncellendi",
+ "updated_label": "2026-10-22 tarihinde güncellendi",
  "note": "",
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3.0.3 — Yıldız Çiçeği zırhı, kalkanı, yayı ve oku",
+   "summary": "Tsubomi V2.3.0.311 — Yıldız Çiçeği Max",
    "releases": [
+    {
+     "version": "V2.3.0.311",
+     "date": "2026-10-22",
+     "type": "release",
+     "title": "Tsubomi V2.3.0.311 — Yıldız Çiçeği Max",
+     "summary": "Tsubomi V2.3.0.311, Yıldız Çiçeği Max'ı ekler: tüm Yıldız Çiçeği serisi daha güçlü, Ejderha Yumurtası'ndan yapılır.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Yıldız Çiçeği Max, Yıldız Çiçeği ile aynı seriye sahiptir (alaşım külçesi, kazma, balta, kürek, çapa, mızrak, miğfer, göğüslük, pantolon, botlar, kalkan, yay ve ok). Zırh, kalkan, yay ve ok Netherit'ten 2.5 kat güçlüdür (Yıldız Çiçeği 1.75 kat), aletler ise Yıldız Çiçeği'nin yaklaşık 1.43 katıdır. Tam bir zırh takımı oyunun kendi sınırlarına (30 zırh, 20 sağlamlık) ulaşır.",
+        "Yıldız Çiçeği Max kazması 5×5 ve 7×7 kazmayı açar (eğilip kullanmak 1×1, 3×3, 5×5, 7×7 arasında geçiş yapar); kürek ve çapa 5×5 alana işler, balta daha büyük ağaçları keser. Ayrıca Filizlenen Ametist'i de kazabilir; blok olarak düşer.",
+        "Yıldız Çiçeği Max Alaşım Külçesi, bir Ejderha Yumurtası ve 8 Yıldız Çiçeği Alaşım Külçesi ile yapılır ve 8 külçe verir. Yumurta tek olduğundan, Ender Ejderhası yeniden yenildiğinde çıkış portalında yumurta bloğu yoksa bir Ejderha Yumurtası eşyası düşer. Bu kural testlerle doğrulandı ancak gerçek bir Ender Ejderhası savaşında henüz gözlemlenmedi.",
+        "Yaratıcı envanterde Yıldız Çiçeği ve Yıldız Çiçeği Max aletleri artık vanilla «Aletler ve Araçlar» sekmesinde, alaşım külçeleri «Malzemeler»de Netherit Külçesi'nin yanında, Entropi kitapları ise vanilla büyülü kitapların arasında (Entropi I, II ve III art arda) yer alır. Artık Tsubomi sekmesinde değiller; zırhlar, kalkanlar, yaylar ve oklar orada kalır."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+        "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3.0.3",
      "date": "2026-10-21",
