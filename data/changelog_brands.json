@@ -280,6 +280,12 @@
         "release": "V2.3.0.3",
         "date": "2026-10-21",
         "type": "release"
+      },
+      {
+        "id": "tsubomi-v2.3.0.311",
+        "release": "V2.3.0.311",
+        "date": "2026-10-22",
+        "type": "release"
       }
     ],
     "halia": [
