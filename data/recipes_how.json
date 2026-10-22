@@ -3124,6 +3124,30 @@
    "ja": "作業台で、設定済みの見張りの石板と新しい見張りの石板を並べると、設定を写した 2 つ目ができます。",
    "en": "On a crafting table, put a set-up Watch Slate with a new one to copy its settings to it."
   },
+  "minecraft:charcoal": {
+   "station": "furnace",
+   "inputs": [
+    "halia:scored_log"
+   ],
+   "ja": "かまどで、爪痕の原木を焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Scored Log in a furnace (10 s; it cannot be made at a workbench)"
+  },
+  "minecraft:diamond": {
+   "station": "blast",
+   "inputs": [
+    "halia:captured_gemback"
+   ],
+   "ja": "溶鉱炉で、捕まえた宝背を精錬する(10 秒。作業台では作れない)",
+   "en": "Smelt Captured Gemback in a blast furnace (10 s; it cannot be made at a workbench)"
+  },
+  "minecraft:diamond@2": {
+   "station": "furnace",
+   "inputs": [
+    "halia:captured_gemback"
+   ],
+   "ja": "かまどで、捕まえた宝背を焼く(10 秒。作業台では作れない)",
+   "en": "Smelt Captured Gemback in a furnace (10 s; it cannot be made at a workbench)"
+  },
   "tsubomi:aka_urushi_chiseled": {
    "station": "stonecutter",
    "inputs": [

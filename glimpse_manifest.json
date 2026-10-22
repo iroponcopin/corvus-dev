@@ -125,8 +125,8 @@
     "latest": "1.4.0",
     "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/halia-1.4.0.jar",
     "file_name": "halia-1.4.0.jar",
-    "file_size": 61528206,
-    "sha256": "fa07cfbd40bb127857cb9b4b302887884d6377d6b534643fabae7d3190dab96e",
+    "file_size": 61530968,
+    "sha256": "ef2456e82d3114b9e37d3570ef8c70659176665f32871003a6b15e8d97cb13e5",
     "creatures": [
       {
         "id": "glimmerwisp",
