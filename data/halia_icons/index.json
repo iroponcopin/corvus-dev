@@ -1951,6 +1951,186 @@
    "ja": "仕立ての扉",
    "yomi": "したてのとびら",
    "file": "crafted_door.png"
+  },
+  "halia:arcanist_compendium": {
+   "en": "Arcanist's Compendium",
+   "ja": "術師の大全",
+   "yomi": "じゅつしのたいぜん",
+   "file": "arcanist_compendium.png"
+  },
+  "halia:artificed_mana_circuit": {
+   "en": "Artificed Mana Circuit",
+   "ja": "機巧マナ回路",
+   "yomi": "きこうまなかいろ",
+   "file": "artificed_mana_circuit.png"
+  },
+  "halia:attuned_diamond": {
+   "en": "Attuned Diamond",
+   "ja": "ダイヤモンドジェム",
+   "yomi": "だいやもんどじぇむ",
+   "file": "attuned_diamond.png"
+  },
+  "halia:attuned_emerald": {
+   "en": "Attuned Emerald",
+   "ja": "エメラルドジェム",
+   "yomi": "えめらるどじぇむ",
+   "file": "attuned_emerald.png"
+  },
+  "halia:attuner": {
+   "en": "Attuner",
+   "ja": "チューナー",
+   "yomi": "ちゅーなー",
+   "file": "attuner.png"
+  },
+  "halia:captured_gemback": {
+   "en": "Captured Gemback",
+   "ja": "捕まえた宝背",
+   "yomi": "つかまえたほうはい",
+   "file": "captured_gemback.png"
+  },
+  "halia:circle_projector": {
+   "en": "Circle Projector",
+   "ja": "術円投写器",
+   "yomi": "じゅつえんとうしゃき",
+   "file": "circle_projector.png"
+  },
+  "halia:fae_cake": {
+   "en": "Fae Cake",
+   "ja": "妖精のケーキ",
+   "yomi": "ようせいのけーき",
+   "file": "fae_cake.png"
+  },
+  "halia:fae_essence": {
+   "en": "Fae Essence",
+   "ja": "妖精のエッセンス",
+   "yomi": "ようせいのえっせんす",
+   "file": "fae_essence.png"
+  },
+  "halia:fang_dagger": {
+   "en": "Fang Dagger",
+   "ja": "牙の短剣",
+   "yomi": "きばのたんけん",
+   "file": "fang_dagger.png"
+  },
+  "halia:fog_projector": {
+   "en": "Fog Projector",
+   "ja": "霧の投写器",
+   "yomi": "きりのとうしゃき",
+   "file": "fog_projector.png"
+  },
+  "halia:grinding_hammer": {
+   "en": "Grinding Hammer",
+   "ja": "砕きの槌",
+   "yomi": "くだきのつち",
+   "file": "grinding_hammer.png"
+  },
+  "halia:mana_circuit": {
+   "en": "Mana Circuit",
+   "ja": "マナ回路",
+   "yomi": "まなかいろ",
+   "file": "mana_circuit.png"
+  },
+  "halia:mortar": {
+   "en": "Mortar",
+   "ja": "すり鉢",
+   "yomi": "すりばち",
+   "file": "mortar.png"
+  },
+  "halia:mortar_and_pestle": {
+   "en": "Mortar and Pestle",
+   "ja": "すり鉢とすりこぎ",
+   "yomi": "すりばちとすりこぎ",
+   "file": "mortar_and_pestle.png"
+  },
+  "halia:pestle": {
+   "en": "Pestle",
+   "ja": "すりこぎ",
+   "yomi": "すりこぎ",
+   "file": "pestle.png"
+  },
+  "halia:powdered_diamond": {
+   "en": "Powdered Diamond",
+   "ja": "ダイヤモンドの粉末",
+   "yomi": "だいやもんどのふんまつ",
+   "file": "powdered_diamond.png"
+  },
+  "halia:powdered_emerald": {
+   "en": "Powdered Emerald",
+   "ja": "エメラルドの粉末",
+   "yomi": "えめらるどのふんまつ",
+   "file": "powdered_emerald.png"
+  },
+  "halia:powdered_ender_eye": {
+   "en": "Powdered Ender Eye",
+   "ja": "エンダーアイの粉",
+   "yomi": "えんだーあいのこな",
+   "file": "powdered_ender_eye.png"
+  },
+  "halia:powdered_ender_pearl": {
+   "en": "Powdered Ender Pearl",
+   "ja": "エンダーパールの粉",
+   "yomi": "えんだーぱーるのこな",
+   "file": "powdered_ender_pearl.png"
+  },
+  "halia:powdered_gold": {
+   "en": "Powdered Gold",
+   "ja": "金の粉末",
+   "yomi": "きんのふんまつ",
+   "file": "powdered_gold.png"
+  },
+  "halia:powdered_iron": {
+   "en": "Powdered Iron",
+   "ja": "鉄の粉末",
+   "yomi": "てつのふんまつ",
+   "file": "powdered_iron.png"
+  },
+  "halia:powdered_quartz": {
+   "en": "Powdered Quartz",
+   "ja": "クォーツの粉末",
+   "yomi": "くぉーつのふんまつ",
+   "file": "powdered_quartz.png"
+  },
+  "halia:ritual_dagger": {
+   "en": "Ritual Dagger",
+   "ja": "儀式の短剣",
+   "yomi": "ぎしきのたんけん",
+   "file": "ritual_dagger.png"
+  },
+  "halia:scored_log": {
+   "en": "Scored Log",
+   "ja": "爪痕の原木",
+   "yomi": "つめあとのげんぼく",
+   "file": "scored_log.png"
+  },
+  "halia:scroll_case": {
+   "en": "Scroll Case",
+   "ja": "巻物入れ",
+   "yomi": "まきものいれ",
+   "file": "scroll_case.png"
+  },
+  "halia:scroll_case_first_art": {
+   "en": "Scroll Case – First Art",
+   "ja": "巻物入れ‐始まりの術",
+   "yomi": "まきものいれ‐はじまりのじゅつ",
+   "file": "scroll_case_first_art.png"
+  },
+  "halia:spell_cloth": {
+   "en": "Spell Cloth",
+   "ja": "羊皮紙",
+   "yomi": "ようひし",
+   "file": "spell_cloth.png"
+  },
+  "halia:venom_jar": {
+   "en": "Venom Jar",
+   "ja": "毒壺",
+   "yomi": "どくつぼ",
+   "file": "venom_jar.png"
+  },
+  "halia:wyrm_fang": {
+   "en": "Wyrm Fang",
+   "ja": "翼蛇の牙",
+   "yomi": "よくだのきば",
+   "file": "wyrm_fang.png"
   }
  },
  "blades": {
