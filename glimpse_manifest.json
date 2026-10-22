@@ -12,30 +12,30 @@
     "changelog_url": "https://iroponcopin.github.io/corvus-dev/en/changelog/"
   },
   "launcher": {
-    "latest": "5.5.1.1",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1.1.jar",
-    "file_name": "corvus-5.5.1.1.jar",
-    "file_size": 17420756,
-    "sha256": "7d7580f9d95bb145adacbb5f4f2964cf82df29198f42ff9cdbe096fb2b0fd7f8",
-    "notes": "Corvus Store 5.5.1.1 and Corvus Agent 5.5.1.1 make Windows updates keep your setup, open the Album much faster and bring a redesigned Corvus AI 5.5 Chat.\n\nOn Windows, an update now keeps the install folder you chose, your shortcuts and your taskbar pins, and the window remembers its size and position.\n\nThe Album opens much faster.\n\nCorvus opens on the monitor where the cursor is.\n\nThe Halia and Tsubomi icons now show in Discover.\n\nCorvus AI 5.5 Chat is redesigned: a glass composer and an indicator while it researches, answers that appear smoothly, code blocks with a copy button, sources shown as pills, and a welcome screen.\n\nCorvus Store and Corvus Agent stay updated together: both move to the same version by themselves.",
+    "latest": "5.5.1.2",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1.2.jar",
+    "file_name": "corvus-5.5.1.2.jar",
+    "file_size": 17449375,
+    "sha256": "b4bc7422e576786243d977540a854812b5f1c7b44d2866a196d375b90485e604",
+    "notes": "Corvus Store 5.5.1.2 and Corvus Agent 5.5.1.2 let you switch each Halia creature's natural spawning on or off.\n\nOn a server, the switches are in Corvus Studio under Settings, on the creatures card. In single player, they are on the Halia page.\n\nDuring the Halia V1.4 release event period, the switches are locked on.\n\nCorvus Store and Corvus Agent update themselves.",
     "native": {
       "macos": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1.1-macos.dmg",
-        "file_name": "corvus-5.5.1.1-macos.dmg",
-        "file_size": 67160294,
-        "sha256": "766bdf7e27f6de1366cca65049c8a89903cb3ef41c3531d11d750258a1686260"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1.2-macos.dmg",
+        "file_name": "corvus-5.5.1.2-macos.dmg",
+        "file_size": 67168002,
+        "sha256": "22043eee8d3614344bfd92b15126d78c6be8f9f71a8417a58e0b937ede435447"
       },
       "windows": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1.1-windows.msi",
-        "file_name": "corvus-5.5.1.1-windows.msi",
-        "file_size": 64848738,
-        "sha256": "e1fba6bd0c57ebe5671e3a8a0abc8ab2f4ab9606e2242a82d64ac8a6b2deb92a"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1.2-windows.msi",
+        "file_name": "corvus-5.5.1.2-windows.msi",
+        "file_size": 64877410,
+        "sha256": "4440741d2afb3764ed065e778b0bdf4b130dccc811271cf801e77a6533d7cc7a"
       },
       "linux": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1.1-linux.deb",
-        "file_name": "corvus-5.5.1.1-linux.deb",
-        "file_size": 54298504,
-        "sha256": "457f771f47ea0c0b04d4a82f4e137e98bc41332bf8101dc0cc3f04db32454a73"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1.2-linux.deb",
+        "file_name": "corvus-5.5.1.2-linux.deb",
+        "file_size": 54251648,
+        "sha256": "dc0a645e45ec3b524e8cc7aa4cdb03bd011dacc6d9cd2ed6bf1dc15cdb7c2fcf"
       }
     }
   },
@@ -129,11 +129,11 @@
     "sha256": "a81edcaf9d151adb529f73292019ed1ba13b0271d07fd0f4cb42ab274d551baf"
   },
   "agent": {
-    "latest": "5.5.1.1",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-agent-5.5.1.1.zip",
-    "file_name": "corvus-agent-5.5.1.1.zip",
-    "file_size": 426161,
-    "sha256": "ff17f382fb4a8ddc52aaac9f4ab7fa828a62166f2ffa9bb04594e6f70a4c16ae"
+    "latest": "5.5.1.2",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-agent-5.5.1.2.zip",
+    "file_name": "corvus-agent-5.5.1.2.zip",
+    "file_size": 439526,
+    "sha256": "43efeeadbc23abce46ff8dac1846200ae0803bfb5973333441295d0c3b560cf1"
   },
   "xhard": {
     "mod_id": "corvus_xhard",
