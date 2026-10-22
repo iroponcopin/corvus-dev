@@ -1077,7 +1077,7 @@
      "O Device Lifter vem desligado por padrão. Agora ele avisa que está desligado, em vez de não fazer nada em silêncio.",
      "Reforçar e desreforçar andaimes não retorna mais um resultado vazio.",
      "Feixes sem conjurador não causam mais erro. Os drops de Fae, Familiar e Venom Jar agora estão definidos explicitamente.",
-     "Os donos podem abrir novamente o dispensador, o liberador e o funil reforçados (abri-los causava um erro)."
+     "Os donos podem abrir novamente o Warded Dispenser, Warded Dropper and Warded Hopper (abri-los causava um erro)."
     ],
     "warnings": [
      "Os requisitos continuam iguais aos da 1.4.0."

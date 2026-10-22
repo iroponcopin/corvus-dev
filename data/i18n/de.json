@@ -1077,7 +1077,7 @@
      "Der Device Lifter ist standardmäßig aus. Er meldet jetzt, dass er aus ist, statt stillschweigend nichts zu tun.",
      "Das Verstärken und Entfernen der Verstärkung von Gerüsten liefert nicht mehr ein leeres Ergebnis.",
      "Strahlen ohne Zauberer verursachen keinen Fehler mehr. Für Fae, Familiar und Venom Jar sind die Drops jetzt ausdrücklich festgelegt.",
-     "Besitzer können ihren verstärkten Werfer, Spender und Trichter wieder öffnen (das Öffnen löste einen Fehler aus)."
+     "Besitzer können ihren Warded Dispenser, Warded Dropper and Warded Hopper wieder öffnen (das Öffnen löste einen Fehler aus)."
     ],
     "warnings": [
      "Die Voraussetzungen sind gegenüber 1.4.0 unverändert."

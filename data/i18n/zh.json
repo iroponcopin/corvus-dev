@@ -1077,7 +1077,7 @@
      "Device Lifter 默认关闭。现在关闭时会提示玩家，而不是毫无反应。",
      "加固与取消加固脚手架的操作不再返回空结果。",
      "没有施法者的光束不再报错。Fae、Familiar 与 Venom Jar 的掉落物现已明确设定。",
-     "所有者现在可以再次打开强化发射器、投掷器和漏斗(此前打开时会报错)。"
+     "所有者现在可以再次打开 Warded Dispenser, Warded Dropper and Warded Hopper(此前打开时会报错)。"
     ],
     "warnings": [
      "运行要求与 1.4.0 相同。"

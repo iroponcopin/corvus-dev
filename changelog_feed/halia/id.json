@@ -34,7 +34,7 @@
         "Device Lifter nonaktif secara default. Kini ia memberi tahu pemain bahwa ia nonaktif, bukan diam saja tanpa melakukan apa-apa.",
         "Memperkuat dan melepas penguatan scaffolding tidak lagi mengembalikan hasil kosong.",
         "Sinar tanpa pengguna tidak lagi menimbulkan error. Drop Fae, Familiar dan Venom Jar kini diatur secara eksplisit.",
-        "Pemilik dapat kembali membuka Dispenser, Dropper, dan Hopper yang diperkuat (membukanya sebelumnya menimbulkan galat)."
+        "Pemilik dapat kembali membuka Warded Dispenser, Warded Dropper and Warded Hopper (membukanya sebelumnya menimbulkan galat)."
        ]
       },
       {

@@ -1077,7 +1077,7 @@
      "Device Lifter varsayılan olarak kapalıdır. Artık sessizce hiçbir şey yapmak yerine kapalı olduğunu bildiriyor.",
      "Iskele takviyesi ekleme ve kaldırma artık boş bir sonuç döndürmüyor.",
      "Yayıcısı olmayan ışınlar artık hata vermiyor. Fae, Familiar ve Venom Jar'ın düşürdükleri eşyalar artık açıkça tanımlı.",
-     "Sahipler güçlendirilmiş Dağıtıcı, Bırakıcı ve Huni'yi yeniden açabilir (açmak hataya neden oluyordu)."
+     "Sahipler Warded Dispenser, Warded Dropper and Warded Hopper öğelerini yeniden açabilir (açmak hataya neden oluyordu)."
     ],
     "warnings": [
      "Gereksinimler 1.4.0 ile aynı kaldı."

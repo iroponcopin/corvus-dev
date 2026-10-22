@@ -34,7 +34,7 @@
         "Le Device Lifter est désactivé par défaut. Il indique maintenant qu'il est désactivé, au lieu de ne rien faire sans prévenir.",
         "La pose et le retrait de renfort sur les échafaudages ne renvoient plus un résultat vide.",
         "Les rayons sans lanceur ne provoquent plus d'erreur. Les butins de Fae, Familiar et Venom Jar sont maintenant définis explicitement.",
-        "Les propriétaires peuvent de nouveau ouvrir leur distributeur, dropper et entonnoir renforcés (l'ouverture provoquait une erreur)."
+        "Les propriétaires peuvent de nouveau ouvrir leur Warded Dispenser, Warded Dropper and Warded Hopper (l'ouverture provoquait une erreur)."
        ]
       },
       {

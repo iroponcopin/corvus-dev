@@ -34,7 +34,7 @@
         "The Device Lifter is off by default. It now tells you so, instead of silently doing nothing.",
         "Reinforcing and unreinforcing scaffolding no longer returns an empty result.",
         "Beams with no caster no longer cause an error. Fae, Familiar and Venom Jar now have their drops set explicitly.",
-        "Owners can open their Reinforced Dispenser, Dropper and Hopper again (opening them threw an error)."
+        "Owners can open their Warded Dispenser, Warded Dropper and Warded Hopper again (opening them threw an error)."
        ]
       },
       {

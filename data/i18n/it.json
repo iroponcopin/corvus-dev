@@ -1077,7 +1077,7 @@
      "Il Device Lifter è disattivato per impostazione predefinita. Ora lo segnala, invece di non fare nulla in silenzio.",
      "Rinforzare e rimuovere il rinforzo dalle impalcature non restituisce più un risultato vuoto.",
      "I raggi senza un lanciatore non causano più errori. I drop di Fae, Familiar e Venom Jar ora sono impostati esplicitamente.",
-     "I proprietari possono di nuovo aprire il distributore, il dropper e la tramoggia rinforzati (aprirli causava un errore)."
+     "I proprietari possono di nuovo aprire il Warded Dispenser, Warded Dropper and Warded Hopper (aprirli causava un errore)."
     ],
     "warnings": [
      "I requisiti non sono cambiati rispetto alla 1.4.0."

@@ -1077,7 +1077,7 @@
      "El Device Lifter viene desactivado por defecto. Ahora lo indica en lugar de no hacer nada en silencio.",
      "Reforzar y quitar el refuerzo de los andamios ya no devuelve un resultado vacío.",
      "Los rayos sin lanzador ya no causan error. Los botines de Fae, Familiar y Venom Jar ahora están definidos explícitamente.",
-     "Los propietarios pueden volver a abrir su dispensador, soltador y tolva reforzados (abrirlos provocaba un error)."
+     "Los propietarios pueden volver a abrir su Warded Dispenser, Warded Dropper and Warded Hopper (abrirlos provocaba un error)."
     ],
     "warnings": [
      "Los requisitos no han cambiado desde la 1.4.0."
