@@ -1,15 +1,42 @@
 {
  "lang": "en",
  "brand": "halia",
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-22",
+ "updated_label": "Updated 2026-10-23",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4.0.37 — held staffs back to a normal size",
+   "summary": "Halia V1.4 1140",
    "releases": [
+    {
+     "version": "V1.4 1140",
+     "date": "2026-10-23",
+     "type": "release",
+     "title": "Halia V1.4 1140",
+     "summary": "Held items now draw more accurately in first and third person.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "The Bow of Arms Volley now shows its bow in hand. Before, only its arrows were drawn.",
+        "The Arcane Circle now shows in hand and on the ground.",
+        "Scroll Cases are drawn at a new size and angle in first person.",
+        "The Mirror Bulwark is smaller in third person.",
+        "Kingsbrand and Mistmother's Blade are smaller in first person, though they still reach the screen corner.",
+        "These held items now sit fully inside the hand area in first person instead of being cut off at the screen corner: Relic Case, Glowing Relic Case, Coded Chest, Crafted Door, Quarry Gauntlet, Stoneshaper's Staff, Alarm Button, Coded Satchel, Device Lifter, Device Tuner, Ground Snare, Jolt Rod, Klaxon, Leaping Snare, Owner Changer, Seeker Battery and Snare Cutters.",
+        "The Staff of Bursting Mana, Staff of Warped Space and Sage's Rod are back at their earlier size."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "The Scroll Cases are still not visible in third person. This is known and not fixed."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0.37",
      "date": "2026-10-22",

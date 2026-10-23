@@ -1,15 +1,42 @@
 {
  "lang": "id",
  "brand": "halia",
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "title": "Riwayat Pembaruan",
- "updated_label": "Diperbarui 2026-10-22",
+ "updated_label": "Diperbarui 2026-10-23",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4.0.37 — tongkat di tangan kembali ke ukuran normal",
+   "summary": "Halia V1.4 1140",
    "releases": [
+    {
+     "version": "V1.4 1140",
+     "date": "2026-10-23",
+     "type": "release",
+     "title": "Halia V1.4 1140",
+     "summary": "Diperbaiki penggambaran item di tangan; beberapa item kini tampil lebih akurat di sudut pandang orang pertama dan ketiga.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Bow of Arms Volley kini menampilkan busurnya di tangan. Sebelumnya hanya anak panahnya yang digambar.",
+        "Arcane Circle kini tampil di tangan dan di tanah.",
+        "Scroll Case digambar dengan ukuran dan sudut baru dari sudut pandang orang pertama.",
+        "Mirror Bulwark lebih kecil dari sudut pandang orang ketiga.",
+        "Kingsbrand dan Mistmother's Blade lebih kecil dari sudut pandang orang pertama, tetapi masih mencapai sudut layar.",
+        "Dari sudut pandang orang pertama, item-item ini kini berada sepenuhnya di area tangan, tidak lagi terpotong di sudut layar: Relic Case, Glowing Relic Case, Coded Chest, Crafted Door, Quarry Gauntlet, Stoneshaper's Staff, Alarm Button, Coded Satchel, Device Lifter, Device Tuner, Ground Snare, Jolt Rod, Klaxon, Leaping Snare, Owner Changer, Seeker Battery, dan Snare Cutters.",
+        "Staff of Bursting Mana, Staff of Warped Space dan Sage's Rod kembali ke ukuran semula."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Scroll Case masih tidak terlihat dari sudut pandang orang ketiga. Ini masalah yang sudah diketahui dan belum diperbaiki."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0.37",
      "date": "2026-10-22",

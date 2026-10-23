@@ -1148,6 +1148,23 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4-1140",
+    "title": "Halia V1.4 1140",
+    "summary": "Corretto il disegno degli oggetti in mano; diversi oggetti ora appaiono in modo più accurato in prima e terza persona.",
+    "highlights": [
+     "Il Bow of Arms Volley ora mostra l'arco in mano. Prima venivano disegnate solo le frecce.",
+     "L'Arcane Circle ora appare in mano e a terra.",
+     "Lo Scroll Case è disegnato con una nuova dimensione e angolazione in prima persona.",
+     "Il Mirror Bulwark è più piccolo in terza persona.",
+     "Kingsbrand e Mistmother's Blade sono più piccoli in prima persona, ma arrivano ancora all'angolo dello schermo.",
+     "In prima persona questi oggetti ora stanno interamente nell'area della mano invece di essere tagliati all'angolo dello schermo: Relic Case, Glowing Relic Case, Coded Chest, Crafted Door, Quarry Gauntlet, Stoneshaper's Staff, Alarm Button, Coded Satchel, Device Lifter, Device Tuner, Ground Snare, Jolt Rod, Klaxon, Leaping Snare, Owner Changer, Seeker Battery e Snare Cutters.",
+     "Lo Staff of Bursting Mana, lo Staff of Warped Space e il Sage's Rod sono tornati alla dimensione precedente."
+    ],
+    "warnings": [
+     "Lo Scroll Case resta invisibile in terza persona. Problema noto, non corretto."
+    ]
+   },
+   {
     "id": "halia-v1.4.0.37",
     "title": "Halia V1.4.0.37 — bastoni in mano di nuovo a dimensione normale",
     "summary": "I bastoni di Halia in mano tornano ad essere disegnati a dimensione normale.",

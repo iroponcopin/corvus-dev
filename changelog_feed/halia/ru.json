@@ -1,15 +1,42 @@
 {
  "lang": "ru",
  "brand": "halia",
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "title": "История обновлений",
- "updated_label": "Обновлено 2026-10-22",
+ "updated_label": "Обновлено 2026-10-23",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4.0.37 — посохи в руке снова нормального размера",
+   "summary": "Halia V1.4 1140",
    "releases": [
+    {
+     "version": "V1.4 1140",
+     "date": "2026-10-23",
+     "type": "release",
+     "title": "Halia V1.4 1140",
+     "summary": "Исправлена отрисовка предметов в руке; некоторые предметы теперь выглядят точнее от первого и третьего лица.",
+     "sections": [
+      {
+       "title": "Изменения",
+       "items": [
+        "Bow of Arms Volley теперь показывает лук в руке. Раньше рисовались только стрелы.",
+        "Arcane Circle теперь видна в руке и на земле.",
+        "Scroll Case от первого лица отрисовывается в новом размере и под новым углом.",
+        "Mirror Bulwark стал меньше от третьего лица.",
+        "Kingsbrand и Mistmother's Blade стали меньше от первого лица, но всё ещё доходят до угла экрана.",
+        "От первого лица эти предметы теперь полностью помещаются в зону руки, а не обрезаются в углу экрана: Relic Case, Glowing Relic Case, Coded Chest, Crafted Door, Quarry Gauntlet, Stoneshaper's Staff, Alarm Button, Coded Satchel, Device Lifter, Device Tuner, Ground Snare, Jolt Rod, Klaxon, Leaping Snare, Owner Changer, Seeker Battery и Snare Cutters.",
+        "Staff of Bursting Mana, Staff of Warped Space и Sage's Rod вернулись к прежнему размеру."
+       ]
+      },
+      {
+       "title": "Важно",
+       "items": [
+        "Scroll Case по-прежнему не видна от третьего лица. Это известная проблема, она не исправлена."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0.37",
      "date": "2026-10-22",

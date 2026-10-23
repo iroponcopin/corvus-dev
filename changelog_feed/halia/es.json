@@ -1,15 +1,42 @@
 {
  "lang": "es",
  "brand": "halia",
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "title": "Historial de actualizaciones",
- "updated_label": "Actualizado el 2026-10-22",
+ "updated_label": "Actualizado el 2026-10-23",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4.0.37 — los bastones en mano vuelven a su tamaño normal",
+   "summary": "Halia V1.4 1140",
    "releases": [
+    {
+     "version": "V1.4 1140",
+     "date": "2026-10-23",
+     "type": "release",
+     "title": "Halia V1.4 1140",
+     "summary": "Se corrigió el dibujo de los objetos en mano; varios se muestran ahora con más precisión en primera y tercera persona.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "El Bow of Arms Volley ahora muestra su arco en la mano. Antes solo se dibujaban sus flechas.",
+        "El Arcane Circle ahora se muestra en la mano y en el suelo.",
+        "El Scroll Case se dibuja con un nuevo tamaño y ángulo en primera persona.",
+        "El Mirror Bulwark es más pequeño en tercera persona.",
+        "Kingsbrand y Mistmother's Blade son más pequeños en primera persona, aunque siguen llegando a la esquina de la pantalla.",
+        "En primera persona, estos objetos ahora quedan completamente dentro de la zona de la mano, en lugar de cortarse en la esquina: Relic Case, Glowing Relic Case, Coded Chest, Crafted Door, Quarry Gauntlet, Stoneshaper's Staff, Alarm Button, Coded Satchel, Device Lifter, Device Tuner, Ground Snare, Jolt Rod, Klaxon, Leaping Snare, Owner Changer, Seeker Battery y Snare Cutters.",
+        "El Staff of Bursting Mana, el Staff of Warped Space y el Sage's Rod han vuelto a su tamaño anterior."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "El Scroll Case sigue sin verse en tercera persona. Es un problema conocido y no está corregido."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0.37",
      "date": "2026-10-22",

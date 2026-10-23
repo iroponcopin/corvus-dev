@@ -1,15 +1,42 @@
 {
  "lang": "tr",
  "brand": "halia",
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-22 tarihinde güncellendi",
+ "updated_label": "2026-10-23 tarihinde güncellendi",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4.0.37 — elde tutulan asalar normal boyuta döndü",
+   "summary": "Halia V1.4 1140",
    "releases": [
+    {
+     "version": "V1.4 1140",
+     "date": "2026-10-23",
+     "type": "release",
+     "title": "Halia V1.4 1140",
+     "summary": "Elde tutulan eşyaların çizimi düzeltildi; birkaç eşya artık birinci ve üçüncü şahısta daha doğru görünüyor.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Bow of Arms Volley artık yaydını elinde gösteriyor. Önceden yalnızca okları çiziliyordu.",
+        "Arcane Circle artık elde ve yerde görünüyor.",
+        "Scroll Case, birinci şahısta yeni bir boyut ve açıyla çiziliyor.",
+        "Mirror Bulwark üçüncü şahısta daha küçük.",
+        "Kingsbrand ve Mistmother's Blade birinci şahısta daha küçük, ama yine de ekranın köşesine uzanıyorlar.",
+        "Birinci şahısta bu eşyalar artık ekran köşesinde kesilmek yerine el alanında tamamen yer alıyor: Relic Case, Glowing Relic Case, Coded Chest, Crafted Door, Quarry Gauntlet, Stoneshaper's Staff, Alarm Button, Coded Satchel, Device Lifter, Device Tuner, Ground Snare, Jolt Rod, Klaxon, Leaping Snare, Owner Changer, Seeker Battery ve Snare Cutters.",
+        "Staff of Bursting Mana, Staff of Warped Space ve Sage's Rod önceki boyutlarına döndü."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Scroll Case üçüncü şahısta hâlâ görünmüyor. Bu bilinen bir sorun ve henüz düzeltilmedi."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0.37",
      "date": "2026-10-22",

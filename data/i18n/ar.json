@@ -1148,6 +1148,23 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4-1140",
+    "title": "Halia V1.4 1140",
+    "summary": "تم إصلاح رسم الأغراض المحمولة؛ تظهر بعض الأغراض الآن بدقة أكبر من منظور الشخص الأول والثالث.",
+    "highlights": [
+     "يعرض Bow of Arms Volley قوسه الآن في اليد. قبل ذلك كانت السهام فقط ترسم.",
+     "تظهر Arcane Circle الآن في اليد وعلى الأرض.",
+     "يُرسم Scroll Case بحجم وزاوية جديدين من منظور الشخص الأول.",
+     "أصبح Mirror Bulwark أصغر من منظور الشخص الثالث.",
+     "أصبح Kingsbrand وMistmother's Blade أصغر من منظور الشخص الأول، لكنهما ما زالا يصلان إلى زاوية الشاشة.",
+     "من منظور الشخص الأول، تقع هذه الأغراض الآن داخل منطقة اليد بالكامل بدلا من أن تُقطع عند زاوية الشاشة: Relic Case, Glowing Relic Case, Coded Chest, Crafted Door, Quarry Gauntlet, Stoneshaper's Staff, Alarm Button, Coded Satchel, Device Lifter, Device Tuner, Ground Snare, Jolt Rod, Klaxon, Leaping Snare, Owner Changer, Seeker Battery وSnare Cutters.",
+     "عادت Staff of Bursting Mana وStaff of Warped Space وSage's Rod إلى حجمها السابق."
+    ],
+    "warnings": [
+     "لا يزال Scroll Case غير مرئي من منظور الشخص الثالث. هذه مشكلة معروفة ولم تُصلح بعد."
+    ]
+   },
+   {
     "id": "halia-v1.4.0.37",
     "title": "Halia V1.4.0.37 — العصي في اليد بحجمها الطبيعي من جديد",
     "summary": "تُرسم عصي Halia في اليد بحجم طبيعي من جديد.",

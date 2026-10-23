@@ -1148,6 +1148,23 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4-1140",
+    "title": "Halia V1.4 1140",
+    "summary": "修正了手持物品的绘制，一人称与第三人称下的若干物品显示更准确。",
+    "highlights": [
+     "Bow of Arms Volley 现在手持时会显示弓身。以前只画出了箭。",
+     "Arcane Circle 现在手持时与放在地面上时都会显示。",
+     "Scroll Case 在第一人称下以新的大小和角度绘制。",
+     "Mirror Bulwark 在第三人称下变小了。",
+     "Kingsbrand 与 Mistmother's Blade 在第一人称下变小了，但仍会靠近屏幕角落。",
+     "第一人称下，以下手持物品现在完整地位于手部区域内，不再在屏幕角落被切掉：Relic Case, Glowing Relic Case, Coded Chest, Crafted Door, Quarry Gauntlet, Stoneshaper's Staff, Alarm Button, Coded Satchel, Device Lifter, Device Tuner, Ground Snare, Jolt Rod, Klaxon, Leaping Snare, Owner Changer, Seeker Battery 与 Snare Cutters。",
+     "Staff of Bursting Mana、Staff of Warped Space 与 Sage's Rod 已恢复到之前的大小。"
+    ],
+    "warnings": [
+     "Scroll Case 在第三人称下仍不可见。这是已知问题，尚未修复。"
+    ]
+   },
+   {
     "id": "halia-v1.4.0.37",
     "title": "Halia V1.4.0.37 —— 手持法杖恢复正常大小",
     "summary": "Halia 手中持握的法杖恢复为正常大小。",

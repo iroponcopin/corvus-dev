@@ -1,15 +1,42 @@
 {
  "lang": "ar",
  "brand": "halia",
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "title": "سجل التحديثات",
- "updated_label": "آخر تحديث 2026-10-22",
+ "updated_label": "آخر تحديث 2026-10-23",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4.0.37 — العصي في اليد بحجمها الطبيعي من جديد",
+   "summary": "Halia V1.4 1140",
    "releases": [
+    {
+     "version": "V1.4 1140",
+     "date": "2026-10-23",
+     "type": "release",
+     "title": "Halia V1.4 1140",
+     "summary": "تم إصلاح رسم الأغراض المحمولة؛ تظهر بعض الأغراض الآن بدقة أكبر من منظور الشخص الأول والثالث.",
+     "sections": [
+      {
+       "title": "أبرز التغييرات",
+       "items": [
+        "يعرض Bow of Arms Volley قوسه الآن في اليد. قبل ذلك كانت السهام فقط ترسم.",
+        "تظهر Arcane Circle الآن في اليد وعلى الأرض.",
+        "يُرسم Scroll Case بحجم وزاوية جديدين من منظور الشخص الأول.",
+        "أصبح Mirror Bulwark أصغر من منظور الشخص الثالث.",
+        "أصبح Kingsbrand وMistmother's Blade أصغر من منظور الشخص الأول، لكنهما ما زالا يصلان إلى زاوية الشاشة.",
+        "من منظور الشخص الأول، تقع هذه الأغراض الآن داخل منطقة اليد بالكامل بدلا من أن تُقطع عند زاوية الشاشة: Relic Case, Glowing Relic Case, Coded Chest, Crafted Door, Quarry Gauntlet, Stoneshaper's Staff, Alarm Button, Coded Satchel, Device Lifter, Device Tuner, Ground Snare, Jolt Rod, Klaxon, Leaping Snare, Owner Changer, Seeker Battery وSnare Cutters.",
+        "عادت Staff of Bursting Mana وStaff of Warped Space وSage's Rod إلى حجمها السابق."
+       ]
+      },
+      {
+       "title": "ملاحظات هامة",
+       "items": [
+        "لا يزال Scroll Case غير مرئي من منظور الشخص الثالث. هذه مشكلة معروفة ولم تُصلح بعد."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0.37",
      "date": "2026-10-22",

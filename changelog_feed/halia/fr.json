@@ -1,15 +1,42 @@
 {
  "lang": "fr",
  "brand": "halia",
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "title": "Historique des mises à jour",
- "updated_label": "Mis à jour le 2026-10-22",
+ "updated_label": "Mis à jour le 2026-10-23",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4.0.37 — les bâtons tenus reprennent une taille normale",
+   "summary": "Halia V1.4 1140",
    "releases": [
+    {
+     "version": "V1.4 1140",
+     "date": "2026-10-23",
+     "type": "release",
+     "title": "Halia V1.4 1140",
+     "summary": "Le rendu des objets tenus a été corrigé ; plusieurs objets s'affichent désormais plus fidèlement à la première et à la troisième personne.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Le Bow of Arms Volley montre maintenant son arc en main. Avant, seules ses flèches étaient dessinées.",
+        "L'Arcane Circle s'affiche désormais en main et au sol.",
+        "Le Scroll Case est dessiné à une nouvelle taille et selon un nouvel angle à la première personne.",
+        "Le Mirror Bulwark est plus petit à la troisième personne.",
+        "Kingsbrand et Mistmother's Blade sont plus petits à la première personne, mais atteignent toujours le coin de l'écran.",
+        "À la première personne, ces objets tiennent désormais entièrement dans la zone de la main au lieu d'être coupés au coin de l'écran : Relic Case, Glowing Relic Case, Coded Chest, Crafted Door, Quarry Gauntlet, Stoneshaper's Staff, Alarm Button, Coded Satchel, Device Lifter, Device Tuner, Ground Snare, Jolt Rod, Klaxon, Leaping Snare, Owner Changer, Seeker Battery et Snare Cutters.",
+        "Le Staff of Bursting Mana, le Staff of Warped Space et le Sage's Rod ont retrouvé leur taille d'origine."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Le Scroll Case reste invisible à la troisième personne. Problème connu, non corrigé."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4.0.37",
      "date": "2026-10-22",
