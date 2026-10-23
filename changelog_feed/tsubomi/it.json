@@ -8,8 +8,34 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3 2477 — Fioritura Stellare Ultimate",
+   "summary": "Tsubomi V2.3 3124 — Fioritura Stellare Corvus",
    "releases": [
+    {
+     "version": "V2.3 3124",
+     "date": "2026-10-23",
+     "type": "release",
+     "title": "Tsubomi V2.3 3124 — Fioritura Stellare Corvus",
+     "summary": "Tsubomi V2.3 3124 aggiunge Fioritura Stellare Corvus (nero OLED): la gamma di Max, la Elytra For Corvus con ali di corvo, lo scavo in 14×14 e la passiva di set più forte.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Fioritura Stellare Corvus ha la gamma di Fioritura Stellare Max (lingotto di lega, piccone, ascia, pala, zappa, lancia, elmo, corazza, gambali, stivali, scudo, arco e freccia) più l'Elytra For Corvus. La durabilità è 1.8× quella di UltraCore, gli strumenti scavano 2× più velocemente di quelli di Ultimate, e l'attacco è uguale a quello di Max.",
+        "Il lingotto di lega Corvus si crea con 8 lingotti di lega Ultimate e un emblema Corvus, e ne dà 8. L'emblema Corvus si crea con una Testa di drago, un uovo di drago, un emblema dell'oceano, un emblema di Aomori, un emblema della foresta e un lingotto di Netherstar. Un lingotto di Netherstar si crea con 3 pacchetti di stelle del Nether, e un pacchetto con 9 stelle del Nether (27 stelle del Nether in totale).",
+        "Il piccone Corvus aggiunge lo scavo in 14×14 (accovacciarsi e usare fa alternare 1×1, 3×3, 5×5, 7×7, 9×9, 11×11 e 14×14, poi Quick Mining).",
+        "L'Elytra For Corvus si crea con 2 emblemi Corvus, 3 lingotti di Netherstar, un'elitra e 3 lingotti di lega Corvus. Ha ali di penne di corvo e vola 8× più velocemente di un'elitra; la sua durabilità è quella di un'elitra, ma si consuma 8× più in fretta.",
+        "Indossare un set completo di armatura Fioritura Stellare Corvus dà passive: danno da caduta −55% (inattivo mentre si indossano le Elytra For Corvus), danno da fuoco −68%, danno da veleno −37%, danno da lava −71%, boom sonico del Sorvegliante −64%, velocità di scavo +11%, velocità di movimento +24%, attacco +17%, e una probabilità del 66% che ogni nuovo effetto dannoso venga respinto. Atterrando da una caduta si sprigiona un'onda d'urto che infligge il 61% del danno da caduta ai mob ostili entro 4 blocchi, e i blocchi di magma non fanno più danno. Indossarne solo una parte non dà nessuno di questi effetti."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+        "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3 2477",
      "date": "2026-10-23",

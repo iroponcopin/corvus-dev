@@ -1128,6 +1128,22 @@
      "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
      "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3-3124",
+    "title": "Tsubomi V2.3 3124 — Floraison d'étoile Corvus",
+    "summary": "Tsubomi V2.3 3124 ajoute Floraison d'étoile Corvus (noir OLED) : la gamme de Max, les Elytra For Corvus aux ailes de corneille, l'extraction en 14×14 et le passif de panoplie le plus puissant.",
+    "highlights": [
+     "Floraison d'étoile Corvus reprend la gamme de Floraison d'étoile Max (lingot d'alliage, pioche, hache, pelle, houe, lance, casque, plastron, jambières, bottes, bouclier, arc et flèche) plus les Elytra For Corvus. La durabilité est de 1.8× celle d'UltraCore, les outils minent 2× plus vite que ceux d'Ultimate, et l'attaque est la même que celle de Max.",
+     "Le lingot d'alliage Corvus se fabrique avec 8 lingots d'alliage Ultimate et un emblème Corvus, et donne 8 lingots. L'emblème Corvus se fabrique avec une Tête de dragon, un Oeuf de dragon, un emblème de l'Océan, un emblème d'Aomori, un emblème de la forêt et un lingot de Netherstar. Un lingot de Netherstar se fabrique avec 3 paquets d'étoiles du Nether, et un paquet avec 9 étoiles du Nether (27 étoiles du Nether au total).",
+     "La pioche Corvus ajoute l'extraction en 14×14 (s'accroupir et utiliser fait alterner 1×1, 3×3, 5×5, 7×7, 9×9, 11×11 et 14×14, puis Quick Mining).",
+     "Les Elytra For Corvus se fabriquent avec 2 emblèmes Corvus, 3 lingots de Netherstar, des élytres et 3 lingots d'alliage Corvus. Elles ont des ailes de plumes de corneille et volent 8× plus vite que des élytres ; leur durabilité est celle des élytres, mais elles s'usent 8× plus vite.",
+     "Porter une panoplie complète de Floraison d'étoile Corvus donne des passifs : dégâts de chute −55% (désactivé en portant les Elytra For Corvus), dégâts de feu −68%, dégâts de poison −37%, dégâts de lave −71%, boom sonique du Warden −64%, vitesse de minage +11%, vitesse de déplacement +24%, attaque +17%, et 66% de chances que chaque nouvel effet néfaste soit repoussé. À l'atterrissage après une chute, une onde de choc inflige 61% des dégâts de chute aux monstres hostiles dans un rayon de 4 blocs, et les blocs de magma ne blessent plus. Porter seulement une partie de la panoplie ne donne aucun de ces effets."
+    ],
+    "warnings": [
+     "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+     "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
+    ]
    }
   ],
   "halia": [

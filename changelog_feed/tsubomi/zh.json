@@ -8,8 +8,34 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3 2477 — 星樱 Ultimate",
+   "summary": "Tsubomi V2.3 3124 — 星樱 Corvus",
    "releases": [
+    {
+     "version": "V2.3 3124",
+     "date": "2026-10-23",
+     "type": "release",
+     "title": "Tsubomi V2.3 3124 — 星樱 Corvus",
+     "summary": "Tsubomi V2.3 3124 新增星樱 Corvus（OLED 黑）：拥有 Max 的全套物品、带乌鸦翅膀的 Elytra For Corvus、14×14 挖掘，以及最强的整套防具被动效果。",
+     "sections": [
+      {
+       "title": "更新内容",
+       "items": [
+        "星樱 Corvus 拥有星樱 Max 的全套物品（合金锭、镐、斧、铲、锄、长枪、头盔、胸甲、护腿、靴子、盾、弓和箭），另加 Elytra For Corvus。耐久是 UltraCore 的 1.8×，道具挖掘速度是 Ultimate 的 2×，攻击力与 Max 相同。",
+        "Corvus 合金锭由 8 个 Ultimate 合金锭和一个 Corvus 之证制成，可得 8 个锭。Corvus 之证由龙首、龙蛋、海洋之证、青森之证、森林之证和下界之星锭合成。下界之星锭由 3 个下界之星束合成，每束由 9 颗下界之星合成（共 27 颗下界之星）。",
+        "Corvus 镐新增 14×14 挖掘（潜行并使用可在 1×1、3×3、5×5、7×7、9×9、11×11、14×14 之间切换，然后是 Quick Mining）。",
+        "Elytra For Corvus 由 2 个 Corvus 之证、3 个下界之星锭、一个鞘翅和 3 个 Corvus 合金锭合成。它有乌鸦羽毛般的翅膀，飞行速度是鞘翅的 8×；耐久与鞘翅相同，但磨损速度是 8×。",
+        "穿齐整套星樱 Corvus 盔甲会获得被动效果：摔落伤害 −55%（穿着 Elytra For Corvus 时无效）、火焰伤害 −68%、中毒伤害 −37%、岩浆伤害 −71%、监守者的音波 −64%、挖掘速度 +11%、移动速度 +24%、攻击力 +17%，并且每个新的有害效果有 66% 的几率被抵挡。落地时会释放冲击波，对 4 格内的敌对生物造成相当于摔落伤害 61% 的伤害，岩浆块也不再造成伤害。只穿戴部分套装则没有这些效果。"
+       ]
+      },
+      {
+       "title": "注意事项",
+       "items": [
+        "需要 Minecraft 26.3、Fabric Loader 0.19.5 或更高、Fabric API 0.161.0+26.3 或更高以及 Java 25。不需要其他模组；Cherry 是可选的。",
+        "Tsubomi 不能与 Alpha 同时使用。只要安装了任何一个 Alpha 模组，游戏就无法启动；请先移除 Alpha 的 jar。"
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3 2477",
      "date": "2026-10-23",

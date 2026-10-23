@@ -1132,6 +1132,22 @@
      "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
      "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3-3124",
+    "title": "Tsubomi V2.3 3124 — Starbloom Corvus",
+    "summary": "Tsubomi V2.3 3124 adds Starbloom Corvus (OLED black): the Max lineup, the crow-winged Elytra For Corvus, 14×14 mining and the strongest full-set passive.",
+    "highlights": [
+     "Starbloom Corvus has the lineup of Starbloom Max (the alloy ingot, pickaxe, axe, spade, hoe, lance, helmet, chestplate, leggings, boots, shield, bow and arrow) plus the Elytra For Corvus. Durability is 1.8× UltraCore's, the tools mine 2× as fast as Ultimate's, and attack is the same as Max's.",
+     "The Corvus Alloy Ingot is made from 8 Ultimate Alloy Ingots and a Corvus Emblem, giving 8 ingots. The Corvus Emblem is crafted from a Dragon Head, a Dragon Egg, an Emblem of the Ocean, an Emblem of Aomori, an Emblem of the Forest and a Netherstar Ingot. A Netherstar Ingot is crafted from 3 Nether Star Bundles, and a Bundle from 9 Nether Stars (27 Nether Stars in all).",
+     "The Corvus Pickaxe adds 14×14 mining (sneak and use to cycle 1×1, 3×3, 5×5, 7×7, 9×9, 11×11, 14×14, then Quick Mining).",
+     "The Elytra For Corvus is crafted from 2 Corvus Emblems, 3 Netherstar Ingots, an Elytra and 3 Corvus Alloy Ingots. It has crow-feather wings and flies 8× as fast as an Elytra; its durability is the same as an Elytra's, but it wears out 8× as fast.",
+     "Wearing a full Starbloom Corvus armour set gives passives: fall damage −55% (off while wearing the Elytra For Corvus), fire damage −68%, poison damage −37%, lava damage −71%, the Warden's sonic boom −64%, mining speed +11%, movement speed +24%, attack +17%, and a 66% chance that each new harmful effect is shrugged off. Landing from a fall sends a shockwave that deals 61% of the fall damage to hostile mobs within 4 blocks, and magma blocks no longer hurt. Wearing only part of the set gives none of these."
+    ],
+    "warnings": [
+     "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+     "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first."
+    ]
    }
   ],
   "halia": [

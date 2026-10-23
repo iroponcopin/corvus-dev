@@ -1128,6 +1128,22 @@
      "Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais novo, Fabric API 0.161.0+26.3 ou mais nova e Java 25. Nenhum outro mod é necessário; o Cherry é opcional.",
      "O Tsubomi não pode ser usado junto com o Alpha. Se houver um único mod do Alpha instalado, o jogo não inicia; remova antes os jars do Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3-3124",
+    "title": "Tsubomi V2.3 3124 — Flor Estelar Corvus",
+    "summary": "O Tsubomi V2.3 3124 adiciona Flor Estelar Corvus (preto OLED): a linha do Max, a Elytra For Corvus com asas de corvo, mineração em 14×14 e a passiva de conjunto mais forte.",
+    "highlights": [
+     "Flor Estelar Corvus tem a linha de Flor Estelar Max (lingote de liga, picareta, machado, pá, enxada, lança, capacete, peitoral, calças, botas, escudo, arco e flecha) mais a Elytra For Corvus. A durabilidade é 1.8× a do UltraCore, as ferramentas mineram 2× mais rápido que as do Ultimate, e o ataque é o mesmo do Max.",
+     "O lingote de liga Corvus é feito com 8 lingotes de liga Ultimate e um emblema Corvus, rendendo 8 lingotes. O emblema Corvus é feito com uma Cabeça do Dragão, um Ovo do Dragão, um emblema oceânico, um emblema de Aomori, um emblema da floresta e um lingote de Netherstar. Um lingote de Netherstar é feito com 3 pacotes de estrelas do Nether, e um pacote, com 9 estrelas do Nether (27 estrelas do Nether no total).",
+     "A picareta Corvus acrescenta mineração em 14×14 (agachar e usar alterna entre 1×1, 3×3, 5×5, 7×7, 9×9, 11×11 e 14×14, depois Quick Mining).",
+     "A Elytra For Corvus é feita com 2 emblemas Corvus, 3 lingotes de Netherstar, um élitro e 3 lingotes de liga Corvus. Tem asas de penas de corvo e voa 8× mais rápido que um élitro; a durabilidade é a de um élitro, mas ela se desgasta 8× mais rápido.",
+     "Vestir um conjunto completo de armadura Flor Estelar Corvus dá passivas: dano de queda −55% (inativo ao vestir a Elytra For Corvus), dano de fogo −68%, dano de veneno −37%, dano de lava −71%, o estrondo sônico da Sentinela −64%, velocidade de mineração +11%, velocidade de movimento +24%, ataque +17%, e 66% de chance de cada novo efeito nocivo ser ignorado. Ao cair e pousar, uma onda de choque causa 61% do dano de queda aos mobs hostis num raio de 4 blocos, e os blocos de magma não causam mais dano. Vestir apenas parte do conjunto não dá nenhum desses efeitos."
+    ],
+    "warnings": [
+     "Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais novo, Fabric API 0.161.0+26.3 ou mais nova e Java 25. Nenhum outro mod é necessário; o Cherry é opcional.",
+     "O Tsubomi não pode ser usado junto com o Alpha. Se houver um único mod do Alpha instalado, o jogo não inicia; remova antes os jars do Alpha."
+    ]
    }
   ],
   "halia": [

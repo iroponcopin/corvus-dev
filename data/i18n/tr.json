@@ -1128,6 +1128,22 @@
      "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
      "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3-3124",
+    "title": "Tsubomi V2.3 3124 — Yıldız Çiçeği Corvus",
+    "summary": "Tsubomi V2.3 3124, Yıldız Çiçeği Corvus'u (OLED siyahı) ekler: Max dizilimi, kuzgun kanatlı Elytra For Corvus, 14×14 kazma ve en güçlü tam takım pasifi.",
+    "highlights": [
+     "Yıldız Çiçeği Corvus, Yıldız Çiçeği Max'ın dizilimine sahiptir (alaşım külçesi, kazma, balta, kürek, çapa, mızrak, miğfer, göğüslük, pantolon, bot, kalkan, yay ve ok) artı Elytra For Corvus. Dayanıklılığı UltraCore'un 1.8×'i, aletler Ultimate'tan 2× hızlı kazar ve saldırı Max ile aynıdır.",
+     "Corvus Alaşım Külçesi, 8 Ultimate Alaşım Külçesi ve bir Corvus Nişanı ile yapılır ve 8 külçe verir. Corvus Nişanı; bir Ejderha Kafası, bir Ejderha Yumurtası, bir Okyanus Nişanı, bir Aomori Nişanı, bir Orman Nişanı ve bir Netherstar Külçesi ile yapılır. Netherstar Külçesi 3 Nether Yıldızı Demeti ile, bir demet ise 9 Nether Yıldızı ile yapılır (toplamda 27 Nether Yıldızı).",
+     "Corvus Kazması 14×14 kazma ekler (çömelip kullanarak 1×1, 3×3, 5×5, 7×7, 9×9, 11×11 ve 14×14 arasında geçiş yapılır, ardından Quick Mining).",
+     "Elytra For Corvus, 2 Corvus Nişanı, 3 Netherstar Külçesi, bir elitra ve 3 Corvus Alaşım Külçesi ile yapılır. Kuzgun tüylü kanatları vardır ve elitra'dan 8× hızlı uçar; dayanıklılığı elitra ile aynıdır, ama 8× hızlı aşınır.",
+     "Tam bir Yıldız Çiçeği Corvus zırh takımı giymek pasifler verir: düşme hasarı −55% (Elytra For Corvus giyilirken devre dışı), ateş hasarı −68%, zehir hasarı −37%, lav hasarı −71%, Muhafız'ın ses dalgası −64%, kazma hızı +11%, hareket hızı +24%, saldırı +17% ve yeni her zararlı etkinin 66% ihtimalle savuşturulması. Düşmenin ardından yere inildiğinde 4 blok içindeki düşman yaratıklara düşme hasarının 61%'ini veren bir şok dalgası çıkar ve magma blokları artık zarar vermez. Takımın yalnızca bir kısmını giymek bunlardan hiçbirini vermez."
+    ],
+    "warnings": [
+     "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+     "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
+    ]
    }
   ],
   "halia": [

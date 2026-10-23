@@ -8,8 +8,34 @@
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3 2477 — Starbloom Ultimate",
+   "summary": "Tsubomi V2.3 3124 — Starbloom Corvus",
    "releases": [
+    {
+     "version": "V2.3 3124",
+     "date": "2026-10-23",
+     "type": "release",
+     "title": "Tsubomi V2.3 3124 — Starbloom Corvus",
+     "summary": "Tsubomi V2.3 3124 menambahkan Starbloom Corvus (hitam OLED): jajaran Max, Elytra For Corvus dengan sayap gagak, penambangan 14×14, dan pasif set lengkap terkuat.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Starbloom Corvus memiliki jajaran Starbloom Max (batangan paduan, beliung, kapak, sekop, cangkul, tombak, helm, baju zirah, celana, sepatu, perisai, busur dan panah) ditambah Elytra For Corvus. Daya tahannya 1.8× milik UltraCore, alatnya menambang 2× lebih cepat dari Ultimate, dan serangannya sama dengan Max.",
+        "Batangan Paduan Corvus dibuat dari 8 Batangan Paduan Ultimate dan satu Lambang Corvus, menghasilkan 8 batangan. Lambang Corvus dibuat dari Kepala Naga, Telur Naga, Lambang Laut, Lambang Aomori, Lambang Hutan, dan Batangan Netherstar. Batangan Netherstar dibuat dari 3 Bundel Netherstar, dan satu bundel dari 9 Bintang Nether (27 Bintang Nether seluruhnya).",
+        "Beliung Corvus menambahkan penambangan 14×14 (jongkok lalu gunakan untuk berganti antara 1×1, 3×3, 5×5, 7×7, 9×9, 11×11 dan 14×14, lalu Quick Mining).",
+        "Elytra For Corvus dibuat dari 2 Lambang Corvus, 3 Batangan Netherstar, sebuah elitron, dan 3 Batangan Paduan Corvus. Sayapnya dari bulu gagak dan terbang 8× lebih cepat dari elitron; daya tahannya sama dengan elitron, tetapi aus 8× lebih cepat.",
+        "Mengenakan set zirah Starbloom Corvus lengkap memberi pasif: kerusakan jatuh −55% (nonaktif saat memakai Elytra For Corvus), kerusakan api −68%, kerusakan racun −37%, kerusakan lava −71%, sonic boom Penunggu −64%, kecepatan menambang +11%, kecepatan gerak +24%, serangan +17%, dan peluang 66% setiap efek merugikan baru ditepis. Mendarat setelah jatuh memancarkan gelombang kejut yang memberi 61% dari kerusakan jatuh kepada mob musuh dalam radius 4 blok, dan balok magma tidak lagi melukai. Hanya memakai sebagian set tidak memberi satu pun dari ini."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+        "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3 2477",
      "date": "2026-10-23",
