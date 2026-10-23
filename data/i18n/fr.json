@@ -1113,6 +1113,21 @@
      "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
      "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3-2477",
+    "title": "Tsubomi V2.3 2477 — Floraison d'étoile Ultimate",
+    "summary": "Tsubomi V2.3 2477 ajoute Floraison d'étoile Ultimate (orange perlé) : la gamme de Max, le 11×11 et Quick Mining, ainsi que le passif de panoplie le plus puissant à ce jour.",
+    "highlights": [
+     "Floraison d'étoile Ultimate reprend la gamme de Floraison d'étoile Max (lingot d'alliage, pioche, hache, pelle, houe, lance, casque, plastron, jambières, bottes, bouclier, arc et flèche). La durabilité est de 1.5× celle d'UltraCore, les outils minent 1.25× plus vite que ceux d'UltraFast, et l'attaque est la même que celle de Max.",
+     "Le lingot d'alliage Ultimate se fabrique avec 8 lingots d'alliage UltraCore et une tête de dragon de l'Ender, pour 8 lingots.",
+     "La pioche Ultimate ajoute l'extraction en 11×11 (s'accroupir et utiliser fait alterner 1×1, 3×3, 5×5, 7×7, 9×9 et 11×11) ainsi que Quick Mining : casser un minerai mine aussi les minerais du même filon qui y sont reliés, jusqu'à 64 blocs.",
+     "Porter une panoplie d'armure Floraison d'étoile Ultimate complète donne des passifs : dégâts de chute −44%, dégâts de feu −68%, dégâts de poison −37%, dégâts de lave −71%, boom sonique du Warden −51%, vitesse de minage +9%, vitesse de déplacement +11%, attaque +7%, et 50% de chances que chaque nouvel effet néfaste soit repoussé. À l'atterrissage après une chute, une onde de choc inflige 56% des dégâts de chute aux monstres hostiles dans un rayon de 4 blocs, et les blocs de magma ne blessent plus. Porter seulement une partie de la panoplie ne donne aucun de ces effets."
+    ],
+    "warnings": [
+     "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+     "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha."
+    ]
    }
   ],
   "halia": [

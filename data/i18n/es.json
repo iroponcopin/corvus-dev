@@ -1113,6 +1113,21 @@
      "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
      "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.3-2477",
+    "title": "Tsubomi V2.3 2477 — Flor Estelar Ultimate",
+    "summary": "Tsubomi V2.3 2477 añade Flor Estelar Ultimate (naranja perla): la línea de Max, 11×11 y Quick Mining, y la pasiva de conjunto más fuerte hasta ahora.",
+    "highlights": [
+     "Flor Estelar Ultimate tiene la línea de Flor Estelar Max (lingote de aleación, pico, hacha, pala, azada, lanza, casco, peto, mallas, botas, escudo, arco y flecha). La durabilidad es 1.5× la de UltraCore, las herramientas minan 1.25× más rápido que las de UltraFast, y el ataque es el mismo que el de Max.",
+     "El lingote de aleación Ultimate se hace con 8 lingotes de aleación UltraCore y una cabeza de dragón del End, y da 8 lingotes.",
+     "El pico Ultimate añade minería en 11×11 (agacharse y usar alterna entre 1×1, 3×3, 5×5, 7×7, 9×9 y 11×11) y Quick Mining: al romper un mineral, también se mina el mineral de la misma veta conectado a él, hasta 64 bloques.",
+     "Llevar un conjunto completo de armadura Flor Estelar Ultimate da pasivas: daño por caída −44%, daño por fuego −68%, daño por veneno −37%, daño por lava −71%, el estallido sónico del Warden −51%, velocidad de minería +9%, velocidad de movimiento +11%, ataque +7%, y un 50% de probabilidad de resistir cada nuevo efecto dañino. Al aterrizar tras una caída, se libera una onda de choque que inflige el 56% del daño de caída a los mobs hostiles a 4 bloques, y los bloques de magma ya no hacen daño. Llevar solo una parte del conjunto no da ninguno de estos efectos."
+    ],
+    "warnings": [
+     "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+     "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha."
+    ]
    }
   ],
   "halia": [

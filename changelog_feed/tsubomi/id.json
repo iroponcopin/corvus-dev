@@ -1,15 +1,40 @@
 {
  "lang": "id",
  "brand": "tsubomi",
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "title": "Riwayat Pembaruan",
- "updated_label": "Diperbarui 2026-10-22",
+ "updated_label": "Diperbarui 2026-10-23",
  "note": "",
  "groups": [
   {
    "label": "V2.3",
-   "summary": "Tsubomi V2.3 2408 — Starbloom UltraCore",
+   "summary": "Tsubomi V2.3 2477 — Starbloom Ultimate",
    "releases": [
+    {
+     "version": "V2.3 2477",
+     "date": "2026-10-23",
+     "type": "release",
+     "title": "Tsubomi V2.3 2477 — Starbloom Ultimate",
+     "summary": "Tsubomi V2.3 2477 menambahkan Starbloom Ultimate (oranye mutiara): jajaran Max, 11×11 dan Quick Mining, serta pasif set lengkap terkuat sejauh ini.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Starbloom Ultimate memiliki jajaran Starbloom Max (batangan paduan, beliung, kapak, sekop, cangkul, tombak, helm, baju zirah, celana, sepatu, perisai, busur dan panah). Daya tahan 1.5× milik UltraCore, alatnya menambang 1.25× lebih cepat dari UltraFast, dan serangannya sama dengan Max.",
+        "Batangan Paduan Ultimate dibuat dari 8 Batangan Paduan UltraCore dan satu Kepala Ender Dragon, menghasilkan 8 batangan.",
+        "Beliung Ultimate menambahkan penambangan 11×11 (jongkok lalu gunakan untuk berganti antara 1×1, 3×3, 5×5, 7×7, 9×9 dan 11×11) serta Quick Mining: memecah satu bijih juga menambang bijih lain dari urat yang sama yang terhubung dengannya, hingga 64 blok.",
+        "Mengenakan set zirah Starbloom Ultimate lengkap memberi pasif: kerusakan jatuh −44%, kerusakan api −68%, kerusakan racun −37%, kerusakan lava −71%, sonic boom Warden −51%, kecepatan menambang +9%, kecepatan gerak +11%, serangan +7%, dan peluang 50% setiap efek merugikan baru ditepis. Mendarat setelah jatuh memancarkan gelombang kejut yang memberi 56% dari kerusakan jatuh kepada mob musuh dalam radius 4 blok, dan blok magma tidak lagi melukai. Hanya memakai sebagian set tidak memberi satu pun dari ini."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+        "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.3 2408",
      "date": "2026-10-22",
