@@ -114,11 +114,11 @@
   },
   "tsubomi": {
     "mod_id": "tsubomi",
-    "latest": "2.3.2477",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/tsubomi-2.3.2477.jar",
-    "file_name": "tsubomi-2.3.2477.jar",
-    "file_size": 3455828,
-    "sha256": "134b7c00af21ed619d65b09b24ef9e1d50c54c0b05f12eb3def983f233df75e8"
+    "latest": "2.3.3124",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/tsubomi-2.3.3124.jar",
+    "file_name": "tsubomi-2.3.3124.jar",
+    "file_size": 3501996,
+    "sha256": "4efca4a547e8b548c438ae80cdc7845f7b7294d514c816a23a961878b26f5902"
   },
   "halia": {
     "mod_id": "halia",
