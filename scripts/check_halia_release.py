@@ -309,7 +309,8 @@ def self_test() -> int:
         data = buf.getvalue()
         name = f"halia-{version}.jar"
         (dst / "downloads" / name).write_bytes(data)
-        old.unlink()
+        if old.name != name:      # the staged jar already has this name: unlinking it would delete the new one
+            old.unlink()
 
         def move_block(m):
             m["halia"].update(latest=version, file_name=name, download_url=f"{SITE}/downloads/{name}",
