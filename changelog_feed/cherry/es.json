@@ -1,11 +1,43 @@
 {
  "lang": "es",
  "brand": "cherry",
- "updated": "2026-10-13",
+ "updated": "2026-10-25",
  "title": "Historial de actualizaciones",
- "updated_label": "Actualizado el 2026-10-13",
+ "updated_label": "Actualizado el 2026-10-25",
  "note": "Los valores de daño, velocidad y demás que aparecen aquí son los que trae el MOD por defecto en el momento de cada actualización. Con los ajustes de configuración del servidor, los valores que notes al jugar pueden ser distintos.",
  "groups": [
+  {
+   "label": "V1.3",
+   "summary": "HoyoBrainrot",
+   "releases": [
+    {
+     "version": "V1.3 1017",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "HoyoBrainrot",
+     "summary": "Una actualización cosmética: un paquete de recursos integrado, HoyoBrainrot, creado por Corvus Dev. Ponle nombre a un Tótem de la inmortalidad en un yunque y su icono se convierte en una imagen animada. La forma de jugar no cambia.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "Ponle a un Tótem de la inmortalidad, en un yunque, uno de los nombres de abajo y su icono se convierte en una imagen animada de un personaje: en la barra rápida, en el inventario y en tu mano. Un tótem sin nombre, o con un nombre que no está en la lista, se ve como antes.",
+        "Nombres: evernight, stelle, breakdance, lucia, nefer, march7, gerta, jahoda, cipher, yunli, black swan, ica, vivian, the gerta, nekomata, soukaku draw, soukaku picture, ju fufu, harumasa. También valen las grafías con mayúscula inicial y algunas variantes como \"march 7th\".",
+        "Cuando un tótem se activa, oyes el sonido de este paquete en lugar del de vanilla.",
+        "El paquete viene activado. Para desactivarlo, quita HoyoBrainrot en Opciones, Paquetes de recursos: la imagen y el sonido del tótem vuelven a vanilla.",
+        "El jar pesa unos 23 MB más. El paquete lo creó Corvus Dev."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior, GeckoLib 5.5.6 o superior y Java 25.",
+        "Esta actualización cambia el sonido de cada activación de tótem para todos los jugadores hasta que se desactive el paquete en Paquetes de recursos."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.2",
    "summary": "Guardias, robots, torretas y transporte",

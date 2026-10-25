@@ -769,6 +769,24 @@
      "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0 or newer, GeckoLib 5.5.6 or newer and Java 25.",
      "The turret, the glass elevator, the cargo lift, the security terminal and the robot's rifle do nothing without power: a redstone signal beside the device or, with OUKA V1.2 or later installed, an OUKA pylon's reach. Cherry works without OUKA, and redstone remains its only source then."
     ]
+   },
+   {
+    "id": "cherry-v1.3-1017",
+    "release": "V1.3 1017",
+    "date": "2026-10-25",
+    "title": "HoyoBrainrot",
+    "summary": "A cosmetic update: a built-in resource pack, HoyoBrainrot, made by Corvus Dev. Name a Totem of Undying at an anvil and its icon becomes an animated picture. Nothing about how the game plays changes.",
+    "highlights": [
+     "Name a Totem of Undying at an anvil with one of the names below and its icon turns into an animated character picture: in the hotbar, in the inventory and in your hand. A totem with no name, or with a name not on the list, looks as before.",
+     "Names: evernight, stelle, breakdance, lucia, nefer, march7, gerta, jahoda, cipher, yunli, black swan, ica, vivian, the gerta, nekomata, soukaku draw, soukaku picture, ju fufu, harumasa. Capitalised spellings and a few variants such as \"march 7th\" work too.",
+     "When a totem pops, you hear this pack's sound instead of the vanilla one.",
+     "The pack is on from the start. To switch it off, take HoyoBrainrot out in Options, Resource Packs: the totem's picture and sound go back to vanilla.",
+     "The jar is about 23 MB larger. The pack was made by Corvus Dev."
+    ],
+    "warnings": [
+     "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer, GeckoLib 5.5.6 or newer and Java 25.",
+     "This update changes the sound of every totem pop for every player until the pack is switched off in Resource Packs."
+    ]
    }
   ],
   "aureum": [

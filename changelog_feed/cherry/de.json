@@ -1,11 +1,43 @@
 {
  "lang": "de",
  "brand": "cherry",
- "updated": "2026-10-13",
+ "updated": "2026-10-25",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-13",
+ "updated_label": "Aktualisiert am 2026-10-25",
  "note": "Die angezeigten Werte für Schaden, Geschwindigkeit usw. sind die Standardwerte zum Zeitpunkt der Einführung. Durch Config-Anpassungen auf dem Server können die tatsächlich spürbaren Werte davon abweichen.",
  "groups": [
+  {
+   "label": "V1.3",
+   "summary": "HoyoBrainrot",
+   "releases": [
+    {
+     "version": "V1.3 1017",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "HoyoBrainrot",
+     "summary": "Ein kosmetisches Update: ein eingebautes Ressourcenpaket, HoyoBrainrot, von Corvus Dev. Benenne einen Totem der Unsterblichkeit am Amboss, und sein Symbol wird zu einem animierten Bild. Am Spielablauf ändert sich nichts.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Benenne einen Totem der Unsterblichkeit am Amboss mit einem der Namen unten, und sein Symbol wird zu einem animierten Charakterbild: in der Schnellleiste, im Inventar und in deiner Hand. Ein Totem ohne Namen oder mit einem Namen, der nicht auf der Liste steht, sieht aus wie vorher.",
+        "Namen: evernight, stelle, breakdance, lucia, nefer, march7, gerta, jahoda, cipher, yunli, black swan, ica, vivian, the gerta, nekomata, soukaku draw, soukaku picture, ju fufu, harumasa. Auch Schreibweisen mit großem Anfangsbuchstaben und einige Varianten wie \"march 7th\" funktionieren.",
+        "Wenn ein Totem auslöst, hörst du den Klang dieses Pakets statt des Vanilla-Klangs.",
+        "Das Paket ist von Anfang an aktiv. Zum Ausschalten nimmst du HoyoBrainrot unter Optionen, Ressourcenpakete heraus: Bild und Klang des Totems sind dann wieder Vanilla.",
+        "Die Jar ist etwa 23 MB größer. Das Paket wurde von Corvus Dev gemacht."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer, GeckoLib 5.5.6 oder neuer und Java 25.",
+        "Dieses Update ändert den Klang jedes Totem-Auslösens für alle Spieler, bis das Paket unter Ressourcenpakete ausgeschaltet wird."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.2",
    "summary": "Wachen, Roboter, Geschütztürme und Transport",

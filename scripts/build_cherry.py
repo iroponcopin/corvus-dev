@@ -201,79 +201,79 @@ COPY = {
         "title": "Cherry",
         "desc": "OUKA のすぐ下に位置するブランド。",
         "lede": "OUKA のすぐ下に位置するブランド。",
-        "line": "村には衛兵、空にはエレベーター。",
+        "line": "トーテムが、動き出す。",
     },
     "en": {
         "title": "Cherry",
         "desc": "The tier just below OUKA.",
         "lede": "The tier just below OUKA.",
-        "line": "Guards in the villages, lifts to the sky.",
+        "line": "The totem moves.",
     },
     "es": {
         "title": "Cherry",
         "desc": "El nivel justo por debajo de OUKA.",
         "lede": "El nivel justo por debajo de OUKA.",
-        "line": "Guardias en las aldeas, ascensores hacia el cielo.",
+        "line": "El tótem cobra vida.",
     },
     "fr": {
         "title": "Cherry",
         "desc": "Le niveau juste en dessous d'OUKA.",
         "lede": "Le niveau juste en dessous d'OUKA.",
-        "line": "Des gardes dans les villages, des ascenseurs vers le ciel.",
+        "line": "Le totem s'anime.",
     },
     "zh": {
         "title": "Cherry",
         "desc": "位于 OUKA 之下的品牌。",
         "lede": "位于 OUKA 之下的品牌。",
-        "line": "村庄有卫兵，天空有电梯。",
+        "line": "图腾，动起来了。",
     },
     "ko": {
         "title": "Cherry",
         "desc": "OUKA 바로 아래에 자리한 브랜드입니다.",
         "lede": "OUKA 바로 아래에 자리한 브랜드입니다.",
-        "line": "마을엔 경비병, 하늘엔 엘리베이터.",
+        "line": "토템이 움직입니다.",
     },
     "pt-br": {
         "title": "Cherry",
         "desc": "O nível logo abaixo de OUKA.",
         "lede": "O nível logo abaixo de OUKA.",
-        "line": "Guardas nas aldeias, elevadores rumo ao céu.",
+        "line": "O totem ganha vida.",
     },
     "it": {
         "title": "Cherry",
         "desc": "Il livello appena sotto OUKA.",
         "lede": "Il livello appena sotto OUKA.",
-        "line": "Guardie nei villaggi, ascensori verso il cielo.",
+        "line": "Il totem si anima.",
     },
     "ar": {
         "title": "Cherry",
         "desc": "المستوى الذي يلي OUKA مباشرة.",
         "lede": "المستوى الذي يلي OUKA مباشرة.",
-        "line": "حراس في القرى، ومصاعد نحو السماء.",
+        "line": "الطوطم يتحرك.",
     },
     "ru": {
         "title": "Cherry",
         "desc": "Уровень сразу под OUKA.",
         "lede": "Уровень сразу под OUKA.",
-        "line": "Стражи в деревнях, лифты в небо.",
+        "line": "Тотем оживает.",
     },
     "id": {
         "title": "Cherry",
         "desc": "Tingkat tepat di bawah OUKA.",
         "lede": "Tingkat tepat di bawah OUKA.",
-        "line": "Penjaga di desa, lift menuju langit.",
+        "line": "Totem pun bergerak.",
     },
     "de": {
         "title": "Cherry",
         "desc": "Die Stufe direkt unter OUKA.",
         "lede": "Die Stufe direkt unter OUKA.",
-        "line": "Wachen in den Dörfern, Aufzüge in den Himmel.",
+        "line": "Der Totem kommt in Bewegung.",
     },
     "tr": {
         "title": "Cherry",
         "desc": "OUKA'nın hemen altındaki seviye.",
         "lede": "OUKA'nın hemen altındaki seviye.",
-        "line": "Köylerde muhafızlar, gökyüzüne asansörler.",
+        "line": "Totem hareketleniyor.",
     },
 }
 
@@ -282,8 +282,8 @@ KEYS = ("title", "desc", "lede", "line")
 # --- the release ---------------------------------------------------------------
 # The release COPY's `line` and CODENAME were written for. A newer zip stops the
 # build until its own line and name exist (see the docstring).
-COPY_FOR = "1.2.1"
-CODENAME = "The Citadel & Transit Overhaul"
+COPY_FOR = "1.3.1017"
+CODENAME = "HoyoBrainrot"
 FIRST_RELEASE = (1, 0, 0)
 RELEASE_RE = re.compile(r"^Cherry_MODs_v(?P<ver>\d+(?:\.\d+)*)\+mc(?P<mc>\d+(?:\.\d+)*)\.zip$")
 # The Download page's own translations (data/i18n/<lang>.json "download").

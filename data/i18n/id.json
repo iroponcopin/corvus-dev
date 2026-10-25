@@ -765,6 +765,24 @@
      "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0 atau lebih baru, GeckoLib 5.5.6 atau lebih baru, dan Java 25.",
      "Turret, lift kaca, lift kargo, terminal keamanan, dan senapan robot tidak berfungsi tanpa daya: sinyal redstone di samping perangkat atau, dengan OUKA V1.2 atau yang lebih baru terpasang, jangkauan pilon OUKA. Cherry berjalan tanpa OUKA, dan redstone lalu menjadi satu-satunya sumbernya."
     ]
+   },
+   {
+    "id": "cherry-v1.3-1017",
+    "release": "V1.3 1017",
+    "date": "2026-10-25",
+    "title": "HoyoBrainrot",
+    "summary": "Pembaruan tampilan: paket sumber daya bawaan, HoyoBrainrot, buatan Corvus Dev. Beri nama Totem Keabadian di landasan dan ikonnya menjadi gambar bergerak. Cara bermain tidak berubah.",
+    "highlights": [
+     "Beri nama Totem Keabadian di landasan dengan salah satu nama di bawah dan ikonnya menjadi gambar karakter yang bergerak: di hotbar, di inventaris, dan di tanganmu. Totem tanpa nama, atau dengan nama yang tidak ada di daftar, tetap seperti semula.",
+     "Nama: evernight, stelle, breakdance, lucia, nefer, march7, gerta, jahoda, cipher, yunli, black swan, ica, vivian, the gerta, nekomata, soukaku draw, soukaku picture, ju fufu, harumasa. Ejaan berawalan huruf kapital dan beberapa variasi seperti \"march 7th\" juga berfungsi.",
+     "Saat totem aktif, kamu mendengar suara dari paket ini, bukan suara vanilla.",
+     "Paket ini aktif sejak awal. Untuk mematikannya, lepas HoyoBrainrot di Opsi, Paket Sumber Daya: gambar dan suara totem kembali ke vanilla.",
+     "Jar menjadi sekitar 23 MB lebih besar. Paket ini dibuat oleh Corvus Dev."
+    ],
+    "warnings": [
+     "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, GeckoLib 5.5.6 atau lebih baru, dan Java 25.",
+     "Pembaruan ini mengubah suara setiap aktivasi totem untuk semua pemain sampai paket dimatikan di Paket Sumber Daya."
+    ]
    }
   ],
   "aureum": [

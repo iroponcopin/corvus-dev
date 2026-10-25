@@ -1,11 +1,43 @@
 {
  "lang": "ja",
  "brand": "cherry",
- "updated": "2026-10-13",
+ "updated": "2026-10-25",
  "title": "更新履歴",
- "updated_label": "最終更新 2026-10-13",
+ "updated_label": "最終更新 2026-10-25",
  "note": "表示されているダメージ・速度などの数値は導入時点の既定値です。サーバー側の config 調整により、実際にプレイして体感する数値とは異なる場合があります。",
  "groups": [
+  {
+   "label": "V1.3",
+   "summary": "HoyoBrainrot",
+   "releases": [
+    {
+     "version": "V1.3 1017",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "HoyoBrainrot",
+     "summary": "見た目だけの更新です。組み込みリソースパック「HoyoBrainrot」(制作: Corvus Dev)が入りました。金床で不死のトーテムに名前を付けると、そのアイコンが動く絵に変わります。ゲームの遊び方は何も変わりません。",
+     "sections": [
+      {
+       "title": "変更点",
+       "items": [
+        "金床で不死のトーテムに下の名前を付けると、アイコンが動くキャラクターアートに変わります(ホットバー、インベントリ、手に持った姿)。名前のないトーテム、リストにない名前のトーテムは今までどおりです。",
+        "名前: evernight, stelle, breakdance, lucia, nefer, march7, gerta, jahoda, cipher, yunli, black swan, ica, vivian, the gerta, nekomata, soukaku draw, soukaku picture, ju fufu, harumasa。大文字で始まる綴りと、「march 7th」などいくつかの綴りも使えます。",
+        "トーテムが発動したときの音が、バニラの音ではなくこのパックの音になります。",
+        "パックは最初から有効です。使わないときは、設定のリソースパックで HoyoBrainrot を外してください。トーテムの絵も音もバニラに戻ります。",
+        "jar が約 23 MB 大きくなりました。パックの制作は Corvus Dev です。"
+       ]
+      },
+      {
+       "title": "注意点",
+       "items": [
+        "Minecraft 26.3、Fabric Loader 0.19.5 以上、Fabric API 0.161.0+26.3 以上、GeckoLib 5.5.6 以上、Java 25 が必要です。",
+        "パックをリソースパックで外すまで、すべてのプレイヤーのトーテム発動音が変わります。"
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.2",
    "summary": "衛兵、警備ロボット、タレット、そして乗り物の移動手段",

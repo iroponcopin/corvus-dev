@@ -1,11 +1,43 @@
 {
  "lang": "zh",
  "brand": "cherry",
- "updated": "2026-10-13",
+ "updated": "2026-10-25",
  "title": "更新日志",
- "updated_label": "更新于 2026-10-13",
+ "updated_label": "更新于 2026-10-25",
  "note": "页面中显示的伤害、速度等数值均为导入时的默认值。服务器可能通过 config 进行了调整，实际游玩时体验到的数值可能有所不同。",
  "groups": [
+  {
+   "label": "V1.3",
+   "summary": "HoyoBrainrot",
+   "releases": [
+    {
+     "version": "V1.3 1017",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "HoyoBrainrot",
+     "summary": "一次外观更新：内置资源包 HoyoBrainrot，由 Corvus Dev 制作。在铁砧上给不死图腾命名，它的图标就会变成动画图片。游戏玩法不变。",
+     "sections": [
+      {
+       "title": "更新内容",
+       "items": [
+        "在铁砧上用下面的名字给不死图腾命名，图标就会变成会动的角色图片：在快捷栏、物品栏和手上都一样。没有名字、或名字不在列表里的图腾和以前一样。",
+        "名字：evernight, stelle, breakdance, lucia, nefer, march7, gerta, jahoda, cipher, yunli, black swan, ica, vivian, the gerta, nekomata, soukaku draw, soukaku picture, ju fufu, harumasa。首字母大写的写法以及“march 7th”等几种写法也可以。",
+        "图腾触发时，会听到这个资源包的声音，而不是原版的声音。",
+        "资源包默认开启。想关闭时，在选项的资源包里移除 HoyoBrainrot：图腾的图片和声音就会恢复原版。",
+        "jar 大了约 23 MB。资源包由 Corvus Dev 制作。"
+       ]
+      },
+      {
+       "title": "注意事项",
+       "items": [
+        "需要 Minecraft 26.3、Fabric Loader 0.19.5 或更高版本、Fabric API 0.161.0+26.3 或更高版本、GeckoLib 5.5.6 或更高版本以及 Java 25。",
+        "在资源包里关闭之前，这次更新会改变所有玩家的图腾触发音效。"
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.2",
    "summary": "守卫、机器人、炮塔与交通",

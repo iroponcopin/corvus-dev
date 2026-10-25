@@ -765,6 +765,24 @@
      "Erfordert Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0 oder neuer, GeckoLib 5.5.6 oder neuer und Java 25.",
      "Geschützturm, Glasaufzug, Schwerlastaufzug, Sicherheitsterminal und das Gewehr des Roboters tun ohne Energie nichts: ein Redstone-Signal neben dem Gerät oder, mit installiertem OUKA V1.2 oder neuer, die Reichweite eines OUKA-Pylons. Cherry läuft ohne OUKA, und Redstone ist dann die einzige Quelle."
     ]
+   },
+   {
+    "id": "cherry-v1.3-1017",
+    "release": "V1.3 1017",
+    "date": "2026-10-25",
+    "title": "HoyoBrainrot",
+    "summary": "Ein kosmetisches Update: ein eingebautes Ressourcenpaket, HoyoBrainrot, von Corvus Dev. Benenne einen Totem der Unsterblichkeit am Amboss, und sein Symbol wird zu einem animierten Bild. Am Spielablauf ändert sich nichts.",
+    "highlights": [
+     "Benenne einen Totem der Unsterblichkeit am Amboss mit einem der Namen unten, und sein Symbol wird zu einem animierten Charakterbild: in der Schnellleiste, im Inventar und in deiner Hand. Ein Totem ohne Namen oder mit einem Namen, der nicht auf der Liste steht, sieht aus wie vorher.",
+     "Namen: evernight, stelle, breakdance, lucia, nefer, march7, gerta, jahoda, cipher, yunli, black swan, ica, vivian, the gerta, nekomata, soukaku draw, soukaku picture, ju fufu, harumasa. Auch Schreibweisen mit großem Anfangsbuchstaben und einige Varianten wie \"march 7th\" funktionieren.",
+     "Wenn ein Totem auslöst, hörst du den Klang dieses Pakets statt des Vanilla-Klangs.",
+     "Das Paket ist von Anfang an aktiv. Zum Ausschalten nimmst du HoyoBrainrot unter Optionen, Ressourcenpakete heraus: Bild und Klang des Totems sind dann wieder Vanilla.",
+     "Die Jar ist etwa 23 MB größer. Das Paket wurde von Corvus Dev gemacht."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer, GeckoLib 5.5.6 oder neuer und Java 25.",
+     "Dieses Update ändert den Klang jedes Totem-Auslösens für alle Spieler, bis das Paket unter Ressourcenpakete ausgeschaltet wird."
+    ]
    }
   ],
   "aureum": [

@@ -1,11 +1,43 @@
 {
  "lang": "tr",
  "brand": "cherry",
- "updated": "2026-10-13",
+ "updated": "2026-10-25",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-13 tarihinde güncellendi",
+ "updated_label": "2026-10-25 tarihinde güncellendi",
  "note": "Gösterilen hasar, hız gibi değerler MOD'un o an kurulan sürümündeki varsayılan değerlerdir. Sunucu tarafında yapılan config ayarlarına göre, oyun içinde hissettiğiniz gerçek değerler farklı olabilir.",
  "groups": [
+  {
+   "label": "V1.3",
+   "summary": "HoyoBrainrot",
+   "releases": [
+    {
+     "version": "V1.3 1017",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "HoyoBrainrot",
+     "summary": "Görünüm güncellemesi: Corvus Dev yapımı yerleşik kaynak paketi HoyoBrainrot. Örsün üzerinde bir Ölümsüzlük Totemi'ne ad ver, simgesi hareketli bir resme dönüşsün. Oynanış değişmez.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Örsün üzerinde bir Ölümsüzlük Totemi'ne aşağıdaki adlardan birini ver; simgesi hareketli bir karakter resmine dönüşür: hızlı erişim çubuğunda, envanterde ve elinde. Adsız totem ya da listede olmayan adlı totem eskisi gibi görünür.",
+        "Adlar: evernight, stelle, breakdance, lucia, nefer, march7, gerta, jahoda, cipher, yunli, black swan, ica, vivian, the gerta, nekomata, soukaku draw, soukaku picture, ju fufu, harumasa. Büyük harfle başlayan yazımlar ve \"march 7th\" gibi bazı varyantlar da çalışır.",
+        "Bir totem tetiklendiğinde vanilla ses yerine bu paketin sesini duyarsın.",
+        "Paket baştan açıktır. Kapatmak için Seçenekler, Kaynak Paketleri bölümünden HoyoBrainrot'u çıkar: totemin resmi ve sesi vanilla'ya döner.",
+        "Jar yaklaşık 23 MB büyüdü. Paketi Corvus Dev yaptı."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya üstü, Fabric API 0.161.0+26.3 veya üstü, GeckoLib 5.5.6 veya üstü ve Java 25 gerekir.",
+        "Paket Kaynak Paketleri'nden kapatılana kadar bu güncelleme tüm oyuncular için totem tetiklenme sesini değiştirir."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.2",
    "summary": "Muhafızlar, robotlar, taretler ve ulaşım",

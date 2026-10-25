@@ -79,7 +79,8 @@ BRAND_SECTION = "cherry/"
 # navigation console, and this page covers aircraft and ships only (1.1.4..1.2.0 on the Cherry branch)
 # 1.2.1 changed no aircraft or ship key (AircraftInput, VesselHelmInput, VesselStationInput, VesselGunneryInput and VesselChartScreen are byte-identical
 # between the V1.2.0 final fixes 4d0b3fc and 1.2.1; its new items are not aircraft or ships): the copy stays true
-CONTROLS_FOR = "1.2.1"
+# 1.3.1017 changed no key at all (the only main-source change is the pack registration in CherryClient and HoyoBrainrotPack): the copy stays true
+CONTROLS_FOR = "1.3.1017"
 RELEASE_RE = re.compile(r"^Cherry_MODs_v(?P<ver>\d+(?:\.\d+)*)\+mc(?P<mc>\d+(?:\.\d+)*)\.zip$")
 
 # The game's own names for the keys whose names are translated (vanilla 26.3 lang files).

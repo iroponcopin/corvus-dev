@@ -900,6 +900,24 @@
      "Minecraft 26.3、Fabric Loader 0.19.5 以上、Fabric API 0.161.0 以上、GeckoLib 5.5.6 以上、Java 25 が必要です。",
      "タレット、ガラスのエレベーター、カーゴエレベーター、セキュリティ端末、ロボットのライフルは、電力がないと動きません。装置の隣のレッドストーン信号か、OUKA V1.2 以降を導入している場合は OUKA のパイロンの届く範囲が必要です。Cherry は OUKA がなくても動き、その場合の電力はレッドストーンだけです。"
     ]
+   },
+   {
+    "id": "cherry-v1.3-1017",
+    "release": "V1.3 1017",
+    "date": "2026-10-25",
+    "title": "HoyoBrainrot",
+    "summary": "見た目だけの更新です。組み込みリソースパック「HoyoBrainrot」(制作: Corvus Dev)が入りました。金床で不死のトーテムに名前を付けると、そのアイコンが動く絵に変わります。ゲームの遊び方は何も変わりません。",
+    "highlights": [
+     "金床で不死のトーテムに下の名前を付けると、アイコンが動くキャラクターアートに変わります(ホットバー、インベントリ、手に持った姿)。名前のないトーテム、リストにない名前のトーテムは今までどおりです。",
+     "名前: evernight, stelle, breakdance, lucia, nefer, march7, gerta, jahoda, cipher, yunli, black swan, ica, vivian, the gerta, nekomata, soukaku draw, soukaku picture, ju fufu, harumasa。大文字で始まる綴りと、「march 7th」などいくつかの綴りも使えます。",
+     "トーテムが発動したときの音が、バニラの音ではなくこのパックの音になります。",
+     "パックは最初から有効です。使わないときは、設定のリソースパックで HoyoBrainrot を外してください。トーテムの絵も音もバニラに戻ります。",
+     "jar が約 23 MB 大きくなりました。パックの制作は Corvus Dev です。"
+    ],
+    "warnings": [
+     "Minecraft 26.3、Fabric Loader 0.19.5 以上、Fabric API 0.161.0+26.3 以上、GeckoLib 5.5.6 以上、Java 25 が必要です。",
+     "パックをリソースパックで外すまで、すべてのプレイヤーのトーテム発動音が変わります。"
+    ]
    }
   ],
   "aureum": [

@@ -1,11 +1,43 @@
 {
  "lang": "fr",
  "brand": "cherry",
- "updated": "2026-10-13",
+ "updated": "2026-10-25",
  "title": "Historique des mises à jour",
- "updated_label": "Mis à jour le 2026-10-13",
+ "updated_label": "Mis à jour le 2026-10-25",
  "note": "Les valeurs affichées (dégâts, vitesse, etc.) sont les valeurs par défaut au moment de la sortie. Selon les réglages de configuration appliqués côté serveur, les valeurs réellement ressenties en jeu peuvent différer.",
  "groups": [
+  {
+   "label": "V1.3",
+   "summary": "HoyoBrainrot",
+   "releases": [
+    {
+     "version": "V1.3 1017",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "HoyoBrainrot",
+     "summary": "Une mise à jour cosmétique : un pack de ressources intégré, HoyoBrainrot, créé par Corvus Dev. Renommez un Totem d'immortalité sur une enclume et son icône devient une image animée. La façon de jouer ne change pas.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Renommez un Totem d'immortalité sur une enclume avec l'un des noms ci-dessous et son icône devient une image animée de personnage : dans la barre d'objets, dans l'inventaire et dans votre main. Un totem sans nom, ou avec un nom absent de la liste, reste comme avant.",
+        "Noms : evernight, stelle, breakdance, lucia, nefer, march7, gerta, jahoda, cipher, yunli, black swan, ica, vivian, the gerta, nekomata, soukaku draw, soukaku picture, ju fufu, harumasa. Les graphies avec majuscule et quelques variantes comme \"march 7th\" fonctionnent aussi.",
+        "Quand un totem se déclenche, vous entendez le son de ce pack à la place du son vanilla.",
+        "Le pack est activé dès le départ. Pour le désactiver, retirez HoyoBrainrot dans Options, Packs de ressources : l'image et le son du totem redeviennent vanilla.",
+        "Le jar pèse environ 23 Mo de plus. Le pack a été créé par Corvus Dev."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent, GeckoLib 5.5.6 ou plus récent et Java 25.",
+        "Cette mise à jour change le son de chaque déclenchement de totem pour tous les joueurs, tant que le pack n'est pas désactivé dans Packs de ressources."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.2",
    "summary": "Gardes, robots, tourelles et transport",

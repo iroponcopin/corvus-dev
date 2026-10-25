@@ -765,6 +765,24 @@
      "Minecraft 26.3, Fabric Loader 0.19.5 veya üzeri, Fabric API 0.161.0 veya üzeri, GeckoLib 5.5.6 veya üzeri ve Java 25 gerektirir.",
      "Taret, cam asansör, yük asansörü, güvenlik terminali ve robotun tüfeği enerjisiz çalışmaz: cihazın yanında bir kızıltaş sinyali ya da OUKA V1.2 veya üzeri kuruluysa bir OUKA direğinin menzili gerekir. Cherry OUKA'sız da çalışır ve o zaman tek kaynağı kızıltaştır."
     ]
+   },
+   {
+    "id": "cherry-v1.3-1017",
+    "release": "V1.3 1017",
+    "date": "2026-10-25",
+    "title": "HoyoBrainrot",
+    "summary": "Görünüm güncellemesi: Corvus Dev yapımı yerleşik kaynak paketi HoyoBrainrot. Örsün üzerinde bir Ölümsüzlük Totemi'ne ad ver, simgesi hareketli bir resme dönüşsün. Oynanış değişmez.",
+    "highlights": [
+     "Örsün üzerinde bir Ölümsüzlük Totemi'ne aşağıdaki adlardan birini ver; simgesi hareketli bir karakter resmine dönüşür: hızlı erişim çubuğunda, envanterde ve elinde. Adsız totem ya da listede olmayan adlı totem eskisi gibi görünür.",
+     "Adlar: evernight, stelle, breakdance, lucia, nefer, march7, gerta, jahoda, cipher, yunli, black swan, ica, vivian, the gerta, nekomata, soukaku draw, soukaku picture, ju fufu, harumasa. Büyük harfle başlayan yazımlar ve \"march 7th\" gibi bazı varyantlar da çalışır.",
+     "Bir totem tetiklendiğinde vanilla ses yerine bu paketin sesini duyarsın.",
+     "Paket baştan açıktır. Kapatmak için Seçenekler, Kaynak Paketleri bölümünden HoyoBrainrot'u çıkar: totemin resmi ve sesi vanilla'ya döner.",
+     "Jar yaklaşık 23 MB büyüdü. Paketi Corvus Dev yaptı."
+    ],
+    "warnings": [
+     "Minecraft 26.3, Fabric Loader 0.19.5 veya üstü, Fabric API 0.161.0+26.3 veya üstü, GeckoLib 5.5.6 veya üstü ve Java 25 gerekir.",
+     "Paket Kaynak Paketleri'nden kapatılana kadar bu güncelleme tüm oyuncular için totem tetiklenme sesini değiştirir."
+    ]
    }
   ],
   "aureum": [

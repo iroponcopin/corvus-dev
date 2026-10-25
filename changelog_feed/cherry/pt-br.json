@@ -1,11 +1,43 @@
 {
  "lang": "pt-br",
  "brand": "cherry",
- "updated": "2026-10-13",
+ "updated": "2026-10-25",
  "title": "Histórico de atualizações",
- "updated_label": "Atualizado em 2026-10-13",
+ "updated_label": "Atualizado em 2026-10-25",
  "note": "Os valores de dano, velocidade etc. mostrados aqui são os padrões de quando o item foi lançado. Como a administração do servidor pode ajustar a configuração, os números que você sente no jogo podem ser diferentes.",
  "groups": [
+  {
+   "label": "V1.3",
+   "summary": "HoyoBrainrot",
+   "releases": [
+    {
+     "version": "V1.3 1017",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "HoyoBrainrot",
+     "summary": "Uma atualização cosmética: um pacote de recursos embutido, HoyoBrainrot, feito pela Corvus Dev. Dê nome a um Totem da Imortalidade numa bigorna e o ícone vira uma imagem animada. O jogo em si não muda.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "Dê a um Totem da Imortalidade, numa bigorna, um dos nomes abaixo e o ícone vira uma imagem animada de personagem: na barra de atalhos, no inventário e na sua mão. Um totem sem nome, ou com um nome fora da lista, fica como antes.",
+        "Nomes: evernight, stelle, breakdance, lucia, nefer, march7, gerta, jahoda, cipher, yunli, black swan, ica, vivian, the gerta, nekomata, soukaku draw, soukaku picture, ju fufu, harumasa. Grafias com inicial maiúscula e algumas variantes como \"march 7th\" também funcionam.",
+        "Quando um totem é ativado, você ouve o som deste pacote em vez do som vanilla.",
+        "O pacote já vem ativado. Para desativar, tire HoyoBrainrot em Opções, Pacotes de recursos: a imagem e o som do totem voltam ao vanilla.",
+        "O jar fica cerca de 23 MB maior. O pacote foi feito pela Corvus Dev."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente, Fabric API 0.161.0+26.3 ou mais recente, GeckoLib 5.5.6 ou mais recente e Java 25.",
+        "Esta atualização muda o som de cada ativação de totem para todos os jogadores até o pacote ser desativado em Pacotes de recursos."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.2",
    "summary": "Guardas, robôs, torres e transporte",

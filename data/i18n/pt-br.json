@@ -765,6 +765,24 @@
      "Requer Minecraft 26.3, Fabric Loader 0.19.5 ou posterior, Fabric API 0.161.0 ou posterior, GeckoLib 5.5.6 ou posterior e Java 25.",
      "A torre, o elevador de vidro, o elevador de carga, o terminal de segurança e o rifle do robô não fazem nada sem energia: um sinal de redstone ao lado do dispositivo ou, com o OUKA V1.2 ou posterior instalado, o alcance de um pilar do OUKA. O Cherry funciona sem o OUKA, e então a redstone é a sua única fonte."
     ]
+   },
+   {
+    "id": "cherry-v1.3-1017",
+    "release": "V1.3 1017",
+    "date": "2026-10-25",
+    "title": "HoyoBrainrot",
+    "summary": "Uma atualização cosmética: um pacote de recursos embutido, HoyoBrainrot, feito pela Corvus Dev. Dê nome a um Totem da Imortalidade numa bigorna e o ícone vira uma imagem animada. O jogo em si não muda.",
+    "highlights": [
+     "Dê a um Totem da Imortalidade, numa bigorna, um dos nomes abaixo e o ícone vira uma imagem animada de personagem: na barra de atalhos, no inventário e na sua mão. Um totem sem nome, ou com um nome fora da lista, fica como antes.",
+     "Nomes: evernight, stelle, breakdance, lucia, nefer, march7, gerta, jahoda, cipher, yunli, black swan, ica, vivian, the gerta, nekomata, soukaku draw, soukaku picture, ju fufu, harumasa. Grafias com inicial maiúscula e algumas variantes como \"march 7th\" também funcionam.",
+     "Quando um totem é ativado, você ouve o som deste pacote em vez do som vanilla.",
+     "O pacote já vem ativado. Para desativar, tire HoyoBrainrot em Opções, Pacotes de recursos: a imagem e o som do totem voltam ao vanilla.",
+     "O jar fica cerca de 23 MB maior. O pacote foi feito pela Corvus Dev."
+    ],
+    "warnings": [
+     "Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente, Fabric API 0.161.0+26.3 ou mais recente, GeckoLib 5.5.6 ou mais recente e Java 25.",
+     "Esta atualização muda o som de cada ativação de totem para todos os jogadores até o pacote ser desativado em Pacotes de recursos."
+    ]
    }
   ],
   "aureum": [
