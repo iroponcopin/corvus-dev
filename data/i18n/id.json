@@ -1162,6 +1162,25 @@
      "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
      "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-0204",
+    "title": "Tsubomi V2.4 0204 — Starbloom Corvus Mythic dan Mythic Pearl, Wings, Blok Bintang Nether",
+    "summary": "Tsubomi V2.4 0204 menambahkan Starbloom Corvus Mythic dan Starbloom Corvus Mythic Pearl, Wings, Blok Bintang Nether, balok struktur yang mencapai 256×300×256, dan Overworld yang dapat dibangun hingga y = 1999, serta memperbaiki dua bug.",
+    "highlights": [
+     "Perbaikan: memakai set lengkap Starbloom Corvus dengan Elytra For Corvus, jatuh tidak lagi melukai sama sekali (sebelumnya bonus jatuh hanya dimatikan, sehingga jatuh tetap memberi kerusakan penuh); dan Pancing UltraFast Starbloom sekarang benar-benar memancing (pelampungnya dulu hilang sesaat setelah dilempar).",
+     "Starbloom Corvus Mythic (hitam dengan ungu gelap) memiliki jajaran Starbloom Max dan berada di atas Corvus di semua aspek: daya tahan dan kecepatan menambang 1.3×, alat yang memukul 10% lebih keras, beliung hingga 16×16, dan pasif set lengkap yaitu jatuh −65%, api −74%, racun −45%, lava −77%, sonic boom Penunggu −72%, kecepatan menambang +15%, kecepatan gerak +30%, serangan +22%, peluang 72% menepis setiap efek merugikan baru, dan gelombang kejut saat mendarat sebesar 70% dari jatuh. Starbloom Corvus Mythic Pearl (hitam dengan putih mutiara) berada di atas Mythic: 1.25× lagi, beliung hingga 18×18, dan pasif −75%, −80%, −53%, −83%, −80%, +19%, +36%, +27%, 78%, dan 80%.",
+     "Batangan Paduan Mythic dibuat dari 7 Batangan Paduan Corvus, sebuah Lambang Corvus, dan sebuah Blok Bintang Nether, menghasilkan 7 batangan. Batangan Paduan Pearl dibuat dari 6 Batangan Paduan Mythic, 2 Blok Bintang Nether, dan sebuah Mutiara Ender, menghasilkan 6 batangan. Blok Bintang Nether dibuat dari 9 Batangan Netherstar, dan kembali menjadi 9.",
+     "Wings adalah item dada. Buka di udara dengan lompatan, seperti Elytra, lalu terbang di langit; Wings memerlukan minimal 5 food untuk terbang, membuat Anda lelah sesuai jarak yang ditempuh, dan membuat jatuh tidak berbahaya. Wings dibuat dari 4 Batangan Paduan Mythic, 3 Blok Bintang Nether, sebuah Elytra For Corvus, dan sebuah Lambang Corvus, dan dihitung sebagai baju dada set Mythic dan Pearl.",
+     "Balok struktur kini mencapai 256×300×256 (offset hingga ±512, dan pemindaian sudut melihat 320 blok di sekitarnya). Overworld kini dapat dibangun hingga y = 1999 (sebelumnya y = 319). Kedua perubahan ini memerlukan Tsubomi di server dan di setiap klien. Menyimpan atau memuat area yang sangat besar membutuhkan banyak memori, sehingga game menolak yang tidak muat di memori bebas dan menyebutkan kebutuhannya (256×300×256 penuh membutuhkan sekitar 8,5 GB)."
+    ],
+    "warnings": [
+     "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+     "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha.",
+     "Tsubomi harus terpasang di server dan di setiap klien: ukuran balok struktur dan tinggi langit membutuhkannya di kedua sisi.",
+     "Garis tepi area balok struktur belum terlihat tergambar di klien game sungguhan saat pengujian; ukurannya sudah dipastikan, garis tepinya belum.",
+     "Pose mendarat dan jatuh Wings serta suara kepakan sayapnya belum selesai."
+    ]
    }
   ],
   "halia": [

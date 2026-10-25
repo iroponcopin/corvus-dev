@@ -1,11 +1,46 @@
 {
  "lang": "fr",
  "brand": "tsubomi",
- "updated": "2026-10-23",
+ "updated": "2026-10-25",
  "title": "Historique des mises à jour",
- "updated_label": "Mis à jour le 2026-10-23",
+ "updated_label": "Mis à jour le 2026-10-25",
  "note": "",
  "groups": [
+  {
+   "label": "V2.4",
+   "summary": "Tsubomi V2.4 0204 — Floraison d'étoile Corvus Mythic et Mythic Pearl, Wings, bloc d'étoile du Nether",
+   "releases": [
+    {
+     "version": "V2.4 0204",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "Tsubomi V2.4 0204 — Floraison d'étoile Corvus Mythic et Mythic Pearl, Wings, bloc d'étoile du Nether",
+     "summary": "Tsubomi V2.4 0204 ajoute Floraison d'étoile Corvus Mythic et Floraison d'étoile Corvus Mythic Pearl, les Wings, le bloc d'étoile du Nether, un bloc de structure allant jusqu'à 256×300×256 et un Overworld constructible jusqu'à y = 1999, et corrige deux bugs.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Corrections : porter un ensemble complet de Floraison d'étoile Corvus avec les Elytra For Corvus n'inflige plus aucun dégât de chute (avant, le bonus de chute était seulement désactivé, donc les chutes infligeaient tous les dégâts) ; et la Canne à pêche UltraFast Floraison d'étoile pêche désormais réellement (son flotteur disparaissait peu après le lancer).",
+        "Floraison d'étoile Corvus Mythic (noir avec violet foncé) reprend la gamme de Floraison d'étoile Max et est au-dessus de Corvus partout : 1.3× de durabilité et de vitesse de minage, des outils qui frappent 10% plus fort, une pioche jusqu'à 16×16, et un passif de panoplie complète de chute −65%, feu −74%, poison −45%, lave −77%, boom sonique du Warden −72%, vitesse de minage +15%, vitesse de déplacement +30%, attaque +22%, 72% de chances de repousser chaque nouvel effet néfaste et une onde de choc à l'atterrissage de 70% de la chute. Floraison d'étoile Corvus Mythic Pearl (noir avec blanc nacré) est à son tour au-dessus de Mythic : encore 1.25×, une pioche jusqu'à 18×18, et des passifs de −75%, −80%, −53%, −83%, −80%, +19%, +36%, +27%, 78% et 80%.",
+        "Le lingot d'alliage Mythic se fabrique avec 7 lingots d'alliage Corvus, un emblème Corvus et un bloc d'étoile du Nether, et donne 7 lingots. Le lingot d'alliage Pearl se fabrique avec 6 lingots d'alliage Mythic, 2 blocs d'étoile du Nether et une Perle de l'Ender, et donne 6 lingots. Le bloc d'étoile du Nether se fabrique avec 9 lingots de Netherstar et se retransforme en 9 lingots.",
+        "Les Wings sont un objet de plastron. Ouvrez-les en l'air d'un saut, comme des élytres, et volez dans le ciel ; il faut au moins 5 points de faim pour voler, la distance parcourue fatigue, et les chutes deviennent sans danger. Les Wings se fabriquent avec 4 lingots d'alliage Mythic, 3 blocs d'étoile du Nether, une Elytra For Corvus et un emblème Corvus, et comptent comme pièce de plastron des panoplies Mythic et Pearl.",
+        "Le bloc de structure atteint désormais 256×300×256 (le décalage peut aller jusqu'à ±512, et le balayage des coins regarde à 320 blocs autour). L'Overworld peut maintenant être construit jusqu'à y = 1999 (c'était y = 319). Ces deux changements nécessitent Tsubomi sur le serveur et sur chaque client. Enregistrer ou charger une très grande zone demande beaucoup de mémoire : le jeu refuse ce qui ne tiendrait pas dans la mémoire libre et indique la quantité nécessaire (256×300×256 en entier demande environ 8,5 Go)."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+        "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha.",
+        "Tsubomi doit être installé sur le serveur et sur chaque client : la taille du bloc de structure et la hauteur du ciel l'exigent des deux côtés.",
+        "Le contour de la zone du bloc de structure n'a pas été vu dessiné dans un vrai client de jeu pendant les tests ; la taille elle-même est confirmée, le contour non.",
+        "Les poses d'atterrissage et de chute des Wings et leur bruit de battement d'ailes ne sont pas encore faits."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V2.3",
    "summary": "Tsubomi V2.3 3124 — Floraison d'étoile Corvus",

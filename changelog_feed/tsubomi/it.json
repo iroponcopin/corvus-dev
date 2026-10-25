@@ -1,11 +1,46 @@
 {
  "lang": "it",
  "brand": "tsubomi",
- "updated": "2026-10-23",
+ "updated": "2026-10-25",
  "title": "Changelog",
- "updated_label": "Aggiornato il 2026-10-23",
+ "updated_label": "Aggiornato il 2026-10-25",
  "note": "",
  "groups": [
+  {
+   "label": "V2.4",
+   "summary": "Tsubomi V2.4 0204 — Fioritura Stellare Corvus Mythic e Mythic Pearl, Wings, blocco di Stella del Nether",
+   "releases": [
+    {
+     "version": "V2.4 0204",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "Tsubomi V2.4 0204 — Fioritura Stellare Corvus Mythic e Mythic Pearl, Wings, blocco di Stella del Nether",
+     "summary": "Tsubomi V2.4 0204 aggiunge Fioritura Stellare Corvus Mythic e Fioritura Stellare Corvus Mythic Pearl, le Wings, il blocco di Stella del Nether, un blocco strutture che arriva a 256×300×256 e un Overworld costruibile fino a y = 1999, e corregge due bug.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Correzioni: indossare un set completo di Fioritura Stellare Corvus con l'Elytra For Corvus non subisce più alcun danno da caduta (prima il bonus da caduta veniva solo disattivato, quindi le cadute facevano comunque danno pieno); e la Canna da pesca UltraFast Fioritura Stellare ora pesca davvero (il galleggiante scompariva poco dopo il lancio).",
+        "Fioritura Stellare Corvus Mythic (nero con viola scuro) ha la gamma di Fioritura Stellare Max ed è superiore a Corvus in tutto: 1.3× di durabilità e velocità di scavo, strumenti che colpiscono il 10% più forte, un piccone fino a 16×16 e una passiva di set completo di caduta −65%, fuoco −74%, veleno −45%, lava −77%, boom sonico del Sorvegliante −72%, velocità di scavo +15%, velocità di movimento +30%, attacco +22%, 72% di probabilità di respingere ogni nuovo effetto dannoso e un'onda d'urto all'atterraggio pari al 70% della caduta. Fioritura Stellare Corvus Mythic Pearl (nero con bianco perla) è superiore a Mythic a sua volta: altro 1.25×, un piccone fino a 18×18 e passive di −75%, −80%, −53%, −83%, −80%, +19%, +36%, +27%, 78% e 80%.",
+        "Il lingotto di lega Mythic si crea con 7 lingotti di lega Corvus, un emblema Corvus e un blocco di Stella del Nether, e ne dà 7. Il lingotto di lega Pearl si crea con 6 lingotti di lega Mythic, 2 blocchi di Stella del Nether e una perla di ender, e ne dà 6. Il blocco di Stella del Nether si crea con 9 lingotti di Netherstar e si riconverte in 9.",
+        "Le Wings sono un oggetto da corazza. Aprile in aria con un salto, come un'elitra, e vola nel cielo; servono almeno 5 di fame per volare, stancano in base alla distanza percorsa e rendono le cadute innocue. Le Wings si creano con 4 lingotti di lega Mythic, 3 blocchi di Stella del Nether, un'Elytra For Corvus e un emblema Corvus, e contano come corazza dei set Mythic e Pearl.",
+        "Il blocco strutture ora arriva a 256×300×256 (lo spostamento fino a ±512, e la scansione degli angoli guarda a 320 blocchi intorno). L'Overworld ora può essere costruito fino a y = 1999 (era y = 319). Entrambe le modifiche richiedono Tsubomi sul server e su ogni client. Salvare o caricare un'area molto grande richiede molta memoria, quindi il gioco rifiuta ciò che non entra nella memoria libera e indica quanta ne serve (un 256×300×256 intero richiede circa 8,5 GB)."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+        "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha.",
+        "Tsubomi deve essere installato sul server e su ogni client: la dimensione del blocco strutture e l'altezza del cielo lo richiedono da entrambi i lati.",
+        "Il contorno dell'area del blocco strutture non è stato visto disegnato in un vero client di gioco durante i test; la dimensione in sé è confermata, il contorno no.",
+        "Le pose di atterraggio e di caduta delle Wings e il loro suono di battito d'ali non sono ancora pronti."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V2.3",
    "summary": "Tsubomi V2.3 3124 — Fioritura Stellare Corvus",

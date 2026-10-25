@@ -1162,6 +1162,25 @@
      "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
      "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-0204",
+    "title": "Tsubomi V2.4 0204 — Sternblüte Corvus Mythic und Mythic Pearl, Wings, Netherstern-Block",
+    "summary": "Tsubomi V2.4 0204 fügt Sternblüte Corvus Mythic und Sternblüte Corvus Mythic Pearl, die Wings und den Netherstern-Block hinzu, einen Konstruktionsblock mit 256×300×256 und eine Oberwelt, die bis y = 1999 bebaut werden kann, und behebt zwei Fehler.",
+    "highlights": [
+     "Fehlerbehebungen: Wer das komplette Sternblüte-Corvus-Set mit der Elytra For Corvus trägt, nimmt beim Fallen gar keinen Schaden mehr (zuvor war der Fallbonus nur ausgeschaltet, sodass Stürze weiterhin vollen Schaden verursachten); und die Sternblüte UltraFast Angel angelt jetzt tatsächlich (der Schwimmer verschwand früher kurz nach dem Auswerfen).",
+     "Sternblüte Corvus Mythic (Schwarz mit Dunkelviolett) hat das Sortiment von Sternblüte Max und ist überall über Corvus: 1.3× Haltbarkeit und Abbaugeschwindigkeit, Werkzeuge treffen 10% stärker, eine Spitzhacke bis 16×16 und ein Set-Passiveffekt mit Fallschaden −65%, Feuer −74%, Gift −45%, Lava −77%, Sonic Boom des Wärters −72%, Abbaugeschwindigkeit +15%, Bewegungsgeschwindigkeit +30%, Angriff +22%, 72% Chance, jeden neuen schädlichen Effekt abzuwehren, und eine Landungsschockwelle mit 70% des Fallschadens. Sternblüte Corvus Mythic Pearl (Schwarz mit Perlweiß) steht wiederum über Mythic: nochmals 1.25×, eine Spitzhacke bis 18×18 und Passiveffekte von −75%, −80%, −53%, −83%, −80%, +19%, +36%, +27%, 78% und 80%.",
+     "Der Mythic-Legierungsbarren entsteht aus 7 Corvus-Legierungsbarren, einem Corvus-Zeichen und einem Netherstern-Block und ergibt 7 Barren. Der Pearl-Legierungsbarren entsteht aus 6 Mythic-Legierungsbarren, 2 Netherstern-Blöcken und einer Enderperle und ergibt 6 Barren. Der Netherstern-Block wird aus 9 Netherstern-Barren hergestellt und wird wieder zu 9 Barren.",
+     "Die Wings sind ein Brustplatten-Gegenstand. Öffne sie in der Luft mit einem Sprung wie eine Elytra und gleite durch den Himmel; sie benötigen mindestens 5 Hungerpunkte zum Fliegen, ermüden dich mit der zurückgelegten Strecke und machen Stürze harmlos. Die Wings werden aus 4 Mythic-Legierungsbarren, 3 Netherstern-Blöcken, einer Elytra For Corvus und einem Corvus-Zeichen hergestellt und zählen als Brustteil der Mythic- und Pearl-Sets.",
+     "Der Konstruktionsblock reicht jetzt bis 256×300×256 (der Versatz bis ±512, und der Eckscan schaut 320 Blöcke weit). Die Oberwelt kann jetzt bis y = 1999 bebaut werden (vorher y = 319). Beide Änderungen erfordern Tsubomi auf dem Server und auf jedem Client. Das Speichern oder Laden eines sehr großen Bereichs braucht viel Speicher; passt er nicht in den freien Speicher, lehnt das Spiel ab und nennt den Bedarf (volle 256×300×256 brauchen etwa 8,5 GB)."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+     "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars.",
+     "Tsubomi muss auf dem Server und auf jedem Client installiert sein: Die Größe des Konstruktionsblocks und die Himmelshöhe brauchen beide Seiten.",
+     "Der Begrenzungsrahmen des Konstruktionsblocks wurde beim Testen in einem echten Spielclient nicht gezeichnet gesehen; die Größe selbst wurde bestätigt, der Rahmen nicht.",
+     "Die Lande- und Fallposen der Wings und ihr Flügelschlag-Geräusch sind noch nicht fertig."
+    ]
    }
   ],
   "halia": [

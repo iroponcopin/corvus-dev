@@ -1162,6 +1162,25 @@
      "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
      "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-0204",
+    "title": "Tsubomi V2.4 0204 — Yıldız Çiçeği Corvus Mythic ve Mythic Pearl, Wings, Nether Yıldızı Bloğu",
+    "summary": "Tsubomi V2.4 0204; Yıldız Çiçeği Corvus Mythic ve Yıldız Çiçeği Corvus Mythic Pearl, Wings, Nether Yıldızı Bloğu, 256×300×256'ya ulaşan bir Yapı Bloğu ve y = 1999'a kadar inşa edilebilen bir Üst Dünya ekler ve iki hatayı düzeltir.",
+    "highlights": [
+     "Düzeltmeler: Elytra For Corvus ile tam bir Yıldız Çiçeği Corvus takımı giymek artık düşme hasarını tamamen ortadan kaldırıyor (önceden düşme bonusu yalnızca kapatılıyordu, bu yüzden düşmeler yine tam hasar veriyordu); ayrıca Yıldız Çiçeği UltraFast Olta artık gerçekten balık tutuyor (şamandırası eskiden atıştan kısa süre sonra kayboluyordu).",
+     "Yıldız Çiçeği Corvus Mythic (koyu morlu siyah) Yıldız Çiçeği Max dizilimine sahiptir ve her yönden Corvus'un üzerindedir: dayanıklılık ve kazma hızı 1.3×, aletler 10% daha güçlü vurur, 16×16'ya kadar kazma ve tam takım pasifi: düşme −65%, ateş −74%, zehir −45%, lav −77%, Muhafız'ın ses dalgası −72%, kazma hızı +15%, hareket hızı +30%, saldırı +22%, yeni her zararlı etkinin 72% ihtimalle savuşturulması ve düşmenin 70%'i kadar bir iniş şok dalgası. Yıldız Çiçeği Corvus Mythic Pearl (siyah üzerine inci beyazı) Mythic'in de üzerindedir: bir kez daha 1.25×, 18×18'e kadar kazma ve −75%, −80%, −53%, −83%, −80%, +19%, +36%, +27%, 78% ve 80% pasifleri.",
+     "Mythic Alaşım Külçesi, 7 Corvus Alaşım Külçesi, bir Corvus Nişanı ve bir Nether Yıldızı Bloğu ile yapılır ve 7 külçe verir. Pearl Alaşım Külçesi, 6 Mythic Alaşım Külçesi, 2 Nether Yıldızı Bloğu ve bir Ender İncisi ile yapılır ve 6 külçe verir. Nether Yıldızı Bloğu 9 Netherstar Külçesi ile yapılır ve 9'a geri döner.",
+     "Wings bir göğüs eşyasıdır. Havada bir zıplamayla elitra gibi açın ve gökyüzünde uçun; uçmak için en az 5 food gerekir, uçulan mesafeye göre yorar ve düşmeleri zararsız hale getirir. Wings, 4 Mythic Alaşım Külçesi, 3 Nether Yıldızı Bloğu, bir Elytra For Corvus ve bir Corvus Nişanı ile yapılır ve Mythic ile Pearl takımlarının göğüs parçası sayılır.",
+     "Yapı bloğu artık 256×300×256'ya ulaşıyor (kaydırma ±512'ye kadar, köşe taraması çevrede 320 blok tarar). Üst Dünya artık y = 1999'a kadar inşa edilebilir (önceden y = 319'du). Her iki değişiklik de sunucuda ve her istemcide Tsubomi gerektirir. Çok büyük bir alanı kaydetmek veya yüklemek çok bellek gerektirir; boş belleğe sığmayanı oyun reddeder ve gereken miktarı söyler (256×300×256'nın tamamı yaklaşık 8,5 GB ister)."
+    ],
+    "warnings": [
+     "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+     "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır.",
+     "Tsubomi sunucuya ve her istemciye kurulmalıdır: yapı bloğunun boyutu ve gökyüzü yüksekliği iki tarafta da gerektirir.",
+     "Yapı bloğunun alan çerçevesinin testlerde gerçek bir oyun istemcisinde çizildiği görülmedi; boyutun kendisi doğrulandı, çerçeve doğrulanmadı.",
+     "Wings'in iniş ve düşüş duruşları ile kanat çırpma sesi henüz tamamlanmadı."
+    ]
    }
   ],
   "halia": [

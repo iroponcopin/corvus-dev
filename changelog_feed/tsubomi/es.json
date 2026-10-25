@@ -1,11 +1,46 @@
 {
  "lang": "es",
  "brand": "tsubomi",
- "updated": "2026-10-23",
+ "updated": "2026-10-25",
  "title": "Historial de actualizaciones",
- "updated_label": "Actualizado el 2026-10-23",
+ "updated_label": "Actualizado el 2026-10-25",
  "note": "",
  "groups": [
+  {
+   "label": "V2.4",
+   "summary": "Tsubomi V2.4 0204 — Flor Estelar Corvus Mythic y Mythic Pearl, Wings, bloque de estrella del Nether",
+   "releases": [
+    {
+     "version": "V2.4 0204",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "Tsubomi V2.4 0204 — Flor Estelar Corvus Mythic y Mythic Pearl, Wings, bloque de estrella del Nether",
+     "summary": "Tsubomi V2.4 0204 añade Flor Estelar Corvus Mythic y Flor Estelar Corvus Mythic Pearl, las Wings, el bloque de estrella del Nether, un bloque estructural que llega a 256×300×256 y un Mundo superior que se puede construir hasta y = 1999, y corrige dos errores.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "Correcciones: llevar un conjunto completo de Flor Estelar Corvus con las Elytra For Corvus ya no hace daño por caída (antes solo se desactivaba el bonificador de caída, así que las caídas seguían haciendo daño completo); y la Caña de pescar UltraFast Flor Estelar ahora pesca de verdad (su boya solía desaparecer poco después del lanzamiento).",
+        "Flor Estelar Corvus Mythic (negro con morado oscuro) tiene la línea de Flor Estelar Max y está por encima de Corvus en todo: 1.3× de durabilidad y velocidad de minería, herramientas que golpean un 10% más fuerte, un pico de hasta 16×16, y una pasiva de conjunto completo de caída −65%, fuego −74%, veneno −45%, lava −77%, estallido sónico del Warden −72%, velocidad de minería +15%, velocidad de movimiento +30%, ataque +22%, 72% de probabilidad de resistir cada nuevo efecto dañino y una onda de choque al aterrizar del 70% de la caída. Flor Estelar Corvus Mythic Pearl (negro con blanco perla) está por encima de Mythic a su vez: 1.25× más, un pico de hasta 18×18, y pasivas de −75%, −80%, −53%, −83%, −80%, +19%, +36%, +27%, 78% y 80%.",
+        "El lingote de aleación Mythic se hace con 7 lingotes de aleación Corvus, un emblema Corvus y un bloque de estrella del Nether, y da 7 lingotes. El lingote de aleación Pearl se hace con 6 lingotes de aleación Mythic, 2 bloques de estrella del Nether y una perla de ender, y da 6 lingotes. El bloque de estrella del Nether se hace con 9 lingotes de Netherstar y vuelve a dar 9.",
+        "Las Wings son un objeto de pechera. Ábrelas en el aire con un salto, como con un élitro, y vuela por el cielo; necesitan al menos 5 de comida para volar, cansan según la distancia recorrida y hacen que las caídas no hagan daño. Las Wings se fabrican con 4 lingotes de aleación Mythic, 3 bloques de estrella del Nether, una Elytra For Corvus y un emblema Corvus, y cuentan como la pechera de los conjuntos Mythic y Pearl.",
+        "El bloque estructural ahora llega a 256×300×256 (el desplazamiento hasta ±512, y el escaneo de esquinas mira 320 bloques alrededor). El Mundo superior ahora se puede construir hasta y = 1999 (antes era y = 319). Ambos cambios necesitan Tsubomi en el servidor y en cada cliente. Guardar o cargar un área muy grande requiere mucha memoria, así que el juego rechaza lo que no cabe en la memoria libre e indica cuánta necesita (un 256×300×256 completo necesita unos 8,5 GB)."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+        "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha.",
+        "Tsubomi debe estar instalado en el servidor y en cada cliente: el tamaño del bloque estructural y la altura del cielo lo necesitan en ambos lados.",
+        "No se vio dibujado el contorno del área del bloque estructural en un cliente de juego real durante las pruebas; el tamaño en sí está confirmado, el contorno no.",
+        "Las poses de aterrizaje y caída de las Wings y su sonido de aleteo todavía no están hechos."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V2.3",
    "summary": "Tsubomi V2.3 3124 — Flor Estelar Corvus",

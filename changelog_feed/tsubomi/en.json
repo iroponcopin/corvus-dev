@@ -1,11 +1,46 @@
 {
  "lang": "en",
  "brand": "tsubomi",
- "updated": "2026-10-23",
+ "updated": "2026-10-25",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-23",
+ "updated_label": "Updated 2026-10-25",
  "note": "",
  "groups": [
+  {
+   "label": "V2.4",
+   "summary": "Tsubomi V2.4 0204 — Starbloom Corvus Mythic and Mythic Pearl, Wings, Nether Star Block",
+   "releases": [
+    {
+     "version": "V2.4 0204",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "Tsubomi V2.4 0204 — Starbloom Corvus Mythic and Mythic Pearl, Wings, Nether Star Block",
+     "summary": "Tsubomi V2.4 0204 adds Starbloom Corvus Mythic and Starbloom Corvus Mythic Pearl, the Wings, the Nether Star Block, a structure block that reaches 256×300×256 and an overworld that can be built on up to y = 1999, and fixes two bugs.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "Fixes: wearing a full Starbloom Corvus set with the Elytra For Corvus, a fall no longer hurts at all (before, the fall bonus was only switched off, so falls still did full damage); and the Starbloom UltraFast Fishing Rod now really fishes (its bobber used to vanish a moment after the cast).",
+        "Starbloom Corvus Mythic (black with dark purple) has the lineup of Starbloom Max and is above Corvus everywhere: 1.3× the durability and mining speed, tools that hit 10% harder, a pickaxe up to 16×16, and a full-set passive of fall −65%, fire −74%, poison −45%, lava −77%, the Warden's sonic boom −72%, mining speed +15%, movement speed +30%, attack +22%, a 72% chance to shrug off each new harmful effect and a landing shockwave of 70% of the fall. Starbloom Corvus Mythic Pearl (black with pearl white) is above Mythic in turn: 1.25× again, a pickaxe up to 18×18, and passives of −75%, −80%, −53%, −83%, −80%, +19%, +36%, +27%, 78% and 80%.",
+        "The Mythic Alloy Ingot is made from 7 Corvus Alloy Ingots, a Corvus Emblem and a Nether Star Block, giving 7 ingots. The Pearl Alloy Ingot is made from 6 Mythic Alloy Ingots, 2 Nether Star Blocks and an Ender Pearl, giving 6 ingots. The Nether Star Block is crafted from 9 Netherstar Ingots, and turns back into 9.",
+        "The Wings are a chest item. Open them in the air with a jump, as with an Elytra, and flap through the sky; they need at least 5 food to fly, tire you with the distance flown, and make falls harmless. The Wings are crafted from 4 Mythic Alloy Ingots, 3 Nether Star Blocks, an Elytra For Corvus and a Corvus Emblem, and count as the chest piece of the Mythic and Pearl sets.",
+        "The structure block now reaches 256×300×256 (the offset up to ±512, and the corner scan looks 320 blocks around). The overworld can now be built on up to y = 1999 (it was y = 319). Both changes need Tsubomi on the server and on every client. Saving or loading a very large area needs a lot of memory, so the game refuses one that would not fit in the free memory and says how much it needs (a full 256×300×256 needs about 8.5 GB)."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+        "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first.",
+        "Tsubomi must be installed on the server and on every client: the structure block size and the sky height need it on both sides.",
+        "The structure block's bounding-box outline was not seen drawn in a real game client during testing; the size itself was confirmed, the outline was not.",
+        "The Wings' landing and falling poses and their flap sound are not done yet."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V2.3",
    "summary": "Tsubomi V2.3 3124 — Starbloom Corvus",
