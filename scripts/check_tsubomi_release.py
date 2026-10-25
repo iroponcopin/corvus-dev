@@ -57,13 +57,19 @@ THREE_PART_RE = re.compile(r"([0-9]+)\.([0-9]+)\.([0-9]+)")
 def release_string_ok(newest, version: str) -> bool:
     """Rule 6's test, pure: the feed's newest release string names the jar's version. Two forms and nothing looser:
     "V" + the jar version (V2.3.1024), and, when the jar version has exactly three numeric parts a.b.c, the owner's
-    "V<a>.<b> <c>" (V2.3 1024). No other variant: not two spaces, not a lowercase v, not trailing text."""
+    "V<a>.<b> <c>" (V2.3 1024), and the same build zero-padded to four digits, "V<a>.<b> 0<c>" for a three-digit <c>
+    (V2.4 0204 for 2.4.204, the owner's notation of 2026-10-25). No other variant: not two spaces, not a lowercase v,
+    not trailing text, not a padding of any other width."""
     if not isinstance(newest, str):
         return False
     if newest == f"V{version}":
         return True
     three = THREE_PART_RE.fullmatch(version)
-    return three is not None and newest == f"V{three.group(1)}.{three.group(2)} {three.group(3)}"
+    if three is None:
+        return False
+    head = f"V{three.group(1)}.{three.group(2)} "
+    build = three.group(3)
+    return newest in (head + build, head + build.zfill(4))
 
 
 def git_tracked(root: Path, rel: str) -> bool:
@@ -180,6 +186,9 @@ def self_test() -> int:
     notation = f"V{part_a}.{part_b} {part_c}"
     dotted = f"V{part_a}.{part_b}.{part_c}"
     below = f"V{part_a}.{part_b} {int(part_c) - 1}"
+    padded = part_c.zfill(4)
+    padded_below = f"{int(part_c) - 1:04d}"
+    over_padded = "0" + padded
 
     def copy_tree(dst: Path):
         (dst / "downloads").mkdir(parents=True)
@@ -250,6 +259,9 @@ def self_test() -> int:
         ("one language's feed lags the release", lambda d: edit_feed(d, "ar", "V0.9.0"), True, True),
         (f"the owner's notation {notation} in one feed (control)", lambda d: edit_feed(d, "ja", notation), True, False),
         (f"the dotted form {dotted} in one feed (control)", lambda d: edit_feed(d, "de", dotted), True, False),
+        (f"the zero-padded build {padded} (control)", lambda d: edit_feed(d, "it", f"V{part_a}.{part_b} {padded}"), True, False),
+        (f"a wrong build, zero-padded: V{part_a}.{part_b} {padded_below}", lambda d: edit_feed(d, "en", f"V{part_a}.{part_b} {padded_below}"), True, True),
+        (f"a build over-padded to five digits: V{part_a}.{part_b} {over_padded}", lambda d: edit_feed(d, "es", f"V{part_a}.{part_b} {over_padded}"), True, True),
         (f"a wrong build in the new notation: {below}", lambda d: edit_feed(d, "en", below), True, True),
         (f"the new notation with two spaces: V{part_a}.{part_b}  {part_c}", lambda d: edit_feed(d, "fr", f"V{part_a}.{part_b}  {part_c}"), True, True),
         (f"the new notation with a lowercase v: v{part_a}.{part_b} {part_c}", lambda d: edit_feed(d, "ko", f"v{part_a}.{part_b} {part_c}"), True, True),
