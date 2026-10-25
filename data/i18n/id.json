@@ -1148,6 +1148,15 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4-1141",
+    "title": "Halia V1.4 1141",
+    "summary": "Memperbaiki crash yang bisa menghentikan game saat pintu digambar dengan mod shader terpasang.",
+    "highlights": [
+     "Memperbaiki crash game saat pintu digambar dengan mod shader terpasang."
+    ],
+    "warnings": []
+   },
+   {
     "id": "halia-v1.4-1140",
     "title": "Halia V1.4 1140",
     "summary": "Diperbaiki penggambaran item di tangan; beberapa item kini tampil lebih akurat di sudut pandang orang pertama dan ketiga.",

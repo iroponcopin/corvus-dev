@@ -1,15 +1,30 @@
 {
  "lang": "it",
  "brand": "halia",
- "updated": "2026-10-23",
+ "updated": "2026-10-25",
  "title": "Changelog",
- "updated_label": "Aggiornato il 2026-10-23",
+ "updated_label": "Aggiornato il 2026-10-25",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1140",
+   "summary": "Halia V1.4 1141",
    "releases": [
+    {
+     "version": "V1.4 1141",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "Halia V1.4 1141",
+     "summary": "Corregge un crash che poteva bloccare il gioco mentre venivano disegnate le porte con una mod di shader installata.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Corretto un crash del gioco durante il disegno delle porte con una mod di shader installata."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1140",
      "date": "2026-10-23",

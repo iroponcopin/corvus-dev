@@ -1148,6 +1148,15 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4-1141",
+    "title": "Halia V1.4 1141",
+    "summary": "Behebt einen Absturz, der beim Zeichnen von Türen mit installiertem Shader-Mod das Spiel beenden konnte.",
+    "highlights": [
+     "Absturz des Spiels behoben, der beim Zeichnen von Türen mit installiertem Shader-Mod auftrat."
+    ],
+    "warnings": []
+   },
+   {
     "id": "halia-v1.4-1140",
     "title": "Halia V1.4 1140",
     "summary": "Das Zeichnen gehaltener Gegenstände wurde korrigiert; einige Gegenstände werden in der Ich- und Dritten Person nun genauer dargestellt.",

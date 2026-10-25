@@ -1,15 +1,30 @@
 {
  "lang": "ja",
  "brand": "halia",
- "updated": "2026-10-23",
+ "updated": "2026-10-25",
  "title": "更新履歴",
- "updated_label": "最終更新 2026-10-23",
+ "updated_label": "最終更新 2026-10-25",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1140",
+   "summary": "Halia V1.4 1141",
    "releases": [
+    {
+     "version": "V1.4 1141",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "Halia V1.4 1141",
+     "summary": "シェーダーMODを導入している時にドアの描画でゲームが停止することがある問題を修正しました。",
+     "sections": [
+      {
+       "title": "変更点",
+       "items": [
+        "シェーダーMODが導入されている状態でドアを描画するとゲームがクラッシュする問題を修正しました。"
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1140",
      "date": "2026-10-23",

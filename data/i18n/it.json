@@ -1148,6 +1148,15 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4-1141",
+    "title": "Halia V1.4 1141",
+    "summary": "Corregge un crash che poteva bloccare il gioco mentre venivano disegnate le porte con una mod di shader installata.",
+    "highlights": [
+     "Corretto un crash del gioco durante il disegno delle porte con una mod di shader installata."
+    ],
+    "warnings": []
+   },
+   {
     "id": "halia-v1.4-1140",
     "title": "Halia V1.4 1140",
     "summary": "Corretto il disegno degli oggetti in mano; diversi oggetti ora appaiono in modo più accurato in prima e terza persona.",

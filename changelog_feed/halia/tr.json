@@ -1,15 +1,30 @@
 {
  "lang": "tr",
  "brand": "halia",
- "updated": "2026-10-23",
+ "updated": "2026-10-25",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-23 tarihinde güncellendi",
+ "updated_label": "2026-10-25 tarihinde güncellendi",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1140",
+   "summary": "Halia V1.4 1141",
    "releases": [
+    {
+     "version": "V1.4 1141",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "Halia V1.4 1141",
+     "summary": "Gölgelendirici modu kuruluyken kapılar çizilirken oyunu durdurabilen bir çökme düzeltildi.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Gölgelendirici modu kuruluyken kapılar çizilirken oluşan oyun çökmesi düzeltildi."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1140",
      "date": "2026-10-23",

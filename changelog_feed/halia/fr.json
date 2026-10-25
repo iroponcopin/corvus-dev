@@ -1,15 +1,30 @@
 {
  "lang": "fr",
  "brand": "halia",
- "updated": "2026-10-23",
+ "updated": "2026-10-25",
  "title": "Historique des mises à jour",
- "updated_label": "Mis à jour le 2026-10-23",
+ "updated_label": "Mis à jour le 2026-10-25",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1140",
+   "summary": "Halia V1.4 1141",
    "releases": [
+    {
+     "version": "V1.4 1141",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "Halia V1.4 1141",
+     "summary": "Corrige un plantage qui pouvait arrêter le jeu pendant le dessin des portes avec un mod de shaders installé.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Correction d'un plantage du jeu lors du dessin des portes avec un mod de shaders installé."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1140",
      "date": "2026-10-23",

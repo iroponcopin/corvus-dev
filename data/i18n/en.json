@@ -1152,6 +1152,15 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4-1141",
+    "title": "Halia V1.4 1141",
+    "summary": "Fixes a crash that could stop the game while doors were drawn with a shader mod installed.",
+    "highlights": [
+     "Fixed a game crash when doors are drawn while a shader mod is installed."
+    ],
+    "warnings": []
+   },
+   {
     "id": "halia-v1.4-1140",
     "title": "Halia V1.4 1140",
     "summary": "Held items now draw more accurately in first and third person.",

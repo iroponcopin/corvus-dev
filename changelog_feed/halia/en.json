@@ -1,15 +1,30 @@
 {
  "lang": "en",
  "brand": "halia",
- "updated": "2026-10-23",
+ "updated": "2026-10-25",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-23",
+ "updated_label": "Updated 2026-10-25",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1140",
+   "summary": "Halia V1.4 1141",
    "releases": [
+    {
+     "version": "V1.4 1141",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "Halia V1.4 1141",
+     "summary": "Fixes a crash that could stop the game while doors were drawn with a shader mod installed.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "Fixed a game crash when doors are drawn while a shader mod is installed."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1140",
      "date": "2026-10-23",
