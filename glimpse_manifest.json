@@ -12,30 +12,30 @@
     "changelog_url": "https://iroponcopin.github.io/corvus-dev/en/changelog/"
   },
   "launcher": {
-    "latest": "5.5.204",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.204.jar",
-    "file_name": "corvus-5.5.204.jar",
-    "file_size": 17788452,
-    "sha256": "d35537e6ab0411c21266def94310360feb892ae42ceadaff661c114187804233",
-    "notes": "Corvus Store 5.5.204 and Corvus Agent 5.5.204 bring the following.\n\nThe enemy strength and spawn rate settings are now stepped sliders.\n\nThe spawn rate presets now include Ultracore (+300%, 5x) and Ultimate (+400%, 6x), with Corvus XHard 2.1.0.\n\nA server's render distance can be set with a slider from 4 to 32 chunks (default 32). The change applies the next time the server starts.\n\nCorvus AI can use Sonnet 5.5, Haiku 5.5 or Gemma 4B as its model.\n\nGemma 4B runs entirely on your computer, so no data leaves it. It can read the files of your installed mods to answer how to use them. It is offered only on computers capable of running it, and it downloads about 4.8 GB in the background.\n\nChat history stays encrypted on this computer.\n\nCorvus Store and Corvus Agent update themselves.",
+    "latest": "5.5.961",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.961.jar",
+    "file_name": "corvus-5.5.961.jar",
+    "file_size": 17808405,
+    "sha256": "2150fb2dad3678755f921c2325b7c4b020fff47298f0c6537978a143f2bae0c1",
+    "notes": "Corvus Store 5.5.961 brings a new model switcher to Corvus AI. Corvus Agent 5.5.961 has no functional change.\n\nCorvus AI now offers Fable 5.1 and Opus 5.5 beside Sonnet 5.5, Haiku 5.5 and Gemma 4B (the local one, which runs on your computer).\n\nThe model is chosen from a switcher beside the send button, in the style of Codex and Claude. Pick the model and, for the four online models, the reasoning level: Low, Medium, High, Extra high or Max. Medium is the default. Gemma 4B has no level.\n\nThere is no per-person limit on questions any more. Everyone shares one monthly AI budget. When it is used up, Corvus AI pauses for everyone until it resets automatically at the start of the next month (UTC), and the Store says on which day that is. Heavier models and higher levels use the shared budget faster.\n\nKnown limits: the switcher was checked with recorded screens and tests, not yet on Windows or Linux. Real answers from Fable 5.1 and Opus 5.5, and their speed at the highest levels, were not measured before this release.\n\nCorvus Store and Corvus Agent update themselves.",
     "native": {
       "macos": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.204-macos.dmg",
-        "file_name": "corvus-5.5.204-macos.dmg",
-        "file_size": 67516138,
-        "sha256": "a2832204a3b493ac6fd734c1119c7256dd62c6b6dd556d7f183e03e1a5b616ae"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.961-macos.dmg",
+        "file_name": "corvus-5.5.961-macos.dmg",
+        "file_size": 67529499,
+        "sha256": "1ed7232daff7176e11f4158a48f81a8ca59866416f39df37f7168035c58dd36a"
       },
       "windows": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.204-windows.msi",
-        "file_name": "corvus-5.5.204-windows.msi",
-        "file_size": 65196904,
-        "sha256": "d2cb106a734ca67c67a2bada98ab1c68232bedc4525803cd6d31337ff9816edc"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.961-windows.msi",
+        "file_name": "corvus-5.5.961-windows.msi",
+        "file_size": 65217384,
+        "sha256": "01abc0cccd611e7ebd73a7e9496a4b32be9e00ad631deded003f02fa1047549c"
       },
       "linux": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.204-linux.deb",
-        "file_name": "corvus-5.5.204-linux.deb",
-        "file_size": 54632772,
-        "sha256": "66ae0e5d25166900667f96d06403238f60d4c452b72bbce0df30065524bbec2d"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.961-linux.deb",
+        "file_name": "corvus-5.5.961-linux.deb",
+        "file_size": 54663162,
+        "sha256": "aacf4b19be4c474f595f448f14fbcf44c6addf8501b2dc6f1f0985ed4615eee9"
       }
     }
   },
@@ -187,11 +187,11 @@
     ]
   },
   "agent": {
-    "latest": "5.5.204",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-agent-5.5.204.zip",
-    "file_name": "corvus-agent-5.5.204.zip",
+    "latest": "5.5.961",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-agent-5.5.961.zip",
+    "file_name": "corvus-agent-5.5.961.zip",
     "file_size": 608444,
-    "sha256": "68ab1b8836ff807b2a18065bbfcc9114775244a9bb2a17295d9b70c19298a6c1"
+    "sha256": "a5ad2f8fbd9ea0d97f3fd1eb0357898129078b80984c0991273915f8096004d4"
   },
   "xhard": {
     "mod_id": "corvus_xhard",
