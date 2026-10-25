@@ -306,6 +306,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-55114",
+    "title": "Ouka JJK V1.7 55114 — Perbaikan Beacon, helium-3 Matahari Buatan, overclock x50, Soket Pengisian Baterai",
+    "summary": "Beacon diperbaiki dengan satu blok Netherite Star Tsubomi, Matahari Buatan membakar helium-3 sebagai bahan bakar tersendiri, batas overclock naik ke x50, dan Soket Pengisian Baterai yang baru memuat hingga 200 baterai SMES.",
+    "highlights": [
+     "Beacon Ouka diperbaiki dengan 1 blok Netherite Star Tsubomi. Heavy Core Ingot tidak lagi memperbaikinya. Tanpa Tsubomi tidak ada item untuk memperbaikinya, jadi tidak bisa diperbaiki.",
+     "Matahari Buatan membakar helium-3 sebagai bahan bakar terpisah, dan sangat cepat: selain daya yang dihasilkan, ia membakar lebih banyak, makin banyak makin keras ia dijalankan (5x pada output penuh, 1,4x pada sepersepuluh).",
+     "Batas overclock naik menjadi 5.000% (x50). Ada 17 tingkat: x1,00 sampai x2,50 seperti sebelumnya, lalu x3, x4, x5, x7,50, x10, x15, x20, x30, x40, dan x50. Daya per tick tetap kuadrat dari kecepatan, sehingga x50 memakai 2.500 kali daya nominal. Dikombinasikan dengan Tachyon Accelerator, batasnya naik dari x10 ke x50.",
+     "Soket Pengisian Baterai: memuat hingga 200 baterai SMES dalam satu blok, kapasitas 80 GJ dan hingga 20 MW per tick pada 200 baterai. Klik kanan dengan baterai untuk memasukkan semua yang kamu bawa; jongkok dengan tangan kosong lalu klik kanan untuk mengeluarkan satu. Saat dihancurkan, ia menjadi satu item yang menyimpan baterai dan isinya. Tidak ada GUI; statusnya tampil di action bar."
+    ],
+    "warnings": [
+     "Sebelum memasang V1.7 55114, hapus jar OUKA lama (1.7.2.2 atau lebih lama) dari folder mods dan simpan hanya 1 salinan GeckoLib 5.5.6. Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di client dan server.",
+     "Belum diverifikasi: angka helium-3 hanya terbukti lewat unit test, tanpa rekaman Matahari Buatan dari client sungguhan. Perbaikan Beacon dengan item Tsubomi asli belum diuji di dunia (test memakai pengganti). Dunia 1.7.2.2 belum dimuat dari awal sampai akhir."
+    ]
+   },
+   {
     "id": "ouka-v1.7.2.2",
     "title": "Ouka JJK 1.7.2.2 — Exoskeleton Bahaya Industri disesuaikan",
     "summary": "Set lengkap Exoskeleton Bahaya lebih ringan: kerusakan jatuh dan api turun 25%, dan berenang di lava dihapus.",

@@ -1,15 +1,40 @@
 {
  "lang": "tr",
  "brand": "ouka",
- "updated": "2026-10-21",
+ "updated": "2026-10-25",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-21 tarihinde güncellendi",
+ "updated_label": "2026-10-25 tarihinde güncellendi",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK 1.7.2.2 — Endüstriyel Tehlike Dış İskeleti ayarlandı",
+   "summary": "Ouka JJK V1.7 55114 — Fener onarımı, Yapay Güneş helyum-3, x50 aşırı hız, Batarya Şarj Soketi",
    "releases": [
+    {
+     "version": "V1.7 55114",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "Ouka JJK V1.7 55114 — Fener onarımı, Yapay Güneş helyum-3, x50 aşırı hız, Batarya Şarj Soketi",
+     "summary": "Fener, bir Tsubomi Nether Yıldızı Bloku ile onarılır, Yapay Güneş helyum-3'ü kendi yakıtı olarak yakar, aşırı hız sınırı x50'ye çıkar ve yeni Batarya Şarj Soketi en fazla 200 SMES bataryayı taşır.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Bir Ouka Feneri 1 Tsubomi Nether Yıldızı Bloku ile onarılır. Ağır Çekirdek Külçesi artık onarmaz. Tsubomi olmayan bir dünyada onarım için eşya yoktur, bu yüzden onarılamaz.",
+        "Yapay Güneş helyum-3'ü ayrı bir yakıt olarak ve çok hızlı yakar: ilettiği güce ek olarak, ne kadar zorlanırsa o kadar fazla yakar (tam güçte 5 kat, onda birinde 1,4 kat).",
+        "Aşırı hız sınırı %5.000'e (x50) çıkarıldı. 17 kademe vardır: önceki gibi x1,00 - x2,50, sonra x3, x4, x5, x7,50, x10, x15, x20, x30, x40 ve x50. Tik başına güç hızın karesi olarak kalır, bu yüzden x50 nominal gücün 2.500 katını çeker. Tachyon Hızlandırıcı ile birlikte sınır x10'dan x50'ye çıkar.",
+        "Batarya Şarj Soketi: tek bir blokta en fazla 200 SMES bataryayı taşır; 200 bataryada 80 GJ kapasite ve tik başına en fazla 20 MW. Yanındaki her şeyi koymak için bataryayla sağ tıklayın; eller boşken çömelip sağ tıklayarak bir tane çıkarın. Kırıldığında bataryaları ve şarjlarını koruyan tek bir eşya düşer. Arayüzü yoktur; durum eylem çubuğunda görünür."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "V1.7 55114'ü kurmadan önce mods klasöründen eski OUKA jar'ını (1.7.2.2 veya daha eski) silin ve yalnızca 1 GeckoLib 5.5.6 bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun.",
+        "Henüz doğrulanmadı: helyum-3 değerleri yalnızca birim testleriyle kanıtlanmıştır; Yapay Güneş'in gerçek bir istemciden kaydı yoktur. Gerçek Tsubomi eşyasıyla fener onarımı bir dünyada denenmedi (testler yedek eşya kullanır). 1.7.2.2 dünyaları baştan sona yüklenmedi."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.2.2",
      "date": "2026-10-21",

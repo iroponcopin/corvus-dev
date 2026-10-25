@@ -1,15 +1,40 @@
 {
  "lang": "de",
  "brand": "ouka",
- "updated": "2026-10-21",
+ "updated": "2026-10-25",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-21",
+ "updated_label": "Aktualisiert am 2026-10-25",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK 1.7.2.2 — Industrie-Gefahrenexoskelett angepasst",
+   "summary": "Ouka JJK V1.7 55114 — Beacon-Reparatur, Künstliche Sonne mit Helium-3, Übertakt x50, Batterie-Ladebuchse",
    "releases": [
+    {
+     "version": "V1.7 55114",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "Ouka JJK V1.7 55114 — Beacon-Reparatur, Künstliche Sonne mit Helium-3, Übertakt x50, Batterie-Ladebuchse",
+     "summary": "Der Beacon wird mit einem Tsubomi-Netherstern-Block repariert, die Künstliche Sonne verbrennt Helium-3 als eigenen Brennstoff, die Übertaktungsgrenze steigt auf x50, und die neue Batterie-Ladebuchse nimmt bis zu 200 SMES-Batterien auf.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Ein Ouka-Beacon wird mit 1 Tsubomi-Netherstern-Block repariert. Ein Heavy-Core-Barren repariert ihn nicht mehr. Ohne Tsubomi gibt es kein Reparaturmaterial, daher kann er dann nicht repariert werden.",
+        "Die Künstliche Sonne verbrennt Helium-3 als eigenen Brennstoff, und zwar sehr schnell: Zusätzlich zur abgegebenen Leistung verbrennt sie umso mehr, je stärker sie betrieben wird (5-fach bei voller Leistung, 1,4-fach bei einem Zehntel).",
+        "Die Übertaktungsgrenze steigt auf 5.000 % (x50). Es gibt 17 Stufen: x1,00 bis x2,50 wie bisher, danach x3, x4, x5, x7,50, x10, x15, x20, x30, x40 und x50. Die Leistung pro Tick bleibt das Quadrat der Geschwindigkeit, daher verbraucht x50 das 2.500-Fache der Nennleistung. Zusammen mit einem Tachyon-Beschleuniger steigt die Grenze von x10 auf x50.",
+        "Batterie-Ladebuchse: nimmt bis zu 200 SMES-Batterien in einem Block auf, 80 GJ Kapazität und bis zu 20 MW pro Tick bei 200 Batterien. Rechtsklick mit einer Batterie legt alles ein, was du trägst; Schleichen mit leeren Händen und Rechtsklick entnimmt eine. Beim Abbauen erhältst du einen Gegenstand, der Batterien und Ladung behält. Es gibt keine Oberfläche; der Status erscheint in der Aktionsleiste."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Entferne vor der Installation von V1.7 55114 die alte OUKA-jar (1.7.2.2 oder älter) aus dem mods-Ordner und behalte nur 1 Kopie von GeckoLib 5.5.6. Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Auf Client und Server installieren.",
+        "Noch nicht verifiziert: Die Helium-3-Werte sind nur durch Unit-Tests belegt, es gibt keine Aufnahme der Künstlichen Sonne im echten Client. Die Beacon-Reparatur mit dem echten Tsubomi-Gegenstand wurde in keiner Welt ausprobiert (die Tests verwenden einen Ersatz). Welten aus 1.7.2.2 wurden nicht vollständig geladen."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.2.2",
      "date": "2026-10-21",

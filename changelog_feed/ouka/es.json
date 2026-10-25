@@ -1,15 +1,40 @@
 {
  "lang": "es",
  "brand": "ouka",
- "updated": "2026-10-21",
+ "updated": "2026-10-25",
  "title": "Historial de actualizaciones",
- "updated_label": "Actualizado el 2026-10-21",
+ "updated_label": "Actualizado el 2026-10-25",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK 1.7.2.2 — Exoesqueleto de peligro industrial ajustado",
+   "summary": "Ouka JJK V1.7 55114 — Reparación del Beacon, helio-3 del Sol Artificial, sobrecarga x50, Toma de carga de baterías",
    "releases": [
+    {
+     "version": "V1.7 55114",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "Ouka JJK V1.7 55114 — Reparación del Beacon, helio-3 del Sol Artificial, sobrecarga x50, Toma de carga de baterías",
+     "summary": "El Beacon se repara con un bloque de Estrella del Nether de Tsubomi, el Sol Artificial quema helio-3 como combustible propio, el límite de sobrecarga sube a x50 y la nueva Toma de carga de baterías admite hasta 200 baterías SMES.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "Un Beacon de Ouka se repara con 1 bloque de Estrella del Nether de Tsubomi. Un lingote de núcleo pesado ya no lo repara. Sin Tsubomi no hay objeto para repararlo, así que no se puede reparar.",
+        "El Sol Artificial quema helio-3 como combustible aparte, y muy rápido: además de la potencia entregada, lo quema de más, y más cuanto más fuerte trabaja (5 veces a plena potencia, 1,4 veces a una décima parte).",
+        "El límite de sobrecarga sube al 5.000 % (x50). Hay 17 niveles: de x1,00 a x2,50 como antes, y luego x3, x4, x5, x7,50, x10, x15, x20, x30, x40 y x50. La potencia por tick sigue siendo el cuadrado de la velocidad, así que x50 consume 2.500 veces la potencia nominal. Combinado con un Acelerador de taquiones, el límite pasa de x10 a x50.",
+        "Toma de carga de baterías: admite hasta 200 baterías SMES en un solo bloque, 80 GJ de capacidad y hasta 20 MW por tick con 200 baterías. Clic derecho con una batería para meter todo lo que llevas; agachado con las manos vacías y clic derecho para sacar una. Al romperla sale un objeto que conserva las baterías y su carga. No tiene interfaz; el estado aparece en la barra de acción."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Antes de instalar V1.7 55114, quita de la carpeta mods el jar antiguo de OUKA (1.7.2.2 o anterior) y deja solo 1 copia de GeckoLib 5.5.6. Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior y Fabric API 0.161.0+26.3 o superior. Instálalo en el cliente y en el servidor.",
+        "Aún no verificado: las cifras de helio-3 solo están probadas con pruebas unitarias, sin captura de un cliente real del Sol Artificial. La reparación del Beacon con el objeto Tsubomi real no se probó en un mundo (las pruebas usan un sustituto). Los mundos de 1.7.2.2 no se cargaron de principio a fin."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.2.2",
      "date": "2026-10-21",

@@ -1,15 +1,40 @@
 {
  "lang": "en",
  "brand": "ouka",
- "updated": "2026-10-21",
+ "updated": "2026-10-25",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-21",
+ "updated_label": "Updated 2026-10-25",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK 1.7.2.2 — Industrial Hazard Exoskeleton adjusted",
+   "summary": "Ouka JJK V1.7 55114 — Beacon repair, Artificial Sun helium-3, overclock x50, Battery Charging Socket",
    "releases": [
+    {
+     "version": "V1.7 55114",
+     "date": "2026-10-25",
+     "type": "release",
+     "title": "Ouka JJK V1.7 55114 — Beacon repair, Artificial Sun helium-3, overclock x50, Battery Charging Socket",
+     "summary": "The Beacon is repaired with a Tsubomi Nether Star Block, the Artificial Sun burns helium-3 as its own fuel, the overclock cap rises to x50, and the new Battery Charging Socket holds up to 200 SMES batteries.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "An Ouka Beacon is repaired with 1 Tsubomi Nether Star Block. A Heavy Core Ingot no longer repairs it. Without Tsubomi there is no item to repair with, so it cannot be repaired.",
+        "The Artificial Sun burns helium-3 as a separate fuel, and very fast: on top of the power it delivers, it burns extra, more the harder it is driven (5x at full output, 1.4x at a tenth).",
+        "The overclock cap is raised to 5,000% (x50). There are 17 levels: x1.00 to x2.50 as before, then x3, x4, x5, x7.50, x10, x15, x20, x30, x40 and x50. Power per tick stays the square of the speed, so x50 draws 2,500 times the rated power. Combined with a Tachyon Accelerator, the cap rises from x10 to x50.",
+        "Battery Charging Socket: holds up to 200 SMES batteries in one block, 80 GJ of capacity and up to 20 MW per tick at 200 batteries. Right-click with a battery to put in everything you carry; sneak with both hands empty and right-click to take one out. Breaking it gives one item that keeps the batteries and their charge. It has no GUI; its status is shown in the action bar."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Before you install V1.7 55114, remove the old OUKA jar (1.7.2.2 or older) from the mods folder and keep only 1 copy of GeckoLib 5.5.6. It needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, and Fabric API 0.161.0+26.3 or newer. Install it on both the client and the server.",
+        "Not verified yet: the helium-3 figures are proven only by unit tests, with no real-client capture of the Artificial Sun. The beacon repair with the real Tsubomi item was not exercised in a world (the tests use a stand-in item). Worlds from 1.7.2.2 were not loaded end to end."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7.2.2",
      "date": "2026-10-21",

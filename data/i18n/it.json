@@ -306,6 +306,21 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-55114",
+    "title": "Ouka JJK V1.7 55114 — Riparazione del Beacon, elio-3 del Sole Artificiale, overclock x50, Presa di ricarica batterie",
+    "summary": "Il Beacon si ripara con un blocco di Stella del Nether Tsubomi, il Sole Artificiale brucia elio-3 come combustibile proprio, il limite di overclock sale a x50 e la nuova Presa di ricarica batterie contiene fino a 200 batterie SMES.",
+    "highlights": [
+     "Un Beacon Ouka si ripara con 1 blocco di Stella del Nether Tsubomi. Un lingotto di nucleo pesante non lo ripara più. Senza Tsubomi non c'è un oggetto per ripararlo, quindi non può essere riparato.",
+     "Il Sole Artificiale brucia elio-3 come combustibile separato, e molto in fretta: oltre alla potenza erogata ne brucia di più, tanto più quanto è spinto (5 volte a piena potenza, 1,4 volte a un decimo).",
+     "Il limite di overclock sale al 5.000% (x50). Ci sono 17 livelli: da x1,00 a x2,50 come prima, poi x3, x4, x5, x7,50, x10, x15, x20, x30, x40 e x50. La potenza per tick resta il quadrato della velocità, quindi x50 assorbe 2.500 volte la potenza nominale. Combinato con un Acceleratore Tachionico, il limite sale da x10 a x50.",
+     "Presa di ricarica batterie: contiene fino a 200 batterie SMES in un solo blocco, 80 GJ di capacità e fino a 20 MW per tick con 200 batterie. Clic destro con una batteria per inserire tutto ciò che hai; accovacciato a mani vuote e clic destro per estrarne una. Rompendola si ottiene un oggetto che conserva le batterie e la loro carica. Non ha interfaccia; lo stato compare nella barra delle azioni."
+    ],
+    "warnings": [
+     "Prima di installare V1.7 55114, rimuovi dalla cartella mods il vecchio jar di OUKA (1.7.2.2 o precedente) e tieni una sola copia di GeckoLib 5.5.6. Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo e Fabric API 0.161.0+26.3 o successivo. Installalo sul client e sul server.",
+     "Non ancora verificato: i valori dell'elio-3 sono provati solo da test unitari, senza una registrazione del Sole Artificiale da un client reale. La riparazione del Beacon con l'oggetto Tsubomi reale non è stata provata in un mondo (i test usano un sostituto). I mondi della 1.7.2.2 non sono stati caricati dall'inizio alla fine."
+    ]
+   },
+   {
     "id": "ouka-v1.7.2.2",
     "title": "Ouka JJK 1.7.2.2 — Esoscheletro di pericolo industriale regolato",
     "summary": "L'intero set dell'esoscheletro di pericolo è più leggero: il danno da caduta e da fuoco cala del 25 %, e non si nuota più nella lava.",
