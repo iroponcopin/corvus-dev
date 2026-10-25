@@ -97,6 +97,14 @@ CHECKS = [
      "downloads/halia-*.jar (tracked, Fabric-only, no breaks) vs the manifest's halia block and the 13 feeds"),
     ("halia-controls", "check_halia_release.py", ["--self-test"],
      "the Halia release gate turns every planted defect red"),
+    # 2026-10-25 (Corvus Store 5.5.204): the local assistant's model mirror. The Store trusts the manifest's local_ai
+    # block and verifies the download by hash, so the block must match the pinned model (file, bytes, SHA-256, the
+    # Store's LocalAiSpec) and the documented part plan, offline. The network half (every listed part answers 200 with
+    # its bytes) is check_published_artefacts.py, run after publish.
+    ("local-ai", "check_local_ai.py", [],
+     "data/local_ai.json vs the pinned model (LocalAiSpec copy) and data/local_ai_mirror_parts.json"),
+    ("local-ai-controls", "check_local_ai.py", ["--self-test"],
+     "the local AI gate turns every planted defect red"),
 ]
 
 

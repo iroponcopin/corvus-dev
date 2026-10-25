@@ -866,6 +866,28 @@ def _spawn_lock():
     return {"model": "halia", "from": lock["from"], "until": lock["until"]}
 
 
+LOCAL_AI_FILE = ROOT / "data" / "local_ai.json"
+
+
+def _local_ai():
+    """The top-level `local_ai` block (Corvus Store 5.5.204+), or None when data/local_ai.json is absent.
+
+    Where the Store may fetch the local assistant's model from, in order. The shape is copied as it is after the gate
+    in scripts/check_local_ai.py has passed it: the pinned model file, bytes and SHA-256 (the Store refuses any other),
+    and the sources. An empty mirror source is kept as it is: the Store skips it and uses its built-in source. The
+    built-in source is never listed here. Older Stores ignore the key.
+    """
+    if not LOCAL_AI_FILE.is_file():
+        return None
+    import check_local_ai  # scripts/ is on sys.path when this file runs as a script
+    block = json.loads(LOCAL_AI_FILE.read_text(encoding="utf-8"))
+    plan = json.loads(Path(check_local_ai.MIRROR_PLAN_FILE).read_text(encoding="utf-8"))
+    problems = check_local_ai.block_problems(block, plan) + check_local_ai.plan_problems(plan)
+    if problems:
+        raise SystemExit(f"ERROR: {LOCAL_AI_FILE} is not what the Store reads: " + "; ".join(problems))
+    return block
+
+
 def _halia_creatures():
     """The `halia.creatures` list (Corvus Store 5.5.1.2+), or None when data/halia_creatures.json is absent.
 
@@ -1099,6 +1121,15 @@ def build():
     if spawn is not None:
         manifest["spawn_lock"] = spawn
         print(f"glimpse_manifest.py: spawn_lock {spawn['model']} from {spawn['from']} until {spawn['until']} (UK local)")
+
+    local_ai = _local_ai()
+    if local_ai is not None:
+        manifest["local_ai"] = local_ai
+        print(f"glimpse_manifest.py: local_ai {local_ai['model']['file']} ({len(local_ai['model']['sources'])} source(s) "
+              f"listed; an empty source is skipped by the Store)")
+    elif "local_ai" in _previously_published_manifest():
+        raise SystemExit(f"ERROR: no data/local_ai.json, but the published manifest carries a 'local_ai' block. "
+                         f"Dropping it would silently withdraw the model mirror.")
 
     noctua = _noctua_block()
     if noctua is not None:
