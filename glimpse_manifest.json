@@ -222,7 +222,23 @@
       "sources": [
         {
           "name": "corvus",
-          "parts": []
+          "parts": [
+            {
+              "url": "https://github.com/iroponcopin/corvus-models/releases/download/gemma-4-e4b-q4_0/gemma-4-E4B_q4_0-it.gguf.part00",
+              "bytes": 1879048192,
+              "sha256": "51e678a30b0714326ee4b0ae0139297164924a9dad2683569ac49fef63f13169"
+            },
+            {
+              "url": "https://github.com/iroponcopin/corvus-models/releases/download/gemma-4-e4b-q4_0/gemma-4-E4B_q4_0-it.gguf.part01",
+              "bytes": 1879048192,
+              "sha256": "c1e74b2f287eb731bc57527d5944fc9ec9ca1f6ff2842303e48d2db5e8e47074"
+            },
+            {
+              "url": "https://github.com/iroponcopin/corvus-models/releases/download/gemma-4-e4b-q4_0/gemma-4-E4B_q4_0-it.gguf.part02",
+              "bytes": 1396844896,
+              "sha256": "20c6468e7ff435d6c054495f013c4503b80b6bf18584359c02607d2731a8ddcf"
+            }
+          ]
         }
       ]
     }
