@@ -390,6 +390,12 @@
         "release": "V1.4 1140",
         "date": "2026-10-23",
         "type": "release"
+      },
+      {
+        "id": "halia-v1.4-1141",
+        "release": "V1.4 1141",
+        "date": "2026-10-25",
+        "type": "release"
       }
     ]
   }
