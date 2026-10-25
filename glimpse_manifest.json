@@ -195,11 +195,11 @@
   },
   "xhard": {
     "mod_id": "corvus_xhard",
-    "latest": "2.0.1",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-xhard-2.0.1.jar",
-    "file_name": "corvus-xhard-2.0.1.jar",
-    "file_size": 38461,
-    "sha256": "235cb6656998991a673581a75f1310d912ab46cee42efd2e6ae758e21f90426e"
+    "latest": "2.1.0",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-xhard-2.1.0.jar",
+    "file_name": "corvus-xhard-2.1.0.jar",
+    "file_size": 38587,
+    "sha256": "31d8fe43584d6ea78aec63ad1d0ca062cb491aa97900624ae200c524909d1309"
   },
   "difficulty_lock": {
     "level": "pro",
@@ -213,6 +213,19 @@
     "model": "halia",
     "from": "2026-10-22",
     "until": "2026-12-22"
+  },
+  "local_ai": {
+    "model": {
+      "file": "gemma-4-E4B_q4_0-it.gguf",
+      "bytes": 5154941280,
+      "sha256": "676c35070db6dbe52f93e9c864ee0fba4eddea94b9c875d9cb10daff453fbaee",
+      "sources": [
+        {
+          "name": "corvus",
+          "parts": []
+        }
+      ]
+    }
   },
   "noctua": {
     "latest": "1.0.0",
