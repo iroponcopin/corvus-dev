@@ -224,7 +224,7 @@ def main():
 
     if external_blocks:
         print("NOTE: external block(s), not hosted by Corvus and not opened here (their pin is checked by "
-              "check_punchy_pin.py): " + ", ".join(external_blocks))
+              "check_punchy_pin.py / check_fabric_api_pin.py): " + ", ".join(external_blocks))
     if not live:
         print("RED: the manifest declares no published version at all - this checker is reading "
               "the wrong shape, and an empty comparison would pass for the wrong reason.")

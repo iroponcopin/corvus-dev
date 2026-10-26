@@ -97,6 +97,11 @@ The "punchy" block (2026-10-26) is the first EXTERNAL block: Punchy! is a third-
 block POINTS at the Modrinth CDN, and no jar exists in downloads/ or anywhere in this repo. It is built
 ONLY from data/punchy.json (written by scripts/pin_punchy.py at publish time), never from a file on disk,
 and it carries "hosted_by_corvus": false so every gate that walks downloads/ knows to judge it by its pin.
+
+The top-level "fabric_api" block (2026-10-26) is the same kind of EXTERNAL block for Fabric API (Modrinth
+P7dR8mSH, Apache-2.0). Built ONLY from data/fabric_api.json (scripts/pin_fabric_api.py), never from a file on
+disk, with "hosted_by_corvus": false. The Store downloads it from the Modrinth CDN when a mod needing it is
+installed and Fabric API is missing. It is a separate function: adding it cannot change a byte of any other block.
 """
 import hashlib
 import io
@@ -134,6 +139,8 @@ NOCTUA_ZIP_SUFFIX = ".zip"
 PUNCHY_PIN_FILE = ROOT / "data" / "punchy.json"
 PUNCHY_BLOCK_KEYS = ("mod_id", "latest", "download_url", "file_name", "file_size", "sha256", "sha512",
                      "source", "project_url", "license", "hosted_by_corvus")
+FABRIC_API_PIN_FILE = ROOT / "data" / "fabric_api.json"
+FABRIC_API_BLOCK_KEYS = PUNCHY_BLOCK_KEYS  # same external-block shape; the pin's own fields differ, the keys do not
 
 
 def _mod_version():
@@ -708,6 +715,43 @@ def _punchy_block():
     return punchy_block_from_pin(json.loads(PUNCHY_PIN_FILE.read_text(encoding="utf-8")))
 
 
+def fabric_api_block_from_pin(pin):
+    """The top-level `fabric_api` block, built from data/fabric_api.json alone (pure: takes the parsed pin).
+
+    Stops loudly when the pin is incomplete, a hash or size is malformed, the URL is not https or not on
+    cdn.modrinth.com, the pin claims Corvus hosts the file, or the mod id is not fabric-api. Nothing here reads
+    downloads/: the jar is not there by design, so a missing file is never an error for this block.
+    """
+    missing = [k for k in FABRIC_API_BLOCK_KEYS if k not in pin or pin[k] in (None, "")]
+    if missing:
+        raise SystemExit(f"ERROR: data/fabric_api.json is incomplete (missing {', '.join(missing)}). Run "
+                         f"scripts/pin_fabric_api.py --write on a machine with the network; do not hand-edit the pin.")
+    url = pin["download_url"]
+    if not isinstance(url, str) or not url.startswith("https://"):
+        raise SystemExit(f"ERROR: fabric_api.download_url {url!r} is not https. The Store will not fetch it.")
+    if not url.startswith("https://cdn.modrinth.com/"):
+        raise SystemExit(f"ERROR: fabric_api.download_url {url!r} is not on cdn.modrinth.com.")
+    for key, pattern in (("sha256", r"[0-9a-f]{64}"), ("sha512", r"[0-9a-f]{128}")):
+        if not re.fullmatch(pattern, str(pin[key])):
+            raise SystemExit(f"ERROR: fabric_api.{key} is not a {'64' if key == 'sha256' else '128'}-digit lowercase hex value.")
+    size = pin["file_size"]
+    if not isinstance(size, int) or isinstance(size, bool) or size <= 0:
+        raise SystemExit(f"ERROR: fabric_api.file_size {size!r} must be a positive integer.")
+    if pin["hosted_by_corvus"] is not False:
+        raise SystemExit("ERROR: data/fabric_api.json must say hosted_by_corvus: false. Fabric API is not Corvus's, "
+                         "and its jar must never be published from this site.")
+    if pin["mod_id"] != "fabric-api":
+        raise SystemExit(f"ERROR: fabric_api.mod_id is {pin['mod_id']!r}, not 'fabric-api'.")
+    return {k: pin[k] for k in FABRIC_API_BLOCK_KEYS}
+
+
+def _fabric_api_block():
+    """The top-level `fabric_api` block, or None before data/fabric_api.json exists."""
+    if not FABRIC_API_PIN_FILE.is_file():
+        return None
+    return fabric_api_block_from_pin(json.loads(FABRIC_API_PIN_FILE.read_text(encoding="utf-8")))
+
+
 def _noctua_block():
     """The `noctua` block, or None when no Noctua package has been published.
 
@@ -1199,6 +1243,18 @@ def build():
             "Dropping it would silently withdraw Punchy! from the Store. Restore the pin, or do not ship this.")
     else:
         print("glimpse_manifest.py: no data/punchy.json yet - writing manifest with no 'punchy' block")
+
+    fabric_api = _fabric_api_block()
+    if fabric_api is not None:
+        manifest["fabric_api"] = fabric_api
+        print(f"glimpse_manifest.py: Fabric API {fabric_api['latest']} ({fabric_api['file_name']}, external: "
+              f"{fabric_api['download_url'].split('/')[2]}, not hosted by Corvus) selected, including 'fabric_api' block")
+    elif "fabric_api" in _previously_published_manifest():
+        raise SystemExit(
+            "ERROR: no data/fabric_api.json, but the published glimpse_manifest.json already carries a 'fabric_api' block. "
+            "Dropping it would silently withdraw Fabric API from the Store. Restore the pin, or do not ship this.")
+    else:
+        print("glimpse_manifest.py: no data/fabric_api.json yet - writing manifest with no 'fabric_api' block")
 
     out_path = ROOT / "glimpse_manifest.json"
     out_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

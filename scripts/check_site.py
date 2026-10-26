@@ -114,6 +114,14 @@ CHECKS = [
      "the Punchy pin gate turns every planted defect red"),
     ("punchy-fetch-controls", "pin_punchy.py", ["--self-test"],
      "the Punchy pin script refuses a wrong hash, a wrong mod id, a non-CDN URL and a beta-only release (stand-in, offline)"),
+    # 2026-10-26: Fabric API (Modrinth P7dR8mSH, Apache-2.0) is pinned the same way: never hosted, the manifest's top-level
+    # fabric_api block (hosted_by_corvus: false) equals the pin, and no Fabric API jar may exist anywhere in the tree.
+    ("fabric-api-pin", "check_fabric_api_pin.py", [],
+     "data/fabric_api.json (pinned, Modrinth CDN only) vs the manifest's fabric_api block; no Fabric API jar in the tree"),
+    ("fabric-api-pin-controls", "check_fabric_api_pin.py", ["--self-test"],
+     "the Fabric API pin gate turns every planted defect red"),
+    ("fabric-api-fetch-controls", "pin_fabric_api.py", ["--self-test"],
+     "the Fabric API pin script refuses a wrong hash, a wrong mod id, a non-CDN URL and a beta-only release (stand-in, offline)"),
 ]
 
 
