@@ -1,15 +1,44 @@
 {
  "lang": "de",
  "brand": "tsubomi",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-25",
+ "updated_label": "Aktualisiert am 2026-10-26",
  "note": "",
  "groups": [
   {
    "label": "V2.4",
-   "summary": "Tsubomi V2.4 0204 — Sternblüte Corvus Mythic und Mythic Pearl, Wings, Netherstern-Block",
+   "summary": "Tsubomi V2.4 1017 — Sternblüte Phoenix, Sternblüte Phoenix Mythic, Sternblüte Phoenix Zenith",
    "releases": [
+    {
+     "version": "V2.4 1017",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Tsubomi V2.4 1017 — Sternblüte Phoenix, Sternblüte Phoenix Mythic, Sternblüte Phoenix Zenith",
+     "summary": "Tsubomi V2.4 1017 fügt Sternblüte Phoenix, Sternblüte Phoenix Mythic und Sternblüte Phoenix Zenith hinzu: drei neue Serien mit dem Sortiment von Sternblüte Max und jeweils eigenen, immer stärkeren Wings.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Sternblüte Phoenix (tiefes Kosmosmarine und Magentarosa), Sternblüte Phoenix Mythic (Nebelviolett und Neonrose, mit Topasgold) und Sternblüte Phoenix Zenith (Platinweiß und kosmisches Cyan) sind drei neue Serien. Jede hat das Sortiment von Sternblüte Max — 13 Gegenstände — und ihre eigenen Wings.",
+        "Jede Serie liegt über der vorigen, Phoenix über Mythic Pearl: bei jedem Schritt das 1.25-Fache an Haltbarkeit und Abbaugeschwindigkeit, Werkzeuge mit 10 % mehr Schaden, Spitzhacken bis 20×20, 22×22 und 24×24 und Passiveffekte des ganzen Sets, die bei jedem Schritt steigen — Fall −82 %, −88 %, −94 %; Feuer −85 %, −90 %, −95 %; Gift −60 %, −68 %, −78 %; Lava −87 %, −91 %, −95 %; Schallschlag des Wärters −85 %, −89 %, −94 %; Abbaugeschwindigkeit +23 %, +27 %, +32 %; Bewegungsgeschwindigkeit +42 %, +48 %, +55 %; Angriff +32 %, +37 %, +43 %; eine Chance von 82 %, 86 % und 90 %, jeden neuen schädlichen Effekt abzuschütteln; und eine Landungs-Schockwelle von 85 %, 90 % und 95 % des Sturzes.",
+        "Jede Legierung kostet mehr als die vorige: Der Phoenix-Legierungsbarren entsteht aus 5 Pearl-Legierungsbarren, 3 Netherstern-Blöcken und einem Totem der Unsterblichkeit und ergibt 5 Barren; der Phoenix-Mythic-Legierungsbarren aus 4 Phoenix-Legierungsbarren, 4 Netherstern-Blöcken und einem Verzauberten goldenen Apfel und ergibt 4; der Phoenix-Zenith-Legierungsbarren aus 4 Phoenix-Mythic-Legierungsbarren, 4 Netherstern-Blöcken und einem Leuchtfeuer und ergibt 4.",
+        "Jede Serie hat ihre eigenen Wings, stärker als die vorigen: Sie beschleunigen und fliegen 1.12-, 1.26- und 1.40-mal so schnell wie die ersten Wings, halten 3000, 4500 und 7000 statt 2000 aus und ermüden dich pro geflogenem Block weniger. Jede wird aus den Wings der vorigen Serie, 4 Barren der eigenen Legierung, 3 Netherstern-Blöcken und einem Corvus-Zeichen hergestellt, zählt nur als Brustplatte des eigenen Sets und macht Stürze harmlos.",
+        "Die Phoenix-Wings gehen von Marineblau in magentarosa Spitzen über, mit funkelnden violetten Sternpunkten; die Phoenix-Mythic-Wings glühen in flackerndem Neonrosa mit topasgoldenen Rändern und streuen beim Schlagen Sternenstaub; die Phoenix-Zenith-Wings sind durchscheinendes Platin und Cyan mit einem Schimmer, der durch Regenbogenfarben wandert."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+        "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars.",
+        "Die Phoenix-Zenith-Wings krümmen nicht den Raum um sich: Sie sind durchscheinend mit schimmernder Farbe, mehr nicht.",
+        "Das Flügelschlag-Geräusch der Wings ist noch nicht fertig.",
+        "Jeder Wert und jedes Rezept dieser Serien ist ein erster Wert des Entwicklers und kann noch angepasst werden."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.4 0204",
      "date": "2026-10-25",

@@ -1,15 +1,44 @@
 {
  "lang": "pt-br",
  "brand": "tsubomi",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "title": "Histórico de atualizações",
- "updated_label": "Atualizado em 2026-10-25",
+ "updated_label": "Atualizado em 2026-10-26",
  "note": "",
  "groups": [
   {
    "label": "V2.4",
-   "summary": "Tsubomi V2.4 0204 — Flor Estelar Corvus Mythic e Mythic Pearl, Wings, bloco de Estrela do Nether",
+   "summary": "Tsubomi V2.4 1017 — Flor Estelar Phoenix, Flor Estelar Phoenix Mythic, Flor Estelar Phoenix Zenith",
    "releases": [
+    {
+     "version": "V2.4 1017",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Tsubomi V2.4 1017 — Flor Estelar Phoenix, Flor Estelar Phoenix Mythic, Flor Estelar Phoenix Zenith",
+     "summary": "O Tsubomi V2.4 1017 adiciona Flor Estelar Phoenix, Flor Estelar Phoenix Mythic e Flor Estelar Phoenix Zenith: três séries novas com o sortimento de Flor Estelar Max e suas próprias Wings, cada vez mais fortes.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "Flor Estelar Phoenix (azul-marinho cósmico profundo e rosa magenta), Flor Estelar Phoenix Mythic (roxo de nebulosa e rosa neon, com ouro topázio) e Flor Estelar Phoenix Zenith (branco platina e ciano cósmico) são três séries novas. Cada uma tem o sortimento de Flor Estelar Max — 13 itens — e suas próprias Wings.",
+        "Cada série fica acima da anterior, Phoenix acima de Mythic Pearl: 1.25 vez a durabilidade e a velocidade de mineração a cada passo, ferramentas que batem 10% mais forte, picaretas de até 20×20, 22×22 e 24×24, e passivas do conjunto que sobem a cada passo — queda −82%, −88%, −94%; fogo −85%, −90%, −95%; veneno −60%, −68%, −78%; lava −87%, −91%, −95%; onda sônica do Defensor −85%, −89%, −94%; velocidade de mineração +23%, +27%, +32%; velocidade de movimento +42%, +48%, +55%; ataque +32%, +37%, +43%; uma chance de 82%, 86% e 90% de ignorar cada novo efeito nocivo; e uma onda de choque no pouso de 85%, 90% e 95% da queda.",
+        "Cada liga custa mais que a anterior: o lingote de liga Phoenix é feito com 5 lingotes de liga Pearl, 3 blocos de Estrela do Nether e um Totem da Imortalidade, rendendo 5 lingotes; o lingote de liga Phoenix Mythic com 4 lingotes de liga Phoenix, 4 blocos de Estrela do Nether e uma Maçã Dourada Encantada, rendendo 4; o lingote de liga Phoenix Zenith com 4 lingotes de liga Phoenix Mythic, 4 blocos de Estrela do Nether e um Sinalizador, rendendo 4.",
+        "Cada série tem suas próprias Wings, mais fortes que as anteriores: aceleram e voam 1.12, 1.26 e 1.40 vez mais rápido que as primeiras Wings, duram 3000, 4500 e 7000 contra 2000, e cansam menos a cada bloco percorrido. Cada uma é feita com as Wings da série anterior, 4 lingotes da própria liga, 3 blocos de Estrela do Nether e um emblema Corvus, conta só como peitoral do próprio conjunto e torna as quedas inofensivas.",
+        "As Wings Phoenix passam do azul-marinho a pontas rosa magenta, com pequenos pontos de estrela violeta que cintilam; as Wings Phoenix Mythic brilham num rosa neon trêmulo com bordas de ouro topázio e espalham poeira de estrelas ao bater; as Wings Phoenix Zenith são de platina e ciano translúcidos, com um brilho que percorre as cores do arco-íris."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais novo, Fabric API 0.161.0+26.3 ou mais nova e Java 25. Nenhum outro mod é necessário; o Cherry é opcional.",
+        "O Tsubomi não pode ser usado junto com o Alpha. Se houver um único mod do Alpha instalado, o jogo não inicia; remova antes os jars do Alpha.",
+        "As Wings Phoenix Zenith não curvam o espaço ao redor: são translúcidas com uma cor cintilante, nada mais.",
+        "O som do bater de asas das Wings ainda não está pronto.",
+        "Cada valor e cada receita destas séries é um primeiro valor escolhido pelo desenvolvedor e pode ser reequilibrado."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.4 0204",
      "date": "2026-10-25",

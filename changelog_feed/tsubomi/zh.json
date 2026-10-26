@@ -1,15 +1,44 @@
 {
  "lang": "zh",
  "brand": "tsubomi",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "title": "更新日志",
- "updated_label": "更新于 2026-10-25",
+ "updated_label": "更新于 2026-10-26",
  "note": "",
  "groups": [
   {
    "label": "V2.4",
-   "summary": "Tsubomi V2.4 0204 — 星樱 Corvus Mythic 与 Mythic Pearl、Wings、下界之星方块",
+   "summary": "Tsubomi V2.4 1017 — 星樱 Phoenix、星樱 Phoenix Mythic、星樱 Phoenix Zenith",
    "releases": [
+    {
+     "version": "V2.4 1017",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Tsubomi V2.4 1017 — 星樱 Phoenix、星樱 Phoenix Mythic、星樱 Phoenix Zenith",
+     "summary": "Tsubomi V2.4 1017 新增 星樱 Phoenix、星樱 Phoenix Mythic 与 星樱 Phoenix Zenith 三个系列，阵容与星樱 Max 相同，并各带一套越来越强的 Wings。",
+     "sections": [
+      {
+       "title": "更新内容",
+       "items": [
+        "星樱 Phoenix（深宇宙藏青与洋红粉）、星樱 Phoenix Mythic（星云紫与霓虹玫瑰，配黄玉金）和 星樱 Phoenix Zenith（铂白与宇宙青）是三个新系列。每个系列都有与星樱 Max 相同的 13 件物品，以及自己的 Wings。",
+        "每个系列都高于前一个，Phoenix 高于 Mythic Pearl：每一级耐久和挖掘速度为 1.25 倍，工具伤害高 10%，镐最大可达 20×20、22×22 和 24×24，整套被动也逐级提升——摔落 −82%、−88%、−94%；火焰 −85%、−90%、−95%；中毒 −60%、−68%、−78%；岩浆 −87%、−91%、−95%；监守者音波 −85%、−89%、−94%；挖掘速度 +23%、+27%、+32%；移动速度 +42%、+48%、+55%；攻击 +32%、+37%、+43%；免疫新出现负面效果的几率 82%、86%、90%；着陆冲击波为摔落伤害的 85%、90%、95%。",
+        "每种合金都比前一种更贵：Phoenix 合金锭由 5 个 Pearl 合金锭、3 个下界之星方块和一个不死图腾制成，可得 5 个锭；Phoenix Mythic 合金锭由 4 个 Phoenix 合金锭、4 个下界之星方块和一个附魔金苹果制成，可得 4 个；Phoenix Zenith 合金锭由 4 个 Phoenix Mythic 合金锭、4 个下界之星方块和一个信标制成，可得 4 个。",
+        "每个系列都有自己的 Wings，且比前一个更强：加速和飞行速度为第一副 Wings 的 1.12 倍、1.26 倍和 1.40 倍，耐久为 3000、4500 和 7000（第一副为 2000），每飞一格也更不容易疲劳。每副由前一系列的 Wings、4 个自己的合金锭、3 个下界之星方块和一个 Corvus 之证制成，只计为自己那一套的胸甲，并使摔落不造成伤害。",
+        "Phoenix 的 Wings 由藏青渐变为洋红色的羽尖，并有淡紫色的星点闪烁；Phoenix Mythic 的 Wings 闪动着霓虹玫瑰色，边缘为黄玉金，扇动时洒下星尘；Phoenix Zenith 的 Wings 是半透明的铂白与青色，带有在彩虹色之间流转的微光。"
+       ]
+      },
+      {
+       "title": "注意事项",
+       "items": [
+        "需要 Minecraft 26.3、Fabric Loader 0.19.5 或更高、Fabric API 0.161.0+26.3 或更高以及 Java 25。不需要其他模组；Cherry 是可选的。",
+        "Tsubomi 不能与 Alpha 同时使用。只要安装了任何一个 Alpha 模组，游戏就无法启动；请先移除 Alpha 的 jar。",
+        "Phoenix Zenith 的 Wings 不会扭曲周围的空间：它们只是半透明并带有闪烁的颜色。",
+        "Wings 的振翅声音尚未完成。",
+        "这些系列的所有数值和配方都是开发者选定的初始值，之后可能会调整。"
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.4 0204",
      "date": "2026-10-25",

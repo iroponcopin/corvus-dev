@@ -1212,6 +1212,25 @@
      "No se vio dibujado el contorno del área del bloque estructural en un cliente de juego real durante las pruebas; el tamaño en sí está confirmado, el contorno no.",
      "Las poses de aterrizaje y caída de las Wings y su sonido de aleteo todavía no están hechos."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-1017",
+    "title": "Tsubomi V2.4 1017 — Flor Estelar Phoenix, Flor Estelar Phoenix Mythic, Flor Estelar Phoenix Zenith",
+    "summary": "Tsubomi V2.4 1017 añade Flor Estelar Phoenix, Flor Estelar Phoenix Mythic y Flor Estelar Phoenix Zenith: tres series nuevas con el surtido de Flor Estelar Max y sus propias Wings, cada vez más fuertes.",
+    "highlights": [
+     "Flor Estelar Phoenix (azul marino cósmico profundo y rosa magenta), Flor Estelar Phoenix Mythic (púrpura de nebulosa y rosa neón, con oro topacio) y Flor Estelar Phoenix Zenith (blanco platino y cian cósmico) son tres series nuevas. Cada una tiene el surtido de Flor Estelar Max — 13 objetos — y sus propias Wings.",
+     "Cada serie está por encima de la anterior, Phoenix por encima de Mythic Pearl: 1.25 veces la durabilidad y la velocidad de minado en cada paso, herramientas que pegan un 10 % más fuerte, picos de hasta 20×20, 22×22 y 24×24, y pasivas del conjunto que suben en cada paso — caída −82 %, −88 %, −94 %; fuego −85 %, −90 %, −95 %; veneno −60 %, −68 %, −78 %; lava −87 %, −91 %, −95 %; onda sónica del Warden −85 %, −89 %, −94 %; velocidad de minado +23 %, +27 %, +32 %; velocidad de movimiento +42 %, +48 %, +55 %; ataque +32 %, +37 %, +43 %; una probabilidad del 82 %, 86 % y 90 % de librarse de cada nuevo efecto dañino; y una onda de choque al aterrizar del 85 %, 90 % y 95 % de la caída.",
+     "Cada aleación cuesta más que la anterior: el lingote de aleación Phoenix se hace con 5 lingotes de aleación Pearl, 3 bloques de estrella del Nether y un Tótem de inmortalidad, y da 5 lingotes; el lingote de aleación Phoenix Mythic con 4 lingotes de aleación Phoenix, 4 bloques de estrella del Nether y una Manzana dorada encantada, y da 4; el lingote de aleación Phoenix Zenith con 4 lingotes de aleación Phoenix Mythic, 4 bloques de estrella del Nether y un Faro, y da 4.",
+     "Cada serie tiene sus propias Wings, más fuertes que las anteriores: aceleran y vuelan 1.12, 1.26 y 1.40 veces más rápido que las primeras Wings, duran 3000, 4500 y 7000 frente a 2000, y cansan menos por cada bloque recorrido. Cada una se fabrica con las Wings de la serie anterior, 4 lingotes de su propia aleación, 3 bloques de estrella del Nether y un emblema Corvus, solo cuenta como pechera de su propio conjunto y hace que las caídas no hagan daño.",
+     "Las Wings Phoenix pasan del azul marino a puntas rosa magenta, con pequeños puntos de estrella violetas que titilan; las Wings Phoenix Mythic brillan en un rosa neón vacilante con bordes de oro topacio y esparcen polvo de estrellas al batir; las Wings Phoenix Zenith son de platino y cian translúcidos, con un brillo que recorre los colores del arcoíris."
+    ],
+    "warnings": [
+     "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+     "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha.",
+     "Las Wings Phoenix Zenith no curvan el espacio a su alrededor: son translúcidas con un color que reluce, nada más.",
+     "El sonido del aleteo de las Wings aún no está hecho.",
+     "Cada valor y cada receta de estas series es un primer valor elegido por el desarrollador y puede reequilibrarse."
+    ]
    }
   ],
   "halia": [

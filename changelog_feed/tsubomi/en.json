@@ -1,15 +1,44 @@
 {
  "lang": "en",
  "brand": "tsubomi",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-25",
+ "updated_label": "Updated 2026-10-26",
  "note": "",
  "groups": [
   {
    "label": "V2.4",
-   "summary": "Tsubomi V2.4 0204 — Starbloom Corvus Mythic and Mythic Pearl, Wings, Nether Star Block",
+   "summary": "Tsubomi V2.4 1017 — Starbloom Phoenix, Starbloom Phoenix Mythic, Starbloom Phoenix Zenith",
    "releases": [
+    {
+     "version": "V2.4 1017",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Tsubomi V2.4 1017 — Starbloom Phoenix, Starbloom Phoenix Mythic, Starbloom Phoenix Zenith",
+     "summary": "Tsubomi V2.4 1017 adds Starbloom Phoenix, Starbloom Phoenix Mythic and Starbloom Phoenix Zenith: three new series with the lineup of Starbloom Max and their own, ever stronger Wings.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "Starbloom Phoenix (deep cosmos navy and magenta pink), Starbloom Phoenix Mythic (nebula purple and neon rose, with topaz gold) and Starbloom Phoenix Zenith (platinum white and cosmic cyan) are three new series. Each has the lineup of Starbloom Max — 13 items — and its own Wings.",
+        "Each series is above the one before, Phoenix above Mythic Pearl: 1.25× the durability and mining speed at every step, tools that hit 10% harder, pickaxes up to 20×20, 22×22 and 24×24, and full-set passives that rise at every step — fall −82%, −88%, −94%; fire −85%, −90%, −95%; poison −60%, −68%, −78%; lava −87%, −91%, −95%; the Warden's sonic boom −85%, −89%, −94%; mining speed +23%, +27%, +32%; movement speed +42%, +48%, +55%; attack +32%, +37%, +43%; a chance of 82%, 86% and 90% to shrug off each new harmful effect; and a landing shockwave of 85%, 90% and 95% of the fall.",
+        "Each alloy costs more than the one before: the Phoenix Alloy Ingot is made from 5 Pearl Alloy Ingots, 3 Nether Star Blocks and a Totem of Undying, giving 5 ingots; the Phoenix Mythic Alloy Ingot from 4 Phoenix Alloy Ingots, 4 Nether Star Blocks and an Enchanted Golden Apple, giving 4; the Phoenix Zenith Alloy Ingot from 4 Phoenix Mythic Alloy Ingots, 4 Nether Star Blocks and a Beacon, giving 4.",
+        "Each series has its own Wings, stronger than the one before: they accelerate and fly 1.12×, 1.26× and 1.40× as fast as the first Wings, last 3000, 4500 and 7000 against 2000, and tire you less for every block flown. Each is crafted from the Wings of the series before, 4 of its own alloy ingots, 3 Nether Star Blocks and a Corvus Emblem, counts as the chest piece of its own full set only, and makes falls harmless.",
+        "The Phoenix Wings fade from navy to magenta tips with twinkling violet star points; the Phoenix Mythic Wings glow in flickering neon rose with topaz-gold edges and scatter star dust as they flap; the Phoenix Zenith Wings are translucent platinum and cyan with a shimmer that cycles through rainbow colours."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+        "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first.",
+        "The Phoenix Zenith Wings do not bend the space around them: they are translucent with a shimmering colour, nothing more.",
+        "The Wings' flap sound is not done yet.",
+        "Every number and recipe of these series is a first value chosen by the developer, and may be rebalanced."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.4 0204",
      "date": "2026-10-25",

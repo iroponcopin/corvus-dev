@@ -1212,6 +1212,25 @@
      "Le contour de la zone du bloc de structure n'a pas été vu dessiné dans un vrai client de jeu pendant les tests ; la taille elle-même est confirmée, le contour non.",
      "Les poses d'atterrissage et de chute des Wings et leur bruit de battement d'ailes ne sont pas encore faits."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-1017",
+    "title": "Tsubomi V2.4 1017 — Floraison d'étoile Phoenix, Floraison d'étoile Phoenix Mythic, Floraison d'étoile Phoenix Zenith",
+    "summary": "Tsubomi V2.4 1017 ajoute Floraison d'étoile Phoenix, Floraison d'étoile Phoenix Mythic et Floraison d'étoile Phoenix Zenith : trois nouvelles séries avec la gamme de Floraison d'étoile Max et leurs propres Wings, de plus en plus fortes.",
+    "highlights": [
+     "Floraison d'étoile Phoenix (bleu marine cosmique profond et rose magenta), Floraison d'étoile Phoenix Mythic (violet nébuleuse et rose néon, avec de l'or topaze) et Floraison d'étoile Phoenix Zenith (blanc platine et cyan cosmique) sont trois nouvelles séries. Chacune a la gamme de Floraison d'étoile Max — 13 objets — et ses propres Wings.",
+     "Chaque série est au-dessus de la précédente, Phoenix au-dessus de Mythic Pearl : 1.25 fois la durabilité et la vitesse de minage à chaque étape, des outils qui frappent 10 % plus fort, des pioches jusqu'à 20×20, 22×22 et 24×24, et des passifs d'ensemble qui montent à chaque étape — chute −82 %, −88 %, −94 % ; feu −85 %, −90 %, −95 % ; poison −60 %, −68 %, −78 % ; lave −87 %, −91 %, −95 % ; onde sonique du Warden −85 %, −89 %, −94 % ; vitesse de minage +23 %, +27 %, +32 % ; vitesse de déplacement +42 %, +48 %, +55 % ; attaque +32 %, +37 %, +43 % ; une chance de 82 %, 86 % et 90 % de repousser chaque nouvel effet néfaste ; et une onde de choc à l'atterrissage de 85 %, 90 % et 95 % de la chute.",
+     "Chaque alliage coûte plus cher que le précédent : le lingot d'alliage Phoenix se fabrique avec 5 lingots d'alliage Pearl, 3 blocs d'étoile du Nether et un Totem d'immortalité, et donne 5 lingots ; le lingot d'alliage Phoenix Mythic avec 4 lingots d'alliage Phoenix, 4 blocs d'étoile du Nether et une Pomme dorée enchantée, et donne 4 ; le lingot d'alliage Phoenix Zenith avec 4 lingots d'alliage Phoenix Mythic, 4 blocs d'étoile du Nether et une Balise, et donne 4.",
+     "Chaque série a ses propres Wings, plus fortes que les précédentes : elles accélèrent et volent 1.12, 1.26 et 1.40 fois plus vite que les premières Wings, durent 3000, 4500 et 7000 contre 2000, et fatiguent moins à chaque bloc parcouru. Chacune se fabrique avec les Wings de la série précédente, 4 lingots de son propre alliage, 3 blocs d'étoile du Nether et un emblème Corvus, ne compte que comme plastron de son propre ensemble et rend les chutes sans danger.",
+     "Les Wings Phoenix passent du bleu marine à des pointes rose magenta, avec de petits points d'étoile violets qui scintillent ; les Wings Phoenix Mythic brillent d'un rose néon vacillant aux bords or topaze et sèment de la poussière d'étoiles à chaque battement ; les Wings Phoenix Zenith sont d'un platine et d'un cyan translucides, avec un miroitement qui parcourt les couleurs de l'arc-en-ciel."
+    ],
+    "warnings": [
+     "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+     "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha.",
+     "Les Wings Phoenix Zenith ne tordent pas l'espace autour d'elles : elles sont translucides, avec une couleur miroitante, rien de plus.",
+     "Le bruit de battement d'ailes des Wings n'est pas encore fait.",
+     "Chaque valeur et chaque recette de ces séries est une première valeur choisie par le développeur et pourra être rééquilibrée."
+    ]
    }
   ],
   "halia": [

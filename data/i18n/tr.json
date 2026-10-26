@@ -1212,6 +1212,25 @@
      "Yapı bloğunun alan çerçevesinin testlerde gerçek bir oyun istemcisinde çizildiği görülmedi; boyutun kendisi doğrulandı, çerçeve doğrulanmadı.",
      "Wings'in iniş ve düşüş duruşları ile kanat çırpma sesi henüz tamamlanmadı."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-1017",
+    "title": "Tsubomi V2.4 1017 — Yıldız Çiçeği Phoenix, Yıldız Çiçeği Phoenix Mythic, Yıldız Çiçeği Phoenix Zenith",
+    "summary": "Tsubomi V2.4 1017; Yıldız Çiçeği Phoenix, Yıldız Çiçeği Phoenix Mythic ve Yıldız Çiçeği Phoenix Zenith serilerini ekler: Yıldız Çiçeği Max'in çeşitleriyle ve her biri kendi, giderek güçlenen Wings'iyle üç yeni seri.",
+    "highlights": [
+     "Yıldız Çiçeği Phoenix (derin kozmik lacivert ve macenta pembe), Yıldız Çiçeği Phoenix Mythic (bulutsu moru ve neon gül, topaz altınıyla) ve Yıldız Çiçeği Phoenix Zenith (platin beyazı ve kozmik camgöbeği) üç yeni seridir. Her birinde Yıldız Çiçeği Max'in 13 eşyalık çeşidi ve kendi Wings'i vardır.",
+     "Her seri bir öncekinin üstündedir, Phoenix de Mythic Pearl'ün üstündedir: her adımda dayanıklılık ve kazma hızı 1.25 kat, aletler %10 daha sert vurur, kazmalar 20×20, 22×22 ve 24×24'e kadar çalışır ve tam takım pasifleri her adımda yükselir — düşme −%82, −%88, −%94; ateş −%85, −%90, −%95; zehir −%60, −%68, −%78; lav −%87, −%91, −%95; Muhafız'ın ses dalgası −%85, −%89, −%94; kazma hızı +%23, +%27, +%32; hareket hızı +%42, +%48, +%55; saldırı +%32, +%37, +%43; her yeni zararlı etkiyi savuşturma şansı %82, %86 ve %90; ve inişte düşmenin %85, %90 ve %95'i kadar şok dalgası.",
+     "Her alaşım bir öncekinden pahalıdır: Phoenix Alaşım Külçesi, 5 Pearl Alaşım Külçesi, 3 Nether Yıldızı Bloğu ve bir Ölümsüzlük Totemi ile yapılır ve 5 külçe verir; Phoenix Mythic Alaşım Külçesi, 4 Phoenix Alaşım Külçesi, 4 Nether Yıldızı Bloğu ve bir Büyülü Altın Elma ile yapılır ve 4 külçe verir; Phoenix Zenith Alaşım Külçesi, 4 Phoenix Mythic Alaşım Külçesi, 4 Nether Yıldızı Bloğu ve bir Fener ile yapılır ve 4 külçe verir.",
+     "Her serinin kendi Wings'i vardır ve öncekinden güçlüdür: ilk Wings'ten 1.12, 1.26 ve 1.40 kat hızlı ivmelenir ve uçar, 2000 yerine 3000, 4500 ve 7000 dayanır ve uçulan her blokta daha az yorar. Her biri önceki serinin Wings'i, kendi alaşımından 4 külçe, 3 Nether Yıldızı Bloğu ve bir Corvus Nişanı ile yapılır, yalnızca kendi takımının göğüslüğü sayılır ve düşmeleri zararsız hale getirir.",
+     "Phoenix Wings lacivertten macenta pembe uçlara geçer ve mor yıldız noktaları parıldar; Phoenix Mythic Wings titreşen neon gülle parlar, kenarları topaz altınıdır ve çırpılırken yıldız tozu saçar; Phoenix Zenith Wings yarı saydam platin ve camgöbeği renktedir, gökkuşağı renkleri arasında dolaşan bir parıltısı vardır."
+    ],
+    "warnings": [
+     "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+     "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır.",
+     "Phoenix Zenith Wings çevresindeki uzayı bükmez: yarı saydamdır ve rengi parıldar, hepsi bu.",
+     "Wings'in kanat çırpma sesi henüz yapılmadı.",
+     "Bu serilerin her sayısı ve tarifi, geliştiricinin seçtiği ilk değerdir ve yeniden dengelenebilir."
+    ]
    }
   ],
   "halia": [

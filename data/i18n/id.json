@@ -1212,6 +1212,25 @@
      "Garis tepi area balok struktur belum terlihat tergambar di klien game sungguhan saat pengujian; ukurannya sudah dipastikan, garis tepinya belum.",
      "Pose mendarat dan jatuh Wings serta suara kepakan sayapnya belum selesai."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-1017",
+    "title": "Tsubomi V2.4 1017 — Starbloom Phoenix, Starbloom Phoenix Mythic, Starbloom Phoenix Zenith",
+    "summary": "Tsubomi V2.4 1017 menambahkan Starbloom Phoenix, Starbloom Phoenix Mythic, dan Starbloom Phoenix Zenith: tiga seri baru dengan jajaran Starbloom Max dan Wings sendiri yang semakin kuat.",
+    "highlights": [
+     "Starbloom Phoenix (biru laut kosmos pekat dan merah muda magenta), Starbloom Phoenix Mythic (ungu nebula dan mawar neon, dengan emas topaz), dan Starbloom Phoenix Zenith (putih platinum dan sian kosmik) adalah tiga seri baru. Tiap seri punya jajaran Starbloom Max — 13 item — dan Wings sendiri.",
+     "Setiap seri berada di atas seri sebelumnya, Phoenix di atas Mythic Pearl: daya tahan dan kecepatan menambang 1.25 kali di setiap langkah, alat yang memukul 10% lebih keras, beliung hingga 20×20, 22×22, dan 24×24, serta pasif set lengkap yang naik di setiap langkah — jatuh −82%, −88%, −94%; api −85%, −90%, −95%; racun −60%, −68%, −78%; lava −87%, −91%, −95%; ledakan sonik Warden −85%, −89%, −94%; kecepatan menambang +23%, +27%, +32%; kecepatan gerak +42%, +48%, +55%; serangan +32%, +37%, +43%; peluang 82%, 86%, dan 90% untuk menepis setiap efek buruk baru; dan gelombang kejut saat mendarat sebesar 85%, 90%, dan 95% dari jatuhan.",
+     "Setiap paduan lebih mahal dari sebelumnya: Batangan Paduan Phoenix dibuat dari 5 Batangan Paduan Pearl, 3 Blok Bintang Nether, dan sebuah Totem Keabadian, menghasilkan 5 batangan; Batangan Paduan Phoenix Mythic dari 4 Batangan Paduan Phoenix, 4 Blok Bintang Nether, dan sebuah Apel Emas Terpesona, menghasilkan 4; Batangan Paduan Phoenix Zenith dari 4 Batangan Paduan Phoenix Mythic, 4 Blok Bintang Nether, dan sebuah Suar, menghasilkan 4.",
+     "Setiap seri punya Wings sendiri yang lebih kuat dari sebelumnya: berakselerasi dan terbang 1.12, 1.26, dan 1.40 kali secepat Wings pertama, tahan 3000, 4500, dan 7000 dibanding 2000, dan membuat Anda lebih sedikit lelah tiap blok yang ditempuh. Masing-masing dibuat dari Wings seri sebelumnya, 4 batangan paduannya sendiri, 3 Blok Bintang Nether, dan sebuah Lambang Corvus, hanya dihitung sebagai pelindung dada setnya sendiri, dan membuat jatuh tidak berbahaya.",
+     "Wings Phoenix memudar dari biru laut ke ujung magenta dengan titik bintang ungu yang berkelip; Wings Phoenix Mythic berpendar dengan mawar neon yang berkedip dan tepi emas topaz serta menebar debu bintang saat mengepak; Wings Phoenix Zenith berupa platinum dan sian tembus pandang dengan kilau yang berganti warna pelangi."
+    ],
+    "warnings": [
+     "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+     "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha.",
+     "Wings Phoenix Zenith tidak membengkokkan ruang di sekitarnya: hanya tembus pandang dengan warna yang berkilau, tidak lebih.",
+     "Suara kepakan Wings belum selesai.",
+     "Setiap angka dan resep seri ini adalah nilai awal pilihan pengembang dan bisa diseimbangkan ulang."
+    ]
    }
   ],
   "halia": [
