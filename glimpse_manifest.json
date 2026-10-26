@@ -249,5 +249,18 @@
     "file_name": "Noctua_v1.0.0+pal1.0.zip",
     "file_size": 119991,
     "sha256": "4d773fd11e7140b79dc4b6a1dec66ebb822b3292bcfcef156d6f9df8a8660e23"
+  },
+  "punchy": {
+    "mod_id": "punchy",
+    "latest": "2.8g",
+    "download_url": "https://cdn.modrinth.com/data/8aoMKplv/versions/Fi951GUL/punchy-2.8g-fabric-26.3.jar",
+    "file_name": "punchy-2.8g-fabric-26.3.jar",
+    "file_size": 2657033,
+    "sha256": "dbfd037bd9551bc6b8662d240d01e155219ebadfffe4aeda6d693c05d1e2ef46",
+    "sha512": "08789a002e4f43b03f1c84f0ec1f046b9c5a077a337fb4e66b33b39a6c9a1110005da0bbcb3dfd37ed6f2218de5f86e1401befdcc9f04a3d6f30929f3d371de7",
+    "source": "modrinth",
+    "project_url": "https://modrinth.com/mod/punchy-fpa",
+    "license": "All Rights Reserved",
+    "hosted_by_corvus": false
   }
 }

@@ -105,6 +105,15 @@ CHECKS = [
      "data/local_ai.json vs the pinned model (LocalAiSpec copy) and data/local_ai_mirror_parts.json"),
     ("local-ai-controls", "check_local_ai.py", ["--self-test"],
      "the local AI gate turns every planted defect red"),
+    # 2026-10-26: Punchy! is a THIRD-PARTY Fabric mod (Modrinth 8aoMKplv), All Rights Reserved, redistribution not
+    # allowed. Nothing is hosted here: data/punchy.json pins the Modrinth CDN file, the manifest's punchy block
+    # (hosted_by_corvus: false) describes it, and no Punchy! jar may exist anywhere in the tree. Offline.
+    ("punchy", "check_punchy_pin.py", [],
+     "data/punchy.json (pinned, Modrinth CDN only) vs the manifest's punchy block; no Punchy! jar in the tree"),
+    ("punchy-controls", "check_punchy_pin.py", ["--self-test"],
+     "the Punchy pin gate turns every planted defect red"),
+    ("punchy-fetch-controls", "pin_punchy.py", ["--self-test"],
+     "the Punchy pin script refuses a wrong hash, a wrong mod id, a non-CDN URL and a beta-only release (stand-in, offline)"),
 ]
 
 

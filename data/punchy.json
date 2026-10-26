@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "mod_id": "punchy",
+  "name": "Punchy!",
+  "latest": "2.8g",
+  "minecraft": "26.3",
+  "loader": "fabric",
+  "side": "client",
+  "requires": ["fabric-api"],
+  "file_name": "punchy-2.8g-fabric-26.3.jar",
+  "file_size": 2657033,
+  "sha256": "dbfd037bd9551bc6b8662d240d01e155219ebadfffe4aeda6d693c05d1e2ef46",
+  "sha512": "08789a002e4f43b03f1c84f0ec1f046b9c5a077a337fb4e66b33b39a6c9a1110005da0bbcb3dfd37ed6f2218de5f86e1401befdcc9f04a3d6f30929f3d371de7",
+  "download_url": "https://cdn.modrinth.com/data/8aoMKplv/versions/Fi951GUL/punchy-2.8g-fabric-26.3.jar",
+  "modrinth_project_id": "8aoMKplv",
+  "modrinth_version_id": "Fi951GUL",
+  "project_url": "https://modrinth.com/mod/punchy-fpa",
+  "license": "All Rights Reserved",
+  "source": "modrinth",
+  "hosted_by_corvus": false,
+  "redistribution": "The jar is NOT in this repository or downloads/. The Store downloads it from the Modrinth CDN when the user presses Install. The authors state: Redistribution of the jar files is not allowed."
+}

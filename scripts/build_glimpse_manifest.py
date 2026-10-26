@@ -91,6 +91,12 @@ one in the file name. Exactly one Tsubomi jar is published at a time, as for AST
 (check_tsubomi_release.py holds the same rule). It is a separate function, so adding Tsubomi cannot change a
 byte of any other block. Tsubomi is not compatible with Alpha (the owner, 2026-09-30; the jar
 declares it). From the first build that writes it, the never-drop rule applies to it as well.
+
+The "punchy" block (2026-10-26) is the first EXTERNAL block: Punchy! is a third-party Fabric mod
+(Modrinth 8aoMKplv) whose authors license it All Rights Reserved and do not allow redistribution. So the
+block POINTS at the Modrinth CDN, and no jar exists in downloads/ or anywhere in this repo. It is built
+ONLY from data/punchy.json (written by scripts/pin_punchy.py at publish time), never from a file on disk,
+and it carries "hosted_by_corvus": false so every gate that walks downloads/ knows to judge it by its pin.
 """
 import hashlib
 import io
@@ -125,6 +131,9 @@ HALIA_JAR_SUFFIX = ".jar"
 HALIA_MOD_ID = "halia"
 NOCTUA_ZIP_PREFIX = "Noctua_v"
 NOCTUA_ZIP_SUFFIX = ".zip"
+PUNCHY_PIN_FILE = ROOT / "data" / "punchy.json"
+PUNCHY_BLOCK_KEYS = ("mod_id", "latest", "download_url", "file_name", "file_size", "sha256", "sha512",
+                     "source", "project_url", "license", "hosted_by_corvus")
 
 
 def _mod_version():
@@ -664,6 +673,41 @@ def _halia_block():
     }
 
 
+def punchy_block_from_pin(pin):
+    """The `punchy` block, built from the pin alone (pure: takes the parsed data/punchy.json).
+
+    Stops loudly when the pin is incomplete, when a hash or size is malformed, when the URL is not
+    https, or when the pin claims Corvus hosts the file. Nothing here reads downloads/: the jar is not
+    there by design (the redistribution rule), so a missing file must never be an error for this block.
+    """
+    missing = [k for k in PUNCHY_BLOCK_KEYS if k not in pin or pin[k] in (None, "")]
+    if missing:
+        raise SystemExit(f"ERROR: data/punchy.json is incomplete (missing {', '.join(missing)}). Run "
+                         f"scripts/pin_punchy.py --write on a machine with the network; do not hand-edit the pin.")
+    url = pin["download_url"]
+    if not isinstance(url, str) or not url.startswith("https://"):
+        raise SystemExit(f"ERROR: punchy.download_url {url!r} is not https. The Store will not fetch it.")
+    for key, pattern in (("sha256", r"[0-9a-f]{64}"), ("sha512", r"[0-9a-f]{128}")):
+        if not re.fullmatch(pattern, str(pin[key])):
+            raise SystemExit(f"ERROR: punchy.{key} is not a {'64' if key == 'sha256' else '128'}-digit lowercase hex value.")
+    size = pin["file_size"]
+    if not isinstance(size, int) or isinstance(size, bool) or size <= 0:
+        raise SystemExit(f"ERROR: punchy.file_size {size!r} must be a positive integer.")
+    if pin["hosted_by_corvus"] is not False:
+        raise SystemExit("ERROR: data/punchy.json must say hosted_by_corvus: false. Punchy! is not Corvus's, "
+                         "and its jar must never be published from this site.")
+    if pin["mod_id"] != "punchy":
+        raise SystemExit(f"ERROR: punchy.mod_id is {pin['mod_id']!r}, not 'punchy'.")
+    return {k: pin[k] for k in PUNCHY_BLOCK_KEYS}
+
+
+def _punchy_block():
+    """The `punchy` block, or None before data/punchy.json exists."""
+    if not PUNCHY_PIN_FILE.is_file():
+        return None
+    return punchy_block_from_pin(json.loads(PUNCHY_PIN_FILE.read_text(encoding="utf-8")))
+
+
 def _noctua_block():
     """The `noctua` block, or None when no Noctua package has been published.
 
@@ -1143,6 +1187,18 @@ def build():
             f"Publish the package, or fix the naming - do not ship this.")
     else:
         print("glimpse_manifest.py: no Noctua package found yet - writing manifest with no 'noctua' block")
+
+    punchy = _punchy_block()
+    if punchy is not None:
+        manifest["punchy"] = punchy
+        print(f"glimpse_manifest.py: Punchy! {punchy['latest']} ({punchy['file_name']}, external: "
+              f"{punchy['download_url'].split('/')[2]}, not hosted by Corvus) selected, including 'punchy' block")
+    elif "punchy" in _previously_published_manifest():
+        raise SystemExit(
+            "ERROR: no data/punchy.json, but the published glimpse_manifest.json already carries a 'punchy' block. "
+            "Dropping it would silently withdraw Punchy! from the Store. Restore the pin, or do not ship this.")
+    else:
+        print("glimpse_manifest.py: no data/punchy.json yet - writing manifest with no 'punchy' block")
 
     out_path = ROOT / "glimpse_manifest.json"
     out_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

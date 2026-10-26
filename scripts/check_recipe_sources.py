@@ -114,11 +114,15 @@ def main():
     bare_checked = {}      # block -> (recipe result ids in its jar, recipe json count)
     bare_set_aside = {}    # block -> (uncraftable json, recolouring json, nested jars read)
     recipe_less = []
+    external_blocks = []   # 2026-10-26 (Punchy!): hosted_by_corvus false -> not a Corvus jar, not opened here
     bad = []
     for block, info in manifest.items():
         if not (isinstance(info, dict) and "mod_id" in info):
             continue
         if block in retired_blocks:
+            continue
+        if info.get("hosted_by_corvus") is False:
+            external_blocks.append(block)
             continue
         if isinstance(info.get("jars"), dict):
             if info.get("latest"):
@@ -218,6 +222,9 @@ def main():
             else:
                 recipe_less.append(block)
 
+    if external_blocks:
+        print("NOTE: external block(s), not hosted by Corvus and not opened here (their pin is checked by "
+              "check_punchy_pin.py): " + ", ".join(external_blocks))
     if not live:
         print("RED: the manifest declares no published version at all - this checker is reading "
               "the wrong shape, and an empty comparison would pass for the wrong reason.")

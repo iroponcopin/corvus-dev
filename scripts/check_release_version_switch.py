@@ -314,6 +314,12 @@ def check(root, old, new, baseline):
                 if not isinstance(block, dict):
                     skipped.append("%s（辞書ではない）" % brand)
                     continue
+                if block.get("hosted_by_corvus") is False:
+                    # 2026-10-26 (Punchy!): an EXTERNAL block. Its jar is not in this repository by licence, so it cannot
+                    # be opened here. Named and counted, never silently skipped: check_punchy_pin.py judges its pin.
+                    notes.append("5. %s は外部配布（hosted_by_corvus: false、Corvus の downloads/ に無い）なので、"
+                                 "中身は data/ の pin を check_punchy_pin.py が見る" % brand)
+                    continue
                 file_name = block.get("file_name")
                 if not file_name:
                     skipped.append("%s（file_name が無い）" % brand)
@@ -370,6 +376,8 @@ def check(root, old, new, baseline):
                 block = manifest[brand]
                 if not isinstance(block, dict):
                     continue
+                if block.get("hosted_by_corvus") is False:
+                    continue                     # external (2026-10-26): no file in downloads/ to hash; the pin gate owns it
                 file_name = block.get("file_name")
                 want_sha = block.get("sha256")
                 want_size = block.get("file_size")

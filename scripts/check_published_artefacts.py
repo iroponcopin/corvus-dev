@@ -21,6 +21,7 @@ import json
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 
 BASE = "https://iroponcopin.github.io/corvus-dev"
@@ -29,6 +30,55 @@ BASE = "https://iroponcopin.github.io/corvus-dev"
 def fetch(url, timeout=120):
     with urllib.request.urlopen(url, timeout=timeout) as resp:
         return resp.geturl(), resp.read()
+
+
+# ---- external blocks (2026-10-26, Punchy!): hosted_by_corvus false ------------------------------------------------
+# The file is not Corvus's and is not in this site's downloads/ (its licence forbids redistribution). The Store
+# fetches it from its own host, so the check fetches the same URL, hashes the bytes IN MEMORY, and never saves them.
+def check_external_block(brand, block, getter=None):
+    """Returns (problems, size_in_bytes_or_None). Every promised fact must match the bytes the URL serves."""
+    url = block.get("download_url")
+    parts = urllib.parse.urlsplit(url) if isinstance(url, str) else None
+    if parts is None or parts.scheme != "https" or parts.hostname != "cdn.modrinth.com":
+        return ["%s: download_url %r は Modrinth の CDN（https）ではない" % (brand, url)], None
+    try:
+        got_url, body = (getter or fetch)(url, timeout=600)
+    except Exception as exc:
+        return ["%s: 取得できない —— %s" % (brand, exc)], None
+    problems = []
+    if urllib.parse.urlsplit(got_url).hostname != "cdn.modrinth.com":
+        problems.append("%s: %s を要求したのに %s から返った" % (brand, url, got_url))
+    if block.get("file_size") is not None and int(block["file_size"]) != len(body):
+        problems.append("%s: バイト数が manifest と違う —— 約束 %s / 実物 %d" % (brand, block["file_size"], len(body)))
+    if block.get("sha256") is not None and str(block["sha256"]).lower() != hashlib.sha256(body).hexdigest():
+        problems.append("%s: sha256 が manifest と違う" % brand)
+    if block.get("sha512") is not None and str(block["sha512"]).lower() != hashlib.sha512(body).hexdigest():
+        problems.append("%s: sha512 が manifest と違う（ランチャーは sha512 で検証する）" % brand)
+    return problems, len(body)
+
+
+def _self_test_external():
+    """Planted defects for check_external_block: a faithful stand-in must pass, each planted fault must fail."""
+    body = b"stand-in bytes (never saved, never a real jar)"
+    good = {"download_url": "https://cdn.modrinth.com/data/x/versions/y/f.jar", "file_size": len(body),
+            "sha256": hashlib.sha256(body).hexdigest(), "sha512": hashlib.sha512(body).hexdigest()}
+    cases = [
+        ("faithful stand-in passes", good, ("https://cdn.modrinth.com/data/x/versions/y/f.jar", body), False),
+        ("planted wrong sha512", dict(good, sha512="0" * 128), None, True),
+        ("planted wrong size", dict(good, file_size=len(body) + 1), None, True),
+        ("planted redirect to another host", good, ("https://example.com/f.jar", body), True),
+        ("planted non-CDN download_url", dict(good, download_url="https://example.com/f.jar"), None, True),
+    ]
+    bad = 0
+    for label, block, served, want_red in cases:
+        getter = (lambda u, timeout=600, s=served: s) if served else (lambda u, timeout=600: ("https://cdn.modrinth.com/x", body))
+        problems, _n = check_external_block("punchy", block, getter)
+        red = bool(problems)
+        ok = red == want_red
+        bad += not ok
+        print("  %s  %s  (problems: %d)" % ("ok " if ok else "BAD", label, len(problems)))
+    print("EXTERNAL BLOCK SELF-TEST = %s" % ("FAIL" if bad else "PASS"))
+    return 1 if bad else 0
 
 
 # ---- local_ai: the model mirror's parts, over the network (2026-10-25) -------------------------------------------
@@ -187,7 +237,7 @@ def main():
                     help="brand=version（例 aureum=1.0.1）。配備待ちの終了条件に使う。")
     args = ap.parse_args()
     if args.self_test:
-        return _self_test_local_ai()
+        return _self_test_local_ai() or _self_test_external()
 
     expect = {}
     for item in args.expect:
@@ -224,6 +274,13 @@ def main():
     for brand in sorted(manifest):
         block = manifest[brand]
         if not isinstance(block, dict):
+            continue
+        if block.get("hosted_by_corvus") is False:
+            problems, size = check_external_block(brand, block)
+            failures.extend(problems)
+            if not problems:
+                checked.append(brand)
+                print("  %s: 外部配布 %s を取得して照合（%d バイト。保存はしていない）" % (brand, block.get("download_url"), size))
             continue
         # Settings, not downloads: they carry no file by design (and must never carry one).
         if brand in SETTING_BLOCKS:
