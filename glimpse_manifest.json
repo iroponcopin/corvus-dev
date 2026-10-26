@@ -12,30 +12,30 @@
     "changelog_url": "https://iroponcopin.github.io/corvus-dev/en/changelog/"
   },
   "launcher": {
-    "latest": "5.5.1018",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1018.jar",
-    "file_name": "corvus-5.5.1018.jar",
-    "file_size": 17825375,
-    "sha256": "7f55ccd017b9727d542b5c453802526463181132d42c3c1ba602dac7d6904070",
-    "notes": "Corvus Store 5.5.1018 and Corvus Agent 5.5.1018 fix a server that could not be started from Corvus Store.\n\nAfter the render distance (or the creature switches) had been changed in Corvus Store, Corvus Agent refused its own configuration file with \"unknown field\" and could not start. Corvus Store then showed \"Stopped\".\n\nCorvus Agent now accepts every setting that Corvus Store writes.\n\nCorvus Store replaces Corvus Agent by itself, so an Agent that could not start is fixed without any manual step.\n\nCorvus Store 5.5.1018 and Corvus Agent 5.5.1018 carry no other change.\n\nKnown limits: checked with tests and on a Windows test machine. Not yet checked on every server setup, and not on Linux.\n\nCorvus Store and Corvus Agent update themselves.",
+    "latest": "5.5.1311",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1311.jar",
+    "file_name": "corvus-5.5.1311.jar",
+    "file_size": 17880650,
+    "sha256": "1e9c433d956cc7e3d7ba434a4ca0ce401bb34fa2f86346b776938c873ab8ffe0",
+    "notes": "Corvus Store 5.5.1311 and Corvus Agent 5.5.1311 bring the following.\n\nCorvus Store now also downloads Fabric API, which Punchy! needs, straight from Modrinth when it is missing from the mods folder. This happens only when you press Install for Punchy!, and the confirmation says so. A Fabric API you already have is never touched. If Fabric API cannot be downloaded or fails its check, Punchy! is not installed and nothing is left behind.\n\nOn macOS, Corvus Store follows the system's Reduce Transparency, Increase Contrast and Reduce Motion settings while it is running, without a restart. It shows the number of available updates and the progress of a download on its Dock icon. It gives a trackpad tap as the sliders click into each step and when you choose a model. It no longer waits for a macOS permission question before its window appears.\n\nCorvus Agent 5.5.1311 has no functional change.\n\nKnown limits: the macOS features were checked on one Mac with test instruments, not by long use. Fabric API downloading was checked with a local stand-in, not yet with a real download through the Store. Windows and Linux do not use the macOS features.",
     "native": {
       "macos": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1018-macos.dmg",
-        "file_name": "corvus-5.5.1018-macos.dmg",
-        "file_size": 67546614,
-        "sha256": "2ca1d6c4d4ec55ef2cfcc188bc0076cc3cd6849fcadf7aab6ed564a709121ede"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1311-macos.dmg",
+        "file_name": "corvus-5.5.1311-macos.dmg",
+        "file_size": 67592775,
+        "sha256": "d41657f6554f219c6fc515b1967a7805a1d2eea93edca60a95950c217d5028d2"
       },
       "windows": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1018-windows.msi",
-        "file_name": "corvus-5.5.1018-windows.msi",
-        "file_size": 65233768,
-        "sha256": "840b1ea3ddc8af264036d6c9b3565fd852baf3806e20eee979ee52bc66dec50e"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1311-windows.msi",
+        "file_name": "corvus-5.5.1311-windows.msi",
+        "file_size": 65287007,
+        "sha256": "623e691b029da1057a284189deeaddba28a719bb70f7ac015bc64ab98bab1acc"
       },
       "linux": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1018-linux.deb",
-        "file_name": "corvus-5.5.1018-linux.deb",
-        "file_size": 54666792,
-        "sha256": "59d4e0db1310c82e683624b411df460f247b992043cc7e2ca0767923fa327e19"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1311-linux.deb",
+        "file_name": "corvus-5.5.1311-linux.deb",
+        "file_size": 54646560,
+        "sha256": "699c6515e6b64cd91ffcfb2670a59a206a7adba2c8a53647a2510dcb03f00a7b"
       }
     }
   },
@@ -187,11 +187,11 @@
     ]
   },
   "agent": {
-    "latest": "5.5.1018",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-agent-5.5.1018.zip",
-    "file_name": "corvus-agent-5.5.1018.zip",
-    "file_size": 613067,
-    "sha256": "42665b159248beb54729fe8679ec11d36b6043a6c7c299b6c7caa22634794485"
+    "latest": "5.5.1311",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-agent-5.5.1311.zip",
+    "file_name": "corvus-agent-5.5.1311.zip",
+    "file_size": 619944,
+    "sha256": "78dab225b1c9f3010e61859084f087a468b60bc28411cefce7e96f089cb915d2"
   },
   "xhard": {
     "mod_id": "corvus_xhard",
