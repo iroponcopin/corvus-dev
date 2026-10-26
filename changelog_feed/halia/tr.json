@@ -8,8 +8,35 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1142",
+   "summary": "Halia V1.4 1143",
    "releases": [
+    {
+     "version": "V1.4 1143",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Halia V1.4 1143",
+     "summary": "Tesseract büyüsü artık aydınlatma için sunucu iş parçacığında beklemiyor ve blokları artık tek seferde değil, birkaç tick'e yayılarak yazılıyor.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Tesseract büyüsü artık aydınlatmanın bitmesini sunucu iş parçacığında beklemiyor. Blokları bir zaman bütçesi içinde birkaç tick'e yayılarak yazılıyor; her adımda bir yığının bir dilimi.",
+        "Yazılırken oyuncunun Tesseract alanı içinde değiştirdiği bir blok korunuyor, üzerine yazılmıyor."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Tesseract büyüsünün bitmesi artık eskisinden daha uzun sürüyor.",
+        "Nadir durumlarda, büyü bittikten sonra Tesseract alanının aydınlatması oturmak için daha uzun sürebilir.",
+        "Bir arkadaşın gerçek sunucusunda görülen uzun donma ölçülmedi ve düzeltildiği iddia edilmiyor.",
+        "Büyünün başında planı yine bir kez sunucu iş parçacığında taranıyor; bu tarama zaman bütçesinin dışında kalıyor ve bazı durumlarda belirgin biçimde uzun sürebiliyor.",
+        "Büyü sırasında ara sıra kısa sunucu duraklamaları kalıyor; nedeni henüz bilinmiyor.",
+        "Henüz özel (dedicated) bir sunucuda test edilmedi."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1142",
      "date": "2026-10-26",

@@ -8,8 +8,35 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1142",
+   "summary": "Halia V1.4 1143",
    "releases": [
+    {
+     "version": "V1.4 1143",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Halia V1.4 1143",
+     "summary": "L'incantesimo Tesseract non attende più il thread del server per l'illuminazione, e i suoi blocchi vengono ora scritti su più tick invece che tutti insieme.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "L'incantesimo Tesseract non attende più sul thread del server che l'illuminazione sia completata. I suoi blocchi vengono scritti su più tick entro un budget di tempo, una porzione di chunk alla volta.",
+        "Un blocco che un giocatore modifica nell'area del Tesseract mentre viene scritto viene mantenuto, non sovrascritto."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "L'incantesimo Tesseract ora richiede più tempo per completarsi rispetto a prima.",
+        "In rari casi, l'illuminazione dell'area del Tesseract può impiegare più tempo a stabilizzarsi dopo la fine dell'incantesimo.",
+        "Il lungo blocco visto sul server reale di un amico non è stato misurato e non è considerato risolto.",
+        "All'inizio dell'incantesimo il piano viene ancora scansionato una volta sul thread del server, fuori dal budget di tempo; in alcuni casi questa scansione può richiedere molto di più.",
+        "Restano occasionali brevi pause del server durante l'incantesimo, e la loro causa non è ancora nota.",
+        "Non è ancora stato testato su un server dedicato."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1142",
      "date": "2026-10-26",

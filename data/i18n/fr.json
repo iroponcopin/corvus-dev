@@ -1216,6 +1216,23 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4-1143",
+    "title": "Halia V1.4 1143",
+    "summary": "Le sort Tesseract n'attend plus le serveur pour l'éclairage, et ses blocs sont désormais écrits sur plusieurs ticks au lieu d'un seul coup.",
+    "highlights": [
+     "Le sort Tesseract n'attend plus sur le thread du serveur que l'éclairage soit terminé. Ses blocs sont écrits sur plusieurs ticks dans un budget de temps, une tranche de chunk à la fois.",
+     "Un bloc qu'un joueur modifie dans la zone du Tesseract pendant son écriture est conservé, et non écrasé."
+    ],
+    "warnings": [
+     "Le sort Tesseract prend désormais plus de temps à se terminer qu'avant.",
+     "Dans de rares cas, l'éclairage de la zone du Tesseract peut mettre plus de temps à se stabiliser après la fin du sort.",
+     "Le long blocage observé sur le serveur réel d'un ami n'a pas été mesuré et n'est pas présenté comme corrigé.",
+     "Au début du sort, son plan est encore parcouru une fois sur le thread du serveur, hors du budget de temps ; ce parcours peut parfois prendre nettement plus de temps.",
+     "De courtes pauses du serveur pendant le sort subsistent par moments ; leur cause n'est pas encore connue.",
+     "Pas encore testé sur un serveur dédié."
+    ]
+   },
+   {
     "id": "halia-v1.4-1142",
     "title": "Halia V1.4 1142",
     "summary": "Les sorts d'étoile sculptent désormais leur terrain sur plusieurs ticks au lieu d'un seul.",

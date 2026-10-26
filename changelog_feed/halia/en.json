@@ -8,8 +8,35 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1142",
+   "summary": "Halia V1.4 1143",
    "releases": [
+    {
+     "version": "V1.4 1143",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Halia V1.4 1143",
+     "summary": "The Tesseract spell no longer waits on the server thread for lighting, and its blocks are now written over several ticks instead of all at once.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "The Tesseract spell no longer waits on the server thread for lighting to finish. Its blocks are written over several ticks within a time budget, one slice of a chunk per step.",
+        "A block that a player changes inside the Tesseract area while it is being written is kept, not overwritten."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "The Tesseract spell now takes longer to finish than before.",
+        "In rare cases, the lighting of the Tesseract area may take longer to settle after the spell ends.",
+        "The long stall seen on a friend's real server has not been measured, and it is not claimed to be fixed.",
+        "The start of the spell still scans its plan once on the server thread, outside the time budget, and that scan can take noticeably longer on some runs.",
+        "Some short server pauses during the spell remain, and their cause is not yet known.",
+        "It has not been tested on a dedicated server."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1142",
      "date": "2026-10-26",

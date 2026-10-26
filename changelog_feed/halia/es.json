@@ -8,8 +8,35 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1142",
+   "summary": "Halia V1.4 1143",
    "releases": [
+    {
+     "version": "V1.4 1143",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Halia V1.4 1143",
+     "summary": "El hechizo Tesseract ya no espera al hilo del servidor para la iluminación, y sus bloques ahora se escriben a lo largo de varios ticks en lugar de todos a la vez.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "El hechizo Tesseract ya no espera en el hilo del servidor a que termine la iluminación. Sus bloques se escriben a lo largo de varios ticks dentro de un presupuesto de tiempo, una porción de chunk por paso.",
+        "Un bloque que un jugador cambie dentro del área del Tesseract mientras se escribe se conserva y no se sobrescribe."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "El hechizo Tesseract ahora tarda más en terminar que antes.",
+        "En casos raros, la iluminación de la zona del Tesseract puede tardar más en estabilizarse tras terminar el hechizo.",
+        "La larga detención vista en el servidor real de un amigo no se ha medido y no se considera corregida.",
+        "Al comenzar, el hechizo sigue revisando su plan una vez en el hilo del servidor, fuera del presupuesto de tiempo; esa revisión puede tardar bastante más en algunos casos.",
+        "Quedan pausas breves y ocasionales del servidor durante el hechizo, y su causa aún no se conoce.",
+        "Aún no se ha probado en un servidor dedicado."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1142",
      "date": "2026-10-26",

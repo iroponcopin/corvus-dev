@@ -8,8 +8,35 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1142",
+   "summary": "Halia V1.4 1143",
    "releases": [
+    {
+     "version": "V1.4 1143",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Halia V1.4 1143",
+     "summary": "Der Tesseract-Zauber wartet für die Beleuchtung nicht mehr auf dem Server-Thread, und seine Blöcke werden jetzt über mehrere Ticks statt auf einmal geschrieben.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Der Tesseract-Zauber wartet für die Beleuchtung nicht mehr auf dem Server-Thread. Seine Blöcke werden innerhalb eines Zeitbudgets über mehrere Ticks geschrieben, pro Schritt eine Scheibe eines Chunks.",
+        "Ein Block, den ein Spieler innerhalb des Tesseract-Bereichs ändert, während er geschrieben wird, bleibt erhalten und wird nicht überschrieben."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Der Tesseract-Zauber braucht jetzt bis zum Abschluss länger als zuvor.",
+        "In seltenen Fällen kann die Beleuchtung des Tesseract-Bereichs nach dem Ende des Zaubers länger brauchen, bis sie sich eingependelt hat.",
+        "Das lange Hängen, das auf dem echten Server eines Freundes auftrat, wurde nicht gemessen und gilt nicht als behoben.",
+        "Beim Start des Zaubers wird sein Plan weiterhin einmal auf dem Server-Thread durchsucht, außerhalb des Zeitbudgets; diese Suche kann in manchen Fällen deutlich länger dauern.",
+        "Während des Zaubers bleiben vereinzelte kurze Server-Pausen bestehen, deren Ursache noch nicht bekannt ist.",
+        "Auf einem dedizierten Server wurde noch nicht getestet."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1142",
      "date": "2026-10-26",

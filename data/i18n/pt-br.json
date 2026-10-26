@@ -1216,6 +1216,23 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4-1143",
+    "title": "Halia V1.4 1143",
+    "summary": "O feitiço Tesseract não espera mais pelo thread do servidor para a iluminação, e seus blocos agora são escritos ao longo de vários ticks em vez de tudo de uma vez.",
+    "highlights": [
+     "O feitiço Tesseract não espera mais no thread do servidor pela iluminação. Seus blocos são escritos ao longo de vários ticks dentro de um orçamento de tempo, uma fatia de chunk por vez.",
+     "Um bloco que um jogador muda dentro da área do Tesseract enquanto ele está sendo escrito é mantido, não sobrescrito."
+    ],
+    "warnings": [
+     "O feitiço Tesseract agora leva mais tempo para terminar do que antes.",
+     "Em casos raros, a iluminação da área do Tesseract pode demorar mais para se estabilizar depois que o feitiço termina.",
+     "A longa travada vista no servidor real de um amigo não foi medida e não é considerada corrigida.",
+     "No início do feitiço, o plano ainda é percorrido uma vez no thread do servidor, fora do orçamento de tempo; essa leitura pode levar bem mais tempo em alguns casos.",
+     "Pausas curtas e ocasionais do servidor durante o feitiço continuam, e a causa ainda não é conhecida.",
+     "Ainda não foi testado em um servidor dedicado."
+    ]
+   },
+   {
     "id": "halia-v1.4-1142",
     "title": "Halia V1.4 1142",
     "summary": "Os feitiços estelares agora esculpem o terreno em vários ticks, em vez de um só.",

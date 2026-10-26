@@ -8,8 +8,35 @@
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1142",
+   "summary": "Halia V1.4 1143",
    "releases": [
+    {
+     "version": "V1.4 1143",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Halia V1.4 1143",
+     "summary": "Mantra Tesseract tidak lagi menunggu thread server untuk pencahayaan, dan bloknya kini ditulis selama beberapa tick, bukan sekaligus.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Mantra Tesseract tidak lagi menunggu di thread server hingga pencahayaan selesai. Bloknya ditulis selama beberapa tick dalam anggaran waktu, satu irisan chunk per langkah.",
+        "Blok yang diubah pemain di dalam area Tesseract selama proses penulisan dipertahankan, tidak ditimpa."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Mantra Tesseract kini membutuhkan waktu lebih lama untuk selesai dibanding sebelumnya.",
+        "Dalam kasus yang jarang, pencahayaan area Tesseract bisa butuh waktu lebih lama untuk stabil setelah mantra berakhir.",
+        "Hentian panjang yang terlihat di server asli milik teman belum diukur dan tidak diklaim sudah diperbaiki.",
+        "Di awal mantra, rencananya masih dipindai sekali di thread server di luar anggaran waktu; pemindaian ini kadang bisa jauh lebih lama.",
+        "Jeda server singkat yang sesekali terjadi selama mantra masih tersisa, dan penyebabnya belum diketahui.",
+        "Belum diuji pada server khusus (dedicated)."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1142",
      "date": "2026-10-26",
