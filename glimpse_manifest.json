@@ -12,30 +12,30 @@
     "changelog_url": "https://iroponcopin.github.io/corvus-dev/en/changelog/"
   },
   "launcher": {
-    "latest": "5.5.961",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.961.jar",
-    "file_name": "corvus-5.5.961.jar",
-    "file_size": 17808405,
-    "sha256": "2150fb2dad3678755f921c2325b7c4b020fff47298f0c6537978a143f2bae0c1",
-    "notes": "Corvus Store 5.5.961 brings a new model switcher to Corvus AI. Corvus Agent 5.5.961 has no functional change.\n\nCorvus AI now offers Fable 5.1 and Opus 5.5 beside Sonnet 5.5, Haiku 5.5 and Gemma 4B (the local one, which runs on your computer).\n\nThe model is chosen from a switcher beside the send button, in the style of Codex and Claude. Pick the model and, for the four online models, the reasoning level: Low, Medium, High, Extra high or Max. Medium is the default. Gemma 4B has no level.\n\nThere is no per-person limit on questions any more. Everyone shares one monthly AI budget. When it is used up, Corvus AI pauses for everyone until it resets automatically at the start of the next month (UTC), and the Store says on which day that is. Heavier models and higher levels use the shared budget faster.\n\nKnown limits: the switcher was checked with recorded screens and tests, not yet on Windows or Linux. Real answers from Fable 5.1 and Opus 5.5, and their speed at the highest levels, were not measured before this release.\n\nCorvus Store and Corvus Agent update themselves.",
+    "latest": "5.5.962",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.962.jar",
+    "file_name": "corvus-5.5.962.jar",
+    "file_size": 17820180,
+    "sha256": "6c49f88eb9e6649154ca534e04373cd409e738f3926a91e17044653e4f10c973",
+    "notes": "Corvus Store 5.5.962 can install Punchy!, a Fabric mod that adds first-person animations and visible hands holding items. Corvus Agent 5.5.962 changes nothing for servers, except that it never treats a client-only mod as a server mod.\n\nPunchy! is made by its own authors, not by Corvus. Its licence does not allow Corvus to host the file, so Corvus Store downloads it straight from Modrinth, and only when you press Install. It is never installed automatically; a copy you put in your mods folder yourself counts as installed.\n\nPunchy! is client-side only. It needs Fabric API; Corvus Store does not install Fabric API for you, and it says so if Fabric API is missing. Updates follow the version Corvus lists.\n\nKnown limits: the install was checked with a local stand-in download and tests, not yet with a real download of Punchy! through the Store, and not on Windows or Linux.\n\nCorvus Store and Corvus Agent update themselves.",
     "native": {
       "macos": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.961-macos.dmg",
-        "file_name": "corvus-5.5.961-macos.dmg",
-        "file_size": 67529499,
-        "sha256": "1ed7232daff7176e11f4158a48f81a8ca59866416f39df37f7168035c58dd36a"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.962-macos.dmg",
+        "file_name": "corvus-5.5.962-macos.dmg",
+        "file_size": 67537539,
+        "sha256": "3e436531ee59ca9eed72942c3fe895d69292091860c311aa8de644257521aedc"
       },
       "windows": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.961-windows.msi",
-        "file_name": "corvus-5.5.961-windows.msi",
-        "file_size": 65217384,
-        "sha256": "01abc0cccd611e7ebd73a7e9496a4b32be9e00ad631deded003f02fa1047549c"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.962-windows.msi",
+        "file_name": "corvus-5.5.962-windows.msi",
+        "file_size": 65229672,
+        "sha256": "ea6bdfd9910bb8ffde7b40c65e1dd39287af7a93c2c2e8069fd445e31a3acb8b"
       },
       "linux": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.961-linux.deb",
-        "file_name": "corvus-5.5.961-linux.deb",
-        "file_size": 54663162,
-        "sha256": "aacf4b19be4c474f595f448f14fbcf44c6addf8501b2dc6f1f0985ed4615eee9"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.962-linux.deb",
+        "file_name": "corvus-5.5.962-linux.deb",
+        "file_size": 54662954,
+        "sha256": "0e5ab6988976d01ae4ba8f87db19811cfb94f6c4add85cd038c9900a8fc88055"
       }
     }
   },
@@ -187,11 +187,11 @@
     ]
   },
   "agent": {
-    "latest": "5.5.961",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-agent-5.5.961.zip",
-    "file_name": "corvus-agent-5.5.961.zip",
-    "file_size": 608444,
-    "sha256": "a5ad2f8fbd9ea0d97f3fd1eb0357898129078b80984c0991273915f8096004d4"
+    "latest": "5.5.962",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-agent-5.5.962.zip",
+    "file_name": "corvus-agent-5.5.962.zip",
+    "file_size": 611350,
+    "sha256": "993bf8d855be321ae636146d49c2d1f18de6486e34347e1f5adf20319c0d2ed4"
   },
   "xhard": {
     "mod_id": "corvus_xhard",
