@@ -1,15 +1,37 @@
 {
  "lang": "id",
  "brand": "halia",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "title": "Riwayat Pembaruan",
- "updated_label": "Diperbarui 2026-10-25",
+ "updated_label": "Diperbarui 2026-10-26",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1141",
+   "summary": "Halia V1.4 1142",
    "releases": [
+    {
+     "version": "V1.4 1142",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Halia V1.4 1142",
+     "summary": "Pahatan medan dari mantra bintang kini tidak lagi berjalan sekaligus dalam satu tick server, melainkan dibagi ke beberapa tick, sehingga mantra tidak lagi menghentikan server selama detik-detik dalam satu tick.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Pahatan medan Shooting Star, Gungnir dan Seven Stars tidak lagi berjalan sekaligus dalam satu tick server. Pahatan dibagi ke beberapa tick dengan anggaran waktu, sehingga server tidak lagi membeku selama detik-detik saat mantra selesai.",
+        "Anggaran pahatan dapat diatur di config/halia/carving.json dengan tick_budget_ms dan chunks_per_tick_cap."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Saat mantra yang sangat besar sedang memahat, penyelesaiannya lebih lama dari sebelumnya; di server yang berat, area besar bisa memakan waktu satu menit atau lebih. Mantra Tesseract masih bisa menjeda server sebentar. Ini masalah yang sudah diketahui dan belum diperbaiki. Hentian server 60 detik yang dilaporkan BELUM terbukti diperbaiki: tidak berhasil direproduksi, dan belum ada uji pada server khusus dengan permainan sungguhan."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1141",
      "date": "2026-10-25",

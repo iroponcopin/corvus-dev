@@ -1200,6 +1200,18 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4-1142",
+    "title": "Halia V1.4 1142",
+    "summary": "Pahatan medan dari mantra bintang kini tidak lagi berjalan sekaligus dalam satu tick server, melainkan dibagi ke beberapa tick, sehingga mantra tidak lagi menghentikan server selama detik-detik dalam satu tick.",
+    "highlights": [
+     "Pahatan medan Shooting Star, Gungnir dan Seven Stars tidak lagi berjalan sekaligus dalam satu tick server. Pahatan dibagi ke beberapa tick dengan anggaran waktu, sehingga server tidak lagi membeku selama detik-detik saat mantra selesai.",
+     "Anggaran pahatan dapat diatur di config/halia/carving.json dengan tick_budget_ms dan chunks_per_tick_cap."
+    ],
+    "warnings": [
+     "Saat mantra yang sangat besar sedang memahat, penyelesaiannya lebih lama dari sebelumnya; di server yang berat, area besar bisa memakan waktu satu menit atau lebih. Mantra Tesseract masih bisa menjeda server sebentar. Ini masalah yang sudah diketahui dan belum diperbaiki. Hentian server 60 detik yang dilaporkan BELUM terbukti diperbaiki: tidak berhasil direproduksi, dan belum ada uji pada server khusus dengan permainan sungguhan."
+    ]
+   },
+   {
     "id": "halia-v1.4-1141",
     "title": "Halia V1.4 1141",
     "summary": "Memperbaiki crash yang bisa menghentikan game saat pintu digambar dengan mod shader terpasang.",

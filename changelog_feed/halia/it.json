@@ -1,15 +1,37 @@
 {
  "lang": "it",
  "brand": "halia",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "title": "Changelog",
- "updated_label": "Aggiornato il 2026-10-25",
+ "updated_label": "Aggiornato il 2026-10-26",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1141",
+   "summary": "Halia V1.4 1142",
    "releases": [
+    {
+     "version": "V1.4 1142",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Halia V1.4 1142",
+     "summary": "La scultura del terreno degli incantesimi stellari non avviene più in una sola volta in un tick del server, ma si distribuisce su più tick, quindi un incantesimo non blocca più il server per secondi.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "La scultura del terreno di Shooting Star, Gungnir e Seven Stars non avviene più tutta in un tick del server. È distribuita su più tick con un budget di tempo, così il server non si blocca più per secondi al termine di un incantesimo.",
+        "Il budget di scultura si regola in config/halia/carving.json con tick_budget_ms e chunks_per_tick_cap."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Mentre un incantesimo molto grande scolpisce, il completamento richiede più tempo di prima; su un server carico un'area grande può richiedere un minuto o più. L'incantesimo Tesseract può ancora bloccare brevemente il server. Problema noto, non corretto. Il blocco del server di 60 secondi segnalato NON è dimostrato come risolto: non è stato riprodotto e non c'è stato un test su server dedicato con gioco reale."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1141",
      "date": "2026-10-25",

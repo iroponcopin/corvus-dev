@@ -1200,6 +1200,18 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4-1142",
+    "title": "Halia V1.4 1142",
+    "summary": "A escultura do terreno dos feitiços estelares não acontece mais de uma vez em um único tick do servidor, e sim espalhada por vários ticks, então um feitiço não trava mais o servidor por segundos.",
+    "highlights": [
+     "A escultura do terreno de Shooting Star, Gungnir e Seven Stars não roda mais de uma vez em um único tick do servidor. Ela é espalhada por vários ticks com um orçamento de tempo, então o servidor não congela mais por segundos ao terminar um feitiço.",
+     "O orçamento da escultura pode ser ajustado em config/halia/carving.json com tick_budget_ms e chunks_per_tick_cap."
+    ],
+    "warnings": [
+     "Enquanto um feitiço muito grande esculpe, terminar leva mais tempo do que antes; em um servidor carregado, uma área grande pode levar um minuto ou mais. O feitiço Tesseract ainda pode pausar o servidor brevemente. Problema conhecido, não corrigido. A parada de 60 segundos do servidor relatada NÃO está comprovadamente corrigida: não foi reproduzida e não houve teste em servidor dedicado com jogo real."
+    ]
+   },
+   {
     "id": "halia-v1.4-1141",
     "title": "Halia V1.4 1141",
     "summary": "Corrige um travamento que podia parar o jogo ao desenhar portas com um mod de shaders instalado.",

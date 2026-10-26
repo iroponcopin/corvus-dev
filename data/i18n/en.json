@@ -1204,6 +1204,18 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4-1142",
+    "title": "Halia V1.4 1142",
+    "summary": "The star spells now carve their terrain over several ticks instead of in one, so a spell no longer stalls a single server tick for seconds.",
+    "highlights": [
+     "The terrain-carving of Shooting Star, Gungnir and Seven Stars no longer runs all at once in one server tick. It is spread over several ticks with a time budget, so the server no longer freezes for seconds while a spell finishes.",
+     "The carving budget can be tuned in config/halia/carving.json with tick_budget_ms and chunks_per_tick_cap."
+    ],
+    "warnings": [
+     "While a very large spell is carving, finishing takes longer than before; on a loaded server a large area can take a minute or more. The Tesseract spell can still pause the server briefly. This is known and not fixed. The 60-second server stall that was reported is NOT proven fixed: it has not been reproduced, and no dedicated-server run with real play has been done."
+    ]
+   },
+   {
     "id": "halia-v1.4-1141",
     "title": "Halia V1.4 1141",
     "summary": "Fixes a crash that could stop the game while doors were drawn with a shader mod installed.",

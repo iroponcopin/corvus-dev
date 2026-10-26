@@ -1200,6 +1200,18 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4-1142",
+    "title": "Halia V1.4 1142",
+    "summary": "星术的地形雕刻不再在一个服务器 tick 内一次完成，而是分散到多个 tick 中进行，因此施法完成时服务器不会在一个 tick 内卡住数秒。",
+    "highlights": [
+     "Shooting Star、Gungnir 与 Seven Stars 的地形雕刻不再在一个服务器 tick 内一次完成。它按时间预算分散到多个 tick 中，施法完成时服务器不再卡住数秒。",
+     "雕刻预算可在 config/halia/carving.json 中通过 tick_budget_ms 与 chunks_per_tick_cap 调整。"
+    ],
+    "warnings": [
+     "施放非常大的法术进行雕刻时，完成所需时间比以前更长；在负载较高的服务器上，大范围可能需要一分钟或更久。Tesseract 法术仍可能让服务器短暂停顿。此为已知问题，尚未修复。 所报告的 60 秒服务器卡顿尚未被证实已修复：未能复现，也未在真实游玩的专用服务器上进行测试。"
+    ]
+   },
+   {
     "id": "halia-v1.4-1141",
     "title": "Halia V1.4 1141",
     "summary": "修复了安装光影模组时，绘制门可能导致游戏停止的问题。",

@@ -1,15 +1,37 @@
 {
  "lang": "fr",
  "brand": "halia",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "title": "Historique des mises à jour",
- "updated_label": "Mis à jour le 2026-10-25",
+ "updated_label": "Mis à jour le 2026-10-26",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1141",
+   "summary": "Halia V1.4 1142",
    "releases": [
+    {
+     "version": "V1.4 1142",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Halia V1.4 1142",
+     "summary": "La sculpture du terrain des sorts d'étoiles ne se fait plus en une seule fois dans un tick du serveur, mais est répartie sur plusieurs ticks, de sorte qu'un sort ne bloque plus le serveur pendant des secondes.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "La sculpture du terrain de Shooting Star, Gungnir et Seven Stars ne se fait plus d'un seul coup dans un tick du serveur. Elle est répartie sur plusieurs ticks avec un budget de temps, de sorte que le serveur ne se fige plus pendant des secondes à la fin d'un sort.",
+        "Le budget de sculpture se règle dans config/halia/carving.json avec tick_budget_ms et chunks_per_tick_cap."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Pendant qu'un sort très grand sculpte, la fin prend plus de temps qu'avant ; sur un serveur chargé, une grande zone peut prendre une minute ou plus. Le sort Tesseract peut encore faire une courte pause du serveur. Problème connu, non corrigé. Le blocage du serveur de 60 secondes signalé n'est PAS prouvé corrigé : il n'a pas été reproduit, et aucun test sur serveur dédié en jeu réel n'a été fait."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1141",
      "date": "2026-10-25",

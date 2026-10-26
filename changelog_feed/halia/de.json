@@ -1,15 +1,37 @@
 {
  "lang": "de",
  "brand": "halia",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-25",
+ "updated_label": "Aktualisiert am 2026-10-26",
  "note": "",
  "groups": [
   {
    "label": "V1.4",
-   "summary": "Halia V1.4 1141",
+   "summary": "Halia V1.4 1142",
    "releases": [
+    {
+     "version": "V1.4 1142",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Halia V1.4 1142",
+     "summary": "Die Geländeschnitzerei der Sternzauber läuft nicht mehr in einem einzigen Server-Tick auf einmal ab, sondern verteilt sich auf mehrere Ticks, sodass ein Zauber den Server nicht mehr für Sekunden in einem Tick anhält.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Die Geländeschnitzerei von Shooting Star, Gungnir und Seven Stars läuft nicht mehr auf einmal in einem Server-Tick. Sie wird mit einem Zeitbudget auf mehrere Ticks verteilt, sodass der Server beim Abschluss eines Zaubers nicht mehr für Sekunden einfriert.",
+        "Das Schnitzbudget lässt sich in config/halia/carving.json mit tick_budget_ms und chunks_per_tick_cap einstellen."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Solange ein sehr großer Zauber schnitzt, dauert der Abschluss länger als früher; auf einem ausgelasteten Server kann ein großer Bereich eine Minute oder mehr brauchen. Der Zauber Tesseract kann den Server weiterhin kurz anhalten. Das ist bekannt und nicht behoben. Der gemeldete 60-Sekunden-Serverstillstand ist NICHT nachweislich behoben: Er wurde nicht reproduziert, und es gab keinen Test auf einem dedizierten Server mit echtem Spiel."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.4 1141",
      "date": "2026-10-25",

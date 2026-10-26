@@ -1200,6 +1200,18 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.4-1142",
+    "title": "Halia V1.4 1142",
+    "summary": "El tallado del terreno de los hechizos estelares ya no se hace de una vez en un solo tick del servidor, sino repartido en varios ticks, así que un hechizo ya no detiene un tick del servidor durante segundos.",
+    "highlights": [
+     "El tallado del terreno de Shooting Star, Gungnir y Seven Stars ya no se ejecuta de golpe en un tick del servidor. Se reparte en varios ticks con un presupuesto de tiempo, así que el servidor ya no se congela durante segundos al terminar un hechizo.",
+     "El presupuesto de tallado se puede ajustar en config/halia/carving.json con tick_budget_ms y chunks_per_tick_cap."
+    ],
+    "warnings": [
+     "Mientras un hechizo muy grande talla, terminar tarda más que antes; en un servidor cargado, un área grande puede tardar un minuto o más. El hechizo Tesseract todavía puede pausar el servidor brevemente. Es un problema conocido y no está corregido. La parada del servidor de 60 segundos reportada NO está demostrada como corregida: no se reprodujo y no hubo una prueba en servidor dedicado con juego real."
+    ]
+   },
+   {
     "id": "halia-v1.4-1141",
     "title": "Halia V1.4 1141",
     "summary": "Corrige un cierre que podía detener el juego al dibujar puertas con un mod de shaders instalado.",
