@@ -12,30 +12,30 @@
     "changelog_url": "https://iroponcopin.github.io/corvus-dev/en/changelog/"
   },
   "launcher": {
-    "latest": "5.5.962",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.962.jar",
-    "file_name": "corvus-5.5.962.jar",
-    "file_size": 17820180,
-    "sha256": "6c49f88eb9e6649154ca534e04373cd409e738f3926a91e17044653e4f10c973",
-    "notes": "Corvus Store 5.5.962 can install Punchy!, a Fabric mod that adds first-person animations and visible hands holding items. Corvus Agent 5.5.962 changes nothing for servers, except that it never treats a client-only mod as a server mod.\n\nPunchy! is made by its own authors, not by Corvus. Its licence does not allow Corvus to host the file, so Corvus Store downloads it straight from Modrinth, and only when you press Install. It is never installed automatically; a copy you put in your mods folder yourself counts as installed.\n\nPunchy! is client-side only. It needs Fabric API; Corvus Store does not install Fabric API for you, and it says so if Fabric API is missing. Updates follow the version Corvus lists.\n\nKnown limits: the install was checked with a local stand-in download and tests, not yet with a real download of Punchy! through the Store, and not on Windows or Linux.\n\nCorvus Store and Corvus Agent update themselves.",
+    "latest": "5.5.1017",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1017.jar",
+    "file_name": "corvus-5.5.1017.jar",
+    "file_size": 17825375,
+    "sha256": "632b2208571320f7dbe00155a5af53f4422d5268aa8849b93ce08e0a117441e6",
+    "notes": "Corvus Store 5.5.1017 and Corvus Agent 5.5.1017 fix server starting on Windows.\n\nCorvus Agent now stays running when the server cannot be started, instead of quitting.\n\nCorvus Store now says why a server could not start, for example when Java is missing or too old, instead of only showing \"Stopped\".\n\nCorvus Store starts Corvus Agent with its own Java 25 when the Java found on the computer is missing or older than 25. A managed server uses the same Java when its start command is plain \"java\" and the Java on the computer is missing or older than 25.\n\nKnown limits: checked on a Windows test machine with a fake server and with only Java 17 installed. Not yet checked on every Windows setup, and not on Linux.\n\nCorvus Store and Corvus Agent update themselves.",
     "native": {
       "macos": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.962-macos.dmg",
-        "file_name": "corvus-5.5.962-macos.dmg",
-        "file_size": 67537539,
-        "sha256": "3e436531ee59ca9eed72942c3fe895d69292091860c311aa8de644257521aedc"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1017-macos.dmg",
+        "file_name": "corvus-5.5.1017-macos.dmg",
+        "file_size": 67546681,
+        "sha256": "d2a68b8397a02e11ee607216cbb2a162aee0f5869161688fe3117f9affad97c1"
       },
       "windows": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.962-windows.msi",
-        "file_name": "corvus-5.5.962-windows.msi",
-        "file_size": 65229672,
-        "sha256": "ea6bdfd9910bb8ffde7b40c65e1dd39287af7a93c2c2e8069fd445e31a3acb8b"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1017-windows.msi",
+        "file_name": "corvus-5.5.1017-windows.msi",
+        "file_size": 65233768,
+        "sha256": "f5b401e9edf391c1621484b9bffb061fdeabcbfafe7df4bbb19b96be0971c978"
       },
       "linux": {
-        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.962-linux.deb",
-        "file_name": "corvus-5.5.962-linux.deb",
-        "file_size": 54662954,
-        "sha256": "0e5ab6988976d01ae4ba8f87db19811cfb94f6c4add85cd038c9900a8fc88055"
+        "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-5.5.1017-linux.deb",
+        "file_name": "corvus-5.5.1017-linux.deb",
+        "file_size": 54666728,
+        "sha256": "9a690baec3ef8a1069c870f56acfa27a44474576a94cab8ac409eec3b52d84df"
       }
     }
   },
@@ -187,11 +187,11 @@
     ]
   },
   "agent": {
-    "latest": "5.5.962",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-agent-5.5.962.zip",
-    "file_name": "corvus-agent-5.5.962.zip",
-    "file_size": 611350,
-    "sha256": "993bf8d855be321ae636146d49c2d1f18de6486e34347e1f5adf20319c0d2ed4"
+    "latest": "5.5.1017",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/corvus-agent-5.5.1017.zip",
+    "file_name": "corvus-agent-5.5.1017.zip",
+    "file_size": 613128,
+    "sha256": "847db62187d6c1f60c1172285d61085edec64f47a3c0e8f437824cd31e0e703c"
   },
   "xhard": {
     "mod_id": "corvus_xhard",
