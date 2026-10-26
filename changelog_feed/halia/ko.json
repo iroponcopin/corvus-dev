@@ -15,12 +15,12 @@
      "date": "2026-10-26",
      "type": "release",
      "title": "Halia V1.4 1142",
-     "summary": "별 주문의 지형 조각이 한 서버 틱에 한꺼번에 실행되지 않고 여러 틱에 나뉘어 진행되므로, 주문이 끝날 때 서버가 한 틱 안에서 몇 초씩 멈추지 않습니다.",
+     "summary": "별 주문의 지형 조각은 한 번에 끝나지 않고 여러 틱에 걸쳐 진행됩니다.",
      "sections": [
       {
        "title": "변경 사항",
        "items": [
-        "Shooting Star, Gungnir, Seven Stars의 지형 조각이 한 서버 틱에 한꺼번에 실행되지 않습니다. 시간 예산에 따라 여러 틱에 나뉘므로 주문이 끝날 때 서버가 몇 초씩 멈추지 않습니다.",
+        "Shooting Star, Gungnir, Seven Stars의 지형 조각이 한 서버 틱에 한꺼번에 실행되지 않습니다. 시간 예산에 따라 여러 틱에 나뉩니다. 테스트에서 조각에 쓰인 단일 틱의 최장 시간은 10~63밀리초였습니다.",
         "조각 예산은 config/halia/carving.json의 tick_budget_ms와 chunks_per_tick_cap으로 조정할 수 있습니다."
        ]
       },

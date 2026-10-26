@@ -15,12 +15,12 @@
      "date": "2026-10-26",
      "type": "release",
      "title": "Halia V1.4 1142",
-     "summary": "Die Geländeschnitzerei der Sternzauber läuft nicht mehr in einem einzigen Server-Tick auf einmal ab, sondern verteilt sich auf mehrere Ticks, sodass ein Zauber den Server nicht mehr für Sekunden in einem Tick anhält.",
+     "summary": "Die Geländeschnitzerei der Sternzauber erfolgt nun über mehrere Ticks statt in einem einzigen.",
      "sections": [
       {
        "title": "Änderungen",
        "items": [
-        "Die Geländeschnitzerei von Shooting Star, Gungnir und Seven Stars läuft nicht mehr auf einmal in einem Server-Tick. Sie wird mit einem Zeitbudget auf mehrere Ticks verteilt, sodass der Server beim Abschluss eines Zaubers nicht mehr für Sekunden einfriert.",
+        "Die Geländeschnitzerei von Shooting Star, Gungnir und Seven Stars läuft nicht mehr auf einmal in einem Server-Tick. Sie wird mit einem Zeitbudget auf mehrere Ticks verteilt. In Tests lag die längste einzelne Tick-Dauer für die Schnitzerei bei 10 bis 63 ms.",
         "Das Schnitzbudget lässt sich in config/halia/carving.json mit tick_budget_ms und chunks_per_tick_cap einstellen."
        ]
       },

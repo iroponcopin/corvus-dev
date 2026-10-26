@@ -1202,9 +1202,9 @@
    {
     "id": "halia-v1.4-1142",
     "title": "Halia V1.4 1142",
-    "summary": "Pahatan medan dari mantra bintang kini tidak lagi berjalan sekaligus dalam satu tick server, melainkan dibagi ke beberapa tick, sehingga mantra tidak lagi menghentikan server selama detik-detik dalam satu tick.",
+    "summary": "Mantra bintang kini memahat medannya selama beberapa tick, bukan sekaligus dalam satu tick.",
     "highlights": [
-     "Pahatan medan Shooting Star, Gungnir dan Seven Stars tidak lagi berjalan sekaligus dalam satu tick server. Pahatan dibagi ke beberapa tick dengan anggaran waktu, sehingga server tidak lagi membeku selama detik-detik saat mantra selesai.",
+     "Pemahatan medan Shooting Star, Gungnir, dan Seven Stars tidak lagi berjalan sekaligus dalam satu tick server. Pemahatan dibagi ke beberapa tick dengan anggaran waktu. Dalam pengujian, tick tunggal terpanjang yang dipakai untuk memahat adalah 10 sampai 63 ms.",
      "Anggaran pahatan dapat diatur di config/halia/carving.json dengan tick_budget_ms dan chunks_per_tick_cap."
     ],
     "warnings": [

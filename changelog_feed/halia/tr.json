@@ -15,12 +15,12 @@
      "date": "2026-10-26",
      "type": "release",
      "title": "Halia V1.4 1142",
-     "summary": "Yıldız büyülerinin arazi oyma işi artık bir sunucu tick'inde tek seferde değil, birkaç tick'e yayılarak yapılıyor; böylece bir büyü bitince sunucu bir tick içinde saniyelerce durmuyor.",
+     "summary": "Yıldız büyüleri artık arazilerini tek seferde değil, birkaç tick'e bölerek oyar.",
      "sections": [
       {
        "title": "Değişiklikler",
        "items": [
-        "Shooting Star, Gungnir ve Seven Stars'ın arazi oyma işi artık bir sunucu tick'inde tek seferde çalışmıyor. Bir zaman bütçesiyle birkaç tick'e yayılıyor; böylece bir büyü bitirilirken sunucu saniyelerce donmuyor.",
+        "Shooting Star, Gungnir ve Seven Stars'ın arazi oyma işlemi artık tek bir sunucu tick'inde bir kerede çalışmaz. Zaman bütçesiyle birkaç tick'e yayılır. Testlerde oymaya harcanan en uzun tek tick 10 ile 63 ms arasıydı.",
         "Oyma bütçesi config/halia/carving.json içinde tick_budget_ms ve chunks_per_tick_cap ile ayarlanabilir."
        ]
       },

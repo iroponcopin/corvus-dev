@@ -1202,9 +1202,9 @@
    {
     "id": "halia-v1.4-1142",
     "title": "Halia V1.4 1142",
-    "summary": "El tallado del terreno de los hechizos estelares ya no se hace de una vez en un solo tick del servidor, sino repartido en varios ticks, así que un hechizo ya no detiene un tick del servidor durante segundos.",
+    "summary": "Los hechizos estelares ahora tallan su terreno en varios ticks en lugar de en uno solo.",
     "highlights": [
-     "El tallado del terreno de Shooting Star, Gungnir y Seven Stars ya no se ejecuta de golpe en un tick del servidor. Se reparte en varios ticks con un presupuesto de tiempo, así que el servidor ya no se congela durante segundos al terminar un hechizo.",
+     "El tallado del terreno de Shooting Star, Gungnir y Seven Stars ya no se ejecuta de una vez en un solo tick del servidor. Se reparte en varios ticks con un presupuesto de tiempo. En las pruebas, el tick individual más largo dedicado al tallado duró entre 10 y 63 ms.",
      "El presupuesto de tallado se puede ajustar en config/halia/carving.json con tick_budget_ms y chunks_per_tick_cap."
     ],
     "warnings": [

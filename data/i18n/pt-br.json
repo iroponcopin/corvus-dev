@@ -1202,9 +1202,9 @@
    {
     "id": "halia-v1.4-1142",
     "title": "Halia V1.4 1142",
-    "summary": "A escultura do terreno dos feitiços estelares não acontece mais de uma vez em um único tick do servidor, e sim espalhada por vários ticks, então um feitiço não trava mais o servidor por segundos.",
+    "summary": "Os feitiços estelares agora esculpem o terreno em vários ticks, em vez de um só.",
     "highlights": [
-     "A escultura do terreno de Shooting Star, Gungnir e Seven Stars não roda mais de uma vez em um único tick do servidor. Ela é espalhada por vários ticks com um orçamento de tempo, então o servidor não congela mais por segundos ao terminar um feitiço.",
+     "A escultura de terreno de Shooting Star, Gungnir e Seven Stars não roda mais de uma vez em um único tick do servidor. Ela é distribuída em vários ticks com um orçamento de tempo. Nos testes, o maior tick individual gasto com a escultura foi de 10 a 63 ms.",
      "O orçamento da escultura pode ser ajustado em config/halia/carving.json com tick_budget_ms e chunks_per_tick_cap."
     ],
     "warnings": [

@@ -1202,9 +1202,9 @@
    {
     "id": "halia-v1.4-1142",
     "title": "Halia V1.4 1142",
-    "summary": "La scultura del terreno degli incantesimi stellari non avviene più in una sola volta in un tick del server, ma si distribuisce su più tick, quindi un incantesimo non blocca più il server per secondi.",
+    "summary": "Gli incantesimi stellari ora scolpiscono il terreno su più tick invece che in uno solo.",
     "highlights": [
-     "La scultura del terreno di Shooting Star, Gungnir e Seven Stars non avviene più tutta in un tick del server. È distribuita su più tick con un budget di tempo, così il server non si blocca più per secondi al termine di un incantesimo.",
+     "La scultura del terreno di Shooting Star, Gungnir e Seven Stars non viene più eseguita tutta in un solo tick del server. Viene distribuita su più tick con un budget di tempo. Nei test, il tick singolo più lungo speso nella scultura è stato di 10–63 ms.",
      "Il budget di scultura si regola in config/halia/carving.json con tick_budget_ms e chunks_per_tick_cap."
     ],
     "warnings": [

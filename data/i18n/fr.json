@@ -1202,9 +1202,9 @@
    {
     "id": "halia-v1.4-1142",
     "title": "Halia V1.4 1142",
-    "summary": "La sculpture du terrain des sorts d'étoiles ne se fait plus en une seule fois dans un tick du serveur, mais est répartie sur plusieurs ticks, de sorte qu'un sort ne bloque plus le serveur pendant des secondes.",
+    "summary": "Les sorts d'étoile sculptent désormais leur terrain sur plusieurs ticks au lieu d'un seul.",
     "highlights": [
-     "La sculpture du terrain de Shooting Star, Gungnir et Seven Stars ne se fait plus d'un seul coup dans un tick du serveur. Elle est répartie sur plusieurs ticks avec un budget de temps, de sorte que le serveur ne se fige plus pendant des secondes à la fin d'un sort.",
+     "La sculpture de terrain de Shooting Star, Gungnir et Seven Stars ne se fait plus en une seule fois dans un même tick serveur. Elle est répartie sur plusieurs ticks selon un budget de temps. Lors des tests, le tick le plus long consacré à la sculpture a duré de 10 à 63 ms.",
      "Le budget de sculpture se règle dans config/halia/carving.json avec tick_budget_ms et chunks_per_tick_cap."
     ],
     "warnings": [
