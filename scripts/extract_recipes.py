@@ -361,7 +361,17 @@ def stage_published_brands(staging_root):
         return (isinstance(v, dict) and "mod_id" in v and "jars" not in v
                 and str(v.get("file_name", "")).endswith(".jar"))
 
-    blocks = {k: v for k, v in manifest.items() if is_zip_brand(v) or is_bare_jar_brand(v)}
+    def is_external_pin(v):
+        # A third-party mod the Store installs straight from its own source (Punchy!, Fabric API: 2026-10-26/27). Corvus
+        # holds no copy (the licence forbids hosting or it is simply not ours), so there is no jar to read recipes from and
+        # it is never a recipe source: it is named here, not silently skipped, and its own pin gates check it.
+        return isinstance(v, dict) and v.get("hosted_by_corvus") is False
+
+    external = sorted(k for k, v in manifest.items() if is_external_pin(v))
+    blocks = {k: v for k, v in manifest.items()
+              if (is_zip_brand(v) or is_bare_jar_brand(v)) and not is_external_pin(v)}
+    if external:
+        print("external pin(s), not hosted by Corvus and not a recipe source: " + ", ".join(external))
     if not blocks:
         raise SystemExit("ERROR: glimpse_manifest.json declares no brand block (mod_id + jars). "
                          "That is not 'no brands are published' - it means this reader is looking "
