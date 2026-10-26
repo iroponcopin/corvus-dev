@@ -340,6 +340,12 @@
         "release": "V2.4 0204",
         "date": "2026-10-25",
         "type": "release"
+      },
+      {
+        "id": "tsubomi-v2.4-1017",
+        "release": "V2.4 1017",
+        "date": "2026-10-26",
+        "type": "release"
       }
     ],
     "halia": [
