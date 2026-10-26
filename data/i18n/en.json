@@ -310,6 +310,22 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-71208",
+    "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX retired",
+    "summary": "OUKA Wonder adds 54 guns, 99 attachment parts and 6 new ammunition types, with an attachment screen, bayonet melee, a scope lens, a tracer and a muzzle flash.",
+    "highlights": [
+     "OUKA GUN MAX is retired. Existing GUN MAX guns, ammunition and attachments are removed from worlds when V1.7 71208 loads.",
+     "OUKA Wonder: 54 guns, 99 parts and 6 new ammunition types (ouka:wonder_ammo_*). The attachment screen is key Z; melee with the bayonet is key V.",
+     "Wonder also includes a scope lens, a bullet tracer and a muzzle flash when firing.",
+     "Checked on this build: GameTest 1421 tests PASS; the Wonder gun-class and attachment checks PASS on a real client; server and client crash checks clean."
+    ],
+    "warnings": [
+     "Before you install V1.7 71208, remove the old OUKA jar (1.7.55114 or older) from the mods folder and keep only 1 copy of GeckoLib 5.5.6. It needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, and Fabric API 0.161.0+26.3 or newer. Install it on both the client and the server.",
+     "Not verified yet: the real-fire tracer is a faint end-on streak. Shotgun and pistol aiming poses are acceptable but not perfect. The scope lens shows slight banding. Each shot still allocates about 21 KB (optimisation pending). 50 shots per tick were not measured. The anti-material class was not re-tagged.",
+     "GUN MAX and all its ammunition are removed, and old GUN MAX items vanish from saved worlds."
+    ]
+   },
+   {
     "id": "ouka-v1.7-55114",
     "title": "Ouka JJK V1.7 55114 — Beacon repair, Artificial Sun helium-3, overclock x50, Battery Charging Socket",
     "summary": "The Beacon is repaired with a Tsubomi Nether Star Block, the Artificial Sun burns helium-3 as its own fuel, the overclock cap rises to x50, and the new Battery Charging Socket holds up to 200 SMES batteries.",

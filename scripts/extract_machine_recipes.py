@@ -103,6 +103,10 @@ VANILLA = {
     "minecraft:rooted_dirt": ["根付いた土", "Rooted Dirt", "rooted_dirt.png", "cube"],
     "minecraft:spyglass": ["望遠鏡", "Spyglass", "spyglass.png", "flat"],
     "minecraft:sugar": ["砂糖", "Sugar", "sugar.png", "flat"],
+    # OUKA V1.7 71208: the Wonder part ammunition (wonder_part_ammo_mod_he / _mod_i) uses these two. Textures are the
+    # 26.3 client jar's own (byte-identical to the existing icons from that jar), not the 26.1 set.
+    "minecraft:end_crystal": ["エンドクリスタル", "End Crystal", "end_crystal.png", "flat"],
+    "minecraft:fire_charge": ["ファイヤーチャージ", "Fire Charge", "fire_charge.png", "flat"],
 }
 # Conventional (c:) tags the jars use but do not define (Fabric defines them): the item that stands for each.
 C_TAG = {"ores": "minecraft:{}_ore", "raw_materials": "minecraft:raw_{}", "ingots": "minecraft:{}_ingot"}

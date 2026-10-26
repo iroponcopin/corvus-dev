@@ -1,15 +1,41 @@
 {
  "lang": "zh",
  "brand": "ouka",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "title": "更新日志",
- "updated_label": "更新于 2026-10-25",
+ "updated_label": "更新于 2026-10-26",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 55114 — 信标修复、人工太阳氦-3、超频 x50、电池充电插座",
+   "summary": "Ouka JJK V1.7 71208 — OUKA Wonder，GUN MAX 退役",
    "releases": [
+    {
+     "version": "V1.7 71208",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Ouka JJK V1.7 71208 — OUKA Wonder，GUN MAX 退役",
+     "summary": "OUKA Wonder 新增 54 把枪、99 种配件和 6 种新弹药，并包含配件界面、刺刀近战、瞄准镜镜片、弹道轨迹和枪口火焰。",
+     "sections": [
+      {
+       "title": "更新内容",
+       "items": [
+        "OUKA GUN MAX 已退役。加载 V1.7 71208 时，世界中现有的 GUN MAX 枪、弹药和配件会被移除。",
+        "OUKA Wonder：54 把枪、99 种配件、6 种新弹药（ouka:wonder_ammo_*）。配件界面为 Z 键，刺刀近战为 V 键。",
+        "Wonder 还包括瞄准镜镜片、射击时的弹道轨迹和枪口火焰。",
+        "本构建已验证：GameTest 1421 项 PASS；Wonder 枪械类与挂载在真实客户端上 PASS；服务端与客户端崩溃检查无异常。"
+       ]
+      },
+      {
+       "title": "注意事项",
+       "items": [
+        "安装 V1.7 71208 前，请从 mods 文件夹删除旧的 OUKA jar（1.7.55114 或更早版本），并且只保留 1 份 GeckoLib 5.5.6。需要 Minecraft 26.3、Fabric Loader 0.19.5 或更新版本，以及 Fabric API 0.161.0+26.3 或更新版本。客户端和服务端都要安装。",
+        "尚未验证：真实射击的弹道轨迹从正面看只是一道很淡的线。霰弹枪和手枪的瞄准姿势可以接受，但并不完美。瞄准镜镜片有轻微条纹。每发子弹仍会分配约 21 KB（优化待定）。未测量每 tick 50 发的情况。反器材类未重新标记。",
+        "GUN MAX 及其全部弹药已移除；已保存世界中的旧 GUN MAX 物品会消失。"
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 55114",
      "date": "2026-10-25",

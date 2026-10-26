@@ -1,6 +1,6 @@
 {
  "sources": {
-  "ouka": "1.7.55114",
+  "ouka": "1.7.71208",
   "cherry": "1.3.1017"
  },
  "stations": [
@@ -312,6 +312,18 @@
    "m09588a82c0d8",
    "flat"
   ],
+  "minecraft:end_crystal": [
+   "エンドクリスタル",
+   "End Crystal",
+   "m40dde874c484",
+   "flat"
+  ],
+  "minecraft:fire_charge": [
+   "ファイヤーチャージ",
+   "Fire Charge",
+   "md9feb5075752",
+   "flat"
+  ],
   "minecraft:raw_copper": [
    "銅の原石",
    "Raw Copper",
@@ -346,90 +358,6 @@
    "人工太陽磁気核融合炉",
    "Artificial Sun Core",
    "m47d5bf5b1bf9",
-   "flat"
-  ],
-  "ouka:attachment_mc1_compensator": [
-   "OUKA MC-1「楔」コンペンセイター",
-   "OUKA MC-1 \"Kusabi\" Compensator",
-   "m87e63c16d0c8",
-   "flat"
-  ],
-  "ouka:attachment_md3_drum": [
-   "OUKA MD-3「太鼓」ドラムマガジン",
-   "OUKA MD-3 \"Taiko\" Drum Magazine",
-   "m9619565964ad",
-   "flat"
-  ],
-  "ouka:attachment_me2_extended": [
-   "OUKA ME-2「重」拡張マガジン",
-   "OUKA ME-2 \"Kasane\" Extended Magazine",
-   "m717e7453b36e",
-   "flat"
-  ],
-  "ouka:attachment_mf2_flash_hider": [
-   "OUKA MF-2「霞」フラッシュハイダー",
-   "OUKA MF-2 \"Kasumi\" Flash Hider",
-   "m11e672598280",
-   "flat"
-  ],
-  "ouka:attachment_mq1_fast_draw": [
-   "OUKA MQ-1「疾風」早抜きマガジン",
-   "OUKA MQ-1 \"Hayate\" Fast-Draw Magazine",
-   "mbec4a7417a7e",
-   "flat"
-  ],
-  "ouka:attachment_ms3_suppressor": [
-   "OUKA MS-3「囁」亜音速サプレッサー",
-   "OUKA MS-3 \"Sasayaki\" Subsonic Suppressor",
-   "mb1e411a409b3",
-   "flat"
-  ],
-  "ouka:attachment_oh2_holographic": [
-   "OUKA OH-2「鏡」ホログラフィックサイト",
-   "OUKA OH-2 \"Kagami\" Holographic Sight",
-   "me8c0b5487c95",
-   "flat"
-  ],
-  "ouka:attachment_or1_reflex": [
-   "OUKA OR-1「蛍」レフレックスサイト",
-   "OUKA OR-1 \"Hotaru\" Reflex Sight",
-   "m957b384e6f64",
-   "flat"
-  ],
-  "ouka:attachment_os4_variable": [
-   "OUKA OS-4「鳶」2〜4 倍可変スコープ",
-   "OUKA OS-4 \"Tobi\" 2-4x Variable Scope",
-   "m4d5dd2771b74",
-   "flat"
-  ],
-  "ouka:attachment_ot3_thermal": [
-   "OUKA OT-3「陽炎」熱線サイト",
-   "OUKA OT-3 \"Kagerou\" Thermal Sight",
-   "m335b4b720615",
-   "flat"
-  ],
-  "ouka:attachment_sl2_laser": [
-   "OUKA SL-2「灯」レーザー照準モジュール",
-   "OUKA SL-2 \"Akari\" Laser Aiming Module",
-   "mdfb92c5af81d",
-   "flat"
-  ],
-  "ouka:attachment_ss1_stability_stock": [
-   "OUKA SS-1「巌」安定ストック",
-   "OUKA SS-1 \"Iwao\" Stability Stock",
-   "mc799eb4ec70e",
-   "flat"
-  ],
-  "ouka:attachment_ua1_angled_grip": [
-   "OUKA UA-1「燕」アングルドグリップ",
-   "OUKA UA-1 \"Tsubame\" Angled Grip",
-   "mc98c32eae8c6",
-   "flat"
-  ],
-  "ouka:attachment_uv2_vertical_grip": [
-   "OUKA UV-2「柱」バーティカルグリップ",
-   "OUKA UV-2 \"Hashira\" Vertical Grip",
-   "mf22b4dfcbfb4",
    "flat"
   ],
   "ouka:auto_calibration_manipulator": [
@@ -564,96 +492,6 @@
    "m7aba93ba567a",
    "flat"
   ],
-  "ouka:gun_fudo": [
-   "OUKA Type-55「不動」重装軽機関銃",
-   "OUKA Type-55 \"Fudo\" Heavy LMG",
-   "m3174bb9ccbf4",
-   "flat"
-  ],
-  "ouka:gun_gekkou": [
-   "OUKA Type-77「月光」増幅式ボルトアクション狙撃銃",
-   "OUKA Type-77 \"Gekkou\" Amped Bolt Sniper",
-   "m159cf8a7d5c6",
-   "flat"
-  ],
-  "ouka:gun_hayabusa": [
-   "OUKA Type-99「隼」高速連射短機関銃",
-   "OUKA Type-99 \"Hayabusa\" High-RPM SMG",
-   "m453cd2440fde",
-   "flat"
-  ],
-  "ouka:gun_kagutsuchi": [
-   "OUKA Type-24「迦具土」加速型軽機関銃",
-   "OUKA Type-24 \"Kagutsuchi\" Accelerating LMG",
-   "m3ef9ce3427ad",
-   "flat"
-  ],
-  "ouka:gun_kojiro": [
-   "OUKA Type-44「小次郎」大口径ハンドキャノン",
-   "OUKA Type-44 \"Kojiro\" Heavy Hand Cannon",
-   "m356e3c8cfbda",
-   "flat"
-  ],
-  "ouka:gun_kusanagi": [
-   "OUKA Type-01「草薙」カービン",
-   "OUKA Type-01 \"Kusanagi\" Carbine",
-   "m1a735a8b336c",
-   "flat"
-  ],
-  "ouka:gun_mitsuboshi": [
-   "OUKA Type-03「三星」三連コアマークスマン",
-   "OUKA Type-03 \"Mitsuboshi\" Triple-Core Marksman",
-   "m295665daca8d",
-   "flat"
-  ],
-  "ouka:gun_muramasa": [
-   "OUKA Type-88「村正」二口径短機関銃",
-   "OUKA Type-88 \"Muramasa\" Dual-Caliber SMG",
-   "mc23585489eff",
-   "flat"
-  ],
-  "ouka:gun_onibi": [
-   "OUKA Type-04「鬼火」横一文字散弾銃",
-   "OUKA Type-04 \"Onibi\" Line-Spread Shotgun",
-   "m16355c4a1a93",
-   "flat"
-  ],
-  "ouka:gun_raijin": [
-   "OUKA Type-47「雷神」重突撃銃",
-   "OUKA Type-47 \"Raijin\" Heavy Rifle",
-   "mbcccd0602a3d",
-   "flat"
-  ],
-  "ouka:gun_raikiri": [
-   "OUKA Type-09「雷切」プラズマ短機関銃",
-   "OUKA Type-09 \"Raikiri\" Plasma Energy SMG",
-   "m996ba2ae63df",
-   "flat"
-  ],
-  "ouka:gun_ronin": [
-   "OUKA Type-12「浪人」レバーアクション散弾銃",
-   "OUKA Type-12 \"Ronin\" Lever Shotgun",
-   "m9d7220ddb4f3",
-   "flat"
-  ],
-  "ouka:gun_susanoo": [
-   "OUKA Type-50「須佐之男」対物キャノン",
-   "OUKA Type-50 \"Susanoo\" Anti-Materiel Cannon",
-   "m18d4790a41b5",
-   "flat"
-  ],
-  "ouka:gun_suzumebachi": [
-   "OUKA Type-20「雀蜂」戦術連射ピストル",
-   "OUKA Type-20 \"Suzumebachi\" Tactical Rapid Pistol",
-   "m727e53e1297d",
-   "flat"
-  ],
-  "ouka:gun_tatsumaki": [
-   "OUKA Type-08「竜巻」ドラム式自動散弾銃",
-   "OUKA Type-08 \"Tatsumaki\" Auto-Drum Shotgun",
-   "ma0e6cf6dd450",
-   "flat"
-  ],
   "ouka:hazard_exoskeleton_boots": [
    "全天候型重工業防護外骨格(ブーツ)",
    "Industrial Hazard Exoskeleton Boots",
@@ -724,6 +562,12 @@
    "液体酸素の缶",
    "Liquid Oxygen Canister",
    "m47bd4ab1da9e",
+   "flat"
+  ],
+  "ouka:lithium_dust": [
+   "リチウムの粉",
+   "Lithium Dust",
+   "m8e12dd9e3d00",
    "flat"
   ],
   "ouka:lubricant_canister": [
@@ -1002,6 +846,936 @@
    "mebe1ace7b500",
    "flat"
   ],
+  "ouka:wonder_ammo_energy": [
+   "OUKA Wonder エネルギー弾",
+   "OUKA Wonder Energy Cells",
+   "me5eae0c8280a",
+   "flat"
+  ],
+  "ouka:wonder_ammo_heavy": [
+   "OUKA Wonder 重弾",
+   "OUKA Wonder Heavy Rounds",
+   "m0c7197285c72",
+   "flat"
+  ],
+  "ouka:wonder_ammo_light": [
+   "OUKA Wonder 軽弾",
+   "OUKA Wonder Light Rounds",
+   "m7613ed4331c9",
+   "flat"
+  ],
+  "ouka:wonder_ammo_mythic": [
+   "OUKA Wonder 神話弾",
+   "OUKA Wonder Mythic Rounds",
+   "mbbf8ac7f67e7",
+   "flat"
+  ],
+  "ouka:wonder_ammo_shotgun": [
+   "OUKA Wonder 散弾",
+   "OUKA Wonder Shot Shells",
+   "mec40d505b66b",
+   "flat"
+  ],
+  "ouka:wonder_ammo_sniper": [
+   "OUKA Wonder 長弾",
+   "OUKA Wonder Long Rounds",
+   "m14a7185f749f",
+   "flat"
+  ],
+  "ouka:wonder_ardrey": [
+   "OUKA Wonder Type-W47 \"アードリー\" SGL",
+   "OUKA Wonder Type-W47 \"Ardrey\" SGL",
+   "mf6fc13060cab",
+   "flat"
+  ],
+  "ouka:wonder_ashdown": [
+   "OUKA Wonder Type-W19 \"アッシュダウン\" BOLT",
+   "OUKA Wonder Type-W19 \"Ashdown\" BOLT",
+   "mb4edd6776b34",
+   "flat"
+  ],
+  "ouka:wonder_bittern": [
+   "OUKA Wonder Type-W01 \"ビターン\" SG-S",
+   "OUKA Wonder Type-W01 \"Bittern\" SG-S",
+   "m8314ab5058e6",
+   "flat"
+  ],
+  "ouka:wonder_brackenhurst": [
+   "OUKA Wonder Type-W32 \"ブラッケンハースト\" PIS",
+   "OUKA Wonder Type-W32 \"Brackenhurst\" PIS",
+   "m86655fbc22d8",
+   "flat"
+  ],
+  "ouka:wonder_bramwell": [
+   "OUKA Wonder Type-W54 \"ブラムウェル\" SMG",
+   "OUKA Wonder Type-W54 \"Bramwell\" SMG",
+   "md9e9f2035fab",
+   "flat"
+  ],
+  "ouka:wonder_brough": [
+   "OUKA Wonder Type-W39 \"ブラフ\" REV",
+   "OUKA Wonder Type-W39 \"Brough\" REV",
+   "ma447afa4d6f5",
+   "flat"
+  ],
+  "ouka:wonder_carrick": [
+   "OUKA Wonder Type-W25 \"キャリック\" PIS",
+   "OUKA Wonder Type-W25 \"Carrick\" PIS",
+   "m07efe29b2c74",
+   "flat"
+  ],
+  "ouka:wonder_coniston": [
+   "OUKA Wonder Type-W36 \"コニストン\" PDW",
+   "OUKA Wonder Type-W36 \"Coniston\" PDW",
+   "mdc7265d20305",
+   "flat"
+  ],
+  "ouka:wonder_corrie": [
+   "OUKA Wonder Type-W45 \"コリー\" SG-P",
+   "OUKA Wonder Type-W45 \"Corrie\" SG-P",
+   "m0abff1fc14bb",
+   "flat"
+  ],
+  "ouka:wonder_dunnock": [
+   "OUKA Wonder Type-W14 \"ダノック\" PIS",
+   "OUKA Wonder Type-W14 \"Dunnock\" PIS",
+   "m66f8a7997c87",
+   "flat"
+  ],
+  "ouka:wonder_exmoor": [
+   "OUKA Wonder Type-W28 \"エクスムーア\" CARB",
+   "OUKA Wonder Type-W28 \"Exmoor\" CARB",
+   "m2a47ef3e707b",
+   "flat"
+  ],
+  "ouka:wonder_fellside": [
+   "OUKA Wonder Type-W20 \"フェルサイド\" SGL",
+   "OUKA Wonder Type-W20 \"Fellside\" SGL",
+   "md8f63af2b7dd",
+   "flat"
+  ],
+  "ouka:wonder_foulmire": [
+   "OUKA Wonder Type-W40 \"ファウルマイア\" LAUN",
+   "OUKA Wonder Type-W40 \"Foulmire\" LAUN",
+   "m6b450b0c13e6",
+   "flat"
+  ],
+  "ouka:wonder_gallowmoor": [
+   "OUKA Wonder Type-W33 \"ギャロウモア\" LMG",
+   "OUKA Wonder Type-W33 \"Gallowmoor\" LMG",
+   "m6e147b6b18ae",
+   "flat"
+  ],
+  "ouka:wonder_glenmore": [
+   "OUKA Wonder Type-W44 \"グレンモア\" DMR",
+   "OUKA Wonder Type-W44 \"Glenmore\" DMR",
+   "m20669e75223f",
+   "flat"
+  ],
+  "ouka:wonder_goldhurst": [
+   "OUKA Wonder Type-W10 \"ゴールドハースト\" HPIS",
+   "OUKA Wonder Type-W10 \"Goldhurst\" HPIS",
+   "meff16f739167",
+   "flat"
+  ],
+  "ouka:wonder_gorsedd": [
+   "OUKA Wonder Type-W09 \"ゴーセズ\" HPIS",
+   "OUKA Wonder Type-W09 \"Gorsedd\" HPIS",
+   "mc0bd416152ca",
+   "flat"
+  ],
+  "ouka:wonder_harkness": [
+   "OUKA Wonder Type-W34 \"ハークネス\" DMR",
+   "OUKA Wonder Type-W34 \"Harkness\" DMR",
+   "mcc040730410f",
+   "flat"
+  ],
+  "ouka:wonder_hollin": [
+   "OUKA Wonder Type-W22 \"ホリン\" AMR",
+   "OUKA Wonder Type-W22 \"Hollin\" AMR",
+   "maef2b345f74a",
+   "flat"
+  ],
+  "ouka:wonder_holmfirth": [
+   "OUKA Wonder Type-W12 \"ホルムファース\" BR",
+   "OUKA Wonder Type-W12 \"Holmfirth\" BR",
+   "m00f556e9f940",
+   "flat"
+  ],
+  "ouka:wonder_kendal": [
+   "OUKA Wonder Type-W26 \"ケンドル\" LMG",
+   "OUKA Wonder Type-W26 \"Kendal\" LMG",
+   "me686d5f4e417",
+   "flat"
+  ],
+  "ouka:wonder_kilnsey": [
+   "OUKA Wonder Type-W06 \"キルンジー\" PIS",
+   "OUKA Wonder Type-W06 \"Kilnsey\" PIS",
+   "m3708ea1578de",
+   "flat"
+  ],
+  "ouka:wonder_lantern": [
+   "OUKA Wonder Type-W13 \"ランタン\" CARB",
+   "OUKA Wonder Type-W13 \"Lantern\" CARB",
+   "mf52269410574",
+   "flat"
+  ],
+  "ouka:wonder_ludlow": [
+   "OUKA Wonder Type-W18 \"ラドロー\" SMG",
+   "OUKA Wonder Type-W18 \"Ludlow\" SMG",
+   "mdbf7df4d7abb",
+   "flat"
+  ],
+  "ouka:wonder_mardle": [
+   "OUKA Wonder Type-W27 \"マードル\" LAUN",
+   "OUKA Wonder Type-W27 \"Mardle\" LAUN",
+   "m328175a42c99",
+   "flat"
+  ],
+  "ouka:wonder_mossdale": [
+   "OUKA Wonder Type-W11 \"モスデール\" LMG",
+   "OUKA Wonder Type-W11 \"Mossdale\" LMG",
+   "m6e08e352cc44",
+   "flat"
+  ],
+  "ouka:wonder_ormskirk": [
+   "OUKA Wonder Type-W23 \"オームスカーク\" AR",
+   "OUKA Wonder Type-W23 \"Ormskirk\" AR",
+   "m498a8ea2aada",
+   "flat"
+  ],
+  "ouka:wonder_part_ammo_mod_fmj": [
+   "フルジャケット",
+   "Full-Jacket",
+   "m0b4e1c61b64b",
+   "flat"
+  ],
+  "ouka:wonder_part_ammo_mod_he": [
+   "高性能炸薬",
+   "High-Explosive",
+   "mc649058f3b5b",
+   "flat"
+  ],
+  "ouka:wonder_part_ammo_mod_hp": [
+   "ホローポイント",
+   "Hollow-Point",
+   "m2723bf87f4f6",
+   "flat"
+  ],
+  "ouka:wonder_part_ammo_mod_i": [
+   "焼夷弾",
+   "Incendiary",
+   "mda95b0b142ef",
+   "flat"
+  ],
+  "ouka:wonder_part_ammo_mod_slug": [
+   "スラグ",
+   "Slug",
+   "m31e35b20c1a7",
+   "flat"
+  ],
+  "ouka:wonder_part_bayonet_6h3": [
+   "アッシュコム 銃剣",
+   "Ashcombe Bayonet",
+   "mc00ab232d58b",
+   "flat"
+  ],
+  "ouka:wonder_part_bayonet_m9": [
+   "バローデール 銃剣",
+   "Barrowdale Bayonet",
+   "m992312450586",
+   "flat"
+  ],
+  "ouka:wonder_part_deagle_golden_long_barrel": [
+   "ビドフォード ロングバレル",
+   "Bidford Long Barrel",
+   "m51cc42142075",
+   "flat"
+  ],
+  "ouka:wonder_part_extended_mag_1": [
+   "延長弾倉 段1",
+   "Blackmere Extended Magazine, tier 1",
+   "m8cfb529e46d8",
+   "flat"
+  ],
+  "ouka:wonder_part_extended_mag_2": [
+   "延長弾倉 段2",
+   "Bramhope Extended Magazine, tier 2",
+   "m78cbc6ed3783",
+   "flat"
+  ],
+  "ouka:wonder_part_extended_mag_3": [
+   "延長弾倉 段3",
+   "Brackenhurst Extended Magazine, tier 3",
+   "mf18748fceda3",
+   "flat"
+  ],
+  "ouka:wonder_part_grip_cobra": [
+   "コールドベック グリップ",
+   "Caldbeck Grip",
+   "me43fff68b7e7",
+   "flat"
+  ],
+  "ouka:wonder_part_grip_magpul_afg_2": [
+   "キャッスルトン グリップ",
+   "Castleton Grip",
+   "m06c6e8453b1f",
+   "flat"
+  ],
+  "ouka:wonder_part_grip_osovets_black": [
+   "コーサンド グリップ",
+   "Cawsand Grip",
+   "mb1e50e8b404c",
+   "flat"
+  ],
+  "ouka:wonder_part_grip_rk0": [
+   "チョークウェル グリップ",
+   "Chalkwell Grip",
+   "mc7940d76f308",
+   "flat"
+  ],
+  "ouka:wonder_part_grip_rk1_b25u": [
+   "チェリトン グリップ",
+   "Cheriton Grip",
+   "m45d9e2117bab",
+   "flat"
+  ],
+  "ouka:wonder_part_grip_rk6": [
+   "クリザロー グリップ",
+   "Clitheroe Grip",
+   "m3b7482fab889",
+   "flat"
+  ],
+  "ouka:wonder_part_grip_se_5": [
+   "コールドハーバー グリップ",
+   "Coldharbour Grip",
+   "m58175047d7c8",
+   "flat"
+  ],
+  "ouka:wonder_part_grip_td": [
+   "コーブリッジ グリップ",
+   "Corbridge Grip",
+   "m9ec385d35745",
+   "flat"
+  ],
+  "ouka:wonder_part_grip_vertical_military": [
+   "コッツウォルド グリップ",
+   "Cotswold Grip",
+   "mc3ec45a2cf49",
+   "flat"
+  ],
+  "ouka:wonder_part_grip_vertical_ranger": [
+   "ダートミア グリップ",
+   "Dartmere Grip",
+   "m2d968248b2a5",
+   "flat"
+  ],
+  "ouka:wonder_part_grip_vertical_talon": [
+   "デンビー グリップ",
+   "Denbigh Grip",
+   "mac46b8afdbdd",
+   "flat"
+  ],
+  "ouka:wonder_part_laser_compact": [
+   "デヴィゼス レーザー",
+   "Devizes Laser",
+   "m0c28250b1fdd",
+   "flat"
+  ],
+  "ouka:wonder_part_laser_lopro": [
+   "ダンミア レーザー",
+   "Dunmere Laser",
+   "m0c28250b1fdd",
+   "flat"
+  ],
+  "ouka:wonder_part_laser_nightstick": [
+   "イーストウォールド レーザー",
+   "Eastwold Laser",
+   "m0c28250b1fdd",
+   "flat"
+  ],
+  "ouka:wonder_part_laser_peq6": [
+   "エラービー レーザー",
+   "Ellerby Laser",
+   "m631f320d1dc1",
+   "flat"
+  ],
+  "ouka:wonder_part_light_extended_mag_1": [
+   "延長弾倉 段1",
+   "Fairholme Extended Magazine, tier 1",
+   "m44bc868ddd56",
+   "flat"
+  ],
+  "ouka:wonder_part_light_extended_mag_2": [
+   "延長弾倉 段2",
+   "Fenwick Extended Magazine, tier 2",
+   "m77b8910c99c0",
+   "flat"
+  ],
+  "ouka:wonder_part_light_extended_mag_3": [
+   "延長弾倉 段3",
+   "Foulmire Extended Magazine, tier 3",
+   "m96cc16ac529f",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_brake_cthulhu": [
+   "ギャロウムーア マズルブレーキ",
+   "Gallowmoor Brake",
+   "me04bf9af92a2",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_brake_cyclone_d2": [
+   "ゴルセッド マズルブレーキ",
+   "Gorsedd Brake",
+   "m9e6b8ae04091",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_brake_greystoke_sg": [
+   "グレイストーク マズルブレーキ",
+   "Greystoke Brake",
+   "m5af2afe11836",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_brake_pioneer": [
+   "ハドレー マズルブレーキ",
+   "Hadleigh Brake",
+   "m9cf7eaa57df3",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_brake_timeless50": [
+   "ホールシャム マズルブレーキ",
+   "Halsham Brake",
+   "mea368cbc85e6",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_brake_trex": [
+   "ハロウデン マズルブレーキ",
+   "Harrowden Brake",
+   "m0d3b8724014f",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_choke_sg": [
+   "ホークリッジ マズル",
+   "Hawkridge Muzzle",
+   "m895ef3071227",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_compensator_trident": [
+   "ヘルムスデール マズルブレーキ",
+   "Helmsdale Brake",
+   "m3883574a4dd7",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_silencer_knight_qd": [
+   "ヘクサム サプレッサー",
+   "Hexham Suppressor",
+   "maca16e7e1dd4",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_silencer_mirage": [
+   "ハイアム サプレッサー",
+   "Higham Suppressor",
+   "m19ce4a1de89a",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_silencer_phantom_s1": [
+   "ホルコム サプレッサー",
+   "Holcombe Suppressor",
+   "m0095cef786ed",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_silencer_ptilopsis": [
+   "ホリンウッド サプレッサー",
+   "Hollinwood Suppressor",
+   "mf1ae3b0c13d7",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_silencer_sg": [
+   "ホーンキャッスル サプレッサー",
+   "Horncastle Suppressor",
+   "m2bb3e95431e9",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_silencer_ursus": [
+   "イングルビー サプレッサー",
+   "Ingleby Suppressor",
+   "mf7698620c887",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_silencer_vulture": [
+   "ケンダル サプレッサー",
+   "Kendal Suppressor",
+   "m80a61bbc7559",
+   "flat"
+  ],
+  "ouka:wonder_part_muzzle_silencer_wraith": [
+   "キルンジー サプレッサー",
+   "Kilnsey Suppressor",
+   "m95e08db51060",
+   "flat"
+  ],
+  "ouka:wonder_part_oem_stock_heavy": [
+   "カービー ストック",
+   "Kirkby Stock",
+   "m00522a5ebbc5",
+   "flat"
+  ],
+  "ouka:wonder_part_oem_stock_light": [
+   "ランバーン ストック",
+   "Lambourne Stock",
+   "m58ef9795ea54",
+   "flat"
+  ],
+  "ouka:wonder_part_oem_stock_tactical": [
+   "ラングポート ストック",
+   "Langport Stock",
+   "m9c8c13744f68",
+   "flat"
+  ],
+  "ouka:wonder_part_scope_1873_6x": [
+   "ラークヒル スコープ",
+   "Larkhill Scope",
+   "mb47b410bb627",
+   "flat"
+  ],
+  "ouka:wonder_part_scope_98k": [
+   "レイバーン スコープ",
+   "Leyburn Scope",
+   "mbd94200ddaed",
+   "flat"
+  ],
+  "ouka:wonder_part_scope_acog_ta31": [
+   "リンデール スコープ",
+   "Lindale Scope",
+   "m9695bf35ae95",
+   "flat"
+  ],
+  "ouka:wonder_part_scope_contender": [
+   "ローザー スコープ",
+   "Lowther Scope",
+   "mb47b410bb627",
+   "flat"
+  ],
+  "ouka:wonder_part_scope_elcan_4x": [
+   "メイドンヘッド スコープ",
+   "Maidenhead Scope",
+   "m89dc1fe05dd0",
+   "flat"
+  ],
+  "ouka:wonder_part_scope_hamr": [
+   "マールクリフ スコープ",
+   "Marlcliff Scope",
+   "mb47b410bb627",
+   "flat"
+  ],
+  "ouka:wonder_part_scope_lpvo_1_6": [
+   "メラー スコープ",
+   "Mellor Scope",
+   "m326ecf7e0105",
+   "flat"
+  ],
+  "ouka:wonder_part_scope_mk5hd": [
+   "ミルブルック スコープ",
+   "Millbrook Scope",
+   "mb47b410bb627",
+   "flat"
+  ],
+  "ouka:wonder_part_scope_qmk152": [
+   "モーペス スコープ",
+   "Morpeth Scope",
+   "m39541600f09a",
+   "flat"
+  ],
+  "ouka:wonder_part_scope_retro_2x": [
+   "ニューピギン スコープ",
+   "Newbiggin Scope",
+   "mcf1303ab7719",
+   "flat"
+  ],
+  "ouka:wonder_part_scope_standard_8x": [
+   "ノースウォールド スコープ",
+   "Northwold Scope",
+   "mfc650cac963f",
+   "flat"
+  ],
+  "ouka:wonder_part_scope_vudu": [
+   "オークハンプトン スコープ",
+   "Oakhampton Scope",
+   "m91f902dbffcd",
+   "flat"
+  ],
+  "ouka:wonder_part_shotgun_extended_mag_1": [
+   "延長弾倉 段1",
+   "Osmotherley Extended Magazine, tier 1",
+   "mf3de998d2c1a",
+   "flat"
+  ],
+  "ouka:wonder_part_shotgun_extended_mag_2": [
+   "延長弾倉 段2",
+   "Pendle Extended Magazine, tier 2",
+   "mc4a43635cddd",
+   "flat"
+  ],
+  "ouka:wonder_part_shotgun_extended_mag_3": [
+   "延長弾倉 段3",
+   "Pennine Extended Magazine, tier 3",
+   "mc557aec3abd6",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_552": [
+   "ピカリング スコープ",
+   "Pickering Scope",
+   "m986ee863b7c4",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_acro_pistol": [
+   "クォーンドン スコープ",
+   "Quarndon Scope",
+   "m62c7c4db8f67",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_acro_rifle": [
+   "レイヴンヘッド スコープ",
+   "Ravenhead Scope",
+   "mc0319bdd974b",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_coyote": [
+   "レイヴンズギル スコープ",
+   "Ravensgill Scope",
+   "mc6fdbeb8a742",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_deltapoint_pistol": [
+   "レッドマイア スコープ",
+   "Redmire Scope",
+   "m64b6fad202e3",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_deltapoint_rifle": [
+   "ラッシュベリー スコープ",
+   "Rushbury Scope",
+   "meeeb0f1ec9d4",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_exp3": [
+   "ソルトバーン スコープ",
+   "Saltburn Scope",
+   "m339b18ed8f30",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_fastfire_pistol": [
+   "スキャロー スコープ",
+   "Scarrow Scope",
+   "mfb3ce6037e01",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_fastfire_rifle": [
+   "シャプウィック スコープ",
+   "Shapwick Scope",
+   "m68c664525a2d",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_okp7": [
+   "スケルマースデール スコープ",
+   "Skelmersdale Scope",
+   "m4d723e33bba4",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_pk06_pistol": [
+   "スタネージ スコープ",
+   "Stanage Scope",
+   "m908a53a93dc3",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_pk06_rifle": [
+   "スタンホープ スコープ",
+   "Stanhope Scope",
+   "me834eb484e9a",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_rmr_dot": [
+   "ストーンチャット スコープ",
+   "Stonechat Scope",
+   "m14372a580557",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_sro_dot": [
+   "スウェールデール スコープ",
+   "Swaledale Scope",
+   "mbb5ed2a2e16b",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_srs_02": [
+   "タッドカスター スコープ",
+   "Tadcaster Scope",
+   "md83b4df31fc0",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_t1": [
+   "ソーンビー スコープ",
+   "Thornby Scope",
+   "m02e432cb9dca",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_t2": [
+   "ソーンクリフ スコープ",
+   "Thorncliffe Scope",
+   "m05eb7a66b1d8",
+   "flat"
+  ],
+  "ouka:wonder_part_sight_uh1": [
+   "ティンタジェル スコープ",
+   "Tintagel Scope",
+   "mdb9fdb0d5733",
+   "flat"
+  ],
+  "ouka:wonder_part_sniper_extended_mag_1": [
+   "延長弾倉 段1",
+   "Torrington Extended Magazine, tier 1",
+   "m0120f2356902",
+   "flat"
+  ],
+  "ouka:wonder_part_sniper_extended_mag_2": [
+   "延長弾倉 段2",
+   "Ullswater Extended Magazine, tier 2",
+   "m8b033ca2525b",
+   "flat"
+  ],
+  "ouka:wonder_part_sniper_extended_mag_3": [
+   "延長弾倉 段3",
+   "Upwey Extended Magazine, tier 3",
+   "m0428a7fd2744",
+   "flat"
+  ],
+  "ouka:wonder_part_stock_ak12": [
+   "ヴェローレ ストック",
+   "Vellore Stock",
+   "mb4936d286c5a",
+   "flat"
+  ],
+  "ouka:wonder_part_stock_carbon_bone_c5": [
+   "ウォリングフォード ストック",
+   "Wallingford Stock",
+   "m67300b76ebbe",
+   "flat"
+  ],
+  "ouka:wonder_part_stock_heavy_spas_12": [
+   "ウェンドーバー ストック",
+   "Wendover Stock",
+   "me06a4d2003d5",
+   "flat"
+  ],
+  "ouka:wonder_part_stock_hk_slim_line": [
+   "ウェスターハム ストック",
+   "Westerham Stock",
+   "m4b4318fd5a2c",
+   "flat"
+  ],
+  "ouka:wonder_part_stock_m4ss": [
+   "ウィットビー ストック",
+   "Whitby Stock",
+   "mfdd554cdc0ca",
+   "flat"
+  ],
+  "ouka:wonder_part_stock_militech_b5": [
+   "ウィッカム ストック",
+   "Wickham Stock",
+   "mdef69cb27251",
+   "flat"
+  ],
+  "ouka:wonder_part_stock_moe": [
+   "ウィンダミア ストック",
+   "Windermere Stock",
+   "m9030320329d5",
+   "flat"
+  ],
+  "ouka:wonder_part_stock_ripstock": [
+   "ウルヴァーデール ストック",
+   "Wolverdale Stock",
+   "ma2e9e1de50f0",
+   "flat"
+  ],
+  "ouka:wonder_part_stock_sba3": [
+   "レクサム ストック",
+   "Wrexham Stock",
+   "m57bd54908436",
+   "flat"
+  ],
+  "ouka:wonder_part_stock_tactical_ar": [
+   "ヤロウ ストック",
+   "Yarrow Stock",
+   "m830fdeb1928b",
+   "flat"
+  ],
+  "ouka:wonder_part_stock_tactical_spas_12": [
+   "イェランド ストック",
+   "Yelland Stock",
+   "m60b044728a6a",
+   "flat"
+  ],
+  "ouka:wonder_pendle": [
+   "OUKA Wonder Type-W05 \"ペンドル\" SMG",
+   "OUKA Wonder Type-W05 \"Pendle\" SMG",
+   "ma658d0a9f0a7",
+   "flat"
+  ],
+  "ouka:wonder_pennine": [
+   "OUKA Wonder Type-W24 \"ペナイン\" AR",
+   "OUKA Wonder Type-W24 \"Pennine\" AR",
+   "m8bf603b915aa",
+   "flat"
+  ],
+  "ouka:wonder_ravenhead": [
+   "OUKA Wonder Type-W50 \"レイヴンヘッド\" HPIS",
+   "OUKA Wonder Type-W50 \"Ravenhead\" HPIS",
+   "me221f363a763",
+   "flat"
+  ],
+  "ouka:wonder_ravensgill": [
+   "OUKA Wonder Type-W02 \"レイヴンズギル\" SR",
+   "OUKA Wonder Type-W02 \"Ravensgill\" SR",
+   "m4e792d859e57",
+   "flat"
+  ],
+  "ouka:wonder_redesdale": [
+   "OUKA Wonder Type-W37 \"レッズデール\" AR",
+   "OUKA Wonder Type-W37 \"Redesdale\" AR",
+   "m8c7702f6fbd2",
+   "flat"
+  ],
+  "ouka:wonder_sarn": [
+   "OUKA Wonder Type-W43 \"サーン\" AR",
+   "OUKA Wonder Type-W43 \"Sarn\" AR",
+   "md7b426f45c90",
+   "flat"
+  ],
+  "ouka:wonder_scarrow": [
+   "OUKA Wonder Type-W08 \"スカロー\" SG-D",
+   "OUKA Wonder Type-W08 \"Scarrow\" SG-D",
+   "md63f92056432",
+   "flat"
+  ],
+  "ouka:wonder_scaur": [
+   "OUKA Wonder Type-W53 \"スカー\" PDW",
+   "OUKA Wonder Type-W53 \"Scaur\" PDW",
+   "me5456ed2d803",
+   "flat"
+  ],
+  "ouka:wonder_skelwith": [
+   "OUKA Wonder Type-W31 \"スケルウィス\" AMR",
+   "OUKA Wonder Type-W31 \"Skelwith\" AMR",
+   "m691e5848f496",
+   "flat"
+  ],
+  "ouka:wonder_stainmoor": [
+   "OUKA Wonder Type-W38 \"ステインムーア\" AR",
+   "OUKA Wonder Type-W38 \"Stainmoor\" AR",
+   "mbe278badbff3",
+   "flat"
+  ],
+  "ouka:wonder_stanage": [
+   "OUKA Wonder Type-W42 \"スタナージ\" BR",
+   "OUKA Wonder Type-W42 \"Stanage\" BR",
+   "mf57cc30927d3",
+   "flat"
+  ],
+  "ouka:wonder_stanhope": [
+   "OUKA Wonder Type-W07 \"スタンホープ\" SG-D",
+   "OUKA Wonder Type-W07 \"Stanhope\" SG-D",
+   "mcb76a112b24c",
+   "flat"
+  ],
+  "ouka:wonder_stonechat": [
+   "OUKA Wonder Type-W15 \"ストーンチャット\" CARB",
+   "OUKA Wonder Type-W15 \"Stonechat\" CARB",
+   "m212e2d16820f",
+   "flat"
+  ],
+  "ouka:wonder_strathcole": [
+   "OUKA Wonder Type-W21 \"ストラスコール\" SG-S",
+   "OUKA Wonder Type-W21 \"Strathcole\" SG-S",
+   "m6c931e1e72c7",
+   "flat"
+  ],
+  "ouka:wonder_tarnhill": [
+   "OUKA Wonder Type-W16 \"ターンヒル\" BR",
+   "OUKA Wonder Type-W16 \"Tarnhill\" BR",
+   "mb77a1ad21ff1",
+   "flat"
+  ],
+  "ouka:wonder_tarnmere": [
+   "OUKA Wonder Type-W51 \"ターンミア\" AR",
+   "OUKA Wonder Type-W51 \"Tarnmere\" AR",
+   "m46caba0e6be1",
+   "flat"
+  ],
+  "ouka:wonder_thornbury": [
+   "OUKA Wonder Type-W30 \"ソーンベリー\" SG-P",
+   "OUKA Wonder Type-W30 \"Thornbury\" SG-P",
+   "m686b7258ebff",
+   "flat"
+  ],
+  "ouka:wonder_thorncliffe": [
+   "OUKA Wonder Type-W03 \"ソーンクリフ\" AR",
+   "OUKA Wonder Type-W03 \"Thorncliffe\" AR",
+   "m1514ad239bb7",
+   "flat"
+  ],
+  "ouka:wonder_thrumster": [
+   "OUKA Wonder Type-W48 \"スラムスター\" REV",
+   "OUKA Wonder Type-W48 \"Thrumster\" REV",
+   "mc99f2ab34f7e",
+   "flat"
+  ],
+  "ouka:wonder_tintagel": [
+   "OUKA Wonder Type-W41 \"ティンタジェル\" LMG",
+   "OUKA Wonder Type-W41 \"Tintagel\" LMG",
+   "mcd1f70d388f5",
+   "flat"
+  ],
+  "ouka:wonder_tintern": [
+   "OUKA Wonder Type-W52 \"ティンターン\" SMG",
+   "OUKA Wonder Type-W52 \"Tintern\" SMG",
+   "m13287341c768",
+   "flat"
+  ],
+  "ouka:wonder_ulverston": [
+   "OUKA Wonder Type-W46 \"アルヴァストン\" DMR",
+   "OUKA Wonder Type-W46 \"Ulverston\" DMR",
+   "mdf0ef63386ba",
+   "flat"
+  ],
+  "ouka:wonder_wendle": [
+   "OUKA Wonder Type-W49 \"ウェンドル\" REV",
+   "OUKA Wonder Type-W49 \"Wendle\" REV",
+   "m0953d773f8f1",
+   "flat"
+  ],
+  "ouka:wonder_wendover": [
+   "OUKA Wonder Type-W17 \"ウェンドーバー\" HPIS",
+   "OUKA Wonder Type-W17 \"Wendover\" HPIS",
+   "md4678292400a",
+   "flat"
+  ],
+  "ouka:wonder_wheatear": [
+   "OUKA Wonder Type-W04 \"ウィートイア\" AR",
+   "OUKA Wonder Type-W04 \"Wheatear\" AR",
+   "m23b13fbffd44",
+   "flat"
+  ],
+  "ouka:wonder_whitby": [
+   "OUKA Wonder Type-W35 \"ホイットビー\" PIS",
+   "OUKA Wonder Type-W35 \"Whitby\" PIS",
+   "m2aa5fb70509a",
+   "flat"
+  ],
+  "ouka:wonder_wrenmoor": [
+   "OUKA Wonder Type-W29 \"レンムーア\" SR",
+   "OUKA Wonder Type-W29 \"Wrenmoor\" SR",
+   "m81e51ec25b3c",
+   "flat"
+  ],
   "ouka:wrought_iron_statue": [
    "鋼鉄の守護騎士の彫像",
    "Wrought Iron Statue",
@@ -1064,368 +1838,6 @@
    "outputs": [
     {
      "id": "ouka:artificial_sun_core",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/attachment_mc1_compensator",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 2
-    },
-    {
-     "id": "ouka:ouka_alloy_plate",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:attachment_mc1_compensator",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/attachment_md3_drum",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 3
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 1
-    },
-    {
-     "id": "ouka:iron_plate",
-     "n": 3
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:attachment_md3_drum",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/attachment_me2_extended",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 2
-    },
-    {
-     "id": "ouka:iron_plate",
-     "n": 3
-    },
-    {
-     "id": "ouka:industrial_plastic",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:attachment_me2_extended",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/attachment_mf2_flash_hider",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 1
-    },
-    {
-     "id": "ouka:iron_plate",
-     "n": 2
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:attachment_mf2_flash_hider",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/attachment_mq1_fast_draw",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 1
-    },
-    {
-     "id": "ouka:iron_plate",
-     "n": 2
-    },
-    {
-     "id": "ouka:industrial_plastic",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:attachment_mq1_fast_draw",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/attachment_ms3_suppressor",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 2
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 1
-    },
-    {
-     "id": "ouka:industrial_plastic",
-     "n": 2
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:attachment_ms3_suppressor",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/attachment_oh2_holographic",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 2
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 2
-    },
-    {
-     "id": "minecraft:glass_pane",
-     "n": 2
-    },
-    {
-     "id": "minecraft:glowstone_dust",
-     "n": 2
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:attachment_oh2_holographic",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/attachment_or1_reflex",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 2
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 1
-    },
-    {
-     "id": "minecraft:glass_pane",
-     "n": 2
-    },
-    {
-     "id": "minecraft:redstone",
-     "n": 2
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:attachment_or1_reflex",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/attachment_os4_variable",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 3
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 1
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 1
-    },
-    {
-     "id": "minecraft:spyglass",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:attachment_os4_variable",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/attachment_ot3_thermal",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 3
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 4
-    },
-    {
-     "id": "minecraft:spyglass",
-     "n": 1
-    },
-    {
-     "id": "ouka:industrial_plastic",
-     "n": 2
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:attachment_ot3_thermal",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/attachment_sl2_laser",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 1
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 2
-    },
-    {
-     "id": "minecraft:redstone",
-     "n": 2
-    },
-    {
-     "id": "minecraft:glass_pane",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:attachment_sl2_laser",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/attachment_ss1_stability_stock",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 2
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 1
-    },
-    {
-     "id": "ouka:industrial_plastic",
-     "n": 2
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:attachment_ss1_stability_stock",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/attachment_ua1_angled_grip",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:industrial_plastic",
-     "n": 2
-    },
-    {
-     "id": "ouka:iron_plate",
-     "n": 2
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:attachment_ua1_angled_grip",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/attachment_uv2_vertical_grip",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:industrial_plastic",
-     "n": 2
-    },
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 1
-    },
-    {
-     "id": "ouka:iron_plate",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:attachment_uv2_vertical_grip",
      "n": 1
     }
    ],
@@ -1857,441 +2269,6 @@
    "outputs": [
     {
      "id": "ouka:gas_turbine_generator",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_fudo",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 10
-    },
-    {
-     "id": "ouka:ouka_alloy_plate",
-     "n": 4
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 4
-    },
-    {
-     "id": "ouka:machine_frame",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_fudo",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_gekkou",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 7
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 6
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 3
-    },
-    {
-     "id": "ouka:helium_3_canister",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_gekkou",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_hayabusa",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 5
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 3
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 2
-    },
-    {
-     "id": "ouka:ouka_alloy_plate",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_hayabusa",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_kagutsuchi",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 8
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 6
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 3
-    },
-    {
-     "id": "ouka:helium_3_canister",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_kagutsuchi",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_kojiro",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 5
-    },
-    {
-     "id": "ouka:ouka_alloy_plate",
-     "n": 2
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 2
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_kojiro",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_kusanagi",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 6
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 2
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 2
-    },
-    {
-     "id": "ouka:ouka_alloy_plate",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_kusanagi",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_mitsuboshi",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 6
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 6
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 2
-    },
-    {
-     "id": "ouka:helium_3_canister",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_mitsuboshi",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_muramasa",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 6
-    },
-    {
-     "id": "ouka:ouka_alloy_plate",
-     "n": 2
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 3
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 3
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_muramasa",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_onibi",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 6
-    },
-    {
-     "id": "ouka:ouka_alloy_plate",
-     "n": 2
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 2
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_onibi",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_raijin",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 8
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 3
-    },
-    {
-     "id": "ouka:ouka_alloy_plate",
-     "n": 2
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 2
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_raijin",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_raikiri",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 5
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 5
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 2
-    },
-    {
-     "id": "ouka:helium_3_canister",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_raikiri",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_ronin",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 6
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 2
-    },
-    {
-     "id": "ouka:ouka_alloy_plate",
-     "n": 1
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_ronin",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_susanoo",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 12
-    },
-    {
-     "id": "ouka:ouka_alloy_plate",
-     "n": 6
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 4
-    },
-    {
-     "id": "ouka:machine_frame",
-     "n": 2
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_susanoo",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_suzumebachi",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 3
-    },
-    {
-     "id": "ouka:ouka_alloy_plate",
-     "n": 1
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 1
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_suzumebachi",
-     "n": 1
-    }
-   ],
-   "brand": "ouka"
-  },
-  {
-   "id": "ouka:assembly/gun_tatsumaki",
-   "station": "assembly",
-   "inputs": [
-    {
-     "id": "ouka:titanium_ingot",
-     "n": 7
-    },
-    {
-     "id": "ouka:composite_plate",
-     "n": 3
-    },
-    {
-     "id": "ouka:electronic_circuit",
-     "n": 2
-    },
-    {
-     "id": "ouka:machine_frame",
-     "n": 1
-    }
-   ],
-   "outputs": [
-    {
-     "id": "ouka:gun_tatsumaki",
      "n": 1
     }
    ],
@@ -3167,6 +3144,3817 @@
    "outputs": [
     {
      "id": "ouka:wind_turbine",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_ammo_energy",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:copper_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:lithium_dust",
+     "n": 2
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_ammo_energy",
+     "n": 24
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_ammo_heavy",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:copper_plate",
+     "n": 2
+    },
+    {
+     "id": "minecraft:gunpowder",
+     "n": 2
+    },
+    {
+     "id": "ouka:iron_plate",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_ammo_heavy",
+     "n": 16
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_ammo_light",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:copper_plate",
+     "n": 2
+    },
+    {
+     "id": "minecraft:gunpowder",
+     "n": 2
+    },
+    {
+     "id": "minecraft:iron_nugget",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_ammo_light",
+     "n": 24
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_ammo_mythic",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 2
+    },
+    {
+     "id": "minecraft:gunpowder",
+     "n": 2
+    },
+    {
+     "id": "ouka:helium_3_canister",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_ammo_mythic",
+     "n": 4
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_ammo_shotgun",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:industrial_plastic",
+     "n": 2
+    },
+    {
+     "id": "minecraft:gunpowder",
+     "n": 2
+    },
+    {
+     "id": "minecraft:iron_nugget",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_ammo_shotgun",
+     "n": 12
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_ammo_sniper",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 2
+    },
+    {
+     "id": "minecraft:gunpowder",
+     "n": 2
+    },
+    {
+     "id": "ouka:copper_plate",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_ammo_sniper",
+     "n": 8
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_ardrey",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 8
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 3
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_ardrey",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_ashdown",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 8
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 3
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_ashdown",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_bittern",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 3
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_bittern",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_brackenhurst",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 2
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_brackenhurst",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_bramwell",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 4
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_bramwell",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_brough",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 2
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_brough",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_carrick",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 2
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_carrick",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_coniston",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 4
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_coniston",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_corrie",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 3
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_corrie",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_dunnock",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 2
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_dunnock",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_exmoor",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_exmoor",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_fellside",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 8
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 3
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_fellside",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_foulmire",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 10
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:machine_frame",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_foulmire",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_gallowmoor",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 10
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:machine_frame",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_gallowmoor",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_glenmore",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_glenmore",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_goldhurst",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 3
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_goldhurst",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_gorsedd",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 3
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_gorsedd",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_harkness",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_harkness",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_hollin",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 8
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 3
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:machine_frame",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_hollin",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_holmfirth",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_holmfirth",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_kendal",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 10
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:machine_frame",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_kendal",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_kilnsey",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 2
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_kilnsey",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_lantern",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_lantern",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_ludlow",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 4
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_ludlow",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_mardle",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 10
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:machine_frame",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_mardle",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_mossdale",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 10
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:machine_frame",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_mossdale",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_ormskirk",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_ormskirk",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_ammo_mod_fmj",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:crying_obsidian",
+     "n": 2
+    },
+    {
+     "id": "minecraft:diamond",
+     "n": 5
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_ammo_mod_fmj",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_ammo_mod_he",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:crying_obsidian",
+     "n": 3
+    },
+    {
+     "id": "minecraft:end_crystal",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_ammo_mod_he",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_ammo_mod_hp",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:crying_obsidian",
+     "n": 3
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_ammo_mod_hp",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_ammo_mod_i",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:crying_obsidian",
+     "n": 2
+    },
+    {
+     "id": "minecraft:fire_charge",
+     "n": 1
+    },
+    {
+     "id": "minecraft:blaze_rod",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_ammo_mod_i",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_ammo_mod_slug",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:crying_obsidian",
+     "n": 3
+    },
+    {
+     "id": "minecraft:netherite_scrap",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_ammo_mod_slug",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_bayonet_6h3",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 8
+    },
+    {
+     "id": "minecraft:oak_log",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_bayonet_6h3",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_bayonet_m9",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    },
+    {
+     "id": "minecraft:oak_log",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_bayonet_m9",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_deagle_golden_long_barrel",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 30
+    },
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_deagle_golden_long_barrel",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_extended_mag_1",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_extended_mag_1",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_extended_mag_2",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 20
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 8
+    },
+    {
+     "id": "minecraft:lapis_lazuli",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_extended_mag_2",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_extended_mag_3",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 32
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 12
+    },
+    {
+     "id": "minecraft:diamond",
+     "n": 3
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_extended_mag_3",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_grip_cobra",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 6
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_grip_cobra",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_grip_magpul_afg_2",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_grip_magpul_afg_2",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_grip_osovets_black",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_grip_osovets_black",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_grip_rk0",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 11
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_grip_rk0",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_grip_rk1_b25u",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 5
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_grip_rk1_b25u",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_grip_rk6",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 2
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_grip_rk6",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_grip_se_5",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_grip_se_5",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_grip_td",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_grip_td",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_grip_vertical_military",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 14
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 5
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_grip_vertical_military",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_grip_vertical_ranger",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 18
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 6
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_grip_vertical_ranger",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_grip_vertical_talon",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 11
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_grip_vertical_talon",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_laser_compact",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 6
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_laser_compact",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_laser_lopro",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_laser_lopro",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_laser_nightstick",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 4
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_laser_nightstick",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_laser_peq6",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 4
+    },
+    {
+     "id": "minecraft:amethyst_shard",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_laser_peq6",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_light_extended_mag_1",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_light_extended_mag_1",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_light_extended_mag_2",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 12
+    },
+    {
+     "id": "minecraft:lapis_lazuli",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_light_extended_mag_2",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_light_extended_mag_3",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:lapis_lazuli",
+     "n": 8
+    },
+    {
+     "id": "minecraft:quartz",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_light_extended_mag_3",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_brake_cthulhu",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 5
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_brake_cthulhu",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_brake_cyclone_d2",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_brake_cyclone_d2",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_brake_greystoke_sg",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 18
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_brake_greystoke_sg",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_brake_pioneer",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 14
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 5
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_brake_pioneer",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_brake_timeless50",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 15
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 5
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_brake_timeless50",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_brake_trex",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 18
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 6
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_brake_trex",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_choke_sg",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 20
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 6
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_choke_sg",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_compensator_trident",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_compensator_trident",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_silencer_knight_qd",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 6
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_silencer_knight_qd",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_silencer_mirage",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_silencer_mirage",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_silencer_phantom_s1",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 6
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_silencer_phantom_s1",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_silencer_ptilopsis",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 14
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_silencer_ptilopsis",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_silencer_sg",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 18
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 5
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_silencer_sg",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_silencer_ursus",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 6
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_silencer_ursus",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_silencer_vulture",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 6
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_silencer_vulture",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_muzzle_silencer_wraith",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 4
+    },
+    {
+     "id": "minecraft:white_wool",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_muzzle_silencer_wraith",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_oem_stock_heavy",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 12
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 6
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_oem_stock_heavy",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_oem_stock_light",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 8
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_oem_stock_light",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_oem_stock_tactical",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 14
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_oem_stock_tactical",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_scope_1873_6x",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:copper_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 4
+    },
+    {
+     "id": "minecraft:glass",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_scope_1873_6x",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_scope_98k",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    },
+    {
+     "id": "minecraft:amethyst_shard",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_scope_98k",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_scope_acog_ta31",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    },
+    {
+     "id": "minecraft:amethyst_shard",
+     "n": 3
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_scope_acog_ta31",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_scope_contender",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    },
+    {
+     "id": "minecraft:amethyst_shard",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_scope_contender",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_scope_elcan_4x",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:amethyst_shard",
+     "n": 5
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 10
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_scope_elcan_4x",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_scope_hamr",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 18
+    },
+    {
+     "id": "minecraft:amethyst_shard",
+     "n": 4
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 10
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_scope_hamr",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_scope_lpvo_1_6",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 14
+    },
+    {
+     "id": "minecraft:amethyst_shard",
+     "n": 4
+    },
+    {
+     "id": "minecraft:glowstone_dust",
+     "n": 8
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 6
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_scope_lpvo_1_6",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_scope_mk5hd",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 24
+    },
+    {
+     "id": "minecraft:amethyst_shard",
+     "n": 10
+    },
+    {
+     "id": "minecraft:glowstone_dust",
+     "n": 8
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_scope_mk5hd",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_scope_qmk152",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 12
+    },
+    {
+     "id": "minecraft:amethyst_shard",
+     "n": 8
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 10
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_scope_qmk152",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_scope_retro_2x",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 8
+    },
+    {
+     "id": "minecraft:amethyst_shard",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_scope_retro_2x",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_scope_standard_8x",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 18
+    },
+    {
+     "id": "minecraft:amethyst_shard",
+     "n": 8
+    },
+    {
+     "id": "minecraft:glowstone_dust",
+     "n": 8
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_scope_standard_8x",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_scope_vudu",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 14
+    },
+    {
+     "id": "minecraft:amethyst_shard",
+     "n": 4
+    },
+    {
+     "id": "minecraft:glowstone_dust",
+     "n": 8
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 6
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_scope_vudu",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_shotgun_extended_mag_1",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 10
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_shotgun_extended_mag_1",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_shotgun_extended_mag_2",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_shotgun_extended_mag_2",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_shotgun_extended_mag_3",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 24
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 5
+    },
+    {
+     "id": "minecraft:lapis_lazuli",
+     "n": 8
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_shotgun_extended_mag_3",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_552",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 12
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 5
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 6
+    },
+    {
+     "id": "minecraft:glass",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_552",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_acro_pistol",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 4
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_acro_pistol",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_acro_rifle",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 6
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_acro_rifle",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_coyote",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 8
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 4
+    },
+    {
+     "id": "minecraft:glass",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_coyote",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_deltapoint_pistol",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 4
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_deltapoint_pistol",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_deltapoint_rifle",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 6
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_deltapoint_rifle",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_exp3",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 14
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 5
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 8
+    },
+    {
+     "id": "minecraft:glass",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_exp3",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_fastfire_pistol",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 4
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_fastfire_pistol",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_fastfire_rifle",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 6
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_fastfire_rifle",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_okp7",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 4
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 4
+    },
+    {
+     "id": "minecraft:glass",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_okp7",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_pk06_pistol",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 4
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_pk06_pistol",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_pk06_rifle",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 6
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_pk06_rifle",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_rmr_dot",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 4
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_rmr_dot",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_sro_dot",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 4
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_sro_dot",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_srs_02",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 6
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 2
+    },
+    {
+     "id": "minecraft:glass",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_srs_02",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_t1",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 4
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 1
+    },
+    {
+     "id": "minecraft:glass",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_t1",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_t2",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 6
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 1
+    },
+    {
+     "id": "minecraft:glass",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_t2",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sight_uh1",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 15
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 6
+    },
+    {
+     "id": "minecraft:redstone",
+     "n": 8
+    },
+    {
+     "id": "minecraft:glass",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sight_uh1",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sniper_extended_mag_1",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 18
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 6
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sniper_extended_mag_1",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sniper_extended_mag_2",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 26
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 12
+    },
+    {
+     "id": "minecraft:lapis_lazuli",
+     "n": 12
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sniper_extended_mag_2",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_sniper_extended_mag_3",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 36
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:quartz",
+     "n": 8
+    },
+    {
+     "id": "minecraft:diamond",
+     "n": 5
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_sniper_extended_mag_3",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_stock_ak12",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 14
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 5
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_stock_ak12",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_stock_carbon_bone_c5",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 12
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 3
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_stock_carbon_bone_c5",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_stock_heavy_spas_12",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 18
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 2
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_stock_heavy_spas_12",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_stock_hk_slim_line",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 5
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_stock_hk_slim_line",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_stock_m4ss",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 8
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 5
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_stock_m4ss",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_stock_militech_b5",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 5
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_stock_militech_b5",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_stock_moe",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 12
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 5
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_stock_moe",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_stock_ripstock",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 12
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 5
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_stock_ripstock",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_stock_sba3",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 14
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 5
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_stock_sba3",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_stock_tactical_ar",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 18
+    },
+    {
+     "id": "minecraft:gold_ingot",
+     "n": 4
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_stock_tactical_ar",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_part_stock_tactical_spas_12",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "minecraft:iron_ingot",
+     "n": 16
+    },
+    {
+     "id": "minecraft:leather",
+     "n": 3
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_part_stock_tactical_spas_12",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_pendle",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 4
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_pendle",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_pennine",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_pennine",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_ravenhead",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 3
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_ravenhead",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_ravensgill",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 8
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 3
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_ravensgill",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_redesdale",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_redesdale",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_sarn",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_sarn",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_scarrow",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 3
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_scarrow",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_scaur",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 4
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_scaur",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_skelwith",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 8
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 3
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:machine_frame",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_skelwith",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_stainmoor",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_stainmoor",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_stanage",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_stanage",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_stanhope",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 3
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_stanhope",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_stonechat",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_stonechat",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_strathcole",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 3
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_strathcole",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_tarnhill",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_tarnhill",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_tarnmere",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_tarnmere",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_thornbury",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 3
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_thornbury",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_thorncliffe",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_thorncliffe",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_thrumster",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 2
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_thrumster",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_tintagel",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 10
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 4
+    },
+    {
+     "id": "ouka:machine_frame",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_tintagel",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_tintern",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 4
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_tintern",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_ulverston",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_ulverston",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_wendle",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 2
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_wendle",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_wendover",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 3
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_wendover",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_wheatear",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 6
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_wheatear",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_whitby",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 2
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 1
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_whitby",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/wonder_wrenmoor",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:titanium_ingot",
+     "n": 8
+    },
+    {
+     "id": "ouka:composite_plate",
+     "n": 3
+    },
+    {
+     "id": "ouka:ouka_alloy_plate",
+     "n": 2
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:wonder_wrenmoor",
      "n": 1
     }
    ],
@@ -6323,20 +10111,6 @@
  ],
  "search": {
   "ouka:assembly/artificial_sun_core": "ouka 人工太陽磁気核融合炉 人工太陽磁気核融合炉 ouka:artificial_sun_core artificial_sun_core artificial sun core 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 超伝導コイル 超伝導こいる ouka:superconducting_coil superconducting_coil superconducting coil 炭化タングステンの板 炭化たんぐすてんの板 ouka:tungsten_carbide_plate tungsten_carbide_plate tungsten carbide plate 量子チップ 量子ちっぷ ouka:quantum_chip quantum_chip quantum chip",
-  "ouka:assembly/attachment_mc1_compensator": "ouka OUKA MC-1「楔」コンペンセイター ouka mc-1「楔」こんぺんせいたー ouka:attachment_mc1_compensator attachment_mc1_compensator ouka mc-1 \"kusabi\" compensator チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
-  "ouka:assembly/attachment_md3_drum": "ouka OUKA MD-3「太鼓」ドラムマガジン ouka md-3「太鼓」どらむまがじん ouka:attachment_md3_drum attachment_md3_drum ouka md-3 \"taiko\" drum magazine チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
-  "ouka:assembly/attachment_me2_extended": "ouka OUKA ME-2「重」拡張マガジン ouka me-2「重」拡張まがじん ouka:attachment_me2_extended attachment_me2_extended ouka me-2 \"kasane\" extended magazine チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic",
-  "ouka:assembly/attachment_mf2_flash_hider": "ouka OUKA MF-2「霞」フラッシュハイダー ouka mf-2「霞」ふらっしゅはいだー ouka:attachment_mf2_flash_hider attachment_mf2_flash_hider ouka mf-2 \"kasumi\" flash hider チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 鉄板 鉄板 ouka:iron_plate iron_plate iron plate",
-  "ouka:assembly/attachment_mq1_fast_draw": "ouka OUKA MQ-1「疾風」早抜きマガジン ouka mq-1「疾風」早抜きまがじん ouka:attachment_mq1_fast_draw attachment_mq1_fast_draw ouka mq-1 \"hayate\" fast-draw magazine チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic",
-  "ouka:assembly/attachment_ms3_suppressor": "ouka OUKA MS-3「囁」亜音速サプレッサー ouka ms-3「囁」亜音速さぷれっさー ouka:attachment_ms3_suppressor attachment_ms3_suppressor ouka ms-3 \"sasayaki\" subsonic suppressor チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic",
-  "ouka:assembly/attachment_oh2_holographic": "ouka OUKA OH-2「鏡」ホログラフィックサイト ouka oh-2「鏡」ほろぐらふぃっくさいと ouka:attachment_oh2_holographic attachment_oh2_holographic ouka oh-2 \"kagami\" holographic sight チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit ガラス板 がらす板 minecraft:glass_pane glass_pane glass pane グロウストーンダスト ぐろうすとーんだすと minecraft:glowstone_dust glowstone_dust glowstone dust",
-  "ouka:assembly/attachment_or1_reflex": "ouka OUKA OR-1「蛍」レフレックスサイト ouka or-1「蛍」れふれっくすさいと ouka:attachment_or1_reflex attachment_or1_reflex ouka or-1 \"hotaru\" reflex sight チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit ガラス板 がらす板 minecraft:glass_pane glass_pane glass pane レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
-  "ouka:assembly/attachment_os4_variable": "ouka OUKA OS-4「鳶」2〜4 倍可変スコープ ouka os-4「鳶」2〜4 倍可変すこーぷ ouka:attachment_os4_variable attachment_os4_variable ouka os-4 \"tobi\" 2-4x variable scope チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 望遠鏡 望遠鏡 minecraft:spyglass spyglass spyglass",
-  "ouka:assembly/attachment_ot3_thermal": "ouka OUKA OT-3「陽炎」熱線サイト ouka ot-3「陽炎」熱線さいと ouka:attachment_ot3_thermal attachment_ot3_thermal ouka ot-3 \"kagerou\" thermal sight チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 望遠鏡 望遠鏡 minecraft:spyglass spyglass spyglass 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic",
-  "ouka:assembly/attachment_sl2_laser": "ouka OUKA SL-2「灯」レーザー照準モジュール ouka sl-2「灯」れーざー照準もじゅーる ouka:attachment_sl2_laser attachment_sl2_laser ouka sl-2 \"akari\" laser aiming module チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust ガラス板 がらす板 minecraft:glass_pane glass_pane glass pane",
-  "ouka:assembly/attachment_ss1_stability_stock": "ouka OUKA SS-1「巌」安定ストック ouka ss-1「巌」安定すとっく ouka:attachment_ss1_stability_stock attachment_ss1_stability_stock ouka ss-1 \"iwao\" stability stock チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic",
-  "ouka:assembly/attachment_ua1_angled_grip": "ouka OUKA UA-1「燕」アングルドグリップ ouka ua-1「燕」あんぐるどぐりっぷ ouka:attachment_ua1_angled_grip attachment_ua1_angled_grip ouka ua-1 \"tsubame\" angled grip 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic 鉄板 鉄板 ouka:iron_plate iron_plate iron plate",
-  "ouka:assembly/attachment_uv2_vertical_grip": "ouka OUKA UV-2「柱」バーティカルグリップ ouka uv-2「柱」ばーてぃかるぐりっぷ ouka:attachment_uv2_vertical_grip attachment_uv2_vertical_grip ouka uv-2 \"hashira\" vertical grip 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 鉄板 鉄板 ouka:iron_plate iron_plate iron plate",
   "ouka:assembly/auto_calibration_manipulator": "ouka 自動キャリブレーションマニピュレータ 自動きゃりぶれーしょんまにぴゅれーた ouka:auto_calibration_manipulator auto_calibration_manipulator auto-calibration manipulator 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate",
   "ouka:assembly/catalyst_pelletiser": "ouka 触媒造粒機 触媒造粒機 ouka:catalyst_pelletiser catalyst_pelletiser catalyst pelletiser 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot チタンの超微粉 ちたんの超微粉 ouka:ultrafine_titanium_powder ultrafine_titanium_powder ultrafine titanium powder 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/catalytic_smelting_furnace": "ouka 触媒熱化学溶鉱炉 触媒熱化学溶鉱炉 ouka:catalytic_smelting_furnace catalytic_smelting_furnace catalytic smelting furnace 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
@@ -6352,21 +10126,6 @@
   "ouka:assembly/gas_centrifuge_tower": "ouka 重力遠心気相分離塔 重力遠心気相分離塔 ouka:gas_centrifuge_tower gas_centrifuge_tower gas-centrifuge tower 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/gas_compressor": "ouka ガス圧縮機 がす圧縮機 ouka:gas_compressor gas_compressor gas compressor 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 潤滑油の缶 潤滑油の缶 ouka:lubricant_canister lubricant_canister lubricant canister",
   "ouka:assembly/gas_turbine_generator": "ouka ガスタービン発電機 がすたーびん発電機 ouka:gas_turbine_generator gas_turbine_generator gas turbine generator 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame タングステンの板 たんぐすてんの板 ouka:tungsten_plate tungsten_plate tungsten plate チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate 超伝導コイル 超伝導こいる ouka:superconducting_coil superconducting_coil superconducting coil",
-  "ouka:assembly/gun_fudo": "ouka OUKA Type-55「不動」重装軽機関銃 ouka type-55「不動」重装軽機関銃 ouka:gun_fudo gun_fudo ouka type-55 \"fudo\" heavy lmg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame",
-  "ouka:assembly/gun_gekkou": "ouka OUKA Type-77「月光」増幅式ボルトアクション狙撃銃 ouka type-77「月光」増幅式ぼるとあくしょん狙撃銃 ouka:gun_gekkou gun_gekkou ouka type-77 \"gekkou\" amped bolt sniper チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate ヘリウム3の缶 へりうむ3の缶 ouka:helium_3_canister helium_3_canister helium-3 canister",
-  "ouka:assembly/gun_hayabusa": "ouka OUKA Type-99「隼」高速連射短機関銃 ouka type-99「隼」高速連射短機関銃 ouka:gun_hayabusa gun_hayabusa ouka type-99 \"hayabusa\" high-rpm smg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
-  "ouka:assembly/gun_kagutsuchi": "ouka OUKA Type-24「迦具土」加速型軽機関銃 ouka type-24「迦具土」加速型軽機関銃 ouka:gun_kagutsuchi gun_kagutsuchi ouka type-24 \"kagutsuchi\" accelerating lmg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate ヘリウム3の缶 へりうむ3の缶 ouka:helium_3_canister helium_3_canister helium-3 canister",
-  "ouka:assembly/gun_kojiro": "ouka OUKA Type-44「小次郎」大口径ハンドキャノン ouka type-44「小次郎」大口径はんどきゃのん ouka:gun_kojiro gun_kojiro ouka type-44 \"kojiro\" heavy hand cannon チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
-  "ouka:assembly/gun_kusanagi": "ouka OUKA Type-01「草薙」カービン ouka type-01「草薙」かーびん ouka:gun_kusanagi gun_kusanagi ouka type-01 \"kusanagi\" carbine チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
-  "ouka:assembly/gun_mitsuboshi": "ouka OUKA Type-03「三星」三連コアマークスマン ouka type-03「三星」三連こあまーくすまん ouka:gun_mitsuboshi gun_mitsuboshi ouka type-03 \"mitsuboshi\" triple-core marksman チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate ヘリウム3の缶 へりうむ3の缶 ouka:helium_3_canister helium_3_canister helium-3 canister",
-  "ouka:assembly/gun_muramasa": "ouka OUKA Type-88「村正」二口径短機関銃 ouka type-88「村正」二口径短機関銃 ouka:gun_muramasa gun_muramasa ouka type-88 \"muramasa\" dual-caliber smg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
-  "ouka:assembly/gun_onibi": "ouka OUKA Type-04「鬼火」横一文字散弾銃 ouka type-04「鬼火」横一文字散弾銃 ouka:gun_onibi gun_onibi ouka type-04 \"onibi\" line-spread shotgun チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
-  "ouka:assembly/gun_raijin": "ouka OUKA Type-47「雷神」重突撃銃 ouka type-47「雷神」重突撃銃 ouka:gun_raijin gun_raijin ouka type-47 \"raijin\" heavy rifle チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
-  "ouka:assembly/gun_raikiri": "ouka OUKA Type-09「雷切」プラズマ短機関銃 ouka type-09「雷切」ぷらずま短機関銃 ouka:gun_raikiri gun_raikiri ouka type-09 \"raikiri\" plasma energy smg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate ヘリウム3の缶 へりうむ3の缶 ouka:helium_3_canister helium_3_canister helium-3 canister",
-  "ouka:assembly/gun_ronin": "ouka OUKA Type-12「浪人」レバーアクション散弾銃 ouka type-12「浪人」ればーあくしょん散弾銃 ouka:gun_ronin gun_ronin ouka type-12 \"ronin\" lever shotgun チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
-  "ouka:assembly/gun_susanoo": "ouka OUKA Type-50「須佐之男」対物キャノン ouka type-50「須佐之男」対物きゃのん ouka:gun_susanoo gun_susanoo ouka type-50 \"susanoo\" anti-materiel cannon チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame",
-  "ouka:assembly/gun_suzumebachi": "ouka OUKA Type-20「雀蜂」戦術連射ピストル ouka type-20「雀蜂」戦術連射ぴすとる ouka:gun_suzumebachi gun_suzumebachi ouka type-20 \"suzumebachi\" tactical rapid pistol チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
-  "ouka:assembly/gun_tatsumaki": "ouka OUKA Type-08「竜巻」ドラム式自動散弾銃 ouka type-08「竜巻」どらむ式自動散弾銃 ouka:gun_tatsumaki gun_tatsumaki ouka type-08 \"tatsumaki\" auto-drum shotgun チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame",
   "ouka:assembly/hazard_exoskeleton_boots": "ouka 全天候型重工業防護外骨格(ブーツ) 全天候型重工業防護外骨格(ぶーつ) ouka:hazard_exoskeleton_boots hazard_exoskeleton_boots industrial hazard exoskeleton boots 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic スライムボール すらいむぼーる minecraft:slime_ball slime_ball slimeball",
   "ouka:assembly/hazard_exoskeleton_chestplate": "ouka 全天候型重工業防護外骨格(胴) 全天候型重工業防護外骨格(胴) ouka:hazard_exoskeleton_chestplate hazard_exoskeleton_chestplate industrial hazard exoskeleton chestplate 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate ネザライトインゴット ねざらいといんごっと minecraft:netherite_ingot netherite_ingot netherite ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/hazard_exoskeleton_helmet": "ouka 全天候型重工業防護外骨格(ヘルメット) 全天候型重工業防護外骨格(へるめっと) ouka:hazard_exoskeleton_helmet hazard_exoskeleton_helmet industrial hazard exoskeleton helmet 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 遮光ガラス 遮光がらす minecraft:tinted_glass tinted_glass tinted glass 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
@@ -6398,6 +10157,161 @@
   "ouka:assembly/vacuum_sintering_furnace": "ouka 真空焼結炉 真空焼結炉 ouka:vacuum_sintering_furnace vacuum_sintering_furnace vacuum sintering furnace 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/ward_chalk": "ouka 結界の白墨 結界の白墨 ouka:ward_chalk ward_chalk ward chalk 方解石 方解石 minecraft:calcite calcite calcite 骨粉 骨粉 minecraft:bone_meal bone_meal bone meal 金の粉 金の粉 ouka:gold_dust gold_dust gold dust",
   "ouka:assembly/wind_turbine": "ouka OUKA Type-W1「風神」風力発電機 ouka type-w1「風神」風力発電機 ouka:wind_turbine wind_turbine ouka type-w1 \"fujin\" wind turbine 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 銅板 銅板 ouka:copper_plate copper_plate copper plate",
+  "ouka:assembly/wonder_ammo_energy": "ouka OUKA Wonder エネルギー弾 ouka wonder えねるぎー弾 ouka:wonder_ammo_energy wonder_ammo_energy ouka wonder energy cells 銅板 銅板 ouka:copper_plate copper_plate copper plate リチウムの粉 りちうむの粉 ouka:lithium_dust lithium_dust lithium dust レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_ammo_heavy": "ouka OUKA Wonder 重弾 ouka wonder 重弾 ouka:wonder_ammo_heavy wonder_ammo_heavy ouka wonder heavy rounds 銅板 銅板 ouka:copper_plate copper_plate copper plate 火薬 火薬 minecraft:gunpowder gunpowder gunpowder 鉄板 鉄板 ouka:iron_plate iron_plate iron plate",
+  "ouka:assembly/wonder_ammo_light": "ouka OUKA Wonder 軽弾 ouka wonder 軽弾 ouka:wonder_ammo_light wonder_ammo_light ouka wonder light rounds 銅板 銅板 ouka:copper_plate copper_plate copper plate 火薬 火薬 minecraft:gunpowder gunpowder gunpowder 鉄塊 鉄塊 minecraft:iron_nugget iron_nugget iron nugget",
+  "ouka:assembly/wonder_ammo_mythic": "ouka OUKA Wonder 神話弾 ouka wonder 神話弾 ouka:wonder_ammo_mythic wonder_ammo_mythic ouka wonder mythic rounds 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 火薬 火薬 minecraft:gunpowder gunpowder gunpowder ヘリウム3の缶 へりうむ3の缶 ouka:helium_3_canister helium_3_canister helium-3 canister",
+  "ouka:assembly/wonder_ammo_shotgun": "ouka OUKA Wonder 散弾 ouka wonder 散弾 ouka:wonder_ammo_shotgun wonder_ammo_shotgun ouka wonder shot shells 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic 火薬 火薬 minecraft:gunpowder gunpowder gunpowder 鉄塊 鉄塊 minecraft:iron_nugget iron_nugget iron nugget",
+  "ouka:assembly/wonder_ammo_sniper": "ouka OUKA Wonder 長弾 ouka wonder 長弾 ouka:wonder_ammo_sniper wonder_ammo_sniper ouka wonder long rounds チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 火薬 火薬 minecraft:gunpowder gunpowder gunpowder 銅板 銅板 ouka:copper_plate copper_plate copper plate",
+  "ouka:assembly/wonder_ardrey": "ouka OUKA Wonder Type-W47 \"アードリー\" SGL ouka wonder type-w47 \"あーどりー\" sgl ouka:wonder_ardrey wonder_ardrey ouka wonder type-w47 \"ardrey\" sgl チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_ashdown": "ouka OUKA Wonder Type-W19 \"アッシュダウン\" BOLT ouka wonder type-w19 \"あっしゅだうん\" bolt ouka:wonder_ashdown wonder_ashdown ouka wonder type-w19 \"ashdown\" bolt チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_bittern": "ouka OUKA Wonder Type-W01 \"ビターン\" SG-S ouka wonder type-w01 \"びたーん\" sg-s ouka:wonder_bittern wonder_bittern ouka wonder type-w01 \"bittern\" sg-s チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
+  "ouka:assembly/wonder_brackenhurst": "ouka OUKA Wonder Type-W32 \"ブラッケンハースト\" PIS ouka wonder type-w32 \"ぶらっけんはーすと\" pis ouka:wonder_brackenhurst wonder_brackenhurst ouka wonder type-w32 \"brackenhurst\" pis チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_bramwell": "ouka OUKA Wonder Type-W54 \"ブラムウェル\" SMG ouka wonder type-w54 \"ぶらむうぇる\" smg ouka:wonder_bramwell wonder_bramwell ouka wonder type-w54 \"bramwell\" smg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_brough": "ouka OUKA Wonder Type-W39 \"ブラフ\" REV ouka wonder type-w39 \"ぶらふ\" rev ouka:wonder_brough wonder_brough ouka wonder type-w39 \"brough\" rev チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_carrick": "ouka OUKA Wonder Type-W25 \"キャリック\" PIS ouka wonder type-w25 \"きゃりっく\" pis ouka:wonder_carrick wonder_carrick ouka wonder type-w25 \"carrick\" pis チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_coniston": "ouka OUKA Wonder Type-W36 \"コニストン\" PDW ouka wonder type-w36 \"こにすとん\" pdw ouka:wonder_coniston wonder_coniston ouka wonder type-w36 \"coniston\" pdw チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_corrie": "ouka OUKA Wonder Type-W45 \"コリー\" SG-P ouka wonder type-w45 \"こりー\" sg-p ouka:wonder_corrie wonder_corrie ouka wonder type-w45 \"corrie\" sg-p チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
+  "ouka:assembly/wonder_dunnock": "ouka OUKA Wonder Type-W14 \"ダノック\" PIS ouka wonder type-w14 \"だのっく\" pis ouka:wonder_dunnock wonder_dunnock ouka wonder type-w14 \"dunnock\" pis チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_exmoor": "ouka OUKA Wonder Type-W28 \"エクスムーア\" CARB ouka wonder type-w28 \"えくすむーあ\" carb ouka:wonder_exmoor wonder_exmoor ouka wonder type-w28 \"exmoor\" carb チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_fellside": "ouka OUKA Wonder Type-W20 \"フェルサイド\" SGL ouka wonder type-w20 \"ふぇるさいど\" sgl ouka:wonder_fellside wonder_fellside ouka wonder type-w20 \"fellside\" sgl チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_foulmire": "ouka OUKA Wonder Type-W40 \"ファウルマイア\" LAUN ouka wonder type-w40 \"ふぁうるまいあ\" laun ouka:wonder_foulmire wonder_foulmire ouka wonder type-w40 \"foulmire\" laun チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame",
+  "ouka:assembly/wonder_gallowmoor": "ouka OUKA Wonder Type-W33 \"ギャロウモア\" LMG ouka wonder type-w33 \"ぎゃろうもあ\" lmg ouka:wonder_gallowmoor wonder_gallowmoor ouka wonder type-w33 \"gallowmoor\" lmg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame",
+  "ouka:assembly/wonder_glenmore": "ouka OUKA Wonder Type-W44 \"グレンモア\" DMR ouka wonder type-w44 \"ぐれんもあ\" dmr ouka:wonder_glenmore wonder_glenmore ouka wonder type-w44 \"glenmore\" dmr チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_goldhurst": "ouka OUKA Wonder Type-W10 \"ゴールドハースト\" HPIS ouka wonder type-w10 \"ごーるどはーすと\" hpis ouka:wonder_goldhurst wonder_goldhurst ouka wonder type-w10 \"goldhurst\" hpis チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
+  "ouka:assembly/wonder_gorsedd": "ouka OUKA Wonder Type-W09 \"ゴーセズ\" HPIS ouka wonder type-w09 \"ごーせず\" hpis ouka:wonder_gorsedd wonder_gorsedd ouka wonder type-w09 \"gorsedd\" hpis チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
+  "ouka:assembly/wonder_harkness": "ouka OUKA Wonder Type-W34 \"ハークネス\" DMR ouka wonder type-w34 \"はーくねす\" dmr ouka:wonder_harkness wonder_harkness ouka wonder type-w34 \"harkness\" dmr チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_hollin": "ouka OUKA Wonder Type-W22 \"ホリン\" AMR ouka wonder type-w22 \"ほりん\" amr ouka:wonder_hollin wonder_hollin ouka wonder type-w22 \"hollin\" amr チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame",
+  "ouka:assembly/wonder_holmfirth": "ouka OUKA Wonder Type-W12 \"ホルムファース\" BR ouka wonder type-w12 \"ほるむふぁーす\" br ouka:wonder_holmfirth wonder_holmfirth ouka wonder type-w12 \"holmfirth\" br チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_kendal": "ouka OUKA Wonder Type-W26 \"ケンドル\" LMG ouka wonder type-w26 \"けんどる\" lmg ouka:wonder_kendal wonder_kendal ouka wonder type-w26 \"kendal\" lmg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame",
+  "ouka:assembly/wonder_kilnsey": "ouka OUKA Wonder Type-W06 \"キルンジー\" PIS ouka wonder type-w06 \"きるんじー\" pis ouka:wonder_kilnsey wonder_kilnsey ouka wonder type-w06 \"kilnsey\" pis チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_lantern": "ouka OUKA Wonder Type-W13 \"ランタン\" CARB ouka wonder type-w13 \"らんたん\" carb ouka:wonder_lantern wonder_lantern ouka wonder type-w13 \"lantern\" carb チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_ludlow": "ouka OUKA Wonder Type-W18 \"ラドロー\" SMG ouka wonder type-w18 \"らどろー\" smg ouka:wonder_ludlow wonder_ludlow ouka wonder type-w18 \"ludlow\" smg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_mardle": "ouka OUKA Wonder Type-W27 \"マードル\" LAUN ouka wonder type-w27 \"まーどる\" laun ouka:wonder_mardle wonder_mardle ouka wonder type-w27 \"mardle\" laun チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame",
+  "ouka:assembly/wonder_mossdale": "ouka OUKA Wonder Type-W11 \"モスデール\" LMG ouka wonder type-w11 \"もすでーる\" lmg ouka:wonder_mossdale wonder_mossdale ouka wonder type-w11 \"mossdale\" lmg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame",
+  "ouka:assembly/wonder_ormskirk": "ouka OUKA Wonder Type-W23 \"オームスカーク\" AR ouka wonder type-w23 \"おーむすかーく\" ar ouka:wonder_ormskirk wonder_ormskirk ouka wonder type-w23 \"ormskirk\" ar チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_part_ammo_mod_fmj": "ouka フルジャケット ふるじゃけっと ouka:wonder_part_ammo_mod_fmj wonder_part_ammo_mod_fmj full-jacket 泣く黒曜石 泣く黒曜石 minecraft:crying_obsidian crying_obsidian crying obsidian ダイヤモンド だいやもんど minecraft:diamond diamond diamond",
+  "ouka:assembly/wonder_part_ammo_mod_he": "ouka 高性能炸薬 高性能炸薬 ouka:wonder_part_ammo_mod_he wonder_part_ammo_mod_he high-explosive 泣く黒曜石 泣く黒曜石 minecraft:crying_obsidian crying_obsidian crying obsidian エンドクリスタル えんどくりすたる minecraft:end_crystal end_crystal end crystal",
+  "ouka:assembly/wonder_part_ammo_mod_hp": "ouka ホローポイント ほろーぽいんと ouka:wonder_part_ammo_mod_hp wonder_part_ammo_mod_hp hollow-point 泣く黒曜石 泣く黒曜石 minecraft:crying_obsidian crying_obsidian crying obsidian 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot",
+  "ouka:assembly/wonder_part_ammo_mod_i": "ouka 焼夷弾 焼夷弾 ouka:wonder_part_ammo_mod_i wonder_part_ammo_mod_i incendiary 泣く黒曜石 泣く黒曜石 minecraft:crying_obsidian crying_obsidian crying obsidian ファイヤーチャージ ふぁいやーちゃーじ minecraft:fire_charge fire_charge fire charge ブレイズロッド ぶれいずろっど minecraft:blaze_rod blaze_rod blaze rod",
+  "ouka:assembly/wonder_part_ammo_mod_slug": "ouka スラグ すらぐ ouka:wonder_part_ammo_mod_slug wonder_part_ammo_mod_slug slug 泣く黒曜石 泣く黒曜石 minecraft:crying_obsidian crying_obsidian crying obsidian ネザライトの欠片 ねざらいとの欠片 minecraft:netherite_scrap netherite_scrap netherite scrap",
+  "ouka:assembly/wonder_part_bayonet_6h3": "ouka アッシュコム 銃剣 あっしゅこむ 銃剣 ouka:wonder_part_bayonet_6h3 wonder_part_bayonet_6h3 ashcombe bayonet 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot オークの原木 おーくの原木 minecraft:oak_log oak_log oak log",
+  "ouka:assembly/wonder_part_bayonet_m9": "ouka バローデール 銃剣 ばろーでーる 銃剣 ouka:wonder_part_bayonet_m9 wonder_part_bayonet_m9 barrowdale bayonet 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot オークの原木 おーくの原木 minecraft:oak_log oak_log oak log",
+  "ouka:assembly/wonder_part_deagle_golden_long_barrel": "ouka ビドフォード ロングバレル びどふぉーど ろんぐばれる ouka:wonder_part_deagle_golden_long_barrel wonder_part_deagle_golden_long_barrel bidford long barrel 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot",
+  "ouka:assembly/wonder_part_extended_mag_1": "ouka 延長弾倉 段1 延長弾倉 段1 ouka:wonder_part_extended_mag_1 wonder_part_extended_mag_1 blackmere extended magazine, tier 1 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot",
+  "ouka:assembly/wonder_part_extended_mag_2": "ouka 延長弾倉 段2 延長弾倉 段2 ouka:wonder_part_extended_mag_2 wonder_part_extended_mag_2 bramhope extended magazine, tier 2 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot ラピスラズリ らぴすらずり minecraft:lapis_lazuli lapis_lazuli lapis lazuli",
+  "ouka:assembly/wonder_part_extended_mag_3": "ouka 延長弾倉 段3 延長弾倉 段3 ouka:wonder_part_extended_mag_3 wonder_part_extended_mag_3 brackenhurst extended magazine, tier 3 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot ダイヤモンド だいやもんど minecraft:diamond diamond diamond",
+  "ouka:assembly/wonder_part_grip_cobra": "ouka コールドベック グリップ こーるどべっく ぐりっぷ ouka:wonder_part_grip_cobra wonder_part_grip_cobra caldbeck grip 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_grip_magpul_afg_2": "ouka キャッスルトン グリップ きゃっするとん ぐりっぷ ouka:wonder_part_grip_magpul_afg_2 wonder_part_grip_magpul_afg_2 castleton grip 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_grip_osovets_black": "ouka コーサンド グリップ こーさんど ぐりっぷ ouka:wonder_part_grip_osovets_black wonder_part_grip_osovets_black cawsand grip 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_grip_rk0": "ouka チョークウェル グリップ ちょーくうぇる ぐりっぷ ouka:wonder_part_grip_rk0 wonder_part_grip_rk0 chalkwell grip 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_grip_rk1_b25u": "ouka チェリトン グリップ ちぇりとん ぐりっぷ ouka:wonder_part_grip_rk1_b25u wonder_part_grip_rk1_b25u cheriton grip 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_grip_rk6": "ouka クリザロー グリップ くりざろー ぐりっぷ ouka:wonder_part_grip_rk6 wonder_part_grip_rk6 clitheroe grip 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_grip_se_5": "ouka コールドハーバー グリップ こーるどはーばー ぐりっぷ ouka:wonder_part_grip_se_5 wonder_part_grip_se_5 coldharbour grip 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_grip_td": "ouka コーブリッジ グリップ こーぶりっじ ぐりっぷ ouka:wonder_part_grip_td wonder_part_grip_td corbridge grip 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_grip_vertical_military": "ouka コッツウォルド グリップ こっつうぉるど ぐりっぷ ouka:wonder_part_grip_vertical_military wonder_part_grip_vertical_military cotswold grip 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_grip_vertical_ranger": "ouka ダートミア グリップ だーとみあ ぐりっぷ ouka:wonder_part_grip_vertical_ranger wonder_part_grip_vertical_ranger dartmere grip 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_grip_vertical_talon": "ouka デンビー グリップ でんびー ぐりっぷ ouka:wonder_part_grip_vertical_talon wonder_part_grip_vertical_talon denbigh grip 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_laser_compact": "ouka デヴィゼス レーザー でゔぃぜす れーざー ouka:wonder_part_laser_compact wonder_part_laser_compact devizes laser 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_laser_lopro": "ouka ダンミア レーザー だんみあ れーざー ouka:wonder_part_laser_lopro wonder_part_laser_lopro dunmere laser 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_laser_nightstick": "ouka イーストウォールド レーザー いーすとうぉーるど れーざー ouka:wonder_part_laser_nightstick wonder_part_laser_nightstick eastwold laser 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_laser_peq6": "ouka エラービー レーザー えらーびー れーざー ouka:wonder_part_laser_peq6 wonder_part_laser_peq6 ellerby laser 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard",
+  "ouka:assembly/wonder_part_light_extended_mag_1": "ouka 延長弾倉 段1 延長弾倉 段1 ouka:wonder_part_light_extended_mag_1 wonder_part_light_extended_mag_1 fairholme extended magazine, tier 1 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot",
+  "ouka:assembly/wonder_part_light_extended_mag_2": "ouka 延長弾倉 段2 延長弾倉 段2 ouka:wonder_part_light_extended_mag_2 wonder_part_light_extended_mag_2 fenwick extended magazine, tier 2 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot ラピスラズリ らぴすらずり minecraft:lapis_lazuli lapis_lazuli lapis lazuli",
+  "ouka:assembly/wonder_part_light_extended_mag_3": "ouka 延長弾倉 段3 延長弾倉 段3 ouka:wonder_part_light_extended_mag_3 wonder_part_light_extended_mag_3 foulmire extended magazine, tier 3 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot ラピスラズリ らぴすらずり minecraft:lapis_lazuli lapis_lazuli lapis lazuli ネザークォーツ ねざーくぉーつ minecraft:quartz quartz nether quartz",
+  "ouka:assembly/wonder_part_muzzle_brake_cthulhu": "ouka ギャロウムーア マズルブレーキ ぎゃろうむーあ まずるぶれーき ouka:wonder_part_muzzle_brake_cthulhu wonder_part_muzzle_brake_cthulhu gallowmoor brake 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot",
+  "ouka:assembly/wonder_part_muzzle_brake_cyclone_d2": "ouka ゴルセッド マズルブレーキ ごるせっど まずるぶれーき ouka:wonder_part_muzzle_brake_cyclone_d2 wonder_part_muzzle_brake_cyclone_d2 gorsedd brake 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot",
+  "ouka:assembly/wonder_part_muzzle_brake_greystoke_sg": "ouka グレイストーク マズルブレーキ ぐれいすとーく まずるぶれーき ouka:wonder_part_muzzle_brake_greystoke_sg wonder_part_muzzle_brake_greystoke_sg greystoke brake 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot",
+  "ouka:assembly/wonder_part_muzzle_brake_pioneer": "ouka ハドレー マズルブレーキ はどれー まずるぶれーき ouka:wonder_part_muzzle_brake_pioneer wonder_part_muzzle_brake_pioneer hadleigh brake 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot",
+  "ouka:assembly/wonder_part_muzzle_brake_timeless50": "ouka ホールシャム マズルブレーキ ほーるしゃむ まずるぶれーき ouka:wonder_part_muzzle_brake_timeless50 wonder_part_muzzle_brake_timeless50 halsham brake 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_muzzle_brake_trex": "ouka ハロウデン マズルブレーキ はろうでん まずるぶれーき ouka:wonder_part_muzzle_brake_trex wonder_part_muzzle_brake_trex harrowden brake 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot",
+  "ouka:assembly/wonder_part_muzzle_choke_sg": "ouka ホークリッジ マズル ほーくりっじ まずる ouka:wonder_part_muzzle_choke_sg wonder_part_muzzle_choke_sg hawkridge muzzle 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot",
+  "ouka:assembly/wonder_part_muzzle_compensator_trident": "ouka ヘルムスデール マズルブレーキ へるむすでーる まずるぶれーき ouka:wonder_part_muzzle_compensator_trident wonder_part_muzzle_compensator_trident helmsdale brake 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot",
+  "ouka:assembly/wonder_part_muzzle_silencer_knight_qd": "ouka ヘクサム サプレッサー へくさむ さぷれっさー ouka:wonder_part_muzzle_silencer_knight_qd wonder_part_muzzle_silencer_knight_qd hexham suppressor 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_muzzle_silencer_mirage": "ouka ハイアム サプレッサー はいあむ さぷれっさー ouka:wonder_part_muzzle_silencer_mirage wonder_part_muzzle_silencer_mirage higham suppressor 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_muzzle_silencer_phantom_s1": "ouka ホルコム サプレッサー ほるこむ さぷれっさー ouka:wonder_part_muzzle_silencer_phantom_s1 wonder_part_muzzle_silencer_phantom_s1 holcombe suppressor 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_muzzle_silencer_ptilopsis": "ouka ホリンウッド サプレッサー ほりんうっど さぷれっさー ouka:wonder_part_muzzle_silencer_ptilopsis wonder_part_muzzle_silencer_ptilopsis hollinwood suppressor 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_muzzle_silencer_sg": "ouka ホーンキャッスル サプレッサー ほーんきゃっする さぷれっさー ouka:wonder_part_muzzle_silencer_sg wonder_part_muzzle_silencer_sg horncastle suppressor 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_muzzle_silencer_ursus": "ouka イングルビー サプレッサー いんぐるびー さぷれっさー ouka:wonder_part_muzzle_silencer_ursus wonder_part_muzzle_silencer_ursus ingleby suppressor 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_muzzle_silencer_vulture": "ouka ケンダル サプレッサー けんだる さぷれっさー ouka:wonder_part_muzzle_silencer_vulture wonder_part_muzzle_silencer_vulture kendal suppressor 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_muzzle_silencer_wraith": "ouka キルンジー サプレッサー きるんじー さぷれっさー ouka:wonder_part_muzzle_silencer_wraith wonder_part_muzzle_silencer_wraith kilnsey suppressor 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather 白色の羊毛 白色の羊毛 minecraft:white_wool white_wool white wool",
+  "ouka:assembly/wonder_part_oem_stock_heavy": "ouka カービー ストック かーびー すとっく ouka:wonder_part_oem_stock_heavy wonder_part_oem_stock_heavy kirkby stock 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_oem_stock_light": "ouka ランバーン ストック らんばーん すとっく ouka:wonder_part_oem_stock_light wonder_part_oem_stock_light lambourne stock 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_oem_stock_tactical": "ouka ラングポート ストック らんぐぽーと すとっく ouka:wonder_part_oem_stock_tactical wonder_part_oem_stock_tactical langport stock 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_scope_1873_6x": "ouka ラークヒル スコープ らーくひる すこーぷ ouka:wonder_part_scope_1873_6x wonder_part_scope_1873_6x larkhill scope 銅インゴット 銅いんごっと minecraft:copper_ingot copper_ingot copper ingot 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot ガラス がらす minecraft:glass glass glass",
+  "ouka:assembly/wonder_part_scope_98k": "ouka レイバーン スコープ れいばーん すこーぷ ouka:wonder_part_scope_98k wonder_part_scope_98k leyburn scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard",
+  "ouka:assembly/wonder_part_scope_acog_ta31": "ouka リンデール スコープ りんでーる すこーぷ ouka:wonder_part_scope_acog_ta31 wonder_part_scope_acog_ta31 lindale scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_scope_contender": "ouka ローザー スコープ ろーざー すこーぷ ouka:wonder_part_scope_contender wonder_part_scope_contender lowther scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard",
+  "ouka:assembly/wonder_part_scope_elcan_4x": "ouka メイドンヘッド スコープ めいどんへっど すこーぷ ouka:wonder_part_scope_elcan_4x wonder_part_scope_elcan_4x maidenhead scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_scope_hamr": "ouka マールクリフ スコープ まーるくりふ すこーぷ ouka:wonder_part_scope_hamr wonder_part_scope_hamr marlcliff scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_scope_lpvo_1_6": "ouka メラー スコープ めらー すこーぷ ouka:wonder_part_scope_lpvo_1_6 wonder_part_scope_lpvo_1_6 mellor scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard グロウストーンダスト ぐろうすとーんだすと minecraft:glowstone_dust glowstone_dust glowstone dust レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_scope_mk5hd": "ouka ミルブルック スコープ みるぶるっく すこーぷ ouka:wonder_part_scope_mk5hd wonder_part_scope_mk5hd millbrook scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard グロウストーンダスト ぐろうすとーんだすと minecraft:glowstone_dust glowstone_dust glowstone dust レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_scope_qmk152": "ouka モーペス スコープ もーぺす すこーぷ ouka:wonder_part_scope_qmk152 wonder_part_scope_qmk152 morpeth scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_scope_retro_2x": "ouka ニューピギン スコープ にゅーぴぎん すこーぷ ouka:wonder_part_scope_retro_2x wonder_part_scope_retro_2x newbiggin scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard",
+  "ouka:assembly/wonder_part_scope_standard_8x": "ouka ノースウォールド スコープ のーすうぉーるど すこーぷ ouka:wonder_part_scope_standard_8x wonder_part_scope_standard_8x northwold scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard グロウストーンダスト ぐろうすとーんだすと minecraft:glowstone_dust glowstone_dust glowstone dust レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_scope_vudu": "ouka オークハンプトン スコープ おーくはんぷとん すこーぷ ouka:wonder_part_scope_vudu wonder_part_scope_vudu oakhampton scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard グロウストーンダスト ぐろうすとーんだすと minecraft:glowstone_dust glowstone_dust glowstone dust レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_shotgun_extended_mag_1": "ouka 延長弾倉 段1 延長弾倉 段1 ouka:wonder_part_shotgun_extended_mag_1 wonder_part_shotgun_extended_mag_1 osmotherley extended magazine, tier 1 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot",
+  "ouka:assembly/wonder_part_shotgun_extended_mag_2": "ouka 延長弾倉 段2 延長弾倉 段2 ouka:wonder_part_shotgun_extended_mag_2 wonder_part_shotgun_extended_mag_2 pendle extended magazine, tier 2 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot",
+  "ouka:assembly/wonder_part_shotgun_extended_mag_3": "ouka 延長弾倉 段3 延長弾倉 段3 ouka:wonder_part_shotgun_extended_mag_3 wonder_part_shotgun_extended_mag_3 pennine extended magazine, tier 3 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot ラピスラズリ らぴすらずり minecraft:lapis_lazuli lapis_lazuli lapis lazuli",
+  "ouka:assembly/wonder_part_sight_552": "ouka ピカリング スコープ ぴかりんぐ すこーぷ ouka:wonder_part_sight_552 wonder_part_sight_552 pickering scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust ガラス がらす minecraft:glass glass glass",
+  "ouka:assembly/wonder_part_sight_acro_pistol": "ouka クォーンドン スコープ くぉーんどん すこーぷ ouka:wonder_part_sight_acro_pistol wonder_part_sight_acro_pistol quarndon scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_sight_acro_rifle": "ouka レイヴンヘッド スコープ れいゔんへっど すこーぷ ouka:wonder_part_sight_acro_rifle wonder_part_sight_acro_rifle ravenhead scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_sight_coyote": "ouka レイヴンズギル スコープ れいゔんずぎる すこーぷ ouka:wonder_part_sight_coyote wonder_part_sight_coyote ravensgill scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust ガラス がらす minecraft:glass glass glass",
+  "ouka:assembly/wonder_part_sight_deltapoint_pistol": "ouka レッドマイア スコープ れっどまいあ すこーぷ ouka:wonder_part_sight_deltapoint_pistol wonder_part_sight_deltapoint_pistol redmire scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_sight_deltapoint_rifle": "ouka ラッシュベリー スコープ らっしゅべりー すこーぷ ouka:wonder_part_sight_deltapoint_rifle wonder_part_sight_deltapoint_rifle rushbury scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_sight_exp3": "ouka ソルトバーン スコープ そるとばーん すこーぷ ouka:wonder_part_sight_exp3 wonder_part_sight_exp3 saltburn scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust ガラス がらす minecraft:glass glass glass",
+  "ouka:assembly/wonder_part_sight_fastfire_pistol": "ouka スキャロー スコープ すきゃろー すこーぷ ouka:wonder_part_sight_fastfire_pistol wonder_part_sight_fastfire_pistol scarrow scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_sight_fastfire_rifle": "ouka シャプウィック スコープ しゃぷうぃっく すこーぷ ouka:wonder_part_sight_fastfire_rifle wonder_part_sight_fastfire_rifle shapwick scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_sight_okp7": "ouka スケルマースデール スコープ すけるまーすでーる すこーぷ ouka:wonder_part_sight_okp7 wonder_part_sight_okp7 skelmersdale scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust ガラス がらす minecraft:glass glass glass",
+  "ouka:assembly/wonder_part_sight_pk06_pistol": "ouka スタネージ スコープ すたねーじ すこーぷ ouka:wonder_part_sight_pk06_pistol wonder_part_sight_pk06_pistol stanage scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_sight_pk06_rifle": "ouka スタンホープ スコープ すたんほーぷ すこーぷ ouka:wonder_part_sight_pk06_rifle wonder_part_sight_pk06_rifle stanhope scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_sight_rmr_dot": "ouka ストーンチャット スコープ すとーんちゃっと すこーぷ ouka:wonder_part_sight_rmr_dot wonder_part_sight_rmr_dot stonechat scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_sight_sro_dot": "ouka スウェールデール スコープ すうぇーるでーる すこーぷ ouka:wonder_part_sight_sro_dot wonder_part_sight_sro_dot swaledale scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust",
+  "ouka:assembly/wonder_part_sight_srs_02": "ouka タッドカスター スコープ たっどかすたー すこーぷ ouka:wonder_part_sight_srs_02 wonder_part_sight_srs_02 tadcaster scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust ガラス がらす minecraft:glass glass glass",
+  "ouka:assembly/wonder_part_sight_t1": "ouka ソーンビー スコープ そーんびー すこーぷ ouka:wonder_part_sight_t1 wonder_part_sight_t1 thornby scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust ガラス がらす minecraft:glass glass glass",
+  "ouka:assembly/wonder_part_sight_t2": "ouka ソーンクリフ スコープ そーんくりふ すこーぷ ouka:wonder_part_sight_t2 wonder_part_sight_t2 thorncliffe scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust ガラス がらす minecraft:glass glass glass",
+  "ouka:assembly/wonder_part_sight_uh1": "ouka ティンタジェル スコープ てぃんたじぇる すこーぷ ouka:wonder_part_sight_uh1 wonder_part_sight_uh1 tintagel scope 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot レッドストーンダスト れっどすとーんだすと minecraft:redstone redstone redstone dust ガラス がらす minecraft:glass glass glass",
+  "ouka:assembly/wonder_part_sniper_extended_mag_1": "ouka 延長弾倉 段1 延長弾倉 段1 ouka:wonder_part_sniper_extended_mag_1 wonder_part_sniper_extended_mag_1 torrington extended magazine, tier 1 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot",
+  "ouka:assembly/wonder_part_sniper_extended_mag_2": "ouka 延長弾倉 段2 延長弾倉 段2 ouka:wonder_part_sniper_extended_mag_2 wonder_part_sniper_extended_mag_2 ullswater extended magazine, tier 2 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot ラピスラズリ らぴすらずり minecraft:lapis_lazuli lapis_lazuli lapis lazuli",
+  "ouka:assembly/wonder_part_sniper_extended_mag_3": "ouka 延長弾倉 段3 延長弾倉 段3 ouka:wonder_part_sniper_extended_mag_3 wonder_part_sniper_extended_mag_3 upwey extended magazine, tier 3 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot ネザークォーツ ねざーくぉーつ minecraft:quartz quartz nether quartz ダイヤモンド だいやもんど minecraft:diamond diamond diamond",
+  "ouka:assembly/wonder_part_stock_ak12": "ouka ヴェローレ ストック ゔぇろーれ すとっく ouka:wonder_part_stock_ak12 wonder_part_stock_ak12 vellore stock 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_stock_carbon_bone_c5": "ouka ウォリングフォード ストック うぉりんぐふぉーど すとっく ouka:wonder_part_stock_carbon_bone_c5 wonder_part_stock_carbon_bone_c5 wallingford stock 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_stock_heavy_spas_12": "ouka ウェンドーバー ストック うぇんどーばー すとっく ouka:wonder_part_stock_heavy_spas_12 wonder_part_stock_heavy_spas_12 wendover stock 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_stock_hk_slim_line": "ouka ウェスターハム ストック うぇすたーはむ すとっく ouka:wonder_part_stock_hk_slim_line wonder_part_stock_hk_slim_line westerham stock 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_stock_m4ss": "ouka ウィットビー ストック うぃっとびー すとっく ouka:wonder_part_stock_m4ss wonder_part_stock_m4ss whitby stock 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_stock_militech_b5": "ouka ウィッカム ストック うぃっかむ すとっく ouka:wonder_part_stock_militech_b5 wonder_part_stock_militech_b5 wickham stock 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_stock_moe": "ouka ウィンダミア ストック うぃんだみあ すとっく ouka:wonder_part_stock_moe wonder_part_stock_moe windermere stock 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_stock_ripstock": "ouka ウルヴァーデール ストック うるゔぁーでーる すとっく ouka:wonder_part_stock_ripstock wonder_part_stock_ripstock wolverdale stock 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_stock_sba3": "ouka レクサム ストック れくさむ すとっく ouka:wonder_part_stock_sba3 wonder_part_stock_sba3 wrexham stock 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_stock_tactical_ar": "ouka ヤロウ ストック やろう すとっく ouka:wonder_part_stock_tactical_ar wonder_part_stock_tactical_ar yarrow stock 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 金インゴット 金いんごっと minecraft:gold_ingot gold_ingot gold ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_part_stock_tactical_spas_12": "ouka イェランド ストック いぇらんど すとっく ouka:wonder_part_stock_tactical_spas_12 wonder_part_stock_tactical_spas_12 yelland stock 鉄インゴット 鉄いんごっと minecraft:iron_ingot iron_ingot iron ingot 革 革 minecraft:leather leather leather",
+  "ouka:assembly/wonder_pendle": "ouka OUKA Wonder Type-W05 \"ペンドル\" SMG ouka wonder type-w05 \"ぺんどる\" smg ouka:wonder_pendle wonder_pendle ouka wonder type-w05 \"pendle\" smg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_pennine": "ouka OUKA Wonder Type-W24 \"ペナイン\" AR ouka wonder type-w24 \"ぺないん\" ar ouka:wonder_pennine wonder_pennine ouka wonder type-w24 \"pennine\" ar チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_ravenhead": "ouka OUKA Wonder Type-W50 \"レイヴンヘッド\" HPIS ouka wonder type-w50 \"れいゔんへっど\" hpis ouka:wonder_ravenhead wonder_ravenhead ouka wonder type-w50 \"ravenhead\" hpis チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
+  "ouka:assembly/wonder_ravensgill": "ouka OUKA Wonder Type-W02 \"レイヴンズギル\" SR ouka wonder type-w02 \"れいゔんずぎる\" sr ouka:wonder_ravensgill wonder_ravensgill ouka wonder type-w02 \"ravensgill\" sr チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_redesdale": "ouka OUKA Wonder Type-W37 \"レッズデール\" AR ouka wonder type-w37 \"れっずでーる\" ar ouka:wonder_redesdale wonder_redesdale ouka wonder type-w37 \"redesdale\" ar チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_sarn": "ouka OUKA Wonder Type-W43 \"サーン\" AR ouka wonder type-w43 \"さーん\" ar ouka:wonder_sarn wonder_sarn ouka wonder type-w43 \"sarn\" ar チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_scarrow": "ouka OUKA Wonder Type-W08 \"スカロー\" SG-D ouka wonder type-w08 \"すかろー\" sg-d ouka:wonder_scarrow wonder_scarrow ouka wonder type-w08 \"scarrow\" sg-d チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
+  "ouka:assembly/wonder_scaur": "ouka OUKA Wonder Type-W53 \"スカー\" PDW ouka wonder type-w53 \"すかー\" pdw ouka:wonder_scaur wonder_scaur ouka wonder type-w53 \"scaur\" pdw チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_skelwith": "ouka OUKA Wonder Type-W31 \"スケルウィス\" AMR ouka wonder type-w31 \"すけるうぃす\" amr ouka:wonder_skelwith wonder_skelwith ouka wonder type-w31 \"skelwith\" amr チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame",
+  "ouka:assembly/wonder_stainmoor": "ouka OUKA Wonder Type-W38 \"ステインムーア\" AR ouka wonder type-w38 \"すていんむーあ\" ar ouka:wonder_stainmoor wonder_stainmoor ouka wonder type-w38 \"stainmoor\" ar チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_stanage": "ouka OUKA Wonder Type-W42 \"スタナージ\" BR ouka wonder type-w42 \"すたなーじ\" br ouka:wonder_stanage wonder_stanage ouka wonder type-w42 \"stanage\" br チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_stanhope": "ouka OUKA Wonder Type-W07 \"スタンホープ\" SG-D ouka wonder type-w07 \"すたんほーぷ\" sg-d ouka:wonder_stanhope wonder_stanhope ouka wonder type-w07 \"stanhope\" sg-d チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
+  "ouka:assembly/wonder_stonechat": "ouka OUKA Wonder Type-W15 \"ストーンチャット\" CARB ouka wonder type-w15 \"すとーんちゃっと\" carb ouka:wonder_stonechat wonder_stonechat ouka wonder type-w15 \"stonechat\" carb チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_strathcole": "ouka OUKA Wonder Type-W21 \"ストラスコール\" SG-S ouka wonder type-w21 \"すとらすこーる\" sg-s ouka:wonder_strathcole wonder_strathcole ouka wonder type-w21 \"strathcole\" sg-s チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
+  "ouka:assembly/wonder_tarnhill": "ouka OUKA Wonder Type-W16 \"ターンヒル\" BR ouka wonder type-w16 \"たーんひる\" br ouka:wonder_tarnhill wonder_tarnhill ouka wonder type-w16 \"tarnhill\" br チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_tarnmere": "ouka OUKA Wonder Type-W51 \"ターンミア\" AR ouka wonder type-w51 \"たーんみあ\" ar ouka:wonder_tarnmere wonder_tarnmere ouka wonder type-w51 \"tarnmere\" ar チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_thornbury": "ouka OUKA Wonder Type-W30 \"ソーンベリー\" SG-P ouka wonder type-w30 \"そーんべりー\" sg-p ouka:wonder_thornbury wonder_thornbury ouka wonder type-w30 \"thornbury\" sg-p チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
+  "ouka:assembly/wonder_thorncliffe": "ouka OUKA Wonder Type-W03 \"ソーンクリフ\" AR ouka wonder type-w03 \"そーんくりふ\" ar ouka:wonder_thorncliffe wonder_thorncliffe ouka wonder type-w03 \"thorncliffe\" ar チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_thrumster": "ouka OUKA Wonder Type-W48 \"スラムスター\" REV ouka wonder type-w48 \"すらむすたー\" rev ouka:wonder_thrumster wonder_thrumster ouka wonder type-w48 \"thrumster\" rev チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_tintagel": "ouka OUKA Wonder Type-W41 \"ティンタジェル\" LMG ouka wonder type-w41 \"てぃんたじぇる\" lmg ouka:wonder_tintagel wonder_tintagel ouka wonder type-w41 \"tintagel\" lmg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame",
+  "ouka:assembly/wonder_tintern": "ouka OUKA Wonder Type-W52 \"ティンターン\" SMG ouka wonder type-w52 \"てぃんたーん\" smg ouka:wonder_tintern wonder_tintern ouka wonder type-w52 \"tintern\" smg チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_ulverston": "ouka OUKA Wonder Type-W46 \"アルヴァストン\" DMR ouka wonder type-w46 \"あるゔぁすとん\" dmr ouka:wonder_ulverston wonder_ulverston ouka wonder type-w46 \"ulverston\" dmr チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_wendle": "ouka OUKA Wonder Type-W49 \"ウェンドル\" REV ouka wonder type-w49 \"うぇんどる\" rev ouka:wonder_wendle wonder_wendle ouka wonder type-w49 \"wendle\" rev チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_wendover": "ouka OUKA Wonder Type-W17 \"ウェンドーバー\" HPIS ouka wonder type-w17 \"うぇんどーばー\" hpis ouka:wonder_wendover wonder_wendover ouka wonder type-w17 \"wendover\" hpis チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
+  "ouka:assembly/wonder_wheatear": "ouka OUKA Wonder Type-W04 \"ウィートイア\" AR ouka wonder type-w04 \"うぃーといあ\" ar ouka:wonder_wheatear wonder_wheatear ouka wonder type-w04 \"wheatear\" ar チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_whitby": "ouka OUKA Wonder Type-W35 \"ホイットビー\" PIS ouka wonder type-w35 \"ほいっとびー\" pis ouka:wonder_whitby wonder_whitby ouka wonder type-w35 \"whitby\" pis チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
+  "ouka:assembly/wonder_wrenmoor": "ouka OUKA Wonder Type-W29 \"レンムーア\" SR ouka wonder type-w29 \"れんむーあ\" sr ouka:wonder_wrenmoor wonder_wrenmoor ouka wonder type-w29 \"wrenmoor\" sr チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/wrought_iron_statue": "ouka 鋼鉄の守護騎士の彫像 鋼鉄の守護騎士の彫像 ouka:wrought_iron_statue wrought_iron_statue wrought iron statue 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate",
   "ouka:assembly/wrought_plate_boots": "ouka 重鉄の防壁の靴 重鉄の防壁の靴 ouka:wrought_plate_boots wrought_plate_boots wrought plate boots 重鉄の防壁インゴット 重鉄の防壁いんごっと ouka:wrought_plate_ingot wrought_plate_ingot wrought plate ingot 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic 鉄板 鉄板 ouka:iron_plate iron_plate iron plate",
   "ouka:assembly/wrought_plate_chestplate": "ouka 重鉄の防壁の胸当て 重鉄の防壁の胸当て ouka:wrought_plate_chestplate wrought_plate_chestplate wrought plate chestplate 重鉄の防壁インゴット 重鉄の防壁いんごっと ouka:wrought_plate_ingot wrought_plate_ingot wrought plate ingot 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",

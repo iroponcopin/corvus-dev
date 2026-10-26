@@ -306,6 +306,22 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-71208",
+    "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX eingestellt",
+    "summary": "OUKA Wonder bringt 54 Waffen, 99 Aufsatzteile und 6 neue Munitionsarten, dazu ein Aufsatz-Menü, Nahkampf mit dem Bajonett, eine Zielfernrohr-Linse, Leuchtspur und Mündungsfeuer.",
+    "highlights": [
+     "OUKA GUN MAX wurde eingestellt. Vorhandene GUN MAX-Waffen, Munition und Aufsätze werden beim Laden von V1.7 71208 aus den Welten entfernt.",
+     "OUKA Wonder: 54 Waffen, 99 Teile und 6 neue Munitionsarten (ouka:wonder_ammo_*). Das Aufsatz-Menü liegt auf Taste Z, der Nahkampf mit dem Bajonett auf Taste V.",
+     "Wonder hat außerdem eine Zielfernrohr-Linse, eine Leuchtspur und Mündungsfeuer beim Schuss.",
+     "Auf diesem Build geprüft: GameTest 1421 Tests bestanden; Wonder-Waffenklassen und Aufsatz-Prüfung im echten Client bestanden; Absturzprüfung von Server und Client ohne Befund."
+    ],
+    "warnings": [
+     "Bevor Sie V1.7 71208 installieren, entfernen Sie die alte OUKA-jar (1.7.55114 oder älter) aus dem mods-Ordner und behalten nur 1 Exemplar von GeckoLib 5.5.6. Benötigt werden Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Auf Client und Server installieren.",
+     "Noch nicht verifiziert: Die echte Leuchtspur ist von vorn gesehen nur ein schwacher Strich. Die Zielhaltung bei Schrotflinte und Pistole ist akzeptabel, aber nicht perfekt. Die Zielfernrohr-Linse zeigt leichtes Banding. Jeder Schuss belegt weiterhin etwa 21 KB (Optimierung ausstehend). 50 Schuss pro Tick wurden nicht gemessen. Die Anti-Material-Klasse wurde nicht neu markiert.",
+     "GUN MAX und seine gesamte Munition sind entfernt; alte GUN MAX-Gegenstände verschwinden aus gespeicherten Welten."
+    ]
+   },
+   {
     "id": "ouka-v1.7-55114",
     "title": "Ouka JJK V1.7 55114 — Beacon-Reparatur, Künstliche Sonne mit Helium-3, Übertakt x50, Batterie-Ladebuchse",
     "summary": "Der Beacon wird mit einem Tsubomi-Netherstern-Block repariert, die Künstliche Sonne verbrennt Helium-3 als eigenen Brennstoff, die Übertaktungsgrenze steigt auf x50, und die neue Batterie-Ladebuchse nimmt bis zu 200 SMES-Batterien auf.",

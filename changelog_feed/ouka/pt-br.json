@@ -1,15 +1,41 @@
 {
  "lang": "pt-br",
  "brand": "ouka",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "title": "Histórico de atualizações",
- "updated_label": "Atualizado em 2026-10-25",
+ "updated_label": "Atualizado em 2026-10-26",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 55114 — Reparo do Beacon, hélio-3 do Sol Artificial, overclock x50, Soquete de Carregamento de Baterias",
+   "summary": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX aposentado",
    "releases": [
+    {
+     "version": "V1.7 71208",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX aposentado",
+     "summary": "OUKA Wonder adiciona 54 armas, 99 peças de acessórios e 6 novos tipos de munição, com tela de acessórios, corpo a corpo com baioneta, lente de mira, rastro e clarão de disparo.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "OUKA GUN MAX foi aposentado. As armas, munições e acessórios GUN MAX existentes são removidos dos mundos ao carregar a V1.7 71208.",
+        "OUKA Wonder: 54 armas, 99 peças e 6 novos tipos de munição (ouka:wonder_ammo_*). A tela de acessórios é a tecla Z; o corpo a corpo com baioneta é a tecla V.",
+        "O Wonder também inclui lente de mira, rastro de tiro e clarão de disparo.",
+        "Verificado nesta versão: GameTest 1421 testes PASS; verificações das classes Wonder e da montagem em cliente real PASS; verificações de falha do servidor e do cliente sem problemas."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Antes de instalar a V1.7 71208, remova da pasta mods o jar antigo do OUKA (1.7.55114 ou anterior) e deixe apenas 1 cópia do GeckoLib 5.5.6. Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente e Fabric API 0.161.0+26.3 ou mais recente. Instale no cliente e no servidor.",
+        "Ainda não verificado: o rastro de tiro real é um risco fraco visto de frente. A pose de mira da espingarda e da pistola é aceitável, mas não perfeita. A lente de mira mostra um leve bandeamento. Cada tiro ainda aloca cerca de 21 KB (otimização pendente). 50 tiros por tick não foram medidos. A classe antimaterial não foi reclassificada.",
+        "GUN MAX e toda a sua munição foram removidos; itens GUN MAX antigos somem dos mundos salvos."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 55114",
      "date": "2026-10-25",

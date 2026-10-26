@@ -306,6 +306,22 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-71208",
+    "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX ritirato",
+    "summary": "OUKA Wonder aggiunge 54 armi, 99 componenti e 6 nuovi tipi di munizioni, con schermata degli accessori, corpo a corpo con baionetta, lente di mira, traccia e lampo di volata.",
+    "highlights": [
+     "OUKA GUN MAX è ritirato. Le armi, le munizioni e gli accessori GUN MAX esistenti vengono rimossi dai mondi al caricamento di V1.7 71208.",
+     "OUKA Wonder: 54 armi, 99 componenti e 6 nuovi tipi di munizioni (ouka:wonder_ammo_*). La schermata degli accessori è il tasto Z; il corpo a corpo con baionetta il tasto V.",
+     "Wonder include anche la lente di mira, la traccia e il lampo di volata allo sparo.",
+     "Verifiche su questa build: GameTest 1421 test PASS; controlli delle classi Wonder e del montaggio su client reale PASS; controlli di crash di server e client senza problemi."
+    ],
+    "warnings": [
+     "Prima di installare V1.7 71208, rimuovi dalla cartella mods il vecchio jar di OUKA (1.7.55114 o precedente) e tieni una sola copia di GeckoLib 5.5.6. Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo e Fabric API 0.161.0+26.3 o successivo. Installalo sia sul client sia sul server.",
+     "Non ancora verificato: la traccia di tiro reale è una striscia tenue vista di fronte. La posa di mira di fucile a pompa e pistola è accettabile ma non perfetta. La lente di mira mostra un lieve effetto a bande. Ogni colpo alloca ancora circa 21 KB (ottimizzazione in attesa). 50 colpi per tick non sono stati misurati. La classe anti-materiale non è stata ri-etichettata.",
+     "GUN MAX e tutte le sue munizioni sono rimosse; gli oggetti GUN MAX vecchi scompaiono dai mondi salvati."
+    ]
+   },
+   {
     "id": "ouka-v1.7-55114",
     "title": "Ouka JJK V1.7 55114 — Riparazione del Beacon, elio-3 del Sole Artificiale, overclock x50, Presa di ricarica batterie",
     "summary": "Il Beacon si ripara con un blocco di Stella del Nether Tsubomi, il Sole Artificiale brucia elio-3 come combustibile proprio, il limite di overclock sale a x50 e la nuova Presa di ricarica batterie contiene fino a 200 batterie SMES.",

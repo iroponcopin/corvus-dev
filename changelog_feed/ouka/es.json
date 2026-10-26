@@ -1,15 +1,41 @@
 {
  "lang": "es",
  "brand": "ouka",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "title": "Historial de actualizaciones",
- "updated_label": "Actualizado el 2026-10-25",
+ "updated_label": "Actualizado el 2026-10-26",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 55114 — Reparación del Beacon, helio-3 del Sol Artificial, sobrecarga x50, Toma de carga de baterías",
+   "summary": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX retirado",
    "releases": [
+    {
+     "version": "V1.7 71208",
+     "date": "2026-10-26",
+     "type": "release",
+     "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX retirado",
+     "summary": "OUKA Wonder añade 54 armas, 99 piezas de accesorios y 6 tipos nuevos de munición, con pantalla de accesorios, cuerpo a cuerpo con bayoneta, lente de mira, trazador y destello de boca.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "OUKA GUN MAX queda retirado. Las armas, la munición y los accesorios de GUN MAX existentes se eliminan de los mundos al cargar V1.7 71208.",
+        "OUKA Wonder: 54 armas, 99 piezas y 6 tipos nuevos de munición (ouka:wonder_ammo_*). La pantalla de accesorios es la tecla Z; el cuerpo a cuerpo con bayoneta es la tecla V.",
+        "Wonder incluye además la lente de mira, un trazador de balas y un destello de boca al disparar.",
+        "Comprobado en esta versión: GameTest 1421 pruebas PASS; comprobaciones de las clases Wonder y del montaje en un cliente real PASS; comprobaciones de fallos del servidor y del cliente sin problemas."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Antes de instalar V1.7 71208, quita de la carpeta mods el jar antiguo de OUKA (1.7.55114 o anterior) y deja solo 1 copia de GeckoLib 5.5.6. Requiere Minecraft 26.3, Fabric Loader 0.19.5 o posterior y Fabric API 0.161.0+26.3 o posterior. Instálalo en el cliente y en el servidor.",
+        "Sin verificar todavía: el trazador de disparo real es una estela tenue vista de frente. La postura de apuntado de la escopeta y la pistola es aceptable, no perfecta. La lente de mira muestra un leve bandeado. Cada disparo sigue asignando unos 21 KB (optimización pendiente). No se midieron 50 disparos por tick. La clase antimaterial no fue reetiquetada.",
+        "GUN MAX y toda su munición se han eliminado; los objetos antiguos de GUN MAX desaparecen de los mundos guardados."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 55114",
      "date": "2026-10-25",

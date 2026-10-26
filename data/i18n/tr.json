@@ -306,6 +306,22 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-71208",
+    "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX emekli edildi",
+    "summary": "OUKA Wonder 54 silah, 99 parça ve 6 yeni cephane türü ekliyor; parça değiştirme ekranı, süngü ile yakın dövüş, dürbün lensi, iz ve namlu alevi de içeriyor.",
+    "highlights": [
+     "OUKA GUN MAX emekli edildi. Mevcut GUN MAX silahları, cephanesi ve parçaları V1.7 71208 yüklendiğinde dünyalardan kaldırılır.",
+     "OUKA Wonder: 54 silah, 99 parça ve 6 yeni cephane türü (ouka:wonder_ammo_*). Parça değiştirme ekranı Z tuşunda, süngü ile yakın dövüş V tuşunda.",
+     "Wonder ayrıca dürbün lensi, ateşlemede iz ve namlu alevi içerir.",
+     "Bu derlemede kontrol edildi: GameTest 1421 test PASS; Wonder sınıfları ve montaj gerçek istemcide PASS; sunucu ve istemci çökme kontrolleri temiz."
+    ],
+    "warnings": [
+     "V1.7 71208'i kurmadan önce mods klasöründen eski OUKA jar'ını (1.7.55114 veya daha eski) silin ve yalnızca 1 GeckoLib 5.5.6 bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun.",
+     "Henüz doğrulanmadı: gerçek atış izi önden bakıldığında soluk bir çizgi. Pompalı tüfek ve tabanca nişan duruşu kabul edilebilir ama mükemmel değil. Dürbün lensinde hafif bant görünümü var. Her atış hâlâ yaklaşık 21 KB ayırıyor (optimizasyon bekliyor). Tik başına 50 atış ölçülmedi. Zırh delici sınıfı yeniden etiketlenmedi.",
+     "GUN MAX ve bütün cephanesi kaldırıldı; kayıtlı dünyalardaki eski GUN MAX eşyaları kaybolur."
+    ]
+   },
+   {
     "id": "ouka-v1.7-55114",
     "title": "Ouka JJK V1.7 55114 — Fener onarımı, Yapay Güneş helyum-3, x50 aşırı hız, Batarya Şarj Soketi",
     "summary": "Fener, bir Tsubomi Nether Yıldızı Bloku ile onarılır, Yapay Güneş helyum-3'ü kendi yakıtı olarak yakar, aşırı hız sınırı x50'ye çıkar ve yeni Batarya Şarj Soketi en fazla 200 SMES bataryayı taşır.",

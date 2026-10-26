@@ -306,6 +306,22 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-71208",
+    "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX retiré",
+    "summary": "OUKA Wonder ajoute 54 armes, 99 pièces d'accessoires et 6 nouveaux types de munitions, avec un écran d'accessoires, un corps-à-corps à la baïonnette, une lentille de visée, un traceur et un flash de bouche.",
+    "highlights": [
+     "OUKA GUN MAX est retiré. Les armes, munitions et accessoires GUN MAX existants sont retirés des mondes au chargement de V1.7 71208.",
+     "OUKA Wonder : 54 armes, 99 pièces et 6 nouveaux types de munitions (ouka:wonder_ammo_*). L'écran d'accessoires est sur la touche Z ; le corps-à-corps à la baïonnette sur la touche V.",
+     "Wonder comprend aussi une lentille de visée, un traceur de balle et un flash de bouche au tir.",
+     "Vérifié sur cette version : GameTest 1421 tests PASS ; contrôles des classes Wonder et du montage sur client réel PASS ; contrôles de plantage serveur et client sans anomalie."
+    ],
+    "warnings": [
+     "Avant d'installer V1.7 71208, retirez l'ancien jar OUKA (1.7.55114 ou antérieur) du dossier mods et ne gardez qu'une copie de GeckoLib 5.5.6. Il faut Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent et Fabric API 0.161.0+26.3 ou plus récent. Installez-le côté client et serveur.",
+     "Non vérifié pour l'instant : le traceur de tir réel n'est qu'une trace faible vue de face. La visée du fusil à pompe et du pistolet est acceptable sans être parfaite. La lentille de visée montre un léger effet de bandes. Chaque tir alloue encore environ 21 Ko (optimisation en attente). 50 tirs par tick n'ont pas été mesurés. La classe antimatériel n'a pas été réétiquetée.",
+     "GUN MAX et toutes ses munitions sont retirés ; les anciens objets GUN MAX disparaissent des mondes sauvegardés."
+    ]
+   },
+   {
     "id": "ouka-v1.7-55114",
     "title": "Ouka JJK V1.7 55114 — Réparation de la Balise, hélium-3 du Soleil artificiel, surcadençage x50, Socle de charge de batteries",
     "summary": "La Balise se répare avec un bloc d'Étoile du Néant Tsubomi, le Soleil artificiel brûle l'hélium-3 comme carburant propre, la limite de surcadençage passe à x50, et le nouveau Socle de charge de batteries accueille jusqu'à 200 batteries SMES.",

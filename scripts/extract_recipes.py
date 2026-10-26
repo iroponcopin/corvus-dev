@@ -2673,11 +2673,28 @@ INTENDED_ICON_CHANGES = {
 }
 
 
-def icon_problems(old_items, new_items, allowed=None):
+# Items that may leave the crafting sheet because the OWNER ordered their removal or because the only card that showed them
+# went with a removed product (OUKA V1.7 71208: GUN MAX and all its ammunition are deleted). One id per entry, each with
+# its reason; an item not named here that vanishes still reddens the guard, and the self-test proves it.
+INTENDED_REMOVALS = {
+    "ouka:ammo_energy": "OUKA V1.7 71208: GUN MAX and its ammunition were deleted (owner's order)",
+    "ouka:ammo_heavy": "OUKA V1.7 71208: GUN MAX and its ammunition were deleted (owner's order)",
+    "ouka:ammo_light": "OUKA V1.7 71208: GUN MAX and its ammunition were deleted (owner's order)",
+    "ouka:ammo_mythic": "OUKA V1.7 71208: GUN MAX and its ammunition were deleted (owner's order)",
+    "ouka:ammo_shotgun": "OUKA V1.7 71208: GUN MAX and its ammunition were deleted (owner's order)",
+    "ouka:ammo_sniper": "OUKA V1.7 71208: GUN MAX and its ammunition were deleted (owner's order)",
+    "ouka:lithium_dust": "OUKA V1.7 71208: its only crafting-sheet card was the deleted GUN MAX energy round; the item stays in the mod and on the machine sheet",
+}
+
+
+def icon_problems(old_items, new_items, allowed=None, removals=None):
     """Compare the items of the published sheet with the new one. Returns (problems, keys whose old PNG must still be byte-identical)."""
     allowed = INTENDED_ICON_CHANGES if allowed is None else allowed
+    removals = INTENDED_REMOVALS if removals is None else removals
     problems, keep = [], []
     for item, entry in old_items.items():
+        if item not in new_items and item in removals:
+            continue
         if item not in new_items:
             problems.append(f"{item} was on the published sheet and is gone")
             continue
@@ -2706,9 +2723,19 @@ def icon_guard_self_test():
     ]
     bad = []
     for name, new_items, expect_green in cases:
-        problems, _keep = icon_problems(old, new_items, grant)
+        problems, _keep = icon_problems(old, new_items, grant, {})
         if bool(problems) == expect_green:
             bad.append(name)
+    # An item named in the removals table may vanish; one that is not named still reddens, and a named one that
+    # stays on the sheet is not "removed": its texture is still compared.
+    only_a = {"ouka:a": ["a", "A", "t269"], "ouka:c": ["c", "C", None]}
+    if icon_problems(old, only_a, grant, {"ouka:b": "test"})[0]:
+        bad.append("a named removal must pass")
+    if not icon_problems(old, only_a, grant, {"ouka:c": "test"})[0]:
+        bad.append("an unnamed vanished item must still redden")
+    kept = {"ouka:a": ["a", "A", "t269"], "ouka:b": ["b", "B", "t6"], "ouka:c": ["c", "C", None]}
+    if not icon_problems(old, kept, grant, {"ouka:b": "test"})[0]:
+        bad.append("a named item that stays with a changed picture must still redden")
     # 表が空なら、ふつうの見張りと同じ(許しは何も効かない)
     problems, _keep = icon_problems(old, {"ouka:a": ["a", "A", "t269"], "ouka:b": ["b", "B", "t5"], "ouka:c": ["c", "C", None]}, {})
     if not problems:
@@ -2751,6 +2778,10 @@ def guard_published_textures():
     new = json.loads((OUT_DATA_DIR / "recipes.json").read_text(encoding="utf-8"))
     retired_only, old_live, _old_retired = retired_only_textures(old)
     problems, keep = icon_problems(old_live, new["items"])
+    # A picture only an intended removal used may leave the folder with it (a picture a surviving item still uses never does).
+    still_used = {v[2] for v in new["items"].values() if v[2]}
+    retired_only = set(retired_only) | ({old_live[i][2] for i in INTENDED_REMOVALS
+                                         if i in old_live and i not in new["items"] and old_live[i][2]} - still_used)
     for item, key_old in keep:
         path = f"assets/img/recipes/{key_old}.png"
         if (SITE_ROOT / path).read_bytes() != _git_bytes("show", f"{PUBLISHED_REF}:{path}"):

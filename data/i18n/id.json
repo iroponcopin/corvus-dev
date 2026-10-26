@@ -306,6 +306,22 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-71208",
+    "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX dihentikan",
+    "summary": "OUKA Wonder menambah 54 senjata, 99 bagian pemasangan, dan 6 jenis amunisi baru, dengan layar pemasangan, serangan jarak dekat bayonet, lensa scope, jejak peluru, dan kilatan moncong.",
+    "highlights": [
+     "OUKA GUN MAX dihentikan. Senjata, amunisi, dan bagian GUN MAX yang ada dihapus dari dunia saat V1.7 71208 dimuat.",
+     "OUKA Wonder: 54 senjata, 99 bagian, dan 6 jenis amunisi baru (ouka:wonder_ammo_*). Layar pemasangan memakai tombol Z, serangan bayonet memakai tombol V.",
+     "Wonder juga menyertakan lensa scope, jejak peluru, dan kilatan moncong saat menembak.",
+     "Diperiksa pada build ini: GameTest 1421 uji LULUS; pemeriksaan kelas Wonder dan pemasangan di klien nyata LULUS; pemeriksaan crash server dan klien bersih."
+    ],
+    "warnings": [
+     "Sebelum memasang V1.7 71208, hapus jar OUKA lama (1.7.55114 atau lebih lama) dari folder mods dan simpan hanya 1 salinan GeckoLib 5.5.6. Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di klien dan server.",
+     "Belum diverifikasi: jejak tembakan asli hanya garis tipis samar bila dilihat dari depan. Posisi bidik shotgun dan pistol dapat diterima tetapi belum sempurna. Lensa scope menunjukkan sedikit banding. Setiap tembakan masih mengalokasikan sekitar 21 KB (optimasi menunggu). 50 tembakan per tick belum diukur. Kelas anti-materiil belum diberi tag ulang.",
+     "GUN MAX dan semua amunisinya dihapus; item GUN MAX lama akan hilang dari dunia yang tersimpan."
+    ]
+   },
+   {
     "id": "ouka-v1.7-55114",
     "title": "Ouka JJK V1.7 55114 — Perbaikan Beacon, helium-3 Matahari Buatan, overclock x50, Soket Pengisian Baterai",
     "summary": "Beacon diperbaiki dengan satu blok Netherite Star Tsubomi, Matahari Buatan membakar helium-3 sebagai bahan bakar tersendiri, batas overclock naik ke x50, dan Soket Pengisian Baterai yang baru memuat hingga 200 baterai SMES.",
