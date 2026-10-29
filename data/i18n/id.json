@@ -306,6 +306,26 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-81347",
+    "title": "Ouka JJK V1.7 81347 — Reaktor Fusi Matahari Buatan V2, Jalur Perakitan Otomasi Generasi Berikutnya, Tempa Karbida, Transceiver Materi Max",
+    "summary": "Menambahkan Reaktor Fusi Matahari Buatan V2 (multiblok 16 × 16 × 16, daya nominal 500 GW) dengan layar kontrol kaca, Jalur Perakitan Otomasi Generasi Berikutnya, Tempa Karbida, Transceiver Materi Max, dan meja kerja OUKA Wonder.",
+    "highlights": [
+     "Reaktor Fusi Matahari Buatan V2 (multiblok baru): kubus 16 × 16 × 16. Daya nominal 500 GW (100 kali matahari V1). Hanya inti bahan bakar V2. Batas keluaran Matahari Buatan V1 kini 5 GW.",
+     "Layar kontrol: desain kaca, penggeser cahaya vertikal untuk batas keluaran, matahari yang hidup. Tanpa tombol.",
+     "Jalur Perakitan Otomasi Generasi Berikutnya (8 × 2 × 2): layar kaca, resep berupa ikon dalam kisi yang bisa digulir (semuanya terjangkau), antrean pekerjaan dengan ikon.",
+     "Tempa Karbida (3 × 3 × 3, vakum). Transceiver Materi Max: aksen ungu, jangkauan 256 blok, hingga 256 item per tick. Berkasnya ungu secara bawaan, bisa dipilih merah muda atau biru, dan tetap terlihat di siang hari.",
+     "Meja kerja OUKA Wonder; perbaikan animasi isi ulang dan inspeksi. Layar mesin tidak lagi menjeda permainan di mode satu pemain (perbaikan bug).",
+     "Diperiksa pada build ini: JUnit 2126 tes PASS, GameTest 1485 tes PASS, pemeriksaan klien nyata untuk layar dan mesin baru PASS, pemeriksaan crash server dengan dunia yang sudah ada dan dunia baru bersih."
+    ],
+    "warnings": [
+     "Sebelum memasang V1.7 81347, hapus jar OUKA lama (1.7.71208 atau lebih lama) dari folder mods dan sisakan hanya 1 salinan GeckoLib 5.5.6. Dibutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di klien dan server.",
+     "Belum diuji: Reaktor Fusi Matahari Buatan V2 pada 500 GW di jaringan nyata. Angka 100 kali bersifat relatif terhadap matahari V1.",
+     "Tempa Karbida memakai layar mesin umum, bukan layar tersendiri, dan bagian geraknya belum teranimasi sepenuhnya.",
+     "Pembakaran helium-3 pada keluaran penuh reaktor sangat besar. README sengaja tidak mencantumkan angka bahan bakar.",
+     "Resep Transceiver Materi Max membutuhkan ingot Starbloom Max dari Tsubomi. Tanpa Tsubomi, item ini tidak bisa dibuat."
+    ]
+   },
+   {
     "id": "ouka-v1.7-71208",
     "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX dihentikan",
     "summary": "OUKA Wonder menambah 54 senjata, 99 bagian pemasangan, dan 6 jenis amunisi baru, dengan layar pemasangan, serangan jarak dekat bayonet, lensa scope, jejak peluru, dan kilatan moncong.",

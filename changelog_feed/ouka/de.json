@@ -1,15 +1,45 @@
 {
  "lang": "de",
  "brand": "ouka",
- "updated": "2026-10-26",
+ "updated": "2026-10-29",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-26",
+ "updated_label": "Aktualisiert am 2026-10-29",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX eingestellt",
+   "summary": "Ouka JJK V1.7 81347 — Künstliche-Sonne-Fusionsreaktor V2, Automatisierungs-Montagelinie der nächsten Generation, Hartmetall-Schmiede, Materietransceiver Max",
    "releases": [
+    {
+     "version": "V1.7 81347",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 81347 — Künstliche-Sonne-Fusionsreaktor V2, Automatisierungs-Montagelinie der nächsten Generation, Hartmetall-Schmiede, Materietransceiver Max",
+     "summary": "Neu sind der Künstliche-Sonne-Fusionsreaktor V2 (Multiblock 16 × 16 × 16, Nennleistung 500 GW) mit gläsernem Steuerbildschirm, die Automatisierungs-Montagelinie der nächsten Generation, die Hartmetall-Schmiede, der Materietransceiver Max und die Werkbank von OUKA Wonder.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Künstliche-Sonne-Fusionsreaktor V2 (neuer Multiblock): ein Würfel von 16 × 16 × 16. Nennleistung 500 GW (das 100-Fache der V1-Sonne). Nur V2-Brennstoffkerne. Die Leistungsgrenze der V1-Sonne liegt jetzt bei 5 GW.",
+        "Steuerbildschirm: Glasdesign, ein senkrechter Lichtregler für die Leistungsgrenze, eine lebendige Sonne. Keine Schaltflächen.",
+        "Automatisierungs-Montagelinie der nächsten Generation (8 × 2 × 2): Glasbildschirm, Rezepte als Symbole in einem scrollbaren Raster (alle erreichbar), Auftragsschlange mit Symbolen.",
+        "Hartmetall-Schmiede (3 × 3 × 3, Vakuum). Materietransceiver Max: violette Akzente, Reichweite 256 Blöcke, bis zu 256 Items pro Tick. Der Strahl ist standardmäßig violett, wahlweise rosa oder blau, und bleibt bei Tageslicht sichtbar.",
+        "Werkbank von OUKA Wonder; Korrekturen der Animationen für Nachladen und Inspizieren. Maschinenbildschirme pausieren das Spiel im Einzelspieler nicht mehr (Fehlerbehebung).",
+        "Auf diesem Build geprüft: JUnit 2126 Tests PASS, GameTest 1485 Tests PASS, Prüfungen der neuen Bildschirme und Maschinen auf einem echten Client PASS, Server-Absturzprüfungen mit einer bestehenden und einer neuen Welt unauffällig."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Entferne vor der Installation von V1.7 81347 das alte OUKA-JAR (1.7.71208 oder älter) aus dem mods-Ordner und behalte nur 1 Kopie von GeckoLib 5.5.6. Erforderlich sind Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Auf Client und Server installieren.",
+        "Nicht getestet: der Künstliche-Sonne-Fusionsreaktor V2 mit 500 GW in einem echten Netzwerk. Die Angabe „100-Faches“ ist relativ zur V1-Sonne.",
+        "Die Hartmetall-Schmiede nutzt den allgemeinen Maschinenbildschirm statt eines eigenen, und ihre beweglichen Teile sind noch nicht vollständig animiert.",
+        "Der Helium-3-Verbrauch bei voller Reaktorleistung ist hoch. Die README nennt absichtlich keine Brennstoffzahlen.",
+        "Das Rezept des Materietransceivers Max benötigt den Starbloom-Max-Barren von Tsubomi. Ohne Tsubomi lässt er sich nicht herstellen."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 71208",
      "date": "2026-10-26",

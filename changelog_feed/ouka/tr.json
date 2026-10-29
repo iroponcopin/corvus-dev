@@ -1,15 +1,45 @@
 {
  "lang": "tr",
  "brand": "ouka",
- "updated": "2026-10-26",
+ "updated": "2026-10-29",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-26 tarihinde güncellendi",
+ "updated_label": "2026-10-29 tarihinde güncellendi",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX emekli edildi",
+   "summary": "Ouka JJK V1.7 81347 — Yapay Güneş Füzyon Reaktörü V2, Yeni Nesil Otomasyon Montaj Hattı, Karbür Dövme Ocağı, Madde Alıcı-Verici Max",
    "releases": [
+    {
+     "version": "V1.7 81347",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 81347 — Yapay Güneş Füzyon Reaktörü V2, Yeni Nesil Otomasyon Montaj Hattı, Karbür Dövme Ocağı, Madde Alıcı-Verici Max",
+     "summary": "Cam kontrol ekranlı Yapay Güneş Füzyon Reaktörü V2 (16 × 16 × 16 çok bloklu yapı, 500 GW anma gücü), Yeni Nesil Otomasyon Montaj Hattı, Karbür Dövme Ocağı, Madde Alıcı-Verici Max ve OUKA Wonder çalışma tezgâhı eklendi.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Yapay Güneş Füzyon Reaktörü V2 (yeni çok bloklu yapı): 16 × 16 × 16 küp. Anma gücü 500 GW (V1 güneşinin 100 katı). Yalnızca V2 yakıt çekirdekleri. V1 Yapay Güneş'in çıkış sınırı artık 5 GW.",
+        "Kontrol ekranı: cam tasarım, çıkış sınırı için dikey ışık kaydırıcısı, canlı bir güneş. Düğme yok.",
+        "Yeni Nesil Otomasyon Montaj Hattı (8 × 2 × 2): cam ekran, kaydırılabilir ızgarada simge olarak tarifler (hepsine ulaşılabilir), simgeli iş kuyruğu.",
+        "Karbür Dövme Ocağı (3 × 3 × 3, vakum). Madde Alıcı-Verici Max: mor vurgular, 256 blok menzil, tick başına en fazla 256 eşya. Işın varsayılan olarak mor, pembe veya mavi seçilebilir ve gün ışığında da görünür kalır.",
+        "OUKA Wonder çalışma tezgâhı; yeniden doldurma ve inceleme animasyonu düzeltmeleri. Makine ekranları artık tek oyunculu modda oyunu duraklatmıyor (hata düzeltmesi).",
+        "Bu sürümde doğrulananlar: JUnit 2126 test PASS, GameTest 1485 test PASS, yeni ekranların ve makinelerin gerçek istemcide denetimi PASS, mevcut bir dünya ve yeni bir dünyada sunucu çökme denetimleri temiz."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "V1.7 81347'yi kurmadan önce mods klasöründen eski OUKA jar dosyasını (1.7.71208 veya daha eski) silin ve GeckoLib 5.5.6'dan yalnızca 1 kopya bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi ve Fabric API 0.161.0+26.3 veya daha yenisi gerekir. Hem istemciye hem sunucuya kurun.",
+        "Test edilmedi: Yapay Güneş Füzyon Reaktörü V2'nin 500 GW'ta gerçek bir ağ üzerinde çalıştırılması. 100 kat rakamı V1 güneşine göredir.",
+        "Karbür Dövme Ocağı kendine ait bir ekran yerine genel makine ekranını kullanır ve hareketli parçaları henüz tam olarak canlandırılmamıştır.",
+        "Reaktör tam çıkıştayken helyum-3 tüketimi yüksektir. README'de yakıt rakamları bilerek verilmemiştir.",
+        "Madde Alıcı-Verici Max tarifi için Tsubomi'nin Starbloom Max külçesi gerekir. Tsubomi olmadan üretilemez."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 71208",
      "date": "2026-10-26",

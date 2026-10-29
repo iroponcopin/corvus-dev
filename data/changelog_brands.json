@@ -122,6 +122,12 @@
         "release": "V1.7 71208",
         "date": "2026-10-26",
         "type": "release"
+      },
+      {
+        "id": "ouka-v1.7-81347",
+        "release": "V1.7 81347",
+        "date": "2026-10-29",
+        "type": "release"
       }
     ],
     "cherry": [

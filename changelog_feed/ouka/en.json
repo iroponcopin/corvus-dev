@@ -1,15 +1,45 @@
 {
  "lang": "en",
  "brand": "ouka",
- "updated": "2026-10-26",
+ "updated": "2026-10-29",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-26",
+ "updated_label": "Updated 2026-10-29",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX retired",
+   "summary": "Ouka JJK V1.7 81347 — Artificial Sun Fusion Reactor V2, Next-Generation Assembly Line, Carbide Forge, Matter Transceiver Max",
    "releases": [
+    {
+     "version": "V1.7 81347",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 81347 — Artificial Sun Fusion Reactor V2, Next-Generation Assembly Line, Carbide Forge, Matter Transceiver Max",
+     "summary": "Adds the Artificial Sun Fusion Reactor V2 (a 16 × 16 × 16 multiblock, 500 GW nameplate) with a glass control screen, the Next-Generation Automation Assembly Line, the Carbide Forge, the Matter Transceiver Max and the OUKA Wonder workbench.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "Artificial Sun Fusion Reactor V2 (new multiblock): a 16 × 16 × 16 cube. Nameplate 500 GW (100 times the V1 sun). V2 fuel cores only. The V1 Artificial Sun's output limit is now 5 GW.",
+        "Control screen: glass design, a vertical light slider for the output limit, a live sun. No buttons.",
+        "Next-Generation Automation Assembly Line (8 × 2 × 2): glass screen, recipes as icons in a scrolling grid (all reachable), job queue with icons.",
+        "Carbide Forge (3 × 3 × 3, vacuum). Matter Transceiver Max: purple accents, 256-block range, up to 256 items per tick. The beam is purple by default, pink or blue selectable, and holds in daylight.",
+        "OUKA Wonder workbench; reload and inspect animation fixes. Machine screens no longer pause the game in singleplayer (bug fix).",
+        "Checked on this build: JUnit 2126 tests PASS, GameTest 1485 tests PASS, real-client checks of the new screens and machines PASS, server crash checks on an existing world and a fresh world clean."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Before you install V1.7 81347, remove the old OUKA jar (1.7.71208 or older) from the mods folder and keep only 1 copy of GeckoLib 5.5.6. It needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, and Fabric API 0.161.0+26.3 or newer. Install it on both the client and the server.",
+        "Not tested: the Artificial Sun Fusion Reactor V2 at 500 GW on a live network. The 100-times figure is relative to the V1 sun.",
+        "The Carbide Forge uses the generic machine screen, not a screen of its own, and its moving parts are not fully animated yet.",
+        "Helium-3 burn at full reactor output is heavy. The README intentionally lists no fuel numbers.",
+        "The Matter Transceiver Max recipe needs the Starbloom Max ingot from Tsubomi. Without Tsubomi it cannot be crafted."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 71208",
      "date": "2026-10-26",

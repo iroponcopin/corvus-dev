@@ -42,6 +42,8 @@ BRANDS = ("ouka", "cherry")
 # Station id -> the block that does the work. The order is the order of the chips on the page.
 STATIONS = [
     ("assembly", "ouka:precision_assembly_line"),
+    # OUKA V1.7 81347: the Next-Generation Automation Assembly Line (recipe type ouka:assembly_ng), a station of its own.
+    ("assembly_ng", "ouka:assembly_line_ng"),
     ("crusher", "ouka:hydraulic_crusher"),
     ("centrifuge", "ouka:molecular_centrifuge"),
     ("culture", "ouka:bio_reactor_culture_vat"),
@@ -59,11 +61,14 @@ PROCESS_MACHINES = [
     "catalytic_smelting_furnace", "vacuum_sintering_furnace", "hot_isostatic_press", "rotary_calciner", "superconducting_coil_winder",
     "superconducting_fractionating_tower", "plasma_arc_gasifier", "syngas_synthesis_reactor",
     "crystal_pulling_furnace", "laser_ablation_bed", "high_pressure_ion_implanter", "auto_calibration_manipulator",
+    # OUKA V1.7 81347: the Carbide Forge.
+    "carbide_forge",
 ]
 _AT = [i for i, s in enumerate(STATIONS) if s[0] == "fabricator"][0]
 STATIONS[_AT:_AT] = [(m, "ouka:" + m) for m in PROCESS_MACHINES]
 TYPE_STATION = {
     "ouka:assembly": "assembly",
+    "ouka:assembly_ng": "assembly_ng",
     "ouka:crushing": "crusher",
     "ouka:centrifuging": "centrifuge",
     "ouka:culturing": "culture",
@@ -315,7 +320,7 @@ def read_recipes(jar: Jar) -> list[dict]:
             rec["outputs"] = [{"id": res["id"], "n": res.get("count", 1)}]
             rec["time"] = x.get("cookingtime", 200 if t.endswith("smelting") else 100)
             rec["xp"] = x.get("experience", 0)
-        elif t == "ouka:assembly" or t == "ouka:culturing":
+        elif t in ("ouka:assembly", "ouka:assembly_ng", "ouka:culturing"):
             rec["inputs"] = [ingredient(jar, i["ingredient"], i.get("count", 1)) for i in x["inputs"]]
             rec["outputs"] = [{"id": res["id"], "n": res.get("count", 1)}]
             if "time" in x:

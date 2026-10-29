@@ -306,6 +306,26 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-81347",
+    "title": "Ouka JJK V1.7 81347 — Reator de Fusão Sol Artificial V2, Linha de Montagem de Automação de Nova Geração, Forja de Carboneto, Transceptor de Matéria Max",
+    "summary": "Adiciona o Reator de Fusão Sol Artificial V2 (multibloco de 16 × 16 × 16, potência nominal de 500 GW) com tela de controle de vidro, a Linha de Montagem de Automação de Nova Geração, a Forja de Carboneto, o Transceptor de Matéria Max e a bancada do OUKA Wonder.",
+    "highlights": [
+     "Reator de Fusão Sol Artificial V2 (novo multibloco): um cubo de 16 × 16 × 16. Potência nominal de 500 GW (100 vezes o sol V1). Somente núcleos de combustível V2. O limite de saída do Sol Artificial V1 agora é de 5 GW.",
+     "Tela de controle: design de vidro, um controle deslizante vertical de luz para o limite de saída, um sol ao vivo. Sem botões.",
+     "Linha de Montagem de Automação de Nova Geração (8 × 2 × 2): tela de vidro, receitas como ícones em uma grade com rolagem (todas acessíveis), fila de tarefas com ícones.",
+     "Forja de Carboneto (3 × 3 × 3, vácuo). Transceptor de Matéria Max: detalhes roxos, alcance de 256 blocos, até 256 itens por tick. O feixe é roxo por padrão, com rosa ou azul selecionáveis, e se mantém à luz do dia.",
+     "Bancada do OUKA Wonder; correções das animações de recarga e inspeção. As telas das máquinas não pausam mais o jogo no modo solo (correção de bug).",
+     "Verificado nesta versão: JUnit 2126 testes PASS, GameTest 1485 testes PASS, verificações em cliente real das novas telas e máquinas PASS, verificações de falha do servidor com um mundo existente e um mundo novo sem problemas."
+    ],
+    "warnings": [
+     "Antes de instalar a V1.7 81347, remova o jar antigo do OUKA (1.7.71208 ou anterior) da pasta mods e mantenha apenas 1 cópia do GeckoLib 5.5.6. São necessários Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente e Fabric API 0.161.0+26.3 ou mais recente. Instale no cliente e no servidor.",
+     "Não testado: o Reator de Fusão Sol Artificial V2 a 500 GW em uma rede real. O número de 100 vezes é relativo ao sol V1.",
+     "A Forja de Carboneto usa a tela genérica de máquina, e não uma tela própria, e suas partes móveis ainda não estão totalmente animadas.",
+     "O consumo de hélio-3 na saída máxima do reator é pesado. O README propositalmente não lista números de combustível.",
+     "A receita do Transceptor de Matéria Max exige o lingote Starbloom Max do Tsubomi. Sem o Tsubomi, ele não pode ser fabricado."
+    ]
+   },
+   {
     "id": "ouka-v1.7-71208",
     "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX aposentado",
     "summary": "OUKA Wonder adiciona 54 armas, 99 peças de acessórios e 6 novos tipos de munição, com tela de acessórios, corpo a corpo com baioneta, lente de mira, rastro e clarão de disparo.",

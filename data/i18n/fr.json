@@ -306,6 +306,26 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-81347",
+    "title": "Ouka JJK V1.7 81347 — Réacteur à fusion Soleil artificiel V2, Ligne d'assemblage d'automatisation nouvelle génération, Forge au carbure, Transcepteur de matière Max",
+    "summary": "Ajoute le Réacteur à fusion Soleil artificiel V2 (multibloc de 16 × 16 × 16, puissance nominale de 500 GW) avec un écran de contrôle en verre, la Ligne d'assemblage d'automatisation nouvelle génération, la Forge au carbure, le Transcepteur de matière Max et l'établi d'OUKA Wonder.",
+    "highlights": [
+     "Réacteur à fusion Soleil artificiel V2 (nouveau multibloc) : un cube de 16 × 16 × 16. Puissance nominale de 500 GW (100 fois le soleil V1). Uniquement des noyaux de combustible V2. La limite de sortie du Soleil artificiel V1 est désormais de 5 GW.",
+     "Écran de contrôle : design en verre, un curseur vertical de lumière pour la limite de sortie, un soleil vivant. Aucun bouton.",
+     "Ligne d'assemblage d'automatisation nouvelle génération (8 × 2 × 2) : écran en verre, recettes sous forme d'icônes dans une grille défilante (toutes accessibles), file de tâches avec icônes.",
+     "Forge au carbure (3 × 3 × 3, vide). Transcepteur de matière Max : accents violets, portée de 256 blocs, jusqu'à 256 objets par tick. Le faisceau est violet par défaut, rose ou bleu au choix, et reste visible en plein jour.",
+     "Établi d'OUKA Wonder ; corrections des animations de rechargement et d'inspection. Les écrans des machines ne mettent plus le jeu en pause en solo (correction de bogue).",
+     "Vérifié sur cette version : JUnit 2126 tests PASS, GameTest 1485 tests PASS, vérifications sur un client réel des nouveaux écrans et machines PASS, vérifications de plantage du serveur avec un monde existant et un monde neuf sans anomalie."
+    ],
+    "warnings": [
+     "Avant d'installer V1.7 81347, retirez l'ancien jar d'OUKA (1.7.71208 ou antérieur) du dossier mods et ne gardez qu'1 exemplaire de GeckoLib 5.5.6. Il faut Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, et Fabric API 0.161.0+26.3 ou plus récent. Installez-le sur le client et sur le serveur.",
+     "Non testé : le Réacteur à fusion Soleil artificiel V2 à 500 GW sur un réseau réel. Le chiffre « 100 fois » est relatif au soleil V1.",
+     "La Forge au carbure utilise l'écran de machine générique, et non un écran propre, et ses pièces mobiles ne sont pas encore entièrement animées.",
+     "La consommation d'hélium-3 à pleine puissance du réacteur est lourde. Le README n'indique volontairement aucun chiffre de combustible.",
+     "La recette du Transcepteur de matière Max nécessite le lingot Starbloom Max de Tsubomi. Sans Tsubomi, il est impossible à fabriquer."
+    ]
+   },
+   {
     "id": "ouka-v1.7-71208",
     "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX retiré",
     "summary": "OUKA Wonder ajoute 54 armes, 99 pièces d'accessoires et 6 nouveaux types de munitions, avec un écran d'accessoires, un corps-à-corps à la baïonnette, une lentille de visée, un traceur et un flash de bouche.",

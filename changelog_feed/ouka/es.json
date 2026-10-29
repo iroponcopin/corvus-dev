@@ -1,15 +1,45 @@
 {
  "lang": "es",
  "brand": "ouka",
- "updated": "2026-10-26",
+ "updated": "2026-10-29",
  "title": "Historial de actualizaciones",
- "updated_label": "Actualizado el 2026-10-26",
+ "updated_label": "Actualizado el 2026-10-29",
  "note": "",
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX retirado",
+   "summary": "Ouka JJK V1.7 81347 — Reactor de fusión Sol Artificial V2, Línea de montaje de automatización de nueva generación, Forja de carburo, Transceptor de materia Max",
    "releases": [
+    {
+     "version": "V1.7 81347",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 81347 — Reactor de fusión Sol Artificial V2, Línea de montaje de automatización de nueva generación, Forja de carburo, Transceptor de materia Max",
+     "summary": "Añade el Reactor de fusión Sol Artificial V2 (multibloque de 16 × 16 × 16, potencia nominal de 500 GW) con una pantalla de control de cristal, la Línea de montaje de automatización de nueva generación, la Forja de carburo, el Transceptor de materia Max y la mesa de trabajo de OUKA Wonder.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "Reactor de fusión Sol Artificial V2 (nuevo multibloque): un cubo de 16 × 16 × 16. Potencia nominal de 500 GW (100 veces el sol V1). Solo núcleos de combustible V2. El límite de salida del Sol Artificial V1 es ahora de 5 GW.",
+        "Pantalla de control: diseño de cristal, un deslizador vertical de luz para el límite de salida, un sol en vivo. Sin botones.",
+        "Línea de montaje de automatización de nueva generación (8 × 2 × 2): pantalla de cristal, recetas como iconos en una cuadrícula con desplazamiento (todas accesibles), cola de trabajos con iconos.",
+        "Forja de carburo (3 × 3 × 3, vacío). Transceptor de materia Max: acentos morados, alcance de 256 bloques, hasta 256 objetos por tick. El haz es morado por defecto, se puede elegir rosa o azul, y se mantiene a plena luz del día.",
+        "Mesa de trabajo de OUKA Wonder; correcciones de las animaciones de recarga e inspección. Las pantallas de las máquinas ya no pausan el juego en un jugador (corrección de error).",
+        "Comprobado en esta compilación: JUnit 2126 pruebas PASS, GameTest 1485 pruebas PASS, comprobaciones en un cliente real de las nuevas pantallas y máquinas PASS, comprobaciones de fallos del servidor con un mundo existente y uno nuevo sin incidencias."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Antes de instalar V1.7 81347, elimina el jar antiguo de OUKA (1.7.71208 o anterior) de la carpeta mods y conserva solo 1 copia de GeckoLib 5.5.6. Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior y Fabric API 0.161.0+26.3 o superior. Instálalo en el cliente y en el servidor.",
+        "No probado: el Reactor de fusión Sol Artificial V2 a 500 GW en una red real. La cifra de 100 veces es relativa al sol V1.",
+        "La Forja de carburo usa la pantalla genérica de máquina, no una propia, y sus piezas móviles aún no están animadas por completo.",
+        "El consumo de helio-3 a la salida máxima del reactor es elevado. El README no incluye cifras de combustible a propósito.",
+        "La receta del Transceptor de materia Max requiere el lingote Starbloom Max de Tsubomi. Sin Tsubomi no se puede fabricar."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 71208",
      "date": "2026-10-26",
