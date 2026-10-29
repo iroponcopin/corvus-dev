@@ -1269,6 +1269,26 @@
      "Das Flügelschlag-Geräusch der Wings ist noch nicht fertig.",
      "Jeder Wert und jedes Rezept dieser Serien ist ein erster Wert des Entwicklers und kann noch angepasst werden."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-1779",
+    "title": "Tsubomi V2.4 1779 — Starbloom Ziz The Final, Ziz-Flügel und der Abbaubereich-Schieber",
+    "summary": "Tsubomi V2.4 1779 fügt Starbloom Ziz The Final hinzu, die letzte Serie der Linie, mit eigenen Ziz-Flügeln und einem Abbaubereich-Schieber für die Starbloom-Spitzhacke.",
+    "highlights": [
+     "Starbloom Ziz The Final ist die letzte Serie, über Starbloom Phoenix Zenith, in Leerenobsidian, Koronagold und biolumineszierendem Cyan. Sie hat das Sortiment von Starbloom Max — 13 Gegenstände: Legierungsbarren, Abbauspitzhacke, Fällaxt, Planierschaufel, Erntehacke, Lanze, die vier Rüstungsteile, Schild, Bogen und Pfeil — und eigene Flügel. Haltbarkeit und Abbaugeschwindigkeit sind 1.25× die der Phoenix Zenith.",
+     "Das volle Ziz-Set nimmt keinen Fallschaden und keinen Lavaschaden, schwimmt wie im Wasser durch Lava, ohne zu brennen. Trifft ein tödlicher Schlag, zerbrechen alle Rüstungsteile, statt dich zu töten — einmal, und nicht gegen /kill oder die Leere.",
+     "Der Ziz-Legierungsbarren entsteht aus 3 Phoenix-Zenith-Legierungsbarren, 4 Netherstern-Blöcken und einem Netheritblock und ergibt 3 Barren. Ziz-Flügel werden aus den Phoenix-Zenith-Flügeln, 4 Ziz-Barren, 3 Netherstern-Blöcken und einem Corvus-Emblem gefertigt.",
+     "Ziz-Flügel haben 14 Fluggeschwindigkeitsstufen, von 0.5× bis 7.0× der Beschleunigung der Basis-Flügel, in Schritten von 0.5×. Mit ] wird eine Stufe schneller, mit [ eine Stufe langsamer; Standard ist 3.0× (Stufe 6).",
+     "Mit einer Starbloom-Spitzhacke öffnet Schleichen + Rechtsklick den Abbaubereich-Schieber: ein Wert und ein Schieber wählen den Bereich, den ein Schwung bricht, von 1×1 bis 26×26 und Quick Mining, soweit die gehaltene Spitzhacke es erlaubt. Schleichen + Benutzen wechselt den Bereich auf dem Server nicht mehr."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+     "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars.",
+     "Außer den Namen, Farben, dem Konzept und den Fähigkeiten von Ziz, die der Besitzer vorgab, sind alle Zahlen und Rezepte dieser Serien die erste Festlegung des Entwicklers und können angepasst werden.",
+     "Die japanischen Namen sind vom Besitzer noch nicht genehmigt.",
+     "Der Abbaubereich-Schieber und die Ziz-Fähigkeiten wurden nur in einem echten Client im Einzelspieler geprüft, nicht auf einem dedizierten Server und nicht im Mehrspielermodus.",
+     "Das Flügelschlag-Geräusch der Ziz-Flügel ist noch nicht gemacht."
+    ]
    }
   ],
   "halia": [

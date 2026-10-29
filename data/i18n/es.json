@@ -1269,6 +1269,26 @@
      "El sonido del aleteo de las Wings aún no está hecho.",
      "Cada valor y cada receta de estas series es un primer valor elegido por el desarrollador y puede reequilibrarse."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-1779",
+    "title": "Tsubomi V2.4 1779 — Starbloom Ziz The Final, Alas Ziz y deslizador de área de minería",
+    "summary": "Tsubomi V2.4 1779 añade Starbloom Ziz The Final, la última serie de la línea, con sus propias alas Ziz y un deslizador de área de minería para el pico Starbloom.",
+    "highlights": [
+     "Starbloom Ziz The Final es la última serie, por encima de Starbloom Phoenix Zenith, en Obsidiana del Vacío, Oro de Corona y Cian bioluminiscente. Tiene la gama de Starbloom Max — 13 objetos: lingote de aleación, pico de cantera, hacha de tala, pala de nivelación, azada de cosecha, lanza, las cuatro piezas de armadura, escudo, arco y flecha — y alas propias. La durabilidad y la velocidad de minería son 1.25× las del Phoenix Zenith.",
+     "El conjunto Ziz completo no recibe daño por caída ni daño por lava, nada en la lava como en el agua sin arder, y un golpe mortal hace añicos toda la armadura en lugar de matarte — una sola vez, y no contra /kill ni el vacío.",
+     "El lingote de aleación Ziz se hace con 3 lingotes de aleación Phoenix Zenith, 4 bloques de estrella del Nether y 1 bloque de netherita, y da 3 lingotes. Las alas Ziz se crean con las Alas Phoenix Zenith, 4 lingotes Ziz, 3 bloques de estrella del Nether y un Emblema de Corvus.",
+     "Las alas Ziz tienen 14 niveles de velocidad de vuelo, de 0.5× a 7.0× la aceleración de las alas base, en pasos de 0.5×. ] sube un nivel, [ baja un nivel; el valor predeterminado es 3.0× (nivel 6).",
+     "Con un pico Starbloom en la mano, Agacharse + clic derecho abre el deslizador de área de minería: un valor y un deslizador eligen el área que rompe un golpe, de 1×1 a 26×26 y Minería rápida, según lo que permita el pico que tienes. El servidor ya no cambia el área con Agacharse + usar."
+    ],
+    "warnings": [
+     "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+     "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha.",
+     "Salvo el nombre, los colores, el concepto y los poderes de Ziz que dio el propietario, todas las cifras y recetas de estas series son la primera valoración del desarrollador y pueden reequilibrarse.",
+     "El propietario aún no ha aprobado los nombres en japonés.",
+     "El deslizador de área de minería y los poderes de Ziz solo se han probado en un cliente real para un jugador, no en un servidor dedicado ni en multijugador.",
+     "El sonido del aleteo de las alas Ziz aún no está hecho."
+    ]
    }
   ],
   "halia": [

@@ -1,15 +1,45 @@
 {
  "lang": "fr",
  "brand": "tsubomi",
- "updated": "2026-10-26",
+ "updated": "2026-10-29",
  "title": "Historique des mises à jour",
- "updated_label": "Mis à jour le 2026-10-26",
+ "updated_label": "Mis à jour le 2026-10-29",
  "note": "",
  "groups": [
   {
    "label": "V2.4",
-   "summary": "Tsubomi V2.4 1017 — Floraison d'étoile Phoenix, Floraison d'étoile Phoenix Mythic, Floraison d'étoile Phoenix Zenith",
+   "summary": "Tsubomi V2.4 1779 — Starbloom Ziz The Final, Ailes Ziz et curseur de zone de minage",
    "releases": [
+    {
+     "version": "V2.4 1779",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Tsubomi V2.4 1779 — Starbloom Ziz The Final, Ailes Ziz et curseur de zone de minage",
+     "summary": "Tsubomi V2.4 1779 ajoute Starbloom Ziz The Final, la dernière série de la lignée, avec ses propres ailes Ziz et un curseur de zone de minage pour la pioche Starbloom.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Starbloom Ziz The Final est la dernière série, au-dessus de Starbloom Phoenix Zenith, en Obsidienne du Vide, Or de la Couronne et Cyan bioluminescent. Elle a la gamme de Starbloom Max — 13 objets : lingot d'alliage, pioche de carrière, hache d'abattage, pelle de nivellement, houe de récolte, lance, les quatre pièces d'armure, bouclier, arc et flèche — et ses propres ailes. Durabilité et vitesse de minage sont 1.25× celles de la Phoenix Zenith.",
+        "Le set Ziz complet ne subit ni dégâts de chute ni dégâts de lave, nage dans la lave comme dans l'eau sans prendre feu, et un coup mortel fait éclater toute l'armure au lieu de vous tuer — une seule fois, et pas contre /kill ni le vide.",
+        "Un lingot d'alliage Ziz se fabrique avec 3 lingots d'alliage Phoenix Zenith, 4 blocs d'étoile du Nether et un bloc de netherite, et donne 3 lingots. Les ailes Ziz se fabriquent avec les Ailes Phoenix Zenith, 4 lingots Ziz, 3 blocs d'étoile du Nether et un Emblème de Corvus.",
+        "Les ailes Ziz ont 14 paliers de vitesse de vol, de 0.5× à 7.0× l'accélération des ailes de base, par pas de 0.5×. ] accélère d'un palier, [ ralentit d'un palier ; la valeur par défaut est 3.0× (palier 6).",
+        "Avec une pioche Starbloom en main, Accroupi + clic droit ouvre le curseur de zone de minage : une valeur et un curseur choisissent la zone que brise un coup, de 1×1 à 26×26 et Quick Mining, dans la limite de la pioche tenue. Le serveur ne change plus la zone sur Accroupi + utiliser."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+        "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha.",
+        "Hors le nom, les couleurs, le concept et les pouvoirs de Ziz donnés par le propriétaire, tous les chiffres et recettes de ces séries sont la première valeur du développeur et peuvent être rééquilibrés.",
+        "Les noms japonais ne sont pas encore approuvés par le propriétaire.",
+        "Le curseur de zone de minage et les pouvoirs de Ziz n'ont été testés que dans un client réel en solo, pas sur un serveur dédié ni en multijoueur.",
+        "Le son du battement des ailes Ziz n'est pas encore fait."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.4 1017",
      "date": "2026-10-26",

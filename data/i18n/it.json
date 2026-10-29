@@ -1269,6 +1269,26 @@
      "Il suono del battito d'ali delle Wings non è ancora pronto.",
      "Ogni valore e ogni ricetta di queste serie è un primo valore scelto dallo sviluppatore e potrà essere riequilibrato."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-1779",
+    "title": "Tsubomi V2.4 1779 — Starbloom Ziz The Final, Ali Ziz e cursore dell'area di scavo",
+    "summary": "Tsubomi V2.4 1779 aggiunge Starbloom Ziz The Final, l'ultima serie della linea, con le proprie ali Ziz e un cursore dell'area di scavo per il piccone Starbloom.",
+    "highlights": [
+     "Starbloom Ziz The Final è l'ultima serie, sopra Starbloom Phoenix Zenith, in Ossidiana del Vuoto, Oro della Corona e Ciano bioluminescente. Ha la gamma di Starbloom Max — 13 oggetti: lingotto di lega, piccone da cava, ascia da taglio, pala livellatrice, zappa da raccolta, lancia, i quattro pezzi d'armatura, scudo, arco e freccia — e ali proprie. Durata e velocità di scavo sono 1.25× quelle della Phoenix Zenith.",
+     "Il set Ziz completo non subisce danni da caduta né danni da lava, nuota nella lava come nell'acqua senza bruciare, e un colpo letale manda in frantumi tutta l'armatura invece di ucciderti — una sola volta, e non contro /kill né il vuoto.",
+     "Un lingotto di lega Ziz si crea con 3 lingotti di lega Phoenix Zenith, 4 blocchi di stella del Nether e 1 blocco di netherite, e produce 3 lingotti. Le ali Ziz si creano con le Ali Phoenix Zenith, 4 lingotti Ziz, 3 blocchi di stella del Nether e un Emblema di Corvus.",
+     "Le ali Ziz hanno 14 livelli di velocità di volo, da 0.5× a 7.0× l'accelerazione delle ali base, a passi di 0.5×. ] sale di un livello, [ scende di un livello; il valore predefinito è 3.0× (livello 6).",
+     "Con un piccone Starbloom in mano, Accovacciarsi + clic destro apre il cursore dell'area di scavo: un valore e un cursore scelgono l'area che un colpo spezza, da 1×1 a 26×26 e Scavo Rapido, nei limiti del piccone che tieni. Il server non cambia più l'area con Accovacciarsi + usare."
+    ],
+    "warnings": [
+     "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+     "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha.",
+     "Oltre al nome, ai colori, al concetto e ai poteri di Ziz indicati dal proprietario, tutti i numeri e le ricette di queste serie sono la prima stima dello sviluppatore e potrebbero essere ribilanciati.",
+     "I nomi giapponesi non sono ancora approvati dal proprietario.",
+     "Il cursore dell'area di scavo e i poteri di Ziz sono stati provati solo in un client reale in singolo giocatore, non su un server dedicato né in multigiocatore.",
+     "Il suono del battito delle ali Ziz non è ancora fatto."
+    ]
    }
   ],
   "halia": [

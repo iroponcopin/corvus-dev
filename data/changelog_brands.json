@@ -358,6 +358,12 @@
         "release": "V2.4 1017",
         "date": "2026-10-26",
         "type": "release"
+      },
+      {
+        "id": "tsubomi-v2.4-1779",
+        "release": "V2.4 1779",
+        "date": "2026-10-29",
+        "type": "release"
       }
     ],
     "halia": [

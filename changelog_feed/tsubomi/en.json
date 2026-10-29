@@ -1,15 +1,45 @@
 {
  "lang": "en",
  "brand": "tsubomi",
- "updated": "2026-10-26",
+ "updated": "2026-10-29",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-26",
+ "updated_label": "Updated 2026-10-29",
  "note": "",
  "groups": [
   {
    "label": "V2.4",
-   "summary": "Tsubomi V2.4 1017 — Starbloom Phoenix, Starbloom Phoenix Mythic, Starbloom Phoenix Zenith",
+   "summary": "Tsubomi V2.4 1779 — Starbloom Ziz The Final, Ziz Wings and the mining-area slider",
    "releases": [
+    {
+     "version": "V2.4 1779",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Tsubomi V2.4 1779 — Starbloom Ziz The Final, Ziz Wings and the mining-area slider",
+     "summary": "Tsubomi V2.4 1779 adds Starbloom Ziz The Final, the last series of the line, with its own Ziz Wings, and a mining-area slider for the Starbloom pickaxe.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "Starbloom Ziz The Final is the last series, above Starbloom Phoenix Zenith, in Void Obsidian, Corona Gold and Bioluminescent Cyan. It has the lineup of Starbloom Max — 13 items: the alloy ingot, the quarry pickaxe, the felling axe, the levelling spade, the harvest hoe, the lance, the four armour pieces, the shield, the bow and the arrow — and its own Wings. Its durability and mining speed are 1.25× those of Phoenix Zenith.",
+        "The full Ziz set takes no fall damage and no lava damage, swims through lava like water without burning, and when a killing blow would land it shatters all the armour instead of killing you — once, and not against /kill or the void.",
+        "A Ziz alloy ingot is made from 3 Phoenix Zenith alloy ingots, 4 Nether Star Blocks and a Netherite Block, giving 3 ingots. Ziz Wings are crafted from the Phoenix Zenith Wings, 4 Ziz alloy ingots, 3 Nether Star Blocks and a Corvus Emblem.",
+        "Ziz Wings have 14 flight speed steps, from 0.5× to 7.0× the acceleration of the base Wings, in 0.5× steps. Press ] to go one step faster and [ to go one step slower; the default is 3.0× (step 6).",
+        "With a Starbloom pickaxe in hand, Sneak + right-click opens the mining-area slider: one value and one slider choose the area a swing breaks, from 1×1 up to 26×26 and Quick Mining, as far as the pickaxe you hold allows. The server no longer changes the area on Sneak + use."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+        "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first.",
+        "Apart from the owner's name, colours, concept and the Ziz abilities, every number and recipe of these series is the developer's first reading and may be rebalanced.",
+        "The Japanese names are not yet approved by the owner.",
+        "The mining-area slider and the Ziz abilities were tested only in a real client in singleplayer, not on a dedicated server and not in multiplayer.",
+        "The Ziz Wings' flap sound is not done yet."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.4 1017",
      "date": "2026-10-26",

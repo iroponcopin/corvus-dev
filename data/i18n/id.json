@@ -1269,6 +1269,26 @@
      "Suara kepakan Wings belum selesai.",
      "Setiap angka dan resep seri ini adalah nilai awal pilihan pengembang dan bisa diseimbangkan ulang."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-1779",
+    "title": "Tsubomi V2.4 1779 — Starbloom Ziz The Final, Sayap Ziz, dan geser area tambang",
+    "summary": "Tsubomi V2.4 1779 menambahkan Starbloom Ziz The Final, seri terakhir dari lini ini, dengan Sayap Ziz sendiri dan geser area tambang untuk beliung Starbloom.",
+    "highlights": [
+     "Starbloom Ziz The Final adalah seri terakhir, di atas Starbloom Phoenix Zenith, dalam Obsidian Kehampaan, Emas Korona, dan Cyan Bioluminesen. Ia memiliki susunan Starbloom Max — 13 item: ingot paduan, beliung tambang, kapak tebang, sekop perata, cangkul panen, tombak, empat bagian zirah, perisai, busur dan panah — dan Sayapnya sendiri. Daya tahan dan kecepatan tambang 1.25× dari Phoenix Zenith.",
+     "Set Ziz lengkap tidak menerima kerusakan jatuh dan kerusakan lava, berenang di lava seperti di air tanpa terbakar, dan pukulan mematikan memecahkan semua zirah alih-alih membunuh Anda — sekali saja, dan tidak untuk /kill atau kehampaan.",
+     "Ingot paduan Ziz dibuat dari 3 ingot paduan Phoenix Zenith, 4 blok bintang Nether, dan 1 blok netherite, menghasilkan 3 ingot. Sayap Ziz dibuat dari Sayap Phoenix Zenith, 4 ingot Ziz, 3 blok bintang Nether, dan Lambang Corvus.",
+     "Sayap Ziz punya 14 tingkat kecepatan terbang, dari 0.5× hingga 7.0× percepatan sayap dasar, per langkah 0.5×. ] naik satu tingkat, [ turun satu tingkat; bawaannya 3.0× (tingkat 6).",
+     "Dengan beliung Starbloom di tangan, Jongkok + klik kanan membuka geser area tambang: satu nilai dan satu geser memilih area yang dipecahkan satu ayunan, dari 1×1 sampai 26×26 dan Penambangan Cepat, sesuai batas beliung yang Anda pegang. Server tidak lagi mengganti area dengan Jongkok + gunakan."
+    ],
+    "warnings": [
+     "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+     "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha.",
+     "Selain nama, warna, konsep, dan kemampuan Ziz yang diberikan pemilik, semua angka dan resep seri ini adalah perkiraan pertama pengembang dan dapat diseimbangkan ulang.",
+     "Nama bahasa Jepang belum disetujui pemilik.",
+     "Geser area tambang dan kemampuan Ziz hanya diuji di klien nyata pada mode pemain tunggal, bukan di server khusus dan bukan multipemain.",
+     "Suara kepakan Sayap Ziz belum dibuat."
+    ]
    }
   ],
   "halia": [

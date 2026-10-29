@@ -1269,6 +1269,26 @@
      "Wings'in kanat çırpma sesi henüz yapılmadı.",
      "Bu serilerin her sayısı ve tarifi, geliştiricinin seçtiği ilk değerdir ve yeniden dengelenebilir."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-1779",
+    "title": "Tsubomi V2.4 1779 — Starbloom Ziz The Final, Ziz Kanatları ve kazı alanı kaydırıcısı",
+    "summary": "Tsubomi V2.4 1779, serinin son seti olan Starbloom Ziz The Final'i, kendi Ziz Kanatlarını ve Starbloom kazma için bir kazı alanı kaydırıcısını ekler.",
+    "highlights": [
+     "Starbloom Ziz The Final, Starbloom Phoenix Zenith'in üstündeki son seridir; Boşluk Obsidyeni, Taç Altını ve Biyolüminesan Camgöbeği renklerindedir. Starbloom Max'in dizilimine sahiptir — 13 öğe: alaşım külçesi, taş ocağı kazması, kesme baltası, düzleme küreği, hasat çapası, mızrak, dört zırh parçası, kalkan, yay ve ok — ve kendi Kanatlarına sahiptir. Dayanıklılık ve kazma hızı Phoenix Zenith'in 1.25× katıdır.",
+     "Tam Ziz takımı düşme hasarı ve lav hasarı almaz, lavda yanmadan suda olduğu gibi yüzer ve ölümcül bir darbe sizi öldürmek yerine tüm zırhı parçalar — bir kez, /kill ve boşluğa karşı değil.",
+     "Ziz alaşım külçesi 3 Phoenix Zenith alaşım külçesi, 4 Nether yıldız bloğu ve 1 Netherit bloğundan yapılır ve 3 külçe verir. Ziz Kanatları Phoenix Zenith Kanatlarından, 4 Ziz külçesinden, 3 Nether yıldız bloğundan ve bir Corvus Amblemi'nden yapılır.",
+     "Ziz Kanatlarının 14 uçuş hızı kademesi vardır: temel Kanatların ivmesinin 0.5× ile 7.0× arasında, 0.5× adımlarla. ] bir kademe hızlandırır, [ bir kademe yavaşlatır; varsayılan 3.0×'tir (6. kademe).",
+     "Elinizde Starbloom kazma varken Çömelme + sağ tık kazı alanı kaydırıcısını açar: bir değer ve bir kaydırıcı, tek vuruşun kırdığı alanı seçer; 1×1'den 26×26'ya ve Hızlı Kazı'ya, tuttuğunuz kazmanın izin verdiği kadar. Sunucu artık Çömelme + kullan ile alanı değiştirmez."
+    ],
+    "warnings": [
+     "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+     "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır.",
+     "Sahibinin verdiği ad, renkler, konsept ve Ziz yetenekleri dışında, bu serilerin tüm sayıları ve tarifleri geliştiricinin ilk tahminidir ve yeniden dengelenebilir.",
+     "Japonca adlar sahip tarafından henüz onaylanmadı.",
+     "Kazı alanı kaydırıcısı ve Ziz yetenekleri yalnızca tek oyunculu gerçek bir istemcide denendi; özel sunucuda ve çok oyunculu modda denenmedi.",
+     "Ziz Kanatlarının çırpınma sesi henüz yapılmadı."
+    ]
    }
   ],
   "halia": [
