@@ -1293,6 +1293,26 @@
      "The mining-area slider and the Ziz abilities were tested only in a real client in singleplayer, not on a dedicated server and not in multiplayer.",
      "The Ziz Wings' flap sound is not done yet."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-1852",
+    "title": "Tsubomi V2.4 1852 — /tsubomi gift for every survivor",
+    "summary": "Tsubomi V2.4 1852 adds /tsubomi gift: once per campaign, three random items, usable in Survival with cheats off.",
+    "highlights": [
+     "/tsubomi gift is a new command that needs no operator rights, so it works in Survival with cheats off. Each player may claim it once per campaign.",
+     "The gift is three different items drawn at random from the Minecraft, Tsubomi, Halia, OUKA and Cherry items that can be obtained in Survival. They appear in a chest about two blocks in front of you; the title says a gift has arrived and the three names come in chat.",
+     "A new campaign begins whenever the installed version of Tsubomi, Halia, OUKA or Cherry differs from the one this world last saw. A player who has not claimed yet is told once per campaign when they join.",
+     "Creative-only items such as bedrock, command blocks, barriers and structure blocks are never given. The spawner stays in the pool, because Tsubomi crafts it.",
+     "If there is no room for a chest, the three items go into your inventory, and anything that does not fit is dropped at your feet. The check runs offline on your own computer and sends nothing anywhere."
+    ],
+    "warnings": [
+     "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+     "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first.",
+     "The gift pool is the developer's reading of \"obtainable in Survival\". The exclusion list is generated from the Creative Operator tab and the rules in the release notes, and the owner may change it.",
+     "The version check, a dedicated server, multiplayer and the real Halia, OUKA and Cherry jars were not tested in this release. The tests used Tsubomi's own version.",
+     "The Japanese names and text are not yet approved by the owner.",
+     "The chest sound and particles are the game's own. No custom sound is added in this release."
+    ]
    }
   ],
   "halia": [

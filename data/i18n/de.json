@@ -1289,6 +1289,26 @@
      "Der Abbaubereich-Schieber und die Ziz-Fähigkeiten wurden nur in einem echten Client im Einzelspieler geprüft, nicht auf einem dedizierten Server und nicht im Mehrspielermodus.",
      "Das Flügelschlag-Geräusch der Ziz-Flügel ist noch nicht gemacht."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-1852",
+    "title": "Tsubomi V2.4 1852 — /tsubomi gift für jeden Überlebenden",
+    "summary": "Tsubomi V2.4 1852 fügt /tsubomi gift hinzu: einmal pro Kampagne drei zufällige Gegenstände, nutzbar im Überleben ohne Cheats.",
+    "highlights": [
+     "/tsubomi gift ist ein neuer Befehl, der keine Operator-Rechte braucht. Er funktioniert im Überleben mit ausgeschalteten Cheats. Jeder Spieler kann ihn einmal pro Kampagne abholen.",
+     "Das Geschenk besteht aus drei verschiedenen Gegenständen, die zufällig aus den Minecraft-, Tsubomi-, Halia-, OUKA- und Cherry-Gegenständen gewählt werden, die sich im Überleben erhalten lassen. Sie liegen in einer Truhe etwa zwei Blöcke vor dir; der Titel meldet das Geschenk, und die drei Namen stehen im Chat.",
+     "Eine neue Kampagne beginnt, sobald die installierte Version von Tsubomi, Halia, OUKA oder Cherry von der abweicht, die diese Welt zuletzt gesehen hat. Ein Spieler, der noch nicht abgeholt hat, wird beim Beitritt pro Kampagne einmal informiert.",
+     "Nur im Kreativmodus verfügbare Gegenstände wie Bedrock, Befehlsblöcke, Barrieren und Strukturblöcke werden nie vergeben. Der Spawner bleibt im Pool, weil Tsubomi ihn herstellt.",
+     "Gibt es keinen Platz für eine Truhe, landen die drei Gegenstände im Inventar, und was nicht hineinpasst, fällt dir vor die Füße. Die Prüfung läuft offline auf deinem eigenen Rechner und sendet nichts irgendwohin."
+    ],
+    "warnings": [
+     "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+     "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars.",
+     "Der Geschenkpool ist die Lesart der Entwicklerin von „im Überleben erhältlich“. Die Ausschlussliste entsteht aus dem Operator-Reiter des Kreativmodus und den Regeln der Versionshinweise; der Eigentümer kann sie ändern.",
+     "Die Versionsprüfung, ein dedizierter Server, Mehrspielerbetrieb und die echten Halia-, OUKA- und Cherry-Jars wurden in diesem Release nicht getestet. Die Tests liefen mit Tsubomis eigener Version.",
+     "Die japanischen Namen und Texte sind noch nicht vom Eigentümer freigegeben.",
+     "Truhenklang und Partikel sind die des Spiels. In diesem Release kommt kein eigener Klang hinzu."
+    ]
    }
   ],
   "halia": [

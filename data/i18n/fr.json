@@ -1289,6 +1289,26 @@
      "Le curseur de zone de minage et les pouvoirs de Ziz n'ont été testés que dans un client réel en solo, pas sur un serveur dédié ni en multijoueur.",
      "Le son du battement des ailes Ziz n'est pas encore fait."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-1852",
+    "title": "Tsubomi V2.4 1852 — /tsubomi gift pour chaque survivant",
+    "summary": "Tsubomi V2.4 1852 ajoute /tsubomi gift : une fois par campagne, trois objets au hasard, utilisable en survie sans triche.",
+    "highlights": [
+     "/tsubomi gift est une nouvelle commande qui ne demande aucun droit d'opérateur ; elle fonctionne donc en survie avec les triches désactivées. Chaque joueur peut la réclamer une fois par campagne.",
+     "Le cadeau est composé de trois objets différents tirés au hasard parmi les objets de Minecraft, Tsubomi, Halia, OUKA et Cherry qui s'obtiennent en survie. Ils apparaissent dans un coffre à environ deux blocs devant vous ; le titre annonce le cadeau et les trois noms s'affichent dans le chat.",
+     "Une nouvelle campagne commence dès que la version installée de Tsubomi, Halia, OUKA ou Cherry diffère de celle que ce monde a vue en dernier. Un joueur qui n'a pas encore réclamé est prévenu une fois par campagne à sa connexion.",
+     "Les objets réservés au mode créatif, comme la roche mère, les blocs de commande, les barrières et les blocs de structure, ne sont jamais donnés. Le générateur reste dans la liste, car Tsubomi le fabrique.",
+     "S'il n'y a pas de place pour un coffre, les trois objets vont dans votre inventaire, et ce qui ne rentre pas tombe à vos pieds. La vérification se fait hors ligne sur votre ordinateur et n'envoie rien nulle part."
+    ],
+    "warnings": [
+     "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+     "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha.",
+     "Le réservoir de cadeaux repose sur la lecture par le développeur de « obtenable en survie ». La liste d'exclusion est issue de l'onglet Opérateur du mode créatif et des règles des notes de version ; le propriétaire peut la modifier.",
+     "La vérification de version, un serveur dédié, le multijoueur et les vrais jars de Halia, OUKA et Cherry n'ont pas été testés dans cette version. Les tests ont utilisé la version propre de Tsubomi.",
+     "Les noms et textes japonais ne sont pas encore approuvés par le propriétaire.",
+     "Le son et les particules du coffre sont ceux du jeu. Aucun son personnalisé n'est ajouté dans cette version."
+    ]
    }
   ],
   "halia": [

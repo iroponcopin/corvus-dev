@@ -8,8 +8,38 @@
  "groups": [
   {
    "label": "V2.4",
-   "summary": "Tsubomi V2.4 1779 — Starbloom Ziz The Final, Ali Ziz e cursore dell'area di scavo",
+   "summary": "Tsubomi V2.4 1852 — /tsubomi gift per ogni sopravvissuto",
    "releases": [
+    {
+     "version": "V2.4 1852",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Tsubomi V2.4 1852 — /tsubomi gift per ogni sopravvissuto",
+     "summary": "Tsubomi V2.4 1852 aggiunge /tsubomi gift: una volta per campagna, tre oggetti casuali, utilizzabile in Sopravvivenza senza cheat.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "/tsubomi gift è un nuovo comando che non richiede permessi da operatore, quindi funziona in Sopravvivenza con i cheat disattivati. Ogni giocatore può richiederlo una volta per campagna.",
+        "Il dono è composto da tre oggetti diversi estratti a caso tra gli oggetti di Minecraft, Tsubomi, Halia, OUKA e Cherry che si possono ottenere in Sopravvivenza. Compaiono in una cassa a circa due blocchi davanti a te; il titolo annuncia il dono e i tre nomi compaiono in chat.",
+        "Una nuova campagna inizia ogni volta che la versione installata di Tsubomi, Halia, OUKA o Cherry è diversa da quella che questo mondo ha visto per ultima. Chi non ha ancora richiesto il dono riceve un avviso una volta per campagna quando entra.",
+        "Gli oggetti esclusivi della modalità creativa, come il bedrock, i blocchi di comando, le barriere e i blocchi di struttura, non vengono mai assegnati. Lo spawner resta nel pool, perché Tsubomi lo crea.",
+        "Se non c'è spazio per una cassa, i tre oggetti vanno nell'inventario e ciò che non ci entra cade ai tuoi piedi. La verifica avviene offline sul tuo computer e non invia nulla da nessuna parte."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+        "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha.",
+        "Il bacino dei doni segue la lettura dello sviluppatore di «ottenibile in Sopravvivenza». La lista delle esclusioni nasce dalla scheda Operatore della modalità creativa e dalle regole delle note di rilascio, e il proprietario può modificarla.",
+        "La verifica della versione, un server dedicato, il multiplayer e i jar reali di Halia, OUKA e Cherry non sono stati testati in questa versione. I test hanno usato la versione di Tsubomi stessa.",
+        "I nomi e i testi giapponesi non sono ancora approvati dal proprietario.",
+        "Il suono e le particelle della cassa sono quelli del gioco. In questa versione non viene aggiunto alcun suono personalizzato."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.4 1779",
      "date": "2026-10-29",

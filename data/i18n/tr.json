@@ -1289,6 +1289,26 @@
      "Kazı alanı kaydırıcısı ve Ziz yetenekleri yalnızca tek oyunculu gerçek bir istemcide denendi; özel sunucuda ve çok oyunculu modda denenmedi.",
      "Ziz Kanatlarının çırpınma sesi henüz yapılmadı."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-1852",
+    "title": "Tsubomi V2.4 1852 — her hayatta kalan için /tsubomi gift",
+    "summary": "Tsubomi V2.4 1852, /tsubomi gift komutunu ekler: kampanya başına bir kez, rastgele üç eşyadan oluşan bir hediye; hileler kapalıyken Hayatta kullanılabilir.",
+    "highlights": [
+     "/tsubomi gift, operatör yetkisi gerektirmeyen yeni bir komuttur; bu yüzden hileler kapalıyken Hayatta modda da çalışır. Her oyuncu kampanya başına bir kez alabilir.",
+     "Hediye, Hayatta elde edilebilen Minecraft, Tsubomi, Halia, OUKA ve Cherry eşyaları arasından rastgele seçilen üç farklı eşyadır. Önünüzdeki yaklaşık iki blok uzaklıktaki bir sandıkta belirirler; başlık hediyeyi duyurur ve üç eşyanın adı sohbette görünür.",
+     "Yüklü Tsubomi, Halia, OUKA veya Cherry sürümü, bu dünyanın en son gördüğü sürümden farklı olduğunda yeni bir kampanya başlar. Henüz almamış oyunculara, katıldıklarında kampanya başına bir kez haber verilir.",
+     "Bedrock, komut blokları, bariyerler ve yapı blokları gibi yalnızca yaratıcı moda ait eşyalar asla verilmez. Tsubomi yaptığı için doğurucu listede kalır.",
+     "Sandık için yer yoksa üç eşya envantere girer; sığmayanlar ayaklarınızın dibine düşer. Denetim kendi bilgisayarınızda çevrimdışı çalışır ve hiçbir yere bir şey göndermez."
+    ],
+    "warnings": [
+     "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+     "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır.",
+     "Hediye havuzu, geliştiricinin \"Hayatta elde edilebilir\" ifadesini okumasına dayanır. Hariç tutma listesi yaratıcı modun Operatör sekmesinden ve sürüm notlarındaki kurallardan üretilir; sahibi bunu değiştirebilir.",
+     "Bu sürümde sürüm denetimi, özel sunucu, çok oyunculu oyun ve gerçek Halia, OUKA ve Cherry jar dosyaları sınanmadı. Testler Tsubomi'nin kendi sürümüyle yapıldı.",
+     "Japonca adlar ve metinler henüz sahibi tarafından onaylanmadı.",
+     "Sandığın sesi ve parçacıkları oyunun kendi sesleridir. Bu sürümde özel ses eklenmedi."
+    ]
    }
   ],
   "halia": [

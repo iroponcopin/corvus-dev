@@ -8,8 +8,38 @@
  "groups": [
   {
    "label": "V2.4",
-   "summary": "Tsubomi V2.4 1779 — Starbloom Ziz The Final, Alas Ziz y deslizador de área de minería",
+   "summary": "Tsubomi V2.4 1852 — /tsubomi gift para cada superviviente",
    "releases": [
+    {
+     "version": "V2.4 1852",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Tsubomi V2.4 1852 — /tsubomi gift para cada superviviente",
+     "summary": "Tsubomi V2.4 1852 añade /tsubomi gift: una vez por campaña, tres objetos al azar, utilizable en Supervivencia sin trucos.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "/tsubomi gift es un comando nuevo que no necesita permisos de operador, así que funciona en Supervivencia con los trucos desactivados. Cada jugador puede reclamarlo una vez por campaña.",
+        "El regalo son tres objetos distintos elegidos al azar entre los objetos de Minecraft, Tsubomi, Halia, OUKA y Cherry que se pueden obtener en Supervivencia. Aparecen en un cofre a unos dos bloques delante de ti; el título avisa del regalo y los tres nombres salen en el chat.",
+        "Empieza una campaña nueva siempre que la versión instalada de Tsubomi, Halia, OUKA o Cherry sea distinta de la que este mundo vio por última vez. Un jugador que aún no lo ha reclamado recibe un aviso una vez por campaña al unirse.",
+        "Los objetos exclusivos del modo creativo, como el bedrock, los bloques de comandos, las barreras y los bloques de estructura, nunca se entregan. El generador se queda en la lista porque Tsubomi lo fabrica.",
+        "Si no hay sitio para un cofre, los tres objetos van a tu inventario, y lo que no quepa cae a tus pies. La comprobación se hace sin conexión en tu propio ordenador y no envía nada a ningún sitio."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
+        "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha.",
+        "El conjunto de regalos es la interpretación del desarrollador de «obtenible en Supervivencia». La lista de exclusiones sale de la pestaña de Operador del modo creativo y de las reglas de las notas de la versión, y el propietario podría cambiarla.",
+        "La comprobación de versión, un servidor dedicado, el multijugador y los jars reales de Halia, OUKA y Cherry no se probaron en esta versión. Las pruebas usaron la versión propia de Tsubomi.",
+        "Los nombres y textos en japonés aún no están aprobados por el propietario.",
+        "El sonido y las partículas del cofre son los del juego. En esta versión no se añade ningún sonido propio."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.4 1779",
      "date": "2026-10-29",

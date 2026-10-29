@@ -1289,6 +1289,26 @@
      "Geser area tambang dan kemampuan Ziz hanya diuji di klien nyata pada mode pemain tunggal, bukan di server khusus dan bukan multipemain.",
      "Suara kepakan Sayap Ziz belum dibuat."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-1852",
+    "title": "Tsubomi V2.4 1852 — /tsubomi gift untuk setiap penyintas",
+    "summary": "Tsubomi V2.4 1852 menambahkan /tsubomi gift: sekali per kampanye, tiga item acak, bisa dipakai di Survival tanpa cheat.",
+    "highlights": [
+     "/tsubomi gift adalah perintah baru yang tidak memerlukan hak operator, jadi bisa dipakai di Survival dengan cheat dimatikan. Setiap pemain dapat mengklaimnya sekali per kampanye.",
+     "Hadiahnya adalah tiga item berbeda yang dipilih acak dari item Minecraft, Tsubomi, Halia, OUKA, dan Cherry yang bisa didapat di Survival. Hadiah muncul di peti sekitar dua blok di depan Anda; judul mengumumkan hadiah dan ketiga nama item muncul di chat.",
+     "Kampanye baru dimulai setiap kali versi Tsubomi, Halia, OUKA, atau Cherry yang terpasang berbeda dari yang terakhir dilihat dunia ini. Pemain yang belum mengklaim akan diberi tahu sekali per kampanye saat bergabung.",
+     "Item khusus mode kreatif seperti bedrock, blok perintah, barrier, dan blok struktur tidak pernah diberikan. Spawner tetap ada di daftar karena Tsubomi bisa membuatnya.",
+     "Jika tidak ada ruang untuk peti, ketiga item masuk ke inventaris, dan yang tidak muat jatuh di dekat kaki Anda. Pemeriksaan berjalan offline di komputer Anda sendiri dan tidak mengirim apa pun ke mana pun."
+    ],
+    "warnings": [
+     "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+     "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha.",
+     "Kumpulan hadiah mengikuti tafsir pengembang atas \"bisa didapat di Survival\". Daftar pengecualian diambil dari tab Operator mode kreatif dan aturan di catatan rilis, dan pemilik dapat mengubahnya.",
+     "Pemeriksaan versi, server dedicated, multipemain, dan jar Halia, OUKA, serta Cherry yang sebenarnya tidak diuji pada rilis ini. Pengujian memakai versi Tsubomi sendiri.",
+     "Nama dan teks Jepang belum disetujui pemilik.",
+     "Suara dan partikel peti adalah bawaan game. Tidak ada suara khusus yang ditambahkan pada rilis ini."
+    ]
    }
   ],
   "halia": [
