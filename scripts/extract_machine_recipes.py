@@ -44,6 +44,8 @@ STATIONS = [
     ("assembly", "ouka:precision_assembly_line"),
     # OUKA V1.7 81347: the Next-Generation Automation Assembly Line (recipe type ouka:assembly_ng), a station of its own.
     ("assembly_ng", "ouka:assembly_line_ng"),
+    # OUKA V1.7 1128612: the Quantum Cell Assembler (data/ouka/cell_assembly/<tier>.json), a station of its own.
+    ("cell_assembler", "ouka:cell_assembler_controller"),
     ("crusher", "ouka:hydraulic_crusher"),
     ("centrifuge", "ouka:molecular_centrifuge"),
     ("culture", "ouka:bio_reactor_culture_vat"),
@@ -66,6 +68,9 @@ PROCESS_MACHINES = [
     # OUKA V1.7 91209: the ice industry.
     "cryo_compressor", "quantum_cryo_synthesizer",
 ]
+# The SMES Quantum Battery tiers in the order of their numbers (Lite 1 ... Mythos 12); Standard is the original battery.
+CELL_BATTERIES = {t: ("ouka:smes_battery" if t == "standard" else f"ouka:smes_battery_{t}") for t in (
+    "lite", "standard", "plus", "super", "max", "ultra", "ultrafast", "ultracore", "ultimate", "wonder_full", "premium", "mythos")}
 _AT = [i for i, s in enumerate(STATIONS) if s[0] == "fabricator"][0]
 STATIONS[_AT:_AT] = [(m, "ouka:" + m) for m in PROCESS_MACHINES]
 TYPE_STATION = {
@@ -293,6 +298,17 @@ def read_recipes(jar: Jar) -> list[dict]:
     out = []
     for name in sorted(jar.names):
         if not name.endswith(".json"):
+            continue
+        if name.startswith(f"data/{jar.brand}/cell_assembly/"):
+            x = jar.json(name)
+            tier = x["tier"]
+            out.append({
+                "id": f"{jar.brand}:cell_assembly/{tier}", "station": "cell_assembler",
+                "inputs": [ingredient(jar, i["item"], i.get("count", 1)) for i in x["ingredients"]],
+                "outputs": [{"id": CELL_BATTERIES[tier], "n": 1}],
+                # 10 s x the tier's number, as the release notes say (energy is 5% of the capacity and is not shown here).
+                "time": 200 * (list(CELL_BATTERIES).index(tier) + 1),
+            })
             continue
         is_recipe = name.startswith(f"data/{jar.brand}/recipe/")
         is_fab = name.startswith(f"data/{jar.brand}/fabricating/")

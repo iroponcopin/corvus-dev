@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 91209 — Industria del hielo: compresor criogénico, sintetizador criogénico cuántico y cinco hielos cuánticos",
+   "summary": "Ouka JJK V1.7 1128612 — Ensamblador de celdas cuánticas, aleación Ouka en 12 niveles, lingotes con forma vanilla",
    "releases": [
+    {
+     "version": "V1.7 1128612",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 1128612 — Ensamblador de celdas cuánticas, aleación Ouka en 12 niveles, lingotes con forma vanilla",
+     "summary": "V1.7 1128612 añade el ensamblador de celdas cuánticas, una máquina de 12 × 16 × 12 que construye las baterías cuánticas SMES de Plus a Mythos, convierte la aleación Ouka en una familia de 12 niveles y redibuja todos los lingotes de OUKA con la forma del lingote vanilla.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "El ensamblador de celdas cuánticas es una máquina grande de 12 de ancho × 16 de alto × 12 de fondo, hecha de carcasa, cristal blindado, dos puertos de entrada, un puerto de salida y un controlador en la parte alta de una cara lateral. Ensambla las baterías cuánticas SMES de todos los niveles, de Lite a Mythos.",
+        "Cada batería cuesta el 5 % de su capacidad en energía y 10 segundos × el número del nivel (Lite 10 s, Mythos 120 s). Sin corriente espera y conserva el progreso. Por el cristal se ve una plataforma giratoria, un elevador, bobinadoras, cuatro brazos de soldadura y una grúa; la pantalla usa el diseño de cristal del reactor de fusión Sol artificial V2 y el nivel se elige con un dial.",
+        "Cambio de receta: las baterías cuánticas SMES de Plus a Mythos ahora solo se fabrican en el ensamblador, con los mismos ingredientes de antes. Lite y Standard se siguen pudiendo craftear en la mesa de trabajo.",
+        "El lingote y el bloque de aleación Ouka son ahora una familia de 12 niveles, de Lite a Mythos. Son solo materiales, sin electricidad ni cifras de energía. Cada nivel convierte 9 lingotes en 1 bloque y viceversa; cada nivel por encima de Standard se alea con 2 del nivel inferior más metales. Todo bloque es base de baliza, los niveles duros necesitan mejor pico, Max y superiores resisten fuego y lava, y los niveles altos brillan.",
+        "Todos los lingotes de OUKA, incluidos los de núcleo pesado, titanio, titanio ultrapuro, tungsteno y barrera de hierro pesado, se redibujan con la forma del lingote vanilla. Los nombres japoneses del lingote y del bloque de aleación son ahora «Ouka合金インゴット» y «Ouka合金ブロック».",
+        "Comprobado en esta compilación: JUnit 2235 pruebas PASS, GameTest 1516 pruebas PASS tres veces seguidas, comprobaciones de caída del servidor con un mundo existente y uno nuevo sin problemas."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Antes de instalar V1.7 1128612, quita el jar antiguo de OUKA (1.7.91209 o anterior) de la carpeta mods y deja una sola copia de GeckoLib 5.5.6. Necesita Minecraft 26.3, Fabric Loader 0.19.5 o posterior y Fabric API 0.161.0+26.3 o posterior. Instálalo en el cliente y en el servidor.",
+        "No comprobado: el equilibrio del juego. La energía y los tiempos del ensamblador, y las recetas y propiedades de bloque de los niveles de aleación, no se probaron en cuanto a equilibrio.",
+        "Las comprobaciones en cliente real de la sala y la pantalla del ensamblador se hicieron con la compilación anterior al último commit, que solo cambió el README y las listas de archivos del constructor de versiones; no se repitieron en el commit final. El jar empaquetado solo se ejecutó en las dos comprobaciones de caída del servidor.",
+        "El README de este zip aún repite la redacción de V1.7 88213 de que se subió el límite de almacenamiento por celda. Es incorrecta; consulta la corrección en las notas de V1.7 91209."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 91209",
      "date": "2026-10-29",

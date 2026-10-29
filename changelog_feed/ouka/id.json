@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 91209 — Industri es: kompresor kriogenik, sintesis kriogenik kuantum, dan lima es kuantum",
+   "summary": "Ouka JJK V1.7 1128612 — Perakit sel kuantum, paduan Ouka 12 tingkat, ingot berbentuk vanilla",
    "releases": [
+    {
+     "version": "V1.7 1128612",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 1128612 — Perakit sel kuantum, paduan Ouka 12 tingkat, ingot berbentuk vanilla",
+     "summary": "V1.7 1128612 menambahkan perakit sel kuantum, mesin 12 × 16 × 12 yang merakit baterai kuantum SMES dari Plus sampai Mythos, menjadikan paduan Ouka keluarga 12 tingkat, dan menggambar ulang semua ingot OUKA dalam bentuk ingot vanilla.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Perakit sel kuantum adalah mesin besar selebar 12 × setinggi 16 × sedalam 12, terdiri dari rangka, kaca lapis baja, dua port masukan, satu port keluaran, dan pengendali yang diletakkan di bagian atas salah satu sisi. Ia merakit baterai kuantum SMES semua tingkat, dari Lite sampai Mythos.",
+        "Setiap baterai memakan energi sebesar 5% kapasitasnya dan 10 detik × nomor tingkat (Lite 10 dtk, Mythos 120 dtk). Tanpa daya ia menunggu dan menyimpan kemajuannya. Lewat kaca terlihat meja putar, lift, mesin penggulung kumparan, empat lengan las, dan derek; layarnya memakai desain kaca yang sama dengan reaktor fusi Matahari Buatan V2, dan tingkat dipilih dengan dial.",
+        "Perubahan resep: baterai kuantum SMES dari Plus sampai Mythos kini hanya dibuat di perakit, dengan bahan yang sama seperti sebelumnya. Lite dan Standard tetap bisa dibuat di meja kerajinan.",
+        "Ingot dan blok paduan Ouka kini keluarga 12 tingkat, dari Lite sampai Mythos. Keduanya hanya bahan, tanpa listrik dan tanpa angka energi. Setiap tingkat mengubah 9 ingot menjadi 1 blok dan sebaliknya; setiap tingkat di atas Standard dipadukan dari 2 tingkat di bawahnya ditambah logam. Setiap blok bisa jadi dasar suar, tingkat yang lebih keras butuh beliung yang lebih baik, Max ke atas tahan api dan lava, dan tingkat tinggi bercahaya.",
+        "Semua ingot OUKA, termasuk ingot inti berat, titanium, titanium ultra-murni, tungsten, dan penghalang besi berat, digambar ulang dalam bentuk ingot vanilla. Nama Jepang ingot dan blok paduan kini «Ouka合金インゴット» dan «Ouka合金ブロック».",
+        "Diperiksa pada build ini: JUnit 2235 tes PASS, GameTest 1516 tes PASS tiga kali berturut-turut, pemeriksaan crash server pada dunia yang sudah ada dan dunia baru bersih."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Sebelum memasang V1.7 1128612, hapus jar OUKA lama (1.7.91209 atau lebih lama) dari folder mods dan sisakan hanya 1 salinan GeckoLib 5.5.6. Dibutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di klien dan server.",
+        "Tidak diperiksa: keseimbangan permainan. Energi dan waktu perakit, serta resep dan sifat blok tingkat paduan, tidak diuji keseimbangannya.",
+        "Pemeriksaan klien sungguhan untuk aula dan layar perakit dilakukan pada build sebelum commit terakhir, yang hanya mengubah README dan daftar berkas pembuat rilis; tidak diulang pada commit akhir. Jar yang dikemas hanya dijalankan dalam dua pemeriksaan crash server.",
+        "README di zip ini masih mengulang kalimat V1.7 88213 bahwa batas penyimpanan per sel dinaikkan. Kalimat itu keliru; lihat koreksi di catatan V1.7 91209."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 91209",
      "date": "2026-10-29",

@@ -310,6 +310,25 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-1128612",
+    "title": "Ouka JJK V1.7 1128612 — Quantum Cell Assembler, Ouka Alloy in 12 tiers, vanilla-shaped ingots",
+    "summary": "V1.7 1128612 adds the Quantum Cell Assembler, a 12 × 16 × 12 machine that builds SMES Quantum Batteries Plus to Mythos, makes Ouka Alloy a 12-tier family, and redraws every OUKA ingot in the vanilla ingot shape.",
+    "highlights": [
+     "The Quantum Cell Assembler is a large machine, 12 wide × 16 tall × 12 deep, built from casing, armoured glass, two input ports, one output port and a controller placed near the top of a side face. It assembles SMES Quantum Batteries of every tier, from Lite to Mythos.",
+     "Each battery takes 5% of its capacity in energy and 10 seconds × the tier's number (Lite 10 s, Mythos 120 s). Without power it waits and keeps its progress. Through the glass you see a turntable, a lift, coil winders, four welding arms and a crane; the screen has the glass design of the Artificial Sun Fusion Reactor V2, and the tier is picked with a dial.",
+     "Recipe change: SMES Quantum Batteries from Plus to Mythos are now made only in the assembler, from the same ingredients as before. Lite and Standard can still be crafted at a crafting table.",
+     "Ouka Alloy Ingot and Ouka Alloy Block are now a family of 12 tiers, Lite to Mythos. They are materials only, with no electricity and no energy figures. Every tier converts 9 ingots to 1 block and back; each tier above Standard is alloyed from 2 of the tier below plus metals. Every block is a beacon base, harder tiers need a better pickaxe, Max and above resist fire and lava, and higher tiers glow.",
+     "Every OUKA ingot, including the Heavy Core, titanium, ultra-pure titanium, tungsten and heavy-iron barrier ingots, is redrawn in the vanilla ingot shape. The Japanese names of the alloy ingot and block are now \"Ouka合金インゴット\" and \"Ouka合金ブロック\".",
+     "Checked on this build: JUnit 2235 tests PASS, GameTest 1516 tests PASS three runs in a row, server crash checks on an existing world and a fresh world clean."
+    ],
+    "warnings": [
+     "Before you install V1.7 1128612, remove the old OUKA jar (1.7.91209 or older) from the mods folder and keep only 1 copy of GeckoLib 5.5.6. It needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, and Fabric API 0.161.0+26.3 or newer. Install it on both the client and the server.",
+     "Not checked: gameplay balance. The assembler's energy and times, and the alloy tiers' recipes and block properties, were not balance-tested.",
+     "The real-client checks of the assembler's hall and screen ran on the build before the last commit, which changed only the README and the release builder's file lists; they were not rerun on the final commit. The packed jar was exercised only by the two server crash checks.",
+     "The README in this zip still repeats the V1.7 88213 wording that the per-cell storage limit was raised. That wording is wrong; see the correction in the V1.7 91209 notes."
+    ]
+   },
+   {
     "id": "ouka-v1.7-91209",
     "title": "Ouka JJK V1.7 91209 — Ice industry: Cryogenic Compressor, Quantum Cryo-Synthesizer and five quantum ices",
     "summary": "V1.7 91209 adds two machines that make ice: the Cryogenic Compressor for the four vanilla ices, and the Quantum Cryo-Synthesizer for five new quantum ices. The SMES Quantum Battery tiers from Plus up now need these ices.",

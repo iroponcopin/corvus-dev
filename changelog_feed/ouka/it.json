@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 91209 — Industria del ghiaccio: compressore criogenico, sintetizzatore criogenico quantistico e cinque ghiacci quantistici",
+   "summary": "Ouka JJK V1.7 1128612 — Assemblatore di celle quantistiche, lega Ouka in 12 livelli, lingotti dalla forma vanilla",
    "releases": [
+    {
+     "version": "V1.7 1128612",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 1128612 — Assemblatore di celle quantistiche, lega Ouka in 12 livelli, lingotti dalla forma vanilla",
+     "summary": "V1.7 1128612 aggiunge l'assemblatore di celle quantistiche, una macchina 12 × 16 × 12 che costruisce le batterie quantistiche SMES da Plus a Mythos, rende la lega Ouka una famiglia di 12 livelli e ridisegna tutti i lingotti OUKA con la forma del lingotto vanilla.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "L'assemblatore di celle quantistiche è una grande macchina di 12 di larghezza × 16 di altezza × 12 di profondità, fatta di involucro, vetro corazzato, due porte di ingresso, una porta di uscita e un controller nella parte alta di una faccia laterale. Assembla le batterie quantistiche SMES di tutti i livelli, da Lite a Mythos.",
+        "Ogni batteria costa il 5% della sua capacità in energia e 10 secondi × il numero del livello (Lite 10 s, Mythos 120 s). Senza corrente aspetta e conserva i progressi. Attraverso il vetro si vedono un piatto girevole, un sollevatore, avvolgitori di bobine, quattro bracci di saldatura e una gru; lo schermo ha il design in vetro del reattore a fusione Sole artificiale V2 e il livello si sceglie con un selettore.",
+        "Modifica delle ricette: le batterie quantistiche SMES da Plus a Mythos ora si fanno solo nell'assemblatore, con gli stessi ingredienti di prima. Lite e Standard si possono ancora creare al banco da lavoro.",
+        "Il lingotto e il blocco di lega Ouka sono ora una famiglia di 12 livelli, da Lite a Mythos. Sono solo materiali, senza elettricità e senza valori di energia. Ogni livello converte 9 lingotti in 1 blocco e viceversa; ogni livello sopra Standard si ottiene da 2 del livello sotto più metalli. Ogni blocco è una base per faro, i livelli duri richiedono un piccone migliore, Max e oltre resistono a fuoco e lava, e i livelli alti brillano.",
+        "Tutti i lingotti OUKA, compresi quelli di nucleo pesante, titanio, titanio ultrapuro, tungsteno e barriera di ferro pesante, sono ridisegnati con la forma del lingotto vanilla. I nomi giapponesi del lingotto e del blocco di lega sono ora «Ouka合金インゴット» e «Ouka合金ブロック».",
+        "Verificato su questa build: JUnit 2235 test PASS, GameTest 1516 test PASS tre volte di fila, controlli di crash del server su un mondo esistente e su uno nuovo senza problemi."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Prima di installare V1.7 1128612, rimuovi il vecchio jar di OUKA (1.7.91209 o precedente) dalla cartella mods e tieni una sola copia di GeckoLib 5.5.6. Servono Minecraft 26.3, Fabric Loader 0.19.5 o più recente e Fabric API 0.161.0+26.3 o più recente. Installalo sul client e sul server.",
+        "Non verificato: il bilanciamento del gioco. Energia e tempi dell'assemblatore, e ricette e proprietà dei blocchi dei livelli di lega, non sono stati testati per il bilanciamento.",
+        "I controlli in client reale della sala e dello schermo dell'assemblatore sono stati fatti sulla build precedente all'ultimo commit, che ha cambiato solo il README e gli elenchi di file del costruttore di release; non sono stati ripetuti sul commit finale. Il jar impacchettato è stato eseguito solo nei due controlli di crash del server.",
+        "Il README di questo zip ripete ancora la formulazione di V1.7 88213 secondo cui il limite di immagazzinamento per cella era stato alzato. È sbagliata; vedi la correzione nelle note di V1.7 91209."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 91209",
      "date": "2026-10-29",

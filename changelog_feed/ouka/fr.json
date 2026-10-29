@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 91209 — Industrie de la glace : compresseur cryogénique, synthétiseur cryogénique quantique et cinq glaces quantiques",
+   "summary": "Ouka JJK V1.7 1128612 — Assembleur de cellules quantiques, alliage Ouka en 12 paliers, lingots à la forme vanilla",
    "releases": [
+    {
+     "version": "V1.7 1128612",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 1128612 — Assembleur de cellules quantiques, alliage Ouka en 12 paliers, lingots à la forme vanilla",
+     "summary": "V1.7 1128612 ajoute l'assembleur de cellules quantiques, une machine de 12 × 16 × 12 qui construit les batteries quantiques SMES de Plus à Mythos, fait de l'alliage Ouka une famille de 12 paliers et redessine tous les lingots OUKA à la forme des lingots vanilla.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "L'assembleur de cellules quantiques est une grande machine de 12 de large × 16 de haut × 12 de profondeur, faite de carter, de verre blindé, de deux ports d'entrée, d'un port de sortie et d'un contrôleur placé en haut d'une face latérale. Il assemble les batteries quantiques SMES de tous les paliers, de Lite à Mythos.",
+        "Chaque batterie coûte 5 % de sa capacité en énergie et 10 secondes × le numéro du palier (Lite 10 s, Mythos 120 s). Sans courant, il attend et garde sa progression. À travers la vitre, on voit un plateau tournant, un élévateur, des bobineuses, quatre bras de soudure et une grue ; l'écran reprend le design en verre du réacteur à fusion Soleil artificiel V2, et le palier se choisit avec un cadran.",
+        "Changement de recette : les batteries quantiques SMES de Plus à Mythos ne se fabriquent plus que dans l'assembleur, avec les mêmes ingrédients qu'avant. Lite et Standard restent craftables à l'établi.",
+        "Le lingot et le bloc d'alliage Ouka forment maintenant une famille de 12 paliers, de Lite à Mythos. Ce sont de simples matériaux, sans électricité ni valeurs d'énergie. Chaque palier convertit 9 lingots en 1 bloc et inversement ; chaque palier au-dessus de Standard s'allie à partir de 2 du palier inférieur et de métaux. Chaque bloc est une base de balise, les paliers durs demandent une meilleure pioche, Max et au-dessus résistent au feu et à la lave, et les paliers élevés brillent.",
+        "Tous les lingots OUKA, y compris ceux du cœur lourd, du titane, du titane ultra-pur, du tungstène et de la barrière en fer lourd, sont redessinés à la forme des lingots vanilla. Les noms japonais du lingot et du bloc d'alliage sont maintenant « Ouka合金インゴット » et « Ouka合金ブロック ».",
+        "Vérifié sur ce build : JUnit 2235 tests PASS, GameTest 1516 tests PASS trois fois de suite, contrôles de plantage serveur sur un monde existant et un monde neuf sans anomalie."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Avant d'installer V1.7 1128612, retirez l'ancien jar OUKA (1.7.91209 ou plus ancien) du dossier mods et ne gardez qu'une seule copie de GeckoLib 5.5.6. Il faut Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent et Fabric API 0.161.0+26.3 ou plus récent. Installez-le sur le client et sur le serveur.",
+        "Non vérifié : l'équilibrage du jeu. L'énergie et les durées de l'assembleur, ainsi que les recettes et propriétés de bloc des paliers d'alliage, n'ont pas été testées pour l'équilibre.",
+        "Les vérifications en vrai client de la salle et de l'écran de l'assembleur ont porté sur le build précédant le dernier commit, qui n'a changé que le README et les listes de fichiers du constructeur de version ; elles n'ont pas été refaites sur le commit final. Le jar empaqueté n'a servi que dans les deux contrôles de plantage serveur.",
+        "Le README de ce zip reprend encore la formulation de V1.7 88213 selon laquelle la limite de stockage par cellule a été relevée. Elle est fausse ; voir la correction dans les notes de V1.7 91209."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 91209",
      "date": "2026-10-29",

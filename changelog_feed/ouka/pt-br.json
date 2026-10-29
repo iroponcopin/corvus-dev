@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 91209 — Indústria do gelo: compressor criogênico, sintetizador criogênico quântico e cinco gelos quânticos",
+   "summary": "Ouka JJK V1.7 1128612 — Montador de células quânticas, liga Ouka em 12 níveis, lingotes no formato vanilla",
    "releases": [
+    {
+     "version": "V1.7 1128612",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 1128612 — Montador de células quânticas, liga Ouka em 12 níveis, lingotes no formato vanilla",
+     "summary": "A V1.7 1128612 adiciona o montador de células quânticas, uma máquina de 12 × 16 × 12 que monta as baterias quânticas SMES do Plus ao Mythos, transforma a liga Ouka numa família de 12 níveis e redesenha todos os lingotes do OUKA no formato do lingote vanilla.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "O montador de células quânticas é uma máquina grande de 12 de largura × 16 de altura × 12 de profundidade, feita de carcaça, vidro blindado, duas portas de entrada, uma porta de saída e um controlador na parte alta de uma face lateral. Ele monta as baterias quânticas SMES de todos os níveis, do Lite ao Mythos.",
+        "Cada bateria custa 5% da sua capacidade em energia e 10 segundos × o número do nível (Lite 10 s, Mythos 120 s). Sem energia, ele espera e mantém o progresso. Pelo vidro vê-se uma mesa giratória, um elevador, bobinadeiras, quatro braços de solda e um guindaste; a tela usa o design de vidro do reator de fusão Sol artificial V2, e o nível é escolhido num seletor.",
+        "Mudança de receita: as baterias quânticas SMES do Plus ao Mythos agora só são feitas no montador, com os mesmos ingredientes de antes. Lite e Standard ainda podem ser fabricadas na bancada.",
+        "O lingote e o bloco de liga Ouka agora são uma família de 12 níveis, do Lite ao Mythos. São apenas materiais, sem eletricidade e sem valores de energia. Cada nível converte 9 lingotes em 1 bloco e vice-versa; cada nível acima do Standard é ligado a partir de 2 do nível abaixo mais metais. Todo bloco serve de base de sinalizador, níveis duros exigem picareta melhor, Max e acima resistem a fogo e lava, e níveis altos brilham.",
+        "Todos os lingotes do OUKA, incluindo os de núcleo pesado, titânio, titânio ultrapuro, tungstênio e barreira de ferro pesado, foram redesenhados no formato do lingote vanilla. Os nomes japoneses do lingote e do bloco de liga agora são «Ouka合金インゴット» e «Ouka合金ブロック».",
+        "Verificado nesta versão: JUnit 2235 testes PASS, GameTest 1516 testes PASS três vezes seguidas, verificações de falha do servidor com um mundo existente e um mundo novo sem problemas."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Antes de instalar a V1.7 1128612, remova o jar antigo do OUKA (1.7.91209 ou anterior) da pasta mods e mantenha apenas 1 cópia do GeckoLib 5.5.6. Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais novo e Fabric API 0.161.0+26.3 ou mais nova. Instale no cliente e no servidor.",
+        "Não verificado: o equilíbrio do jogo. A energia e os tempos do montador, e as receitas e propriedades de bloco dos níveis da liga, não foram testados quanto ao equilíbrio.",
+        "As verificações em cliente real do salão e da tela do montador foram feitas na versão anterior ao último commit, que mudou apenas o README e as listas de arquivos do construtor de lançamento; não foram repetidas no commit final. O jar empacotado só rodou nas duas verificações de falha do servidor.",
+        "O README deste zip ainda repete a redação da V1.7 88213 de que o limite de armazenamento por célula foi aumentado. Ela está errada; veja a correção nas notas da V1.7 91209."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 91209",
      "date": "2026-10-29",

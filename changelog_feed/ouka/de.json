@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 91209 — Eisindustrie: Kryo-Kompressor, Quanten-Kryo-Synthesizer und fünf Quanteneis-Sorten",
+   "summary": "Ouka JJK V1.7 1128612 — Quantenzellen-Assembler, Ouka-Legierung in 12 Stufen, Barren in Vanilla-Form",
    "releases": [
+    {
+     "version": "V1.7 1128612",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 1128612 — Quantenzellen-Assembler, Ouka-Legierung in 12 Stufen, Barren in Vanilla-Form",
+     "summary": "V1.7 1128612 bringt den Quantenzellen-Assembler, eine 12 × 16 × 12 große Maschine, die SMES-Quantenbatterien von Plus bis Mythos baut, macht die Ouka-Legierung zu einer Familie aus 12 Stufen und zeichnet alle OUKA-Barren in der Vanilla-Barrenform neu.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Der Quantenzellen-Assembler ist eine große Maschine, 12 breit × 16 hoch × 12 tief, aus Gehäuse, Panzerglas, zwei Eingangsports, einem Ausgangsport und einem Controller im oberen Teil einer Seitenfläche. Er baut SMES-Quantenbatterien aller Stufen von Lite bis Mythos.",
+        "Jede Batterie kostet 5 % ihrer Kapazität als Energie und 10 Sekunden × Stufennummer (Lite 10 s, Mythos 120 s). Ohne Strom wartet er und behält den Fortschritt. Durch das Glas sieht man Drehteller, Hebebühne, Spulenwickler, vier Schweißarme und einen Kran; der Bildschirm hat das Glasdesign des Künstlichen-Sonnen-Fusionsreaktors V2, die Stufe wählt ein Drehrad.",
+        "Rezeptänderung: SMES-Quantenbatterien von Plus bis Mythos entstehen jetzt nur noch im Assembler, aus denselben Zutaten wie zuvor. Lite und Standard lassen sich weiterhin an der Werkbank herstellen.",
+        "Ouka-Legierungsbarren und Ouka-Legierungsblock sind jetzt eine Familie aus 12 Stufen, Lite bis Mythos. Sie sind reines Material, ohne Strom und ohne Energiewerte. Jede Stufe wandelt 9 Barren in 1 Block und zurück; jede Stufe über Standard wird aus 2 der Stufe darunter plus Metallen legiert. Jeder Block ist eine Leuchtfeuer-Basis, härtere Stufen brauchen eine bessere Spitzhacke, Max und höher widerstehen Feuer und Lava, höhere Stufen leuchten.",
+        "Alle OUKA-Barren, auch Schwerkern-, Titan-, Reintitan-, Wolfram- und Schwereisen-Barrierebarren, sind in der Vanilla-Barrenform neu gezeichnet. Die japanischen Namen von Legierungsbarren und -block lauten jetzt „Ouka合金インゴット“ und „Ouka合金ブロック“.",
+        "Geprüft auf diesem Build: JUnit 2235 Tests PASS, GameTest 1516 Tests PASS (drei Läufe nacheinander), Server-Absturzprüfungen mit einer bestehenden und einer neuen Welt sauber."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Entferne vor der Installation von V1.7 1128612 das alte OUKA-JAR (1.7.91209 oder älter) aus dem mods-Ordner und behalte nur 1 Kopie von GeckoLib 5.5.6. Erforderlich sind Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Installiere es auf Client und Server.",
+        "Nicht geprüft: das Spielgleichgewicht. Energie und Zeiten des Assemblers sowie Rezepte und Blockeigenschaften der Legierungsstufen wurden nicht auf Balance getestet.",
+        "Die Echt-Client-Prüfungen von Halle und Bildschirm des Assemblers liefen auf dem Build vor dem letzten Commit, der nur die README und die Dateilisten des Release-Builders änderte; sie wurden auf dem finalen Commit nicht wiederholt. Das gepackte JAR lief nur in den beiden Server-Absturzprüfungen.",
+        "Die README in dieser ZIP-Datei wiederholt noch die Formulierung von V1.7 88213, das Speicherlimit pro Zelle sei erhöht worden. Sie ist falsch; siehe die Berichtigung in den Notizen zu V1.7 91209."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 91209",
      "date": "2026-10-29",

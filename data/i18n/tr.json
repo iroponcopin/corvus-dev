@@ -306,6 +306,25 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-1128612",
+    "title": "Ouka JJK V1.7 1128612 — Kuantum Hücre Montajcısı, 12 kademeli Ouka alaşımı, vanilla biçimli külçeler",
+    "summary": "V1.7 1128612, SMES kuantum pillerini Plus'tan Mythos'a kadar monte eden 12 × 16 × 12'lik Kuantum Hücre Montajcısı'nı ekler, Ouka alaşımını 12 kademeli bir aileye çevirir ve tüm OUKA külçelerini vanilla külçe biçiminde yeniden çizer.",
+    "highlights": [
+     "Kuantum Hücre Montajcısı, 12 geniş × 16 yüksek × 12 derin büyük bir makinedir; gövde, zırhlı cam, iki giriş portu, bir çıkış portu ve yan yüzün üst kısmına konan bir denetleyiciden oluşur. SMES kuantum pillerini Lite'tan Mythos'a kadar tüm kademelerde monte eder.",
+     "Her pil, kapasitesinin %5'i kadar enerji ve 10 saniye × kademe numarası kadar zaman alır (Lite 10 sn, Mythos 120 sn). Güç yoksa bekler ve ilerlemeyi korur. Camdan döner tabla, asansör, bobin sarıcılar, dört kaynak kolu ve bir vinç görülür; ekran Yapay Güneş Füzyon Reaktörü V2 ile aynı cam tasarımını kullanır ve kademe bir kadranla seçilir.",
+     "Tarif değişikliği: SMES kuantum pillerinin Plus'tan Mythos'a kadar olan kademeleri artık yalnızca montajcıda yapılır, malzemeler eskisiyle aynıdır. Lite ve Standard hâlâ çalışma masasında yapılabilir.",
+     "Ouka alaşım külçesi ve bloğu artık Lite'tan Mythos'a 12 kademeli bir ailedir. Yalnızca malzemedir; elektrik kullanmaz ve enerji değeri yoktur. Her kademe 9 külçeyi 1 bloğa ve geri çevirir; Standard'ın üstündeki her kademe, bir alttaki kademeden 2 tane ve metallerle alaşımlanır. Her blok bir işaret ateşi tabanıdır, sert kademeler daha iyi kazma ister, Max ve üstü ateşe ve lava dayanır, yüksek kademeler parlar.",
+     "Ağır çekirdek, titanyum, ultra saf titanyum, tungsten ve ağır demir bariyer külçeleri dahil tüm OUKA külçeleri vanilla külçe biçiminde yeniden çizildi. Alaşım külçesi ve bloğunun Japonca adları artık «Ouka合金インゴット» ve «Ouka合金ブロック».",
+     "Bu derlemede denetlenenler: JUnit 2235 test PASS, GameTest üst üste üç çalıştırmada 1516 test PASS, mevcut bir dünyada ve yeni bir dünyada sunucu çökme denetimleri sorunsuz."
+    ],
+    "warnings": [
+     "V1.7 1128612'yi kurmadan önce eski OUKA jar'ını (1.7.91209 veya daha eski) mods klasöründen silin ve GeckoLib 5.5.6'nın yalnızca 1 kopyasını bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi ve Fabric API 0.161.0+26.3 veya daha yenisi gerekir. Hem istemciye hem sunucuya kurun.",
+     "Denetlenmedi: oyun dengesi. Montajcının enerjisi ve süreleri ile alaşım kademelerinin tarifleri ve blok özellikleri denge açısından sınanmadı.",
+     "Montajcının salonu ve ekranı için gerçek istemci denetimleri, yalnızca README'yi ve sürüm oluşturucunun dosya listelerini değiştiren son işlemeden önceki derlemede yapıldı; son işlemede yinelenmedi. Paketlenmiş jar yalnızca iki sunucu çökme denetiminde çalıştırıldı.",
+     "Bu zip içindeki README hâlâ V1.7 88213'ün hücre başına depolama sınırının yükseltildiği ifadesini yineliyor. Bu ifade yanlıştır; V1.7 91209 notlarındaki düzeltmeye bakın."
+    ]
+   },
+   {
     "id": "ouka-v1.7-91209",
     "title": "Ouka JJK V1.7 91209 — Buz endüstrisi: kriyojenik kompresör, kuantum kriyo sentezleyici ve beş kuantum buz",
     "summary": "V1.7 91209, buz yapan iki makine ekler: dört vanilla buz için kriyojenik kompresör ve beş yeni kuantum buz için kuantum kriyo sentezleyici. SMES kuantum pilinin Plus ve üstü kademeleri artık bu buzlara ihtiyaç duyar.",
