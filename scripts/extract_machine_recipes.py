@@ -63,6 +63,8 @@ PROCESS_MACHINES = [
     "crystal_pulling_furnace", "laser_ablation_bed", "high_pressure_ion_implanter", "auto_calibration_manipulator",
     # OUKA V1.7 81347: the Carbide Forge.
     "carbide_forge",
+    # OUKA V1.7 91209: the ice industry.
+    "cryo_compressor", "quantum_cryo_synthesizer",
 ]
 _AT = [i for i, s in enumerate(STATIONS) if s[0] == "fabricator"][0]
 STATIONS[_AT:_AT] = [(m, "ouka:" + m) for m in PROCESS_MACHINES]
@@ -82,6 +84,9 @@ SHEET_TYPES = {"minecraft:crafting_shaped", "minecraft:crafting_shapeless", "min
 
 # Vanilla items the sheet has no entry for: [ja, en, texture file in scripts/vanilla_icons/, kind].
 VANILLA = {
+    "minecraft:ice": ["氷", "Ice", "ice.png", "cube"],
+    # OUKA V1.7 91209: the stabilised ice is drawn with the vanilla frosted-ice texture, so the OUKA jar has no icon file of its own.
+    "ouka:stabilised_frosted_ice": ["安定化霜氷", "Frosted Ice (Stabilised)", "stabilised_frosted_ice.png", "cube"],
     "minecraft:ancient_debris": ["古代の残骸", "Ancient Debris", "ancient_debris.png", "cube"],
     "minecraft:coal": ["石炭", "Coal", "coal.png", "flat"],
     "minecraft:coarse_dirt": ["粗い土", "Coarse Dirt", "coarse_dirt.png", "cube"],
@@ -390,7 +395,7 @@ def build() -> tuple[dict, dict[str, bytes]]:
         if iid in sheet["items"]:
             continue  # the sheet's own name and icon are used
         ns = iid.split(":", 1)[0]
-        if ns in jars:
+        if ns in jars and iid not in VANILLA:
             ja, en = jars[ns].display(iid)
             png = jars[ns].texture(iid)
             if png is None:

@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 88213 — Batteria quantistica SMES in 12 livelli, presa per batterie per ogni livello, lingotto del nucleo pesante ridisegnato",
+   "summary": "Ouka JJK V1.7 91209 — Industria del ghiaccio: compressore criogenico, sintetizzatore criogenico quantistico e cinque ghiacci quantistici",
    "releases": [
+    {
+     "version": "V1.7 91209",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 91209 — Industria del ghiaccio: compressore criogenico, sintetizzatore criogenico quantistico e cinque ghiacci quantistici",
+     "summary": "V1.7 91209 aggiunge due macchine che producono ghiaccio: il compressore criogenico per i quattro ghiacci vanilla e il sintetizzatore criogenico quantistico per cinque nuovi ghiacci quantistici. I livelli della batteria quantistica SMES da Plus in su ora richiedono questi ghiacci.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Il compressore criogenico è una macchina 2 × 2 × 2. Dall'acqua produce ghiaccio, ghiaccio brinato (stabilizzato), ghiaccio compatto e ghiaccio blu; fa anche ghiaccio compatto da 2 ghiacci e ghiaccio blu da 2 ghiacci compatti. Usa energia e un solo comando sceglie il prodotto. Il ghiaccio brinato (stabilizzato) non si scioglie mai.",
+        "Il sintetizzatore criogenico quantistico è una macchina 3 × 3 × 3 che produce 5 ghiacci quantistici: ghiaccio a reticolo criogenico di deuterio, ghiaccio di vetro amorfo, ghiaccio superionico XVIII, nucleo criogenico a condensato di Bose-Einstein e crono-ghiaccio a singolarità di sakura. Ogni ghiaccio è molto scivoloso.",
+        "Il ghiaccio a reticolo criogenico di deuterio protegge dalle esplosioni i blocchi entro 4. Il ghiaccio di vetro amorfo è trasparente e non si scioglie mai. Il ghiaccio superionico XVIII collega senza perdite le reti di piloni separate che tocca; le macchine devono comunque essere nel raggio di un pilone. Il nucleo criogenico a condensato di Bose-Einstein trasforma acqua e lava entro 3 in ghiaccio blu e ossidiana.",
+        "Il crono-ghiaccio a singolarità di sakura ferma il deterioramento (foglie, ghiaccio, neve, terreno arato, rame, corallo) entro 8, rende 4 volte più rapido il raffreddamento di un nucleo di fissione adiacente e limita la velocità delle entità a 32 blocchi per tick.",
+        "Nuovo oggetto: il catalizzatore di singolarità OUKA. I livelli della batteria quantistica SMES da Plus in su ora richiedono questi ghiacci nelle ricette.",
+        "Verificato su questa build: JUnit 2183 test PASS, GameTest 1505 test PASS nell'ultima esecuzione, controlli di crash del server su un mondo esistente (aggiornato da 88213) e su un mondo nuovo senza problemi."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Prima di installare V1.7 91209, rimuovi il vecchio jar di OUKA (1.7.88213 o precedente) dalla cartella mods e tieni una sola copia di GeckoLib 5.5.6. Servono Minecraft 26.3, Fabric Loader 0.19.5 o più recente e Fabric API 0.161.0+26.3 o più recente. Installalo sul client e sul server.",
+        "Non verificato: il bilanciamento del gioco. Costi di energia, tempi e ricette dei ghiacci e delle due macchine non sono stati testati per il bilanciamento.",
+        "Un'esecuzione del GameTest è fallita una volta (il test del ghiaccio di sakura, un blocco di controllo non si è sciolto) ed è passata alla successiva; la causa non è stata individuata e il test è stato poi modificato. Le macchine non sono state giocate in un client reale nei controlli della versione, e il jar impacchettato è stato eseguito solo nei due controlli di crash del server.",
+        "Correzione alla nota di V1.7 88213: diceva che il limite di immagazzinamento per cella era stato alzato. In realtà le celle oltre circa 1,1 mila miliardi di J, come la Mythos, sono contate come più parti uguali, e la rete energetica in sé non è cambiata. Il README di questo zip ripete la vecchia formulazione."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 88213",
      "date": "2026-10-29",

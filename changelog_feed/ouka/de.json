@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 88213 — SMES-Quantenbatterie in 12 Stufen, Batteriesockel für jede Stufe, neu gezeichneter Schwerkern-Barren",
+   "summary": "Ouka JJK V1.7 91209 — Eisindustrie: Kryo-Kompressor, Quanten-Kryo-Synthesizer und fünf Quanteneis-Sorten",
    "releases": [
+    {
+     "version": "V1.7 91209",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 91209 — Eisindustrie: Kryo-Kompressor, Quanten-Kryo-Synthesizer und fünf Quanteneis-Sorten",
+     "summary": "V1.7 91209 bringt zwei Maschinen, die Eis herstellen: den Kryo-Kompressor für die vier Vanilla-Eissorten und den Quanten-Kryo-Synthesizer für fünf neue Quanteneis-Sorten. Die Stufen der SMES-Quantenbatterie ab Plus brauchen diese Eissorten jetzt.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Der Kryo-Kompressor ist eine 2 × 2 × 2 große Maschine. Aus Wasser macht er Eis, stabilisiertes Raueis, Packeis und Blaueis; aus 2 Eis macht er auch Packeis und aus 2 Packeis Blaueis. Er braucht Energie, und ein Regler wählt das Produkt. Stabilisiertes Raueis schmilzt nie.",
+        "Der Quanten-Kryo-Synthesizer ist eine 3 × 3 × 3 große Maschine, die 5 Quanteneis-Sorten herstellt: Deuterium-Kryogitter-Eis, Amorphes Glaseis, Superionisches Eis XVIII, Bose-Einstein-Kondensat-Kryokern und Sakura-Singularitäts-Chronoeis. Jedes Eis ist sehr rutschig.",
+        "Deuterium-Kryogitter-Eis schützt Blöcke im Umkreis von 4 vor Explosionen. Amorphes Glaseis ist klar und schmilzt nie. Superionisches Eis XVIII verbindet die getrennten Pylonnetze, die es berührt, verlustfrei; Maschinen brauchen weiter Pylon-Reichweite. Der Bose-Einstein-Kondensat-Kryokern verwandelt Wasser und Lava im Umkreis von 3 in Blaueis und Obsidian.",
+        "Sakura-Singularitäts-Chronoeis stoppt den Verfall (Laub, Eis, Schnee, Ackerland, Kupfer, Korallen) im Umkreis von 8, macht die Kühlung eines angrenzenden Spaltkerns 4-mal schneller und begrenzt die Geschwindigkeit von Entitäten auf 32 Blöcke pro Tick.",
+        "Neuer Gegenstand: der OUKA-Singularitätskatalysator. Die Stufen der SMES-Quantenbatterie ab Plus brauchen diese Eissorten jetzt in ihren Rezepten.",
+        "Geprüft auf diesem Build: JUnit 2183 Tests PASS, GameTest im letzten Lauf 1505 Tests PASS, Server-Absturzprüfungen mit einer bestehenden Welt (von 88213 aktualisiert) und einer neuen Welt sauber."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Entferne vor der Installation von V1.7 91209 das alte OUKA-JAR (1.7.88213 oder älter) aus dem mods-Ordner und behalte nur 1 Kopie von GeckoLib 5.5.6. Erforderlich sind Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Installiere es auf Client und Server.",
+        "Nicht geprüft: das Spielgleichgewicht. Energiekosten, Zeiten und Rezepte der Eissorten und der beiden Maschinen wurden nicht auf Balance getestet.",
+        "Ein GameTest-Lauf schlug einmal fehl (der Sakura-Eis-Test, ein Kontrollblock schmolz nicht) und bestand im nächsten Lauf; die Ursache wurde nicht festgestellt, der Test wurde danach angepasst. Die Maschinen wurden in den Release-Prüfungen nicht in einem echten Client gespielt, und das gepackte JAR lief nur in den beiden Server-Absturzprüfungen.",
+        "Berichtigung zur Notiz von V1.7 88213: Sie sagte, das Speicherlimit pro Zelle sei erhöht worden. Tatsächlich werden Zellen über etwa 1,1 Billionen J, wie die Mythos, als mehrere gleiche Teile gezählt; das Energienetz selbst ist unverändert. Die README in dieser ZIP-Datei wiederholt die alte Formulierung."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 88213",
      "date": "2026-10-29",

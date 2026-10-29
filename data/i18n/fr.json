@@ -306,6 +306,25 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-91209",
+    "title": "Ouka JJK V1.7 91209 — Industrie de la glace : compresseur cryogénique, synthétiseur cryogénique quantique et cinq glaces quantiques",
+    "summary": "V1.7 91209 ajoute deux machines qui fabriquent de la glace : le compresseur cryogénique pour les quatre glaces vanilla et le synthétiseur cryogénique quantique pour cinq nouvelles glaces quantiques. Les paliers de la batterie quantique SMES à partir de Plus ont maintenant besoin de ces glaces.",
+    "highlights": [
+     "Le compresseur cryogénique est une machine de 2 × 2 × 2. À partir d'eau, il fabrique de la glace, de la glace givrée (stabilisée), de la glace compactée et de la glace bleue ; il fait aussi de la glace compactée avec 2 glaces et de la glace bleue avec 2 glaces compactées. Il consomme de l'énergie et une commande choisit le produit. La glace givrée (stabilisée) ne fond jamais.",
+     "Le synthétiseur cryogénique quantique est une machine de 3 × 3 × 3 qui fabrique 5 glaces quantiques : glace à réseau cryogénique de deutérium, glace de verre amorphe, glace superionique XVIII, cœur cryogénique à condensat de Bose-Einstein et chronoglace à singularité de sakura. Toutes les glaces sont très glissantes.",
+     "La glace à réseau cryogénique de deutérium protège les blocs dans un rayon de 4 contre les explosions. La glace de verre amorphe est transparente et ne fond jamais. La glace superionique XVIII relie sans perte les réseaux de pylônes séparés qu'elle touche ; les machines doivent toujours être à portée d'un pylône. Le cœur cryogénique à condensat de Bose-Einstein transforme l'eau et la lave dans un rayon de 3 en glace bleue et en obsidienne.",
+     "La chronoglace à singularité de sakura arrête la dégradation (feuilles, glace, neige, terre labourée, cuivre, corail) dans un rayon de 8, rend le refroidissement d'un cœur de fission adjacent 4 fois plus rapide et plafonne la vitesse des entités à 32 blocs par tick.",
+     "Nouvel objet : le catalyseur de singularité OUKA. Les paliers de la batterie quantique SMES à partir de Plus ont maintenant besoin de ces glaces dans leurs recettes.",
+     "Vérifié sur ce build : JUnit 2183 tests PASS, GameTest 1505 tests PASS au dernier passage, contrôles de plantage serveur sur un monde existant (mis à jour depuis 88213) et sur un monde neuf sans anomalie."
+    ],
+    "warnings": [
+     "Avant d'installer V1.7 91209, retirez l'ancien jar OUKA (1.7.88213 ou plus ancien) du dossier mods et ne gardez qu'une seule copie de GeckoLib 5.5.6. Il faut Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent et Fabric API 0.161.0+26.3 ou plus récent. Installez-le sur le client et sur le serveur.",
+     "Non vérifié : l'équilibrage du jeu. Les coûts en énergie, les durées et les recettes des glaces et des deux machines n'ont pas été testés pour l'équilibre.",
+     "Un passage de GameTest a échoué une fois (le test de la glace de sakura, un bloc de contrôle n'a pas fondu) puis a réussi au passage suivant ; la cause n'a pas été établie et le test a été ajusté ensuite. Les machines n'ont pas été jouées dans un vrai client lors des vérifications de la version, et le jar empaqueté n'a servi que dans les deux contrôles de plantage serveur.",
+     "Correction de la note de V1.7 88213 : elle disait que la limite de stockage par cellule avait été relevée. En réalité, les cellules de plus d'environ 1,1 billion de J, comme la Mythos, sont comptées comme plusieurs parties égales, et le réseau d'énergie lui-même n'a pas changé. Le README de ce zip reprend l'ancienne formulation."
+    ]
+   },
+   {
     "id": "ouka-v1.7-88213",
     "title": "Ouka JJK V1.7 88213 — Batterie quantique SMES en 12 paliers, support de batteries pour tous les paliers, lingot de noyau lourd redessiné",
     "summary": "La batterie quantique SMES devient une famille de 12 paliers, de Lite (200 MJ) à Mythos (2 048 000 MJ). La batterie de 400 MJ existante devient Standard, le support de batteries accepte tous les paliers mélangés et le lingot de noyau lourd est redessiné à la forme du lingot vanilla.",

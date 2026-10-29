@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 88213 — SMES Quantum Battery in 12 tiers, battery socket for every tier, Heavy Core Ingot redrawn",
+   "summary": "Ouka JJK V1.7 91209 — Ice industry: Cryogenic Compressor, Quantum Cryo-Synthesizer and five quantum ices",
    "releases": [
+    {
+     "version": "V1.7 91209",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 91209 — Ice industry: Cryogenic Compressor, Quantum Cryo-Synthesizer and five quantum ices",
+     "summary": "V1.7 91209 adds two machines that make ice: the Cryogenic Compressor for the four vanilla ices, and the Quantum Cryo-Synthesizer for five new quantum ices. The SMES Quantum Battery tiers from Plus up now need these ices.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "The Cryogenic Compressor is a 2 × 2 × 2 machine. From water it makes ice, Frosted Ice (Stabilised), packed ice and blue ice; it also makes packed ice from 2 ice and blue ice from 2 packed ice. It uses energy, and one control picks the product. Frosted Ice (Stabilised) never melts.",
+        "The Quantum Cryo-Synthesizer is a 3 × 3 × 3 machine that makes 5 quantum ices: Deuterium Cryo-Lattice Ice, Amorphous Glass Ice, Superionic Ice XVIII, Bose-Einstein Condensate Cryo-Core and Sakura Singularity Chrono-Ice. Every ice is very slippery.",
+        "Deuterium Cryo-Lattice Ice shields blocks within 4 from explosions. Amorphous Glass Ice is clear and never melts. Superionic Ice XVIII links the separate pylon grids it touches with no loss; machines still need pylon reach. Bose-Einstein Condensate Cryo-Core turns water and lava within 3 into blue ice and obsidian.",
+        "Sakura Singularity Chrono-Ice stops decay (leaves, ice, snow, farmland, copper, coral) within 8, makes an adjacent fission core's cooling 4 times faster, and caps entity speed at 32 blocks per tick.",
+        "New item: the OUKA Singularity Catalyst. The SMES Quantum Battery tiers from Plus up now need these ices in their recipes.",
+        "Checked on this build: JUnit 2183 tests PASS, GameTest 1505 tests PASS on the last run, server crash checks on an existing world (upgraded from 88213) and a fresh world clean."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Before you install V1.7 91209, remove the old OUKA jar (1.7.88213 or older) from the mods folder and keep only 1 copy of GeckoLib 5.5.6. It needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, and Fabric API 0.161.0+26.3 or newer. Install it on both the client and the server.",
+        "Not checked: gameplay balance. The energy costs, times and recipes of the ices and the two machines were not balance-tested.",
+        "One GameTest run failed once (the sakura ice test, on a control block that did not melt) and passed on the next run; the cause was not pinned down, and the test was adjusted afterwards. The machines were not played in a real client as part of the release checks, and the packed jar was exercised only by the two server crash checks.",
+        "Correction to the V1.7 88213 note: it said the per-cell storage limit was raised. Cells above about 1.1 trillion J, such as the Mythos, are in fact counted as several equal parts, and the energy network itself is unchanged. The README in this zip repeats the old wording."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 88213",
      "date": "2026-10-29",

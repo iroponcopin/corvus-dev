@@ -306,6 +306,25 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-91209",
+    "title": "Ouka JJK V1.7 91209 — Indústria do gelo: compressor criogênico, sintetizador criogênico quântico e cinco gelos quânticos",
+    "summary": "A V1.7 91209 adiciona duas máquinas que fazem gelo: o compressor criogênico para os quatro gelos vanilla e o sintetizador criogênico quântico para cinco novos gelos quânticos. Os níveis da bateria quântica SMES a partir do Plus agora precisam desses gelos.",
+    "highlights": [
+     "O compressor criogênico é uma máquina de 2 × 2 × 2. Com água, faz gelo, gelo congelado (estabilizado), gelo compactado e gelo azul; também faz gelo compactado com 2 gelos e gelo azul com 2 gelos compactados. Usa energia, e um só controle escolhe o produto. O gelo congelado (estabilizado) nunca derrete.",
+     "O sintetizador criogênico quântico é uma máquina de 3 × 3 × 3 que faz 5 gelos quânticos: gelo de rede criogênica de deutério, gelo de vidro amorfo, gelo superiônico XVIII, núcleo criogênico de condensado de Bose-Einstein e crono-gelo de singularidade de sakura. Todo gelo é muito escorregadio.",
+     "O gelo de rede criogênica de deutério protege blocos num raio de 4 contra explosões. O gelo de vidro amorfo é transparente e nunca derrete. O gelo superiônico XVIII liga sem perdas as redes de pilares separadas que ele toca; as máquinas ainda precisam estar ao alcance de um pilar. O núcleo criogênico de condensado de Bose-Einstein transforma água e lava num raio de 3 em gelo azul e obsidiana.",
+     "O crono-gelo de singularidade de sakura interrompe a deterioração (folhas, gelo, neve, terra arada, cobre, coral) num raio de 8, deixa o resfriamento de um núcleo de fissão adjacente 4 vezes mais rápido e limita a velocidade das entidades a 32 blocos por tick.",
+     "Item novo: o catalisador de singularidade OUKA. Os níveis da bateria quântica SMES a partir do Plus agora precisam desses gelos nas receitas.",
+     "Verificado nesta versão: JUnit 2183 testes PASS, GameTest 1505 testes PASS na última execução, verificações de falha do servidor com um mundo existente (atualizado a partir da 88213) e um mundo novo sem problemas."
+    ],
+    "warnings": [
+     "Antes de instalar a V1.7 91209, remova o jar antigo do OUKA (1.7.88213 ou anterior) da pasta mods e mantenha apenas 1 cópia do GeckoLib 5.5.6. Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais novo e Fabric API 0.161.0+26.3 ou mais nova. Instale no cliente e no servidor.",
+     "Não verificado: o equilíbrio do jogo. Os custos de energia, os tempos e as receitas dos gelos e das duas máquinas não foram testados quanto ao equilíbrio.",
+     "Uma execução do GameTest falhou uma vez (o teste do gelo de sakura, um bloco de controle não derreteu) e passou na seguinte; a causa não foi determinada e o teste foi ajustado depois. As máquinas não foram jogadas num cliente real nas verificações da versão, e o jar empacotado só rodou nas duas verificações de falha do servidor.",
+     "Correção da nota da V1.7 88213: ela dizia que o limite de armazenamento por célula foi aumentado. Na verdade, células acima de cerca de 1,1 trilhão de J, como a Mythos, são contadas como várias partes iguais, e a rede de energia em si não mudou. O README deste zip repete a redação antiga."
+    ]
+   },
+   {
     "id": "ouka-v1.7-88213",
     "title": "Ouka JJK V1.7 88213 — Bateria Quântica SMES em 12 níveis, soquete de baterias para todos os níveis, Lingote de Núcleo Pesado redesenhado",
     "summary": "A Bateria Quântica SMES agora é uma família de 12 níveis, de Lite (200 MJ) a Mythos (2.048.000 MJ). A bateria de 400 MJ existente passa a ser Standard, o soquete de baterias aceita todos os níveis misturados e o Lingote de Núcleo Pesado foi redesenhado na forma do lingote vanilla.",

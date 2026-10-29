@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 88213 — Baterai Kuantum SMES dalam 12 tingkat, soket baterai untuk semua tingkat, Ingot Inti Berat digambar ulang",
+   "summary": "Ouka JJK V1.7 91209 — Industri es: kompresor kriogenik, sintesis kriogenik kuantum, dan lima es kuantum",
    "releases": [
+    {
+     "version": "V1.7 91209",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 91209 — Industri es: kompresor kriogenik, sintesis kriogenik kuantum, dan lima es kuantum",
+     "summary": "V1.7 91209 menambahkan dua mesin pembuat es: kompresor kriogenik untuk keempat es vanilla dan sintesis kriogenik kuantum untuk lima es kuantum baru. Tingkat baterai kuantum SMES dari Plus ke atas kini membutuhkan es ini.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Kompresor kriogenik adalah mesin 2 × 2 × 2. Dari air ia membuat es, es beku (stabil), es padat, dan es biru; ia juga membuat es padat dari 2 es dan es biru dari 2 es padat. Ia memakai energi, dan satu kontrol memilih produknya. Es beku (stabil) tidak pernah mencair.",
+        "Sintesis kriogenik kuantum adalah mesin 3 × 3 × 3 yang membuat 5 es kuantum: es kisi kriogenik deuterium, es kaca amorf, es superionik XVIII, inti kriogenik kondensat Bose-Einstein, dan es kronos singularitas sakura. Semua es sangat licin.",
+        "Es kisi kriogenik deuterium melindungi blok dalam radius 4 dari ledakan. Es kaca amorf bening dan tidak pernah mencair. Es superionik XVIII menghubungkan tanpa kehilangan jaringan pilon terpisah yang disentuhnya; mesin tetap perlu berada dalam jangkauan pilon. Inti kriogenik kondensat Bose-Einstein mengubah air dan lava dalam radius 3 menjadi es biru dan obsidian.",
+        "Es kronos singularitas sakura menghentikan pelapukan (daun, es, salju, tanah bajak, tembaga, karang) dalam radius 8, membuat pendinginan inti fisi di sebelahnya 4 kali lebih cepat, dan membatasi kecepatan entitas hingga 32 blok per tick.",
+        "Item baru: katalis singularitas OUKA. Tingkat baterai kuantum SMES dari Plus ke atas kini membutuhkan es ini dalam resepnya.",
+        "Diperiksa pada build ini: JUnit 2183 tes PASS, GameTest 1505 tes PASS pada eksekusi terakhir, pemeriksaan crash server pada dunia yang sudah ada (diperbarui dari 88213) dan dunia baru bersih."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Sebelum memasang V1.7 91209, hapus jar OUKA lama (1.7.88213 atau lebih lama) dari folder mods dan sisakan hanya 1 salinan GeckoLib 5.5.6. Dibutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di klien dan server.",
+        "Tidak diperiksa: keseimbangan permainan. Biaya energi, waktu, dan resep es serta kedua mesin tidak diuji keseimbangannya.",
+        "Satu eksekusi GameTest pernah gagal (tes es sakura, blok kontrol tidak mencair) dan lolos pada eksekusi berikutnya; penyebabnya tidak dipastikan, dan tes itu disesuaikan setelahnya. Mesin tidak dimainkan di klien sungguhan dalam pemeriksaan rilis, dan jar yang dikemas hanya dijalankan dalam dua pemeriksaan crash server.",
+        "Koreksi catatan V1.7 88213: catatan itu menyebut batas penyimpanan per sel dinaikkan. Sebenarnya sel di atas sekitar 1,1 triliun J, seperti Mythos, dihitung sebagai beberapa bagian yang sama, dan jaringan energinya sendiri tidak berubah. README di zip ini mengulang kata-kata lama."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 88213",
      "date": "2026-10-29",

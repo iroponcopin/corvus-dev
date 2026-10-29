@@ -1,6 +1,6 @@
 {
  "sources": {
-  "ouka": "1.7.88213",
+  "ouka": "1.7.91209",
   "cherry": "1.3.1017"
  },
  "stations": [
@@ -107,6 +107,14 @@
   {
    "id": "carbide_forge",
    "item": "ouka:carbide_forge"
+  },
+  {
+   "id": "cryo_compressor",
+   "item": "ouka:cryo_compressor"
+  },
+  {
+   "id": "quantum_cryo_synthesizer",
+   "item": "ouka:quantum_cryo_synthesizer"
   },
   {
    "id": "fabricator",
@@ -326,6 +334,12 @@
    "md9feb5075752",
    "flat"
   ],
+  "minecraft:ice": [
+   "氷",
+   "Ice",
+   "m6a1789812903",
+   "cube"
+  ],
   "minecraft:raw_copper": [
    "銅の原石",
    "Raw Copper",
@@ -444,6 +458,12 @@
    "原油の缶",
    "Crude Oil Canister",
    "mdbeda53c1a61",
+   "flat"
+  ],
+  "ouka:cryo_compressor": [
+   "極低温圧縮機",
+   "Cryogenic Compressor",
+   "m4fba90c00057",
    "flat"
   ],
   "ouka:cryo_oxygen_extractor": [
@@ -650,6 +670,12 @@
    "m75a07c613f05",
    "flat"
   ],
+  "ouka:quantum_cryo_synthesizer": [
+   "量子極低温合成機",
+   "Quantum Cryo-Synthesizer",
+   "m547182418739",
+   "flat"
+  ],
   "ouka:rare_gas_canister": [
    "希ガスの缶",
    "Rare Gas Canister",
@@ -715,6 +741,12 @@
    "Slag",
    "m8ced79b3292b",
    "flat"
+  ],
+  "ouka:stabilised_frosted_ice": [
+   "安定化霜氷",
+   "Frosted Ice (Stabilised)",
+   "m3d045af3d090",
+   "cube"
   ],
   "ouka:stamina_serum": [
    "スタミナ増強剤",
@@ -2162,6 +2194,31 @@
    "brand": "ouka"
   },
   {
+   "id": "ouka:assembly/cryo_compressor",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 4
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 4
+    },
+    {
+     "id": "ouka:deuterium_cell",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:cryo_compressor",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
    "id": "ouka:assembly/cryo_oxygen_extractor",
    "station": "assembly",
    "inputs": [
@@ -2819,6 +2876,35 @@
    "outputs": [
     {
      "id": "ouka:pyrolytic_carbon_press",
+     "n": 1
+    }
+   ],
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:assembly/quantum_cryo_synthesizer",
+   "station": "assembly",
+   "inputs": [
+    {
+     "id": "ouka:machine_frame",
+     "n": 8
+    },
+    {
+     "id": "ouka:electronic_circuit",
+     "n": 8
+    },
+    {
+     "id": "ouka:superconducting_coil",
+     "n": 6
+    },
+    {
+     "id": "ouka:quantum_chip",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:quantum_cryo_synthesizer",
      "n": 1
     }
    ],
@@ -8224,6 +8310,94 @@
    "brand": "ouka"
   },
   {
+   "id": "ouka:process/cryo_compressor_a_ice",
+   "station": "cryo_compressor",
+   "inputs": [],
+   "outputs": [
+    {
+     "id": "minecraft:ice",
+     "n": 1
+    }
+   ],
+   "time": 20,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/cryo_compressor_b_stabilised_frosted_ice",
+   "station": "cryo_compressor",
+   "inputs": [],
+   "outputs": [
+    {
+     "id": "ouka:stabilised_frosted_ice",
+     "n": 1
+    }
+   ],
+   "time": 20,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/cryo_compressor_c_packed_ice_from_water",
+   "station": "cryo_compressor",
+   "inputs": [],
+   "outputs": [
+    {
+     "id": "minecraft:packed_ice",
+     "n": 1
+    }
+   ],
+   "time": 40,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/cryo_compressor_d_blue_ice_from_water",
+   "station": "cryo_compressor",
+   "inputs": [],
+   "outputs": [
+    {
+     "id": "minecraft:blue_ice",
+     "n": 1
+    }
+   ],
+   "time": 80,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/cryo_compressor_e_packed_ice_from_ice",
+   "station": "cryo_compressor",
+   "inputs": [
+    {
+     "id": "minecraft:ice",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "minecraft:packed_ice",
+     "n": 1
+    }
+   ],
+   "time": 40,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/cryo_compressor_f_blue_ice_from_packed_ice",
+   "station": "cryo_compressor",
+   "inputs": [
+    {
+     "id": "minecraft:packed_ice",
+     "n": 2
+    }
+   ],
+   "outputs": [
+    {
+     "id": "minecraft:blue_ice",
+     "n": 1
+    }
+   ],
+   "time": 80,
+   "brand": "ouka"
+  },
+  {
    "id": "ouka:process/cryo_liquid_oxygen",
    "station": "cryo_oxygen_extractor",
    "inputs": [],
@@ -8617,6 +8791,108 @@
     }
    ],
    "time": 160,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/quantum_cryo_synthesizer_a_deuterium_cryo_ice",
+   "station": "quantum_cryo_synthesizer",
+   "inputs": [
+    {
+     "id": "minecraft:blue_ice",
+     "n": 2
+    },
+    {
+     "id": "ouka:deuterium_cell",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:deuterium_cryo_ice",
+     "n": 1
+    }
+   ],
+   "time": 100,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/quantum_cryo_synthesizer_b_amorphous_glass_ice",
+   "station": "quantum_cryo_synthesizer",
+   "inputs": [
+    {
+     "id": "minecraft:packed_ice",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:amorphous_glass_ice",
+     "n": 1
+    }
+   ],
+   "time": 60,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/quantum_cryo_synthesizer_c_superionic_ice",
+   "station": "quantum_cryo_synthesizer",
+   "inputs": [
+    {
+     "id": "ouka:deuterium_cryo_ice",
+     "n": 2
+    },
+    {
+     "id": "ouka:amorphous_glass_ice",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:superionic_ice",
+     "n": 1
+    }
+   ],
+   "time": 160,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/quantum_cryo_synthesizer_d_bec_cryo_ice",
+   "station": "quantum_cryo_synthesizer",
+   "inputs": [
+    {
+     "id": "ouka:superionic_ice",
+     "n": 4
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:bec_cryo_ice",
+     "n": 1
+    }
+   ],
+   "time": 240,
+   "brand": "ouka"
+  },
+  {
+   "id": "ouka:process/quantum_cryo_synthesizer_e_sakura_chrono_ice",
+   "station": "quantum_cryo_synthesizer",
+   "inputs": [
+    {
+     "id": "ouka:bec_cryo_ice",
+     "n": 4
+    },
+    {
+     "id": "ouka:singularity_catalyst",
+     "n": 1
+    }
+   ],
+   "outputs": [
+    {
+     "id": "ouka:sakura_chrono_ice",
+     "n": 1
+    }
+   ],
+   "time": 400,
    "brand": "ouka"
   },
   {
@@ -10551,6 +10827,7 @@
   "ouka:assembly/composite_plate": "ouka 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate 鉄板 鉄板 ouka:iron_plate iron_plate iron plate チタンの粉 ちたんの粉 ouka:titanium_dust titanium_dust titanium dust 粘土玉 粘土玉 minecraft:clay_ball clay_ball clay ball",
   "ouka:assembly/coolant_circulation_pump": "ouka 冷却材循環ポンプ 冷却材循環ぽんぷ ouka:coolant_circulation_pump coolant_circulation_pump coolant circulation pump 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 銅板 銅板 ouka:copper_plate copper_plate copper plate チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic",
   "ouka:assembly/cooling_tower": "ouka 強制通風冷却塔 強制通風冷却塔 ouka:cooling_tower cooling_tower forced-draft cooling tower 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 複合素材の板 複合素材の板 ouka:composite_plate composite_plate composite plate カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate",
+  "ouka:assembly/cryo_compressor": "ouka 極低温圧縮機 極低温圧縮機 ouka:cryo_compressor cryo_compressor cryogenic compressor 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 重水素セル 重水素せる ouka:deuterium_cell deuterium_cell deuterium cell",
   "ouka:assembly/cryo_oxygen_extractor": "ouka 極低温電解酸素精製機 極低温電解酸素精製機 ouka:cryo_oxygen_extractor cryo_oxygen_extractor cryo-oxygen extractor 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 銅板 銅板 ouka:copper_plate copper_plate copper plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/crystal_pulling_furnace": "ouka 単結晶引き上げ炉 単結晶引き上げ炉 ouka:crystal_pulling_furnace crystal_pulling_furnace crystal pulling furnace 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 耐火レンガ 耐火れんが ouka:refractory_brick refractory_brick refractory brick タングステンの板 たんぐすてんの板 ouka:tungsten_plate tungsten_plate tungsten plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/electrolytic_refining_cell": "ouka 電解精錬槽 電解精錬槽 ouka:electrolytic_refining_cell electrolytic_refining_cell electrolytic refining cell 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 銅板 銅板 ouka:copper_plate copper_plate copper plate チタンインゴット ちたんいんごっと ouka:titanium_ingot titanium_ingot titanium ingot 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
@@ -10574,6 +10851,7 @@
   "ouka:assembly/plant_control_console": "ouka プラント統括制御盤 ぷらんと統括制御盤 ouka:plant_control_console plant_control_console plant control console 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 量子チップ 量子ちっぷ ouka:quantum_chip quantum_chip quantum chip 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate",
   "ouka:assembly/plasma_arc_gasifier": "ouka プラズマアーク廃棄物分解炉 ぷらずまあーく廃棄物分解炉 ouka:plasma_arc_gasifier plasma_arc_gasifier plasma arc gasifier 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 耐火レンガ 耐火れんが ouka:refractory_brick refractory_brick refractory brick タングステンの板 たんぐすてんの板 ouka:tungsten_plate tungsten_plate tungsten plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/pyrolytic_carbon_press": "ouka 高圧熱分解炭素重合機 高圧熱分解炭素重合機 ouka:pyrolytic_carbon_press pyrolytic_carbon_press pyrolytic carbon press 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 鉄板 鉄板 ouka:iron_plate iron_plate iron plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 潤滑油の缶 潤滑油の缶 ouka:lubricant_canister lubricant_canister lubricant canister",
+  "ouka:assembly/quantum_cryo_synthesizer": "ouka 量子極低温合成機 量子極低温合成機 ouka:quantum_cryo_synthesizer quantum_cryo_synthesizer quantum cryo-synthesizer 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit 超伝導コイル 超伝導こいる ouka:superconducting_coil superconducting_coil superconducting coil 量子チップ 量子ちっぷ ouka:quantum_chip quantum_chip quantum chip",
   "ouka:assembly/rotary_calciner": "ouka 回転式焼成炉 回転式焼成炉 ouka:rotary_calciner rotary_calciner rotary calciner 機械の骨組み 機械の骨組み ouka:machine_frame machine_frame machine frame 鉄板 鉄板 ouka:iron_plate iron_plate iron plate チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate 電子回路 電子回路 ouka:electronic_circuit electronic_circuit electronic circuit",
   "ouka:assembly/sight_lens": "ouka 霊眼のレンズ 霊眼のれんず ouka:sight_lens sight_lens sight lens チタンの板 ちたんの板 ouka:titanium_plate titanium_plate titanium plate 金板 金板 ouka:gold_plate gold_plate gold plate ガラス板 がらす板 minecraft:glass_pane glass_pane glass pane アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard",
   "ouka:assembly/sigil_focus": "ouka 地紋の焦点 地紋の焦点 ouka:sigil_focus sigil_focus sigil focus 桜花合金板 桜花合金板 ouka:ouka_alloy_plate ouka_alloy_plate ouka alloy plate 金板 金板 ouka:gold_plate gold_plate gold plate アメジストの欠片 あめじすとの欠片 minecraft:amethyst_shard amethyst_shard amethyst shard",
@@ -10796,6 +11074,12 @@
   "ouka:process/carbide_forge_plate_from_ingot": "ouka 炭化タングステンの板 炭化たんぐすてんの板 ouka:tungsten_carbide_plate tungsten_carbide_plate tungsten carbide plate タングステンのインゴット たんぐすてんのいんごっと ouka:tungsten_ingot tungsten_ingot tungsten ingot グラフェンシート ぐらふぇんしーと ouka:graphene_sheet graphene_sheet graphene sheet",
   "ouka:process/centrifuge_rare_gas": "ouka アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister ヘリウム3の缶 へりうむ3の缶 ouka:helium_3_canister helium_3_canister helium-3 canister 希ガスの缶 希がすの缶 ouka:rare_gas_canister rare_gas_canister rare gas canister",
   "ouka:process/centrifuge_uranium": "ouka 濃縮ウラン 濃縮うらん ouka:enriched_uranium enriched_uranium enriched uranium ウランの粉 うらんの粉 ouka:uranium_dust uranium_dust uranium dust",
+  "ouka:process/cryo_compressor_a_ice": "ouka 氷 氷 minecraft:ice ice ice",
+  "ouka:process/cryo_compressor_b_stabilised_frosted_ice": "ouka 安定化霜氷 安定化霜氷 ouka:stabilised_frosted_ice stabilised_frosted_ice frosted ice (stabilised)",
+  "ouka:process/cryo_compressor_c_packed_ice_from_water": "ouka 氷塊 氷塊 minecraft:packed_ice packed_ice packed ice",
+  "ouka:process/cryo_compressor_d_blue_ice_from_water": "ouka 青氷 青氷 minecraft:blue_ice blue_ice blue ice",
+  "ouka:process/cryo_compressor_e_packed_ice_from_ice": "ouka 氷塊 氷塊 minecraft:packed_ice packed_ice packed ice 氷 氷 minecraft:ice ice ice",
+  "ouka:process/cryo_compressor_f_blue_ice_from_packed_ice": "ouka 青氷 青氷 minecraft:blue_ice blue_ice blue ice 氷塊 氷塊 minecraft:packed_ice packed_ice packed ice",
   "ouka:process/cryo_liquid_oxygen": "ouka 液体酸素の缶 液体酸素の缶 ouka:liquid_oxygen_canister liquid_oxygen_canister liquid oxygen canister 希ガスの缶 希がすの缶 ouka:rare_gas_canister rare_gas_canister rare gas canister",
   "ouka:process/crystal_pull_silicon": "ouka シリコンウェハー しりこんうぇはー ouka:silicon_wafer silicon_wafer silicon wafer ネザークォーツ ねざーくぉーつ minecraft:quartz quartz nether quartz アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
   "ouka:process/electrolyse_heavy_water": "ouka 重水素セル 重水素せる ouka:deuterium_cell deuterium_cell deuterium cell",
@@ -10816,6 +11100,11 @@
   "ouka:process/pelletise_catalyst": "ouka 触媒ペレット 触媒ぺれっと ouka:catalyst_pellet catalyst_pellet catalyst pellet チタンの超微粉 ちたんの超微粉 ouka:ultrafine_titanium_powder ultrafine_titanium_powder ultrafine titanium powder 鉄の超微粉 鉄の超微粉 ouka:ultrafine_iron_powder ultrafine_iron_powder ultrafine iron powder アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
   "ouka:process/press_carbon_plate": "ouka カーボンプレート かーぼんぷれーと ouka:carbon_plate carbon_plate carbon plate グラフェンシート ぐらふぇんしーと ouka:graphene_sheet graphene_sheet graphene sheet 工業用プラスチック 工業用ぷらすちっく ouka:industrial_plastic industrial_plastic industrial plastic",
   "ouka:process/press_graphene": "ouka グラフェンシート ぐらふぇんしーと ouka:graphene_sheet graphene_sheet graphene sheet 石炭 石炭 minecraft:coal coal coal",
+  "ouka:process/quantum_cryo_synthesizer_a_deuterium_cryo_ice": "ouka 重水素クライオ格子氷 重水素くらいお格子氷 ouka:deuterium_cryo_ice deuterium_cryo_ice deuterium cryo-lattice ice 青氷 青氷 minecraft:blue_ice blue_ice blue ice 重水素セル 重水素せる ouka:deuterium_cell deuterium_cell deuterium cell",
+  "ouka:process/quantum_cryo_synthesizer_b_amorphous_glass_ice": "ouka アモルファスガラス氷 あもるふぁすがらす氷 ouka:amorphous_glass_ice amorphous_glass_ice amorphous glass ice 氷塊 氷塊 minecraft:packed_ice packed_ice packed ice",
+  "ouka:process/quantum_cryo_synthesizer_c_superionic_ice": "ouka 超イオン氷 XVIII 超いおん氷 xviii ouka:superionic_ice superionic_ice superionic ice xviii 重水素クライオ格子氷 重水素くらいお格子氷 ouka:deuterium_cryo_ice deuterium_cryo_ice deuterium cryo-lattice ice アモルファスガラス氷 あもるふぁすがらす氷 ouka:amorphous_glass_ice amorphous_glass_ice amorphous glass ice",
+  "ouka:process/quantum_cryo_synthesizer_d_bec_cryo_ice": "ouka ボース＝アインシュタイン凝縮クライオコア ぼーす=あいんしゅたいん凝縮くらいおこあ ouka:bec_cryo_ice bec_cryo_ice bose-einstein condensate cryo-core 超イオン氷 XVIII 超いおん氷 xviii ouka:superionic_ice superionic_ice superionic ice xviii",
+  "ouka:process/quantum_cryo_synthesizer_e_sakura_chrono_ice": "ouka 桜特異点クロノ氷 桜特異点くろの氷 ouka:sakura_chrono_ice sakura_chrono_ice sakura singularity chrono-ice ボース＝アインシュタイン凝縮クライオコア ぼーす=あいんしゅたいん凝縮くらいおこあ ouka:bec_cryo_ice bec_cryo_ice bose-einstein condensate cryo-core OUKA 特異点触媒 ouka 特異点触媒 ouka:singularity_catalyst singularity_catalyst ouka singularity catalyst",
   "ouka:process/refine_copper": "ouka 電解銅板 電解銅板 ouka:electrolytic_copper_plate electrolytic_copper_plate electrolytic copper plate 金の粉 金の粉 ouka:gold_dust gold_dust gold dust 銅板 銅板 ouka:copper_plate copper_plate copper plate",
   "ouka:process/sinter_carbide_billet": "ouka 炭化タングステンの鋳片 炭化たんぐすてんの鋳片 ouka:tungsten_carbide_billet tungsten_carbide_billet tungsten carbide billet タングステンの超微粉 たんぐすてんの超微粉 ouka:ultrafine_tungsten_powder ultrafine_tungsten_powder ultrafine tungsten powder グラフェンシート ぐらふぇんしーと ouka:graphene_sheet graphene_sheet graphene sheet アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",
   "ouka:process/sinter_copper_ingot": "ouka 銅インゴット 銅いんごっと minecraft:copper_ingot copper_ingot copper ingot 銅の超微粉 銅の超微粉 ouka:ultrafine_copper_powder ultrafine_copper_powder ultrafine copper powder アルゴンの缶 あるごんの缶 ouka:argon_canister argon_canister argon canister",

@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 88213 — 12 kademeli SMES Kuantum Pil, her kademeyi alan pil yuvası, yeniden çizilen Ağır Çekirdek Külçesi",
+   "summary": "Ouka JJK V1.7 91209 — Buz endüstrisi: kriyojenik kompresör, kuantum kriyo sentezleyici ve beş kuantum buz",
    "releases": [
+    {
+     "version": "V1.7 91209",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 91209 — Buz endüstrisi: kriyojenik kompresör, kuantum kriyo sentezleyici ve beş kuantum buz",
+     "summary": "V1.7 91209, buz yapan iki makine ekler: dört vanilla buz için kriyojenik kompresör ve beş yeni kuantum buz için kuantum kriyo sentezleyici. SMES kuantum pilinin Plus ve üstü kademeleri artık bu buzlara ihtiyaç duyar.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Kriyojenik kompresör 2 × 2 × 2 boyutunda bir makinedir. Sudan buz, kararlı kırağılı buz, sıkıştırılmış buz ve mavi buz yapar; ayrıca 2 buzdan sıkıştırılmış buz, 2 sıkıştırılmış buzdan mavi buz yapar. Enerji harcar ve ürünü tek bir denetim seçer. Kararlı kırağılı buz asla erimez.",
+        "Kuantum kriyo sentezleyici 3 × 3 × 3 boyutunda bir makinedir ve 5 kuantum buz yapar: döteryum kriyo kafes buzu, amorf cam buzu, süperiyonik buz XVIII, Bose-Einstein yoğuşuğu kriyo çekirdeği ve sakura tekillik kronobuzu. Her buz çok kaygandır.",
+        "Döteryum kriyo kafes buzu, 4 blok içindeki blokları patlamalardan korur. Amorf cam buzu şeffaftır ve asla erimez. Süperiyonik buz XVIII, dokunduğu ayrı direk şebekelerini kayıpsız bağlar; makinelerin yine de direk menzilinde olması gerekir. Bose-Einstein yoğuşuğu kriyo çekirdeği, 3 blok içindeki su ve lavı mavi buza ve obsidyene çevirir.",
+        "Sakura tekillik kronobuzu, 8 blok içindeki bozulmayı (yapraklar, buz, kar, sürülmüş toprak, bakır, mercan) durdurur, bitişik bir fisyon çekirdeğinin soğutmasını 4 kat hızlandırır ve varlıkların hızını tick başına 32 blokla sınırlar.",
+        "Yeni eşya: OUKA tekillik katalizörü. SMES kuantum pilinin Plus ve üstü kademeleri artık tariflerinde bu buzlara ihtiyaç duyar.",
+        "Bu derlemede denetlenenler: JUnit 2183 test PASS, GameTest son çalıştırmada 1505 test PASS, mevcut bir dünyada (88213'ten güncellenmiş) ve yeni bir dünyada sunucu çökme denetimleri sorunsuz."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "V1.7 91209'u kurmadan önce eski OUKA jar'ını (1.7.88213 veya daha eski) mods klasöründen silin ve GeckoLib 5.5.6'nın yalnızca 1 kopyasını bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi ve Fabric API 0.161.0+26.3 veya daha yenisi gerekir. Hem istemciye hem sunucuya kurun.",
+        "Denetlenmedi: oyun dengesi. Buzların ve iki makinenin enerji maliyetleri, süreleri ve tarifleri denge açısından sınanmadı.",
+        "Bir GameTest çalıştırması bir kez başarısız oldu (sakura buzu testi, kontrol bloğu erimedi) ve sonraki çalıştırmada geçti; neden belirlenemedi ve test sonradan ayarlandı. Sürüm denetimlerinde makineler gerçek bir istemcide oynanmadı ve paketlenmiş jar yalnızca iki sunucu çökme denetiminde çalıştırıldı.",
+        "V1.7 88213 notunun düzeltmesi: o not, hücre başına depolama sınırının yükseltildiğini söylüyordu. Aslında yaklaşık 1,1 trilyon J üzerindeki hücreler (Mythos gibi) birkaç eşit parça olarak sayılır ve enerji şebekesinin kendisi değişmedi. Bu zip içindeki README eski ifadeyi yineliyor."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 88213",
      "date": "2026-10-29",

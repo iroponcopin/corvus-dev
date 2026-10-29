@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 88213 — Batería cuántica SMES en 12 niveles, zócalo de baterías para todos los niveles, lingote de núcleo pesado redibujado",
+   "summary": "Ouka JJK V1.7 91209 — Industria del hielo: compresor criogénico, sintetizador criogénico cuántico y cinco hielos cuánticos",
    "releases": [
+    {
+     "version": "V1.7 91209",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 91209 — Industria del hielo: compresor criogénico, sintetizador criogénico cuántico y cinco hielos cuánticos",
+     "summary": "V1.7 91209 añade dos máquinas que fabrican hielo: el compresor criogénico para los cuatro hielos vanilla y el sintetizador criogénico cuántico para cinco hielos cuánticos nuevos. Los niveles de la batería cuántica SMES desde Plus ahora necesitan estos hielos.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "El compresor criogénico es una máquina de 2 × 2 × 2. Con agua fabrica hielo, hielo escarchado (estabilizado), hielo compacto y hielo azul; también hace hielo compacto con 2 de hielo y hielo azul con 2 de hielo compacto. Gasta energía y un solo control elige el producto. El hielo escarchado (estabilizado) nunca se derrite.",
+        "El sintetizador criogénico cuántico es una máquina de 3 × 3 × 3 que fabrica 5 hielos cuánticos: hielo de red criogénica de deuterio, hielo de vidrio amorfo, hielo superiónico XVIII, núcleo criogénico de condensado de Bose-Einstein e hielo crono de singularidad de sakura. Todos los hielos son muy resbaladizos.",
+        "El hielo de red criogénica de deuterio protege los bloques a menos de 4 de las explosiones. El hielo de vidrio amorfo es transparente y nunca se derrite. El hielo superiónico XVIII une sin pérdidas las redes de pilones separadas que toca; las máquinas siguen necesitando alcance de pilón. El núcleo criogénico de condensado de Bose-Einstein convierte el agua y la lava a menos de 3 en hielo azul y obsidiana.",
+        "El hielo crono de singularidad de sakura detiene la degradación (hojas, hielo, nieve, tierra de cultivo, cobre, coral) a menos de 8, hace que la refrigeración de un núcleo de fisión adyacente sea 4 veces más rápida y limita la velocidad de las entidades a 32 bloques por tick.",
+        "Objeto nuevo: el catalizador de singularidad de OUKA. Los niveles de la batería cuántica SMES desde Plus ahora necesitan estos hielos en sus recetas.",
+        "Comprobado en esta compilación: JUnit 2183 pruebas PASS, GameTest 1505 pruebas PASS en la última ejecución, comprobaciones de caída del servidor con un mundo existente (actualizado desde 88213) y un mundo nuevo sin problemas."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Antes de instalar V1.7 91209, quita el jar antiguo de OUKA (1.7.88213 o anterior) de la carpeta mods y deja una sola copia de GeckoLib 5.5.6. Necesita Minecraft 26.3, Fabric Loader 0.19.5 o posterior y Fabric API 0.161.0+26.3 o posterior. Instálalo en el cliente y en el servidor.",
+        "No comprobado: el equilibrio del juego. Los costes de energía, los tiempos y las recetas de los hielos y de las dos máquinas no se probaron en cuanto a equilibrio.",
+        "Una ejecución de GameTest falló una vez (la prueba del hielo de sakura, un bloque de control no se derritió) y pasó en la siguiente; no se determinó la causa y la prueba se ajustó después. Las máquinas no se jugaron en un cliente real dentro de las comprobaciones de la versión, y el jar empaquetado solo se ejecutó en las dos comprobaciones de caída del servidor.",
+        "Corrección de la nota de V1.7 88213: decía que se había subido el límite de almacenamiento por celda. En realidad, las celdas de más de unos 1,1 billones de J, como la Mythos, se cuentan como varias partes iguales, y la red de energía en sí no ha cambiado. El README de este zip repite la redacción antigua."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 88213",
      "date": "2026-10-29",
