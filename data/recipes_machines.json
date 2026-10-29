@@ -1,6 +1,6 @@
 {
  "sources": {
-  "ouka": "1.7.81347",
+  "ouka": "1.7.88213",
   "cherry": "1.3.1017"
  },
  "stations": [
@@ -320,12 +320,6 @@
    "m09588a82c0d8",
    "flat"
   ],
-  "minecraft:end_crystal": [
-   "エンドクリスタル",
-   "End Crystal",
-   "m40dde874c484",
-   "flat"
-  ],
   "minecraft:fire_charge": [
    "ファイヤーチャージ",
    "Fire Charge",
@@ -462,12 +456,6 @@
    "単結晶引き上げ炉",
    "Crystal Pulling Furnace",
    "mfab7a4fcebe4",
-   "flat"
-  ],
-  "ouka:deuterium_cell": [
-   "重水素セル",
-   "Deuterium Cell",
-   "m3c4de1753649",
    "flat"
   ],
   "ouka:electrolytic_refining_cell": [
@@ -656,12 +644,6 @@
    "m1f6c043f552d",
    "flat"
   ],
-  "ouka:pure_titanium_ingot": [
-   "超高純度チタンのインゴット",
-   "Pure Titanium Ingot",
-   "mb4488bee0fa8",
-   "flat"
-  ],
   "ouka:pyrolytic_carbon_press": [
    "高圧熱分解炭素重合機",
    "Pyrolytic Carbon Press",
@@ -828,12 +810,6 @@
    "タングステンのインゴット",
    "Tungsten Ingot",
    "m40c10149db8f",
-   "flat"
-  ],
-  "ouka:tungsten_plate": [
-   "タングステンの板",
-   "Tungsten Plate",
-   "m8c1aeddd4a36",
    "flat"
   ],
   "ouka:ultrafine_copper_powder": [

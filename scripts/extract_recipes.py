@@ -2694,6 +2694,8 @@ INTENDED_ICON_CHANGES = {
     "tsubomi:starbloom_pickaxe": ("t2052", "t2060", "Tsubomi V2.3.0.2: redrawn in the vanilla Diamond pickaxe shape, Starbloom colours (owner request 2026-10-21)"),
     "tsubomi:starbloom_shovel": ("t2053", "t2061", "Tsubomi V2.3.0.2: redrawn in the vanilla Diamond shovel shape, Starbloom colours (owner request 2026-10-21)"),
     "tsubomi:starbloom_spear": ("t2054", "t2062", "Tsubomi V2.3.0.2: redrawn in the vanilla Diamond spear shape, Starbloom colours (owner request 2026-10-21)"),
+    "ouka:smes_battery": ("t173", "t2258", "OUKA V1.7 88213: the SMES Quantum Battery is the Standard tier of the 12-tier family, its look changed to copper and brass"),
+    "ouka:heavy_core_ingot": ("t2056", "t2259", "OUKA V1.7 88213: the Heavy Core Ingot redrawn in the vanilla ingot shape"),
     "minecraft:white_carpet": (None, "t50", "Tsubomi 2.0.0 uses it; drawn with the white wool picture it already shared, never had one"),
     "minecraft:stonecutter": (None, "t889", "Tsubomi 2.0.0: the stonecutter became a station (120 recipes); it had no picture"),
     "ouka:operating_shelter_block": ("t157", "t269", "V1.4 new shelter look, owner-intended 2026-10-05"),

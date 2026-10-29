@@ -8,8 +8,36 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 81347 — Reactor de fusión Sol Artificial V2, Línea de montaje de automatización de nueva generación, Forja de carburo, Transceptor de materia Max",
+   "summary": "Ouka JJK V1.7 88213 — Batería cuántica SMES en 12 niveles, zócalo de baterías para todos los niveles, lingote de núcleo pesado redibujado",
    "releases": [
+    {
+     "version": "V1.7 88213",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 88213 — Batería cuántica SMES en 12 niveles, zócalo de baterías para todos los niveles, lingote de núcleo pesado redibujado",
+     "summary": "La batería cuántica SMES pasa a ser una familia de 12 niveles, de Lite (200 MJ) a Mythos (2.048.000 MJ). La batería de 400 MJ existente es ahora Standard, el zócalo de baterías admite todos los niveles mezclados y el lingote de núcleo pesado se ha redibujado con la forma del lingote vanilla.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "12 niveles: Lite 200 MJ, Standard 400 MJ (la batería cuántica SMES existente, con aspecto de cobre y latón), Plus 800 MJ, Super 1.600 MJ, Max 3.200 MJ, Ultra 6.400 MJ, UltraFast 12.800 MJ, Ultracore 25.600 MJ, Ultimate 51.200 MJ, Wonder Full 102.400 MJ, Premium 204.800 MJ, Mythos 2.048.000 MJ. Cada nivel tiene sus propios colores.",
+        "La carga y la descarga mueven capacidad / 4000 por tick, así que cada nivel se llena en 200 s. UltraFast descarga 4 veces más rápido.",
+        "Recetas: cada nivel se fabrica con 2 del nivel anterior más materiales. Mythos usa 8 Premium y una estrella del Nether.",
+        "El zócalo de baterías admite todos los niveles, mezclados. Las celdas de zócalos de versiones anteriores se cargan como celdas Standard.",
+        "La red admite celdas del tamaño de Mythos: se subió el límite de almacenamiento por celda y los totales se detienen en el límite. El lingote de núcleo pesado se ha redibujado con la forma del lingote vanilla.",
+        "Comprobado en esta compilación: JUnit 2136 pruebas PASS, GameTest 1485 pruebas PASS, comprobaciones de caída del servidor con un mundo existente (actualizado desde 81347) y con un mundo nuevo, sin problemas."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Antes de instalar V1.7 88213, elimina el jar antiguo de OUKA (1.7.81347 o anterior) de la carpeta mods y conserva solo 1 copia de GeckoLib 5.5.6. Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior y Fabric API 0.161.0+26.3 o superior. Instálalo en el cliente y en el servidor.",
+        "No comprobado: el equilibrio de juego. Las comprobaciones de la versión no cubren el equilibrio del Sol, de los niveles SMES ni del resto del juego, así que las capacidades y los costes de receta indicados no se han probado en cuanto a equilibrio.",
+        "Las comprobaciones con un cliente real de los nuevos niveles, el zócalo de baterías y el lingote de núcleo pesado se hicieron sobre un commit anterior de esta compilación y no se repitieron en el último. El jar empaquetado solo se ejecutó en las dos comprobaciones de caída del servidor, no con un cliente real."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 81347",
      "date": "2026-10-29",

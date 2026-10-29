@@ -306,6 +306,24 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-88213",
+    "title": "Ouka JJK V1.7 88213 — Batteria quantistica SMES in 12 livelli, presa per batterie per ogni livello, lingotto del nucleo pesante ridisegnato",
+    "summary": "La batteria quantistica SMES diventa una famiglia di 12 livelli, da Lite (200 MJ) a Mythos (2.048.000 MJ). La batteria da 400 MJ esistente ora è Standard, la presa per batterie accetta tutti i livelli mescolati e il lingotto del nucleo pesante è ridisegnato nella forma del lingotto vanilla.",
+    "highlights": [
+     "12 livelli: Lite 200 MJ, Standard 400 MJ (la batteria quantistica SMES esistente, aspetto in rame e ottone), Plus 800 MJ, Super 1.600 MJ, Max 3.200 MJ, Ultra 6.400 MJ, UltraFast 12.800 MJ, Ultracore 25.600 MJ, Ultimate 51.200 MJ, Wonder Full 102.400 MJ, Premium 204.800 MJ, Mythos 2.048.000 MJ. Ogni livello ha i propri colori.",
+     "Carica e scarica spostano capacità / 4000 per tick, quindi ogni livello si riempie in 200 s. UltraFast si scarica 4 volte più in fretta.",
+     "Ricette: ogni livello si crea con 2 del livello precedente più materiali. Mythos richiede 8 Premium e una Stella del Nether.",
+     "La presa per batterie accetta tutti i livelli, mescolati. Le celle nelle prese delle versioni precedenti vengono caricate come celle Standard.",
+     "La rete gestisce celle della dimensione di Mythos: il limite di accumulo per cella è stato alzato e i totali si fermano al limite. Il lingotto del nucleo pesante è ridisegnato nella forma del lingotto vanilla.",
+     "Verificato su questa build: JUnit 2136 test PASS, GameTest 1485 test PASS, controlli di crash del server su un mondo esistente (aggiornato da 81347) e su un mondo nuovo, senza problemi."
+    ],
+    "warnings": [
+     "Prima di installare V1.7 88213, rimuovi il vecchio jar di OUKA (1.7.81347 o precedente) dalla cartella mods e tieni solo 1 copia di GeckoLib 5.5.6. Servono Minecraft 26.3, Fabric Loader 0.19.5 o successivo e Fabric API 0.161.0+26.3 o successiva. Installalo sia sul client sia sul server.",
+     "Non verificato: il bilanciamento del gioco. I controlli della versione non coprono il bilanciamento del Sole, dei livelli SMES né del resto del gioco; le capacità e i costi delle ricette indicati non sono stati testati per il bilanciamento.",
+     "I controlli con un client reale dei nuovi livelli, della presa per batterie e del lingotto del nucleo pesante sono stati eseguiti su un commit precedente di questa build e non sono stati ripetuti sull'ultimo. Il jar impacchettato è stato eseguito solo dai due controlli di crash del server, non da un client reale."
+    ]
+   },
+   {
     "id": "ouka-v1.7-81347",
     "title": "Ouka JJK V1.7 81347 — Reattore a fusione Sole Artificiale V2, Linea di assemblaggio di automazione di nuova generazione, Forgia al carburo, Transceiver di materia Max",
     "summary": "Aggiunge il Reattore a fusione Sole Artificiale V2 (multiblocco 16 × 16 × 16, potenza nominale 500 GW) con una schermata di controllo in vetro, la Linea di assemblaggio di automazione di nuova generazione, la Forgia al carburo, il Transceiver di materia Max e il banco da lavoro di OUKA Wonder.",

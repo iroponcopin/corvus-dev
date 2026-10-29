@@ -306,6 +306,24 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-88213",
+    "title": "Ouka JJK V1.7 88213 — Bateria Quântica SMES em 12 níveis, soquete de baterias para todos os níveis, Lingote de Núcleo Pesado redesenhado",
+    "summary": "A Bateria Quântica SMES agora é uma família de 12 níveis, de Lite (200 MJ) a Mythos (2.048.000 MJ). A bateria de 400 MJ existente passa a ser Standard, o soquete de baterias aceita todos os níveis misturados e o Lingote de Núcleo Pesado foi redesenhado na forma do lingote vanilla.",
+    "highlights": [
+     "12 níveis: Lite 200 MJ, Standard 400 MJ (a Bateria Quântica SMES existente, visual em cobre e latão), Plus 800 MJ, Super 1.600 MJ, Max 3.200 MJ, Ultra 6.400 MJ, UltraFast 12.800 MJ, Ultracore 25.600 MJ, Ultimate 51.200 MJ, Wonder Full 102.400 MJ, Premium 204.800 MJ, Mythos 2.048.000 MJ. Cada nível tem suas próprias cores.",
+     "Carga e descarga movem capacidade / 4000 por tick, então cada nível enche em 200 s. A UltraFast descarrega 4 vezes mais rápido.",
+     "Receitas: cada nível é feito com 2 do nível anterior mais materiais. A Mythos usa 8 Premium e uma Estrela do Nether.",
+     "O soquete de baterias aceita todos os níveis, misturados. As células de soquetes de versões anteriores são carregadas como células Standard.",
+     "A rede lida com células do tamanho da Mythos: o limite de armazenamento por célula foi aumentado e os totais param no limite. O Lingote de Núcleo Pesado foi redesenhado na forma do lingote vanilla.",
+     "Verificado nesta build: JUnit 2136 testes PASS, GameTest 1485 testes PASS, verificações de falha do servidor com um mundo existente (atualizado a partir da 81347) e um mundo novo, sem problemas."
+    ],
+    "warnings": [
+     "Antes de instalar a V1.7 88213, remova o jar antigo do OUKA (1.7.81347 ou anterior) da pasta mods e mantenha apenas 1 cópia do GeckoLib 5.5.6. São necessários Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente e Fabric API 0.161.0+26.3 ou mais recente. Instale no cliente e no servidor.",
+     "Não verificado: o equilíbrio do jogo. As verificações da versão não cobrem o equilíbrio do Sol, dos níveis SMES nem do restante do jogo; as capacidades e os custos de receita acima não foram testados quanto ao equilíbrio.",
+     "As verificações com um cliente real dos novos níveis, do soquete de baterias e do Lingote de Núcleo Pesado foram feitas em um commit anterior desta build e não foram repetidas no último. O jar empacotado foi executado apenas pelas duas verificações de falha do servidor, não por um cliente real."
+    ]
+   },
+   {
     "id": "ouka-v1.7-81347",
     "title": "Ouka JJK V1.7 81347 — Reator de Fusão Sol Artificial V2, Linha de Montagem de Automação de Nova Geração, Forja de Carboneto, Transceptor de Matéria Max",
     "summary": "Adiciona o Reator de Fusão Sol Artificial V2 (multibloco de 16 × 16 × 16, potência nominal de 500 GW) com tela de controle de vidro, a Linha de Montagem de Automação de Nova Geração, a Forja de Carboneto, o Transceptor de Matéria Max e a bancada do OUKA Wonder.",

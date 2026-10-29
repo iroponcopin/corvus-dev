@@ -306,6 +306,24 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-88213",
+    "title": "Ouka JJK V1.7 88213 — SMES-Quantenbatterie in 12 Stufen, Batteriesockel für jede Stufe, neu gezeichneter Schwerkern-Barren",
+    "summary": "Die SMES-Quantenbatterie ist jetzt eine Familie aus 12 Stufen, von Lite (200 MJ) bis Mythos (2.048.000 MJ). Die bisherige 400-MJ-Batterie ist jetzt Standard, der Batteriesockel nimmt alle Stufen gemischt auf, und der Schwerkern-Barren ist in der Form des Vanilla-Barrens neu gezeichnet.",
+    "highlights": [
+     "12 Stufen: Lite 200 MJ, Standard 400 MJ (die bisherige SMES-Quantenbatterie, Optik jetzt Kupfer und Messing), Plus 800 MJ, Super 1.600 MJ, Max 3.200 MJ, Ultra 6.400 MJ, UltraFast 12.800 MJ, Ultracore 25.600 MJ, Ultimate 51.200 MJ, Wonder Full 102.400 MJ, Premium 204.800 MJ, Mythos 2.048.000 MJ. Jede Stufe hat eigene Farben.",
+     "Laden und Entladen bewegen pro Tick Kapazität / 4000, deshalb ist jede Stufe in 200 s voll. UltraFast entlädt 4-mal schneller.",
+     "Rezepte: Jede Stufe besteht aus 2 Stück der vorherigen Stufe plus Materialien. Mythos braucht 8 Premium und einen Netherstern.",
+     "Der Batteriesockel nimmt alle Stufen gemischt auf. Zellen in Sockeln aus früheren Versionen werden als Standard-Zellen geladen.",
+     "Das Netz verarbeitet Zellen in Mythos-Größe: Das Speicherlimit pro Zelle wurde erhöht, Summen enden am Limit. Der Schwerkern-Barren ist in der Form des Vanilla-Barrens neu gezeichnet.",
+     "Geprüft auf diesem Build: JUnit 2136 Tests PASS, GameTest 1485 Tests PASS, Server-Absturzprüfungen mit einer bestehenden Welt (von 81347 aktualisiert) und einer neuen Welt sauber."
+    ],
+    "warnings": [
+     "Entferne vor der Installation von V1.7 88213 das alte OUKA-JAR (1.7.81347 oder älter) aus dem mods-Ordner und behalte nur 1 Kopie von GeckoLib 5.5.6. Erforderlich sind Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Auf Client und Server installieren.",
+     "Nicht geprüft: Spielbalance. Die Release-Prüfungen decken die Balance der Sonne, der SMES-Stufen und des übrigen Spiels nicht ab; die Kapazitäten und Rezeptkosten oben sind nicht auf Balance getestet.",
+     "Die Prüfungen mit einem echten Client für die neuen Stufen, den Batteriesockel und den Schwerkern-Barren liefen auf einem früheren Commit dieses Builds und wurden auf dem letzten nicht wiederholt. Das gepackte JAR wurde nur in den beiden Server-Absturzprüfungen ausgeführt, nicht mit einem echten Client."
+    ]
+   },
+   {
     "id": "ouka-v1.7-81347",
     "title": "Ouka JJK V1.7 81347 — Künstliche-Sonne-Fusionsreaktor V2, Automatisierungs-Montagelinie der nächsten Generation, Hartmetall-Schmiede, Materietransceiver Max",
     "summary": "Neu sind der Künstliche-Sonne-Fusionsreaktor V2 (Multiblock 16 × 16 × 16, Nennleistung 500 GW) mit gläsernem Steuerbildschirm, die Automatisierungs-Montagelinie der nächsten Generation, die Hartmetall-Schmiede, der Materietransceiver Max und die Werkbank von OUKA Wonder.",

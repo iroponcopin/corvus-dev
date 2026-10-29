@@ -306,6 +306,24 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-88213",
+    "title": "Ouka JJK V1.7 88213 — Baterai Kuantum SMES dalam 12 tingkat, soket baterai untuk semua tingkat, Ingot Inti Berat digambar ulang",
+    "summary": "Baterai Kuantum SMES kini menjadi keluarga 12 tingkat, dari Lite (200 MJ) sampai Mythos (2.048.000 MJ). Baterai 400 MJ yang sudah ada kini menjadi Standard, soket baterai menampung semua tingkat secara campur, dan Ingot Inti Berat digambar ulang dalam bentuk ingot vanilla.",
+    "highlights": [
+     "12 tingkat: Lite 200 MJ, Standard 400 MJ (Baterai Kuantum SMES yang sudah ada, tampilan diubah menjadi tembaga dan kuningan), Plus 800 MJ, Super 1.600 MJ, Max 3.200 MJ, Ultra 6.400 MJ, UltraFast 12.800 MJ, Ultracore 25.600 MJ, Ultimate 51.200 MJ, Wonder Full 102.400 MJ, Premium 204.800 MJ, Mythos 2.048.000 MJ. Setiap tingkat punya warna sendiri.",
+     "Pengisian dan pengosongan memindahkan kapasitas / 4000 per tick, sehingga setiap tingkat penuh dalam 200 detik. UltraFast mengosongkan 4 kali lebih cepat.",
+     "Resep: setiap tingkat dibuat dari 2 tingkat sebelumnya ditambah bahan. Mythos memakai 8 Premium dan sebuah Bintang Nether.",
+     "Soket baterai menampung semua tingkat secara campur. Sel di soket dari versi sebelumnya dimuat sebagai sel Standard.",
+     "Jaringan mendukung sel berukuran Mythos: batas penyimpanan per sel dinaikkan, dan total berhenti di batas itu. Ingot Inti Berat digambar ulang dalam bentuk ingot vanilla.",
+     "Diperiksa pada build ini: JUnit 2136 tes PASS, GameTest 1485 tes PASS, pemeriksaan crash server pada dunia yang sudah ada (diperbarui dari 81347) dan dunia baru bersih."
+    ],
+    "warnings": [
+     "Sebelum memasang V1.7 88213, hapus jar OUKA lama (1.7.81347 atau lebih lama) dari folder mods dan sisakan hanya 1 salinan GeckoLib 5.5.6. Dibutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di klien dan server.",
+     "Belum diperiksa: keseimbangan permainan. Pemeriksaan rilis tidak mencakup keseimbangan Matahari, tingkat SMES, atau permainan lainnya, jadi kapasitas dan biaya resep di atas belum diuji keseimbangannya.",
+     "Pemeriksaan klien nyata untuk tingkat baru, soket baterai, dan Ingot Inti Berat dijalankan pada commit sebelumnya dari build ini dan tidak diulang pada commit terakhir. Jar yang sudah dikemas hanya dijalankan oleh dua pemeriksaan crash server, bukan oleh klien nyata."
+    ]
+   },
+   {
     "id": "ouka-v1.7-81347",
     "title": "Ouka JJK V1.7 81347 — Reaktor Fusi Matahari Buatan V2, Jalur Perakitan Otomasi Generasi Berikutnya, Tempa Karbida, Transceiver Materi Max",
     "summary": "Menambahkan Reaktor Fusi Matahari Buatan V2 (multiblok 16 × 16 × 16, daya nominal 500 GW) dengan layar kontrol kaca, Jalur Perakitan Otomasi Generasi Berikutnya, Tempa Karbida, Transceiver Materi Max, dan meja kerja OUKA Wonder.",

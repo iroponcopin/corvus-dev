@@ -306,6 +306,24 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.7-88213",
+    "title": "Ouka JJK V1.7 88213 — Batterie quantique SMES en 12 paliers, support de batteries pour tous les paliers, lingot de noyau lourd redessiné",
+    "summary": "La batterie quantique SMES devient une famille de 12 paliers, de Lite (200 MJ) à Mythos (2 048 000 MJ). La batterie de 400 MJ existante devient Standard, le support de batteries accepte tous les paliers mélangés et le lingot de noyau lourd est redessiné à la forme du lingot vanilla.",
+    "highlights": [
+     "12 paliers : Lite 200 MJ, Standard 400 MJ (la batterie quantique SMES existante, aspect cuivre et laiton), Plus 800 MJ, Super 1 600 MJ, Max 3 200 MJ, Ultra 6 400 MJ, UltraFast 12 800 MJ, Ultracore 25 600 MJ, Ultimate 51 200 MJ, Wonder Full 102 400 MJ, Premium 204 800 MJ, Mythos 2 048 000 MJ. Chaque palier a ses propres couleurs.",
+     "La charge et la décharge déplacent capacité / 4000 par tick, donc chaque palier se remplit en 200 s. UltraFast se décharge 4 fois plus vite.",
+     "Recettes : chaque palier se fabrique avec 2 du palier précédent plus des matériaux. Mythos demande 8 Premium et une étoile du Nether.",
+     "Le support de batteries accepte tous les paliers, mélangés. Les cellules des supports des versions précédentes sont chargées comme des cellules Standard.",
+     "Le réseau gère des cellules de la taille de Mythos : la limite de stockage par cellule a été relevée et les totaux s'arrêtent à la limite. Le lingot de noyau lourd est redessiné à la forme du lingot vanilla.",
+     "Vérifié sur ce build : JUnit 2136 tests PASS, GameTest 1485 tests PASS, vérifications de plantage serveur sur un monde existant (mis à jour depuis 81347) et sur un nouveau monde, sans problème."
+    ],
+    "warnings": [
+     "Avant d'installer V1.7 88213, retirez l'ancien jar d'OUKA (1.7.81347 ou antérieur) du dossier mods et ne gardez qu'1 exemplaire de GeckoLib 5.5.6. Il faut Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent et Fabric API 0.161.0+26.3 ou plus récent. À installer sur le client et sur le serveur.",
+     "Non vérifié : l'équilibrage du jeu. Les vérifications de la version ne couvrent pas l'équilibrage du Soleil, des paliers SMES ni du reste du jeu ; les capacités et les coûts de recette ci-dessus n'ont pas été testés pour l'équilibrage.",
+     "Les vérifications avec un client réel des nouveaux paliers, du support de batteries et du lingot de noyau lourd ont été faites sur un commit antérieur de ce build et n'ont pas été relancées sur le dernier. Le jar empaqueté n'a été exécuté que par les deux vérifications de plantage serveur, pas par un client réel."
+    ]
+   },
+   {
     "id": "ouka-v1.7-81347",
     "title": "Ouka JJK V1.7 81347 — Réacteur à fusion Soleil artificiel V2, Ligne d'assemblage d'automatisation nouvelle génération, Forge au carbure, Transcepteur de matière Max",
     "summary": "Ajoute le Réacteur à fusion Soleil artificiel V2 (multibloc de 16 × 16 × 16, puissance nominale de 500 GW) avec un écran de contrôle en verre, la Ligne d'assemblage d'automatisation nouvelle génération, la Forge au carbure, le Transcepteur de matière Max et l'établi d'OUKA Wonder.",

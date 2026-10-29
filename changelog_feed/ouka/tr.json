@@ -8,8 +8,36 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 81347 — Yapay Güneş Füzyon Reaktörü V2, Yeni Nesil Otomasyon Montaj Hattı, Karbür Dövme Ocağı, Madde Alıcı-Verici Max",
+   "summary": "Ouka JJK V1.7 88213 — 12 kademeli SMES Kuantum Pil, her kademeyi alan pil yuvası, yeniden çizilen Ağır Çekirdek Külçesi",
    "releases": [
+    {
+     "version": "V1.7 88213",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 88213 — 12 kademeli SMES Kuantum Pil, her kademeyi alan pil yuvası, yeniden çizilen Ağır Çekirdek Külçesi",
+     "summary": "SMES Kuantum Pil artık Lite (200 MJ) ile Mythos (2.048.000 MJ) arasında 12 kademeli bir aile. Mevcut 400 MJ pil Standard oldu, pil yuvası tüm kademeleri karışık olarak alıyor ve Ağır Çekirdek Külçesi vanilya külçe biçiminde yeniden çizildi.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "12 kademe: Lite 200 MJ, Standard 400 MJ (mevcut SMES Kuantum Pil, görünümü bakır ve pirinç oldu), Plus 800 MJ, Super 1.600 MJ, Max 3.200 MJ, Ultra 6.400 MJ, UltraFast 12.800 MJ, Ultracore 25.600 MJ, Ultimate 51.200 MJ, Wonder Full 102.400 MJ, Premium 204.800 MJ, Mythos 2.048.000 MJ. Her kademenin kendi renkleri var.",
+        "Şarj ve deşarj her tikte kapasite / 4000 taşır; bu yüzden her kademe 200 sn'de dolar. UltraFast 4 kat hızlı deşarj eder.",
+        "Tarifler: her kademe, bir önceki kademeden 2 adet ve malzemelerle yapılır. Mythos için 8 Premium ve bir Nether Yıldızı gerekir.",
+        "Pil yuvası tüm kademeleri karışık olarak alır. Önceki sürümlerdeki yuvalarda bulunan hücreler Standard hücre olarak yüklenir.",
+        "Şebeke Mythos boyutundaki hücreleri işler: hücre başına depolama sınırı yükseltildi ve toplamlar sınırda durur. Ağır Çekirdek Külçesi vanilya külçe biçiminde yeniden çizildi.",
+        "Bu yapıda kontrol edildi: JUnit 2136 test PASS, GameTest 1485 test PASS, mevcut bir dünyada (81347'den güncellenmiş) ve yeni bir dünyada sunucu çökme kontrolleri temiz."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "V1.7 88213'ü kurmadan önce mods klasöründen eski OUKA jar dosyasını (1.7.81347 veya daha eski) silin ve GeckoLib 5.5.6'dan yalnızca 1 kopya bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi ve Fabric API 0.161.0+26.3 veya daha yenisi gerekir. Hem istemciye hem sunucuya kurun.",
+        "Kontrol edilmedi: oyun dengesi. Sürüm kontrolleri Güneş'in, SMES kademelerinin ve oyunun geri kalanının dengesini kapsamıyor; yukarıdaki kapasiteler ve tarif maliyetleri denge açısından test edilmedi.",
+        "Yeni kademelerin, pil yuvasının ve Ağır Çekirdek Külçesi'nin gerçek istemciyle kontrolleri bu yapının daha önceki bir commit'inde yapıldı ve son commit'te yeniden çalıştırılmadı. Paketlenmiş jar yalnızca iki sunucu çökme kontrolüyle çalıştırıldı, gerçek bir istemciyle çalıştırılmadı."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 81347",
      "date": "2026-10-29",

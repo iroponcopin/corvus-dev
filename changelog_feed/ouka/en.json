@@ -8,8 +8,36 @@
  "groups": [
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 81347 — Artificial Sun Fusion Reactor V2, Next-Generation Assembly Line, Carbide Forge, Matter Transceiver Max",
+   "summary": "Ouka JJK V1.7 88213 — SMES Quantum Battery in 12 tiers, battery socket for every tier, Heavy Core Ingot redrawn",
    "releases": [
+    {
+     "version": "V1.7 88213",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Ouka JJK V1.7 88213 — SMES Quantum Battery in 12 tiers, battery socket for every tier, Heavy Core Ingot redrawn",
+     "summary": "The SMES Quantum Battery is now a family of 12 tiers, from Lite (200 MJ) to Mythos (2,048,000 MJ). The existing 400 MJ battery is now Standard, the battery socket holds every tier mixed, and the Heavy Core Ingot is redrawn in the vanilla ingot shape.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "12 tiers: Lite 200 MJ, Standard 400 MJ (the existing SMES Quantum Battery, look changed to copper and brass), Plus 800 MJ, Super 1,600 MJ, Max 3,200 MJ, Ultra 6,400 MJ, UltraFast 12,800 MJ, Ultracore 25,600 MJ, Ultimate 51,200 MJ, Wonder Full 102,400 MJ, Premium 204,800 MJ, Mythos 2,048,000 MJ. Each tier has its own colours.",
+        "Charge and discharge move capacity / 4000 per tick, so every tier fills in 200 s. UltraFast discharges 4 times faster.",
+        "Recipes: each tier is made from 2 of the previous tier plus materials. Mythos takes 8 Premium and a Nether Star.",
+        "The battery socket holds every tier, mixed. Cells in sockets from earlier versions load as Standard cells.",
+        "The grid handles Mythos-sized cells: the per-cell storage limit was raised, and totals stop at the limit. The Heavy Core Ingot is redrawn in the vanilla ingot shape.",
+        "Checked on this build: JUnit 2136 tests PASS, GameTest 1485 tests PASS, server crash checks on an existing world (upgraded from 81347) and a fresh world clean."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Before you install V1.7 88213, remove the old OUKA jar (1.7.81347 or older) from the mods folder and keep only 1 copy of GeckoLib 5.5.6. It needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, and Fabric API 0.161.0+26.3 or newer. Install it on both the client and the server.",
+        "Not checked: gameplay balance. The release checks do not cover the balance of the Sun, the SMES tiers or other gameplay, so treat the capacities and recipe costs above as not balance-tested.",
+        "The real-client checks of the new tiers, the battery socket and the Heavy Core Ingot ran on an earlier commit of this build and were not rerun on the final one. The packed jar was exercised only by the two server crash checks, not by a real client."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.7 81347",
      "date": "2026-10-29",
