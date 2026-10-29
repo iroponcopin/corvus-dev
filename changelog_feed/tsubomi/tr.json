@@ -8,8 +8,38 @@
  "groups": [
   {
    "label": "V2.4",
-   "summary": "Tsubomi V2.4 1852 — her hayatta kalan için /tsubomi gift",
+   "summary": "Tsubomi V2.4 2009 — /tsubomi gift: bir sandıktan bir hediye seçin",
    "releases": [
+    {
+     "version": "V2.4 2009",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Tsubomi V2.4 2009 — /tsubomi gift: bir sandıktan bir hediye seçin",
+     "summary": "Tsubomi V2.4 2009, /tsubomi gift komutunu değiştirir: önünüzde bir hediye sandığı belirir ve açtığınızda Creative tarzı bir seçicide bir eşya seçebilirsiniz.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "/tsubomi gift adını korur ve operatör yetkisi gerektirmez; bu nedenle hileler kapalıyken Survival modunda da çalışır. Her oyuncu kampanya başına bir kez alabilir.",
+        "Önünüzde iki blok uzakta bir hediye sandığı belirir. Yalnızca siz açabilir veya kırabilirsiniz. Hediye seçiciyi açmak için sağ tıklayın.",
+        "Seçici, mod bazında kategori sekmeleri, bir arama kutusu, kaydırılabilir bir ızgara ve üzerine gelindiğinde görünen bir ipucu içeren Creative tarzı bir penceredir. Bir eşyaya tıklayın, ardından Take tuşuna basın. Tam olarak bir eşya alırsınız ve sandık kaldırılır.",
+        "Silahlar, zırhlar, elytra'lar, kalkanlar, yaylar ve Tsubomi'nin ekipman hatları (Starbloom, Ziz, Phoenix, Corvus ve kanatları) hiçbir zaman sunulmaz. Kazma, kürek, çapa, olta ve makas gibi basit araçlar yine de sunulur.",
+        "Yalnızca Creative eşyaları hiçbir zaman sunulmaz; spawner ve tablo listede kalır. Sandık için yer yoksa seçici hemen açılır."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+        "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır.",
+        "Survival ve ekipman kuralları geliştiricinin yorumudur. Sahip listeleri değiştirebilir.",
+        "Bu sürümde sürüm kontrolü, özel sunucu, çok oyunculu mod ve gerçek Halia, OUKA ve Cherry jar dosyaları test edilmedi.",
+        "Japonca metin henüz sahip tarafından onaylanmadı.",
+        "Sandık sesi ve parçacıkları oyunun kendisine aittir. Seçici yalnızca tek bir ekran boyutunda (1280×720) gerçek bir istemcide kontrol edildi."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.4 1852",
      "date": "2026-10-29",

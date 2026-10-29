@@ -8,8 +8,38 @@
  "groups": [
   {
    "label": "V2.4",
-   "summary": "Tsubomi V2.4 1852 — 人人可用的 /tsubomi gift",
+   "summary": "Tsubomi V2.4 2009 — /tsubomi gift：从宝箱中选择一件礼物",
    "releases": [
+    {
+     "version": "V2.4 2009",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Tsubomi V2.4 2009 — /tsubomi gift：从宝箱中选择一件礼物",
+     "summary": "Tsubomi V2.4 2009 更改了 /tsubomi gift：你面前会出现一个礼物箱，打开后可以在类似 Creative 的选择界面中选择一件物品。",
+     "sections": [
+      {
+       "title": "更新内容",
+       "items": [
+        "/tsubomi gift 保留其名称，无需管理员权限，因此在关闭作弊的 Survival 中也可以使用。每位玩家每个战役可领取一次。",
+        "礼物箱会出现在你前方两格处。只有你能打开或破坏它。右键点击即可打开礼物选择界面。",
+        "该选择界面是类似 Creative 的窗口，包含按模组分类的标签页、搜索框、可滚动的网格以及悬停提示。点击一件物品，然后按「Take」。你只能获得一件物品，礼物箱随之移除。",
+        "武器、护甲、鞘翅、盾牌、弓以及 Tsubomi 的装备系列（Starbloom、Ziz、Phoenix、Corvus 及其翅膀）永远不会出现在选项中。镐、锹、锄、钓竿和剪刀等普通工具仍会提供。",
+        "仅限 Creative 的物品永远不会提供，刷怪笼和画仍然保留在可选范围内。如果没有空间放置礼物箱，选择界面会立即打开。"
+       ]
+      },
+      {
+       "title": "注意事项",
+       "items": [
+        "需要 Minecraft 26.3、Fabric Loader 0.19.5 或更高、Fabric API 0.161.0+26.3 或更高以及 Java 25。不需要其他模组；Cherry 是可选的。",
+        "Tsubomi 不能与 Alpha 同时使用。只要安装了任何一个 Alpha 模组，游戏就无法启动；请先移除 Alpha 的 jar。",
+        "Survival 和装备规则是开发者的理解。所有者可能会更改列表。",
+        "本次发布未测试版本检查、专用服务器、多人游戏，以及真实的 Halia、OUKA 和 Cherry 模组文件。",
+        "日文文本尚未获得所有者批准。",
+        "礼物箱的音效和粒子效果来自游戏本身。选择界面仅在真实客户端中、单一屏幕尺寸（1280×720）上进行了检查。"
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.4 1852",
      "date": "2026-10-29",

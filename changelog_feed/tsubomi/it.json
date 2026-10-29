@@ -8,8 +8,38 @@
  "groups": [
   {
    "label": "V2.4",
-   "summary": "Tsubomi V2.4 1852 — /tsubomi gift per ogni sopravvissuto",
+   "summary": "Tsubomi V2.4 2009 — /tsubomi gift: scegli un regalo da un forziere",
    "releases": [
+    {
+     "version": "V2.4 2009",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Tsubomi V2.4 2009 — /tsubomi gift: scegli un regalo da un forziere",
+     "summary": "Tsubomi V2.4 2009 modifica /tsubomi gift: davanti a te appare un forziere dei regali e, aprendolo, puoi scegliere un oggetto in un selettore in stile Creative.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "/tsubomi gift mantiene il suo nome e non richiede permessi da operatore, quindi funziona in Survival con i cheat disattivati. Ogni giocatore può richiederlo una volta per campagna.",
+        "Un forziere dei regali appare a due blocchi davanti a te. Solo tu puoi aprirlo o romperlo. Fai clic destro su di esso per aprire il selettore dei regali.",
+        "Il selettore è una finestra in stile Creative con schede di categoria per mod, una casella di ricerca, una griglia scorrevole e una descrizione al passaggio del mouse. Fai clic su un oggetto, quindi premi Take. Ricevi esattamente un oggetto e il forziere viene rimosso.",
+        "Armi, armature, elitre, scudi, archi e le linee di equipaggiamento di Tsubomi (Starbloom, Ziz, Phoenix, Corvus e le loro ali) non vengono mai offerti. Gli strumenti semplici come picconi, pale, zappe, canne da pesca e cesoie vengono ancora offerti.",
+        "Gli oggetti solo Creative non vengono mai offerti, e lo spawner e il dipinto restano disponibili. Se non c'è spazio per un forziere, il selettore si apre subito."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Richiede Minecraft 26.3, Fabric Loader 0.19.5 o successivo, Fabric API 0.161.0+26.3 o successiva e Java 25. Non serve nessun altro mod; Cherry è facoltativo.",
+        "Tsubomi non può essere usato insieme ad Alpha. Se è installato anche un solo mod di Alpha, il gioco non si avvia; rimuovi prima i jar di Alpha.",
+        "Le regole su Survival e sull'equipaggiamento sono l'interpretazione dello sviluppatore. Il proprietario può modificare le liste.",
+        "Il controllo della versione, un server dedicato, il multigiocatore e i jar reali di Halia, OUKA e Cherry non sono stati testati in questa versione.",
+        "Il testo giapponese non è ancora stato approvato dal proprietario.",
+        "Il suono e le particelle del forziere sono quelli del gioco. Il selettore è stato verificato in un client reale su una sola dimensione dello schermo (1280×720)."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.4 1852",
      "date": "2026-10-29",

@@ -1347,6 +1347,26 @@
      "Les noms et textes japonais ne sont pas encore approuvés par le propriétaire.",
      "Le son et les particules du coffre sont ceux du jeu. Aucun son personnalisé n'est ajouté dans cette version."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-2009",
+    "title": "Tsubomi V2.4 2009 — /tsubomi gift : choisir un cadeau dans un coffre",
+    "summary": "Tsubomi V2.4 2009 modifie /tsubomi gift : un coffre cadeau apparaît devant vous, et l'ouvrir vous permet de choisir un objet dans un sélecteur de style Creative.",
+    "highlights": [
+     "/tsubomi gift conserve son nom et ne nécessite pas de droits d'opérateur ; il fonctionne donc en Survival avec les triches désactivées. Chaque joueur peut le réclamer une fois par campagne.",
+     "Un coffre cadeau apparaît à deux blocs devant vous. Vous seul pouvez l'ouvrir ou le casser. Faites un clic droit dessus pour ouvrir le sélecteur de cadeaux.",
+     "Le sélecteur est une fenêtre de style Creative avec des onglets de catégories par mod, une zone de recherche, une grille défilante et une info-bulle au survol. Cliquez sur un objet, puis appuyez sur Take. Vous recevez exactement un objet, et le coffre disparaît.",
+     "Les armes, armures, élytres, boucliers, arcs et lignes d'équipement de Tsubomi (Starbloom, Ziz, Phoenix, Corvus et leurs ailes) ne sont jamais proposés. Les outils simples comme les pioches, pelles, houes, cannes à pêche et cisailles sont toujours proposés.",
+     "Les objets réservés au mode Creative ne sont jamais proposés, et le générateur et le tableau restent disponibles. S'il n'y a pas de place pour un coffre, le sélecteur s'ouvre immédiatement."
+    ],
+    "warnings": [
+     "Nécessite Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent, Fabric API 0.161.0+26.3 ou plus récent et Java 25. Aucun autre mod n'est nécessaire ; Cherry est facultatif.",
+     "Tsubomi ne peut pas être utilisé avec Alpha. Si un seul mod Alpha est installé, le jeu ne démarre pas ; retirez d'abord les jars d'Alpha.",
+     "Les règles Survival et équipement reflètent l'interprétation du développeur. Le propriétaire peut modifier les listes.",
+     "La vérification de version, un serveur dédié, le multijoueur, ainsi que les vrais jars Halia, OUKA et Cherry n'ont pas été testés dans cette version.",
+     "Le texte japonais n'a pas encore été approuvé par le propriétaire.",
+     "Le son et les particules du coffre sont ceux du jeu. Le sélecteur n'a été vérifié que dans un vrai client, sur une seule taille d'écran (1280×720)."
+    ]
    }
   ],
   "halia": [

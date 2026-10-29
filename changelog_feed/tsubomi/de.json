@@ -8,8 +8,38 @@
  "groups": [
   {
    "label": "V2.4",
-   "summary": "Tsubomi V2.4 1852 — /tsubomi gift für jeden Überlebenden",
+   "summary": "Tsubomi V2.4 2009 — /tsubomi gift: einen Gegenstand aus einer Truhe wählen",
    "releases": [
+    {
+     "version": "V2.4 2009",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Tsubomi V2.4 2009 — /tsubomi gift: einen Gegenstand aus einer Truhe wählen",
+     "summary": "Tsubomi V2.4 2009 ändert /tsubomi gift: Vor dir erscheint eine Geschenktruhe, und beim Öffnen kannst du in einer Auswahl im Stil von Creative einen Gegenstand wählen.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "/tsubomi gift behält seinen Namen und braucht keine Operator-Rechte, funktioniert also in Survival mit ausgeschalteten Cheats. Jeder Spieler kann es einmal pro Kampagne beanspruchen.",
+        "Eine Geschenktruhe erscheint zwei Blöcke vor dir. Nur du kannst sie öffnen oder abbauen. Rechtsklick öffnet die Geschenkauswahl.",
+        "Die Auswahl ist ein Fenster im Stil von Creative mit Kategorie-Reitern nach Mod, einem Suchfeld, einem scrollbaren Raster und einem Tooltip beim Hovern. Klicke einen Gegenstand an und drücke dann Take. Du bekommst genau einen Gegenstand, und die Truhe wird entfernt.",
+        "Waffen, Rüstung, Elytren, Schilde, Bögen und Tsubomis Ausrüstungslinien (Starbloom, Ziz, Phoenix, Corvus und deren Flügel) werden nie angeboten. Einfache Werkzeuge wie Spitzhacken, Schaufeln, Hacken, Angeln und Scheren werden weiterhin angeboten.",
+        "Nur-Creative-Gegenstände werden nie angeboten; Spawner und Gemälde bleiben im Angebot. Gibt es keinen Platz für eine Truhe, öffnet sich die Auswahl sofort."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
+        "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars.",
+        "Die Regeln für Survival und Ausrüstung sind die Lesart des Entwicklers. Der Eigentümer kann die Listen ändern.",
+        "Die Versionsprüfung, ein dedizierter Server, Mehrspielermodus sowie die echten Halia-, OUKA- und Cherry-Jars wurden in diesem Release nicht getestet.",
+        "Der japanische Text ist vom Eigentümer noch nicht freigegeben.",
+        "Truhengeräusch und Partikel stammen aus dem Spiel selbst. Die Auswahl wurde in einem echten Client nur auf einer Bildschirmgröße geprüft (1280×720)."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.4 1852",
      "date": "2026-10-29",

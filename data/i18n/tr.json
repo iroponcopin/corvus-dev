@@ -1347,6 +1347,26 @@
      "Japonca adlar ve metinler henüz sahibi tarafından onaylanmadı.",
      "Sandığın sesi ve parçacıkları oyunun kendi sesleridir. Bu sürümde özel ses eklenmedi."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-2009",
+    "title": "Tsubomi V2.4 2009 — /tsubomi gift: bir sandıktan bir hediye seçin",
+    "summary": "Tsubomi V2.4 2009, /tsubomi gift komutunu değiştirir: önünüzde bir hediye sandığı belirir ve açtığınızda Creative tarzı bir seçicide bir eşya seçebilirsiniz.",
+    "highlights": [
+     "/tsubomi gift adını korur ve operatör yetkisi gerektirmez; bu nedenle hileler kapalıyken Survival modunda da çalışır. Her oyuncu kampanya başına bir kez alabilir.",
+     "Önünüzde iki blok uzakta bir hediye sandığı belirir. Yalnızca siz açabilir veya kırabilirsiniz. Hediye seçiciyi açmak için sağ tıklayın.",
+     "Seçici, mod bazında kategori sekmeleri, bir arama kutusu, kaydırılabilir bir ızgara ve üzerine gelindiğinde görünen bir ipucu içeren Creative tarzı bir penceredir. Bir eşyaya tıklayın, ardından Take tuşuna basın. Tam olarak bir eşya alırsınız ve sandık kaldırılır.",
+     "Silahlar, zırhlar, elytra'lar, kalkanlar, yaylar ve Tsubomi'nin ekipman hatları (Starbloom, Ziz, Phoenix, Corvus ve kanatları) hiçbir zaman sunulmaz. Kazma, kürek, çapa, olta ve makas gibi basit araçlar yine de sunulur.",
+     "Yalnızca Creative eşyaları hiçbir zaman sunulmaz; spawner ve tablo listede kalır. Sandık için yer yoksa seçici hemen açılır."
+    ],
+    "warnings": [
+     "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
+     "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır.",
+     "Survival ve ekipman kuralları geliştiricinin yorumudur. Sahip listeleri değiştirebilir.",
+     "Bu sürümde sürüm kontrolü, özel sunucu, çok oyunculu mod ve gerçek Halia, OUKA ve Cherry jar dosyaları test edilmedi.",
+     "Japonca metin henüz sahip tarafından onaylanmadı.",
+     "Sandık sesi ve parçacıkları oyunun kendisine aittir. Seçici yalnızca tek bir ekran boyutunda (1280×720) gerçek bir istemcide kontrol edildi."
+    ]
    }
   ],
   "halia": [

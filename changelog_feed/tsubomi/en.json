@@ -8,8 +8,38 @@
  "groups": [
   {
    "label": "V2.4",
-   "summary": "Tsubomi V2.4 1852 — /tsubomi gift for every survivor",
+   "summary": "Tsubomi V2.4 2009 — /tsubomi gift: choose one gift from a chest",
    "releases": [
+    {
+     "version": "V2.4 2009",
+     "date": "2026-10-29",
+     "type": "release",
+     "title": "Tsubomi V2.4 2009 — /tsubomi gift: choose one gift from a chest",
+     "summary": "Tsubomi V2.4 2009 changes /tsubomi gift: a gift chest appears in front of you, and opening it lets you choose one item in a Creative-style picker.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "/tsubomi gift keeps its name and needs no operator rights, so it works in Survival with cheats off. Each player may claim it once per campaign.",
+        "A gift chest appears two blocks in front of you. Only you can open it or break it. Right-click it to open the gift picker.",
+        "The picker is a Creative-style window with category tabs by mod, a search box, a scrollable grid and a hover tooltip. Click one item, then press Take. You get exactly one item, and the chest is removed.",
+        "Weapons, armour, elytra, shields, bows and Tsubomi's gear lines (Starbloom, Ziz, Phoenix, Corvus and their wings) are never offered. Plain tools such as pickaxes, shovels, hoes, fishing rods and shears are still offered.",
+        "Creative-only items are never offered, and the spawner and the painting stay in. If there is no room for a chest, the picker opens straight away."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Requires Minecraft 26.3, Fabric Loader 0.19.5 or newer, Fabric API 0.161.0+26.3 or newer and Java 25. No other mod is needed; Cherry is optional.",
+        "Tsubomi cannot be used together with Alpha. If any Alpha mod is installed the game will not start; remove Alpha's jars first.",
+        "The Survival and gear rules are the developer's reading. The owner may change the lists.",
+        "The version check, a dedicated server, multiplayer, and the real Halia, OUKA and Cherry jars were not tested in this release.",
+        "The Japanese text is not yet approved by the owner.",
+        "The chest sound and particles are the game's own. The picker was checked in a real client on one screen size only (1280 by 720)."
+       ]
+      }
+     ]
+    },
     {
      "version": "V2.4 1852",
      "date": "2026-10-29",

@@ -1347,6 +1347,26 @@
      "Nama dan teks Jepang belum disetujui pemilik.",
      "Suara dan partikel peti adalah bawaan game. Tidak ada suara khusus yang ditambahkan pada rilis ini."
     ]
+   },
+   {
+    "id": "tsubomi-v2.4-2009",
+    "title": "Tsubomi V2.4 2009 — /tsubomi gift: pilih satu hadiah dari peti",
+    "summary": "Tsubomi V2.4 2009 mengubah /tsubomi gift: sebuah peti hadiah muncul di depan Anda, dan saat dibuka Anda dapat memilih satu item di pemilih bergaya Creative.",
+    "highlights": [
+     "/tsubomi gift mempertahankan namanya dan tidak memerlukan hak operator, sehingga berfungsi di Survival dengan cheat nonaktif. Setiap pemain dapat mengklaimnya sekali per kampanye.",
+     "Peti hadiah muncul dua blok di depan Anda. Hanya Anda yang dapat membukanya atau menghancurkannya. Klik kanan untuk membuka pemilih hadiah.",
+     "Pemilih adalah jendela bergaya Creative dengan tab kategori per mod, kotak pencarian, kisi yang dapat digulir, dan tooltip saat kursor diarahkan. Klik satu item, lalu tekan Take. Anda mendapat tepat satu item, dan peti dihapus.",
+     "Senjata, armor, elytra, perisai, busur, dan lini perlengkapan Tsubomi (Starbloom, Ziz, Phoenix, Corvus, dan sayapnya) tidak pernah ditawarkan. Alat sederhana seperti beliung, sekop, cangkul, pancing, dan gunting tetap ditawarkan.",
+     "Item khusus Creative tidak pernah ditawarkan, dan spawner serta lukisan tetap ada. Jika tidak ada ruang untuk peti, pemilih langsung terbuka."
+    ],
+    "warnings": [
+     "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
+     "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha.",
+     "Aturan Survival dan perlengkapan adalah interpretasi pengembang. Pemilik dapat mengubah daftar.",
+     "Pemeriksaan versi, server dedicated, multipemain, serta file jar Halia, OUKA, dan Cherry yang asli tidak diuji di rilis ini.",
+     "Teks bahasa Jepang belum disetujui oleh pemilik.",
+     "Suara dan partikel peti berasal dari game itu sendiri. Pemilih hanya diperiksa di klien asli pada satu ukuran layar (1280×720)."
+    ]
    }
   ],
   "halia": [
