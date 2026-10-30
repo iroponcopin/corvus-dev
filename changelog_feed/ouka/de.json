@@ -1,11 +1,46 @@
 {
  "lang": "de",
  "brand": "ouka",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-29",
+ "updated_label": "Aktualisiert am 2026-10-30",
  "note": "",
  "groups": [
+  {
+   "label": "V1.8",
+   "summary": "Ouka JJK V1.8 2012 — Transceiver Ultra bis Mythos, acht Trichterstufen, Thermalbohrer V2, Pylon-Brücken, Förderband V2, 30-TW-Sonne V2",
+   "releases": [
+    {
+     "version": "V1.8 2012",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Ouka JJK V1.8 2012 — Transceiver Ultra bis Mythos, acht Trichterstufen, Thermalbohrer V2, Pylon-Brücken, Förderband V2, 30-TW-Sonne V2",
+     "summary": "V1.8 2012 bringt sieben Stufen des Materie-Transceivers, acht Stufen des Hyperimpuls-Trichters, den Krustentiefen-Thermalbohrer V2, Pylon-Brücken, ein viermal schnelleres Magnetschwebe-Förderband V2 und eine 30-TW-Künstliche-Sonne V2.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Der Materie-Transceiver erhält über Normal und Max sieben Stufen, von Ultra bis Mythos. Reichweite: Ultra 2048 Blöcke, UltraFast 8192, Ultracore 32768; Ultimate hat in seiner Dimension keine Grenze und verbindet auch Oberwelt und Nether im Verhältnis 1:8; Wonder Full, Premium und Mythos verbinden jede Dimension. Gegenstände pro Tick: 512, 1024, 2048, 4096, 8192, 16384, 65536. Zwischen zwei Transceivern zählt die kleinere Reichweite.",
+        "Der Hyperimpuls-Extraktor-Trichter erhält acht Stufen, Max bis Mythos, die 256, 512, 1024, 2048, 4096, 8192, 16384 und 65536 Gegenstände pro Tick bewegen (der Basistrichter bewegt 64).",
+        "Der Krustentiefen-Thermalbohrer V2 ist eine Maschine von 5 × 5 × 8. Er gräbt alle 10 Ticks (viermal so schnell wie V1), holt pro Grabung zwei Gegenstände und braucht das 8-Fache der Leistung von V1, also gleich viel Leistung pro Gegenstand.",
+        "Kabellose Tesla-Pylone V2 binden sich innerhalb von 256 Blöcken per Brücke aneinander, verbundene Netze teilen sich ihren Strom; die Brücke erzeugt und vernichtet keinen. Das Magnetschwebe-Förderband V2 bewegt Gegenstände viermal schneller, 20 Blöcke pro Sekunde statt 5 bei V1.",
+        "Der Künstliche-Sonne-Fusionsreaktor V2 ist jetzt mit 30 TW ausgewiesen, 6000-mal V1. Die Helium-3-Brennstoffkerne der Sonne V2 speichern das 3000-Fache an Energie. Die V1-Fusion bleibt unverändert.",
+        "Geprüft an diesem Build: JUnit 2290 Tests PASS, GameTest 1530 Tests PASS in drei Läufen hintereinander, Server-Absturzprüfungen mit einer bestehenden und einer frischen Welt ohne Befund."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Entferne vor der Installation von V1.8 2012 die alte OUKA-Jar (1.7.1128612 oder älter) aus dem mods-Ordner und lasse nur 1 Kopie von GeckoLib 5.5.6 stehen. Benötigt werden Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Auf Client und Server installieren.",
+        "Nicht geprüft: das Spielgleichgewicht. Die Stufenwerte, die Leistung des Thermalbohrers V2 und die 30-TW-Sonne V2 wurden nicht auf Balance getestet.",
+        "Die Prüfungen im echten Client liefen in 54 Gruppen; 49 bestanden sofort, 2 weitere nach Korrekturen im erneuten Lauf. Drei Gruppen (Aussehen der Sonne V1, Ausrüstungsprüfung und Schwerindustrie-V1.6-Prüfung) schlagen fehl, genau wie bei V1.7 1128612, und sind nicht behoben. Die gepackte Jar selbst lief nur in den zwei Server-Absturzprüfungen.",
+        "Die README in diesem Zip wiederholt noch die Aussage aus V1.7 88213, das Speicherlimit pro Zelle sei erhöht worden. Diese Aussage ist falsch; siehe die Korrektur in den Hinweisen zu V1.7 91209."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.7",
    "summary": "Ouka JJK V1.7 1128612 — Quantenzellen-Assembler, Ouka-Legierung in 12 Stufen, Barren in Vanilla-Form",

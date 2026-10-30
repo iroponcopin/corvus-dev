@@ -1934,7 +1934,7 @@ def reading_of(name):
             out.append(chr(o - 0x60))
         elif 0x3041 <= o <= 0x3096 or ch in "ー":
             out.append(ch)
-        elif ch.isascii() or ch in "()（）×・、。〜 　":
+        elif ch.isascii() or ch in "()（）×・、。〜 　∞✦":
             out.append(ch)
         else:                                 # 未登録の漢字など
             unknown.append(ch)

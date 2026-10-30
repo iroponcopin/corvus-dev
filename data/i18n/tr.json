@@ -306,6 +306,25 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.8-2012",
+    "title": "Ouka JJK V1.8 2012 — Ultra'dan Mythos'a vericiler, sekiz kademeli huni, Termal Sondaj V2, pilon köprüleri, Konveyör V2, 30 TW Güneş V2",
+    "summary": "V1.8 2012, madde alıcı-vericisine yedi kademe, hiper-itkili huniye sekiz kademe, Kabuk Altı Termal Sondaj V2'yi, pilon köprülerini, dört kat hızlı Maglev Konveyör V2'yi ve 30 TW'lik Yapay Güneş V2'yi ekler.",
+    "highlights": [
+     "Madde alıcı-vericisi, Normal ve Max'in üstüne Ultra'dan Mythos'a yedi kademe kazanır. Menzil: Ultra 2048 blok, UltraFast 8192, Ultracore 32768; Ultimate kendi boyutunda sınırsızdır ve Overworld ile Nether'i 1:8 de bağlar; Wonder Full, Premium ve Mythos her boyutu bağlar. Tik başına eşya: 512, 1024, 2048, 4096, 8192, 16384, 65536. İki alıcı-verici arasında küçük olan menzil geçerlidir.",
+     "Hiper-itkili çıkarıcı huni, Max'ten Mythos'a sekiz kademe kazanır; tik başına 256, 512, 1024, 2048, 4096, 8192, 16384 ve 65536 eşya taşır (temel huni 64 taşır).",
+     "Kabuk Altı Termal Sondaj V2, 5 × 5 × 8'lik bir makinedir. Her 10 tikte bir kazar (V1'in dört katı), her kazışta iki eşya çeker ve V1'in 8 katı güç kullanır; eşya başına güç V1 ile aynıdır.",
+     "256 blok içindeki Kablosuz Tesla Pilonu V2 birimleri köprüyle bağlanır, bağlanan şebekeler gücü paylaşır; köprü güç üretmez ve yok etmez. Maglev Konveyör V2 eşyaları dört kat hızlı taşır: saniyede 20 blok (V1'de 5).",
+     "Yapay Güneş Füzyon Reaktörü V2'nin anma gücü 30 TW'ye çıktı, V1'in 6000 katı. Güneş V2'de kullanılan Helyum-3 yakıt çekirdekleri 3000 kat enerji tutar. V1 füzyonu değişmedi.",
+     "Bu derlemede denetlenenler: JUnit 2290 test PASS, GameTest üst üste üç çalıştırmada 1530 test PASS, mevcut bir dünyada ve yeni bir dünyada sunucu çökme denetimleri sorunsuz."
+    ],
+    "warnings": [
+     "V1.8 2012'yi kurmadan önce eski OUKA jar'ını (1.7.1128612 veya daha eski) mods klasöründen silin ve GeckoLib 5.5.6'nın yalnızca 1 kopyasını bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi ve Fabric API 0.161.0+26.3 veya daha yenisi gerekir. Hem istemciye hem sunucuya kurun.",
+     "Denetlenmedi: oyun dengesi. Kademe sayıları, Termal Sondaj V2'nin gücü ve 30 TW'lik Güneş V2 denge açısından sınanmadı.",
+     "Gerçek istemci denetimleri 54 grupta yapıldı; 49'u baştan PASS, 2'si düzeltmelerden sonra yeniden çalıştırmada PASS. Üç grup (Güneş V1 görünümü, donanım denetimi ve ağır sanayi V1.6 denetimi) V1.7 1128612'de olduğu gibi başarısız oluyor ve düzeltilmedi. Paketlenmiş jar yalnızca iki sunucu çökme denetiminde çalıştırıldı.",
+     "Bu zip içindeki README hâlâ V1.7 88213'ün hücre başına depolama sınırının yükseltildiği ifadesini yineliyor. Bu ifade yanlıştır; V1.7 91209 notlarındaki düzeltmeye bakın."
+    ]
+   },
+   {
     "id": "ouka-v1.7-1128612",
     "title": "Ouka JJK V1.7 1128612 — Kuantum Hücre Montajcısı, 12 kademeli Ouka alaşımı, vanilla biçimli külçeler",
     "summary": "V1.7 1128612, SMES kuantum pillerini Plus'tan Mythos'a kadar monte eden 12 × 16 × 12'lik Kuantum Hücre Montajcısı'nı ekler, Ouka alaşımını 12 kademeli bir aileye çevirir ve tüm OUKA külçelerini vanilla külçe biçiminde yeniden çizer.",

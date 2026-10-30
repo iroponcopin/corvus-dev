@@ -1,11 +1,46 @@
 {
  "lang": "en",
  "brand": "ouka",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-29",
+ "updated_label": "Updated 2026-10-30",
  "note": "",
  "groups": [
+  {
+   "label": "V1.8",
+   "summary": "Ouka JJK V1.8 2012 — Transceiver Ultra to Mythos, eight hopper tiers, Thermal Bore V2, pylon bridges, Conveyor V2, 30 TW Sun V2",
+   "releases": [
+    {
+     "version": "V1.8 2012",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Ouka JJK V1.8 2012 — Transceiver Ultra to Mythos, eight hopper tiers, Thermal Bore V2, pylon bridges, Conveyor V2, 30 TW Sun V2",
+     "summary": "V1.8 2012 adds seven Matter Transceiver tiers, eight Hyper-Impulse Hopper tiers, the Sub-Crustal Thermal Bore V2, pylon bridges, a four-times-faster Maglev Conveyor V2 and a 30 TW Artificial Sun V2.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "The Matter Transceiver gains seven tiers above Normal and Max, from Ultra to Mythos. Range: Ultra 2048 blocks, UltraFast 8192, Ultracore 32768; Ultimate has no limit within its dimension and also links the Overworld and the Nether at 1:8; Wonder Full, Premium and Mythos link across any dimension. Items per tick: 512, 1024, 2048, 4096, 8192, 16384, 65536. Between two transceivers the smaller range counts.",
+        "The Hyper-Impulse Extractor Hopper gains eight tiers, Max to Mythos, moving 256, 512, 1024, 2048, 4096, 8192, 16384 and 65536 items per tick (the base hopper moves 64).",
+        "The Sub-Crustal Thermal Bore V2 is a 5 × 5 × 8 machine. It digs once every 10 ticks (four times V1), pulls two items per dig, and uses 8 times V1's power, which is the same power per item.",
+        "Wireless Tesla Pylon V2 units within 256 blocks of each other link by bridge, and linked networks share their power; the bridge creates and destroys none. Maglev Conveyor V2 moves items four times faster, 20 blocks per second against V1's 5.",
+        "The Artificial Sun Fusion Reactor V2 is now rated at 30 TW, 6000 times V1. The Helium-3 fuel cores used by Sun V2 hold 3000 times the energy. V1 fusion is unchanged.",
+        "Checked on this build: JUnit 2290 tests PASS, GameTest 1530 tests PASS three runs in a row, server crash checks on an existing world and a fresh world clean."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Before you install V1.8 2012, remove the old OUKA jar (1.7.1128612 or older) from the mods folder and keep only 1 copy of GeckoLib 5.5.6. It needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, and Fabric API 0.161.0+26.3 or newer. Install it on both the client and the server.",
+        "Not checked: gameplay balance. The tier numbers, the Thermal Bore V2's power and the 30 TW Sun V2 were not balance-tested.",
+        "Real-client checks ran in 54 groups; 49 passed first time, 2 more passed on a re-run after fixes. Three groups (the Sun V1 look, the gear check and the heavy-industry V1.6 check) fail, exactly as they do on V1.7 1128612, and are not fixed. The packed jar itself was exercised only by the two server crash checks.",
+        "The README in this zip still repeats the V1.7 88213 wording that the per-cell storage limit was raised. That wording is wrong; see the correction in the V1.7 91209 notes."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.7",
    "summary": "Ouka JJK V1.7 1128612 — Quantum Cell Assembler, Ouka Alloy in 12 tiers, vanilla-shaped ingots",

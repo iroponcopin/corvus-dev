@@ -1,11 +1,46 @@
 {
  "lang": "es",
  "brand": "ouka",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "title": "Historial de actualizaciones",
- "updated_label": "Actualizado el 2026-10-29",
+ "updated_label": "Actualizado el 2026-10-30",
  "note": "",
  "groups": [
+  {
+   "label": "V1.8",
+   "summary": "Ouka JJK V1.8 2012 — Transceptor Ultra a Mythos, ocho niveles de tolva, Perforadora térmica V2, puentes de pilones, Cinta V2, Sol V2 de 30 TW",
+   "releases": [
+    {
+     "version": "V1.8 2012",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Ouka JJK V1.8 2012 — Transceptor Ultra a Mythos, ocho niveles de tolva, Perforadora térmica V2, puentes de pilones, Cinta V2, Sol V2 de 30 TW",
+     "summary": "V1.8 2012 añade siete niveles del transceptor de materia, ocho niveles de la tolva de hiperimpulso, la Perforadora térmica subcortical V2, puentes de pilones, una Cinta maglev V2 cuatro veces más rápida y un Sol artificial V2 de 30 TW.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "El transceptor de materia gana siete niveles sobre Normal y Max, de Ultra a Mythos. Alcance: Ultra 2048 bloques, UltraFast 8192, Ultracore 32768; Ultimate no tiene límite dentro de su dimensión y también une el Overworld y el Nether a 1:8; Wonder Full, Premium y Mythos unen cualquier dimensión. Objetos por tick: 512, 1024, 2048, 4096, 8192, 16384, 65536. Entre dos transceptores cuenta el alcance menor.",
+        "La tolva extractora de hiperimpulso gana ocho niveles, de Max a Mythos, que mueven 256, 512, 1024, 2048, 4096, 8192, 16384 y 65536 objetos por tick (la tolva base mueve 64).",
+        "La Perforadora térmica subcortical V2 es una máquina de 5 × 5 × 8. Excava una vez cada 10 ticks (cuatro veces V1), saca dos objetos por excavación y gasta 8 veces la potencia de V1, es decir, la misma potencia por objeto.",
+        "Los pilones Tesla inalámbricos V2 a 256 bloques o menos se unen con un puente y las redes unidas comparten su energía; el puente no crea ni destruye energía. La Cinta maglev V2 mueve los objetos cuatro veces más rápido, 20 bloques por segundo frente a 5 en V1.",
+        "El reactor de fusión Sol artificial V2 pasa a 30 TW, 6000 veces V1. Los núcleos de combustible de helio-3 que usa el Sol V2 guardan 3000 veces más energía. La fusión V1 no cambia.",
+        "Comprobado en esta compilación: JUnit 2290 pruebas PASS, GameTest 1530 pruebas PASS tres veces seguidas, comprobaciones de caída del servidor con un mundo existente y uno nuevo sin problemas."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Antes de instalar V1.8 2012, quita el jar antiguo de OUKA (1.7.1128612 o anterior) de la carpeta mods y deja solo 1 copia de GeckoLib 5.5.6. Requiere Minecraft 26.3, Fabric Loader 0.19.5 o más reciente y Fabric API 0.161.0+26.3 o más reciente. Instálalo en el cliente y en el servidor.",
+        "No comprobado: el equilibrio del juego. Los valores de los niveles, la potencia de la Perforadora térmica V2 y el Sol V2 de 30 TW no se probaron en equilibrio.",
+        "Las comprobaciones en cliente real se hicieron en 54 grupos; 49 dieron PASS a la primera y 2 más tras repetirlas con correcciones. Tres grupos (el aspecto del Sol V1, la comprobación del equipo y la de industria pesada V1.6) fallan igual que en V1.7 1128612 y no se han corregido. El jar empaquetado solo se ejecutó en las dos comprobaciones de caída del servidor.",
+        "El README de este zip aún repite la frase de V1.7 88213 según la cual se subió el límite de almacenamiento por celda. Esa frase es errónea; consulta la corrección en las notas de V1.7 91209."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.7",
    "summary": "Ouka JJK V1.7 1128612 — Ensamblador de celdas cuánticas, aleación Ouka en 12 niveles, lingotes con forma vanilla",

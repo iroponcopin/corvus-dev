@@ -1,11 +1,46 @@
 {
  "lang": "fr",
  "brand": "ouka",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "title": "Historique des mises à jour",
- "updated_label": "Mis à jour le 2026-10-29",
+ "updated_label": "Mis à jour le 2026-10-30",
  "note": "",
  "groups": [
+  {
+   "label": "V1.8",
+   "summary": "Ouka JJK V1.8 2012 — Émetteur-récepteur Ultra à Mythos, huit niveaux de trémie, Foreuse thermique V2, ponts de pylônes, Convoyeur V2, Soleil V2 à 30 TW",
+   "releases": [
+    {
+     "version": "V1.8 2012",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Ouka JJK V1.8 2012 — Émetteur-récepteur Ultra à Mythos, huit niveaux de trémie, Foreuse thermique V2, ponts de pylônes, Convoyeur V2, Soleil V2 à 30 TW",
+     "summary": "V1.8 2012 ajoute sept niveaux de l'émetteur-récepteur de matière, huit niveaux de la trémie à hyper-impulsion, la Foreuse thermique sous-crustale V2, des ponts de pylônes, un Convoyeur à sustentation V2 quatre fois plus rapide et un Soleil artificiel V2 de 30 TW.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "L'émetteur-récepteur de matière gagne sept niveaux au-dessus de Normal et Max, d'Ultra à Mythos. Portée : Ultra 2048 blocs, UltraFast 8192, Ultracore 32768 ; Ultimate n'a pas de limite dans sa dimension et relie aussi l'Overworld et le Nether à 1:8 ; Wonder Full, Premium et Mythos relient n'importe quelle dimension. Objets par tick : 512, 1024, 2048, 4096, 8192, 16384, 65536. Entre deux émetteurs-récepteurs, la portée la plus courte compte.",
+        "La trémie d'extraction à hyper-impulsion gagne huit niveaux, de Max à Mythos, qui déplacent 256, 512, 1024, 2048, 4096, 8192, 16384 et 65536 objets par tick (la trémie de base en déplace 64).",
+        "La Foreuse thermique sous-crustale V2 est une machine de 5 × 5 × 8. Elle creuse tous les 10 ticks (quatre fois V1), tire deux objets par coup et consomme 8 fois la puissance de V1, soit la même puissance par objet.",
+        "Les pylônes Tesla sans fil V2 distants de 256 blocs au plus se relient par un pont, et les réseaux reliés partagent leur énergie ; le pont n'en crée ni n'en détruit. Le Convoyeur à sustentation V2 déplace les objets quatre fois plus vite, 20 blocs par seconde contre 5 pour V1.",
+        "Le réacteur à fusion Soleil artificiel V2 est désormais donné pour 30 TW, soit 6000 fois V1. Les noyaux de combustible à l'hélium-3 du Soleil V2 contiennent 3000 fois plus d'énergie. La fusion V1 ne change pas.",
+        "Vérifié sur ce build : JUnit 2290 tests PASS, GameTest 1530 tests PASS trois fois de suite, contrôles de plantage du serveur sur un monde existant et un monde neuf sans anomalie."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Avant d'installer V1.8 2012, retirez l'ancien jar OUKA (1.7.1128612 ou plus ancien) du dossier mods et ne gardez qu'une seule copie de GeckoLib 5.5.6. Il faut Minecraft 26.3, Fabric Loader 0.19.5 ou plus récent et Fabric API 0.161.0+26.3 ou plus récent. À installer sur le client et sur le serveur.",
+        "Non vérifié : l'équilibre du jeu. Les valeurs des niveaux, la puissance de la Foreuse thermique V2 et le Soleil V2 à 30 TW n'ont pas été testés pour l'équilibre.",
+        "Les contrôles en client réel ont porté sur 54 groupes ; 49 PASS du premier coup, 2 de plus après correction à la relance. Trois groupes (l'aspect du Soleil V1, le contrôle de l'équipement et le contrôle de l'industrie lourde V1.6) échouent exactement comme sur V1.7 1128612 et ne sont pas corrigés. Le jar empaqueté lui-même n'a tourné que dans les deux contrôles de plantage du serveur.",
+        "Le README de ce zip répète encore la formulation de V1.7 88213 selon laquelle la limite de stockage par cellule aurait été relevée. Cette formulation est fausse ; voir la correction dans les notes de V1.7 91209."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.7",
    "summary": "Ouka JJK V1.7 1128612 — Assembleur de cellules quantiques, alliage Ouka en 12 paliers, lingots à la forme vanilla",

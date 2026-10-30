@@ -1,6 +1,6 @@
 {
  "sources": {
-  "ouka": "1.7.1128612",
+  "ouka": "1.8.2012",
   "cherry": "1.3.1017"
  },
  "stations": [
@@ -330,12 +330,6 @@
    "チタン・カーボン板",
    "Titanium-Carbon Plate",
    "m09588a82c0d8",
-   "flat"
-  ],
-  "minecraft:end_crystal": [
-   "エンドクリスタル",
-   "End Crystal",
-   "m40dde874c484",
    "flat"
   ],
   "minecraft:fire_charge": [

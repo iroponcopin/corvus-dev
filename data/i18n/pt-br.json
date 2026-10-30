@@ -306,6 +306,25 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.8-2012",
+    "title": "Ouka JJK V1.8 2012 — Transceptor Ultra a Mythos, oito níveis de funil, Perfuratriz térmica V2, pontes de pilares, Esteira V2, Sol V2 de 30 TW",
+    "summary": "A V1.8 2012 traz sete níveis do transceptor de matéria, oito níveis do funil de hiperimpulso, a Perfuratriz térmica subcrustal V2, pontes de pilares, uma Esteira maglev V2 quatro vezes mais rápida e um Sol artificial V2 de 30 TW.",
+    "highlights": [
+     "O transceptor de matéria ganha sete níveis acima de Normal e Max, de Ultra a Mythos. Alcance: Ultra 2048 blocos, UltraFast 8192, Ultracore 32768; o Ultimate não tem limite dentro da sua dimensão e também liga o Overworld e o Nether a 1:8; Wonder Full, Premium e Mythos ligam qualquer dimensão. Itens por tick: 512, 1024, 2048, 4096, 8192, 16384, 65536. Entre dois transceptores vale o menor alcance.",
+     "O funil extrator de hiperimpulso ganha oito níveis, de Max a Mythos, que movem 256, 512, 1024, 2048, 4096, 8192, 16384 e 65536 itens por tick (o funil básico move 64).",
+     "A Perfuratriz térmica subcrustal V2 é uma máquina de 5 × 5 × 8. Ela escava uma vez a cada 10 ticks (quatro vezes a V1), puxa dois itens por escavação e gasta 8 vezes a energia da V1, ou seja, a mesma energia por item.",
+     "Pilares Tesla sem fio V2 a até 256 blocos de distância se ligam por ponte, e as redes ligadas dividem a energia; a ponte não cria nem destrói energia. A Esteira maglev V2 move os itens quatro vezes mais rápido, 20 blocos por segundo contra 5 da V1.",
+     "O reator de fusão Sol artificial V2 agora é de 30 TW, 6000 vezes a V1. Os núcleos de combustível de hélio-3 usados pelo Sol V2 guardam 3000 vezes mais energia. A fusão V1 não muda.",
+     "Verificado neste build: JUnit 2290 testes PASS, GameTest 1530 testes PASS em três execuções seguidas, verificações de falha do servidor com um mundo existente e um mundo novo sem problemas."
+    ],
+    "warnings": [
+     "Antes de instalar a V1.8 2012, remova o jar antigo do OUKA (1.7.1128612 ou anterior) da pasta mods e deixe apenas 1 cópia do GeckoLib 5.5.6. Requer Minecraft 26.3, Fabric Loader 0.19.5 ou mais novo e Fabric API 0.161.0+26.3 ou mais novo. Instale no cliente e no servidor.",
+     "Não verificado: o equilíbrio do jogo. Os valores dos níveis, a energia da Perfuratriz térmica V2 e o Sol V2 de 30 TW não foram testados quanto ao equilíbrio.",
+     "As verificações em cliente real foram feitas em 54 grupos; 49 deram PASS de primeira e 2 outros após reexecução com correções. Três grupos (a aparência do Sol V1, a verificação de equipamento e a de indústria pesada V1.6) falham exatamente como na V1.7 1128612 e não foram corrigidos. O jar empacotado só rodou nas duas verificações de falha do servidor.",
+     "O README deste zip ainda repete a frase da V1.7 88213 de que o limite de armazenamento por célula foi elevado. Essa frase está errada; veja a correção nas notas da V1.7 91209."
+    ]
+   },
+   {
     "id": "ouka-v1.7-1128612",
     "title": "Ouka JJK V1.7 1128612 — Montador de células quânticas, liga Ouka em 12 níveis, lingotes no formato vanilla",
     "summary": "A V1.7 1128612 adiciona o montador de células quânticas, uma máquina de 12 × 16 × 12 que monta as baterias quânticas SMES do Plus ao Mythos, transforma a liga Ouka numa família de 12 níveis e redesenha todos os lingotes do OUKA no formato do lingote vanilla.",

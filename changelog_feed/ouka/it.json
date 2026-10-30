@@ -1,11 +1,46 @@
 {
  "lang": "it",
  "brand": "ouka",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "title": "Changelog",
- "updated_label": "Aggiornato il 2026-10-29",
+ "updated_label": "Aggiornato il 2026-10-30",
  "note": "",
  "groups": [
+  {
+   "label": "V1.8",
+   "summary": "Ouka JJK V1.8 2012 — Ricetrasmettitore da Ultra a Mythos, otto livelli di tramoggia, Trivella termica V2, ponti di piloni, Nastro V2, Sole V2 da 30 TW",
+   "releases": [
+    {
+     "version": "V1.8 2012",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Ouka JJK V1.8 2012 — Ricetrasmettitore da Ultra a Mythos, otto livelli di tramoggia, Trivella termica V2, ponti di piloni, Nastro V2, Sole V2 da 30 TW",
+     "summary": "V1.8 2012 aggiunge sette livelli del ricetrasmettitore di materia, otto livelli della tramoggia a iperimpulso, la Trivella termica subcrostale V2, ponti di piloni, un Nastro maglev V2 quattro volte più veloce e un Sole artificiale V2 da 30 TW.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Il ricetrasmettitore di materia ottiene sette livelli sopra Normal e Max, da Ultra a Mythos. Portata: Ultra 2048 blocchi, UltraFast 8192, Ultracore 32768; Ultimate non ha limite nella sua dimensione e collega anche Overworld e Nether a 1:8; Wonder Full, Premium e Mythos collegano qualsiasi dimensione. Oggetti per tick: 512, 1024, 2048, 4096, 8192, 16384, 65536. Tra due ricetrasmettitori vale la portata minore.",
+        "La tramoggia estrattrice a iperimpulso ottiene otto livelli, da Max a Mythos, che spostano 256, 512, 1024, 2048, 4096, 8192, 16384 e 65536 oggetti per tick (la tramoggia base ne sposta 64).",
+        "La Trivella termica subcrostale V2 è una macchina da 5 × 5 × 8. Scava una volta ogni 10 tick (quattro volte la V1), estrae due oggetti per scavo e usa 8 volte la potenza della V1, cioè la stessa potenza per oggetto.",
+        "I piloni Tesla wireless V2 entro 256 blocchi si collegano con un ponte e le reti collegate si dividono l'energia; il ponte non crea né distrugge energia. Il Nastro maglev V2 sposta gli oggetti quattro volte più veloce, 20 blocchi al secondo contro 5 della V1.",
+        "Il reattore a fusione Sole artificiale V2 ora è da 30 TW, 6000 volte la V1. I nuclei di combustibile all'elio-3 usati dal Sole V2 contengono 3000 volte l'energia. La fusione V1 non cambia.",
+        "Verificato su questa build: JUnit 2290 test PASS, GameTest 1530 test PASS in tre esecuzioni di fila, controlli di crash del server su un mondo esistente e uno nuovo senza anomalie."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Prima di installare V1.8 2012, rimuovi il vecchio jar di OUKA (1.7.1128612 o precedente) dalla cartella mods e lascia una sola copia di GeckoLib 5.5.6. Servono Minecraft 26.3, Fabric Loader 0.19.5 o più recente e Fabric API 0.161.0+26.3 o più recente. Installalo su client e server.",
+        "Non verificato: il bilanciamento del gioco. I valori dei livelli, la potenza della Trivella termica V2 e il Sole V2 da 30 TW non sono stati testati per il bilanciamento.",
+        "I controlli in client reale sono stati fatti in 54 gruppi; 49 PASS al primo colpo e altri 2 dopo la riesecuzione con correzioni. Tre gruppi (l'aspetto del Sole V1, il controllo dell'equipaggiamento e quello dell'industria pesante V1.6) falliscono esattamente come su V1.7 1128612 e non sono stati corretti. Il jar impacchettato è stato eseguito solo nei due controlli di crash del server.",
+        "Il README di questo zip ripete ancora la frase di V1.7 88213 secondo cui il limite di accumulo per cella sarebbe stato alzato. Quella frase è sbagliata; vedi la correzione nelle note di V1.7 91209."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.7",
    "summary": "Ouka JJK V1.7 1128612 — Assemblatore di celle quantistiche, lega Ouka in 12 livelli, lingotti dalla forma vanilla",

@@ -306,6 +306,25 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.8-2012",
+    "title": "Ouka JJK V1.8 2012 — Transceiver Ultra sampai Mythos, delapan tingkat corong, Bor Termal V2, jembatan pilon, Konveyor V2, Matahari V2 30 TW",
+    "summary": "V1.8 2012 menambahkan tujuh tingkat transceiver materi, delapan tingkat corong hiper-impuls, Bor Termal Sub-Kerak V2, jembatan pilon, Konveyor Maglev V2 yang empat kali lebih cepat, dan Matahari Buatan V2 30 TW.",
+    "highlights": [
+     "Transceiver materi mendapat tujuh tingkat di atas Normal dan Max, dari Ultra sampai Mythos. Jangkauan: Ultra 2048 blok, UltraFast 8192, Ultracore 32768; Ultimate tanpa batas dalam dimensinya dan juga menghubungkan Overworld dan Nether dengan 1:8; Wonder Full, Premium, dan Mythos menghubungkan dimensi mana pun. Item per tick: 512, 1024, 2048, 4096, 8192, 16384, 65536. Di antara dua transceiver, jangkauan yang lebih kecil yang berlaku.",
+     "Corong ekstraktor hiper-impuls mendapat delapan tingkat, dari Max sampai Mythos, yang memindahkan 256, 512, 1024, 2048, 4096, 8192, 16384, dan 65536 item per tick (corong dasar memindahkan 64).",
+     "Bor Termal Sub-Kerak V2 adalah mesin 5 × 5 × 8. Ia menggali sekali tiap 10 tick (empat kali V1), mengambil dua item per galian, dan memakai daya 8 kali V1, yaitu daya per item yang sama.",
+     "Pilon Tesla nirkabel V2 dalam jarak 256 blok terhubung lewat jembatan, dan jaringan yang terhubung berbagi dayanya; jembatan tidak membuat maupun menghilangkan daya. Konveyor Maglev V2 memindahkan item empat kali lebih cepat, 20 blok per detik dibanding 5 pada V1.",
+     "Reaktor fusi Matahari Buatan V2 kini berdaya 30 TW, 6000 kali V1. Inti bahan bakar helium-3 yang dipakai Matahari V2 menyimpan energi 3000 kali lipat. Fusi V1 tidak berubah.",
+     "Diperiksa pada build ini: JUnit 2290 tes PASS, GameTest 1530 tes PASS tiga kali berturut-turut, pemeriksaan crash server pada dunia yang sudah ada dan dunia baru bersih."
+    ],
+    "warnings": [
+     "Sebelum memasang V1.8 2012, hapus jar OUKA lama (1.7.1128612 atau lebih lama) dari folder mods dan sisakan hanya 1 salinan GeckoLib 5.5.6. Dibutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di klien dan server.",
+     "Tidak diperiksa: keseimbangan permainan. Angka tiap tingkat, daya Bor Termal V2, dan Matahari V2 30 TW tidak diuji keseimbangannya.",
+     "Pemeriksaan klien sungguhan berjalan di 54 kelompok; 49 PASS sejak awal dan 2 lagi setelah dijalankan ulang dengan perbaikan. Tiga kelompok (tampilan Matahari V1, pemeriksaan perlengkapan, dan pemeriksaan industri berat V1.6) gagal persis seperti di V1.7 1128612 dan belum diperbaiki. Jar yang dikemas hanya dijalankan pada dua pemeriksaan crash server.",
+     "README di zip ini masih mengulang kalimat V1.7 88213 bahwa batas penyimpanan per sel dinaikkan. Kalimat itu keliru; lihat koreksi di catatan V1.7 91209."
+    ]
+   },
+   {
     "id": "ouka-v1.7-1128612",
     "title": "Ouka JJK V1.7 1128612 — Perakit sel kuantum, paduan Ouka 12 tingkat, ingot berbentuk vanilla",
     "summary": "V1.7 1128612 menambahkan perakit sel kuantum, mesin 12 × 16 × 12 yang merakit baterai kuantum SMES dari Plus sampai Mythos, menjadikan paduan Ouka keluarga 12 tingkat, dan menggambar ulang semua ingot OUKA dalam bentuk ingot vanilla.",
