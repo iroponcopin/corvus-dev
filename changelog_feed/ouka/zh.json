@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.8",
-   "summary": "Ouka V1.8 2012 — Ultra 到 Mythos 传送器、八档漏斗、热力钻探 V2、电塔桥接、传送带 V2、30 TW 人造太阳 V2",
+   "summary": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
    "releases": [
+    {
+     "version": "V1.8 3371",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
+     "summary": "V1.8 3371 新增光环信标、173 TW 恒星核聚变反应堆、100 MW 联合循环燃气轮机和亚空间储物柜，以及 V1.8 2033 的两座圆形塔楼：Echo Resonance Excavator 与 Helium-3 Regolith Refinery。",
+     "sections": [
+      {
+       "title": "更新内容",
+       "items": [
+        "OUKA 光环信标是 OUKA 信标的第二代。范围为 4000 格，同一等级下效果强 1.25 倍。底座形状与旧信标相同，但必须使用 Max 或更高等级的 OUKA 合金方块建造。两个信标重叠时，每项效果取较强的数值，数值不叠加。旧信标保持不变。",
+        "Stellar Fusion Reactor 是第三代人造太阳：32 × 16 × 32 方块，体积为 Sun V2 的 4 倍，额定功率 173 TW。它燃烧与 Sun V2 相同的氘和氦-3 核心，每个核心在其中的持续时间也相同。透过玻璃可以看到一颗金色恒星和旋转的光环。",
+        "Combined-Cycle Gas Turbine 是第二代燃气轮机发电机：3 × 6 × 3 方块，额定功率 100 MW，为 V1 的 20 倍。每 1 J 燃料可产生 2 J 电力。屏幕会显示输出、状态和剩余燃料时间。在 100 MW 下，一罐煤油约可维持 1.2 秒。",
+        "Subspace Silo 是新的大型储物柜，没有数量限制。用空手触碰一次已搭建完成的控制器，之后在物品栏旁边的圆形按钮即可打开，无需遥控器。可按数量、名称、最近或手动拖动顺序排序，并可升序或降序。将绑定到旧 Quantum-Compression Vault 的 PDA 用于新控制器时，会询问是否全部移入；只有按下 Move 时物品才会移动，旧储物柜保持完好。",
+        "包含从未单独发布的 V1.8 2033：Echo Resonance Excavator（11 × 18，圆形；1 GW 下每 100 tick 开采一个回声碎片）和 Helium-3 Regolith Refinery（7 × 12，圆形；将 16 个 End Stone 或 1 个月球风化层转化为氦-3 罐），两者均由新的白色 Resonance Casing 系列构建。现在破坏带燃料的 Sun V2 控制器会掉落其核心。同时包含 V1.8 2012。",
+        "本构建已检查：JUnit 2404 项测试通过，GameTest 1556 项测试连续三次通过，在已有世界和新世界上的服务器崩溃检查均正常。"
+       ]
+      },
+      {
+       "title": "注意事项",
+       "items": [
+        "安装 V1.8 3371 前，请从 mods 文件夹中删除旧的 OUKA jar（1.8.2012 或更早版本），并只保留 1 份 GeckoLib 5.5.6。需要 Minecraft 26.3、Fabric Loader 0.19.5 或更新版本，以及 Fabric API 0.161.0+26.3 或更新版本。客户端和服务器都需要安装。",
+        "未检查：游戏平衡性。光环信标的强度、173 TW 恒星核聚变反应堆以及消耗燃料极快的 100 MW 涡轮，均未进行平衡测试。",
+        "真实客户端检查共运行 59 组，54 组通过。三组（Sun V1 外观、装备检查和重工业 V1.6 检查）失败，与 V1.7 1128612 的表现完全相同，尚未修复。另有两组在发布版构建同时运行时失败，单独运行时通过。打包后的 jar 本身仅通过两项服务器崩溃检查进行了测试。",
+        "本压缩包中的 README 仍保留 V1.7 88213 的说法，即每格存储上限已提高。该说法有误；请参阅 V1.7 91209 说明中的更正。"
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.8 2012",
      "date": "2026-10-30",

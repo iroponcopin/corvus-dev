@@ -310,6 +310,25 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.8-3371",
+    "title": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
+    "summary": "V1.8 3371 adds the Halo Beacon, the 173 TW Stellar Fusion Reactor, the 100 MW Combined-Cycle Gas Turbine and the Subspace Silo, plus the two round towers of V1.8 2033, the Echo Resonance Excavator and the Helium-3 Regolith Refinery.",
+    "highlights": [
+     "The OUKA Halo Beacon is the second generation of the OUKA Beacon. Its range is 4000 blocks and its effects are 1.25 times stronger at the same level. Its pedestal has the same shape as the old beacon but must be built from OUKA alloy blocks of Max tier or higher. Where two beacons overlap, the stronger value per effect applies; values do not add. The old beacon is unchanged.",
+     "The Stellar Fusion Reactor is the third-generation Artificial Sun: 32 × 16 × 32 blocks, 4 times the volume of Sun V2, rated at 173 TW. It burns the same deuterium and helium-3 cores as Sun V2, and each core lasts as long as it does there. Through the glass you see a golden star with turning rings.",
+     "The Combined-Cycle Gas Turbine is the second-generation Gas Turbine Generator: 3 × 6 × 3 blocks, rated at 100 MW, 20 times V1. Every 1 J of fuel gives 2 J of electricity. Its screen shows the output, the status and the fuel time left. At 100 MW one kerosene canister lasts about 1.2 seconds.",
+     "The Subspace Silo is a new large silo with no count limit. Touch the formed controller once with an empty hand, and from then on a round button beside the inventory opens it, with no remote. Sort by count, name, recent or by hand-dragged order, ascending or descending. A PDA bound to an old Quantum-Compression Vault, used on the new controller, asks whether to move everything over; items move only when you press Move, and the old silo stays intact.",
+     "V1.8 2033, never released on its own, is included: the Echo Resonance Excavator (11 × 18 and round; mines one echo shard every 100 ticks for 1 GW) and the Helium-3 Regolith Refinery (7 × 12, round; 16 End Stone or 1 lunar regolith into helium-3 canisters), both built from the new white Resonance Casing family. Breaking a fuelled Sun V2 controller now drops its cores. V1.8 2012 is included too.",
+     "Checked on this build: JUnit 2404 tests PASS, GameTest 1556 tests PASS three runs in a row, server crash checks on an existing world and a fresh world clean."
+    ],
+    "warnings": [
+     "Before you install V1.8 3371, remove the old OUKA jar (1.8.2012 or older) from the mods folder and keep only 1 copy of GeckoLib 5.5.6. It needs Minecraft 26.3, Fabric Loader 0.19.5 or newer, and Fabric API 0.161.0+26.3 or newer. Install it on both the client and the server.",
+     "Not checked: gameplay balance. The Halo Beacon's strength, the 173 TW Stellar Fusion Reactor and the 100 MW turbine, which burns fuel very fast, were not balance-tested.",
+     "Real-client checks ran in 59 groups; 54 passed. Three groups (the Sun V1 look, the gear check and the heavy-industry V1.6 check) fail, exactly as they do on V1.7 1128612, and are not fixed. Two more failed while the release build was running at the same time, and passed when run alone. The packed jar itself was exercised only by the two server crash checks.",
+     "The README in this zip still repeats the V1.7 88213 wording that the per-cell storage limit was raised. That wording is wrong; see the correction in the V1.7 91209 notes."
+    ]
+   },
+   {
     "id": "ouka-v1.8-2012",
     "title": "Ouka V1.8 2012 — Transceiver Ultra to Mythos, eight hopper tiers, Thermal Bore V2, pylon bridges, Conveyor V2, 30 TW Sun V2",
     "summary": "V1.8 2012 adds seven Matter Transceiver tiers, eight Hyper-Impulse Hopper tiers, the Sub-Crustal Thermal Bore V2, pylon bridges, a four-times-faster Maglev Conveyor V2 and a 30 TW Artificial Sun V2.",

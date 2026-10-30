@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.8",
-   "summary": "Ouka V1.8 2012 — Transceiver Ultra sampai Mythos, delapan tingkat corong, Bor Termal V2, jembatan pilon, Konveyor V2, Matahari V2 30 TW",
+   "summary": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
    "releases": [
+    {
+     "version": "V1.8 3371",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
+     "summary": "V1.8 3371 menambahkan Halo Beacon, Stellar Fusion Reactor 173 TW, Combined-Cycle Gas Turbine 100 MW dan Subspace Silo, ditambah dua menara bundar dari V1.8 2033, yaitu Echo Resonance Excavator dan Helium-3 Regolith Refinery.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "OUKA Halo Beacon adalah generasi kedua dari OUKA Beacon. Jangkauannya 4000 blok dan efeknya 1,25 kali lebih kuat pada level yang sama. Alasnya berbentuk sama dengan beacon lama, tetapi harus dibangun dari blok alloy OUKA tingkat Max atau lebih tinggi. Jika dua beacon tumpang tindih, nilai yang lebih kuat untuk tiap efek yang berlaku; nilainya tidak dijumlahkan. Beacon lama tidak berubah.",
+        "Stellar Fusion Reactor adalah Matahari Buatan generasi ketiga: 32 × 16 × 32 blok, 4 kali volume Sun V2, berdaya 173 TW. Reaktor ini membakar inti deuterium dan helium-3 yang sama dengan Sun V2, dan setiap inti bertahan selama di sana. Melalui kaca terlihat bintang emas dengan cincin yang berputar.",
+        "Combined-Cycle Gas Turbine adalah Generator Turbin Gas generasi kedua: 3 × 6 × 3 blok, berdaya 100 MW, 20 kali V1. Setiap 1 J bahan bakar menghasilkan 2 J listrik. Layarnya menampilkan output, status, dan sisa waktu bahan bakar. Pada 100 MW, satu kaleng minyak tanah bertahan sekitar 1,2 detik.",
+        "Subspace Silo adalah silo besar baru tanpa batas jumlah. Sentuh controller yang sudah dibentuk sekali dengan tangan kosong; setelah itu tombol bundar di samping inventaris membukanya, tanpa remote. Urutkan berdasarkan jumlah, nama, terbaru, atau urutan seret manual, naik atau turun. PDA yang terikat ke Quantum-Compression Vault lama, jika dipakai pada controller baru, menanyakan apakah semuanya dipindahkan; item hanya berpindah saat Move ditekan, dan silo lama tetap utuh.",
+        "V1.8 2033, yang tidak pernah dirilis sendiri, ikut disertakan: Echo Resonance Excavator (11 × 18 dan bundar; menambang satu pecahan gema setiap 100 tick dengan 1 GW) dan Helium-3 Regolith Refinery (7 × 12, bundar; mengubah 16 End Stone atau 1 regolith bulan menjadi kaleng helium-3), keduanya dibangun dari keluarga Resonance Casing putih yang baru. Memecahkan controller Sun V2 yang berisi bahan bakar kini menjatuhkan intinya. V1.8 2012 juga ikut disertakan.",
+        "Diperiksa pada build ini: 2404 tes JUnit LULUS, 1556 tes GameTest LULUS tiga kali berturut-turut, pemeriksaan crash server pada dunia yang sudah ada dan dunia baru bersih."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Sebelum memasang V1.8 3371, hapus jar OUKA lama (1.8.2012 atau lebih lama) dari folder mods dan simpan hanya 1 salinan GeckoLib 5.5.6. Diperlukan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di client dan server.",
+        "Belum diperiksa: keseimbangan gameplay. Kekuatan Halo Beacon, Stellar Fusion Reactor 173 TW, dan turbin 100 MW yang menghabiskan bahan bakar sangat cepat belum diuji keseimbangannya.",
+        "Pemeriksaan client sungguhan dijalankan dalam 59 grup; 54 lulus. Tiga grup (tampilan Sun V1, pemeriksaan gear, dan pemeriksaan industri berat V1.6) gagal, persis seperti pada V1.7 1128612, dan belum diperbaiki. Dua lainnya gagal saat build rilis berjalan bersamaan, dan lulus ketika dijalankan sendiri. Jar yang dikemas sendiri hanya diuji oleh dua pemeriksaan crash server.",
+        "README di dalam zip ini masih mengulang kalimat V1.7 88213 bahwa batas penyimpanan per sel telah dinaikkan. Kalimat itu keliru; lihat koreksinya di catatan V1.7 91209."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.8 2012",
      "date": "2026-10-30",

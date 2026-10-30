@@ -152,6 +152,12 @@
         "release": "V1.8 2012",
         "date": "2026-10-30",
         "type": "release"
+      },
+      {
+        "id": "ouka-v1.8-3371",
+        "release": "V1.8 3371",
+        "date": "2026-10-30",
+        "type": "release"
       }
     ],
     "cherry": [

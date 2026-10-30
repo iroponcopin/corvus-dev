@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.8",
-   "summary": "Ouka V1.8 2012 — Ultra'dan Mythos'a vericiler, sekiz kademeli huni, Termal Sondaj V2, pilon köprüleri, Konveyör V2, 30 TW Güneş V2",
+   "summary": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
    "releases": [
+    {
+     "version": "V1.8 3371",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
+     "summary": "V1.8 3371; Halo Beacon, 173 TW Stellar Fusion Reactor, 100 MW Combined-Cycle Gas Turbine ve Subspace Silo'yu ekler. Ayrıca V1.8 2033'ün iki yuvarlak kulesini, Echo Resonance Excavator ve Helium-3 Regolith Refinery'yi de içerir.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "OUKA Halo Beacon, OUKA Beacon'ın ikinci neslidir. Menzili 4000 bloktur ve aynı seviyede etkileri 1,25 kat güçlüdür. Kaidesi eski beacon ile aynı şekle sahiptir, ancak Max seviyesi veya üzeri OUKA alaşım bloklarından inşa edilmelidir. İki beacon üst üste geldiğinde her etki için daha güçlü değer geçerlidir; değerler toplanmaz. Eski beacon değişmemiştir.",
+        "Stellar Fusion Reactor, üçüncü nesil Yapay Güneş'tir: 32 × 16 × 32 blok, Sun V2'nin 4 katı hacim, 173 TW nominal güç. Sun V2 ile aynı döteryum ve helyum-3 çekirdeklerini yakar ve her çekirdek orada olduğu kadar dayanır. Camdan dönen halkaları olan altın renkli bir yıldız görünür.",
+        "Combined-Cycle Gas Turbine, ikinci nesil Gaz Türbini Jeneratörüdür: 3 × 6 × 3 blok, 100 MW nominal güç, V1'in 20 katı. Her 1 J yakıt 2 J elektrik üretir. Ekranında çıkış, durum ve kalan yakıt süresi görünür. 100 MW'ta bir gazyağı kutusu yaklaşık 1,2 saniye yeter.",
+        "Subspace Silo, sayı sınırı olmayan yeni büyük bir silodur. Kurulmuş kontrol ünitesine boş elinizle bir kez dokunun; bundan sonra envanterin yanındaki yuvarlak bir düğme onu kumanda olmadan açar. Sayıya, ada, son kullanıma veya elle sürüklenen sıraya göre, artan veya azalan olarak sıralayın. Yeni kontrol ünitesinde kullanılan, eski bir Quantum-Compression Vault'a bağlı PDA, her şeyi taşıyıp taşımayacağınızı sorar; eşyalar yalnızca Move tuşuna basınca taşınır ve eski silo sağlam kalır.",
+        "Tek başına hiç yayımlanmamış V1.8 2033 dahildir: Echo Resonance Excavator (11 × 18 ve yuvarlak; 1 GW ile her 100 tick'te bir yankı parçası çıkarır) ve Helium-3 Regolith Refinery (7 × 12, yuvarlak; 16 End Stone veya 1 ay regolitini helyum-3 kutularına dönüştürür). İkisi de yeni beyaz Resonance Casing ailesiyle yapılmıştır. Yakıtlı bir Sun V2 kontrol ünitesini kırmak artık çekirdeklerini düşürür. V1.8 2012 de dahildir.",
+        "Bu derlemede kontrol edildi: JUnit 2404 test GEÇTİ, GameTest 1556 test üç kez üst üste GEÇTİ, mevcut dünyada ve yeni dünyada sunucu çökme kontrolleri temiz."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "V1.8 3371'i kurmadan önce mods klasöründen eski OUKA jar dosyasını (1.8.2012 veya daha eski) silin ve GeckoLib 5.5.6'nın yalnızca 1 kopyasını bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun.",
+        "Kontrol edilmedi: oyun dengesi. Halo Beacon'ın gücü, 173 TW Stellar Fusion Reactor ve yakıtı çok hızlı tüketen 100 MW türbin denge testinden geçmedi.",
+        "Gerçek istemci kontrolleri 59 grupta çalıştırıldı; 54'ü geçti. Üç grup (Sun V1 görünümü, ekipman kontrolü ve ağır sanayi V1.6 kontrolü), V1.7 1128612'de olduğu gibi başarısız oluyor ve düzeltilmedi. Yayın derlemesi aynı anda çalışırken iki grup daha başarısız oldu; tek başına çalıştırıldığında geçti. Paketlenmiş jar'ın kendisi yalnızca iki sunucu çökme kontrolüyle test edildi.",
+        "Bu zip'teki README hâlâ V1.7 88213 ifadesini tekrarlıyor: hücre başına depolama sınırının yükseltildiği yazıyor. Bu ifade yanlıştır; V1.7 91209 notlarındaki düzeltmeye bakın."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.8 2012",
      "date": "2026-10-30",

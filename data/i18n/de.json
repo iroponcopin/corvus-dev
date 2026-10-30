@@ -306,6 +306,25 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.8-3371",
+    "title": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
+    "summary": "V1.8 3371 fügt den Halo Beacon, den Stellar Fusion Reactor mit 173 TW, die Combined-Cycle Gas Turbine mit 100 MW und das Subspace Silo hinzu, dazu die beiden runden Türme aus V1.8 2033, den Echo Resonance Excavator und die Helium-3 Regolith Refinery.",
+    "highlights": [
+     "Der OUKA Halo Beacon ist die zweite Generation des OUKA Beacon. Seine Reichweite beträgt 4000 Blöcke, und seine Effekte sind bei gleicher Stufe 1,25-mal stärker. Sein Sockel hat dieselbe Form wie der alte Beacon, muss aber aus OUKA-Legierungsblöcken der Stufe Max oder höher gebaut werden. Überlappen sich zwei Beacons, gilt pro Effekt der stärkere Wert; die Werte addieren sich nicht. Der alte Beacon bleibt unverändert.",
+     "Der Stellar Fusion Reactor ist die künstliche Sonne der dritten Generation: 32 × 16 × 32 Blöcke, das 4-fache Volumen der Sun V2, Nennleistung 173 TW. Er verbrennt dieselben Deuterium- und Helium-3-Kerne wie die Sun V2, und jeder Kern brennt dort genauso lange. Durch das Glas sieht man einen goldenen Stern mit drehenden Ringen.",
+     "Die Combined-Cycle Gas Turbine ist der Gasturbinengenerator der zweiten Generation: 3 × 6 × 3 Blöcke, Nennleistung 100 MW, 20-mal so stark wie V1. Jedes 1 J Brennstoff liefert 2 J Strom. Der Bildschirm zeigt Leistung, Status und verbleibende Brennzeit. Bei 100 MW reicht eine Kerosinkanne etwa 1,2 Sekunden.",
+     "Das Subspace Silo ist ein neues großes Silo ohne Mengenbegrenzung. Berühre den aufgebauten Controller einmal mit leerer Hand; danach öffnet ihn ein runder Knopf neben dem Inventar, ohne Fernbedienung. Sortierung nach Anzahl, Name, zuletzt oder per Hand gezogener Reihenfolge, aufsteigend oder absteigend. Ein PDA, der an ein altes Quantum-Compression Vault gebunden ist und am neuen Controller genutzt wird, fragt, ob alles übertragen werden soll; Gegenstände wandern erst, wenn man Move drückt, und das alte Silo bleibt unversehrt.",
+     "V1.8 2033, das nie allein veröffentlicht wurde, ist enthalten: der Echo Resonance Excavator (11 × 18 und rund; fördert bei 1 GW alle 100 Ticks einen Echo-Splitter) und die Helium-3 Regolith Refinery (7 × 12, rund; macht aus 16 End Stone oder 1 Mondregolith Helium-3-Kanister), beide aus der neuen weißen Resonance-Casing-Familie. Wird ein befeuerter Sun-V2-Controller zerstört, fallen jetzt seine Kerne heraus. Auch V1.8 2012 ist enthalten.",
+     "Geprüft auf diesem Build: JUnit 2404 Tests BESTANDEN, GameTest 1556 Tests dreimal hintereinander BESTANDEN, Server-Absturzprüfungen auf einer bestehenden und einer neuen Welt ohne Befund."
+    ],
+    "warnings": [
+     "Bevor du V1.8 3371 installierst, entferne die alte OUKA-jar (1.8.2012 oder älter) aus dem Ordner mods und behalte nur 1 Kopie von GeckoLib 5.5.6. Benötigt werden Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Auf Client und Server installieren.",
+     "Nicht geprüft: Spielbalance. Die Stärke des Halo Beacon, des Stellar Fusion Reactor mit 173 TW und der 100-MW-Turbine, die Brennstoff sehr schnell verbraucht, wurde nicht auf Balance getestet.",
+     "Echte Client-Prüfungen liefen in 59 Gruppen; 54 bestanden. Drei Gruppen (Sun-V1-Optik, Ausrüstungsprüfung und Schwerindustrie-Prüfung V1.6) schlagen fehl, genau wie bei V1.7 1128612, und sind nicht behoben. Zwei weitere schlugen fehl, während der Release-Build gleichzeitig lief, und bestanden, wenn sie allein liefen. Die gepackte jar selbst wurde nur durch die beiden Server-Absturzprüfungen getestet.",
+     "Die README in dieser zip wiederholt noch die Formulierung von V1.7 88213, dass das Speicherlimit pro Zelle erhöht wurde. Diese Formulierung ist falsch; siehe die Korrektur in den Notizen zu V1.7 91209."
+    ]
+   },
+   {
     "id": "ouka-v1.8-2012",
     "title": "Ouka V1.8 2012 — Transceiver Ultra bis Mythos, acht Trichterstufen, Thermalbohrer V2, Pylon-Brücken, Förderband V2, 30-TW-Sonne V2",
     "summary": "V1.8 2012 bringt sieben Stufen des Materie-Transceivers, acht Stufen des Hyperimpuls-Trichters, den Krustentiefen-Thermalbohrer V2, Pylon-Brücken, ein viermal schnelleres Magnetschwebe-Förderband V2 und eine 30-TW-Künstliche-Sonne V2.",

@@ -306,6 +306,25 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.8-3371",
+    "title": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
+    "summary": "La V1.8 3371 aggiunge l'Halo Beacon, lo Stellar Fusion Reactor da 173 TW, la Combined-Cycle Gas Turbine da 100 MW e il Subspace Silo, oltre alle due torri rotonde della V1.8 2033: l'Echo Resonance Excavator e la Helium-3 Regolith Refinery.",
+    "highlights": [
+     "L'OUKA Halo Beacon è la seconda generazione dell'OUKA Beacon. Il raggio è di 4000 blocchi e gli effetti sono 1,25 volte più forti allo stesso livello. Il basamento ha la stessa forma del vecchio faro, ma va costruito con blocchi di lega OUKA di livello Max o superiore. Dove due fari si sovrappongono, vale il valore più forte per ogni effetto; i valori non si sommano. Il vecchio faro non cambia.",
+     "Lo Stellar Fusion Reactor è il Sole artificiale di terza generazione: 32 × 16 × 32 blocchi, 4 volte il volume del Sun V2, con potenza nominale di 173 TW. Brucia gli stessi nuclei di deuterio ed elio-3 del Sun V2, e ogni nucleo dura lì quanto lì. Attraverso il vetro si vede una stella dorata con anelli rotanti.",
+     "La Combined-Cycle Gas Turbine è il generatore a turbina a gas di seconda generazione: 3 × 6 × 3 blocchi, potenza nominale di 100 MW, 20 volte la V1. Ogni 1 J di combustibile dà 2 J di elettricità. Lo schermo mostra l'uscita, lo stato e il tempo di combustibile rimasto. A 100 MW, una tanica di cherosene dura circa 1,2 secondi.",
+     "Il Subspace Silo è un nuovo grande silo senza limite di quantità. Tocca una volta il controller formato a mani vuote; da quel momento un pulsante rotondo accanto all'inventario lo apre, senza telecomando. Ordina per quantità, nome, recenti o ordine trascinato a mano, crescente o decrescente. Un PDA collegato a un vecchio Quantum-Compression Vault, usato sul nuovo controller, chiede se spostare tutto; gli oggetti si spostano solo quando premi Move, e il vecchio silo resta intatto.",
+     "È inclusa la V1.8 2033, mai rilasciata da sola: l'Echo Resonance Excavator (11 × 18 e rotondo; estrae un frammento d'eco ogni 100 tick a 1 GW) e la Helium-3 Regolith Refinery (7 × 12, rotonda; trasforma 16 End Stone o 1 regolite lunare in taniche di elio-3), entrambi costruiti con la nuova famiglia di involucri Resonance Casing bianchi. Rompere un controller Sun V2 alimentato ora fa cadere i suoi nuclei. Inclusa anche la V1.8 2012.",
+     "Verificato su questa build: 2404 test JUnit SUPERATI, 1556 test GameTest SUPERATI tre volte di seguito, controlli di crash del server puliti su un mondo esistente e su un mondo nuovo."
+    ],
+    "warnings": [
+     "Prima di installare la V1.8 3371, rimuovi il vecchio jar di OUKA (1.8.2012 o precedente) dalla cartella mods e conserva una sola copia di GeckoLib 5.5.6. Servono Minecraft 26.3, Fabric Loader 0.19.5 o più recente e Fabric API 0.161.0+26.3 o più recente. Installalo sul client e sul server.",
+     "Non verificato: il bilanciamento di gioco. La potenza dell'Halo Beacon, dello Stellar Fusion Reactor da 173 TW e della turbina da 100 MW, che consuma combustibile molto rapidamente, non è stata testata per il bilanciamento.",
+     "I controlli sul client reale sono stati eseguiti in 59 gruppi; 54 sono passati. Tre gruppi (l'aspetto del Sun V1, il controllo dell'equipaggiamento e il controllo dell'industria pesante V1.6) falliscono, esattamente come su V1.7 1128612, e non sono stati corretti. Altri due sono falliti mentre la build di rilascio era in esecuzione in parallelo, e sono passati se eseguiti da soli. Il jar impacchettato è stato verificato solo dai due controlli di crash del server.",
+     "Il README in questo zip ripete ancora la formulazione di V1.7 88213 secondo cui il limite di archiviazione per cella è stato alzato. Quella formulazione è errata; vedi la correzione nelle note di V1.7 91209."
+    ]
+   },
+   {
     "id": "ouka-v1.8-2012",
     "title": "Ouka V1.8 2012 — Ricetrasmettitore da Ultra a Mythos, otto livelli di tramoggia, Trivella termica V2, ponti di piloni, Nastro V2, Sole V2 da 30 TW",
     "summary": "V1.8 2012 aggiunge sette livelli del ricetrasmettitore di materia, otto livelli della tramoggia a iperimpulso, la Trivella termica subcrostale V2, ponti di piloni, un Nastro maglev V2 quattro volte più veloce e un Sole artificiale V2 da 30 TW.",

@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.8",
-   "summary": "Ouka V1.8 2012 — Transceptor Ultra a Mythos, oito níveis de funil, Perfuratriz térmica V2, pontes de pilares, Esteira V2, Sol V2 de 30 TW",
+   "summary": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
    "releases": [
+    {
+     "version": "V1.8 3371",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
+     "summary": "A V1.8 3371 adiciona o Halo Beacon, o Stellar Fusion Reactor de 173 TW, a Combined-Cycle Gas Turbine de 100 MW e o Subspace Silo, além das duas torres redondas da V1.8 2033: o Echo Resonance Excavator e a Helium-3 Regolith Refinery.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "O OUKA Halo Beacon é a segunda geração do OUKA Beacon. Seu alcance é de 4000 blocos e seus efeitos são 1,25 vez mais fortes no mesmo nível. Sua base tem o mesmo formato do beacon antigo, mas deve ser construída com blocos de liga OUKA de nível Max ou superior. Quando dois beacons se sobrepõem, vale o valor mais forte de cada efeito; os valores não se somam. O beacon antigo não muda.",
+        "O Stellar Fusion Reactor é o Sol artificial de terceira geração: 32 × 16 × 32 blocos, 4 vezes o volume do Sun V2, com potência nominal de 173 TW. Ele queima os mesmos núcleos de deutério e hélio-3 do Sun V2, e cada núcleo dura lá o mesmo tempo. Pelo vidro, você vê uma estrela dourada com anéis girando.",
+        "A Combined-Cycle Gas Turbine é o gerador de turbina a gás de segunda geração: 3 × 6 × 3 blocos, potência nominal de 100 MW, 20 vezes a V1. Cada 1 J de combustível gera 2 J de eletricidade. A tela mostra a saída, o status e o tempo de combustível restante. Em 100 MW, um galão de querosene dura cerca de 1,2 segundo.",
+        "O Subspace Silo é um silo grande novo, sem limite de quantidade. Toque no controlador montado uma vez com a mão vazia; a partir daí, um botão redondo ao lado do inventário o abre, sem controle remoto. Ordene por quantidade, nome, recentes ou ordem arrastada manualmente, crescente ou decrescente. Um PDA vinculado a um antigo Quantum-Compression Vault, usado no novo controlador, pergunta se deve mover tudo; os itens só são movidos quando você pressiona Move, e o silo antigo permanece intacto.",
+        "A V1.8 2033, nunca lançada sozinha, está incluída: o Echo Resonance Excavator (11 × 18 e redondo; minera um fragmento de eco a cada 100 ticks com 1 GW) e a Helium-3 Regolith Refinery (7 × 12, redonda; transforma 16 End Stone ou 1 regolito lunar em galões de hélio-3), ambos feitos com a nova família de carcaças Resonance Casing brancas. Quebrar um controlador de Sun V2 com combustível agora solta seus núcleos. A V1.8 2012 também está incluída.",
+        "Verificado nesta build: 2404 testes JUnit PASSARAM, 1556 testes GameTest PASSARAM três vezes seguidas, e verificações de falha do servidor sem problemas em um mundo existente e em um mundo novo."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Antes de instalar a V1.8 3371, remova o jar antigo da OUKA (1.8.2012 ou anterior) da pasta mods e mantenha apenas 1 cópia do GeckoLib 5.5.6. Ele precisa de Minecraft 26.3, Fabric Loader 0.19.5 ou mais recente, e Fabric API 0.161.0+26.3 ou mais recente. Instale no cliente e no servidor.",
+        "Não verificado: o balanceamento do jogo. A força do Halo Beacon, do Stellar Fusion Reactor de 173 TW e da turbina de 100 MW, que consome combustível muito rápido, não passou por testes de balanceamento.",
+        "As verificações com cliente real rodaram em 59 grupos; 54 passaram. Três grupos (a aparência do Sun V1, a verificação de equipamento e a verificação da indústria pesada V1.6) falham, exatamente como na V1.7 1128612, e não foram corrigidos. Outros dois falharam enquanto o build de release rodava ao mesmo tempo, e passaram quando rodados sozinhos. O jar empacotado em si só foi testado pelas duas verificações de falha do servidor.",
+        "O README deste zip ainda repete a redação da V1.7 88213 de que o limite de armazenamento por célula foi aumentado. Essa redação está errada; veja a correção nas notas da V1.7 91209."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.8 2012",
      "date": "2026-10-30",
