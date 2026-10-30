@@ -1409,6 +1409,26 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-1017",
+    "title": "Halia V1.5 1017",
+    "summary": "Cıvata Tüfeği eklendi: formül çemberlerini doldur, hedefini işaretle ve havayı ağır çekimde geçip isabet ettiği yerde patlayan bir cıvata ateşle.",
+    "highlights": [
+     "Yeni eşya: Cıvata Tüfeği. Doldurmak ve dürbünden bakmak için sağ tıkı basılı tut; sol tık vurulacak noktayı ya da yaratığı işaretler, eğilmek işareti siler.",
+     "Doldururken namlunun önünde formül çemberleri üst üste dizilir. Dolum ne kadar uzunsa atış o kadar güçlü olur.",
+     "Ateş etmek için bırak: cıvata havayı ağır çekimde geçer, isabet ettiği yere mühürler iner, patlar ve yere bir şok dalgası yayılır.",
+     "Patlama ve şok dalgası menzildeki yaratıklara ve oyunculara zarar verir. Yaratıcı ya da izleyici kipindeki oyuncular asla zarar görmez.",
+     "Bir ender gözü, netherit külçeleri, bir arbalet ve bir dürbünle üretilir; Savaş sekmesinde ve Halia sekmesinde yer alır. Ayarları bir tuşla açılır (varsayılan H)."
+    ],
+    "warnings": [
+     "Sunucularda patlama ve şok dalgasının menzili sınırlıdır; gördüğünden kısadır.",
+     "Varsayılan olarak patlama blok kırmaz; bir sunucu ayarı krater oluşmasına izin verebilir.",
+     "Ayarlarda seçilen güç ve hasar yalnızca sunucu izin verdiğinde kullanılır; aksi hâlde her atış standart değerleri kullanır.",
+     "Havada doldurmak seni yerinde tutar; atıştan sonra düşme hasarı almadan yavaşça inersin.",
+     "Ateş eden kişiye atışın kısa bir filmi gösterilir; filmler ayarlardan kapatılabilir.",
+     "Yalnızca bir test sunucusunda ve test istemcilerinde denetlendi, gerçek çok oyunculu oyunda henüz denenmedi."
+    ]
+   },
+   {
     "id": "halia-v1.4-1143",
     "title": "Halia V1.4 1143",
     "summary": "Tesseract büyüsü artık aydınlatma için sunucu iş parçacığında beklemiyor ve blokları artık tek seferde değil, birkaç tick'e yayılarak yazılıyor.",

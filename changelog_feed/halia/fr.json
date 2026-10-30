@@ -1,11 +1,47 @@
 {
  "lang": "fr",
  "brand": "halia",
- "updated": "2026-10-26",
+ "updated": "2026-10-30",
  "title": "Historique des mises à jour",
- "updated_label": "Mis à jour le 2026-10-26",
+ "updated_label": "Mis à jour le 2026-10-30",
  "note": "",
  "groups": [
+  {
+   "label": "V1.5",
+   "summary": "Halia V1.5 1017",
+   "releases": [
+    {
+     "version": "V1.5 1017",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Halia V1.5 1017",
+     "summary": "Ajout du fusil à carreau : chargez des cercles de formule, désignez votre cible et tirez un carreau qui traverse l'air au ralenti et éclate à l'impact.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Nouvel objet : le fusil à carreau. Maintenez le clic droit pour charger et regarder dans la lunette ; le clic gauche désigne le point ou la créature à toucher, et s'accroupir annule la désignation.",
+        "Pendant la charge, des cercles de formule s'empilent devant le canon. Plus la charge est longue, plus le tir est puissant.",
+        "Relâchez pour tirer : le carreau traverse l'air au ralenti, des sceaux descendent sur le point d'impact, puis il éclate et une onde de choc parcourt le sol.",
+        "L'explosion et l'onde de choc blessent les créatures et les joueurs à leur portée. Les joueurs en mode créatif ou spectateur ne sont jamais blessés.",
+        "Se fabrique avec un œil de l'Ender, des lingots de netherite, une arbalète et une longue-vue ; présent dans l'onglet Combat et dans l'onglet de Halia. Ses réglages s'ouvrent avec une touche (H par défaut)."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Sur les serveurs, l'explosion et l'onde de choc ont une portée limitée, plus courte que ce que vous voyez.",
+        "Par défaut, l'explosion ne casse pas de blocs ; un réglage du serveur peut autoriser un cratère.",
+        "La puissance et les dégâts choisis dans les réglages ne sont utilisés que si le serveur l'autorise ; sinon chaque tir utilise les valeurs standard.",
+        "Charger en l'air vous maintient sur place ; après le tir, vous redescendez doucement sans dégâts de chute.",
+        "Un court film du tir est montré au tireur ; les films peuvent être désactivés dans les réglages.",
+        "Vérifié uniquement sur un serveur de test et des clients de test, pas encore en vraie partie multijoueur."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.4",
    "summary": "Halia V1.4 1143",

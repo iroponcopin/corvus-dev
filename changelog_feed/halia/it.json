@@ -1,11 +1,47 @@
 {
  "lang": "it",
  "brand": "halia",
- "updated": "2026-10-26",
+ "updated": "2026-10-30",
  "title": "Changelog",
- "updated_label": "Aggiornato il 2026-10-26",
+ "updated_label": "Aggiornato il 2026-10-30",
  "note": "",
  "groups": [
+  {
+   "label": "V1.5",
+   "summary": "Halia V1.5 1017",
+   "releases": [
+    {
+     "version": "V1.5 1017",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Halia V1.5 1017",
+     "summary": "Aggiunto il fucile a dardo: carica cerchi di formula, segna il bersaglio e spara un dardo che attraversa l'aria al rallentatore ed esplode dove colpisce.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Nuovo oggetto: il fucile a dardo. Tieni premuto il tasto destro per caricare e guardare nel mirino; il tasto sinistro segna il punto o la creatura da colpire, e accovacciarsi cancella il segno.",
+        "Durante la carica, cerchi di formula si impilano davanti alla canna. Più lunga la carica, più forte il colpo.",
+        "Rilascia per sparare: il dardo attraversa l'aria al rallentatore, dei sigilli scendono dove colpisce, esplode e un'onda d'urto si propaga sul terreno.",
+        "L'esplosione e l'onda d'urto feriscono creature e giocatori a portata. I giocatori in modalità creativa o spettatore non vengono mai feriti.",
+        "Si fabbrica con un occhio di Ender, lingotti di netherite, una balestra e un cannocchiale; si trova nella scheda Combattimento e nella scheda di Halia. Le impostazioni si aprono con un tasto (H per impostazione predefinita)."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Sui server l'esplosione e l'onda d'urto hanno una portata limitata, più corta di ciò che si vede.",
+        "Per impostazione predefinita l'esplosione non rompe blocchi; un'impostazione del server può consentire un cratere.",
+        "Potenza e danno scelti nelle impostazioni valgono solo dove il server lo consente; altrimenti ogni colpo usa i valori standard.",
+        "Caricare a mezz'aria ti tiene sul posto; dopo il colpo scendi lentamente senza danni da caduta.",
+        "Chi spara vede un breve filmato del colpo; i filmati si possono disattivare nelle impostazioni.",
+        "Verificato solo su un server di prova e in client di prova, non ancora in vere partite multigiocatore."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.4",
    "summary": "Halia V1.4 1143",

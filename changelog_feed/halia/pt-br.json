@@ -1,11 +1,47 @@
 {
  "lang": "pt-br",
  "brand": "halia",
- "updated": "2026-10-26",
+ "updated": "2026-10-30",
  "title": "Histórico de atualizações",
- "updated_label": "Atualizado em 2026-10-26",
+ "updated_label": "Atualizado em 2026-10-30",
  "note": "",
  "groups": [
+  {
+   "label": "V1.5",
+   "summary": "Halia V1.5 1017",
+   "releases": [
+    {
+     "version": "V1.5 1017",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Halia V1.5 1017",
+     "summary": "Adiciona o rifle de virote: carregue círculos de fórmula, defina o alvo e dispare um virote que cruza o ar em câmera lenta e explode onde acerta.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "Novo item: o rifle de virote. Segure o botão direito para carregar e olhar pela luneta; o botão esquerdo define o ponto ou a criatura a atingir, e agachar cancela a seleção.",
+        "Enquanto você carrega, círculos de fórmula se empilham na frente do cano. Quanto mais longa a carga, mais forte o tiro.",
+        "Solte para disparar: o virote cruza o ar em câmera lenta, selos descem onde ele acerta, ele explode e uma onda de choque se espalha pelo chão.",
+        "A explosão e a onda de choque ferem criaturas e jogadores ao alcance. Jogadores no modo criativo ou espectador nunca são feridos.",
+        "Fabricado com um olho de Ender, lingotes de netherita, uma besta e uma luneta; aparece na aba Combate e na aba do Halia. As configurações abrem com uma tecla (H por padrão)."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "Em servidores, a explosão e a onda de choque têm alcance limitado, menor do que você vê.",
+        "Por padrão a explosão não quebra blocos; uma configuração do servidor pode permitir uma cratera.",
+        "A potência e o dano escolhidos nas configurações só valem onde o servidor permite; caso contrário, todo tiro usa os valores padrão.",
+        "Carregar no ar mantém você parado; depois do tiro você desce devagar sem dano de queda.",
+        "O atirador vê um curto filme do tiro; os filmes podem ser desligados nas configurações.",
+        "Verificado apenas em um servidor de teste e em clientes de teste, ainda não em partidas multijogador reais."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.4",
    "summary": "Halia V1.4 1143",

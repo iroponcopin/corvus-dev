@@ -1413,6 +1413,26 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-1017",
+    "title": "Halia V1.5 1017",
+    "summary": "Adds the Bolt Rifle: charge formula circles, mark your target, and fire a bolt that crosses the air in slow motion and bursts where it lands.",
+    "highlights": [
+     "New item: the Bolt Rifle. Hold right click to charge and look through its scope; left click marks the spot or creature to hit, and sneaking clears the mark.",
+     "While you charge, formula circles stack up in front of the barrel. The longer the charge, the stronger the shot.",
+     "Let go to fire: the bolt crosses the air in slow motion, seals come down where it lands, and it bursts, sending a shock wave across the ground.",
+     "The blast and the shock wave hurt creatures and players in their reach. Players in creative or spectator mode are never hurt.",
+     "Crafted from an eye of ender, netherite ingots, a crossbow and a spyglass; listed in the Combat tab and in Halia's tab. Its settings open with a key (H by default)."
+    ],
+    "warnings": [
+     "On servers the blast and the shock wave reach a limited distance, shorter than what you see.",
+     "By default the blast does not break blocks; a server setting can allow a crater.",
+     "Power and damage chosen in the settings are used only where the server allows it; otherwise every shot uses the standard values.",
+     "Charging in mid-air holds you in place; after the shot you drift down without fall damage.",
+     "A short film of the shot plays for the shooter; films can be turned off in the settings.",
+     "It has been checked on a test server and in test clients only, not yet in real multiplayer play."
+    ]
+   },
+   {
     "id": "halia-v1.4-1143",
     "title": "Halia V1.4 1143",
     "summary": "The Tesseract spell no longer waits on the server thread for lighting, and its blocks are now written over several ticks instead of all at once.",

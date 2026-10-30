@@ -2476,8 +2476,10 @@ def load_lang(mod_dir, modid, locale="ja_jp"):
 
 
 def display_name(lang, modid, name):
+    # The game turns a "/" in an id into "." in the translation key (Halia's ultrafast/bolt_rifle).
+    name_key = name.replace("/", ".")
     for prefix in ("item", "block"):
-        key = f"{prefix}.{modid}.{name}"
+        key = f"{prefix}.{modid}.{name_key}"
         if key in lang:
             return lang[key]
     return name

@@ -1409,6 +1409,26 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-1017",
+    "title": "Halia V1.5 1017",
+    "summary": "Menambahkan Senapan Baut: isi lingkaran formula, tandai sasaranmu, lalu tembakkan baut yang melintasi udara dalam gerak lambat dan meledak di titik kena.",
+    "highlights": [
+     "Item baru: Senapan Baut. Tahan klik kanan untuk mengisi dan melihat lewat teropongnya; klik kiri menandai titik atau makhluk yang dituju, dan menunduk menghapus tanda.",
+     "Selama mengisi, lingkaran formula bertumpuk di depan laras. Makin lama diisi, makin kuat tembakannya.",
+     "Lepaskan untuk menembak: baut melintasi udara dalam gerak lambat, segel turun di titik kena, lalu meledak dan gelombang kejut menyebar di tanah.",
+     "Ledakan dan gelombang kejut melukai makhluk dan pemain dalam jangkauannya. Pemain dalam mode kreatif atau penonton tidak pernah terluka.",
+     "Dibuat dari mata ender, batangan netherite, busur silang, dan teropong; ada di tab Combat dan tab Halia. Pengaturannya dibuka dengan tombol (bawaan H)."
+    ],
+    "warnings": [
+     "Di server, ledakan dan gelombang kejut punya jangkauan terbatas, lebih pendek daripada yang terlihat.",
+     "Secara bawaan ledakan tidak menghancurkan blok; pengaturan server bisa mengizinkan kawah.",
+     "Kekuatan dan kerusakan yang dipilih di pengaturan hanya dipakai bila server mengizinkan; selain itu setiap tembakan memakai nilai standar.",
+     "Mengisi di udara membuatmu tetap di tempat; setelah menembak kamu turun perlahan tanpa kerusakan jatuh.",
+     "Penembak melihat film singkat tembakannya; film bisa dimatikan di pengaturan.",
+     "Baru diperiksa di server uji dan klien uji, belum dalam permainan multipemain sungguhan."
+    ]
+   },
+   {
     "id": "halia-v1.4-1143",
     "title": "Halia V1.4 1143",
     "summary": "Mantra Tesseract tidak lagi menunggu thread server untuk pencahayaan, dan bloknya kini ditulis selama beberapa tick, bukan sekaligus.",

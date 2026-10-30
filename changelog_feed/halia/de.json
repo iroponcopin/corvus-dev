@@ -1,11 +1,47 @@
 {
  "lang": "de",
  "brand": "halia",
- "updated": "2026-10-26",
+ "updated": "2026-10-30",
  "title": "Änderungsprotokoll",
- "updated_label": "Aktualisiert am 2026-10-26",
+ "updated_label": "Aktualisiert am 2026-10-30",
  "note": "",
  "groups": [
+  {
+   "label": "V1.5",
+   "summary": "Halia V1.5 1017",
+   "releases": [
+    {
+     "version": "V1.5 1017",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Halia V1.5 1017",
+     "summary": "Neu ist das Bolzengewehr: Formelkreise aufladen, das Ziel markieren und einen Bolzen abfeuern, der in Zeitlupe durch die Luft fliegt und am Einschlagpunkt zerbirst.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Neuer Gegenstand: das Bolzengewehr. Rechtsklick halten zum Aufladen und durch das Zielfernrohr schauen; Linksklick markiert den Punkt oder die Kreatur, Schleichen löscht die Markierung.",
+        "Während des Aufladens stapeln sich Formelkreise vor dem Lauf. Je länger die Ladung, desto stärker der Schuss.",
+        "Loslassen zum Feuern: Der Bolzen fliegt in Zeitlupe, am Einschlagpunkt senken sich Siegel herab, er zerbirst und eine Schockwelle läuft über den Boden.",
+        "Explosion und Schockwelle verletzen Kreaturen und Spieler in ihrer Reichweite. Spieler im Kreativ- oder Zuschauermodus werden nie verletzt.",
+        "Herstellbar aus einem Enderauge, Netheritbarren, einer Armbrust und einem Fernrohr; im Kampf-Reiter und in Halias Reiter. Die Einstellungen öffnen sich mit einer Taste (standardmäßig H)."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Auf Servern reichen Explosion und Schockwelle nur begrenzt weit, kürzer als das, was du siehst.",
+        "Standardmäßig zerstört die Explosion keine Blöcke; eine Servereinstellung kann einen Krater erlauben.",
+        "In den Einstellungen gewählte Stärke und Schaden gelten nur, wenn der Server es erlaubt; sonst nutzt jeder Schuss die Standardwerte.",
+        "Aufladen in der Luft hält dich an Ort und Stelle; nach dem Schuss sinkst du ohne Fallschaden herab.",
+        "Der Schütze sieht einen kurzen Film des Schusses; Filme lassen sich in den Einstellungen abschalten.",
+        "Nur auf einem Testserver und in Testclients geprüft, noch nicht im echten Mehrspielerbetrieb."
+       ]
+      }
+     ]
+    }
+   ]
+  },
   {
    "label": "V1.4",
    "summary": "Halia V1.4 1143",

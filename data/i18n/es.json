@@ -1409,6 +1409,26 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-1017",
+    "title": "Halia V1.5 1017",
+    "summary": "Se añade el rifle de virote: carga círculos de fórmula, fija tu objetivo y dispara un virote que cruza el aire a cámara lenta y estalla donde impacta.",
+    "highlights": [
+     "Objeto nuevo: el rifle de virote. Mantén el clic derecho para cargar y mirar por la mira; el clic izquierdo fija el punto o la criatura a alcanzar, y agacharse cancela el objetivo.",
+     "Mientras cargas, se apilan círculos de fórmula delante del cañón. Cuanto más larga la carga, más fuerte el disparo.",
+     "Suelta para disparar: el virote cruza el aire a cámara lenta, unos sellos descienden donde impacta, estalla y una onda de choque recorre el suelo.",
+     "La explosión y la onda de choque hieren a criaturas y jugadores a su alcance. Los jugadores en modo creativo o espectador nunca reciben daño.",
+     "Se fabrica con un ojo de Ender, lingotes de netherita, una ballesta y un catalejo; aparece en la pestaña Combate y en la pestaña de Halia. Sus ajustes se abren con una tecla (H por defecto)."
+    ],
+    "warnings": [
+     "En los servidores, la explosión y la onda de choque tienen un alcance limitado, más corto de lo que se ve.",
+     "Por defecto la explosión no rompe bloques; un ajuste del servidor puede permitir un cráter.",
+     "La potencia y el daño elegidos en los ajustes solo se usan si el servidor lo permite; si no, cada disparo usa los valores estándar.",
+     "Cargar en el aire te mantiene en el sitio; tras el disparo desciendes despacio sin daño por caída.",
+     "El tirador ve una breve película del disparo; las películas se pueden desactivar en los ajustes.",
+     "Solo se ha comprobado en un servidor de prueba y en clientes de prueba, todavía no en partidas multijugador reales."
+    ]
+   },
+   {
     "id": "halia-v1.4-1143",
     "title": "Halia V1.4 1143",
     "summary": "El hechizo Tesseract ya no espera al hilo del servidor para la iluminación, y sus bloques ahora se escriben a lo largo de varios ticks en lugar de todos a la vez.",

@@ -122,11 +122,11 @@
   },
   "halia": {
     "mod_id": "halia",
-    "latest": "1.4.1143",
-    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/halia-1.4.1143.jar",
-    "file_name": "halia-1.4.1143.jar",
-    "file_size": 61553945,
-    "sha256": "777c522e27673130aea9e952aab25b48848cc88d75b4dc63cfd3bc612b8c6496",
+    "latest": "1.5.1017",
+    "download_url": "https://iroponcopin.github.io/corvus-dev/downloads/halia-1.5.1017.jar",
+    "file_name": "halia-1.5.1017.jar",
+    "file_size": 62378461,
+    "sha256": "e351acc109dbfabb91f204197a1ed6e32ce0cc9f1ec5f06c44c0f5f7d10ffbce",
     "creatures": [
       {
         "id": "glimmerwisp",
