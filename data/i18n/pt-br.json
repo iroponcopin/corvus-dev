@@ -1409,6 +1409,18 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-1018",
+    "title": "Halia V1.5 1018",
+    "summary": "Corrige as configurações do rifle de virotes: a potência e o dano escolhidos agora valem para os seus tiros.",
+    "highlights": [
+     "Os controles de Potência e Dano nas configurações do rifle de virotes agora mudam seus tiros. Antes, todo tiro usava os valores padrão."
+    ],
+    "warnings": [
+     "O dano fica dentro do máximo padrão do rifle e o alcance da explosão e da onda de choque continua limitado, então potência alta muda principalmente a aparência.",
+     "Verificado apenas em servidor e clientes de teste, ainda não em multijogador real."
+    ]
+   },
+   {
     "id": "halia-v1.5-1017",
     "title": "Halia V1.5 1017",
     "summary": "Adiciona o rifle de virote: carregue círculos de fórmula, defina o alvo e dispare um virote que cruza o ar em câmera lenta e explode onde acerta.",

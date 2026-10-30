@@ -8,8 +8,30 @@
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Halia V1.5 1017",
+   "summary": "Halia V1.5 1018",
    "releases": [
+    {
+     "version": "V1.5 1018",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Halia V1.5 1018",
+     "summary": "Fixes the Bolt Rifle's settings: the power and damage you choose now apply to your shots.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "The Power and Damage sliders in the Bolt Rifle's settings now change your shots. Before, every shot used the standard values."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Damage stays within the rifle's standard maximum, and the reach of the blast and the shock wave keeps its limit, so high Power changes the look more than the reach.",
+        "It has been checked on a test server and in test clients only, not yet in real multiplayer play."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5 1017",
      "date": "2026-10-30",

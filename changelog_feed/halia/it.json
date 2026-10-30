@@ -8,8 +8,30 @@
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Halia V1.5 1017",
+   "summary": "Halia V1.5 1018",
    "releases": [
+    {
+     "version": "V1.5 1018",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Halia V1.5 1018",
+     "summary": "Corregge le impostazioni del fucile a dardi: potenza e danno scelti ora valgono per i tuoi colpi.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "I cursori Potenza e Danno nelle impostazioni del fucile a dardi ora cambiano i tuoi colpi. Prima ogni colpo usava i valori standard."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Il danno resta entro il massimo standard del fucile e la portata di esplosione e onda d'urto resta limitata, quindi una potenza alta cambia soprattutto l'aspetto.",
+        "Verificato solo su un server e client di prova, non ancora in vero multigiocatore."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5 1017",
      "date": "2026-10-30",

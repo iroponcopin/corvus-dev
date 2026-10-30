@@ -1409,6 +1409,18 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-1018",
+    "title": "Halia V1.5 1018",
+    "summary": "Corregge le impostazioni del fucile a dardi: potenza e danno scelti ora valgono per i tuoi colpi.",
+    "highlights": [
+     "I cursori Potenza e Danno nelle impostazioni del fucile a dardi ora cambiano i tuoi colpi. Prima ogni colpo usava i valori standard."
+    ],
+    "warnings": [
+     "Il danno resta entro il massimo standard del fucile e la portata di esplosione e onda d'urto resta limitata, quindi una potenza alta cambia soprattutto l'aspetto.",
+     "Verificato solo su un server e client di prova, non ancora in vero multigiocatore."
+    ]
+   },
+   {
     "id": "halia-v1.5-1017",
     "title": "Halia V1.5 1017",
     "summary": "Aggiunto il fucile a dardo: carica cerchi di formula, segna il bersaglio e spara un dardo che attraversa l'aria al rallentatore ed esplode dove colpisce.",

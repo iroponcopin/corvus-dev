@@ -1409,6 +1409,18 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-1018",
+    "title": "Halia V1.5 1018",
+    "summary": "Korrigiert die Einstellungen des Bolzengewehrs: Gewählte Stärke und gewählter Schaden gelten jetzt für deine Schüsse.",
+    "highlights": [
+     "Die Regler für Stärke und Schaden in den Einstellungen des Bolzengewehrs verändern jetzt deine Schüsse. Bisher nutzte jeder Schuss die Standardwerte."
+    ],
+    "warnings": [
+     "Der Schaden bleibt innerhalb des Standardmaximums, und die Reichweite von Explosion und Schockwelle bleibt begrenzt; hohe Stärke verändert daher vor allem das Aussehen.",
+     "Bisher nur auf einem Testserver und in Testclients geprüft, noch nicht im echten Mehrspielerbetrieb."
+    ]
+   },
+   {
     "id": "halia-v1.5-1017",
     "title": "Halia V1.5 1017",
     "summary": "Neu ist das Bolzengewehr: Formelkreise aufladen, das Ziel markieren und einen Bolzen abfeuern, der in Zeitlupe durch die Luft fliegt und am Einschlagpunkt zerbirst.",

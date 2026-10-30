@@ -8,8 +8,30 @@
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Halia V1.5 1017",
+   "summary": "Halia V1.5 1018",
    "releases": [
+    {
+     "version": "V1.5 1018",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Halia V1.5 1018",
+     "summary": "Corrige as configurações do rifle de virotes: a potência e o dano escolhidos agora valem para os seus tiros.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "Os controles de Potência e Dano nas configurações do rifle de virotes agora mudam seus tiros. Antes, todo tiro usava os valores padrão."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "O dano fica dentro do máximo padrão do rifle e o alcance da explosão e da onda de choque continua limitado, então potência alta muda principalmente a aparência.",
+        "Verificado apenas em servidor e clientes de teste, ainda não em multijogador real."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5 1017",
      "date": "2026-10-30",

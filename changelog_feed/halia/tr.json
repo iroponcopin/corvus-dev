@@ -8,8 +8,30 @@
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Halia V1.5 1017",
+   "summary": "Halia V1.5 1018",
    "releases": [
+    {
+     "version": "V1.5 1018",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Halia V1.5 1018",
+     "summary": "Cıvata Tüfeği ayarları düzeltildi: seçtiğin güç ve hasar artık atışlarına uygulanıyor.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Cıvata Tüfeği ayarlarındaki Güç ve Hasar kaydırıcıları artık atışlarını değiştiriyor. Önceden her atış standart değerleri kullanıyordu."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Hasar tüfeğin standart üst sınırında kalır, patlama ve şok dalgasının menzili de sınırlıdır; bu yüzden yüksek güç çoğunlukla görünümü değiştirir.",
+        "Yalnızca test sunucusunda ve test istemcilerinde denetlendi, gerçek çok oyunculu oyunda henüz denenmedi."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5 1017",
      "date": "2026-10-30",

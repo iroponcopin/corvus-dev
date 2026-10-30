@@ -1409,6 +1409,18 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-1018",
+    "title": "Halia V1.5 1018",
+    "summary": "Memperbaiki pengaturan Senapan Baut: daya dan kerusakan yang kamu pilih kini berlaku pada tembakanmu.",
+    "highlights": [
+     "Penggeser Daya dan Kerusakan di pengaturan Senapan Baut kini mengubah tembakanmu. Sebelumnya setiap tembakan memakai nilai standar."
+    ],
+    "warnings": [
+     "Kerusakan tetap dalam batas maksimum standar senapan, dan jangkauan ledakan serta gelombang kejut tetap terbatas, jadi daya tinggi terutama mengubah tampilan.",
+     "Baru diperiksa di server dan klien uji, belum di permainan multipemain sungguhan."
+    ]
+   },
+   {
     "id": "halia-v1.5-1017",
     "title": "Halia V1.5 1017",
     "summary": "Menambahkan Senapan Baut: isi lingkaran formula, tandai sasaranmu, lalu tembakkan baut yang melintasi udara dalam gerak lambat dan meledak di titik kena.",

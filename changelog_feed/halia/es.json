@@ -8,8 +8,30 @@
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Halia V1.5 1017",
+   "summary": "Halia V1.5 1018",
    "releases": [
+    {
+     "version": "V1.5 1018",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Halia V1.5 1018",
+     "summary": "Corrige los ajustes del rifle de saetas: la potencia y el daño que elijas ahora se aplican a tus disparos.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "Los controles de Potencia y Daño en los ajustes del rifle de saetas ahora cambian tus disparos. Antes, todos los disparos usaban los valores estándar."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "El daño no supera el máximo estándar del rifle y el alcance de la explosión y la onda de choque sigue limitado, así que una potencia alta cambia sobre todo el aspecto.",
+        "Solo se ha comprobado en un servidor y clientes de prueba, aún no en multijugador real."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5 1017",
      "date": "2026-10-30",

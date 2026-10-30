@@ -1409,6 +1409,18 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-1018",
+    "title": "Halia V1.5 1018",
+    "summary": "Cıvata Tüfeği ayarları düzeltildi: seçtiğin güç ve hasar artık atışlarına uygulanıyor.",
+    "highlights": [
+     "Cıvata Tüfeği ayarlarındaki Güç ve Hasar kaydırıcıları artık atışlarını değiştiriyor. Önceden her atış standart değerleri kullanıyordu."
+    ],
+    "warnings": [
+     "Hasar tüfeğin standart üst sınırında kalır, patlama ve şok dalgasının menzili de sınırlıdır; bu yüzden yüksek güç çoğunlukla görünümü değiştirir.",
+     "Yalnızca test sunucusunda ve test istemcilerinde denetlendi, gerçek çok oyunculu oyunda henüz denenmedi."
+    ]
+   },
+   {
     "id": "halia-v1.5-1017",
     "title": "Halia V1.5 1017",
     "summary": "Cıvata Tüfeği eklendi: formül çemberlerini doldur, hedefini işaretle ve havayı ağır çekimde geçip isabet ettiği yerde patlayan bir cıvata ateşle.",

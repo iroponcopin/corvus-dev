@@ -1409,6 +1409,18 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-1018",
+    "title": "Halia V1.5 1018",
+    "summary": "Corrige los ajustes del rifle de saetas: la potencia y el daño que elijas ahora se aplican a tus disparos.",
+    "highlights": [
+     "Los controles de Potencia y Daño en los ajustes del rifle de saetas ahora cambian tus disparos. Antes, todos los disparos usaban los valores estándar."
+    ],
+    "warnings": [
+     "El daño no supera el máximo estándar del rifle y el alcance de la explosión y la onda de choque sigue limitado, así que una potencia alta cambia sobre todo el aspecto.",
+     "Solo se ha comprobado en un servidor y clientes de prueba, aún no en multijugador real."
+    ]
+   },
+   {
     "id": "halia-v1.5-1017",
     "title": "Halia V1.5 1017",
     "summary": "Se añade el rifle de virote: carga círculos de fórmula, fija tu objetivo y dispara un virote que cruza el aire a cámara lenta y estalla donde impacta.",

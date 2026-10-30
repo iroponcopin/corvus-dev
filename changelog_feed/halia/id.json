@@ -8,8 +8,30 @@
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Halia V1.5 1017",
+   "summary": "Halia V1.5 1018",
    "releases": [
+    {
+     "version": "V1.5 1018",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Halia V1.5 1018",
+     "summary": "Memperbaiki pengaturan Senapan Baut: daya dan kerusakan yang kamu pilih kini berlaku pada tembakanmu.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Penggeser Daya dan Kerusakan di pengaturan Senapan Baut kini mengubah tembakanmu. Sebelumnya setiap tembakan memakai nilai standar."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Kerusakan tetap dalam batas maksimum standar senapan, dan jangkauan ledakan serta gelombang kejut tetap terbatas, jadi daya tinggi terutama mengubah tampilan.",
+        "Baru diperiksa di server dan klien uji, belum di permainan multipemain sungguhan."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5 1017",
      "date": "2026-10-30",

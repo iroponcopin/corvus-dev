@@ -8,8 +8,30 @@
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Halia V1.5 1017",
+   "summary": "Halia V1.5 1018",
    "releases": [
+    {
+     "version": "V1.5 1018",
+     "date": "2026-10-30",
+     "type": "release",
+     "title": "Halia V1.5 1018",
+     "summary": "Corrige les réglages du fusil à carreaux : la puissance et les dégâts choisis s'appliquent désormais à vos tirs.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Les curseurs Puissance et Dégâts des réglages du fusil à carreaux modifient désormais vos tirs. Avant, chaque tir utilisait les valeurs standard."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Les dégâts restent dans le maximum standard du fusil et la portée de l'explosion et de l'onde de choc reste limitée : une puissance élevée change donc surtout l'apparence.",
+        "Vérifié uniquement sur un serveur et des clients de test, pas encore en vrai multijoueur."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5 1017",
      "date": "2026-10-30",
