@@ -8,13 +8,13 @@
  "groups": [
   {
    "label": "V1.8",
-   "summary": "Ouka JJK V1.8 2012 — Transceptor Ultra a Mythos, ocho niveles de tolva, Perforadora térmica V2, puentes de pilones, Cinta V2, Sol V2 de 30 TW",
+   "summary": "Ouka V1.8 2012 — Transceptor Ultra a Mythos, ocho niveles de tolva, Perforadora térmica V2, puentes de pilones, Cinta V2, Sol V2 de 30 TW",
    "releases": [
     {
      "version": "V1.8 2012",
      "date": "2026-10-30",
      "type": "release",
-     "title": "Ouka JJK V1.8 2012 — Transceptor Ultra a Mythos, ocho niveles de tolva, Perforadora térmica V2, puentes de pilones, Cinta V2, Sol V2 de 30 TW",
+     "title": "Ouka V1.8 2012 — Transceptor Ultra a Mythos, ocho niveles de tolva, Perforadora térmica V2, puentes de pilones, Cinta V2, Sol V2 de 30 TW",
      "summary": "V1.8 2012 añade siete niveles del transceptor de materia, ocho niveles de la tolva de hiperimpulso, la Perforadora térmica subcortical V2, puentes de pilones, una Cinta maglev V2 cuatro veces más rápida y un Sol artificial V2 de 30 TW.",
      "sections": [
       {
@@ -43,13 +43,13 @@
   },
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 1128612 — Ensamblador de celdas cuánticas, aleación Ouka en 12 niveles, lingotes con forma vanilla",
+   "summary": "Ouka V1.7 1128612 — Ensamblador de celdas cuánticas, aleación Ouka en 12 niveles, lingotes con forma vanilla",
    "releases": [
     {
      "version": "V1.7 1128612",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 1128612 — Ensamblador de celdas cuánticas, aleación Ouka en 12 niveles, lingotes con forma vanilla",
+     "title": "Ouka V1.7 1128612 — Ensamblador de celdas cuánticas, aleación Ouka en 12 niveles, lingotes con forma vanilla",
      "summary": "V1.7 1128612 añade el ensamblador de celdas cuánticas, una máquina de 12 × 16 × 12 que construye las baterías cuánticas SMES de Plus a Mythos, convierte la aleación Ouka en una familia de 12 niveles y redibuja todos los lingotes de OUKA con la forma del lingote vanilla.",
      "sections": [
       {
@@ -78,7 +78,7 @@
      "version": "V1.7 91209",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 91209 — Industria del hielo: compresor criogénico, sintetizador criogénico cuántico y cinco hielos cuánticos",
+     "title": "Ouka V1.7 91209 — Industria del hielo: compresor criogénico, sintetizador criogénico cuántico y cinco hielos cuánticos",
      "summary": "V1.7 91209 añade dos máquinas que fabrican hielo: el compresor criogénico para los cuatro hielos vanilla y el sintetizador criogénico cuántico para cinco hielos cuánticos nuevos. Los niveles de la batería cuántica SMES desde Plus ahora necesitan estos hielos.",
      "sections": [
       {
@@ -107,7 +107,7 @@
      "version": "V1.7 88213",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 88213 — Batería cuántica SMES en 12 niveles, zócalo de baterías para todos los niveles, lingote de núcleo pesado redibujado",
+     "title": "Ouka V1.7 88213 — Batería cuántica SMES en 12 niveles, zócalo de baterías para todos los niveles, lingote de núcleo pesado redibujado",
      "summary": "La batería cuántica SMES pasa a ser una familia de 12 niveles, de Lite (200 MJ) a Mythos (2.048.000 MJ). La batería de 400 MJ existente es ahora Standard, el zócalo de baterías admite todos los niveles mezclados y el lingote de núcleo pesado se ha redibujado con la forma del lingote vanilla.",
      "sections": [
       {
@@ -135,7 +135,7 @@
      "version": "V1.7 81347",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 81347 — Reactor de fusión Sol Artificial V2, Línea de montaje de automatización de nueva generación, Forja de carburo, Transceptor de materia Max",
+     "title": "Ouka V1.7 81347 — Reactor de fusión Sol Artificial V2, Línea de montaje de automatización de nueva generación, Forja de carburo, Transceptor de materia Max",
      "summary": "Añade el Reactor de fusión Sol Artificial V2 (multibloque de 16 × 16 × 16, potencia nominal de 500 GW) con una pantalla de control de cristal, la Línea de montaje de automatización de nueva generación, la Forja de carburo, el Transceptor de materia Max y la mesa de trabajo de OUKA Wonder.",
      "sections": [
       {
@@ -165,7 +165,7 @@
      "version": "V1.7 71208",
      "date": "2026-10-26",
      "type": "release",
-     "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX retirado",
+     "title": "Ouka V1.7 71208 — OUKA Wonder, GUN MAX retirado",
      "summary": "OUKA Wonder añade 54 armas, 99 piezas de accesorios y 6 tipos nuevos de munición, con pantalla de accesorios, cuerpo a cuerpo con bayoneta, lente de mira, trazador y destello de boca.",
      "sections": [
       {
@@ -191,7 +191,7 @@
      "version": "V1.7 55114",
      "date": "2026-10-25",
      "type": "release",
-     "title": "Ouka JJK V1.7 55114 — Reparación del Beacon, helio-3 del Sol Artificial, sobrecarga x50, Toma de carga de baterías",
+     "title": "Ouka V1.7 55114 — Reparación del Beacon, helio-3 del Sol Artificial, sobrecarga x50, Toma de carga de baterías",
      "summary": "El Beacon se repara con un bloque de Estrella del Nether de Tsubomi, el Sol Artificial quema helio-3 como combustible propio, el límite de sobrecarga sube a x50 y la nueva Toma de carga de baterías admite hasta 200 baterías SMES.",
      "sections": [
       {
@@ -216,7 +216,7 @@
      "version": "V1.7.2.2",
      "date": "2026-10-21",
      "type": "release",
-     "title": "Ouka JJK 1.7.2.2 — Exoesqueleto de peligro industrial ajustado",
+     "title": "Ouka 1.7.2.2 — Exoesqueleto de peligro industrial ajustado",
      "summary": "El conjunto completo del exoesqueleto de peligro es más suave: el daño por caída y por fuego baja un 25 %, y se elimina nadar en lava.",
      "sections": [
       {
@@ -238,7 +238,7 @@
      "version": "V1.7.2.1",
      "date": "2026-10-21",
      "type": "release",
-     "title": "Ouka JJK 1.7.2.1 — Heavy Core Ingot y bloque Heavy Core, ajuste del OUKA Beacon",
+     "title": "Ouka 1.7.2.1 — Heavy Core Ingot y bloque Heavy Core, ajuste del OUKA Beacon",
      "summary": "Un Heavy Core Ingot y un bloque Heavy Core, y nuevos valores para el OUKA Beacon.",
      "sections": [
       {
@@ -260,7 +260,7 @@
      "version": "V1.7.2",
      "date": "2026-10-20",
      "type": "release",
-     "title": "Ouka JJK 1.7.2 — la esfera de Hollow Purple y la receta de la ventana de celosía",
+     "title": "Ouka 1.7.2 — la esfera de Hollow Purple y la receta de la ventana de celosía",
      "summary": "La esfera de Hollow Purple se dibuja igual con cualquier opción gráfica, y la ventana de celosía tiene una receta nueva.",
      "sections": [
       {
@@ -282,13 +282,13 @@
      "version": "V1.7.1",
      "date": "2026-10-18",
      "type": "release",
-     "title": "Ouka JJK 1.7.1 — el nuevo nombre y un OUKA Beacon reequilibrado",
-     "summary": "Limitless ahora se llama Ouka JJK. El OUKA Beacon está reequilibrado: sus bendiciones son un cuarto de fuertes, su receta necesita dos Heavy Core y ahora se desgasta con el uso y se repara con un Heavy Core.",
+     "title": "Ouka 1.7.1 — el nuevo nombre y un OUKA Beacon reequilibrado",
+     "summary": "Limitless ahora se llama Ouka. El OUKA Beacon está reequilibrado: sus bendiciones son un cuarto de fuertes, su receta necesita dos Heavy Core y ahora se desgasta con el uso y se repara con un Heavy Core.",
      "sections": [
       {
        "title": "Cambios",
        "items": [
-        "Limitless pasa a llamarse Ouka JJK: la pestaña creativa, la categoría Controls y la rueda de técnicas usan el nuevo nombre. Las técnicas y los objetos conservan sus nombres.",
+        "Limitless pasa a llamarse Ouka: la pestaña creativa, la categoría Controls y la rueda de técnicas usan el nuevo nombre. Las técnicas y los objetos conservan sus nombres.",
         "Las bendiciones del OUKA Beacon son un cuarto de fuertes que antes; el alcance no cambia. La terminal muestra la nueva fuerza. La resistencia ya no te hace inmune, y la inmunidad al fuego y la visión nocturna completa necesitan un nivel más alto.",
         "La receta del OUKA Beacon necesita dos Heavy Core, en las esquinas inferiores.",
         "El OUKA Beacon tiene durabilidad. Se desgasta más rápido cuantos más jugadores bendice y cuanto más altos son sus niveles, y se detiene al romperse. Haz clic derecho sobre él con un Heavy Core para repararlo por completo. La terminal muestra cuánto queda, y un beacon conserva su durabilidad al recogerlo."
@@ -307,7 +307,7 @@
      "version": "V1.7.0",
      "date": "2026-10-18",
      "type": "release",
-     "title": "Ouka JJK 1.7.0 — Infinito, los dominios y el Rey de las Maldiciones",
+     "title": "Ouka 1.7.0 — Infinito, los dominios y el Rey de las Maldiciones",
      "summary": "OUKA incorpora un conjunto completo de hechicería: juega como Gojo con Infinity, Lapse Blue, Reversal Red, Hollow Purple y el dominio Infinite Void, o como Sukuna con Dismantle, Cleave, Open y el Malevolent Shrine. Incluye también las armas Kamutoke e Hiten, la Blindfold y el Character Guide. Añade 10 objetos y 1 bloque, y conserva todo lo de 1.6.2.2.",
      "sections": [
       {
@@ -323,7 +323,7 @@
        "title": "Advertencias",
        "items": [
         "Con la opción gráfica Improved Transparency activada (desactivada por defecto), la esfera de Hollow Purple se dibuja delante del agua en vez de detrás. Es un problema conocido que se corregirá en 1.7.1. Con la opción desactivada se dibuja correctamente.",
-        "Volver a una versión anterior después de jugar 1.7.0 elimina del mundo la Domain Barrier y todos los objetos de Ouka JJK (Kamutoke, Hiten, Blindfold, Character Guide y los 6 huevos de aparición).",
+        "Volver a una versión anterior después de jugar 1.7.0 elimina del mundo la Domain Barrier y todos los objetos de Ouka (Kamutoke, Hiten, Blindfold, Character Guide y los 6 huevos de aparición).",
         "Antes de instalar 1.7.0, quita de la carpeta mods el jar antiguo de OUKA (1.6.2.2 o anterior) y deja solo una copia de GeckoLib 5.5.6. Necesita Minecraft 26.3, Fabric Loader 0.19.5 o más reciente y Fabric API 0.161.0+26.3 o más reciente. Instálalo tanto en el cliente como en el servidor."
        ]
       }

@@ -8,13 +8,13 @@
  "groups": [
   {
    "label": "V1.8",
-   "summary": "Ouka JJK V1.8 2012 — Ultra'dan Mythos'a vericiler, sekiz kademeli huni, Termal Sondaj V2, pilon köprüleri, Konveyör V2, 30 TW Güneş V2",
+   "summary": "Ouka V1.8 2012 — Ultra'dan Mythos'a vericiler, sekiz kademeli huni, Termal Sondaj V2, pilon köprüleri, Konveyör V2, 30 TW Güneş V2",
    "releases": [
     {
      "version": "V1.8 2012",
      "date": "2026-10-30",
      "type": "release",
-     "title": "Ouka JJK V1.8 2012 — Ultra'dan Mythos'a vericiler, sekiz kademeli huni, Termal Sondaj V2, pilon köprüleri, Konveyör V2, 30 TW Güneş V2",
+     "title": "Ouka V1.8 2012 — Ultra'dan Mythos'a vericiler, sekiz kademeli huni, Termal Sondaj V2, pilon köprüleri, Konveyör V2, 30 TW Güneş V2",
      "summary": "V1.8 2012, madde alıcı-vericisine yedi kademe, hiper-itkili huniye sekiz kademe, Kabuk Altı Termal Sondaj V2'yi, pilon köprülerini, dört kat hızlı Maglev Konveyör V2'yi ve 30 TW'lik Yapay Güneş V2'yi ekler.",
      "sections": [
       {
@@ -43,13 +43,13 @@
   },
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 1128612 — Kuantum Hücre Montajcısı, 12 kademeli Ouka alaşımı, vanilla biçimli külçeler",
+   "summary": "Ouka V1.7 1128612 — Kuantum Hücre Montajcısı, 12 kademeli Ouka alaşımı, vanilla biçimli külçeler",
    "releases": [
     {
      "version": "V1.7 1128612",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 1128612 — Kuantum Hücre Montajcısı, 12 kademeli Ouka alaşımı, vanilla biçimli külçeler",
+     "title": "Ouka V1.7 1128612 — Kuantum Hücre Montajcısı, 12 kademeli Ouka alaşımı, vanilla biçimli külçeler",
      "summary": "V1.7 1128612, SMES kuantum pillerini Plus'tan Mythos'a kadar monte eden 12 × 16 × 12'lik Kuantum Hücre Montajcısı'nı ekler, Ouka alaşımını 12 kademeli bir aileye çevirir ve tüm OUKA külçelerini vanilla külçe biçiminde yeniden çizer.",
      "sections": [
       {
@@ -78,7 +78,7 @@
      "version": "V1.7 91209",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 91209 — Buz endüstrisi: kriyojenik kompresör, kuantum kriyo sentezleyici ve beş kuantum buz",
+     "title": "Ouka V1.7 91209 — Buz endüstrisi: kriyojenik kompresör, kuantum kriyo sentezleyici ve beş kuantum buz",
      "summary": "V1.7 91209, buz yapan iki makine ekler: dört vanilla buz için kriyojenik kompresör ve beş yeni kuantum buz için kuantum kriyo sentezleyici. SMES kuantum pilinin Plus ve üstü kademeleri artık bu buzlara ihtiyaç duyar.",
      "sections": [
       {
@@ -107,7 +107,7 @@
      "version": "V1.7 88213",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 88213 — 12 kademeli SMES Kuantum Pil, her kademeyi alan pil yuvası, yeniden çizilen Ağır Çekirdek Külçesi",
+     "title": "Ouka V1.7 88213 — 12 kademeli SMES Kuantum Pil, her kademeyi alan pil yuvası, yeniden çizilen Ağır Çekirdek Külçesi",
      "summary": "SMES Kuantum Pil artık Lite (200 MJ) ile Mythos (2.048.000 MJ) arasında 12 kademeli bir aile. Mevcut 400 MJ pil Standard oldu, pil yuvası tüm kademeleri karışık olarak alıyor ve Ağır Çekirdek Külçesi vanilya külçe biçiminde yeniden çizildi.",
      "sections": [
       {
@@ -135,7 +135,7 @@
      "version": "V1.7 81347",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 81347 — Yapay Güneş Füzyon Reaktörü V2, Yeni Nesil Otomasyon Montaj Hattı, Karbür Dövme Ocağı, Madde Alıcı-Verici Max",
+     "title": "Ouka V1.7 81347 — Yapay Güneş Füzyon Reaktörü V2, Yeni Nesil Otomasyon Montaj Hattı, Karbür Dövme Ocağı, Madde Alıcı-Verici Max",
      "summary": "Cam kontrol ekranlı Yapay Güneş Füzyon Reaktörü V2 (16 × 16 × 16 çok bloklu yapı, 500 GW anma gücü), Yeni Nesil Otomasyon Montaj Hattı, Karbür Dövme Ocağı, Madde Alıcı-Verici Max ve OUKA Wonder çalışma tezgâhı eklendi.",
      "sections": [
       {
@@ -165,7 +165,7 @@
      "version": "V1.7 71208",
      "date": "2026-10-26",
      "type": "release",
-     "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX emekli edildi",
+     "title": "Ouka V1.7 71208 — OUKA Wonder, GUN MAX emekli edildi",
      "summary": "OUKA Wonder 54 silah, 99 parça ve 6 yeni cephane türü ekliyor; parça değiştirme ekranı, süngü ile yakın dövüş, dürbün lensi, iz ve namlu alevi de içeriyor.",
      "sections": [
       {
@@ -191,7 +191,7 @@
      "version": "V1.7 55114",
      "date": "2026-10-25",
      "type": "release",
-     "title": "Ouka JJK V1.7 55114 — Fener onarımı, Yapay Güneş helyum-3, x50 aşırı hız, Batarya Şarj Soketi",
+     "title": "Ouka V1.7 55114 — Fener onarımı, Yapay Güneş helyum-3, x50 aşırı hız, Batarya Şarj Soketi",
      "summary": "Fener, bir Tsubomi Nether Yıldızı Bloku ile onarılır, Yapay Güneş helyum-3'ü kendi yakıtı olarak yakar, aşırı hız sınırı x50'ye çıkar ve yeni Batarya Şarj Soketi en fazla 200 SMES bataryayı taşır.",
      "sections": [
       {
@@ -216,7 +216,7 @@
      "version": "V1.7.2.2",
      "date": "2026-10-21",
      "type": "release",
-     "title": "Ouka JJK 1.7.2.2 — Endüstriyel Tehlike Dış İskeleti ayarlandı",
+     "title": "Ouka 1.7.2.2 — Endüstriyel Tehlike Dış İskeleti ayarlandı",
      "summary": "Tehlike Dış İskeleti'nin tam takımı yumuşadı: düşme ve ateş hasarı %25 azaldı ve lavda yüzme kaldırıldı.",
      "sections": [
       {
@@ -238,7 +238,7 @@
      "version": "V1.7.2.1",
      "date": "2026-10-21",
      "type": "release",
-     "title": "Ouka JJK 1.7.2.1 — Heavy Core Ingot ve blok, OUKA Beacon dengesi",
+     "title": "Ouka 1.7.2.1 — Heavy Core Ingot ve blok, OUKA Beacon dengesi",
      "summary": "Bir Heavy Core Ingot ve bir Heavy Core bloğu, ayrıca OUKA Beacon için yeni değerler.",
      "sections": [
       {
@@ -260,7 +260,7 @@
      "version": "V1.7.2",
      "date": "2026-10-20",
      "type": "release",
-     "title": "Ouka JJK 1.7.2 — Hollow Purple küresi ve kafes pencere tarifi",
+     "title": "Ouka 1.7.2 — Hollow Purple küresi ve kafes pencere tarifi",
      "summary": "Hollow Purple küresi her grafik ayarında aynı çizilir ve kafes pencerenin tarifi yenilendi.",
      "sections": [
       {
@@ -282,13 +282,13 @@
      "version": "V1.7.1",
      "date": "2026-10-18",
      "type": "release",
-     "title": "Ouka JJK 1.7.1 — yeni ad ve yeniden dengelenmiş bir OUKA Beacon",
-     "summary": "Limitless artık Ouka JJK adıyla anılıyor. OUKA Beacon yeniden dengelendi: bereketleri dörtte bir gücünde, tarifi iki Heavy Core istiyor ve artık kullanıldıkça aşınıyor, bir Heavy Core ile onarılıyor.",
+     "title": "Ouka 1.7.1 — yeni ad ve yeniden dengelenmiş bir OUKA Beacon",
+     "summary": "Limitless artık Ouka adıyla anılıyor. OUKA Beacon yeniden dengelendi: bereketleri dörtte bir gücünde, tarifi iki Heavy Core istiyor ve artık kullanıldıkça aşınıyor, bir Heavy Core ile onarılıyor.",
      "sections": [
       {
        "title": "Değişiklikler",
        "items": [
-        "Limitless, Ouka JJK olarak yeniden adlandırıldı: yaratıcı sekme, Controls kategorisi ve teknik çemberi yeni adı kullanıyor. Teknikler ve eşyalar adlarını korur.",
+        "Limitless, Ouka olarak yeniden adlandırıldı: yaratıcı sekme, Controls kategorisi ve teknik çemberi yeni adı kullanıyor. Teknikler ve eşyalar adlarını korur.",
         "OUKA Beacon'ın bereketleri öncekinin dörtte biri kadar güçlü; menzil değişmedi. Terminal yeni gücü gösterir. Direnç artık bağışıklık vermez; ateş bağışıklığı ve tam gece görüşü daha yüksek seviye ister.",
         "OUKA Beacon tarifi, alt köşelerde iki Heavy Core ister.",
         "OUKA Beacon'ın dayanıklılığı var. Kutsadığı oyuncu sayısı ve ayarlanan seviyeleri arttıkça daha hızlı aşınır ve kırılınca durur. Üzerine sağ tıklayıp bir Heavy Core ile tamamen onarabilirsiniz. Terminal ne kadar kaldığını gösterir; bir beacon alındığında dayanıklılığını korur."
@@ -307,7 +307,7 @@
      "version": "V1.7.0",
      "date": "2026-10-18",
      "type": "release",
-     "title": "Ouka JJK 1.7.0 — Sınırsızlık, alanlar ve Lanetlerin Kralı",
+     "title": "Ouka 1.7.0 — Sınırsızlık, alanlar ve Lanetlerin Kralı",
      "summary": "OUKA tam bir büyü takımı ekliyor: Gojo olarak Infinity, Lapse Blue, Reversal Red, Hollow Purple ve Infinite Void alanıyla, ya da Sukuna olarak Dismantle, Cleave, Open ve Malevolent Shrine ile oynayın. Kamutoke ve Hiten silahları, Blindfold ve Character Guide de gelir. 10 eşya ve 1 blok ekler ve 1.6.2.2'deki her şeyi içerir.",
      "sections": [
       {
@@ -323,7 +323,7 @@
        "title": "Dikkat Edilmesi Gerekenler",
        "items": [
         "Improved Transparency grafik seçeneği açıksa (varsayılan olarak kapalıdır), Hollow Purple küresi suyun arkasında değil önünde çizilir. Bu bilinen bir sorundur ve 1.7.1'de düzeltilecektir. Seçenek kapalıyken doğru çizilir.",
-        "1.7.0 oynadıktan sonra daha eski bir sürüme dönmek, Domain Barrier'ı ve tüm Ouka JJK eşyalarını (Kamutoke, Hiten, Blindfold, Character Guide ve 6 çağırma yumurtası) dünyadan kaldırır.",
+        "1.7.0 oynadıktan sonra daha eski bir sürüme dönmek, Domain Barrier'ı ve tüm Ouka eşyalarını (Kamutoke, Hiten, Blindfold, Character Guide ve 6 çağırma yumurtası) dünyadan kaldırır.",
         "1.7.0'ı kurmadan önce mods klasöründen eski OUKA jar dosyasını (1.6.2.2 veya daha eski) çıkarın ve yalnızca bir GeckoLib 5.5.6 kopyası bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun."
        ]
       }

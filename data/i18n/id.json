@@ -307,7 +307,7 @@
   "ouka": [
    {
     "id": "ouka-v1.8-2012",
-    "title": "Ouka JJK V1.8 2012 — Transceiver Ultra sampai Mythos, delapan tingkat corong, Bor Termal V2, jembatan pilon, Konveyor V2, Matahari V2 30 TW",
+    "title": "Ouka V1.8 2012 — Transceiver Ultra sampai Mythos, delapan tingkat corong, Bor Termal V2, jembatan pilon, Konveyor V2, Matahari V2 30 TW",
     "summary": "V1.8 2012 menambahkan tujuh tingkat transceiver materi, delapan tingkat corong hiper-impuls, Bor Termal Sub-Kerak V2, jembatan pilon, Konveyor Maglev V2 yang empat kali lebih cepat, dan Matahari Buatan V2 30 TW.",
     "highlights": [
      "Transceiver materi mendapat tujuh tingkat di atas Normal dan Max, dari Ultra sampai Mythos. Jangkauan: Ultra 2048 blok, UltraFast 8192, Ultracore 32768; Ultimate tanpa batas dalam dimensinya dan juga menghubungkan Overworld dan Nether dengan 1:8; Wonder Full, Premium, dan Mythos menghubungkan dimensi mana pun. Item per tick: 512, 1024, 2048, 4096, 8192, 16384, 65536. Di antara dua transceiver, jangkauan yang lebih kecil yang berlaku.",
@@ -326,7 +326,7 @@
    },
    {
     "id": "ouka-v1.7-1128612",
-    "title": "Ouka JJK V1.7 1128612 — Perakit sel kuantum, paduan Ouka 12 tingkat, ingot berbentuk vanilla",
+    "title": "Ouka V1.7 1128612 — Perakit sel kuantum, paduan Ouka 12 tingkat, ingot berbentuk vanilla",
     "summary": "V1.7 1128612 menambahkan perakit sel kuantum, mesin 12 × 16 × 12 yang merakit baterai kuantum SMES dari Plus sampai Mythos, menjadikan paduan Ouka keluarga 12 tingkat, dan menggambar ulang semua ingot OUKA dalam bentuk ingot vanilla.",
     "highlights": [
      "Perakit sel kuantum adalah mesin besar selebar 12 × setinggi 16 × sedalam 12, terdiri dari rangka, kaca lapis baja, dua port masukan, satu port keluaran, dan pengendali yang diletakkan di bagian atas salah satu sisi. Ia merakit baterai kuantum SMES semua tingkat, dari Lite sampai Mythos.",
@@ -345,7 +345,7 @@
    },
    {
     "id": "ouka-v1.7-91209",
-    "title": "Ouka JJK V1.7 91209 — Industri es: kompresor kriogenik, sintesis kriogenik kuantum, dan lima es kuantum",
+    "title": "Ouka V1.7 91209 — Industri es: kompresor kriogenik, sintesis kriogenik kuantum, dan lima es kuantum",
     "summary": "V1.7 91209 menambahkan dua mesin pembuat es: kompresor kriogenik untuk keempat es vanilla dan sintesis kriogenik kuantum untuk lima es kuantum baru. Tingkat baterai kuantum SMES dari Plus ke atas kini membutuhkan es ini.",
     "highlights": [
      "Kompresor kriogenik adalah mesin 2 × 2 × 2. Dari air ia membuat es, es beku (stabil), es padat, dan es biru; ia juga membuat es padat dari 2 es dan es biru dari 2 es padat. Ia memakai energi, dan satu kontrol memilih produknya. Es beku (stabil) tidak pernah mencair.",
@@ -364,7 +364,7 @@
    },
    {
     "id": "ouka-v1.7-88213",
-    "title": "Ouka JJK V1.7 88213 — Baterai Kuantum SMES dalam 12 tingkat, soket baterai untuk semua tingkat, Ingot Inti Berat digambar ulang",
+    "title": "Ouka V1.7 88213 — Baterai Kuantum SMES dalam 12 tingkat, soket baterai untuk semua tingkat, Ingot Inti Berat digambar ulang",
     "summary": "Baterai Kuantum SMES kini menjadi keluarga 12 tingkat, dari Lite (200 MJ) sampai Mythos (2.048.000 MJ). Baterai 400 MJ yang sudah ada kini menjadi Standard, soket baterai menampung semua tingkat secara campur, dan Ingot Inti Berat digambar ulang dalam bentuk ingot vanilla.",
     "highlights": [
      "12 tingkat: Lite 200 MJ, Standard 400 MJ (Baterai Kuantum SMES yang sudah ada, tampilan diubah menjadi tembaga dan kuningan), Plus 800 MJ, Super 1.600 MJ, Max 3.200 MJ, Ultra 6.400 MJ, UltraFast 12.800 MJ, Ultracore 25.600 MJ, Ultimate 51.200 MJ, Wonder Full 102.400 MJ, Premium 204.800 MJ, Mythos 2.048.000 MJ. Setiap tingkat punya warna sendiri.",
@@ -382,7 +382,7 @@
    },
    {
     "id": "ouka-v1.7-81347",
-    "title": "Ouka JJK V1.7 81347 — Reaktor Fusi Matahari Buatan V2, Jalur Perakitan Otomasi Generasi Berikutnya, Tempa Karbida, Transceiver Materi Max",
+    "title": "Ouka V1.7 81347 — Reaktor Fusi Matahari Buatan V2, Jalur Perakitan Otomasi Generasi Berikutnya, Tempa Karbida, Transceiver Materi Max",
     "summary": "Menambahkan Reaktor Fusi Matahari Buatan V2 (multiblok 16 × 16 × 16, daya nominal 500 GW) dengan layar kontrol kaca, Jalur Perakitan Otomasi Generasi Berikutnya, Tempa Karbida, Transceiver Materi Max, dan meja kerja OUKA Wonder.",
     "highlights": [
      "Reaktor Fusi Matahari Buatan V2 (multiblok baru): kubus 16 × 16 × 16. Daya nominal 500 GW (100 kali matahari V1). Hanya inti bahan bakar V2. Batas keluaran Matahari Buatan V1 kini 5 GW.",
@@ -402,7 +402,7 @@
    },
    {
     "id": "ouka-v1.7-71208",
-    "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX dihentikan",
+    "title": "Ouka V1.7 71208 — OUKA Wonder, GUN MAX dihentikan",
     "summary": "OUKA Wonder menambah 54 senjata, 99 bagian pemasangan, dan 6 jenis amunisi baru, dengan layar pemasangan, serangan jarak dekat bayonet, lensa scope, jejak peluru, dan kilatan moncong.",
     "highlights": [
      "OUKA GUN MAX dihentikan. Senjata, amunisi, dan bagian GUN MAX yang ada dihapus dari dunia saat V1.7 71208 dimuat.",
@@ -418,7 +418,7 @@
    },
    {
     "id": "ouka-v1.7-55114",
-    "title": "Ouka JJK V1.7 55114 — Perbaikan Beacon, helium-3 Matahari Buatan, overclock x50, Soket Pengisian Baterai",
+    "title": "Ouka V1.7 55114 — Perbaikan Beacon, helium-3 Matahari Buatan, overclock x50, Soket Pengisian Baterai",
     "summary": "Beacon diperbaiki dengan satu blok Netherite Star Tsubomi, Matahari Buatan membakar helium-3 sebagai bahan bakar tersendiri, batas overclock naik ke x50, dan Soket Pengisian Baterai yang baru memuat hingga 200 baterai SMES.",
     "highlights": [
      "Beacon Ouka diperbaiki dengan 1 blok Netherite Star Tsubomi. Heavy Core Ingot tidak lagi memperbaikinya. Tanpa Tsubomi tidak ada item untuk memperbaikinya, jadi tidak bisa diperbaiki.",
@@ -433,7 +433,7 @@
    },
    {
     "id": "ouka-v1.7.2.2",
-    "title": "Ouka JJK 1.7.2.2 — Exoskeleton Bahaya Industri disesuaikan",
+    "title": "Ouka 1.7.2.2 — Exoskeleton Bahaya Industri disesuaikan",
     "summary": "Set lengkap Exoskeleton Bahaya lebih ringan: kerusakan jatuh dan api turun 25%, dan berenang di lava dihapus.",
     "highlights": [
      "Saat memakai ke-4 bagian, kerusakan jatuh turun 25% (dulu dibatalkan) dan kerusakan api turun 25% (dulu dibatalkan). Sekarang kamu bisa terbakar. Berenang di lava sudah tidak bisa.",
@@ -445,7 +445,7 @@
    },
    {
     "id": "ouka-v1.7.2.1",
-    "title": "Ouka JJK 1.7.2.1 — Heavy Core Ingot dan blok, penyeimbangan OUKA Beacon",
+    "title": "Ouka 1.7.2.1 — Heavy Core Ingot dan blok, penyeimbangan OUKA Beacon",
     "summary": "Heavy Core Ingot dan blok Heavy Core, serta nilai baru untuk OUKA Beacon.",
     "highlights": [
      "Heavy Core Ingot dan blok Heavy Core ditambahkan. OUKA Beacon sekarang diperbaiki dengan 1 Heavy Core Ingot.",
@@ -457,7 +457,7 @@
    },
    {
     "id": "ouka-v1.7.2",
-    "title": "Ouka JJK 1.7.2 — bola Hollow Purple dan resep jendela kisi",
+    "title": "Ouka 1.7.2 — bola Hollow Purple dan resep jendela kisi",
     "summary": "Bola Hollow Purple tampil sama di setiap pengaturan grafis, dan jendela kisi punya resep baru.",
     "highlights": [
      "Bola Hollow Purple tampil sama di setiap pengaturan grafis, termasuk di atas dan di bawah air. Dengan Improved Transparency, bola tidak lagi pecah menjadi kisi.",
@@ -469,10 +469,10 @@
    },
    {
     "id": "ouka-v1.7.1",
-    "title": "Ouka JJK 1.7.1 — nama baru dan OUKA Beacon yang diseimbangkan ulang",
-    "summary": "Limitless sekarang bernama Ouka JJK. OUKA Beacon diseimbangkan ulang: berkatnya tinggal seperempat kekuatan, resepnya butuh dua Heavy Core, dan kini ia aus seiring pemakaian serta diperbaiki dengan satu Heavy Core.",
+    "title": "Ouka 1.7.1 — nama baru dan OUKA Beacon yang diseimbangkan ulang",
+    "summary": "Limitless sekarang bernama Ouka. OUKA Beacon diseimbangkan ulang: berkatnya tinggal seperempat kekuatan, resepnya butuh dua Heavy Core, dan kini ia aus seiring pemakaian serta diperbaiki dengan satu Heavy Core.",
     "highlights": [
-     "Limitless diganti namanya menjadi Ouka JJK: tab kreatif, kategori Controls, dan roda teknik memakai nama baru. Teknik dan item tetap dengan namanya.",
+     "Limitless diganti namanya menjadi Ouka: tab kreatif, kategori Controls, dan roda teknik memakai nama baru. Teknik dan item tetap dengan namanya.",
      "Berkat OUKA Beacon kini tinggal seperempat dari sebelumnya; jangkauannya tidak berubah. Terminal menampilkan kekuatan yang baru. Ketahanan tidak lagi membuatmu kebal, dan kekebalan api serta penglihatan malam penuh butuh level lebih tinggi.",
      "Resep OUKA Beacon butuh dua Heavy Core, di sudut bawah.",
      "OUKA Beacon punya daya tahan. Ia makin cepat aus semakin banyak pemain yang diberkati dan semakin tinggi level yang diatur, dan berhenti saat rusak. Klik kanan dengan satu Heavy Core untuk memperbaikinya sampai penuh. Terminal menampilkan sisanya, dan beacon tetap menyimpan daya tahannya saat diambil."
@@ -484,7 +484,7 @@
    },
    {
     "id": "ouka-v1.7.0",
-    "title": "Ouka JJK 1.7.0 — Infinity, domain, dan Raja Kutukan",
+    "title": "Ouka 1.7.0 — Infinity, domain, dan Raja Kutukan",
     "summary": "OUKA menghadirkan paket sihir lengkap: mainkan sebagai Gojo dengan Infinity, Lapse Blue, Reversal Red, Hollow Purple, dan domain Infinite Void, atau sebagai Sukuna dengan Dismantle, Cleave, Open, dan Malevolent Shrine. Senjata Kamutoke dan Hiten, Blindfold, serta Character Guide juga ikut. Menambahkan 10 item dan 1 blok, dan memuat semua yang ada di 1.6.2.2.",
     "highlights": [
      "Gojo: Infinity menghentikan apa pun yang datang padamu. Lapse Blue menarik dunia ke arahmu, Reversal Red melemparkannya kembali, dan keduanya bertemu menjadi Hollow Purple. Bentangkan Infinite Void untuk mengurung semua yang ada di dalam kubahnya.",
@@ -494,7 +494,7 @@
     ],
     "warnings": [
      "Dengan opsi grafis Improved Transparency dinyalakan (defaultnya mati), bola Hollow Purple digambar di depan air, bukan di belakangnya. Ini masalah yang sudah diketahui dan akan diperbaiki di 1.7.1. Dengan opsi mati, bola digambar dengan benar.",
-     "Kembali ke versi sebelumnya setelah bermain 1.7.0 menghapus Domain Barrier dan semua item Ouka JJK (Kamutoke, Hiten, Blindfold, Character Guide, dan 6 telur kemunculan) dari dunia.",
+     "Kembali ke versi sebelumnya setelah bermain 1.7.0 menghapus Domain Barrier dan semua item Ouka (Kamutoke, Hiten, Blindfold, Character Guide, dan 6 telur kemunculan) dari dunia.",
      "Sebelum memasang 1.7.0, hapus jar OUKA lama (1.6.2.2 atau yang lebih lama) dari folder mods dan simpan hanya satu salinan GeckoLib 5.5.6. Perlu Minecraft 26.3, Fabric Loader 0.19.5 atau yang lebih baru, dan Fabric API 0.161.0+26.3 atau yang lebih baru. Pasang di klien dan server."
     ]
    },
@@ -1341,8 +1341,8 @@
     "warnings": [
      "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
      "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha.",
-     "Selain nama, warna, konsep, dan kemampuan Ziz yang diberikan pemilik, semua angka dan resep seri ini adalah perkiraan pertama pengembang dan dapat diseimbangkan ulang.",
-     "Nama bahasa Jepang belum disetujui pemilik.",
+     "Selain nama, warna, konsep, dan kemampuan Ziz yang diberikan Corvus Dev, semua angka dan resep seri ini adalah perkiraan pertama pengembang dan dapat diseimbangkan ulang.",
+     "Nama bahasa Jepang belum disetujui Corvus Dev.",
      "Geser area tambang dan kemampuan Ziz hanya diuji di klien nyata pada mode pemain tunggal, bukan di server khusus dan bukan multipemain.",
      "Suara kepakan Sayap Ziz belum dibuat."
     ]
@@ -1361,9 +1361,9 @@
     "warnings": [
      "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
      "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha.",
-     "Kumpulan hadiah mengikuti tafsir pengembang atas \"bisa didapat di Survival\". Daftar pengecualian diambil dari tab Operator mode kreatif dan aturan di catatan rilis, dan pemilik dapat mengubahnya.",
+     "Kumpulan hadiah mengikuti tafsir pengembang atas \"bisa didapat di Survival\". Daftar pengecualian diambil dari tab Operator mode kreatif dan aturan di catatan rilis, dan Corvus Dev dapat mengubahnya.",
      "Pemeriksaan versi, server dedicated, multipemain, dan jar Halia, OUKA, serta Cherry yang sebenarnya tidak diuji pada rilis ini. Pengujian memakai versi Tsubomi sendiri.",
-     "Nama dan teks Jepang belum disetujui pemilik.",
+     "Nama dan teks Jepang belum disetujui Corvus Dev.",
      "Suara dan partikel peti adalah bawaan game. Tidak ada suara khusus yang ditambahkan pada rilis ini."
     ]
    },
@@ -1381,9 +1381,9 @@
     "warnings": [
      "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
      "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha.",
-     "Aturan Survival dan perlengkapan adalah interpretasi pengembang. Pemilik dapat mengubah daftar.",
+     "Aturan Survival dan perlengkapan adalah interpretasi pengembang. Corvus Dev dapat mengubah daftar.",
      "Pemeriksaan versi, server dedicated, multipemain, serta file jar Halia, OUKA, dan Cherry yang asli tidak diuji di rilis ini.",
-     "Teks bahasa Jepang belum disetujui oleh pemilik.",
+     "Teks bahasa Jepang belum disetujui oleh Corvus Dev.",
      "Suara dan partikel peti berasal dari game itu sendiri. Pemilih hanya diperiksa di klien asli pada satu ukuran layar (1280×720)."
     ]
    }

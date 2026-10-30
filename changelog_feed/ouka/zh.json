@@ -8,13 +8,13 @@
  "groups": [
   {
    "label": "V1.8",
-   "summary": "Ouka JJK V1.8 2012 — Ultra 到 Mythos 传送器、八档漏斗、热力钻探 V2、电塔桥接、传送带 V2、30 TW 人造太阳 V2",
+   "summary": "Ouka V1.8 2012 — Ultra 到 Mythos 传送器、八档漏斗、热力钻探 V2、电塔桥接、传送带 V2、30 TW 人造太阳 V2",
    "releases": [
     {
      "version": "V1.8 2012",
      "date": "2026-10-30",
      "type": "release",
-     "title": "Ouka JJK V1.8 2012 — Ultra 到 Mythos 传送器、八档漏斗、热力钻探 V2、电塔桥接、传送带 V2、30 TW 人造太阳 V2",
+     "title": "Ouka V1.8 2012 — Ultra 到 Mythos 传送器、八档漏斗、热力钻探 V2、电塔桥接、传送带 V2、30 TW 人造太阳 V2",
      "summary": "V1.8 2012 新增物质传送器的七个档位、超高速脉冲漏斗的八个档位、地壳深层热力钻探机 V2、电塔桥接、速度四倍的磁悬浮传送带 V2,以及 30 TW 的人造太阳 V2。",
      "sections": [
       {
@@ -43,13 +43,13 @@
   },
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 1128612 — 量子电芯装配机、12 档 Ouka 合金、原版形状的锭",
+   "summary": "Ouka V1.7 1128612 — 量子电芯装配机、12 档 Ouka 合金、原版形状的锭",
    "releases": [
     {
      "version": "V1.7 1128612",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 1128612 — 量子电芯装配机、12 档 Ouka 合金、原版形状的锭",
+     "title": "Ouka V1.7 1128612 — 量子电芯装配机、12 档 Ouka 合金、原版形状的锭",
      "summary": "V1.7 1128612 新增量子电芯装配机(12 × 16 × 12 的机器,用于组装 SMES 量子电池的 Plus 到 Mythos),把 Ouka 合金做成 12 档系列,并把所有 OUKA 锭重绘为原版锭的形状。",
      "sections": [
       {
@@ -78,7 +78,7 @@
      "version": "V1.7 91209",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 91209 — 制冰重工业:极低温压缩机、量子极低温合成机与五种量子冰",
+     "title": "Ouka V1.7 91209 — 制冰重工业:极低温压缩机、量子极低温合成机与五种量子冰",
      "summary": "V1.7 91209 新增两台制冰机器:制作四种原版冰的极低温压缩机,以及制作五种新量子冰的量子极低温合成机。SMES 量子电池从 Plus 起的各档现在需要这些冰。",
      "sections": [
       {
@@ -107,7 +107,7 @@
      "version": "V1.7 88213",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 88213 — SMES 量子电池 12 档、可放入所有档位的电池插槽、重绘的重型核心锭",
+     "title": "Ouka V1.7 88213 — SMES 量子电池 12 档、可放入所有档位的电池插槽、重绘的重型核心锭",
      "summary": "SMES 量子电池现在是从 Lite(200 MJ)到 Mythos(2,048,000 MJ)的 12 档系列。原有的 400 MJ 电池成为 Standard,电池插槽可混放所有档位,重型核心锭按原版锭的形状重新绘制。",
      "sections": [
       {
@@ -135,7 +135,7 @@
      "version": "V1.7 81347",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 81347 — 人造太阳聚变反应堆 V2、新一代自动化装配线、硬质合金锻炉、物质传送收发器 Max",
+     "title": "Ouka V1.7 81347 — 人造太阳聚变反应堆 V2、新一代自动化装配线、硬质合金锻炉、物质传送收发器 Max",
      "summary": "新增人造太阳聚变反应堆 V2(16 × 16 × 16 多方块结构,额定功率 500 GW)及玻璃风格控制界面、新一代自动化装配线、硬质合金锻炉、物质传送收发器 Max 和 OUKA Wonder 工作台。",
      "sections": [
       {
@@ -165,7 +165,7 @@
      "version": "V1.7 71208",
      "date": "2026-10-26",
      "type": "release",
-     "title": "Ouka JJK V1.7 71208 — OUKA Wonder，GUN MAX 退役",
+     "title": "Ouka V1.7 71208 — OUKA Wonder，GUN MAX 退役",
      "summary": "OUKA Wonder 新增 54 把枪、99 种配件和 6 种新弹药，并包含配件界面、刺刀近战、瞄准镜镜片、弹道轨迹和枪口火焰。",
      "sections": [
       {
@@ -191,7 +191,7 @@
      "version": "V1.7 55114",
      "date": "2026-10-25",
      "type": "release",
-     "title": "Ouka JJK V1.7 55114 — 信标修复、人工太阳氦-3、超频 x50、电池充电插座",
+     "title": "Ouka V1.7 55114 — 信标修复、人工太阳氦-3、超频 x50、电池充电插座",
      "summary": "信标现在用一块 Tsubomi 下界之星方块修复，人工太阳把氦-3 作为独立燃料燃烧，超频上限提高到 x50，新的电池充电插座可容纳最多 200 个 SMES 电池。",
      "sections": [
       {
@@ -216,7 +216,7 @@
      "version": "V1.7.2.2",
      "date": "2026-10-21",
      "type": "release",
-     "title": "Ouka JJK 1.7.2.2 — 工业危险防护外骨骼调整",
+     "title": "Ouka 1.7.2.2 — 工业危险防护外骨骼调整",
      "summary": "危险防护外骨骼全套效果减弱：坠落与火焰伤害降低 25%，不再能在岩浆中游泳。",
      "sections": [
       {
@@ -238,7 +238,7 @@
      "version": "V1.7.2.1",
      "date": "2026-10-21",
      "type": "release",
-     "title": "Ouka JJK 1.7.2.1 — 重核锭与重核块，OUKA 信标调整",
+     "title": "Ouka 1.7.2.1 — 重核锭与重核块，OUKA 信标调整",
      "summary": "新增重核锭与重核块，并调整了 OUKA 信标的数值。",
      "sections": [
       {
@@ -260,7 +260,7 @@
      "version": "V1.7.2",
      "date": "2026-10-20",
      "type": "release",
-     "title": "Ouka JJK 1.7.2 — Hollow Purple 的球与格子窗配方",
+     "title": "Ouka 1.7.2 — Hollow Purple 的球与格子窗配方",
      "summary": "无论哪种画质设置，Hollow Purple 的球都画得一样；格子窗的配方也变了。",
      "sections": [
       {
@@ -282,13 +282,13 @@
      "version": "V1.7.1",
      "date": "2026-10-18",
      "type": "release",
-     "title": "Ouka JJK 1.7.1 — 新名称与重新平衡的 OUKA Beacon",
-     "summary": "Limitless 现在改名为 Ouka JJK。OUKA Beacon 已重新平衡：其加护强度降为原来的四分之一，合成需要两个 Heavy Core，并且现在会随使用磨损，可用一个 Heavy Core 修复。",
+     "title": "Ouka 1.7.1 — 新名称与重新平衡的 OUKA Beacon",
+     "summary": "Limitless 现在改名为 Ouka。OUKA Beacon 已重新平衡：其加护强度降为原来的四分之一，合成需要两个 Heavy Core，并且现在会随使用磨损，可用一个 Heavy Core 修复。",
      "sections": [
       {
        "title": "更新内容",
        "items": [
-        "Limitless 改名为 Ouka JJK：创造模式标签、Controls 分类和术式轮盘都使用新名称。术式与物品名称保持不变。",
+        "Limitless 改名为 Ouka：创造模式标签、Controls 分类和术式轮盘都使用新名称。术式与物品名称保持不变。",
         "OUKA Beacon 的加护强度降为原来的四分之一，范围不变。终端会显示新的强度。抗性不再让你免疫，火焰免疫与完全夜视需要更高的等级。",
         "OUKA Beacon 的合成需要两个 Heavy Core，放在下方两角。",
         "OUKA Beacon 现在有耐久。受加护的玩家越多、设定的等级越高，它磨损得越快，损坏后停止工作。用一个 Heavy Core 右键即可修复至满。终端会显示剩余耐久，拾起信标时耐久会保留。"
@@ -307,7 +307,7 @@
      "version": "V1.7.0",
      "date": "2026-10-18",
      "type": "release",
-     "title": "Ouka JJK 1.7.0 — 无下限、领域与咒王",
+     "title": "Ouka 1.7.0 — 无下限、领域与咒王",
      "summary": "OUKA 加入一整套咒术：以五条悟的身份使用无下限 Infinity、Lapse Blue、Reversal Red、Hollow Purple 与无限空间领域 Infinite Void，或以宿傩的身份使用 Dismantle、Cleave、Open 与 Malevolent Shrine。还包括武器 Kamutoke 和 Hiten，以及 Blindfold 与 Character Guide。新增 10 个物品和 1 个方块，并包含 1.6.2.2 的全部内容。",
      "sections": [
       {
@@ -323,7 +323,7 @@
        "title": "注意事项",
        "items": [
         "开启画质选项 Improved Transparency（默认关闭）后，Hollow Purple 的球体会画在水的前方而非后方。这是已知问题，将在 1.7.1 修复。关闭该选项时显示正确。",
-        "玩过 1.7.0 后再回到较早版本，会把 Domain Barrier 和所有 Ouka JJK 物品（Kamutoke、Hiten、Blindfold、Character Guide 以及 6 个刷怪蛋）从世界中移除。",
+        "玩过 1.7.0 后再回到较早版本，会把 Domain Barrier 和所有 Ouka 物品（Kamutoke、Hiten、Blindfold、Character Guide 以及 6 个刷怪蛋）从世界中移除。",
         "安装 1.7.0 之前，请从 mods 文件夹中删除旧的 OUKA jar（1.6.2.2 或更早），并只保留一份 GeckoLib 5.5.6。需要 Minecraft 26.3、Fabric Loader 0.19.5 或更新版本，以及 Fabric API 0.161.0+26.3 或更新版本。客户端和服务器都要安装。"
        ]
       }

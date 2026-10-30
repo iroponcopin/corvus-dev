@@ -32,9 +32,9 @@
        "items": [
         "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
         "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha.",
-        "Aturan Survival dan perlengkapan adalah interpretasi pengembang. Pemilik dapat mengubah daftar.",
+        "Aturan Survival dan perlengkapan adalah interpretasi pengembang. Corvus Dev dapat mengubah daftar.",
         "Pemeriksaan versi, server dedicated, multipemain, serta file jar Halia, OUKA, dan Cherry yang asli tidak diuji di rilis ini.",
-        "Teks bahasa Jepang belum disetujui oleh pemilik.",
+        "Teks bahasa Jepang belum disetujui oleh Corvus Dev.",
         "Suara dan partikel peti berasal dari game itu sendiri. Pemilih hanya diperiksa di klien asli pada satu ukuran layar (1280×720)."
        ]
       }
@@ -62,9 +62,9 @@
        "items": [
         "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
         "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha.",
-        "Kumpulan hadiah mengikuti tafsir pengembang atas \"bisa didapat di Survival\". Daftar pengecualian diambil dari tab Operator mode kreatif dan aturan di catatan rilis, dan pemilik dapat mengubahnya.",
+        "Kumpulan hadiah mengikuti tafsir pengembang atas \"bisa didapat di Survival\". Daftar pengecualian diambil dari tab Operator mode kreatif dan aturan di catatan rilis, dan Corvus Dev dapat mengubahnya.",
         "Pemeriksaan versi, server dedicated, multipemain, dan jar Halia, OUKA, serta Cherry yang sebenarnya tidak diuji pada rilis ini. Pengujian memakai versi Tsubomi sendiri.",
-        "Nama dan teks Jepang belum disetujui pemilik.",
+        "Nama dan teks Jepang belum disetujui Corvus Dev.",
         "Suara dan partikel peti adalah bawaan game. Tidak ada suara khusus yang ditambahkan pada rilis ini."
        ]
       }
@@ -92,8 +92,8 @@
        "items": [
         "Membutuhkan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, Fabric API 0.161.0+26.3 atau lebih baru, dan Java 25. Tidak perlu mod lain; Cherry bersifat opsional.",
         "Tsubomi tidak dapat digunakan bersama Alpha. Jika satu mod Alpha saja terpasang, game tidak akan berjalan; lepaskan dulu jar Alpha.",
-        "Selain nama, warna, konsep, dan kemampuan Ziz yang diberikan pemilik, semua angka dan resep seri ini adalah perkiraan pertama pengembang dan dapat diseimbangkan ulang.",
-        "Nama bahasa Jepang belum disetujui pemilik.",
+        "Selain nama, warna, konsep, dan kemampuan Ziz yang diberikan Corvus Dev, semua angka dan resep seri ini adalah perkiraan pertama pengembang dan dapat diseimbangkan ulang.",
+        "Nama bahasa Jepang belum disetujui Corvus Dev.",
         "Geser area tambang dan kemampuan Ziz hanya diuji di klien nyata pada mode pemain tunggal, bukan di server khusus dan bukan multipemain.",
         "Suara kepakan Sayap Ziz belum dibuat."
        ]

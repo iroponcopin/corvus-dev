@@ -8,13 +8,13 @@
  "groups": [
   {
    "label": "V1.8",
-   "summary": "Ouka JJK V1.8 2012 — Ultra~Mythos 송수신기, 호퍼 8단계, 열 굴착기 V2, 파일런 다리, 컨베이어 V2, 30 TW 인공 태양 V2",
+   "summary": "Ouka V1.8 2012 — Ultra~Mythos 송수신기, 호퍼 8단계, 열 굴착기 V2, 파일런 다리, 컨베이어 V2, 30 TW 인공 태양 V2",
    "releases": [
     {
      "version": "V1.8 2012",
      "date": "2026-10-30",
      "type": "release",
-     "title": "Ouka JJK V1.8 2012 — Ultra~Mythos 송수신기, 호퍼 8단계, 열 굴착기 V2, 파일런 다리, 컨베이어 V2, 30 TW 인공 태양 V2",
+     "title": "Ouka V1.8 2012 — Ultra~Mythos 송수신기, 호퍼 8단계, 열 굴착기 V2, 파일런 다리, 컨베이어 V2, 30 TW 인공 태양 V2",
      "summary": "V1.8 2012는 물질 송수신기 7단계, 초고속 임펄스 호퍼 8단계, 지각 심층 열 굴착기 V2, 파일런 다리, 4배 빠른 자기부상 컨베이어 V2, 30 TW 인공 태양 V2를 추가합니다.",
      "sections": [
       {
@@ -43,13 +43,13 @@
   },
   {
    "label": "V1.7",
-   "summary": "Ouka JJK V1.7 1128612 — 양자 셀 조립기, 12단계 Ouka 합금, 바닐라 모양 주괴",
+   "summary": "Ouka V1.7 1128612 — 양자 셀 조립기, 12단계 Ouka 합금, 바닐라 모양 주괴",
    "releases": [
     {
      "version": "V1.7 1128612",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 1128612 — 양자 셀 조립기, 12단계 Ouka 합금, 바닐라 모양 주괴",
+     "title": "Ouka V1.7 1128612 — 양자 셀 조립기, 12단계 Ouka 합금, 바닐라 모양 주괴",
      "summary": "V1.7 1128612는 SMES 양자 배터리 Plus부터 Mythos까지를 조립하는 12 × 16 × 12 기계 양자 셀 조립기를 추가하고, Ouka 합금을 12단계 계열로 만들며, 모든 OUKA 주괴를 바닐라 주괴 모양으로 다시 그립니다.",
      "sections": [
       {
@@ -78,7 +78,7 @@
      "version": "V1.7 91209",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 91209 — 제빙 중공업: 극저온 압축기, 양자 극저온 합성기, 양자 얼음 5종",
+     "title": "Ouka V1.7 91209 — 제빙 중공업: 극저온 압축기, 양자 극저온 합성기, 양자 얼음 5종",
      "summary": "V1.7 91209는 얼음을 만드는 기계 두 대를 추가합니다. 바닐라 얼음 4종을 만드는 극저온 압축기와, 새 양자 얼음 5종을 만드는 양자 극저온 합성기입니다. SMES 양자 배터리의 Plus 이상 단계는 이제 이 얼음들이 필요합니다.",
      "sections": [
       {
@@ -107,7 +107,7 @@
      "version": "V1.7 88213",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 88213 — SMES 양자 배터리 12단계, 모든 단계를 받는 배터리 소켓, 다시 그린 헤비 코어 주괴",
+     "title": "Ouka V1.7 88213 — SMES 양자 배터리 12단계, 모든 단계를 받는 배터리 소켓, 다시 그린 헤비 코어 주괴",
      "summary": "SMES 양자 배터리가 Lite(200 MJ)부터 Mythos(2,048,000 MJ)까지 12단계로 늘었습니다. 기존 400 MJ 배터리는 Standard가 되었고, 배터리 소켓은 모든 단계를 섞어서 넣을 수 있으며, 헤비 코어 주괴는 바닐라 주괴 모양으로 다시 그렸습니다.",
      "sections": [
       {
@@ -135,7 +135,7 @@
      "version": "V1.7 81347",
      "date": "2026-10-29",
      "type": "release",
-     "title": "Ouka JJK V1.7 81347 — 인공 태양 핵융합로 V2, 차세대 자동화 조립 라인, 초경 단조로, 공간 전송 트랜시버 Max",
+     "title": "Ouka V1.7 81347 — 인공 태양 핵융합로 V2, 차세대 자동화 조립 라인, 초경 단조로, 공간 전송 트랜시버 Max",
      "summary": "인공 태양 핵융합로 V2(16 × 16 × 16 다중 블록, 정격 500 GW)와 유리 디자인 제어 화면, 차세대 자동화 조립 라인, 초경 단조로, 공간 전송 트랜시버 Max, OUKA Wonder 작업대가 추가되었습니다.",
      "sections": [
       {
@@ -165,7 +165,7 @@
      "version": "V1.7 71208",
      "date": "2026-10-26",
      "type": "release",
-     "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX 퇴역",
+     "title": "Ouka V1.7 71208 — OUKA Wonder, GUN MAX 퇴역",
      "summary": "OUKA Wonder가 추가되었습니다. 총 54정, 부품 99종, 새 탄약 6종이며, 부착 화면, 총검 근접 공격, 스코프 렌즈, 예광 궤적, 총구 화염이 포함됩니다.",
      "sections": [
       {
@@ -191,7 +191,7 @@
      "version": "V1.7 55114",
      "date": "2026-10-25",
      "type": "release",
-     "title": "Ouka JJK V1.7 55114 — 비콘 수리, 인공 태양 헬륨-3, 오버클럭 x50, 배터리 충전 소켓",
+     "title": "Ouka V1.7 55114 — 비콘 수리, 인공 태양 헬륨-3, 오버클럭 x50, 배터리 충전 소켓",
      "summary": "비콘은 Tsubomi 네더 스타 블록으로 수리하고, 인공 태양은 헬륨-3을 별도의 연료로 태우며, 오버클럭 상한은 x50으로 오르고, 새 배터리 충전 소켓은 SMES 배터리를 최대 200개까지 담습니다.",
      "sections": [
       {
@@ -216,7 +216,7 @@
      "version": "V1.7.2.2",
      "date": "2026-10-21",
      "type": "release",
-     "title": "Ouka JJK 1.7.2.2 — 산업 위험 외골격 조정",
+     "title": "Ouka 1.7.2.2 — 산업 위험 외골격 조정",
      "summary": "위험 외골격 전체 세트가 완화되었습니다. 낙하와 화염 피해가 25% 줄고, 용암 수영이 사라집니다.",
      "sections": [
       {
@@ -238,7 +238,7 @@
      "version": "V1.7.2.1",
      "date": "2026-10-21",
      "type": "release",
-     "title": "Ouka JJK 1.7.2.1 — Heavy Core Ingot과 블록, OUKA Beacon 조정",
+     "title": "Ouka 1.7.2.1 — Heavy Core Ingot과 블록, OUKA Beacon 조정",
      "summary": "Heavy Core Ingot과 Heavy Core 블록을 추가하고, OUKA Beacon의 수치를 새로 정했습니다.",
      "sections": [
       {
@@ -260,7 +260,7 @@
      "version": "V1.7.2",
      "date": "2026-10-20",
      "type": "release",
-     "title": "Ouka JJK 1.7.2 — Hollow Purple 구체와 격자창 제법",
+     "title": "Ouka 1.7.2 — Hollow Purple 구체와 격자창 제법",
      "summary": "Hollow Purple 구체는 어떤 그래픽 설정에서도 같게 그려지며, 격자창에는 새 제법이 생겼습니다.",
      "sections": [
       {
@@ -282,13 +282,13 @@
      "version": "V1.7.1",
      "date": "2026-10-18",
      "type": "release",
-     "title": "Ouka JJK 1.7.1 — 새 이름과 다시 맞춘 OUKA Beacon",
-     "summary": "Limitless의 이름은 이제 Ouka JJK입니다. OUKA Beacon을 다시 맞췄습니다. 가호의 세기는 사분의 일이고, 제작에는 Heavy Core 두 개가 필요하며, 이제 쓸수록 닳고 Heavy Core 하나로 수리합니다.",
+     "title": "Ouka 1.7.1 — 새 이름과 다시 맞춘 OUKA Beacon",
+     "summary": "Limitless의 이름은 이제 Ouka입니다. OUKA Beacon을 다시 맞췄습니다. 가호의 세기는 사분의 일이고, 제작에는 Heavy Core 두 개가 필요하며, 이제 쓸수록 닳고 Heavy Core 하나로 수리합니다.",
      "sections": [
       {
        "title": "변경 사항",
        "items": [
-        "Limitless의 이름을 Ouka JJK로 바꿨습니다. 창작 탭, Controls 분류, 기술 원판이 새 이름을 씁니다. 기술과 아이템의 이름은 그대로입니다.",
+        "Limitless의 이름을 Ouka로 바꿨습니다. 창작 탭, Controls 분류, 기술 원판이 새 이름을 씁니다. 기술과 아이템의 이름은 그대로입니다.",
         "OUKA Beacon의 가호 세기가 전보다 사분의 일로 줄었습니다. 범위는 그대로입니다. 터미널에 새 세기가 표시됩니다. 저항으로는 더 이상 면역이 되지 않으며, 화염 면역과 완전한 야간 시야에는 더 높은 레벨이 필요합니다.",
         "OUKA Beacon의 제작에는 아래 모서리에 Heavy Core가 두 개 필요합니다.",
         "OUKA Beacon에 내구도가 생겼습니다. 가호를 받는 플레이어가 많을수록, 설정한 레벨이 높을수록 빨리 닳고, 부서지면 멈춥니다. Heavy Core를 들고 우클릭하면 가득 수리됩니다. 터미널에 남은 양이 나오며, 비콘은 들어 올려도 내구도가 유지됩니다."
@@ -307,7 +307,7 @@
      "version": "V1.7.0",
      "date": "2026-10-18",
      "type": "release",
-     "title": "Ouka JJK 1.7.0 — 무한, 영역, 그리고 저주의 왕",
+     "title": "Ouka 1.7.0 — 무한, 영역, 그리고 저주의 왕",
      "summary": "OUKA에 술식이 한 벌 모두 들어옵니다. 고조로는 Infinity, Lapse Blue, Reversal Red, Hollow Purple과 영역 Infinite Void를, 스쿠나로는 Dismantle, Cleave, Open, Malevolent Shrine을 쓸 수 있습니다. 무기 Kamutoke와 Hiten, Blindfold, Character Guide도 함께 추가됩니다. 아이템 10개와 블록 1개를 더하며 1.6.2.2의 내용도 모두 담고 있습니다.",
      "sections": [
       {
@@ -323,7 +323,7 @@
        "title": "주의 사항",
        "items": [
         "그래픽 옵션 Improved Transparency를 켜면(기본값은 꺼짐) Hollow Purple 구체가 물 뒤가 아니라 앞에 그려집니다. 알려진 문제이며 1.7.1에서 고칠 예정입니다. 옵션을 끄면 올바르게 그려집니다.",
-        "1.7.0을 플레이한 뒤 이전 버전으로 돌아가면 Domain Barrier와 모든 Ouka JJK 아이템(Kamutoke, Hiten, Blindfold, Character Guide, 6개의 스폰 알)이 월드에서 사라집니다.",
+        "1.7.0을 플레이한 뒤 이전 버전으로 돌아가면 Domain Barrier와 모든 Ouka 아이템(Kamutoke, Hiten, Blindfold, Character Guide, 6개의 스폰 알)이 월드에서 사라집니다.",
         "1.7.0을 설치하기 전에 mods 폴더에서 예전 OUKA jar(1.6.2.2 이전)를 지우고 GeckoLib 5.5.6은 한 개만 남기세요. Minecraft 26.3, Fabric Loader 0.19.5 이상, Fabric API 0.161.0+26.3 이상이 필요합니다. 클라이언트와 서버 모두에 설치하세요."
        ]
       }

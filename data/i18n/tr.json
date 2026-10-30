@@ -307,7 +307,7 @@
   "ouka": [
    {
     "id": "ouka-v1.8-2012",
-    "title": "Ouka JJK V1.8 2012 — Ultra'dan Mythos'a vericiler, sekiz kademeli huni, Termal Sondaj V2, pilon köprüleri, Konveyör V2, 30 TW Güneş V2",
+    "title": "Ouka V1.8 2012 — Ultra'dan Mythos'a vericiler, sekiz kademeli huni, Termal Sondaj V2, pilon köprüleri, Konveyör V2, 30 TW Güneş V2",
     "summary": "V1.8 2012, madde alıcı-vericisine yedi kademe, hiper-itkili huniye sekiz kademe, Kabuk Altı Termal Sondaj V2'yi, pilon köprülerini, dört kat hızlı Maglev Konveyör V2'yi ve 30 TW'lik Yapay Güneş V2'yi ekler.",
     "highlights": [
      "Madde alıcı-vericisi, Normal ve Max'in üstüne Ultra'dan Mythos'a yedi kademe kazanır. Menzil: Ultra 2048 blok, UltraFast 8192, Ultracore 32768; Ultimate kendi boyutunda sınırsızdır ve Overworld ile Nether'i 1:8 de bağlar; Wonder Full, Premium ve Mythos her boyutu bağlar. Tik başına eşya: 512, 1024, 2048, 4096, 8192, 16384, 65536. İki alıcı-verici arasında küçük olan menzil geçerlidir.",
@@ -326,7 +326,7 @@
    },
    {
     "id": "ouka-v1.7-1128612",
-    "title": "Ouka JJK V1.7 1128612 — Kuantum Hücre Montajcısı, 12 kademeli Ouka alaşımı, vanilla biçimli külçeler",
+    "title": "Ouka V1.7 1128612 — Kuantum Hücre Montajcısı, 12 kademeli Ouka alaşımı, vanilla biçimli külçeler",
     "summary": "V1.7 1128612, SMES kuantum pillerini Plus'tan Mythos'a kadar monte eden 12 × 16 × 12'lik Kuantum Hücre Montajcısı'nı ekler, Ouka alaşımını 12 kademeli bir aileye çevirir ve tüm OUKA külçelerini vanilla külçe biçiminde yeniden çizer.",
     "highlights": [
      "Kuantum Hücre Montajcısı, 12 geniş × 16 yüksek × 12 derin büyük bir makinedir; gövde, zırhlı cam, iki giriş portu, bir çıkış portu ve yan yüzün üst kısmına konan bir denetleyiciden oluşur. SMES kuantum pillerini Lite'tan Mythos'a kadar tüm kademelerde monte eder.",
@@ -345,7 +345,7 @@
    },
    {
     "id": "ouka-v1.7-91209",
-    "title": "Ouka JJK V1.7 91209 — Buz endüstrisi: kriyojenik kompresör, kuantum kriyo sentezleyici ve beş kuantum buz",
+    "title": "Ouka V1.7 91209 — Buz endüstrisi: kriyojenik kompresör, kuantum kriyo sentezleyici ve beş kuantum buz",
     "summary": "V1.7 91209, buz yapan iki makine ekler: dört vanilla buz için kriyojenik kompresör ve beş yeni kuantum buz için kuantum kriyo sentezleyici. SMES kuantum pilinin Plus ve üstü kademeleri artık bu buzlara ihtiyaç duyar.",
     "highlights": [
      "Kriyojenik kompresör 2 × 2 × 2 boyutunda bir makinedir. Sudan buz, kararlı kırağılı buz, sıkıştırılmış buz ve mavi buz yapar; ayrıca 2 buzdan sıkıştırılmış buz, 2 sıkıştırılmış buzdan mavi buz yapar. Enerji harcar ve ürünü tek bir denetim seçer. Kararlı kırağılı buz asla erimez.",
@@ -364,7 +364,7 @@
    },
    {
     "id": "ouka-v1.7-88213",
-    "title": "Ouka JJK V1.7 88213 — 12 kademeli SMES Kuantum Pil, her kademeyi alan pil yuvası, yeniden çizilen Ağır Çekirdek Külçesi",
+    "title": "Ouka V1.7 88213 — 12 kademeli SMES Kuantum Pil, her kademeyi alan pil yuvası, yeniden çizilen Ağır Çekirdek Külçesi",
     "summary": "SMES Kuantum Pil artık Lite (200 MJ) ile Mythos (2.048.000 MJ) arasında 12 kademeli bir aile. Mevcut 400 MJ pil Standard oldu, pil yuvası tüm kademeleri karışık olarak alıyor ve Ağır Çekirdek Külçesi vanilya külçe biçiminde yeniden çizildi.",
     "highlights": [
      "12 kademe: Lite 200 MJ, Standard 400 MJ (mevcut SMES Kuantum Pil, görünümü bakır ve pirinç oldu), Plus 800 MJ, Super 1.600 MJ, Max 3.200 MJ, Ultra 6.400 MJ, UltraFast 12.800 MJ, Ultracore 25.600 MJ, Ultimate 51.200 MJ, Wonder Full 102.400 MJ, Premium 204.800 MJ, Mythos 2.048.000 MJ. Her kademenin kendi renkleri var.",
@@ -382,7 +382,7 @@
    },
    {
     "id": "ouka-v1.7-81347",
-    "title": "Ouka JJK V1.7 81347 — Yapay Güneş Füzyon Reaktörü V2, Yeni Nesil Otomasyon Montaj Hattı, Karbür Dövme Ocağı, Madde Alıcı-Verici Max",
+    "title": "Ouka V1.7 81347 — Yapay Güneş Füzyon Reaktörü V2, Yeni Nesil Otomasyon Montaj Hattı, Karbür Dövme Ocağı, Madde Alıcı-Verici Max",
     "summary": "Cam kontrol ekranlı Yapay Güneş Füzyon Reaktörü V2 (16 × 16 × 16 çok bloklu yapı, 500 GW anma gücü), Yeni Nesil Otomasyon Montaj Hattı, Karbür Dövme Ocağı, Madde Alıcı-Verici Max ve OUKA Wonder çalışma tezgâhı eklendi.",
     "highlights": [
      "Yapay Güneş Füzyon Reaktörü V2 (yeni çok bloklu yapı): 16 × 16 × 16 küp. Anma gücü 500 GW (V1 güneşinin 100 katı). Yalnızca V2 yakıt çekirdekleri. V1 Yapay Güneş'in çıkış sınırı artık 5 GW.",
@@ -402,7 +402,7 @@
    },
    {
     "id": "ouka-v1.7-71208",
-    "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX emekli edildi",
+    "title": "Ouka V1.7 71208 — OUKA Wonder, GUN MAX emekli edildi",
     "summary": "OUKA Wonder 54 silah, 99 parça ve 6 yeni cephane türü ekliyor; parça değiştirme ekranı, süngü ile yakın dövüş, dürbün lensi, iz ve namlu alevi de içeriyor.",
     "highlights": [
      "OUKA GUN MAX emekli edildi. Mevcut GUN MAX silahları, cephanesi ve parçaları V1.7 71208 yüklendiğinde dünyalardan kaldırılır.",
@@ -418,7 +418,7 @@
    },
    {
     "id": "ouka-v1.7-55114",
-    "title": "Ouka JJK V1.7 55114 — Fener onarımı, Yapay Güneş helyum-3, x50 aşırı hız, Batarya Şarj Soketi",
+    "title": "Ouka V1.7 55114 — Fener onarımı, Yapay Güneş helyum-3, x50 aşırı hız, Batarya Şarj Soketi",
     "summary": "Fener, bir Tsubomi Nether Yıldızı Bloku ile onarılır, Yapay Güneş helyum-3'ü kendi yakıtı olarak yakar, aşırı hız sınırı x50'ye çıkar ve yeni Batarya Şarj Soketi en fazla 200 SMES bataryayı taşır.",
     "highlights": [
      "Bir Ouka Feneri 1 Tsubomi Nether Yıldızı Bloku ile onarılır. Ağır Çekirdek Külçesi artık onarmaz. Tsubomi olmayan bir dünyada onarım için eşya yoktur, bu yüzden onarılamaz.",
@@ -433,7 +433,7 @@
    },
    {
     "id": "ouka-v1.7.2.2",
-    "title": "Ouka JJK 1.7.2.2 — Endüstriyel Tehlike Dış İskeleti ayarlandı",
+    "title": "Ouka 1.7.2.2 — Endüstriyel Tehlike Dış İskeleti ayarlandı",
     "summary": "Tehlike Dış İskeleti'nin tam takımı yumuşadı: düşme ve ateş hasarı %25 azaldı ve lavda yüzme kaldırıldı.",
     "highlights": [
      "4 parçanın tamamı giyildiğinde düşme hasarı %25 azalır (önceden iptal ediliyordu), ateş hasarı da %25 azalır (önceden iptal ediliyordu). Artık yanarsın. Lavda yüzemezsin.",
@@ -445,7 +445,7 @@
    },
    {
     "id": "ouka-v1.7.2.1",
-    "title": "Ouka JJK 1.7.2.1 — Heavy Core Ingot ve blok, OUKA Beacon dengesi",
+    "title": "Ouka 1.7.2.1 — Heavy Core Ingot ve blok, OUKA Beacon dengesi",
     "summary": "Bir Heavy Core Ingot ve bir Heavy Core bloğu, ayrıca OUKA Beacon için yeni değerler.",
     "highlights": [
      "Heavy Core Ingot ve Heavy Core bloğu eklendi. OUKA Beacon artık 1 Heavy Core Ingot ile onarılıyor.",
@@ -457,7 +457,7 @@
    },
    {
     "id": "ouka-v1.7.2",
-    "title": "Ouka JJK 1.7.2 — Hollow Purple küresi ve kafes pencere tarifi",
+    "title": "Ouka 1.7.2 — Hollow Purple küresi ve kafes pencere tarifi",
     "summary": "Hollow Purple küresi her grafik ayarında aynı çizilir ve kafes pencerenin tarifi yenilendi.",
     "highlights": [
      "Hollow Purple küresi her grafik ayarında aynı çizilir; su üstünde ve altında da. Improved Transparency açıkken artık kafes gibi dağılmaz.",
@@ -469,10 +469,10 @@
    },
    {
     "id": "ouka-v1.7.1",
-    "title": "Ouka JJK 1.7.1 — yeni ad ve yeniden dengelenmiş bir OUKA Beacon",
-    "summary": "Limitless artık Ouka JJK adıyla anılıyor. OUKA Beacon yeniden dengelendi: bereketleri dörtte bir gücünde, tarifi iki Heavy Core istiyor ve artık kullanıldıkça aşınıyor, bir Heavy Core ile onarılıyor.",
+    "title": "Ouka 1.7.1 — yeni ad ve yeniden dengelenmiş bir OUKA Beacon",
+    "summary": "Limitless artık Ouka adıyla anılıyor. OUKA Beacon yeniden dengelendi: bereketleri dörtte bir gücünde, tarifi iki Heavy Core istiyor ve artık kullanıldıkça aşınıyor, bir Heavy Core ile onarılıyor.",
     "highlights": [
-     "Limitless, Ouka JJK olarak yeniden adlandırıldı: yaratıcı sekme, Controls kategorisi ve teknik çemberi yeni adı kullanıyor. Teknikler ve eşyalar adlarını korur.",
+     "Limitless, Ouka olarak yeniden adlandırıldı: yaratıcı sekme, Controls kategorisi ve teknik çemberi yeni adı kullanıyor. Teknikler ve eşyalar adlarını korur.",
      "OUKA Beacon'ın bereketleri öncekinin dörtte biri kadar güçlü; menzil değişmedi. Terminal yeni gücü gösterir. Direnç artık bağışıklık vermez; ateş bağışıklığı ve tam gece görüşü daha yüksek seviye ister.",
      "OUKA Beacon tarifi, alt köşelerde iki Heavy Core ister.",
      "OUKA Beacon'ın dayanıklılığı var. Kutsadığı oyuncu sayısı ve ayarlanan seviyeleri arttıkça daha hızlı aşınır ve kırılınca durur. Üzerine sağ tıklayıp bir Heavy Core ile tamamen onarabilirsiniz. Terminal ne kadar kaldığını gösterir; bir beacon alındığında dayanıklılığını korur."
@@ -484,7 +484,7 @@
    },
    {
     "id": "ouka-v1.7.0",
-    "title": "Ouka JJK 1.7.0 — Sınırsızlık, alanlar ve Lanetlerin Kralı",
+    "title": "Ouka 1.7.0 — Sınırsızlık, alanlar ve Lanetlerin Kralı",
     "summary": "OUKA tam bir büyü takımı ekliyor: Gojo olarak Infinity, Lapse Blue, Reversal Red, Hollow Purple ve Infinite Void alanıyla, ya da Sukuna olarak Dismantle, Cleave, Open ve Malevolent Shrine ile oynayın. Kamutoke ve Hiten silahları, Blindfold ve Character Guide de gelir. 10 eşya ve 1 blok ekler ve 1.6.2.2'deki her şeyi içerir.",
     "highlights": [
      "Gojo: Infinity üzerinize gelenleri durdurur. Lapse Blue dünyayı size çeker, Reversal Red onu geri fırlatır, ikisi birleşince Hollow Purple olur. Infinite Void'i açarak kubbesinin içindeki her şeyi hapsedin.",
@@ -494,7 +494,7 @@
     ],
     "warnings": [
      "Improved Transparency grafik seçeneği açıksa (varsayılan olarak kapalıdır), Hollow Purple küresi suyun arkasında değil önünde çizilir. Bu bilinen bir sorundur ve 1.7.1'de düzeltilecektir. Seçenek kapalıyken doğru çizilir.",
-     "1.7.0 oynadıktan sonra daha eski bir sürüme dönmek, Domain Barrier'ı ve tüm Ouka JJK eşyalarını (Kamutoke, Hiten, Blindfold, Character Guide ve 6 çağırma yumurtası) dünyadan kaldırır.",
+     "1.7.0 oynadıktan sonra daha eski bir sürüme dönmek, Domain Barrier'ı ve tüm Ouka eşyalarını (Kamutoke, Hiten, Blindfold, Character Guide ve 6 çağırma yumurtası) dünyadan kaldırır.",
      "1.7.0'ı kurmadan önce mods klasöründen eski OUKA jar dosyasını (1.6.2.2 veya daha eski) çıkarın ve yalnızca bir GeckoLib 5.5.6 kopyası bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun."
     ]
    },
@@ -1341,8 +1341,8 @@
     "warnings": [
      "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
      "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır.",
-     "Sahibinin verdiği ad, renkler, konsept ve Ziz yetenekleri dışında, bu serilerin tüm sayıları ve tarifleri geliştiricinin ilk tahminidir ve yeniden dengelenebilir.",
-     "Japonca adlar sahip tarafından henüz onaylanmadı.",
+     "Corvus Dev tarafından verilen ad, renkler, konsept ve Ziz yetenekleri dışında, bu serilerin tüm sayıları ve tarifleri geliştiricinin ilk tahminidir ve yeniden dengelenebilir.",
+     "Japonca adlar Corvus Dev tarafından henüz onaylanmadı.",
      "Kazı alanı kaydırıcısı ve Ziz yetenekleri yalnızca tek oyunculu gerçek bir istemcide denendi; özel sunucuda ve çok oyunculu modda denenmedi.",
      "Ziz Kanatlarının çırpınma sesi henüz yapılmadı."
     ]
@@ -1361,9 +1361,9 @@
     "warnings": [
      "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
      "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır.",
-     "Hediye havuzu, geliştiricinin \"Hayatta elde edilebilir\" ifadesini okumasına dayanır. Hariç tutma listesi yaratıcı modun Operatör sekmesinden ve sürüm notlarındaki kurallardan üretilir; sahibi bunu değiştirebilir.",
+     "Hediye havuzu, geliştiricinin \"Hayatta elde edilebilir\" ifadesini okumasına dayanır. Hariç tutma listesi yaratıcı modun Operatör sekmesinden ve sürüm notlarındaki kurallardan üretilir; Corvus Dev bunu değiştirebilir.",
      "Bu sürümde sürüm denetimi, özel sunucu, çok oyunculu oyun ve gerçek Halia, OUKA ve Cherry jar dosyaları sınanmadı. Testler Tsubomi'nin kendi sürümüyle yapıldı.",
-     "Japonca adlar ve metinler henüz sahibi tarafından onaylanmadı.",
+     "Japonca adlar ve metinler henüz Corvus Dev tarafından onaylanmadı.",
      "Sandığın sesi ve parçacıkları oyunun kendi sesleridir. Bu sürümde özel ses eklenmedi."
     ]
    },
@@ -1381,9 +1381,9 @@
     "warnings": [
      "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
      "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır.",
-     "Survival ve ekipman kuralları geliştiricinin yorumudur. Sahip listeleri değiştirebilir.",
+     "Survival ve ekipman kuralları geliştiricinin yorumudur. Corvus Dev listeleri değiştirebilir.",
      "Bu sürümde sürüm kontrolü, özel sunucu, çok oyunculu mod ve gerçek Halia, OUKA ve Cherry jar dosyaları test edilmedi.",
-     "Japonca metin henüz sahip tarafından onaylanmadı.",
+     "Japonca metin henüz Corvus Dev tarafından onaylanmadı.",
      "Sandık sesi ve parçacıkları oyunun kendisine aittir. Seçici yalnızca tek bir ekran boyutunda (1280×720) gerçek bir istemcide kontrol edildi."
     ]
    }

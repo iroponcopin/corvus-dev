@@ -32,9 +32,9 @@
        "items": [
         "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
         "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır.",
-        "Survival ve ekipman kuralları geliştiricinin yorumudur. Sahip listeleri değiştirebilir.",
+        "Survival ve ekipman kuralları geliştiricinin yorumudur. Corvus Dev listeleri değiştirebilir.",
         "Bu sürümde sürüm kontrolü, özel sunucu, çok oyunculu mod ve gerçek Halia, OUKA ve Cherry jar dosyaları test edilmedi.",
-        "Japonca metin henüz sahip tarafından onaylanmadı.",
+        "Japonca metin henüz Corvus Dev tarafından onaylanmadı.",
         "Sandık sesi ve parçacıkları oyunun kendisine aittir. Seçici yalnızca tek bir ekran boyutunda (1280×720) gerçek bir istemcide kontrol edildi."
        ]
       }
@@ -62,9 +62,9 @@
        "items": [
         "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
         "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır.",
-        "Hediye havuzu, geliştiricinin \"Hayatta elde edilebilir\" ifadesini okumasına dayanır. Hariç tutma listesi yaratıcı modun Operatör sekmesinden ve sürüm notlarındaki kurallardan üretilir; sahibi bunu değiştirebilir.",
+        "Hediye havuzu, geliştiricinin \"Hayatta elde edilebilir\" ifadesini okumasına dayanır. Hariç tutma listesi yaratıcı modun Operatör sekmesinden ve sürüm notlarındaki kurallardan üretilir; Corvus Dev bunu değiştirebilir.",
         "Bu sürümde sürüm denetimi, özel sunucu, çok oyunculu oyun ve gerçek Halia, OUKA ve Cherry jar dosyaları sınanmadı. Testler Tsubomi'nin kendi sürümüyle yapıldı.",
-        "Japonca adlar ve metinler henüz sahibi tarafından onaylanmadı.",
+        "Japonca adlar ve metinler henüz Corvus Dev tarafından onaylanmadı.",
         "Sandığın sesi ve parçacıkları oyunun kendi sesleridir. Bu sürümde özel ses eklenmedi."
        ]
       }
@@ -92,8 +92,8 @@
        "items": [
         "Minecraft 26.3, Fabric Loader 0.19.5 veya daha yenisi, Fabric API 0.161.0+26.3 veya daha yenisi ve Java 25 gerekir. Başka mod gerekmez; Cherry isteğe bağlıdır.",
         "Tsubomi, Alpha ile birlikte kullanılamaz. Alpha modlarından biri bile kuruluysa oyun başlamaz; önce Alpha'nın jar dosyalarını kaldır.",
-        "Sahibinin verdiği ad, renkler, konsept ve Ziz yetenekleri dışında, bu serilerin tüm sayıları ve tarifleri geliştiricinin ilk tahminidir ve yeniden dengelenebilir.",
-        "Japonca adlar sahip tarafından henüz onaylanmadı.",
+        "Corvus Dev tarafından verilen ad, renkler, konsept ve Ziz yetenekleri dışında, bu serilerin tüm sayıları ve tarifleri geliştiricinin ilk tahminidir ve yeniden dengelenebilir.",
+        "Japonca adlar Corvus Dev tarafından henüz onaylanmadı.",
         "Kazı alanı kaydırıcısı ve Ziz yetenekleri yalnızca tek oyunculu gerçek bir istemcide denendi; özel sunucuda ve çok oyunculu modda denenmedi.",
         "Ziz Kanatlarının çırpınma sesi henüz yapılmadı."
        ]

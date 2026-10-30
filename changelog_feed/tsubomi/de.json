@@ -32,9 +32,9 @@
        "items": [
         "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
         "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars.",
-        "Die Regeln für Survival und Ausrüstung sind die Lesart des Entwicklers. Der Eigentümer kann die Listen ändern.",
+        "Die Regeln für Survival und Ausrüstung sind die Lesart des Entwicklers. Corvus Dev kann die Listen ändern.",
         "Die Versionsprüfung, ein dedizierter Server, Mehrspielermodus sowie die echten Halia-, OUKA- und Cherry-Jars wurden in diesem Release nicht getestet.",
-        "Der japanische Text ist vom Eigentümer noch nicht freigegeben.",
+        "Der japanische Text ist von Corvus Dev noch nicht freigegeben.",
         "Truhengeräusch und Partikel stammen aus dem Spiel selbst. Die Auswahl wurde in einem echten Client nur auf einer Bildschirmgröße geprüft (1280×720)."
        ]
       }
@@ -62,9 +62,9 @@
        "items": [
         "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
         "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars.",
-        "Der Geschenkpool ist die Lesart der Entwicklerin von „im Überleben erhältlich“. Die Ausschlussliste entsteht aus dem Operator-Reiter des Kreativmodus und den Regeln der Versionshinweise; der Eigentümer kann sie ändern.",
+        "Der Geschenkpool ist die Lesart der Entwicklerin von „im Überleben erhältlich“. Die Ausschlussliste entsteht aus dem Operator-Reiter des Kreativmodus und den Regeln der Versionshinweise; Corvus Dev kann sie ändern.",
         "Die Versionsprüfung, ein dedizierter Server, Mehrspielerbetrieb und die echten Halia-, OUKA- und Cherry-Jars wurden in diesem Release nicht getestet. Die Tests liefen mit Tsubomis eigener Version.",
-        "Die japanischen Namen und Texte sind noch nicht vom Eigentümer freigegeben.",
+        "Die japanischen Namen und Texte sind noch nicht von Corvus Dev freigegeben.",
         "Truhenklang und Partikel sind die des Spiels. In diesem Release kommt kein eigener Klang hinzu."
        ]
       }
@@ -92,8 +92,8 @@
        "items": [
         "Benötigt Minecraft 26.3, Fabric Loader 0.19.5 oder neuer, Fabric API 0.161.0+26.3 oder neuer und Java 25. Keine weitere Mod nötig; Cherry ist optional.",
         "Tsubomi kann nicht zusammen mit Alpha verwendet werden. Ist auch nur eine Alpha-Mod installiert, startet das Spiel nicht; entferne zuerst die Alpha-Jars.",
-        "Außer den Namen, Farben, dem Konzept und den Fähigkeiten von Ziz, die der Besitzer vorgab, sind alle Zahlen und Rezepte dieser Serien die erste Festlegung des Entwicklers und können angepasst werden.",
-        "Die japanischen Namen sind vom Besitzer noch nicht genehmigt.",
+        "Außer den Namen, Farben, dem Konzept und den Fähigkeiten von Ziz, die Corvus Dev vorgab, sind alle Zahlen und Rezepte dieser Serien die erste Festlegung des Entwicklers und können angepasst werden.",
+        "Die japanischen Namen sind von Corvus Dev noch nicht genehmigt.",
         "Der Abbaubereich-Schieber und die Ziz-Fähigkeiten wurden nur in einem echten Client im Einzelspieler geprüft, nicht auf einem dedizierten Server und nicht im Mehrspielermodus.",
         "Das Flügelschlag-Geräusch der Ziz-Flügel ist noch nicht gemacht."
        ]

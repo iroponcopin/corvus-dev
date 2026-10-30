@@ -307,7 +307,7 @@
   "ouka": [
    {
     "id": "ouka-v1.8-2012",
-    "title": "Ouka JJK V1.8 2012 — Transceptor Ultra a Mythos, ocho niveles de tolva, Perforadora térmica V2, puentes de pilones, Cinta V2, Sol V2 de 30 TW",
+    "title": "Ouka V1.8 2012 — Transceptor Ultra a Mythos, ocho niveles de tolva, Perforadora térmica V2, puentes de pilones, Cinta V2, Sol V2 de 30 TW",
     "summary": "V1.8 2012 añade siete niveles del transceptor de materia, ocho niveles de la tolva de hiperimpulso, la Perforadora térmica subcortical V2, puentes de pilones, una Cinta maglev V2 cuatro veces más rápida y un Sol artificial V2 de 30 TW.",
     "highlights": [
      "El transceptor de materia gana siete niveles sobre Normal y Max, de Ultra a Mythos. Alcance: Ultra 2048 bloques, UltraFast 8192, Ultracore 32768; Ultimate no tiene límite dentro de su dimensión y también une el Overworld y el Nether a 1:8; Wonder Full, Premium y Mythos unen cualquier dimensión. Objetos por tick: 512, 1024, 2048, 4096, 8192, 16384, 65536. Entre dos transceptores cuenta el alcance menor.",
@@ -326,7 +326,7 @@
    },
    {
     "id": "ouka-v1.7-1128612",
-    "title": "Ouka JJK V1.7 1128612 — Ensamblador de celdas cuánticas, aleación Ouka en 12 niveles, lingotes con forma vanilla",
+    "title": "Ouka V1.7 1128612 — Ensamblador de celdas cuánticas, aleación Ouka en 12 niveles, lingotes con forma vanilla",
     "summary": "V1.7 1128612 añade el ensamblador de celdas cuánticas, una máquina de 12 × 16 × 12 que construye las baterías cuánticas SMES de Plus a Mythos, convierte la aleación Ouka en una familia de 12 niveles y redibuja todos los lingotes de OUKA con la forma del lingote vanilla.",
     "highlights": [
      "El ensamblador de celdas cuánticas es una máquina grande de 12 de ancho × 16 de alto × 12 de fondo, hecha de carcasa, cristal blindado, dos puertos de entrada, un puerto de salida y un controlador en la parte alta de una cara lateral. Ensambla las baterías cuánticas SMES de todos los niveles, de Lite a Mythos.",
@@ -345,7 +345,7 @@
    },
    {
     "id": "ouka-v1.7-91209",
-    "title": "Ouka JJK V1.7 91209 — Industria del hielo: compresor criogénico, sintetizador criogénico cuántico y cinco hielos cuánticos",
+    "title": "Ouka V1.7 91209 — Industria del hielo: compresor criogénico, sintetizador criogénico cuántico y cinco hielos cuánticos",
     "summary": "V1.7 91209 añade dos máquinas que fabrican hielo: el compresor criogénico para los cuatro hielos vanilla y el sintetizador criogénico cuántico para cinco hielos cuánticos nuevos. Los niveles de la batería cuántica SMES desde Plus ahora necesitan estos hielos.",
     "highlights": [
      "El compresor criogénico es una máquina de 2 × 2 × 2. Con agua fabrica hielo, hielo escarchado (estabilizado), hielo compacto y hielo azul; también hace hielo compacto con 2 de hielo y hielo azul con 2 de hielo compacto. Gasta energía y un solo control elige el producto. El hielo escarchado (estabilizado) nunca se derrite.",
@@ -364,7 +364,7 @@
    },
    {
     "id": "ouka-v1.7-88213",
-    "title": "Ouka JJK V1.7 88213 — Batería cuántica SMES en 12 niveles, zócalo de baterías para todos los niveles, lingote de núcleo pesado redibujado",
+    "title": "Ouka V1.7 88213 — Batería cuántica SMES en 12 niveles, zócalo de baterías para todos los niveles, lingote de núcleo pesado redibujado",
     "summary": "La batería cuántica SMES pasa a ser una familia de 12 niveles, de Lite (200 MJ) a Mythos (2.048.000 MJ). La batería de 400 MJ existente es ahora Standard, el zócalo de baterías admite todos los niveles mezclados y el lingote de núcleo pesado se ha redibujado con la forma del lingote vanilla.",
     "highlights": [
      "12 niveles: Lite 200 MJ, Standard 400 MJ (la batería cuántica SMES existente, con aspecto de cobre y latón), Plus 800 MJ, Super 1.600 MJ, Max 3.200 MJ, Ultra 6.400 MJ, UltraFast 12.800 MJ, Ultracore 25.600 MJ, Ultimate 51.200 MJ, Wonder Full 102.400 MJ, Premium 204.800 MJ, Mythos 2.048.000 MJ. Cada nivel tiene sus propios colores.",
@@ -382,7 +382,7 @@
    },
    {
     "id": "ouka-v1.7-81347",
-    "title": "Ouka JJK V1.7 81347 — Reactor de fusión Sol Artificial V2, Línea de montaje de automatización de nueva generación, Forja de carburo, Transceptor de materia Max",
+    "title": "Ouka V1.7 81347 — Reactor de fusión Sol Artificial V2, Línea de montaje de automatización de nueva generación, Forja de carburo, Transceptor de materia Max",
     "summary": "Añade el Reactor de fusión Sol Artificial V2 (multibloque de 16 × 16 × 16, potencia nominal de 500 GW) con una pantalla de control de cristal, la Línea de montaje de automatización de nueva generación, la Forja de carburo, el Transceptor de materia Max y la mesa de trabajo de OUKA Wonder.",
     "highlights": [
      "Reactor de fusión Sol Artificial V2 (nuevo multibloque): un cubo de 16 × 16 × 16. Potencia nominal de 500 GW (100 veces el sol V1). Solo núcleos de combustible V2. El límite de salida del Sol Artificial V1 es ahora de 5 GW.",
@@ -402,7 +402,7 @@
    },
    {
     "id": "ouka-v1.7-71208",
-    "title": "Ouka JJK V1.7 71208 — OUKA Wonder, GUN MAX retirado",
+    "title": "Ouka V1.7 71208 — OUKA Wonder, GUN MAX retirado",
     "summary": "OUKA Wonder añade 54 armas, 99 piezas de accesorios y 6 tipos nuevos de munición, con pantalla de accesorios, cuerpo a cuerpo con bayoneta, lente de mira, trazador y destello de boca.",
     "highlights": [
      "OUKA GUN MAX queda retirado. Las armas, la munición y los accesorios de GUN MAX existentes se eliminan de los mundos al cargar V1.7 71208.",
@@ -418,7 +418,7 @@
    },
    {
     "id": "ouka-v1.7-55114",
-    "title": "Ouka JJK V1.7 55114 — Reparación del Beacon, helio-3 del Sol Artificial, sobrecarga x50, Toma de carga de baterías",
+    "title": "Ouka V1.7 55114 — Reparación del Beacon, helio-3 del Sol Artificial, sobrecarga x50, Toma de carga de baterías",
     "summary": "El Beacon se repara con un bloque de Estrella del Nether de Tsubomi, el Sol Artificial quema helio-3 como combustible propio, el límite de sobrecarga sube a x50 y la nueva Toma de carga de baterías admite hasta 200 baterías SMES.",
     "highlights": [
      "Un Beacon de Ouka se repara con 1 bloque de Estrella del Nether de Tsubomi. Un lingote de núcleo pesado ya no lo repara. Sin Tsubomi no hay objeto para repararlo, así que no se puede reparar.",
@@ -433,7 +433,7 @@
    },
    {
     "id": "ouka-v1.7.2.2",
-    "title": "Ouka JJK 1.7.2.2 — Exoesqueleto de peligro industrial ajustado",
+    "title": "Ouka 1.7.2.2 — Exoesqueleto de peligro industrial ajustado",
     "summary": "El conjunto completo del exoesqueleto de peligro es más suave: el daño por caída y por fuego baja un 25 %, y se elimina nadar en lava.",
     "highlights": [
      "Con las 4 piezas puestas, el daño por caída baja un 25 % (antes se anulaba) y el daño por fuego un 25 % (antes se anulaba). Ahora te prendes fuego. Ya no puedes nadar en lava.",
@@ -445,7 +445,7 @@
    },
    {
     "id": "ouka-v1.7.2.1",
-    "title": "Ouka JJK 1.7.2.1 — Heavy Core Ingot y bloque Heavy Core, ajuste del OUKA Beacon",
+    "title": "Ouka 1.7.2.1 — Heavy Core Ingot y bloque Heavy Core, ajuste del OUKA Beacon",
     "summary": "Un Heavy Core Ingot y un bloque Heavy Core, y nuevos valores para el OUKA Beacon.",
     "highlights": [
      "Se añaden el Heavy Core Ingot y el bloque Heavy Core. El OUKA Beacon ahora se repara con 1 Heavy Core Ingot.",
@@ -457,7 +457,7 @@
    },
    {
     "id": "ouka-v1.7.2",
-    "title": "Ouka JJK 1.7.2 — la esfera de Hollow Purple y la receta de la ventana de celosía",
+    "title": "Ouka 1.7.2 — la esfera de Hollow Purple y la receta de la ventana de celosía",
     "summary": "La esfera de Hollow Purple se dibuja igual con cualquier opción gráfica, y la ventana de celosía tiene una receta nueva.",
     "highlights": [
      "La esfera de Hollow Purple se dibuja igual con cualquier opción gráfica, también sobre y bajo el agua. Con Improved Transparency ya no se rompe en una celosía.",
@@ -469,10 +469,10 @@
    },
    {
     "id": "ouka-v1.7.1",
-    "title": "Ouka JJK 1.7.1 — el nuevo nombre y un OUKA Beacon reequilibrado",
-    "summary": "Limitless ahora se llama Ouka JJK. El OUKA Beacon está reequilibrado: sus bendiciones son un cuarto de fuertes, su receta necesita dos Heavy Core y ahora se desgasta con el uso y se repara con un Heavy Core.",
+    "title": "Ouka 1.7.1 — el nuevo nombre y un OUKA Beacon reequilibrado",
+    "summary": "Limitless ahora se llama Ouka. El OUKA Beacon está reequilibrado: sus bendiciones son un cuarto de fuertes, su receta necesita dos Heavy Core y ahora se desgasta con el uso y se repara con un Heavy Core.",
     "highlights": [
-     "Limitless pasa a llamarse Ouka JJK: la pestaña creativa, la categoría Controls y la rueda de técnicas usan el nuevo nombre. Las técnicas y los objetos conservan sus nombres.",
+     "Limitless pasa a llamarse Ouka: la pestaña creativa, la categoría Controls y la rueda de técnicas usan el nuevo nombre. Las técnicas y los objetos conservan sus nombres.",
      "Las bendiciones del OUKA Beacon son un cuarto de fuertes que antes; el alcance no cambia. La terminal muestra la nueva fuerza. La resistencia ya no te hace inmune, y la inmunidad al fuego y la visión nocturna completa necesitan un nivel más alto.",
      "La receta del OUKA Beacon necesita dos Heavy Core, en las esquinas inferiores.",
      "El OUKA Beacon tiene durabilidad. Se desgasta más rápido cuantos más jugadores bendice y cuanto más altos son sus niveles, y se detiene al romperse. Haz clic derecho sobre él con un Heavy Core para repararlo por completo. La terminal muestra cuánto queda, y un beacon conserva su durabilidad al recogerlo."
@@ -484,7 +484,7 @@
    },
    {
     "id": "ouka-v1.7.0",
-    "title": "Ouka JJK 1.7.0 — Infinito, los dominios y el Rey de las Maldiciones",
+    "title": "Ouka 1.7.0 — Infinito, los dominios y el Rey de las Maldiciones",
     "summary": "OUKA incorpora un conjunto completo de hechicería: juega como Gojo con Infinity, Lapse Blue, Reversal Red, Hollow Purple y el dominio Infinite Void, o como Sukuna con Dismantle, Cleave, Open y el Malevolent Shrine. Incluye también las armas Kamutoke e Hiten, la Blindfold y el Character Guide. Añade 10 objetos y 1 bloque, y conserva todo lo de 1.6.2.2.",
     "highlights": [
      "Gojo: Infinity detiene lo que se acerca. Lapse Blue atrae el mundo hacia ti, Reversal Red lo lanza de vuelta, y ambos se unen en Hollow Purple. Expande el Infinite Void para atrapar todo lo que queda dentro de su cúpula.",
@@ -494,7 +494,7 @@
     ],
     "warnings": [
      "Con la opción gráfica Improved Transparency activada (desactivada por defecto), la esfera de Hollow Purple se dibuja delante del agua en vez de detrás. Es un problema conocido que se corregirá en 1.7.1. Con la opción desactivada se dibuja correctamente.",
-     "Volver a una versión anterior después de jugar 1.7.0 elimina del mundo la Domain Barrier y todos los objetos de Ouka JJK (Kamutoke, Hiten, Blindfold, Character Guide y los 6 huevos de aparición).",
+     "Volver a una versión anterior después de jugar 1.7.0 elimina del mundo la Domain Barrier y todos los objetos de Ouka (Kamutoke, Hiten, Blindfold, Character Guide y los 6 huevos de aparición).",
      "Antes de instalar 1.7.0, quita de la carpeta mods el jar antiguo de OUKA (1.6.2.2 o anterior) y deja solo una copia de GeckoLib 5.5.6. Necesita Minecraft 26.3, Fabric Loader 0.19.5 o más reciente y Fabric API 0.161.0+26.3 o más reciente. Instálalo tanto en el cliente como en el servidor."
     ]
    },
@@ -1341,8 +1341,8 @@
     "warnings": [
      "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
      "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha.",
-     "Salvo el nombre, los colores, el concepto y los poderes de Ziz que dio el propietario, todas las cifras y recetas de estas series son la primera valoración del desarrollador y pueden reequilibrarse.",
-     "El propietario aún no ha aprobado los nombres en japonés.",
+     "Salvo el nombre, los colores, el concepto y los poderes de Ziz que dio Corvus Dev, todas las cifras y recetas de estas series son la primera valoración del desarrollador y pueden reequilibrarse.",
+     "Corvus Dev aún no ha aprobado los nombres en japonés.",
      "El deslizador de área de minería y los poderes de Ziz solo se han probado en un cliente real para un jugador, no en un servidor dedicado ni en multijugador.",
      "El sonido del aleteo de las alas Ziz aún no está hecho."
     ]
@@ -1361,9 +1361,9 @@
     "warnings": [
      "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
      "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha.",
-     "El conjunto de regalos es la interpretación del desarrollador de «obtenible en Supervivencia». La lista de exclusiones sale de la pestaña de Operador del modo creativo y de las reglas de las notas de la versión, y el propietario podría cambiarla.",
+     "El conjunto de regalos es la interpretación del desarrollador de «obtenible en Supervivencia». La lista de exclusiones sale de la pestaña de Operador del modo creativo y de las reglas de las notas de la versión, y Corvus Dev podría cambiarla.",
      "La comprobación de versión, un servidor dedicado, el multijugador y los jars reales de Halia, OUKA y Cherry no se probaron en esta versión. Las pruebas usaron la versión propia de Tsubomi.",
-     "Los nombres y textos en japonés aún no están aprobados por el propietario.",
+     "Los nombres y textos en japonés aún no están aprobados por Corvus Dev.",
      "El sonido y las partículas del cofre son los del juego. En esta versión no se añade ningún sonido propio."
     ]
    },
@@ -1381,9 +1381,9 @@
     "warnings": [
      "Requiere Minecraft 26.3, Fabric Loader 0.19.5 o superior, Fabric API 0.161.0+26.3 o superior y Java 25. No hace falta ningún otro mod; Cherry es opcional.",
      "Tsubomi no se puede usar junto con Alpha. Si hay un solo mod de Alpha instalado, el juego no arranca; quita antes los jar de Alpha.",
-     "Las reglas de Survival y de equipo son la interpretación del desarrollador. El propietario puede cambiar las listas.",
+     "Las reglas de Survival y de equipo son la interpretación del desarrollador. Corvus Dev puede cambiar las listas.",
      "La comprobación de versión, un servidor dedicado, el multijugador y los archivos jar reales de Halia, OUKA y Cherry no se probaron en esta versión.",
-     "El texto en japonés aún no ha sido aprobado por el propietario.",
+     "El texto en japonés aún no ha sido aprobado por Corvus Dev.",
      "El sonido y las partículas del cofre son del propio juego. El selector se comprobó en un cliente real solo con un tamaño de pantalla (1280×720)."
     ]
    }
