@@ -1409,6 +1409,21 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-8892",
+    "title": "Halia V1.5 8892",
+    "summary": "Ajoute les largages de ravitaillement : appelez un avion ou tirez une fusée, et une caisse arrive jusqu'à vous.",
+    "highlights": [
+     "Nouveau : les largages. La commande /supplydrop call envoie un avion qui lâche une caisse au-dessus de vous.",
+     "Nouveau : trois pistolets de détresse. Une caisse descend là où la fusée s'arrête. Un niveau supérieur apporte une meilleure caisse.",
+     "Nouveau : la caisse de ravitaillement, avec son propre écran."
+    ],
+    "warnings": [
+     "Les appels ont un temps de recharge, et chaque monde limite le nombre de largages simultanés.",
+     "Les largages périodiques dans le monde sont désactivés par défaut.",
+     "Vérifié uniquement sur un serveur et des clients de test, pas encore en vrai multijoueur."
+    ]
+   },
+   {
     "id": "halia-v1.5-1018",
     "title": "Halia V1.5 1018",
     "summary": "Corrige les réglages du fusil à carreaux : la puissance et les dégâts choisis s'appliquent désormais à vos tirs.",

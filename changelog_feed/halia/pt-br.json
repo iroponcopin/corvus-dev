@@ -1,15 +1,40 @@
 {
  "lang": "pt-br",
  "brand": "halia",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "title": "Histórico de atualizações",
- "updated_label": "Atualizado em 2026-10-30",
+ "updated_label": "Atualizado em 2026-10-31",
  "note": "",
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Halia V1.5 1018",
+   "summary": "Halia V1.5 8892",
    "releases": [
+    {
+     "version": "V1.5 8892",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.5 8892",
+     "summary": "Adiciona lançamentos de suprimentos: chame um avião ou dispare um sinalizador, e uma caixa chega até você.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "Novo: lançamentos de suprimentos. O comando /supplydrop call envia um avião que solta uma caixa acima de você.",
+        "Novo: três pistolas sinalizadoras. Uma caixa desce onde o sinalizador termina. Níveis maiores trazem caixas melhores.",
+        "Novo: a caixa de suprimentos, com tela própria."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "As chamadas têm tempo de espera, e cada mundo aceita um número limitado de lançamentos ao mesmo tempo.",
+        "Os lançamentos periódicos pelo mundo vêm desligados.",
+        "Verificado apenas em servidor e clientes de teste, ainda não em multijogador real."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5 1018",
      "date": "2026-10-30",

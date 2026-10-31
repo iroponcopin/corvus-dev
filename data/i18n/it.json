@@ -1409,6 +1409,21 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-8892",
+    "title": "Halia V1.5 8892",
+    "summary": "Aggiunge i lanci di rifornimenti: chiama un aereo o spara un razzo e una cassa arriverà da te.",
+    "highlights": [
+     "Nuovo: lanci di rifornimenti. Il comando /supplydrop call invia un aereo che sgancia una cassa sopra di te.",
+     "Nuovo: tre lanciarazzi di segnalazione. Una cassa scende dove finisce il razzo. I livelli alti portano casse migliori.",
+     "Nuovo: la cassa di rifornimenti, con una schermata propria."
+    ],
+    "warnings": [
+     "Le chiamate hanno un tempo di ricarica e ogni mondo ammette un numero limitato di lanci alla volta.",
+     "I lanci periodici nel mondo sono disattivati per impostazione predefinita.",
+     "Verificato solo su un server e client di prova, non ancora in vero multigiocatore."
+    ]
+   },
+   {
     "id": "halia-v1.5-1018",
     "title": "Halia V1.5 1018",
     "summary": "Corregge le impostazioni del fucile a dardi: potenza e danno scelti ora valgono per i tuoi colpi.",

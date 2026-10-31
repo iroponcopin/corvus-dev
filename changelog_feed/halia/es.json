@@ -1,15 +1,40 @@
 {
  "lang": "es",
  "brand": "halia",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "title": "Historial de actualizaciones",
- "updated_label": "Actualizado el 2026-10-30",
+ "updated_label": "Actualizado el 2026-10-31",
  "note": "",
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Halia V1.5 1018",
+   "summary": "Halia V1.5 8892",
    "releases": [
+    {
+     "version": "V1.5 8892",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.5 8892",
+     "summary": "Añade lanzamientos de suministros: llama a un avión o dispara una bengala y una caja llegará hasta ti.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "Nuevo: lanzamientos de suministros. El comando /supplydrop call envía un avión que suelta una caja sobre ti.",
+        "Nuevo: tres pistolas de bengalas. Una caja baja donde termina la bengala. Un nivel más alto trae una caja mejor.",
+        "Nuevo: la caja de suministros, con su propia pantalla."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Las llamadas tienen tiempo de espera y cada mundo admite un número limitado de lanzamientos a la vez.",
+        "Los lanzamientos periódicos por el mundo están desactivados por defecto.",
+        "Solo se ha comprobado en un servidor y clientes de prueba, aún no en multijugador real."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5 1018",
      "date": "2026-10-30",

@@ -1409,6 +1409,21 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-8892",
+    "title": "Halia V1.5 8892",
+    "summary": "Añade lanzamientos de suministros: llama a un avión o dispara una bengala y una caja llegará hasta ti.",
+    "highlights": [
+     "Nuevo: lanzamientos de suministros. El comando /supplydrop call envía un avión que suelta una caja sobre ti.",
+     "Nuevo: tres pistolas de bengalas. Una caja baja donde termina la bengala. Un nivel más alto trae una caja mejor.",
+     "Nuevo: la caja de suministros, con su propia pantalla."
+    ],
+    "warnings": [
+     "Las llamadas tienen tiempo de espera y cada mundo admite un número limitado de lanzamientos a la vez.",
+     "Los lanzamientos periódicos por el mundo están desactivados por defecto.",
+     "Solo se ha comprobado en un servidor y clientes de prueba, aún no en multijugador real."
+    ]
+   },
+   {
     "id": "halia-v1.5-1018",
     "title": "Halia V1.5 1018",
     "summary": "Corrige los ajustes del rifle de saetas: la potencia y el daño que elijas ahora se aplican a tus disparos.",

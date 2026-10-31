@@ -1409,6 +1409,21 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-8892",
+    "title": "Halia V1.5 8892",
+    "summary": "Neu sind Versorgungsabwürfe: Rufe ein Flugzeug oder feuere eine Leuchtrakete ab, und eine Versorgungskiste kommt zu dir.",
+    "highlights": [
+     "Neu: Versorgungsabwürfe. Der Befehl /supplydrop call schickt ein Flugzeug, das über dir eine Kiste abwirft.",
+     "Neu: drei Signalpistolen. Am Ende der Leuchtrakete kommt eine Versorgungskiste herunter. Höhere Stufen bringen bessere Kisten.",
+     "Neu: die Versorgungskiste mit eigenem Bildschirm."
+    ],
+    "warnings": [
+     "Rufe haben eine Abklingzeit, und jede Welt hält nur eine begrenzte Zahl von Abwürfen gleichzeitig.",
+     "Zeitgesteuerte Abwürfe in der Welt sind standardmäßig aus.",
+     "Bisher nur auf einem Testserver und in Testclients geprüft, noch nicht im echten Mehrspielerbetrieb."
+    ]
+   },
+   {
     "id": "halia-v1.5-1018",
     "title": "Halia V1.5 1018",
     "summary": "Korrigiert die Einstellungen des Bolzengewehrs: Gewählte Stärke und gewählter Schaden gelten jetzt für deine Schüsse.",

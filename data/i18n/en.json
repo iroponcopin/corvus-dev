@@ -1413,6 +1413,21 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-8892",
+    "title": "Halia V1.5 8892",
+    "summary": "Adds supply drops: call a plane or fire a flare, and a supply crate comes down to you.",
+    "highlights": [
+     "New: supply drops. The command /supplydrop call sends a plane that releases a crate above you.",
+     "New: three flare launchers. Fire one and a supply crate comes down where the flare ends. A higher tier brings a better crate.",
+     "New: the supply crate, with its own contents screen."
+    ],
+    "warnings": [
+     "Calls have a cool-down, and each world holds a limited number of drops at once.",
+     "Timed drops across the world are off by default.",
+     "It has been checked on a test server and in test clients only, not yet in real multiplayer play."
+    ]
+   },
+   {
     "id": "halia-v1.5-1018",
     "title": "Halia V1.5 1018",
     "summary": "Fixes the Bolt Rifle's settings: the power and damage you choose now apply to your shots.",

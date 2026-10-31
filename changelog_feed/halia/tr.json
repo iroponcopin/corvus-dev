@@ -1,15 +1,40 @@
 {
  "lang": "tr",
  "brand": "halia",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "title": "Güncelleme Geçmişi",
- "updated_label": "2026-10-30 tarihinde güncellendi",
+ "updated_label": "2026-10-31 tarihinde güncellendi",
  "note": "",
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Halia V1.5 1018",
+   "summary": "Halia V1.5 8892",
    "releases": [
+    {
+     "version": "V1.5 8892",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.5 8892",
+     "summary": "İkmal atışları eklendi: uçak çağır ya da işaret fişeği at, ikmal sandığı sana gelsin.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Yeni: ikmal atışları. /supplydrop call komutu üzerine sandık bırakan bir uçak gönderir.",
+        "Yeni: üç işaret tabancası. Fişeğin bittiği yere bir sandık iner. Yüksek seviye daha iyi sandık getirir.",
+        "Yeni: kendi ekranı olan ikmal sandığı."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Çağrıların bekleme süresi vardır ve her dünyada aynı anda sınırlı sayıda atış olabilir.",
+        "Dünya genelindeki düzenli atışlar varsayılan olarak kapalıdır.",
+        "Yalnızca test sunucusunda ve test istemcilerinde denetlendi, gerçek çok oyunculu oyunda henüz denenmedi."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5 1018",
      "date": "2026-10-30",

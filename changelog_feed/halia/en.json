@@ -1,15 +1,40 @@
 {
  "lang": "en",
  "brand": "halia",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-30",
+ "updated_label": "Updated 2026-10-31",
  "note": "",
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Halia V1.5 1018",
+   "summary": "Halia V1.5 8892",
    "releases": [
+    {
+     "version": "V1.5 8892",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.5 8892",
+     "summary": "Adds supply drops: call a plane or fire a flare, and a supply crate comes down to you.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "New: supply drops. The command /supplydrop call sends a plane that releases a crate above you.",
+        "New: three flare launchers. Fire one and a supply crate comes down where the flare ends. A higher tier brings a better crate.",
+        "New: the supply crate, with its own contents screen."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Calls have a cool-down, and each world holds a limited number of drops at once.",
+        "Timed drops across the world are off by default.",
+        "It has been checked on a test server and in test clients only, not yet in real multiplayer play."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5 1018",
      "date": "2026-10-30",

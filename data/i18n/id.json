@@ -1409,6 +1409,21 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.5-8892",
+    "title": "Halia V1.5 8892",
+    "summary": "Menambahkan kiriman pasokan: panggil pesawat atau tembakkan suar, dan peti pasokan akan datang kepadamu.",
+    "highlights": [
+     "Baru: kiriman pasokan. Perintah /supplydrop call mengirim pesawat yang menjatuhkan peti di atasmu.",
+     "Baru: tiga pistol suar. Peti turun di tempat suar berakhir. Tingkat lebih tinggi membawa peti lebih baik.",
+     "Baru: peti pasokan dengan layar sendiri."
+    ],
+    "warnings": [
+     "Panggilan punya waktu tunggu, dan setiap dunia membatasi jumlah kiriman sekaligus.",
+     "Kiriman berkala di dunia nonaktif secara bawaan.",
+     "Baru diperiksa di server dan klien uji, belum di permainan multipemain sungguhan."
+    ]
+   },
+   {
     "id": "halia-v1.5-1018",
     "title": "Halia V1.5 1018",
     "summary": "Memperbaiki pengaturan Senapan Baut: daya dan kerusakan yang kamu pilih kini berlaku pada tembakanmu.",

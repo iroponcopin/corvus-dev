@@ -1,15 +1,40 @@
 {
  "lang": "fr",
  "brand": "halia",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "title": "Historique des mises à jour",
- "updated_label": "Mis à jour le 2026-10-30",
+ "updated_label": "Mis à jour le 2026-10-31",
  "note": "",
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Halia V1.5 1018",
+   "summary": "Halia V1.5 8892",
    "releases": [
+    {
+     "version": "V1.5 8892",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.5 8892",
+     "summary": "Ajoute les largages de ravitaillement : appelez un avion ou tirez une fusée, et une caisse arrive jusqu'à vous.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Nouveau : les largages. La commande /supplydrop call envoie un avion qui lâche une caisse au-dessus de vous.",
+        "Nouveau : trois pistolets de détresse. Une caisse descend là où la fusée s'arrête. Un niveau supérieur apporte une meilleure caisse.",
+        "Nouveau : la caisse de ravitaillement, avec son propre écran."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Les appels ont un temps de recharge, et chaque monde limite le nombre de largages simultanés.",
+        "Les largages périodiques dans le monde sont désactivés par défaut.",
+        "Vérifié uniquement sur un serveur et des clients de test, pas encore en vrai multijoueur."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5 1018",
      "date": "2026-10-30",

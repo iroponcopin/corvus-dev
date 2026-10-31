@@ -2138,6 +2138,27 @@
    "yomi": "ぼるとらいふる",
    "file": "ultrafast_bolt_rifle.png",
    "lang": "item.halia.ultrafast.bolt_rifle"
+  },
+  "halia:flare_launcher_1": {
+   "en": "Flare Launcher (Tier 1)",
+   "ja": "信号銃 (1)",
+   "yomi": "しんごうじゅう 1",
+   "file": "flare_launcher_1.png",
+   "lang": "item.halia.flare_launcher_1"
+  },
+  "halia:flare_launcher_2": {
+   "en": "Flare Launcher (Tier 2)",
+   "ja": "信号銃 (2)",
+   "yomi": "しんごうじゅう 2",
+   "file": "flare_launcher_2.png",
+   "lang": "item.halia.flare_launcher_2"
+  },
+  "halia:flare_launcher_3": {
+   "en": "Flare Launcher (Tier 3)",
+   "ja": "信号銃 (3)",
+   "yomi": "しんごうじゅう 3",
+   "file": "flare_launcher_3.png",
+   "lang": "item.halia.flare_launcher_3"
   }
  },
  "blades": {

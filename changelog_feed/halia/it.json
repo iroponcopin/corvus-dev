@@ -1,15 +1,40 @@
 {
  "lang": "it",
  "brand": "halia",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "title": "Changelog",
- "updated_label": "Aggiornato il 2026-10-30",
+ "updated_label": "Aggiornato il 2026-10-31",
  "note": "",
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Halia V1.5 1018",
+   "summary": "Halia V1.5 8892",
    "releases": [
+    {
+     "version": "V1.5 8892",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.5 8892",
+     "summary": "Aggiunge i lanci di rifornimenti: chiama un aereo o spara un razzo e una cassa arriverà da te.",
+     "sections": [
+      {
+       "title": "Novità",
+       "items": [
+        "Nuovo: lanci di rifornimenti. Il comando /supplydrop call invia un aereo che sgancia una cassa sopra di te.",
+        "Nuovo: tre lanciarazzi di segnalazione. Una cassa scende dove finisce il razzo. I livelli alti portano casse migliori.",
+        "Nuovo: la cassa di rifornimenti, con una schermata propria."
+       ]
+      },
+      {
+       "title": "Avvertenze",
+       "items": [
+        "Le chiamate hanno un tempo di ricarica e ogni mondo ammette un numero limitato di lanci alla volta.",
+        "I lanci periodici nel mondo sono disattivati per impostazione predefinita.",
+        "Verificato solo su un server e client di prova, non ancora in vero multigiocatore."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5 1018",
      "date": "2026-10-30",

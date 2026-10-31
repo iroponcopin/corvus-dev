@@ -1,15 +1,40 @@
 {
  "lang": "id",
  "brand": "halia",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "title": "Riwayat Pembaruan",
- "updated_label": "Diperbarui 2026-10-30",
+ "updated_label": "Diperbarui 2026-10-31",
  "note": "",
  "groups": [
   {
    "label": "V1.5",
-   "summary": "Halia V1.5 1018",
+   "summary": "Halia V1.5 8892",
    "releases": [
+    {
+     "version": "V1.5 8892",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.5 8892",
+     "summary": "Menambahkan kiriman pasokan: panggil pesawat atau tembakkan suar, dan peti pasokan akan datang kepadamu.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Baru: kiriman pasokan. Perintah /supplydrop call mengirim pesawat yang menjatuhkan peti di atasmu.",
+        "Baru: tiga pistol suar. Peti turun di tempat suar berakhir. Tingkat lebih tinggi membawa peti lebih baik.",
+        "Baru: peti pasokan dengan layar sendiri."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Panggilan punya waktu tunggu, dan setiap dunia membatasi jumlah kiriman sekaligus.",
+        "Kiriman berkala di dunia nonaktif secara bawaan.",
+        "Baru diperiksa di server dan klien uji, belum di permainan multipemain sungguhan."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.5 1018",
      "date": "2026-10-30",
