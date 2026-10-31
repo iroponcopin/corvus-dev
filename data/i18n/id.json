@@ -1409,6 +1409,22 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.6-211",
+    "title": "Halia V1.6 211",
+    "summary": "Menambahkan Halia Avatar Engine: pakai avatarmu sendiri, dengan animasi dan roda aksi.",
+    "highlights": [
+     "Baru: avatar. Taruh folder avatar di halia/avatars, tekan tombol koma, lalu pilih.",
+     "Avatar bergerak dengan animasi dan skripnya sendiri, dan memutar suaranya sendiri.",
+     "Baru: roda aksi. Tahan tombol titik, arahkan ke aksi, lalu lepas.",
+     "Pemain di dekatmu melihat avatarmu jika server punya Halia. Skrip tidak pernah dibagikan."
+    ],
+    "warnings": [
+     "Skrip avatar berjalan di kotak pasir dengan batas ketat. Skrip yang melanggar berhenti, dan hanya avatar itu yang terdampak.",
+     "Tidak ada sambungan ke layanan luar; avatar tetap di komputer dan servermu.",
+     "Baru diperiksa di klien dan server uji, belum dengan dua pemain sungguhan."
+    ]
+   },
+   {
     "id": "halia-v1.5-8892",
     "title": "Halia V1.5 8892",
     "summary": "Menambahkan kiriman pasokan: panggil pesawat atau tembakkan suar, dan peti pasokan akan datang kepadamu.",

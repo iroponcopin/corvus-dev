@@ -1409,6 +1409,22 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.6-211",
+    "title": "Halia V1.6 211",
+    "summary": "Aggiunge Halia Avatar Engine: indossa il tuo avatar, con animazioni proprie e una ruota delle azioni.",
+    "highlights": [
+     "Nuovo: avatar. Metti una cartella avatar in halia/avatars, premi il tasto virgola e sceglilo.",
+     "Gli avatar si muovono con animazioni e script propri e riproducono suoni propri.",
+     "Nuovo: la ruota delle azioni. Tieni premuto il tasto punto, indica un'azione e rilascia.",
+     "I giocatori vicini vedono il tuo avatar se il server ha Halia. Gli script non vengono mai condivisi."
+    ],
+    "warnings": [
+     "Gli script degli avatar girano in un ambiente isolato con limiti severi. Se uno li supera si ferma, e solo quell'avatar ne risente.",
+     "Nessuna connessione a servizi esterni; gli avatar restano sul tuo computer e sul tuo server.",
+     "Verificato solo su client e server di prova, non ancora con due veri giocatori."
+    ]
+   },
+   {
     "id": "halia-v1.5-8892",
     "title": "Halia V1.5 8892",
     "summary": "Aggiunge i lanci di rifornimenti: chiama un aereo o spara un razzo e una cassa arriverà da te.",

@@ -1409,6 +1409,22 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.6-211",
+    "title": "Halia V1.6 211",
+    "summary": "Halia Avatar Engine eklendi: kendi avatarını animasyonları ve eylem çarkıyla kullan.",
+    "highlights": [
+     "Yeni: avatarlar. Avatar klasörünü halia/avatars içine koy, virgül tuşuna bas ve seç.",
+     "Avatarlar kendi animasyon ve betikleriyle hareket eder, kendi seslerini çalar.",
+     "Yeni: eylem çarkı. Nokta tuşunu basılı tut, bir eyleme yönel ve bırak.",
+     "Sunucuda Halia varsa yakındaki oyuncular avatarını görür. Betikler asla paylaşılmaz."
+    ],
+    "warnings": [
+     "Avatar betikleri sıkı sınırları olan yalıtılmış bir ortamda çalışır. Sınırı aşan betik durur ve yalnızca o avatar etkilenir.",
+     "Dış hizmetlere bağlanılmaz; avatarlar bilgisayarında ve sunucunda kalır.",
+     "Yalnızca test istemcilerinde ve test sunucusunda denetlendi, iki gerçek oyuncuyla henüz denenmedi."
+    ]
+   },
+   {
     "id": "halia-v1.5-8892",
     "title": "Halia V1.5 8892",
     "summary": "İkmal atışları eklendi: uçak çağır ya da işaret fişeği at, ikmal sandığı sana gelsin.",

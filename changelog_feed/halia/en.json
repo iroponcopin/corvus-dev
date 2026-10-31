@@ -7,6 +7,38 @@
  "note": "",
  "groups": [
   {
+   "label": "V1.6",
+   "summary": "Halia V1.6 211",
+   "releases": [
+    {
+     "version": "V1.6 211",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.6 211",
+     "summary": "Adds the Halia Avatar Engine: wear your own avatar, with its own animations and an action wheel.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "New: avatars. Put an avatar folder in halia/avatars, press the comma key and choose it.",
+        "Avatars can move with their own animations and scripts, and can play their own sounds.",
+        "New: the action wheel. Hold the period key, point at an action and let go.",
+        "Players nearby see your avatar when the server has Halia. Scripts are never shared."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "Avatar scripts run in a sandbox with strict limits. A script that breaks them stops, and only that avatar is affected.",
+        "Nothing connects to any outside service; avatars stay on your computer and your server.",
+        "It has been checked in test clients and on a test server only, not yet with two real players."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
    "label": "V1.5",
    "summary": "Halia V1.5 8892",
    "releases": [

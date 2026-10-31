@@ -7,6 +7,38 @@
  "note": "",
  "groups": [
   {
+   "label": "V1.6",
+   "summary": "Halia V1.6 211",
+   "releases": [
+    {
+     "version": "V1.6 211",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.6 211",
+     "summary": "Ajoute le Halia Avatar Engine : portez votre propre avatar, avec ses animations et une roue d'actions.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Nouveau : les avatars. Placez un dossier d'avatar dans halia/avatars, appuyez sur la virgule et choisissez-le.",
+        "Les avatars bougent avec leurs propres animations et scripts, et jouent leurs propres sons.",
+        "Nouveau : la roue d'actions. Maintenez la touche point, visez une action et relâchez.",
+        "Les joueurs proches voient votre avatar si le serveur a Halia. Les scripts ne sont jamais partagés."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Les scripts d'avatar tournent dans un bac à sable aux limites strictes. Un script qui les dépasse s'arrête, et seul cet avatar est touché.",
+        "Aucune connexion à un service extérieur ; les avatars restent sur votre ordinateur et votre serveur.",
+        "Vérifié uniquement sur des clients et un serveur de test, pas encore avec deux vrais joueurs."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
    "label": "V1.5",
    "summary": "Halia V1.5 8892",
    "releases": [

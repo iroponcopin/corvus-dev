@@ -7,6 +7,38 @@
  "note": "",
  "groups": [
   {
+   "label": "V1.6",
+   "summary": "Halia V1.6 211",
+   "releases": [
+    {
+     "version": "V1.6 211",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.6 211",
+     "summary": "Halia Avatar Engine eklendi: kendi avatarını animasyonları ve eylem çarkıyla kullan.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Yeni: avatarlar. Avatar klasörünü halia/avatars içine koy, virgül tuşuna bas ve seç.",
+        "Avatarlar kendi animasyon ve betikleriyle hareket eder, kendi seslerini çalar.",
+        "Yeni: eylem çarkı. Nokta tuşunu basılı tut, bir eyleme yönel ve bırak.",
+        "Sunucuda Halia varsa yakındaki oyuncular avatarını görür. Betikler asla paylaşılmaz."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Avatar betikleri sıkı sınırları olan yalıtılmış bir ortamda çalışır. Sınırı aşan betik durur ve yalnızca o avatar etkilenir.",
+        "Dış hizmetlere bağlanılmaz; avatarlar bilgisayarında ve sunucunda kalır.",
+        "Yalnızca test istemcilerinde ve test sunucusunda denetlendi, iki gerçek oyuncuyla henüz denenmedi."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
    "label": "V1.5",
    "summary": "Halia V1.5 8892",
    "releases": [

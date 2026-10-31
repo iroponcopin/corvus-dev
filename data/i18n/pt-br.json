@@ -1409,6 +1409,22 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.6-211",
+    "title": "Halia V1.6 211",
+    "summary": "Adiciona o Halia Avatar Engine: use seu próprio avatar, com animações e uma roda de ações.",
+    "highlights": [
+     "Novo: avatares. Coloque uma pasta de avatar em halia/avatars, aperte a tecla vírgula e escolha.",
+     "Avatares se movem com animações e scripts próprios e tocam sons próprios.",
+     "Novo: a roda de ações. Segure a tecla ponto, aponte para uma ação e solte.",
+     "Jogadores próximos veem seu avatar se o servidor tiver Halia. Scripts nunca são compartilhados."
+    ],
+    "warnings": [
+     "Scripts de avatar rodam em um ambiente isolado com limites rígidos. Quem passar do limite para, e só aquele avatar é afetado.",
+     "Nada se conecta a serviços externos; os avatares ficam no seu computador e no seu servidor.",
+     "Verificado apenas em clientes e servidor de teste, ainda não com dois jogadores reais."
+    ]
+   },
+   {
     "id": "halia-v1.5-8892",
     "title": "Halia V1.5 8892",
     "summary": "Adiciona lançamentos de suprimentos: chame um avião ou dispare um sinalizador, e uma caixa chega até você.",
