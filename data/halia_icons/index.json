@@ -2159,6 +2159,125 @@
    "yomi": "しんごうじゅう 3",
    "file": "flare_launcher_3.png",
    "lang": "item.halia.flare_launcher_3"
+  },
+  "halia:ultrafast/antibiotic_capsule": {
+   "en": "Antibiotic Capsule",
+   "ja": "抗生物質カプセル",
+   "yomi": "こうせいぶっしつかぷせる",
+   "file": "ultrafast_antibiotic_capsule.png",
+   "lang": "item.halia.ultrafast.antibiotic_capsule"
+  },
+  "halia:ultrafast/combat_blade": {
+   "en": "Combat Blade",
+   "ja": "コンバットブレード",
+   "yomi": "こんばっとぶれーど",
+   "file": "ultrafast_combat_blade.png",
+   "lang": "item.halia.ultrafast.combat_blade"
+  },
+  "halia:ultrafast/dazzle_charge": {
+   "en": "Dazzle Charge",
+   "ja": "閃光チャージ",
+   "yomi": "せんこうちゃーじ",
+   "file": "ultrafast_dazzle_charge.png",
+   "lang": "item.halia.ultrafast.dazzle_charge"
+  },
+  "halia:ultrafast/energy_ration": {
+   "en": "Energy Ration",
+   "ja": "エナジーレーション",
+   "yomi": "えなじーれーしょん",
+   "file": "ultrafast_energy_ration.png",
+   "lang": "item.halia.ultrafast.energy_ration"
+  },
+  "halia:ultrafast/flash_shield": {
+   "en": "Flash Shield",
+   "ja": "フラッシュシールド",
+   "yomi": "ふらっしゅしーるど",
+   "file": "ultrafast_flash_shield.png",
+   "lang": "item.halia.ultrafast.flash_shield"
+  },
+  "halia:ultrafast/frag_grenade": {
+   "en": "Frag Grenade",
+   "ja": "破片手榴弾",
+   "yomi": "はへんしゅりゅうだん",
+   "file": "ultrafast_frag_grenade.png",
+   "lang": "item.halia.ultrafast.frag_grenade"
+  },
+  "halia:ultrafast/haze_charge": {
+   "en": "Haze Charge",
+   "ja": "煙幕チャージ",
+   "yomi": "えんまくちゃーじ",
+   "file": "ultrafast_haze_charge.png",
+   "lang": "item.halia.ultrafast.haze_charge"
+  },
+  "halia:ultrafast/heal_cordial": {
+   "en": "Heal Cordial",
+   "ja": "治療強壮剤",
+   "yomi": "ちりょうきょうそうざい",
+   "file": "ultrafast_heal_cordial.png",
+   "lang": "item.halia.ultrafast.heal_cordial"
+  },
+  "halia:ultrafast/heal_vial_large": {
+   "en": "Large Heal Vial",
+   "ja": "大型治療バイアル",
+   "yomi": "おおがたちりょうばいある",
+   "file": "ultrafast_heal_vial_large.png",
+   "lang": "item.halia.ultrafast.heal_vial_large"
+  },
+  "halia:ultrafast/impact_club": {
+   "en": "Impact Club",
+   "ja": "インパクトクラブ",
+   "yomi": "いんぱくとくらぶ",
+   "file": "ultrafast_impact_club.png",
+   "lang": "item.halia.ultrafast.impact_club"
+  },
+  "halia:ultrafast/pain_relief_tablet": {
+   "en": "Pain Relief Tablet",
+   "ja": "鎮痛タブレット",
+   "yomi": "ちんつうたぶれっと",
+   "file": "ultrafast_pain_relief_tablet.png",
+   "lang": "item.halia.ultrafast.pain_relief_tablet"
+  },
+  "halia:ultrafast/regen_tablet": {
+   "en": "Regen Tablet",
+   "ja": "再生タブレット",
+   "yomi": "さいせいたぶれっと",
+   "file": "ultrafast_regen_tablet.png",
+   "lang": "item.halia.ultrafast.regen_tablet"
+  },
+  "halia:ultrafast/salve_tube": {
+   "en": "Salve Tube",
+   "ja": "軟膏チューブ",
+   "yomi": "なんこうちゅーぶ",
+   "file": "ultrafast_salve_tube.png",
+   "lang": "item.halia.ultrafast.salve_tube"
+  },
+  "halia:ultrafast/skirmish_knife": {
+   "en": "Skirmish Knife",
+   "ja": "スカーミッシュナイフ",
+   "yomi": "すかーみっしゅないふ",
+   "file": "ultrafast_skirmish_knife.png",
+   "lang": "item.halia.ultrafast.skirmish_knife"
+  },
+  "halia:ultrafast/survival_pack": {
+   "en": "Survival Pack",
+   "ja": "サバイバルパック",
+   "yomi": "さばいばるぱっく",
+   "file": "ultrafast_survival_pack.png",
+   "lang": "item.halia.ultrafast.survival_pack"
+  },
+  "halia:ultrafast/transfusion_bag": {
+   "en": "Transfusion Bag",
+   "ja": "輸血バッグ",
+   "yomi": "ゆけつばっぐ",
+   "file": "ultrafast_transfusion_bag.png",
+   "lang": "item.halia.ultrafast.transfusion_bag"
+  },
+  "halia:ultrafast/triage_kit": {
+   "en": "Triage Kit",
+   "ja": "応急トリアージキット",
+   "yomi": "おうきゅうとりあーじきっと",
+   "file": "ultrafast_triage_kit.png",
+   "lang": "item.halia.ultrafast.triage_kit"
   }
  },
  "blades": {

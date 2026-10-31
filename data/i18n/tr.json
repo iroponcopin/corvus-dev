@@ -1438,6 +1438,25 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.6-1217",
+    "title": "Halia V1.6 1217",
+    "summary": "Halia UltraFast eklendi: kalkan, el bombası, yakın dövüş silahları ve tıbbi malzemelerle taktik ekipman.",
+    "highlights": [
+     "Yeni: Flaş Kalkanı. Önden gelen mermileri de durdurur.",
+     "Yeni: parça bombası, göz alıcı yük ve duman yükü. Hazırlamak için basılı tut, atmak için bırak.",
+     "Yeni: savaş bıçağı, darbe sopası ve çatışma bıçağı, her birinin kendi temposu var.",
+     "Yeni: on tıbbi ve yiyecek eşyası.",
+     "Hepsi üretilebilir ve Halia UltraFast sekmesinde yer alır.",
+     "Cıvata Tüfeği tam tasarımına döndü: sınırsız menzil, çarpma noktasında krater ve varsayılan olarak her şeyi deviren en yüksek Hasar kademesi."
+    ],
+    "warnings": [
+     "Cıvata Tüfeği varsayılan olarak çok güçlüdür: tek atış geniş alanda oyuncu ve yaratıkları devirip araziyi değiştirebilir. Güç ve Hasarı ayarlardan düşürebilirsin.",
+     "Yakın dövüş silahları isabet etmeden önce çekilmelidir.",
+     "Tıbbi eşyalar bekleme süresini paylaşır.",
+     "Yalnızca test sunucusunda ve test istemcilerinde denetlendi, gerçek çok oyunculu oyunda henüz denenmedi."
+    ]
+   },
+   {
     "id": "halia-v1.6-211",
     "title": "Halia V1.6 211",
     "summary": "Halia Avatar Engine eklendi: kendi avatarını animasyonları ve eylem çarkıyla kullan.",

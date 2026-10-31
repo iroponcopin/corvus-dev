@@ -1438,6 +1438,25 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.6-1217",
+    "title": "Halia V1.6 1217",
+    "summary": "Adiciona Halia UltraFast: equipamento tático com escudo, granadas, armas corpo a corpo e suprimentos médicos.",
+    "highlights": [
+     "Novo: o escudo de flash. Também para balas de frente.",
+     "Novo: granada de fragmentação, carga ofuscante e carga de fumaça. Segure para preparar e solte para lançar.",
+     "Novo: lâmina de combate, porrete de impacto e faca de escaramuça, cada um com seu ritmo.",
+     "Novo: dez itens médicos e de comida.",
+     "Tudo pode ser fabricado e aparece na aba Halia UltraFast.",
+     "O rifle de virotes voltou ao projeto completo: alcance ilimitado, cratera no impacto e um nível máximo de dano que derruba tudo, usado por padrão."
+    ],
+    "warnings": [
+     "O rifle de virotes é muito forte por padrão: um tiro pode derrubar jogadores e criaturas em uma área ampla e mudar o terreno. Reduza Potência e Dano nas configurações.",
+     "Armas corpo a corpo precisam ser sacadas antes de acertar.",
+     "Itens médicos compartilham tempo de espera.",
+     "Verificado apenas em servidor e clientes de teste, ainda não em multijogador real."
+    ]
+   },
+   {
     "id": "halia-v1.6-211",
     "title": "Halia V1.6 211",
     "summary": "Adiciona o Halia Avatar Engine: use seu próprio avatar, com animações e uma roda de ações.",

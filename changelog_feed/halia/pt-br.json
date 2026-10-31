@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "Halia V1.6 211",
+   "summary": "Halia V1.6 1217",
    "releases": [
+    {
+     "version": "V1.6 1217",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.6 1217",
+     "summary": "Adiciona Halia UltraFast: equipamento tático com escudo, granadas, armas corpo a corpo e suprimentos médicos.",
+     "sections": [
+      {
+       "title": "O que mudou",
+       "items": [
+        "Novo: o escudo de flash. Também para balas de frente.",
+        "Novo: granada de fragmentação, carga ofuscante e carga de fumaça. Segure para preparar e solte para lançar.",
+        "Novo: lâmina de combate, porrete de impacto e faca de escaramuça, cada um com seu ritmo.",
+        "Novo: dez itens médicos e de comida.",
+        "Tudo pode ser fabricado e aparece na aba Halia UltraFast.",
+        "O rifle de virotes voltou ao projeto completo: alcance ilimitado, cratera no impacto e um nível máximo de dano que derruba tudo, usado por padrão."
+       ]
+      },
+      {
+       "title": "Pontos de atenção",
+       "items": [
+        "O rifle de virotes é muito forte por padrão: um tiro pode derrubar jogadores e criaturas em uma área ampla e mudar o terreno. Reduza Potência e Dano nas configurações.",
+        "Armas corpo a corpo precisam ser sacadas antes de acertar.",
+        "Itens médicos compartilham tempo de espera.",
+        "Verificado apenas em servidor e clientes de teste, ainda não em multijogador real."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6 211",
      "date": "2026-10-31",

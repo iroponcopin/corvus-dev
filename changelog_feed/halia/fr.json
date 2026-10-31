@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "Halia V1.6 211",
+   "summary": "Halia V1.6 1217",
    "releases": [
+    {
+     "version": "V1.6 1217",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.6 1217",
+     "summary": "Ajoute Halia UltraFast : équipement tactique avec bouclier, grenades, armes de mêlée et matériel médical.",
+     "sections": [
+      {
+       "title": "Changements",
+       "items": [
+        "Nouveau : le bouclier éclair. Il arrête aussi les balles de face.",
+        "Nouveau : grenade à fragmentation, charge éblouissante et charge de brume. Maintenez pour amorcer, relâchez pour lancer.",
+        "Nouveau : lame de combat, massue d'impact et couteau d'escarmouche, chacun avec son rythme.",
+        "Nouveau : dix objets médicaux et alimentaires.",
+        "Tout se fabrique et figure dans l'onglet Halia UltraFast.",
+        "Le fusil à carreaux retrouve sa conception complète : portée illimitée, cratère à l'impact et un niveau de dégâts maximal qui abat tout, par défaut."
+       ]
+      },
+      {
+       "title": "Points d'attention",
+       "items": [
+        "Le fusil à carreaux est très puissant par défaut : un tir peut abattre joueurs et créatures sur une large zone et modifier le terrain. Baissez Puissance et Dégâts dans ses réglages.",
+        "Les armes de mêlée doivent être dégainées avant de toucher.",
+        "Les objets médicaux partagent leurs temps de recharge.",
+        "Vérifié uniquement sur un serveur et des clients de test, pas encore en vrai multijoueur."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6 211",
      "date": "2026-10-31",

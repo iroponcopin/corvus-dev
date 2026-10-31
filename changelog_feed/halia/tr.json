@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "Halia V1.6 211",
+   "summary": "Halia V1.6 1217",
    "releases": [
+    {
+     "version": "V1.6 1217",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.6 1217",
+     "summary": "Halia UltraFast eklendi: kalkan, el bombası, yakın dövüş silahları ve tıbbi malzemelerle taktik ekipman.",
+     "sections": [
+      {
+       "title": "Değişiklikler",
+       "items": [
+        "Yeni: Flaş Kalkanı. Önden gelen mermileri de durdurur.",
+        "Yeni: parça bombası, göz alıcı yük ve duman yükü. Hazırlamak için basılı tut, atmak için bırak.",
+        "Yeni: savaş bıçağı, darbe sopası ve çatışma bıçağı, her birinin kendi temposu var.",
+        "Yeni: on tıbbi ve yiyecek eşyası.",
+        "Hepsi üretilebilir ve Halia UltraFast sekmesinde yer alır.",
+        "Cıvata Tüfeği tam tasarımına döndü: sınırsız menzil, çarpma noktasında krater ve varsayılan olarak her şeyi deviren en yüksek Hasar kademesi."
+       ]
+      },
+      {
+       "title": "Dikkat Edilmesi Gerekenler",
+       "items": [
+        "Cıvata Tüfeği varsayılan olarak çok güçlüdür: tek atış geniş alanda oyuncu ve yaratıkları devirip araziyi değiştirebilir. Güç ve Hasarı ayarlardan düşürebilirsin.",
+        "Yakın dövüş silahları isabet etmeden önce çekilmelidir.",
+        "Tıbbi eşyalar bekleme süresini paylaşır.",
+        "Yalnızca test sunucusunda ve test istemcilerinde denetlendi, gerçek çok oyunculu oyunda henüz denenmedi."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6 211",
      "date": "2026-10-31",

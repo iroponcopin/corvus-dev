@@ -1438,6 +1438,25 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.6-1217",
+    "title": "Halia V1.6 1217",
+    "summary": "Aggiunge Halia UltraFast: equipaggiamento tattico con scudo, granate, armi da mischia e materiale medico.",
+    "highlights": [
+     "Nuovo: lo scudo flash. Ferma anche i proiettili frontali.",
+     "Nuovo: granata a frammentazione, carica abbagliante e carica fumogena. Tieni premuto per innescare, rilascia per lanciare.",
+     "Nuovo: lama da combattimento, mazza d'impatto e coltello da schermaglia, ognuno col suo ritmo.",
+     "Nuovo: dieci oggetti medici e alimentari.",
+     "Tutto si può fabbricare e si trova nella scheda Halia UltraFast.",
+     "Il fucile a dardi torna al progetto completo: portata illimitata, cratere all'impatto e un livello massimo di danno che abbatte tutto, predefinito."
+    ],
+    "warnings": [
+     "Il fucile a dardi è molto potente di base: un colpo può abbattere giocatori e creature su una vasta area e cambiare il terreno. Riduci Potenza e Danno nelle impostazioni.",
+     "Le armi da mischia vanno estratte prima di colpire.",
+     "Gli oggetti medici condividono i tempi di ricarica.",
+     "Verificato solo su un server e client di prova, non ancora in vero multigiocatore."
+    ]
+   },
+   {
     "id": "halia-v1.6-211",
     "title": "Halia V1.6 211",
     "summary": "Aggiunge Halia Avatar Engine: indossa il tuo avatar, con animazioni proprie e una ruota delle azioni.",

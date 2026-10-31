@@ -1442,6 +1442,26 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.6-1217",
+    "title": "Halia V1.6 1217",
+    "summary": "Adds Halia UltraFast: tactical equipment with a shield, grenades, melee weapons and medical supplies.",
+    "highlights": [
+     "New: the Flash Shield. It also stops bullets from the front.",
+     "New: Frag Grenade, Dazzle Charge and Haze Charge. Hold to cook, release to throw.",
+     "New: Combat Blade, Impact Club and Skirmish Knife, each with its own swing timing.",
+     "New: ten medical and food items, from Large Heal Vial to Survival Pack.",
+     "Everything can be crafted, and is listed in its own Halia UltraFast tab.",
+     "The Bolt Rifle now matches its full design: unlimited reach for blast and shock, a crater where it lands, and a top Damage step that takes down anything, which is the default."
+    ],
+    "warnings": [
+     "The Bolt Rifle is very strong by default: one shot can defeat players and creatures over a wide area and change the terrain. Lower Power and Damage in its settings. Terrain stays safe only with the mob griefing rule off.",
+     "Alone on a server, the Bolt Rifle slows the whole world briefly while the bolt flies.",
+     "Melee weapons must be drawn before they can hit.",
+     "Medical items share cool-downs.",
+     "It has been checked on a test server and in test clients only, not yet in real multiplayer play."
+    ]
+   },
+   {
     "id": "halia-v1.6-211",
     "title": "Halia V1.6 211",
     "summary": "Adds the Halia Avatar Engine: wear your own avatar, with its own animations and an action wheel.",

@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "Halia V1.6 211",
+   "summary": "Halia V1.6 1217",
    "releases": [
+    {
+     "version": "V1.6 1217",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.6 1217",
+     "summary": "Neu ist Halia UltraFast: taktische Ausrüstung mit Schild, Granaten, Nahkampfwaffen und Sanitätsmaterial.",
+     "sections": [
+      {
+       "title": "Änderungen",
+       "items": [
+        "Neu: der Blitzschild. Er stoppt auch Kugeln von vorn.",
+        "Neu: Splittergranate, Blendladung und Dunstladung. Halten zum Scharfmachen, loslassen zum Werfen.",
+        "Neu: Kampfklinge, Schlagkeule und Gefechtsmesser, jeweils mit eigenem Schlagtakt.",
+        "Neu: zehn Sanitäts- und Nahrungsgegenstände.",
+        "Alles ist herstellbar und im eigenen Halia-UltraFast-Reiter gelistet.",
+        "Das Bolzengewehr entspricht jetzt seinem vollen Entwurf: unbegrenzte Reichweite, ein Krater am Einschlag und eine oberste Schadensstufe, die alles niederstreckt und Standard ist."
+       ]
+      },
+      {
+       "title": "Hinweise",
+       "items": [
+        "Das Bolzengewehr ist standardmäßig sehr stark: Ein Schuss kann weithin Spieler und Kreaturen besiegen und das Gelände verändern. Stärke und Schaden lassen sich senken.",
+        "Nahkampfwaffen müssen gezogen sein, bevor sie treffen.",
+        "Sanitätsgegenstände teilen sich Abklingzeiten.",
+        "Bisher nur auf einem Testserver und in Testclients geprüft, noch nicht im echten Mehrspielerbetrieb."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6 211",
      "date": "2026-10-31",

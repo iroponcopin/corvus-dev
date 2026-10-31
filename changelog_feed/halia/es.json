@@ -8,8 +8,37 @@
  "groups": [
   {
    "label": "V1.6",
-   "summary": "Halia V1.6 211",
+   "summary": "Halia V1.6 1217",
    "releases": [
+    {
+     "version": "V1.6 1217",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Halia V1.6 1217",
+     "summary": "Añade Halia UltraFast: equipo táctico con escudo, granadas, armas cuerpo a cuerpo y material médico.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "Nuevo: el escudo destello. También detiene balas de frente.",
+        "Nuevo: granada de fragmentación, carga cegadora y carga de humo. Mantén para preparar y suelta para lanzar.",
+        "Nuevo: hoja de combate, porra de impacto y cuchillo de escaramuza, cada uno con su ritmo.",
+        "Nuevo: diez objetos médicos y de comida.",
+        "Todo se puede fabricar y aparece en su pestaña Halia UltraFast.",
+        "El rifle de saetas recupera su diseño completo: alcance ilimitado, cráter al impactar y un nivel máximo de daño que derriba todo, activo por defecto."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "El rifle de saetas es muy potente por defecto: un disparo puede derribar jugadores y criaturas en una zona amplia y cambiar el terreno. Baja Potencia y Daño en sus ajustes.",
+        "Las armas cuerpo a cuerpo deben desenfundarse antes de golpear.",
+        "Los objetos médicos comparten tiempos de espera.",
+        "Solo se ha comprobado en un servidor y clientes de prueba, aún no en multijugador real."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.6 211",
      "date": "2026-10-31",

@@ -1438,6 +1438,25 @@
   ],
   "halia": [
    {
+    "id": "halia-v1.6-1217",
+    "title": "Halia V1.6 1217",
+    "summary": "Menambahkan Halia UltraFast: perlengkapan taktis berisi perisai, granat, senjata jarak dekat, dan persediaan medis.",
+    "highlights": [
+     "Baru: Perisai Kilat. Juga menahan peluru dari depan.",
+     "Baru: granat pecahan, muatan silau, dan muatan asap. Tahan untuk menyiapkan, lepas untuk melempar.",
+     "Baru: bilah tempur, gada hantam, dan pisau tempur, masing-masing dengan iramanya.",
+     "Baru: sepuluh barang medis dan makanan.",
+     "Semua bisa dibuat dan ada di tab Halia UltraFast.",
+     "Senapan Baut kembali ke rancangan penuhnya: jangkauan tanpa batas, kawah di titik hantam, dan tingkat Kerusakan tertinggi yang menumbangkan apa pun sebagai bawaan."
+    ],
+    "warnings": [
+     "Senapan Baut sangat kuat secara bawaan: satu tembakan bisa menumbangkan pemain dan makhluk di area luas dan mengubah medan. Turunkan Daya dan Kerusakan di pengaturan.",
+     "Senjata jarak dekat harus dihunus sebelum bisa mengenai.",
+     "Barang medis berbagi waktu tunggu.",
+     "Baru diperiksa di server dan klien uji, belum di permainan multipemain sungguhan."
+    ]
+   },
+   {
     "id": "halia-v1.6-211",
     "title": "Halia V1.6 211",
     "summary": "Menambahkan Halia Avatar Engine: pakai avatarmu sendiri, dengan animasi dan roda aksi.",
