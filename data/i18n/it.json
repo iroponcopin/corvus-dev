@@ -327,9 +327,11 @@
      "Codice regalo: scrivi /ouka code OUKA-5567 in gioco e un regalo arriva davanti a te. Funziona in sopravvivenza senza cheat, una volta per giocatore e per mondo."
     ],
     "warnings": [
+     "Prima di installare la V1.8 5567, rimuovi il vecchio jar di OUKA (1.8.3371 o precedente) dalla cartella mods e conserva una sola copia di GeckoLib 5.5.6. Servono Minecraft 26.3, Fabric Loader 0.19.5 o più recente e Fabric API 0.161.0+26.3 o più recente. Installalo sul client e sul server.",
      "Le macchine precedenti mantengono il loro design e i loro valori; le nuove macchine sono blocchi separati.",
      "Rompere la Next-Generation Assembly Line fa perdere il suo contenuto; era già così e non è cambiato in questa versione.",
-     "Verificato solo con test automatici e client di prova, non in partite multiplayer reali."
+     "Verificato solo con test automatici e client di prova, non in partite multiplayer reali.",
+     "Il README in questo zip ripete ancora la formulazione di V1.7 88213 secondo cui il limite di archiviazione per cella è stato alzato. Quella formulazione è errata; vedi la correzione nelle note di V1.7 91209."
     ]
    },
    {

@@ -40,9 +40,11 @@
       {
        "title": "Dikkat Edilmesi Gerekenler",
        "items": [
+        "V1.8 5567'i kurmadan önce mods klasöründen eski OUKA jar dosyasını (1.8.3371 veya daha eski) silin ve GeckoLib 5.5.6'nın yalnızca 1 kopyasını bırakın. Minecraft 26.3, Fabric Loader 0.19.5 veya daha yeni ve Fabric API 0.161.0+26.3 veya daha yeni gerekir. İstemciye ve sunucuya kurun.",
         "Önceki makineler tasarımını ve değerlerini korur; yeni makineler ayrı bloklardır.",
         "Next-Generation Assembly Line kırılırsa içindekiler kaybolur; bu zaten böyleydi ve bu sürümde değişmedi.",
-        "Yalnızca otomatik testler ve test istemcileriyle kontrol edildi, gerçek çok oyunculu oyunda değil."
+        "Yalnızca otomatik testler ve test istemcileriyle kontrol edildi, gerçek çok oyunculu oyunda değil.",
+        "Bu zip'teki README hâlâ V1.7 88213 ifadesini tekrarlıyor: hücre başına depolama sınırının yükseltildiği yazıyor. Bu ifade yanlıştır; V1.7 91209 notlarındaki düzeltmeye bakın."
        ]
       }
      ]

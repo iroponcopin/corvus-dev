@@ -40,9 +40,11 @@
       {
        "title": "Catatan Penting",
        "items": [
+        "Sebelum memasang V1.8 5567, hapus jar OUKA lama (1.8.3371 atau lebih lama) dari folder mods dan simpan hanya 1 salinan GeckoLib 5.5.6. Diperlukan Minecraft 26.3, Fabric Loader 0.19.5 atau lebih baru, dan Fabric API 0.161.0+26.3 atau lebih baru. Pasang di client dan server.",
         "Mesin sebelumnya mempertahankan desain dan angkanya; mesin baru adalah blok terpisah.",
         "Jika Next-Generation Assembly Line dihancurkan, isinya hilang; ini sudah berlaku sebelumnya dan tidak diubah di versi ini.",
-        "Hanya diperiksa dengan tes otomatis dan klien uji, bukan dalam permainan multipemain nyata."
+        "Hanya diperiksa dengan tes otomatis dan klien uji, bukan dalam permainan multipemain nyata.",
+        "README di dalam zip ini masih mengulang kalimat V1.7 88213 bahwa batas penyimpanan per sel telah dinaikkan. Kalimat itu keliru; lihat koreksinya di catatan V1.7 91209."
        ]
       }
      ]

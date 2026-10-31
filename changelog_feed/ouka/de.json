@@ -40,9 +40,11 @@
       {
        "title": "Hinweise",
        "items": [
+        "Bevor du V1.8 5567 installierst, entferne die alte OUKA-jar (1.8.3371 oder älter) aus dem Ordner mods und behalte nur 1 Kopie von GeckoLib 5.5.6. Benötigt werden Minecraft 26.3, Fabric Loader 0.19.5 oder neuer und Fabric API 0.161.0+26.3 oder neuer. Auf Client und Server installieren.",
         "Die früheren Maschinen behalten ihr Design und ihre Werte; die neuen Maschinen sind eigene Blöcke.",
         "Wenn du die Next-Generation Assembly Line abbaust, gehen ihre Inhalte verloren. Das war schon vorher so und wird in dieser Version nicht geändert.",
-        "Geprüft nur mit automatisierten Tests und Testclients, nicht in echtem Mehrspielerbetrieb."
+        "Geprüft nur mit automatisierten Tests und Testclients, nicht in echtem Mehrspielerbetrieb.",
+        "Die README in dieser zip wiederholt noch die Formulierung von V1.7 88213, dass das Speicherlimit pro Zelle erhöht wurde. Diese Formulierung ist falsch; siehe die Korrektur in den Notizen zu V1.7 91209."
        ]
       }
      ]
