@@ -306,6 +306,33 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.8-5567",
+    "title": "Ouka V1.8 5567 — Zwölf Maschinen der nächsten Generation und eine Battery Charging Socket so einfach wie eine Truhe",
+    "summary": "V1.8 5567 bringt die nächste Generation von zwölf Maschinen, jede als neuer Block mit neuer Bewegung und neuem Bildschirm, sowie eine Battery Charging Socket, die sich wie eine Truhe öffnen lässt. Die früheren Maschinen funktionieren weiter wie bisher.",
+    "highlights": [
+     "Jede Maschine ist ein neuer Block mit neuem Aussehen, neuer Bewegung und neuem Bildschirm. Die früheren Maschinen funktionieren weiter wie bisher.",
+     "Stasis Harvester (2. Generation des Kinetic Grinder): Das Feld wird mit einem Schieberegler eingestellt (3 bis 9 Blöcke breit). Er tötet 4-mal so schnell und kann den Wither besiegen.",
+     "Precision Assembly Cell (3. Generation der Montagelinie): Zwei Roboterarme arbeiten auf einem Drehteller in einer 3 × 3 × 3 großen Glaszelle. Sie ist 4-mal so schnell wie die Next-Generation Assembly Line.",
+     "Logistics Skyport (2. Generation der Drohnenstation): Drei Drohnen fliegen unabhängig, tragen je 9 Stapel und fliegen doppelt so schnell. Sie arbeitet mit den früheren Stationen in beide Richtungen.",
+     "Phase Resonance Miner (2. Generation des Resonanzminers): Breite 1 bis 9 und Tiefe 1 bis 32 lassen sich mit Schiebereglern wählen. Er baut 4-mal so schnell ab.",
+     "Molten-Salt Solar Tower (2. Generation des Solarturms): Nennleistung 80,000 J/t (4-fach). Er speichert Wärme in geschmolzenem Salz und erzeugt auch nachts Strom. Wenn du ihn abbaust, bleibt die Wärme im Item erhalten.",
+     "Tracking Heliostat (2. Generation des Heliostaten): Er folgt der Sonne und lenkt das Licht zum Turm. Mit dem Molten-Salt Solar Tower liefert er doppelt so viel Wärme wie der bisherige Spiegel.",
+     "Tachyon Overdrive (2. Generation des Beschleunigungskerns): Die Geschwindigkeit wird mit einem Schieberegler von 100 bis 1000 % gewählt und verbraucht 25 % weniger Strom.",
+     "Isostatic Press (2. Generation des Brechers): 4-mal so schnell.",
+     "Dynamo Crank (2. Generation der Handkurbel): Ein schweres Schwungrad dreht sich noch etwa 3 Sekunden weiter, nachdem du aufhörst. Die Leistung beträgt bis zu 16,000 J/t.",
+     "Ultracentrifuge (2. Generation der Zentrifuge): trennt 4-mal so schnell, mit 1,5-facher Chance und 8 Ausgabeplätzen.",
+     "Atomic Lattice Crafter (2. Generation des Autocrafters): crafted 4-mal so schnell.",
+     "OUKA Type-W2 „Hayate“ (2. Generation der Windturbine): etwa 48 Blöcke hoch, Nennleistung 200,000 J/t (4-fach). Baue sie 31 Blöcke oder mehr von anderen Turbinen entfernt.",
+     "Battery Charging Socket: Öffne sie mit bloßer Hand und bewege Batterien wie aus einer Truhe. Trichter und Rohre schließen sich ebenfalls an. Bestehende Sockel behalten ihren Inhalt.",
+     "Gift code: Gib im Spiel /ouka code OUKA-5567 ein, und ein Geschenk erscheint vor dir. Es funktioniert im Überleben ohne Cheats, einmal pro Spieler und Welt."
+    ],
+    "warnings": [
+     "Die früheren Maschinen behalten ihr Design und ihre Werte; die neuen Maschinen sind eigene Blöcke.",
+     "Wenn du die Next-Generation Assembly Line abbaust, gehen ihre Inhalte verloren. Das war schon vorher so und wird in dieser Version nicht geändert.",
+     "Geprüft nur mit automatisierten Tests und Testclients, nicht in echtem Mehrspielerbetrieb."
+    ]
+   },
+   {
     "id": "ouka-v1.8-3371",
     "title": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
     "summary": "V1.8 3371 fügt den Halo Beacon, den Stellar Fusion Reactor mit 173 TW, die Combined-Cycle Gas Turbine mit 100 MW und das Subspace Silo hinzu, dazu die beiden runden Türme aus V1.8 2033, den Echo Resonance Excavator und die Helium-3 Regolith Refinery.",

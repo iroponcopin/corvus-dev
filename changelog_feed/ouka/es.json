@@ -1,15 +1,52 @@
 {
  "lang": "es",
  "brand": "ouka",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "title": "Historial de actualizaciones",
- "updated_label": "Actualizado el 2026-10-30",
+ "updated_label": "Actualizado el 2026-10-31",
  "note": "",
  "groups": [
   {
    "label": "V1.8",
-   "summary": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
+   "summary": "Ouka V1.8 5567 — Doce máquinas de la siguiente generación y una Battery Charging Socket tan fácil de usar como un cofre",
    "releases": [
+    {
+     "version": "V1.8 5567",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Ouka V1.8 5567 — Doce máquinas de la siguiente generación y una Battery Charging Socket tan fácil de usar como un cofre",
+     "summary": "V1.8 5567 añade la siguiente generación de doce máquinas, cada una como bloque nuevo con movimiento y pantalla nuevos, y una Battery Charging Socket tan fácil de usar como un cofre. Las máquinas anteriores siguen funcionando como antes.",
+     "sections": [
+      {
+       "title": "Cambios",
+       "items": [
+        "Cada máquina es un bloque nuevo, con aspecto, movimiento y pantalla rediseñados. Las máquinas anteriores siguen funcionando como antes.",
+        "Stasis Harvester (segunda generación del Kinetic Grinder): ajusta el campo con un control deslizante (de 3 a 9 de ancho). Derrota 4 veces más rápido y puede vencer al Wither.",
+        "Precision Assembly Cell (tercera generación de la línea de ensamblaje): dos brazos robóticos trabajan sobre una plataforma giratoria dentro de una celda de cristal de 3 × 3 × 3. Va 4 veces más rápido que la Next-Generation Assembly Line.",
+        "Logistics Skyport (segunda generación de la estación de drones): tres drones vuelan de forma independiente, cada uno transporta 9 pilas y vuela el doble de rápido. Funciona con las estaciones anteriores en ambos sentidos.",
+        "Phase Resonance Miner (segunda generación del minero resonante): elige el ancho de 1 a 9 y la profundidad de 1 a 32 con controles deslizantes. Mina 4 veces más rápido.",
+        "Molten-Salt Solar Tower (segunda generación de la torre solar): potencia nominal de 80,000 J/t (4 veces). Almacena calor en sal fundida y genera de noche. Al romperla, el calor se queda en el objeto.",
+        "Tracking Heliostat (segunda generación del heliostato): sigue al sol y devuelve la luz a la torre. Con la Molten-Salt Solar Tower entrega el doble de calor que el espejo anterior.",
+        "Tachyon Overdrive (segunda generación del acelerador): control deslizante del 100 al 1000 %, con un 25 % menos de consumo.",
+        "Isostatic Press (segunda generación de la trituradora): 4 veces más rápida.",
+        "Dynamo Crank (segunda generación de la manivela): un volante pesado sigue girando unos 3 segundos después de que dejes de girarla. La salida llega a 16,000 J/t.",
+        "Ultracentrifuge (segunda generación de la centrifugadora): separa 4 veces más rápido, con 1,5 veces más probabilidad y 8 huecos de salida.",
+        "Atomic Lattice Crafter (segunda generación del autocrafteador): craftea 4 veces más rápido.",
+        "OUKA Type-W2 “Hayate” (segunda generación del aerogenerador): unos 48 bloques de altura y potencia nominal de 200,000 J/t (4 veces). Constrúyela a 31 bloques o más de otros aerogeneradores.",
+        "Battery Charging Socket: ábrela con la mano vacía y mueve baterías como con un cofre. Las tolvas y las tuberías también se conectan. Los zócalos existentes conservan su contenido.",
+        "Código de regalo: escribe /ouka code OUKA-5567 en el juego y un regalo aparecerá delante de ti. Funciona en supervivencia sin trucos, una vez por jugador y mundo."
+       ]
+      },
+      {
+       "title": "Advertencias",
+       "items": [
+        "Las máquinas anteriores conservan su diseño y sus valores; las nuevas son bloques separados.",
+        "Si rompes la Next-Generation Assembly Line, pierdes su contenido. Ya era así antes y no cambia en esta versión.",
+        "Solo se ha comprobado con pruebas automáticas y clientes de prueba, no en partidas multijugador reales."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.8 3371",
      "date": "2026-10-30",

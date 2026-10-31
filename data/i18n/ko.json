@@ -306,6 +306,33 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.8-5567",
+    "title": "Ouka V1.8 5567 — 차세대 기계 12종과 상자처럼 쉬운 Battery Charging Socket",
+    "summary": "V1.8 5567은 차세대 기계 12종을 추가합니다. 각 기계는 새 움직임과 새 화면을 가진 새 블록이며, 상자처럼 쓸 수 있는 Battery Charging Socket도 들어갑니다. 기존 기계는 지금처럼 그대로 쓸 수 있습니다.",
+    "highlights": [
+     "모든 기계는 외형, 움직임, 화면을 새로 만든 새 블록입니다. 기존 기계는 지금처럼 그대로 쓸 수 있습니다.",
+     "Stasis Harvester (Kinetic Grinder 2세대): 슬라이더로 범위를 정합니다(폭 3~9). 처치 속도가 4배이며, Wither도 쓰러뜨릴 수 있습니다.",
+     "Precision Assembly Cell (조립 라인 3세대): 3 × 3 × 3 유리 방 안에서 두 개의 로봇 팔이 회전판 위에서 조립합니다. Next-Generation Assembly Line보다 4배 빠릅니다.",
+     "Logistics Skyport (물류 드론 스테이션 2세대): 드론 3대가 각각 독립적으로 날며, 각 드론은 9스택을 운반하고 2배 빠르게 납니다. 기존 스테이션과 양방향으로 연동됩니다.",
+     "Phase Resonance Miner (공명 채굴기 2세대): 슬라이더로 폭 1~9, 깊이 1~32를 고릅니다. 채굴 속도는 4배입니다.",
+     "Molten-Salt Solar Tower (2세대): 정격 80,000 J/t(4배)입니다. 녹인 소금에 열을 저장해 밤에도 발전합니다. 부수면 저장된 열이 아이템에 남습니다.",
+     "Tracking Heliostat (헬리오스탯 2세대): 태양을 따라가며 빛을 탑으로 돌려보냅니다. Molten-Salt Solar Tower에서는 기존 거울보다 2배의 열을 전달합니다.",
+     "Tachyon Overdrive (가속 코어 2세대): 슬라이더로 100~1000% 속도를 고를 수 있고, 전력 소모는 25% 적습니다.",
+     "Isostatic Press (분쇄기 2세대): 속도 4배.",
+     "Dynamo Crank (핸드 크랭크 2세대): 돌리면 무거운 플라이휠이 돌기 시작하고, 손을 떼도 약 3초 동안 계속 돕니다. 출력은 최대 16,000 J/t입니다.",
+     "Ultracentrifuge (원심분리기 2세대): 분리 속도 4배, 확률 1.5배, 출력 칸 8개입니다.",
+     "Atomic Lattice Crafter (자동 제작기 2세대): 제작 속도 4배입니다.",
+     "OUKA Type-W2 “Hayate” (풍력 터빈 2세대): 높이 약 48블록, 정격 200,000 J/t(4배)입니다. 다른 풍차와 31블록 이상 떨어뜨려 세웁니다.",
+     "Battery Charging Socket: 맨손으로 열어 상자처럼 배터리를 넣고 뺄 수 있습니다. 호퍼와 파이프도 연결됩니다. 기존 소켓의 내용물은 그대로 남습니다.",
+     "선물 코드: 게임 안에서 /ouka code OUKA-5567 을 입력하면 눈앞에 선물이 도착합니다. 치트 없는 서바이벌에서도 쓸 수 있으며, 월드당 플레이어 1인 1회입니다."
+    ],
+    "warnings": [
+     "기존 기계는 디자인과 수치를 그대로 유지하며, 새 기계는 별도의 블록입니다.",
+     "Next-Generation Assembly Line을 부수면 내용물이 사라집니다. 이전부터 그랬으며 이번 버전에서 바뀌지 않았습니다.",
+     "자동 테스트와 테스트 클라이언트에서만 확인했으며, 실제 멀티플레이 환경에서는 확인하지 않았습니다."
+    ]
+   },
+   {
     "id": "ouka-v1.8-3371",
     "title": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
     "summary": "V1.8 3371은 Halo Beacon, 173 TW Stellar Fusion Reactor, 100 MW Combined-Cycle Gas Turbine, Subspace Silo를 추가하며, V1.8 2033의 둥근 타워 두 개인 Echo Resonance Excavator와 Helium-3 Regolith Refinery도 포함합니다.",

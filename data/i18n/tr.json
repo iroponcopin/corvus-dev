@@ -306,6 +306,33 @@
  "changelog_brands": {
   "ouka": [
    {
+    "id": "ouka-v1.8-5567",
+    "title": "Ouka V1.8 5567 — On iki yeni nesil makine ve sandık kadar kolay bir Battery Charging Socket",
+    "summary": "V1.8 5567; yeni görünüm, hareket ve ekrana sahip on iki makinenin yeni neslini ve sandık kadar kolay bir Battery Charging Socket'i ekler. Önceki makineler eskisi gibi çalışmaya devam eder.",
+    "highlights": [
+     "Her makine, yeni görünüm, yeni hareket ve yeni ekranla yapılmış yeni bir bloktur. Önceki makineler eskisi gibi çalışmaya devam eder.",
+     "Stasis Harvester (Kinetic Grinder'ın 2. nesli): alanı kaydırıcıyla ayarlayın (genişlik 3 ila 9). 4 kat hızlı öldürür ve Wither'ı da yenebilir.",
+     "Precision Assembly Cell (montaj hattının 3. nesli): 3 × 3 × 3 cam bir hücrede iki robot kol döner tablada çalışır. Next-Generation Assembly Line'dan 4 kat hızlıdır.",
+     "Logistics Skyport (lojistik drone istasyonunun 2. nesli): üç drone bağımsız uçar, her biri 9 yığın taşır ve 2 kat hızlı uçar. Önceki istasyonlarla iki yönde de çalışır.",
+     "Phase Resonance Miner (rezonans madencisinin 2. nesli): kaydırıcılarla genişlik 1 ila 9 ve derinlik 1 ila 32 seçin. 4 kat hızlı kazar.",
+     "Molten-Salt Solar Tower (güneş kulesinin 2. nesli): 80,000 J/t anma gücü (4 kat). Isıyı erimiş tuzda depolar ve geceleri de üretir. Kırıldığında depolanan ısı eşyada kalır.",
+     "Tracking Heliostat (heliostatın 2. nesli): güneşi takip eder ve ışığı kuleye yansıtır. Molten-Salt Solar Tower ile önceki aynanın 2 katı ısıyı iletir.",
+     "Tachyon Overdrive (hızlandırıcı çekirdeğin 2. nesli): kaydırıcıyla %100 ila %1000 arası hız seçilir, enerji tüketimi %25 azdır.",
+     "Isostatic Press (kırıcının 2. nesli): 4 kat hızlı.",
+     "Dynamo Crank (el krankının 2. nesli): çevirdiğinizde ağır bir volan dönmeye başlar ve durduktan sonra yaklaşık 3 saniye daha döner. Çıkış en fazla 16,000 J/t.",
+     "Ultracentrifuge (santrifüjün 2. nesli): 1,5 kat şansla ve 8 çıkış yuvasıyla 4 kat hızlı ayırır.",
+     "Atomic Lattice Crafter (otomatik üreticinin 2. nesli): 4 kat hızlı üretir.",
+     "OUKA Type-W2 “Hayate” (rüzgar türbininin 2. nesli): yaklaşık 48 blok yükseklikte, anma gücü 200,000 J/t (4 kat). Diğer türbinlerden 31 blok veya daha uzağa kurun.",
+     "Battery Charging Socket: çıplak elle açın, bataryaları bir sandık gibi taşıyın. Hunilere ve borulara da bağlanır. Mevcut soketlerdeki içerik korunur.",
+     "Hediye kodu: oyunda /ouka code OUKA-5567 yazın, önünüze bir hediye gelsin. Hile kapalı hayatta kalma modunda çalışır; dünya başına oyuncu başına bir kez."
+    ],
+    "warnings": [
+     "Önceki makineler tasarımını ve değerlerini korur; yeni makineler ayrı bloklardır.",
+     "Next-Generation Assembly Line kırılırsa içindekiler kaybolur; bu zaten böyleydi ve bu sürümde değişmedi.",
+     "Yalnızca otomatik testler ve test istemcileriyle kontrol edildi, gerçek çok oyunculu oyunda değil."
+    ]
+   },
+   {
     "id": "ouka-v1.8-3371",
     "title": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
     "summary": "V1.8 3371; Halo Beacon, 173 TW Stellar Fusion Reactor, 100 MW Combined-Cycle Gas Turbine ve Subspace Silo'yu ekler. Ayrıca V1.8 2033'ün iki yuvarlak kulesini, Echo Resonance Excavator ve Helium-3 Regolith Refinery'yi de içerir.",

@@ -1,15 +1,52 @@
 {
  "lang": "id",
  "brand": "ouka",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "title": "Riwayat Pembaruan",
- "updated_label": "Diperbarui 2026-10-30",
+ "updated_label": "Diperbarui 2026-10-31",
  "note": "",
  "groups": [
   {
    "label": "V1.8",
-   "summary": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
+   "summary": "Ouka V1.8 5567 — Dua belas mesin generasi berikutnya dan Battery Charging Socket semudah peti",
    "releases": [
+    {
+     "version": "V1.8 5567",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Ouka V1.8 5567 — Dua belas mesin generasi berikutnya dan Battery Charging Socket semudah peti",
+     "summary": "V1.8 5567 menambahkan generasi berikutnya dari dua belas mesin, masing-masing berupa blok baru dengan gerakan dan layar baru, serta Battery Charging Socket yang semudah peti. Mesin sebelumnya tetap bekerja seperti biasa.",
+     "sections": [
+      {
+       "title": "Perubahan",
+       "items": [
+        "Setiap mesin adalah blok baru dengan tampilan, gerakan, dan layar baru. Mesin sebelumnya tetap bekerja seperti biasa.",
+        "Stasis Harvester (generasi ke-2 Kinetic Grinder): atur area dengan penggeser (lebar 3 sampai 9). Ia membunuh 4 kali lebih cepat dan dapat mengalahkan Wither.",
+        "Precision Assembly Cell (generasi ke-3 jalur perakitan): dua lengan robot bekerja di atas meja putar dalam sel kaca 3 × 3 × 3. Kecepatannya 4 kali Next-Generation Assembly Line.",
+        "Logistics Skyport (generasi ke-2 stasiun drone): tiga drone terbang secara mandiri, masing-masing membawa 9 tumpukan dan terbang 2 kali lebih cepat. Bekerja dengan stasiun sebelumnya di kedua arah.",
+        "Phase Resonance Miner (generasi ke-2 penambang resonan): pilih lebar 1 sampai 9 dan kedalaman 1 sampai 32 dengan penggeser. Ia menambang 4 kali lebih cepat.",
+        "Molten-Salt Solar Tower (generasi ke-2 menara surya): peringkat 80,000 J/t (4 kali). Ia menyimpan panas dalam garam cair dan menghasilkan listrik di malam hari. Saat dihancurkan, panasnya tetap ada di item.",
+        "Tracking Heliostat (generasi ke-2 heliostat): mengikuti matahari dan mengarahkan cahaya ke menara. Bersama Molten-Salt Solar Tower, ia memberi 2 kali panas dibanding cermin sebelumnya.",
+        "Tachyon Overdrive (generasi ke-2 akselerator): penggeser 100 sampai 1000%, dengan konsumsi daya 25% lebih rendah.",
+        "Isostatic Press (generasi ke-2 penghancur): 4 kali lebih cepat.",
+        "Dynamo Crank (generasi ke-2 engkol tangan): roda gila berat tetap berputar sekitar 3 detik setelah Anda berhenti. Output hingga 16,000 J/t.",
+        "Ultracentrifuge (generasi ke-2 sentrifus): memisahkan 4 kali lebih cepat, dengan peluang 1,5 kali dan 8 slot output.",
+        "Atomic Lattice Crafter (generasi ke-2 auto-crafter): membuat 4 kali lebih cepat.",
+        "OUKA Type-W2 “Hayate” (generasi ke-2 turbin angin): tinggi sekitar 48 blok, peringkat 200,000 J/t (4 kali). Bangun berjarak 31 blok atau lebih dari turbin lain.",
+        "Battery Charging Socket: buka dengan tangan kosong dan pindahkan baterai seperti peti. Hopper dan pipa juga terhubung. Soket yang sudah ada tetap menyimpan isinya.",
+        "Kode hadiah: masukkan /ouka code OUKA-5567 di dalam game dan hadiah muncul di depan Anda. Berfungsi di survival tanpa cheat, sekali per pemain per dunia."
+       ]
+      },
+      {
+       "title": "Catatan Penting",
+       "items": [
+        "Mesin sebelumnya mempertahankan desain dan angkanya; mesin baru adalah blok terpisah.",
+        "Jika Next-Generation Assembly Line dihancurkan, isinya hilang; ini sudah berlaku sebelumnya dan tidak diubah di versi ini.",
+        "Hanya diperiksa dengan tes otomatis dan klien uji, bukan dalam permainan multipemain nyata."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.8 3371",
      "date": "2026-10-30",

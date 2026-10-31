@@ -1,15 +1,52 @@
 {
  "lang": "en",
  "brand": "ouka",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "title": "Changelog",
- "updated_label": "Updated 2026-10-30",
+ "updated_label": "Updated 2026-10-31",
  "note": "",
  "groups": [
   {
    "label": "V1.8",
-   "summary": "Ouka V1.8 3371 — Halo Beacon, 173 TW Stellar Fusion Reactor, Combined-Cycle Gas Turbine, Subspace Silo, Echo Resonance Excavator, Helium-3 Regolith Refinery",
+   "summary": "Ouka V1.8 5567 — Twelve next-generation machines and a chest-easy Battery Charging Socket",
    "releases": [
+    {
+     "version": "V1.8 5567",
+     "date": "2026-10-31",
+     "type": "release",
+     "title": "Ouka V1.8 5567 — Twelve next-generation machines and a chest-easy Battery Charging Socket",
+     "summary": "V1.8 5567 adds the next generation of twelve machines, each a new block with new motion and a new screen, and a Battery Charging Socket that opens like a chest. The earlier machines keep working as they are.",
+     "sections": [
+      {
+       "title": "Highlights",
+       "items": [
+        "Each machine is a new block with a new look, new motion and a new screen. The earlier machines keep working as they are.",
+        "Stasis Harvester (2nd generation Kinetic Grinder): set the field with a slider (3 to 9 wide). It kills 4 times as fast, and it can defeat the Wither.",
+        "Precision Assembly Cell (3rd generation assembly line): two robot arms work a turntable in a 3 × 3 × 3 glass cell, 4 times as fast as the Next-Generation Assembly Line.",
+        "Logistics Skyport (2nd generation drone station): three drones fly independently, carry 9 stacks each and fly twice as fast. It works with the earlier stations in both directions.",
+        "Phase Resonance Miner (2nd generation resonant miner): choose width 1 to 9 and depth 1 to 32 with sliders. It mines 4 times as fast.",
+        "Molten-Salt Solar Tower (2nd generation solar tower): rated at 80,000 J/t (4 times). It stores heat in molten salt and generates at night. Breaking it keeps the heat in the item.",
+        "Tracking Heliostat (2nd generation heliostat): follows the sun and gives the Molten-Salt tower twice the heat of the earlier mirror.",
+        "Tachyon Overdrive (2nd generation accelerator): a slider from 100 to 1000%, drawing 25% less power.",
+        "Isostatic Press (2nd generation crusher): 4 times as fast.",
+        "Dynamo Crank (2nd generation hand crank): a heavy flywheel keeps turning for about 3 seconds after you stop. Output is up to 16,000 J/t.",
+        "Ultracentrifuge (2nd generation centrifuge): separates 4 times as fast, with 1.5 times the chances and 8 output slots.",
+        "Atomic Lattice Crafter (2nd generation auto-crafter): crafts 4 times as fast.",
+        "OUKA Type-W2 “Hayate” (2nd generation wind turbine): about 48 blocks tall, rated at 200,000 J/t (4 times). Build it 31 blocks or more from other turbines.",
+        "Battery Charging Socket: open it bare-handed and move batteries like a chest. Hoppers and pipes connect too. Existing sockets keep their contents.",
+        "Gift code: enter /ouka code OUKA-5567 in game and a gift arrives in front of you. It works in survival with cheats off, once per player per world."
+       ]
+      },
+      {
+       "title": "Warnings",
+       "items": [
+        "The earlier machines keep their design and numbers; the new machines are separate blocks.",
+        "Breaking the Next-Generation Assembly Line loses its contents; this was already so and is not changed in this version.",
+        "It has been checked in automated tests and test clients only, not in real multiplayer play."
+       ]
+      }
+     ]
+    },
     {
      "version": "V1.8 3371",
      "date": "2026-10-30",
