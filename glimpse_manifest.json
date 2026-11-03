@@ -1,0 +1,304 @@
+{
+  "pack": {
+    "id": "glimpse-pack",
+    "latest": "4.4.0.2",
+    "published_at": "2026-09-28T00:00:00+00:00",
+    "title": "Alpha v4.4.0.2",
+    "summary": "Alpha has been retired. This last release (4.4.0.2) switches Alpha off: its 13 mods are replaced by placeholders that add nothing to the game. Back up your worlds before updating: blocks that Alpha added turn into empty air, and once a world has been saved that way they do not come back. See the changelog on the Wiki for what to do if you installed by hand or run a server.",
+    "download_url": "https://algorab.uk/downloads/Alpha_MODs_v4.4.0.2+mc26.3.zip",
+    "file_name": "Alpha_MODs_v4.4.0.2+mc26.3.zip",
+    "file_size": 11060,
+    "sha256": "61562fc78eb2a178df638390fea8b2131c33df51b66cd5ca6acb4432f6c827b3",
+    "changelog_url": "https://algorab.uk/en/changelog/"
+  },
+  "launcher": {
+    "latest": "5.5.1312",
+    "download_url": "https://algorab.uk/downloads/corvus-5.5.1312.jar",
+    "file_name": "corvus-5.5.1312.jar",
+    "file_size": 17890704,
+    "sha256": "b6bb3457ec2251eb464ec029efff4a41861224e82eb6e633e3a20bd5b1306271",
+    "notes": "Algorab Store 5.5.1312 and Algorab Agent 5.5.1312 are the last versions built on Java.\n\nAlgorab Store on Java reaches the end of its support, and Algorab 6 replaces it: a new app written for macOS, and for Windows and Linux. The Store now shows a notice when it starts and a banner in the sidebar, with one button that takes you to Algorab 6. Nothing moves by itself: the Store no longer replaces itself automatically, and the move happens only when you press the button. Mods keep installing and updating as before.\n\nA Mac that cannot run Algorab 6 is told why and stays on this version. If an update of the Store fails, the working copy is now moved aside safely before anything is restored.\n\nHalia's description in the Store is updated. Algorab Agent 5.5.1312 has no functional change.",
+    "native": {
+      "macos": {
+        "download_url": "https://algorab.uk/downloads/corvus-5.5.1312-macos.dmg",
+        "file_name": "corvus-5.5.1312-macos.dmg",
+        "file_size": 67704946,
+        "sha256": "a530d9fc3a08686bb6462273b9ecb0a9509aa1857e64085b0f6badd11f16e4de"
+      },
+      "windows": {
+        "download_url": "https://algorab.uk/downloads/corvus-5.5.1312-windows.msi",
+        "file_name": "corvus-5.5.1312-windows.msi",
+        "file_size": 65299298,
+        "sha256": "cd934a03bc18ee267b1ed113cd134ce2a6d31c874a7cd090935889587ab70d80"
+      },
+      "linux": {
+        "download_url": "https://algorab.uk/downloads/corvus-5.5.1312-linux.deb",
+        "file_name": "corvus-5.5.1312-linux.deb",
+        "file_size": 54777798,
+        "sha256": "e1fa66960673ec2eb7ea6391be7d33351e1bb3c65936e20e91b860ad6416ff65"
+      }
+    }
+  },
+  "aureum": {
+    "mod_id": "aureum",
+    "latest": "2.0.0",
+    "download_url": "https://algorab.uk/downloads/aureum-2.0.0.jar",
+    "file_name": "aureum-2.0.0.jar",
+    "file_size": 39160,
+    "sha256": "4132332e29b8b9b968277663ac44a1f86e1a729e46492a75e311a729a34ebff4"
+  },
+  "cherry": {
+    "mod_id": "cherry",
+    "latest": "1.3.1017",
+    "download_url": "https://algorab.uk/downloads/Cherry_MODs_v1.3.1017+mc26.3.zip",
+    "file_name": "Cherry_MODs_v1.3.1017+mc26.3.zip",
+    "file_size": 27466151,
+    "sha256": "3fe17c2f13252e257d9db6f740408cfb4aefdf8cb5c1e81e2f9a038b893cc165",
+    "jars": {
+      "cherry": {
+        "path": "mods/cherry-1.3.1017+mc26.3.jar",
+        "version": "1.3.1017",
+        "file_size": 26624314,
+        "sha256": "9d873cd277effe0776e7ee5a86d10fc5296dba1c35249bbcb6015b50de471725"
+      },
+      "geckolib": {
+        "path": "mods/geckolib-fabric-26.3-5.5.6.jar",
+        "version": "5.5.6",
+        "file_size": 1186429,
+        "sha256": "68e861d4dbbf0143261503a1e958833d2b9a1a4c91b4887faf28749d66fc1cf3"
+      }
+    }
+  },
+  "ouka": {
+    "mod_id": "ouka",
+    "latest": "1.8.6166",
+    "download_url": "https://algorab.uk/downloads/OUKA_MODs_v1.8.6166+mc26.3.zip",
+    "file_name": "OUKA_MODs_v1.8.6166+mc26.3.zip",
+    "file_size": 59440101,
+    "sha256": "664ac8c3c7160587e56101b579b2ed992e61765f42c481bf69efc6c55eb08ad4",
+    "jars": {
+      "geckolib": {
+        "path": "mods/geckolib-fabric-26.3-5.5.6.jar",
+        "version": "5.5.6",
+        "file_size": 1186429,
+        "sha256": "68e861d4dbbf0143261503a1e958833d2b9a1a4c91b4887faf28749d66fc1cf3"
+      },
+      "ouka": {
+        "path": "mods/ouka-1.8.6166+mc26.3.jar",
+        "version": "1.8.6166",
+        "file_size": 59880466,
+        "sha256": "620fce59a9b443bc6af5a9d963397d201d3aef217330a6d7400d31f253bc0a30"
+      }
+    }
+  },
+  "astraea": {
+    "mod_id": "astraea_retired",
+    "latest": "1.5.5",
+    "download_url": "https://algorab.uk/downloads/ASTRAEA_MODs_v1.5.5+mc26.3.zip",
+    "file_name": "ASTRAEA_MODs_v1.5.5+mc26.3.zip",
+    "file_size": 1921,
+    "sha256": "86371e129589d5b84ebd58841f83236a73658c588ab648e9917bb0cba7148cc6",
+    "jars": {
+      "astraea_retired": {
+        "path": "mods/astraea-retired-1.5.5+mc26.3.jar",
+        "version": "1.5.5",
+        "file_size": 494,
+        "sha256": "37a1037e53d3e71b261225d1b5ddc708833b80bdeb4895b686630e6f2eea7dcc"
+      }
+    },
+    "retired": {
+      "date": "2026-10-16",
+      "remove_after": "2026-10-18",
+      "notice_url": "https://algorab.uk/astraea/"
+    }
+  },
+  "tsubomi": {
+    "mod_id": "tsubomi",
+    "latest": "2.4.2009",
+    "download_url": "https://algorab.uk/downloads/tsubomi-2.4.2009.jar",
+    "file_name": "tsubomi-2.4.2009.jar",
+    "file_size": 3841033,
+    "sha256": "7b6ae8fa39190a7d01cd77f1f69276ce41595b5c1a96a21403017b327ae866d0"
+  },
+  "halia": {
+    "mod_id": "halia",
+    "latest": "1.6.1945",
+    "download_url": "https://algorab.uk/downloads/halia-1.6.1945.jar",
+    "file_name": "halia-1.6.1945.jar",
+    "file_size": 75864217,
+    "sha256": "aa00c983fcd76aa1295efe08148d885d1abb10ecdb6a64dda18a518effb08674",
+    "creatures": [
+      {
+        "id": "glimmerwisp",
+        "name": {
+          "en": "Glimmerwisp",
+          "ja": "灯の精"
+        },
+        "dimension": "Overworld, End"
+      },
+      {
+        "id": "snaremaw",
+        "name": {
+          "en": "Snaremaw",
+          "ja": "罠顎花"
+        },
+        "dimension": "Overworld, Nether"
+      },
+      {
+        "id": "gemback",
+        "name": {
+          "en": "Gemback",
+          "ja": "宝背"
+        },
+        "dimension": "Overworld, Nether"
+      },
+      {
+        "id": "cragling",
+        "name": {
+          "en": "Cragling",
+          "ja": "岩角の小鬼"
+        },
+        "dimension": "Overworld, Nether"
+      },
+      {
+        "id": "duskprowler_howler",
+        "name": {
+          "en": "Duskprowler Howler",
+          "ja": "宵の遠吠え"
+        },
+        "dimension": "Overworld"
+      },
+      {
+        "id": "cliff_wyrm",
+        "name": {
+          "en": "Cliff Wyrm",
+          "ja": "崖の翼蛇"
+        },
+        "dimension": "Overworld, End"
+      },
+      {
+        "id": "sunmask_raider",
+        "name": {
+          "en": "Sunmask Raider",
+          "ja": "陽面の襲撃者"
+        },
+        "dimension": "Overworld, Nether"
+      }
+    ]
+  },
+  "corvus6": {
+    "latest": "6.2.0",
+    "native": {
+      "macos": {
+        "download_url": "https://algorab.uk/downloads/algorab-6.2.0-macos.dmg",
+        "file_name": "algorab-6.2.0-macos.dmg",
+        "file_size": 4422015,
+        "sha256": "199d54d31dce7e91c1a29885fb00d497f8edb061521c31fcc6f20e9cbe15a00c",
+        "min_os": "14.0",
+        "arch": "arm64"
+      },
+      "windows": {
+        "download_url": "https://algorab.uk/downloads/algorab-6.2.0-windows.msi",
+        "file_name": "algorab-6.2.0-windows.msi",
+        "file_size": 28493915,
+        "sha256": "a30ed7402c1090bc4e7cceac653302fabc017a138aa2ea67e42de6371d71896a"
+      },
+      "linux": {
+        "download_url": "https://algorab.uk/downloads/algorab-6.2.0-linux.AppImage",
+        "file_name": "algorab-6.2.0-linux.AppImage",
+        "file_size": 48769528,
+        "sha256": "8d900a2505342d2d56175c9cb9b25ac3bc2f72bb071a5206974f7e69c9d265a0"
+      }
+    }
+  },
+  "agent": {
+    "latest": "5.5.1313",
+    "download_url": "https://algorab.uk/downloads/corvus-agent-5.5.1313.zip",
+    "file_name": "corvus-agent-5.5.1313.zip",
+    "file_size": 623227,
+    "sha256": "63a8e28f3fd86429ee078c0ecc272d370bea7170f3f5306d16eb6a6a0e2fd82d"
+  },
+  "xhard": {
+    "mod_id": "corvus_xhard",
+    "latest": "2.1.0",
+    "download_url": "https://algorab.uk/downloads/corvus-xhard-2.1.0.jar",
+    "file_name": "corvus-xhard-2.1.0.jar",
+    "file_size": 38620,
+    "sha256": "85069ba11f474c86f2f6bb3155d0f72e28ed13bda3e05bd369222ba5534e006c"
+  },
+  "difficulty_lock": {
+    "level": "pro",
+    "from": "2026-10-18",
+    "until": "2026-11-19"
+  },
+  "ai_chat": {
+    "url": "https://167-99-83-109.sslip.io"
+  },
+  "spawn_lock": {
+    "model": "halia",
+    "from": "2026-10-22",
+    "until": "2026-12-22"
+  },
+  "local_ai": {
+    "model": {
+      "file": "gemma-4-E4B_q4_0-it.gguf",
+      "bytes": 5154941280,
+      "sha256": "676c35070db6dbe52f93e9c864ee0fba4eddea94b9c875d9cb10daff453fbaee",
+      "sources": [
+        {
+          "name": "corvus",
+          "parts": [
+            {
+              "url": "https://github.com/iroponcopin/corvus-models/releases/download/gemma-4-e4b-q4_0/gemma-4-E4B_q4_0-it.gguf.part00",
+              "bytes": 1879048192,
+              "sha256": "51e678a30b0714326ee4b0ae0139297164924a9dad2683569ac49fef63f13169"
+            },
+            {
+              "url": "https://github.com/iroponcopin/corvus-models/releases/download/gemma-4-e4b-q4_0/gemma-4-E4B_q4_0-it.gguf.part01",
+              "bytes": 1879048192,
+              "sha256": "c1e74b2f287eb731bc57527d5944fc9ec9ca1f6ff2842303e48d2db5e8e47074"
+            },
+            {
+              "url": "https://github.com/iroponcopin/corvus-models/releases/download/gemma-4-e4b-q4_0/gemma-4-E4B_q4_0-it.gguf.part02",
+              "bytes": 1396844896,
+              "sha256": "20c6468e7ff435d6c054495f013c4503b80b6bf18584359c02607d2731a8ddcf"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "noctua": {
+    "latest": "1.0.0",
+    "download_url": "https://algorab.uk/downloads/Noctua_v1.0.0+pal1.0.zip",
+    "file_name": "Noctua_v1.0.0+pal1.0.zip",
+    "file_size": 119991,
+    "sha256": "4d773fd11e7140b79dc4b6a1dec66ebb822b3292bcfcef156d6f9df8a8660e23"
+  },
+  "punchy": {
+    "mod_id": "punchy",
+    "latest": "2.8g",
+    "download_url": "https://cdn.modrinth.com/data/8aoMKplv/versions/Fi951GUL/punchy-2.8g-fabric-26.3.jar",
+    "file_name": "punchy-2.8g-fabric-26.3.jar",
+    "file_size": 2657033,
+    "sha256": "dbfd037bd9551bc6b8662d240d01e155219ebadfffe4aeda6d693c05d1e2ef46",
+    "sha512": "08789a002e4f43b03f1c84f0ec1f046b9c5a077a337fb4e66b33b39a6c9a1110005da0bbcb3dfd37ed6f2218de5f86e1401befdcc9f04a3d6f30929f3d371de7",
+    "source": "modrinth",
+    "project_url": "https://modrinth.com/mod/punchy-fpa",
+    "license": "All Rights Reserved",
+    "hosted_by_corvus": false
+  },
+  "fabric_api": {
+    "mod_id": "fabric-api",
+    "latest": "0.165.0+26.3",
+    "download_url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/EQKgpeKu/fabric-api-0.165.0%2B26.3.jar",
+    "file_name": "fabric-api-0.165.0+26.3.jar",
+    "file_size": 1778588,
+    "sha256": "18442e2ad466d6ef41c37dbb4cb68495e6ca6658b1f1ee9be76143d155ef2c88",
+    "sha512": "0a4b8a14e847b71567b557b43d906c2167fa263eeeef37454a821ba286996e3da1616dc2d9647736d28a250d5ecf400541cae808359b29a62324a8a6f2ad5e30",
+    "source": "modrinth",
+    "project_url": "https://modrinth.com/mod/fabric-api",
+    "license": "Apache-2.0",
+    "hosted_by_corvus": false
+  }
+}
