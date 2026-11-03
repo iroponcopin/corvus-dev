@@ -114,11 +114,11 @@
   },
   "tsubomi": {
     "mod_id": "tsubomi",
-    "latest": "2.4.2009",
-    "download_url": "https://algorab.uk/downloads/tsubomi-2.4.2009.jar",
-    "file_name": "tsubomi-2.4.2009.jar",
-    "file_size": 3841033,
-    "sha256": "7b6ae8fa39190a7d01cd77f1f69276ce41595b5c1a96a21403017b327ae866d0"
+    "latest": "2.4.5000",
+    "download_url": "https://algorab.uk/downloads/tsubomi-2.4.5000.jar",
+    "file_name": "tsubomi-2.4.5000.jar",
+    "file_size": 12387572,
+    "sha256": "7615da78237092db336eafb5b6deb67b5371f4e977aee098a178ec276f5ae468"
   },
   "halia": {
     "mod_id": "halia",
