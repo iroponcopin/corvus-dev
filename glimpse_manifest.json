@@ -211,6 +211,62 @@
       }
     }
   },
+  "algorab_audio": {
+    "latest": "1.0.0",
+    "native": {
+      "macos": {
+        "download_url": "https://algorab.uk/downloads/algorab-audio-1.0.0-macos.dmg",
+        "file_name": "algorab-audio-1.0.0-macos.dmg",
+        "file_size": 2529501,
+        "sha256": "9a04ab847eb2cb6e1819058f3082c3eaf37325b74d6e575c014a249dd0e3996b",
+        "min_os": "14.0",
+        "arch": "arm64"
+      },
+      "windows": {
+        "download_url": "https://algorab.uk/downloads/algorab-audio-1.0.0-windows-setup.exe",
+        "file_name": "algorab-audio-1.0.0-windows-setup.exe",
+        "file_size": 31620007,
+        "sha256": "bf86611d782197b873f09048ec4e8372e1ac81118e82c0b75c4be987029ca843",
+        "portable": {
+          "download_url": "https://algorab.uk/downloads/algorab-audio-1.0.0-windows-portable.zip",
+          "file_name": "algorab-audio-1.0.0-windows-portable.zip",
+          "file_size": 46203893,
+          "sha256": "685bc6b0e5fb5adb6f91d76c58aaf5c973fcc4e17348cebfdb5d409e44eb0180"
+        }
+      },
+      "linux": {
+        "download_url": "https://algorab.uk/downloads/algorab-audio-1.0.0-linux-x86_64.AppImage",
+        "file_name": "algorab-audio-1.0.0-linux-x86_64.AppImage",
+        "file_size": 55187960,
+        "sha256": "ca186c448bd1d9c6707c8d359b0a435c1a7805464cc3edd38b1a5b94b1d35bb1"
+      }
+    }
+  },
+  "algorab_io": {
+    "latest": "1.0.0",
+    "native": {
+      "macos": {
+        "download_url": "https://algorab.uk/downloads/algorab-io-1.0.0-macos.dmg",
+        "file_name": "algorab-io-1.0.0-macos.dmg",
+        "file_size": 1425773,
+        "sha256": "a636b9a054c1e386db50cd515b2e4524684d1b6c0b812e30daac12de375de7c3",
+        "min_os": "14.2",
+        "arch": "arm64"
+      },
+      "windows": {
+        "download_url": "https://algorab.uk/downloads/algorab-io-1.0.0-windows.zip",
+        "file_name": "algorab-io-1.0.0-windows.zip",
+        "file_size": 381222,
+        "sha256": "f4838a8d886ac617e72e3521a43ac8ce7169cb2aa6c0bac60148911f2f4c1233"
+      },
+      "linux": {
+        "download_url": "https://algorab.uk/downloads/algorab-io-1.0.0-linux.AppImage",
+        "file_name": "algorab-io-1.0.0-linux.AppImage",
+        "file_size": 27453944,
+        "sha256": "57a73c61d418f121b3e390b682c0c2b39337f891bae31b560c630c86b6edd09b"
+      }
+    }
+  },
   "agent": {
     "latest": "5.5.1313",
     "download_url": "https://algorab.uk/downloads/corvus-agent-5.5.1313.zip",
