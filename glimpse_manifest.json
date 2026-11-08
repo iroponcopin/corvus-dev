@@ -187,9 +187,10 @@
     ]
   },
   "corvus6": {
-    "latest": "6.2.0",
+    "latest": "6.2.1",
     "native": {
       "macos": {
+        "version": "6.2.0",
         "download_url": "https://algorab.uk/downloads/algorab-6.2.0-macos.dmg",
         "file_name": "algorab-6.2.0-macos.dmg",
         "file_size": 4422015,
@@ -198,16 +199,18 @@
         "arch": "arm64"
       },
       "windows": {
-        "download_url": "https://algorab.uk/downloads/algorab-6.2.0-windows.msi",
-        "file_name": "algorab-6.2.0-windows.msi",
-        "file_size": 28493915,
-        "sha256": "a30ed7402c1090bc4e7cceac653302fabc017a138aa2ea67e42de6371d71896a"
+        "version": "6.2.1",
+        "download_url": "https://algorab.uk/downloads/algorab-6.2.1-windows.msi",
+        "file_name": "algorab-6.2.1-windows.msi",
+        "file_size": 28588125,
+        "sha256": "e66231e9bab08534ddac3a2dc9131b625c5ee3da75591bcad731e090608d3f8a"
       },
       "linux": {
-        "download_url": "https://algorab.uk/downloads/algorab-6.2.0-linux.AppImage",
-        "file_name": "algorab-6.2.0-linux.AppImage",
-        "file_size": 48769528,
-        "sha256": "8d900a2505342d2d56175c9cb9b25ac3bc2f72bb071a5206974f7e69c9d265a0"
+        "version": "6.2.1",
+        "download_url": "https://algorab.uk/downloads/algorab-6.2.1-linux.AppImage",
+        "file_name": "algorab-6.2.1-linux.AppImage",
+        "file_size": 48830968,
+        "sha256": "82f4807664a481058cf2bb017891a3df9237844e3d8202001a86ec15ff453e75"
       }
     }
   },
