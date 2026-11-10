@@ -187,7 +187,7 @@
     ]
   },
   "corvus6": {
-    "latest": "6.2.2",
+    "latest": "6.2.3",
     "native": {
       "macos": {
         "version": "6.2.2",
@@ -199,11 +199,11 @@
         "arch": "arm64"
       },
       "windows": {
-        "version": "6.2.2",
-        "download_url": "https://algorab.uk/downloads/algorab-6.2.2-windows.msi",
-        "file_name": "algorab-6.2.2-windows.msi",
-        "file_size": 29079645,
-        "sha256": "916ffbd320be4b21c2d96a8a8eb2a7f9acddb260e6c22518a8d517b6d5a03490"
+        "version": "6.2.3",
+        "download_url": "https://algorab.uk/downloads/algorab-6.2.3-windows.msi",
+        "file_name": "algorab-6.2.3-windows.msi",
+        "file_size": 29120605,
+        "sha256": "01574b83b4e932eb43f03d93169e4c4a56c2a31c4820ce58e5cb850cb526754f"
       },
       "linux": {
         "version": "6.2.1",
@@ -271,11 +271,11 @@
     }
   },
   "agent": {
-    "latest": "6.5.0",
-    "download_url": "https://algorab.uk/downloads/algorab-agents-6.5.0.zip",
-    "file_name": "algorab-agents-6.5.0.zip",
-    "file_size": 717052,
-    "sha256": "6ff6be93efeb9afcc56c269f8b12bfaca8c680bfaa10b0c77ff00c5e1086f0ab"
+    "latest": "6.5.1",
+    "download_url": "https://algorab.uk/downloads/algorab-agents-6.5.1.zip",
+    "file_name": "algorab-agents-6.5.1.zip",
+    "file_size": 738003,
+    "sha256": "060e5cc02b81263fcd08a605ed5e4d75bace3981e3dfcfce5c3f01336ea927d4"
   },
   "xhard": {
     "mod_id": "corvus_xhard",
