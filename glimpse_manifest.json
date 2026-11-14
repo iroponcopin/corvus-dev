@@ -271,11 +271,11 @@
     }
   },
   "agent": {
-    "latest": "6.5.1",
-    "download_url": "https://algorab.uk/downloads/algorab-agents-6.5.1.zip",
-    "file_name": "algorab-agents-6.5.1.zip",
-    "file_size": 738003,
-    "sha256": "060e5cc02b81263fcd08a605ed5e4d75bace3981e3dfcfce5c3f01336ea927d4"
+    "latest": "6.5.2",
+    "download_url": "https://algorab.uk/downloads/algorab-agents-6.5.2.zip",
+    "file_name": "algorab-agents-6.5.2.zip",
+    "file_size": 740100,
+    "sha256": "d7577f630d183fb32b648460e1b7e387c84e7a3c321de1d14738f979d6c2f9d0"
   },
   "xhard": {
     "mod_id": "corvus_xhard",
