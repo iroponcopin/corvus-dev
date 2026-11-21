@@ -114,11 +114,11 @@
   },
   "tsubomi": {
     "mod_id": "hokku",
-    "latest": "3.5.20261119",
-    "download_url": "https://algorab.uk/downloads/hokku-3.5.20261119.jar",
-    "file_name": "hokku-3.5.20261119.jar",
-    "file_size": 22723972,
-    "sha256": "c66f8e03443f0da5a5d2cf4ecf05c3c082b4807584f1cc554262d7ccdc487db0"
+    "latest": "3.5.20261121",
+    "download_url": "https://algorab.uk/downloads/hokku-3.5.20261121.jar",
+    "file_name": "hokku-3.5.20261121.jar",
+    "file_size": 22698113,
+    "sha256": "839d5e4e4dc82d5afa6e2a290022c44fd4890e4dfaa4fb0a8d6bb02971a01001"
   },
   "halia": {
     "mod_id": "halia",
